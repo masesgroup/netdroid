@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RemoteViews(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ActionException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -98,10 +98,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DrawInstructions(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -122,7 +122,7 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -139,10 +139,10 @@ namespace Android.Widget
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -163,9 +163,9 @@ namespace Android.Widget
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -188,10 +188,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RemoteCollectionItems(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -212,7 +212,7 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -229,10 +229,10 @@ namespace Android.Widget
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -253,9 +253,9 @@ namespace Android.Widget
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -278,10 +278,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RemoteResponse(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -302,9 +302,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -325,10 +325,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("RemoteView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RemoteView(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -349,9 +349,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -370,10 +370,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RemoteViewOutlineProvider(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -394,9 +394,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -468,17 +468,17 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Widget.RemoteViews"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Widget.RemoteViews t) => t.Cast<Android.Os.Parcelable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#CREATOR"/>
@@ -534,13 +534,13 @@ namespace Android.Widget
         public static Java.Lang.String EXTRA_SHARED_ELEMENT_BOUNDS { get { if (!_EXTRA_SHARED_ELEMENT_BOUNDSReady) { _EXTRA_SHARED_ELEMENT_BOUNDSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHARED_ELEMENT_BOUNDS"); _EXTRA_SHARED_ELEMENT_BOUNDSReady = true; } return _EXTRA_SHARED_ELEMENT_BOUNDSContent; } }
         private static Java.Lang.String _EXTRA_SHARED_ELEMENT_BOUNDSContent = default;
         private static bool _EXTRA_SHARED_ELEMENT_BOUNDSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#apply(android.content.Context,android.view.ViewGroup)"/>
@@ -550,7 +550,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View Apply(Android.Content.Context arg0, Android.View.ViewGroup arg1)
         {
-            return IExecute<Android.View.View>("apply", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("apply", "(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#clone()"/>
@@ -611,7 +611,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void AddStableView(int arg0, Android.Widget.RemoteViews arg1, int arg2)
         {
-            IExecute("addStableView", arg0, arg1, arg2);
+            IExecuteWithSignature("addStableView", "(ILandroid/widget/RemoteViews;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#addView(int,android.widget.RemoteViews)"/>
@@ -620,7 +620,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews"/></param>
         public void AddView(int arg0, Android.Widget.RemoteViews arg1)
         {
-            IExecute("addView", arg0, arg1);
+            IExecuteWithSignature("addView", "(ILandroid/widget/RemoteViews;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#reapply(android.content.Context,android.view.View)"/>
@@ -629,7 +629,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         public void Reapply(Android.Content.Context arg0, Android.View.View arg1)
         {
-            IExecute("reapply", arg0, arg1);
+            IExecuteWithSignature("reapply", "(Landroid/content/Context;Landroid/view/View;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#removeAllViews(int)"/>
@@ -646,7 +646,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetAccessibilityTraversalAfter(int arg0, int arg1)
         {
-            IExecute("setAccessibilityTraversalAfter", arg0, arg1);
+            IExecuteWithSignature("setAccessibilityTraversalAfter", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setAccessibilityTraversalBefore(int,int)"/>
@@ -655,7 +655,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetAccessibilityTraversalBefore(int arg0, int arg1)
         {
-            IExecute("setAccessibilityTraversalBefore", arg0, arg1);
+            IExecuteWithSignature("setAccessibilityTraversalBefore", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBitmap(int,java.lang.String,android.graphics.Bitmap)"/>
@@ -665,7 +665,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Graphics.Bitmap"/></param>
         public void SetBitmap(int arg0, Java.Lang.String arg1, Android.Graphics.Bitmap arg2)
         {
-            IExecute("setBitmap", arg0, arg1, arg2);
+            IExecuteWithSignature("setBitmap", "(ILjava/lang/String;Landroid/graphics/Bitmap;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBlendMode(int,java.lang.String,android.graphics.BlendMode)"/>
@@ -675,7 +675,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Graphics.BlendMode"/></param>
         public void SetBlendMode(int arg0, Java.Lang.String arg1, Android.Graphics.BlendMode arg2)
         {
-            IExecute("setBlendMode", arg0, arg1, arg2);
+            IExecuteWithSignature("setBlendMode", "(ILjava/lang/String;Landroid/graphics/BlendMode;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBoolean(int,java.lang.String,boolean)"/>
@@ -685,7 +685,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="bool"/></param>
         public void SetBoolean(int arg0, Java.Lang.String arg1, bool arg2)
         {
-            IExecute("setBoolean", arg0, arg1, arg2);
+            IExecuteWithSignature("setBoolean", "(ILjava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBundle(int,java.lang.String,android.os.Bundle)"/>
@@ -695,7 +695,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void SetBundle(int arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            IExecute("setBundle", arg0, arg1, arg2);
+            IExecuteWithSignature("setBundle", "(ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setByte(int,java.lang.String,byte)"/>
@@ -705,7 +705,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="byte"/></param>
         public void SetByte(int arg0, Java.Lang.String arg1, byte arg2)
         {
-            IExecute("setByte", arg0, arg1, arg2);
+            IExecuteWithSignature("setByte", "(ILjava/lang/String;B)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setChar(int,java.lang.String,char)"/>
@@ -715,7 +715,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="char"/></param>
         public void SetChar(int arg0, Java.Lang.String arg1, char arg2)
         {
-            IExecute("setChar", arg0, arg1, arg2);
+            IExecuteWithSignature("setChar", "(ILjava/lang/String;C)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequence(int,java.lang.String,int)"/>
@@ -725,7 +725,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetCharSequence(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setCharSequence", arg0, arg1, arg2);
+            IExecuteWithSignature("setCharSequence", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequence(int,java.lang.String,java.lang.CharSequence)"/>
@@ -735,7 +735,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
         public void SetCharSequence(int arg0, Java.Lang.String arg1, Java.Lang.CharSequence arg2)
         {
-            IExecute("setCharSequence", arg0, arg1, arg2);
+            IExecuteWithSignature("setCharSequence", "(ILjava/lang/String;Ljava/lang/CharSequence;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequenceAttr(int,java.lang.String,int)"/>
@@ -745,7 +745,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetCharSequenceAttr(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setCharSequenceAttr", arg0, arg1, arg2);
+            IExecuteWithSignature("setCharSequenceAttr", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setChronometer(int,long,java.lang.String,boolean)"/>
@@ -756,7 +756,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="bool"/></param>
         public void SetChronometer(int arg0, long arg1, Java.Lang.String arg2, bool arg3)
         {
-            IExecute("setChronometer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setChronometer", "(IJLjava/lang/String;Z)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setChronometerCountDown(int,boolean)"/>
@@ -765,7 +765,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetChronometerCountDown(int arg0, bool arg1)
         {
-            IExecute("setChronometerCountDown", arg0, arg1);
+            IExecuteWithSignature("setChronometerCountDown", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColor(int,java.lang.String,int)"/>
@@ -775,7 +775,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetColor(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setColor", arg0, arg1, arg2);
+            IExecuteWithSignature("setColor", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorAttr(int,java.lang.String,int)"/>
@@ -785,7 +785,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetColorAttr(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setColorAttr", arg0, arg1, arg2);
+            IExecuteWithSignature("setColorAttr", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorInt(int,java.lang.String,int,int)"/>
@@ -796,7 +796,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetColorInt(int arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
-            IExecute("setColorInt", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setColorInt", "(ILjava/lang/String;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,android.content.res.ColorStateList,android.content.res.ColorStateList)"/>
@@ -807,7 +807,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="Android.Content.Res.ColorStateList"/></param>
         public void SetColorStateList(int arg0, Java.Lang.String arg1, Android.Content.Res.ColorStateList arg2, Android.Content.Res.ColorStateList arg3)
         {
-            IExecute("setColorStateList", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setColorStateList", "(ILjava/lang/String;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,android.content.res.ColorStateList)"/>
@@ -817,7 +817,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Content.Res.ColorStateList"/></param>
         public void SetColorStateList(int arg0, Java.Lang.String arg1, Android.Content.Res.ColorStateList arg2)
         {
-            IExecute("setColorStateList", arg0, arg1, arg2);
+            IExecuteWithSignature("setColorStateList", "(ILjava/lang/String;Landroid/content/res/ColorStateList;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,int)"/>
@@ -827,7 +827,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetColorStateList(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setColorStateList", arg0, arg1, arg2);
+            IExecuteWithSignature("setColorStateList", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateListAttr(int,java.lang.String,int)"/>
@@ -837,7 +837,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetColorStateListAttr(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setColorStateListAttr", arg0, arg1, arg2);
+            IExecuteWithSignature("setColorStateListAttr", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCompoundButtonChecked(int,boolean)"/>
@@ -846,7 +846,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetCompoundButtonChecked(int arg0, bool arg1)
         {
-            IExecute("setCompoundButtonChecked", arg0, arg1);
+            IExecuteWithSignature("setCompoundButtonChecked", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setContentDescription(int,java.lang.CharSequence)"/>
@@ -855,7 +855,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetContentDescription(int arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setContentDescription", arg0, arg1);
+            IExecuteWithSignature("setContentDescription", "(ILjava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setDisplayedChild(int,int)"/>
@@ -864,7 +864,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetDisplayedChild(int arg0, int arg1)
         {
-            IExecute("setDisplayedChild", arg0, arg1);
+            IExecuteWithSignature("setDisplayedChild", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setDouble(int,java.lang.String,double)"/>
@@ -874,7 +874,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="double"/></param>
         public void SetDouble(int arg0, Java.Lang.String arg1, double arg2)
         {
-            IExecute("setDouble", arg0, arg1, arg2);
+            IExecuteWithSignature("setDouble", "(ILjava/lang/String;D)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setEmptyView(int,int)"/>
@@ -883,7 +883,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetEmptyView(int arg0, int arg1)
         {
-            IExecute("setEmptyView", arg0, arg1);
+            IExecuteWithSignature("setEmptyView", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloat(int,java.lang.String,float)"/>
@@ -893,7 +893,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="float"/></param>
         public void SetFloat(int arg0, Java.Lang.String arg1, float arg2)
         {
-            IExecute("setFloat", arg0, arg1, arg2);
+            IExecuteWithSignature("setFloat", "(ILjava/lang/String;F)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimen(int,java.lang.String,float,int)"/>
@@ -904,7 +904,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetFloatDimen(int arg0, Java.Lang.String arg1, float arg2, int arg3)
         {
-            IExecute("setFloatDimen", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setFloatDimen", "(ILjava/lang/String;FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimen(int,java.lang.String,int)"/>
@@ -914,7 +914,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetFloatDimen(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setFloatDimen", arg0, arg1, arg2);
+            IExecuteWithSignature("setFloatDimen", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimenAttr(int,java.lang.String,int)"/>
@@ -924,7 +924,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetFloatDimenAttr(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setFloatDimenAttr", arg0, arg1, arg2);
+            IExecuteWithSignature("setFloatDimenAttr", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIcon(int,java.lang.String,android.graphics.drawable.Icon,android.graphics.drawable.Icon)"/>
@@ -935,7 +935,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="Android.Graphics.Drawable.Icon"/></param>
         public void SetIcon(int arg0, Java.Lang.String arg1, Android.Graphics.Drawable.Icon arg2, Android.Graphics.Drawable.Icon arg3)
         {
-            IExecute("setIcon", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setIcon", "(ILjava/lang/String;Landroid/graphics/drawable/Icon;Landroid/graphics/drawable/Icon;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIcon(int,java.lang.String,android.graphics.drawable.Icon)"/>
@@ -945,7 +945,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Graphics.Drawable.Icon"/></param>
         public void SetIcon(int arg0, Java.Lang.String arg1, Android.Graphics.Drawable.Icon arg2)
         {
-            IExecute("setIcon", arg0, arg1, arg2);
+            IExecuteWithSignature("setIcon", "(ILjava/lang/String;Landroid/graphics/drawable/Icon;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewBitmap(int,android.graphics.Bitmap)"/>
@@ -954,7 +954,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         public void SetImageViewBitmap(int arg0, Android.Graphics.Bitmap arg1)
         {
-            IExecute("setImageViewBitmap", arg0, arg1);
+            IExecuteWithSignature("setImageViewBitmap", "(ILandroid/graphics/Bitmap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewIcon(int,android.graphics.drawable.Icon)"/>
@@ -963,7 +963,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Graphics.Drawable.Icon"/></param>
         public void SetImageViewIcon(int arg0, Android.Graphics.Drawable.Icon arg1)
         {
-            IExecute("setImageViewIcon", arg0, arg1);
+            IExecuteWithSignature("setImageViewIcon", "(ILandroid/graphics/drawable/Icon;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewResource(int,int)"/>
@@ -972,7 +972,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetImageViewResource(int arg0, int arg1)
         {
-            IExecute("setImageViewResource", arg0, arg1);
+            IExecuteWithSignature("setImageViewResource", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewUri(int,android.net.Uri)"/>
@@ -981,7 +981,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void SetImageViewUri(int arg0, Android.Net.Uri arg1)
         {
-            IExecute("setImageViewUri", arg0, arg1);
+            IExecuteWithSignature("setImageViewUri", "(ILandroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setInt(int,java.lang.String,int)"/>
@@ -991,7 +991,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetInt(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setInt", arg0, arg1, arg2);
+            IExecuteWithSignature("setInt", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimen(int,java.lang.String,float,int)"/>
@@ -1002,7 +1002,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetIntDimen(int arg0, Java.Lang.String arg1, float arg2, int arg3)
         {
-            IExecute("setIntDimen", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setIntDimen", "(ILjava/lang/String;FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimen(int,java.lang.String,int)"/>
@@ -1012,7 +1012,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetIntDimen(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setIntDimen", arg0, arg1, arg2);
+            IExecuteWithSignature("setIntDimen", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimenAttr(int,java.lang.String,int)"/>
@@ -1022,7 +1022,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetIntDimenAttr(int arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("setIntDimenAttr", arg0, arg1, arg2);
+            IExecuteWithSignature("setIntDimenAttr", "(ILjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntent(int,java.lang.String,android.content.Intent)"/>
@@ -1032,7 +1032,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
         public void SetIntent(int arg0, Java.Lang.String arg1, Android.Content.Intent arg2)
         {
-            IExecute("setIntent", arg0, arg1, arg2);
+            IExecuteWithSignature("setIntent", "(ILjava/lang/String;Landroid/content/Intent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setLabelFor(int,int)"/>
@@ -1041,7 +1041,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLabelFor(int arg0, int arg1)
         {
-            IExecute("setLabelFor", arg0, arg1);
+            IExecuteWithSignature("setLabelFor", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setLightBackgroundLayoutId(int)"/>
@@ -1059,7 +1059,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="long"/></param>
         public void SetLong(int arg0, Java.Lang.String arg1, long arg2)
         {
-            IExecute("setLong", arg0, arg1, arg2);
+            IExecuteWithSignature("setLong", "(ILjava/lang/String;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnCheckedChangeResponse(int,android.widget.RemoteViews.RemoteResponse)"/>
@@ -1068,7 +1068,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews.RemoteResponse"/></param>
         public void SetOnCheckedChangeResponse(int arg0, Android.Widget.RemoteViews.RemoteResponse arg1)
         {
-            IExecute("setOnCheckedChangeResponse", arg0, arg1);
+            IExecuteWithSignature("setOnCheckedChangeResponse", "(ILandroid/widget/RemoteViews$RemoteResponse;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickFillInIntent(int,android.content.Intent)"/>
@@ -1077,7 +1077,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void SetOnClickFillInIntent(int arg0, Android.Content.Intent arg1)
         {
-            IExecute("setOnClickFillInIntent", arg0, arg1);
+            IExecuteWithSignature("setOnClickFillInIntent", "(ILandroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickPendingIntent(int,android.app.PendingIntent)"/>
@@ -1086,7 +1086,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void SetOnClickPendingIntent(int arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("setOnClickPendingIntent", arg0, arg1);
+            IExecuteWithSignature("setOnClickPendingIntent", "(ILandroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickResponse(int,android.widget.RemoteViews.RemoteResponse)"/>
@@ -1095,7 +1095,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews.RemoteResponse"/></param>
         public void SetOnClickResponse(int arg0, Android.Widget.RemoteViews.RemoteResponse arg1)
         {
-            IExecute("setOnClickResponse", arg0, arg1);
+            IExecuteWithSignature("setOnClickResponse", "(ILandroid/widget/RemoteViews$RemoteResponse;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnStylusHandwritingPendingIntent(int,android.app.PendingIntent)"/>
@@ -1104,7 +1104,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void SetOnStylusHandwritingPendingIntent(int arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("setOnStylusHandwritingPendingIntent", arg0, arg1);
+            IExecuteWithSignature("setOnStylusHandwritingPendingIntent", "(ILandroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setPendingIntentTemplate(int,android.app.PendingIntent)"/>
@@ -1113,7 +1113,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void SetPendingIntentTemplate(int arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("setPendingIntentTemplate", arg0, arg1);
+            IExecuteWithSignature("setPendingIntentTemplate", "(ILandroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setProgressBar(int,int,int,boolean)"/>
@@ -1124,7 +1124,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="bool"/></param>
         public void SetProgressBar(int arg0, int arg1, int arg2, bool arg3)
         {
-            IExecute("setProgressBar", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setProgressBar", "(IIIZ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRadioGroupChecked(int,int)"/>
@@ -1133,7 +1133,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetRadioGroupChecked(int arg0, int arg1)
         {
-            IExecute("setRadioGroupChecked", arg0, arg1);
+            IExecuteWithSignature("setRadioGroupChecked", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRelativeScrollPosition(int,int)"/>
@@ -1142,7 +1142,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetRelativeScrollPosition(int arg0, int arg1)
         {
-            IExecute("setRelativeScrollPosition", arg0, arg1);
+            IExecuteWithSignature("setRelativeScrollPosition", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,android.content.Intent)"/>
@@ -1152,7 +1152,7 @@ namespace Android.Widget
         [global::System.Obsolete()]
         public void SetRemoteAdapter(int arg0, Android.Content.Intent arg1)
         {
-            IExecute("setRemoteAdapter", arg0, arg1);
+            IExecuteWithSignature("setRemoteAdapter", "(ILandroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,android.widget.RemoteViews.RemoteCollectionItems)"/>
@@ -1161,7 +1161,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews.RemoteCollectionItems"/></param>
         public void SetRemoteAdapter(int arg0, Android.Widget.RemoteViews.RemoteCollectionItems arg1)
         {
-            IExecute("setRemoteAdapter", arg0, arg1);
+            IExecuteWithSignature("setRemoteAdapter", "(ILandroid/widget/RemoteViews$RemoteCollectionItems;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,int,android.content.Intent)"/>
@@ -1172,7 +1172,7 @@ namespace Android.Widget
         [global::System.Obsolete()]
         public void SetRemoteAdapter(int arg0, int arg1, Android.Content.Intent arg2)
         {
-            IExecute("setRemoteAdapter", arg0, arg1, arg2);
+            IExecuteWithSignature("setRemoteAdapter", "(IILandroid/content/Intent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setScrollPosition(int,int)"/>
@@ -1181,7 +1181,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetScrollPosition(int arg0, int arg1)
         {
-            IExecute("setScrollPosition", arg0, arg1);
+            IExecuteWithSignature("setScrollPosition", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setShort(int,java.lang.String,short)"/>
@@ -1191,7 +1191,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="short"/></param>
         public void SetShort(int arg0, Java.Lang.String arg1, short arg2)
         {
-            IExecute("setShort", arg0, arg1, arg2);
+            IExecuteWithSignature("setShort", "(ILjava/lang/String;S)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setString(int,java.lang.String,java.lang.String)"/>
@@ -1201,7 +1201,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetString(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setString", arg0, arg1, arg2);
+            IExecuteWithSignature("setString", "(ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextColor(int,int)"/>
@@ -1210,7 +1210,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetTextColor(int arg0, int arg1)
         {
-            IExecute("setTextColor", arg0, arg1);
+            IExecuteWithSignature("setTextColor", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewCompoundDrawables(int,int,int,int,int)"/>
@@ -1222,7 +1222,7 @@ namespace Android.Widget
         /// <param name="arg4"><see cref="int"/></param>
         public void SetTextViewCompoundDrawables(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setTextViewCompoundDrawables", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setTextViewCompoundDrawables", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewCompoundDrawablesRelative(int,int,int,int,int)"/>
@@ -1234,7 +1234,7 @@ namespace Android.Widget
         /// <param name="arg4"><see cref="int"/></param>
         public void SetTextViewCompoundDrawablesRelative(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setTextViewCompoundDrawablesRelative", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setTextViewCompoundDrawablesRelative", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewText(int,java.lang.CharSequence)"/>
@@ -1243,7 +1243,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetTextViewText(int arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setTextViewText", arg0, arg1);
+            IExecuteWithSignature("setTextViewText", "(ILjava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewTextSize(int,int,float)"/>
@@ -1253,7 +1253,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="float"/></param>
         public void SetTextViewTextSize(int arg0, int arg1, float arg2)
         {
-            IExecute("setTextViewTextSize", arg0, arg1, arg2);
+            IExecuteWithSignature("setTextViewTextSize", "(IIF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setUri(int,java.lang.String,android.net.Uri)"/>
@@ -1263,7 +1263,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Net.Uri"/></param>
         public void SetUri(int arg0, Java.Lang.String arg1, Android.Net.Uri arg2)
         {
-            IExecute("setUri", arg0, arg1, arg2);
+            IExecuteWithSignature("setUri", "(ILjava/lang/String;Landroid/net/Uri;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeight(int,float,int)"/>
@@ -1273,7 +1273,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetViewLayoutHeight(int arg0, float arg1, int arg2)
         {
-            IExecute("setViewLayoutHeight", arg0, arg1, arg2);
+            IExecuteWithSignature("setViewLayoutHeight", "(IFI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeightAttr(int,int)"/>
@@ -1282,7 +1282,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewLayoutHeightAttr(int arg0, int arg1)
         {
-            IExecute("setViewLayoutHeightAttr", arg0, arg1);
+            IExecuteWithSignature("setViewLayoutHeightAttr", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeightDimen(int,int)"/>
@@ -1291,7 +1291,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewLayoutHeightDimen(int arg0, int arg1)
         {
-            IExecute("setViewLayoutHeightDimen", arg0, arg1);
+            IExecuteWithSignature("setViewLayoutHeightDimen", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMargin(int,int,float,int)"/>
@@ -1302,7 +1302,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetViewLayoutMargin(int arg0, int arg1, float arg2, int arg3)
         {
-            IExecute("setViewLayoutMargin", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setViewLayoutMargin", "(IIFI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMarginAttr(int,int,int)"/>
@@ -1312,7 +1312,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetViewLayoutMarginAttr(int arg0, int arg1, int arg2)
         {
-            IExecute("setViewLayoutMarginAttr", arg0, arg1, arg2);
+            IExecuteWithSignature("setViewLayoutMarginAttr", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMarginDimen(int,int,int)"/>
@@ -1322,7 +1322,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetViewLayoutMarginDimen(int arg0, int arg1, int arg2)
         {
-            IExecute("setViewLayoutMarginDimen", arg0, arg1, arg2);
+            IExecuteWithSignature("setViewLayoutMarginDimen", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidth(int,float,int)"/>
@@ -1332,7 +1332,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetViewLayoutWidth(int arg0, float arg1, int arg2)
         {
-            IExecute("setViewLayoutWidth", arg0, arg1, arg2);
+            IExecuteWithSignature("setViewLayoutWidth", "(IFI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidthAttr(int,int)"/>
@@ -1341,7 +1341,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewLayoutWidthAttr(int arg0, int arg1)
         {
-            IExecute("setViewLayoutWidthAttr", arg0, arg1);
+            IExecuteWithSignature("setViewLayoutWidthAttr", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidthDimen(int,int)"/>
@@ -1350,7 +1350,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewLayoutWidthDimen(int arg0, int arg1)
         {
-            IExecute("setViewLayoutWidthDimen", arg0, arg1);
+            IExecuteWithSignature("setViewLayoutWidthDimen", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadius(int,float,int)"/>
@@ -1360,7 +1360,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetViewOutlinePreferredRadius(int arg0, float arg1, int arg2)
         {
-            IExecute("setViewOutlinePreferredRadius", arg0, arg1, arg2);
+            IExecuteWithSignature("setViewOutlinePreferredRadius", "(IFI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadiusAttr(int,int)"/>
@@ -1369,7 +1369,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewOutlinePreferredRadiusAttr(int arg0, int arg1)
         {
-            IExecute("setViewOutlinePreferredRadiusAttr", arg0, arg1);
+            IExecuteWithSignature("setViewOutlinePreferredRadiusAttr", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadiusDimen(int,int)"/>
@@ -1378,7 +1378,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewOutlinePreferredRadiusDimen(int arg0, int arg1)
         {
-            IExecute("setViewOutlinePreferredRadiusDimen", arg0, arg1);
+            IExecuteWithSignature("setViewOutlinePreferredRadiusDimen", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewPadding(int,int,int,int,int)"/>
@@ -1390,7 +1390,7 @@ namespace Android.Widget
         /// <param name="arg4"><see cref="int"/></param>
         public void SetViewPadding(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setViewPadding", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setViewPadding", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewVisibility(int,int)"/>
@@ -1399,7 +1399,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewVisibility(int arg0, int arg1)
         {
-            IExecute("setViewVisibility", arg0, arg1);
+            IExecuteWithSignature("setViewVisibility", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#showNext(int)"/>
@@ -1426,39 +1426,39 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ActionException implementation
         public partial class ActionException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1467,17 +1467,17 @@ namespace Android.Widget
         public partial class DrawInstructions
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.DrawInstructions.html#getSupportedVersion()"/>
@@ -1487,13 +1487,13 @@ namespace Android.Widget
             {
                 return SExecuteWithSignature<long>(LocalBridgeClazz, "getSupportedVersion", "()J");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
@@ -1507,21 +1507,21 @@ namespace Android.Widget
                     : base(arg0)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.DrawInstructions.Builder.html#build()"/>
@@ -1531,20 +1531,20 @@ namespace Android.Widget
                 {
                     return IExecuteWithSignature<Android.Widget.RemoteViews.DrawInstructions>("build", "()Landroid/widget/RemoteViews$DrawInstructions;");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1553,13 +1553,13 @@ namespace Android.Widget
         public partial class RemoteCollectionItems
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#CREATOR"/>
@@ -1567,13 +1567,13 @@ namespace Android.Widget
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.html#getItemView(int)"/>
@@ -1632,31 +1632,31 @@ namespace Android.Widget
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.Builder.html#build()"/>
@@ -1674,7 +1674,7 @@ namespace Android.Widget
                 /// <returns><see cref="Android.Widget.RemoteViews.RemoteCollectionItems.Builder"/></returns>
                 public Android.Widget.RemoteViews.RemoteCollectionItems.Builder AddItem(long arg0, Android.Widget.RemoteViews arg1)
                 {
-                    return IExecute<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("addItem", arg0, arg1);
+                    return IExecuteWithSignature<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("addItem", "(JLandroid/widget/RemoteViews;)Landroid/widget/RemoteViews$RemoteCollectionItems$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.Builder.html#setHasStableIds(boolean)"/>
@@ -1694,20 +1694,20 @@ namespace Android.Widget
                 {
                     return IExecuteWithSignature<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("setViewTypeCount", "(I)Landroid/widget/RemoteViews$RemoteCollectionItems$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1716,17 +1716,17 @@ namespace Android.Widget
         public partial class RemoteResponse
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteResponse.html#fromFillInIntent(android.content.Intent)"/>
@@ -1746,9 +1746,9 @@ namespace Android.Widget
             {
                 return SExecuteWithSignature<Android.Widget.RemoteViews.RemoteResponse>(LocalBridgeClazz, "fromPendingIntent", "(Landroid/app/PendingIntent;)Landroid/widget/RemoteViews$RemoteResponse;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteResponse.html#addSharedElement(int,java.lang.String)"/>
@@ -1758,15 +1758,15 @@ namespace Android.Widget
             /// <returns><see cref="Android.Widget.RemoteViews.RemoteResponse"/></returns>
             public Android.Widget.RemoteViews.RemoteResponse AddSharedElement(int arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Widget.RemoteViews.RemoteResponse>("addSharedElement", arg0, arg1);
+                return IExecuteWithSignature<Android.Widget.RemoteViews.RemoteResponse>("addSharedElement", "(ILjava/lang/String;)Landroid/widget/RemoteViews$RemoteResponse;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1775,29 +1775,29 @@ namespace Android.Widget
         public partial class RemoteView
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1814,21 +1814,21 @@ namespace Android.Widget
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteViewOutlineProvider.html#getRadius()"/>
@@ -1838,20 +1838,20 @@ namespace Android.Widget
             {
                 return IExecuteWithSignature<float>("getRadius", "()F");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

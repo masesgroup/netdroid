@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScriptIntrinsicHistogram(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,17 +75,17 @@ namespace Android.Renderscript
     public partial class ScriptIntrinsicHistogram
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#create(android.renderscript.RenderScript,android.renderscript.Element)"/>
@@ -96,11 +96,11 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicHistogram Create(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
         {
-            return SExecute<Android.Renderscript.ScriptIntrinsicHistogram>(LocalBridgeClazz, "create", arg0, arg1);
+            return SExecuteWithSignature<Android.Renderscript.ScriptIntrinsicHistogram>(LocalBridgeClazz, "create", "(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicHistogram;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#getFieldID_Input()"/>
@@ -128,7 +128,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEach_Dot(Android.Renderscript.Allocation arg0, Android.Renderscript.Script.LaunchOptions arg1)
         {
-            IExecute("forEach_Dot", arg0, arg1);
+            IExecuteWithSignature("forEach_Dot", "(Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#forEach_Dot(android.renderscript.Allocation)"/>
@@ -147,7 +147,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Script.LaunchOptions arg1)
         {
-            IExecute("forEach", arg0, arg1);
+            IExecuteWithSignature("forEach", "(Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#forEach(android.renderscript.Allocation)"/>
@@ -168,7 +168,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetDotCoefficients(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setDotCoefficients", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setDotCoefficients", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#setOutput(android.renderscript.Allocation)"/>
@@ -179,13 +179,13 @@ namespace Android.Renderscript
         {
             IExecuteWithSignature("setOutput", "(Landroid/renderscript/Allocation;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

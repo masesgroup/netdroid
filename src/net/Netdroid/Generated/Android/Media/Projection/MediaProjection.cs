@@ -40,10 +40,10 @@ namespace Android.Media.Projection
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaProjection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Projection
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media.Projection
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media.Projection
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Android.Media.Projection
     public partial class MediaProjection
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/projection/MediaProjection.html#createVirtualDisplay(java.lang.String,int,int,int,int,android.view.Surface,android.hardware.display.VirtualDisplay.Callback,android.os.Handler)"/>
@@ -151,7 +151,7 @@ namespace Android.Media.Projection
         /// <returns><see cref="Android.Hardware.Display.VirtualDisplay"/></returns>
         public Android.Hardware.Display.VirtualDisplay CreateVirtualDisplay(Java.Lang.String arg0, int arg1, int arg2, int arg3, int arg4, Android.View.Surface arg5, Android.Hardware.Display.VirtualDisplay.Callback arg6, Android.Os.Handler arg7)
         {
-            return IExecute<Android.Hardware.Display.VirtualDisplay>("createVirtualDisplay", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Android.Hardware.Display.VirtualDisplay>("createVirtualDisplay", "(Ljava/lang/String;IIIILandroid/view/Surface;Landroid/hardware/display/VirtualDisplay$Callback;Landroid/os/Handler;)Landroid/hardware/display/VirtualDisplay;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/projection/MediaProjection.html#registerCallback(android.media.projection.MediaProjection.Callback,android.os.Handler)"/>
@@ -160,7 +160,7 @@ namespace Android.Media.Projection
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterCallback(Android.Media.Projection.MediaProjection.Callback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerCallback", arg0, arg1);
+            IExecuteWithSignature("registerCallback", "(Landroid/media/projection/MediaProjection$Callback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/projection/MediaProjection.html#stop()"/>
@@ -177,29 +177,29 @@ namespace Android.Media.Projection
         {
             IExecuteWithSignature("unregisterCallback", "(Landroid/media/projection/MediaProjection$Callback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/projection/MediaProjection.Callback.html#onCapturedContentResize(int,int)"/>
@@ -208,7 +208,7 @@ namespace Android.Media.Projection
             /// <param name="arg1"><see cref="int"/></param>
             public void OnCapturedContentResize(int arg0, int arg1)
             {
-                IExecute("onCapturedContentResize", arg0, arg1);
+                IExecuteWithSignature("onCapturedContentResize", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/projection/MediaProjection.Callback.html#onCapturedContentVisibilityChanged(boolean)"/>
@@ -225,20 +225,20 @@ namespace Android.Media.Projection
             {
                 IExecuteWithSignature("onStop", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Java.Time.Chrono
         /// </summary>
         [global::System.Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDate(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Time.Chrono
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Time.Chrono
     public partial interface IChronoLocalDate
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,9 +94,9 @@ namespace Java.Time.Chrono
     public partial class ChronoLocalDate : Java.Time.Chrono.IChronoLocalDate, Java.Time.Temporal.ITemporal, Java.Time.Temporal.ITemporalAdjuster, Java.Lang.IComparable<Java.Time.Chrono.ChronoLocalDate>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.Chrono.ChronoLocalDate"/> to <see cref="Java.Time.Temporal.Temporal"/>
@@ -110,13 +110,13 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.ChronoLocalDate"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Time.Chrono.ChronoLocalDate t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -135,9 +135,9 @@ namespace Java.Time.Chrono
         {
             return SExecuteWithSignature<Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate>>(LocalBridgeClazz, "timeLineOrder", "()Ljava/util/Comparator;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html#lengthOfMonth()"/>
@@ -172,7 +172,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="long"/></returns>
         public long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<long>("until", arg0, arg1);
+            return IExecuteWithSignature<long>("until", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html#query(java.time.temporal.TemporalQuery)"/>
@@ -306,7 +306,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("minus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html#plus(java.time.temporal.TemporalAmount)"/>
@@ -325,7 +325,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("plus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html#with(java.time.temporal.TemporalAdjuster)"/>
@@ -344,7 +344,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalField;J)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html#toEpochDay()"/>
@@ -354,13 +354,13 @@ namespace Java.Time.Chrono
         {
             return IExecuteWithSignature<long>("toEpochDay", "()J");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

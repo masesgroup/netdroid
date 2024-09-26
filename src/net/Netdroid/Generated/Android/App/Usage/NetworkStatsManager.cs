@@ -40,10 +40,10 @@ namespace Android.App.Usage
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NetworkStatsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Usage
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region UsageCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App.Usage
             /// </summary>
             [global::System.Obsolete("UsageCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public UsageCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App.Usage
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Android.App.Usage
     public partial class NetworkStatsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#queryDetails(int,java.lang.String,long,long)"/>
@@ -149,7 +149,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Lang.SecurityException"/>
         public Android.App.Usage.NetworkStats QueryDetails(int arg0, Java.Lang.String arg1, long arg2, long arg3)
         {
-            return IExecute<Android.App.Usage.NetworkStats>("queryDetails", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.App.Usage.NetworkStats>("queryDetails", "(ILjava/lang/String;JJ)Landroid/app/usage/NetworkStats;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#queryDetailsForUid(int,java.lang.String,long,long,int)"/>
@@ -163,7 +163,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Lang.SecurityException"/>
         public Android.App.Usage.NetworkStats QueryDetailsForUid(int arg0, Java.Lang.String arg1, long arg2, long arg3, int arg4)
         {
-            return IExecute<Android.App.Usage.NetworkStats>("queryDetailsForUid", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.App.Usage.NetworkStats>("queryDetailsForUid", "(ILjava/lang/String;JJI)Landroid/app/usage/NetworkStats;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#queryDetailsForUidTag(int,java.lang.String,long,long,int,int)"/>
@@ -178,7 +178,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Lang.SecurityException"/>
         public Android.App.Usage.NetworkStats QueryDetailsForUidTag(int arg0, Java.Lang.String arg1, long arg2, long arg3, int arg4, int arg5)
         {
-            return IExecute<Android.App.Usage.NetworkStats>("queryDetailsForUidTag", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.App.Usage.NetworkStats>("queryDetailsForUidTag", "(ILjava/lang/String;JJII)Landroid/app/usage/NetworkStats;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#queryDetailsForUidTagState(int,java.lang.String,long,long,int,int,int)"/>
@@ -194,7 +194,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Lang.SecurityException"/>
         public Android.App.Usage.NetworkStats QueryDetailsForUidTagState(int arg0, Java.Lang.String arg1, long arg2, long arg3, int arg4, int arg5, int arg6)
         {
-            return IExecute<Android.App.Usage.NetworkStats>("queryDetailsForUidTagState", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Android.App.Usage.NetworkStats>("queryDetailsForUidTagState", "(ILjava/lang/String;JJIII)Landroid/app/usage/NetworkStats;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#querySummary(int,java.lang.String,long,long)"/>
@@ -208,7 +208,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Lang.SecurityException"/>
         public Android.App.Usage.NetworkStats QuerySummary(int arg0, Java.Lang.String arg1, long arg2, long arg3)
         {
-            return IExecute<Android.App.Usage.NetworkStats>("querySummary", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.App.Usage.NetworkStats>("querySummary", "(ILjava/lang/String;JJ)Landroid/app/usage/NetworkStats;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#querySummaryForDevice(int,java.lang.String,long,long)"/>
@@ -222,7 +222,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Lang.SecurityException"/>
         public Android.App.Usage.NetworkStats.Bucket QuerySummaryForDevice(int arg0, Java.Lang.String arg1, long arg2, long arg3)
         {
-            return IExecute<Android.App.Usage.NetworkStats.Bucket>("querySummaryForDevice", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.App.Usage.NetworkStats.Bucket>("querySummaryForDevice", "(ILjava/lang/String;JJ)Landroid/app/usage/NetworkStats$Bucket;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#querySummaryForUser(int,java.lang.String,long,long)"/>
@@ -236,7 +236,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Lang.SecurityException"/>
         public Android.App.Usage.NetworkStats.Bucket QuerySummaryForUser(int arg0, Java.Lang.String arg1, long arg2, long arg3)
         {
-            return IExecute<Android.App.Usage.NetworkStats.Bucket>("querySummaryForUser", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.App.Usage.NetworkStats.Bucket>("querySummaryForUser", "(ILjava/lang/String;JJ)Landroid/app/usage/NetworkStats$Bucket;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#registerUsageCallback(int,java.lang.String,long,android.app.usage.NetworkStatsManager.UsageCallback,android.os.Handler)"/>
@@ -248,7 +248,7 @@ namespace Android.App.Usage
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
         public void RegisterUsageCallback(int arg0, Java.Lang.String arg1, long arg2, Android.App.Usage.NetworkStatsManager.UsageCallback arg3, Android.Os.Handler arg4)
         {
-            IExecute("registerUsageCallback", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("registerUsageCallback", "(ILjava/lang/String;JLandroid/app/usage/NetworkStatsManager$UsageCallback;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#registerUsageCallback(int,java.lang.String,long,android.app.usage.NetworkStatsManager.UsageCallback)"/>
@@ -259,7 +259,7 @@ namespace Android.App.Usage
         /// <param name="arg3"><see cref="Android.App.Usage.NetworkStatsManager.UsageCallback"/></param>
         public void RegisterUsageCallback(int arg0, Java.Lang.String arg1, long arg2, Android.App.Usage.NetworkStatsManager.UsageCallback arg3)
         {
-            IExecute("registerUsageCallback", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("registerUsageCallback", "(ILjava/lang/String;JLandroid/app/usage/NetworkStatsManager$UsageCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.html#unregisterUsageCallback(android.app.usage.NetworkStatsManager.UsageCallback)"/>
@@ -269,29 +269,29 @@ namespace Android.App.Usage
         {
             IExecuteWithSignature("unregisterUsageCallback", "(Landroid/app/usage/NetworkStatsManager$UsageCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region UsageCallback implementation
         public partial class UsageCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStatsManager.UsageCallback.html#onThresholdReached(int,java.lang.String)"/>
@@ -300,22 +300,22 @@ namespace Android.App.Usage
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void OnThresholdReached(int arg0, Java.Lang.String arg1)
             {
-                IExecute("onThresholdReached", arg0, arg1);
+                IExecuteWithSignature("onThresholdReached", "(ILjava/lang/String;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

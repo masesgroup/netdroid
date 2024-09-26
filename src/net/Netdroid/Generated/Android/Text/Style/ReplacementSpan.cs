@@ -42,10 +42,10 @@ namespace Android.Text.Style
         /// </summary>
         [global::System.Obsolete("ReplacementSpan class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReplacementSpan(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Text.Style
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Text.Style
     public partial class ReplacementSpan
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#getSize(android.graphics.Paint,java.lang.CharSequence,int,int,android.graphics.Paint.FontMetricsInt)"/>
@@ -103,7 +103,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSize(Android.Graphics.Paint arg0, Java.Lang.CharSequence arg1, int arg2, int arg3, Android.Graphics.Paint.FontMetricsInt arg4)
         {
-            return IExecute<int>("getSize", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("getSize", "(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#draw(android.graphics.Canvas,java.lang.CharSequence,int,int,float,int,int,int,android.graphics.Paint)"/>
@@ -119,7 +119,7 @@ namespace Android.Text.Style
         /// <param name="arg8"><see cref="Android.Graphics.Paint"/></param>
         public void Draw(Android.Graphics.Canvas arg0, Java.Lang.CharSequence arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, Android.Graphics.Paint arg8)
         {
-            IExecute("draw", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#getContentDescription()"/>
@@ -137,13 +137,13 @@ namespace Android.Text.Style
         {
             IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

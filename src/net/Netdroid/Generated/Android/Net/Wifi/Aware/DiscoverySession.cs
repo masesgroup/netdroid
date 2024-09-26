@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Aware
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DiscoverySession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Net.Wifi.Aware
     public partial class DiscoverySession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#createNetworkSpecifierOpen(android.net.wifi.aware.PeerHandle)"/>
@@ -109,7 +109,7 @@ namespace Android.Net.Wifi.Aware
         [global::System.Obsolete()]
         public Android.Net.NetworkSpecifier CreateNetworkSpecifierPassphrase(Android.Net.Wifi.Aware.PeerHandle arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Net.NetworkSpecifier>("createNetworkSpecifierPassphrase", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.NetworkSpecifier>("createNetworkSpecifierPassphrase", "(Landroid/net/wifi/aware/PeerHandle;Ljava/lang/String;)Landroid/net/NetworkSpecifier;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#acceptPairingRequest(int,android.net.wifi.aware.PeerHandle,java.lang.String,int,java.lang.String)"/>
@@ -121,7 +121,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         public void AcceptPairingRequest(int arg0, Android.Net.Wifi.Aware.PeerHandle arg1, Java.Lang.String arg2, int arg3, Java.Lang.String arg4)
         {
-            IExecute("acceptPairingRequest", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("acceptPairingRequest", "(ILandroid/net/wifi/aware/PeerHandle;Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#close()"/>
@@ -137,7 +137,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="int"/></param>
         public void InitiateBootstrappingRequest(Android.Net.Wifi.Aware.PeerHandle arg0, int arg1)
         {
-            IExecute("initiateBootstrappingRequest", arg0, arg1);
+            IExecuteWithSignature("initiateBootstrappingRequest", "(Landroid/net/wifi/aware/PeerHandle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#initiatePairingRequest(android.net.wifi.aware.PeerHandle,java.lang.String,int,java.lang.String)"/>
@@ -148,7 +148,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void InitiatePairingRequest(Android.Net.Wifi.Aware.PeerHandle arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
         {
-            IExecute("initiatePairingRequest", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("initiatePairingRequest", "(Landroid/net/wifi/aware/PeerHandle;Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#rejectPairingRequest(int,android.net.wifi.aware.PeerHandle)"/>
@@ -157,7 +157,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="Android.Net.Wifi.Aware.PeerHandle"/></param>
         public void RejectPairingRequest(int arg0, Android.Net.Wifi.Aware.PeerHandle arg1)
         {
-            IExecute("rejectPairingRequest", arg0, arg1);
+            IExecuteWithSignature("rejectPairingRequest", "(ILandroid/net/wifi/aware/PeerHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#sendMessage(android.net.wifi.aware.PeerHandle,int,byte[])"/>
@@ -167,15 +167,15 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg2"><see cref="byte"/></param>
         public void SendMessage(Android.Net.Wifi.Aware.PeerHandle arg0, int arg1, byte[] arg2)
         {
-            IExecute("sendMessage", arg0, arg1, arg2);
+            IExecuteWithSignature("sendMessage", "(Landroid/net/wifi/aware/PeerHandle;I[B)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

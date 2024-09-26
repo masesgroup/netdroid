@@ -35,7 +35,7 @@ namespace Android.Text.Method
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public KeyListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.text.method.KeyListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region KeyListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="KeyListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.text.method.KeyListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Text.Method
     public partial interface IKeyListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Text.Method
     public partial class KeyListener : Android.Text.Method.IKeyListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="KeyListener"/>
@@ -142,13 +142,13 @@ namespace Android.Text.Method
             AddEventHandler("clearMetaKeyState", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ClearMetaKeyStateEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyDown"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyDown { get; set; } = null;
-        
+
         bool hasOverrideOnKeyDown = true;
         void OnKeyDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -157,7 +157,7 @@ namespace Android.Text.Method
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.Text.Editable>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<Android.View.KeyEvent>(3));
             data.EventData.TypedEventData.SetReturnData(hasOverrideOnKeyDown, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
@@ -170,13 +170,13 @@ namespace Android.Text.Method
         {
             hasOverrideOnKeyDown = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyOther(android.view.View,android.text.Editable,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyOther"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Android.View.View, Android.Text.Editable, Android.View.KeyEvent, bool> OnOnKeyOther { get; set; } = null;
-        
+
         bool hasOverrideOnKeyOther = true;
         void OnKeyOtherEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -185,7 +185,7 @@ namespace Android.Text.Method
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.Text.Editable>(1), data.EventData.GetAt<Android.View.KeyEvent>(2));
             data.EventData.TypedEventData.SetReturnData(hasOverrideOnKeyOther, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyOther(android.view.View,android.text.Editable,android.view.KeyEvent)"/>
         /// </summary>
@@ -197,13 +197,13 @@ namespace Android.Text.Method
         {
             hasOverrideOnKeyOther = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyUp(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyUp"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyUp { get; set; } = null;
-        
+
         bool hasOverrideOnKeyUp = true;
         void OnKeyUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -212,7 +212,7 @@ namespace Android.Text.Method
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.Text.Editable>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<Android.View.KeyEvent>(3));
             data.EventData.TypedEventData.SetReturnData(hasOverrideOnKeyUp, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyUp(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
@@ -225,13 +225,13 @@ namespace Android.Text.Method
         {
             hasOverrideOnKeyUp = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetInputType"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int> OnGetInputType { get; set; } = null;
-        
+
         bool hasOverrideGetInputType = true;
         void GetInputTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -240,7 +240,7 @@ namespace Android.Text.Method
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetInputType, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
         /// </summary>
@@ -249,13 +249,13 @@ namespace Android.Text.Method
         {
             hasOverrideGetInputType = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#clearMetaKeyState(android.view.View,android.text.Editable,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnClearMetaKeyState"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.View.View, Android.Text.Editable, int> OnClearMetaKeyState { get; set; } = null;
-        
+
         bool hasOverrideClearMetaKeyState = true;
         void ClearMetaKeyStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -264,7 +264,7 @@ namespace Android.Text.Method
             methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.Text.Editable>(1), data.EventData.GetAt<int>(2));
             data.EventData.TypedEventData.HasOverride = hasOverrideClearMetaKeyState;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#clearMetaKeyState(android.view.View,android.text.Editable,int)"/>
         /// </summary>
@@ -275,13 +275,13 @@ namespace Android.Text.Method
         {
             hasOverrideClearMetaKeyState = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -290,21 +290,21 @@ namespace Android.Text.Method
     public partial class KeyListenerDirect : Android.Text.Method.IKeyListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
@@ -316,7 +316,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public override bool OnKeyDown(Android.View.View arg0, Android.Text.Editable arg1, int arg2, Android.View.KeyEvent arg3)
         {
-            return IExecute<bool>("onKeyDown", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyOther(android.view.View,android.text.Editable,android.view.KeyEvent)"/>
@@ -327,7 +327,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public override bool OnKeyOther(Android.View.View arg0, Android.Text.Editable arg1, Android.View.KeyEvent arg2)
         {
-            return IExecute<bool>("onKeyOther", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyUp(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
@@ -339,7 +339,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public override bool OnKeyUp(Android.View.View arg0, Android.Text.Editable arg1, int arg2, Android.View.KeyEvent arg3)
         {
-            return IExecute<bool>("onKeyUp", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
@@ -357,15 +357,15 @@ namespace Android.Text.Method
         /// <param name="arg2"><see cref="int"/></param>
         public override void ClearMetaKeyState(Android.View.View arg0, Android.Text.Editable arg1, int arg2)
         {
-            IExecute("clearMetaKeyState", arg0, arg1, arg2);
+            IExecuteWithSignature("clearMetaKeyState", "(Landroid/view/View;Landroid/text/Editable;I)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

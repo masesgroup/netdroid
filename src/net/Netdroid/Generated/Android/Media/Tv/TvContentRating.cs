@@ -40,10 +40,10 @@ namespace Android.Media.Tv
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvContentRating(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media.Tv
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Media.Tv
     public partial class TvContentRating
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#UNRATED"/>
@@ -88,9 +88,9 @@ namespace Android.Media.Tv
         public static Android.Media.Tv.TvContentRating UNRATED { get { if (!_UNRATEDReady) { _UNRATEDContent = SGetField<Android.Media.Tv.TvContentRating>(LocalBridgeClazz, "UNRATED"); _UNRATEDReady = true; } return _UNRATEDContent; } }
         private static Android.Media.Tv.TvContentRating _UNRATEDContent = default;
         private static bool _UNRATEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#createRating(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])"/>
@@ -102,7 +102,7 @@ namespace Android.Media.Tv
         /// <returns><see cref="Android.Media.Tv.TvContentRating"/></returns>
         public static Android.Media.Tv.TvContentRating CreateRating(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, params Java.Lang.String[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Android.Media.Tv.TvContentRating>(LocalBridgeClazz, "createRating", arg0, arg1, arg2); else return SExecute<Android.Media.Tv.TvContentRating>(LocalBridgeClazz, "createRating", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Android.Media.Tv.TvContentRating>(LocalBridgeClazz, "createRating", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Landroid/media/tv/TvContentRating;", arg0, arg1, arg2); else return SExecuteWithSignature<Android.Media.Tv.TvContentRating>(LocalBridgeClazz, "createRating", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Landroid/media/tv/TvContentRating;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#unflattenFromString(java.lang.String)"/>
@@ -113,9 +113,9 @@ namespace Android.Media.Tv
         {
             return SExecuteWithSignature<Android.Media.Tv.TvContentRating>(LocalBridgeClazz, "unflattenFromString", "(Ljava/lang/String;)Landroid/media/tv/TvContentRating;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#contains(android.media.tv.TvContentRating)"/>
@@ -166,13 +166,13 @@ namespace Android.Media.Tv
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSubRatings", "()Ljava/util/List;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

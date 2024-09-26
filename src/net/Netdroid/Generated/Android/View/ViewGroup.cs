@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("ViewGroup class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ViewGroup(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region LayoutParams declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LayoutParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MarginLayoutParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -168,7 +168,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnHierarchyChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.ViewGroup_OnHierarchyChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -177,13 +177,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnHierarchyChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnHierarchyChangeListener"/> or its generic type if there is one
@@ -194,14 +194,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.ViewGroup$OnHierarchyChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -271,9 +271,9 @@ namespace Android.View
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.View.ViewGroup"/> to <see cref="Android.View.ViewParent"/>
@@ -283,9 +283,9 @@ namespace Android.View
         /// Converter from <see cref="Android.View.ViewGroup"/> to <see cref="Android.View.ViewManager"/>
         /// </summary>
         public static implicit operator Android.View.ViewManager(Android.View.ViewGroup t) => t.Cast<Android.View.ViewManager>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#FOCUS_AFTER_DESCENDANTS"/>
@@ -345,9 +345,9 @@ namespace Android.View
         public static int PERSISTENT_SCROLLING_CACHE { get { if (!_PERSISTENT_SCROLLING_CACHEReady) { _PERSISTENT_SCROLLING_CACHEContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_SCROLLING_CACHE"); _PERSISTENT_SCROLLING_CACHEReady = true; } return _PERSISTENT_SCROLLING_CACHEContent; } }
         private static int _PERSISTENT_SCROLLING_CACHEContent = default;
         private static bool _PERSISTENT_SCROLLING_CACHEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getChildMeasureSpec(int,int,int)"/>
@@ -358,11 +358,11 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public static int GetChildMeasureSpec(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "getChildMeasureSpec", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getChildMeasureSpec", "(III)I", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutTransition()"/>
@@ -381,7 +381,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.ActionMode"/></returns>
         public Android.View.ActionMode StartActionModeForChild(Android.View.View arg0, Android.View.ActionMode.Callback arg1, int arg2)
         {
-            return IExecute<Android.View.ActionMode>("startActionModeForChild", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.ActionMode>("startActionModeForChild", "(Landroid/view/View;Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#startActionModeForChild(android.view.View,android.view.ActionMode.Callback)"/>
@@ -391,7 +391,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.ActionMode"/></returns>
         public Android.View.ActionMode StartActionModeForChild(Android.View.View arg0, Android.View.ActionMode.Callback arg1)
         {
-            return IExecute<Android.View.ActionMode>("startActionModeForChild", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ActionMode>("startActionModeForChild", "(Landroid/view/View;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutAnimationListener()"/>
@@ -425,7 +425,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View FocusSearch(Android.View.View arg0, int arg1)
         {
-            return IExecute<Android.View.View>("focusSearch", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("focusSearch", "(Landroid/view/View;I)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getChildAt(int)"/>
@@ -462,7 +462,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public Android.View.ViewParent InvalidateChildInParent(int[] arg0, Android.Graphics.Rect arg1)
         {
-            return IExecute<Android.View.ViewParent>("invalidateChildInParent", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ViewParent>("invalidateChildInParent", "([ILandroid/graphics/Rect;)Landroid/view/ViewParent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#findOnBackInvokedDispatcherForChild(android.view.View,android.view.View)"/>
@@ -472,7 +472,7 @@ namespace Android.View
         /// <returns><see cref="Android.Window.OnBackInvokedDispatcher"/></returns>
         public Android.Window.OnBackInvokedDispatcher FindOnBackInvokedDispatcherForChild(Android.View.View arg0, Android.View.View arg1)
         {
-            return IExecute<Android.Window.OnBackInvokedDispatcher>("findOnBackInvokedDispatcherForChild", arg0, arg1);
+            return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("findOnBackInvokedDispatcherForChild", "(Landroid/view/View;Landroid/view/View;)Landroid/window/OnBackInvokedDispatcher;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#addStatesFromChildren()"/>
@@ -491,7 +491,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool GetChildVisibleRect(Android.View.View arg0, Android.Graphics.Rect arg1, Android.Graphics.Point arg2)
         {
-            return IExecute<bool>("getChildVisibleRect", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getChildVisibleRect", "(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getClipChildren()"/>
@@ -587,7 +587,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnNestedFling(Android.View.View arg0, float arg1, float arg2, bool arg3)
         {
-            return IExecute<bool>("onNestedFling", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onNestedFling", "(Landroid/view/View;FFZ)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onNestedPreFling(android.view.View,float,float)"/>
@@ -598,7 +598,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnNestedPreFling(Android.View.View arg0, float arg1, float arg2)
         {
-            return IExecute<bool>("onNestedPreFling", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onNestedPreFling", "(Landroid/view/View;FF)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onNestedPrePerformAccessibilityAction(android.view.View,int,android.os.Bundle)"/>
@@ -609,7 +609,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnNestedPrePerformAccessibilityAction(Android.View.View arg0, int arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("onNestedPrePerformAccessibilityAction", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onNestedPrePerformAccessibilityAction", "(Landroid/view/View;ILandroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onRequestSendAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)"/>
@@ -619,7 +619,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnRequestSendAccessibilityEvent(Android.View.View arg0, Android.View.Accessibility.AccessibilityEvent arg1)
         {
-            return IExecute<bool>("onRequestSendAccessibilityEvent", arg0, arg1);
+            return IExecuteWithSignature<bool>("onRequestSendAccessibilityEvent", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onStartNestedScroll(android.view.View,android.view.View,int)"/>
@@ -630,7 +630,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnStartNestedScroll(Android.View.View arg0, Android.View.View arg1, int arg2)
         {
-            return IExecute<bool>("onStartNestedScroll", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onStartNestedScroll", "(Landroid/view/View;Landroid/view/View;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#requestChildRectangleOnScreen(android.view.View,android.graphics.Rect,boolean)"/>
@@ -641,7 +641,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool RequestChildRectangleOnScreen(Android.View.View arg0, Android.Graphics.Rect arg1, bool arg2)
         {
-            return IExecute<bool>("requestChildRectangleOnScreen", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#requestSendAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)"/>
@@ -651,7 +651,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool RequestSendAccessibilityEvent(Android.View.View arg0, Android.View.Accessibility.AccessibilityEvent arg1)
         {
-            return IExecute<bool>("requestSendAccessibilityEvent", arg0, arg1);
+            return IExecuteWithSignature<bool>("requestSendAccessibilityEvent", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#shouldDelayChildPressedState()"/>
@@ -670,7 +670,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool ShowContextMenuForChild(Android.View.View arg0, float arg1, float arg2)
         {
-            return IExecute<bool>("showContextMenuForChild", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("showContextMenuForChild", "(Landroid/view/View;FF)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#showContextMenuForChild(android.view.View)"/>
@@ -698,7 +698,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public void InvalidateChild(Android.View.View arg0, Android.Graphics.Rect arg1)
         {
-            IExecute("invalidateChild", arg0, arg1);
+            IExecuteWithSignature("invalidateChild", "(Landroid/view/View;Landroid/graphics/Rect;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#offsetDescendantRectToMyCoords(android.view.View,android.graphics.Rect)"/>
@@ -707,7 +707,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
         public void OffsetDescendantRectToMyCoords(Android.View.View arg0, Android.Graphics.Rect arg1)
         {
-            IExecute("offsetDescendantRectToMyCoords", arg0, arg1);
+            IExecuteWithSignature("offsetDescendantRectToMyCoords", "(Landroid/view/View;Landroid/graphics/Rect;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#offsetRectIntoDescendantCoords(android.view.View,android.graphics.Rect)"/>
@@ -716,7 +716,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
         public void OffsetRectIntoDescendantCoords(Android.View.View arg0, Android.Graphics.Rect arg1)
         {
-            IExecute("offsetRectIntoDescendantCoords", arg0, arg1);
+            IExecuteWithSignature("offsetRectIntoDescendantCoords", "(Landroid/view/View;Landroid/graphics/Rect;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getChildCount()"/>
@@ -775,7 +775,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void AddView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("addView", arg0, arg1);
+            IExecuteWithSignature("addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#addView(android.view.View,int,android.view.ViewGroup.LayoutParams)"/>
@@ -785,7 +785,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void AddView(Android.View.View arg0, int arg1, Android.View.ViewGroup.LayoutParams arg2)
         {
-            IExecute("addView", arg0, arg1, arg2);
+            IExecuteWithSignature("addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#addView(android.view.View,int,int)"/>
@@ -795,7 +795,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void AddView(Android.View.View arg0, int arg1, int arg2)
         {
-            IExecute("addView", arg0, arg1, arg2);
+            IExecuteWithSignature("addView", "(Landroid/view/View;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#addView(android.view.View,int)"/>
@@ -804,7 +804,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void AddView(Android.View.View arg0, int arg1)
         {
-            IExecute("addView", arg0, arg1);
+            IExecuteWithSignature("addView", "(Landroid/view/View;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#addView(android.view.View)"/>
@@ -837,7 +837,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="bool"/></param>
         public void ChildHasTransientStateChanged(Android.View.View arg0, bool arg1)
         {
-            IExecute("childHasTransientStateChanged", arg0, arg1);
+            IExecuteWithSignature("childHasTransientStateChanged", "(Landroid/view/View;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#clearChildFocus(android.view.View)"/>
@@ -894,7 +894,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void NotifySubtreeAccessibilityStateChanged(Android.View.View arg0, Android.View.View arg1, int arg2)
         {
-            IExecute("notifySubtreeAccessibilityStateChanged", arg0, arg1, arg2);
+            IExecuteWithSignature("notifySubtreeAccessibilityStateChanged", "(Landroid/view/View;Landroid/view/View;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onDescendantInvalidated(android.view.View,android.view.View)"/>
@@ -903,7 +903,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         public void OnDescendantInvalidated(Android.View.View arg0, Android.View.View arg1)
         {
-            IExecute("onDescendantInvalidated", arg0, arg1);
+            IExecuteWithSignature("onDescendantInvalidated", "(Landroid/view/View;Landroid/view/View;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onNestedPreScroll(android.view.View,int,int,int[])"/>
@@ -914,7 +914,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void OnNestedPreScroll(Android.View.View arg0, int arg1, int arg2, int[] arg3)
         {
-            IExecute("onNestedPreScroll", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onNestedPreScroll", "(Landroid/view/View;II[I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onNestedScroll(android.view.View,int,int,int,int)"/>
@@ -926,7 +926,7 @@ namespace Android.View
         /// <param name="arg4"><see cref="int"/></param>
         public void OnNestedScroll(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("onNestedScroll", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onNestedScroll", "(Landroid/view/View;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onNestedScrollAccepted(android.view.View,android.view.View,int)"/>
@@ -936,7 +936,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void OnNestedScrollAccepted(Android.View.View arg0, Android.View.View arg1, int arg2)
         {
-            IExecute("onNestedScrollAccepted", arg0, arg1, arg2);
+            IExecuteWithSignature("onNestedScrollAccepted", "(Landroid/view/View;Landroid/view/View;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#onStopNestedScroll(android.view.View)"/>
@@ -1015,7 +1015,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveViews(int arg0, int arg1)
         {
-            IExecute("removeViews", arg0, arg1);
+            IExecuteWithSignature("removeViews", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#removeViewsInLayout(int,int)"/>
@@ -1024,7 +1024,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveViewsInLayout(int arg0, int arg1)
         {
-            IExecute("removeViewsInLayout", arg0, arg1);
+            IExecuteWithSignature("removeViewsInLayout", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#requestChildFocus(android.view.View,android.view.View)"/>
@@ -1033,7 +1033,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         public void RequestChildFocus(Android.View.View arg0, Android.View.View arg1)
         {
-            IExecute("requestChildFocus", arg0, arg1);
+            IExecuteWithSignature("requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#requestDisallowInterceptTouchEvent(boolean)"/>
@@ -1211,11 +1211,11 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void UpdateViewLayout(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("updateViewLayout", arg0, arg1);
+            IExecuteWithSignature("updateViewLayout", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region LayoutParams implementation
         public partial class LayoutParams
@@ -1247,13 +1247,13 @@ namespace Android.View
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#layoutAnimationParameters"/>
@@ -1286,13 +1286,13 @@ namespace Android.View
             public static int WRAP_CONTENT { get { if (!_WRAP_CONTENTReady) { _WRAP_CONTENTContent = SGetField<int>(LocalBridgeClazz, "WRAP_CONTENT"); _WRAP_CONTENTReady = true; } return _WRAP_CONTENTContent; } }
             private static int _WRAP_CONTENTContent = default;
             private static bool _WRAP_CONTENTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#resolveLayoutDirection(int)"/>
@@ -1302,13 +1302,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("resolveLayoutDirection", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1351,13 +1351,13 @@ namespace Android.View
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#bottomMargin"/>
@@ -1375,13 +1375,13 @@ namespace Android.View
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#topMargin"/>
             /// </summary>
             public int topMargin { get { return IGetField<int>("topMargin"); } set { ISetField("topMargin", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#isMarginRelative()"/>
@@ -1440,7 +1440,7 @@ namespace Android.View
             /// <param name="arg3"><see cref="int"/></param>
             public void SetMargins(int arg0, int arg1, int arg2, int arg3)
             {
-                IExecute("setMargins", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("setMargins", "(IIII)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setMarginStart(int)"/>
@@ -1450,13 +1450,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("setMarginStart", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1465,21 +1465,21 @@ namespace Android.View
         public partial class OnHierarchyChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnHierarchyChangeListener"/>
@@ -1490,13 +1490,13 @@ namespace Android.View
                 AddEventHandler("onChildViewRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnChildViewRemovedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewAdded(android.view.View,android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChildViewAdded"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View, Android.View.View> OnOnChildViewAdded { get; set; } = null;
-            
+
             bool hasOverrideOnChildViewAdded = true;
             void OnChildViewAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1505,7 +1505,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.View>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnChildViewAdded;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewAdded(android.view.View,android.view.View)"/>
             /// </summary>
@@ -1515,13 +1515,13 @@ namespace Android.View
             {
                 hasOverrideOnChildViewAdded = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewRemoved(android.view.View,android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChildViewRemoved"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View, Android.View.View> OnOnChildViewRemoved { get; set; } = null;
-            
+
             bool hasOverrideOnChildViewRemoved = true;
             void OnChildViewRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1530,7 +1530,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.View>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnChildViewRemoved;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewRemoved(android.view.View,android.view.View)"/>
             /// </summary>
@@ -1540,13 +1540,13 @@ namespace Android.View
             {
                 hasOverrideOnChildViewRemoved = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1555,21 +1555,21 @@ namespace Android.View
         public partial class OnHierarchyChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewAdded(android.view.View,android.view.View)"/>
@@ -1578,7 +1578,7 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.View.View"/></param>
             public override void OnChildViewAdded(Android.View.View arg0, Android.View.View arg1)
             {
-                IExecute("onChildViewAdded", arg0, arg1);
+                IExecuteWithSignature("onChildViewAdded", "(Landroid/view/View;Landroid/view/View;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewRemoved(android.view.View,android.view.View)"/>
@@ -1587,22 +1587,22 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.View.View"/></param>
             public override void OnChildViewRemoved(Android.View.View arg0, Android.View.View arg1)
             {
-                IExecute("onChildViewRemoved", arg0, arg1);
+                IExecuteWithSignature("onChildViewRemoved", "(Landroid/view/View;Landroid/view/View;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

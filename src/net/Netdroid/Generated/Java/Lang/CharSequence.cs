@@ -42,10 +42,10 @@ namespace Java.Lang
         /// </summary>
         [global::System.Obsolete("CharSequence class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharSequence(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Lang
     public partial interface ICharSequence
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,17 +94,17 @@ namespace Java.Lang
     public partial class CharSequence : Java.Lang.ICharSequence
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#compare(java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -114,11 +114,11 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#charAt(int)"/>
@@ -145,7 +145,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#isEmpty()"/>
@@ -171,13 +171,13 @@ namespace Java.Lang
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("codePoints", "()Ljava/util/stream/IntStream;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BaseBundle(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Os
     public partial class BaseBundle
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#containsKey(java.lang.String)"/>
@@ -107,7 +107,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("getBoolean", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#getBoolean(java.lang.String)"/>
@@ -143,7 +143,7 @@ namespace Android.Os
         /// <returns><see cref="double"/></returns>
         public double GetDouble(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<double>("getDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("getDouble", "(Ljava/lang/String;D)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#getDouble(java.lang.String)"/>
@@ -171,7 +171,7 @@ namespace Android.Os
         /// <returns><see cref="int"/></returns>
         public int GetInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#getInt(java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Android.Os
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#getString(java.lang.String)"/>
@@ -253,7 +253,7 @@ namespace Android.Os
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getLong", arg0, arg1);
+            return IExecuteWithSignature<long>("getLong", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#getLong(java.lang.String)"/>
@@ -295,7 +295,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="bool"/></param>
         public void PutBoolean(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("putBoolean", arg0, arg1);
+            IExecuteWithSignature("putBoolean", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putBooleanArray(java.lang.String,boolean[])"/>
@@ -304,7 +304,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="bool"/></param>
         public void PutBooleanArray(Java.Lang.String arg0, bool[] arg1)
         {
-            IExecute("putBooleanArray", arg0, arg1);
+            IExecuteWithSignature("putBooleanArray", "(Ljava/lang/String;[Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putDouble(java.lang.String,double)"/>
@@ -313,7 +313,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="double"/></param>
         public void PutDouble(Java.Lang.String arg0, double arg1)
         {
-            IExecute("putDouble", arg0, arg1);
+            IExecuteWithSignature("putDouble", "(Ljava/lang/String;D)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putDoubleArray(java.lang.String,double[])"/>
@@ -322,7 +322,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="double"/></param>
         public void PutDoubleArray(Java.Lang.String arg0, double[] arg1)
         {
-            IExecute("putDoubleArray", arg0, arg1);
+            IExecuteWithSignature("putDoubleArray", "(Ljava/lang/String;[D)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putInt(java.lang.String,int)"/>
@@ -331,7 +331,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         public void PutInt(Java.Lang.String arg0, int arg1)
         {
-            IExecute("putInt", arg0, arg1);
+            IExecuteWithSignature("putInt", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putIntArray(java.lang.String,int[])"/>
@@ -340,7 +340,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         public void PutIntArray(Java.Lang.String arg0, int[] arg1)
         {
-            IExecute("putIntArray", arg0, arg1);
+            IExecuteWithSignature("putIntArray", "(Ljava/lang/String;[I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putLong(java.lang.String,long)"/>
@@ -349,7 +349,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="long"/></param>
         public void PutLong(Java.Lang.String arg0, long arg1)
         {
-            IExecute("putLong", arg0, arg1);
+            IExecuteWithSignature("putLong", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putLongArray(java.lang.String,long[])"/>
@@ -358,7 +358,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="long"/></param>
         public void PutLongArray(Java.Lang.String arg0, long[] arg1)
         {
-            IExecute("putLongArray", arg0, arg1);
+            IExecuteWithSignature("putLongArray", "(Ljava/lang/String;[J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putString(java.lang.String,java.lang.String)"/>
@@ -367,7 +367,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void PutString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("putString", arg0, arg1);
+            IExecuteWithSignature("putString", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#putStringArray(java.lang.String,java.lang.String[])"/>
@@ -376,7 +376,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void PutStringArray(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            IExecute("putStringArray", arg0, arg1);
+            IExecuteWithSignature("putStringArray", "(Ljava/lang/String;[Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#remove(java.lang.String)"/>
@@ -386,13 +386,13 @@ namespace Android.Os
         {
             IExecuteWithSignature("remove", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

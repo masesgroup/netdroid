@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("UCharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UCharacterIterator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Icu.Text
     public partial class UCharacterIterator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#DONE"/>
@@ -90,9 +90,9 @@ namespace Android.Icu.Text
         public static int DONE { get { if (!_DONEReady) { _DONEContent = SGetField<int>(LocalBridgeClazz, "DONE"); _DONEReady = true; } return _DONEContent; } }
         private static int _DONEContent = default;
         private static bool _DONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getInstance(android.icu.text.Replaceable)"/>
@@ -112,7 +112,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UCharacterIterator"/></returns>
         public static Android.Icu.Text.UCharacterIterator GetInstance(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Icu.Text.UCharacterIterator>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.UCharacterIterator>(LocalBridgeClazz, "getInstance", "([CII)Landroid/icu/text/UCharacterIterator;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#getInstance(char[])"/>
@@ -150,9 +150,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.UCharacterIterator>(LocalBridgeClazz, "getInstance", "(Ljava/text/CharacterIterator;)Landroid/icu/text/UCharacterIterator;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#current()"/>
@@ -186,7 +186,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int GetText(char[] arg0, int arg1)
         {
-            return IExecute<int>("getText", arg0, arg1);
+            return IExecuteWithSignature<int>("getText", "([CI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#next()"/>
@@ -293,13 +293,13 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setToStart", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

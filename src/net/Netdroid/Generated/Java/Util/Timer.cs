@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Timer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -99,21 +99,21 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Timer.html#purge()"/>
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, Java.Util.Date arg1, long arg2)
         {
-            IExecute("schedule", arg0, arg1, arg2);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;Ljava/util/Date;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date)"/>
@@ -147,7 +147,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Date"/></param>
         public void Schedule(Java.Util.TimerTask arg0, Java.Util.Date arg1)
         {
-            IExecute("schedule", arg0, arg1);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;Ljava/util/Date;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Timer.html#schedule(java.util.TimerTask,long,long)"/>
@@ -157,7 +157,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, long arg1, long arg2)
         {
-            IExecute("schedule", arg0, arg1, arg2);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;JJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Timer.html#schedule(java.util.TimerTask,long)"/>
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, long arg1)
         {
-            IExecute("schedule", arg0, arg1);
+            IExecuteWithSignature("schedule", "(Ljava/util/TimerTask;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,java.util.Date,long)"/>
@@ -176,7 +176,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void ScheduleAtFixedRate(Java.Util.TimerTask arg0, Java.Util.Date arg1, long arg2)
         {
-            IExecute("scheduleAtFixedRate", arg0, arg1, arg2);
+            IExecuteWithSignature("scheduleAtFixedRate", "(Ljava/util/TimerTask;Ljava/util/Date;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,long,long)"/>
@@ -186,15 +186,15 @@ namespace Java.Util
         /// <param name="arg2"><see cref="long"/></param>
         public void ScheduleAtFixedRate(Java.Util.TimerTask arg0, long arg1, long arg2)
         {
-            IExecute("scheduleAtFixedRate", arg0, arg1, arg2);
+            IExecuteWithSignature("scheduleAtFixedRate", "(Ljava/util/TimerTask;JJ)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

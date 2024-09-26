@@ -40,10 +40,10 @@ namespace Android.Gesture
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GestureStore(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Gesture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Gesture
     public partial class GestureStore
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#ORIENTATION_INVARIANT"/>
@@ -106,13 +106,13 @@ namespace Android.Gesture
         public static int SEQUENCE_SENSITIVE { get { if (!_SEQUENCE_SENSITIVEReady) { _SEQUENCE_SENSITIVEContent = SGetField<int>(LocalBridgeClazz, "SEQUENCE_SENSITIVE"); _SEQUENCE_SENSITIVEReady = true; } return _SEQUENCE_SENSITIVEContent; } }
         private static int _SEQUENCE_SENSITIVEContent = default;
         private static bool _SEQUENCE_SENSITIVEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#hasChanged()"/>
@@ -171,7 +171,7 @@ namespace Android.Gesture
         /// <param name="arg1"><see cref="Android.Gesture.Gesture"/></param>
         public void AddGesture(Java.Lang.String arg0, Android.Gesture.Gesture arg1)
         {
-            IExecute("addGesture", arg0, arg1);
+            IExecuteWithSignature("addGesture", "(Ljava/lang/String;Landroid/gesture/Gesture;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#load(java.io.InputStream,boolean)"/>
@@ -181,7 +181,7 @@ namespace Android.Gesture
         /// <exception cref="Java.Io.IOException"/>
         public void Load(Java.Io.InputStream arg0, bool arg1)
         {
-            IExecute("load", arg0, arg1);
+            IExecuteWithSignature("load", "(Ljava/io/InputStream;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#load(java.io.InputStream)"/>
@@ -207,7 +207,7 @@ namespace Android.Gesture
         /// <param name="arg1"><see cref="Android.Gesture.Gesture"/></param>
         public void RemoveGesture(Java.Lang.String arg0, Android.Gesture.Gesture arg1)
         {
-            IExecute("removeGesture", arg0, arg1);
+            IExecuteWithSignature("removeGesture", "(Ljava/lang/String;Landroid/gesture/Gesture;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#save(java.io.OutputStream,boolean)"/>
@@ -217,7 +217,7 @@ namespace Android.Gesture
         /// <exception cref="Java.Io.IOException"/>
         public void Save(Java.Io.OutputStream arg0, bool arg1)
         {
-            IExecute("save", arg0, arg1);
+            IExecuteWithSignature("save", "(Ljava/io/OutputStream;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureStore.html#save(java.io.OutputStream)"/>
@@ -244,13 +244,13 @@ namespace Android.Gesture
         {
             IExecuteWithSignature("setSequenceType", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Net
         /// </summary>
         [global::System.Obsolete("Uri class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Uri(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,9 +121,9 @@ namespace Android.Net
     public partial class Uri : Android.Os.IParcelable, Java.Lang.IComparable<Android.Net.Uri>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Net.Uri"/> to <see cref="Android.Os.Parcelable"/>
@@ -133,9 +133,9 @@ namespace Android.Net
         /// Converter from <see cref="Android.Net.Uri"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Net.Uri t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#EMPTY"/>
@@ -149,9 +149,9 @@ namespace Android.Net
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#fromFile(java.io.File)"/>
@@ -171,7 +171,7 @@ namespace Android.Net
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri FromParts(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "fromParts", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "fromParts", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#parse(java.lang.String)"/>
@@ -190,7 +190,7 @@ namespace Android.Net
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri WithAppendedPath(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "withAppendedPath", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "withAppendedPath", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#decode(java.lang.String)"/>
@@ -209,7 +209,7 @@ namespace Android.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Encode(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encode", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encode", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#encode(java.lang.String)"/>
@@ -227,11 +227,11 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public static void WriteToParcel(Android.Os.Parcel arg0, Android.Net.Uri arg1)
         {
-            SExecute(LocalBridgeClazz, "writeToParcel", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "writeToParcel", "(Landroid/os/Parcel;Landroid/net/Uri;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#buildUpon()"/>
@@ -409,7 +409,7 @@ namespace Android.Net
         /// <returns><see cref="bool"/></returns>
         public bool GetBooleanQueryParameter(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("getBooleanQueryParameter", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBooleanQueryParameter", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/Uri.html#isAbsolute()"/>
@@ -471,29 +471,29 @@ namespace Android.Net
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getQueryParameterNames", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/Uri.Builder.html#build()"/>
@@ -529,7 +529,7 @@ namespace Android.Net
             /// <returns><see cref="Android.Net.Uri.Builder"/></returns>
             public Android.Net.Uri.Builder AppendQueryParameter(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Net.Uri.Builder>("appendQueryParameter", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Uri.Builder>("appendQueryParameter", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/Uri.Builder.html#authority(java.lang.String)"/>
@@ -638,20 +638,20 @@ namespace Android.Net
             {
                 return IExecuteWithSignature<Android.Net.Uri.Builder>("scheme", "(Ljava/lang/String;)Landroid/net/Uri$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

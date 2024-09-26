@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppSearchResult(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppSearchResult(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -120,13 +120,13 @@ namespace Android.App.Appsearch
     public partial class AppSearchResult
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_DENIED"/>
@@ -194,9 +194,9 @@ namespace Android.App.Appsearch
         public static int RESULT_UNKNOWN_ERROR { get { if (!_RESULT_UNKNOWN_ERRORReady) { _RESULT_UNKNOWN_ERRORContent = SGetField<int>(LocalBridgeClazz, "RESULT_UNKNOWN_ERROR"); _RESULT_UNKNOWN_ERRORReady = true; } return _RESULT_UNKNOWN_ERRORContent; } }
         private static int _RESULT_UNKNOWN_ERRORContent = default;
         private static bool _RESULT_UNKNOWN_ERRORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#newFailedResult(int,java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Android.App.Appsearch
         /// <returns><see cref="Android.App.Appsearch.AppSearchResult"/></returns>
         public static Android.App.Appsearch.AppSearchResult NewFailedResult(int arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.App.Appsearch.AppSearchResult>(LocalBridgeClazz, "newFailedResult", arg0, arg1);
+            return SExecuteWithSignature<Android.App.Appsearch.AppSearchResult>(LocalBridgeClazz, "newFailedResult", "(ILjava/lang/String;)Landroid/app/appsearch/AppSearchResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#newSuccessfulResult(java.lang.Object)"/>
@@ -217,9 +217,9 @@ namespace Android.App.Appsearch
         {
             return SExecuteWithSignature<Android.App.Appsearch.AppSearchResult>(LocalBridgeClazz, "newSuccessfulResult", "(Ljava/lang/Object;)Landroid/app/appsearch/AppSearchResult;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#isSuccess()"/>
@@ -253,13 +253,13 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignature("getResultValue", "()Ljava/lang/Object;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -268,17 +268,17 @@ namespace Android.App.Appsearch
     public partial class AppSearchResult<ValueType>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.Appsearch.AppSearchResult{ValueType}"/> to <see cref="Android.App.Appsearch.AppSearchResult"/>
         /// </summary>
         public static implicit operator Android.App.Appsearch.AppSearchResult(Android.App.Appsearch.AppSearchResult<ValueType> t) => t.Cast<Android.App.Appsearch.AppSearchResult>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_DENIED"/>
@@ -346,9 +346,9 @@ namespace Android.App.Appsearch
         public static int RESULT_UNKNOWN_ERROR { get { if (!_RESULT_UNKNOWN_ERRORReady) { _RESULT_UNKNOWN_ERRORContent = SGetField<int>(LocalBridgeClazz, "RESULT_UNKNOWN_ERROR"); _RESULT_UNKNOWN_ERRORReady = true; } return _RESULT_UNKNOWN_ERRORContent; } }
         private static int _RESULT_UNKNOWN_ERRORContent = default;
         private static bool _RESULT_UNKNOWN_ERRORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#newFailedResult(int,java.lang.String)"/>
@@ -358,7 +358,7 @@ namespace Android.App.Appsearch
         /// <returns><see cref="Android.App.Appsearch.AppSearchResult"/></returns>
         public static Android.App.Appsearch.AppSearchResult<ValueType> NewFailedResult(int arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.App.Appsearch.AppSearchResult<ValueType>>(LocalBridgeClazz, "newFailedResult", arg0, arg1);
+            return SExecuteWithSignature<Android.App.Appsearch.AppSearchResult<ValueType>>(LocalBridgeClazz, "newFailedResult", "(ILjava/lang/String;)Landroid/app/appsearch/AppSearchResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#newSuccessfulResult(java.lang.Object)"/>
@@ -369,9 +369,9 @@ namespace Android.App.Appsearch
         {
             return SExecuteWithSignature<Android.App.Appsearch.AppSearchResult<ValueType>>(LocalBridgeClazz, "newSuccessfulResult", "(Ljava/lang/Object;)Landroid/app/appsearch/AppSearchResult;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#isSuccess()"/>
@@ -405,13 +405,13 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignature<ValueType>("getResultValue", "()Ljava/lang/Object;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

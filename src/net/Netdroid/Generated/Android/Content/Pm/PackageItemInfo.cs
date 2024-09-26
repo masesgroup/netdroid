@@ -40,10 +40,10 @@ namespace Android.Content.Pm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PackageItemInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,13 +82,13 @@ namespace Android.Content.Pm
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageItemInfo.html#metaData"/>
@@ -126,13 +126,13 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageItemInfo.html#packageName"/>
         /// </summary>
         public Java.Lang.String packageName { get { return IGetField<Java.Lang.String>("packageName"); } set { ISetField("packageName", value); } }
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageItemInfo.html#loadXmlMetaData(android.content.pm.PackageManager,java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Res.XmlResourceParser"/></returns>
         public Android.Content.Res.XmlResourceParser LoadXmlMetaData(Android.Content.Pm.PackageManager arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Res.XmlResourceParser>("loadXmlMetaData", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.XmlResourceParser>("loadXmlMetaData", "(Landroid/content/pm/PackageManager;Ljava/lang/String;)Landroid/content/res/XmlResourceParser;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageItemInfo.html#loadBanner(android.content.pm.PackageManager)"/>
@@ -196,15 +196,15 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

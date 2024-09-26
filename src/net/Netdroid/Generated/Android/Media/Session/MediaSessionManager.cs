@@ -40,10 +40,10 @@ namespace Android.Media.Session
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaSessionManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Session
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnActiveSessionsChangedListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media.Session
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnActiveSessionsChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.session.MediaSessionManager_OnActiveSessionsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnActiveSessionsChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnActiveSessionsChangedListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.session.MediaSessionManager$OnActiveSessionsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.Media.Session
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnMediaKeyEventSessionChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.session.MediaSessionManager_OnMediaKeyEventSessionChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnMediaKeyEventSessionChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnMediaKeyEventSessionChangedListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.session.MediaSessionManager$OnMediaKeyEventSessionChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -210,7 +210,7 @@ namespace Android.Media.Session
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnSession2TokensChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.session.MediaSessionManager_OnSession2TokensChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -219,13 +219,13 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnSession2TokensChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnSession2TokensChangedListener"/> or its generic type if there is one
@@ -236,14 +236,14 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.session.MediaSessionManager$OnSession2TokensChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -282,10 +282,10 @@ namespace Android.Media.Session
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RemoteUserInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -306,9 +306,9 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -320,21 +320,21 @@ namespace Android.Media.Session
     public partial class MediaSessionManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getMediaKeyEventSession()"/>
@@ -386,7 +386,7 @@ namespace Android.Media.Session
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void AddOnActiveSessionsChangedListener(Android.Media.Session.MediaSessionManager.OnActiveSessionsChangedListener arg0, Android.Content.ComponentName arg1, Android.Os.Handler arg2)
         {
-            IExecute("addOnActiveSessionsChangedListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addOnActiveSessionsChangedListener", "(Landroid/media/session/MediaSessionManager$OnActiveSessionsChangedListener;Landroid/content/ComponentName;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#addOnActiveSessionsChangedListener(android.media.session.MediaSessionManager.OnActiveSessionsChangedListener,android.content.ComponentName)"/>
@@ -395,7 +395,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="Android.Content.ComponentName"/></param>
         public void AddOnActiveSessionsChangedListener(Android.Media.Session.MediaSessionManager.OnActiveSessionsChangedListener arg0, Android.Content.ComponentName arg1)
         {
-            IExecute("addOnActiveSessionsChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnActiveSessionsChangedListener", "(Landroid/media/session/MediaSessionManager$OnActiveSessionsChangedListener;Landroid/content/ComponentName;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#addOnMediaKeyEventSessionChangedListener(java.util.concurrent.Executor,android.media.session.MediaSessionManager.OnMediaKeyEventSessionChangedListener)"/>
@@ -404,7 +404,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="Android.Media.Session.MediaSessionManager.OnMediaKeyEventSessionChangedListener"/></param>
         public void AddOnMediaKeyEventSessionChangedListener(Java.Util.Concurrent.Executor arg0, Android.Media.Session.MediaSessionManager.OnMediaKeyEventSessionChangedListener arg1)
         {
-            IExecute("addOnMediaKeyEventSessionChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnMediaKeyEventSessionChangedListener", "(Ljava/util/concurrent/Executor;Landroid/media/session/MediaSessionManager$OnMediaKeyEventSessionChangedListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#addOnSession2TokensChangedListener(android.media.session.MediaSessionManager.OnSession2TokensChangedListener,android.os.Handler)"/>
@@ -413,7 +413,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void AddOnSession2TokensChangedListener(Android.Media.Session.MediaSessionManager.OnSession2TokensChangedListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("addOnSession2TokensChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnSession2TokensChangedListener", "(Landroid/media/session/MediaSessionManager$OnSession2TokensChangedListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#addOnSession2TokensChangedListener(android.media.session.MediaSessionManager.OnSession2TokensChangedListener)"/>
@@ -456,29 +456,29 @@ namespace Android.Media.Session
         {
             IExecuteWithSignature("removeOnSession2TokensChangedListener", "(Landroid/media/session/MediaSessionManager$OnSession2TokensChangedListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnActiveSessionsChangedListener implementation
         public partial class OnActiveSessionsChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnActiveSessionsChangedListener"/>
@@ -488,13 +488,13 @@ namespace Android.Media.Session
                 AddEventHandler("onActiveSessionsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnActiveSessionsChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.html#onActiveSessionsChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActiveSessionsChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Android.Media.Session.MediaController>> OnOnActiveSessionsChanged { get; set; } = null;
-            
+
             bool hasOverrideOnActiveSessionsChanged = true;
             void OnActiveSessionsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -503,7 +503,7 @@ namespace Android.Media.Session
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Media.Session.MediaController>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnActiveSessionsChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.html#onActiveSessionsChanged(java.util.List)"/>
             /// </summary>
@@ -512,13 +512,13 @@ namespace Android.Media.Session
             {
                 hasOverrideOnActiveSessionsChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -527,21 +527,21 @@ namespace Android.Media.Session
         public partial class OnActiveSessionsChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.html#onActiveSessionsChanged(java.util.List)"/>
@@ -551,13 +551,13 @@ namespace Android.Media.Session
             {
                 IExecuteWithSignature("onActiveSessionsChanged", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -566,21 +566,21 @@ namespace Android.Media.Session
         public partial class OnMediaKeyEventSessionChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnMediaKeyEventSessionChangedListener"/>
@@ -590,13 +590,13 @@ namespace Android.Media.Session
                 AddEventHandler("onMediaKeyEventSessionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnMediaKeyEventSessionChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.html#onMediaKeyEventSessionChanged(java.lang.String,android.media.session.MediaSession.Token)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMediaKeyEventSessionChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, Android.Media.Session.MediaSession.Token> OnOnMediaKeyEventSessionChanged { get; set; } = null;
-            
+
             bool hasOverrideOnMediaKeyEventSessionChanged = true;
             void OnMediaKeyEventSessionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -605,7 +605,7 @@ namespace Android.Media.Session
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Android.Media.Session.MediaSession.Token>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnMediaKeyEventSessionChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.html#onMediaKeyEventSessionChanged(java.lang.String,android.media.session.MediaSession.Token)"/>
             /// </summary>
@@ -615,13 +615,13 @@ namespace Android.Media.Session
             {
                 hasOverrideOnMediaKeyEventSessionChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -630,21 +630,21 @@ namespace Android.Media.Session
         public partial class OnMediaKeyEventSessionChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.html#onMediaKeyEventSessionChanged(java.lang.String,android.media.session.MediaSession.Token)"/>
@@ -653,15 +653,15 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Media.Session.MediaSession.Token"/></param>
             public override void OnMediaKeyEventSessionChanged(Java.Lang.String arg0, Android.Media.Session.MediaSession.Token arg1)
             {
-                IExecute("onMediaKeyEventSessionChanged", arg0, arg1);
+                IExecuteWithSignature("onMediaKeyEventSessionChanged", "(Ljava/lang/String;Landroid/media/session/MediaSession$Token;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -670,21 +670,21 @@ namespace Android.Media.Session
         public partial class OnSession2TokensChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnSession2TokensChangedListener"/>
@@ -694,13 +694,13 @@ namespace Android.Media.Session
                 AddEventHandler("onSession2TokensChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSession2TokensChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnSession2TokensChangedListener.html#onSession2TokensChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSession2TokensChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Android.Media.Session2Token>> OnOnSession2TokensChanged { get; set; } = null;
-            
+
             bool hasOverrideOnSession2TokensChanged = true;
             void OnSession2TokensChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -709,7 +709,7 @@ namespace Android.Media.Session
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Media.Session2Token>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSession2TokensChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnSession2TokensChangedListener.html#onSession2TokensChanged(java.util.List)"/>
             /// </summary>
@@ -718,13 +718,13 @@ namespace Android.Media.Session
             {
                 hasOverrideOnSession2TokensChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -733,21 +733,21 @@ namespace Android.Media.Session
         public partial class OnSession2TokensChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnSession2TokensChangedListener.html#onSession2TokensChanged(java.util.List)"/>
@@ -757,13 +757,13 @@ namespace Android.Media.Session
             {
                 IExecuteWithSignature("onSession2TokensChanged", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -782,21 +782,21 @@ namespace Android.Media.Session
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.RemoteUserInfo.html#getPid()"/>
@@ -822,20 +822,20 @@ namespace Android.Media.Session
             {
                 return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

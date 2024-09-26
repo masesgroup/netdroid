@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AlertDialog(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.App
     public partial class AlertDialog
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_DARK"/>
@@ -162,13 +162,13 @@ namespace Android.App
         public static int THEME_TRADITIONAL { get { if (!_THEME_TRADITIONALReady) { _THEME_TRADITIONALContent = SGetField<int>(LocalBridgeClazz, "THEME_TRADITIONAL"); _THEME_TRADITIONALReady = true; } return _THEME_TRADITIONALContent; } }
         private static int _THEME_TRADITIONALContent = default;
         private static bool _THEME_TRADITIONALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#getButton(int)"/>
@@ -195,7 +195,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Content.DialogInterface.OnClickListener"/></param>
         public void SetButton(int arg0, Java.Lang.CharSequence arg1, Android.Content.DialogInterface.OnClickListener arg2)
         {
-            IExecute("setButton", arg0, arg1, arg2);
+            IExecuteWithSignature("setButton", "(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(int,java.lang.CharSequence,android.os.Message)"/>
@@ -205,7 +205,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.Message"/></param>
         public void SetButton(int arg0, Java.Lang.CharSequence arg1, Android.Os.Message arg2)
         {
-            IExecute("setButton", arg0, arg1, arg2);
+            IExecuteWithSignature("setButton", "(ILjava/lang/CharSequence;Landroid/os/Message;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
@@ -215,7 +215,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetButton(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
         {
-            IExecute("setButton", arg0, arg1);
+            IExecuteWithSignature("setButton", "(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.os.Message)"/>
@@ -225,7 +225,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetButton(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
         {
-            IExecute("setButton", arg0, arg1);
+            IExecuteWithSignature("setButton", "(Ljava/lang/CharSequence;Landroid/os/Message;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
@@ -235,7 +235,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetButton2(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
         {
-            IExecute("setButton2", arg0, arg1);
+            IExecuteWithSignature("setButton2", "(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.os.Message)"/>
@@ -245,7 +245,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetButton2(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
         {
-            IExecute("setButton2", arg0, arg1);
+            IExecuteWithSignature("setButton2", "(Ljava/lang/CharSequence;Landroid/os/Message;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
@@ -255,7 +255,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetButton3(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
         {
-            IExecute("setButton3", arg0, arg1);
+            IExecuteWithSignature("setButton3", "(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.os.Message)"/>
@@ -265,7 +265,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetButton3(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
         {
-            IExecute("setButton3", arg0, arg1);
+            IExecuteWithSignature("setButton3", "(Ljava/lang/CharSequence;Landroid/os/Message;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setCustomTitle(android.view.View)"/>
@@ -325,7 +325,7 @@ namespace Android.App
         /// <param name="arg4"><see cref="int"/></param>
         public void SetView(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setView", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setView", "(Landroid/view/View;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setView(android.view.View)"/>
@@ -335,9 +335,9 @@ namespace Android.App
         {
             IExecuteWithSignature("setView", "(Landroid/view/View;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -360,21 +360,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#create()"/>
@@ -400,7 +400,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetAdapter(Android.Widget.ListAdapter arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setAdapter", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setAdapter", "(Landroid/widget/ListAdapter;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setCancelable(boolean)"/>
@@ -420,7 +420,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetCursor(Android.Database.Cursor arg0, Android.Content.DialogInterface.OnClickListener arg1, Java.Lang.String arg2)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setCursor", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setCursor", "(Landroid/database/Cursor;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setCustomTitle(android.view.View)"/>
@@ -476,7 +476,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetItems(int arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setItems", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setItems", "(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setItems(java.lang.CharSequence[],android.content.DialogInterface.OnClickListener)"/>
@@ -486,7 +486,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetItems(Java.Lang.CharSequence[] arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setItems", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setItems", "([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setMessage(int)"/>
@@ -516,7 +516,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetMultiChoiceItems(Android.Database.Cursor arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Content.DialogInterface.OnMultiChoiceClickListener arg3)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setMultiChoiceItems", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setMultiChoiceItems", "(Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setMultiChoiceItems(int,boolean[],android.content.DialogInterface.OnMultiChoiceClickListener)"/>
@@ -527,7 +527,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetMultiChoiceItems(int arg0, bool[] arg1, Android.Content.DialogInterface.OnMultiChoiceClickListener arg2)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setMultiChoiceItems", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setMultiChoiceItems", "(I[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setMultiChoiceItems(java.lang.CharSequence[],boolean[],android.content.DialogInterface.OnMultiChoiceClickListener)"/>
@@ -538,7 +538,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetMultiChoiceItems(Java.Lang.CharSequence[] arg0, bool[] arg1, Android.Content.DialogInterface.OnMultiChoiceClickListener arg2)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setMultiChoiceItems", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setMultiChoiceItems", "([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setNegativeButton(int,android.content.DialogInterface.OnClickListener)"/>
@@ -548,7 +548,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetNegativeButton(int arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setNegativeButton", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setNegativeButton", "(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setNegativeButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
@@ -558,7 +558,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetNegativeButton(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setNegativeButton", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setNegativeButton", "(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setNeutralButton(int,android.content.DialogInterface.OnClickListener)"/>
@@ -568,7 +568,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetNeutralButton(int arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setNeutralButton", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setNeutralButton", "(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setNeutralButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
@@ -578,7 +578,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetNeutralButton(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setNeutralButton", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setNeutralButton", "(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setOnCancelListener(android.content.DialogInterface.OnCancelListener)"/>
@@ -624,7 +624,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetPositiveButton(int arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setPositiveButton", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setPositiveButton", "(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setPositiveButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
@@ -634,7 +634,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetPositiveButton(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setPositiveButton", arg0, arg1);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setPositiveButton", "(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setSingleChoiceItems(android.database.Cursor,int,java.lang.String,android.content.DialogInterface.OnClickListener)"/>
@@ -646,7 +646,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetSingleChoiceItems(Android.Database.Cursor arg0, int arg1, Java.Lang.String arg2, Android.Content.DialogInterface.OnClickListener arg3)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setSingleChoiceItems", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setSingleChoiceItems", "(Landroid/database/Cursor;ILjava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setSingleChoiceItems(android.widget.ListAdapter,int,android.content.DialogInterface.OnClickListener)"/>
@@ -657,7 +657,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetSingleChoiceItems(Android.Widget.ListAdapter arg0, int arg1, Android.Content.DialogInterface.OnClickListener arg2)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setSingleChoiceItems", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setSingleChoiceItems", "(Landroid/widget/ListAdapter;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setSingleChoiceItems(int,int,android.content.DialogInterface.OnClickListener)"/>
@@ -668,7 +668,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetSingleChoiceItems(int arg0, int arg1, Android.Content.DialogInterface.OnClickListener arg2)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setSingleChoiceItems", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setSingleChoiceItems", "(IILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setSingleChoiceItems(java.lang.CharSequence[],int,android.content.DialogInterface.OnClickListener)"/>
@@ -679,7 +679,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
             public Android.App.AlertDialog.Builder SetSingleChoiceItems(Java.Lang.CharSequence[] arg0, int arg1, Android.Content.DialogInterface.OnClickListener arg2)
             {
-                return IExecute<Android.App.AlertDialog.Builder>("setSingleChoiceItems", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setSingleChoiceItems", "([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setTitle(int)"/>
@@ -725,20 +725,20 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

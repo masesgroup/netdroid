@@ -42,10 +42,10 @@ namespace Javax.Xml.Xpath
         /// </summary>
         [global::System.Obsolete("XPathExpression class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathExpression(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Xpath
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Xml.Xpath
     public partial interface IXPathExpression
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Javax.Xml.Xpath
     public partial class XPathExpression : Javax.Xml.Xpath.IXPathExpression
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathExpression.html#evaluate(java.lang.Object,javax.xml.namespace.QName)"/>
@@ -119,7 +119,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(object arg0, Javax.Xml.Namespace.QName arg1)
         {
-            return IExecute("evaluate", arg0, arg1);
+            return IExecuteWithSignature("evaluate", "(Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathExpression.html#evaluate(org.xml.sax.InputSource,javax.xml.namespace.QName)"/>
@@ -130,7 +130,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(Org.Xml.Sax.InputSource arg0, Javax.Xml.Namespace.QName arg1)
         {
-            return IExecute("evaluate", arg0, arg1);
+            return IExecuteWithSignature("evaluate", "(Lorg/xml/sax/InputSource;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathExpression.html#evaluate(java.lang.Object)"/>
@@ -162,7 +162,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(object arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("evaluateExpression", arg0, arg1);
+            return IExecuteWithSignature<T>("evaluateExpression", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathExpression.html#evaluateExpression(org.xml.sax.InputSource,java.lang.Class)"/>
@@ -174,15 +174,15 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(Org.Xml.Sax.InputSource arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("evaluateExpression", arg0, arg1);
+            return IExecuteWithSignature<T>("evaluateExpression", "(Lorg/xml/sax/InputSource;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

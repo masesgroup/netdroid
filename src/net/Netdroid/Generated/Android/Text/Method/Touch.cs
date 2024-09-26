@@ -40,10 +40,10 @@ namespace Android.Text.Method
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Touch(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Text.Method
     public partial class Touch
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/Touch.html#onTouchEvent(android.widget.TextView,android.text.Spannable,android.view.MotionEvent)"/>
@@ -95,7 +95,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public static bool OnTouchEvent(Android.Widget.TextView arg0, Android.Text.Spannable arg1, Android.View.MotionEvent arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "onTouchEvent", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "onTouchEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/Touch.html#getInitialScrollX(android.widget.TextView,android.text.Spannable)"/>
@@ -105,7 +105,7 @@ namespace Android.Text.Method
         /// <returns><see cref="int"/></returns>
         public static int GetInitialScrollX(Android.Widget.TextView arg0, Android.Text.Spannable arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getInitialScrollX", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getInitialScrollX", "(Landroid/widget/TextView;Landroid/text/Spannable;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/Touch.html#getInitialScrollY(android.widget.TextView,android.text.Spannable)"/>
@@ -115,7 +115,7 @@ namespace Android.Text.Method
         /// <returns><see cref="int"/></returns>
         public static int GetInitialScrollY(Android.Widget.TextView arg0, Android.Text.Spannable arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getInitialScrollY", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getInitialScrollY", "(Landroid/widget/TextView;Landroid/text/Spannable;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/Touch.html#scrollTo(android.widget.TextView,android.text.Layout,int,int)"/>
@@ -126,19 +126,19 @@ namespace Android.Text.Method
         /// <param name="arg3"><see cref="int"/></param>
         public static void ScrollTo(Android.Widget.TextView arg0, Android.Text.Layout arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "scrollTo", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "scrollTo", "(Landroid/widget/TextView;Landroid/text/Layout;II)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Debug(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region InstructionCount declaration
         /// <summary>
@@ -82,10 +82,10 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InstructionCount(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -106,9 +106,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -127,10 +127,10 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MemoryInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -151,9 +151,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -165,13 +165,13 @@ namespace Android.Os
     public partial class Debug
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#SHOW_CLASSLOADER"/>
@@ -198,9 +198,9 @@ namespace Android.Os
         public static int TRACE_COUNT_ALLOCS { get { if (!_TRACE_COUNT_ALLOCSReady) { _TRACE_COUNT_ALLOCSContent = SGetField<int>(LocalBridgeClazz, "TRACE_COUNT_ALLOCS"); _TRACE_COUNT_ALLOCSReady = true; } return _TRACE_COUNT_ALLOCSContent; } }
         private static int _TRACE_COUNT_ALLOCSContent = default;
         private static bool _TRACE_COUNT_ALLOCSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#dumpService(java.lang.String,java.io.FileDescriptor,java.lang.String[])"/>
@@ -211,7 +211,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public static bool DumpService(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Lang.String[] arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "dumpService", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "dumpService", "(Ljava/lang/String;Ljava/io/FileDescriptor;[Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#isDebuggerConnected()"/>
@@ -523,7 +523,7 @@ namespace Android.Os
         /// <exception cref="Java.Io.IOException"/>
         public static void AttachJvmtiAgent(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
-            SExecute(LocalBridgeClazz, "attachJvmtiAgent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "attachJvmtiAgent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#changeDebugPort(int)"/>
@@ -718,7 +718,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="int"/></param>
         public static void StartMethodTracing(Java.Lang.String arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "startMethodTracing", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "startMethodTracing", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String,int)"/>
@@ -727,7 +727,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         public static void StartMethodTracing(Java.Lang.String arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "startMethodTracing", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "startMethodTracing", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String)"/>
@@ -745,7 +745,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="int"/></param>
         public static void StartMethodTracingSampling(Java.Lang.String arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "startMethodTracingSampling", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "startMethodTracingSampling", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#startNativeTracing()"/>
@@ -783,33 +783,33 @@ namespace Android.Os
         {
             SExecuteWithSignature(LocalBridgeClazz, "waitForDebugger", "()V");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region InstructionCount implementation
         public partial class InstructionCount
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Debug.InstructionCount.html#collect()"/>
@@ -847,13 +847,13 @@ namespace Android.Os
             {
                 return IExecuteWithSignature<int>("globalTotal", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -862,13 +862,13 @@ namespace Android.Os
         public partial class MemoryInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Debug.MemoryInfo.html#dalvikPrivateDirty"/>
@@ -912,13 +912,13 @@ namespace Android.Os
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Debug.MemoryInfo.html#describeContents()"/>
@@ -1008,22 +1008,22 @@ namespace Android.Os
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Database
         /// </summary>
         [global::System.Obsolete("ContentObserver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ContentObserver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Database
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,21 +84,21 @@ namespace Android.Database
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#deliverSelfNotifications()"/>
@@ -116,7 +116,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="int"/></param>
         public void DispatchChange(bool arg0, Android.Net.Uri arg1, int arg2)
         {
-            IExecute("dispatchChange", arg0, arg1, arg2);
+            IExecuteWithSignature("dispatchChange", "(ZLandroid/net/Uri;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#dispatchChange(boolean,android.net.Uri)"/>
@@ -125,7 +125,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void DispatchChange(bool arg0, Android.Net.Uri arg1)
         {
-            IExecute("dispatchChange", arg0, arg1);
+            IExecuteWithSignature("dispatchChange", "(ZLandroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#dispatchChange(boolean,java.util.Collection,int)"/>
@@ -135,7 +135,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="int"/></param>
         public void DispatchChange(bool arg0, Java.Util.Collection<Android.Net.Uri> arg1, int arg2)
         {
-            IExecute("dispatchChange", arg0, arg1, arg2);
+            IExecuteWithSignature("dispatchChange", "(ZLjava/util/Collection;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#dispatchChange(boolean)"/>
@@ -154,7 +154,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="int"/></param>
         public void OnChange(bool arg0, Android.Net.Uri arg1, int arg2)
         {
-            IExecute("onChange", arg0, arg1, arg2);
+            IExecuteWithSignature("onChange", "(ZLandroid/net/Uri;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#onChange(boolean,android.net.Uri)"/>
@@ -163,7 +163,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void OnChange(bool arg0, Android.Net.Uri arg1)
         {
-            IExecute("onChange", arg0, arg1);
+            IExecuteWithSignature("onChange", "(ZLandroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#onChange(boolean,java.util.Collection,int)"/>
@@ -173,7 +173,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="int"/></param>
         public void OnChange(bool arg0, Java.Util.Collection<Android.Net.Uri> arg1, int arg2)
         {
-            IExecute("onChange", arg0, arg1, arg2);
+            IExecuteWithSignature("onChange", "(ZLjava/util/Collection;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#onChange(boolean)"/>
@@ -183,13 +183,13 @@ namespace Android.Database
         {
             IExecuteWithSignature("onChange", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

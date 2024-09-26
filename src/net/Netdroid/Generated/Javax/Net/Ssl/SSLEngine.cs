@@ -42,10 +42,10 @@ namespace Javax.Net.Ssl
         /// </summary>
         [global::System.Obsolete("SSLEngine class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLEngine(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Net.Ssl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Javax.Net.Ssl
     public partial class SSLEngine
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#getEnableSessionCreation()"/>
@@ -191,7 +191,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer[] arg1, int arg2, int arg3)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("unwrap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;[Ljava/nio/ByteBuffer;II)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer[],int,int,java.nio.ByteBuffer)"/>
@@ -204,7 +204,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, Java.Nio.ByteBuffer arg3)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("wrap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "([Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#getHandshakeStatus()"/>
@@ -350,7 +350,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("unwrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer[])"/>
@@ -361,7 +361,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer[] arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("unwrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;[Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
@@ -372,7 +372,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("wrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer[],java.nio.ByteBuffer)"/>
@@ -383,7 +383,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer[] arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngineResult>("wrap", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "([Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#getSSLParameters()"/>
@@ -417,13 +417,13 @@ namespace Javax.Net.Ssl
         {
             IExecuteWithSignature("setSSLParameters", "(Ljavax/net/ssl/SSLParameters;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Double(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -93,17 +93,17 @@ namespace Java.Lang
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Double"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Double t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Double.html#MAX_VALUE"/>
@@ -171,9 +171,9 @@ namespace Java.Lang
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
         private static bool _TYPEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Double.html#isFinite(double)"/>
@@ -210,7 +210,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Max(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "max", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Double.html#min(double,double)"/>
@@ -220,7 +220,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Min(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "min", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Double.html#parseDouble(java.lang.String)"/>
@@ -240,7 +240,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Sum(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "sum", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "sum", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Double.html#compare(double,double)"/>
@@ -250,7 +250,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(double arg0, double arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(DD)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Double.html#hashCode(double)"/>
@@ -325,9 +325,9 @@ namespace Java.Lang
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "doubleToRawLongBits", "(D)J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Double.html#isInfinite()"/>
@@ -381,13 +381,13 @@ namespace Java.Lang
         {
             return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Double>>("describeConstable", "()Ljava/util/Optional;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

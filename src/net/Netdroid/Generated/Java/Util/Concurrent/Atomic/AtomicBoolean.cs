@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicBoolean(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSet(boolean,boolean)"/>
@@ -107,7 +107,7 @@ namespace Java.Util.Concurrent.Atomic
         [global::System.Obsolete()]
         public bool WeakCompareAndSet(bool arg0, bool arg1)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetPlain(boolean,boolean)"/>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(bool arg0, bool arg1)
         {
-            return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchange(boolean,boolean)"/>
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndExchange(bool arg0, bool arg1)
         {
-            return IExecute<bool>("compareAndExchange", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndExchange", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeAcquire(boolean,boolean)"/>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndExchangeAcquire(bool arg0, bool arg1)
         {
-            return IExecute<bool>("compareAndExchangeAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndExchangeAcquire", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeRelease(boolean,boolean)"/>
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndExchangeRelease(bool arg0, bool arg1)
         {
-            return IExecute<bool>("compareAndExchangeRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndExchangeRelease", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndSet(boolean,boolean)"/>
@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(bool arg0, bool arg1)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSet", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
@@ -208,7 +208,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(bool arg0, bool arg1)
         {
-            return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetRelease(boolean,boolean)"/>
@@ -218,7 +218,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(bool arg0, bool arg1)
         {
-            return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetVolatile(boolean,boolean)"/>
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(bool arg0, bool arg1)
         {
-            return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#lazySet(boolean)"/>
@@ -270,13 +270,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecuteWithSignature("setRelease", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

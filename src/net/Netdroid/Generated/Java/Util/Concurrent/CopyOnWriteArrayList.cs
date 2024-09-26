@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CopyOnWriteArrayList(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CopyOnWriteArrayList(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -128,9 +128,9 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArrayList"/> to <see cref="Java.Util.List"/>
@@ -148,17 +148,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArrayList"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.CopyOnWriteArrayList t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])"/>
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(int arg0, Java.Util.Collection arg1)
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)"/>
@@ -294,7 +294,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Set(int arg0, object arg1)
         {
-            return IExecute("set", arg0, arg1);
+            return IExecuteWithSignature("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)"/>
@@ -313,7 +313,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)"/>
@@ -332,7 +332,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)"/>
@@ -375,7 +375,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List SubList(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List>("subList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()"/>
@@ -409,7 +409,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="object"/></param>
         public void Add(int arg0, object arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#clear()"/>
@@ -442,13 +442,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -473,9 +473,9 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArrayList{E}"/> to <see cref="Java.Util.List{E}"/>
@@ -497,17 +497,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArrayList{E}"/> to <see cref="Java.Util.Concurrent.CopyOnWriteArrayList"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CopyOnWriteArrayList(Java.Util.Concurrent.CopyOnWriteArrayList<E> t) => t.Cast<Java.Util.Concurrent.CopyOnWriteArrayList>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#toArray(java.lang.Object[])"/>
@@ -537,7 +537,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection)"/>
@@ -647,7 +647,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Set(int arg0, E arg1)
         {
-            return IExecute<E>("set", arg0, arg1);
+            return IExecuteWithSignature<E>("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection)"/>
@@ -667,7 +667,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int IndexOf(E arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object)"/>
@@ -686,7 +686,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(E arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object)"/>
@@ -729,7 +729,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<E> SubList(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List<E>>("subList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<E>>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()"/>
@@ -763,7 +763,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><typeparamref name="E"/></param>
         public void Add(int arg0, E arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html#clear()"/>
@@ -798,13 +798,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("LayoutInflater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LayoutInflater(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Factory declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("Factory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Factory(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("Factory2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Factory2(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -179,10 +179,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Filter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -203,9 +203,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -217,17 +217,17 @@ namespace Android.View
     public partial class LayoutInflater
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#from(android.content.Context)"/>
@@ -238,9 +238,9 @@ namespace Android.View
         {
             return SExecuteWithSignature<Android.View.LayoutInflater>(LocalBridgeClazz, "from", "(Landroid/content/Context;)Landroid/view/LayoutInflater;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#cloneInContext(android.content.Context)"/>
@@ -276,7 +276,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View Inflate(int arg0, Android.View.ViewGroup arg1, bool arg2)
         {
-            return IExecute<Android.View.View>("inflate", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("inflate", "(ILandroid/view/ViewGroup;Z)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#inflate(int,android.view.ViewGroup)"/>
@@ -286,7 +286,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View Inflate(int arg0, Android.View.ViewGroup arg1)
         {
-            return IExecute<Android.View.View>("inflate", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("inflate", "(ILandroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#inflate(org.xmlpull.v1.XmlPullParser,android.view.ViewGroup,boolean)"/>
@@ -297,7 +297,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View Inflate(Org.Xmlpull.V1.XmlPullParser arg0, Android.View.ViewGroup arg1, bool arg2)
         {
-            return IExecute<Android.View.View>("inflate", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("inflate", "(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;Z)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#inflate(org.xmlpull.v1.XmlPullParser,android.view.ViewGroup)"/>
@@ -307,7 +307,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View Inflate(Org.Xmlpull.V1.XmlPullParser arg0, Android.View.ViewGroup arg1)
         {
-            return IExecute<Android.View.View>("inflate", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("inflate", "(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#onCreateView(android.content.Context,android.view.View,java.lang.String,android.util.AttributeSet)"/>
@@ -320,7 +320,7 @@ namespace Android.View
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Android.View.View OnCreateView(Android.Content.Context arg0, Android.View.View arg1, Java.Lang.String arg2, Android.Util.AttributeSet arg3)
         {
-            return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.View>("onCreateView", "(Landroid/content/Context;Landroid/view/View;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getFactory()"/>
@@ -350,7 +350,7 @@ namespace Android.View
         /// <exception cref="Android.View.InflateException"/>
         public Android.View.View CreateView(Android.Content.Context arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Util.AttributeSet arg3)
         {
-            return IExecute<Android.View.View>("createView", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.View>("createView", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#createView(java.lang.String,java.lang.String,android.util.AttributeSet)"/>
@@ -363,7 +363,7 @@ namespace Android.View
         /// <exception cref="Android.View.InflateException"/>
         public Android.View.View CreateView(Java.Lang.String arg0, Java.Lang.String arg1, Android.Util.AttributeSet arg2)
         {
-            return IExecute<Android.View.View>("createView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("createView", "(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#setFactory(android.view.LayoutInflater.Factory)"/>
@@ -389,29 +389,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setFilter", "(Landroid/view/LayoutInflater$Filter;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Factory implementation
         public partial class Factory
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.Factory.html#onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)"/>
@@ -422,15 +422,15 @@ namespace Android.View
             /// <returns><see cref="Android.View.View"/></returns>
             public Android.View.View OnCreateView(Java.Lang.String arg0, Android.Content.Context arg1, Android.Util.AttributeSet arg2)
             {
-                return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.View>("onCreateView", "(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -439,21 +439,21 @@ namespace Android.View
         public partial class Factory2
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.Factory2.html#onCreateView(android.view.View,java.lang.String,android.content.Context,android.util.AttributeSet)"/>
@@ -465,15 +465,15 @@ namespace Android.View
             /// <returns><see cref="Android.View.View"/></returns>
             public Android.View.View OnCreateView(Android.View.View arg0, Java.Lang.String arg1, Android.Content.Context arg2, Android.Util.AttributeSet arg3)
             {
-                return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.View.View>("onCreateView", "(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -482,21 +482,21 @@ namespace Android.View
         public partial class Filter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.Filter.html#onLoadClass(java.lang.Class)"/>
@@ -507,20 +507,20 @@ namespace Android.View
             {
                 return IExecuteWithSignature<bool>("onLoadClass", "(Ljava/lang/Class;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

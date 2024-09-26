@@ -40,10 +40,10 @@ namespace Android.Provider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Settings(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Global declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Global(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public NameValueTable(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Panel(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Secure(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -257,9 +257,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -278,10 +278,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public System(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -302,9 +302,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -316,13 +316,13 @@ namespace Android.Provider
     public partial class Settings
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ADD_WIFI_RESULT_ADD_OR_UPDATE_FAILED"/>
@@ -1100,9 +1100,9 @@ namespace Android.Provider
         public static Java.Lang.String METADATA_USAGE_ACCESS_REASON { get { if (!_METADATA_USAGE_ACCESS_REASONReady) { _METADATA_USAGE_ACCESS_REASONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "METADATA_USAGE_ACCESS_REASON"); _METADATA_USAGE_ACCESS_REASONReady = true; } return _METADATA_USAGE_ACCESS_REASONContent; } }
         private static Java.Lang.String _METADATA_USAGE_ACCESS_REASONContent = default;
         private static bool _METADATA_USAGE_ACCESS_REASONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#canDrawOverlays(android.content.Context)"/>
@@ -1113,25 +1113,25 @@ namespace Android.Provider
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "canDrawOverlays", "(Landroid/content/Context;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Global implementation
         public partial class Global
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#CONTENT_URI"/>
@@ -1413,9 +1413,9 @@ namespace Android.Provider
             public static Java.Lang.String WINDOW_ANIMATION_SCALE { get { if (!_WINDOW_ANIMATION_SCALEReady) { _WINDOW_ANIMATION_SCALEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WINDOW_ANIMATION_SCALE"); _WINDOW_ANIMATION_SCALEReady = true; } return _WINDOW_ANIMATION_SCALEContent; } }
             private static Java.Lang.String _WINDOW_ANIMATION_SCALEContent = default;
             private static bool _WINDOW_ANIMATION_SCALEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getUriFor(java.lang.String)"/>
@@ -1435,7 +1435,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1, float arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putFloat", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#putInt(android.content.ContentResolver,java.lang.String,int)"/>
@@ -1446,7 +1446,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1, int arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putInt", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#putLong(android.content.ContentResolver,java.lang.String,long)"/>
@@ -1457,7 +1457,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1, long arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putLong", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#putString(android.content.ContentResolver,java.lang.String,java.lang.String)"/>
@@ -1468,7 +1468,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutString(Android.Content.ContentResolver arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putString", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getFloat(android.content.ContentResolver,java.lang.String,float)"/>
@@ -1479,7 +1479,7 @@ namespace Android.Provider
             /// <returns><see cref="float"/></returns>
             public static float GetFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1, float arg2)
             {
-                return SExecute<float>(LocalBridgeClazz, "getFloat", arg0, arg1, arg2);
+                return SExecuteWithSignature<float>(LocalBridgeClazz, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getFloat(android.content.ContentResolver,java.lang.String)"/>
@@ -1490,7 +1490,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static float GetFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<float>(LocalBridgeClazz, "getFloat", arg0, arg1);
+                return SExecuteWithSignature<float>(LocalBridgeClazz, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getInt(android.content.ContentResolver,java.lang.String,int)"/>
@@ -1501,7 +1501,7 @@ namespace Android.Provider
             /// <returns><see cref="int"/></returns>
             public static int GetInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1, int arg2)
             {
-                return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1, arg2);
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getInt(android.content.ContentResolver,java.lang.String)"/>
@@ -1512,7 +1512,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static int GetInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1);
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getString(android.content.ContentResolver,java.lang.String)"/>
@@ -1522,7 +1522,7 @@ namespace Android.Provider
             /// <returns><see cref="Java.Lang.String"/></returns>
             public static Java.Lang.String GetString(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<Java.Lang.String>(LocalBridgeClazz, "getString", arg0, arg1);
+                return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getLong(android.content.ContentResolver,java.lang.String,long)"/>
@@ -1533,7 +1533,7 @@ namespace Android.Provider
             /// <returns><see cref="long"/></returns>
             public static long GetLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1, long arg2)
             {
-                return SExecute<long>(LocalBridgeClazz, "getLong", arg0, arg1, arg2);
+                return SExecuteWithSignature<long>(LocalBridgeClazz, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#getLong(android.content.ContentResolver,java.lang.String)"/>
@@ -1544,19 +1544,19 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static long GetLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<long>(LocalBridgeClazz, "getLong", arg0, arg1);
+                return SExecuteWithSignature<long>(LocalBridgeClazz, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1565,13 +1565,13 @@ namespace Android.Provider
         public partial class NameValueTable
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.NameValueTable.html#NAME"/>
@@ -1585,9 +1585,9 @@ namespace Android.Provider
             public static Java.Lang.String VALUE { get { if (!_VALUEReady) { _VALUEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VALUE"); _VALUEReady = true; } return _VALUEContent; } }
             private static Java.Lang.String _VALUEContent = default;
             private static bool _VALUEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.NameValueTable.html#getUriFor(android.net.Uri,java.lang.String)"/>
@@ -1597,19 +1597,19 @@ namespace Android.Provider
             /// <returns><see cref="Android.Net.Uri"/></returns>
             public static Android.Net.Uri GetUriFor(Android.Net.Uri arg0, Java.Lang.String arg1)
             {
-                return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getUriFor", arg0, arg1);
+                return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getUriFor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1618,13 +1618,13 @@ namespace Android.Provider
         public partial class Panel
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Panel.html#ACTION_INTERNET_CONNECTIVITY"/>
@@ -1650,21 +1650,21 @@ namespace Android.Provider
             public static Java.Lang.String ACTION_WIFI { get { if (!_ACTION_WIFIReady) { _ACTION_WIFIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_WIFI"); _ACTION_WIFIReady = true; } return _ACTION_WIFIContent; } }
             private static Java.Lang.String _ACTION_WIFIContent = default;
             private static bool _ACTION_WIFIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1673,13 +1673,13 @@ namespace Android.Provider
         public partial class Secure
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#CONTENT_URI"/>
@@ -2128,9 +2128,9 @@ namespace Android.Provider
             public static Java.Lang.String WIFI_WATCHDOG_WATCH_LIST { get { if (!_WIFI_WATCHDOG_WATCH_LISTReady) { _WIFI_WATCHDOG_WATCH_LISTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_WATCH_LIST"); _WIFI_WATCHDOG_WATCH_LISTReady = true; } return _WIFI_WATCHDOG_WATCH_LISTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_WATCH_LISTContent = default;
             private static bool _WIFI_WATCHDOG_WATCH_LISTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getUriFor(java.lang.String)"/>
@@ -2150,7 +2150,7 @@ namespace Android.Provider
             [global::System.Obsolete()]
             public static bool IsLocationProviderEnabled(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<bool>(LocalBridgeClazz, "isLocationProviderEnabled", arg0, arg1);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLocationProviderEnabled", "(Landroid/content/ContentResolver;Ljava/lang/String;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putFloat(android.content.ContentResolver,java.lang.String,float)"/>
@@ -2161,7 +2161,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1, float arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putFloat", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putInt(android.content.ContentResolver,java.lang.String,int)"/>
@@ -2172,7 +2172,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1, int arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putInt", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putLong(android.content.ContentResolver,java.lang.String,long)"/>
@@ -2183,7 +2183,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1, long arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putLong", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#putString(android.content.ContentResolver,java.lang.String,java.lang.String)"/>
@@ -2194,7 +2194,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutString(Android.Content.ContentResolver arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putString", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getFloat(android.content.ContentResolver,java.lang.String,float)"/>
@@ -2205,7 +2205,7 @@ namespace Android.Provider
             /// <returns><see cref="float"/></returns>
             public static float GetFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1, float arg2)
             {
-                return SExecute<float>(LocalBridgeClazz, "getFloat", arg0, arg1, arg2);
+                return SExecuteWithSignature<float>(LocalBridgeClazz, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getFloat(android.content.ContentResolver,java.lang.String)"/>
@@ -2216,7 +2216,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static float GetFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<float>(LocalBridgeClazz, "getFloat", arg0, arg1);
+                return SExecuteWithSignature<float>(LocalBridgeClazz, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getInt(android.content.ContentResolver,java.lang.String,int)"/>
@@ -2227,7 +2227,7 @@ namespace Android.Provider
             /// <returns><see cref="int"/></returns>
             public static int GetInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1, int arg2)
             {
-                return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1, arg2);
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getInt(android.content.ContentResolver,java.lang.String)"/>
@@ -2238,7 +2238,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static int GetInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1);
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getString(android.content.ContentResolver,java.lang.String)"/>
@@ -2248,7 +2248,7 @@ namespace Android.Provider
             /// <returns><see cref="Java.Lang.String"/></returns>
             public static Java.Lang.String GetString(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<Java.Lang.String>(LocalBridgeClazz, "getString", arg0, arg1);
+                return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getLong(android.content.ContentResolver,java.lang.String,long)"/>
@@ -2259,7 +2259,7 @@ namespace Android.Provider
             /// <returns><see cref="long"/></returns>
             public static long GetLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1, long arg2)
             {
-                return SExecute<long>(LocalBridgeClazz, "getLong", arg0, arg1, arg2);
+                return SExecuteWithSignature<long>(LocalBridgeClazz, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#getLong(android.content.ContentResolver,java.lang.String)"/>
@@ -2270,7 +2270,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static long GetLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<long>(LocalBridgeClazz, "getLong", arg0, arg1);
+                return SExecuteWithSignature<long>(LocalBridgeClazz, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#setLocationProviderEnabled(android.content.ContentResolver,java.lang.String,boolean)"/>
@@ -2281,19 +2281,19 @@ namespace Android.Provider
             [global::System.Obsolete()]
             public static void SetLocationProviderEnabled(Android.Content.ContentResolver arg0, Java.Lang.String arg1, bool arg2)
             {
-                SExecute(LocalBridgeClazz, "setLocationProviderEnabled", arg0, arg1, arg2);
+                SExecuteWithSignature(LocalBridgeClazz, "setLocationProviderEnabled", "(Landroid/content/ContentResolver;Ljava/lang/String;Z)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2302,29 +2302,29 @@ namespace Android.Provider
         public partial class SettingNotFoundException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2333,13 +2333,13 @@ namespace Android.Provider
         public partial class System
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#CONTENT_URI"/>
@@ -3017,9 +3017,9 @@ namespace Android.Provider
             public static Java.Lang.String WINDOW_ANIMATION_SCALE { get { if (!_WINDOW_ANIMATION_SCALEReady) { _WINDOW_ANIMATION_SCALEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WINDOW_ANIMATION_SCALE"); _WINDOW_ANIMATION_SCALEReady = true; } return _WINDOW_ANIMATION_SCALEContent; } }
             private static Java.Lang.String _WINDOW_ANIMATION_SCALEContent = default;
             private static bool _WINDOW_ANIMATION_SCALEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getUriFor(java.lang.String)"/>
@@ -3057,7 +3057,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutConfiguration(Android.Content.ContentResolver arg0, Android.Content.Res.Configuration arg1)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putConfiguration", arg0, arg1);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#putFloat(android.content.ContentResolver,java.lang.String,float)"/>
@@ -3068,7 +3068,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1, float arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putFloat", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#putInt(android.content.ContentResolver,java.lang.String,int)"/>
@@ -3079,7 +3079,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1, int arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putInt", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#putLong(android.content.ContentResolver,java.lang.String,long)"/>
@@ -3090,7 +3090,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1, long arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putLong", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#putString(android.content.ContentResolver,java.lang.String,java.lang.String)"/>
@@ -3101,7 +3101,7 @@ namespace Android.Provider
             /// <returns><see cref="bool"/></returns>
             public static bool PutString(Android.Content.ContentResolver arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             {
-                return SExecute<bool>(LocalBridgeClazz, "putString", arg0, arg1, arg2);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getFloat(android.content.ContentResolver,java.lang.String,float)"/>
@@ -3112,7 +3112,7 @@ namespace Android.Provider
             /// <returns><see cref="float"/></returns>
             public static float GetFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1, float arg2)
             {
-                return SExecute<float>(LocalBridgeClazz, "getFloat", arg0, arg1, arg2);
+                return SExecuteWithSignature<float>(LocalBridgeClazz, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getFloat(android.content.ContentResolver,java.lang.String)"/>
@@ -3123,7 +3123,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static float GetFloat(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<float>(LocalBridgeClazz, "getFloat", arg0, arg1);
+                return SExecuteWithSignature<float>(LocalBridgeClazz, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getInt(android.content.ContentResolver,java.lang.String,int)"/>
@@ -3134,7 +3134,7 @@ namespace Android.Provider
             /// <returns><see cref="int"/></returns>
             public static int GetInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1, int arg2)
             {
-                return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1, arg2);
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getInt(android.content.ContentResolver,java.lang.String)"/>
@@ -3145,7 +3145,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static int GetInt(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<int>(LocalBridgeClazz, "getInt", arg0, arg1);
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getString(android.content.ContentResolver,java.lang.String)"/>
@@ -3155,7 +3155,7 @@ namespace Android.Provider
             /// <returns><see cref="Java.Lang.String"/></returns>
             public static Java.Lang.String GetString(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<Java.Lang.String>(LocalBridgeClazz, "getString", arg0, arg1);
+                return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getLong(android.content.ContentResolver,java.lang.String,long)"/>
@@ -3166,7 +3166,7 @@ namespace Android.Provider
             /// <returns><see cref="long"/></returns>
             public static long GetLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1, long arg2)
             {
-                return SExecute<long>(LocalBridgeClazz, "getLong", arg0, arg1, arg2);
+                return SExecuteWithSignature<long>(LocalBridgeClazz, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getLong(android.content.ContentResolver,java.lang.String)"/>
@@ -3177,7 +3177,7 @@ namespace Android.Provider
             /// <exception cref="Android.Provider.Settings.SettingNotFoundException"/>
             public static long GetLong(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
-                return SExecute<long>(LocalBridgeClazz, "getLong", arg0, arg1);
+                return SExecuteWithSignature<long>(LocalBridgeClazz, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#getConfiguration(android.content.ContentResolver,android.content.res.Configuration)"/>
@@ -3186,7 +3186,7 @@ namespace Android.Provider
             /// <param name="arg1"><see cref="Android.Content.Res.Configuration"/></param>
             public static void GetConfiguration(Android.Content.ContentResolver arg0, Android.Content.Res.Configuration arg1)
             {
-                SExecute(LocalBridgeClazz, "getConfiguration", arg0, arg1);
+                SExecuteWithSignature(LocalBridgeClazz, "getConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#setShowGTalkServiceStatus(android.content.ContentResolver,boolean)"/>
@@ -3196,26 +3196,26 @@ namespace Android.Provider
             [global::System.Obsolete()]
             public static void SetShowGTalkServiceStatus(Android.Content.ContentResolver arg0, bool arg1)
             {
-                SExecute(LocalBridgeClazz, "setShowGTalkServiceStatus", arg0, arg1);
+                SExecuteWithSignature(LocalBridgeClazz, "setShowGTalkServiceStatus", "(Landroid/content/ContentResolver;Z)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

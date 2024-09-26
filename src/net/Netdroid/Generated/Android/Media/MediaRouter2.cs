@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaRouter2(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ControllerCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("ControllerCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ControllerCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnGetControllerHintsListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaRouter2_OnGetControllerHintsListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnGetControllerHintsListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnGetControllerHintsListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaRouter2$OnGetControllerHintsListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -197,10 +197,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("RouteCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RouteCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -221,9 +221,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -242,10 +242,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RoutingController(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -266,9 +266,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -287,10 +287,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ScanRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -311,7 +311,7 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -328,10 +328,10 @@ namespace Android.Media
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -352,9 +352,9 @@ namespace Android.Media
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -377,10 +377,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ScanToken(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -401,9 +401,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -424,10 +424,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("TransferCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TransferCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -448,9 +448,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -462,17 +462,17 @@ namespace Android.Media
     public partial class MediaRouter2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getInstance(android.content.Context,java.lang.String,java.util.concurrent.Executor,java.lang.Runnable)"/>
@@ -484,7 +484,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.MediaRouter2"/></returns>
         public static Android.Media.MediaRouter2 GetInstance(Android.Content.Context arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Java.Lang.Runnable arg3)
         {
-            return SExecute<Android.Media.MediaRouter2>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Media.MediaRouter2>(LocalBridgeClazz, "getInstance", "(Landroid/content/Context;Ljava/lang/String;Ljava/util/concurrent/Executor;Ljava/lang/Runnable;)Landroid/media/MediaRouter2;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getInstance(android.content.Context)"/>
@@ -495,9 +495,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<Android.Media.MediaRouter2>(LocalBridgeClazz, "getInstance", "(Landroid/content/Context;)Landroid/media/MediaRouter2;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getController(java.lang.String)"/>
@@ -572,7 +572,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.MediaRouter2.ControllerCallback"/></param>
         public void RegisterControllerCallback(Java.Util.Concurrent.Executor arg0, Android.Media.MediaRouter2.ControllerCallback arg1)
         {
-            IExecute("registerControllerCallback", arg0, arg1);
+            IExecuteWithSignature("registerControllerCallback", "(Ljava/util/concurrent/Executor;Landroid/media/MediaRouter2$ControllerCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#registerRouteCallback(java.util.concurrent.Executor,android.media.MediaRouter2.RouteCallback,android.media.RouteDiscoveryPreference)"/>
@@ -582,7 +582,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="Android.Media.RouteDiscoveryPreference"/></param>
         public void RegisterRouteCallback(Java.Util.Concurrent.Executor arg0, Android.Media.MediaRouter2.RouteCallback arg1, Android.Media.RouteDiscoveryPreference arg2)
         {
-            IExecute("registerRouteCallback", arg0, arg1, arg2);
+            IExecuteWithSignature("registerRouteCallback", "(Ljava/util/concurrent/Executor;Landroid/media/MediaRouter2$RouteCallback;Landroid/media/RouteDiscoveryPreference;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#registerRouteListingPreferenceUpdatedCallback(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -591,7 +591,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void RegisterRouteListingPreferenceUpdatedCallback(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.Media.RouteListingPreference> arg1)
         {
-            IExecute("registerRouteListingPreferenceUpdatedCallback", arg0, arg1);
+            IExecuteWithSignature("registerRouteListingPreferenceUpdatedCallback", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#registerTransferCallback(java.util.concurrent.Executor,android.media.MediaRouter2.TransferCallback)"/>
@@ -600,7 +600,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.MediaRouter2.TransferCallback"/></param>
         public void RegisterTransferCallback(Java.Util.Concurrent.Executor arg0, Android.Media.MediaRouter2.TransferCallback arg1)
         {
-            IExecute("registerTransferCallback", arg0, arg1);
+            IExecuteWithSignature("registerTransferCallback", "(Ljava/util/concurrent/Executor;Landroid/media/MediaRouter2$TransferCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#setOnGetControllerHintsListener(android.media.MediaRouter2.OnGetControllerHintsListener)"/>
@@ -625,7 +625,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void SetRouteVolume(Android.Media.MediaRoute2Info arg0, int arg1)
         {
-            IExecute("setRouteVolume", arg0, arg1);
+            IExecuteWithSignature("setRouteVolume", "(Landroid/media/MediaRoute2Info;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#stop()"/>
@@ -674,29 +674,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("unregisterTransferCallback", "(Landroid/media/MediaRouter2$TransferCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ControllerCallback implementation
         public partial class ControllerCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.ControllerCallback.html#onControllerUpdated(android.media.MediaRouter2.RoutingController)"/>
@@ -706,13 +706,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onControllerUpdated", "(Landroid/media/MediaRouter2$RoutingController;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -721,21 +721,21 @@ namespace Android.Media
         public partial class OnGetControllerHintsListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnGetControllerHintsListener"/>
@@ -745,13 +745,13 @@ namespace Android.Media
                 AddEventHandler("onGetControllerHints", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGetControllerHintsEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaRouter2.OnGetControllerHintsListener.html#onGetControllerHints(android.media.MediaRoute2Info)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetControllerHints"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.Media.MediaRoute2Info, Android.Os.Bundle> OnOnGetControllerHints { get; set; } = null;
-            
+
             bool hasOverrideOnGetControllerHints = true;
             void OnGetControllerHintsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -760,7 +760,7 @@ namespace Android.Media
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaRoute2Info>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnGetControllerHints, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.OnGetControllerHintsListener.html#onGetControllerHints(android.media.MediaRoute2Info)"/>
             /// </summary>
@@ -770,13 +770,13 @@ namespace Android.Media
             {
                 hasOverrideOnGetControllerHints = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -785,21 +785,21 @@ namespace Android.Media
         public partial class OnGetControllerHintsListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.OnGetControllerHintsListener.html#onGetControllerHints(android.media.MediaRoute2Info)"/>
@@ -810,13 +810,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Android.Os.Bundle>("onGetControllerHints", "(Landroid/media/MediaRoute2Info;)Landroid/os/Bundle;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -825,21 +825,21 @@ namespace Android.Media
         public partial class RouteCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesAdded(java.util.List)"/>
@@ -876,13 +876,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onRoutesUpdated", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -891,21 +891,21 @@ namespace Android.Media
         public partial class RoutingController
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getRoutingSessionInfo()"/>
@@ -1034,13 +1034,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("setVolume", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1049,21 +1049,21 @@ namespace Android.Media
         public partial class ScanRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.ScanRequest.html#isScreenOffScan()"/>
@@ -1073,29 +1073,29 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<bool>("isScreenOffScan", "()Z");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.ScanRequest.Builder.html#build()"/>
@@ -1114,20 +1114,20 @@ namespace Android.Media
                 {
                     return IExecuteWithSignature<Android.Media.MediaRouter2.ScanRequest.Builder>("setScreenOffScan", "(Z)Landroid/media/MediaRouter2$ScanRequest$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1136,29 +1136,29 @@ namespace Android.Media
         public partial class ScanToken
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1167,21 +1167,21 @@ namespace Android.Media
         public partial class TransferCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.TransferCallback.html#onStop(android.media.MediaRouter2.RoutingController)"/>
@@ -1198,7 +1198,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Media.MediaRouter2.RoutingController"/></param>
             public void OnTransfer(Android.Media.MediaRouter2.RoutingController arg0, Android.Media.MediaRouter2.RoutingController arg1)
             {
-                IExecute("onTransfer", arg0, arg1);
+                IExecuteWithSignature("onTransfer", "(Landroid/media/MediaRouter2$RoutingController;Landroid/media/MediaRouter2$RoutingController;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.TransferCallback.html#onTransferFailure(android.media.MediaRoute2Info)"/>
@@ -1208,20 +1208,20 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onTransferFailure", "(Landroid/media/MediaRoute2Info;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

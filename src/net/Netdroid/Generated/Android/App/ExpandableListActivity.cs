@@ -41,10 +41,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ExpandableListActivity(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,21 +75,21 @@ namespace Android.App
     public partial class ExpandableListActivity
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getExpandableListAdapter()"/>
@@ -130,7 +130,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public bool OnChildClick(Android.Widget.ExpandableListView arg0, Android.View.View arg1, int arg2, int arg3, long arg4)
         {
-            return IExecute<bool>("onChildClick", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("onChildClick", "(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#setSelectedChild(int,int,boolean)"/>
@@ -142,7 +142,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public bool SetSelectedChild(int arg0, int arg1, bool arg2)
         {
-            return IExecute<bool>("setSelectedChild", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setSelectedChild", "(IIZ)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getSelectedId()"/>
@@ -198,13 +198,13 @@ namespace Android.App
         {
             IExecuteWithSignature("setSelectedGroup", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

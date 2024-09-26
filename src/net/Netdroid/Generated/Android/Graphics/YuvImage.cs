@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public YuvImage(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -99,21 +99,21 @@ namespace Android.Graphics
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getColorSpace()"/>
@@ -132,7 +132,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool CompressToJpeg(Android.Graphics.Rect arg0, int arg1, Java.Io.OutputStream arg2)
         {
-            return IExecute<bool>("compressToJpeg", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("compressToJpeg", "(Landroid/graphics/Rect;ILjava/io/OutputStream;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#compressToJpegR(android.graphics.YuvImage,int,java.io.OutputStream)"/>
@@ -143,7 +143,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool CompressToJpegR(Android.Graphics.YuvImage arg0, int arg1, Java.Io.OutputStream arg2)
         {
-            return IExecute<bool>("compressToJpegR", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("compressToJpegR", "(Landroid/graphics/YuvImage;ILjava/io/OutputStream;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/YuvImage.html#getYuvData()"/>
@@ -185,13 +185,13 @@ namespace Android.Graphics
         {
             return IExecuteWithSignatureArray<int>("getStrides", "()[I");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

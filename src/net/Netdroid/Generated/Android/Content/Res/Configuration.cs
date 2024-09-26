@@ -40,10 +40,10 @@ namespace Android.Content.Res
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Configuration(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,9 +82,9 @@ namespace Android.Content.Res
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.Res.Configuration"/> to <see cref="Android.Os.Parcelable"/>
@@ -94,9 +94,9 @@ namespace Android.Content.Res
         /// Converter from <see cref="Android.Content.Res.Configuration"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Content.Res.Configuration t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#fontScale"/>
@@ -657,9 +657,9 @@ namespace Android.Content.Res
         public static int UI_MODE_TYPE_WATCH { get { if (!_UI_MODE_TYPE_WATCHReady) { _UI_MODE_TYPE_WATCHContent = SGetField<int>(LocalBridgeClazz, "UI_MODE_TYPE_WATCH"); _UI_MODE_TYPE_WATCHReady = true; } return _UI_MODE_TYPE_WATCHContent; } }
         private static int _UI_MODE_TYPE_WATCHContent = default;
         private static bool _UI_MODE_TYPE_WATCHReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#generateDelta(android.content.res.Configuration,android.content.res.Configuration)"/>
@@ -669,7 +669,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.Configuration"/></returns>
         public static Android.Content.Res.Configuration GenerateDelta(Android.Content.Res.Configuration arg0, Android.Content.Res.Configuration arg1)
         {
-            return SExecute<Android.Content.Res.Configuration>(LocalBridgeClazz, "generateDelta", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Res.Configuration>(LocalBridgeClazz, "generateDelta", "(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)Landroid/content/res/Configuration;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#needNewResources(int,int)"/>
@@ -679,11 +679,11 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public static bool NeedNewResources(int arg0, int arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "needNewResources", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "needNewResources", "(II)Z", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLocales()"/>
@@ -848,15 +848,15 @@ namespace Android.Content.Res
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

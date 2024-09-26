@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         [global::System.Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicIntegerFieldUpdater(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         [global::System.Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicIntegerFieldUpdater(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -124,17 +124,17 @@ namespace Java.Util.Concurrent.Atomic
     public partial class AtomicIntegerFieldUpdater
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
@@ -144,11 +144,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater NewUpdater(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>(LocalBridgeClazz, "newUpdater", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>(LocalBridgeClazz, "newUpdater", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#compareAndSet(java.lang.Object,int,int)"/>
@@ -159,7 +159,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(object arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#weakCompareAndSet(java.lang.Object,int,int)"/>
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#get(java.lang.Object)"/>
@@ -188,7 +188,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="int"/></param>
         public void LazySet(object arg0, int arg1)
         {
-            IExecute("lazySet", arg0, arg1);
+            IExecuteWithSignature("lazySet", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#set(java.lang.Object,int)"/>
@@ -197,7 +197,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="int"/></param>
         public void Set(object arg0, int arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#accumulateAndGet(java.lang.Object,int,java.util.function.IntBinaryOperator)"/>
@@ -208,7 +208,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int AccumulateAndGet(object arg0, int arg1, Java.Util.Function.IntBinaryOperator arg2)
         {
-            return IExecute<int>("accumulateAndGet", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("accumulateAndGet", "(Ljava/lang/Object;ILjava/util/function/IntBinaryOperator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAccumulate(java.lang.Object,int,java.util.function.IntBinaryOperator)"/>
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndAccumulate(object arg0, int arg1, Java.Util.Function.IntBinaryOperator arg2)
         {
-            return IExecute<int>("getAndAccumulate", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAndAccumulate", "(Ljava/lang/Object;ILjava/util/function/IntBinaryOperator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.IntUnaryOperator)"/>
@@ -229,7 +229,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndUpdate(object arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            return IExecute<int>("getAndUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndUpdate", "(Ljava/lang/Object;Ljava/util/function/IntUnaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.IntUnaryOperator)"/>
@@ -239,7 +239,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int UpdateAndGet(object arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            return IExecute<int>("updateAndGet", arg0, arg1);
+            return IExecuteWithSignature<int>("updateAndGet", "(Ljava/lang/Object;Ljava/util/function/IntUnaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#addAndGet(java.lang.Object,int)"/>
@@ -249,7 +249,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int AddAndGet(object arg0, int arg1)
         {
-            return IExecute<int>("addAndGet", arg0, arg1);
+            return IExecuteWithSignature<int>("addAndGet", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#decrementAndGet(java.lang.Object)"/>
@@ -268,7 +268,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndAdd(object arg0, int arg1)
         {
-            return IExecute<int>("getAndAdd", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndAdd", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndDecrement(java.lang.Object)"/>
@@ -296,7 +296,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndSet(object arg0, int arg1)
         {
-            return IExecute<int>("getAndSet", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndSet", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#incrementAndGet(java.lang.Object)"/>
@@ -307,13 +307,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecuteWithSignature<int>("incrementAndGet", "(Ljava/lang/Object;)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -322,21 +322,21 @@ namespace Java.Util.Concurrent.Atomic
     public partial class AtomicIntegerFieldUpdater<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater{T}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater(Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<T> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
@@ -347,11 +347,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U> NewUpdater<U>(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U>>(LocalBridgeClazz, "newUpdater", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U>>(LocalBridgeClazz, "newUpdater", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#compareAndSet(java.lang.Object,int,int)"/>
@@ -362,7 +362,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(T arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#weakCompareAndSet(java.lang.Object,int,int)"/>
@@ -373,7 +373,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(T arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#get(java.lang.Object)"/>
@@ -391,7 +391,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="int"/></param>
         public void LazySet(T arg0, int arg1)
         {
-            IExecute("lazySet", arg0, arg1);
+            IExecuteWithSignature("lazySet", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#set(java.lang.Object,int)"/>
@@ -400,7 +400,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="int"/></param>
         public void Set(T arg0, int arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#accumulateAndGet(java.lang.Object,int,java.util.function.IntBinaryOperator)"/>
@@ -411,7 +411,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int AccumulateAndGet(T arg0, int arg1, Java.Util.Function.IntBinaryOperator arg2)
         {
-            return IExecute<int>("accumulateAndGet", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("accumulateAndGet", "(Ljava/lang/Object;ILjava/util/function/IntBinaryOperator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAccumulate(java.lang.Object,int,java.util.function.IntBinaryOperator)"/>
@@ -422,7 +422,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndAccumulate(T arg0, int arg1, Java.Util.Function.IntBinaryOperator arg2)
         {
-            return IExecute<int>("getAndAccumulate", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAndAccumulate", "(Ljava/lang/Object;ILjava/util/function/IntBinaryOperator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.IntUnaryOperator)"/>
@@ -432,7 +432,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndUpdate(T arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            return IExecute<int>("getAndUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndUpdate", "(Ljava/lang/Object;Ljava/util/function/IntUnaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.IntUnaryOperator)"/>
@@ -442,7 +442,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int UpdateAndGet(T arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            return IExecute<int>("updateAndGet", arg0, arg1);
+            return IExecuteWithSignature<int>("updateAndGet", "(Ljava/lang/Object;Ljava/util/function/IntUnaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#addAndGet(java.lang.Object,int)"/>
@@ -452,7 +452,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int AddAndGet(T arg0, int arg1)
         {
-            return IExecute<int>("addAndGet", arg0, arg1);
+            return IExecuteWithSignature<int>("addAndGet", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#decrementAndGet(java.lang.Object)"/>
@@ -471,7 +471,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndAdd(T arg0, int arg1)
         {
-            return IExecute<int>("getAndAdd", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndAdd", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndDecrement(java.lang.Object)"/>
@@ -499,7 +499,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndSet(T arg0, int arg1)
         {
-            return IExecute<int>("getAndSet", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndSet", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#incrementAndGet(java.lang.Object)"/>
@@ -510,13 +510,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecuteWithSignature<int>("incrementAndGet", "(Ljava/lang/Object;)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

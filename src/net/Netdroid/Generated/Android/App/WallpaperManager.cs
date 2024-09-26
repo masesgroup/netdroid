@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WallpaperManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnColorsChangedListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnColorsChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.WallpaperManager_OnColorsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnColorsChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnColorsChangedListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.WallpaperManager$OnColorsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,13 +141,13 @@ namespace Android.App
     public partial class WallpaperManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#FLAG_LOCK"/>
@@ -209,9 +209,9 @@ namespace Android.App
         public static Java.Lang.String WALLPAPER_PREVIEW_META_DATA { get { if (!_WALLPAPER_PREVIEW_META_DATAReady) { _WALLPAPER_PREVIEW_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WALLPAPER_PREVIEW_META_DATA"); _WALLPAPER_PREVIEW_META_DATAReady = true; } return _WALLPAPER_PREVIEW_META_DATAContent; } }
         private static Java.Lang.String _WALLPAPER_PREVIEW_META_DATAContent = default;
         private static bool _WALLPAPER_PREVIEW_META_DATAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getInstance(android.content.Context)"/>
@@ -222,9 +222,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Android.App.WallpaperManager>(LocalBridgeClazz, "getInstance", "(Landroid/content/Context;)Landroid/app/WallpaperManager;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getWallpaperColors(int)"/>
@@ -281,7 +281,7 @@ namespace Android.App
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetBuiltInDrawable(int arg0, int arg1, bool arg2, float arg3, float arg4, int arg5)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getBuiltInDrawable", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBuiltInDrawable", "(IIZFFI)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getBuiltInDrawable(int,int,boolean,float,float)"/>
@@ -294,7 +294,7 @@ namespace Android.App
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetBuiltInDrawable(int arg0, int arg1, bool arg2, float arg3, float arg4)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getBuiltInDrawable", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBuiltInDrawable", "(IIZFF)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getBuiltInDrawable(int)"/>
@@ -443,7 +443,7 @@ namespace Android.App
         /// <exception cref="Java.Io.IOException"/>
         public int SetBitmap(Android.Graphics.Bitmap arg0, Android.Graphics.Rect arg1, bool arg2, int arg3)
         {
-            return IExecute<int>("setBitmap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("setBitmap", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;ZI)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#setBitmap(android.graphics.Bitmap,android.graphics.Rect,boolean)"/>
@@ -455,7 +455,7 @@ namespace Android.App
         /// <exception cref="Java.Io.IOException"/>
         public int SetBitmap(Android.Graphics.Bitmap arg0, Android.Graphics.Rect arg1, bool arg2)
         {
-            return IExecute<int>("setBitmap", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("setBitmap", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Z)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#setResource(int,int)"/>
@@ -466,7 +466,7 @@ namespace Android.App
         /// <exception cref="Java.Io.IOException"/>
         public int SetResource(int arg0, int arg1)
         {
-            return IExecute<int>("setResource", arg0, arg1);
+            return IExecuteWithSignature<int>("setResource", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#setStream(java.io.InputStream,android.graphics.Rect,boolean,int)"/>
@@ -479,7 +479,7 @@ namespace Android.App
         /// <exception cref="Java.Io.IOException"/>
         public int SetStream(Java.Io.InputStream arg0, Android.Graphics.Rect arg1, bool arg2, int arg3)
         {
-            return IExecute<int>("setStream", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("setStream", "(Ljava/io/InputStream;Landroid/graphics/Rect;ZI)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#setStream(java.io.InputStream,android.graphics.Rect,boolean)"/>
@@ -491,7 +491,7 @@ namespace Android.App
         /// <exception cref="Java.Io.IOException"/>
         public int SetStream(Java.Io.InputStream arg0, Android.Graphics.Rect arg1, bool arg2)
         {
-            return IExecute<int>("setStream", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("setStream", "(Ljava/io/InputStream;Landroid/graphics/Rect;Z)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#addOnColorsChangedListener(android.app.WallpaperManager.OnColorsChangedListener,android.os.Handler)"/>
@@ -500,7 +500,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void AddOnColorsChangedListener(Android.App.WallpaperManager.OnColorsChangedListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("addOnColorsChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnColorsChangedListener", "(Landroid/app/WallpaperManager$OnColorsChangedListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#clear()"/>
@@ -560,7 +560,7 @@ namespace Android.App
         /// <param name="arg5"><see cref="Android.Os.Bundle"/></param>
         public void SendWallpaperCommand(Android.Os.IBinder arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, Android.Os.Bundle arg5)
         {
-            IExecute("sendWallpaperCommand", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("sendWallpaperCommand", "(Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#setBitmap(android.graphics.Bitmap)"/>
@@ -605,7 +605,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="float"/></param>
         public void SetWallpaperOffsets(Android.Os.IBinder arg0, float arg1, float arg2)
         {
-            IExecute("setWallpaperOffsets", arg0, arg1, arg2);
+            IExecuteWithSignature("setWallpaperOffsets", "(Landroid/os/IBinder;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#setWallpaperOffsetSteps(float,float)"/>
@@ -614,7 +614,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="float"/></param>
         public void SetWallpaperOffsetSteps(float arg0, float arg1)
         {
-            IExecute("setWallpaperOffsetSteps", arg0, arg1);
+            IExecuteWithSignature("setWallpaperOffsetSteps", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#suggestDesiredDimensions(int,int)"/>
@@ -623,31 +623,31 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void SuggestDesiredDimensions(int arg0, int arg1)
         {
-            IExecute("suggestDesiredDimensions", arg0, arg1);
+            IExecuteWithSignature("suggestDesiredDimensions", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnColorsChangedListener implementation
         public partial class OnColorsChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnColorsChangedListener"/>
@@ -657,13 +657,13 @@ namespace Android.App
                 AddEventHandler("onColorsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnColorsChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener.html#onColorsChanged(android.app.WallpaperColors,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnColorsChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.App.WallpaperColors, int> OnOnColorsChanged { get; set; } = null;
-            
+
             bool hasOverrideOnColorsChanged = true;
             void OnColorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -672,7 +672,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Android.App.WallpaperColors>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnColorsChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener.html#onColorsChanged(android.app.WallpaperColors,int)"/>
             /// </summary>
@@ -682,13 +682,13 @@ namespace Android.App
             {
                 hasOverrideOnColorsChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -697,21 +697,21 @@ namespace Android.App
         public partial class OnColorsChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener.html#onColorsChanged(android.app.WallpaperColors,int)"/>
@@ -720,22 +720,22 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public override void OnColorsChanged(Android.App.WallpaperColors arg0, int arg1)
             {
-                IExecute("onColorsChanged", arg0, arg1);
+                IExecuteWithSignature("onColorsChanged", "(Landroid/app/WallpaperColors;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

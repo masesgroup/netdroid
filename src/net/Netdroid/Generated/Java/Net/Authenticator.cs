@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("Authenticator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Authenticator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region RequestorType declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RequestorType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Java.Net
     public partial class Authenticator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#getDefault()"/>
@@ -155,7 +155,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Net.URL arg6, Java.Net.Authenticator.RequestorType arg7)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -169,7 +169,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthentication(java.net.Authenticator,java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
@@ -186,7 +186,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.Authenticator arg0, Java.Lang.String arg1, Java.Net.InetAddress arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Java.Net.URL arg7, Java.Net.Authenticator.RequestorType arg8)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/net/Authenticator;Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -199,7 +199,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.InetAddress arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#setDefault(java.net.Authenticator)"/>
@@ -209,9 +209,9 @@ namespace Java.Net
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/Authenticator;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthenticationInstance(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
@@ -227,23 +227,23 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public Java.Net.PasswordAuthentication RequestPasswordAuthenticationInstance(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Net.URL arg6, Java.Net.Authenticator.RequestorType arg7)
         {
-            return IExecute<Java.Net.PasswordAuthentication>("requestPasswordAuthenticationInstance", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Java.Net.PasswordAuthentication>("requestPasswordAuthenticationInstance", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region RequestorType implementation
         public partial class RequestorType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/net/Authenticator.RequestorType.html#PROXY"/>
@@ -257,9 +257,9 @@ namespace Java.Net
             public static Java.Net.Authenticator.RequestorType SERVER { get { if (!_SERVERReady) { _SERVERContent = SGetField<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "SERVER"); _SERVERReady = true; } return _SERVERContent; } }
             private static Java.Net.Authenticator.RequestorType _SERVERContent = default;
             private static bool _SERVERReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/net/Authenticator.RequestorType.html#valueOf(java.lang.String)"/>
@@ -278,24 +278,24 @@ namespace Java.Net
             {
                 return SExecuteWithSignatureArray<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "values", "()[Ljava/net/Authenticator$RequestorType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

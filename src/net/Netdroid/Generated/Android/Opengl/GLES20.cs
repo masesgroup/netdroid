@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLES20(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Opengl
     public partial class GLES20
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#GL_ACTIVE_ATTRIBUTE_MAX_LENGTH"/>
@@ -1895,9 +1895,9 @@ namespace Android.Opengl
         public static int GL_ZERO { get { if (!_GL_ZEROReady) { _GL_ZEROContent = SGetField<int>(LocalBridgeClazz, "GL_ZERO"); _GL_ZEROReady = true; } return _GL_ZEROContent; } }
         private static int _GL_ZEROContent = default;
         private static bool _GL_ZEROReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glIsBuffer(int)"/>
@@ -1996,7 +1996,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlGetAttribLocation(int arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "glGetAttribLocation", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glGetAttribLocation", "(ILjava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetError()"/>
@@ -2014,7 +2014,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlGetUniformLocation(int arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "glGetUniformLocation", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glGetUniformLocation", "(ILjava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetActiveAttrib(int,int,int[],int,int[],int)"/>
@@ -2028,7 +2028,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GlGetActiveAttrib(int arg0, int arg1, int[] arg2, int arg3, int[] arg4, int arg5)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "glGetActiveAttrib", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "glGetActiveAttrib", "(II[II[II)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetActiveAttrib(int,int,java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -2040,7 +2040,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GlGetActiveAttrib(int arg0, int arg1, Java.Nio.IntBuffer arg2, Java.Nio.IntBuffer arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "glGetActiveAttrib", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "glGetActiveAttrib", "(IILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetActiveUniform(int,int,int[],int,int[],int)"/>
@@ -2054,7 +2054,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GlGetActiveUniform(int arg0, int arg1, int[] arg2, int arg3, int[] arg4, int arg5)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "glGetActiveUniform", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "glGetActiveUniform", "(II[II[II)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetActiveUniform(int,int,java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -2066,7 +2066,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GlGetActiveUniform(int arg0, int arg1, Java.Nio.IntBuffer arg2, Java.Nio.IntBuffer arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "glGetActiveUniform", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "glGetActiveUniform", "(IILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetProgramInfoLog(int)"/>
@@ -2119,7 +2119,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlAttachShader(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glAttachShader", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glAttachShader", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBindAttribLocation(int,int,java.lang.String)"/>
@@ -2129,7 +2129,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void GlBindAttribLocation(int arg0, int arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "glBindAttribLocation", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glBindAttribLocation", "(IILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBindBuffer(int,int)"/>
@@ -2138,7 +2138,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlBindBuffer(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glBindBuffer", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glBindBuffer", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBindFramebuffer(int,int)"/>
@@ -2147,7 +2147,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlBindFramebuffer(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glBindFramebuffer", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glBindFramebuffer", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBindRenderbuffer(int,int)"/>
@@ -2156,7 +2156,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlBindRenderbuffer(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glBindRenderbuffer", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glBindRenderbuffer", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBindTexture(int,int)"/>
@@ -2165,7 +2165,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlBindTexture(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glBindTexture", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glBindTexture", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBlendColor(float,float,float,float)"/>
@@ -2176,7 +2176,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="float"/></param>
         public static void GlBlendColor(float arg0, float arg1, float arg2, float arg3)
         {
-            SExecute(LocalBridgeClazz, "glBlendColor", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendColor", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBlendEquation(int)"/>
@@ -2193,7 +2193,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlBlendEquationSeparate(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glBlendEquationSeparate", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendEquationSeparate", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBlendFunc(int,int)"/>
@@ -2202,7 +2202,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlBlendFunc(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glBlendFunc", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendFunc", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBlendFuncSeparate(int,int,int,int)"/>
@@ -2213,7 +2213,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlBlendFuncSeparate(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glBlendFuncSeparate", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendFuncSeparate", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBufferData(int,int,java.nio.Buffer,int)"/>
@@ -2224,7 +2224,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlBufferData(int arg0, int arg1, Java.Nio.Buffer arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glBufferData", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glBufferData", "(IILjava/nio/Buffer;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glBufferSubData(int,int,int,java.nio.Buffer)"/>
@@ -2235,7 +2235,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.Buffer"/></param>
         public static void GlBufferSubData(int arg0, int arg1, int arg2, Java.Nio.Buffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glBufferSubData", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glBufferSubData", "(IIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glClear(int)"/>
@@ -2254,7 +2254,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="float"/></param>
         public static void GlClearColor(float arg0, float arg1, float arg2, float arg3)
         {
-            SExecute(LocalBridgeClazz, "glClearColor", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glClearColor", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glClearDepthf(float)"/>
@@ -2281,7 +2281,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="bool"/></param>
         public static void GlColorMask(bool arg0, bool arg1, bool arg2, bool arg3)
         {
-            SExecute(LocalBridgeClazz, "glColorMask", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glColorMask", "(ZZZZ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glCompileShader(int)"/>
@@ -2304,7 +2304,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="Java.Nio.Buffer"/></param>
         public static void GlCompressedTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Nio.Buffer arg7)
         {
-            SExecute(LocalBridgeClazz, "glCompressedTexImage2D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "glCompressedTexImage2D", "(IIIIIIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glCompressedTexSubImage2D(int,int,int,int,int,int,int,int,java.nio.Buffer)"/>
@@ -2320,7 +2320,7 @@ namespace Android.Opengl
         /// <param name="arg8"><see cref="Java.Nio.Buffer"/></param>
         public static void GlCompressedTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, Java.Nio.Buffer arg8)
         {
-            SExecute(LocalBridgeClazz, "glCompressedTexSubImage2D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            SExecuteWithSignature(LocalBridgeClazz, "glCompressedTexSubImage2D", "(IIIIIIIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glCopyTexImage2D(int,int,int,int,int,int,int,int)"/>
@@ -2335,7 +2335,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="int"/></param>
         public static void GlCopyTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
-            SExecute(LocalBridgeClazz, "glCopyTexImage2D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "glCopyTexImage2D", "(IIIIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glCopyTexSubImage2D(int,int,int,int,int,int,int,int)"/>
@@ -2350,7 +2350,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="int"/></param>
         public static void GlCopyTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
-            SExecute(LocalBridgeClazz, "glCopyTexSubImage2D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "glCopyTexSubImage2D", "(IIIIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glCullFace(int)"/>
@@ -2368,7 +2368,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlDeleteBuffers(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glDeleteBuffers", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteBuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDeleteBuffers(int,java.nio.IntBuffer)"/>
@@ -2377,7 +2377,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlDeleteBuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glDeleteBuffers", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteBuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDeleteFramebuffers(int,int[],int)"/>
@@ -2387,7 +2387,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlDeleteFramebuffers(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glDeleteFramebuffers", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteFramebuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDeleteFramebuffers(int,java.nio.IntBuffer)"/>
@@ -2396,7 +2396,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlDeleteFramebuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glDeleteFramebuffers", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteFramebuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDeleteProgram(int)"/>
@@ -2414,7 +2414,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlDeleteRenderbuffers(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glDeleteRenderbuffers", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteRenderbuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDeleteRenderbuffers(int,java.nio.IntBuffer)"/>
@@ -2423,7 +2423,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlDeleteRenderbuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glDeleteRenderbuffers", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteRenderbuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDeleteShader(int)"/>
@@ -2441,7 +2441,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlDeleteTextures(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glDeleteTextures", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteTextures", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDeleteTextures(int,java.nio.IntBuffer)"/>
@@ -2450,7 +2450,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlDeleteTextures(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glDeleteTextures", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteTextures", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDepthFunc(int)"/>
@@ -2475,7 +2475,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="float"/></param>
         public static void GlDepthRangef(float arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "glDepthRangef", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDepthRangef", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDetachShader(int,int)"/>
@@ -2484,7 +2484,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlDetachShader(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glDetachShader", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDetachShader", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDisable(int)"/>
@@ -2510,7 +2510,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlDrawArrays(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glDrawArrays", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDrawArrays", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDrawElements(int,int,int,int)"/>
@@ -2521,7 +2521,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlDrawElements(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glDrawElements", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glDrawElements", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glDrawElements(int,int,int,java.nio.Buffer)"/>
@@ -2532,7 +2532,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.Buffer"/></param>
         public static void GlDrawElements(int arg0, int arg1, int arg2, Java.Nio.Buffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glDrawElements", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glDrawElements", "(IIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glEnable(int)"/>
@@ -2573,7 +2573,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlFramebufferRenderbuffer(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glFramebufferRenderbuffer", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glFramebufferRenderbuffer", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glFramebufferTexture2D(int,int,int,int,int)"/>
@@ -2585,7 +2585,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlFramebufferTexture2D(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glFramebufferTexture2D", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glFramebufferTexture2D", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glFrontFace(int)"/>
@@ -2603,7 +2603,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGenBuffers(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGenBuffers", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenBuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGenBuffers(int,java.nio.IntBuffer)"/>
@@ -2612,7 +2612,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGenBuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGenBuffers", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenBuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGenerateMipmap(int)"/>
@@ -2630,7 +2630,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGenFramebuffers(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGenFramebuffers", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenFramebuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGenFramebuffers(int,java.nio.IntBuffer)"/>
@@ -2639,7 +2639,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGenFramebuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGenFramebuffers", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenFramebuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGenRenderbuffers(int,int[],int)"/>
@@ -2649,7 +2649,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGenRenderbuffers(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGenRenderbuffers", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenRenderbuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGenRenderbuffers(int,java.nio.IntBuffer)"/>
@@ -2658,7 +2658,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGenRenderbuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGenRenderbuffers", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenRenderbuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGenTextures(int,int[],int)"/>
@@ -2668,7 +2668,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGenTextures(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGenTextures", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenTextures", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGenTextures(int,java.nio.IntBuffer)"/>
@@ -2677,7 +2677,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGenTextures(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGenTextures", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenTextures", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetActiveAttrib(int,int,int,int[],int,int[],int,int[],int,byte[],int)"/>
@@ -2695,7 +2695,7 @@ namespace Android.Opengl
         /// <param name="arg10"><see cref="int"/></param>
         public static void GlGetActiveAttrib(int arg0, int arg1, int arg2, int[] arg3, int arg4, int[] arg5, int arg6, int[] arg7, int arg8, byte[] arg9, int arg10)
         {
-            SExecute(LocalBridgeClazz, "glGetActiveAttrib", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetActiveAttrib", "(III[II[II[II[BI)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetActiveUniform(int,int,int,int[],int,int[],int,int[],int,byte[],int)"/>
@@ -2713,7 +2713,7 @@ namespace Android.Opengl
         /// <param name="arg10"><see cref="int"/></param>
         public static void GlGetActiveUniform(int arg0, int arg1, int arg2, int[] arg3, int arg4, int[] arg5, int arg6, int[] arg7, int arg8, byte[] arg9, int arg10)
         {
-            SExecute(LocalBridgeClazz, "glGetActiveUniform", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetActiveUniform", "(III[II[II[II[BI)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetAttachedShaders(int,int,int[],int,int[],int)"/>
@@ -2726,7 +2726,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlGetAttachedShaders(int arg0, int arg1, int[] arg2, int arg3, int[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glGetAttachedShaders", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetAttachedShaders", "(II[II[II)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetAttachedShaders(int,int,java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -2737,7 +2737,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetAttachedShaders(int arg0, int arg1, Java.Nio.IntBuffer arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetAttachedShaders", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetAttachedShaders", "(IILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetBooleanv(int,boolean[],int)"/>
@@ -2747,7 +2747,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGetBooleanv(int arg0, bool[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetBooleanv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetBooleanv", "(I[ZI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetBooleanv(int,java.nio.IntBuffer)"/>
@@ -2756,7 +2756,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetBooleanv(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGetBooleanv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetBooleanv", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetBufferParameteriv(int,int,int[],int)"/>
@@ -2767,7 +2767,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetBufferParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetBufferParameteriv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetBufferParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetBufferParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -2777,7 +2777,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetBufferParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetBufferParameteriv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetBufferParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetFloatv(int,float[],int)"/>
@@ -2787,7 +2787,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGetFloatv(int arg0, float[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetFloatv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetFloatv", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetFloatv(int,java.nio.FloatBuffer)"/>
@@ -2796,7 +2796,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlGetFloatv(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGetFloatv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetFloatv", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetFramebufferAttachmentParameteriv(int,int,int,int[],int)"/>
@@ -2808,7 +2808,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlGetFramebufferAttachmentParameteriv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glGetFramebufferAttachmentParameteriv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetFramebufferAttachmentParameteriv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetFramebufferAttachmentParameteriv(int,int,int,java.nio.IntBuffer)"/>
@@ -2819,7 +2819,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetFramebufferAttachmentParameteriv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetFramebufferAttachmentParameteriv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetFramebufferAttachmentParameteriv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetIntegerv(int,int[],int)"/>
@@ -2829,7 +2829,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGetIntegerv(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetIntegerv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetIntegerv", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetIntegerv(int,java.nio.IntBuffer)"/>
@@ -2838,7 +2838,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetIntegerv(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGetIntegerv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetIntegerv", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetProgramiv(int,int,int[],int)"/>
@@ -2849,7 +2849,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetProgramiv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramiv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetProgramiv(int,int,java.nio.IntBuffer)"/>
@@ -2859,7 +2859,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetProgramiv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramiv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramiv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetRenderbufferParameteriv(int,int,int[],int)"/>
@@ -2870,7 +2870,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetRenderbufferParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetRenderbufferParameteriv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetRenderbufferParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetRenderbufferParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -2880,7 +2880,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetRenderbufferParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetRenderbufferParameteriv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetRenderbufferParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetShaderiv(int,int,int[],int)"/>
@@ -2891,7 +2891,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetShaderiv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetShaderiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetShaderiv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetShaderiv(int,int,java.nio.IntBuffer)"/>
@@ -2901,7 +2901,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetShaderiv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetShaderiv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetShaderiv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetShaderPrecisionFormat(int,int,int[],int,int[],int)"/>
@@ -2914,7 +2914,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlGetShaderPrecisionFormat(int arg0, int arg1, int[] arg2, int arg3, int[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glGetShaderPrecisionFormat", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetShaderPrecisionFormat", "(II[II[II)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetShaderPrecisionFormat(int,int,java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -2925,7 +2925,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetShaderPrecisionFormat(int arg0, int arg1, Java.Nio.IntBuffer arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetShaderPrecisionFormat", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetShaderPrecisionFormat", "(IILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetShaderSource(int,int,int[],int,byte[],int)"/>
@@ -2938,7 +2938,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlGetShaderSource(int arg0, int arg1, int[] arg2, int arg3, byte[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glGetShaderSource", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetShaderSource", "(II[II[BI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetTexParameterfv(int,int,float[],int)"/>
@@ -2949,7 +2949,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetTexParameterfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameterfv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameterfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetTexParameterfv(int,int,java.nio.FloatBuffer)"/>
@@ -2959,7 +2959,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlGetTexParameterfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameterfv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameterfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetTexParameteriv(int,int,int[],int)"/>
@@ -2970,7 +2970,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetTexParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameteriv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetTexParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -2980,7 +2980,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetTexParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameteriv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetUniformfv(int,int,float[],int)"/>
@@ -2991,7 +2991,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetUniformfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetUniformfv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetUniformfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetUniformfv(int,int,java.nio.FloatBuffer)"/>
@@ -3001,7 +3001,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlGetUniformfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetUniformfv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetUniformfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetUniformiv(int,int,int[],int)"/>
@@ -3012,7 +3012,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetUniformiv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetUniformiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetUniformiv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetUniformiv(int,int,java.nio.IntBuffer)"/>
@@ -3022,7 +3022,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetUniformiv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetUniformiv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetUniformiv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetVertexAttribfv(int,int,float[],int)"/>
@@ -3033,7 +3033,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetVertexAttribfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetVertexAttribfv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetVertexAttribfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetVertexAttribfv(int,int,java.nio.FloatBuffer)"/>
@@ -3043,7 +3043,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlGetVertexAttribfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetVertexAttribfv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetVertexAttribfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetVertexAttribiv(int,int,int[],int)"/>
@@ -3054,7 +3054,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetVertexAttribiv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetVertexAttribiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetVertexAttribiv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glGetVertexAttribiv(int,int,java.nio.IntBuffer)"/>
@@ -3064,7 +3064,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetVertexAttribiv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetVertexAttribiv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetVertexAttribiv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glHint(int,int)"/>
@@ -3073,7 +3073,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlHint(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glHint", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glHint", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glLineWidth(float)"/>
@@ -3098,7 +3098,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlPixelStorei(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glPixelStorei", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glPixelStorei", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glPolygonOffset(float,float)"/>
@@ -3107,7 +3107,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="float"/></param>
         public static void GlPolygonOffset(float arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "glPolygonOffset", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glPolygonOffset", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glReadPixels(int,int,int,int,int,int,java.nio.Buffer)"/>
@@ -3121,7 +3121,7 @@ namespace Android.Opengl
         /// <param name="arg6"><see cref="Java.Nio.Buffer"/></param>
         public static void GlReadPixels(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Java.Nio.Buffer arg6)
         {
-            SExecute(LocalBridgeClazz, "glReadPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "glReadPixels", "(IIIIIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glReleaseShaderCompiler()"/>
@@ -3139,7 +3139,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlRenderbufferStorage(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glRenderbufferStorage", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glRenderbufferStorage", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glSampleCoverage(float,boolean)"/>
@@ -3148,7 +3148,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="bool"/></param>
         public static void GlSampleCoverage(float arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "glSampleCoverage", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glSampleCoverage", "(FZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glScissor(int,int,int,int)"/>
@@ -3159,7 +3159,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlScissor(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glScissor", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glScissor", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glShaderBinary(int,int[],int,int,java.nio.Buffer,int)"/>
@@ -3172,7 +3172,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlShaderBinary(int arg0, int[] arg1, int arg2, int arg3, Java.Nio.Buffer arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glShaderBinary", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glShaderBinary", "(I[IIILjava/nio/Buffer;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glShaderBinary(int,java.nio.IntBuffer,int,java.nio.Buffer,int)"/>
@@ -3184,7 +3184,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlShaderBinary(int arg0, Java.Nio.IntBuffer arg1, int arg2, Java.Nio.Buffer arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glShaderBinary", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glShaderBinary", "(ILjava/nio/IntBuffer;ILjava/nio/Buffer;I)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glShaderSource(int,java.lang.String)"/>
@@ -3193,7 +3193,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void GlShaderSource(int arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "glShaderSource", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glShaderSource", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glStencilFunc(int,int,int)"/>
@@ -3203,7 +3203,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlStencilFunc(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glStencilFunc", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glStencilFunc", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glStencilFuncSeparate(int,int,int,int)"/>
@@ -3214,7 +3214,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlStencilFuncSeparate(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glStencilFuncSeparate", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glStencilFuncSeparate", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glStencilMask(int)"/>
@@ -3231,7 +3231,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlStencilMaskSeparate(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glStencilMaskSeparate", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glStencilMaskSeparate", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glStencilOp(int,int,int)"/>
@@ -3241,7 +3241,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlStencilOp(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glStencilOp", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glStencilOp", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glStencilOpSeparate(int,int,int,int)"/>
@@ -3252,7 +3252,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlStencilOpSeparate(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glStencilOpSeparate", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glStencilOpSeparate", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexImage2D(int,int,int,int,int,int,int,int,java.nio.Buffer)"/>
@@ -3268,7 +3268,7 @@ namespace Android.Opengl
         /// <param name="arg8"><see cref="Java.Nio.Buffer"/></param>
         public static void GlTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, Java.Nio.Buffer arg8)
         {
-            SExecute(LocalBridgeClazz, "glTexImage2D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexImage2D", "(IIIIIIIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexParameterf(int,int,float)"/>
@@ -3278,7 +3278,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="float"/></param>
         public static void GlTexParameterf(int arg0, int arg1, float arg2)
         {
-            SExecute(LocalBridgeClazz, "glTexParameterf", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameterf", "(IIF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexParameterfv(int,int,float[],int)"/>
@@ -3289,7 +3289,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlTexParameterfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glTexParameterfv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameterfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexParameterfv(int,int,java.nio.FloatBuffer)"/>
@@ -3299,7 +3299,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlTexParameterfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glTexParameterfv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameterfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexParameteri(int,int,int)"/>
@@ -3309,7 +3309,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlTexParameteri(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glTexParameteri", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameteri", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexParameteriv(int,int,int[],int)"/>
@@ -3320,7 +3320,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlTexParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glTexParameteriv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -3330,7 +3330,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlTexParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glTexParameteriv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glTexSubImage2D(int,int,int,int,int,int,int,int,java.nio.Buffer)"/>
@@ -3346,7 +3346,7 @@ namespace Android.Opengl
         /// <param name="arg8"><see cref="Java.Nio.Buffer"/></param>
         public static void GlTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, Java.Nio.Buffer arg8)
         {
-            SExecute(LocalBridgeClazz, "glTexSubImage2D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexSubImage2D", "(IIIIIIIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform1f(int,float)"/>
@@ -3355,7 +3355,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="float"/></param>
         public static void GlUniform1f(int arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "glUniform1f", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform1f", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform1fv(int,int,float[],int)"/>
@@ -3366,7 +3366,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform1fv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform1fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform1fv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform1fv(int,int,java.nio.FloatBuffer)"/>
@@ -3376,7 +3376,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlUniform1fv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform1fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform1fv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform1i(int,int)"/>
@@ -3385,7 +3385,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlUniform1i(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glUniform1i", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform1i", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform1iv(int,int,int[],int)"/>
@@ -3396,7 +3396,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform1iv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform1iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform1iv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform1iv(int,int,java.nio.IntBuffer)"/>
@@ -3406,7 +3406,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlUniform1iv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform1iv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform1iv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform2f(int,float,float)"/>
@@ -3416,7 +3416,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="float"/></param>
         public static void GlUniform2f(int arg0, float arg1, float arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform2f", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform2f", "(IFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform2fv(int,int,float[],int)"/>
@@ -3427,7 +3427,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform2fv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform2fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform2fv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform2fv(int,int,java.nio.FloatBuffer)"/>
@@ -3437,7 +3437,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlUniform2fv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform2fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform2fv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform2i(int,int,int)"/>
@@ -3447,7 +3447,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlUniform2i(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform2i", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform2i", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform2iv(int,int,int[],int)"/>
@@ -3458,7 +3458,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform2iv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform2iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform2iv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform2iv(int,int,java.nio.IntBuffer)"/>
@@ -3468,7 +3468,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlUniform2iv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform2iv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform2iv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform3f(int,float,float,float)"/>
@@ -3479,7 +3479,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="float"/></param>
         public static void GlUniform3f(int arg0, float arg1, float arg2, float arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform3f", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform3f", "(IFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform3fv(int,int,float[],int)"/>
@@ -3490,7 +3490,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform3fv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform3fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform3fv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform3fv(int,int,java.nio.FloatBuffer)"/>
@@ -3500,7 +3500,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlUniform3fv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform3fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform3fv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform3i(int,int,int,int)"/>
@@ -3511,7 +3511,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform3i(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform3i", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform3i", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform3iv(int,int,int[],int)"/>
@@ -3522,7 +3522,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform3iv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform3iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform3iv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform3iv(int,int,java.nio.IntBuffer)"/>
@@ -3532,7 +3532,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlUniform3iv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform3iv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform3iv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform4f(int,float,float,float,float)"/>
@@ -3544,7 +3544,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void GlUniform4f(int arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "glUniform4f", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform4f", "(IFFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform4fv(int,int,float[],int)"/>
@@ -3555,7 +3555,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform4fv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform4fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform4fv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform4fv(int,int,java.nio.FloatBuffer)"/>
@@ -3565,7 +3565,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlUniform4fv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform4fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform4fv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform4i(int,int,int,int,int)"/>
@@ -3577,7 +3577,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlUniform4i(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glUniform4i", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform4i", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform4iv(int,int,int[],int)"/>
@@ -3588,7 +3588,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlUniform4iv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniform4iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform4iv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniform4iv(int,int,java.nio.IntBuffer)"/>
@@ -3598,7 +3598,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlUniform4iv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glUniform4iv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniform4iv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniformMatrix2fv(int,int,boolean,float[],int)"/>
@@ -3610,7 +3610,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlUniformMatrix2fv(int arg0, int arg1, bool arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glUniformMatrix2fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniformMatrix2fv", "(IIZ[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniformMatrix2fv(int,int,boolean,java.nio.FloatBuffer)"/>
@@ -3621,7 +3621,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlUniformMatrix2fv(int arg0, int arg1, bool arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniformMatrix2fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniformMatrix2fv", "(IIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniformMatrix3fv(int,int,boolean,float[],int)"/>
@@ -3633,7 +3633,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlUniformMatrix3fv(int arg0, int arg1, bool arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glUniformMatrix3fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniformMatrix3fv", "(IIZ[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniformMatrix3fv(int,int,boolean,java.nio.FloatBuffer)"/>
@@ -3644,7 +3644,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlUniformMatrix3fv(int arg0, int arg1, bool arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniformMatrix3fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniformMatrix3fv", "(IIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniformMatrix4fv(int,int,boolean,float[],int)"/>
@@ -3656,7 +3656,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlUniformMatrix4fv(int arg0, int arg1, bool arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glUniformMatrix4fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniformMatrix4fv", "(IIZ[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUniformMatrix4fv(int,int,boolean,java.nio.FloatBuffer)"/>
@@ -3667,7 +3667,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlUniformMatrix4fv(int arg0, int arg1, bool arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glUniformMatrix4fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glUniformMatrix4fv", "(IIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glUseProgram(int)"/>
@@ -3692,7 +3692,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="float"/></param>
         public static void GlVertexAttrib1f(int arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib1f", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib1f", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib1fv(int,float[],int)"/>
@@ -3702,7 +3702,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlVertexAttrib1fv(int arg0, float[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib1fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib1fv", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib1fv(int,java.nio.FloatBuffer)"/>
@@ -3711,7 +3711,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlVertexAttrib1fv(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib1fv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib1fv", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib2f(int,float,float)"/>
@@ -3721,7 +3721,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="float"/></param>
         public static void GlVertexAttrib2f(int arg0, float arg1, float arg2)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib2f", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib2f", "(IFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib2fv(int,float[],int)"/>
@@ -3731,7 +3731,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlVertexAttrib2fv(int arg0, float[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib2fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib2fv", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib2fv(int,java.nio.FloatBuffer)"/>
@@ -3740,7 +3740,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlVertexAttrib2fv(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib2fv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib2fv", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib3f(int,float,float,float)"/>
@@ -3751,7 +3751,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="float"/></param>
         public static void GlVertexAttrib3f(int arg0, float arg1, float arg2, float arg3)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib3f", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib3f", "(IFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib3fv(int,float[],int)"/>
@@ -3761,7 +3761,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlVertexAttrib3fv(int arg0, float[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib3fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib3fv", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib3fv(int,java.nio.FloatBuffer)"/>
@@ -3770,7 +3770,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlVertexAttrib3fv(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib3fv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib3fv", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib4f(int,float,float,float,float)"/>
@@ -3782,7 +3782,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void GlVertexAttrib4f(int arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib4f", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib4f", "(IFFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib4fv(int,float[],int)"/>
@@ -3792,7 +3792,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlVertexAttrib4fv(int arg0, float[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib4fv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib4fv", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttrib4fv(int,java.nio.FloatBuffer)"/>
@@ -3801,7 +3801,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlVertexAttrib4fv(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttrib4fv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttrib4fv", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttribPointer(int,int,int,boolean,int,int)"/>
@@ -3814,7 +3814,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlVertexAttribPointer(int arg0, int arg1, int arg2, bool arg3, int arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttribPointer", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttribPointer", "(IIIZII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glViewport(int,int,int,int)"/>
@@ -3825,7 +3825,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlViewport(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glViewport", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glViewport", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#glVertexAttribPointer(int,int,int,boolean,int,java.nio.Buffer)"/>
@@ -3838,19 +3838,19 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="Java.Nio.Buffer"/></param>
         public static void GlVertexAttribPointer(int arg0, int arg1, int arg2, bool arg3, int arg4, Java.Nio.Buffer arg5)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttribPointer", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttribPointer", "(IIIZILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

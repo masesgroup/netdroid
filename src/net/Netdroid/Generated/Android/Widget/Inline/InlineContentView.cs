@@ -40,10 +40,10 @@ namespace Android.Widget.Inline
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InlineContentView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget.Inline
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region SurfaceControlCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget.Inline
             /// </summary>
             [global::System.Obsolete("SurfaceControlCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SurfaceControlCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget.Inline
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Android.Widget.Inline
     public partial class InlineContentView
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/inline/InlineContentView.html#getSurfaceControl()"/>
@@ -172,7 +172,7 @@ namespace Android.Widget.Inline
         /// <param name="arg4"><see cref="int"/></param>
         public void OnLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("onLayout", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onLayout", "(ZIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/inline/InlineContentView.html#setSurfaceControlCallback(android.widget.inline.InlineContentView.SurfaceControlCallback)"/>
@@ -182,29 +182,29 @@ namespace Android.Widget.Inline
         {
             IExecuteWithSignature("setSurfaceControlCallback", "(Landroid/widget/inline/InlineContentView$SurfaceControlCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region SurfaceControlCallback implementation
         public partial class SurfaceControlCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/inline/InlineContentView.SurfaceControlCallback.html#onCreated(android.view.SurfaceControl)"/>
@@ -222,20 +222,20 @@ namespace Android.Widget.Inline
             {
                 IExecuteWithSignature("onDestroyed", "(Landroid/view/SurfaceControl;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

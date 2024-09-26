@@ -42,10 +42,10 @@ namespace Android.Telecom
         /// </summary>
         [global::System.Obsolete("CallRedirectionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallRedirectionService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Telecom
     public partial class CallRedirectionService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallRedirectionService.html#SERVICE_INTERFACE"/>
@@ -90,13 +90,13 @@ namespace Android.Telecom
         public static Java.Lang.String SERVICE_INTERFACE { get { if (!_SERVICE_INTERFACEReady) { _SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_INTERFACE"); _SERVICE_INTERFACEReady = true; } return _SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _SERVICE_INTERFACEContent = default;
         private static bool _SERVICE_INTERFACEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallRedirectionService.html#onPlaceCall(android.net.Uri,android.telecom.PhoneAccountHandle,boolean)"/>
@@ -106,7 +106,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="bool"/></param>
         public void OnPlaceCall(Android.Net.Uri arg0, Android.Telecom.PhoneAccountHandle arg1, bool arg2)
         {
-            IExecute("onPlaceCall", arg0, arg1, arg2);
+            IExecuteWithSignature("onPlaceCall", "(Landroid/net/Uri;Landroid/telecom/PhoneAccountHandle;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallRedirectionService.html#cancelCall()"/>
@@ -130,7 +130,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="bool"/></param>
         public void RedirectCall(Android.Net.Uri arg0, Android.Telecom.PhoneAccountHandle arg1, bool arg2)
         {
-            IExecute("redirectCall", arg0, arg1, arg2);
+            IExecuteWithSignature("redirectCall", "(Landroid/net/Uri;Landroid/telecom/PhoneAccountHandle;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallRedirectionService.html#onRedirectionTimeout()"/>
@@ -139,13 +139,13 @@ namespace Android.Telecom
         {
             IExecuteWithSignature("onRedirectionTimeout", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

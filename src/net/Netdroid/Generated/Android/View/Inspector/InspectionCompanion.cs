@@ -42,10 +42,10 @@ namespace Android.View.Inspector
         /// </summary>
         [global::System.Obsolete("InspectionCompanion class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InspectionCompanion(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View.Inspector
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region UninitializedPropertyMapException declaration
         /// <summary>
@@ -79,9 +79,9 @@ namespace Android.View.Inspector
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -107,10 +107,10 @@ namespace Android.View.Inspector
         /// </summary>
         [global::System.Obsolete("InspectionCompanion class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InspectionCompanion(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -131,7 +131,7 @@ namespace Android.View.Inspector
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -141,21 +141,21 @@ namespace Android.View.Inspector
     public partial class InspectionCompanion
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/InspectionCompanion.html#mapProperties(android.view.inspector.PropertyMapper)"/>
@@ -172,46 +172,46 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="Android.View.Inspector.PropertyReader"/></param>
         public void ReadProperties(object arg0, Android.View.Inspector.PropertyReader arg1)
         {
-            IExecute("readProperties", arg0, arg1);
+            IExecuteWithSignature("readProperties", "(Ljava/lang/Object;Landroid/view/inspector/PropertyReader;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region UninitializedPropertyMapException implementation
         public partial class UninitializedPropertyMapException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -223,13 +223,13 @@ namespace Android.View.Inspector
     public partial interface IInspectionCompanion<T>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -238,25 +238,25 @@ namespace Android.View.Inspector
     public partial class InspectionCompanion<T> : Android.View.Inspector.IInspectionCompanion<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.View.Inspector.InspectionCompanion{T}"/> to <see cref="Android.View.Inspector.InspectionCompanion"/>
         /// </summary>
         public static implicit operator Android.View.Inspector.InspectionCompanion(Android.View.Inspector.InspectionCompanion<T> t) => t.Cast<Android.View.Inspector.InspectionCompanion>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/InspectionCompanion.html#mapProperties(android.view.inspector.PropertyMapper)"/>
@@ -273,15 +273,15 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="Android.View.Inspector.PropertyReader"/></param>
         public void ReadProperties(T arg0, Android.View.Inspector.PropertyReader arg1)
         {
-            IExecute("readProperties", arg0, arg1);
+            IExecuteWithSignature("readProperties", "(Ljava/lang/Object;Landroid/view/inspector/PropertyReader;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

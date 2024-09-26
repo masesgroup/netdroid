@@ -42,10 +42,10 @@ namespace Android.Bluetooth
         /// </summary>
         [global::System.Obsolete("BluetoothGattServerCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BluetoothGattServerCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Bluetooth
     public partial class BluetoothGattServerCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onCharacteristicReadRequest(android.bluetooth.BluetoothDevice,int,int,android.bluetooth.BluetoothGattCharacteristic)"/>
@@ -101,7 +101,7 @@ namespace Android.Bluetooth
         /// <param name="arg3"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
         public void OnCharacteristicReadRequest(Android.Bluetooth.BluetoothDevice arg0, int arg1, int arg2, Android.Bluetooth.BluetoothGattCharacteristic arg3)
         {
-            IExecute("onCharacteristicReadRequest", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onCharacteristicReadRequest", "(Landroid/bluetooth/BluetoothDevice;IILandroid/bluetooth/BluetoothGattCharacteristic;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onCharacteristicWriteRequest(android.bluetooth.BluetoothDevice,int,android.bluetooth.BluetoothGattCharacteristic,boolean,boolean,int,byte[])"/>
@@ -115,7 +115,7 @@ namespace Android.Bluetooth
         /// <param name="arg6"><see cref="byte"/></param>
         public void OnCharacteristicWriteRequest(Android.Bluetooth.BluetoothDevice arg0, int arg1, Android.Bluetooth.BluetoothGattCharacteristic arg2, bool arg3, bool arg4, int arg5, byte[] arg6)
         {
-            IExecute("onCharacteristicWriteRequest", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("onCharacteristicWriteRequest", "(Landroid/bluetooth/BluetoothDevice;ILandroid/bluetooth/BluetoothGattCharacteristic;ZZI[B)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onConnectionStateChange(android.bluetooth.BluetoothDevice,int,int)"/>
@@ -125,7 +125,7 @@ namespace Android.Bluetooth
         /// <param name="arg2"><see cref="int"/></param>
         public void OnConnectionStateChange(Android.Bluetooth.BluetoothDevice arg0, int arg1, int arg2)
         {
-            IExecute("onConnectionStateChange", arg0, arg1, arg2);
+            IExecuteWithSignature("onConnectionStateChange", "(Landroid/bluetooth/BluetoothDevice;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onDescriptorReadRequest(android.bluetooth.BluetoothDevice,int,int,android.bluetooth.BluetoothGattDescriptor)"/>
@@ -136,7 +136,7 @@ namespace Android.Bluetooth
         /// <param name="arg3"><see cref="Android.Bluetooth.BluetoothGattDescriptor"/></param>
         public void OnDescriptorReadRequest(Android.Bluetooth.BluetoothDevice arg0, int arg1, int arg2, Android.Bluetooth.BluetoothGattDescriptor arg3)
         {
-            IExecute("onDescriptorReadRequest", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onDescriptorReadRequest", "(Landroid/bluetooth/BluetoothDevice;IILandroid/bluetooth/BluetoothGattDescriptor;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onDescriptorWriteRequest(android.bluetooth.BluetoothDevice,int,android.bluetooth.BluetoothGattDescriptor,boolean,boolean,int,byte[])"/>
@@ -150,7 +150,7 @@ namespace Android.Bluetooth
         /// <param name="arg6"><see cref="byte"/></param>
         public void OnDescriptorWriteRequest(Android.Bluetooth.BluetoothDevice arg0, int arg1, Android.Bluetooth.BluetoothGattDescriptor arg2, bool arg3, bool arg4, int arg5, byte[] arg6)
         {
-            IExecute("onDescriptorWriteRequest", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("onDescriptorWriteRequest", "(Landroid/bluetooth/BluetoothDevice;ILandroid/bluetooth/BluetoothGattDescriptor;ZZI[B)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onExecuteWrite(android.bluetooth.BluetoothDevice,int,boolean)"/>
@@ -160,7 +160,7 @@ namespace Android.Bluetooth
         /// <param name="arg2"><see cref="bool"/></param>
         public void OnExecuteWrite(Android.Bluetooth.BluetoothDevice arg0, int arg1, bool arg2)
         {
-            IExecute("onExecuteWrite", arg0, arg1, arg2);
+            IExecuteWithSignature("onExecuteWrite", "(Landroid/bluetooth/BluetoothDevice;IZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onMtuChanged(android.bluetooth.BluetoothDevice,int)"/>
@@ -169,7 +169,7 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="int"/></param>
         public void OnMtuChanged(Android.Bluetooth.BluetoothDevice arg0, int arg1)
         {
-            IExecute("onMtuChanged", arg0, arg1);
+            IExecuteWithSignature("onMtuChanged", "(Landroid/bluetooth/BluetoothDevice;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onNotificationSent(android.bluetooth.BluetoothDevice,int)"/>
@@ -178,7 +178,7 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="int"/></param>
         public void OnNotificationSent(Android.Bluetooth.BluetoothDevice arg0, int arg1)
         {
-            IExecute("onNotificationSent", arg0, arg1);
+            IExecuteWithSignature("onNotificationSent", "(Landroid/bluetooth/BluetoothDevice;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onPhyRead(android.bluetooth.BluetoothDevice,int,int,int)"/>
@@ -189,7 +189,7 @@ namespace Android.Bluetooth
         /// <param name="arg3"><see cref="int"/></param>
         public void OnPhyRead(Android.Bluetooth.BluetoothDevice arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("onPhyRead", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onPhyRead", "(Landroid/bluetooth/BluetoothDevice;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onPhyUpdate(android.bluetooth.BluetoothDevice,int,int,int)"/>
@@ -200,7 +200,7 @@ namespace Android.Bluetooth
         /// <param name="arg3"><see cref="int"/></param>
         public void OnPhyUpdate(Android.Bluetooth.BluetoothDevice arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("onPhyUpdate", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onPhyUpdate", "(Landroid/bluetooth/BluetoothDevice;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServerCallback.html#onServiceAdded(int,android.bluetooth.BluetoothGattService)"/>
@@ -209,15 +209,15 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothGattService"/></param>
         public void OnServiceAdded(int arg0, Android.Bluetooth.BluetoothGattService arg1)
         {
-            IExecute("onServiceAdded", arg0, arg1);
+            IExecuteWithSignature("onServiceAdded", "(ILandroid/bluetooth/BluetoothGattService;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

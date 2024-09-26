@@ -43,10 +43,10 @@ namespace Java.Security
         /// </summary>
         [global::System.Obsolete("Policy class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Policy(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,7 +67,7 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Parameters declaration
         /// <summary>
@@ -87,10 +87,10 @@ namespace Java.Security
             /// </summary>
             [global::System.Obsolete("Parameters class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Parameters(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -111,9 +111,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -125,13 +125,13 @@ namespace Java.Security
     public partial class Policy
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.html#UNSUPPORTED_EMPTY_COLLECTION"/>
@@ -139,9 +139,9 @@ namespace Java.Security
         public static Java.Security.PermissionCollection UNSUPPORTED_EMPTY_COLLECTION { get { if (!_UNSUPPORTED_EMPTY_COLLECTIONReady) { _UNSUPPORTED_EMPTY_COLLECTIONContent = SGetField<Java.Security.PermissionCollection>(LocalBridgeClazz, "UNSUPPORTED_EMPTY_COLLECTION"); _UNSUPPORTED_EMPTY_COLLECTIONReady = true; } return _UNSUPPORTED_EMPTY_COLLECTIONContent; } }
         private static Java.Security.PermissionCollection _UNSUPPORTED_EMPTY_COLLECTIONContent = default;
         private static bool _UNSUPPORTED_EMPTY_COLLECTIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.lang.String)"/>
@@ -154,7 +154,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;Ljava/lang/String;)Ljava/security/Policy;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.security.Provider)"/>
@@ -166,7 +166,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;Ljava/security/Provider;)Ljava/security/Policy;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters)"/>
@@ -177,7 +177,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1)
         {
-            return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;)Ljava/security/Policy;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.html#getPolicy()"/>
@@ -195,9 +195,9 @@ namespace Java.Security
         {
             SExecuteWithSignature(LocalBridgeClazz, "setPolicy", "(Ljava/security/Policy;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.html#implies(java.security.ProtectionDomain,java.security.Permission)"/>
@@ -207,7 +207,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.ProtectionDomain arg0, Java.Security.Permission arg1)
         {
-            return IExecute<bool>("implies", arg0, arg1);
+            return IExecuteWithSignature<bool>("implies", "(Ljava/security/ProtectionDomain;Ljava/security/Permission;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Policy.html#getType()"/>
@@ -258,44 +258,44 @@ namespace Java.Security
         {
             IExecuteWithSignature("refresh", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Parameters implementation
         public partial class Parameters
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

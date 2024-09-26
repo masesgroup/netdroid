@@ -42,10 +42,10 @@ namespace Android.Text
         /// </summary>
         [global::System.Obsolete("Layout class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Layout(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Alignment declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Alignment(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Directions(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -220,10 +220,10 @@ namespace Android.Text
             /// </summary>
             [global::System.Obsolete("TextInclusionStrategy class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TextInclusionStrategy(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -244,9 +244,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -258,13 +258,13 @@ namespace Android.Text
     public partial class Layout
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#INCLUSION_STRATEGY_ANY_OVERLAP"/>
@@ -374,9 +374,9 @@ namespace Android.Text
         public static int JUSTIFICATION_MODE_NONE { get { if (!_JUSTIFICATION_MODE_NONEReady) { _JUSTIFICATION_MODE_NONEContent = SGetField<int>(LocalBridgeClazz, "JUSTIFICATION_MODE_NONE"); _JUSTIFICATION_MODE_NONEReady = true; } return _JUSTIFICATION_MODE_NONEContent; } }
         private static int _JUSTIFICATION_MODE_NONEContent = default;
         private static bool _JUSTIFICATION_MODE_NONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getDesiredWidth(java.lang.CharSequence,android.text.TextPaint)"/>
@@ -386,7 +386,7 @@ namespace Android.Text
         /// <returns><see cref="float"/></returns>
         public static float GetDesiredWidth(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "getDesiredWidth", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getDesiredWidth", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getDesiredWidth(java.lang.CharSequence,int,int,android.text.TextPaint)"/>
@@ -398,11 +398,11 @@ namespace Android.Text
         /// <returns><see cref="float"/></returns>
         public static float GetDesiredWidth(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.TextPaint arg3)
         {
-            return SExecute<float>(LocalBridgeClazz, "getDesiredWidth", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getDesiredWidth", "(Ljava/lang/CharSequence;IILandroid/text/TextPaint;)F", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineDirections(int)"/>
@@ -842,7 +842,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public int GetLineBottom(int arg0, bool arg1)
         {
-            return IExecute<int>("getLineBottom", arg0, arg1);
+            return IExecuteWithSignature<int>("getLineBottom", "(IZ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineBounds(int,android.graphics.Rect)"/>
@@ -852,7 +852,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public int GetLineBounds(int arg0, Android.Graphics.Rect arg1)
         {
-            return IExecute<int>("getLineBounds", arg0, arg1);
+            return IExecuteWithSignature<int>("getLineBounds", "(ILandroid/graphics/Rect;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineForOffset(int)"/>
@@ -880,7 +880,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public int GetLineLetterSpacingUnitCount(int arg0, bool arg1)
         {
-            return IExecute<int>("getLineLetterSpacingUnitCount", arg0, arg1);
+            return IExecuteWithSignature<int>("getLineLetterSpacingUnitCount", "(IZ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineVisibleEnd(int)"/>
@@ -899,7 +899,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public int GetOffsetForHorizontal(int arg0, float arg1)
         {
-            return IExecute<int>("getOffsetForHorizontal", arg0, arg1);
+            return IExecuteWithSignature<int>("getOffsetForHorizontal", "(IF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getOffsetToLeftOf(int)"/>
@@ -928,7 +928,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public int[] GetRangeForRect(Android.Graphics.RectF arg0, Android.Text.SegmentFinder arg1, Android.Text.Layout.TextInclusionStrategy arg2)
         {
-            return IExecuteArray<int>("getRangeForRect", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<int>("getRangeForRect", "(Landroid/graphics/RectF;Landroid/text/SegmentFinder;Landroid/text/Layout$TextInclusionStrategy;)[I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#draw(android.graphics.Canvas,android.graphics.Path,android.graphics.Paint,int)"/>
@@ -939,7 +939,7 @@ namespace Android.Text
         /// <param name="arg3"><see cref="int"/></param>
         public void Draw(Android.Graphics.Canvas arg0, Android.Graphics.Path arg1, Android.Graphics.Paint arg2, int arg3)
         {
-            IExecute("draw", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#draw(android.graphics.Canvas,java.util.List,java.util.List,android.graphics.Path,android.graphics.Paint,int)"/>
@@ -952,7 +952,7 @@ namespace Android.Text
         /// <param name="arg5"><see cref="int"/></param>
         public void Draw(Android.Graphics.Canvas arg0, Java.Util.List<Android.Graphics.Path> arg1, Java.Util.List<Android.Graphics.Paint> arg2, Android.Graphics.Path arg3, Android.Graphics.Paint arg4, int arg5)
         {
-            IExecute("draw", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;Ljava/util/List;Ljava/util/List;Landroid/graphics/Path;Landroid/graphics/Paint;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#draw(android.graphics.Canvas)"/>
@@ -987,7 +987,7 @@ namespace Android.Text
         /// <param name="arg3"><see cref="int"/></param>
         public void FillCharacterBounds(int arg0, int arg1, float[] arg2, int arg3)
         {
-            IExecute("fillCharacterBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fillCharacterBounds", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getCursorPath(int,android.graphics.Path,java.lang.CharSequence)"/>
@@ -997,7 +997,7 @@ namespace Android.Text
         /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
         public void GetCursorPath(int arg0, Android.Graphics.Path arg1, Java.Lang.CharSequence arg2)
         {
-            IExecute("getCursorPath", arg0, arg1, arg2);
+            IExecuteWithSignature("getCursorPath", "(ILandroid/graphics/Path;Ljava/lang/CharSequence;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getSelectionPath(int,int,android.graphics.Path)"/>
@@ -1007,23 +1007,23 @@ namespace Android.Text
         /// <param name="arg2"><see cref="Android.Graphics.Path"/></param>
         public void GetSelectionPath(int arg0, int arg1, Android.Graphics.Path arg2)
         {
-            IExecute("getSelectionPath", arg0, arg1, arg2);
+            IExecuteWithSignature("getSelectionPath", "(IILandroid/graphics/Path;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Alignment implementation
         public partial class Alignment
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/Layout.Alignment.html#ALIGN_CENTER"/>
@@ -1043,9 +1043,9 @@ namespace Android.Text
             public static Android.Text.Layout.Alignment ALIGN_OPPOSITE { get { if (!_ALIGN_OPPOSITEReady) { _ALIGN_OPPOSITEContent = SGetField<Android.Text.Layout.Alignment>(LocalBridgeClazz, "ALIGN_OPPOSITE"); _ALIGN_OPPOSITEReady = true; } return _ALIGN_OPPOSITEContent; } }
             private static Android.Text.Layout.Alignment _ALIGN_OPPOSITEContent = default;
             private static bool _ALIGN_OPPOSITEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/Layout.Alignment.html#valueOf(java.lang.String)"/>
@@ -1064,17 +1064,17 @@ namespace Android.Text
             {
                 return SExecuteWithSignatureArray<Android.Text.Layout.Alignment>(LocalBridgeClazz, "values", "()[Landroid/text/Layout$Alignment;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1095,21 +1095,21 @@ namespace Android.Text
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#build()"/>
@@ -1281,13 +1281,13 @@ namespace Android.Text
             {
                 return IExecuteWithSignature<Android.Text.Layout.Builder>("setUseBoundsForWidth", "(Z)Landroid/text/Layout$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1296,29 +1296,29 @@ namespace Android.Text
         public partial class Directions
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1327,21 +1327,21 @@ namespace Android.Text
         public partial class TextInclusionStrategy
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/Layout.TextInclusionStrategy.html#isSegmentInside(android.graphics.RectF,android.graphics.RectF)"/>
@@ -1351,22 +1351,22 @@ namespace Android.Text
             /// <returns><see cref="bool"/></returns>
             public bool IsSegmentInside(Android.Graphics.RectF arg0, Android.Graphics.RectF arg1)
             {
-                return IExecute<bool>("isSegmentInside", arg0, arg1);
+                return IExecuteWithSignature<bool>("isSegmentInside", "(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

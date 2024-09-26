@@ -42,10 +42,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("AbstractList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractList(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("AbstractList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractList(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -124,25 +124,25 @@ namespace Java.Util
     public partial class AbstractList
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.AbstractList"/> to <see cref="Java.Util.List"/>
         /// </summary>
         public static implicit operator Java.Util.List(Java.Util.AbstractList t) => t.Cast<Java.Util.List>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#get(int)"/>
@@ -161,7 +161,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(int arg0, Java.Util.Collection arg1)
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#remove(int)"/>
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Set(int arg0, object arg1)
         {
-            return IExecute("set", arg0, arg1);
+            return IExecuteWithSignature("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
@@ -208,7 +208,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List SubList(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List>("subList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#listIterator()"/>
@@ -234,15 +234,15 @@ namespace Java.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void Add(int arg0, object arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -251,9 +251,9 @@ namespace Java.Util
     public partial class AbstractList<E>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.AbstractList{E}"/> to <see cref="Java.Util.List{E}"/>
@@ -263,17 +263,17 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.AbstractList{E}"/> to <see cref="Java.Util.AbstractList"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractList(Java.Util.AbstractList<E> t) => t.Cast<Java.Util.AbstractList>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#get(int)"/>
@@ -293,7 +293,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#remove(int)"/>
@@ -312,7 +312,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Set(int arg0, E arg1)
         {
-            return IExecute<E>("set", arg0, arg1);
+            return IExecuteWithSignature<E>("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
@@ -340,7 +340,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<E> SubList(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List<E>>("subList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<E>>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#listIterator()"/>
@@ -366,15 +366,15 @@ namespace Java.Util
         /// <param name="arg1"><typeparamref name="E"/></param>
         public void Add(int arg0, E arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

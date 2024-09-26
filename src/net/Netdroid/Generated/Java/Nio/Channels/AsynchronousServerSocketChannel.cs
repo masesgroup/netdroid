@@ -42,10 +42,10 @@ namespace Java.Nio.Channels
         /// </summary>
         [global::System.Obsolete("AsynchronousServerSocketChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AsynchronousServerSocketChannel(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio.Channels
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Nio.Channels
     public partial class AsynchronousServerSocketChannel : Java.Nio.Channels.IAsynchronousChannel, Java.Nio.Channels.INetworkChannel
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/> to <see cref="Java.Nio.Channels.AsynchronousChannel"/>
@@ -88,13 +88,13 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.AsynchronousServerSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#open()"/>
@@ -115,9 +115,9 @@ namespace Java.Nio.Channels
         {
             return SExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousServerSocketChannel;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -128,7 +128,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
         public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA : A
         {
-            IExecute("accept", arg0, arg1);
+            IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#getLocalAddress()"/>
@@ -148,7 +148,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousServerSocketChannel Bind(Java.Net.SocketAddress arg0, int arg1)
         {
-            return IExecute<Java.Nio.Channels.AsynchronousServerSocketChannel>("bind", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>("bind", "(Ljava/net/SocketAddress;I)Ljava/nio/channels/AsynchronousServerSocketChannel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#accept()"/>
@@ -185,15 +185,15 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
         {
-            return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

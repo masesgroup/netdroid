@@ -42,10 +42,10 @@ namespace Java.Nio
         /// </summary>
         [global::System.Obsolete("FloatBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FloatBuffer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Java.Nio
     public partial class FloatBuffer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.FloatBuffer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.FloatBuffer t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#allocate(int)"/>
@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public static Java.Nio.FloatBuffer Wrap(float[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#wrap(float[])"/>
@@ -121,9 +121,9 @@ namespace Java.Nio
         {
             return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get()"/>
@@ -183,7 +183,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(int arg0, float arg1)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(IF)Ljava/nio/FloatBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(float[])"/>
@@ -230,7 +230,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Get(float[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(float[])"/>
@@ -251,7 +251,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Get(int arg0, float[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "(I[FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#get(int,float[])"/>
@@ -261,7 +261,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Get(int arg0, float[] arg1)
         {
-            return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "(I[F)Ljava/nio/FloatBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(float[],int,int)"/>
@@ -272,7 +272,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(float[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,float[],int,int)"/>
@@ -284,7 +284,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(int arg0, float[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(I[FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,float[])"/>
@@ -294,7 +294,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(int arg0, float[] arg1)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(I[F)Ljava/nio/FloatBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"/>
@@ -306,7 +306,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(int arg0, Java.Nio.FloatBuffer arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(ILjava/nio/FloatBuffer;II)Ljava/nio/FloatBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html#put(java.nio.FloatBuffer)"/>
@@ -317,13 +317,13 @@ namespace Java.Nio
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

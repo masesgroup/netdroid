@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DecimalFormatSymbols(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,9 +90,9 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.DecimalFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
@@ -102,9 +102,9 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.DecimalFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Android.Icu.Text.DecimalFormatSymbols t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#CURRENCY_SPC_CURRENCY_MATCH"/>
@@ -124,9 +124,9 @@ namespace Android.Icu.Text
         public static int CURRENCY_SPC_SURROUNDING_MATCH { get { if (!_CURRENCY_SPC_SURROUNDING_MATCHReady) { _CURRENCY_SPC_SURROUNDING_MATCHContent = SGetField<int>(LocalBridgeClazz, "CURRENCY_SPC_SURROUNDING_MATCH"); _CURRENCY_SPC_SURROUNDING_MATCHReady = true; } return _CURRENCY_SPC_SURROUNDING_MATCHContent; } }
         private static int _CURRENCY_SPC_SURROUNDING_MATCHContent = default;
         private static bool _CURRENCY_SPC_SURROUNDING_MATCHReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#forNumberingSystem(android.icu.util.ULocale,android.icu.text.NumberingSystem)"/>
@@ -136,7 +136,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DecimalFormatSymbols"/></returns>
         public static Android.Icu.Text.DecimalFormatSymbols ForNumberingSystem(Android.Icu.Util.ULocale arg0, Android.Icu.Text.NumberingSystem arg1)
         {
-            return SExecute<Android.Icu.Text.DecimalFormatSymbols>(LocalBridgeClazz, "forNumberingSystem", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.DecimalFormatSymbols>(LocalBridgeClazz, "forNumberingSystem", "(Landroid/icu/util/ULocale;Landroid/icu/text/NumberingSystem;)Landroid/icu/text/DecimalFormatSymbols;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#forNumberingSystem(java.util.Locale,android.icu.text.NumberingSystem)"/>
@@ -146,7 +146,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DecimalFormatSymbols"/></returns>
         public static Android.Icu.Text.DecimalFormatSymbols ForNumberingSystem(Java.Util.Locale arg0, Android.Icu.Text.NumberingSystem arg1)
         {
-            return SExecute<Android.Icu.Text.DecimalFormatSymbols>(LocalBridgeClazz, "forNumberingSystem", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.DecimalFormatSymbols>(LocalBridgeClazz, "forNumberingSystem", "(Ljava/util/Locale;Landroid/icu/text/NumberingSystem;)Landroid/icu/text/DecimalFormatSymbols;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getInstance()"/>
@@ -190,9 +190,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getCurrency()"/>
@@ -418,7 +418,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPatternForCurrencySpacing(int arg0, bool arg1)
         {
-            return IExecute<Java.Lang.String>("getPatternForCurrencySpacing", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getPatternForCurrencySpacing", "(IZ)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#getPercentString()"/>
@@ -628,7 +628,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetPatternForCurrencySpacing(int arg0, bool arg1, Java.Lang.String arg2)
         {
-            IExecute("setPatternForCurrencySpacing", arg0, arg1, arg2);
+            IExecuteWithSignature("setPatternForCurrencySpacing", "(IZLjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormatSymbols.html#setPatternSeparator(char)"/>
@@ -702,13 +702,13 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setZeroDigit", "(C)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Adservices.Adid
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AdId(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Adid
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.Adservices.Adid
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adid/AdId.html#ZERO_OUT"/>
@@ -97,13 +97,13 @@ namespace Android.Adservices.Adid
         public static Java.Lang.String ZERO_OUT { get { if (!_ZERO_OUTReady) { _ZERO_OUTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ZERO_OUT"); _ZERO_OUTReady = true; } return _ZERO_OUTContent; } }
         private static Java.Lang.String _ZERO_OUTContent = default;
         private static bool _ZERO_OUTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adid/AdId.html#isLimitAdTrackingEnabled()"/>
@@ -121,13 +121,13 @@ namespace Android.Adservices.Adid
         {
             return IExecuteWithSignature<Java.Lang.String>("getAdId", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Content.Pm
         /// </summary>
         [global::System.Obsolete("PackageManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PackageManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ApplicationInfoFlags declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ApplicationInfoFlags(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ComponentEnabledSetting(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ComponentInfoFlags(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -214,9 +214,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -230,7 +230,7 @@ namespace Android.Content.Pm
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnChecksumsReadyListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.content.pm.PackageManager_OnChecksumsReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -239,13 +239,13 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnChecksumsReadyListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnChecksumsReadyListener"/> or its generic type if there is one
@@ -256,14 +256,14 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.content.pm.PackageManager$OnChecksumsReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -302,10 +302,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PackageInfoFlags(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -326,9 +326,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -347,10 +347,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Property(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -371,9 +371,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -392,10 +392,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ResolveInfoFlags(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -416,9 +416,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -430,13 +430,13 @@ namespace Android.Content.Pm
     public partial class PackageManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#CERT_INPUT_RAW_X509"/>
@@ -1743,13 +1743,13 @@ namespace Android.Content.Pm
         public static long MAXIMUM_VERIFICATION_TIMEOUT { get { if (!_MAXIMUM_VERIFICATION_TIMEOUTReady) { _MAXIMUM_VERIFICATION_TIMEOUTContent = SGetField<long>(LocalBridgeClazz, "MAXIMUM_VERIFICATION_TIMEOUT"); _MAXIMUM_VERIFICATION_TIMEOUTReady = true; } return _MAXIMUM_VERIFICATION_TIMEOUTContent; } }
         private static long _MAXIMUM_VERIFICATION_TIMEOUTContent = default;
         private static bool _MAXIMUM_VERIFICATION_TIMEOUTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#parseAndroidManifest(java.io.File,java.util.function.Function)"/>
@@ -1761,7 +1761,7 @@ namespace Android.Content.Pm
         /// <exception cref="Java.Io.IOException"/>
         public T ParseAndroidManifest<T>(Java.Io.File arg0, Java.Util.Function.Function<Android.Content.Res.XmlResourceParser, T> arg1)
         {
-            return IExecute<T>("parseAndroidManifest", arg0, arg1);
+            return IExecuteWithSignature<T>("parseAndroidManifest", "(Ljava/io/File;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getLaunchIntentForPackage(java.lang.String)"/>
@@ -1790,7 +1790,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ActivityInfo GetActivityInfo(Android.Content.ComponentName arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ActivityInfo>("getActivityInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getReceiverInfo(android.content.ComponentName,int)"/>
@@ -1801,7 +1801,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ActivityInfo GetReceiverInfo(Android.Content.ComponentName arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ActivityInfo>("getReceiverInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getReceiverInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getApplicationInfo(java.lang.String,int)"/>
@@ -1812,7 +1812,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ApplicationInfo GetApplicationInfo(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", "(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getChangedPackages(int)"/>
@@ -1840,7 +1840,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.InstrumentationInfo GetInstrumentationInfo(Android.Content.ComponentName arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.InstrumentationInfo>("getInstrumentationInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.InstrumentationInfo>("getInstrumentationInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/InstrumentationInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageInfo(android.content.pm.VersionedPackage,int)"/>
@@ -1851,7 +1851,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PackageInfo GetPackageInfo(Android.Content.Pm.VersionedPackage arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.PackageInfo>("getPackageInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageInfo>("getPackageInfo", "(Landroid/content/pm/VersionedPackage;I)Landroid/content/pm/PackageInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageInfo(java.lang.String,int)"/>
@@ -1862,7 +1862,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PackageInfo GetPackageInfo(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.PackageInfo>("getPackageInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageInfo>("getPackageInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageInstaller()"/>
@@ -1881,7 +1881,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PermissionGroupInfo GetPermissionGroupInfo(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.PermissionGroupInfo>("getPermissionGroupInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PermissionGroupInfo>("getPermissionGroupInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPermissionInfo(java.lang.String,int)"/>
@@ -1892,7 +1892,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PermissionInfo GetPermissionInfo(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.PermissionInfo>("getPermissionInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PermissionInfo>("getPermissionInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getProviderInfo(android.content.ComponentName,int)"/>
@@ -1903,7 +1903,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ProviderInfo GetProviderInfo(Android.Content.ComponentName arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ProviderInfo>("getProviderInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ProviderInfo>("getProviderInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ProviderInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#resolveContentProvider(java.lang.String,int)"/>
@@ -1913,7 +1913,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.ProviderInfo"/></returns>
         public Android.Content.Pm.ProviderInfo ResolveContentProvider(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ProviderInfo>("resolveContentProvider", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ProviderInfo>("resolveContentProvider", "(Ljava/lang/String;I)Landroid/content/pm/ProviderInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#resolveActivity(android.content.Intent,int)"/>
@@ -1923,7 +1923,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.ResolveInfo"/></returns>
         public Android.Content.Pm.ResolveInfo ResolveActivity(Android.Content.Intent arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ResolveInfo>("resolveActivity", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ResolveInfo>("resolveActivity", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#resolveService(android.content.Intent,int)"/>
@@ -1933,7 +1933,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.ResolveInfo"/></returns>
         public Android.Content.Pm.ResolveInfo ResolveService(Android.Content.Intent arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ResolveInfo>("resolveService", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ResolveInfo>("resolveService", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getServiceInfo(android.content.ComponentName,int)"/>
@@ -1944,7 +1944,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ServiceInfo GetServiceInfo(Android.Content.ComponentName arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ServiceInfo>("getServiceInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ServiceInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getResourcesForActivity(android.content.ComponentName)"/>
@@ -1985,7 +1985,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Res.XmlResourceParser"/></returns>
         public Android.Content.Res.XmlResourceParser GetXml(Java.Lang.String arg0, int arg1, Android.Content.Pm.ApplicationInfo arg2)
         {
-            return IExecute<Android.Content.Res.XmlResourceParser>("getXml", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Res.XmlResourceParser>("getXml", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/content/res/XmlResourceParser;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getActivityBanner(android.content.ComponentName)"/>
@@ -2121,7 +2121,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawable(Java.Lang.String arg0, int arg1, Android.Content.Pm.ApplicationInfo arg2)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawable", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getUserBadgedDrawableForDensity(android.graphics.drawable.Drawable,android.os.UserHandle,android.graphics.Rect,int)"/>
@@ -2133,7 +2133,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetUserBadgedDrawableForDensity(Android.Graphics.Drawable.Drawable arg0, Android.Os.UserHandle arg1, Android.Graphics.Rect arg2, int arg3)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getUserBadgedDrawableForDensity", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getUserBadgedDrawableForDensity", "(Landroid/graphics/drawable/Drawable;Landroid/os/UserHandle;Landroid/graphics/Rect;I)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getUserBadgedIcon(android.graphics.drawable.Drawable,android.os.UserHandle)"/>
@@ -2143,7 +2143,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetUserBadgedIcon(Android.Graphics.Drawable.Drawable arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getUserBadgedIcon", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getUserBadgedIcon", "(Landroid/graphics/drawable/Drawable;Landroid/os/UserHandle;)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#addPermission(android.content.pm.PermissionInfo)"/>
@@ -2179,7 +2179,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool HasSystemFeature(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<bool>("hasSystemFeature", arg0, arg1);
+            return IExecuteWithSignature<bool>("hasSystemFeature", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#hasSystemFeature(java.lang.String)"/>
@@ -2215,7 +2215,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool IsPermissionRevokedByPolicy(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isPermissionRevokedByPolicy", arg0, arg1);
+            return IExecuteWithSignature<bool>("isPermissionRevokedByPolicy", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#isSafeMode()"/>
@@ -2241,7 +2241,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="int"/></returns>
         public int CheckPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("checkPermission", arg0, arg1);
+            return IExecuteWithSignature<int>("checkPermission", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#checkSignatures(int,int)"/>
@@ -2251,7 +2251,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="int"/></returns>
         public int CheckSignatures(int arg0, int arg1)
         {
-            return IExecute<int>("checkSignatures", arg0, arg1);
+            return IExecuteWithSignature<int>("checkSignatures", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#checkSignatures(java.lang.String,java.lang.String)"/>
@@ -2261,7 +2261,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="int"/></returns>
         public int CheckSignatures(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("checkSignatures", arg0, arg1);
+            return IExecuteWithSignature<int>("checkSignatures", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getApplicationEnabledSetting(java.lang.String)"/>
@@ -2298,7 +2298,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public int GetPackageUid(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getPackageUid", arg0, arg1);
+            return IExecuteWithSignature<int>("getPackageUid", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPreferredActivities(java.util.List,java.util.List,java.lang.String)"/>
@@ -2310,7 +2310,7 @@ namespace Android.Content.Pm
         [global::System.Obsolete()]
         public int GetPreferredActivities(Java.Util.List<Android.Content.IntentFilter> arg0, Java.Util.List<Android.Content.ComponentName> arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("getPreferredActivities", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getPreferredActivities", "(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageGids(java.lang.String,int)"/>
@@ -2321,7 +2321,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public int[] GetPackageGids(Java.Lang.String arg0, int arg1)
         {
-            return IExecuteArray<int>("getPackageGids", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("getPackageGids", "(Ljava/lang/String;I)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageGids(java.lang.String)"/>
@@ -2351,7 +2351,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetText(Java.Lang.String arg0, int arg1, Android.Content.Pm.ApplicationInfo arg2)
         {
-            return IExecute<Java.Lang.CharSequence>("getText", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getUserBadgedLabel(java.lang.CharSequence,android.os.UserHandle)"/>
@@ -2361,7 +2361,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetUserBadgedLabel(Java.Lang.CharSequence arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getUserBadgedLabel", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getUserBadgedLabel", "(Ljava/lang/CharSequence;Landroid/os/UserHandle;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstallerPackageName(java.lang.String)"/>
@@ -2434,7 +2434,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.InstrumentationInfo> QueryInstrumentation(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.InstrumentationInfo>>("queryInstrumentation", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.InstrumentationInfo>>("queryInstrumentation", "(Ljava/lang/String;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstalledPackages(int)"/>
@@ -2453,7 +2453,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.PackageInfo> GetPackagesHoldingPermissions(Java.Lang.String[] arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.PackageInfo>>("getPackagesHoldingPermissions", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInfo>>("getPackagesHoldingPermissions", "([Ljava/lang/String;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPreferredPackages(int)"/>
@@ -2483,7 +2483,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Java.Util.List<Android.Content.Pm.PermissionInfo> QueryPermissionsByGroup(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.PermissionInfo>>("queryPermissionsByGroup", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PermissionInfo>>("queryPermissionsByGroup", "(Ljava/lang/String;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryContentProviders(java.lang.String,int,int)"/>
@@ -2494,7 +2494,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ProviderInfo> QueryContentProviders(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ProviderInfo>>("queryContentProviders", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ProviderInfo>>("queryContentProviders", "(Ljava/lang/String;II)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent,int)"/>
@@ -2504,7 +2504,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryBroadcastReceivers(Android.Content.Intent arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryBroadcastReceivers", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryBroadcastReceivers", "(Landroid/content/Intent;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent,int)"/>
@@ -2514,7 +2514,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentActivities(Android.Content.Intent arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivities", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivities", "(Landroid/content/Intent;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentActivityOptions(android.content.ComponentName,android.content.Intent[],android.content.Intent,int)"/>
@@ -2526,7 +2526,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentActivityOptions(Android.Content.ComponentName arg0, Android.Content.Intent[] arg1, Android.Content.Intent arg2, int arg3)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivityOptions", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivityOptions", "(Landroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I)Ljava/util/List;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentContentProviders(android.content.Intent,int)"/>
@@ -2536,7 +2536,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentContentProviders(Android.Content.Intent arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentContentProviders", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentContentProviders", "(Landroid/content/Intent;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent,int)"/>
@@ -2546,7 +2546,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentServices(Android.Content.Intent arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentServices", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentServices", "(Landroid/content/Intent;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSharedLibraries(int)"/>
@@ -2576,7 +2576,7 @@ namespace Android.Content.Pm
         [global::System.Obsolete()]
         public void AddPreferredActivity(Android.Content.IntentFilter arg0, int arg1, Android.Content.ComponentName[] arg2, Android.Content.ComponentName arg3)
         {
-            IExecute("addPreferredActivity", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addPreferredActivity", "(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#clearInstantAppCookie()"/>
@@ -2602,7 +2602,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="long"/></param>
         public void ExtendVerificationTimeout(int arg0, int arg1, long arg2)
         {
-            IExecute("extendVerificationTimeout", arg0, arg1, arg2);
+            IExecuteWithSignature("extendVerificationTimeout", "(IIJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#removePackageFromPreferred(java.lang.String)"/>
@@ -2628,7 +2628,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="int"/></param>
         public void SetApplicationCategoryHint(Java.Lang.String arg0, int arg1)
         {
-            IExecute("setApplicationCategoryHint", arg0, arg1);
+            IExecuteWithSignature("setApplicationCategoryHint", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#setApplicationEnabledSetting(java.lang.String,int,int)"/>
@@ -2638,7 +2638,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="int"/></param>
         public void SetApplicationEnabledSetting(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("setApplicationEnabledSetting", arg0, arg1, arg2);
+            IExecuteWithSignature("setApplicationEnabledSetting", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,int,int)"/>
@@ -2648,7 +2648,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="int"/></param>
         public void SetComponentEnabledSetting(Android.Content.ComponentName arg0, int arg1, int arg2)
         {
-            IExecute("setComponentEnabledSetting", arg0, arg1, arg2);
+            IExecuteWithSignature("setComponentEnabledSetting", "(Landroid/content/ComponentName;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#setInstallerPackageName(java.lang.String,java.lang.String)"/>
@@ -2657,7 +2657,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetInstallerPackageName(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setInstallerPackageName", arg0, arg1);
+            IExecuteWithSignature("setInstallerPackageName", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#updateInstantAppCookie(byte[])"/>
@@ -2674,7 +2674,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="int"/></param>
         public void VerifyPendingInstall(int arg0, int arg1)
         {
-            IExecute("verifyPendingInstall", arg0, arg1);
+            IExecuteWithSignature("verifyPendingInstall", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getLaunchIntentSenderForPackage(java.lang.String)"/>
@@ -2694,7 +2694,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ActivityInfo GetActivityInfo(Android.Content.ComponentName arg0, Android.Content.Pm.PackageManager.ComponentInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ActivityInfo>("getActivityInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "(Landroid/content/ComponentName;Landroid/content/pm/PackageManager$ComponentInfoFlags;)Landroid/content/pm/ActivityInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getReceiverInfo(android.content.ComponentName,android.content.pm.PackageManager.ComponentInfoFlags)"/>
@@ -2705,7 +2705,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ActivityInfo GetReceiverInfo(Android.Content.ComponentName arg0, Android.Content.Pm.PackageManager.ComponentInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ActivityInfo>("getReceiverInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getReceiverInfo", "(Landroid/content/ComponentName;Landroid/content/pm/PackageManager$ComponentInfoFlags;)Landroid/content/pm/ActivityInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getApplicationInfo(java.lang.String,android.content.pm.PackageManager.ApplicationInfoFlags)"/>
@@ -2716,7 +2716,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ApplicationInfo GetApplicationInfo(Java.Lang.String arg0, Android.Content.Pm.PackageManager.ApplicationInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", "(Ljava/lang/String;Landroid/content/pm/PackageManager$ApplicationInfoFlags;)Landroid/content/pm/ApplicationInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getArchivedPackage(java.lang.String)"/>
@@ -2746,7 +2746,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ModuleInfo GetModuleInfo(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ModuleInfo>("getModuleInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ModuleInfo>("getModuleInfo", "(Ljava/lang/String;I)Landroid/content/pm/ModuleInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageArchiveInfo(java.lang.String,android.content.pm.PackageManager.PackageInfoFlags)"/>
@@ -2756,7 +2756,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.PackageInfo"/></returns>
         public Android.Content.Pm.PackageInfo GetPackageArchiveInfo(Java.Lang.String arg0, Android.Content.Pm.PackageManager.PackageInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.PackageInfo>("getPackageArchiveInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageInfo>("getPackageArchiveInfo", "(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageArchiveInfo(java.lang.String,int)"/>
@@ -2766,7 +2766,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.PackageInfo"/></returns>
         public Android.Content.Pm.PackageInfo GetPackageArchiveInfo(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.PackageInfo>("getPackageArchiveInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageInfo>("getPackageArchiveInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageInfo(android.content.pm.VersionedPackage,android.content.pm.PackageManager.PackageInfoFlags)"/>
@@ -2777,7 +2777,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PackageInfo GetPackageInfo(Android.Content.Pm.VersionedPackage arg0, Android.Content.Pm.PackageManager.PackageInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.PackageInfo>("getPackageInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageInfo>("getPackageInfo", "(Landroid/content/pm/VersionedPackage;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageInfo(java.lang.String,android.content.pm.PackageManager.PackageInfoFlags)"/>
@@ -2788,7 +2788,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PackageInfo GetPackageInfo(Java.Lang.String arg0, Android.Content.Pm.PackageManager.PackageInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.PackageInfo>("getPackageInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageInfo>("getPackageInfo", "(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getProperty(java.lang.String,android.content.ComponentName)"/>
@@ -2799,7 +2799,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PackageManager.Property GetProperty(Java.Lang.String arg0, Android.Content.ComponentName arg1)
         {
-            return IExecute<Android.Content.Pm.PackageManager.Property>("getProperty", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageManager.Property>("getProperty", "(Ljava/lang/String;Landroid/content/ComponentName;)Landroid/content/pm/PackageManager$Property;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getProperty(java.lang.String,java.lang.String)"/>
@@ -2810,7 +2810,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.PackageManager.Property GetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Pm.PackageManager.Property>("getProperty", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.PackageManager.Property>("getProperty", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/PackageManager$Property;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getProviderInfo(android.content.ComponentName,android.content.pm.PackageManager.ComponentInfoFlags)"/>
@@ -2821,7 +2821,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ProviderInfo GetProviderInfo(Android.Content.ComponentName arg0, Android.Content.Pm.PackageManager.ComponentInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ProviderInfo>("getProviderInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ProviderInfo>("getProviderInfo", "(Landroid/content/ComponentName;Landroid/content/pm/PackageManager$ComponentInfoFlags;)Landroid/content/pm/ProviderInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#resolveContentProvider(java.lang.String,android.content.pm.PackageManager.ComponentInfoFlags)"/>
@@ -2831,7 +2831,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.ProviderInfo"/></returns>
         public Android.Content.Pm.ProviderInfo ResolveContentProvider(Java.Lang.String arg0, Android.Content.Pm.PackageManager.ComponentInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ProviderInfo>("resolveContentProvider", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ProviderInfo>("resolveContentProvider", "(Ljava/lang/String;Landroid/content/pm/PackageManager$ComponentInfoFlags;)Landroid/content/pm/ProviderInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#resolveActivity(android.content.Intent,android.content.pm.PackageManager.ResolveInfoFlags)"/>
@@ -2841,7 +2841,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.ResolveInfo"/></returns>
         public Android.Content.Pm.ResolveInfo ResolveActivity(Android.Content.Intent arg0, Android.Content.Pm.PackageManager.ResolveInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ResolveInfo>("resolveActivity", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ResolveInfo>("resolveActivity", "(Landroid/content/Intent;Landroid/content/pm/PackageManager$ResolveInfoFlags;)Landroid/content/pm/ResolveInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#resolveService(android.content.Intent,android.content.pm.PackageManager.ResolveInfoFlags)"/>
@@ -2851,7 +2851,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.ResolveInfo"/></returns>
         public Android.Content.Pm.ResolveInfo ResolveService(Android.Content.Intent arg0, Android.Content.Pm.PackageManager.ResolveInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ResolveInfo>("resolveService", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ResolveInfo>("resolveService", "(Landroid/content/Intent;Landroid/content/pm/PackageManager$ResolveInfoFlags;)Landroid/content/pm/ResolveInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getServiceInfo(android.content.ComponentName,android.content.pm.PackageManager.ComponentInfoFlags)"/>
@@ -2862,7 +2862,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ServiceInfo GetServiceInfo(Android.Content.ComponentName arg0, Android.Content.Pm.PackageManager.ComponentInfoFlags arg1)
         {
-            return IExecute<Android.Content.Pm.ServiceInfo>("getServiceInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "(Landroid/content/ComponentName;Landroid/content/pm/PackageManager$ComponentInfoFlags;)Landroid/content/pm/ServiceInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getResourcesForApplication(android.content.pm.ApplicationInfo,android.content.res.Configuration)"/>
@@ -2873,7 +2873,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Res.Resources GetResourcesForApplication(Android.Content.Pm.ApplicationInfo arg0, Android.Content.Res.Configuration arg1)
         {
-            return IExecute<Android.Content.Res.Resources>("getResourcesForApplication", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.Resources>("getResourcesForApplication", "(Landroid/content/pm/ApplicationInfo;Landroid/content/res/Configuration;)Landroid/content/res/Resources;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSuspendedPackageAppExtras()"/>
@@ -2892,7 +2892,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool AddWhitelistedRestrictedPermission(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<bool>("addWhitelistedRestrictedPermission", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("addWhitelistedRestrictedPermission", "(Ljava/lang/String;Ljava/lang/String;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#canPackageQuery(java.lang.String,java.lang.String)"/>
@@ -2903,7 +2903,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public bool CanPackageQuery(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("canPackageQuery", arg0, arg1);
+            return IExecuteWithSignature<bool>("canPackageQuery", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSyntheticAppDetailsActivityEnabled(java.lang.String)"/>
@@ -2923,7 +2923,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool HasSigningCertificate(int arg0, byte[] arg1, int arg2)
         {
-            return IExecute<bool>("hasSigningCertificate", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("hasSigningCertificate", "(I[BI)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#hasSigningCertificate(java.lang.String,byte[],int)"/>
@@ -2934,7 +2934,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool HasSigningCertificate(Java.Lang.String arg0, byte[] arg1, int arg2)
         {
-            return IExecute<bool>("hasSigningCertificate", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("hasSigningCertificate", "(Ljava/lang/String;[BI)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#isAppArchivable(java.lang.String)"/>
@@ -3017,7 +3017,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool RemoveWhitelistedRestrictedPermission(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<bool>("removeWhitelistedRestrictedPermission", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("removeWhitelistedRestrictedPermission", "(Ljava/lang/String;Ljava/lang/String;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#setAutoRevokeWhitelisted(java.lang.String,boolean)"/>
@@ -3027,7 +3027,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool SetAutoRevokeWhitelisted(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("setAutoRevokeWhitelisted", arg0, arg1);
+            return IExecuteWithSignature<bool>("setAutoRevokeWhitelisted", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#canPackageQuery(java.lang.String,java.lang.String[])"/>
@@ -3038,7 +3038,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public bool[] CanPackageQuery(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecuteArray<bool>("canPackageQuery", arg0, arg1);
+            return IExecuteWithSignatureArray<bool>("canPackageQuery", "(Ljava/lang/String;[Ljava/lang/String;)[Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageUid(java.lang.String,android.content.pm.PackageManager.PackageInfoFlags)"/>
@@ -3049,7 +3049,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public int GetPackageUid(Java.Lang.String arg0, Android.Content.Pm.PackageManager.PackageInfoFlags arg1)
         {
-            return IExecute<int>("getPackageUid", arg0, arg1);
+            return IExecuteWithSignature<int>("getPackageUid", "(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getTargetSdkVersion(java.lang.String)"/>
@@ -3070,7 +3070,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public int[] GetPackageGids(Java.Lang.String arg0, Android.Content.Pm.PackageManager.PackageInfoFlags arg1)
         {
-            return IExecuteArray<int>("getPackageGids", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("getPackageGids", "(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getBackgroundPermissionOptionLabel()"/>
@@ -3115,7 +3115,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.PackageInfo> GetPackagesHoldingPermissions(Java.Lang.String[] arg0, Android.Content.Pm.PackageManager.PackageInfoFlags arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.PackageInfo>>("getPackagesHoldingPermissions", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInfo>>("getPackagesHoldingPermissions", "([Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryActivityProperty(java.lang.String)"/>
@@ -3171,7 +3171,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ProviderInfo> QueryContentProviders(Java.Lang.String arg0, int arg1, Android.Content.Pm.PackageManager.ComponentInfoFlags arg2)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ProviderInfo>>("queryContentProviders", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ProviderInfo>>("queryContentProviders", "(Ljava/lang/String;ILandroid/content/pm/PackageManager$ComponentInfoFlags;)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent,android.content.pm.PackageManager.ResolveInfoFlags)"/>
@@ -3181,7 +3181,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryBroadcastReceivers(Android.Content.Intent arg0, Android.Content.Pm.PackageManager.ResolveInfoFlags arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryBroadcastReceivers", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryBroadcastReceivers", "(Landroid/content/Intent;Landroid/content/pm/PackageManager$ResolveInfoFlags;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent,android.content.pm.PackageManager.ResolveInfoFlags)"/>
@@ -3191,7 +3191,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentActivities(Android.Content.Intent arg0, Android.Content.Pm.PackageManager.ResolveInfoFlags arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivities", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivities", "(Landroid/content/Intent;Landroid/content/pm/PackageManager$ResolveInfoFlags;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentActivityOptions(android.content.ComponentName,java.util.List,android.content.Intent,android.content.pm.PackageManager.ResolveInfoFlags)"/>
@@ -3203,7 +3203,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentActivityOptions(Android.Content.ComponentName arg0, Java.Util.List<Android.Content.Intent> arg1, Android.Content.Intent arg2, Android.Content.Pm.PackageManager.ResolveInfoFlags arg3)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivityOptions", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentActivityOptions", "(Landroid/content/ComponentName;Ljava/util/List;Landroid/content/Intent;Landroid/content/pm/PackageManager$ResolveInfoFlags;)Ljava/util/List;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentContentProviders(android.content.Intent,android.content.pm.PackageManager.ResolveInfoFlags)"/>
@@ -3213,7 +3213,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentContentProviders(Android.Content.Intent arg0, Android.Content.Pm.PackageManager.ResolveInfoFlags arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentContentProviders", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentContentProviders", "(Landroid/content/Intent;Landroid/content/pm/PackageManager$ResolveInfoFlags;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent,android.content.pm.PackageManager.ResolveInfoFlags)"/>
@@ -3223,7 +3223,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ResolveInfo> QueryIntentServices(Android.Content.Intent arg0, Android.Content.Pm.PackageManager.ResolveInfoFlags arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentServices", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ResolveInfo>>("queryIntentServices", "(Landroid/content/Intent;Landroid/content/pm/PackageManager$ResolveInfoFlags;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getSharedLibraries(android.content.pm.PackageManager.PackageInfoFlags)"/>
@@ -3251,7 +3251,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> GetWhitelistedRestrictedPermissions(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Util.Set<Java.Lang.String>>("getWhitelistedRestrictedPermissions", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getWhitelistedRestrictedPermissions", "(Ljava/lang/String;I)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getGroupOfPlatformPermission(java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -3261,7 +3261,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetGroupOfPlatformPermission(Java.Lang.String arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Java.Lang.String> arg2)
         {
-            IExecute("getGroupOfPlatformPermission", arg0, arg1, arg2);
+            IExecuteWithSignature("getGroupOfPlatformPermission", "(Ljava/lang/String;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPlatformPermissionsForGroup(java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -3271,7 +3271,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetPlatformPermissionsForGroup(Java.Lang.String arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Java.Util.List<Java.Lang.String>> arg2)
         {
-            IExecute("getPlatformPermissionsForGroup", arg0, arg1, arg2);
+            IExecuteWithSignature("getPlatformPermissionsForGroup", "(Ljava/lang/String;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#relinquishUpdateOwnership(java.lang.String)"/>
@@ -3293,7 +3293,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public void RequestChecksums(Java.Lang.String arg0, bool arg1, int arg2, Java.Util.List<Java.Security.Cert.Certificate> arg3, Android.Content.Pm.PackageManager.OnChecksumsReadyListener arg4)
         {
-            IExecute("requestChecksums", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("requestChecksums", "(Ljava/lang/String;ZILjava/util/List;Landroid/content/pm/PackageManager$OnChecksumsReadyListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#setComponentEnabledSettings(java.util.List)"/>
@@ -3310,27 +3310,27 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         public void SetMimeGroup(Java.Lang.String arg0, Java.Util.Set<Java.Lang.String> arg1)
         {
-            IExecute("setMimeGroup", arg0, arg1);
+            IExecuteWithSignature("setMimeGroup", "(Ljava/lang/String;Ljava/util/Set;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ApplicationInfoFlags implementation
         public partial class ApplicationInfoFlags
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ApplicationInfoFlags.html#of(long)"/>
@@ -3341,9 +3341,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.ApplicationInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$ApplicationInfoFlags;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ApplicationInfoFlags.html#getValue()"/>
@@ -3353,13 +3353,13 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3378,13 +3378,13 @@ namespace Android.Content.Pm
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#CREATOR"/>
@@ -3392,13 +3392,13 @@ namespace Android.Content.Pm
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getComponentName()"/>
@@ -3439,15 +3439,15 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3456,17 +3456,17 @@ namespace Android.Content.Pm
         public partial class ComponentInfoFlags
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentInfoFlags.html#of(long)"/>
@@ -3477,9 +3477,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.ComponentInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$ComponentInfoFlags;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentInfoFlags.html#getValue()"/>
@@ -3489,13 +3489,13 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3504,29 +3504,29 @@ namespace Android.Content.Pm
         public partial class NameNotFoundException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3535,21 +3535,21 @@ namespace Android.Content.Pm
         public partial class OnChecksumsReadyListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnChecksumsReadyListener"/>
@@ -3559,13 +3559,13 @@ namespace Android.Content.Pm
                 AddEventHandler("onChecksumsReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnChecksumsReadyEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener.html#onChecksumsReady(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChecksumsReady"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Android.Content.Pm.ApkChecksum>> OnOnChecksumsReady { get; set; } = null;
-            
+
             bool hasOverrideOnChecksumsReady = true;
             void OnChecksumsReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3574,7 +3574,7 @@ namespace Android.Content.Pm
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Content.Pm.ApkChecksum>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnChecksumsReady;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener.html#onChecksumsReady(java.util.List)"/>
             /// </summary>
@@ -3583,13 +3583,13 @@ namespace Android.Content.Pm
             {
                 hasOverrideOnChecksumsReady = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3598,21 +3598,21 @@ namespace Android.Content.Pm
         public partial class OnChecksumsReadyListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener.html#onChecksumsReady(java.util.List)"/>
@@ -3622,13 +3622,13 @@ namespace Android.Content.Pm
             {
                 IExecuteWithSignature("onChecksumsReady", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3637,17 +3637,17 @@ namespace Android.Content.Pm
         public partial class PackageInfoFlags
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.PackageInfoFlags.html#of(long)"/>
@@ -3658,9 +3658,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.PackageInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$PackageInfoFlags;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.PackageInfoFlags.html#getValue()"/>
@@ -3670,13 +3670,13 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3685,13 +3685,13 @@ namespace Android.Content.Pm
         public partial class Property
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#CREATOR"/>
@@ -3699,13 +3699,13 @@ namespace Android.Content.Pm
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getBoolean()"/>
@@ -3826,15 +3826,15 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3843,17 +3843,17 @@ namespace Android.Content.Pm
         public partial class ResolveInfoFlags
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ResolveInfoFlags.html#of(long)"/>
@@ -3864,9 +3864,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.ResolveInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$ResolveInfoFlags;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ResolveInfoFlags.html#getValue()"/>
@@ -3876,20 +3876,20 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

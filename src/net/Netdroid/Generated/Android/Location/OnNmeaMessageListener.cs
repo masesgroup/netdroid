@@ -35,7 +35,7 @@ namespace Android.Location
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public OnNmeaMessageListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.location.OnNmeaMessageListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region OnNmeaMessageListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="OnNmeaMessageListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.location.OnNmeaMessageListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Location
     public partial interface IOnNmeaMessageListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Location
     public partial class OnNmeaMessageListener : Android.Location.IOnNmeaMessageListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="OnNmeaMessageListener"/>
@@ -138,13 +138,13 @@ namespace Android.Location
             AddEventHandler("onNmeaMessage", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnNmeaMessageEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/location/OnNmeaMessageListener.html#onNmeaMessage(java.lang.String,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnNmeaMessage"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, long> OnOnNmeaMessage { get; set; } = null;
-        
+
         bool hasOverrideOnNmeaMessage = true;
         void OnNmeaMessageEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -153,7 +153,7 @@ namespace Android.Location
             methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<long>(1));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnNmeaMessage;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/OnNmeaMessageListener.html#onNmeaMessage(java.lang.String,long)"/>
         /// </summary>
@@ -163,13 +163,13 @@ namespace Android.Location
         {
             hasOverrideOnNmeaMessage = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -178,21 +178,21 @@ namespace Android.Location
     public partial class OnNmeaMessageListenerDirect : Android.Location.IOnNmeaMessageListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/OnNmeaMessageListener.html#onNmeaMessage(java.lang.String,long)"/>
@@ -201,15 +201,15 @@ namespace Android.Location
         /// <param name="arg1"><see cref="long"/></param>
         public override void OnNmeaMessage(Java.Lang.String arg0, long arg1)
         {
-            IExecute("onNmeaMessage", arg0, arg1);
+            IExecuteWithSignature("onNmeaMessage", "(Ljava/lang/String;J)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

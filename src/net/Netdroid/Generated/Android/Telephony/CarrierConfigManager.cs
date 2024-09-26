@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CarrierConfigManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Apn declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Apn(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Bsf(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -166,7 +166,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public CarrierConfigChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.CarrierConfigManager_CarrierConfigChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -175,13 +175,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region CarrierConfigChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="CarrierConfigChangeListener"/> or its generic type if there is one
@@ -192,14 +192,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.CarrierConfigManager$CarrierConfigChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -238,10 +238,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Gps(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -262,9 +262,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -283,10 +283,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Ims(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -307,9 +307,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -328,10 +328,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsEmergency(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -352,9 +352,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -373,10 +373,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsRtt(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -397,9 +397,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -418,10 +418,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsServiceEntitlement(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -442,9 +442,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -463,10 +463,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsSms(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -487,9 +487,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -508,10 +508,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsSs(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -532,9 +532,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -553,10 +553,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsVoice(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -577,9 +577,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -598,10 +598,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsVt(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -622,9 +622,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -643,10 +643,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImsWfc(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -667,9 +667,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -688,10 +688,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Iwlan(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -712,9 +712,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -726,13 +726,13 @@ namespace Android.Telephony
     public partial class CarrierConfigManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#CARRIER_NR_AVAILABILITY_NSA"/>
@@ -2719,9 +2719,9 @@ namespace Android.Telephony
         public static Java.Lang.String REMOVE_GROUP_UUID_STRING { get { if (!_REMOVE_GROUP_UUID_STRINGReady) { _REMOVE_GROUP_UUID_STRINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "REMOVE_GROUP_UUID_STRING"); _REMOVE_GROUP_UUID_STRINGReady = true; } return _REMOVE_GROUP_UUID_STRINGContent; } }
         private static Java.Lang.String _REMOVE_GROUP_UUID_STRINGContent = default;
         private static bool _REMOVE_GROUP_UUID_STRINGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#isConfigForIdentifiedCarrier(android.os.PersistableBundle)"/>
@@ -2732,9 +2732,9 @@ namespace Android.Telephony
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isConfigForIdentifiedCarrier", "(Landroid/os/PersistableBundle;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#getConfig()"/>
@@ -2762,7 +2762,7 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
         public Android.Os.PersistableBundle GetConfigByComponentForSubId(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Os.PersistableBundle>("getConfigByComponentForSubId", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getConfigByComponentForSubId", "(Ljava/lang/String;I)Landroid/os/PersistableBundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#getConfigForSubId(int,java.lang.String[])"/>
@@ -2772,7 +2772,7 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
         public Android.Os.PersistableBundle GetConfigForSubId(int arg0, params Java.Lang.String[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Android.Os.PersistableBundle>("getConfigForSubId", arg0); else return IExecute<Android.Os.PersistableBundle>("getConfigForSubId", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Android.Os.PersistableBundle>("getConfigForSubId", "(I[Ljava/lang/String;)Landroid/os/PersistableBundle;", arg0); else return IExecuteWithSignature<Android.Os.PersistableBundle>("getConfigForSubId", "(I[Ljava/lang/String;)Landroid/os/PersistableBundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#getConfigForSubId(int)"/>
@@ -2799,7 +2799,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telephony.CarrierConfigManager.CarrierConfigChangeListener"/></param>
         public void RegisterCarrierConfigChangeListener(Java.Util.Concurrent.Executor arg0, Android.Telephony.CarrierConfigManager.CarrierConfigChangeListener arg1)
         {
-            IExecute("registerCarrierConfigChangeListener", arg0, arg1);
+            IExecuteWithSignature("registerCarrierConfigChangeListener", "(Ljava/util/concurrent/Executor;Landroid/telephony/CarrierConfigManager$CarrierConfigChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#unregisterCarrierConfigChangeListener(android.telephony.CarrierConfigManager.CarrierConfigChangeListener)"/>
@@ -2809,21 +2809,21 @@ namespace Android.Telephony
         {
             IExecuteWithSignature("unregisterCarrierConfigChangeListener", "(Landroid/telephony/CarrierConfigManager$CarrierConfigChangeListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Apn implementation
         public partial class Apn
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Apn.html#KEY_PREFIX"/>
@@ -2862,21 +2862,21 @@ namespace Android.Telephony
             public static Java.Lang.String PROTOCOL_IPV6 { get { if (!_PROTOCOL_IPV6Ready) { _PROTOCOL_IPV6Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROTOCOL_IPV6"); _PROTOCOL_IPV6Ready = true; } return _PROTOCOL_IPV6Content; } }
             private static Java.Lang.String _PROTOCOL_IPV6Content = default;
             private static bool _PROTOCOL_IPV6Ready = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2885,13 +2885,13 @@ namespace Android.Telephony
         public partial class Bsf
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Bsf.html#KEY_BSF_SERVER_FQDN_STRING"/>
@@ -2917,21 +2917,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_PREFIX { get { if (!_KEY_PREFIXReady) { _KEY_PREFIXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PREFIX"); _KEY_PREFIXReady = true; } return _KEY_PREFIXContent; } }
             private static Java.Lang.String _KEY_PREFIXContent = default;
             private static bool _KEY_PREFIXReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2940,21 +2940,21 @@ namespace Android.Telephony
         public partial class CarrierConfigChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="CarrierConfigChangeListener"/>
@@ -2964,13 +2964,13 @@ namespace Android.Telephony
                 AddEventHandler("onCarrierConfigChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCarrierConfigChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.CarrierConfigChangeListener.html#onCarrierConfigChanged(int,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCarrierConfigChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, int, int, int> OnOnCarrierConfigChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCarrierConfigChanged = true;
             void OnCarrierConfigChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2979,7 +2979,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCarrierConfigChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.CarrierConfigChangeListener.html#onCarrierConfigChanged(int,int,int,int)"/>
             /// </summary>
@@ -2991,13 +2991,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnCarrierConfigChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3006,21 +3006,21 @@ namespace Android.Telephony
         public partial class CarrierConfigChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.CarrierConfigChangeListener.html#onCarrierConfigChanged(int,int,int,int)"/>
@@ -3031,15 +3031,15 @@ namespace Android.Telephony
             /// <param name="arg3"><see cref="int"/></param>
             public override void OnCarrierConfigChanged(int arg0, int arg1, int arg2, int arg3)
             {
-                IExecute("onCarrierConfigChanged", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onCarrierConfigChanged", "(IIII)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3048,13 +3048,13 @@ namespace Android.Telephony
         public partial class Gps
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Gps.html#KEY_PERSIST_LPP_MODE_BOOL"/>
@@ -3068,21 +3068,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_PREFIX { get { if (!_KEY_PREFIXReady) { _KEY_PREFIXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PREFIX"); _KEY_PREFIXReady = true; } return _KEY_PREFIXContent; } }
             private static Java.Lang.String _KEY_PREFIXContent = default;
             private static bool _KEY_PREFIXReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3091,13 +3091,13 @@ namespace Android.Telephony
         public partial class Ims
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Ims.html#E911_RTCP_INACTIVITY_ON_CONNECTED"/>
@@ -3525,21 +3525,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INT { get { if (!_KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INTReady) { _KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INT"); _KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INTReady = true; } return _KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INTContent; } }
             private static Java.Lang.String _KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INTContent = default;
             private static bool _KEY_WIFI_OFF_DEFERRING_TIME_MILLIS_INTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3548,13 +3548,13 @@ namespace Android.Telephony
         public partial class ImsEmergency
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_CS"/>
@@ -3784,21 +3784,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL { get { if (!_KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLReady) { _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL"); _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLReady = true; } return _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLContent; } }
             private static Java.Lang.String _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLContent = default;
             private static bool _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3807,13 +3807,13 @@ namespace Android.Telephony
         public partial class ImsRtt
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsRtt.html#KEY_PREFIX"/>
@@ -3869,21 +3869,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_TEXT_RS_BANDWIDTH_BPS_INT { get { if (!_KEY_TEXT_RS_BANDWIDTH_BPS_INTReady) { _KEY_TEXT_RS_BANDWIDTH_BPS_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_TEXT_RS_BANDWIDTH_BPS_INT"); _KEY_TEXT_RS_BANDWIDTH_BPS_INTReady = true; } return _KEY_TEXT_RS_BANDWIDTH_BPS_INTContent; } }
             private static Java.Lang.String _KEY_TEXT_RS_BANDWIDTH_BPS_INTContent = default;
             private static bool _KEY_TEXT_RS_BANDWIDTH_BPS_INTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3892,13 +3892,13 @@ namespace Android.Telephony
         public partial class ImsServiceEntitlement
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsServiceEntitlement.html#KEY_ENTITLEMENT_SERVER_URL_STRING"/>
@@ -3930,21 +3930,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_SHOW_VOWIFI_WEBVIEW_BOOL { get { if (!_KEY_SHOW_VOWIFI_WEBVIEW_BOOLReady) { _KEY_SHOW_VOWIFI_WEBVIEW_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SHOW_VOWIFI_WEBVIEW_BOOL"); _KEY_SHOW_VOWIFI_WEBVIEW_BOOLReady = true; } return _KEY_SHOW_VOWIFI_WEBVIEW_BOOLContent; } }
             private static Java.Lang.String _KEY_SHOW_VOWIFI_WEBVIEW_BOOLContent = default;
             private static bool _KEY_SHOW_VOWIFI_WEBVIEW_BOOLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3953,13 +3953,13 @@ namespace Android.Telephony
         public partial class ImsSms
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsSms.html#SMS_FORMAT_3GPP"/>
@@ -4045,21 +4045,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_SMS_TR2_TIMER_MILLIS_INT { get { if (!_KEY_SMS_TR2_TIMER_MILLIS_INTReady) { _KEY_SMS_TR2_TIMER_MILLIS_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SMS_TR2_TIMER_MILLIS_INT"); _KEY_SMS_TR2_TIMER_MILLIS_INTReady = true; } return _KEY_SMS_TR2_TIMER_MILLIS_INTContent; } }
             private static Java.Lang.String _KEY_SMS_TR2_TIMER_MILLIS_INTContent = default;
             private static bool _KEY_SMS_TR2_TIMER_MILLIS_INTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4068,13 +4068,13 @@ namespace Android.Telephony
         public partial class ImsSs
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsSs.html#CALL_WAITING_SYNC_FIRST_CHANGE"/>
@@ -4334,21 +4334,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAY { get { if (!_KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAYReady) { _KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAY"); _KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAYReady = true; } return _KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAYContent; } }
             private static Java.Lang.String _KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAYContent = default;
             private static bool _KEY_XCAP_OVER_UT_SUPPORTED_RATS_INT_ARRAYReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4357,13 +4357,13 @@ namespace Android.Telephony
         public partial class ImsVoice
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsVoice.html#ALERTING_SRVCC_SUPPORT"/>
@@ -4899,21 +4899,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOL { get { if (!_KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOLReady) { _KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOL"); _KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOLReady = true; } return _KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOLContent; } }
             private static Java.Lang.String _KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOLContent = default;
             private static bool _KEY_VOICE_QOS_PRECONDITION_SUPPORTED_BOOLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4922,13 +4922,13 @@ namespace Android.Telephony
         public partial class ImsVt
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsVt.html#KEY_H264_PAYLOAD_DESCRIPTION_BUNDLE"/>
@@ -5026,21 +5026,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INT { get { if (!_KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INTReady) { _KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INT"); _KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INTReady = true; } return _KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INTContent; } }
             private static Java.Lang.String _KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INTContent = default;
             private static bool _KEY_VIDEO_RTP_INACTIVITY_TIMER_MILLIS_INTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -5049,13 +5049,13 @@ namespace Android.Telephony
         public partial class ImsWfc
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsWfc.html#KEY_EMERGENCY_CALL_OVER_EMERGENCY_PDN_BOOL"/>
@@ -5075,21 +5075,21 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_PREFIX { get { if (!_KEY_PREFIXReady) { _KEY_PREFIXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PREFIX"); _KEY_PREFIXReady = true; } return _KEY_PREFIXContent; } }
             private static Java.Lang.String _KEY_PREFIXContent = default;
             private static bool _KEY_PREFIXReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -5098,13 +5098,13 @@ namespace Android.Telephony
         public partial class Iwlan
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#AUTHENTICATION_METHOD_CERT"/>
@@ -5400,28 +5400,28 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOL { get { if (!_KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady) { _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOL"); _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady = true; } return _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent; } }
             private static Java.Lang.String _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent = default;
             private static bool _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

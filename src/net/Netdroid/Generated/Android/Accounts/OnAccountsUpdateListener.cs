@@ -35,7 +35,7 @@ namespace Android.Accounts
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public OnAccountsUpdateListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.accounts.OnAccountsUpdateListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Accounts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region OnAccountsUpdateListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="OnAccountsUpdateListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Accounts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.accounts.OnAccountsUpdateListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Accounts
     public partial interface IOnAccountsUpdateListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Accounts
     public partial class OnAccountsUpdateListener : Android.Accounts.IOnAccountsUpdateListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="OnAccountsUpdateListener"/>
@@ -138,13 +138,13 @@ namespace Android.Accounts
             AddEventHandler("onAccountsUpdated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAccountsUpdatedEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/accounts/OnAccountsUpdateListener.html#onAccountsUpdated(android.accounts.Account[])"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnAccountsUpdated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Accounts.Account[]> OnOnAccountsUpdated { get; set; } = null;
-        
+
         bool hasOverrideOnAccountsUpdated = true;
         void OnAccountsUpdatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -153,7 +153,7 @@ namespace Android.Accounts
             methodToExecute.Invoke(data.EventData.GetAt<Android.Accounts.Account[]>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnAccountsUpdated;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/OnAccountsUpdateListener.html#onAccountsUpdated(android.accounts.Account[])"/>
         /// </summary>
@@ -162,13 +162,13 @@ namespace Android.Accounts
         {
             hasOverrideOnAccountsUpdated = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -177,21 +177,21 @@ namespace Android.Accounts
     public partial class OnAccountsUpdateListenerDirect : Android.Accounts.IOnAccountsUpdateListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/OnAccountsUpdateListener.html#onAccountsUpdated(android.accounts.Account[])"/>
@@ -201,13 +201,13 @@ namespace Android.Accounts
         {
             IExecuteWithSignature("onAccountsUpdated", "([Landroid/accounts/Account;)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

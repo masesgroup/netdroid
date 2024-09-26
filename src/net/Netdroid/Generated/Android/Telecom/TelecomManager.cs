@@ -40,10 +40,10 @@ namespace Android.Telecom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TelecomManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Telecom
     public partial class TelecomManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#DTMF_CHARACTER_PAUSE"/>
@@ -449,13 +449,13 @@ namespace Android.Telecom
         public static Java.Lang.String METADATA_INCLUDE_SELF_MANAGED_CALLS { get { if (!_METADATA_INCLUDE_SELF_MANAGED_CALLSReady) { _METADATA_INCLUDE_SELF_MANAGED_CALLSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "METADATA_INCLUDE_SELF_MANAGED_CALLS"); _METADATA_INCLUDE_SELF_MANAGED_CALLSReady = true; } return _METADATA_INCLUDE_SELF_MANAGED_CALLSContent; } }
         private static Java.Lang.String _METADATA_INCLUDE_SELF_MANAGED_CALLSContent = default;
         private static bool _METADATA_INCLUDE_SELF_MANAGED_CALLSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#createManageBlockedNumbersIntent()"/>
@@ -534,7 +534,7 @@ namespace Android.Telecom
         /// <returns><see cref="bool"/></returns>
         public bool HandleMmi(Java.Lang.String arg0, Android.Telecom.PhoneAccountHandle arg1)
         {
-            return IExecute<bool>("handleMmi", arg0, arg1);
+            return IExecuteWithSignature<bool>("handleMmi", "(Ljava/lang/String;Landroid/telecom/PhoneAccountHandle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#handleMmi(java.lang.String)"/>
@@ -603,7 +603,7 @@ namespace Android.Telecom
         /// <returns><see cref="bool"/></returns>
         public bool IsVoiceMailNumber(Android.Telecom.PhoneAccountHandle arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isVoiceMailNumber", arg0, arg1);
+            return IExecuteWithSignature<bool>("isVoiceMailNumber", "(Landroid/telecom/PhoneAccountHandle;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getDefaultDialerPackage()"/>
@@ -680,7 +680,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="Android.Telecom.PhoneAccountHandle"/></param>
         public void AcceptHandover(Android.Net.Uri arg0, int arg1, Android.Telecom.PhoneAccountHandle arg2)
         {
-            IExecute("acceptHandover", arg0, arg1, arg2);
+            IExecuteWithSignature("acceptHandover", "(Landroid/net/Uri;ILandroid/telecom/PhoneAccountHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptRingingCall()"/>
@@ -709,7 +709,7 @@ namespace Android.Telecom
         /// <param name="arg4"><see cref="Android.Telecom.CallEventCallback"/></param>
         public void AddCall(Android.Telecom.CallAttributes arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Telecom.CallControl, Android.Telecom.CallException> arg2, Android.Telecom.CallControlCallback arg3, Android.Telecom.CallEventCallback arg4)
         {
-            IExecute("addCall", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addCall", "(Landroid/telecom/CallAttributes;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;Landroid/telecom/CallControlCallback;Landroid/telecom/CallEventCallback;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#addNewIncomingCall(android.telecom.PhoneAccountHandle,android.os.Bundle)"/>
@@ -718,7 +718,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void AddNewIncomingCall(Android.Telecom.PhoneAccountHandle arg0, Android.Os.Bundle arg1)
         {
-            IExecute("addNewIncomingCall", arg0, arg1);
+            IExecuteWithSignature("addNewIncomingCall", "(Landroid/telecom/PhoneAccountHandle;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#addNewIncomingConference(android.telecom.PhoneAccountHandle,android.os.Bundle)"/>
@@ -727,7 +727,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void AddNewIncomingConference(Android.Telecom.PhoneAccountHandle arg0, Android.Os.Bundle arg1)
         {
-            IExecute("addNewIncomingConference", arg0, arg1);
+            IExecuteWithSignature("addNewIncomingConference", "(Landroid/telecom/PhoneAccountHandle;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#cancelMissedCallsNotification()"/>
@@ -743,7 +743,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void PlaceCall(Android.Net.Uri arg0, Android.Os.Bundle arg1)
         {
-            IExecute("placeCall", arg0, arg1);
+            IExecuteWithSignature("placeCall", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#registerPhoneAccount(android.telecom.PhoneAccount)"/>
@@ -775,7 +775,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void StartConference(Java.Util.List<Android.Net.Uri> arg0, Android.Os.Bundle arg1)
         {
-            IExecute("startConference", arg0, arg1);
+            IExecuteWithSignature("startConference", "(Ljava/util/List;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#unregisterPhoneAccount(android.telecom.PhoneAccountHandle)"/>
@@ -785,13 +785,13 @@ namespace Android.Telecom
         {
             IExecuteWithSignature("unregisterPhoneAccount", "(Landroid/telecom/PhoneAccountHandle;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

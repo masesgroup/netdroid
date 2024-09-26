@@ -40,10 +40,10 @@ namespace Android.Text.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Rfc822Tokenizer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Text.Util
     public partial class Rfc822Tokenizer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Tokenizer.html#tokenize(java.lang.CharSequence)"/>
@@ -102,11 +102,11 @@ namespace Android.Text.Util
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         public static void Tokenize(Java.Lang.CharSequence arg0, Java.Util.Collection<Android.Text.Util.Rfc822Token> arg1)
         {
-            SExecute(LocalBridgeClazz, "tokenize", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "tokenize", "(Ljava/lang/CharSequence;Ljava/util/Collection;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Tokenizer.html#findTokenEnd(java.lang.CharSequence,int)"/>
@@ -116,7 +116,7 @@ namespace Android.Text.Util
         /// <returns><see cref="int"/></returns>
         public int FindTokenEnd(Java.Lang.CharSequence arg0, int arg1)
         {
-            return IExecute<int>("findTokenEnd", arg0, arg1);
+            return IExecuteWithSignature<int>("findTokenEnd", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Tokenizer.html#findTokenStart(java.lang.CharSequence,int)"/>
@@ -126,7 +126,7 @@ namespace Android.Text.Util
         /// <returns><see cref="int"/></returns>
         public int FindTokenStart(Java.Lang.CharSequence arg0, int arg1)
         {
-            return IExecute<int>("findTokenStart", arg0, arg1);
+            return IExecuteWithSignature<int>("findTokenStart", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Tokenizer.html#terminateToken(java.lang.CharSequence)"/>
@@ -137,13 +137,13 @@ namespace Android.Text.Util
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

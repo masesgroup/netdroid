@@ -40,10 +40,10 @@ namespace Android.Media.Tv
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvRecordingClient(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Tv
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region RecordingCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("RecordingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RecordingCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,21 +132,21 @@ namespace Android.Media.Tv
             : base(arg0, arg1, arg2, arg3)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingClient.html#pauseRecording()"/>
@@ -192,7 +192,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void SendAppPrivateCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendAppPrivateCommand", arg0, arg1);
+            IExecuteWithSignature("sendAppPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingClient.html#setTvInteractiveAppView(android.media.tv.interactive.TvInteractiveAppView,java.lang.String)"/>
@@ -201,7 +201,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetTvInteractiveAppView(Android.Media.Tv.Interactive.TvInteractiveAppView arg0, Java.Lang.String arg1)
         {
-            IExecute("setTvInteractiveAppView", arg0, arg1);
+            IExecuteWithSignature("setTvInteractiveAppView", "(Landroid/media/tv/interactive/TvInteractiveAppView;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingClient.html#startRecording(android.net.Uri,android.os.Bundle)"/>
@@ -210,7 +210,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void StartRecording(Android.Net.Uri arg0, Android.Os.Bundle arg1)
         {
-            IExecute("startRecording", arg0, arg1);
+            IExecuteWithSignature("startRecording", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingClient.html#startRecording(android.net.Uri)"/>
@@ -235,7 +235,7 @@ namespace Android.Media.Tv
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void Tune(Java.Lang.String arg0, Android.Net.Uri arg1, Android.Os.Bundle arg2)
         {
-            IExecute("tune", arg0, arg1, arg2);
+            IExecuteWithSignature("tune", "(Ljava/lang/String;Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingClient.html#tune(java.lang.String,android.net.Uri)"/>
@@ -244,31 +244,31 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void Tune(Java.Lang.String arg0, Android.Net.Uri arg1)
         {
-            IExecute("tune", arg0, arg1);
+            IExecuteWithSignature("tune", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region RecordingCallback implementation
         public partial class RecordingCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvRecordingClient.RecordingCallback.html#onConnectionFailed(java.lang.String)"/>
@@ -310,20 +310,20 @@ namespace Android.Media.Tv
             {
                 IExecuteWithSignature("onTuned", "(Landroid/net/Uri;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

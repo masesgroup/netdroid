@@ -40,10 +40,10 @@ namespace Java.Beans
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PropertyChangeSupport(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Beans
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Java.Beans
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#hasListeners(java.lang.String)"/>
@@ -139,7 +139,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("addPropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,boolean,boolean)"/>
@@ -150,7 +150,7 @@ namespace Java.Beans
         /// <param name="arg3"><see cref="bool"/></param>
         public void FireIndexedPropertyChange(Java.Lang.String arg0, int arg1, bool arg2, bool arg3)
         {
-            IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fireIndexedPropertyChange", "(Ljava/lang/String;IZZ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,int,int)"/>
@@ -161,7 +161,7 @@ namespace Java.Beans
         /// <param name="arg3"><see cref="int"/></param>
         public void FireIndexedPropertyChange(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fireIndexedPropertyChange", "(Ljava/lang/String;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)"/>
@@ -172,7 +172,7 @@ namespace Java.Beans
         /// <param name="arg3"><see cref="object"/></param>
         public void FireIndexedPropertyChange(Java.Lang.String arg0, int arg1, object arg2, object arg3)
         {
-            IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fireIndexedPropertyChange", "(Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#firePropertyChange(java.beans.PropertyChangeEvent)"/>
@@ -190,7 +190,7 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="bool"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, bool arg1, bool arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,int,int)"/>
@@ -200,7 +200,7 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="int"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -210,7 +210,7 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="object"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeSupport.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -227,15 +227,15 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("removePropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TimeZoneFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region GMTOffsetPatternType declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public GMTOffsetPatternType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ParseOption(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Style(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TimeType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -254,9 +254,9 @@ namespace Android.Icu.Text
     public partial class TimeZoneFormat : Android.Icu.Util.IFreezable<Android.Icu.Text.TimeZoneFormat>, Java.Io.ISerializable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.TimeZoneFormat"/> to <see cref="Android.Icu.Util.Freezable"/>
@@ -266,13 +266,13 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.TimeZoneFormat"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Android.Icu.Text.TimeZoneFormat t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getInstance(android.icu.util.ULocale)"/>
@@ -292,9 +292,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.TimeZoneFormat>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Landroid/icu/text/TimeZoneFormat;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setDefaultParseOptions(java.util.EnumSet)"/>
@@ -322,7 +322,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.TimeZoneFormat"/></returns>
         public Android.Icu.Text.TimeZoneFormat SetGMTOffsetPattern(Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Icu.Text.TimeZoneFormat>("setGMTOffsetPattern", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.TimeZoneFormat>("setGMTOffsetPattern", "(Landroid/icu/text/TimeZoneFormat$GMTOffsetPatternType;Ljava/lang/String;)Landroid/icu/text/TimeZoneFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setGMTPattern(java.lang.String)"/>
@@ -369,7 +369,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
         public Android.Icu.Util.TimeZone Parse(Android.Icu.Text.TimeZoneFormat.Style arg0, Java.Lang.String arg1, Java.Text.ParsePosition arg2, Android.Icu.Util.Output<Android.Icu.Text.TimeZoneFormat.TimeType> arg3)
         {
-            return IExecute<Android.Icu.Util.TimeZone>("parse", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Icu.Util.TimeZone>("parse", "(Landroid/icu/text/TimeZoneFormat$Style;Ljava/lang/String;Ljava/text/ParsePosition;Landroid/icu/util/Output;)Landroid/icu/util/TimeZone;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(android.icu.text.TimeZoneFormat.Style,java.lang.String,java.text.ParsePosition,java.util.EnumSet,android.icu.util.Output)"/>
@@ -382,7 +382,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
         public Android.Icu.Util.TimeZone Parse(Android.Icu.Text.TimeZoneFormat.Style arg0, Java.Lang.String arg1, Java.Text.ParsePosition arg2, Java.Util.EnumSet<Android.Icu.Text.TimeZoneFormat.ParseOption> arg3, Android.Icu.Util.Output<Android.Icu.Text.TimeZoneFormat.TimeType> arg4)
         {
-            return IExecute<Android.Icu.Util.TimeZone>("parse", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Icu.Util.TimeZone>("parse", "(Landroid/icu/text/TimeZoneFormat$Style;Ljava/lang/String;Ljava/text/ParsePosition;Ljava/util/EnumSet;Landroid/icu/util/Output;)Landroid/icu/util/TimeZone;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#isFrozen()"/>
@@ -400,7 +400,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
         public Android.Icu.Util.TimeZone Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Android.Icu.Util.TimeZone>("parse", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Util.TimeZone>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Landroid/icu/util/TimeZone;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(java.lang.String)"/>
@@ -420,7 +420,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int ParseOffsetISO8601(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<int>("parseOffsetISO8601", arg0, arg1);
+            return IExecuteWithSignature<int>("parseOffsetISO8601", "(Ljava/lang/String;Ljava/text/ParsePosition;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#format(android.icu.text.TimeZoneFormat.Style,android.icu.util.TimeZone,long)"/>
@@ -431,7 +431,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Android.Icu.Text.TimeZoneFormat.Style arg0, Android.Icu.Util.TimeZone arg1, long arg2)
         {
-            return IExecute<Java.Lang.String>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("format", "(Landroid/icu/text/TimeZoneFormat$Style;Landroid/icu/util/TimeZone;J)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetISO8601Basic(int,boolean,boolean,boolean)"/>
@@ -443,7 +443,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String FormatOffsetISO8601Basic(int arg0, bool arg1, bool arg2, bool arg3)
         {
-            return IExecute<Java.Lang.String>("formatOffsetISO8601Basic", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.String>("formatOffsetISO8601Basic", "(IZZZ)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetISO8601Extended(int,boolean,boolean,boolean)"/>
@@ -455,7 +455,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String FormatOffsetISO8601Extended(int arg0, bool arg1, bool arg2, bool arg3)
         {
-            return IExecute<Java.Lang.String>("formatOffsetISO8601Extended", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.String>("formatOffsetISO8601Extended", "(IZZZ)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetLocalizedGMT(java.lang.String,java.text.ParsePosition)"/>
@@ -465,7 +465,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int ParseOffsetLocalizedGMT(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<int>("parseOffsetLocalizedGMT", arg0, arg1);
+            return IExecuteWithSignature<int>("parseOffsetLocalizedGMT", "(Ljava/lang/String;Ljava/text/ParsePosition;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parseOffsetShortLocalizedGMT(java.lang.String,java.text.ParsePosition)"/>
@@ -475,7 +475,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int ParseOffsetShortLocalizedGMT(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<int>("parseOffsetShortLocalizedGMT", arg0, arg1);
+            return IExecuteWithSignature<int>("parseOffsetShortLocalizedGMT", "(Ljava/lang/String;Ljava/text/ParsePosition;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#cloneAsThawed()"/>
@@ -503,7 +503,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Android.Icu.Text.TimeZoneFormat.Style arg0, Android.Icu.Util.TimeZone arg1, long arg2, Android.Icu.Util.Output<Android.Icu.Text.TimeZoneFormat.TimeType> arg3)
         {
-            return IExecute<Java.Lang.String>("format", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.String>("format", "(Landroid/icu/text/TimeZoneFormat$Style;Landroid/icu/util/TimeZone;JLandroid/icu/util/Output;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#formatOffsetLocalizedGMT(int)"/>
@@ -564,21 +564,21 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Util.EnumSet<Android.Icu.Text.TimeZoneFormat.ParseOption>>("getDefaultParseOptions", "()Ljava/util/EnumSet;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region GMTOffsetPatternType implementation
         public partial class GMTOffsetPatternType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.GMTOffsetPatternType.html#NEGATIVE_H"/>
@@ -616,9 +616,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType POSITIVE_HMS { get { if (!_POSITIVE_HMSReady) { _POSITIVE_HMSContent = SGetField<Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType>(LocalBridgeClazz, "POSITIVE_HMS"); _POSITIVE_HMSReady = true; } return _POSITIVE_HMSContent; } }
             private static Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType _POSITIVE_HMSContent = default;
             private static bool _POSITIVE_HMSReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.GMTOffsetPatternType.html#valueOf(java.lang.String)"/>
@@ -637,17 +637,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType>(LocalBridgeClazz, "values", "()[Landroid/icu/text/TimeZoneFormat$GMTOffsetPatternType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -656,13 +656,13 @@ namespace Android.Icu.Text
         public partial class ParseOption
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.ParseOption.html#ALL_STYLES"/>
@@ -676,9 +676,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.TimeZoneFormat.ParseOption TZ_DATABASE_ABBREVIATIONS { get { if (!_TZ_DATABASE_ABBREVIATIONSReady) { _TZ_DATABASE_ABBREVIATIONSContent = SGetField<Android.Icu.Text.TimeZoneFormat.ParseOption>(LocalBridgeClazz, "TZ_DATABASE_ABBREVIATIONS"); _TZ_DATABASE_ABBREVIATIONSReady = true; } return _TZ_DATABASE_ABBREVIATIONSContent; } }
             private static Android.Icu.Text.TimeZoneFormat.ParseOption _TZ_DATABASE_ABBREVIATIONSContent = default;
             private static bool _TZ_DATABASE_ABBREVIATIONSReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.ParseOption.html#valueOf(java.lang.String)"/>
@@ -697,17 +697,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.TimeZoneFormat.ParseOption>(LocalBridgeClazz, "values", "()[Landroid/icu/text/TimeZoneFormat$ParseOption;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -716,13 +716,13 @@ namespace Android.Icu.Text
         public partial class Style
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.Style.html#EXEMPLAR_LOCATION"/>
@@ -844,9 +844,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.TimeZoneFormat.Style ZONE_ID_SHORT { get { if (!_ZONE_ID_SHORTReady) { _ZONE_ID_SHORTContent = SGetField<Android.Icu.Text.TimeZoneFormat.Style>(LocalBridgeClazz, "ZONE_ID_SHORT"); _ZONE_ID_SHORTReady = true; } return _ZONE_ID_SHORTContent; } }
             private static Android.Icu.Text.TimeZoneFormat.Style _ZONE_ID_SHORTContent = default;
             private static bool _ZONE_ID_SHORTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.Style.html#valueOf(java.lang.String)"/>
@@ -865,17 +865,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.TimeZoneFormat.Style>(LocalBridgeClazz, "values", "()[Landroid/icu/text/TimeZoneFormat$Style;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -884,13 +884,13 @@ namespace Android.Icu.Text
         public partial class TimeType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.TimeType.html#DAYLIGHT"/>
@@ -910,9 +910,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.TimeZoneFormat.TimeType UNKNOWN { get { if (!_UNKNOWNReady) { _UNKNOWNContent = SGetField<Android.Icu.Text.TimeZoneFormat.TimeType>(LocalBridgeClazz, "UNKNOWN"); _UNKNOWNReady = true; } return _UNKNOWNContent; } }
             private static Android.Icu.Text.TimeZoneFormat.TimeType _UNKNOWNContent = default;
             private static bool _UNKNOWNReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.TimeType.html#valueOf(java.lang.String)"/>
@@ -931,24 +931,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.TimeZoneFormat.TimeType>(LocalBridgeClazz, "values", "()[Landroid/icu/text/TimeZoneFormat$TimeType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

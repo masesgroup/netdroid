@@ -36,9 +36,9 @@ namespace Android.Net.Ipsec.Ike.Exceptions
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -46,29 +46,29 @@ namespace Android.Net.Ipsec.Ike.Exceptions
     public partial class IkeProtocolException
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

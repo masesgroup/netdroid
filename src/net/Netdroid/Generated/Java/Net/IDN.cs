@@ -40,10 +40,10 @@ namespace Java.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IDN(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Net
     public partial class IDN
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/IDN.html#ALLOW_UNASSIGNED"/>
@@ -94,9 +94,9 @@ namespace Java.Net
         public static int USE_STD3_ASCII_RULES { get { if (!_USE_STD3_ASCII_RULESReady) { _USE_STD3_ASCII_RULESContent = SGetField<int>(LocalBridgeClazz, "USE_STD3_ASCII_RULES"); _USE_STD3_ASCII_RULESReady = true; } return _USE_STD3_ASCII_RULESContent; } }
         private static int _USE_STD3_ASCII_RULESContent = default;
         private static bool _USE_STD3_ASCII_RULESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/IDN.html#toASCII(java.lang.String,int)"/>
@@ -106,7 +106,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToASCII(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toASCII", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toASCII", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/IDN.html#toASCII(java.lang.String)"/>
@@ -125,7 +125,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToUnicode(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnicode", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnicode", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/IDN.html#toUnicode(java.lang.String)"/>
@@ -136,17 +136,17 @@ namespace Java.Net
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnicode", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

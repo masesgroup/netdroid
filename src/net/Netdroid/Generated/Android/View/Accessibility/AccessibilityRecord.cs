@@ -40,10 +40,10 @@ namespace Android.View.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibilityRecord(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Accessibility
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,17 +82,17 @@ namespace Android.View.Accessibility
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#obtain()"/>
@@ -113,9 +113,9 @@ namespace Android.View.Accessibility
         {
             return SExecuteWithSignature<Android.View.Accessibility.AccessibilityRecord>(LocalBridgeClazz, "obtain", "(Landroid/view/accessibility/AccessibilityRecord;)Landroid/view/accessibility/AccessibilityRecord;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#getParcelableData()"/>
@@ -501,7 +501,7 @@ namespace Android.View.Accessibility
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSource(Android.View.View arg0, int arg1)
         {
-            IExecute("setSource", arg0, arg1);
+            IExecuteWithSignature("setSource", "(Landroid/view/View;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setSource(android.view.View)"/>
@@ -519,13 +519,13 @@ namespace Android.View.Accessibility
         {
             IExecuteWithSignature("setToIndex", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

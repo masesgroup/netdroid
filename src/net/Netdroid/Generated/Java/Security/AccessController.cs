@@ -41,10 +41,10 @@ namespace Java.Security
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,17 +75,17 @@ namespace Java.Security
     public partial class AccessController
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -97,7 +97,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1); else return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext)"/>
@@ -108,7 +108,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction)"/>
@@ -131,7 +131,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1); else return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
@@ -143,7 +143,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction)"/>
@@ -166,7 +166,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1); else return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction)"/>
@@ -189,7 +189,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1); else return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction)"/>
@@ -219,17 +219,17 @@ namespace Java.Security
         {
             SExecuteWithSignature(LocalBridgeClazz, "checkPermission", "(Ljava/security/Permission;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

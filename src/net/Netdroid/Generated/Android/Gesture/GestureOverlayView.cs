@@ -40,10 +40,10 @@ namespace Android.Gesture
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GestureOverlayView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Gesture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnGestureListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Gesture
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnGestureListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.gesture.GestureOverlayView_OnGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Gesture
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnGestureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnGestureListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Gesture
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.gesture.GestureOverlayView$OnGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.Gesture
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnGesturePerformedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.gesture.GestureOverlayView_OnGesturePerformedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.Gesture
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnGesturePerformedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnGesturePerformedListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.Gesture
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.gesture.GestureOverlayView$OnGesturePerformedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -210,7 +210,7 @@ namespace Android.Gesture
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnGesturingListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.gesture.GestureOverlayView_OnGesturingListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -219,13 +219,13 @@ namespace Android.Gesture
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnGesturingListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnGesturingListener"/> or its generic type if there is one
@@ -236,14 +236,14 @@ namespace Android.Gesture
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.gesture.GestureOverlayView$OnGesturingListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -313,13 +313,13 @@ namespace Android.Gesture
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#GESTURE_STROKE_TYPE_MULTIPLE"/>
@@ -345,13 +345,13 @@ namespace Android.Gesture
         public static int ORIENTATION_VERTICAL { get { if (!_ORIENTATION_VERTICALReady) { _ORIENTATION_VERTICALContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_VERTICAL"); _ORIENTATION_VERTICALReady = true; } return _ORIENTATION_VERTICALContent; } }
         private static int _ORIENTATION_VERTICALContent = default;
         private static bool _ORIENTATION_VERTICALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGesture()"/>
@@ -685,29 +685,29 @@ namespace Android.Gesture
         {
             IExecuteWithSignature("setUncertainGestureColor", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnGestureListener implementation
         public partial class OnGestureListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnGestureListener"/>
@@ -720,13 +720,13 @@ namespace Android.Gesture
                 AddEventHandler("onGestureStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGestureStartedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGesture(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesture"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGesture { get; set; } = null;
-            
+
             bool hasOverrideOnGesture = true;
             void OnGestureEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -735,7 +735,7 @@ namespace Android.Gesture
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Gesture.GestureOverlayView>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGesture;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGesture(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
@@ -745,13 +745,13 @@ namespace Android.Gesture
             {
                 hasOverrideOnGesture = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureCancelled(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGestureCancelled"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureCancelled { get; set; } = null;
-            
+
             bool hasOverrideOnGestureCancelled = true;
             void OnGestureCancelledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -760,7 +760,7 @@ namespace Android.Gesture
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Gesture.GestureOverlayView>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGestureCancelled;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureCancelled(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
@@ -770,13 +770,13 @@ namespace Android.Gesture
             {
                 hasOverrideOnGestureCancelled = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureEnded(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGestureEnded"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureEnded { get; set; } = null;
-            
+
             bool hasOverrideOnGestureEnded = true;
             void OnGestureEndedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -785,7 +785,7 @@ namespace Android.Gesture
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Gesture.GestureOverlayView>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGestureEnded;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureEnded(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
@@ -795,13 +795,13 @@ namespace Android.Gesture
             {
                 hasOverrideOnGestureEnded = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureStarted(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGestureStarted"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureStarted { get; set; } = null;
-            
+
             bool hasOverrideOnGestureStarted = true;
             void OnGestureStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -810,7 +810,7 @@ namespace Android.Gesture
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Gesture.GestureOverlayView>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGestureStarted;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureStarted(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
@@ -820,13 +820,13 @@ namespace Android.Gesture
             {
                 hasOverrideOnGestureStarted = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -835,21 +835,21 @@ namespace Android.Gesture
         public partial class OnGestureListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGesture(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
@@ -858,7 +858,7 @@ namespace Android.Gesture
             /// <param name="arg1"><see cref="Android.View.MotionEvent"/></param>
             public override void OnGesture(Android.Gesture.GestureOverlayView arg0, Android.View.MotionEvent arg1)
             {
-                IExecute("onGesture", arg0, arg1);
+                IExecuteWithSignature("onGesture", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureCancelled(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
@@ -867,7 +867,7 @@ namespace Android.Gesture
             /// <param name="arg1"><see cref="Android.View.MotionEvent"/></param>
             public override void OnGestureCancelled(Android.Gesture.GestureOverlayView arg0, Android.View.MotionEvent arg1)
             {
-                IExecute("onGestureCancelled", arg0, arg1);
+                IExecuteWithSignature("onGestureCancelled", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureEnded(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
@@ -876,7 +876,7 @@ namespace Android.Gesture
             /// <param name="arg1"><see cref="Android.View.MotionEvent"/></param>
             public override void OnGestureEnded(Android.Gesture.GestureOverlayView arg0, Android.View.MotionEvent arg1)
             {
-                IExecute("onGestureEnded", arg0, arg1);
+                IExecuteWithSignature("onGestureEnded", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureStarted(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
@@ -885,15 +885,15 @@ namespace Android.Gesture
             /// <param name="arg1"><see cref="Android.View.MotionEvent"/></param>
             public override void OnGestureStarted(Android.Gesture.GestureOverlayView arg0, Android.View.MotionEvent arg1)
             {
-                IExecute("onGestureStarted", arg0, arg1);
+                IExecuteWithSignature("onGestureStarted", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -902,21 +902,21 @@ namespace Android.Gesture
         public partial class OnGesturePerformedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnGesturePerformedListener"/>
@@ -926,13 +926,13 @@ namespace Android.Gesture
                 AddEventHandler("onGesturePerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGesturePerformedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturePerformedListener.html#onGesturePerformed(android.gesture.GestureOverlayView,android.gesture.Gesture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesturePerformed"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Gesture.GestureOverlayView, Android.Gesture.Gesture> OnOnGesturePerformed { get; set; } = null;
-            
+
             bool hasOverrideOnGesturePerformed = true;
             void OnGesturePerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -941,7 +941,7 @@ namespace Android.Gesture
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Gesture.GestureOverlayView>(0), data.EventData.GetAt<Android.Gesture.Gesture>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGesturePerformed;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturePerformedListener.html#onGesturePerformed(android.gesture.GestureOverlayView,android.gesture.Gesture)"/>
             /// </summary>
@@ -951,13 +951,13 @@ namespace Android.Gesture
             {
                 hasOverrideOnGesturePerformed = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -966,21 +966,21 @@ namespace Android.Gesture
         public partial class OnGesturePerformedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturePerformedListener.html#onGesturePerformed(android.gesture.GestureOverlayView,android.gesture.Gesture)"/>
@@ -989,15 +989,15 @@ namespace Android.Gesture
             /// <param name="arg1"><see cref="Android.Gesture.Gesture"/></param>
             public override void OnGesturePerformed(Android.Gesture.GestureOverlayView arg0, Android.Gesture.Gesture arg1)
             {
-                IExecute("onGesturePerformed", arg0, arg1);
+                IExecuteWithSignature("onGesturePerformed", "(Landroid/gesture/GestureOverlayView;Landroid/gesture/Gesture;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1006,21 +1006,21 @@ namespace Android.Gesture
         public partial class OnGesturingListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnGesturingListener"/>
@@ -1031,13 +1031,13 @@ namespace Android.Gesture
                 AddEventHandler("onGesturingStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGesturingStartedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener.html#onGesturingEnded(android.gesture.GestureOverlayView)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesturingEnded"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Gesture.GestureOverlayView> OnOnGesturingEnded { get; set; } = null;
-            
+
             bool hasOverrideOnGesturingEnded = true;
             void OnGesturingEndedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1046,7 +1046,7 @@ namespace Android.Gesture
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Gesture.GestureOverlayView>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGesturingEnded;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener.html#onGesturingEnded(android.gesture.GestureOverlayView)"/>
             /// </summary>
@@ -1055,13 +1055,13 @@ namespace Android.Gesture
             {
                 hasOverrideOnGesturingEnded = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener.html#onGesturingStarted(android.gesture.GestureOverlayView)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesturingStarted"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Gesture.GestureOverlayView> OnOnGesturingStarted { get; set; } = null;
-            
+
             bool hasOverrideOnGesturingStarted = true;
             void OnGesturingStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1070,7 +1070,7 @@ namespace Android.Gesture
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Gesture.GestureOverlayView>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGesturingStarted;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener.html#onGesturingStarted(android.gesture.GestureOverlayView)"/>
             /// </summary>
@@ -1079,13 +1079,13 @@ namespace Android.Gesture
             {
                 hasOverrideOnGesturingStarted = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1094,21 +1094,21 @@ namespace Android.Gesture
         public partial class OnGesturingListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener.html#onGesturingEnded(android.gesture.GestureOverlayView)"/>
@@ -1126,20 +1126,20 @@ namespace Android.Gesture
             {
                 IExecuteWithSignature("onGesturingStarted", "(Landroid/gesture/GestureOverlayView;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

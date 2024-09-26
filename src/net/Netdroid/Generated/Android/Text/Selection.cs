@@ -40,10 +40,10 @@ namespace Android.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Selection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Text
     public partial class Selection
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#SELECTION_END"/>
@@ -94,9 +94,9 @@ namespace Android.Text
         public static object SELECTION_START { get { if (!_SELECTION_STARTReady) { _SELECTION_STARTContent = SGetField(LocalBridgeClazz, "SELECTION_START"); _SELECTION_STARTReady = true; } return _SELECTION_STARTContent; } }
         private static object _SELECTION_STARTContent = default;
         private static bool _SELECTION_STARTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#extendDown(android.text.Spannable,android.text.Layout)"/>
@@ -106,7 +106,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool ExtendDown(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "extendDown", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "extendDown", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#extendLeft(android.text.Spannable,android.text.Layout)"/>
@@ -116,7 +116,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool ExtendLeft(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "extendLeft", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "extendLeft", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#extendRight(android.text.Spannable,android.text.Layout)"/>
@@ -126,7 +126,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool ExtendRight(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "extendRight", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "extendRight", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#extendToLeftEdge(android.text.Spannable,android.text.Layout)"/>
@@ -136,7 +136,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool ExtendToLeftEdge(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "extendToLeftEdge", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "extendToLeftEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#extendToParagraphEnd(android.text.Spannable)"/>
@@ -164,7 +164,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool ExtendToRightEdge(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "extendToRightEdge", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "extendToRightEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#extendUp(android.text.Spannable,android.text.Layout)"/>
@@ -174,7 +174,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool ExtendUp(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "extendUp", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "extendUp", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveDown(android.text.Spannable,android.text.Layout)"/>
@@ -184,7 +184,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveDown(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveDown", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveDown", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveLeft(android.text.Spannable,android.text.Layout)"/>
@@ -194,7 +194,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveLeft(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveLeft", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveLeft", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveRight(android.text.Spannable,android.text.Layout)"/>
@@ -204,7 +204,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveRight(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveRight", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveRight", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveToLeftEdge(android.text.Spannable,android.text.Layout)"/>
@@ -214,7 +214,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveToLeftEdge(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveToLeftEdge", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveToLeftEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveToParagraphEnd(android.text.Spannable,android.text.Layout)"/>
@@ -224,7 +224,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveToParagraphEnd(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveToParagraphEnd", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveToParagraphEnd", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveToParagraphStart(android.text.Spannable,android.text.Layout)"/>
@@ -234,7 +234,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveToParagraphStart(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveToParagraphStart", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveToParagraphStart", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveToRightEdge(android.text.Spannable,android.text.Layout)"/>
@@ -244,7 +244,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveToRightEdge(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveToRightEdge", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveToRightEdge", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#moveUp(android.text.Spannable,android.text.Layout)"/>
@@ -254,7 +254,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool MoveUp(Android.Text.Spannable arg0, Android.Text.Layout arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "moveUp", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveUp", "(Landroid/text/Spannable;Landroid/text/Layout;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#getSelectionEnd(java.lang.CharSequence)"/>
@@ -281,7 +281,7 @@ namespace Android.Text
         /// <param name="arg1"><see cref="int"/></param>
         public static void ExtendSelection(Android.Text.Spannable arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "extendSelection", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "extendSelection", "(Landroid/text/Spannable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#removeSelection(android.text.Spannable)"/>
@@ -306,7 +306,7 @@ namespace Android.Text
         /// <param name="arg1"><see cref="int"/></param>
         public static void SetSelection(Android.Text.Spannable arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setSelection", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSelection", "(Landroid/text/Spannable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Selection.html#setSelection(android.text.Spannable,int,int)"/>
@@ -316,19 +316,19 @@ namespace Android.Text
         /// <param name="arg2"><see cref="int"/></param>
         public static void SetSelection(Android.Text.Spannable arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "setSelection", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "setSelection", "(Landroid/text/Spannable;II)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

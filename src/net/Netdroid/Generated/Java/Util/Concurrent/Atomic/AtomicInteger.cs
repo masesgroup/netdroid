@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicInteger(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#compareAndSet(int,int)"/>
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(int arg0, int arg1)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSet", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSet(int,int)"/>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent.Atomic
         [global::System.Obsolete()]
         public bool WeakCompareAndSet(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetAcquire(int,int)"/>
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetPlain(int,int)"/>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetRelease(int,int)"/>
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetVolatile(int,int)"/>
@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#accumulateAndGet(int,java.util.function.IntBinaryOperator)"/>
@@ -167,7 +167,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int AccumulateAndGet(int arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
-            return IExecute<int>("accumulateAndGet", arg0, arg1);
+            return IExecuteWithSignature<int>("accumulateAndGet", "(ILjava/util/function/IntBinaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#addAndGet(int)"/>
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int CompareAndExchange(int arg0, int arg1)
         {
-            return IExecute<int>("compareAndExchange", arg0, arg1);
+            return IExecuteWithSignature<int>("compareAndExchange", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#compareAndExchangeAcquire(int,int)"/>
@@ -196,7 +196,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int CompareAndExchangeAcquire(int arg0, int arg1)
         {
-            return IExecute<int>("compareAndExchangeAcquire", arg0, arg1);
+            return IExecuteWithSignature<int>("compareAndExchangeAcquire", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#compareAndExchangeRelease(int,int)"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int CompareAndExchangeRelease(int arg0, int arg1)
         {
-            return IExecute<int>("compareAndExchangeRelease", arg0, arg1);
+            return IExecuteWithSignature<int>("compareAndExchangeRelease", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#decrementAndGet()"/>
@@ -240,7 +240,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndAccumulate(int arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
-            return IExecute<int>("getAndAccumulate", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndAccumulate", "(ILjava/util/function/IntBinaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html#getAndAdd(int)"/>
@@ -358,13 +358,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecuteWithSignature("setRelease", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

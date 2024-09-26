@@ -40,10 +40,10 @@ namespace Android.Icu.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VersionInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Icu.Util
     public partial class VersionInfo
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#ICU_VERSION"/>
@@ -310,9 +310,9 @@ namespace Android.Icu.Util
         public static Android.Icu.Util.VersionInfo UNICODE_9_0 { get { if (!_UNICODE_9_0Ready) { _UNICODE_9_0Content = SGetField<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "UNICODE_9_0"); _UNICODE_9_0Ready = true; } return _UNICODE_9_0Content; } }
         private static Android.Icu.Util.VersionInfo _UNICODE_9_0Content = default;
         private static bool _UNICODE_9_0Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getInstance(int,int,int,int)"/>
@@ -324,7 +324,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.VersionInfo"/></returns>
         public static Android.Icu.Util.VersionInfo GetInstance(int arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getInstance", "(IIII)Landroid/icu/util/VersionInfo;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getInstance(int,int,int)"/>
@@ -335,7 +335,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.VersionInfo"/></returns>
         public static Android.Icu.Util.VersionInfo GetInstance(int arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getInstance", "(III)Landroid/icu/util/VersionInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getInstance(int,int)"/>
@@ -345,7 +345,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.VersionInfo"/></returns>
         public static Android.Icu.Util.VersionInfo GetInstance(int arg0, int arg1)
         {
-            return SExecute<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getInstance", "(II)Landroid/icu/util/VersionInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#getInstance(int)"/>
@@ -365,9 +365,9 @@ namespace Android.Icu.Util
         {
             return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Landroid/icu/util/VersionInfo;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#compareTo(android.icu.util.VersionInfo)"/>
@@ -419,13 +419,13 @@ namespace Android.Icu.Util
         {
             return IExecuteWithSignature<int>("getMinor", "()I");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

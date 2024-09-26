@@ -40,10 +40,10 @@ namespace Android.Health.Connect
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HealthConnectManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Health.Connect
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Health.Connect
     public partial class HealthConnectManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#ACTION_MANAGE_HEALTH_PERMISSIONS"/>
@@ -112,13 +112,13 @@ namespace Android.Health.Connect
         public static Java.Lang.String EXTRA_SESSION_ID { get { if (!_EXTRA_SESSION_IDReady) { _EXTRA_SESSION_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SESSION_ID"); _EXTRA_SESSION_IDReady = true; } return _EXTRA_SESSION_IDContent; } }
         private static Java.Lang.String _EXTRA_SESSION_IDContent = default;
         private static bool _EXTRA_SESSION_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#readRecords(android.health.connect.ReadRecordsRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -129,7 +129,7 @@ namespace Android.Health.Connect
         /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
         public void ReadRecords<T>(Android.Health.Connect.ReadRecordsRequest<T> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.ReadRecordsResponse<T>, Android.Health.Connect.HealthConnectException> arg2) where T : Android.Health.Connect.Datatypes.Record
         {
-            IExecute("readRecords", arg0, arg1, arg2);
+            IExecuteWithSignature("readRecords", "(Landroid/health/connect/ReadRecordsRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#aggregate(android.health.connect.AggregateRecordsRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -140,7 +140,7 @@ namespace Android.Health.Connect
         /// <typeparam name="T"></typeparam>
         public void Aggregate<T>(Android.Health.Connect.AggregateRecordsRequest<T> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.AggregateRecordsResponse<T>, Android.Health.Connect.HealthConnectException> arg2)
         {
-            IExecute("aggregate", arg0, arg1, arg2);
+            IExecuteWithSignature("aggregate", "(Landroid/health/connect/AggregateRecordsRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#aggregateGroupByDuration(android.health.connect.AggregateRecordsRequest,java.time.Duration,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -152,7 +152,7 @@ namespace Android.Health.Connect
         /// <typeparam name="T"></typeparam>
         public void AggregateGroupByDuration<T>(Android.Health.Connect.AggregateRecordsRequest<T> arg0, Java.Time.Duration arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Java.Util.List<Android.Health.Connect.AggregateRecordsGroupedByDurationResponse<T>>, Android.Health.Connect.HealthConnectException> arg3)
         {
-            IExecute("aggregateGroupByDuration", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("aggregateGroupByDuration", "(Landroid/health/connect/AggregateRecordsRequest;Ljava/time/Duration;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#aggregateGroupByPeriod(android.health.connect.AggregateRecordsRequest,java.time.Period,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -164,7 +164,7 @@ namespace Android.Health.Connect
         /// <typeparam name="T"></typeparam>
         public void AggregateGroupByPeriod<T>(Android.Health.Connect.AggregateRecordsRequest<T> arg0, Java.Time.Period arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Java.Util.List<Android.Health.Connect.AggregateRecordsGroupedByPeriodResponse<T>>, Android.Health.Connect.HealthConnectException> arg3)
         {
-            IExecute("aggregateGroupByPeriod", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("aggregateGroupByPeriod", "(Landroid/health/connect/AggregateRecordsRequest;Ljava/time/Period;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#deleteRecords(java.lang.Class,android.health.connect.TimeRangeFilter,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -175,7 +175,7 @@ namespace Android.Health.Connect
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void DeleteRecords(Java.Lang.Class arg0, Android.Health.Connect.TimeRangeFilter arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Health.Connect.HealthConnectException> arg3)
         {
-            IExecute("deleteRecords", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("deleteRecords", "(Ljava/lang/Class;Landroid/health/connect/TimeRangeFilter;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#deleteRecords(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -185,7 +185,7 @@ namespace Android.Health.Connect
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void DeleteRecords(Java.Util.List<Android.Health.Connect.RecordIdFilter> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Health.Connect.HealthConnectException> arg2)
         {
-            IExecute("deleteRecords", arg0, arg1, arg2);
+            IExecuteWithSignature("deleteRecords", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#getChangeLogs(android.health.connect.changelog.ChangeLogsRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -195,7 +195,7 @@ namespace Android.Health.Connect
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetChangeLogs(Android.Health.Connect.Changelog.ChangeLogsRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.Changelog.ChangeLogsResponse, Android.Health.Connect.HealthConnectException> arg2)
         {
-            IExecute("getChangeLogs", arg0, arg1, arg2);
+            IExecuteWithSignature("getChangeLogs", "(Landroid/health/connect/changelog/ChangeLogsRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -205,7 +205,7 @@ namespace Android.Health.Connect
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetChangeLogToken(Android.Health.Connect.Changelog.ChangeLogTokenRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.Changelog.ChangeLogTokenResponse, Android.Health.Connect.HealthConnectException> arg2)
         {
-            IExecute("getChangeLogToken", arg0, arg1, arg2);
+            IExecuteWithSignature("getChangeLogToken", "(Landroid/health/connect/changelog/ChangeLogTokenRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#insertRecords(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -215,7 +215,7 @@ namespace Android.Health.Connect
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void InsertRecords(Java.Util.List<Android.Health.Connect.Datatypes.Record> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.InsertRecordsResponse, Android.Health.Connect.HealthConnectException> arg2)
         {
-            IExecute("insertRecords", arg0, arg1, arg2);
+            IExecuteWithSignature("insertRecords", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#updateRecords(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -225,15 +225,15 @@ namespace Android.Health.Connect
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void UpdateRecords(Java.Util.List<Android.Health.Connect.Datatypes.Record> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Health.Connect.HealthConnectException> arg2)
         {
-            IExecute("updateRecords", arg0, arg1, arg2);
+            IExecuteWithSignature("updateRecords", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

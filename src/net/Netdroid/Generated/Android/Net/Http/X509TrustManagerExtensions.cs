@@ -40,10 +40,10 @@ namespace Android.Net.Http
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public X509TrustManagerExtensions(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Http
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,21 +83,21 @@ namespace Android.Net.Http
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/X509TrustManagerExtensions.html#isSameTrustConfiguration(java.lang.String,java.lang.String)"/>
@@ -107,7 +107,7 @@ namespace Android.Net.Http
         /// <returns><see cref="bool"/></returns>
         public bool IsSameTrustConfiguration(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isSameTrustConfiguration", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSameTrustConfiguration", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/X509TrustManagerExtensions.html#isUserAddedCertificate(java.security.cert.X509Certificate)"/>
@@ -128,15 +128,15 @@ namespace Android.Net.Http
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Util.List<Java.Security.Cert.X509Certificate> CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Util.List<Java.Security.Cert.X509Certificate>>("checkServerTrusted", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.X509Certificate>>("checkServerTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

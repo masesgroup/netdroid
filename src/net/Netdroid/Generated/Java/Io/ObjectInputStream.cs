@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ObjectInputStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region GetField declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Io
             /// </summary>
             [global::System.Obsolete("GetField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public GetField(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Io
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,9 +130,9 @@ namespace Java.Io
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.ObjectInputStream"/> to <see cref="Java.Io.ObjectInput"/>
@@ -142,17 +142,17 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.ObjectInputStream"/> to <see cref="Java.Io.ObjectStreamConstants"/>
         /// </summary>
         public static implicit operator Java.Io.ObjectStreamConstants(Java.Io.ObjectInputStream t) => t.Cast<Java.Io.ObjectStreamConstants>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readBoolean()"/>
@@ -321,7 +321,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html#readFully(byte[])"/>
@@ -341,31 +341,31 @@ namespace Java.Io
         /// <exception cref="Java.Io.InvalidObjectException"/>
         public void RegisterValidation(Java.Io.ObjectInputValidation arg0, int arg1)
         {
-            IExecute("registerValidation", arg0, arg1);
+            IExecuteWithSignature("registerValidation", "(Ljava/io/ObjectInputValidation;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region GetField implementation
         public partial class GetField
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#defaulted(java.lang.String)"/>
@@ -386,7 +386,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public bool Get(Java.Lang.String arg0, bool arg1)
             {
-                return IExecute<bool>("get", arg0, arg1);
+                return IExecuteWithSignature<bool>("get", "(Ljava/lang/String;Z)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,byte)"/>
@@ -397,7 +397,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public byte Get(Java.Lang.String arg0, byte arg1)
             {
-                return IExecute<byte>("get", arg0, arg1);
+                return IExecuteWithSignature<byte>("get", "(Ljava/lang/String;B)B", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,char)"/>
@@ -408,7 +408,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public char Get(Java.Lang.String arg0, char arg1)
             {
-                return IExecute<char>("get", arg0, arg1);
+                return IExecuteWithSignature<char>("get", "(Ljava/lang/String;C)C", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,double)"/>
@@ -419,7 +419,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public double Get(Java.Lang.String arg0, double arg1)
             {
-                return IExecute<double>("get", arg0, arg1);
+                return IExecuteWithSignature<double>("get", "(Ljava/lang/String;D)D", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,float)"/>
@@ -430,7 +430,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public float Get(Java.Lang.String arg0, float arg1)
             {
-                return IExecute<float>("get", arg0, arg1);
+                return IExecuteWithSignature<float>("get", "(Ljava/lang/String;F)F", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,int)"/>
@@ -441,7 +441,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public int Get(Java.Lang.String arg0, int arg1)
             {
-                return IExecute<int>("get", arg0, arg1);
+                return IExecuteWithSignature<int>("get", "(Ljava/lang/String;I)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#getObjectStreamClass()"/>
@@ -460,7 +460,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public object Get(Java.Lang.String arg0, object arg1)
             {
-                return IExecute("get", arg0, arg1);
+                return IExecuteWithSignature("get", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,long)"/>
@@ -471,7 +471,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public long Get(Java.Lang.String arg0, long arg1)
             {
-                return IExecute<long>("get", arg0, arg1);
+                return IExecuteWithSignature<long>("get", "(Ljava/lang/String;J)J", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html#get(java.lang.String,short)"/>
@@ -482,22 +482,22 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public short Get(Java.Lang.String arg0, short arg1)
             {
-                return IExecute<short>("get", arg0, arg1);
+                return IExecuteWithSignature<short>("get", "(Ljava/lang/String;S)S", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

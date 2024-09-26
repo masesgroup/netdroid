@@ -42,10 +42,10 @@ namespace Android.Widget
         /// </summary>
         [global::System.Obsolete("AbsListView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsListView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region LayoutParams declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LayoutParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public MultiChoiceModeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AbsListView_MultiChoiceModeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region MultiChoiceModeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="MultiChoiceModeListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.widget.AbsListView$MultiChoiceModeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -190,7 +190,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnScrollListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AbsListView_OnScrollListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -199,13 +199,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnScrollListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnScrollListener"/> or its generic type if there is one
@@ -216,14 +216,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.widget.AbsListView$OnScrollListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -257,7 +257,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public RecyclerListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AbsListView_RecyclerListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -266,13 +266,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region RecyclerListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="RecyclerListener"/> or its generic type if there is one
@@ -283,14 +283,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.widget.AbsListView$RecyclerListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -331,10 +331,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("SelectionBoundsAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SelectionBoundsAdjuster(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -355,9 +355,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -407,17 +407,17 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Widget.AbsListView"/> to <see cref="Android.Text.TextWatcher"/>
         /// </summary>
         public static implicit operator Android.Text.TextWatcher(Android.Widget.AbsListView t) => t.Cast<Android.Text.TextWatcher>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#CHOICE_MODE_MULTIPLE"/>
@@ -461,13 +461,13 @@ namespace Android.Widget
         public static int TRANSCRIPT_MODE_NORMAL { get { if (!_TRANSCRIPT_MODE_NORMALReady) { _TRANSCRIPT_MODE_NORMALContent = SGetField<int>(LocalBridgeClazz, "TRANSCRIPT_MODE_NORMAL"); _TRANSCRIPT_MODE_NORMALReady = true; } return _TRANSCRIPT_MODE_NORMALContent; } }
         private static int _TRANSCRIPT_MODE_NORMALContent = default;
         private static bool _TRANSCRIPT_MODE_NORMALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getSelector()"/>
@@ -696,7 +696,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public int PointToPosition(int arg0, int arg1)
         {
-            return IExecute<int>("pointToPosition", arg0, arg1);
+            return IExecuteWithSignature<int>("pointToPosition", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getTextFilter()"/>
@@ -714,7 +714,7 @@ namespace Android.Widget
         /// <returns><see cref="long"/></returns>
         public long PointToRowId(int arg0, int arg1)
         {
-            return IExecute<long>("pointToRowId", arg0, arg1);
+            return IExecuteWithSignature<long>("pointToRowId", "(II)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#getCheckedItemIds()"/>
@@ -741,7 +741,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void BeforeTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("beforeTextChanged", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("beforeTextChanged", "(Ljava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#clearChoices()"/>
@@ -802,7 +802,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></param>
         public void OnInitializeAccessibilityNodeInfoForItem(Android.View.View arg0, int arg1, Android.View.Accessibility.AccessibilityNodeInfo arg2)
         {
-            IExecute("onInitializeAccessibilityNodeInfoForItem", arg0, arg1, arg2);
+            IExecuteWithSignature("onInitializeAccessibilityNodeInfoForItem", "(Landroid/view/View;ILandroid/view/accessibility/AccessibilityNodeInfo;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#onRemoteAdapterDisconnected()"/>
@@ -828,7 +828,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void OnTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("onTextChanged", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onTextChanged", "(Ljava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#onTouchModeChanged(boolean)"/>
@@ -949,7 +949,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetItemChecked(int arg0, bool arg1)
         {
-            IExecute("setItemChecked", arg0, arg1);
+            IExecuteWithSignature("setItemChecked", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setMultiChoiceModeListener(android.widget.AbsListView.MultiChoiceModeListener)"/>
@@ -990,7 +990,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         public void SetScrollIndicators(Android.View.View arg0, Android.View.View arg1)
         {
-            IExecute("setScrollIndicators", arg0, arg1);
+            IExecuteWithSignature("setScrollIndicators", "(Landroid/view/View;Landroid/view/View;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setScrollingCacheEnabled(boolean)"/>
@@ -1015,7 +1015,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSelectionFromTop(int arg0, int arg1)
         {
-            IExecute("setSelectionFromTop", arg0, arg1);
+            IExecuteWithSignature("setSelectionFromTop", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#setSelector(android.graphics.drawable.Drawable)"/>
@@ -1088,7 +1088,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SmoothScrollBy(int arg0, int arg1)
         {
-            IExecute("smoothScrollBy", arg0, arg1);
+            IExecuteWithSignature("smoothScrollBy", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#smoothScrollToPosition(int,int)"/>
@@ -1097,7 +1097,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SmoothScrollToPosition(int arg0, int arg1)
         {
-            IExecute("smoothScrollToPosition", arg0, arg1);
+            IExecuteWithSignature("smoothScrollToPosition", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#smoothScrollToPosition(int)"/>
@@ -1115,7 +1115,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SmoothScrollToPositionFromTop(int arg0, int arg1, int arg2)
         {
-            IExecute("smoothScrollToPositionFromTop", arg0, arg1, arg2);
+            IExecuteWithSignature("smoothScrollToPositionFromTop", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsListView.html#smoothScrollToPositionFromTop(int,int)"/>
@@ -1124,11 +1124,11 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SmoothScrollToPositionFromTop(int arg0, int arg1)
         {
-            IExecute("smoothScrollToPositionFromTop", arg0, arg1);
+            IExecuteWithSignature("smoothScrollToPositionFromTop", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region LayoutParams implementation
         public partial class LayoutParams
@@ -1170,29 +1170,29 @@ namespace Android.Widget
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1201,21 +1201,21 @@ namespace Android.Widget
         public partial class MultiChoiceModeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="MultiChoiceModeListener"/>
@@ -1229,13 +1229,13 @@ namespace Android.Widget
                 AddEventHandler("onItemCheckedStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnItemCheckedStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onActionItemClicked(android.view.ActionMode,android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActionItemClicked"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.ActionMode, Android.View.MenuItem, bool> OnOnActionItemClicked { get; set; } = null;
-            
+
             bool hasOverrideOnActionItemClicked = true;
             void OnActionItemClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1244,7 +1244,7 @@ namespace Android.Widget
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.ActionMode>(0), data.EventData.GetAt<Android.View.MenuItem>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnActionItemClicked, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onActionItemClicked(android.view.ActionMode,android.view.MenuItem)"/>
             /// </summary>
@@ -1255,13 +1255,13 @@ namespace Android.Widget
             {
                 hasOverrideOnActionItemClicked = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onCreateActionMode(android.view.ActionMode,android.view.Menu)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCreateActionMode"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.ActionMode, Android.View.Menu, bool> OnOnCreateActionMode { get; set; } = null;
-            
+
             bool hasOverrideOnCreateActionMode = true;
             void OnCreateActionModeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1270,7 +1270,7 @@ namespace Android.Widget
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.ActionMode>(0), data.EventData.GetAt<Android.View.Menu>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnCreateActionMode, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onCreateActionMode(android.view.ActionMode,android.view.Menu)"/>
             /// </summary>
@@ -1281,13 +1281,13 @@ namespace Android.Widget
             {
                 hasOverrideOnCreateActionMode = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onPrepareActionMode(android.view.ActionMode,android.view.Menu)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPrepareActionMode"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.ActionMode, Android.View.Menu, bool> OnOnPrepareActionMode { get; set; } = null;
-            
+
             bool hasOverrideOnPrepareActionMode = true;
             void OnPrepareActionModeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1296,7 +1296,7 @@ namespace Android.Widget
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.ActionMode>(0), data.EventData.GetAt<Android.View.Menu>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnPrepareActionMode, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onPrepareActionMode(android.view.ActionMode,android.view.Menu)"/>
             /// </summary>
@@ -1307,13 +1307,13 @@ namespace Android.Widget
             {
                 hasOverrideOnPrepareActionMode = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onDestroyActionMode(android.view.ActionMode)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDestroyActionMode"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.ActionMode> OnOnDestroyActionMode { get; set; } = null;
-            
+
             bool hasOverrideOnDestroyActionMode = true;
             void OnDestroyActionModeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1322,7 +1322,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.ActionMode>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDestroyActionMode;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onDestroyActionMode(android.view.ActionMode)"/>
             /// </summary>
@@ -1331,13 +1331,13 @@ namespace Android.Widget
             {
                 hasOverrideOnDestroyActionMode = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.MultiChoiceModeListener.html#onItemCheckedStateChanged(android.view.ActionMode,int,long,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnItemCheckedStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.ActionMode, int, long, bool> OnOnItemCheckedStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnItemCheckedStateChanged = true;
             void OnItemCheckedStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1346,7 +1346,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.ActionMode>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<long>(2), data.EventData.GetAt<bool>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnItemCheckedStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.MultiChoiceModeListener.html#onItemCheckedStateChanged(android.view.ActionMode,int,long,boolean)"/>
             /// </summary>
@@ -1358,13 +1358,13 @@ namespace Android.Widget
             {
                 hasOverrideOnItemCheckedStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1373,21 +1373,21 @@ namespace Android.Widget
         public partial class MultiChoiceModeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onActionItemClicked(android.view.ActionMode,android.view.MenuItem)"/>
@@ -1436,15 +1436,15 @@ namespace Android.Widget
             /// <param name="arg3"><see cref="bool"/></param>
             public override void OnItemCheckedStateChanged(Android.View.ActionMode arg0, int arg1, long arg2, bool arg3)
             {
-                IExecute("onItemCheckedStateChanged", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onItemCheckedStateChanged", "(Landroid/view/ActionMode;IJZ)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1453,21 +1453,21 @@ namespace Android.Widget
         public partial class OnScrollListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnScrollListener"/>
@@ -1478,13 +1478,13 @@ namespace Android.Widget
                 AddEventHandler("onScrollStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnScrollStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScroll(android.widget.AbsListView,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScroll"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.AbsListView, int, int, int> OnOnScroll { get; set; } = null;
-            
+
             bool hasOverrideOnScroll = true;
             void OnScrollEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1493,7 +1493,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.AbsListView>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScroll;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScroll(android.widget.AbsListView,int,int,int)"/>
             /// </summary>
@@ -1505,13 +1505,13 @@ namespace Android.Widget
             {
                 hasOverrideOnScroll = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScrollStateChanged(android.widget.AbsListView,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.AbsListView, int> OnOnScrollStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnScrollStateChanged = true;
             void OnScrollStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1520,7 +1520,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.AbsListView>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScrollStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScrollStateChanged(android.widget.AbsListView,int)"/>
             /// </summary>
@@ -1530,13 +1530,13 @@ namespace Android.Widget
             {
                 hasOverrideOnScrollStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1545,21 +1545,21 @@ namespace Android.Widget
         public partial class OnScrollListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScroll(android.widget.AbsListView,int,int,int)"/>
@@ -1570,7 +1570,7 @@ namespace Android.Widget
             /// <param name="arg3"><see cref="int"/></param>
             public override void OnScroll(Android.Widget.AbsListView arg0, int arg1, int arg2, int arg3)
             {
-                IExecute("onScroll", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onScroll", "(Landroid/widget/AbsListView;III)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#onScrollStateChanged(android.widget.AbsListView,int)"/>
@@ -1579,15 +1579,15 @@ namespace Android.Widget
             /// <param name="arg1"><see cref="int"/></param>
             public override void OnScrollStateChanged(Android.Widget.AbsListView arg0, int arg1)
             {
-                IExecute("onScrollStateChanged", arg0, arg1);
+                IExecuteWithSignature("onScrollStateChanged", "(Landroid/widget/AbsListView;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1596,21 +1596,21 @@ namespace Android.Widget
         public partial class RecyclerListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="RecyclerListener"/>
@@ -1620,13 +1620,13 @@ namespace Android.Widget
                 AddEventHandler("onMovedToScrapHeap", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnMovedToScrapHeapEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AbsListView.RecyclerListener.html#onMovedToScrapHeap(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMovedToScrapHeap"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View> OnOnMovedToScrapHeap { get; set; } = null;
-            
+
             bool hasOverrideOnMovedToScrapHeap = true;
             void OnMovedToScrapHeapEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1635,7 +1635,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnMovedToScrapHeap;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.RecyclerListener.html#onMovedToScrapHeap(android.view.View)"/>
             /// </summary>
@@ -1644,13 +1644,13 @@ namespace Android.Widget
             {
                 hasOverrideOnMovedToScrapHeap = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1659,21 +1659,21 @@ namespace Android.Widget
         public partial class RecyclerListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.RecyclerListener.html#onMovedToScrapHeap(android.view.View)"/>
@@ -1683,13 +1683,13 @@ namespace Android.Widget
             {
                 IExecuteWithSignature("onMovedToScrapHeap", "(Landroid/view/View;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1698,21 +1698,21 @@ namespace Android.Widget
         public partial class SelectionBoundsAdjuster
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.SelectionBoundsAdjuster.html#adjustListItemSelectionBounds(android.graphics.Rect)"/>
@@ -1722,20 +1722,20 @@ namespace Android.Widget
             {
                 IExecuteWithSignature("adjustListItemSelectionBounds", "(Landroid/graphics/Rect;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

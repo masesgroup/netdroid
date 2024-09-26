@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TelephonyCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ActiveDataSubscriptionIdListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ActiveDataSubscriptionIdListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_ActiveDataSubscriptionIdListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ActiveDataSubscriptionIdListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ActiveDataSubscriptionIdListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$ActiveDataSubscriptionIdListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public BarringInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_BarringInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region BarringInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="BarringInfoListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$BarringInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -210,7 +210,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public CallDisconnectCauseListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_CallDisconnectCauseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -219,13 +219,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region CallDisconnectCauseListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="CallDisconnectCauseListener"/> or its generic type if there is one
@@ -236,14 +236,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$CallDisconnectCauseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -277,7 +277,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public CallForwardingIndicatorListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_CallForwardingIndicatorListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -286,13 +286,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region CallForwardingIndicatorListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="CallForwardingIndicatorListener"/> or its generic type if there is one
@@ -303,14 +303,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$CallForwardingIndicatorListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -344,7 +344,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public CallStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_CallStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -353,13 +353,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region CallStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="CallStateListener"/> or its generic type if there is one
@@ -370,14 +370,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$CallStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -411,7 +411,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public CarrierNetworkListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_CarrierNetworkListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -420,13 +420,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region CarrierNetworkListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="CarrierNetworkListener"/> or its generic type if there is one
@@ -437,14 +437,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$CarrierNetworkListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -478,7 +478,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public CellInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_CellInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -487,13 +487,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region CellInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="CellInfoListener"/> or its generic type if there is one
@@ -504,14 +504,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$CellInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -545,7 +545,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public CellLocationListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_CellLocationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -554,13 +554,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region CellLocationListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="CellLocationListener"/> or its generic type if there is one
@@ -571,14 +571,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$CellLocationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -612,7 +612,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DataActivationStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_DataActivationStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -621,13 +621,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DataActivationStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DataActivationStateListener"/> or its generic type if there is one
@@ -638,14 +638,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$DataActivationStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -679,7 +679,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DataActivityListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_DataActivityListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -688,13 +688,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DataActivityListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DataActivityListener"/> or its generic type if there is one
@@ -705,14 +705,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$DataActivityListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -746,7 +746,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DataConnectionStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_DataConnectionStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -755,13 +755,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DataConnectionStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DataConnectionStateListener"/> or its generic type if there is one
@@ -772,14 +772,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$DataConnectionStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -813,7 +813,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DisplayInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_DisplayInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -822,13 +822,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DisplayInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DisplayInfoListener"/> or its generic type if there is one
@@ -839,14 +839,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$DisplayInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -880,7 +880,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public EmergencyNumberListListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_EmergencyNumberListListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -889,13 +889,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region EmergencyNumberListListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="EmergencyNumberListListener"/> or its generic type if there is one
@@ -906,14 +906,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$EmergencyNumberListListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -947,7 +947,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ImsCallDisconnectCauseListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_ImsCallDisconnectCauseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -956,13 +956,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ImsCallDisconnectCauseListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ImsCallDisconnectCauseListener"/> or its generic type if there is one
@@ -973,14 +973,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$ImsCallDisconnectCauseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1014,7 +1014,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public MessageWaitingIndicatorListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_MessageWaitingIndicatorListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1023,13 +1023,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region MessageWaitingIndicatorListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="MessageWaitingIndicatorListener"/> or its generic type if there is one
@@ -1040,14 +1040,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$MessageWaitingIndicatorListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1081,7 +1081,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public PhysicalChannelConfigListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_PhysicalChannelConfigListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1090,13 +1090,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region PhysicalChannelConfigListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="PhysicalChannelConfigListener"/> or its generic type if there is one
@@ -1107,14 +1107,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$PhysicalChannelConfigListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1148,7 +1148,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public PreciseDataConnectionStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_PreciseDataConnectionStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1157,13 +1157,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region PreciseDataConnectionStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="PreciseDataConnectionStateListener"/> or its generic type if there is one
@@ -1174,14 +1174,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$PreciseDataConnectionStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1215,7 +1215,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public RegistrationFailedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_RegistrationFailedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1224,13 +1224,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region RegistrationFailedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="RegistrationFailedListener"/> or its generic type if there is one
@@ -1241,14 +1241,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$RegistrationFailedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1282,7 +1282,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ServiceStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_ServiceStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1291,13 +1291,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ServiceStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ServiceStateListener"/> or its generic type if there is one
@@ -1308,14 +1308,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$ServiceStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1349,7 +1349,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public SignalStrengthsListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_SignalStrengthsListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1358,13 +1358,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region SignalStrengthsListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="SignalStrengthsListener"/> or its generic type if there is one
@@ -1375,14 +1375,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$SignalStrengthsListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1416,7 +1416,7 @@ namespace Android.Telephony
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public UserMobileDataStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.telephony.TelephonyCallback_UserMobileDataStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1425,13 +1425,13 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region UserMobileDataStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="UserMobileDataStateListener"/> or its generic type if there is one
@@ -1442,14 +1442,14 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.telephony.TelephonyCallback$UserMobileDataStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1481,45 +1481,45 @@ namespace Android.Telephony
     public partial class TelephonyCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ActiveDataSubscriptionIdListener implementation
         public partial class ActiveDataSubscriptionIdListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ActiveDataSubscriptionIdListener"/>
@@ -1529,13 +1529,13 @@ namespace Android.Telephony
                 AddEventHandler("onActiveDataSubscriptionIdChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnActiveDataSubscriptionIdChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.html#onActiveDataSubscriptionIdChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActiveDataSubscriptionIdChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnActiveDataSubscriptionIdChanged { get; set; } = null;
-            
+
             bool hasOverrideOnActiveDataSubscriptionIdChanged = true;
             void OnActiveDataSubscriptionIdChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1544,7 +1544,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnActiveDataSubscriptionIdChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.html#onActiveDataSubscriptionIdChanged(int)"/>
             /// </summary>
@@ -1553,13 +1553,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnActiveDataSubscriptionIdChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1568,21 +1568,21 @@ namespace Android.Telephony
         public partial class ActiveDataSubscriptionIdListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.html#onActiveDataSubscriptionIdChanged(int)"/>
@@ -1592,13 +1592,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onActiveDataSubscriptionIdChanged", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1607,21 +1607,21 @@ namespace Android.Telephony
         public partial class BarringInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="BarringInfoListener"/>
@@ -1631,13 +1631,13 @@ namespace Android.Telephony
                 AddEventHandler("onBarringInfoChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnBarringInfoChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.BarringInfoListener.html#onBarringInfoChanged(android.telephony.BarringInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBarringInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.BarringInfo> OnOnBarringInfoChanged { get; set; } = null;
-            
+
             bool hasOverrideOnBarringInfoChanged = true;
             void OnBarringInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1646,7 +1646,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.BarringInfo>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnBarringInfoChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.BarringInfoListener.html#onBarringInfoChanged(android.telephony.BarringInfo)"/>
             /// </summary>
@@ -1655,13 +1655,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnBarringInfoChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1670,21 +1670,21 @@ namespace Android.Telephony
         public partial class BarringInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.BarringInfoListener.html#onBarringInfoChanged(android.telephony.BarringInfo)"/>
@@ -1694,13 +1694,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onBarringInfoChanged", "(Landroid/telephony/BarringInfo;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1709,21 +1709,21 @@ namespace Android.Telephony
         public partial class CallDisconnectCauseListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="CallDisconnectCauseListener"/>
@@ -1733,13 +1733,13 @@ namespace Android.Telephony
                 AddEventHandler("onCallDisconnectCauseChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCallDisconnectCauseChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallDisconnectCauseListener.html#onCallDisconnectCauseChanged(int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCallDisconnectCauseChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, int> OnOnCallDisconnectCauseChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCallDisconnectCauseChanged = true;
             void OnCallDisconnectCauseChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1748,7 +1748,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCallDisconnectCauseChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallDisconnectCauseListener.html#onCallDisconnectCauseChanged(int,int)"/>
             /// </summary>
@@ -1758,13 +1758,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnCallDisconnectCauseChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1773,21 +1773,21 @@ namespace Android.Telephony
         public partial class CallDisconnectCauseListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallDisconnectCauseListener.html#onCallDisconnectCauseChanged(int,int)"/>
@@ -1796,15 +1796,15 @@ namespace Android.Telephony
             /// <param name="arg1"><see cref="int"/></param>
             public override void OnCallDisconnectCauseChanged(int arg0, int arg1)
             {
-                IExecute("onCallDisconnectCauseChanged", arg0, arg1);
+                IExecuteWithSignature("onCallDisconnectCauseChanged", "(II)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1813,21 +1813,21 @@ namespace Android.Telephony
         public partial class CallForwardingIndicatorListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="CallForwardingIndicatorListener"/>
@@ -1837,13 +1837,13 @@ namespace Android.Telephony
                 AddEventHandler("onCallForwardingIndicatorChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCallForwardingIndicatorChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallForwardingIndicatorListener.html#onCallForwardingIndicatorChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCallForwardingIndicatorChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnCallForwardingIndicatorChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCallForwardingIndicatorChanged = true;
             void OnCallForwardingIndicatorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1852,7 +1852,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCallForwardingIndicatorChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallForwardingIndicatorListener.html#onCallForwardingIndicatorChanged(boolean)"/>
             /// </summary>
@@ -1861,13 +1861,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnCallForwardingIndicatorChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1876,21 +1876,21 @@ namespace Android.Telephony
         public partial class CallForwardingIndicatorListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallForwardingIndicatorListener.html#onCallForwardingIndicatorChanged(boolean)"/>
@@ -1900,13 +1900,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onCallForwardingIndicatorChanged", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1915,21 +1915,21 @@ namespace Android.Telephony
         public partial class CallStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="CallStateListener"/>
@@ -1939,13 +1939,13 @@ namespace Android.Telephony
                 AddEventHandler("onCallStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCallStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallStateListener.html#onCallStateChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCallStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnCallStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCallStateChanged = true;
             void OnCallStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1954,7 +1954,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCallStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallStateListener.html#onCallStateChanged(int)"/>
             /// </summary>
@@ -1963,13 +1963,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnCallStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1978,21 +1978,21 @@ namespace Android.Telephony
         public partial class CallStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallStateListener.html#onCallStateChanged(int)"/>
@@ -2002,13 +2002,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onCallStateChanged", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2017,21 +2017,21 @@ namespace Android.Telephony
         public partial class CarrierNetworkListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="CarrierNetworkListener"/>
@@ -2041,13 +2041,13 @@ namespace Android.Telephony
                 AddEventHandler("onCarrierNetworkChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCarrierNetworkChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CarrierNetworkListener.html#onCarrierNetworkChange(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCarrierNetworkChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnCarrierNetworkChange { get; set; } = null;
-            
+
             bool hasOverrideOnCarrierNetworkChange = true;
             void OnCarrierNetworkChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2056,7 +2056,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCarrierNetworkChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CarrierNetworkListener.html#onCarrierNetworkChange(boolean)"/>
             /// </summary>
@@ -2065,13 +2065,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnCarrierNetworkChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2080,21 +2080,21 @@ namespace Android.Telephony
         public partial class CarrierNetworkListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CarrierNetworkListener.html#onCarrierNetworkChange(boolean)"/>
@@ -2104,13 +2104,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onCarrierNetworkChange", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2119,21 +2119,21 @@ namespace Android.Telephony
         public partial class CellInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="CellInfoListener"/>
@@ -2143,13 +2143,13 @@ namespace Android.Telephony
                 AddEventHandler("onCellInfoChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCellInfoChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellInfoListener.html#onCellInfoChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCellInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Android.Telephony.CellInfo>> OnOnCellInfoChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCellInfoChanged = true;
             void OnCellInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2158,7 +2158,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Telephony.CellInfo>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCellInfoChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellInfoListener.html#onCellInfoChanged(java.util.List)"/>
             /// </summary>
@@ -2167,13 +2167,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnCellInfoChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2182,21 +2182,21 @@ namespace Android.Telephony
         public partial class CellInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellInfoListener.html#onCellInfoChanged(java.util.List)"/>
@@ -2206,13 +2206,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onCellInfoChanged", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2221,21 +2221,21 @@ namespace Android.Telephony
         public partial class CellLocationListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="CellLocationListener"/>
@@ -2245,13 +2245,13 @@ namespace Android.Telephony
                 AddEventHandler("onCellLocationChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCellLocationChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellLocationListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCellLocationChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.CellLocation> OnOnCellLocationChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCellLocationChanged = true;
             void OnCellLocationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2260,7 +2260,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.CellLocation>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCellLocationChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellLocationListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
             /// </summary>
@@ -2269,13 +2269,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnCellLocationChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2284,21 +2284,21 @@ namespace Android.Telephony
         public partial class CellLocationListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellLocationListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
@@ -2308,13 +2308,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onCellLocationChanged", "(Landroid/telephony/CellLocation;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2323,21 +2323,21 @@ namespace Android.Telephony
         public partial class DataActivationStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DataActivationStateListener"/>
@@ -2347,13 +2347,13 @@ namespace Android.Telephony
                 AddEventHandler("onDataActivationStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDataActivationStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivationStateListener.html#onDataActivationStateChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDataActivationStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnDataActivationStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnDataActivationStateChanged = true;
             void OnDataActivationStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2362,7 +2362,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDataActivationStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivationStateListener.html#onDataActivationStateChanged(int)"/>
             /// </summary>
@@ -2371,13 +2371,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnDataActivationStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2386,21 +2386,21 @@ namespace Android.Telephony
         public partial class DataActivationStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivationStateListener.html#onDataActivationStateChanged(int)"/>
@@ -2410,13 +2410,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onDataActivationStateChanged", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2425,21 +2425,21 @@ namespace Android.Telephony
         public partial class DataActivityListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DataActivityListener"/>
@@ -2449,13 +2449,13 @@ namespace Android.Telephony
                 AddEventHandler("onDataActivity", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDataActivityEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivityListener.html#onDataActivity(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDataActivity"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnDataActivity { get; set; } = null;
-            
+
             bool hasOverrideOnDataActivity = true;
             void OnDataActivityEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2464,7 +2464,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDataActivity;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivityListener.html#onDataActivity(int)"/>
             /// </summary>
@@ -2473,13 +2473,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnDataActivity = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2488,21 +2488,21 @@ namespace Android.Telephony
         public partial class DataActivityListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivityListener.html#onDataActivity(int)"/>
@@ -2512,13 +2512,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onDataActivity", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2527,21 +2527,21 @@ namespace Android.Telephony
         public partial class DataConnectionStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DataConnectionStateListener"/>
@@ -2551,13 +2551,13 @@ namespace Android.Telephony
                 AddEventHandler("onDataConnectionStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDataConnectionStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataConnectionStateListener.html#onDataConnectionStateChanged(int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDataConnectionStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, int> OnOnDataConnectionStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnDataConnectionStateChanged = true;
             void OnDataConnectionStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2566,7 +2566,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDataConnectionStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataConnectionStateListener.html#onDataConnectionStateChanged(int,int)"/>
             /// </summary>
@@ -2576,13 +2576,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnDataConnectionStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2591,21 +2591,21 @@ namespace Android.Telephony
         public partial class DataConnectionStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataConnectionStateListener.html#onDataConnectionStateChanged(int,int)"/>
@@ -2614,15 +2614,15 @@ namespace Android.Telephony
             /// <param name="arg1"><see cref="int"/></param>
             public override void OnDataConnectionStateChanged(int arg0, int arg1)
             {
-                IExecute("onDataConnectionStateChanged", arg0, arg1);
+                IExecuteWithSignature("onDataConnectionStateChanged", "(II)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2631,21 +2631,21 @@ namespace Android.Telephony
         public partial class DisplayInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DisplayInfoListener"/>
@@ -2655,13 +2655,13 @@ namespace Android.Telephony
                 AddEventHandler("onDisplayInfoChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDisplayInfoChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DisplayInfoListener.html#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.TelephonyDisplayInfo> OnOnDisplayInfoChanged { get; set; } = null;
-            
+
             bool hasOverrideOnDisplayInfoChanged = true;
             void OnDisplayInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2670,7 +2670,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.TelephonyDisplayInfo>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDisplayInfoChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DisplayInfoListener.html#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)"/>
             /// </summary>
@@ -2679,13 +2679,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnDisplayInfoChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2694,21 +2694,21 @@ namespace Android.Telephony
         public partial class DisplayInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DisplayInfoListener.html#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)"/>
@@ -2718,13 +2718,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onDisplayInfoChanged", "(Landroid/telephony/TelephonyDisplayInfo;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2733,21 +2733,21 @@ namespace Android.Telephony
         public partial class EmergencyNumberListListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="EmergencyNumberListListener"/>
@@ -2757,13 +2757,13 @@ namespace Android.Telephony
                 AddEventHandler("onEmergencyNumberListChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnEmergencyNumberListChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.EmergencyNumberListListener.html#onEmergencyNumberListChanged(java.util.Map)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEmergencyNumberListChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>> OnOnEmergencyNumberListChanged { get; set; } = null;
-            
+
             bool hasOverrideOnEmergencyNumberListChanged = true;
             void OnEmergencyNumberListChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2772,7 +2772,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnEmergencyNumberListChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.EmergencyNumberListListener.html#onEmergencyNumberListChanged(java.util.Map)"/>
             /// </summary>
@@ -2781,13 +2781,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnEmergencyNumberListChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2796,21 +2796,21 @@ namespace Android.Telephony
         public partial class EmergencyNumberListListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.EmergencyNumberListListener.html#onEmergencyNumberListChanged(java.util.Map)"/>
@@ -2820,13 +2820,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onEmergencyNumberListChanged", "(Ljava/util/Map;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2835,21 +2835,21 @@ namespace Android.Telephony
         public partial class ImsCallDisconnectCauseListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ImsCallDisconnectCauseListener"/>
@@ -2859,13 +2859,13 @@ namespace Android.Telephony
                 AddEventHandler("onImsCallDisconnectCauseChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnImsCallDisconnectCauseChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.html#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnImsCallDisconnectCauseChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.Ims.ImsReasonInfo> OnOnImsCallDisconnectCauseChanged { get; set; } = null;
-            
+
             bool hasOverrideOnImsCallDisconnectCauseChanged = true;
             void OnImsCallDisconnectCauseChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2874,7 +2874,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.Ims.ImsReasonInfo>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnImsCallDisconnectCauseChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.html#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)"/>
             /// </summary>
@@ -2883,13 +2883,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnImsCallDisconnectCauseChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2898,21 +2898,21 @@ namespace Android.Telephony
         public partial class ImsCallDisconnectCauseListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.html#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)"/>
@@ -2922,13 +2922,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onImsCallDisconnectCauseChanged", "(Landroid/telephony/ims/ImsReasonInfo;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2937,21 +2937,21 @@ namespace Android.Telephony
         public partial class MessageWaitingIndicatorListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="MessageWaitingIndicatorListener"/>
@@ -2961,13 +2961,13 @@ namespace Android.Telephony
                 AddEventHandler("onMessageWaitingIndicatorChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnMessageWaitingIndicatorChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.html#onMessageWaitingIndicatorChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMessageWaitingIndicatorChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnMessageWaitingIndicatorChanged { get; set; } = null;
-            
+
             bool hasOverrideOnMessageWaitingIndicatorChanged = true;
             void OnMessageWaitingIndicatorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2976,7 +2976,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnMessageWaitingIndicatorChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.html#onMessageWaitingIndicatorChanged(boolean)"/>
             /// </summary>
@@ -2985,13 +2985,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnMessageWaitingIndicatorChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3000,21 +3000,21 @@ namespace Android.Telephony
         public partial class MessageWaitingIndicatorListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.html#onMessageWaitingIndicatorChanged(boolean)"/>
@@ -3024,13 +3024,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onMessageWaitingIndicatorChanged", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3039,21 +3039,21 @@ namespace Android.Telephony
         public partial class PhysicalChannelConfigListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="PhysicalChannelConfigListener"/>
@@ -3063,13 +3063,13 @@ namespace Android.Telephony
                 AddEventHandler("onPhysicalChannelConfigChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPhysicalChannelConfigChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PhysicalChannelConfigListener.html#onPhysicalChannelConfigChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPhysicalChannelConfigChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Android.Telephony.PhysicalChannelConfig>> OnOnPhysicalChannelConfigChanged { get; set; } = null;
-            
+
             bool hasOverrideOnPhysicalChannelConfigChanged = true;
             void OnPhysicalChannelConfigChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3078,7 +3078,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Telephony.PhysicalChannelConfig>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPhysicalChannelConfigChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PhysicalChannelConfigListener.html#onPhysicalChannelConfigChanged(java.util.List)"/>
             /// </summary>
@@ -3087,13 +3087,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnPhysicalChannelConfigChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3102,21 +3102,21 @@ namespace Android.Telephony
         public partial class PhysicalChannelConfigListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PhysicalChannelConfigListener.html#onPhysicalChannelConfigChanged(java.util.List)"/>
@@ -3126,13 +3126,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onPhysicalChannelConfigChanged", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3141,21 +3141,21 @@ namespace Android.Telephony
         public partial class PreciseDataConnectionStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="PreciseDataConnectionStateListener"/>
@@ -3165,13 +3165,13 @@ namespace Android.Telephony
                 AddEventHandler("onPreciseDataConnectionStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPreciseDataConnectionStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.html#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreciseDataConnectionStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.PreciseDataConnectionState> OnOnPreciseDataConnectionStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnPreciseDataConnectionStateChanged = true;
             void OnPreciseDataConnectionStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3180,7 +3180,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.PreciseDataConnectionState>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPreciseDataConnectionStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.html#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)"/>
             /// </summary>
@@ -3189,13 +3189,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnPreciseDataConnectionStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3204,21 +3204,21 @@ namespace Android.Telephony
         public partial class PreciseDataConnectionStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.html#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)"/>
@@ -3228,13 +3228,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onPreciseDataConnectionStateChanged", "(Landroid/telephony/PreciseDataConnectionState;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3243,21 +3243,21 @@ namespace Android.Telephony
         public partial class RegistrationFailedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="RegistrationFailedListener"/>
@@ -3267,13 +3267,13 @@ namespace Android.Telephony
                 AddEventHandler("onRegistrationFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnRegistrationFailedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.RegistrationFailedListener.html#onRegistrationFailed(android.telephony.CellIdentity,java.lang.String,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRegistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.CellIdentity, Java.Lang.String, int, int, int> OnOnRegistrationFailed { get; set; } = null;
-            
+
             bool hasOverrideOnRegistrationFailed = true;
             void OnRegistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3282,7 +3282,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.CellIdentity>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnRegistrationFailed;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.RegistrationFailedListener.html#onRegistrationFailed(android.telephony.CellIdentity,java.lang.String,int,int,int)"/>
             /// </summary>
@@ -3295,13 +3295,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnRegistrationFailed = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3310,21 +3310,21 @@ namespace Android.Telephony
         public partial class RegistrationFailedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.RegistrationFailedListener.html#onRegistrationFailed(android.telephony.CellIdentity,java.lang.String,int,int,int)"/>
@@ -3336,15 +3336,15 @@ namespace Android.Telephony
             /// <param name="arg4"><see cref="int"/></param>
             public override void OnRegistrationFailed(Android.Telephony.CellIdentity arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4)
             {
-                IExecute("onRegistrationFailed", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onRegistrationFailed", "(Landroid/telephony/CellIdentity;Ljava/lang/String;III)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3353,21 +3353,21 @@ namespace Android.Telephony
         public partial class ServiceStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ServiceStateListener"/>
@@ -3377,13 +3377,13 @@ namespace Android.Telephony
                 AddEventHandler("onServiceStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnServiceStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ServiceStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.ServiceState> OnOnServiceStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnServiceStateChanged = true;
             void OnServiceStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3392,7 +3392,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.ServiceState>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnServiceStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ServiceStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
             /// </summary>
@@ -3401,13 +3401,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnServiceStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3416,21 +3416,21 @@ namespace Android.Telephony
         public partial class ServiceStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ServiceStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
@@ -3440,13 +3440,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onServiceStateChanged", "(Landroid/telephony/ServiceState;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3455,21 +3455,21 @@ namespace Android.Telephony
         public partial class SignalStrengthsListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="SignalStrengthsListener"/>
@@ -3479,13 +3479,13 @@ namespace Android.Telephony
                 AddEventHandler("onSignalStrengthsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSignalStrengthsChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.SignalStrengthsListener.html#onSignalStrengthsChanged(android.telephony.SignalStrength)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSignalStrengthsChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Telephony.SignalStrength> OnOnSignalStrengthsChanged { get; set; } = null;
-            
+
             bool hasOverrideOnSignalStrengthsChanged = true;
             void OnSignalStrengthsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3494,7 +3494,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Telephony.SignalStrength>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSignalStrengthsChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.SignalStrengthsListener.html#onSignalStrengthsChanged(android.telephony.SignalStrength)"/>
             /// </summary>
@@ -3503,13 +3503,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnSignalStrengthsChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3518,21 +3518,21 @@ namespace Android.Telephony
         public partial class SignalStrengthsListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.SignalStrengthsListener.html#onSignalStrengthsChanged(android.telephony.SignalStrength)"/>
@@ -3542,13 +3542,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onSignalStrengthsChanged", "(Landroid/telephony/SignalStrength;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3557,21 +3557,21 @@ namespace Android.Telephony
         public partial class UserMobileDataStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="UserMobileDataStateListener"/>
@@ -3581,13 +3581,13 @@ namespace Android.Telephony
                 AddEventHandler("onUserMobileDataStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUserMobileDataStateChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.UserMobileDataStateListener.html#onUserMobileDataStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUserMobileDataStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnUserMobileDataStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnUserMobileDataStateChanged = true;
             void OnUserMobileDataStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3596,7 +3596,7 @@ namespace Android.Telephony
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnUserMobileDataStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.UserMobileDataStateListener.html#onUserMobileDataStateChanged(boolean)"/>
             /// </summary>
@@ -3605,13 +3605,13 @@ namespace Android.Telephony
             {
                 hasOverrideOnUserMobileDataStateChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3620,21 +3620,21 @@ namespace Android.Telephony
         public partial class UserMobileDataStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.UserMobileDataStateListener.html#onUserMobileDataStateChanged(boolean)"/>
@@ -3644,20 +3644,20 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onUserMobileDataStateChanged", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

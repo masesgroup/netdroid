@@ -40,10 +40,10 @@ namespace Android.Nfc
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NdefRecord(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Nfc
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -95,13 +95,13 @@ namespace Android.Nfc
             : base(arg0, arg1, arg2, arg3)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#CREATOR"/>
@@ -193,9 +193,9 @@ namespace Android.Nfc
         public static short TNF_WELL_KNOWN { get { if (!_TNF_WELL_KNOWNReady) { _TNF_WELL_KNOWNContent = SGetField<short>(LocalBridgeClazz, "TNF_WELL_KNOWN"); _TNF_WELL_KNOWNReady = true; } return _TNF_WELL_KNOWNContent; } }
         private static short _TNF_WELL_KNOWNContent = default;
         private static bool _TNF_WELL_KNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#createApplicationRecord(java.lang.String)"/>
@@ -215,7 +215,7 @@ namespace Android.Nfc
         /// <returns><see cref="Android.Nfc.NdefRecord"/></returns>
         public static Android.Nfc.NdefRecord CreateExternal(Java.Lang.String arg0, Java.Lang.String arg1, byte[] arg2)
         {
-            return SExecute<Android.Nfc.NdefRecord>(LocalBridgeClazz, "createExternal", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Nfc.NdefRecord>(LocalBridgeClazz, "createExternal", "(Ljava/lang/String;Ljava/lang/String;[B)Landroid/nfc/NdefRecord;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#createMime(java.lang.String,byte[])"/>
@@ -225,7 +225,7 @@ namespace Android.Nfc
         /// <returns><see cref="Android.Nfc.NdefRecord"/></returns>
         public static Android.Nfc.NdefRecord CreateMime(Java.Lang.String arg0, byte[] arg1)
         {
-            return SExecute<Android.Nfc.NdefRecord>(LocalBridgeClazz, "createMime", arg0, arg1);
+            return SExecuteWithSignature<Android.Nfc.NdefRecord>(LocalBridgeClazz, "createMime", "(Ljava/lang/String;[B)Landroid/nfc/NdefRecord;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#createTextRecord(java.lang.String,java.lang.String)"/>
@@ -235,7 +235,7 @@ namespace Android.Nfc
         /// <returns><see cref="Android.Nfc.NdefRecord"/></returns>
         public static Android.Nfc.NdefRecord CreateTextRecord(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Nfc.NdefRecord>(LocalBridgeClazz, "createTextRecord", arg0, arg1);
+            return SExecuteWithSignature<Android.Nfc.NdefRecord>(LocalBridgeClazz, "createTextRecord", "(Ljava/lang/String;Ljava/lang/String;)Landroid/nfc/NdefRecord;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#createUri(android.net.Uri)"/>
@@ -255,9 +255,9 @@ namespace Android.Nfc
         {
             return SExecuteWithSignature<Android.Nfc.NdefRecord>(LocalBridgeClazz, "createUri", "(Ljava/lang/String;)Landroid/nfc/NdefRecord;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#toUri()"/>
@@ -331,15 +331,15 @@ namespace Android.Nfc
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

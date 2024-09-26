@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Vector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Vector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -145,9 +145,9 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Util.RandomAccess"/>
@@ -161,17 +161,17 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Vector t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#elements()"/>
@@ -231,7 +231,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
@@ -241,7 +241,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#addElement(java.lang.Object)"/>
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeAllElements()"/>
@@ -298,7 +298,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetElementAt(object arg0, int arg1)
         {
-            IExecute("setElementAt", arg0, arg1);
+            IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#setSize(int)"/>
@@ -315,13 +315,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("trimToSize", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -355,9 +355,9 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Vector{E}"/> to <see cref="Java.Util.RandomAccess"/>
@@ -375,17 +375,17 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Vector{E}"/> to <see cref="Java.Util.Vector"/>
         /// </summary>
         public static implicit operator Java.Util.Vector(Java.Util.Vector<E> t) => t.Cast<Java.Util.Vector>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#elements()"/>
@@ -445,7 +445,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
@@ -455,7 +455,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#addElement(java.lang.Object)"/>
@@ -488,7 +488,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeAllElements()"/>
@@ -512,7 +512,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetElementAt(E arg0, int arg1)
         {
-            IExecute("setElementAt", arg0, arg1);
+            IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Vector.html#setSize(int)"/>
@@ -529,13 +529,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("trimToSize", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

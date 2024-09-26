@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SmsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region FinancialSmsCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Telephony
             /// </summary>
             [global::System.Obsolete("FinancialSmsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public FinancialSmsCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Telephony
     public partial class SmsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#MMS_ERROR_CONFIGURATION_ERROR"/>
@@ -1041,9 +1041,9 @@ namespace Android.Telephony
         public static Java.Lang.String MMS_CONFIG_USER_AGENT { get { if (!_MMS_CONFIG_USER_AGENTReady) { _MMS_CONFIG_USER_AGENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MMS_CONFIG_USER_AGENT"); _MMS_CONFIG_USER_AGENTReady = true; } return _MMS_CONFIG_USER_AGENTContent; } }
         private static Java.Lang.String _MMS_CONFIG_USER_AGENTContent = default;
         private static bool _MMS_CONFIG_USER_AGENTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefault()"/>
@@ -1072,9 +1072,9 @@ namespace Android.Telephony
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSmsSubscriptionId", "()I");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getCarrierConfigValues()"/>
@@ -1135,7 +1135,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String CreateAppSpecificSmsTokenWithPackageInfo(Java.Lang.String arg0, Android.App.PendingIntent arg1)
         {
-            return IExecute<Java.Lang.String>("createAppSpecificSmsTokenWithPackageInfo", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("createAppSpecificSmsTokenWithPackageInfo", "(Ljava/lang/String;Landroid/app/PendingIntent;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmscAddress()"/>
@@ -1165,7 +1165,7 @@ namespace Android.Telephony
         /// <param name="arg5"><see cref="long"/></param>
         public void DownloadMultimediaMessage(Android.Content.Context arg0, Java.Lang.String arg1, Android.Net.Uri arg2, Android.Os.Bundle arg3, Android.App.PendingIntent arg4, long arg5)
         {
-            IExecute("downloadMultimediaMessage", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("downloadMultimediaMessage", "(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;Landroid/os/Bundle;Landroid/app/PendingIntent;J)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#downloadMultimediaMessage(android.content.Context,java.lang.String,android.net.Uri,android.os.Bundle,android.app.PendingIntent)"/>
@@ -1177,7 +1177,7 @@ namespace Android.Telephony
         /// <param name="arg4"><see cref="Android.App.PendingIntent"/></param>
         public void DownloadMultimediaMessage(Android.Content.Context arg0, Java.Lang.String arg1, Android.Net.Uri arg2, Android.Os.Bundle arg3, Android.App.PendingIntent arg4)
         {
-            IExecute("downloadMultimediaMessage", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("downloadMultimediaMessage", "(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;Landroid/os/Bundle;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmsMessagesForFinancialApp(android.os.Bundle,java.util.concurrent.Executor,android.telephony.SmsManager.FinancialSmsCallback)"/>
@@ -1187,7 +1187,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="Android.Telephony.SmsManager.FinancialSmsCallback"/></param>
         public void GetSmsMessagesForFinancialApp(Android.Os.Bundle arg0, Java.Util.Concurrent.Executor arg1, Android.Telephony.SmsManager.FinancialSmsCallback arg2)
         {
-            IExecute("getSmsMessagesForFinancialApp", arg0, arg1, arg2);
+            IExecuteWithSignature("getSmsMessagesForFinancialApp", "(Landroid/os/Bundle;Ljava/util/concurrent/Executor;Landroid/telephony/SmsManager$FinancialSmsCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#injectSmsPdu(byte[],java.lang.String,android.app.PendingIntent)"/>
@@ -1197,7 +1197,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void InjectSmsPdu(byte[] arg0, Java.Lang.String arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("injectSmsPdu", arg0, arg1, arg2);
+            IExecuteWithSignature("injectSmsPdu", "([BLjava/lang/String;Landroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)"/>
@@ -1210,7 +1210,7 @@ namespace Android.Telephony
         /// <param name="arg5"><see cref="Android.App.PendingIntent"/></param>
         public void SendDataMessage(Java.Lang.String arg0, Java.Lang.String arg1, short arg2, byte[] arg3, Android.App.PendingIntent arg4, Android.App.PendingIntent arg5)
         {
-            IExecute("sendDataMessage", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("sendDataMessage", "(Ljava/lang/String;Ljava/lang/String;S[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendMultimediaMessage(android.content.Context,android.net.Uri,java.lang.String,android.os.Bundle,android.app.PendingIntent,long)"/>
@@ -1223,7 +1223,7 @@ namespace Android.Telephony
         /// <param name="arg5"><see cref="long"/></param>
         public void SendMultimediaMessage(Android.Content.Context arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Android.Os.Bundle arg3, Android.App.PendingIntent arg4, long arg5)
         {
-            IExecute("sendMultimediaMessage", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("sendMultimediaMessage", "(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/PendingIntent;J)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendMultimediaMessage(android.content.Context,android.net.Uri,java.lang.String,android.os.Bundle,android.app.PendingIntent)"/>
@@ -1235,7 +1235,7 @@ namespace Android.Telephony
         /// <param name="arg4"><see cref="Android.App.PendingIntent"/></param>
         public void SendMultimediaMessage(Android.Content.Context arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Android.Os.Bundle arg3, Android.App.PendingIntent arg4)
         {
-            IExecute("sendMultimediaMessage", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("sendMultimediaMessage", "(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)"/>
@@ -1247,7 +1247,7 @@ namespace Android.Telephony
         /// <param name="arg4"><see cref="Java.Util.ArrayList"/></param>
         public void SendMultipartTextMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.ArrayList<Java.Lang.String> arg2, Java.Util.ArrayList<Android.App.PendingIntent> arg3, Java.Util.ArrayList<Android.App.PendingIntent> arg4)
         {
-            IExecute("sendMultipartTextMessage", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("sendMultipartTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.List,java.util.List,java.util.List,java.lang.String,java.lang.String)"/>
@@ -1261,7 +1261,7 @@ namespace Android.Telephony
         /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         public void SendMultipartTextMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2, Java.Util.List<Android.App.PendingIntent> arg3, Java.Util.List<Android.App.PendingIntent> arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         {
-            IExecute("sendMultipartTextMessage", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("sendMultipartTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.List,java.util.List,java.util.List,long)"/>
@@ -1274,7 +1274,7 @@ namespace Android.Telephony
         /// <param name="arg5"><see cref="long"/></param>
         public void SendMultipartTextMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2, Java.Util.List<Android.App.PendingIntent> arg3, Java.Util.List<Android.App.PendingIntent> arg4, long arg5)
         {
-            IExecute("sendMultipartTextMessage", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("sendMultipartTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;J)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent,long)"/>
@@ -1287,7 +1287,7 @@ namespace Android.Telephony
         /// <param name="arg5"><see cref="long"/></param>
         public void SendTextMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.App.PendingIntent arg3, Android.App.PendingIntent arg4, long arg5)
         {
-            IExecute("sendTextMessage", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("sendTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;J)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)"/>
@@ -1299,7 +1299,7 @@ namespace Android.Telephony
         /// <param name="arg4"><see cref="Android.App.PendingIntent"/></param>
         public void SendTextMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.App.PendingIntent arg3, Android.App.PendingIntent arg4)
         {
-            IExecute("sendTextMessage", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("sendTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)"/>
@@ -1311,31 +1311,31 @@ namespace Android.Telephony
         /// <param name="arg4"><see cref="Android.App.PendingIntent"/></param>
         public void SendTextMessageWithoutPersisting(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.App.PendingIntent arg3, Android.App.PendingIntent arg4)
         {
-            IExecute("sendTextMessageWithoutPersisting", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("sendTextMessageWithoutPersisting", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region FinancialSmsCallback implementation
         public partial class FinancialSmsCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.FinancialSmsCallback.html#onFinancialSmsMessages(android.database.CursorWindow)"/>
@@ -1345,20 +1345,20 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onFinancialSmsMessages", "(Landroid/database/CursorWindow;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

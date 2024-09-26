@@ -42,10 +42,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("ResourceBundle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResourceBundle(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Control declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Control(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Java.Util
     public partial class ResourceBundle
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.util.ResourceBundle.Control)"/>
@@ -142,7 +142,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Util.ResourceBundle.Control arg2)
         {
-            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/util/ResourceBundle$Control;)Ljava/util/ResourceBundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale)"/>
@@ -152,7 +152,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.ResourceBundle.Control)"/>
@@ -162,7 +162,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.ResourceBundle.Control arg1)
         {
-            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", "(Ljava/lang/String;Ljava/util/ResourceBundle$Control;)Ljava/util/ResourceBundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String)"/>
@@ -198,7 +198,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2, Java.Util.ResourceBundle.Control arg3)
         {
-            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/ClassLoader;Ljava/util/ResourceBundle$Control;)Ljava/util/ResourceBundle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)"/>
@@ -209,11 +209,11 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/ClassLoader;)Ljava/util/ResourceBundle;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getKeys()"/>
@@ -283,21 +283,21 @@ namespace Java.Util
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("keySet", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Control implementation
         public partial class Control
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#FORMAT_CLASS"/>
@@ -329,9 +329,9 @@ namespace Java.Util
             public static long TTL_NO_EXPIRATION_CONTROL { get { if (!_TTL_NO_EXPIRATION_CONTROLReady) { _TTL_NO_EXPIRATION_CONTROLContent = SGetField<long>(LocalBridgeClazz, "TTL_NO_EXPIRATION_CONTROL"); _TTL_NO_EXPIRATION_CONTROLReady = true; } return _TTL_NO_EXPIRATION_CONTROLContent; } }
             private static long _TTL_NO_EXPIRATION_CONTROLContent = default;
             private static bool _TTL_NO_EXPIRATION_CONTROLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getControl(java.util.List)"/>
@@ -351,9 +351,9 @@ namespace Java.Util
             {
                 return SExecuteWithSignature<Java.Util.ResourceBundle.Control>(LocalBridgeClazz, "getNoFallbackControl", "(Ljava/util/List;)Ljava/util/ResourceBundle$Control;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#needsReload(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,java.util.ResourceBundle,long)"/>
@@ -367,7 +367,7 @@ namespace Java.Util
             /// <returns><see cref="bool"/></returns>
             public bool NeedsReload(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.String arg2, Java.Lang.ClassLoader arg3, Java.Util.ResourceBundle arg4, long arg5)
             {
-                return IExecute<bool>("needsReload", arg0, arg1, arg2, arg3, arg4, arg5);
+                return IExecuteWithSignature<bool>("needsReload", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/util/ResourceBundle;J)Z", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#toResourceName(java.lang.String,java.lang.String)"/>
@@ -377,7 +377,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String ToResourceName(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Lang.String>("toResourceName", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.String>("toResourceName", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#toBundleName(java.lang.String,java.util.Locale)"/>
@@ -387,7 +387,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String ToBundleName(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
-                return IExecute<Java.Lang.String>("toBundleName", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.String>("toBundleName", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getFormats(java.lang.String)"/>
@@ -406,7 +406,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.List"/></returns>
             public Java.Util.List<Java.Util.Locale> GetCandidateLocales(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
-                return IExecute<Java.Util.List<Java.Util.Locale>>("getCandidateLocales", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.List<Java.Util.Locale>>("getCandidateLocales", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/List;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getFallbackLocale(java.lang.String,java.util.Locale)"/>
@@ -416,7 +416,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale"/></returns>
             public Java.Util.Locale GetFallbackLocale(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
-                return IExecute<Java.Util.Locale>("getFallbackLocale", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Locale>("getFallbackLocale", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/Locale;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#newBundle(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,boolean)"/>
@@ -432,7 +432,7 @@ namespace Java.Util
             /// <exception cref="Java.Io.IOException"/>
             public Java.Util.ResourceBundle NewBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.String arg2, Java.Lang.ClassLoader arg3, bool arg4)
             {
-                return IExecute<Java.Util.ResourceBundle>("newBundle", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<Java.Util.ResourceBundle>("newBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;Ljava/lang/ClassLoader;Z)Ljava/util/ResourceBundle;", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getTimeToLive(java.lang.String,java.util.Locale)"/>
@@ -442,22 +442,22 @@ namespace Java.Util
             /// <returns><see cref="long"/></returns>
             public long GetTimeToLive(Java.Lang.String arg0, Java.Util.Locale arg1)
             {
-                return IExecute<long>("getTimeToLive", arg0, arg1);
+                return IExecuteWithSignature<long>("getTimeToLive", "(Ljava/lang/String;Ljava/util/Locale;)J", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

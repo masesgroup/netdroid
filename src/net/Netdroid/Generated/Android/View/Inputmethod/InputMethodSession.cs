@@ -42,10 +42,10 @@ namespace Android.View.Inputmethod
         /// </summary>
         [global::System.Obsolete("InputMethodSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InputMethodSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region EventCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.View.Inputmethod
             /// </summary>
             [global::System.Obsolete("EventCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public EventCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.View.Inputmethod
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,13 +126,13 @@ namespace Android.View.Inputmethod
     public partial interface IInputMethodSession
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -141,21 +141,21 @@ namespace Android.View.Inputmethod
     public partial class InputMethodSession : Android.View.Inputmethod.IInputMethodSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#appPrivateCommand(java.lang.String,android.os.Bundle)"/>
@@ -164,7 +164,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void AppPrivateCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("appPrivateCommand", arg0, arg1);
+            IExecuteWithSignature("appPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#dispatchGenericMotionEvent(int,android.view.MotionEvent,android.view.inputmethod.InputMethodSession.EventCallback)"/>
@@ -174,7 +174,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="Android.View.Inputmethod.InputMethodSession.EventCallback"/></param>
         public void DispatchGenericMotionEvent(int arg0, Android.View.MotionEvent arg1, Android.View.Inputmethod.InputMethodSession.EventCallback arg2)
         {
-            IExecute("dispatchGenericMotionEvent", arg0, arg1, arg2);
+            IExecuteWithSignature("dispatchGenericMotionEvent", "(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#dispatchKeyEvent(int,android.view.KeyEvent,android.view.inputmethod.InputMethodSession.EventCallback)"/>
@@ -184,7 +184,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="Android.View.Inputmethod.InputMethodSession.EventCallback"/></param>
         public void DispatchKeyEvent(int arg0, Android.View.KeyEvent arg1, Android.View.Inputmethod.InputMethodSession.EventCallback arg2)
         {
-            IExecute("dispatchKeyEvent", arg0, arg1, arg2);
+            IExecuteWithSignature("dispatchKeyEvent", "(ILandroid/view/KeyEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#dispatchTrackballEvent(int,android.view.MotionEvent,android.view.inputmethod.InputMethodSession.EventCallback)"/>
@@ -194,7 +194,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="Android.View.Inputmethod.InputMethodSession.EventCallback"/></param>
         public void DispatchTrackballEvent(int arg0, Android.View.MotionEvent arg1, Android.View.Inputmethod.InputMethodSession.EventCallback arg2)
         {
-            IExecute("dispatchTrackballEvent", arg0, arg1, arg2);
+            IExecuteWithSignature("dispatchTrackballEvent", "(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#displayCompletions(android.view.inputmethod.CompletionInfo[])"/>
@@ -219,7 +219,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void ToggleSoftInput(int arg0, int arg1)
         {
-            IExecute("toggleSoftInput", arg0, arg1);
+            IExecuteWithSignature("toggleSoftInput", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#updateCursor(android.graphics.Rect)"/>
@@ -244,7 +244,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.View.Inputmethod.ExtractedText"/></param>
         public void UpdateExtractedText(int arg0, Android.View.Inputmethod.ExtractedText arg1)
         {
-            IExecute("updateExtractedText", arg0, arg1);
+            IExecuteWithSignature("updateExtractedText", "(ILandroid/view/inputmethod/ExtractedText;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#updateSelection(int,int,int,int,int,int)"/>
@@ -257,7 +257,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg5"><see cref="int"/></param>
         public void UpdateSelection(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("updateSelection", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("updateSelection", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#viewClicked(boolean)"/>
@@ -267,29 +267,29 @@ namespace Android.View.Inputmethod
         {
             IExecuteWithSignature("viewClicked", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region EventCallback implementation
         public partial class EventCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.EventCallback.html#finishedEvent(int,boolean)"/>
@@ -298,22 +298,22 @@ namespace Android.View.Inputmethod
             /// <param name="arg1"><see cref="bool"/></param>
             public void FinishedEvent(int arg0, bool arg1)
             {
-                IExecute("finishedEvent", arg0, arg1);
+                IExecuteWithSignature("finishedEvent", "(IZ)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

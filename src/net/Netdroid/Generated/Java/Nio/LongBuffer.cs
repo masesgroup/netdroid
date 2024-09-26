@@ -42,10 +42,10 @@ namespace Java.Nio
         /// </summary>
         [global::System.Obsolete("LongBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LongBuffer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Java.Nio
     public partial class LongBuffer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.LongBuffer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.LongBuffer t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#allocate(int)"/>
@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#wrap(long[])"/>
@@ -121,9 +121,9 @@ namespace Java.Nio
         {
             return SExecuteWithSignature<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", "([J)Ljava/nio/LongBuffer;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#order()"/>
@@ -157,7 +157,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(int arg0, long arg1)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(IJ)Ljava/nio/LongBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(long)"/>
@@ -231,7 +231,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Get(int arg0, long[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.LongBuffer>("get", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("get", "(I[JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(int,long[])"/>
@@ -241,7 +241,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Get(int arg0, long[] arg1)
         {
-            return IExecute<Java.Nio.LongBuffer>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("get", "(I[J)Ljava/nio/LongBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(long[],int,int)"/>
@@ -252,7 +252,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Get(long[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.LongBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("get", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#get(long[])"/>
@@ -273,7 +273,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(int arg0, Java.Nio.LongBuffer arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(ILjava/nio/LongBuffer;II)Ljava/nio/LongBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(int,long[],int,int)"/>
@@ -285,7 +285,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(int arg0, long[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(I[JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(int,long[])"/>
@@ -295,7 +295,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(int arg0, long[] arg1)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(I[J)Ljava/nio/LongBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html#put(java.nio.LongBuffer)"/>
@@ -315,15 +315,15 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(long[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.LongBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

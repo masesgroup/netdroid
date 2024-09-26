@@ -40,10 +40,10 @@ namespace Android.Content.Pm.Verify.Domain
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DomainVerificationUserState(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Pm.Verify.Domain
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Content.Pm.Verify.Domain
     public partial class DomainVerificationUserState
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#CREATOR"/>
@@ -106,13 +106,13 @@ namespace Android.Content.Pm.Verify.Domain
         public static int DOMAIN_STATE_VERIFIED { get { if (!_DOMAIN_STATE_VERIFIEDReady) { _DOMAIN_STATE_VERIFIEDContent = SGetField<int>(LocalBridgeClazz, "DOMAIN_STATE_VERIFIED"); _DOMAIN_STATE_VERIFIEDReady = true; } return _DOMAIN_STATE_VERIFIEDContent; } }
         private static int _DOMAIN_STATE_VERIFIEDContent = default;
         private static bool _DOMAIN_STATE_VERIFIEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#getUser()"/>
@@ -161,15 +161,15 @@ namespace Android.Content.Pm.Verify.Domain
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

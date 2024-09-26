@@ -40,10 +40,10 @@ namespace Android.Provider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DocumentsContract(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Document declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Document(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Path(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Root(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -209,13 +209,13 @@ namespace Android.Provider
     public partial class DocumentsContract
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#ACTION_DOCUMENT_SETTINGS"/>
@@ -325,9 +325,9 @@ namespace Android.Provider
         public static Java.Lang.String QUERY_ARG_MIME_TYPES { get { if (!_QUERY_ARG_MIME_TYPESReady) { _QUERY_ARG_MIME_TYPESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "QUERY_ARG_MIME_TYPES"); _QUERY_ARG_MIME_TYPESReady = true; } return _QUERY_ARG_MIME_TYPESContent; } }
         private static Java.Lang.String _QUERY_ARG_MIME_TYPESContent = default;
         private static bool _QUERY_ARG_MIME_TYPESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#createWebLinkIntent(android.content.ContentResolver,android.net.Uri,android.os.Bundle)"/>
@@ -339,7 +339,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Content.IntentSender CreateWebLinkIntent(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Android.Os.Bundle arg2)
         {
-            return SExecute<Android.Content.IntentSender>(LocalBridgeClazz, "createWebLinkIntent", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Content.IntentSender>(LocalBridgeClazz, "createWebLinkIntent", "(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/os/Bundle;)Landroid/content/IntentSender;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#getDocumentThumbnail(android.content.ContentResolver,android.net.Uri,android.graphics.Point,android.os.CancellationSignal)"/>
@@ -352,7 +352,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Graphics.Bitmap GetDocumentThumbnail(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Android.Graphics.Point arg2, Android.Os.CancellationSignal arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getDocumentThumbnail", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getDocumentThumbnail", "(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/graphics/Point;Landroid/os/CancellationSignal;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildChildDocumentsUri(java.lang.String,java.lang.String)"/>
@@ -362,7 +362,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildChildDocumentsUri(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildChildDocumentsUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildChildDocumentsUri", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildChildDocumentsUriUsingTree(android.net.Uri,java.lang.String)"/>
@@ -372,7 +372,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildChildDocumentsUriUsingTree(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildChildDocumentsUriUsingTree", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildChildDocumentsUriUsingTree", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildDocumentUri(java.lang.String,java.lang.String)"/>
@@ -382,7 +382,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildDocumentUri(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildDocumentUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildDocumentUri", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildDocumentUriUsingTree(android.net.Uri,java.lang.String)"/>
@@ -392,7 +392,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildDocumentUriUsingTree(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildDocumentUriUsingTree", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildDocumentUriUsingTree", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildRecentDocumentsUri(java.lang.String,java.lang.String)"/>
@@ -402,7 +402,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildRecentDocumentsUri(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildRecentDocumentsUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildRecentDocumentsUri", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildRootsUri(java.lang.String)"/>
@@ -421,7 +421,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildRootUri(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildRootUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildRootUri", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildSearchDocumentsUri(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -432,7 +432,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildSearchDocumentsUri(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildSearchDocumentsUri", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildSearchDocumentsUri", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#buildTreeDocumentUri(java.lang.String,java.lang.String)"/>
@@ -442,7 +442,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildTreeDocumentUri(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildTreeDocumentUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildTreeDocumentUri", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#copyDocument(android.content.ContentResolver,android.net.Uri,android.net.Uri)"/>
@@ -454,7 +454,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Net.Uri CopyDocument(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Android.Net.Uri arg2)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "copyDocument", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "copyDocument", "(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#createDocument(android.content.ContentResolver,android.net.Uri,java.lang.String,java.lang.String)"/>
@@ -467,7 +467,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Net.Uri CreateDocument(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "createDocument", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "createDocument", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#moveDocument(android.content.ContentResolver,android.net.Uri,android.net.Uri,android.net.Uri)"/>
@@ -480,7 +480,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Net.Uri MoveDocument(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Android.Net.Uri arg2, Android.Net.Uri arg3)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "moveDocument", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "moveDocument", "(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;Landroid/net/Uri;)Landroid/net/Uri;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#renameDocument(android.content.ContentResolver,android.net.Uri,java.lang.String)"/>
@@ -492,7 +492,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Net.Uri RenameDocument(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "renameDocument", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "renameDocument", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#getDocumentMetadata(android.content.ContentResolver,android.net.Uri)"/>
@@ -503,7 +503,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Os.Bundle GetDocumentMetadata(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
         {
-            return SExecute<Android.Os.Bundle>(LocalBridgeClazz, "getDocumentMetadata", arg0, arg1);
+            return SExecuteWithSignature<Android.Os.Bundle>(LocalBridgeClazz, "getDocumentMetadata", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/os/Bundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#findDocumentPath(android.content.ContentResolver,android.net.Uri)"/>
@@ -514,7 +514,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Provider.DocumentsContract.Path FindDocumentPath(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
         {
-            return SExecute<Android.Provider.DocumentsContract.Path>(LocalBridgeClazz, "findDocumentPath", arg0, arg1);
+            return SExecuteWithSignature<Android.Provider.DocumentsContract.Path>(LocalBridgeClazz, "findDocumentPath", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/provider/DocumentsContract$Path;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#deleteDocument(android.content.ContentResolver,android.net.Uri)"/>
@@ -525,7 +525,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static bool DeleteDocument(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "deleteDocument", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "deleteDocument", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#isChildDocument(android.content.ContentResolver,android.net.Uri,android.net.Uri)"/>
@@ -537,7 +537,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static bool IsChildDocument(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Android.Net.Uri arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isChildDocument", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isChildDocument", "(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#isDocumentUri(android.content.Context,android.net.Uri)"/>
@@ -547,7 +547,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public static bool IsDocumentUri(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isDocumentUri", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDocumentUri", "(Landroid/content/Context;Landroid/net/Uri;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#isRootsUri(android.content.Context,android.net.Uri)"/>
@@ -557,7 +557,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public static bool IsRootsUri(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isRootsUri", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isRootsUri", "(Landroid/content/Context;Landroid/net/Uri;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#isRootUri(android.content.Context,android.net.Uri)"/>
@@ -567,7 +567,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public static bool IsRootUri(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isRootUri", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isRootUri", "(Landroid/content/Context;Landroid/net/Uri;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#isTreeUri(android.net.Uri)"/>
@@ -588,7 +588,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static bool RemoveDocument(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Android.Net.Uri arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "removeDocument", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "removeDocument", "(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.html#getDocumentId(android.net.Uri)"/>
@@ -633,27 +633,27 @@ namespace Android.Provider
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public static void EjectRoot(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
         {
-            SExecute(LocalBridgeClazz, "ejectRoot", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "ejectRoot", "(Landroid/content/ContentResolver;Landroid/net/Uri;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Document implementation
         public partial class Document
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Document.html#FLAG_DIR_BLOCKS_OPEN_DOCUMENT_TREE"/>
@@ -805,21 +805,21 @@ namespace Android.Provider
             public static Java.Lang.String MIME_TYPE_DIR { get { if (!_MIME_TYPE_DIRReady) { _MIME_TYPE_DIRContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIME_TYPE_DIR"); _MIME_TYPE_DIRReady = true; } return _MIME_TYPE_DIRContent; } }
             private static Java.Lang.String _MIME_TYPE_DIRContent = default;
             private static bool _MIME_TYPE_DIRReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -837,13 +837,13 @@ namespace Android.Provider
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#CREATOR"/>
@@ -851,13 +851,13 @@ namespace Android.Provider
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#describeContents()"/>
@@ -890,15 +890,15 @@ namespace Android.Provider
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -907,13 +907,13 @@ namespace Android.Provider
         public partial class Root
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Root.html#FLAG_EMPTY"/>
@@ -1023,28 +1023,28 @@ namespace Android.Provider
             public static Java.Lang.String MIME_TYPE_ITEM { get { if (!_MIME_TYPE_ITEMReady) { _MIME_TYPE_ITEMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIME_TYPE_ITEM"); _MIME_TYPE_ITEMReady = true; } return _MIME_TYPE_ITEMContent; } }
             private static Java.Lang.String _MIME_TYPE_ITEMContent = default;
             private static bool _MIME_TYPE_ITEMReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

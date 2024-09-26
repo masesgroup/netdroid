@@ -43,10 +43,10 @@ namespace Android.App.Slice
         /// </summary>
         [global::System.Obsolete("SliceProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SliceProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Android.App.Slice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,13 +86,13 @@ namespace Android.App.Slice
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html#SLICE_TYPE"/>
@@ -101,13 +101,13 @@ namespace Android.App.Slice
         public static Java.Lang.String SLICE_TYPE { get { if (!_SLICE_TYPEReady) { _SLICE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SLICE_TYPE"); _SLICE_TYPEReady = true; } return _SLICE_TYPEContent; } }
         private static Java.Lang.String _SLICE_TYPEContent = default;
         private static bool _SLICE_TYPEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html#onCreatePermissionRequest(android.net.Uri)"/>
@@ -128,7 +128,7 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public Android.App.Slice.Slice OnBindSlice(Android.Net.Uri arg0, Java.Util.Set<Android.App.Slice.SliceSpec> arg1)
         {
-            return IExecute<Android.App.Slice.Slice>("onBindSlice", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Slice.Slice>("onBindSlice", "(Landroid/net/Uri;Ljava/util/Set;)Landroid/app/slice/Slice;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html#onMapIntentToUri(android.content.Intent)"/>
@@ -168,13 +168,13 @@ namespace Android.App.Slice
         {
             IExecuteWithSignature("onSliceUnpinned", "(Landroid/net/Uri;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public BiFunction() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region BiFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="BiFunction"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.BiFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -105,7 +105,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public BiFunction() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -114,13 +114,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
     
     }
     #endregion
-    
+
     #region BiFunctionDirect<T, U, R> declaration
     /// <summary>
     /// Direct override of <see cref="BiFunction"/> or its generic type if there is one
@@ -131,14 +131,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.BiFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -166,21 +166,21 @@ namespace Java.Util.Function
     public partial class BiFunction
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="BiFunction"/>
@@ -191,13 +191,13 @@ namespace Java.Util.Function
             AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, object, object> OnApply { get; set; } = null;
-        
+
         bool hasOverrideApply = true;
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -206,7 +206,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<object>(1));
             data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -227,13 +227,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunction>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function, Java.Util.Function.BiFunction> OnAndThen { get; set; } = null;
-        
+
         bool hasOverrideAndThen = true;
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -242,7 +242,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
@@ -253,13 +253,13 @@ namespace Java.Util.Function
         {
             hasOverrideAndThen = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -268,21 +268,21 @@ namespace Java.Util.Function
     public partial class BiFunctionDirect
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
@@ -292,7 +292,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public override object Apply(object arg0, object arg1)
         {
-            return IExecute("apply", arg0, arg1);
+            return IExecuteWithSignature("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
@@ -303,13 +303,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect, Java.Util.Function.BiFunction>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -321,13 +321,13 @@ namespace Java.Util.Function
     public partial interface IBiFunction<T, U, R>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -336,21 +336,21 @@ namespace Java.Util.Function
     public partial class BiFunction<T, U, R> : Java.Util.Function.IBiFunction<T, U, R>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="BiFunction"/>
@@ -361,13 +361,13 @@ namespace Java.Util.Function
             AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, U, R> OnApply { get; set; } = null;
-        
+
         bool hasOverrideApply = true;
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -376,7 +376,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
             data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -400,13 +400,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
-        
+
         bool hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = true;
         void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -415,7 +415,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV>, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
@@ -429,13 +429,13 @@ namespace Java.Util.Function
         {
             hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -444,21 +444,21 @@ namespace Java.Util.Function
     public partial class BiFunctionDirect<T, U, R> : Java.Util.Function.IBiFunction<T, U, R>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
@@ -468,7 +468,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="R"/></returns>
         public override R Apply(T arg0, U arg1)
         {
-            return IExecute<R>("apply", arg0, arg1);
+            return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
@@ -482,13 +482,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

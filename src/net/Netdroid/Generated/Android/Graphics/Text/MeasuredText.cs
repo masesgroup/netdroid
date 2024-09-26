@@ -40,10 +40,10 @@ namespace Android.Graphics.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MeasuredText(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,21 +119,21 @@ namespace Android.Graphics.Text
     public partial class MeasuredText
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.html#getCharWidthAt(int)"/>
@@ -152,7 +152,7 @@ namespace Android.Graphics.Text
         /// <returns><see cref="float"/></returns>
         public float GetWidth(int arg0, int arg1)
         {
-            return IExecute<float>("getWidth", arg0, arg1);
+            return IExecuteWithSignature<float>("getWidth", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.html#getBounds(int,int,android.graphics.Rect)"/>
@@ -162,7 +162,7 @@ namespace Android.Graphics.Text
         /// <param name="arg2"><see cref="Android.Graphics.Rect"/></param>
         public void GetBounds(int arg0, int arg1, Android.Graphics.Rect arg2)
         {
-            IExecute("getBounds", arg0, arg1, arg2);
+            IExecuteWithSignature("getBounds", "(IILandroid/graphics/Rect;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.html#getFontMetricsInt(int,int,android.graphics.Paint.FontMetricsInt)"/>
@@ -172,11 +172,11 @@ namespace Android.Graphics.Text
         /// <param name="arg2"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
         public void GetFontMetricsInt(int arg0, int arg1, Android.Graphics.Paint.FontMetricsInt arg2)
         {
-            IExecute("getFontMetricsInt", arg0, arg1, arg2);
+            IExecuteWithSignature("getFontMetricsInt", "(IILandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -198,13 +198,13 @@ namespace Android.Graphics.Text
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.Builder.html#HYPHENATION_MODE_FAST"/>
@@ -224,13 +224,13 @@ namespace Android.Graphics.Text
             public static int HYPHENATION_MODE_NORMAL { get { if (!_HYPHENATION_MODE_NORMALReady) { _HYPHENATION_MODE_NORMALContent = SGetField<int>(LocalBridgeClazz, "HYPHENATION_MODE_NORMAL"); _HYPHENATION_MODE_NORMALReady = true; } return _HYPHENATION_MODE_NORMALContent; } }
             private static int _HYPHENATION_MODE_NORMALContent = default;
             private static bool _HYPHENATION_MODE_NORMALReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.Builder.html#build()"/>
@@ -249,7 +249,7 @@ namespace Android.Graphics.Text
             /// <returns><see cref="Android.Graphics.Text.MeasuredText.Builder"/></returns>
             public Android.Graphics.Text.MeasuredText.Builder AppendReplacementRun(Android.Graphics.Paint arg0, int arg1, float arg2)
             {
-                return IExecute<Android.Graphics.Text.MeasuredText.Builder>("appendReplacementRun", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Graphics.Text.MeasuredText.Builder>("appendReplacementRun", "(Landroid/graphics/Paint;IF)Landroid/graphics/text/MeasuredText$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.Builder.html#appendStyleRun(android.graphics.Paint,android.graphics.text.LineBreakConfig,int,boolean)"/>
@@ -261,7 +261,7 @@ namespace Android.Graphics.Text
             /// <returns><see cref="Android.Graphics.Text.MeasuredText.Builder"/></returns>
             public Android.Graphics.Text.MeasuredText.Builder AppendStyleRun(Android.Graphics.Paint arg0, Android.Graphics.Text.LineBreakConfig arg1, int arg2, bool arg3)
             {
-                return IExecute<Android.Graphics.Text.MeasuredText.Builder>("appendStyleRun", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Graphics.Text.MeasuredText.Builder>("appendStyleRun", "(Landroid/graphics/Paint;Landroid/graphics/text/LineBreakConfig;IZ)Landroid/graphics/text/MeasuredText$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.Builder.html#appendStyleRun(android.graphics.Paint,int,boolean)"/>
@@ -272,7 +272,7 @@ namespace Android.Graphics.Text
             /// <returns><see cref="Android.Graphics.Text.MeasuredText.Builder"/></returns>
             public Android.Graphics.Text.MeasuredText.Builder AppendStyleRun(Android.Graphics.Paint arg0, int arg1, bool arg2)
             {
-                return IExecute<Android.Graphics.Text.MeasuredText.Builder>("appendStyleRun", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Graphics.Text.MeasuredText.Builder>("appendStyleRun", "(Landroid/graphics/Paint;IZ)Landroid/graphics/text/MeasuredText$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.Builder.html#setComputeHyphenation(boolean)"/>
@@ -302,20 +302,20 @@ namespace Android.Graphics.Text
             {
                 return IExecuteWithSignature<Android.Graphics.Text.MeasuredText.Builder>("setComputeLayout", "(Z)Landroid/graphics/text/MeasuredText$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Content.Pm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LauncherApps(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ArchiveCompatibilityParams declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ArchiveCompatibilityParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Content.Pm
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PinItemRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -218,10 +218,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ShortcutQuery(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -256,13 +256,13 @@ namespace Android.Content.Pm
     public partial class LauncherApps
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#ACTION_CONFIRM_PIN_APPWIDGET"/>
@@ -282,13 +282,13 @@ namespace Android.Content.Pm
         public static Java.Lang.String EXTRA_PIN_ITEM_REQUEST { get { if (!_EXTRA_PIN_ITEM_REQUESTReady) { _EXTRA_PIN_ITEM_REQUESTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PIN_ITEM_REQUEST"); _EXTRA_PIN_ITEM_REQUESTReady = true; } return _EXTRA_PIN_ITEM_REQUESTContent; } }
         private static Java.Lang.String _EXTRA_PIN_ITEM_REQUESTContent = default;
         private static bool _EXTRA_PIN_ITEM_REQUESTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutIntent(java.lang.String,java.lang.String,android.os.Bundle,android.os.UserHandle)"/>
@@ -300,7 +300,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public Android.App.PendingIntent GetShortcutIntent(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Os.UserHandle arg3)
         {
-            return IExecute<Android.App.PendingIntent>("getShortcutIntent", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.App.PendingIntent>("getShortcutIntent", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getAppMarketActivityIntent(java.lang.String,android.os.UserHandle)"/>
@@ -310,7 +310,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.IntentSender"/></returns>
         public Android.Content.IntentSender GetAppMarketActivityIntent(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Android.Content.IntentSender>("getAppMarketActivityIntent", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.IntentSender>("getAppMarketActivityIntent", "(Ljava/lang/String;Landroid/os/UserHandle;)Landroid/content/IntentSender;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutConfigActivityIntent(android.content.pm.LauncherActivityInfo)"/>
@@ -331,7 +331,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Pm.ApplicationInfo GetApplicationInfo(Java.Lang.String arg0, int arg1, Android.Os.UserHandle arg2)
         {
-            return IExecute<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", "(Ljava/lang/String;ILandroid/os/UserHandle;)Landroid/content/pm/ApplicationInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#resolveActivity(android.content.Intent,android.os.UserHandle)"/>
@@ -341,7 +341,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Content.Pm.LauncherActivityInfo"/></returns>
         public Android.Content.Pm.LauncherActivityInfo ResolveActivity(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Android.Content.Pm.LauncherActivityInfo>("resolveActivity", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.LauncherActivityInfo>("resolveActivity", "(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/pm/LauncherActivityInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getPinItemRequest(android.content.Intent)"/>
@@ -360,7 +360,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetShortcutBadgedIconDrawable(Android.Content.Pm.ShortcutInfo arg0, int arg1)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getShortcutBadgedIconDrawable", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getShortcutBadgedIconDrawable", "(Landroid/content/pm/ShortcutInfo;I)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutIconDrawable(android.content.pm.ShortcutInfo,int)"/>
@@ -370,7 +370,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetShortcutIconDrawable(Android.Content.Pm.ShortcutInfo arg0, int arg1)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getShortcutIconDrawable", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getShortcutIconDrawable", "(Landroid/content/pm/ShortcutInfo;I)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getSuspendedPackageLauncherExtras(java.lang.String,android.os.UserHandle)"/>
@@ -380,7 +380,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle GetSuspendedPackageLauncherExtras(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Android.Os.Bundle>("getSuspendedPackageLauncherExtras", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Bundle>("getSuspendedPackageLauncherExtras", "(Ljava/lang/String;Landroid/os/UserHandle;)Landroid/os/Bundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#hasShortcutHostPermission()"/>
@@ -398,7 +398,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool IsActivityEnabled(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<bool>("isActivityEnabled", arg0, arg1);
+            return IExecuteWithSignature<bool>("isActivityEnabled", "(Landroid/content/ComponentName;Landroid/os/UserHandle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#isPackageEnabled(java.lang.String,android.os.UserHandle)"/>
@@ -408,7 +408,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool IsPackageEnabled(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<bool>("isPackageEnabled", arg0, arg1);
+            return IExecuteWithSignature<bool>("isPackageEnabled", "(Ljava/lang/String;Landroid/os/UserHandle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#shouldHideFromSuggestions(java.lang.String,android.os.UserHandle)"/>
@@ -418,7 +418,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="bool"/></returns>
         public bool ShouldHideFromSuggestions(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<bool>("shouldHideFromSuggestions", arg0, arg1);
+            return IExecuteWithSignature<bool>("shouldHideFromSuggestions", "(Ljava/lang/String;Landroid/os/UserHandle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getLauncherUserInfo(android.os.UserHandle)"/>
@@ -437,7 +437,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.LauncherActivityInfo> GetActivityList(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.LauncherActivityInfo>>("getActivityList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.LauncherActivityInfo>>("getActivityList", "(Ljava/lang/String;Landroid/os/UserHandle;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutConfigActivityList(java.lang.String,android.os.UserHandle)"/>
@@ -447,7 +447,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.LauncherActivityInfo> GetShortcutConfigActivityList(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.LauncherActivityInfo>>("getShortcutConfigActivityList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.LauncherActivityInfo>>("getShortcutConfigActivityList", "(Ljava/lang/String;Landroid/os/UserHandle;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getAllPackageInstallerSessions()"/>
@@ -465,7 +465,7 @@ namespace Android.Content.Pm
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Content.Pm.ShortcutInfo> GetShortcuts(Android.Content.Pm.LauncherApps.ShortcutQuery arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getShortcuts", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getShortcuts", "(Landroid/content/pm/LauncherApps$ShortcutQuery;Landroid/os/UserHandle;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getProfiles()"/>
@@ -492,7 +492,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void PinShortcuts(Java.Lang.String arg0, Java.Util.List<Java.Lang.String> arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("pinShortcuts", arg0, arg1, arg2);
+            IExecuteWithSignature("pinShortcuts", "(Ljava/lang/String;Ljava/util/List;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#registerCallback(android.content.pm.LauncherApps.Callback,android.os.Handler)"/>
@@ -501,7 +501,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterCallback(Android.Content.Pm.LauncherApps.Callback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerCallback", arg0, arg1);
+            IExecuteWithSignature("registerCallback", "(Landroid/content/pm/LauncherApps$Callback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#registerCallback(android.content.pm.LauncherApps.Callback)"/>
@@ -518,7 +518,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Content.Pm.PackageInstaller.SessionCallback"/></param>
         public void RegisterPackageInstallerSessionCallback(Java.Util.Concurrent.Executor arg0, Android.Content.Pm.PackageInstaller.SessionCallback arg1)
         {
-            IExecute("registerPackageInstallerSessionCallback", arg0, arg1);
+            IExecuteWithSignature("registerPackageInstallerSessionCallback", "(Ljava/util/concurrent/Executor;Landroid/content/pm/PackageInstaller$SessionCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#setArchiveCompatibility(android.content.pm.LauncherApps.ArchiveCompatibilityParams)"/>
@@ -537,7 +537,7 @@ namespace Android.Content.Pm
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
         public void StartAppDetailsActivity(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1, Android.Graphics.Rect arg2, Android.Os.Bundle arg3)
         {
-            IExecute("startAppDetailsActivity", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startAppDetailsActivity", "(Landroid/content/ComponentName;Landroid/os/UserHandle;Landroid/graphics/Rect;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#startMainActivity(android.content.ComponentName,android.os.UserHandle,android.graphics.Rect,android.os.Bundle)"/>
@@ -548,7 +548,7 @@ namespace Android.Content.Pm
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
         public void StartMainActivity(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1, Android.Graphics.Rect arg2, Android.Os.Bundle arg3)
         {
-            IExecute("startMainActivity", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startMainActivity", "(Landroid/content/ComponentName;Landroid/os/UserHandle;Landroid/graphics/Rect;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#startPackageInstallerSessionDetailsActivity(android.content.pm.PackageInstaller.SessionInfo,android.graphics.Rect,android.os.Bundle)"/>
@@ -558,7 +558,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void StartPackageInstallerSessionDetailsActivity(Android.Content.Pm.PackageInstaller.SessionInfo arg0, Android.Graphics.Rect arg1, Android.Os.Bundle arg2)
         {
-            IExecute("startPackageInstallerSessionDetailsActivity", arg0, arg1, arg2);
+            IExecuteWithSignature("startPackageInstallerSessionDetailsActivity", "(Landroid/content/pm/PackageInstaller$SessionInfo;Landroid/graphics/Rect;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#startShortcut(android.content.pm.ShortcutInfo,android.graphics.Rect,android.os.Bundle)"/>
@@ -568,7 +568,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void StartShortcut(Android.Content.Pm.ShortcutInfo arg0, Android.Graphics.Rect arg1, Android.Os.Bundle arg2)
         {
-            IExecute("startShortcut", arg0, arg1, arg2);
+            IExecuteWithSignature("startShortcut", "(Landroid/content/pm/ShortcutInfo;Landroid/graphics/Rect;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#startShortcut(java.lang.String,java.lang.String,android.graphics.Rect,android.os.Bundle,android.os.UserHandle)"/>
@@ -580,7 +580,7 @@ namespace Android.Content.Pm
         /// <param name="arg4"><see cref="Android.Os.UserHandle"/></param>
         public void StartShortcut(Java.Lang.String arg0, Java.Lang.String arg1, Android.Graphics.Rect arg2, Android.Os.Bundle arg3, Android.Os.UserHandle arg4)
         {
-            IExecute("startShortcut", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("startShortcut", "(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Rect;Landroid/os/Bundle;Landroid/os/UserHandle;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#unregisterCallback(android.content.pm.LauncherApps.Callback)"/>
@@ -598,29 +598,29 @@ namespace Android.Content.Pm
         {
             IExecuteWithSignature("unregisterPackageInstallerSessionCallback", "(Landroid/content/pm/PackageInstaller$SessionCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ArchiveCompatibilityParams implementation
         public partial class ArchiveCompatibilityParams
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ArchiveCompatibilityParams.html#setEnableIconOverlay(boolean)"/>
@@ -638,13 +638,13 @@ namespace Android.Content.Pm
             {
                 IExecuteWithSignature("setEnableUnarchivalConfirmation", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -653,21 +653,21 @@ namespace Android.Content.Pm
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackageAdded(java.lang.String,android.os.UserHandle)"/>
@@ -676,7 +676,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
             public void OnPackageAdded(Java.Lang.String arg0, Android.Os.UserHandle arg1)
             {
-                IExecute("onPackageAdded", arg0, arg1);
+                IExecuteWithSignature("onPackageAdded", "(Ljava/lang/String;Landroid/os/UserHandle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackageChanged(java.lang.String,android.os.UserHandle)"/>
@@ -685,7 +685,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
             public void OnPackageChanged(Java.Lang.String arg0, Android.Os.UserHandle arg1)
             {
-                IExecute("onPackageChanged", arg0, arg1);
+                IExecuteWithSignature("onPackageChanged", "(Ljava/lang/String;Landroid/os/UserHandle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackageRemoved(java.lang.String,android.os.UserHandle)"/>
@@ -694,7 +694,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
             public void OnPackageRemoved(Java.Lang.String arg0, Android.Os.UserHandle arg1)
             {
-                IExecute("onPackageRemoved", arg0, arg1);
+                IExecuteWithSignature("onPackageRemoved", "(Ljava/lang/String;Landroid/os/UserHandle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackagesAvailable(java.lang.String[],android.os.UserHandle,boolean)"/>
@@ -704,7 +704,7 @@ namespace Android.Content.Pm
             /// <param name="arg2"><see cref="bool"/></param>
             public void OnPackagesAvailable(Java.Lang.String[] arg0, Android.Os.UserHandle arg1, bool arg2)
             {
-                IExecute("onPackagesAvailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onPackagesAvailable", "([Ljava/lang/String;Landroid/os/UserHandle;Z)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackagesUnavailable(java.lang.String[],android.os.UserHandle,boolean)"/>
@@ -714,7 +714,7 @@ namespace Android.Content.Pm
             /// <param name="arg2"><see cref="bool"/></param>
             public void OnPackagesUnavailable(Java.Lang.String[] arg0, Android.Os.UserHandle arg1, bool arg2)
             {
-                IExecute("onPackagesUnavailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onPackagesUnavailable", "([Ljava/lang/String;Landroid/os/UserHandle;Z)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackageLoadingProgressChanged(java.lang.String,android.os.UserHandle,float)"/>
@@ -724,7 +724,7 @@ namespace Android.Content.Pm
             /// <param name="arg2"><see cref="float"/></param>
             public void OnPackageLoadingProgressChanged(Java.Lang.String arg0, Android.Os.UserHandle arg1, float arg2)
             {
-                IExecute("onPackageLoadingProgressChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onPackageLoadingProgressChanged", "(Ljava/lang/String;Landroid/os/UserHandle;F)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackagesSuspended(java.lang.String[],android.os.UserHandle,android.os.Bundle)"/>
@@ -735,7 +735,7 @@ namespace Android.Content.Pm
             [global::System.Obsolete()]
             public void OnPackagesSuspended(Java.Lang.String[] arg0, Android.Os.UserHandle arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onPackagesSuspended", arg0, arg1, arg2);
+                IExecuteWithSignature("onPackagesSuspended", "([Ljava/lang/String;Landroid/os/UserHandle;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackagesSuspended(java.lang.String[],android.os.UserHandle)"/>
@@ -744,7 +744,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
             public void OnPackagesSuspended(Java.Lang.String[] arg0, Android.Os.UserHandle arg1)
             {
-                IExecute("onPackagesSuspended", arg0, arg1);
+                IExecuteWithSignature("onPackagesSuspended", "([Ljava/lang/String;Landroid/os/UserHandle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackagesUnsuspended(java.lang.String[],android.os.UserHandle)"/>
@@ -753,7 +753,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
             public void OnPackagesUnsuspended(Java.Lang.String[] arg0, Android.Os.UserHandle arg1)
             {
-                IExecute("onPackagesUnsuspended", arg0, arg1);
+                IExecuteWithSignature("onPackagesUnsuspended", "([Ljava/lang/String;Landroid/os/UserHandle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onShortcutsChanged(java.lang.String,java.util.List,android.os.UserHandle)"/>
@@ -763,15 +763,15 @@ namespace Android.Content.Pm
             /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
             public void OnShortcutsChanged(Java.Lang.String arg0, Java.Util.List<Android.Content.Pm.ShortcutInfo> arg1, Android.Os.UserHandle arg2)
             {
-                IExecute("onShortcutsChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onShortcutsChanged", "(Ljava/lang/String;Ljava/util/List;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -780,13 +780,13 @@ namespace Android.Content.Pm
         public partial class PinItemRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#CREATOR"/>
@@ -806,13 +806,13 @@ namespace Android.Content.Pm
             public static int REQUEST_TYPE_SHORTCUT { get { if (!_REQUEST_TYPE_SHORTCUTReady) { _REQUEST_TYPE_SHORTCUTContent = SGetField<int>(LocalBridgeClazz, "REQUEST_TYPE_SHORTCUT"); _REQUEST_TYPE_SHORTCUTReady = true; } return _REQUEST_TYPE_SHORTCUTContent; } }
             private static int _REQUEST_TYPE_SHORTCUTContent = default;
             private static bool _REQUEST_TYPE_SHORTCUTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getAppWidgetProviderInfo(android.content.Context)"/>
@@ -887,15 +887,15 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -904,13 +904,13 @@ namespace Android.Content.Pm
         public partial class ShortcutQuery
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ShortcutQuery.html#FLAG_GET_KEY_FIELDS_ONLY"/>
@@ -948,13 +948,13 @@ namespace Android.Content.Pm
             public static int FLAG_MATCH_PINNED_BY_ANY_LAUNCHER { get { if (!_FLAG_MATCH_PINNED_BY_ANY_LAUNCHERReady) { _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERContent = SGetField<int>(LocalBridgeClazz, "FLAG_MATCH_PINNED_BY_ANY_LAUNCHER"); _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERReady = true; } return _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERContent; } }
             private static int _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERContent = default;
             private static bool _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ShortcutQuery.html#setActivity(android.content.ComponentName)"/>
@@ -1010,20 +1010,20 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<Android.Content.Pm.LauncherApps.ShortcutQuery>("setShortcutIds", "(Ljava/util/List;)Landroid/content/pm/LauncherApps$ShortcutQuery;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

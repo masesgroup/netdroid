@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MessageFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Field declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Field(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -145,17 +145,17 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#autoQuoteApostrophe(java.lang.String)"/>
@@ -174,7 +174,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#format(java.lang.String,java.util.Map)"/>
@@ -184,11 +184,11 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#getApostropheMode()"/>
@@ -223,7 +223,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(object[] arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "([Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#format(java.util.Map,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -234,7 +234,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Java.Util.Map<Java.Lang.String, object> arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Ljava/util/Map;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -244,7 +244,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="object"/></returns>
         public object[] Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecuteArray<object>("parse", arg0, arg1);
+            return IExecuteWithSignatureArray<object>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)[Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#parse(java.lang.String)"/>
@@ -305,7 +305,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, object> ParseToMap(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Java.Util.Map<Java.Lang.String, object>>("parseToMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("parseToMap", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#parseToMap(java.lang.String)"/>
@@ -332,7 +332,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Android.Icu.Text.MessagePattern.ApostropheMode"/></param>
         public void ApplyPattern(Java.Lang.String arg0, Android.Icu.Text.MessagePattern.ApostropheMode arg1)
         {
-            IExecute("applyPattern", arg0, arg1);
+            IExecuteWithSignature("applyPattern", "(Ljava/lang/String;Landroid/icu/text/MessagePattern$ApostropheMode;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#applyPattern(java.lang.String)"/>
@@ -349,7 +349,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormat(int arg0, Java.Text.Format arg1)
         {
-            IExecute("setFormat", arg0, arg1);
+            IExecuteWithSignature("setFormat", "(ILjava/text/Format;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
@@ -358,7 +358,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormatByArgumentIndex(int arg0, Java.Text.Format arg1)
         {
-            IExecute("setFormatByArgumentIndex", arg0, arg1);
+            IExecuteWithSignature("setFormatByArgumentIndex", "(ILjava/text/Format;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormatByArgumentName(java.lang.String,java.text.Format)"/>
@@ -367,7 +367,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormatByArgumentName(Java.Lang.String arg0, Java.Text.Format arg1)
         {
-            IExecute("setFormatByArgumentName", arg0, arg1);
+            IExecuteWithSignature("setFormatByArgumentName", "(Ljava/lang/String;Ljava/text/Format;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.html#setFormats(java.text.Format[])"/>
@@ -409,21 +409,21 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Field implementation
         public partial class Field
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/MessageFormat.Field.html#ARGUMENT"/>
@@ -431,28 +431,28 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.MessageFormat.Field ARGUMENT { get { if (!_ARGUMENTReady) { _ARGUMENTContent = SGetField<Android.Icu.Text.MessageFormat.Field>(LocalBridgeClazz, "ARGUMENT"); _ARGUMENTReady = true; } return _ARGUMENTContent; } }
             private static Android.Icu.Text.MessageFormat.Field _ARGUMENTContent = default;
             private static bool _ARGUMENTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

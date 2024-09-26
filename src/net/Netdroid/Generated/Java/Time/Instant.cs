@@ -40,10 +40,10 @@ namespace Java.Time
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Instant(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Java.Time
     public partial class Instant : Java.Time.Temporal.ITemporal, Java.Time.Temporal.ITemporalAdjuster, Java.Lang.IComparable<Java.Time.Instant>, Java.Io.ISerializable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.Instant"/> to <see cref="Java.Time.Temporal.Temporal"/>
@@ -94,9 +94,9 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.Instant"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Instant t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Instant.html#EPOCH"/>
@@ -116,9 +116,9 @@ namespace Java.Time
         public static Java.Time.Instant MIN { get { if (!_MINReady) { _MINContent = SGetField<Java.Time.Instant>(LocalBridgeClazz, "MIN"); _MINReady = true; } return _MINContent; } }
         private static Java.Time.Instant _MINContent = default;
         private static bool _MINReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Instant.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -163,7 +163,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant OfEpochSecond(long arg0, long arg1)
         {
-            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", "(JJ)Ljava/time/Instant;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Instant.html#ofEpochSecond(long)"/>
@@ -183,9 +183,9 @@ namespace Java.Time
         {
             return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/Instant;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Instant.html#query(java.time.temporal.TemporalQuery)"/>
@@ -366,7 +366,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("minus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Instant.html#plus(java.time.temporal.TemporalAmount)"/>
@@ -385,7 +385,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("plus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Instant.html#with(java.time.temporal.TemporalAdjuster)"/>
@@ -404,7 +404,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalField;J)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Instant.html#range(java.time.temporal.TemporalField)"/>
@@ -457,15 +457,15 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<long>("until", arg0, arg1);
+            return IExecuteWithSignature<long>("until", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

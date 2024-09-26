@@ -40,10 +40,10 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IsoFields(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Temporal
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Time.Temporal
     public partial class IsoFields
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/IsoFields.html#DAY_OF_QUARTER"/>
@@ -118,21 +118,21 @@ namespace Java.Time.Temporal
         public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS { get { if (!_WEEK_BASED_YEARSReady) { _WEEK_BASED_YEARSContent = SGetField<Java.Time.Temporal.TemporalUnit>(LocalBridgeClazz, "WEEK_BASED_YEARS"); _WEEK_BASED_YEARSReady = true; } return _WEEK_BASED_YEARSContent; } }
         private static Java.Time.Temporal.TemporalUnit _WEEK_BASED_YEARSContent = default;
         private static bool _WEEK_BASED_YEARSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

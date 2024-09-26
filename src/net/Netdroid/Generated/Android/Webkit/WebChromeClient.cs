@@ -40,10 +40,10 @@ namespace Android.Webkit
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WebChromeClient(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CustomViewCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Webkit
             /// </summary>
             [global::System.Obsolete("CustomViewCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CustomViewCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Webkit
             /// </summary>
             [global::System.Obsolete("FileChooserParams class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public FileChooserParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -168,21 +168,21 @@ namespace Android.Webkit
     public partial class WebChromeClient
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#getDefaultVideoPoster()"/>
@@ -219,7 +219,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool OnCreateWindow(Android.Webkit.WebView arg0, bool arg1, bool arg2, Android.Os.Message arg3)
         {
-            return IExecute<bool>("onCreateWindow", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onCreateWindow", "(Landroid/webkit/WebView;ZZLandroid/os/Message;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onJsAlert(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult)"/>
@@ -231,7 +231,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool OnJsAlert(Android.Webkit.WebView arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Webkit.JsResult arg3)
         {
-            return IExecute<bool>("onJsAlert", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onJsAlert", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onJsBeforeUnload(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult)"/>
@@ -243,7 +243,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool OnJsBeforeUnload(Android.Webkit.WebView arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Webkit.JsResult arg3)
         {
-            return IExecute<bool>("onJsBeforeUnload", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onJsBeforeUnload", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onJsConfirm(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult)"/>
@@ -255,7 +255,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool OnJsConfirm(Android.Webkit.WebView arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Webkit.JsResult arg3)
         {
-            return IExecute<bool>("onJsConfirm", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onJsConfirm", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onJsPrompt(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsPromptResult)"/>
@@ -268,7 +268,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool OnJsPrompt(Android.Webkit.WebView arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Android.Webkit.JsPromptResult arg4)
         {
-            return IExecute<bool>("onJsPrompt", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("onJsPrompt", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onJsTimeout()"/>
@@ -288,7 +288,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool OnShowFileChooser(Android.Webkit.WebView arg0, Android.Webkit.ValueCallback<Android.Net.Uri[]> arg1, Android.Webkit.WebChromeClient.FileChooserParams arg2)
         {
-            return IExecute<bool>("onShowFileChooser", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onShowFileChooser", "(Landroid/webkit/WebView;Landroid/webkit/ValueCallback;Landroid/webkit/WebChromeClient$FileChooserParams;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#getVisitedHistory(android.webkit.ValueCallback)"/>
@@ -315,7 +315,7 @@ namespace Android.Webkit
         [global::System.Obsolete()]
         public void OnConsoleMessage(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("onConsoleMessage", arg0, arg1, arg2);
+            IExecuteWithSignature("onConsoleMessage", "(Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage.QuotaUpdater)"/>
@@ -329,7 +329,7 @@ namespace Android.Webkit
         [global::System.Obsolete()]
         public void OnExceededDatabaseQuota(Java.Lang.String arg0, Java.Lang.String arg1, long arg2, long arg3, long arg4, Android.Webkit.WebStorage.QuotaUpdater arg5)
         {
-            IExecute("onExceededDatabaseQuota", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("onExceededDatabaseQuota", "(Ljava/lang/String;Ljava/lang/String;JJJLandroid/webkit/WebStorage$QuotaUpdater;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onGeolocationPermissionsHidePrompt()"/>
@@ -345,7 +345,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Android.Webkit.GeolocationPermissions.Callback"/></param>
         public void OnGeolocationPermissionsShowPrompt(Java.Lang.String arg0, Android.Webkit.GeolocationPermissions.Callback arg1)
         {
-            IExecute("onGeolocationPermissionsShowPrompt", arg0, arg1);
+            IExecuteWithSignature("onGeolocationPermissionsShowPrompt", "(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onHideCustomView()"/>
@@ -377,7 +377,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="int"/></param>
         public void OnProgressChanged(Android.Webkit.WebView arg0, int arg1)
         {
-            IExecute("onProgressChanged", arg0, arg1);
+            IExecuteWithSignature("onProgressChanged", "(Landroid/webkit/WebView;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onReceivedIcon(android.webkit.WebView,android.graphics.Bitmap)"/>
@@ -386,7 +386,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         public void OnReceivedIcon(Android.Webkit.WebView arg0, Android.Graphics.Bitmap arg1)
         {
-            IExecute("onReceivedIcon", arg0, arg1);
+            IExecuteWithSignature("onReceivedIcon", "(Landroid/webkit/WebView;Landroid/graphics/Bitmap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onReceivedTitle(android.webkit.WebView,java.lang.String)"/>
@@ -395,7 +395,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnReceivedTitle(Android.Webkit.WebView arg0, Java.Lang.String arg1)
         {
-            IExecute("onReceivedTitle", arg0, arg1);
+            IExecuteWithSignature("onReceivedTitle", "(Landroid/webkit/WebView;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onReceivedTouchIconUrl(android.webkit.WebView,java.lang.String,boolean)"/>
@@ -405,7 +405,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="bool"/></param>
         public void OnReceivedTouchIconUrl(Android.Webkit.WebView arg0, Java.Lang.String arg1, bool arg2)
         {
-            IExecute("onReceivedTouchIconUrl", arg0, arg1, arg2);
+            IExecuteWithSignature("onReceivedTouchIconUrl", "(Landroid/webkit/WebView;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onRequestFocus(android.webkit.WebView)"/>
@@ -422,7 +422,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Android.Webkit.WebChromeClient.CustomViewCallback"/></param>
         public void OnShowCustomView(Android.View.View arg0, Android.Webkit.WebChromeClient.CustomViewCallback arg1)
         {
-            IExecute("onShowCustomView", arg0, arg1);
+            IExecuteWithSignature("onShowCustomView", "(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onShowCustomView(android.view.View,int,android.webkit.WebChromeClient.CustomViewCallback)"/>
@@ -433,31 +433,31 @@ namespace Android.Webkit
         [global::System.Obsolete()]
         public void OnShowCustomView(Android.View.View arg0, int arg1, Android.Webkit.WebChromeClient.CustomViewCallback arg2)
         {
-            IExecute("onShowCustomView", arg0, arg1, arg2);
+            IExecuteWithSignature("onShowCustomView", "(Landroid/view/View;ILandroid/webkit/WebChromeClient$CustomViewCallback;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CustomViewCallback implementation
         public partial class CustomViewCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.CustomViewCallback.html#onCustomViewHidden()"/>
@@ -466,13 +466,13 @@ namespace Android.Webkit
             {
                 IExecuteWithSignature("onCustomViewHidden", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -481,13 +481,13 @@ namespace Android.Webkit
         public partial class FileChooserParams
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#MODE_OPEN"/>
@@ -507,9 +507,9 @@ namespace Android.Webkit
             public static int MODE_SAVE { get { if (!_MODE_SAVEReady) { _MODE_SAVEContent = SGetField<int>(LocalBridgeClazz, "MODE_SAVE"); _MODE_SAVEReady = true; } return _MODE_SAVEContent; } }
             private static int _MODE_SAVEContent = default;
             private static bool _MODE_SAVEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#parseResult(int,android.content.Intent)"/>
@@ -519,11 +519,11 @@ namespace Android.Webkit
             /// <returns><see cref="Android.Net.Uri"/></returns>
             public static Android.Net.Uri[] ParseResult(int arg0, Android.Content.Intent arg1)
             {
-                return SExecuteArray<Android.Net.Uri>(LocalBridgeClazz, "parseResult", arg0, arg1);
+                return SExecuteWithSignatureArray<Android.Net.Uri>(LocalBridgeClazz, "parseResult", "(ILandroid/content/Intent;)[Landroid/net/Uri;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#createIntent()"/>
@@ -573,20 +573,20 @@ namespace Android.Webkit
             {
                 return IExecuteWithSignatureArray<Java.Lang.String>("getAcceptTypes", "()[Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

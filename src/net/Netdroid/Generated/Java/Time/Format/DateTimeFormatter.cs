@@ -40,10 +40,10 @@ namespace Java.Time.Format
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateTimeFormatter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Format
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Time.Format
     public partial class DateTimeFormatter
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#BASIC_ISO_DATE"/>
@@ -172,9 +172,9 @@ namespace Java.Time.Format
         public static Java.Time.Format.DateTimeFormatter RFC_1123_DATE_TIME { get { if (!_RFC_1123_DATE_TIMEReady) { _RFC_1123_DATE_TIMEContent = SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "RFC_1123_DATE_TIME"); _RFC_1123_DATE_TIMEReady = true; } return _RFC_1123_DATE_TIMEContent; } }
         private static Java.Time.Format.DateTimeFormatter _RFC_1123_DATE_TIMEContent = default;
         private static bool _RFC_1123_DATE_TIMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#parsedLeapSecond()"/>
@@ -209,7 +209,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfLocalizedDateTime(Java.Time.Format.FormatStyle arg0, Java.Time.Format.FormatStyle arg1)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofLocalizedDateTime", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofLocalizedDateTime", "(Ljava/time/format/FormatStyle;Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#ofLocalizedDateTime(java.time.format.FormatStyle)"/>
@@ -237,7 +237,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfPattern(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofPattern", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofPattern", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#ofPattern(java.lang.String)"/>
@@ -248,9 +248,9 @@ namespace Java.Time.Format
         {
             return SExecuteWithSignature<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofPattern", "(Ljava/lang/String;)Ljava/time/format/DateTimeFormatter;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#parse(java.lang.CharSequence,java.time.temporal.TemporalQuery)"/>
@@ -261,7 +261,7 @@ namespace Java.Time.Format
         /// <returns><typeparamref name="T"/></returns>
         public T Parse<T>(Java.Lang.CharSequence arg0, Java.Time.Temporal.TemporalQuery<T> arg1)
         {
-            return IExecute<T>("parse", arg0, arg1);
+            return IExecuteWithSignature<T>("parse", "(Ljava/lang/CharSequence;Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#format(java.time.temporal.TemporalAccessor)"/>
@@ -393,7 +393,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
         public Java.Time.Temporal.TemporalAccessor Parse(Java.Lang.CharSequence arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Java.Time.Temporal.TemporalAccessor>("parse", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.TemporalAccessor>("parse", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#parse(java.lang.CharSequence)"/>
@@ -412,7 +412,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
         public Java.Time.Temporal.TemporalAccessor ParseBest(Java.Lang.CharSequence arg0, params Java.Time.Temporal.TemporalQuery<object>[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Time.Temporal.TemporalAccessor>("parseBest", arg0); else return IExecute<Java.Time.Temporal.TemporalAccessor>("parseBest", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Time.Temporal.TemporalAccessor>("parseBest", "(Ljava/lang/CharSequence;[Ljava/time/temporal/TemporalQuery;)Ljava/time/temporal/TemporalAccessor;", arg0); else return IExecuteWithSignature<Java.Time.Temporal.TemporalAccessor>("parseBest", "(Ljava/lang/CharSequence;[Ljava/time/temporal/TemporalQuery;)Ljava/time/temporal/TemporalAccessor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#parseUnresolved(java.lang.CharSequence,java.text.ParsePosition)"/>
@@ -422,7 +422,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
         public Java.Time.Temporal.TemporalAccessor ParseUnresolved(Java.Lang.CharSequence arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Java.Time.Temporal.TemporalAccessor>("parseUnresolved", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.TemporalAccessor>("parseUnresolved", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DateTimeFormatter.html#getZone()"/>
@@ -455,15 +455,15 @@ namespace Java.Time.Format
         /// <param name="arg1"><see cref="Java.Lang.Appendable"/></param>
         public void FormatTo(Java.Time.Temporal.TemporalAccessor arg0, Java.Lang.Appendable arg1)
         {
-            IExecute("formatTo", arg0, arg1);
+            IExecuteWithSignature("formatTo", "(Ljava/time/temporal/TemporalAccessor;Ljava/lang/Appendable;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

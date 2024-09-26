@@ -42,10 +42,10 @@ namespace Java.Time.Chrono
         /// </summary>
         [global::System.Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoPeriod(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Time.Chrono
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Time.Chrono
     public partial interface IChronoPeriod : Java.Time.Temporal.ITemporalAmount
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,17 +94,17 @@ namespace Java.Time.Chrono
     public partial class ChronoPeriod : Java.Time.Chrono.IChronoPeriod
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#between(java.time.chrono.ChronoLocalDate,java.time.chrono.ChronoLocalDate)"/>
@@ -114,11 +114,11 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public static Java.Time.Chrono.ChronoPeriod Between(Java.Time.Chrono.ChronoLocalDate arg0, Java.Time.Chrono.ChronoLocalDate arg1)
         {
-            return SExecute<Java.Time.Chrono.ChronoPeriod>(LocalBridgeClazz, "between", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>(LocalBridgeClazz, "between", "(Ljava/time/chrono/ChronoLocalDate;Ljava/time/chrono/ChronoLocalDate;)Ljava/time/chrono/ChronoPeriod;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#getChronology()"/>
@@ -222,13 +222,13 @@ namespace Java.Time.Chrono
         {
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("negated", "()Ljava/time/chrono/ChronoPeriod;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

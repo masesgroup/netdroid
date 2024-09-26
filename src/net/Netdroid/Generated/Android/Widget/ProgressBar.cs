@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ProgressBar(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -112,21 +112,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateTintList()"/>
@@ -455,7 +455,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetInterpolator(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setInterpolator", arg0, arg1);
+            IExecuteWithSignature("setInterpolator", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setInterpolator(android.view.animation.Interpolator)"/>
@@ -504,7 +504,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetProgress(int arg0, bool arg1)
         {
-            IExecute("setProgress", arg0, arg1);
+            IExecuteWithSignature("setProgress", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressBackgroundTintBlendMode(android.graphics.BlendMode)"/>
@@ -594,13 +594,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setSecondaryProgressTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

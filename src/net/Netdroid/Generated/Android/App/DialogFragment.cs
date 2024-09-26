@@ -41,10 +41,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DialogFragment(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.App
     public partial class DialogFragment
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#STYLE_NO_FRAME"/>
@@ -111,13 +111,13 @@ namespace Android.App
         public static int STYLE_NORMAL { get { if (!_STYLE_NORMALReady) { _STYLE_NORMALContent = SGetField<int>(LocalBridgeClazz, "STYLE_NORMAL"); _STYLE_NORMALReady = true; } return _STYLE_NORMALContent; } }
         private static int _STYLE_NORMALContent = default;
         private static bool _STYLE_NORMALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#getDialog()"/>
@@ -174,7 +174,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int Show(Android.App.FragmentTransaction arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("show", arg0, arg1);
+            return IExecuteWithSignature<int>("show", "(Landroid/app/FragmentTransaction;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#dismiss()"/>
@@ -236,7 +236,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetStyle(int arg0, int arg1)
         {
-            IExecute("setStyle", arg0, arg1);
+            IExecuteWithSignature("setStyle", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#show(android.app.FragmentManager,java.lang.String)"/>
@@ -246,15 +246,15 @@ namespace Android.App
         [global::System.Obsolete()]
         public void Show(Android.App.FragmentManager arg0, Java.Lang.String arg1)
         {
-            IExecute("show", arg0, arg1);
+            IExecuteWithSignature("show", "(Landroid/app/FragmentManager;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

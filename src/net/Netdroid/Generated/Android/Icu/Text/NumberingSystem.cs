@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NumberingSystem(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Icu.Text
     public partial class NumberingSystem
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#LATIN"/>
@@ -88,9 +88,9 @@ namespace Android.Icu.Text
         public static Android.Icu.Text.NumberingSystem LATIN { get { if (!_LATINReady) { _LATINContent = SGetField<Android.Icu.Text.NumberingSystem>(LocalBridgeClazz, "LATIN"); _LATINReady = true; } return _LATINContent; } }
         private static Android.Icu.Text.NumberingSystem _LATINContent = default;
         private static bool _LATINReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getInstance()"/>
@@ -118,7 +118,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.NumberingSystem"/></returns>
         public static Android.Icu.Text.NumberingSystem GetInstance(int arg0, bool arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Icu.Text.NumberingSystem>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.NumberingSystem>(LocalBridgeClazz, "getInstance", "(IZLjava/lang/String;)Landroid/icu/text/NumberingSystem;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#getInstance(java.util.Locale)"/>
@@ -155,9 +155,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getAvailableNames", "()[Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberingSystem.html#isAlgorithmic()"/>
@@ -191,13 +191,13 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

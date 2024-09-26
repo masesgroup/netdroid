@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MeasureFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region FormatWidth declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FormatWidth(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,17 +119,17 @@ namespace Android.Icu.Text
     public partial class MeasureFormat
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getCurrencyFormat()"/>
@@ -166,7 +166,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.MeasureFormat"/></returns>
         public static Android.Icu.Text.MeasureFormat GetInstance(Android.Icu.Util.ULocale arg0, Android.Icu.Text.MeasureFormat.FormatWidth arg1, Android.Icu.Text.NumberFormat arg2)
         {
-            return SExecute<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", "(Landroid/icu/util/ULocale;Landroid/icu/text/MeasureFormat$FormatWidth;Landroid/icu/text/NumberFormat;)Landroid/icu/text/MeasureFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getInstance(android.icu.util.ULocale,android.icu.text.MeasureFormat.FormatWidth)"/>
@@ -176,7 +176,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.MeasureFormat"/></returns>
         public static Android.Icu.Text.MeasureFormat GetInstance(Android.Icu.Util.ULocale arg0, Android.Icu.Text.MeasureFormat.FormatWidth arg1)
         {
-            return SExecute<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", "(Landroid/icu/util/ULocale;Landroid/icu/text/MeasureFormat$FormatWidth;)Landroid/icu/text/MeasureFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getInstance(java.util.Locale,android.icu.text.MeasureFormat.FormatWidth,android.icu.text.NumberFormat)"/>
@@ -187,7 +187,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.MeasureFormat"/></returns>
         public static Android.Icu.Text.MeasureFormat GetInstance(Java.Util.Locale arg0, Android.Icu.Text.MeasureFormat.FormatWidth arg1, Android.Icu.Text.NumberFormat arg2)
         {
-            return SExecute<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;Landroid/icu/text/MeasureFormat$FormatWidth;Landroid/icu/text/NumberFormat;)Landroid/icu/text/MeasureFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getInstance(java.util.Locale,android.icu.text.MeasureFormat.FormatWidth)"/>
@@ -197,11 +197,11 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.MeasureFormat"/></returns>
         public static Android.Icu.Text.MeasureFormat GetInstance(Java.Util.Locale arg0, Android.Icu.Text.MeasureFormat.FormatWidth arg1)
         {
-            return SExecute<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.MeasureFormat>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;Landroid/icu/text/MeasureFormat$FormatWidth;)Landroid/icu/text/MeasureFormat;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#getWidth()"/>
@@ -255,7 +255,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuilder"/></returns>
         public Java.Lang.StringBuilder FormatMeasurePerUnit(Android.Icu.Util.Measure arg0, Android.Icu.Util.MeasureUnit arg1, Java.Lang.StringBuilder arg2, Java.Text.FieldPosition arg3)
         {
-            return IExecute<Java.Lang.StringBuilder>("formatMeasurePerUnit", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.StringBuilder>("formatMeasurePerUnit", "(Landroid/icu/util/Measure;Landroid/icu/util/MeasureUnit;Ljava/lang/StringBuilder;Ljava/text/FieldPosition;)Ljava/lang/StringBuilder;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.html#formatMeasures(java.lang.StringBuilder,java.text.FieldPosition,android.icu.util.Measure[])"/>
@@ -266,23 +266,23 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuilder"/></returns>
         public Java.Lang.StringBuilder FormatMeasures(Java.Lang.StringBuilder arg0, Java.Text.FieldPosition arg1, params Android.Icu.Util.Measure[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Lang.StringBuilder>("formatMeasures", arg0, arg1); else return IExecute<Java.Lang.StringBuilder>("formatMeasures", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Lang.StringBuilder>("formatMeasures", "(Ljava/lang/StringBuilder;Ljava/text/FieldPosition;[Landroid/icu/util/Measure;)Ljava/lang/StringBuilder;", arg0, arg1); else return IExecuteWithSignature<Java.Lang.StringBuilder>("formatMeasures", "(Ljava/lang/StringBuilder;Ljava/text/FieldPosition;[Landroid/icu/util/Measure;)Ljava/lang/StringBuilder;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region FormatWidth implementation
         public partial class FormatWidth
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.FormatWidth.html#NARROW"/>
@@ -308,9 +308,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.MeasureFormat.FormatWidth WIDE { get { if (!_WIDEReady) { _WIDEContent = SGetField<Android.Icu.Text.MeasureFormat.FormatWidth>(LocalBridgeClazz, "WIDE"); _WIDEReady = true; } return _WIDEContent; } }
             private static Android.Icu.Text.MeasureFormat.FormatWidth _WIDEContent = default;
             private static bool _WIDEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/MeasureFormat.FormatWidth.html#valueOf(java.lang.String)"/>
@@ -329,24 +329,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.MeasureFormat.FormatWidth>(LocalBridgeClazz, "values", "()[Landroid/icu/text/MeasureFormat$FormatWidth;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

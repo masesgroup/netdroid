@@ -40,10 +40,10 @@ namespace Android.Bluetooth.Le
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothLeScanner(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth.Le
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Bluetooth.Le
     public partial class BluetoothLeScanner
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeScanner.html#EXTRA_CALLBACK_TYPE"/>
@@ -100,13 +100,13 @@ namespace Android.Bluetooth.Le
         public static Java.Lang.String EXTRA_LIST_SCAN_RESULT { get { if (!_EXTRA_LIST_SCAN_RESULTReady) { _EXTRA_LIST_SCAN_RESULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LIST_SCAN_RESULT"); _EXTRA_LIST_SCAN_RESULTReady = true; } return _EXTRA_LIST_SCAN_RESULTContent; } }
         private static Java.Lang.String _EXTRA_LIST_SCAN_RESULTContent = default;
         private static bool _EXTRA_LIST_SCAN_RESULTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeScanner.html#startScan(java.util.List,android.bluetooth.le.ScanSettings,android.app.PendingIntent)"/>
@@ -117,7 +117,7 @@ namespace Android.Bluetooth.Le
         /// <returns><see cref="int"/></returns>
         public int StartScan(Java.Util.List<Android.Bluetooth.Le.ScanFilter> arg0, Android.Bluetooth.Le.ScanSettings arg1, Android.App.PendingIntent arg2)
         {
-            return IExecute<int>("startScan", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("startScan", "(Ljava/util/List;Landroid/bluetooth/le/ScanSettings;Landroid/app/PendingIntent;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeScanner.html#flushPendingScanResults(android.bluetooth.le.ScanCallback)"/>
@@ -143,7 +143,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg2"><see cref="Android.Bluetooth.Le.ScanCallback"/></param>
         public void StartScan(Java.Util.List<Android.Bluetooth.Le.ScanFilter> arg0, Android.Bluetooth.Le.ScanSettings arg1, Android.Bluetooth.Le.ScanCallback arg2)
         {
-            IExecute("startScan", arg0, arg1, arg2);
+            IExecuteWithSignature("startScan", "(Ljava/util/List;Landroid/bluetooth/le/ScanSettings;Landroid/bluetooth/le/ScanCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeScanner.html#stopScan(android.app.PendingIntent)"/>
@@ -161,13 +161,13 @@ namespace Android.Bluetooth.Le
         {
             IExecuteWithSignature("stopScan", "(Landroid/bluetooth/le/ScanCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

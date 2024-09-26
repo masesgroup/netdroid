@@ -42,10 +42,10 @@ namespace Java.Nio.Channels
         /// </summary>
         [global::System.Obsolete("AsynchronousSocketChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AsynchronousSocketChannel(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio.Channels
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Nio.Channels
     public partial class AsynchronousSocketChannel : Java.Nio.Channels.IAsynchronousByteChannel, Java.Nio.Channels.INetworkChannel
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.Channels.AsynchronousSocketChannel"/> to <see cref="Java.Nio.Channels.AsynchronousByteChannel"/>
@@ -88,13 +88,13 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.AsynchronousSocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#open()"/>
@@ -115,9 +115,9 @@ namespace Java.Nio.Channels
         {
             return SExecuteWithSignature<Java.Nio.Channels.AsynchronousSocketChannel>(LocalBridgeClazz, "open", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousSocketChannel;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#connect(java.net.SocketAddress,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -129,7 +129,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
         public void Connect<A, Arg2objectSuperA>(Java.Net.SocketAddress arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Void, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
         {
-            IExecute("connect", arg0, arg1, arg2);
+            IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#read(java.nio.ByteBuffer,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -143,7 +143,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
         public void Read<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg4objectSuperA> arg4) where Arg4objectSuperA : A
         {
-            IExecute("read", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("read", "(Ljava/nio/ByteBuffer;JLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#read(java.nio.ByteBuffer[],int,int,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -159,7 +159,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg6objectSuperA"><typeparamref name="A"/></typeparam>
         public void Read<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<Java.Lang.Long, Arg6objectSuperA> arg6) where Arg6objectSuperA : A
         {
-            IExecute("read", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("read", "([Ljava/nio/ByteBuffer;IIJLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -173,7 +173,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
         public void Write<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg4objectSuperA> arg4) where Arg4objectSuperA : A
         {
-            IExecute("write", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("write", "(Ljava/nio/ByteBuffer;JLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer[],int,int,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -189,7 +189,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg6objectSuperA"><typeparamref name="A"/></typeparam>
         public void Write<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<Java.Lang.Long, Arg6objectSuperA> arg6) where Arg6objectSuperA : A
         {
-            IExecute("write", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("write", "([Ljava/nio/ByteBuffer;IIJLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#getLocalAddress()"/>
@@ -264,7 +264,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
         public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
         {
-            IExecute("read", arg0, arg1, arg2);
+            IExecuteWithSignature("read", "(Ljava/nio/ByteBuffer;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -276,7 +276,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
         public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
         {
-            IExecute("write", arg0, arg1, arg2);
+            IExecuteWithSignature("write", "(Ljava/nio/ByteBuffer;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousSocketChannel.html#provider()"/>
@@ -305,15 +305,15 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
         {
-            return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

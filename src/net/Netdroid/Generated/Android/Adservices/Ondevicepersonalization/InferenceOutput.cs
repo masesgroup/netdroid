@@ -40,10 +40,10 @@ namespace Android.Adservices.Ondevicepersonalization
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InferenceOutput(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Adservices.Ondevicepersonalization
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Adservices.Ondevicepersonalization
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,21 +119,21 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class InferenceOutput
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceOutput.html#getDataOutputs()"/>
@@ -143,29 +143,29 @@ namespace Android.Adservices.Ondevicepersonalization
         {
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, object>>("getDataOutputs", "()Ljava/util/Map;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceOutput.Builder.html#build()"/>
@@ -183,7 +183,7 @@ namespace Android.Adservices.Ondevicepersonalization
             /// <returns><see cref="Android.Adservices.Ondevicepersonalization.InferenceOutput.Builder"/></returns>
             public Android.Adservices.Ondevicepersonalization.InferenceOutput.Builder AddDataOutput(int arg0, object arg1)
             {
-                return IExecute<Android.Adservices.Ondevicepersonalization.InferenceOutput.Builder>("addDataOutput", arg0, arg1);
+                return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceOutput.Builder>("addDataOutput", "(ILjava/lang/Object;)Landroid/adservices/ondevicepersonalization/InferenceOutput$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceOutput.Builder.html#setDataOutputs(java.util.Map)"/>
@@ -194,20 +194,20 @@ namespace Android.Adservices.Ondevicepersonalization
             {
                 return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceOutput.Builder>("setDataOutputs", "(Ljava/util/Map;)Landroid/adservices/ondevicepersonalization/InferenceOutput$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

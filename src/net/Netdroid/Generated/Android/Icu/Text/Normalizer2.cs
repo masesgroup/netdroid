@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("Normalizer2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Normalizer2(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Mode declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Mode(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Android.Icu.Text
     public partial class Normalizer2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getInstance(java.io.InputStream,java.lang.String,android.icu.text.Normalizer2.Mode)"/>
@@ -143,7 +143,7 @@ namespace Android.Icu.Text
         [global::System.Obsolete()]
         public static Android.Icu.Text.Normalizer2 GetInstance(Java.Io.InputStream arg0, Java.Lang.String arg1, Android.Icu.Text.Normalizer2.Mode arg2)
         {
-            return SExecute<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getInstance", "(Ljava/io/InputStream;Ljava/lang/String;Landroid/icu/text/Normalizer2$Mode;)Landroid/icu/text/Normalizer2;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFCInstance()"/>
@@ -185,9 +185,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKDInstance", "()Landroid/icu/text/Normalizer2;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#quickCheck(java.lang.CharSequence)"/>
@@ -251,7 +251,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
         public Java.Lang.Appendable Normalize(Java.Lang.CharSequence arg0, Java.Lang.Appendable arg1)
         {
-            return IExecute<Java.Lang.Appendable>("normalize", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Appendable>("normalize", "(Ljava/lang/CharSequence;Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getDecomposition(int)"/>
@@ -270,7 +270,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuilder"/></returns>
         public Java.Lang.StringBuilder Append(Java.Lang.StringBuilder arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Java.Lang.StringBuilder>("append", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.StringBuilder>("append", "(Ljava/lang/StringBuilder;Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#normalize(java.lang.CharSequence,java.lang.StringBuilder)"/>
@@ -280,7 +280,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuilder"/></returns>
         public Java.Lang.StringBuilder Normalize(Java.Lang.CharSequence arg0, Java.Lang.StringBuilder arg1)
         {
-            return IExecute<Java.Lang.StringBuilder>("normalize", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.StringBuilder>("normalize", "(Ljava/lang/CharSequence;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#normalizeSecondAndAppend(java.lang.StringBuilder,java.lang.CharSequence)"/>
@@ -290,7 +290,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuilder"/></returns>
         public Java.Lang.StringBuilder NormalizeSecondAndAppend(Java.Lang.StringBuilder arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Java.Lang.StringBuilder>("normalizeSecondAndAppend", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.StringBuilder>("normalizeSecondAndAppend", "(Ljava/lang/StringBuilder;Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#composePair(int,int)"/>
@@ -300,7 +300,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int ComposePair(int arg0, int arg1)
         {
-            return IExecute<int>("composePair", arg0, arg1);
+            return IExecuteWithSignature<int>("composePair", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getCombiningClass(int)"/>
@@ -329,21 +329,21 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Lang.String>("normalize", "(Ljava/lang/CharSequence;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Mode implementation
         public partial class Mode
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.Mode.html#COMPOSE"/>
@@ -369,9 +369,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.Normalizer2.Mode FCD { get { if (!_FCDReady) { _FCDContent = SGetField<Android.Icu.Text.Normalizer2.Mode>(LocalBridgeClazz, "FCD"); _FCDReady = true; } return _FCDContent; } }
             private static Android.Icu.Text.Normalizer2.Mode _FCDContent = default;
             private static bool _FCDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.Mode.html#valueOf(java.lang.String)"/>
@@ -390,24 +390,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.Normalizer2.Mode>(LocalBridgeClazz, "values", "()[Landroid/icu/text/Normalizer2$Mode;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

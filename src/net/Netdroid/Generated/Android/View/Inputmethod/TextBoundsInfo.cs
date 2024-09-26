@@ -40,10 +40,10 @@ namespace Android.View.Inputmethod
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextBoundsInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View.Inputmethod
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View.Inputmethod
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.View.Inputmethod
     public partial class TextBoundsInfo
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#CREATOR"/>
@@ -157,13 +157,13 @@ namespace Android.View.Inputmethod
         public static int FLAG_LINE_IS_RTL { get { if (!_FLAG_LINE_IS_RTLReady) { _FLAG_LINE_IS_RTLContent = SGetField<int>(LocalBridgeClazz, "FLAG_LINE_IS_RTL"); _FLAG_LINE_IS_RTLReady = true; } return _FLAG_LINE_IS_RTLContent; } }
         private static int _FLAG_LINE_IS_RTLContent = default;
         private static bool _FLAG_LINE_IS_RTLReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getGraphemeSegmentFinder()"/>
@@ -231,7 +231,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="int"/></returns>
         public int GetOffsetForPosition(float arg0, float arg1)
         {
-            return IExecute<int>("getOffsetForPosition", arg0, arg1);
+            return IExecuteWithSignature<int>("getOffsetForPosition", "(FF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getStartIndex()"/>
@@ -250,7 +250,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="int"/></returns>
         public int[] GetRangeForRect(Android.Graphics.RectF arg0, Android.Text.SegmentFinder arg1, Android.Text.Layout.TextInclusionStrategy arg2)
         {
-            return IExecuteArray<int>("getRangeForRect", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<int>("getRangeForRect", "(Landroid/graphics/RectF;Landroid/text/SegmentFinder;Landroid/text/Layout$TextInclusionStrategy;)[I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getCharacterBounds(int,android.graphics.RectF)"/>
@@ -259,7 +259,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.Graphics.RectF"/></param>
         public void GetCharacterBounds(int arg0, Android.Graphics.RectF arg1)
         {
-            IExecute("getCharacterBounds", arg0, arg1);
+            IExecuteWithSignature("getCharacterBounds", "(ILandroid/graphics/RectF;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.html#getMatrix(android.graphics.Matrix)"/>
@@ -276,11 +276,11 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -295,21 +295,21 @@ namespace Android.View.Inputmethod
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.Builder.html#build()"/>
@@ -389,7 +389,7 @@ namespace Android.View.Inputmethod
             /// <returns><see cref="Android.View.Inputmethod.TextBoundsInfo.Builder"/></returns>
             public Android.View.Inputmethod.TextBoundsInfo.Builder SetStartAndEnd(int arg0, int arg1)
             {
-                return IExecute<Android.View.Inputmethod.TextBoundsInfo.Builder>("setStartAndEnd", arg0, arg1);
+                return IExecuteWithSignature<Android.View.Inputmethod.TextBoundsInfo.Builder>("setStartAndEnd", "(II)Landroid/view/inputmethod/TextBoundsInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextBoundsInfo.Builder.html#setWordSegmentFinder(android.text.SegmentFinder)"/>
@@ -400,20 +400,20 @@ namespace Android.View.Inputmethod
             {
                 return IExecuteWithSignature<Android.View.Inputmethod.TextBoundsInfo.Builder>("setWordSegmentFinder", "(Landroid/text/SegmentFinder;)Landroid/view/inputmethod/TextBoundsInfo$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

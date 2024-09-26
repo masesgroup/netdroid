@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppSearchBatchResult(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -179,10 +179,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppSearchBatchResult(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -203,7 +203,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -213,21 +213,21 @@ namespace Android.App.Appsearch
     public partial class AppSearchBatchResult
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#isSuccess()"/>
@@ -261,29 +261,29 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignature<Java.Util.Map>("getSuccesses", "()Ljava/util/Map;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#build()"/>
@@ -302,7 +302,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.AppSearchBatchResult.Builder"/></returns>
             public Android.App.Appsearch.AppSearchBatchResult.Builder SetFailure(object arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecute<Android.App.Appsearch.AppSearchBatchResult.Builder>("setFailure", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchBatchResult.Builder>("setFailure", "(Ljava/lang/Object;ILjava/lang/String;)Landroid/app/appsearch/AppSearchBatchResult$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#setResult(java.lang.Object,android.app.appsearch.AppSearchResult)"/>
@@ -312,7 +312,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.AppSearchBatchResult.Builder"/></returns>
             public Android.App.Appsearch.AppSearchBatchResult.Builder SetResult(object arg0, Android.App.Appsearch.AppSearchResult arg1)
             {
-                return IExecute<Android.App.Appsearch.AppSearchBatchResult.Builder>("setResult", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchBatchResult.Builder>("setResult", "(Ljava/lang/Object;Landroid/app/appsearch/AppSearchResult;)Landroid/app/appsearch/AppSearchBatchResult$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#setSuccess(java.lang.Object,java.lang.Object)"/>
@@ -322,15 +322,15 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.AppSearchBatchResult.Builder"/></returns>
             public Android.App.Appsearch.AppSearchBatchResult.Builder SetSuccess(object arg0, object arg1)
             {
-                return IExecute<Android.App.Appsearch.AppSearchBatchResult.Builder>("setSuccess", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchBatchResult.Builder>("setSuccess", "(Ljava/lang/Object;Ljava/lang/Object;)Landroid/app/appsearch/AppSearchBatchResult$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -339,25 +339,25 @@ namespace Android.App.Appsearch
         public partial class Builder<KeyType, ValueType>
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.App.Appsearch.AppSearchBatchResult.Builder{KeyType, ValueType}"/> to <see cref="Android.App.Appsearch.AppSearchBatchResult.Builder"/>
             /// </summary>
             public static implicit operator Android.App.Appsearch.AppSearchBatchResult.Builder(Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType> t) => t.Cast<Android.App.Appsearch.AppSearchBatchResult.Builder>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#build()"/>
@@ -376,7 +376,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.AppSearchBatchResult.Builder"/></returns>
             public Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType> SetFailure(KeyType arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecute<Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType>>("setFailure", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType>>("setFailure", "(Ljava/lang/Object;ILjava/lang/String;)Landroid/app/appsearch/AppSearchBatchResult$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#setResult(java.lang.Object,android.app.appsearch.AppSearchResult)"/>
@@ -386,7 +386,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.AppSearchBatchResult.Builder"/></returns>
             public Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType> SetResult(KeyType arg0, Android.App.Appsearch.AppSearchResult<ValueType> arg1)
             {
-                return IExecute<Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType>>("setResult", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType>>("setResult", "(Ljava/lang/Object;Landroid/app/appsearch/AppSearchResult;)Landroid/app/appsearch/AppSearchBatchResult$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#setSuccess(java.lang.Object,java.lang.Object)"/>
@@ -396,22 +396,22 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.AppSearchBatchResult.Builder"/></returns>
             public Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType> SetSuccess(KeyType arg0, ValueType arg1)
             {
-                return IExecute<Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType>>("setSuccess", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchBatchResult.Builder<KeyType, ValueType>>("setSuccess", "(Ljava/lang/Object;Ljava/lang/Object;)Landroid/app/appsearch/AppSearchBatchResult$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -420,25 +420,25 @@ namespace Android.App.Appsearch
     public partial class AppSearchBatchResult<KeyType, ValueType>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.Appsearch.AppSearchBatchResult{KeyType, ValueType}"/> to <see cref="Android.App.Appsearch.AppSearchBatchResult"/>
         /// </summary>
         public static implicit operator Android.App.Appsearch.AppSearchBatchResult(Android.App.Appsearch.AppSearchBatchResult<KeyType, ValueType> t) => t.Cast<Android.App.Appsearch.AppSearchBatchResult>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.html#isSuccess()"/>
@@ -472,13 +472,13 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignature<Java.Util.Map<KeyType, ValueType>>("getSuccesses", "()Ljava/util/Map;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

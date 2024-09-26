@@ -40,10 +40,10 @@ namespace Android.Accessibilityservice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputMethod(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Accessibilityservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AccessibilityInputConnection declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Accessibilityservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AccessibilityInputConnection(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Accessibilityservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -127,21 +127,21 @@ namespace Android.Accessibilityservice
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#getCurrentInputConnection()"/>
@@ -181,7 +181,7 @@ namespace Android.Accessibilityservice
         /// <param name="arg1"><see cref="bool"/></param>
         public void OnStartInput(Android.View.Inputmethod.EditorInfo arg0, bool arg1)
         {
-            IExecute("onStartInput", arg0, arg1);
+            IExecuteWithSignature("onStartInput", "(Landroid/view/inputmethod/EditorInfo;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#onUpdateSelection(int,int,int,int,int,int)"/>
@@ -194,31 +194,31 @@ namespace Android.Accessibilityservice
         /// <param name="arg5"><see cref="int"/></param>
         public void OnUpdateSelection(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("onUpdateSelection", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("onUpdateSelection", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AccessibilityInputConnection implementation
         public partial class AccessibilityInputConnection
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.AccessibilityInputConnection.html#getSurroundingText(int,int,int)"/>
@@ -229,7 +229,7 @@ namespace Android.Accessibilityservice
             /// <returns><see cref="Android.View.Inputmethod.SurroundingText"/></returns>
             public Android.View.Inputmethod.SurroundingText GetSurroundingText(int arg0, int arg1, int arg2)
             {
-                return IExecute<Android.View.Inputmethod.SurroundingText>("getSurroundingText", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.Inputmethod.SurroundingText>("getSurroundingText", "(III)Landroid/view/inputmethod/SurroundingText;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.AccessibilityInputConnection.html#getCursorCapsMode(int)"/>
@@ -256,7 +256,7 @@ namespace Android.Accessibilityservice
             /// <param name="arg2"><see cref="Android.View.Inputmethod.TextAttribute"/></param>
             public void CommitText(Java.Lang.CharSequence arg0, int arg1, Android.View.Inputmethod.TextAttribute arg2)
             {
-                IExecute("commitText", arg0, arg1, arg2);
+                IExecuteWithSignature("commitText", "(Ljava/lang/CharSequence;ILandroid/view/inputmethod/TextAttribute;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.AccessibilityInputConnection.html#deleteSurroundingText(int,int)"/>
@@ -265,7 +265,7 @@ namespace Android.Accessibilityservice
             /// <param name="arg1"><see cref="int"/></param>
             public void DeleteSurroundingText(int arg0, int arg1)
             {
-                IExecute("deleteSurroundingText", arg0, arg1);
+                IExecuteWithSignature("deleteSurroundingText", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.AccessibilityInputConnection.html#performContextMenuAction(int)"/>
@@ -298,22 +298,22 @@ namespace Android.Accessibilityservice
             /// <param name="arg1"><see cref="int"/></param>
             public void SetSelection(int arg0, int arg1)
             {
-                IExecute("setSelection", arg0, arg1);
+                IExecuteWithSignature("setSelection", "(II)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

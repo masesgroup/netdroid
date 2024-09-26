@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("Menu class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Menu(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.View
     public partial interface IMenu
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.View
     public partial class Menu : Android.View.IMenu
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#CATEGORY_ALTERNATIVE"/>
@@ -162,13 +162,13 @@ namespace Android.View
         public static int SUPPORTED_MODIFIERS_MASK { get { if (!_SUPPORTED_MODIFIERS_MASKReady) { _SUPPORTED_MODIFIERS_MASKContent = SGetField<int>(LocalBridgeClazz, "SUPPORTED_MODIFIERS_MASK"); _SUPPORTED_MODIFIERS_MASKReady = true; } return _SUPPORTED_MODIFIERS_MASKContent; } }
         private static int _SUPPORTED_MODIFIERS_MASKContent = default;
         private static bool _SUPPORTED_MODIFIERS_MASKReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#add(int,int,int,int)"/>
@@ -180,7 +180,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.MenuItem"/></returns>
         public Android.View.MenuItem Add(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.View.MenuItem>("add", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.MenuItem>("add", "(IIII)Landroid/view/MenuItem;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#add(int,int,int,java.lang.CharSequence)"/>
@@ -192,7 +192,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.MenuItem"/></returns>
         public Android.View.MenuItem Add(int arg0, int arg1, int arg2, Java.Lang.CharSequence arg3)
         {
-            return IExecute<Android.View.MenuItem>("add", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.MenuItem>("add", "(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#add(int)"/>
@@ -240,7 +240,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.SubMenu"/></returns>
         public Android.View.SubMenu AddSubMenu(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.View.SubMenu>("addSubMenu", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.SubMenu>("addSubMenu", "(IIII)Landroid/view/SubMenu;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#addSubMenu(int,int,int,java.lang.CharSequence)"/>
@@ -252,7 +252,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.SubMenu"/></returns>
         public Android.View.SubMenu AddSubMenu(int arg0, int arg1, int arg2, Java.Lang.CharSequence arg3)
         {
-            return IExecute<Android.View.SubMenu>("addSubMenu", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.SubMenu>("addSubMenu", "(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#addSubMenu(int)"/>
@@ -288,7 +288,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool IsShortcutKey(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("isShortcutKey", arg0, arg1);
+            return IExecuteWithSignature<bool>("isShortcutKey", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#performIdentifierAction(int,int)"/>
@@ -298,7 +298,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformIdentifierAction(int arg0, int arg1)
         {
-            return IExecute<bool>("performIdentifierAction", arg0, arg1);
+            return IExecuteWithSignature<bool>("performIdentifierAction", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#performShortcut(int,android.view.KeyEvent,int)"/>
@@ -309,7 +309,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformShortcut(int arg0, Android.View.KeyEvent arg1, int arg2)
         {
-            return IExecute<bool>("performShortcut", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("performShortcut", "(ILandroid/view/KeyEvent;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#addIntentOptions(int,int,int,android.content.ComponentName,android.content.Intent[],android.content.Intent,int,android.view.MenuItem[])"/>
@@ -325,7 +325,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public int AddIntentOptions(int arg0, int arg1, int arg2, Android.Content.ComponentName arg3, Android.Content.Intent[] arg4, Android.Content.Intent arg5, int arg6, Android.View.MenuItem[] arg7)
         {
-            return IExecute<int>("addIntentOptions", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<int>("addIntentOptions", "(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#size()"/>
@@ -373,7 +373,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="bool"/></param>
         public void SetGroupCheckable(int arg0, bool arg1, bool arg2)
         {
-            IExecute("setGroupCheckable", arg0, arg1, arg2);
+            IExecuteWithSignature("setGroupCheckable", "(IZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#setGroupEnabled(int,boolean)"/>
@@ -382,7 +382,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetGroupEnabled(int arg0, bool arg1)
         {
-            IExecute("setGroupEnabled", arg0, arg1);
+            IExecuteWithSignature("setGroupEnabled", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#setGroupVisible(int,boolean)"/>
@@ -391,7 +391,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetGroupVisible(int arg0, bool arg1)
         {
-            IExecute("setGroupVisible", arg0, arg1);
+            IExecuteWithSignature("setGroupVisible", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Menu.html#setQwertyMode(boolean)"/>
@@ -409,13 +409,13 @@ namespace Android.View
         {
             IExecuteWithSignature("setGroupDividerEnabled", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Graphics.Drawable
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GradientDrawable(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Orientation declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics.Drawable
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Orientation(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics.Drawable
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,13 +128,13 @@ namespace Android.Graphics.Drawable
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#LINE"/>
@@ -178,13 +178,13 @@ namespace Android.Graphics.Drawable
         public static int SWEEP_GRADIENT { get { if (!_SWEEP_GRADIENTReady) { _SWEEP_GRADIENTContent = SGetField<int>(LocalBridgeClazz, "SWEEP_GRADIENT"); _SWEEP_GRADIENTReady = true; } return _SWEEP_GRADIENTContent; } }
         private static int _SWEEP_GRADIENTContent = default;
         private static bool _SWEEP_GRADIENTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColor()"/>
@@ -329,7 +329,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="float"/></param>
         public void SetColors(int[] arg0, float[] arg1)
         {
-            IExecute("setColors", arg0, arg1);
+            IExecuteWithSignature("setColors", "([I[F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColors(int[])"/>
@@ -362,7 +362,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="float"/></param>
         public void SetGradientCenter(float arg0, float arg1)
         {
-            IExecute("setGradientCenter", arg0, arg1);
+            IExecuteWithSignature("setGradientCenter", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientRadius(float)"/>
@@ -413,7 +413,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="int"/></param>
         public void SetPadding(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setPadding", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPadding", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setShape(int)"/>
@@ -430,7 +430,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSize(int arg0, int arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,android.content.res.ColorStateList,float,float)"/>
@@ -441,7 +441,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="float"/></param>
         public void SetStroke(int arg0, Android.Content.Res.ColorStateList arg1, float arg2, float arg3)
         {
-            IExecute("setStroke", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setStroke", "(ILandroid/content/res/ColorStateList;FF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,android.content.res.ColorStateList)"/>
@@ -450,7 +450,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="Android.Content.Res.ColorStateList"/></param>
         public void SetStroke(int arg0, Android.Content.Res.ColorStateList arg1)
         {
-            IExecute("setStroke", arg0, arg1);
+            IExecuteWithSignature("setStroke", "(ILandroid/content/res/ColorStateList;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,int,float,float)"/>
@@ -461,7 +461,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="float"/></param>
         public void SetStroke(int arg0, int arg1, float arg2, float arg3)
         {
-            IExecute("setStroke", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setStroke", "(IIFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setStroke(int,int)"/>
@@ -470,7 +470,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetStroke(int arg0, int arg1)
         {
-            IExecute("setStroke", arg0, arg1);
+            IExecuteWithSignature("setStroke", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThickness(int)"/>
@@ -496,21 +496,21 @@ namespace Android.Graphics.Drawable
         {
             IExecuteWithSignature("setUseLevel", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Orientation implementation
         public partial class Orientation
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.Orientation.html#BL_TR"/>
@@ -560,9 +560,9 @@ namespace Android.Graphics.Drawable
             public static Android.Graphics.Drawable.GradientDrawable.Orientation TR_BL { get { if (!_TR_BLReady) { _TR_BLContent = SGetField<Android.Graphics.Drawable.GradientDrawable.Orientation>(LocalBridgeClazz, "TR_BL"); _TR_BLReady = true; } return _TR_BLContent; } }
             private static Android.Graphics.Drawable.GradientDrawable.Orientation _TR_BLContent = default;
             private static bool _TR_BLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.Orientation.html#valueOf(java.lang.String)"/>
@@ -581,24 +581,24 @@ namespace Android.Graphics.Drawable
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Drawable.GradientDrawable.Orientation>(LocalBridgeClazz, "values", "()[Landroid/graphics/drawable/GradientDrawable$Orientation;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

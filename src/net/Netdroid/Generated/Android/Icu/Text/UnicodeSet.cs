@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UnicodeSet(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ComparisonStyle declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ComparisonStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public EntryRange(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SpanCondition(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -281,9 +281,9 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.UnicodeSet"/> to <see cref="Java.Lang.Comparable"/>
@@ -293,9 +293,9 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.UnicodeSet"/> to <see cref="Android.Icu.Util.Freezable"/>
         /// </summary>
         public static implicit operator Android.Icu.Util.Freezable(Android.Icu.Text.UnicodeSet t) => t.Cast<Android.Icu.Util.Freezable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ALL_CODE_POINTS"/>
@@ -346,9 +346,9 @@ namespace Android.Icu.Text
         public static int MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<int>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static int _MIN_VALUEContent = default;
         private static bool _MIN_VALUEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#from(java.lang.CharSequence)"/>
@@ -368,9 +368,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.UnicodeSet>(LocalBridgeClazz, "fromAll", "(Ljava/lang/CharSequence;)Landroid/icu/text/UnicodeSet;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence[])"/>
@@ -440,7 +440,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet Add(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("add", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("add", "(II)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.Iterable)"/>
@@ -468,7 +468,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet AddAll(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("addAll", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("addAll", "(II)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.Iterable)"/>
@@ -487,7 +487,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet ApplyIntPropertyValue(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("applyIntPropertyValue", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("applyIntPropertyValue", "(II)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,boolean)"/>
@@ -497,7 +497,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet ApplyPattern(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("applyPattern", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("applyPattern", "(Ljava/lang/String;Z)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,int)"/>
@@ -507,7 +507,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet ApplyPattern(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("applyPattern", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("applyPattern", "(Ljava/lang/String;I)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String,android.icu.text.SymbolTable)"/>
@@ -518,7 +518,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet ApplyPropertyAlias(Java.Lang.String arg0, Java.Lang.String arg1, Android.Icu.Text.SymbolTable arg2)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("applyPropertyAlias", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("applyPropertyAlias", "(Ljava/lang/String;Ljava/lang/String;Landroid/icu/text/SymbolTable;)Landroid/icu/text/UnicodeSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String)"/>
@@ -528,7 +528,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet ApplyPropertyAlias(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("applyPropertyAlias", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("applyPropertyAlias", "(Ljava/lang/String;Ljava/lang/String;)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#clear()"/>
@@ -571,7 +571,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet Complement(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("complement", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("complement", "(II)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(android.icu.text.UnicodeSet)"/>
@@ -590,7 +590,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet Remove(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("remove", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("remove", "(II)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(android.icu.text.UnicodeSet)"/>
@@ -609,7 +609,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet Retain(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("retain", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("retain", "(II)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(android.icu.text.UnicodeSet)"/>
@@ -637,7 +637,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet Set(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("set", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("set", "(II)Landroid/icu/text/UnicodeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(int,int)"/>
@@ -647,7 +647,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0, int arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(android.icu.text.UnicodeSet)"/>
@@ -684,7 +684,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public bool ContainsNone(int arg0, int arg1)
         {
-            return IExecute<bool>("containsNone", arg0, arg1);
+            return IExecuteWithSignature<bool>("containsNone", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.CharSequence)"/>
@@ -880,7 +880,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public bool ContainsSome(int arg0, int arg1)
         {
-            return IExecute<bool>("containsSome", arg0, arg1);
+            return IExecuteWithSignature<bool>("containsSome", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.CharSequence)"/>
@@ -908,7 +908,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Android.Icu.Text.UnicodeSet arg0, Android.Icu.Text.UnicodeSet.ComparisonStyle arg1)
         {
-            return IExecute<int>("compareTo", arg0, arg1);
+            return IExecuteWithSignature<int>("compareTo", "(Landroid/icu/text/UnicodeSet;Landroid/icu/text/UnicodeSet$ComparisonStyle;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet)"/>
@@ -988,7 +988,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int Span(Java.Lang.CharSequence arg0, Android.Icu.Text.UnicodeSet.SpanCondition arg1)
         {
-            return IExecute<int>("span", arg0, arg1);
+            return IExecuteWithSignature<int>("span", "(Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSet$SpanCondition;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)"/>
@@ -999,7 +999,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int Span(Java.Lang.CharSequence arg0, int arg1, Android.Icu.Text.UnicodeSet.SpanCondition arg2)
         {
-            return IExecute<int>("span", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("span", "(Ljava/lang/CharSequence;ILandroid/icu/text/UnicodeSet$SpanCondition;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)"/>
@@ -1009,7 +1009,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int SpanBack(Java.Lang.CharSequence arg0, Android.Icu.Text.UnicodeSet.SpanCondition arg1)
         {
-            return IExecute<int>("spanBack", arg0, arg1);
+            return IExecuteWithSignature<int>("spanBack", "(Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSet$SpanCondition;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)"/>
@@ -1020,7 +1020,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int SpanBack(Java.Lang.CharSequence arg0, int arg1, Android.Icu.Text.UnicodeSet.SpanCondition arg2)
         {
-            return IExecute<int>("spanBack", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("spanBack", "(Ljava/lang/CharSequence;ILandroid/icu/text/UnicodeSet$SpanCondition;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ranges()"/>
@@ -1055,7 +1055,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer _generatePattern(Java.Lang.StringBuffer arg0, bool arg1, bool arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("_generatePattern", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("_generatePattern", "(Ljava/lang/StringBuffer;ZZ)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean)"/>
@@ -1065,7 +1065,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer _generatePattern(Java.Lang.StringBuffer arg0, bool arg1)
         {
-            return IExecute<Java.Lang.StringBuffer>("_generatePattern", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("_generatePattern", "(Ljava/lang/StringBuffer;Z)Ljava/lang/StringBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#strings()"/>
@@ -1083,21 +1083,21 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ComparisonStyle implementation
         public partial class ComparisonStyle
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.ComparisonStyle.html#LEXICOGRAPHIC"/>
@@ -1117,9 +1117,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.UnicodeSet.ComparisonStyle SHORTER_FIRST { get { if (!_SHORTER_FIRSTReady) { _SHORTER_FIRSTContent = SGetField<Android.Icu.Text.UnicodeSet.ComparisonStyle>(LocalBridgeClazz, "SHORTER_FIRST"); _SHORTER_FIRSTReady = true; } return _SHORTER_FIRSTContent; } }
             private static Android.Icu.Text.UnicodeSet.ComparisonStyle _SHORTER_FIRSTContent = default;
             private static bool _SHORTER_FIRSTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.ComparisonStyle.html#valueOf(java.lang.String)"/>
@@ -1138,17 +1138,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.UnicodeSet.ComparisonStyle>(LocalBridgeClazz, "values", "()[Landroid/icu/text/UnicodeSet$ComparisonStyle;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1157,13 +1157,13 @@ namespace Android.Icu.Text
         public partial class EntryRange
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.EntryRange.html#codepoint"/>
@@ -1173,21 +1173,21 @@ namespace Android.Icu.Text
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.EntryRange.html#codepointEnd"/>
             /// </summary>
             public int codepointEnd { get { return IGetField<int>("codepointEnd"); } set { ISetField("codepointEnd", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1196,13 +1196,13 @@ namespace Android.Icu.Text
         public partial class SpanCondition
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.SpanCondition.html#CONDITION_COUNT"/>
@@ -1228,9 +1228,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.UnicodeSet.SpanCondition SIMPLE { get { if (!_SIMPLEReady) { _SIMPLEContent = SGetField<Android.Icu.Text.UnicodeSet.SpanCondition>(LocalBridgeClazz, "SIMPLE"); _SIMPLEReady = true; } return _SIMPLEContent; } }
             private static Android.Icu.Text.UnicodeSet.SpanCondition _SIMPLEContent = default;
             private static bool _SIMPLEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.SpanCondition.html#valueOf(java.lang.String)"/>
@@ -1249,24 +1249,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.UnicodeSet.SpanCondition>(LocalBridgeClazz, "values", "()[Landroid/icu/text/UnicodeSet$SpanCondition;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

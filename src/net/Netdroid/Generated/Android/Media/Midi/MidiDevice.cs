@@ -40,10 +40,10 @@ namespace Android.Media.Midi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MidiDevice(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Midi
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region MidiConnection declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media.Midi
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MidiConnection(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media.Midi
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,21 +119,21 @@ namespace Android.Media.Midi
     public partial class MidiDevice
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDevice.html#connectPorts(android.media.midi.MidiInputPort,int)"/>
@@ -143,7 +143,7 @@ namespace Android.Media.Midi
         /// <returns><see cref="Android.Media.Midi.MidiDevice.MidiConnection"/></returns>
         public Android.Media.Midi.MidiDevice.MidiConnection ConnectPorts(Android.Media.Midi.MidiInputPort arg0, int arg1)
         {
-            return IExecute<Android.Media.Midi.MidiDevice.MidiConnection>("connectPorts", arg0, arg1);
+            return IExecuteWithSignature<Android.Media.Midi.MidiDevice.MidiConnection>("connectPorts", "(Landroid/media/midi/MidiInputPort;I)Landroid/media/midi/MidiDevice$MidiConnection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDevice.html#getInfo()"/>
@@ -179,29 +179,29 @@ namespace Android.Media.Midi
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region MidiConnection implementation
         public partial class MidiConnection
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/midi/MidiDevice.MidiConnection.html#close()"/>
@@ -211,20 +211,20 @@ namespace Android.Media.Midi
             {
                 IExecuteWithSignature("close", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

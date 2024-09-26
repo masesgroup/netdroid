@@ -42,10 +42,10 @@ namespace Android.Inputmethodservice
         /// </summary>
         [global::System.Obsolete("AbstractInputMethodService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractInputMethodService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Inputmethodservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AbstractInputMethodImpl declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Inputmethodservice
             /// </summary>
             [global::System.Obsolete("AbstractInputMethodImpl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AbstractInputMethodImpl(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Inputmethodservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Inputmethodservice
             /// </summary>
             [global::System.Obsolete("AbstractInputMethodSessionImpl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AbstractInputMethodSessionImpl(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Inputmethodservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -170,21 +170,21 @@ namespace Android.Inputmethodservice
     public partial class AbstractInputMethodService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.html#onCreateInputMethodInterface()"/>
@@ -228,9 +228,9 @@ namespace Android.Inputmethodservice
         {
             return IExecuteWithSignature<bool>("onTrackballEvent", "(Landroid/view/MotionEvent;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AbstractInputMethodImpl implementation
         public partial class AbstractInputMethodImpl
@@ -244,21 +244,21 @@ namespace Android.Inputmethodservice
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.html#createSession(android.view.inputmethod.InputMethod.SessionCallback)"/>
@@ -283,15 +283,15 @@ namespace Android.Inputmethodservice
             /// <param name="arg1"><see cref="bool"/></param>
             public void SetSessionEnabled(Android.View.Inputmethod.InputMethodSession arg0, bool arg1)
             {
-                IExecute("setSessionEnabled", arg0, arg1);
+                IExecuteWithSignature("setSessionEnabled", "(Landroid/view/inputmethod/InputMethodSession;Z)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -308,21 +308,21 @@ namespace Android.Inputmethodservice
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#isEnabled()"/>
@@ -348,7 +348,7 @@ namespace Android.Inputmethodservice
             /// <param name="arg2"><see cref="Android.View.Inputmethod.InputMethodSession.EventCallback"/></param>
             public void DispatchGenericMotionEvent(int arg0, Android.View.MotionEvent arg1, Android.View.Inputmethod.InputMethodSession.EventCallback arg2)
             {
-                IExecute("dispatchGenericMotionEvent", arg0, arg1, arg2);
+                IExecuteWithSignature("dispatchGenericMotionEvent", "(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#dispatchKeyEvent(int,android.view.KeyEvent,android.view.inputmethod.InputMethodSession.EventCallback)"/>
@@ -358,7 +358,7 @@ namespace Android.Inputmethodservice
             /// <param name="arg2"><see cref="Android.View.Inputmethod.InputMethodSession.EventCallback"/></param>
             public void DispatchKeyEvent(int arg0, Android.View.KeyEvent arg1, Android.View.Inputmethod.InputMethodSession.EventCallback arg2)
             {
-                IExecute("dispatchKeyEvent", arg0, arg1, arg2);
+                IExecuteWithSignature("dispatchKeyEvent", "(ILandroid/view/KeyEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#dispatchTrackballEvent(int,android.view.MotionEvent,android.view.inputmethod.InputMethodSession.EventCallback)"/>
@@ -368,7 +368,7 @@ namespace Android.Inputmethodservice
             /// <param name="arg2"><see cref="Android.View.Inputmethod.InputMethodSession.EventCallback"/></param>
             public void DispatchTrackballEvent(int arg0, Android.View.MotionEvent arg1, Android.View.Inputmethod.InputMethodSession.EventCallback arg2)
             {
-                IExecute("dispatchTrackballEvent", arg0, arg1, arg2);
+                IExecuteWithSignature("dispatchTrackballEvent", "(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#revokeSelf()"/>
@@ -385,20 +385,20 @@ namespace Android.Inputmethodservice
             {
                 IExecuteWithSignature("setEnabled", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Lang.Invoke
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MethodType(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang.Invoke
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Java.Lang.Invoke
     public partial class MethodType : Java.Io.ISerializable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Invoke.MethodType"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Invoke.MethodType t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#fromMethodDescriptorString(java.lang.String,java.lang.ClassLoader)"/>
@@ -100,7 +100,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.TypeNotPresentException"/>
         public static Java.Lang.Invoke.MethodType FromMethodDescriptorString(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "fromMethodDescriptorString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "fromMethodDescriptorString", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#genericMethodType(int,boolean)"/>
@@ -110,7 +110,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType GenericMethodType(int arg0, bool arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "genericMethodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "genericMethodType", "(IZ)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#genericMethodType(int)"/>
@@ -130,7 +130,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class arg1, params Java.Lang.Class[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1); else return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class)"/>
@@ -140,7 +140,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.Class[])"/>
@@ -150,7 +150,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Class[] arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.lang.invoke.MethodType)"/>
@@ -160,7 +160,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Lang.Invoke.MethodType arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class,java.util.List)"/>
@@ -170,7 +170,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public static Java.Lang.Invoke.MethodType MethodTypeMethod(Java.Lang.Class arg0, Java.Util.List<Java.Lang.Class> arg1)
         {
-            return SExecute<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;Ljava/util/List;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#methodType(java.lang.Class)"/>
@@ -181,9 +181,9 @@ namespace Java.Lang.Invoke
         {
             return SExecuteWithSignature<Java.Lang.Invoke.MethodType>(LocalBridgeClazz, "methodType", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#hasPrimitives()"/>
@@ -243,7 +243,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType ChangeParameterType(int arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodType>("changeParameterType", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("changeParameterType", "(ILjava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeReturnType(java.lang.Class)"/>
@@ -278,7 +278,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType InsertParameterTypes(int arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0); else return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("insertParameterTypes", "(I[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0); else return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("insertParameterTypes", "(I[Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.util.List)"/>
@@ -288,7 +288,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType InsertParameterTypes(int arg0, Java.Util.List<Java.Lang.Class> arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodType>("insertParameterTypes", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("insertParameterTypes", "(ILjava/util/List;)Ljava/lang/invoke/MethodType;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#unwrap()"/>
@@ -339,7 +339,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfMethod ChangeParameterType(int arg0, Java.Lang.Invoke.TypeDescriptor.OfField arg1)
         {
-            return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeParameterType", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeParameterType", "(ILjava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
@@ -358,7 +358,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfMethod DropParameterTypes(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("dropParameterTypes", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("dropParameterTypes", "(II)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
@@ -368,7 +368,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
         public Java.Lang.Invoke.TypeDescriptor.OfMethod InsertParameterTypes(int arg0, Java.Lang.Invoke.TypeDescriptor.OfField[] arg1)
         {
-            return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", "(I[Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#descriptorString()"/>
@@ -394,13 +394,13 @@ namespace Java.Lang.Invoke
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("parameterList", "()Ljava/util/List;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

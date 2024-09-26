@@ -40,10 +40,10 @@ namespace Android.Security
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyChain(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Security
     public partial class KeyChain
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#ACTION_KEY_ACCESS_CHANGED"/>
@@ -143,9 +143,9 @@ namespace Android.Security
         public static Java.Lang.String KEY_ALIAS_SELECTION_DENIED { get { if (!_KEY_ALIAS_SELECTION_DENIEDReady) { _KEY_ALIAS_SELECTION_DENIEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_ALIAS_SELECTION_DENIED"); _KEY_ALIAS_SELECTION_DENIEDReady = true; } return _KEY_ALIAS_SELECTION_DENIEDContent; } }
         private static Java.Lang.String _KEY_ALIAS_SELECTION_DENIEDContent = default;
         private static bool _KEY_ALIAS_SELECTION_DENIEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#createInstallIntent()"/>
@@ -221,7 +221,7 @@ namespace Android.Security
         /// <exception cref="Android.Security.KeyChainException"/>
         public static Java.Security.Cert.X509Certificate[] GetCertificateChain(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecuteArray<Java.Security.Cert.X509Certificate>(LocalBridgeClazz, "getCertificateChain", arg0, arg1);
+            return SExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>(LocalBridgeClazz, "getCertificateChain", "(Landroid/content/Context;Ljava/lang/String;)[Ljava/security/cert/X509Certificate;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#getPrivateKey(android.content.Context,java.lang.String)"/>
@@ -233,7 +233,7 @@ namespace Android.Security
         /// <exception cref="Android.Security.KeyChainException"/>
         public static Java.Security.PrivateKey GetPrivateKey(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.PrivateKey>(LocalBridgeClazz, "getPrivateKey", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.PrivateKey>(LocalBridgeClazz, "getPrivateKey", "(Landroid/content/Context;Ljava/lang/String;)Ljava/security/PrivateKey;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#choosePrivateKeyAlias(android.app.Activity,android.security.KeyChainAliasCallback,java.lang.String[],java.security.Principal[],android.net.Uri,java.lang.String)"/>
@@ -246,7 +246,7 @@ namespace Android.Security
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         public static void ChoosePrivateKeyAlias(Android.App.Activity arg0, Android.Security.KeyChainAliasCallback arg1, Java.Lang.String[] arg2, Java.Security.Principal[] arg3, Android.Net.Uri arg4, Java.Lang.String arg5)
         {
-            SExecute(LocalBridgeClazz, "choosePrivateKeyAlias", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "choosePrivateKeyAlias", "(Landroid/app/Activity;Landroid/security/KeyChainAliasCallback;[Ljava/lang/String;[Ljava/security/Principal;Landroid/net/Uri;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#choosePrivateKeyAlias(android.app.Activity,android.security.KeyChainAliasCallback,java.lang.String[],java.security.Principal[],java.lang.String,int,java.lang.String)"/>
@@ -260,19 +260,19 @@ namespace Android.Security
         /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         public static void ChoosePrivateKeyAlias(Android.App.Activity arg0, Android.Security.KeyChainAliasCallback arg1, Java.Lang.String[] arg2, Java.Security.Principal[] arg3, Java.Lang.String arg4, int arg5, Java.Lang.String arg6)
         {
-            SExecute(LocalBridgeClazz, "choosePrivateKeyAlias", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "choosePrivateKeyAlias", "(Landroid/app/Activity;Landroid/security/KeyChainAliasCallback;[Ljava/lang/String;[Ljava/security/Principal;Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

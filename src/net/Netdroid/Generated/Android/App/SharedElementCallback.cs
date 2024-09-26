@@ -42,10 +42,10 @@ namespace Android.App
         /// </summary>
         [global::System.Obsolete("SharedElementCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SharedElementCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnSharedElementsReadyListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnSharedElementsReadyListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.SharedElementCallback_OnSharedElementsReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnSharedElementsReadyListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnSharedElementsReadyListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.SharedElementCallback$OnSharedElementsReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,21 +143,21 @@ namespace Android.App
     public partial class SharedElementCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.html#onCaptureSharedElementSnapshot(android.view.View,android.graphics.Matrix,android.graphics.RectF)"/>
@@ -168,7 +168,7 @@ namespace Android.App
         /// <returns><see cref="Android.Os.Parcelable"/></returns>
         public Android.Os.Parcelable OnCaptureSharedElementSnapshot(Android.View.View arg0, Android.Graphics.Matrix arg1, Android.Graphics.RectF arg2)
         {
-            return IExecute<Android.Os.Parcelable>("onCaptureSharedElementSnapshot", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Parcelable>("onCaptureSharedElementSnapshot", "(Landroid/view/View;Landroid/graphics/Matrix;Landroid/graphics/RectF;)Landroid/os/Parcelable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.html#onCreateSnapshotView(android.content.Context,android.os.Parcelable)"/>
@@ -178,7 +178,7 @@ namespace Android.App
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View OnCreateSnapshotView(Android.Content.Context arg0, Android.Os.Parcelable arg1)
         {
-            return IExecute<Android.View.View>("onCreateSnapshotView", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("onCreateSnapshotView", "(Landroid/content/Context;Landroid/os/Parcelable;)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.html#onMapSharedElements(java.util.List,java.util.Map)"/>
@@ -187,7 +187,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         public void OnMapSharedElements(Java.Util.List<Java.Lang.String> arg0, Java.Util.Map<Java.Lang.String, Android.View.View> arg1)
         {
-            IExecute("onMapSharedElements", arg0, arg1);
+            IExecuteWithSignature("onMapSharedElements", "(Ljava/util/List;Ljava/util/Map;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.html#onRejectSharedElements(java.util.List)"/>
@@ -205,7 +205,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         public void OnSharedElementEnd(Java.Util.List<Java.Lang.String> arg0, Java.Util.List<Android.View.View> arg1, Java.Util.List<Android.View.View> arg2)
         {
-            IExecute("onSharedElementEnd", arg0, arg1, arg2);
+            IExecuteWithSignature("onSharedElementEnd", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.html#onSharedElementsArrived(java.util.List,java.util.List,android.app.SharedElementCallback.OnSharedElementsReadyListener)"/>
@@ -215,7 +215,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.SharedElementCallback.OnSharedElementsReadyListener"/></param>
         public void OnSharedElementsArrived(Java.Util.List<Java.Lang.String> arg0, Java.Util.List<Android.View.View> arg1, Android.App.SharedElementCallback.OnSharedElementsReadyListener arg2)
         {
-            IExecute("onSharedElementsArrived", arg0, arg1, arg2);
+            IExecuteWithSignature("onSharedElementsArrived", "(Ljava/util/List;Ljava/util/List;Landroid/app/SharedElementCallback$OnSharedElementsReadyListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.html#onSharedElementStart(java.util.List,java.util.List,java.util.List)"/>
@@ -225,31 +225,31 @@ namespace Android.App
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         public void OnSharedElementStart(Java.Util.List<Java.Lang.String> arg0, Java.Util.List<Android.View.View> arg1, Java.Util.List<Android.View.View> arg2)
         {
-            IExecute("onSharedElementStart", arg0, arg1, arg2);
+            IExecuteWithSignature("onSharedElementStart", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnSharedElementsReadyListener implementation
         public partial class OnSharedElementsReadyListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnSharedElementsReadyListener"/>
@@ -259,13 +259,13 @@ namespace Android.App
                 AddEventHandler("onSharedElementsReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSharedElementsReadyEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/SharedElementCallback.OnSharedElementsReadyListener.html#onSharedElementsReady()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSharedElementsReady"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnSharedElementsReady { get; set; } = null;
-            
+
             bool hasOverrideOnSharedElementsReady = true;
             void OnSharedElementsReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -274,7 +274,7 @@ namespace Android.App
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSharedElementsReady;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.OnSharedElementsReadyListener.html#onSharedElementsReady()"/>
             /// </summary>
@@ -282,13 +282,13 @@ namespace Android.App
             {
                 hasOverrideOnSharedElementsReady = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -297,21 +297,21 @@ namespace Android.App
         public partial class OnSharedElementsReadyListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/SharedElementCallback.OnSharedElementsReadyListener.html#onSharedElementsReady()"/>
@@ -320,20 +320,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("onSharedElementsReady", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

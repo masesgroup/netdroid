@@ -40,10 +40,10 @@ namespace Android.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region EllipsizeCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Text
             /// </summary>
             [global::System.Obsolete("EllipsizeCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public EllipsizeCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SimpleStringSplitter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -175,10 +175,10 @@ namespace Android.Text
             /// </summary>
             [global::System.Obsolete("StringSplitter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public StringSplitter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -199,9 +199,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -220,10 +220,10 @@ namespace Android.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TruncateAt(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -244,9 +244,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -258,13 +258,13 @@ namespace Android.Text
     public partial class TextUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#CHAR_SEQUENCE_CREATOR"/>
@@ -308,9 +308,9 @@ namespace Android.Text
         public static int SAFE_STRING_FLAG_TRIM { get { if (!_SAFE_STRING_FLAG_TRIMReady) { _SAFE_STRING_FLAG_TRIMContent = SGetField<int>(LocalBridgeClazz, "SAFE_STRING_FLAG_TRIM"); _SAFE_STRING_FLAG_TRIMReady = true; } return _SAFE_STRING_FLAG_TRIMContent; } }
         private static int _SAFE_STRING_FLAG_TRIMContent = default;
         private static bool _SAFE_STRING_FLAG_TRIMReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#equals(java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -320,7 +320,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "equals", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#isDigitsOnly(java.lang.CharSequence)"/>
@@ -370,7 +370,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public static bool RegionMatches(Java.Lang.CharSequence arg0, int arg1, Java.Lang.CharSequence arg2, int arg3, int arg4)
         {
-            return SExecute<bool>(LocalBridgeClazz, "regionMatches", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "regionMatches", "(Ljava/lang/CharSequence;ILjava/lang/CharSequence;II)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#getCapsMode(java.lang.CharSequence,int,int)"/>
@@ -381,7 +381,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int GetCapsMode(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "getCapsMode", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getCapsMode", "(Ljava/lang/CharSequence;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#getLayoutDirectionFromLocale(java.util.Locale)"/>
@@ -400,7 +400,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int GetOffsetAfter(Java.Lang.CharSequence arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getOffsetAfter", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getOffsetAfter", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#getOffsetBefore(java.lang.CharSequence,int)"/>
@@ -410,7 +410,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int GetOffsetBefore(Java.Lang.CharSequence arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getOffsetBefore", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getOffsetBefore", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#getTrimmedLength(java.lang.CharSequence)"/>
@@ -431,7 +431,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int IndexOf(Java.Lang.CharSequence arg0, char arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "indexOf", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOf", "(Ljava/lang/CharSequence;CII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#indexOf(java.lang.CharSequence,char,int)"/>
@@ -442,7 +442,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int IndexOf(Java.Lang.CharSequence arg0, char arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "indexOf", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOf", "(Ljava/lang/CharSequence;CI)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#indexOf(java.lang.CharSequence,char)"/>
@@ -452,7 +452,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int IndexOf(Java.Lang.CharSequence arg0, char arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "indexOf", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOf", "(Ljava/lang/CharSequence;C)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#indexOf(java.lang.CharSequence,java.lang.CharSequence,int,int)"/>
@@ -464,7 +464,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int IndexOf(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "indexOf", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;II)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#indexOf(java.lang.CharSequence,java.lang.CharSequence,int)"/>
@@ -475,7 +475,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int IndexOf(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "indexOf", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#indexOf(java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -485,7 +485,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int IndexOf(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "indexOf", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOf", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#lastIndexOf(java.lang.CharSequence,char,int,int)"/>
@@ -497,7 +497,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int LastIndexOf(Java.Lang.CharSequence arg0, char arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "lastIndexOf", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "lastIndexOf", "(Ljava/lang/CharSequence;CII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#lastIndexOf(java.lang.CharSequence,char,int)"/>
@@ -508,7 +508,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int LastIndexOf(Java.Lang.CharSequence arg0, char arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "lastIndexOf", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "lastIndexOf", "(Ljava/lang/CharSequence;CI)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#lastIndexOf(java.lang.CharSequence,char)"/>
@@ -518,7 +518,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public static int LastIndexOf(Java.Lang.CharSequence arg0, char arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "lastIndexOf", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "lastIndexOf", "(Ljava/lang/CharSequence;C)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#commaEllipsize(java.lang.CharSequence,android.text.TextPaint,float,java.lang.String,java.lang.String)"/>
@@ -532,7 +532,7 @@ namespace Android.Text
         [global::System.Obsolete()]
         public static Java.Lang.CharSequence CommaEllipsize(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, float arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "commaEllipsize", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "commaEllipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLjava/lang/String;Ljava/lang/String;)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#concat(java.lang.CharSequence[])"/>
@@ -555,7 +555,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence Ellipsize(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, float arg2, Android.Text.TextUtils.TruncateAt arg3, bool arg4, Android.Text.TextUtils.EllipsizeCallback arg5)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "ellipsize", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "ellipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;ZLandroid/text/TextUtils$EllipsizeCallback;)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#ellipsize(java.lang.CharSequence,android.text.TextPaint,float,android.text.TextUtils.TruncateAt)"/>
@@ -567,7 +567,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence Ellipsize(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, float arg2, Android.Text.TextUtils.TruncateAt arg3)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "ellipsize", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "ellipsize", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#expandTemplate(java.lang.CharSequence,java.lang.CharSequence[])"/>
@@ -577,7 +577,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence ExpandTemplate(Java.Lang.CharSequence arg0, params Java.Lang.CharSequence[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "expandTemplate", arg0); else return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "expandTemplate", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "expandTemplate", "(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0); else return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "expandTemplate", "(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#getReverse(java.lang.CharSequence,int,int)"/>
@@ -589,7 +589,7 @@ namespace Android.Text
         [global::System.Obsolete()]
         public static Java.Lang.CharSequence GetReverse(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getReverse", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getReverse", "(Ljava/lang/CharSequence;II)Ljava/lang/CharSequence;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#listEllipsize(android.content.Context,java.util.List,java.lang.String,android.text.TextPaint,float,int)"/>
@@ -603,7 +603,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence ListEllipsize(Android.Content.Context arg0, Java.Util.List<Java.Lang.CharSequence> arg1, Java.Lang.String arg2, Android.Text.TextPaint arg3, float arg4, int arg5)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "listEllipsize", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "listEllipsize", "(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;Landroid/text/TextPaint;FI)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#makeSafeForPresentation(java.lang.String,int,float,int)"/>
@@ -615,7 +615,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence MakeSafeForPresentation(Java.Lang.String arg0, int arg1, float arg2, int arg3)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "makeSafeForPresentation", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "makeSafeForPresentation", "(Ljava/lang/String;IFI)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#replace(java.lang.CharSequence,java.lang.String[],java.lang.CharSequence[])"/>
@@ -626,7 +626,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence Replace(Java.Lang.CharSequence arg0, Java.Lang.String[] arg1, Java.Lang.CharSequence[] arg2)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "replace", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "replace", "(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#stringOrSpannedString(java.lang.CharSequence)"/>
@@ -654,7 +654,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Join(Java.Lang.CharSequence arg0, Java.Lang.Iterable arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "join", "(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#join(java.lang.CharSequence,java.lang.Object[])"/>
@@ -664,7 +664,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Join(Java.Lang.CharSequence arg0, object[] arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "join", "(Ljava/lang/CharSequence;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#substring(java.lang.CharSequence,int,int)"/>
@@ -675,7 +675,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Substring(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "substring", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "substring", "(Ljava/lang/CharSequence;II)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#split(java.lang.String,java.lang.String)"/>
@@ -685,7 +685,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String[] Split(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "split", arg0, arg1);
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "split", "(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#split(java.lang.String,java.util.regex.Pattern)"/>
@@ -695,7 +695,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String[] Split(Java.Lang.String arg0, Java.Util.Regex.Pattern arg1)
         {
-            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "split", arg0, arg1);
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "split", "(Ljava/lang/String;Ljava/util/regex/Pattern;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#copySpansFrom(android.text.Spanned,int,int,java.lang.Class,android.text.Spannable,int)"/>
@@ -708,7 +708,7 @@ namespace Android.Text
         /// <param name="arg5"><see cref="int"/></param>
         public static void CopySpansFrom(Android.Text.Spanned arg0, int arg1, int arg2, Java.Lang.Class arg3, Android.Text.Spannable arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "copySpansFrom", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "copySpansFrom", "(Landroid/text/Spanned;IILjava/lang/Class;Landroid/text/Spannable;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#dumpSpans(java.lang.CharSequence,android.util.Printer,java.lang.String)"/>
@@ -718,7 +718,7 @@ namespace Android.Text
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void DumpSpans(Java.Lang.CharSequence arg0, Android.Util.Printer arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "dumpSpans", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "dumpSpans", "(Ljava/lang/CharSequence;Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#getChars(java.lang.CharSequence,int,int,char[],int)"/>
@@ -730,7 +730,7 @@ namespace Android.Text
         /// <param name="arg4"><see cref="int"/></param>
         public static void GetChars(Java.Lang.CharSequence arg0, int arg1, int arg2, char[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "getChars", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "getChars", "(Ljava/lang/CharSequence;II[CI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#writeToParcel(java.lang.CharSequence,android.os.Parcel,int)"/>
@@ -740,35 +740,35 @@ namespace Android.Text
         /// <param name="arg2"><see cref="int"/></param>
         public static void WriteToParcel(Java.Lang.CharSequence arg0, Android.Os.Parcel arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "writeToParcel", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "writeToParcel", "(Ljava/lang/CharSequence;Landroid/os/Parcel;I)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region EllipsizeCallback implementation
         public partial class EllipsizeCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.EllipsizeCallback.html#ellipsized(int,int)"/>
@@ -777,15 +777,15 @@ namespace Android.Text
             /// <param name="arg1"><see cref="int"/></param>
             public void Ellipsized(int arg0, int arg1)
             {
-                IExecute("ellipsized", arg0, arg1);
+                IExecuteWithSignature("ellipsized", "(II)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -802,21 +802,21 @@ namespace Android.Text
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.SimpleStringSplitter.html#hasNext()"/>
@@ -857,13 +857,13 @@ namespace Android.Text
             {
                 IExecuteWithSignature("setString", "(Ljava/lang/String;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -872,21 +872,21 @@ namespace Android.Text
         public partial class StringSplitter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.StringSplitter.html#setString(java.lang.String)"/>
@@ -896,13 +896,13 @@ namespace Android.Text
             {
                 IExecuteWithSignature("setString", "(Ljava/lang/String;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -911,13 +911,13 @@ namespace Android.Text
         public partial class TruncateAt
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.TruncateAt.html#END"/>
@@ -943,9 +943,9 @@ namespace Android.Text
             public static Android.Text.TextUtils.TruncateAt START { get { if (!_STARTReady) { _STARTContent = SGetField<Android.Text.TextUtils.TruncateAt>(LocalBridgeClazz, "START"); _STARTReady = true; } return _STARTContent; } }
             private static Android.Text.TextUtils.TruncateAt _STARTContent = default;
             private static bool _STARTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.TruncateAt.html#valueOf(java.lang.String)"/>
@@ -964,24 +964,24 @@ namespace Android.Text
             {
                 return SExecuteWithSignatureArray<Android.Text.TextUtils.TruncateAt>(LocalBridgeClazz, "values", "()[Landroid/text/TextUtils$TruncateAt;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FocusFinder(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.View
     public partial class FocusFinder
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/FocusFinder.html#getInstance()"/>
@@ -94,9 +94,9 @@ namespace Android.View
         {
             return SExecuteWithSignature<Android.View.FocusFinder>(LocalBridgeClazz, "getInstance", "()Landroid/view/FocusFinder;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/FocusFinder.html#findNearestTouchable(android.view.ViewGroup,int,int,int,int[])"/>
@@ -109,7 +109,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View FindNearestTouchable(Android.View.ViewGroup arg0, int arg1, int arg2, int arg3, int[] arg4)
         {
-            return IExecute<Android.View.View>("findNearestTouchable", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.View.View>("findNearestTouchable", "(Landroid/view/ViewGroup;III[I)Landroid/view/View;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/FocusFinder.html#findNextFocusFromRect(android.view.ViewGroup,android.graphics.Rect,int)"/>
@@ -120,7 +120,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View FindNextFocusFromRect(Android.View.ViewGroup arg0, Android.Graphics.Rect arg1, int arg2)
         {
-            return IExecute<Android.View.View>("findNextFocusFromRect", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("findNextFocusFromRect", "(Landroid/view/ViewGroup;Landroid/graphics/Rect;I)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/FocusFinder.html#findNextKeyboardNavigationCluster(android.view.View,android.view.View,int)"/>
@@ -131,7 +131,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View FindNextKeyboardNavigationCluster(Android.View.View arg0, Android.View.View arg1, int arg2)
         {
-            return IExecute<Android.View.View>("findNextKeyboardNavigationCluster", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("findNextKeyboardNavigationCluster", "(Landroid/view/View;Landroid/view/View;I)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/FocusFinder.html#findNextFocus(android.view.ViewGroup,android.view.View,int)"/>
@@ -142,15 +142,15 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View FindNextFocus(Android.View.ViewGroup arg0, Android.View.View arg1, int arg2)
         {
-            return IExecute<Android.View.View>("findNextFocus", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("findNextFocus", "(Landroid/view/ViewGroup;Landroid/view/View;I)Landroid/view/View;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

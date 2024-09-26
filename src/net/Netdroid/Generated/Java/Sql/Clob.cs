@@ -42,10 +42,10 @@ namespace Java.Sql
         /// </summary>
         [global::System.Obsolete("Clob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Clob(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Sql
     public partial interface IClob
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Java.Sql
     public partial class Clob : Java.Sql.IClob
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Clob.html#setString(long,java.lang.String,int,int)"/>
@@ -121,7 +121,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetString(long arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
-            return IExecute<int>("setString", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("setString", "(JLjava/lang/String;II)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Clob.html#setString(long,java.lang.String)"/>
@@ -132,7 +132,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetString(long arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("setString", arg0, arg1);
+            return IExecuteWithSignature<int>("setString", "(JLjava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Clob.html#getAsciiStream()"/>
@@ -171,7 +171,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(long arg0, long arg1)
         {
-            return IExecute<Java.Io.Reader>("getCharacterStream", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(JJ)Ljava/io/Reader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Clob.html#setCharacterStream(long)"/>
@@ -192,7 +192,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetSubString(long arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getSubString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getSubString", "(JI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Clob.html#length()"/>
@@ -212,7 +212,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("position", arg0, arg1);
+            return IExecuteWithSignature<long>("position", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Clob.html#position(java.sql.Clob,long)"/>
@@ -223,7 +223,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Clob arg0, long arg1)
         {
-            return IExecute<long>("position", arg0, arg1);
+            return IExecuteWithSignature<long>("position", "(Ljava/sql/Clob;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Clob.html#free()"/>
@@ -242,13 +242,13 @@ namespace Java.Sql
         {
             IExecuteWithSignature("truncate", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

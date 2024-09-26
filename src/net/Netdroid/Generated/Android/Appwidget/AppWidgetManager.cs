@@ -40,10 +40,10 @@ namespace Android.Appwidget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppWidgetManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Appwidget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Appwidget
     public partial class AppWidgetManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#INVALID_APPWIDGET_ID"/>
@@ -256,9 +256,9 @@ namespace Android.Appwidget
         public static Java.Lang.String OPTION_APPWIDGET_SIZES { get { if (!_OPTION_APPWIDGET_SIZESReady) { _OPTION_APPWIDGET_SIZESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OPTION_APPWIDGET_SIZES"); _OPTION_APPWIDGET_SIZESReady = true; } return _OPTION_APPWIDGET_SIZESContent; } }
         private static Java.Lang.String _OPTION_APPWIDGET_SIZESContent = default;
         private static bool _OPTION_APPWIDGET_SIZESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getInstance(android.content.Context)"/>
@@ -269,9 +269,9 @@ namespace Android.Appwidget
         {
             return SExecuteWithSignature<Android.Appwidget.AppWidgetManager>(LocalBridgeClazz, "getInstance", "(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getAppWidgetInfo(int)"/>
@@ -300,7 +300,7 @@ namespace Android.Appwidget
         /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
         public Android.Widget.RemoteViews GetWidgetPreview(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1, int arg2)
         {
-            return IExecute<Android.Widget.RemoteViews>("getWidgetPreview", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Widget.RemoteViews>("getWidgetPreview", "(Landroid/content/ComponentName;Landroid/os/UserHandle;I)Landroid/widget/RemoteViews;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#bindAppWidgetIdIfAllowed(int,android.content.ComponentName,android.os.Bundle)"/>
@@ -311,7 +311,7 @@ namespace Android.Appwidget
         /// <returns><see cref="bool"/></returns>
         public bool BindAppWidgetIdIfAllowed(int arg0, Android.Content.ComponentName arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("bindAppWidgetIdIfAllowed", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("bindAppWidgetIdIfAllowed", "(ILandroid/content/ComponentName;Landroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#bindAppWidgetIdIfAllowed(int,android.content.ComponentName)"/>
@@ -321,7 +321,7 @@ namespace Android.Appwidget
         /// <returns><see cref="bool"/></returns>
         public bool BindAppWidgetIdIfAllowed(int arg0, Android.Content.ComponentName arg1)
         {
-            return IExecute<bool>("bindAppWidgetIdIfAllowed", arg0, arg1);
+            return IExecuteWithSignature<bool>("bindAppWidgetIdIfAllowed", "(ILandroid/content/ComponentName;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#bindAppWidgetIdIfAllowed(int,android.os.UserHandle,android.content.ComponentName,android.os.Bundle)"/>
@@ -333,7 +333,7 @@ namespace Android.Appwidget
         /// <returns><see cref="bool"/></returns>
         public bool BindAppWidgetIdIfAllowed(int arg0, Android.Os.UserHandle arg1, Android.Content.ComponentName arg2, Android.Os.Bundle arg3)
         {
-            return IExecute<bool>("bindAppWidgetIdIfAllowed", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("bindAppWidgetIdIfAllowed", "(ILandroid/os/UserHandle;Landroid/content/ComponentName;Landroid/os/Bundle;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#isRequestPinAppWidgetSupported()"/>
@@ -352,7 +352,7 @@ namespace Android.Appwidget
         /// <returns><see cref="bool"/></returns>
         public bool RequestPinAppWidget(Android.Content.ComponentName arg0, Android.Os.Bundle arg1, Android.App.PendingIntent arg2)
         {
-            return IExecute<bool>("requestPinAppWidget", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("requestPinAppWidget", "(Landroid/content/ComponentName;Landroid/os/Bundle;Landroid/app/PendingIntent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#setWidgetPreview(android.content.ComponentName,int,android.widget.RemoteViews)"/>
@@ -363,7 +363,7 @@ namespace Android.Appwidget
         /// <returns><see cref="bool"/></returns>
         public bool SetWidgetPreview(Android.Content.ComponentName arg0, int arg1, Android.Widget.RemoteViews arg2)
         {
-            return IExecute<bool>("setWidgetPreview", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setWidgetPreview", "(Landroid/content/ComponentName;ILandroid/widget/RemoteViews;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getAppWidgetIds(android.content.ComponentName)"/>
@@ -390,7 +390,7 @@ namespace Android.Appwidget
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Appwidget.AppWidgetProviderInfo> GetInstalledProvidersForPackage(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Java.Util.List<Android.Appwidget.AppWidgetProviderInfo>>("getInstalledProvidersForPackage", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Appwidget.AppWidgetProviderInfo>>("getInstalledProvidersForPackage", "(Ljava/lang/String;Landroid/os/UserHandle;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getInstalledProvidersForProfile(android.os.UserHandle)"/>
@@ -409,7 +409,7 @@ namespace Android.Appwidget
         [global::System.Obsolete()]
         public void NotifyAppWidgetViewDataChanged(int arg0, int arg1)
         {
-            IExecute("notifyAppWidgetViewDataChanged", arg0, arg1);
+            IExecuteWithSignature("notifyAppWidgetViewDataChanged", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#notifyAppWidgetViewDataChanged(int[],int)"/>
@@ -419,7 +419,7 @@ namespace Android.Appwidget
         [global::System.Obsolete()]
         public void NotifyAppWidgetViewDataChanged(int[] arg0, int arg1)
         {
-            IExecute("notifyAppWidgetViewDataChanged", arg0, arg1);
+            IExecuteWithSignature("notifyAppWidgetViewDataChanged", "([II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#partiallyUpdateAppWidget(int,android.widget.RemoteViews)"/>
@@ -428,7 +428,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews"/></param>
         public void PartiallyUpdateAppWidget(int arg0, Android.Widget.RemoteViews arg1)
         {
-            IExecute("partiallyUpdateAppWidget", arg0, arg1);
+            IExecuteWithSignature("partiallyUpdateAppWidget", "(ILandroid/widget/RemoteViews;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#partiallyUpdateAppWidget(int[],android.widget.RemoteViews)"/>
@@ -437,7 +437,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews"/></param>
         public void PartiallyUpdateAppWidget(int[] arg0, Android.Widget.RemoteViews arg1)
         {
-            IExecute("partiallyUpdateAppWidget", arg0, arg1);
+            IExecuteWithSignature("partiallyUpdateAppWidget", "([ILandroid/widget/RemoteViews;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#removeWidgetPreview(android.content.ComponentName,int)"/>
@@ -446,7 +446,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveWidgetPreview(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("removeWidgetPreview", arg0, arg1);
+            IExecuteWithSignature("removeWidgetPreview", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#updateAppWidget(android.content.ComponentName,android.widget.RemoteViews)"/>
@@ -455,7 +455,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews"/></param>
         public void UpdateAppWidget(Android.Content.ComponentName arg0, Android.Widget.RemoteViews arg1)
         {
-            IExecute("updateAppWidget", arg0, arg1);
+            IExecuteWithSignature("updateAppWidget", "(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#updateAppWidget(int,android.widget.RemoteViews)"/>
@@ -464,7 +464,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews"/></param>
         public void UpdateAppWidget(int arg0, Android.Widget.RemoteViews arg1)
         {
-            IExecute("updateAppWidget", arg0, arg1);
+            IExecuteWithSignature("updateAppWidget", "(ILandroid/widget/RemoteViews;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#updateAppWidget(int[],android.widget.RemoteViews)"/>
@@ -473,7 +473,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Android.Widget.RemoteViews"/></param>
         public void UpdateAppWidget(int[] arg0, Android.Widget.RemoteViews arg1)
         {
-            IExecute("updateAppWidget", arg0, arg1);
+            IExecuteWithSignature("updateAppWidget", "([ILandroid/widget/RemoteViews;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#updateAppWidgetOptions(int,android.os.Bundle)"/>
@@ -482,7 +482,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void UpdateAppWidgetOptions(int arg0, Android.Os.Bundle arg1)
         {
-            IExecute("updateAppWidgetOptions", arg0, arg1);
+            IExecuteWithSignature("updateAppWidgetOptions", "(ILandroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#updateAppWidgetProviderInfo(android.content.ComponentName,java.lang.String)"/>
@@ -491,15 +491,15 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void UpdateAppWidgetProviderInfo(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("updateAppWidgetProviderInfo", arg0, arg1);
+            IExecuteWithSignature("updateAppWidgetProviderInfo", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

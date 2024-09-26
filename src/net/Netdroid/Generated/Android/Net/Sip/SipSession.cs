@@ -41,10 +41,10 @@ namespace Android.Net.Sip
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SipSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Net.Sip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Listener declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Net.Sip
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Listener(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Net.Sip
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -129,10 +129,10 @@ namespace Android.Net.Sip
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public State(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -153,9 +153,9 @@ namespace Android.Net.Sip
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -167,21 +167,21 @@ namespace Android.Net.Sip
     public partial class SipSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#getLocalProfile()"/>
@@ -245,7 +245,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void AnswerCall(Java.Lang.String arg0, int arg1)
         {
-            IExecute("answerCall", arg0, arg1);
+            IExecuteWithSignature("answerCall", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#changeCall(java.lang.String,int)"/>
@@ -255,7 +255,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void ChangeCall(Java.Lang.String arg0, int arg1)
         {
-            IExecute("changeCall", arg0, arg1);
+            IExecuteWithSignature("changeCall", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#endCall()"/>
@@ -274,7 +274,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void MakeCall(Android.Net.Sip.SipProfile arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("makeCall", arg0, arg1, arg2);
+            IExecuteWithSignature("makeCall", "(Landroid/net/sip/SipProfile;Ljava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html#register(int)"/>
@@ -302,29 +302,29 @@ namespace Android.Net.Sip
         {
             IExecuteWithSignature("unregister", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Listener implementation
         public partial class Listener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallBusy(android.net.sip.SipSession)"/>
@@ -344,7 +344,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnCallChangeFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
             {
-                IExecute("onCallChangeFailed", arg0, arg1, arg2);
+                IExecuteWithSignature("onCallChangeFailed", "(Landroid/net/sip/SipSession;ILjava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCallEnded(android.net.sip.SipSession)"/>
@@ -363,7 +363,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnCallEstablished(Android.Net.Sip.SipSession arg0, Java.Lang.String arg1)
             {
-                IExecute("onCallEstablished", arg0, arg1);
+                IExecuteWithSignature("onCallEstablished", "(Landroid/net/sip/SipSession;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onCalling(android.net.sip.SipSession)"/>
@@ -383,7 +383,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnError(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
             {
-                IExecute("onError", arg0, arg1, arg2);
+                IExecuteWithSignature("onError", "(Landroid/net/sip/SipSession;ILjava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistering(android.net.sip.SipSession)"/>
@@ -402,7 +402,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnRegistrationDone(Android.Net.Sip.SipSession arg0, int arg1)
             {
-                IExecute("onRegistrationDone", arg0, arg1);
+                IExecuteWithSignature("onRegistrationDone", "(Landroid/net/sip/SipSession;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationFailed(android.net.sip.SipSession,int,java.lang.String)"/>
@@ -413,7 +413,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnRegistrationFailed(Android.Net.Sip.SipSession arg0, int arg1, Java.Lang.String arg2)
             {
-                IExecute("onRegistrationFailed", arg0, arg1, arg2);
+                IExecuteWithSignature("onRegistrationFailed", "(Landroid/net/sip/SipSession;ILjava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRegistrationTimeout(android.net.sip.SipSession)"/>
@@ -433,7 +433,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnRinging(Android.Net.Sip.SipSession arg0, Android.Net.Sip.SipProfile arg1, Java.Lang.String arg2)
             {
-                IExecute("onRinging", arg0, arg1, arg2);
+                IExecuteWithSignature("onRinging", "(Landroid/net/sip/SipSession;Landroid/net/sip/SipProfile;Ljava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html#onRingingBack(android.net.sip.SipSession)"/>
@@ -444,13 +444,13 @@ namespace Android.Net.Sip
             {
                 IExecuteWithSignature("onRingingBack", "(Landroid/net/sip/SipSession;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -459,13 +459,13 @@ namespace Android.Net.Sip
         public partial class State
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#DEREGISTERING"/>
@@ -544,9 +544,9 @@ namespace Android.Net.Sip
             public static int REGISTERING { get { if (!_REGISTERINGReady) { _REGISTERINGContent = SGetField<int>(LocalBridgeClazz, "REGISTERING"); _REGISTERINGReady = true; } return _REGISTERINGContent; } }
             private static int _REGISTERINGContent = default;
             private static bool _REGISTERINGReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html#toString(int)"/>
@@ -558,24 +558,24 @@ namespace Android.Net.Sip
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

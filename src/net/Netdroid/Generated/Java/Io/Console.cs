@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Console(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Java.Io
     public partial class Console
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Console.html#readPassword()"/>
@@ -106,7 +106,7 @@ namespace Java.Io
         /// <returns><see cref="char"/></returns>
         public char[] ReadPassword(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecuteArray<char>("readPassword", arg0); else return IExecuteArray<char>("readPassword", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignatureArray<char>("readPassword", "(Ljava/lang/String;[Ljava/lang/Object;)[C", arg0); else return IExecuteWithSignatureArray<char>("readPassword", "(Ljava/lang/String;[Ljava/lang/Object;)[C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Console.html#format(java.lang.String,java.lang.Object[])"/>
@@ -116,7 +116,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.Console>("format", arg0); else return IExecute<Java.Io.Console>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.Console>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0); else return IExecuteWithSignature<Java.Io.Console>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Console.html#printf(java.lang.String,java.lang.Object[])"/>
@@ -126,7 +126,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Printf(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.Console>("printf", arg0); else return IExecute<Java.Io.Console>("printf", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.Console>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0); else return IExecuteWithSignature<Java.Io.Console>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Console.html#writer()"/>
@@ -160,7 +160,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReadLine(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.String>("readLine", arg0); else return IExecute<Java.Lang.String>("readLine", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.String>("readLine", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return IExecuteWithSignature<Java.Lang.String>("readLine", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Console.html#charset()"/>
@@ -177,13 +177,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("flush", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ProxyInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,13 +82,13 @@ namespace Android.Net
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#CREATOR"/>
@@ -96,9 +96,9 @@ namespace Android.Net
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#buildDirectProxy(java.lang.String,int,java.util.List)"/>
@@ -109,7 +109,7 @@ namespace Android.Net
         /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
         public static Android.Net.ProxyInfo BuildDirectProxy(Java.Lang.String arg0, int arg1, Java.Util.List<Java.Lang.String> arg2)
         {
-            return SExecute<Android.Net.ProxyInfo>(LocalBridgeClazz, "buildDirectProxy", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.ProxyInfo>(LocalBridgeClazz, "buildDirectProxy", "(Ljava/lang/String;ILjava/util/List;)Landroid/net/ProxyInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#buildDirectProxy(java.lang.String,int)"/>
@@ -119,7 +119,7 @@ namespace Android.Net
         /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
         public static Android.Net.ProxyInfo BuildDirectProxy(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Net.ProxyInfo>(LocalBridgeClazz, "buildDirectProxy", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.ProxyInfo>(LocalBridgeClazz, "buildDirectProxy", "(Ljava/lang/String;I)Landroid/net/ProxyInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#buildPacProxy(android.net.Uri,int)"/>
@@ -129,7 +129,7 @@ namespace Android.Net
         /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
         public static Android.Net.ProxyInfo BuildPacProxy(Android.Net.Uri arg0, int arg1)
         {
-            return SExecute<Android.Net.ProxyInfo>(LocalBridgeClazz, "buildPacProxy", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.ProxyInfo>(LocalBridgeClazz, "buildPacProxy", "(Landroid/net/Uri;I)Landroid/net/ProxyInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#buildPacProxy(android.net.Uri)"/>
@@ -140,9 +140,9 @@ namespace Android.Net
         {
             return SExecuteWithSignature<Android.Net.ProxyInfo>(LocalBridgeClazz, "buildPacProxy", "(Landroid/net/Uri;)Landroid/net/ProxyInfo;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getPacFileUrl()"/>
@@ -199,15 +199,15 @@ namespace Android.Net
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

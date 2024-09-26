@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GlobalSearchSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.App.Appsearch
     public partial class GlobalSearchSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GlobalSearchSession.html#search(java.lang.String,android.app.appsearch.SearchSpec)"/>
@@ -98,7 +98,7 @@ namespace Android.App.Appsearch
         /// <returns><see cref="Android.App.Appsearch.SearchResults"/></returns>
         public Android.App.Appsearch.SearchResults Search(Java.Lang.String arg0, Android.App.Appsearch.SearchSpec arg1)
         {
-            return IExecute<Android.App.Appsearch.SearchResults>("search", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Appsearch.SearchResults>("search", "(Ljava/lang/String;Landroid/app/appsearch/SearchSpec;)Landroid/app/appsearch/SearchResults;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GlobalSearchSession.html#close()"/>
@@ -117,7 +117,7 @@ namespace Android.App.Appsearch
         /// <param name="arg4"><see cref="Android.App.Appsearch.BatchResultCallback"/></param>
         public void GetByDocumentId(Java.Lang.String arg0, Java.Lang.String arg1, Android.App.Appsearch.GetByDocumentIdRequest arg2, Java.Util.Concurrent.Executor arg3, Android.App.Appsearch.BatchResultCallback<Java.Lang.String, Android.App.Appsearch.GenericDocument> arg4)
         {
-            IExecute("getByDocumentId", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("getByDocumentId", "(Ljava/lang/String;Ljava/lang/String;Landroid/app/appsearch/GetByDocumentIdRequest;Ljava/util/concurrent/Executor;Landroid/app/appsearch/BatchResultCallback;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GlobalSearchSession.html#getSchema(java.lang.String,java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -128,7 +128,7 @@ namespace Android.App.Appsearch
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetSchema(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.GetSchemaResponse>> arg3)
         {
-            IExecute("getSchema", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getSchema", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GlobalSearchSession.html#registerObserverCallback(java.lang.String,android.app.appsearch.observer.ObserverSpec,java.util.concurrent.Executor,android.app.appsearch.observer.ObserverCallback)"/>
@@ -140,7 +140,7 @@ namespace Android.App.Appsearch
         /// <exception cref="Android.App.Appsearch.Exceptions.AppSearchException"/>
         public void RegisterObserverCallback(Java.Lang.String arg0, Android.App.Appsearch.Observer.ObserverSpec arg1, Java.Util.Concurrent.Executor arg2, Android.App.Appsearch.Observer.ObserverCallback arg3)
         {
-            IExecute("registerObserverCallback", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("registerObserverCallback", "(Ljava/lang/String;Landroid/app/appsearch/observer/ObserverSpec;Ljava/util/concurrent/Executor;Landroid/app/appsearch/observer/ObserverCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GlobalSearchSession.html#reportSystemUsage(android.app.appsearch.ReportSystemUsageRequest,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -150,7 +150,7 @@ namespace Android.App.Appsearch
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void ReportSystemUsage(Android.App.Appsearch.ReportSystemUsageRequest arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Java.Lang.Void>> arg2)
         {
-            IExecute("reportSystemUsage", arg0, arg1, arg2);
+            IExecuteWithSignature("reportSystemUsage", "(Landroid/app/appsearch/ReportSystemUsageRequest;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GlobalSearchSession.html#unregisterObserverCallback(java.lang.String,android.app.appsearch.observer.ObserverCallback)"/>
@@ -160,15 +160,15 @@ namespace Android.App.Appsearch
         /// <exception cref="Android.App.Appsearch.Exceptions.AppSearchException"/>
         public void UnregisterObserverCallback(Java.Lang.String arg0, Android.App.Appsearch.Observer.ObserverCallback arg1)
         {
-            IExecute("unregisterObserverCallback", arg0, arg1);
+            IExecuteWithSignature("unregisterObserverCallback", "(Ljava/lang/String;Landroid/app/appsearch/observer/ObserverCallback;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

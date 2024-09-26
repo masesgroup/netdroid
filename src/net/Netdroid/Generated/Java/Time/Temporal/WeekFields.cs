@@ -40,10 +40,10 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WeekFields(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Temporal
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Time.Temporal
     public partial class WeekFields
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS"/>
@@ -100,9 +100,9 @@ namespace Java.Time.Temporal
         public static Java.Time.Temporal.WeekFields SUNDAY_START { get { if (!_SUNDAY_STARTReady) { _SUNDAY_STARTContent = SGetField<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "SUNDAY_START"); _SUNDAY_STARTReady = true; } return _SUNDAY_STARTContent; } }
         private static Java.Time.Temporal.WeekFields _SUNDAY_STARTContent = default;
         private static bool _SUNDAY_STARTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#of(java.time.DayOfWeek,int)"/>
@@ -112,7 +112,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.WeekFields"/></returns>
         public static Java.Time.Temporal.WeekFields Of(Java.Time.DayOfWeek arg0, int arg1)
         {
-            return SExecute<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", "(Ljava/time/DayOfWeek;I)Ljava/time/temporal/WeekFields;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#of(java.util.Locale)"/>
@@ -123,9 +123,9 @@ namespace Java.Time.Temporal
         {
             return SExecuteWithSignature<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", "(Ljava/util/Locale;)Ljava/time/temporal/WeekFields;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/WeekFields.html#getMinimalDaysInFirstWeek()"/>
@@ -183,13 +183,13 @@ namespace Java.Time.Temporal
         {
             return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekOfYear", "()Ljava/time/temporal/TemporalField;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

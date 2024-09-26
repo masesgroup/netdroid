@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ServiceLoader(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ServiceLoader(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -120,17 +120,17 @@ namespace Java.Util
     public partial class ServiceLoader
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class)"/>
@@ -160,9 +160,9 @@ namespace Java.Util
         {
             return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "loadInstalled", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#iterator()"/>
@@ -187,13 +187,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("reload", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -202,21 +202,21 @@ namespace Java.Util
     public partial class ServiceLoader<S>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.ServiceLoader{S}"/> to <see cref="Java.Util.ServiceLoader"/>
         /// </summary>
         public static implicit operator Java.Util.ServiceLoader(Java.Util.ServiceLoader<S> t) => t.Cast<Java.Util.ServiceLoader>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
@@ -226,7 +226,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#load(java.lang.Class)"/>
@@ -246,9 +246,9 @@ namespace Java.Util
         {
             return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "loadInstalled", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#iterator()"/>
@@ -273,13 +273,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("reload", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Aware
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WifiAwareManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Net.Wifi.Aware
     public partial class WifiAwareManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#WIFI_AWARE_DATA_PATH_ROLE_INITIATOR"/>
@@ -124,13 +124,13 @@ namespace Android.Net.Wifi.Aware
         public static Java.Lang.String EXTRA_AWARE_RESOURCES { get { if (!_EXTRA_AWARE_RESOURCESReady) { _EXTRA_AWARE_RESOURCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_AWARE_RESOURCES"); _EXTRA_AWARE_RESOURCESReady = true; } return _EXTRA_AWARE_RESOURCESContent; } }
         private static Java.Lang.String _EXTRA_AWARE_RESOURCESContent = default;
         private static bool _EXTRA_AWARE_RESOURCESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#getAvailableAwareResources()"/>
@@ -188,7 +188,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void Attach(Android.Net.Wifi.Aware.AttachCallback arg0, Android.Net.Wifi.Aware.IdentityChangedListener arg1, Android.Os.Handler arg2)
         {
-            IExecute("attach", arg0, arg1, arg2);
+            IExecuteWithSignature("attach", "(Landroid/net/wifi/aware/AttachCallback;Landroid/net/wifi/aware/IdentityChangedListener;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#attach(android.net.wifi.aware.AttachCallback,android.os.Handler)"/>
@@ -197,7 +197,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void Attach(Android.Net.Wifi.Aware.AttachCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("attach", arg0, arg1);
+            IExecuteWithSignature("attach", "(Landroid/net/wifi/aware/AttachCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#getPairedDevices(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -206,7 +206,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetPairedDevices(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Util.List<Java.Lang.String>> arg1)
         {
-            IExecute("getPairedDevices", arg0, arg1);
+            IExecuteWithSignature("getPairedDevices", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#isOpportunisticModeEnabled(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -215,7 +215,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void IsOpportunisticModeEnabled(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1)
         {
-            IExecute("isOpportunisticModeEnabled", arg0, arg1);
+            IExecuteWithSignature("isOpportunisticModeEnabled", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#removePairedDevice(java.lang.String)"/>
@@ -240,13 +240,13 @@ namespace Android.Net.Wifi.Aware
         {
             IExecuteWithSignature("setOpportunisticModeEnabled", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

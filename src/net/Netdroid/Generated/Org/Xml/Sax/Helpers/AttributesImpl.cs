@@ -40,10 +40,10 @@ namespace Org.Xml.Sax.Helpers
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AttributesImpl(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xml.Sax.Helpers
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Org.Xml.Sax.Helpers
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#getIndex(java.lang.String,java.lang.String)"/>
@@ -106,7 +106,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="int"/></returns>
         public int GetIndex(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("getIndex", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#getIndex(java.lang.String)"/>
@@ -160,7 +160,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getType", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#getType(java.lang.String)"/>
@@ -197,7 +197,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#getValue(java.lang.String)"/>
@@ -218,7 +218,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         public void AddAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            IExecute("addAttribute", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addAttribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#clear()"/>
@@ -246,7 +246,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         public void SetAttribute(int arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
-            IExecute("setAttribute", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setAttribute", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#setAttributes(org.xml.sax.Attributes)"/>
@@ -263,7 +263,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetLocalName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setLocalName", arg0, arg1);
+            IExecuteWithSignature("setLocalName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#setQName(int,java.lang.String)"/>
@@ -272,7 +272,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetQName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setQName", arg0, arg1);
+            IExecuteWithSignature("setQName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#setType(int,java.lang.String)"/>
@@ -281,7 +281,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetType(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setType", arg0, arg1);
+            IExecuteWithSignature("setType", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#setURI(int,java.lang.String)"/>
@@ -290,7 +290,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetURI(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setURI", arg0, arg1);
+            IExecuteWithSignature("setURI", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributesImpl.html#setValue(int,java.lang.String)"/>
@@ -299,15 +299,15 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetValue(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(ILjava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

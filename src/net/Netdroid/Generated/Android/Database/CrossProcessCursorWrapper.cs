@@ -40,10 +40,10 @@ namespace Android.Database
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CrossProcessCursorWrapper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Database
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,25 +82,25 @@ namespace Android.Database
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Database.CrossProcessCursorWrapper"/> to <see cref="Android.Database.CrossProcessCursor"/>
         /// </summary>
         public static implicit operator Android.Database.CrossProcessCursor(Android.Database.CrossProcessCursorWrapper t) => t.Cast<Android.Database.CrossProcessCursor>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursorWrapper.html#getWindow()"/>
@@ -118,7 +118,7 @@ namespace Android.Database
         /// <returns><see cref="bool"/></returns>
         public bool OnMove(int arg0, int arg1)
         {
-            return IExecute<bool>("onMove", arg0, arg1);
+            return IExecuteWithSignature<bool>("onMove", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursorWrapper.html#fillWindow(int,android.database.CursorWindow)"/>
@@ -127,15 +127,15 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Database.CursorWindow"/></param>
         public void FillWindow(int arg0, Android.Database.CursorWindow arg1)
         {
-            IExecute("fillWindow", arg0, arg1);
+            IExecuteWithSignature("fillWindow", "(ILandroid/database/CursorWindow;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

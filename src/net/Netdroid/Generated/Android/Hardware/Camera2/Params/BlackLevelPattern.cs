@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BlackLevelPattern(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,13 +82,13 @@ namespace Android.Hardware.Camera2.Params
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/BlackLevelPattern.html#COUNT"/>
@@ -96,13 +96,13 @@ namespace Android.Hardware.Camera2.Params
         public static int COUNT { get { if (!_COUNTReady) { _COUNTContent = SGetField<int>(LocalBridgeClazz, "COUNT"); _COUNTReady = true; } return _COUNTContent; } }
         private static int _COUNTContent = default;
         private static bool _COUNTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/BlackLevelPattern.html#getOffsetForIndex(int,int)"/>
@@ -112,7 +112,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="int"/></returns>
         public int GetOffsetForIndex(int arg0, int arg1)
         {
-            return IExecute<int>("getOffsetForIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("getOffsetForIndex", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/BlackLevelPattern.html#copyTo(int[],int)"/>
@@ -121,15 +121,15 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg1"><see cref="int"/></param>
         public void CopyTo(int[] arg0, int arg1)
         {
-            IExecute("copyTo", arg0, arg1);
+            IExecuteWithSignature("copyTo", "([II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

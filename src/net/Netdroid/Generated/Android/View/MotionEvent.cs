@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MotionEvent(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region PointerCoords declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PointerCoords(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PointerProperties(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.View
     public partial class MotionEvent
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#CREATOR"/>
@@ -780,9 +780,9 @@ namespace Android.View
         public static int TOOL_TYPE_UNKNOWN { get { if (!_TOOL_TYPE_UNKNOWNReady) { _TOOL_TYPE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "TOOL_TYPE_UNKNOWN"); _TOOL_TYPE_UNKNOWNReady = true; } return _TOOL_TYPE_UNKNOWNContent; } }
         private static int _TOOL_TYPE_UNKNOWNContent = default;
         private static bool _TOOL_TYPE_UNKNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(android.view.MotionEvent)"/>
@@ -811,7 +811,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.MotionEvent"/></returns>
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, float arg3, float arg4, float arg5, float arg6, int arg7, float arg8, float arg9, int arg10, int arg11)
         {
-            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            return SExecuteWithSignature<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", "(JJIFFFFIFFII)Landroid/view/MotionEvent;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(long,long,int,float,float,int)"/>
@@ -825,7 +825,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.MotionEvent"/></returns>
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, float arg3, float arg4, int arg5)
         {
-            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", "(JJIFFI)Landroid/view/MotionEvent;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(long,long,int,int,android.view.MotionEvent.PointerProperties[],android.view.MotionEvent.PointerCoords[],int,int,float,float,int,int,int,int,int,int)"/>
@@ -849,7 +849,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.MotionEvent"/></returns>
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, Android.View.MotionEvent.PointerProperties[] arg4, Android.View.MotionEvent.PointerCoords[] arg5, int arg6, int arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13, int arg14, int arg15)
         {
-            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
+            return SExecuteWithSignature<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", "(JJII[Landroid/view/MotionEvent$PointerProperties;[Landroid/view/MotionEvent$PointerCoords;IIFFIIIIII)Landroid/view/MotionEvent;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(long,long,int,int,android.view.MotionEvent.PointerProperties[],android.view.MotionEvent.PointerCoords[],int,int,float,float,int,int,int,int)"/>
@@ -871,7 +871,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.MotionEvent"/></returns>
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, Android.View.MotionEvent.PointerProperties[] arg4, Android.View.MotionEvent.PointerCoords[] arg5, int arg6, int arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13)
         {
-            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+            return SExecuteWithSignature<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", "(JJII[Landroid/view/MotionEvent$PointerProperties;[Landroid/view/MotionEvent$PointerCoords;IIFFIIII)Landroid/view/MotionEvent;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(long,long,int,int,float,float,float,float,int,float,float,int,int)"/>
@@ -893,7 +893,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7, int arg8, float arg9, float arg10, int arg11, int arg12)
         {
-            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+            return SExecuteWithSignature<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", "(JJIIFFFFIFFII)Landroid/view/MotionEvent;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(long,long,int,int,int[],android.view.MotionEvent.PointerCoords[],int,float,float,int,int,int,int)"/>
@@ -915,7 +915,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, int[] arg4, Android.View.MotionEvent.PointerCoords[] arg5, int arg6, float arg7, float arg8, int arg9, int arg10, int arg11, int arg12)
         {
-            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+            return SExecuteWithSignature<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", "(JJII[I[Landroid/view/MotionEvent$PointerCoords;IFFIIII)Landroid/view/MotionEvent;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtainNoHistory(android.view.MotionEvent)"/>
@@ -953,9 +953,9 @@ namespace Android.View
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "axisToString", "(I)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#isButtonPressed(int)"/>
@@ -974,7 +974,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetAxisValue(int arg0, int arg1)
         {
-            return IExecute<float>("getAxisValue", arg0, arg1);
+            return IExecuteWithSignature<float>("getAxisValue", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getAxisValue(int)"/>
@@ -994,7 +994,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalAxisValue(int arg0, int arg1, int arg2)
         {
-            return IExecute<float>("getHistoricalAxisValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("getHistoricalAxisValue", "(III)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalAxisValue(int,int)"/>
@@ -1004,7 +1004,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalAxisValue(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalAxisValue", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalAxisValue", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalOrientation(int,int)"/>
@@ -1014,7 +1014,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalOrientation(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalOrientation", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalOrientation", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalOrientation(int)"/>
@@ -1033,7 +1033,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalPressure(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalPressure", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalPressure", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalPressure(int)"/>
@@ -1052,7 +1052,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalSize(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalSize", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalSize", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalSize(int)"/>
@@ -1071,7 +1071,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalToolMajor(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalToolMajor", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalToolMajor", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalToolMajor(int)"/>
@@ -1090,7 +1090,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalToolMinor(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalToolMinor", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalToolMinor", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalToolMinor(int)"/>
@@ -1109,7 +1109,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalTouchMajor(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalTouchMajor", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalTouchMajor", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalTouchMajor(int)"/>
@@ -1128,7 +1128,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalTouchMinor(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalTouchMinor", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalTouchMinor", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalTouchMinor(int)"/>
@@ -1147,7 +1147,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalX(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalX", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalX", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalX(int)"/>
@@ -1166,7 +1166,7 @@ namespace Android.View
         /// <returns><see cref="float"/></returns>
         public float GetHistoricalY(int arg0, int arg1)
         {
-            return IExecute<float>("getHistoricalY", arg0, arg1);
+            return IExecuteWithSignature<float>("getHistoricalY", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalY(int)"/>
@@ -1537,7 +1537,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void AddBatch(long arg0, Android.View.MotionEvent.PointerCoords[] arg1, int arg2)
         {
-            IExecute("addBatch", arg0, arg1, arg2);
+            IExecuteWithSignature("addBatch", "(J[Landroid/view/MotionEvent$PointerCoords;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#addBatch(long,float,float,float,float,int)"/>
@@ -1550,7 +1550,7 @@ namespace Android.View
         /// <param name="arg5"><see cref="int"/></param>
         public void AddBatch(long arg0, float arg1, float arg2, float arg3, float arg4, int arg5)
         {
-            IExecute("addBatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("addBatch", "(JFFFFI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalPointerCoords(int,int,android.view.MotionEvent.PointerCoords)"/>
@@ -1560,7 +1560,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Android.View.MotionEvent.PointerCoords"/></param>
         public void GetHistoricalPointerCoords(int arg0, int arg1, Android.View.MotionEvent.PointerCoords arg2)
         {
-            IExecute("getHistoricalPointerCoords", arg0, arg1, arg2);
+            IExecuteWithSignature("getHistoricalPointerCoords", "(IILandroid/view/MotionEvent$PointerCoords;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPointerCoords(int,android.view.MotionEvent.PointerCoords)"/>
@@ -1569,7 +1569,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.MotionEvent.PointerCoords"/></param>
         public void GetPointerCoords(int arg0, Android.View.MotionEvent.PointerCoords arg1)
         {
-            IExecute("getPointerCoords", arg0, arg1);
+            IExecuteWithSignature("getPointerCoords", "(ILandroid/view/MotionEvent$PointerCoords;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPointerProperties(int,android.view.MotionEvent.PointerProperties)"/>
@@ -1578,7 +1578,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.MotionEvent.PointerProperties"/></param>
         public void GetPointerProperties(int arg0, Android.View.MotionEvent.PointerProperties arg1)
         {
-            IExecute("getPointerProperties", arg0, arg1);
+            IExecuteWithSignature("getPointerProperties", "(ILandroid/view/MotionEvent$PointerProperties;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#offsetLocation(float,float)"/>
@@ -1587,7 +1587,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="float"/></param>
         public void OffsetLocation(float arg0, float arg1)
         {
-            IExecute("offsetLocation", arg0, arg1);
+            IExecuteWithSignature("offsetLocation", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#recycle()"/>
@@ -1619,7 +1619,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="float"/></param>
         public void SetLocation(float arg0, float arg1)
         {
-            IExecute("setLocation", arg0, arg1);
+            IExecuteWithSignature("setLocation", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#setSource(int)"/>
@@ -1637,9 +1637,9 @@ namespace Android.View
         {
             IExecuteWithSignature("transform", "(Landroid/graphics/Matrix;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region PointerCoords implementation
         public partial class PointerCoords
@@ -1653,13 +1653,13 @@ namespace Android.View
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerCoords.html#orientation"/>
@@ -1697,13 +1697,13 @@ namespace Android.View
             /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerCoords.html#y"/>
             /// </summary>
             public float y { get { return IGetField<float>("y"); } set { ISetField("y", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerCoords.html#isResampled()"/>
@@ -1744,15 +1744,15 @@ namespace Android.View
             /// <param name="arg1"><see cref="float"/></param>
             public void SetAxisValue(int arg0, float arg1)
             {
-                IExecute("setAxisValue", arg0, arg1);
+                IExecuteWithSignature("setAxisValue", "(IF)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1769,13 +1769,13 @@ namespace Android.View
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerProperties.html#id"/>
@@ -1785,13 +1785,13 @@ namespace Android.View
             /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerProperties.html#toolType"/>
             /// </summary>
             public int toolType { get { return IGetField<int>("toolType"); } set { ISetField("toolType", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerProperties.html#clear()"/>
@@ -1808,20 +1808,20 @@ namespace Android.View
             {
                 IExecuteWithSignature("copyFrom", "(Landroid/view/MotionEvent$PointerProperties;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

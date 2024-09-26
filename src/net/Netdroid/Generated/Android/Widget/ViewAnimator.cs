@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ViewAnimator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,21 +91,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ViewAnimator.html#getInAnimation()"/>
@@ -170,7 +170,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetInAnimation(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setInAnimation", arg0, arg1);
+            IExecuteWithSignature("setInAnimation", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ViewAnimator.html#setInAnimation(android.view.animation.Animation)"/>
@@ -187,7 +187,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetOutAnimation(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setOutAnimation", arg0, arg1);
+            IExecuteWithSignature("setOutAnimation", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ViewAnimator.html#setOutAnimation(android.view.animation.Animation)"/>
@@ -211,13 +211,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("showPrevious", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

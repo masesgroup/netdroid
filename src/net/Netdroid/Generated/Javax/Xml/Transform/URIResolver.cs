@@ -42,10 +42,10 @@ namespace Javax.Xml.Transform
         /// </summary>
         [global::System.Obsolete("URIResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public URIResolver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Transform
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Xml.Transform
     public partial interface IURIResolver
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Javax.Xml.Transform
     public partial class URIResolver : Javax.Xml.Transform.IURIResolver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
@@ -119,15 +119,15 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Xml.Transform.Source>("resolve", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Transform.Source>("resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

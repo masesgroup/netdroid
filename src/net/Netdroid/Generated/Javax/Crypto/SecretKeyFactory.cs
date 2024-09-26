@@ -40,10 +40,10 @@ namespace Javax.Crypto
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SecretKeyFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Javax.Crypto
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Javax.Crypto
     public partial class SecretKeyFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -96,7 +96,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/crypto/SecretKeyFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -107,7 +107,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/crypto/SecretKeyFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String)"/>
@@ -119,9 +119,9 @@ namespace Javax.Crypto
         {
             return SExecuteWithSignature<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/crypto/SecretKeyFactory;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getAlgorithm()"/>
@@ -148,7 +148,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
         public Java.Security.Spec.KeySpec GetKeySpec(Javax.Crypto.SecretKey arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Security.Spec.KeySpec>("getKeySpec", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Spec.KeySpec>("getKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#generateSecret(java.security.spec.KeySpec)"/>
@@ -170,13 +170,13 @@ namespace Javax.Crypto
         {
             return IExecuteWithSignature<Javax.Crypto.SecretKey>("translateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

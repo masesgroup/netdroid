@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DropBoxManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Entry declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Entry(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Os
     public partial class DropBoxManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.html#IS_EMPTY"/>
@@ -169,13 +169,13 @@ namespace Android.Os
         public static Java.Lang.String EXTRA_TIME { get { if (!_EXTRA_TIMEReady) { _EXTRA_TIMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_TIME"); _EXTRA_TIMEReady = true; } return _EXTRA_TIMEContent; } }
         private static Java.Lang.String _EXTRA_TIMEContent = default;
         private static bool _EXTRA_TIMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.html#getNextEntry(java.lang.String,long)"/>
@@ -185,7 +185,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.DropBoxManager.Entry"/></returns>
         public Android.Os.DropBoxManager.Entry GetNextEntry(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<Android.Os.DropBoxManager.Entry>("getNextEntry", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.DropBoxManager.Entry>("getNextEntry", "(Ljava/lang/String;J)Landroid/os/DropBoxManager$Entry;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.html#isTagEnabled(java.lang.String)"/>
@@ -204,7 +204,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="int"/></param>
         public void AddData(Java.Lang.String arg0, byte[] arg1, int arg2)
         {
-            IExecute("addData", arg0, arg1, arg2);
+            IExecuteWithSignature("addData", "(Ljava/lang/String;[BI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.html#addFile(java.lang.String,java.io.File,int)"/>
@@ -215,7 +215,7 @@ namespace Android.Os
         /// <exception cref="Java.Io.IOException"/>
         public void AddFile(Java.Lang.String arg0, Java.Io.File arg1, int arg2)
         {
-            IExecute("addFile", arg0, arg1, arg2);
+            IExecuteWithSignature("addFile", "(Ljava/lang/String;Ljava/io/File;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.html#addText(java.lang.String,java.lang.String)"/>
@@ -224,11 +224,11 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void AddText(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("addText", arg0, arg1);
+            IExecuteWithSignature("addText", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Entry implementation
         public partial class Entry : Android.Os.IParcelable, Java.Io.ICloseable
@@ -287,9 +287,9 @@ namespace Android.Os
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Os.DropBoxManager.Entry"/> to <see cref="Android.Os.Parcelable"/>
@@ -299,9 +299,9 @@ namespace Android.Os
             /// Converter from <see cref="Android.Os.DropBoxManager.Entry"/> to <see cref="Java.Io.Closeable"/>
             /// </summary>
             public static implicit operator Java.Io.Closeable(Android.Os.DropBoxManager.Entry t) => t.Cast<Java.Io.Closeable>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#CREATOR"/>
@@ -309,13 +309,13 @@ namespace Android.Os
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#describeContents()"/>
@@ -381,22 +381,22 @@ namespace Android.Os
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

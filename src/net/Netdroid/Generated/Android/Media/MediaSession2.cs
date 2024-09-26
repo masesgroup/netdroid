@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaSession2(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ControllerInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("SessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SessionCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -211,21 +211,21 @@ namespace Android.Media
     public partial class MediaSession2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getToken()"/>
@@ -252,7 +252,7 @@ namespace Android.Media
         /// <returns><see cref="object"/></returns>
         public object SendSessionCommand(Android.Media.MediaSession2.ControllerInfo arg0, Android.Media.Session2Command arg1, Android.Os.Bundle arg2)
         {
-            return IExecute("sendSessionCommand", arg0, arg1, arg2);
+            return IExecuteWithSignature("sendSessionCommand", "(Landroid/media/MediaSession2$ControllerInfo;Landroid/media/Session2Command;Landroid/os/Bundle;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getId()"/>
@@ -277,7 +277,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void BroadcastSessionCommand(Android.Media.Session2Command arg0, Android.Os.Bundle arg1)
         {
-            IExecute("broadcastSessionCommand", arg0, arg1);
+            IExecuteWithSignature("broadcastSessionCommand", "(Landroid/media/Session2Command;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#cancelSessionCommand(android.media.MediaSession2.ControllerInfo,java.lang.Object)"/>
@@ -286,7 +286,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="object"/></param>
         public void CancelSessionCommand(Android.Media.MediaSession2.ControllerInfo arg0, object arg1)
         {
-            IExecute("cancelSessionCommand", arg0, arg1);
+            IExecuteWithSignature("cancelSessionCommand", "(Landroid/media/MediaSession2$ControllerInfo;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#close()"/>
@@ -303,9 +303,9 @@ namespace Android.Media
         {
             IExecuteWithSignature("setPlaybackActive", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -319,21 +319,21 @@ namespace Android.Media
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaSession2.Builder.html#build()"/>
@@ -378,15 +378,15 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaSession2.Builder"/></returns>
             public Android.Media.MediaSession2.Builder SetSessionCallback(Java.Util.Concurrent.Executor arg0, Android.Media.MediaSession2.SessionCallback arg1)
             {
-                return IExecute<Android.Media.MediaSession2.Builder>("setSessionCallback", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaSession2.Builder>("setSessionCallback", "(Ljava/util/concurrent/Executor;Landroid/media/MediaSession2$SessionCallback;)Landroid/media/MediaSession2$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -395,21 +395,21 @@ namespace Android.Media
         public partial class ControllerInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getRemoteUserInfo()"/>
@@ -443,13 +443,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -458,21 +458,21 @@ namespace Android.Media
         public partial class SessionCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaSession2.SessionCallback.html#onSessionCommand(android.media.MediaSession2,android.media.MediaSession2.ControllerInfo,android.media.Session2Command,android.os.Bundle)"/>
@@ -484,7 +484,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.Session2Command.Result"/></returns>
             public Android.Media.Session2Command.Result OnSessionCommand(Android.Media.MediaSession2 arg0, Android.Media.MediaSession2.ControllerInfo arg1, Android.Media.Session2Command arg2, Android.Os.Bundle arg3)
             {
-                return IExecute<Android.Media.Session2Command.Result>("onSessionCommand", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Media.Session2Command.Result>("onSessionCommand", "(Landroid/media/MediaSession2;Landroid/media/MediaSession2$ControllerInfo;Landroid/media/Session2Command;Landroid/os/Bundle;)Landroid/media/Session2Command$Result;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaSession2.SessionCallback.html#onConnect(android.media.MediaSession2,android.media.MediaSession2.ControllerInfo)"/>
@@ -494,7 +494,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.Session2CommandGroup"/></returns>
             public Android.Media.Session2CommandGroup OnConnect(Android.Media.MediaSession2 arg0, Android.Media.MediaSession2.ControllerInfo arg1)
             {
-                return IExecute<Android.Media.Session2CommandGroup>("onConnect", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.Session2CommandGroup>("onConnect", "(Landroid/media/MediaSession2;Landroid/media/MediaSession2$ControllerInfo;)Landroid/media/Session2CommandGroup;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaSession2.SessionCallback.html#onCommandResult(android.media.MediaSession2,android.media.MediaSession2.ControllerInfo,java.lang.Object,android.media.Session2Command,android.media.Session2Command.Result)"/>
@@ -506,7 +506,7 @@ namespace Android.Media
             /// <param name="arg4"><see cref="Android.Media.Session2Command.Result"/></param>
             public void OnCommandResult(Android.Media.MediaSession2 arg0, Android.Media.MediaSession2.ControllerInfo arg1, object arg2, Android.Media.Session2Command arg3, Android.Media.Session2Command.Result arg4)
             {
-                IExecute("onCommandResult", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onCommandResult", "(Landroid/media/MediaSession2;Landroid/media/MediaSession2$ControllerInfo;Ljava/lang/Object;Landroid/media/Session2Command;Landroid/media/Session2Command$Result;)V", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaSession2.SessionCallback.html#onDisconnected(android.media.MediaSession2,android.media.MediaSession2.ControllerInfo)"/>
@@ -515,7 +515,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Media.MediaSession2.ControllerInfo"/></param>
             public void OnDisconnected(Android.Media.MediaSession2 arg0, Android.Media.MediaSession2.ControllerInfo arg1)
             {
-                IExecute("onDisconnected", arg0, arg1);
+                IExecuteWithSignature("onDisconnected", "(Landroid/media/MediaSession2;Landroid/media/MediaSession2$ControllerInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaSession2.SessionCallback.html#onPostConnect(android.media.MediaSession2,android.media.MediaSession2.ControllerInfo)"/>
@@ -524,22 +524,22 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Media.MediaSession2.ControllerInfo"/></param>
             public void OnPostConnect(Android.Media.MediaSession2 arg0, Android.Media.MediaSession2.ControllerInfo arg1)
             {
-                IExecute("onPostConnect", arg0, arg1);
+                IExecuteWithSignature("onPostConnect", "(Landroid/media/MediaSession2;Landroid/media/MediaSession2$ControllerInfo;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Animation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RectEvaluator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Animation
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/RectEvaluator.html#evaluate(float,android.graphics.Rect,android.graphics.Rect)"/>
@@ -107,7 +107,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Graphics.Rect"/></returns>
         public Android.Graphics.Rect Evaluate(float arg0, Android.Graphics.Rect arg1, Android.Graphics.Rect arg2)
         {
-            return IExecute<Android.Graphics.Rect>("evaluate", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Rect>("evaluate", "(FLandroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/RectEvaluator.html#evaluate(float,java.lang.Object,java.lang.Object)"/>
@@ -118,15 +118,15 @@ namespace Android.Animation
         /// <returns><see cref="object"/></returns>
         public object Evaluate(float arg0, object arg1, object arg2)
         {
-            return IExecute("evaluate", arg0, arg1, arg2);
+            return IExecuteWithSignature("evaluate", "(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

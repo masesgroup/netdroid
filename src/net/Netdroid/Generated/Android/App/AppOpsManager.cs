@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppOpsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnOpActiveChangedListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnOpActiveChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.AppOpsManager_OnOpActiveChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnOpActiveChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnOpActiveChangedListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.AppOpsManager$OnOpActiveChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnOpChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.AppOpsManager_OnOpChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnOpChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnOpChangedListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.AppOpsManager$OnOpChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -217,10 +217,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("OnOpNotedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OnOpNotedCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -241,9 +241,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -255,13 +255,13 @@ namespace Android.App
     public partial class AppOpsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#MODE_ALLOWED"/>
@@ -503,9 +503,9 @@ namespace Android.App
         public static Java.Lang.String OPSTR_WRITE_SETTINGS { get { if (!_OPSTR_WRITE_SETTINGSReady) { _OPSTR_WRITE_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OPSTR_WRITE_SETTINGS"); _OPSTR_WRITE_SETTINGSReady = true; } return _OPSTR_WRITE_SETTINGSContent; } }
         private static Java.Lang.String _OPSTR_WRITE_SETTINGSContent = default;
         private static bool _OPSTR_WRITE_SETTINGSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#permissionToOp(java.lang.String)"/>
@@ -516,9 +516,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "permissionToOp", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#isOpActive(java.lang.String,int,java.lang.String)"/>
@@ -529,7 +529,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool IsOpActive(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<bool>("isOpActive", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("isOpActive", "(Ljava/lang/String;ILjava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOp(java.lang.String,int,java.lang.String)"/>
@@ -541,7 +541,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int CheckOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("checkOp", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("checkOp", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOpNoThrow(java.lang.String,int,java.lang.String)"/>
@@ -553,7 +553,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int CheckOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("checkOpNoThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("checkOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOp(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -566,7 +566,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int NoteOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("noteOp", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("noteOp", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOp(java.lang.String,int,java.lang.String)"/>
@@ -578,7 +578,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int NoteOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("noteOp", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("noteOp", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOpNoThrow(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -591,7 +591,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int NoteOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("noteOpNoThrow", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("noteOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOpNoThrow(java.lang.String,int,java.lang.String)"/>
@@ -603,7 +603,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int NoteOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("noteOpNoThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("noteOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOp(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)"/>
@@ -616,7 +616,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int NoteProxyOp(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("noteProxyOp", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("noteProxyOp", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOp(java.lang.String,java.lang.String)"/>
@@ -627,7 +627,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int NoteProxyOp(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("noteProxyOp", arg0, arg1);
+            return IExecuteWithSignature<int>("noteProxyOp", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOpNoThrow(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)"/>
@@ -640,7 +640,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int NoteProxyOpNoThrow(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("noteProxyOpNoThrow", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("noteProxyOpNoThrow", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOpNoThrow(java.lang.String,java.lang.String,int)"/>
@@ -652,7 +652,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int NoteProxyOpNoThrow(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("noteProxyOpNoThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("noteProxyOpNoThrow", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOpNoThrow(java.lang.String,java.lang.String)"/>
@@ -663,7 +663,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int NoteProxyOpNoThrow(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("noteProxyOpNoThrow", arg0, arg1);
+            return IExecuteWithSignature<int>("noteProxyOpNoThrow", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOp(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -676,7 +676,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int StartOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("startOp", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("startOp", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOp(java.lang.String,int,java.lang.String)"/>
@@ -688,7 +688,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int StartOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("startOp", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("startOp", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOpNoThrow(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -701,7 +701,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int StartOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("startOpNoThrow", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("startOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOpNoThrow(java.lang.String,int,java.lang.String)"/>
@@ -713,7 +713,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public int StartOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("startOpNoThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("startOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startProxyOp(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -726,7 +726,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int StartProxyOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("startProxyOp", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("startProxyOp", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startProxyOpNoThrow(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -739,7 +739,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int StartProxyOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<int>("startProxyOpNoThrow", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("startProxyOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#unsafeCheckOp(java.lang.String,int,java.lang.String)"/>
@@ -750,7 +750,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int UnsafeCheckOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("unsafeCheckOp", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("unsafeCheckOp", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#unsafeCheckOpNoThrow(java.lang.String,int,java.lang.String)"/>
@@ -761,7 +761,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int UnsafeCheckOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("unsafeCheckOpNoThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("unsafeCheckOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#unsafeCheckOpRaw(java.lang.String,int,java.lang.String)"/>
@@ -772,7 +772,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int UnsafeCheckOpRaw(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("unsafeCheckOpRaw", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("unsafeCheckOpRaw", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#unsafeCheckOpRawNoThrow(java.lang.String,int,java.lang.String)"/>
@@ -783,7 +783,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int UnsafeCheckOpRawNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("unsafeCheckOpRawNoThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("unsafeCheckOpRawNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkPackage(int,java.lang.String)"/>
@@ -793,7 +793,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void CheckPackage(int arg0, Java.Lang.String arg1)
         {
-            IExecute("checkPackage", arg0, arg1);
+            IExecuteWithSignature("checkPackage", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#finishOp(java.lang.String,int,java.lang.String,java.lang.String)"/>
@@ -804,7 +804,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void FinishOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("finishOp", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("finishOp", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#finishOp(java.lang.String,int,java.lang.String)"/>
@@ -815,7 +815,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void FinishOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("finishOp", arg0, arg1, arg2);
+            IExecuteWithSignature("finishOp", "(Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#finishProxyOp(java.lang.String,int,java.lang.String,java.lang.String)"/>
@@ -826,7 +826,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void FinishProxyOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("finishProxyOp", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("finishProxyOp", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#setOnOpNotedCallback(java.util.concurrent.Executor,android.app.AppOpsManager.OnOpNotedCallback)"/>
@@ -835,7 +835,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.App.AppOpsManager.OnOpNotedCallback"/></param>
         public void SetOnOpNotedCallback(Java.Util.Concurrent.Executor arg0, Android.App.AppOpsManager.OnOpNotedCallback arg1)
         {
-            IExecute("setOnOpNotedCallback", arg0, arg1);
+            IExecuteWithSignature("setOnOpNotedCallback", "(Ljava/util/concurrent/Executor;Landroid/app/AppOpsManager$OnOpNotedCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startWatchingActive(java.lang.String[],java.util.concurrent.Executor,android.app.AppOpsManager.OnOpActiveChangedListener)"/>
@@ -845,7 +845,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.AppOpsManager.OnOpActiveChangedListener"/></param>
         public void StartWatchingActive(Java.Lang.String[] arg0, Java.Util.Concurrent.Executor arg1, Android.App.AppOpsManager.OnOpActiveChangedListener arg2)
         {
-            IExecute("startWatchingActive", arg0, arg1, arg2);
+            IExecuteWithSignature("startWatchingActive", "([Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/app/AppOpsManager$OnOpActiveChangedListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startWatchingMode(java.lang.String,java.lang.String,android.app.AppOpsManager.OnOpChangedListener)"/>
@@ -855,7 +855,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.AppOpsManager.OnOpChangedListener"/></param>
         public void StartWatchingMode(Java.Lang.String arg0, Java.Lang.String arg1, Android.App.AppOpsManager.OnOpChangedListener arg2)
         {
-            IExecute("startWatchingMode", arg0, arg1, arg2);
+            IExecuteWithSignature("startWatchingMode", "(Ljava/lang/String;Ljava/lang/String;Landroid/app/AppOpsManager$OnOpChangedListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startWatchingMode(java.lang.String,java.lang.String,int,android.app.AppOpsManager.OnOpChangedListener)"/>
@@ -866,7 +866,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="Android.App.AppOpsManager.OnOpChangedListener"/></param>
         public void StartWatchingMode(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Android.App.AppOpsManager.OnOpChangedListener arg3)
         {
-            IExecute("startWatchingMode", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startWatchingMode", "(Ljava/lang/String;Ljava/lang/String;ILandroid/app/AppOpsManager$OnOpChangedListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#stopWatchingActive(android.app.AppOpsManager.OnOpActiveChangedListener)"/>
@@ -884,29 +884,29 @@ namespace Android.App
         {
             IExecuteWithSignature("stopWatchingMode", "(Landroid/app/AppOpsManager$OnOpChangedListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnOpActiveChangedListener implementation
         public partial class OnOpActiveChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnOpActiveChangedListener"/>
@@ -917,13 +917,13 @@ namespace Android.App
                 AddEventHandler("onOpActiveChanged8", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnOpActiveChanged8EventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnOpActiveChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, int, Java.Lang.String, bool> OnOnOpActiveChanged { get; set; } = null;
-            
+
             bool hasOverrideOnOpActiveChanged = true;
             void OnOpActiveChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -932,7 +932,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Java.Lang.String>(2), data.EventData.GetAt<bool>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnOpActiveChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,boolean)"/>
             /// </summary>
@@ -958,15 +958,15 @@ namespace Android.App
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnOpActiveChangedDefault(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, int arg4, bool arg5, int arg6, int arg7)
             {
-                IExecute("onOpActiveChangedDefault", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+                IExecuteWithSignature("onOpActiveChangedDefault", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IZII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,int,boolean,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnOpActiveChanged8"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, int, Java.Lang.String, Java.Lang.String, int, bool, int, int> OnOnOpActiveChanged8 { get; set; } = null;
-            
+
             bool hasOverrideOnOpActiveChanged8 = true;
             void OnOpActiveChanged8EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -975,7 +975,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Java.Lang.String>(2), data.EventData.GetAt<Java.Lang.String>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<bool>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnOpActiveChanged8;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,int,boolean,int,int)"/>
             /// </summary>
@@ -992,13 +992,13 @@ namespace Android.App
             {
                 hasOverrideOnOpActiveChanged8 = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1007,21 +1007,21 @@ namespace Android.App
         public partial class OnOpActiveChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,boolean)"/>
@@ -1032,7 +1032,7 @@ namespace Android.App
             /// <param name="arg3"><see cref="bool"/></param>
             public override void OnOpActiveChanged(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, bool arg3)
             {
-                IExecute("onOpActiveChanged", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onOpActiveChanged", "(Ljava/lang/String;ILjava/lang/String;Z)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,int,boolean,int,int)"/>
@@ -1047,15 +1047,15 @@ namespace Android.App
             /// <param name="arg7"><see cref="int"/></param>
             public override void OnOpActiveChanged(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, int arg4, bool arg5, int arg6, int arg7)
             {
-                IExecute("onOpActiveChanged", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+                IExecuteWithSignature("onOpActiveChanged", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IZII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1064,21 +1064,21 @@ namespace Android.App
         public partial class OnOpChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnOpChangedListener"/>
@@ -1089,13 +1089,13 @@ namespace Android.App
                 AddEventHandler("onOpChanged4", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnOpChanged4EventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnOpChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, Java.Lang.String> OnOnOpChanged { get; set; } = null;
-            
+
             bool hasOverrideOnOpChanged = true;
             void OnOpChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1104,7 +1104,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnOpChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String)"/>
             /// </summary>
@@ -1124,15 +1124,15 @@ namespace Android.App
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnOpChangedDefault(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
             {
-                IExecute("onOpChangedDefault", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onOpChangedDefault", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2, arg3);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String,int,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnOpChanged4"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, Java.Lang.String, int, Java.Lang.String> OnOnOpChanged4 { get; set; } = null;
-            
+
             bool hasOverrideOnOpChanged4 = true;
             void OnOpChanged4EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1141,7 +1141,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<Java.Lang.String>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnOpChanged4;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String,int,java.lang.String)"/>
             /// </summary>
@@ -1154,13 +1154,13 @@ namespace Android.App
             {
                 hasOverrideOnOpChanged4 = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1169,21 +1169,21 @@ namespace Android.App
         public partial class OnOpChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String)"/>
@@ -1192,7 +1192,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public override void OnOpChanged(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                IExecute("onOpChanged", arg0, arg1);
+                IExecuteWithSignature("onOpChanged", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String,int,java.lang.String)"/>
@@ -1203,15 +1203,15 @@ namespace Android.App
             /// <param name="arg3"><see cref="Java.Lang.String"/></param>
             public override void OnOpChanged(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
             {
-                IExecute("onOpChanged", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onOpChanged", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1220,21 +1220,21 @@ namespace Android.App
         public partial class OnOpNotedCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpNotedCallback.html#onAsyncNoted(android.app.AsyncNotedAppOp)"/>
@@ -1260,20 +1260,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("onSelfNoted", "(Landroid/app/SyncNotedAppOp;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

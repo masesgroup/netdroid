@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Consumer() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Consumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region ConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="Consumer"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.Consumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -103,7 +103,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Consumer() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Consumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -112,13 +112,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
     
     }
     #endregion
-    
+
     #region ConsumerDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="Consumer"/> or its generic type if there is one
@@ -129,14 +129,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.Consumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -164,21 +164,21 @@ namespace Java.Util.Function
     public partial class Consumer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="Consumer"/>
@@ -189,13 +189,13 @@ namespace Java.Util.Function
             AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<object> OnAccept { get; set; } = null;
-        
+
         bool hasOverrideAccept = true;
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -204,7 +204,7 @@ namespace Java.Util.Function
             methodToExecute.Invoke(data.EventData.GetAt<object>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
@@ -223,13 +223,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Consumer>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Consumer, Java.Util.Function.Consumer> OnAndThen { get; set; } = null;
-        
+
         bool hasOverrideAndThen = true;
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -238,7 +238,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Consumer>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
@@ -249,13 +249,13 @@ namespace Java.Util.Function
         {
             hasOverrideAndThen = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -264,21 +264,21 @@ namespace Java.Util.Function
     public partial class ConsumerDirect
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
@@ -297,13 +297,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.ConsumerDirect, Java.Util.Function.Consumer>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -315,13 +315,13 @@ namespace Java.Util.Function
     public partial interface IConsumer<T>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -330,21 +330,21 @@ namespace Java.Util.Function
     public partial class Consumer<T> : Java.Util.Function.IConsumer<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="Consumer"/>
@@ -355,13 +355,13 @@ namespace Java.Util.Function
             AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<Arg0objectSuperT>EventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<T> OnAccept { get; set; } = null;
-        
+
         bool hasOverrideAccept = true;
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -370,7 +370,7 @@ namespace Java.Util.Function
             methodToExecute.Invoke(data.EventData.GetAt<T>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
@@ -390,13 +390,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Consumer<T>>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Consumer<Arg0objectSuperT>, Java.Util.Function.Consumer<T>> OnAndThen<Arg0objectSuperT> { get; set; } = null;
-        
+
         bool hasOverrideAndThen<Arg0objectSuperT> = true;
         void AndThen<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -405,7 +405,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Consumer<Arg0objectSuperT>>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<Arg0objectSuperT>, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
@@ -417,13 +417,13 @@ namespace Java.Util.Function
         {
             hasOverrideAndThen<Arg0objectSuperT> = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -432,21 +432,21 @@ namespace Java.Util.Function
     public partial class ConsumerDirect<T> : Java.Util.Function.IConsumer<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
@@ -466,13 +466,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.ConsumerDirect<T>, Java.Util.Function.Consumer<T>>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

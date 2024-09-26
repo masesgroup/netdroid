@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.P2p
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WifiP2pManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net.Wifi.P2p
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ActionListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ActionListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_ActionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ActionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ActionListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$ActionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -148,10 +148,10 @@ namespace Android.Net.Wifi.P2p
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Channel(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -172,9 +172,9 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -188,7 +188,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ChannelListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_ChannelListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -197,13 +197,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ChannelListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ChannelListener"/> or its generic type if there is one
@@ -214,14 +214,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$ChannelListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -255,7 +255,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ConnectionInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_ConnectionInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -264,13 +264,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ConnectionInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ConnectionInfoListener"/> or its generic type if there is one
@@ -281,14 +281,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$ConnectionInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -322,7 +322,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DeviceInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_DeviceInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -331,13 +331,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DeviceInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DeviceInfoListener"/> or its generic type if there is one
@@ -348,14 +348,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$DeviceInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -389,7 +389,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DiscoveryStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_DiscoveryStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -398,13 +398,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DiscoveryStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DiscoveryStateListener"/> or its generic type if there is one
@@ -415,14 +415,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$DiscoveryStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -456,7 +456,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DnsSdServiceResponseListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_DnsSdServiceResponseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -465,13 +465,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DnsSdServiceResponseListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DnsSdServiceResponseListener"/> or its generic type if there is one
@@ -482,14 +482,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$DnsSdServiceResponseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -523,7 +523,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DnsSdTxtRecordListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_DnsSdTxtRecordListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -532,13 +532,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DnsSdTxtRecordListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DnsSdTxtRecordListener"/> or its generic type if there is one
@@ -549,14 +549,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$DnsSdTxtRecordListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -590,7 +590,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ExternalApproverRequestListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_ExternalApproverRequestListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -599,13 +599,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ExternalApproverRequestListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ExternalApproverRequestListener"/> or its generic type if there is one
@@ -616,14 +616,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$ExternalApproverRequestListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -657,7 +657,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public GroupInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_GroupInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -666,13 +666,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region GroupInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="GroupInfoListener"/> or its generic type if there is one
@@ -683,14 +683,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$GroupInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -724,7 +724,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public NetworkInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_NetworkInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -733,13 +733,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region NetworkInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="NetworkInfoListener"/> or its generic type if there is one
@@ -750,14 +750,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$NetworkInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -791,7 +791,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public P2pStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_P2pStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -800,13 +800,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region P2pStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="P2pStateListener"/> or its generic type if there is one
@@ -817,14 +817,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$P2pStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -858,7 +858,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public PeerListListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_PeerListListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -867,13 +867,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region PeerListListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="PeerListListener"/> or its generic type if there is one
@@ -884,14 +884,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$PeerListListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -925,7 +925,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ServiceResponseListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_ServiceResponseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -934,13 +934,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ServiceResponseListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ServiceResponseListener"/> or its generic type if there is one
@@ -951,14 +951,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$ServiceResponseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -992,7 +992,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public UpnpServiceResponseListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_UpnpServiceResponseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1001,13 +1001,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region UpnpServiceResponseListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="UpnpServiceResponseListener"/> or its generic type if there is one
@@ -1018,14 +1018,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$UpnpServiceResponseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1059,7 +1059,7 @@ namespace Android.Net.Wifi.P2p
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public WifiP2pListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.p2p.WifiP2pManager_WifiP2pListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1068,13 +1068,13 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region WifiP2pListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="WifiP2pListener"/> or its generic type if there is one
@@ -1085,14 +1085,14 @@ namespace Android.Net.Wifi.P2p
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.wifi.p2p.WifiP2pManager$WifiP2pListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1124,13 +1124,13 @@ namespace Android.Net.Wifi.P2p
     public partial class WifiP2pManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#BUSY"/>
@@ -1372,9 +1372,9 @@ namespace Android.Net.Wifi.P2p
         public static Java.Lang.String WIFI_P2P_THIS_DEVICE_CHANGED_ACTION { get { if (!_WIFI_P2P_THIS_DEVICE_CHANGED_ACTIONReady) { _WIFI_P2P_THIS_DEVICE_CHANGED_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_P2P_THIS_DEVICE_CHANGED_ACTION"); _WIFI_P2P_THIS_DEVICE_CHANGED_ACTIONReady = true; } return _WIFI_P2P_THIS_DEVICE_CHANGED_ACTIONContent; } }
         private static Java.Lang.String _WIFI_P2P_THIS_DEVICE_CHANGED_ACTIONContent = default;
         private static bool _WIFI_P2P_THIS_DEVICE_CHANGED_ACTIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getP2pMaxAllowedVendorElementsLengthBytes()"/>
@@ -1384,9 +1384,9 @@ namespace Android.Net.Wifi.P2p
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getP2pMaxAllowedVendorElementsLengthBytes", "()I");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#initialize(android.content.Context,android.os.Looper,android.net.wifi.p2p.WifiP2pManager.ChannelListener)"/>
@@ -1397,7 +1397,7 @@ namespace Android.Net.Wifi.P2p
         /// <returns><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></returns>
         public Android.Net.Wifi.P2p.WifiP2pManager.Channel Initialize(Android.Content.Context arg0, Android.Os.Looper arg1, Android.Net.Wifi.P2p.WifiP2pManager.ChannelListener arg2)
         {
-            return IExecute<Android.Net.Wifi.P2p.WifiP2pManager.Channel>("initialize", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pManager.Channel>("initialize", "(Landroid/content/Context;Landroid/os/Looper;Landroid/net/wifi/p2p/WifiP2pManager$ChannelListener;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isChannelConstrainedDiscoverySupported()"/>
@@ -1439,7 +1439,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ExternalApproverRequestListener"/></param>
         public void AddExternalApprover(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.MacAddress arg1, Android.Net.Wifi.P2p.WifiP2pManager.ExternalApproverRequestListener arg2)
         {
-            IExecute("addExternalApprover", arg0, arg1, arg2);
+            IExecuteWithSignature("addExternalApprover", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/MacAddress;Landroid/net/wifi/p2p/WifiP2pManager$ExternalApproverRequestListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1449,7 +1449,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void AddLocalService(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("addLocalService", arg0, arg1, arg2);
+            IExecuteWithSignature("addLocalService", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceRequest,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1459,7 +1459,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void AddServiceRequest(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("addServiceRequest", arg0, arg1, arg2);
+            IExecuteWithSignature("addServiceRequest", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#cancelConnect(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1468,7 +1468,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void CancelConnect(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("cancelConnect", arg0, arg1);
+            IExecuteWithSignature("cancelConnect", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#clearLocalServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1477,7 +1477,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void ClearLocalServices(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("clearLocalServices", arg0, arg1);
+            IExecuteWithSignature("clearLocalServices", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#clearServiceRequests(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1486,7 +1486,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void ClearServiceRequests(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("clearServiceRequests", arg0, arg1);
+            IExecuteWithSignature("clearServiceRequests", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#connect(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1496,7 +1496,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void Connect(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pConfig arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("connect", arg0, arg1, arg2);
+            IExecuteWithSignature("connect", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1506,7 +1506,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void CreateGroup(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pConfig arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("createGroup", arg0, arg1, arg2);
+            IExecuteWithSignature("createGroup", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1515,7 +1515,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void CreateGroup(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("createGroup", arg0, arg1);
+            IExecuteWithSignature("createGroup", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1524,7 +1524,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void DiscoverPeers(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("discoverPeers", arg0, arg1);
+            IExecuteWithSignature("discoverPeers", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeersOnSocialChannels(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1533,7 +1533,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void DiscoverPeersOnSocialChannels(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("discoverPeersOnSocialChannels", arg0, arg1);
+            IExecuteWithSignature("discoverPeersOnSocialChannels", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeersOnSpecificFrequency(android.net.wifi.p2p.WifiP2pManager.Channel,int,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1543,7 +1543,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void DiscoverPeersOnSpecificFrequency(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, int arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("discoverPeersOnSpecificFrequency", arg0, arg1, arg2);
+            IExecuteWithSignature("discoverPeersOnSpecificFrequency", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ILandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1552,7 +1552,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void DiscoverServices(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("discoverServices", arg0, arg1);
+            IExecuteWithSignature("discoverServices", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getListenState(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -1562,7 +1562,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetListenState(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Java.Lang.Integer> arg2)
         {
-            IExecute("getListenState", arg0, arg1, arg2);
+            IExecuteWithSignature("getListenState", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#registerWifiP2pListener(java.util.concurrent.Executor,android.net.wifi.p2p.WifiP2pManager.WifiP2pListener)"/>
@@ -1571,7 +1571,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener"/></param>
         public void RegisterWifiP2pListener(Java.Util.Concurrent.Executor arg0, Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener arg1)
         {
-            IExecute("registerWifiP2pListener", arg0, arg1);
+            IExecuteWithSignature("registerWifiP2pListener", "(Ljava/util/concurrent/Executor;Landroid/net/wifi/p2p/WifiP2pManager$WifiP2pListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeClient(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1581,7 +1581,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void RemoveClient(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.MacAddress arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("removeClient", arg0, arg1, arg2);
+            IExecuteWithSignature("removeClient", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/MacAddress;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeExternalApprover(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1591,7 +1591,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void RemoveExternalApprover(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.MacAddress arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("removeExternalApprover", arg0, arg1, arg2);
+            IExecuteWithSignature("removeExternalApprover", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/MacAddress;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1600,7 +1600,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void RemoveGroup(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("removeGroup", arg0, arg1);
+            IExecuteWithSignature("removeGroup", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1610,7 +1610,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void RemoveLocalService(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("removeLocalService", arg0, arg1, arg2);
+            IExecuteWithSignature("removeLocalService", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceRequest,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1620,7 +1620,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void RemoveServiceRequest(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("removeServiceRequest", arg0, arg1, arg2);
+            IExecuteWithSignature("removeServiceRequest", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestConnectionInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ConnectionInfoListener)"/>
@@ -1629,7 +1629,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ConnectionInfoListener"/></param>
         public void RequestConnectionInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ConnectionInfoListener arg1)
         {
-            IExecute("requestConnectionInfo", arg0, arg1);
+            IExecuteWithSignature("requestConnectionInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ConnectionInfoListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDeviceInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DeviceInfoListener)"/>
@@ -1638,7 +1638,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.DeviceInfoListener"/></param>
         public void RequestDeviceInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.DeviceInfoListener arg1)
         {
-            IExecute("requestDeviceInfo", arg0, arg1);
+            IExecuteWithSignature("requestDeviceInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DeviceInfoListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDiscoveryState(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DiscoveryStateListener)"/>
@@ -1647,7 +1647,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.DiscoveryStateListener"/></param>
         public void RequestDiscoveryState(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.DiscoveryStateListener arg1)
         {
-            IExecute("requestDiscoveryState", arg0, arg1);
+            IExecuteWithSignature("requestDiscoveryState", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DiscoveryStateListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestGroupInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.GroupInfoListener)"/>
@@ -1656,7 +1656,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.GroupInfoListener"/></param>
         public void RequestGroupInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.GroupInfoListener arg1)
         {
-            IExecute("requestGroupInfo", arg0, arg1);
+            IExecuteWithSignature("requestGroupInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$GroupInfoListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestNetworkInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.NetworkInfoListener)"/>
@@ -1665,7 +1665,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.NetworkInfoListener"/></param>
         public void RequestNetworkInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.NetworkInfoListener arg1)
         {
-            IExecute("requestNetworkInfo", arg0, arg1);
+            IExecuteWithSignature("requestNetworkInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$NetworkInfoListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestP2pState(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.P2pStateListener)"/>
@@ -1674,7 +1674,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.P2pStateListener"/></param>
         public void RequestP2pState(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.P2pStateListener arg1)
         {
-            IExecute("requestP2pState", arg0, arg1);
+            IExecuteWithSignature("requestP2pState", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$P2pStateListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.PeerListListener)"/>
@@ -1683,7 +1683,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.PeerListListener"/></param>
         public void RequestPeers(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.PeerListListener arg1)
         {
-            IExecute("requestPeers", arg0, arg1);
+            IExecuteWithSignature("requestPeers", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$PeerListListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setConnectionRequestResult(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,int,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1694,7 +1694,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg3"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void SetConnectionRequestResult(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.MacAddress arg1, int arg2, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg3)
         {
-            IExecute("setConnectionRequestResult", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setConnectionRequestResult", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/MacAddress;ILandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setConnectionRequestResult(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,int,java.lang.String,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1706,7 +1706,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg4"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void SetConnectionRequestResult(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.MacAddress arg1, int arg2, Java.Lang.String arg3, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg4)
         {
-            IExecute("setConnectionRequestResult", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setConnectionRequestResult", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/MacAddress;ILjava/lang/String;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setDnsSdResponseListeners(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DnsSdServiceResponseListener,android.net.wifi.p2p.WifiP2pManager.DnsSdTxtRecordListener)"/>
@@ -1716,7 +1716,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.DnsSdTxtRecordListener"/></param>
         public void SetDnsSdResponseListeners(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.DnsSdServiceResponseListener arg1, Android.Net.Wifi.P2p.WifiP2pManager.DnsSdTxtRecordListener arg2)
         {
-            IExecute("setDnsSdResponseListeners", arg0, arg1, arg2);
+            IExecuteWithSignature("setDnsSdResponseListeners", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DnsSdServiceResponseListener;Landroid/net/wifi/p2p/WifiP2pManager$DnsSdTxtRecordListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setServiceResponseListener(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener)"/>
@@ -1725,7 +1725,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ServiceResponseListener"/></param>
         public void SetServiceResponseListener(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ServiceResponseListener arg1)
         {
-            IExecute("setServiceResponseListener", arg0, arg1);
+            IExecuteWithSignature("setServiceResponseListener", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ServiceResponseListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setUpnpServiceResponseListener(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.UpnpServiceResponseListener)"/>
@@ -1734,7 +1734,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.UpnpServiceResponseListener"/></param>
         public void SetUpnpServiceResponseListener(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.UpnpServiceResponseListener arg1)
         {
-            IExecute("setUpnpServiceResponseListener", arg0, arg1);
+            IExecuteWithSignature("setUpnpServiceResponseListener", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$UpnpServiceResponseListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setVendorElements(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.List,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1744,7 +1744,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void SetVendorElements(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("setVendorElements", arg0, arg1, arg2);
+            IExecuteWithSignature("setVendorElements", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Ljava/util/List;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setWfdInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pWfdInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1754,7 +1754,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void SetWfdInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pWfdInfo arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("setWfdInfo", arg0, arg1, arg2);
+            IExecuteWithSignature("setWfdInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pWfdInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#startListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1763,7 +1763,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void StartListening(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("startListening", arg0, arg1);
+            IExecuteWithSignature("startListening", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#startPeerDiscovery(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pDiscoveryConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1773,7 +1773,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void StartPeerDiscovery(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pDiscoveryConfig arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
         {
-            IExecute("startPeerDiscovery", arg0, arg1, arg2);
+            IExecuteWithSignature("startPeerDiscovery", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pDiscoveryConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1782,7 +1782,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void StopListening(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("stopListening", arg0, arg1);
+            IExecuteWithSignature("stopListening", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopPeerDiscovery(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
@@ -1791,7 +1791,7 @@ namespace Android.Net.Wifi.P2p
         /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
         public void StopPeerDiscovery(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
-            IExecute("stopPeerDiscovery", arg0, arg1);
+            IExecuteWithSignature("stopPeerDiscovery", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#unregisterWifiP2pListener(android.net.wifi.p2p.WifiP2pManager.WifiP2pListener)"/>
@@ -1801,29 +1801,29 @@ namespace Android.Net.Wifi.P2p
         {
             IExecuteWithSignature("unregisterWifiP2pListener", "(Landroid/net/wifi/p2p/WifiP2pManager$WifiP2pListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ActionListener implementation
         public partial class ActionListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ActionListener"/>
@@ -1834,13 +1834,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onSuccess", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSuccessEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onFailure(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFailure"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnFailure { get; set; } = null;
-            
+
             bool hasOverrideOnFailure = true;
             void OnFailureEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1849,7 +1849,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFailure;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onFailure(int)"/>
             /// </summary>
@@ -1858,13 +1858,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnFailure = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSuccess"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnSuccess { get; set; } = null;
-            
+
             bool hasOverrideOnSuccess = true;
             void OnSuccessEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1873,7 +1873,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSuccess;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess()"/>
             /// </summary>
@@ -1881,13 +1881,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnSuccess = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1896,21 +1896,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ActionListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onFailure(int)"/>
@@ -1927,13 +1927,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onSuccess", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1942,21 +1942,21 @@ namespace Android.Net.Wifi.P2p
         public partial class Channel
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.Channel.html#close()"/>
@@ -1965,13 +1965,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("close", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1980,21 +1980,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ChannelListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ChannelListener"/>
@@ -2004,13 +2004,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onChannelDisconnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnChannelDisconnectedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ChannelListener.html#onChannelDisconnected()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChannelDisconnected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnChannelDisconnected { get; set; } = null;
-            
+
             bool hasOverrideOnChannelDisconnected = true;
             void OnChannelDisconnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2019,7 +2019,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnChannelDisconnected;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ChannelListener.html#onChannelDisconnected()"/>
             /// </summary>
@@ -2027,13 +2027,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnChannelDisconnected = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2042,21 +2042,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ChannelListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ChannelListener.html#onChannelDisconnected()"/>
@@ -2065,13 +2065,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onChannelDisconnected", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2080,21 +2080,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ConnectionInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ConnectionInfoListener"/>
@@ -2104,13 +2104,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onConnectionInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnConnectionInfoAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.html#onConnectionInfoAvailable(android.net.wifi.p2p.WifiP2pInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnConnectionInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo> OnOnConnectionInfoAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnConnectionInfoAvailable = true;
             void OnConnectionInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2119,7 +2119,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pInfo>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnConnectionInfoAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.html#onConnectionInfoAvailable(android.net.wifi.p2p.WifiP2pInfo)"/>
             /// </summary>
@@ -2128,13 +2128,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnConnectionInfoAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2143,21 +2143,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ConnectionInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.html#onConnectionInfoAvailable(android.net.wifi.p2p.WifiP2pInfo)"/>
@@ -2167,13 +2167,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onConnectionInfoAvailable", "(Landroid/net/wifi/p2p/WifiP2pInfo;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2182,21 +2182,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DeviceInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DeviceInfoListener"/>
@@ -2206,13 +2206,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onDeviceInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDeviceInfoAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DeviceInfoListener.html#onDeviceInfoAvailable(android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDeviceInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDeviceInfoAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnDeviceInfoAvailable = true;
             void OnDeviceInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2221,7 +2221,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDeviceInfoAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DeviceInfoListener.html#onDeviceInfoAvailable(android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
@@ -2230,13 +2230,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnDeviceInfoAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2245,21 +2245,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DeviceInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DeviceInfoListener.html#onDeviceInfoAvailable(android.net.wifi.p2p.WifiP2pDevice)"/>
@@ -2269,13 +2269,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onDeviceInfoAvailable", "(Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2284,21 +2284,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DiscoveryStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DiscoveryStateListener"/>
@@ -2308,13 +2308,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onDiscoveryStateAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDiscoveryStateAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DiscoveryStateListener.html#onDiscoveryStateAvailable(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDiscoveryStateAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnDiscoveryStateAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnDiscoveryStateAvailable = true;
             void OnDiscoveryStateAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2323,7 +2323,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDiscoveryStateAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DiscoveryStateListener.html#onDiscoveryStateAvailable(int)"/>
             /// </summary>
@@ -2332,13 +2332,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnDiscoveryStateAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2347,21 +2347,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DiscoveryStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DiscoveryStateListener.html#onDiscoveryStateAvailable(int)"/>
@@ -2371,13 +2371,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onDiscoveryStateAvailable", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2386,21 +2386,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DnsSdServiceResponseListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DnsSdServiceResponseListener"/>
@@ -2410,13 +2410,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onDnsSdServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDnsSdServiceAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener.html#onDnsSdServiceAvailable(java.lang.String,java.lang.String,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDnsSdServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, Java.Lang.String, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDnsSdServiceAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnDnsSdServiceAvailable = true;
             void OnDnsSdServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2425,7 +2425,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDnsSdServiceAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener.html#onDnsSdServiceAvailable(java.lang.String,java.lang.String,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
@@ -2436,13 +2436,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnDnsSdServiceAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2451,21 +2451,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DnsSdServiceResponseListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener.html#onDnsSdServiceAvailable(java.lang.String,java.lang.String,android.net.wifi.p2p.WifiP2pDevice)"/>
@@ -2475,15 +2475,15 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
             public override void OnDnsSdServiceAvailable(Java.Lang.String arg0, Java.Lang.String arg1, Android.Net.Wifi.P2p.WifiP2pDevice arg2)
             {
-                IExecute("onDnsSdServiceAvailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onDnsSdServiceAvailable", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2492,21 +2492,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DnsSdTxtRecordListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DnsSdTxtRecordListener"/>
@@ -2516,13 +2516,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onDnsSdTxtRecordAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDnsSdTxtRecordAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdTxtRecordListener.html#onDnsSdTxtRecordAvailable(java.lang.String,java.util.Map,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDnsSdTxtRecordAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.String>, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDnsSdTxtRecordAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnDnsSdTxtRecordAvailable = true;
             void OnDnsSdTxtRecordAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2531,7 +2531,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Java.Util.Map<Java.Lang.String, Java.Lang.String>>(1), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDnsSdTxtRecordAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdTxtRecordListener.html#onDnsSdTxtRecordAvailable(java.lang.String,java.util.Map,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
@@ -2542,13 +2542,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnDnsSdTxtRecordAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2557,21 +2557,21 @@ namespace Android.Net.Wifi.P2p
         public partial class DnsSdTxtRecordListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdTxtRecordListener.html#onDnsSdTxtRecordAvailable(java.lang.String,java.util.Map,android.net.wifi.p2p.WifiP2pDevice)"/>
@@ -2581,15 +2581,15 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
             public override void OnDnsSdTxtRecordAvailable(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1, Android.Net.Wifi.P2p.WifiP2pDevice arg2)
             {
-                IExecute("onDnsSdTxtRecordAvailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onDnsSdTxtRecordAvailable", "(Ljava/lang/String;Ljava/util/Map;Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2598,21 +2598,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ExternalApproverRequestListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ExternalApproverRequestListener"/>
@@ -2625,13 +2625,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onPinGenerated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPinGeneratedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onAttached(android.net.MacAddress)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAttached"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.MacAddress> OnOnAttached { get; set; } = null;
-            
+
             bool hasOverrideOnAttached = true;
             void OnAttachedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2640,7 +2640,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.MacAddress>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAttached;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onAttached(android.net.MacAddress)"/>
             /// </summary>
@@ -2649,13 +2649,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnAttached = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onConnectionRequested(int,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnConnectionRequested"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, Android.Net.Wifi.P2p.WifiP2pConfig, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnConnectionRequested { get; set; } = null;
-            
+
             bool hasOverrideOnConnectionRequested = true;
             void OnConnectionRequestedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2664,7 +2664,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pConfig>(1), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnConnectionRequested;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onConnectionRequested(int,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
@@ -2675,13 +2675,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnConnectionRequested = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onDetached(android.net.MacAddress,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDetached"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.MacAddress, int> OnOnDetached { get; set; } = null;
-            
+
             bool hasOverrideOnDetached = true;
             void OnDetachedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2690,7 +2690,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.MacAddress>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDetached;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onDetached(android.net.MacAddress,int)"/>
             /// </summary>
@@ -2700,13 +2700,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnDetached = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onPinGenerated(android.net.MacAddress,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPinGenerated"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.MacAddress, Java.Lang.String> OnOnPinGenerated { get; set; } = null;
-            
+
             bool hasOverrideOnPinGenerated = true;
             void OnPinGeneratedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2715,7 +2715,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.MacAddress>(0), data.EventData.GetAt<Java.Lang.String>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPinGenerated;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onPinGenerated(android.net.MacAddress,java.lang.String)"/>
             /// </summary>
@@ -2725,13 +2725,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnPinGenerated = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2740,21 +2740,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ExternalApproverRequestListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onAttached(android.net.MacAddress)"/>
@@ -2772,7 +2772,7 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
             public override void OnConnectionRequested(int arg0, Android.Net.Wifi.P2p.WifiP2pConfig arg1, Android.Net.Wifi.P2p.WifiP2pDevice arg2)
             {
-                IExecute("onConnectionRequested", arg0, arg1, arg2);
+                IExecuteWithSignature("onConnectionRequested", "(ILandroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onDetached(android.net.MacAddress,int)"/>
@@ -2781,7 +2781,7 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg1"><see cref="int"/></param>
             public override void OnDetached(Android.Net.MacAddress arg0, int arg1)
             {
-                IExecute("onDetached", arg0, arg1);
+                IExecuteWithSignature("onDetached", "(Landroid/net/MacAddress;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onPinGenerated(android.net.MacAddress,java.lang.String)"/>
@@ -2790,15 +2790,15 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public override void OnPinGenerated(Android.Net.MacAddress arg0, Java.Lang.String arg1)
             {
-                IExecute("onPinGenerated", arg0, arg1);
+                IExecuteWithSignature("onPinGenerated", "(Landroid/net/MacAddress;Ljava/lang/String;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2807,21 +2807,21 @@ namespace Android.Net.Wifi.P2p
         public partial class GroupInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="GroupInfoListener"/>
@@ -2831,13 +2831,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onGroupInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGroupInfoAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.html#onGroupInfoAvailable(android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pGroup> OnOnGroupInfoAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnGroupInfoAvailable = true;
             void OnGroupInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2846,7 +2846,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupInfoAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.html#onGroupInfoAvailable(android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
@@ -2855,13 +2855,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnGroupInfoAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2870,21 +2870,21 @@ namespace Android.Net.Wifi.P2p
         public partial class GroupInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.html#onGroupInfoAvailable(android.net.wifi.p2p.WifiP2pGroup)"/>
@@ -2894,13 +2894,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onGroupInfoAvailable", "(Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2909,21 +2909,21 @@ namespace Android.Net.Wifi.P2p
         public partial class NetworkInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="NetworkInfoListener"/>
@@ -2933,13 +2933,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onNetworkInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnNetworkInfoAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.html#onNetworkInfoAvailable(android.net.NetworkInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNetworkInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.NetworkInfo> OnOnNetworkInfoAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnNetworkInfoAvailable = true;
             void OnNetworkInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2948,7 +2948,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.NetworkInfo>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnNetworkInfoAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.html#onNetworkInfoAvailable(android.net.NetworkInfo)"/>
             /// </summary>
@@ -2957,13 +2957,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnNetworkInfoAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2972,21 +2972,21 @@ namespace Android.Net.Wifi.P2p
         public partial class NetworkInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.html#onNetworkInfoAvailable(android.net.NetworkInfo)"/>
@@ -2996,13 +2996,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onNetworkInfoAvailable", "(Landroid/net/NetworkInfo;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3011,21 +3011,21 @@ namespace Android.Net.Wifi.P2p
         public partial class P2pStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="P2pStateListener"/>
@@ -3035,13 +3035,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onP2pStateAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnP2pStateAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.P2pStateListener.html#onP2pStateAvailable(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnP2pStateAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnP2pStateAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnP2pStateAvailable = true;
             void OnP2pStateAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3050,7 +3050,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnP2pStateAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.P2pStateListener.html#onP2pStateAvailable(int)"/>
             /// </summary>
@@ -3059,13 +3059,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnP2pStateAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3074,21 +3074,21 @@ namespace Android.Net.Wifi.P2p
         public partial class P2pStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.P2pStateListener.html#onP2pStateAvailable(int)"/>
@@ -3098,13 +3098,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onP2pStateAvailable", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3113,21 +3113,21 @@ namespace Android.Net.Wifi.P2p
         public partial class PeerListListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="PeerListListener"/>
@@ -3137,13 +3137,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onPeersAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPeersAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.PeerListListener.html#onPeersAvailable(android.net.wifi.p2p.WifiP2pDeviceList)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeersAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDeviceList> OnOnPeersAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnPeersAvailable = true;
             void OnPeersAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3152,7 +3152,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDeviceList>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPeersAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.PeerListListener.html#onPeersAvailable(android.net.wifi.p2p.WifiP2pDeviceList)"/>
             /// </summary>
@@ -3161,13 +3161,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnPeersAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3176,21 +3176,21 @@ namespace Android.Net.Wifi.P2p
         public partial class PeerListListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.PeerListListener.html#onPeersAvailable(android.net.wifi.p2p.WifiP2pDeviceList)"/>
@@ -3200,13 +3200,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onPeersAvailable", "(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3215,21 +3215,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ServiceResponseListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ServiceResponseListener"/>
@@ -3239,13 +3239,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnServiceAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onServiceAvailable(int,byte[],android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, byte[], Android.Net.Wifi.P2p.WifiP2pDevice> OnOnServiceAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnServiceAvailable = true;
             void OnServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3254,7 +3254,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<byte[]>(1), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnServiceAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onServiceAvailable(int,byte[],android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
@@ -3265,13 +3265,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnServiceAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3280,21 +3280,21 @@ namespace Android.Net.Wifi.P2p
         public partial class ServiceResponseListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onServiceAvailable(int,byte[],android.net.wifi.p2p.WifiP2pDevice)"/>
@@ -3304,15 +3304,15 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
             public override void OnServiceAvailable(int arg0, byte[] arg1, Android.Net.Wifi.P2p.WifiP2pDevice arg2)
             {
-                IExecute("onServiceAvailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onServiceAvailable", "(I[BLandroid/net/wifi/p2p/WifiP2pDevice;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3321,21 +3321,21 @@ namespace Android.Net.Wifi.P2p
         public partial class UpnpServiceResponseListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="UpnpServiceResponseListener"/>
@@ -3345,13 +3345,13 @@ namespace Android.Net.Wifi.P2p
                 AddEventHandler("onUpnpServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUpnpServiceAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.UpnpServiceResponseListener.html#onUpnpServiceAvailable(java.util.List,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUpnpServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Java.Lang.String>, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnUpnpServiceAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnUpnpServiceAvailable = true;
             void OnUpnpServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3360,7 +3360,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Java.Lang.String>>(0), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnUpnpServiceAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.UpnpServiceResponseListener.html#onUpnpServiceAvailable(java.util.List,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
@@ -3370,13 +3370,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnUpnpServiceAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3385,21 +3385,21 @@ namespace Android.Net.Wifi.P2p
         public partial class UpnpServiceResponseListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.UpnpServiceResponseListener.html#onUpnpServiceAvailable(java.util.List,android.net.wifi.p2p.WifiP2pDevice)"/>
@@ -3408,15 +3408,15 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
             public override void OnUpnpServiceAvailable(Java.Util.List<Java.Lang.String> arg0, Android.Net.Wifi.P2p.WifiP2pDevice arg1)
             {
-                IExecute("onUpnpServiceAvailable", arg0, arg1);
+                IExecuteWithSignature("onUpnpServiceAvailable", "(Ljava/util/List;Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3425,21 +3425,21 @@ namespace Android.Net.Wifi.P2p
         public partial class WifiP2pListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="WifiP2pListener"/>
@@ -3470,13 +3470,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onDeviceConfigurationChangedDefault", "(Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDeviceConfigurationChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDeviceConfigurationChanged { get; set; } = null;
-            
+
             bool hasOverrideOnDeviceConfigurationChanged = true;
             void OnDeviceConfigurationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3485,7 +3485,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDeviceConfigurationChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
@@ -3504,13 +3504,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onDiscoveryStateChangedDefault", "(I)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDiscoveryStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnDiscoveryStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnDiscoveryStateChanged = true;
             void OnDiscoveryStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3519,7 +3519,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDiscoveryStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)"/>
             /// </summary>
@@ -3537,15 +3537,15 @@ namespace Android.Net.Wifi.P2p
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnFrequencyChangedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onFrequencyChangedDefault", arg0, arg1);
+                IExecuteWithSignature("onFrequencyChangedDefault", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFrequencyChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnFrequencyChanged { get; set; } = null;
-            
+
             bool hasOverrideOnFrequencyChanged = true;
             void OnFrequencyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3554,7 +3554,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pInfo>(0), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFrequencyChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
@@ -3573,15 +3573,15 @@ namespace Android.Net.Wifi.P2p
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnGroupCreatedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onGroupCreatedDefault", arg0, arg1);
+                IExecuteWithSignature("onGroupCreatedDefault", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupCreated"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnGroupCreated { get; set; } = null;
-            
+
             bool hasOverrideOnGroupCreated = true;
             void OnGroupCreatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3590,7 +3590,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pInfo>(0), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupCreated;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
@@ -3609,13 +3609,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onGroupCreatingDefault", "()V");
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupCreating"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnGroupCreating { get; set; } = null;
-            
+
             bool hasOverrideOnGroupCreating = true;
             void OnGroupCreatingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3624,7 +3624,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupCreating;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()"/>
             /// </summary>
@@ -3642,13 +3642,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onGroupCreationFailedDefault", "(I)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupCreationFailed"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnGroupCreationFailed { get; set; } = null;
-            
+
             bool hasOverrideOnGroupCreationFailed = true;
             void OnGroupCreationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3657,7 +3657,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupCreationFailed;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)"/>
             /// </summary>
@@ -3675,13 +3675,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onGroupNegotiationRejectedByUserDefault", "()V");
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupNegotiationRejectedByUser"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnGroupNegotiationRejectedByUser { get; set; } = null;
-            
+
             bool hasOverrideOnGroupNegotiationRejectedByUser = true;
             void OnGroupNegotiationRejectedByUserEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3690,7 +3690,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupNegotiationRejectedByUser;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()"/>
             /// </summary>
@@ -3707,13 +3707,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onGroupRemovedDefault", "()V");
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupRemoved"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnGroupRemoved { get; set; } = null;
-            
+
             bool hasOverrideOnGroupRemoved = true;
             void OnGroupRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3722,7 +3722,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupRemoved;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()"/>
             /// </summary>
@@ -3740,13 +3740,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onListenStateChangedDefault", "(I)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnListenStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnListenStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnListenStateChanged = true;
             void OnListenStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3755,7 +3755,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnListenStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)"/>
             /// </summary>
@@ -3774,13 +3774,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onP2pStateChangedDefault", "(I)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnP2pStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnP2pStateChanged { get; set; } = null;
-            
+
             bool hasOverrideOnP2pStateChanged = true;
             void OnP2pStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3789,7 +3789,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnP2pStateChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)"/>
             /// </summary>
@@ -3807,15 +3807,15 @@ namespace Android.Net.Wifi.P2p
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnPeerClientDisconnectedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onPeerClientDisconnectedDefault", arg0, arg1);
+                IExecuteWithSignature("onPeerClientDisconnectedDefault", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeerClientDisconnected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnPeerClientDisconnected { get; set; } = null;
-            
+
             bool hasOverrideOnPeerClientDisconnected = true;
             void OnPeerClientDisconnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3824,7 +3824,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pInfo>(0), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPeerClientDisconnected;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
@@ -3843,15 +3843,15 @@ namespace Android.Net.Wifi.P2p
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnPeerClientJoinedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onPeerClientJoinedDefault", arg0, arg1);
+                IExecuteWithSignature("onPeerClientJoinedDefault", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeerClientJoined"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnPeerClientJoined { get; set; } = null;
-            
+
             bool hasOverrideOnPeerClientJoined = true;
             void OnPeerClientJoinedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3860,7 +3860,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pInfo>(0), data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPeerClientJoined;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
@@ -3880,13 +3880,13 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onPeerListChangedDefault", "(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeerListChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDeviceList> OnOnPeerListChanged { get; set; } = null;
-            
+
             bool hasOverrideOnPeerListChanged = true;
             void OnPeerListChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3895,7 +3895,7 @@ namespace Android.Net.Wifi.P2p
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDeviceList>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPeerListChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)"/>
             /// </summary>
@@ -3905,13 +3905,13 @@ namespace Android.Net.Wifi.P2p
             {
                 hasOverrideOnPeerListChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3920,21 +3920,21 @@ namespace Android.Net.Wifi.P2p
         public partial class WifiP2pListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)"/>
@@ -3959,7 +3959,7 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
             public override void OnFrequencyChanged(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onFrequencyChanged", arg0, arg1);
+                IExecuteWithSignature("onFrequencyChanged", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
@@ -3968,7 +3968,7 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
             public override void OnGroupCreated(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onGroupCreated", arg0, arg1);
+                IExecuteWithSignature("onGroupCreated", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()"/>
@@ -4022,7 +4022,7 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
             public override void OnPeerClientDisconnected(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onPeerClientDisconnected", arg0, arg1);
+                IExecuteWithSignature("onPeerClientDisconnected", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
@@ -4031,7 +4031,7 @@ namespace Android.Net.Wifi.P2p
             /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
             public override void OnPeerClientJoined(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
             {
-                IExecute("onPeerClientJoined", arg0, arg1);
+                IExecuteWithSignature("onPeerClientJoined", "(Landroid/net/wifi/p2p/WifiP2pInfo;Landroid/net/wifi/p2p/WifiP2pGroup;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)"/>
@@ -4041,20 +4041,20 @@ namespace Android.Net.Wifi.P2p
             {
                 IExecuteWithSignature("onPeerListChanged", "(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

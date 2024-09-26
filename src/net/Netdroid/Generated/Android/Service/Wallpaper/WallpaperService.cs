@@ -42,10 +42,10 @@ namespace Android.Service.Wallpaper
         /// </summary>
         [global::System.Obsolete("WallpaperService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WallpaperService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Service.Wallpaper
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Engine declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Service.Wallpaper
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Engine(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Service.Wallpaper
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Service.Wallpaper
     public partial class WallpaperService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.html#SERVICE_INTERFACE"/>
@@ -141,13 +141,13 @@ namespace Android.Service.Wallpaper
         public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
         private static Java.Lang.String _SERVICE_META_DATAContent = default;
         private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.html#onCreateEngine()"/>
@@ -157,9 +157,9 @@ namespace Android.Service.Wallpaper
         {
             return IExecuteWithSignature<Android.Service.Wallpaper.WallpaperService.Engine>("onCreateEngine", "()Landroid/service/wallpaper/WallpaperService$Engine;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Engine implementation
         public partial class Engine
@@ -173,21 +173,21 @@ namespace Android.Service.Wallpaper
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onComputeColors()"/>
@@ -217,7 +217,7 @@ namespace Android.Service.Wallpaper
             /// <returns><see cref="Android.Os.Bundle"/></returns>
             public Android.Os.Bundle OnCommand(Java.Lang.String arg0, int arg1, int arg2, int arg3, Android.Os.Bundle arg4, bool arg5)
             {
-                return IExecute<Android.Os.Bundle>("onCommand", arg0, arg1, arg2, arg3, arg4, arg5);
+                return IExecuteWithSignature<Android.Os.Bundle>("onCommand", "(Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getSurfaceHolder()"/>
@@ -297,7 +297,7 @@ namespace Android.Service.Wallpaper
             /// <param name="arg1"><see cref="int"/></param>
             public void OnDesiredSizeChanged(int arg0, int arg1)
             {
-                IExecute("onDesiredSizeChanged", arg0, arg1);
+                IExecuteWithSignature("onDesiredSizeChanged", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onDestroy()"/>
@@ -317,7 +317,7 @@ namespace Android.Service.Wallpaper
             /// <param name="arg5"><see cref="int"/></param>
             public void OnOffsetsChanged(float arg0, float arg1, float arg2, float arg3, int arg4, int arg5)
             {
-                IExecute("onOffsetsChanged", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("onOffsetsChanged", "(FFFFII)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onSurfaceChanged(android.view.SurfaceHolder,int,int,int)"/>
@@ -328,7 +328,7 @@ namespace Android.Service.Wallpaper
             /// <param name="arg3"><see cref="int"/></param>
             public void OnSurfaceChanged(Android.View.SurfaceHolder arg0, int arg1, int arg2, int arg3)
             {
-                IExecute("onSurfaceChanged", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onSurfaceChanged", "(Landroid/view/SurfaceHolder;III)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onSurfaceCreated(android.view.SurfaceHolder)"/>
@@ -402,20 +402,20 @@ namespace Android.Service.Wallpaper
             {
                 IExecuteWithSignature("setTouchEventsEnabled", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

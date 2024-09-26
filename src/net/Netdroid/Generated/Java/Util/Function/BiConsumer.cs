@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public BiConsumer() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiConsumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region BiConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="BiConsumer"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.BiConsumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -104,7 +104,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public BiConsumer() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BiConsumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -113,13 +113,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
     
     }
     #endregion
-    
+
     #region BiConsumerDirect<T, U> declaration
     /// <summary>
     /// Direct override of <see cref="BiConsumer"/> or its generic type if there is one
@@ -130,14 +130,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.BiConsumer";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -165,21 +165,21 @@ namespace Java.Util.Function
     public partial class BiConsumer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="BiConsumer"/>
@@ -190,13 +190,13 @@ namespace Java.Util.Function
             AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<object, object> OnAccept { get; set; } = null;
-        
+
         bool hasOverrideAccept = true;
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -205,7 +205,7 @@ namespace Java.Util.Function
             methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<object>(1));
             data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -225,13 +225,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiConsumer>("andThenDefault", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiConsumer, Java.Util.Function.BiConsumer> OnAndThen { get; set; } = null;
-        
+
         bool hasOverrideAndThen = true;
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -240,7 +240,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiConsumer>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
@@ -251,13 +251,13 @@ namespace Java.Util.Function
         {
             hasOverrideAndThen = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -266,21 +266,21 @@ namespace Java.Util.Function
     public partial class BiConsumerDirect
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
@@ -289,7 +289,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><see cref="object"/></param>
         public override void Accept(object arg0, object arg1)
         {
-            IExecute("accept", arg0, arg1);
+            IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -300,13 +300,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect, Java.Util.Function.BiConsumer>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -318,13 +318,13 @@ namespace Java.Util.Function
     public partial interface IBiConsumer<T, U>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -333,21 +333,21 @@ namespace Java.Util.Function
     public partial class BiConsumer<T, U> : Java.Util.Function.IBiConsumer<T, U>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="BiConsumer"/>
@@ -358,13 +358,13 @@ namespace Java.Util.Function
             AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<T, U> OnAccept { get; set; } = null;
-        
+
         bool hasOverrideAccept = true;
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -373,7 +373,7 @@ namespace Java.Util.Function
             methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
             data.EventData.TypedEventData.HasOverride = hasOverrideAccept;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -395,13 +395,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiConsumer<T, U>>("andThenDefault", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiConsumer<T, U>> OnAndThen<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
-        
+
         bool hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = true;
         void AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -410,7 +410,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU>, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
@@ -423,13 +423,13 @@ namespace Java.Util.Function
         {
             hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -438,21 +438,21 @@ namespace Java.Util.Function
     public partial class BiConsumerDirect<T, U> : Java.Util.Function.IBiConsumer<T, U>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
@@ -461,7 +461,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><typeparamref name="U"/></param>
         public override void Accept(T arg0, U arg1)
         {
-            IExecute("accept", arg0, arg1);
+            IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -474,13 +474,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<T, U>, Java.Util.Function.BiConsumer<T, U>>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

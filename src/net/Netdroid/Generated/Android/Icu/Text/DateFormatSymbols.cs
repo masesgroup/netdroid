@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateFormatSymbols(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -144,9 +144,9 @@ namespace Android.Icu.Text
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.DateFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
@@ -156,9 +156,9 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.DateFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.DateFormatSymbols t) => t.Cast<Java.Lang.Cloneable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#ABBREVIATED"/>
@@ -196,9 +196,9 @@ namespace Android.Icu.Text
         public static int WIDE { get { if (!_WIDEReady) { _WIDEContent = SGetField<int>(LocalBridgeClazz, "WIDE"); _WIDEReady = true; } return _WIDEContent; } }
         private static int _WIDEContent = default;
         private static bool _WIDEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getInstance()"/>
@@ -234,9 +234,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getLocalPatternChars()"/>
@@ -286,7 +286,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetMonths(int arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getMonths", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getMonths", "(II)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getNarrowEras()"/>
@@ -304,7 +304,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetQuarters(int arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getQuarters", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getQuarters", "(II)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getShortMonths()"/>
@@ -338,7 +338,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetWeekdays(int arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getWeekdays", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getWeekdays", "(II)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getYearNames(int,int)"/>
@@ -348,7 +348,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetYearNames(int arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getYearNames", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getYearNames", "(II)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getZodiacNames(int,int)"/>
@@ -358,7 +358,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetZodiacNames(int arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getZodiacNames", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getZodiacNames", "(II)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getZoneStrings()"/>
@@ -408,7 +408,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="int"/></param>
         public void SetMonths(Java.Lang.String[] arg0, int arg1, int arg2)
         {
-            IExecute("setMonths", arg0, arg1, arg2);
+            IExecuteWithSignature("setMonths", "([Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#setMonths(java.lang.String[])"/>
@@ -434,7 +434,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="int"/></param>
         public void SetQuarters(Java.Lang.String[] arg0, int arg1, int arg2)
         {
-            IExecute("setQuarters", arg0, arg1, arg2);
+            IExecuteWithSignature("setQuarters", "([Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#setShortMonths(java.lang.String[])"/>
@@ -460,7 +460,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="int"/></param>
         public void SetWeekdays(Java.Lang.String[] arg0, int arg1, int arg2)
         {
-            IExecute("setWeekdays", arg0, arg1, arg2);
+            IExecuteWithSignature("setWeekdays", "([Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#setWeekdays(java.lang.String[])"/>
@@ -478,7 +478,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="int"/></param>
         public void SetYearNames(Java.Lang.String[] arg0, int arg1, int arg2)
         {
-            IExecute("setYearNames", arg0, arg1, arg2);
+            IExecuteWithSignature("setYearNames", "([Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#setZodiacNames(java.lang.String[],int,int)"/>
@@ -488,7 +488,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="int"/></param>
         public void SetZodiacNames(Java.Lang.String[] arg0, int arg1, int arg2)
         {
-            IExecute("setZodiacNames", arg0, arg1, arg2);
+            IExecuteWithSignature("setZodiacNames", "([Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#setZoneStrings(java.lang.String[][])"/>
@@ -498,13 +498,13 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setZoneStrings", "([[Ljava/lang/String;)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

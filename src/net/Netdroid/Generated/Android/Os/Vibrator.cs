@@ -42,10 +42,10 @@ namespace Android.Os
         /// </summary>
         [global::System.Obsolete("Vibrator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Vibrator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Os
     public partial class Vibrator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#VIBRATION_EFFECT_SUPPORT_NO"/>
@@ -102,13 +102,13 @@ namespace Android.Os
         public static int VIBRATION_EFFECT_SUPPORT_YES { get { if (!_VIBRATION_EFFECT_SUPPORT_YESReady) { _VIBRATION_EFFECT_SUPPORT_YESContent = SGetField<int>(LocalBridgeClazz, "VIBRATION_EFFECT_SUPPORT_YES"); _VIBRATION_EFFECT_SUPPORT_YESReady = true; } return _VIBRATION_EFFECT_SUPPORT_YESContent; } }
         private static int _VIBRATION_EFFECT_SUPPORT_YESContent = default;
         private static bool _VIBRATION_EFFECT_SUPPORT_YESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#hasAmplitudeControl()"/>
@@ -210,7 +210,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void Vibrate(Android.Os.VibrationEffect arg0, Android.Media.AudioAttributes arg1)
         {
-            IExecute("vibrate", arg0, arg1);
+            IExecuteWithSignature("vibrate", "(Landroid/os/VibrationEffect;Landroid/media/AudioAttributes;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(android.os.VibrationEffect,android.os.VibrationAttributes)"/>
@@ -219,7 +219,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Android.Os.VibrationAttributes"/></param>
         public void Vibrate(Android.Os.VibrationEffect arg0, Android.Os.VibrationAttributes arg1)
         {
-            IExecute("vibrate", arg0, arg1);
+            IExecuteWithSignature("vibrate", "(Landroid/os/VibrationEffect;Landroid/os/VibrationAttributes;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(android.os.VibrationEffect)"/>
@@ -237,7 +237,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void Vibrate(long arg0, Android.Media.AudioAttributes arg1)
         {
-            IExecute("vibrate", arg0, arg1);
+            IExecuteWithSignature("vibrate", "(JLandroid/media/AudioAttributes;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long)"/>
@@ -257,7 +257,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void Vibrate(long[] arg0, int arg1, Android.Media.AudioAttributes arg2)
         {
-            IExecute("vibrate", arg0, arg1, arg2);
+            IExecuteWithSignature("vibrate", "([JILandroid/media/AudioAttributes;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long[],int)"/>
@@ -267,15 +267,15 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void Vibrate(long[] arg0, int arg1)
         {
-            IExecute("vibrate", arg0, arg1);
+            IExecuteWithSignature("vibrate", "([JI)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

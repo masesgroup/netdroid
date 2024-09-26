@@ -42,10 +42,10 @@ namespace Javax.Sql
         /// </summary>
         [global::System.Obsolete("RowSetMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RowSetMetaData(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Sql
     public partial interface IRowSetMetaData : Java.Sql.IResultSetMetaData
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Javax.Sql
     public partial class RowSetMetaData : Javax.Sql.IRowSetMetaData
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setAutoIncrement(int,boolean)"/>
@@ -118,7 +118,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAutoIncrement(int arg0, bool arg1)
         {
-            IExecute("setAutoIncrement", arg0, arg1);
+            IExecuteWithSignature("setAutoIncrement", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setCaseSensitive(int,boolean)"/>
@@ -128,7 +128,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCaseSensitive(int arg0, bool arg1)
         {
-            IExecute("setCaseSensitive", arg0, arg1);
+            IExecuteWithSignature("setCaseSensitive", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setCatalogName(int,java.lang.String)"/>
@@ -138,7 +138,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCatalogName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setCatalogName", arg0, arg1);
+            IExecuteWithSignature("setCatalogName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnCount(int)"/>
@@ -157,7 +157,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnDisplaySize(int arg0, int arg1)
         {
-            IExecute("setColumnDisplaySize", arg0, arg1);
+            IExecuteWithSignature("setColumnDisplaySize", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnLabel(int,java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnLabel(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setColumnLabel", arg0, arg1);
+            IExecuteWithSignature("setColumnLabel", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnName(int,java.lang.String)"/>
@@ -177,7 +177,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setColumnName", arg0, arg1);
+            IExecuteWithSignature("setColumnName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnType(int,int)"/>
@@ -187,7 +187,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnType(int arg0, int arg1)
         {
-            IExecute("setColumnType", arg0, arg1);
+            IExecuteWithSignature("setColumnType", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnTypeName(int,java.lang.String)"/>
@@ -197,7 +197,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnTypeName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setColumnTypeName", arg0, arg1);
+            IExecuteWithSignature("setColumnTypeName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setCurrency(int,boolean)"/>
@@ -207,7 +207,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCurrency(int arg0, bool arg1)
         {
-            IExecute("setCurrency", arg0, arg1);
+            IExecuteWithSignature("setCurrency", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setNullable(int,int)"/>
@@ -217,7 +217,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNullable(int arg0, int arg1)
         {
-            IExecute("setNullable", arg0, arg1);
+            IExecuteWithSignature("setNullable", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setPrecision(int,int)"/>
@@ -227,7 +227,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetPrecision(int arg0, int arg1)
         {
-            IExecute("setPrecision", arg0, arg1);
+            IExecuteWithSignature("setPrecision", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setScale(int,int)"/>
@@ -237,7 +237,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetScale(int arg0, int arg1)
         {
-            IExecute("setScale", arg0, arg1);
+            IExecuteWithSignature("setScale", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setSchemaName(int,java.lang.String)"/>
@@ -247,7 +247,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSchemaName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setSchemaName", arg0, arg1);
+            IExecuteWithSignature("setSchemaName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setSearchable(int,boolean)"/>
@@ -257,7 +257,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSearchable(int arg0, bool arg1)
         {
-            IExecute("setSearchable", arg0, arg1);
+            IExecuteWithSignature("setSearchable", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setSigned(int,boolean)"/>
@@ -267,7 +267,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSigned(int arg0, bool arg1)
         {
-            IExecute("setSigned", arg0, arg1);
+            IExecuteWithSignature("setSigned", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setTableName(int,java.lang.String)"/>
@@ -277,15 +277,15 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTableName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setTableName", arg0, arg1);
+            IExecuteWithSignature("setTableName", "(ILjava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

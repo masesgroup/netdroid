@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicStampedReference(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicStampedReference(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -129,21 +129,21 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool AttemptStamp(object arg0, int arg1)
         {
-            return IExecute<bool>("attemptStamp", arg0, arg1);
+            return IExecuteWithSignature<bool>("attemptStamp", "(Ljava/lang/Object;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
@@ -177,7 +177,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/>
@@ -211,15 +211,15 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="int"/></param>
         public void Set(object arg0, int arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -237,25 +237,25 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicStampedReference{V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicStampedReference"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicStampedReference(Java.Util.Concurrent.Atomic.AtomicStampedReference<V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicStampedReference>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
@@ -265,7 +265,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool AttemptStamp(V arg0, int arg1)
         {
-            return IExecute<bool>("attemptStamp", arg0, arg1);
+            return IExecuteWithSignature<bool>("attemptStamp", "(Ljava/lang/Object;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
@@ -277,7 +277,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(V arg0, V arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
@@ -289,7 +289,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(V arg0, V arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/>
@@ -323,15 +323,15 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg1"><see cref="int"/></param>
         public void Set(V arg0, int arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -41,10 +41,10 @@ namespace Android.Telephony.Gsm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SmsMessage(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Telephony.Gsm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region MessageClass declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Telephony.Gsm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MessageClass(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Telephony.Gsm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -129,10 +129,10 @@ namespace Android.Telephony.Gsm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SubmitPdu(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -153,9 +153,9 @@ namespace Android.Telephony.Gsm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -167,13 +167,13 @@ namespace Android.Telephony.Gsm
     public partial class SmsMessage
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.html#ENCODING_16BIT"/>
@@ -224,9 +224,9 @@ namespace Android.Telephony.Gsm
         public static int MAX_USER_DATA_SEPTETS_WITH_HEADER { get { if (!_MAX_USER_DATA_SEPTETS_WITH_HEADERReady) { _MAX_USER_DATA_SEPTETS_WITH_HEADERContent = SGetField<int>(LocalBridgeClazz, "MAX_USER_DATA_SEPTETS_WITH_HEADER"); _MAX_USER_DATA_SEPTETS_WITH_HEADERReady = true; } return _MAX_USER_DATA_SEPTETS_WITH_HEADERContent; } }
         private static int _MAX_USER_DATA_SEPTETS_WITH_HEADERContent = default;
         private static bool _MAX_USER_DATA_SEPTETS_WITH_HEADERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.html#createFromPdu(byte[])"/>
@@ -249,7 +249,7 @@ namespace Android.Telephony.Gsm
         [global::System.Obsolete()]
         public static Android.Telephony.Gsm.SmsMessage.SubmitPdu GetSubmitPdu(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3)
         {
-            return SExecute<Android.Telephony.Gsm.SmsMessage.SubmitPdu>(LocalBridgeClazz, "getSubmitPdu", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Telephony.Gsm.SmsMessage.SubmitPdu>(LocalBridgeClazz, "getSubmitPdu", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Landroid/telephony/gsm/SmsMessage$SubmitPdu;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.html#getSubmitPdu(java.lang.String,java.lang.String,short,byte[],boolean)"/>
@@ -263,7 +263,7 @@ namespace Android.Telephony.Gsm
         [global::System.Obsolete()]
         public static Android.Telephony.Gsm.SmsMessage.SubmitPdu GetSubmitPdu(Java.Lang.String arg0, Java.Lang.String arg1, short arg2, byte[] arg3, bool arg4)
         {
-            return SExecute<Android.Telephony.Gsm.SmsMessage.SubmitPdu>(LocalBridgeClazz, "getSubmitPdu", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Telephony.Gsm.SmsMessage.SubmitPdu>(LocalBridgeClazz, "getSubmitPdu", "(Ljava/lang/String;Ljava/lang/String;S[BZ)Landroid/telephony/gsm/SmsMessage$SubmitPdu;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.html#getTPLayerLengthForPDU(java.lang.String)"/>
@@ -284,7 +284,7 @@ namespace Android.Telephony.Gsm
         [global::System.Obsolete()]
         public static int[] CalculateLength(Java.Lang.CharSequence arg0, bool arg1)
         {
-            return SExecuteArray<int>(LocalBridgeClazz, "calculateLength", arg0, arg1);
+            return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "calculateLength", "(Ljava/lang/CharSequence;Z)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.html#calculateLength(java.lang.String,boolean)"/>
@@ -295,11 +295,11 @@ namespace Android.Telephony.Gsm
         [global::System.Obsolete()]
         public static int[] CalculateLength(Java.Lang.String arg0, bool arg1)
         {
-            return SExecuteArray<int>(LocalBridgeClazz, "calculateLength", arg0, arg1);
+            return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "calculateLength", "(Ljava/lang/String;Z)[I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.html#getMessageClass()"/>
@@ -517,21 +517,21 @@ namespace Android.Telephony.Gsm
         {
             return IExecuteWithSignature<long>("getTimestampMillis", "()J");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region MessageClass implementation
         public partial class MessageClass
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.MessageClass.html#CLASS_0"/>
@@ -568,9 +568,9 @@ namespace Android.Telephony.Gsm
             public static Android.Telephony.Gsm.SmsMessage.MessageClass UNKNOWN { get { if (!_UNKNOWNReady) { _UNKNOWNContent = SGetField<Android.Telephony.Gsm.SmsMessage.MessageClass>(LocalBridgeClazz, "UNKNOWN"); _UNKNOWNReady = true; } return _UNKNOWNContent; } }
             private static Android.Telephony.Gsm.SmsMessage.MessageClass _UNKNOWNContent = default;
             private static bool _UNKNOWNReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.MessageClass.html#valueOf(java.lang.String)"/>
@@ -589,17 +589,17 @@ namespace Android.Telephony.Gsm
             {
                 return SExecuteWithSignatureArray<Android.Telephony.Gsm.SmsMessage.MessageClass>(LocalBridgeClazz, "values", "()[Landroid/telephony/gsm/SmsMessage$MessageClass;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -608,13 +608,13 @@ namespace Android.Telephony.Gsm
         public partial class SubmitPdu
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsMessage.SubmitPdu.html#encodedMessage"/>
@@ -626,28 +626,28 @@ namespace Android.Telephony.Gsm
             /// </summary>
             [global::System.Obsolete()]
             public byte[] encodedScAddress { get { return IGetFieldArray<byte>("encodedScAddress"); } set { ISetField("encodedScAddress", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

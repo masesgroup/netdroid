@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AlarmManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AlarmClockInfo declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AlarmClockInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnAlarmListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.AlarmManager_OnAlarmListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnAlarmListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnAlarmListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.AlarmManager$OnAlarmListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -186,13 +186,13 @@ namespace Android.App
     public partial class AlarmManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#ELAPSED_REALTIME"/>
@@ -260,13 +260,13 @@ namespace Android.App
         public static long INTERVAL_HOUR { get { if (!_INTERVAL_HOURReady) { _INTERVAL_HOURContent = SGetField<long>(LocalBridgeClazz, "INTERVAL_HOUR"); _INTERVAL_HOURReady = true; } return _INTERVAL_HOURContent; } }
         private static long _INTERVAL_HOURContent = default;
         private static bool _INTERVAL_HOURReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#getNextAlarmClock()"/>
@@ -315,7 +315,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void Set(int arg0, long arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("set", arg0, arg1, arg2);
+            IExecuteWithSignature("set", "(IJLandroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#set(int,long,java.lang.String,android.app.AlarmManager.OnAlarmListener,android.os.Handler)"/>
@@ -327,7 +327,7 @@ namespace Android.App
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
         public void Set(int arg0, long arg1, Java.Lang.String arg2, Android.App.AlarmManager.OnAlarmListener arg3, Android.Os.Handler arg4)
         {
-            IExecute("set", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("set", "(IJLjava/lang/String;Landroid/app/AlarmManager$OnAlarmListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setAlarmClock(android.app.AlarmManager.AlarmClockInfo,android.app.PendingIntent)"/>
@@ -336,7 +336,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void SetAlarmClock(Android.App.AlarmManager.AlarmClockInfo arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("setAlarmClock", arg0, arg1);
+            IExecuteWithSignature("setAlarmClock", "(Landroid/app/AlarmManager$AlarmClockInfo;Landroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setAndAllowWhileIdle(int,long,android.app.PendingIntent)"/>
@@ -346,7 +346,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void SetAndAllowWhileIdle(int arg0, long arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("setAndAllowWhileIdle", arg0, arg1, arg2);
+            IExecuteWithSignature("setAndAllowWhileIdle", "(IJLandroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setExact(int,long,android.app.PendingIntent)"/>
@@ -356,7 +356,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void SetExact(int arg0, long arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("setExact", arg0, arg1, arg2);
+            IExecuteWithSignature("setExact", "(IJLandroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setExact(int,long,java.lang.String,android.app.AlarmManager.OnAlarmListener,android.os.Handler)"/>
@@ -368,7 +368,7 @@ namespace Android.App
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
         public void SetExact(int arg0, long arg1, Java.Lang.String arg2, Android.App.AlarmManager.OnAlarmListener arg3, Android.Os.Handler arg4)
         {
-            IExecute("setExact", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setExact", "(IJLjava/lang/String;Landroid/app/AlarmManager$OnAlarmListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setExactAndAllowWhileIdle(int,long,android.app.PendingIntent)"/>
@@ -378,7 +378,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void SetExactAndAllowWhileIdle(int arg0, long arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("setExactAndAllowWhileIdle", arg0, arg1, arg2);
+            IExecuteWithSignature("setExactAndAllowWhileIdle", "(IJLandroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setInexactRepeating(int,long,long,android.app.PendingIntent)"/>
@@ -389,7 +389,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="Android.App.PendingIntent"/></param>
         public void SetInexactRepeating(int arg0, long arg1, long arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("setInexactRepeating", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setInexactRepeating", "(IJJLandroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setRepeating(int,long,long,android.app.PendingIntent)"/>
@@ -400,7 +400,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="Android.App.PendingIntent"/></param>
         public void SetRepeating(int arg0, long arg1, long arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("setRepeating", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setRepeating", "(IJJLandroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setTime(long)"/>
@@ -427,7 +427,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="Android.App.PendingIntent"/></param>
         public void SetWindow(int arg0, long arg1, long arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("setWindow", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setWindow", "(IJJLandroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setWindow(int,long,long,java.lang.String,android.app.AlarmManager.OnAlarmListener,android.os.Handler)"/>
@@ -440,7 +440,7 @@ namespace Android.App
         /// <param name="arg5"><see cref="Android.Os.Handler"/></param>
         public void SetWindow(int arg0, long arg1, long arg2, Java.Lang.String arg3, Android.App.AlarmManager.OnAlarmListener arg4, Android.Os.Handler arg5)
         {
-            IExecute("setWindow", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setWindow", "(IJJLjava/lang/String;Landroid/app/AlarmManager$OnAlarmListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlarmManager.html#setWindow(int,long,long,java.lang.String,java.util.concurrent.Executor,android.app.AlarmManager.OnAlarmListener)"/>
@@ -453,11 +453,11 @@ namespace Android.App
         /// <param name="arg5"><see cref="Android.App.AlarmManager.OnAlarmListener"/></param>
         public void SetWindow(int arg0, long arg1, long arg2, Java.Lang.String arg3, Java.Util.Concurrent.Executor arg4, Android.App.AlarmManager.OnAlarmListener arg5)
         {
-            IExecute("setWindow", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setWindow", "(IJJLjava/lang/String;Ljava/util/concurrent/Executor;Landroid/app/AlarmManager$OnAlarmListener;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AlarmClockInfo implementation
         public partial class AlarmClockInfo
@@ -472,13 +472,13 @@ namespace Android.App
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#CREATOR"/>
@@ -486,13 +486,13 @@ namespace Android.App
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlarmManager.AlarmClockInfo.html#getShowIntent()"/>
@@ -525,15 +525,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -542,21 +542,21 @@ namespace Android.App
         public partial class OnAlarmListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnAlarmListener"/>
@@ -566,13 +566,13 @@ namespace Android.App
                 AddEventHandler("onAlarm", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAlarmEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/AlarmManager.OnAlarmListener.html#onAlarm()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAlarm"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnAlarm { get; set; } = null;
-            
+
             bool hasOverrideOnAlarm = true;
             void OnAlarmEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -581,7 +581,7 @@ namespace Android.App
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAlarm;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlarmManager.OnAlarmListener.html#onAlarm()"/>
             /// </summary>
@@ -589,13 +589,13 @@ namespace Android.App
             {
                 hasOverrideOnAlarm = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -604,21 +604,21 @@ namespace Android.App
         public partial class OnAlarmListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlarmManager.OnAlarmListener.html#onAlarm()"/>
@@ -627,20 +627,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("onAlarm", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

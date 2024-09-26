@@ -42,10 +42,10 @@ namespace Android.Adservices.Ondevicepersonalization
         /// </summary>
         [global::System.Obsolete("IsolatedWorker class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IsolatedWorker(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial interface IIsolatedWorker
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class IsolatedWorker : Android.Adservices.Ondevicepersonalization.IIsolatedWorker
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/IsolatedWorker.html#onDownloadCompleted(android.adservices.ondevicepersonalization.DownloadCompletedInput,android.os.OutcomeReceiver)"/>
@@ -117,7 +117,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OnDownloadCompleted(Android.Adservices.Ondevicepersonalization.DownloadCompletedInput arg0, Android.Os.OutcomeReceiver<Android.Adservices.Ondevicepersonalization.DownloadCompletedOutput, Android.Adservices.Ondevicepersonalization.IsolatedServiceException> arg1)
         {
-            IExecute("onDownloadCompleted", arg0, arg1);
+            IExecuteWithSignature("onDownloadCompleted", "(Landroid/adservices/ondevicepersonalization/DownloadCompletedInput;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/IsolatedWorker.html#onEvent(android.adservices.ondevicepersonalization.EventInput,android.os.OutcomeReceiver)"/>
@@ -126,7 +126,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OnEvent(Android.Adservices.Ondevicepersonalization.EventInput arg0, Android.Os.OutcomeReceiver<Android.Adservices.Ondevicepersonalization.EventOutput, Android.Adservices.Ondevicepersonalization.IsolatedServiceException> arg1)
         {
-            IExecute("onEvent", arg0, arg1);
+            IExecuteWithSignature("onEvent", "(Landroid/adservices/ondevicepersonalization/EventInput;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/IsolatedWorker.html#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,android.os.OutcomeReceiver)"/>
@@ -135,7 +135,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OnExecute(Android.Adservices.Ondevicepersonalization.ExecuteInput arg0, Android.Os.OutcomeReceiver<Android.Adservices.Ondevicepersonalization.ExecuteOutput, Android.Adservices.Ondevicepersonalization.IsolatedServiceException> arg1)
         {
-            IExecute("onExecute", arg0, arg1);
+            IExecuteWithSignature("onExecute", "(Landroid/adservices/ondevicepersonalization/ExecuteInput;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/IsolatedWorker.html#onRender(android.adservices.ondevicepersonalization.RenderInput,android.os.OutcomeReceiver)"/>
@@ -144,7 +144,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OnRender(Android.Adservices.Ondevicepersonalization.RenderInput arg0, Android.Os.OutcomeReceiver<Android.Adservices.Ondevicepersonalization.RenderOutput, Android.Adservices.Ondevicepersonalization.IsolatedServiceException> arg1)
         {
-            IExecute("onRender", arg0, arg1);
+            IExecuteWithSignature("onRender", "(Landroid/adservices/ondevicepersonalization/RenderInput;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/IsolatedWorker.html#onTrainingExamples(android.adservices.ondevicepersonalization.TrainingExamplesInput,android.os.OutcomeReceiver)"/>
@@ -153,7 +153,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OnTrainingExamples(Android.Adservices.Ondevicepersonalization.TrainingExamplesInput arg0, Android.Os.OutcomeReceiver<Android.Adservices.Ondevicepersonalization.TrainingExamplesOutput, Android.Adservices.Ondevicepersonalization.IsolatedServiceException> arg1)
         {
-            IExecute("onTrainingExamples", arg0, arg1);
+            IExecuteWithSignature("onTrainingExamples", "(Landroid/adservices/ondevicepersonalization/TrainingExamplesInput;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/IsolatedWorker.html#onWebTrigger(android.adservices.ondevicepersonalization.WebTriggerInput,android.os.OutcomeReceiver)"/>
@@ -162,15 +162,15 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OnWebTrigger(Android.Adservices.Ondevicepersonalization.WebTriggerInput arg0, Android.Os.OutcomeReceiver<Android.Adservices.Ondevicepersonalization.WebTriggerOutput, Android.Adservices.Ondevicepersonalization.IsolatedServiceException> arg1)
         {
-            IExecute("onWebTrigger", arg0, arg1);
+            IExecuteWithSignature("onWebTrigger", "(Landroid/adservices/ondevicepersonalization/WebTriggerInput;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

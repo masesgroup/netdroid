@@ -40,10 +40,10 @@ namespace Java.Time
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ZoneOffset(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Java.Time
     public partial class ZoneOffset : Java.Time.Temporal.ITemporalAccessor, Java.Time.Temporal.ITemporalAdjuster, Java.Lang.IComparable<Java.Time.ZoneOffset>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.ZoneOffset"/> to <see cref="Java.Time.Temporal.TemporalAccessor"/>
@@ -90,9 +90,9 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.ZoneOffset"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Time.ZoneOffset t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#MAX"/>
@@ -112,9 +112,9 @@ namespace Java.Time
         public static Java.Time.ZoneOffset UTC { get { if (!_UTCReady) { _UTCContent = SGetField<Java.Time.ZoneOffset>(LocalBridgeClazz, "UTC"); _UTCReady = true; } return _UTCContent; } }
         private static Java.Time.ZoneOffset _UTCContent = default;
         private static bool _UTCReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#ofHours(int)"/>
@@ -133,7 +133,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutes(int arg0, int arg1)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutes", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutes", "(II)Ljava/time/ZoneOffset;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)"/>
@@ -144,7 +144,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutesSeconds(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutesSeconds", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutesSeconds", "(III)Ljava/time/ZoneOffset;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#ofTotalSeconds(int)"/>
@@ -155,9 +155,9 @@ namespace Java.Time
         {
             return SExecuteWithSignature<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofTotalSeconds", "(I)Ljava/time/ZoneOffset;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#query(java.time.temporal.TemporalQuery)"/>
@@ -240,13 +240,13 @@ namespace Java.Time
         {
             return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

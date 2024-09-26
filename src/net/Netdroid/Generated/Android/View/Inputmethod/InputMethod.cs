@@ -42,10 +42,10 @@ namespace Android.View.Inputmethod
         /// </summary>
         [global::System.Obsolete("InputMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InputMethod(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region SessionCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.View.Inputmethod
             /// </summary>
             [global::System.Obsolete("SessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SessionCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.View.Inputmethod
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,13 +126,13 @@ namespace Android.View.Inputmethod
     public partial interface IInputMethod
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -141,13 +141,13 @@ namespace Android.View.Inputmethod
     public partial class InputMethod : Android.View.Inputmethod.IInputMethod
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#SHOW_EXPLICIT"/>
@@ -174,13 +174,13 @@ namespace Android.View.Inputmethod
         public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
         private static Java.Lang.String _SERVICE_META_DATAContent = default;
         private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#attachToken(android.os.IBinder)"/>
@@ -221,7 +221,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.Os.ResultReceiver"/></param>
         public void HideSoftInput(int arg0, Android.Os.ResultReceiver arg1)
         {
-            IExecute("hideSoftInput", arg0, arg1);
+            IExecuteWithSignature("hideSoftInput", "(ILandroid/os/ResultReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#restartInput(android.view.inputmethod.InputConnection,android.view.inputmethod.EditorInfo)"/>
@@ -230,7 +230,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.View.Inputmethod.EditorInfo"/></param>
         public void RestartInput(Android.View.Inputmethod.InputConnection arg0, Android.View.Inputmethod.EditorInfo arg1)
         {
-            IExecute("restartInput", arg0, arg1);
+            IExecuteWithSignature("restartInput", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#revokeSession(android.view.inputmethod.InputMethodSession)"/>
@@ -247,7 +247,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSessionEnabled(Android.View.Inputmethod.InputMethodSession arg0, bool arg1)
         {
-            IExecute("setSessionEnabled", arg0, arg1);
+            IExecuteWithSignature("setSessionEnabled", "(Landroid/view/inputmethod/InputMethodSession;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#showSoftInput(int,android.os.ResultReceiver)"/>
@@ -256,7 +256,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.Os.ResultReceiver"/></param>
         public void ShowSoftInput(int arg0, Android.Os.ResultReceiver arg1)
         {
-            IExecute("showSoftInput", arg0, arg1);
+            IExecuteWithSignature("showSoftInput", "(ILandroid/os/ResultReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#startInput(android.view.inputmethod.InputConnection,android.view.inputmethod.EditorInfo)"/>
@@ -265,7 +265,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.View.Inputmethod.EditorInfo"/></param>
         public void StartInput(Android.View.Inputmethod.InputConnection arg0, Android.View.Inputmethod.EditorInfo arg1)
         {
-            IExecute("startInput", arg0, arg1);
+            IExecuteWithSignature("startInput", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#unbindInput()"/>
@@ -274,29 +274,29 @@ namespace Android.View.Inputmethod
         {
             IExecuteWithSignature("unbindInput", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region SessionCallback implementation
         public partial class SessionCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.SessionCallback.html#sessionCreated(android.view.inputmethod.InputMethodSession)"/>
@@ -306,20 +306,20 @@ namespace Android.View.Inputmethod
             {
                 IExecuteWithSignature("sessionCreated", "(Landroid/view/inputmethod/InputMethodSession;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

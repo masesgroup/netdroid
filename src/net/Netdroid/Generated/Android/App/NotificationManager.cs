@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NotificationManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Policy declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Policy(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.App
     public partial class NotificationManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_ACTIVATED"/>
@@ -361,13 +361,13 @@ namespace Android.App
         public static Java.Lang.String META_DATA_RULE_INSTANCE_LIMIT { get { if (!_META_DATA_RULE_INSTANCE_LIMITReady) { _META_DATA_RULE_INSTANCE_LIMITContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "META_DATA_RULE_INSTANCE_LIMIT"); _META_DATA_RULE_INSTANCE_LIMITReady = true; } return _META_DATA_RULE_INSTANCE_LIMITContent; } }
         private static Java.Lang.String _META_DATA_RULE_INSTANCE_LIMITContent = default;
         private static bool _META_DATA_RULE_INSTANCE_LIMITReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRule(java.lang.String)"/>
@@ -386,7 +386,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.NotificationChannel"/></returns>
         public Android.App.NotificationChannel GetNotificationChannel(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.App.NotificationChannel>("getNotificationChannel", arg0, arg1);
+            return IExecuteWithSignature<Android.App.NotificationChannel>("getNotificationChannel", "(Ljava/lang/String;Ljava/lang/String;)Landroid/app/NotificationChannel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannel(java.lang.String)"/>
@@ -539,7 +539,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool UpdateAutomaticZenRule(Java.Lang.String arg0, Android.App.AutomaticZenRule arg1)
         {
-            return IExecute<bool>("updateAutomaticZenRule", arg0, arg1);
+            return IExecuteWithSignature<bool>("updateAutomaticZenRule", "(Ljava/lang/String;Landroid/app/AutomaticZenRule;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getCurrentInterruptionFilter()"/>
@@ -638,7 +638,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void Cancel(Java.Lang.String arg0, int arg1)
         {
-            IExecute("cancel", arg0, arg1);
+            IExecuteWithSignature("cancel", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#cancelAll()"/>
@@ -655,7 +655,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="int"/></param>
         public void CancelAsPackage(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("cancelAsPackage", arg0, arg1, arg2);
+            IExecuteWithSignature("cancelAsPackage", "(Ljava/lang/String;Ljava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannel(android.app.NotificationChannel)"/>
@@ -712,7 +712,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.App.Notification"/></param>
         public void Notify(int arg0, Android.App.Notification arg1)
         {
-            IExecute("notify", arg0, arg1);
+            IExecuteWithSignature("notify", "(ILandroid/app/Notification;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#notify(java.lang.String,int,android.app.Notification)"/>
@@ -722,7 +722,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.Notification"/></param>
         public void Notify(Java.Lang.String arg0, int arg1, Android.App.Notification arg2)
         {
-            IExecute("notify", arg0, arg1, arg2);
+            IExecuteWithSignature("notify", "(Ljava/lang/String;ILandroid/app/Notification;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#notifyAsPackage(java.lang.String,java.lang.String,int,android.app.Notification)"/>
@@ -733,7 +733,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="Android.App.Notification"/></param>
         public void NotifyAsPackage(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Android.App.Notification arg3)
         {
-            IExecute("notifyAsPackage", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("notifyAsPackage", "(Ljava/lang/String;Ljava/lang/String;ILandroid/app/Notification;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#setAutomaticZenRuleState(java.lang.String,android.service.notification.Condition)"/>
@@ -742,7 +742,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Service.Notification.Condition"/></param>
         public void SetAutomaticZenRuleState(Java.Lang.String arg0, Android.Service.Notification.Condition arg1)
         {
-            IExecute("setAutomaticZenRuleState", arg0, arg1);
+            IExecuteWithSignature("setAutomaticZenRuleState", "(Ljava/lang/String;Landroid/service/notification/Condition;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationDelegate(java.lang.String)"/>
@@ -760,9 +760,9 @@ namespace Android.App
         {
             IExecuteWithSignature("setNotificationPolicy", "(Landroid/app/NotificationManager$Policy;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Policy implementation
         public partial class Policy
@@ -801,13 +801,13 @@ namespace Android.App
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#priorityCallSenders"/>
@@ -991,9 +991,9 @@ namespace Android.App
             public static int SUPPRESSED_EFFECT_STATUS_BAR { get { if (!_SUPPRESSED_EFFECT_STATUS_BARReady) { _SUPPRESSED_EFFECT_STATUS_BARContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_STATUS_BAR"); _SUPPRESSED_EFFECT_STATUS_BARReady = true; } return _SUPPRESSED_EFFECT_STATUS_BARContent; } }
             private static int _SUPPRESSED_EFFECT_STATUS_BARContent = default;
             private static bool _SUPPRESSED_EFFECT_STATUS_BARReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#priorityCategoriesToString(int)"/>
@@ -1022,9 +1022,9 @@ namespace Android.App
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "suppressedEffectsToString", "(I)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#describeContents()"/>
@@ -1041,22 +1041,22 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

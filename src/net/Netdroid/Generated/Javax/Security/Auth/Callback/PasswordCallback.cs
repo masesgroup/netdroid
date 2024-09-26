@@ -40,10 +40,10 @@ namespace Javax.Security.Auth.Callback
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PasswordCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Javax.Security.Auth.Callback
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,9 +83,9 @@ namespace Javax.Security.Auth.Callback
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Javax.Security.Auth.Callback.PasswordCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
@@ -95,17 +95,17 @@ namespace Javax.Security.Auth.Callback
         /// Converter from <see cref="Javax.Security.Auth.Callback.PasswordCallback"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.PasswordCallback t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/>
@@ -113,7 +113,7 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="bool"/></returns>
         public bool IsEchoOn()
         {
-            return IExecuteWithSignature<bool>("isEchoOn", "()Z");
+            return IExecute<bool>("isEchoOn");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#getPassword()"/>
@@ -121,7 +121,7 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="char"/></returns>
         public char[] GetPassword()
         {
-            return IExecuteWithSignatureArray<char>("getPassword", "()[C");
+            return IExecuteArray<char>("getPassword");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#getPrompt()"/>
@@ -129,14 +129,14 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPrompt()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getPrompt");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#clearPassword()"/>
         /// </summary>
         public void ClearPassword()
         {
-            IExecuteWithSignature("clearPassword", "()V");
+            IExecute("clearPassword");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#setPassword(char[])"/>
@@ -144,15 +144,15 @@ namespace Javax.Security.Auth.Callback
         /// <param name="arg0"><see cref="char"/></param>
         public void SetPassword(char[] arg0)
         {
-            IExecuteWithSignature("setPassword", "([C)V", new object[] { arg0 });
+            IExecute("setPassword", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Media
         /// </summary>
         [global::System.Obsolete("MediaRoute2ProviderService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MediaRoute2ProviderService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Media
     public partial class MediaRoute2ProviderService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#REASON_INVALID_COMMAND"/>
@@ -126,13 +126,13 @@ namespace Android.Media
         public static long REQUEST_ID_NONE { get { if (!_REQUEST_ID_NONEReady) { _REQUEST_ID_NONEContent = SGetField<long>(LocalBridgeClazz, "REQUEST_ID_NONE"); _REQUEST_ID_NONEReady = true; } return _REQUEST_ID_NONEContent; } }
         private static long _REQUEST_ID_NONEContent = default;
         private static bool _REQUEST_ID_NONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onCreateSession(long,java.lang.String,java.lang.String,android.os.Bundle)"/>
@@ -143,7 +143,7 @@ namespace Android.Media
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
         public void OnCreateSession(long arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
-            IExecute("onCreateSession", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onCreateSession", "(JLjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onDeselectRoute(long,java.lang.String,java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void OnDeselectRoute(long arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("onDeselectRoute", arg0, arg1, arg2);
+            IExecuteWithSignature("onDeselectRoute", "(JLjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onReleaseSession(long,java.lang.String)"/>
@@ -162,7 +162,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnReleaseSession(long arg0, Java.Lang.String arg1)
         {
-            IExecute("onReleaseSession", arg0, arg1);
+            IExecuteWithSignature("onReleaseSession", "(JLjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onSelectRoute(long,java.lang.String,java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void OnSelectRoute(long arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("onSelectRoute", arg0, arg1, arg2);
+            IExecuteWithSignature("onSelectRoute", "(JLjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onSetRouteVolume(long,java.lang.String,int)"/>
@@ -182,7 +182,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="int"/></param>
         public void OnSetRouteVolume(long arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("onSetRouteVolume", arg0, arg1, arg2);
+            IExecuteWithSignature("onSetRouteVolume", "(JLjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onSetSessionVolume(long,java.lang.String,int)"/>
@@ -192,7 +192,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="int"/></param>
         public void OnSetSessionVolume(long arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("onSetSessionVolume", arg0, arg1, arg2);
+            IExecuteWithSignature("onSetSessionVolume", "(JLjava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onTransferToRoute(long,java.lang.String,java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void OnTransferToRoute(long arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("onTransferToRoute", arg0, arg1, arg2);
+            IExecuteWithSignature("onTransferToRoute", "(JLjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#getSessionInfo(java.lang.String)"/>
@@ -228,7 +228,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void NotifyRequestFailed(long arg0, int arg1)
         {
-            IExecute("notifyRequestFailed", arg0, arg1);
+            IExecuteWithSignature("notifyRequestFailed", "(JI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#notifyRoutes(java.util.Collection)"/>
@@ -245,7 +245,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.RoutingSessionInfo"/></param>
         public void NotifySessionCreated(long arg0, Android.Media.RoutingSessionInfo arg1)
         {
-            IExecute("notifySessionCreated", arg0, arg1);
+            IExecuteWithSignature("notifySessionCreated", "(JLandroid/media/RoutingSessionInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#notifySessionReleased(java.lang.String)"/>
@@ -271,13 +271,13 @@ namespace Android.Media
         {
             IExecuteWithSignature("onDiscoveryPreferenceChanged", "(Landroid/media/RouteDiscoveryPreference;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

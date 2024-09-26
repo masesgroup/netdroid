@@ -40,10 +40,10 @@ namespace Android.Text.Style
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BulletSpan(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Style
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -109,9 +109,9 @@ namespace Android.Text.Style
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Text.Style.BulletSpan"/> to <see cref="Android.Text.Style.LeadingMarginSpan"/>
@@ -121,9 +121,9 @@ namespace Android.Text.Style
         /// Converter from <see cref="Android.Text.Style.BulletSpan"/> to <see cref="Android.Text.ParcelableSpan"/>
         /// </summary>
         public static implicit operator Android.Text.ParcelableSpan(Android.Text.Style.BulletSpan t) => t.Cast<Android.Text.ParcelableSpan>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#STANDARD_GAP_WIDTH"/>
@@ -131,13 +131,13 @@ namespace Android.Text.Style
         public static int STANDARD_GAP_WIDTH { get { if (!_STANDARD_GAP_WIDTHReady) { _STANDARD_GAP_WIDTHContent = SGetField<int>(LocalBridgeClazz, "STANDARD_GAP_WIDTH"); _STANDARD_GAP_WIDTHReady = true; } return _STANDARD_GAP_WIDTHContent; } }
         private static int _STANDARD_GAP_WIDTHContent = default;
         private static bool _STANDARD_GAP_WIDTHReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#describeContents()"/>
@@ -205,7 +205,7 @@ namespace Android.Text.Style
         /// <param name="arg11"><see cref="Android.Text.Layout"/></param>
         public void DrawLeadingMargin(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, bool arg10, Android.Text.Layout arg11)
         {
-            IExecute("drawLeadingMargin", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            IExecuteWithSignature("drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -214,15 +214,15 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.View.Inspector
         /// </summary>
         [global::System.Obsolete("PropertyMapper class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PropertyMapper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View.Inspector
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region PropertyConflictException declaration
         /// <summary>
@@ -79,9 +79,9 @@ namespace Android.View.Inspector
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -96,13 +96,13 @@ namespace Android.View.Inspector
     public partial interface IPropertyMapper
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -111,21 +111,21 @@ namespace Android.View.Inspector
     public partial class PropertyMapper : Android.View.Inspector.IPropertyMapper
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapBoolean(java.lang.String,int)"/>
@@ -135,7 +135,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapBoolean(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapBoolean", arg0, arg1);
+            return IExecuteWithSignature<int>("mapBoolean", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapByte(java.lang.String,int)"/>
@@ -145,7 +145,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapByte(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapByte", arg0, arg1);
+            return IExecuteWithSignature<int>("mapByte", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapChar(java.lang.String,int)"/>
@@ -155,7 +155,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapChar(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapChar", arg0, arg1);
+            return IExecuteWithSignature<int>("mapChar", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapColor(java.lang.String,int)"/>
@@ -165,7 +165,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapColor(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapColor", arg0, arg1);
+            return IExecuteWithSignature<int>("mapColor", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapDouble(java.lang.String,int)"/>
@@ -175,7 +175,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapDouble(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapDouble", arg0, arg1);
+            return IExecuteWithSignature<int>("mapDouble", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapFloat(java.lang.String,int)"/>
@@ -185,7 +185,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapFloat(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapFloat", arg0, arg1);
+            return IExecuteWithSignature<int>("mapFloat", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapGravity(java.lang.String,int)"/>
@@ -195,7 +195,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapGravity(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapGravity", arg0, arg1);
+            return IExecuteWithSignature<int>("mapGravity", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapInt(java.lang.String,int)"/>
@@ -205,7 +205,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapInt", arg0, arg1);
+            return IExecuteWithSignature<int>("mapInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapIntEnum(java.lang.String,int,java.util.function.IntFunction)"/>
@@ -216,7 +216,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapIntEnum(Java.Lang.String arg0, int arg1, Java.Util.Function.IntFunction<Java.Lang.String> arg2)
         {
-            return IExecute<int>("mapIntEnum", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("mapIntEnum", "(Ljava/lang/String;ILjava/util/function/IntFunction;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapIntFlag(java.lang.String,int,java.util.function.IntFunction)"/>
@@ -227,7 +227,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapIntFlag(Java.Lang.String arg0, int arg1, Java.Util.Function.IntFunction<Java.Util.Set<Java.Lang.String>> arg2)
         {
-            return IExecute<int>("mapIntFlag", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("mapIntFlag", "(Ljava/lang/String;ILjava/util/function/IntFunction;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapLong(java.lang.String,int)"/>
@@ -237,7 +237,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapLong(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapLong", arg0, arg1);
+            return IExecuteWithSignature<int>("mapLong", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapObject(java.lang.String,int)"/>
@@ -247,7 +247,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapObject(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapObject", arg0, arg1);
+            return IExecuteWithSignature<int>("mapObject", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapResourceId(java.lang.String,int)"/>
@@ -257,7 +257,7 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapResourceId(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapResourceId", arg0, arg1);
+            return IExecuteWithSignature<int>("mapResourceId", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyMapper.html#mapShort(java.lang.String,int)"/>
@@ -267,46 +267,46 @@ namespace Android.View.Inspector
         /// <returns><see cref="int"/></returns>
         public int MapShort(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("mapShort", arg0, arg1);
+            return IExecuteWithSignature<int>("mapShort", "(Ljava/lang/String;I)I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region PropertyConflictException implementation
         public partial class PropertyConflictException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

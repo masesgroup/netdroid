@@ -40,10 +40,10 @@ namespace Android.Content.Om
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FabricatedOverlay(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Om
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,21 +83,21 @@ namespace Android.Content.Om
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#getIdentifier()"/>
@@ -115,7 +115,7 @@ namespace Android.Content.Om
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetNinePatchResourceValue(Java.Lang.String arg0, Android.Os.ParcelFileDescriptor arg1, Java.Lang.String arg2)
         {
-            IExecute("setNinePatchResourceValue", arg0, arg1, arg2);
+            IExecuteWithSignature("setNinePatchResourceValue", "(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setResourceValue(java.lang.String,android.content.res.AssetFileDescriptor,java.lang.String)"/>
@@ -125,7 +125,7 @@ namespace Android.Content.Om
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetResourceValue(Java.Lang.String arg0, Android.Content.Res.AssetFileDescriptor arg1, Java.Lang.String arg2)
         {
-            IExecute("setResourceValue", arg0, arg1, arg2);
+            IExecuteWithSignature("setResourceValue", "(Ljava/lang/String;Landroid/content/res/AssetFileDescriptor;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setResourceValue(java.lang.String,android.os.ParcelFileDescriptor,java.lang.String)"/>
@@ -135,7 +135,7 @@ namespace Android.Content.Om
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetResourceValue(Java.Lang.String arg0, Android.Os.ParcelFileDescriptor arg1, Java.Lang.String arg2)
         {
-            IExecute("setResourceValue", arg0, arg1, arg2);
+            IExecuteWithSignature("setResourceValue", "(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setResourceValue(java.lang.String,int,int,java.lang.String)"/>
@@ -146,7 +146,7 @@ namespace Android.Content.Om
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void SetResourceValue(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3)
         {
-            IExecute("setResourceValue", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setResourceValue", "(Ljava/lang/String;IILjava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setResourceValue(java.lang.String,int,java.lang.String,java.lang.String)"/>
@@ -157,7 +157,7 @@ namespace Android.Content.Om
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void SetResourceValue(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("setResourceValue", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setResourceValue", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setTargetOverlayable(java.lang.String)"/>
@@ -167,13 +167,13 @@ namespace Android.Content.Om
         {
             IExecuteWithSignature("setTargetOverlayable", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

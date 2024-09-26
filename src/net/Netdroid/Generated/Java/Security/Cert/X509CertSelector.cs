@@ -40,10 +40,10 @@ namespace Java.Security.Cert
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public X509CertSelector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Security.Cert
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Java.Security.Cert
     public partial class X509CertSelector
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CertSelector.html#getMatchAllSubjectAltNames()"/>
@@ -287,7 +287,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void AddPathToName(int arg0, byte[] arg1)
         {
-            IExecute("addPathToName", arg0, arg1);
+            IExecuteWithSignature("addPathToName", "(I[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CertSelector.html#addPathToName(int,java.lang.String)"/>
@@ -297,7 +297,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void AddPathToName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("addPathToName", arg0, arg1);
+            IExecuteWithSignature("addPathToName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CertSelector.html#addSubjectAlternativeName(int,byte[])"/>
@@ -307,7 +307,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void AddSubjectAlternativeName(int arg0, byte[] arg1)
         {
-            IExecute("addSubjectAlternativeName", arg0, arg1);
+            IExecuteWithSignature("addSubjectAlternativeName", "(I[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CertSelector.html#addSubjectAlternativeName(int,java.lang.String)"/>
@@ -317,7 +317,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void AddSubjectAlternativeName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("addSubjectAlternativeName", arg0, arg1);
+            IExecuteWithSignature("addSubjectAlternativeName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/X509CertSelector.html#setAuthorityKeyIdentifier(byte[])"/>
@@ -516,13 +516,13 @@ namespace Java.Security.Cert
         {
             IExecuteWithSignature("setSubjectPublicKeyAlgID", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

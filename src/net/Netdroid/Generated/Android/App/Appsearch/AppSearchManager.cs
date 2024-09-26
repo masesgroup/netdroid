@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppSearchManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region SearchContext declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SearchContext(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,7 +105,7 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -122,10 +122,10 @@ namespace Android.App.Appsearch
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -146,9 +146,9 @@ namespace Android.App.Appsearch
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -164,21 +164,21 @@ namespace Android.App.Appsearch
     public partial class AppSearchManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.html#createEnterpriseGlobalSearchSession(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -187,7 +187,7 @@ namespace Android.App.Appsearch
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void CreateEnterpriseGlobalSearchSession(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.EnterpriseGlobalSearchSession>> arg1)
         {
-            IExecute("createEnterpriseGlobalSearchSession", arg0, arg1);
+            IExecuteWithSignature("createEnterpriseGlobalSearchSession", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.html#createGlobalSearchSession(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -196,7 +196,7 @@ namespace Android.App.Appsearch
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void CreateGlobalSearchSession(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.GlobalSearchSession>> arg1)
         {
-            IExecute("createGlobalSearchSession", arg0, arg1);
+            IExecuteWithSignature("createGlobalSearchSession", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.html#createSearchSession(android.app.appsearch.AppSearchManager.SearchContext,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -206,31 +206,31 @@ namespace Android.App.Appsearch
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void CreateSearchSession(Android.App.Appsearch.AppSearchManager.SearchContext arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.AppSearchSession>> arg2)
         {
-            IExecute("createSearchSession", arg0, arg1, arg2);
+            IExecuteWithSignature("createSearchSession", "(Landroid/app/appsearch/AppSearchManager$SearchContext;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region SearchContext implementation
         public partial class SearchContext
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.SearchContext.html#getDatabaseName()"/>
@@ -240,9 +240,9 @@ namespace Android.App.Appsearch
             {
                 return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
@@ -256,21 +256,21 @@ namespace Android.App.Appsearch
                     : base(arg0)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.SearchContext.Builder.html#build()"/>
@@ -280,27 +280,27 @@ namespace Android.App.Appsearch
                 {
                     return IExecuteWithSignature<Android.App.Appsearch.AppSearchManager.SearchContext>("build", "()Landroid/app/appsearch/AppSearchManager$SearchContext;");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

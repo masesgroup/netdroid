@@ -42,10 +42,10 @@ namespace Android.Service.Restrictions
         /// </summary>
         [global::System.Obsolete("RestrictionsReceiver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RestrictionsReceiver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Service.Restrictions
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Service.Restrictions
     public partial class RestrictionsReceiver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/restrictions/RestrictionsReceiver.html#onRequestPermission(android.content.Context,java.lang.String,java.lang.String,java.lang.String,android.os.PersistableBundle)"/>
@@ -102,15 +102,15 @@ namespace Android.Service.Restrictions
         /// <param name="arg4"><see cref="Android.Os.PersistableBundle"/></param>
         public void OnRequestPermission(Android.Content.Context arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Android.Os.PersistableBundle arg4)
         {
-            IExecute("onRequestPermission", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onRequestPermission", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

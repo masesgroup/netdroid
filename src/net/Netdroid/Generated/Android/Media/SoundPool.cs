@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SoundPool(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnLoadCompleteListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.SoundPool_OnLoadCompleteListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnLoadCompleteListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnLoadCompleteListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.SoundPool$OnLoadCompleteListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -197,21 +197,21 @@ namespace Android.Media
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#play(int,float,float,int,int,float)"/>
@@ -225,7 +225,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Play(int arg0, float arg1, float arg2, int arg3, int arg4, float arg5)
         {
-            return IExecute<int>("play", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("play", "(IFFIIF)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#unload(int)"/>
@@ -273,7 +273,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLoop(int arg0, int arg1)
         {
-            IExecute("setLoop", arg0, arg1);
+            IExecuteWithSignature("setLoop", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#setPriority(int,int)"/>
@@ -282,7 +282,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void SetPriority(int arg0, int arg1)
         {
-            IExecute("setPriority", arg0, arg1);
+            IExecuteWithSignature("setPriority", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#setRate(int,float)"/>
@@ -291,7 +291,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="float"/></param>
         public void SetRate(int arg0, float arg1)
         {
-            IExecute("setRate", arg0, arg1);
+            IExecuteWithSignature("setRate", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#stop(int)"/>
@@ -316,7 +316,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="float"/></param>
         public void SetVolume(int arg0, float arg1, float arg2)
         {
-            IExecute("setVolume", arg0, arg1, arg2);
+            IExecuteWithSignature("setVolume", "(IFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#load(android.content.Context,int,int)"/>
@@ -327,7 +327,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Load(Android.Content.Context arg0, int arg1, int arg2)
         {
-            return IExecute<int>("load", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("load", "(Landroid/content/Context;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#load(android.content.res.AssetFileDescriptor,int)"/>
@@ -337,7 +337,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Load(Android.Content.Res.AssetFileDescriptor arg0, int arg1)
         {
-            return IExecute<int>("load", arg0, arg1);
+            return IExecuteWithSignature<int>("load", "(Landroid/content/res/AssetFileDescriptor;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#load(java.io.FileDescriptor,long,long,int)"/>
@@ -349,7 +349,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Load(Java.Io.FileDescriptor arg0, long arg1, long arg2, int arg3)
         {
-            return IExecute<int>("load", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("load", "(Ljava/io/FileDescriptor;JJI)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#load(java.lang.String,int)"/>
@@ -359,7 +359,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Load(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("load", arg0, arg1);
+            return IExecuteWithSignature<int>("load", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#setOnLoadCompleteListener(android.media.SoundPool.OnLoadCompleteListener)"/>
@@ -369,29 +369,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("setOnLoadCompleteListener", "(Landroid/media/SoundPool$OnLoadCompleteListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/SoundPool.Builder.html#build()"/>
@@ -439,13 +439,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Android.Media.SoundPool.Builder>("setMaxStreams", "(I)Landroid/media/SoundPool$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -454,21 +454,21 @@ namespace Android.Media
         public partial class OnLoadCompleteListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnLoadCompleteListener"/>
@@ -478,13 +478,13 @@ namespace Android.Media
                 AddEventHandler("onLoadComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnLoadCompleteEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/SoundPool.OnLoadCompleteListener.html#onLoadComplete(android.media.SoundPool,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLoadComplete"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.SoundPool, int, int> OnOnLoadComplete { get; set; } = null;
-            
+
             bool hasOverrideOnLoadComplete = true;
             void OnLoadCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -493,7 +493,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.SoundPool>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnLoadComplete;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/SoundPool.OnLoadCompleteListener.html#onLoadComplete(android.media.SoundPool,int,int)"/>
             /// </summary>
@@ -504,13 +504,13 @@ namespace Android.Media
             {
                 hasOverrideOnLoadComplete = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -519,21 +519,21 @@ namespace Android.Media
         public partial class OnLoadCompleteListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/SoundPool.OnLoadCompleteListener.html#onLoadComplete(android.media.SoundPool,int,int)"/>
@@ -543,22 +543,22 @@ namespace Android.Media
             /// <param name="arg2"><see cref="int"/></param>
             public override void OnLoadComplete(Android.Media.SoundPool arg0, int arg1, int arg2)
             {
-                IExecute("onLoadComplete", arg0, arg1, arg2);
+                IExecuteWithSignature("onLoadComplete", "(Landroid/media/SoundPool;II)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

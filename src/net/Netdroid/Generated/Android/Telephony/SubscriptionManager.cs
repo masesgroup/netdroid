@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SubscriptionManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnOpportunisticSubscriptionsChangedListener declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public OnOpportunisticSubscriptionsChangedListener(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public OnSubscriptionsChangedListener(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.Telephony
     public partial class SubscriptionManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#D2D_SHARING_ALL"/>
@@ -346,9 +346,9 @@ namespace Android.Telephony
         public static Java.Lang.String EXTRA_SUBSCRIPTION_INDEX { get { if (!_EXTRA_SUBSCRIPTION_INDEXReady) { _EXTRA_SUBSCRIPTION_INDEXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SUBSCRIPTION_INDEX"); _EXTRA_SUBSCRIPTION_INDEXReady = true; } return _EXTRA_SUBSCRIPTION_INDEXContent; } }
         private static Java.Lang.String _EXTRA_SUBSCRIPTION_INDEXContent = default;
         private static bool _EXTRA_SUBSCRIPTION_INDEXReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#from(android.content.Context)"/>
@@ -436,9 +436,9 @@ namespace Android.Telephony
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getSubscriptionId", "(I)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#createSubscriptionGroup(java.util.List)"/>
@@ -502,7 +502,7 @@ namespace Android.Telephony
         /// <returns><see cref="bool"/></returns>
         public bool SetOpportunistic(bool arg0, int arg1)
         {
-            return IExecute<bool>("setOpportunistic", arg0, arg1);
+            return IExecuteWithSignature<bool>("setOpportunistic", "(ZI)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoCount()"/>
@@ -547,7 +547,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPhoneNumber(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getPhoneNumber", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getPhoneNumber", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getPhoneNumber(int)"/>
@@ -632,7 +632,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telephony.SubscriptionManager.OnOpportunisticSubscriptionsChangedListener"/></param>
         public void AddOnOpportunisticSubscriptionsChangedListener(Java.Util.Concurrent.Executor arg0, Android.Telephony.SubscriptionManager.OnOpportunisticSubscriptionsChangedListener arg1)
         {
-            IExecute("addOnOpportunisticSubscriptionsChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnOpportunisticSubscriptionsChangedListener", "(Ljava/util/concurrent/Executor;Landroid/telephony/SubscriptionManager$OnOpportunisticSubscriptionsChangedListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#addOnSubscriptionsChangedListener(android.telephony.SubscriptionManager.OnSubscriptionsChangedListener)"/>
@@ -650,7 +650,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telephony.SubscriptionManager.OnSubscriptionsChangedListener"/></param>
         public void AddOnSubscriptionsChangedListener(Java.Util.Concurrent.Executor arg0, Android.Telephony.SubscriptionManager.OnSubscriptionsChangedListener arg1)
         {
-            IExecute("addOnSubscriptionsChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnSubscriptionsChangedListener", "(Ljava/util/concurrent/Executor;Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#addSubscriptionsIntoGroup(java.util.List,android.os.ParcelUuid)"/>
@@ -659,7 +659,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Os.ParcelUuid"/></param>
         public void AddSubscriptionsIntoGroup(Java.Util.List<Java.Lang.Integer> arg0, Android.Os.ParcelUuid arg1)
         {
-            IExecute("addSubscriptionsIntoGroup", arg0, arg1);
+            IExecuteWithSignature("addSubscriptionsIntoGroup", "(Ljava/util/List;Landroid/os/ParcelUuid;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#removeOnOpportunisticSubscriptionsChangedListener(android.telephony.SubscriptionManager.OnOpportunisticSubscriptionsChangedListener)"/>
@@ -684,7 +684,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Os.ParcelUuid"/></param>
         public void RemoveSubscriptionsFromGroup(Java.Util.List<Java.Lang.Integer> arg0, Android.Os.ParcelUuid arg1)
         {
-            IExecute("removeSubscriptionsFromGroup", arg0, arg1);
+            IExecuteWithSignature("removeSubscriptionsFromGroup", "(Ljava/util/List;Landroid/os/ParcelUuid;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setCarrierPhoneNumber(int,java.lang.String)"/>
@@ -693,7 +693,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetCarrierPhoneNumber(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setCarrierPhoneNumber", arg0, arg1);
+            IExecuteWithSignature("setCarrierPhoneNumber", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setDeviceToDeviceStatusSharingContacts(int,java.util.List)"/>
@@ -702,7 +702,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         public void SetDeviceToDeviceStatusSharingContacts(int arg0, Java.Util.List<Android.Net.Uri> arg1)
         {
-            IExecute("setDeviceToDeviceStatusSharingContacts", arg0, arg1);
+            IExecuteWithSignature("setDeviceToDeviceStatusSharingContacts", "(ILjava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setDeviceToDeviceStatusSharingPreference(int,int)"/>
@@ -711,7 +711,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="int"/></param>
         public void SetDeviceToDeviceStatusSharingPreference(int arg0, int arg1)
         {
-            IExecute("setDeviceToDeviceStatusSharingPreference", arg0, arg1);
+            IExecuteWithSignature("setDeviceToDeviceStatusSharingPreference", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setSubscriptionOverrideCongested(int,boolean,int[],long)"/>
@@ -722,7 +722,7 @@ namespace Android.Telephony
         /// <param name="arg3"><see cref="long"/></param>
         public void SetSubscriptionOverrideCongested(int arg0, bool arg1, int[] arg2, long arg3)
         {
-            IExecute("setSubscriptionOverrideCongested", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSubscriptionOverrideCongested", "(IZ[IJ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setSubscriptionOverrideCongested(int,boolean,long)"/>
@@ -732,7 +732,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="long"/></param>
         public void SetSubscriptionOverrideCongested(int arg0, bool arg1, long arg2)
         {
-            IExecute("setSubscriptionOverrideCongested", arg0, arg1, arg2);
+            IExecuteWithSignature("setSubscriptionOverrideCongested", "(IZJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setSubscriptionOverrideUnmetered(int,boolean,int[],long)"/>
@@ -743,7 +743,7 @@ namespace Android.Telephony
         /// <param name="arg3"><see cref="long"/></param>
         public void SetSubscriptionOverrideUnmetered(int arg0, bool arg1, int[] arg2, long arg3)
         {
-            IExecute("setSubscriptionOverrideUnmetered", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSubscriptionOverrideUnmetered", "(IZ[IJ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setSubscriptionOverrideUnmetered(int,boolean,long)"/>
@@ -753,7 +753,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="long"/></param>
         public void SetSubscriptionOverrideUnmetered(int arg0, bool arg1, long arg2)
         {
-            IExecute("setSubscriptionOverrideUnmetered", arg0, arg1, arg2);
+            IExecuteWithSignature("setSubscriptionOverrideUnmetered", "(IZJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setSubscriptionPlans(int,java.util.List,long)"/>
@@ -763,7 +763,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="long"/></param>
         public void SetSubscriptionPlans(int arg0, Java.Util.List<Android.Telephony.SubscriptionPlan> arg1, long arg2)
         {
-            IExecute("setSubscriptionPlans", arg0, arg1, arg2);
+            IExecuteWithSignature("setSubscriptionPlans", "(ILjava/util/List;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setSubscriptionPlans(int,java.util.List)"/>
@@ -773,7 +773,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void SetSubscriptionPlans(int arg0, Java.Util.List<Android.Telephony.SubscriptionPlan> arg1)
         {
-            IExecute("setSubscriptionPlans", arg0, arg1);
+            IExecuteWithSignature("setSubscriptionPlans", "(ILjava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#switchToSubscription(int,android.app.PendingIntent)"/>
@@ -783,31 +783,31 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void SwitchToSubscription(int arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("switchToSubscription", arg0, arg1);
+            IExecuteWithSignature("switchToSubscription", "(ILandroid/app/PendingIntent;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnOpportunisticSubscriptionsChangedListener implementation
         public partial class OnOpportunisticSubscriptionsChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnOpportunisticSubscriptionsChangedListener.html#onOpportunisticSubscriptionsChanged()"/>
@@ -816,13 +816,13 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onOpportunisticSubscriptionsChanged", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -831,21 +831,21 @@ namespace Android.Telephony
         public partial class OnSubscriptionsChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.html#onSubscriptionsChanged()"/>
@@ -854,20 +854,20 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onSubscriptionsChanged", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

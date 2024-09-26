@@ -42,10 +42,10 @@ namespace Java.Time
         /// </summary>
         [global::System.Obsolete("InstantSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InstantSource(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Time
     public partial interface IInstantSource
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,17 +94,17 @@ namespace Java.Time
     public partial class InstantSource : Java.Time.IInstantSource
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/InstantSource.html#fixed(java.time.Instant)"/>
@@ -123,7 +123,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.InstantSource"/></returns>
         public static Java.Time.InstantSource Offset(Java.Time.InstantSource arg0, Java.Time.Duration arg1)
         {
-            return SExecute<Java.Time.InstantSource>(LocalBridgeClazz, "offset", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.InstantSource>(LocalBridgeClazz, "offset", "(Ljava/time/InstantSource;Ljava/time/Duration;)Ljava/time/InstantSource;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/InstantSource.html#system()"/>
@@ -141,11 +141,11 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.InstantSource"/></returns>
         public static Java.Time.InstantSource Tick(Java.Time.InstantSource arg0, Java.Time.Duration arg1)
         {
-            return SExecute<Java.Time.InstantSource>(LocalBridgeClazz, "tick", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.InstantSource>(LocalBridgeClazz, "tick", "(Ljava/time/InstantSource;Ljava/time/Duration;)Ljava/time/InstantSource;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/InstantSource.html#instant()"/>
@@ -172,13 +172,13 @@ namespace Java.Time
         {
             return IExecuteWithSignature<long>("millis", "()J");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

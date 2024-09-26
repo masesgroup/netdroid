@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ViewConfiguration(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.View
     public partial class ViewConfiguration
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#get(android.content.Context)"/>
@@ -289,9 +289,9 @@ namespace Android.View
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getZoomControlsTimeout", "()J");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#hasPermanentMenuKey()"/>
@@ -406,7 +406,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public int GetScaledMaximumFlingVelocity(int arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScaledMaximumFlingVelocity", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScaledMaximumFlingVelocity", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getScaledMinimumFlingVelocity()"/>
@@ -425,7 +425,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public int GetScaledMinimumFlingVelocity(int arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScaledMinimumFlingVelocity", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScaledMinimumFlingVelocity", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getScaledMinimumScalingSpan()"/>
@@ -483,13 +483,13 @@ namespace Android.View
         {
             return IExecuteWithSignature<int>("getScaledWindowTouchSlop", "()I");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

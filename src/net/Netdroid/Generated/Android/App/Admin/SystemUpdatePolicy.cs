@@ -40,10 +40,10 @@ namespace Android.App.Admin
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SystemUpdatePolicy(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ValidationFailedException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.App.Admin
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -91,13 +91,13 @@ namespace Android.App.Admin
     public partial class SystemUpdatePolicy
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#CREATOR"/>
@@ -123,9 +123,9 @@ namespace Android.App.Admin
         public static int TYPE_POSTPONE { get { if (!_TYPE_POSTPONEReady) { _TYPE_POSTPONEContent = SGetField<int>(LocalBridgeClazz, "TYPE_POSTPONE"); _TYPE_POSTPONEReady = true; } return _TYPE_POSTPONEContent; } }
         private static int _TYPE_POSTPONEContent = default;
         private static bool _TYPE_POSTPONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#createAutomaticInstallPolicy()"/>
@@ -151,11 +151,11 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.App.Admin.SystemUpdatePolicy"/></returns>
         public static Android.App.Admin.SystemUpdatePolicy CreateWindowedInstallPolicy(int arg0, int arg1)
         {
-            return SExecute<Android.App.Admin.SystemUpdatePolicy>(LocalBridgeClazz, "createWindowedInstallPolicy", arg0, arg1);
+            return SExecuteWithSignature<Android.App.Admin.SystemUpdatePolicy>(LocalBridgeClazz, "createWindowedInstallPolicy", "(II)Landroid/app/admin/SystemUpdatePolicy;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#setFreezePeriods(java.util.List)"/>
@@ -213,46 +213,46 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ValidationFailedException implementation
         public partial class ValidationFailedException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

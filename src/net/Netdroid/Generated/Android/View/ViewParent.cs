@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("ViewParent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ViewParent(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.View
     public partial interface IViewParent
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.View
     public partial class ViewParent : Android.View.IViewParent
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#startActionModeForChild(android.view.View,android.view.ActionMode.Callback,int)"/>
@@ -119,7 +119,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.ActionMode"/></returns>
         public Android.View.ActionMode StartActionModeForChild(Android.View.View arg0, Android.View.ActionMode.Callback arg1, int arg2)
         {
-            return IExecute<Android.View.ActionMode>("startActionModeForChild", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.ActionMode>("startActionModeForChild", "(Landroid/view/View;Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#startActionModeForChild(android.view.View,android.view.ActionMode.Callback)"/>
@@ -129,7 +129,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.ActionMode"/></returns>
         public Android.View.ActionMode StartActionModeForChild(Android.View.View arg0, Android.View.ActionMode.Callback arg1)
         {
-            return IExecute<Android.View.ActionMode>("startActionModeForChild", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ActionMode>("startActionModeForChild", "(Landroid/view/View;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#focusSearch(android.view.View,int)"/>
@@ -139,7 +139,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View FocusSearch(Android.View.View arg0, int arg1)
         {
-            return IExecute<Android.View.View>("focusSearch", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("focusSearch", "(Landroid/view/View;I)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#keyboardNavigationClusterSearch(android.view.View,int)"/>
@@ -149,7 +149,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View KeyboardNavigationClusterSearch(Android.View.View arg0, int arg1)
         {
-            return IExecute<Android.View.View>("keyboardNavigationClusterSearch", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("keyboardNavigationClusterSearch", "(Landroid/view/View;I)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getParent()"/>
@@ -176,7 +176,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public Android.View.ViewParent InvalidateChildInParent(int[] arg0, Android.Graphics.Rect arg1)
         {
-            return IExecute<Android.View.ViewParent>("invalidateChildInParent", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ViewParent>("invalidateChildInParent", "([ILandroid/graphics/Rect;)Landroid/view/ViewParent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#canResolveLayoutDirection()"/>
@@ -211,7 +211,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool GetChildVisibleRect(Android.View.View arg0, Android.Graphics.Rect arg1, Android.Graphics.Point arg2)
         {
-            return IExecute<bool>("getChildVisibleRect", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getChildVisibleRect", "(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#isLayoutDirectionResolved()"/>
@@ -255,7 +255,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnNestedFling(Android.View.View arg0, float arg1, float arg2, bool arg3)
         {
-            return IExecute<bool>("onNestedFling", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onNestedFling", "(Landroid/view/View;FFZ)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onNestedPreFling(android.view.View,float,float)"/>
@@ -266,7 +266,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnNestedPreFling(Android.View.View arg0, float arg1, float arg2)
         {
-            return IExecute<bool>("onNestedPreFling", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onNestedPreFling", "(Landroid/view/View;FF)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onNestedPrePerformAccessibilityAction(android.view.View,int,android.os.Bundle)"/>
@@ -277,7 +277,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnNestedPrePerformAccessibilityAction(Android.View.View arg0, int arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("onNestedPrePerformAccessibilityAction", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onNestedPrePerformAccessibilityAction", "(Landroid/view/View;ILandroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onStartNestedScroll(android.view.View,android.view.View,int)"/>
@@ -288,7 +288,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnStartNestedScroll(Android.View.View arg0, Android.View.View arg1, int arg2)
         {
-            return IExecute<bool>("onStartNestedScroll", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onStartNestedScroll", "(Landroid/view/View;Landroid/view/View;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#requestChildRectangleOnScreen(android.view.View,android.graphics.Rect,boolean)"/>
@@ -299,7 +299,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool RequestChildRectangleOnScreen(Android.View.View arg0, Android.Graphics.Rect arg1, bool arg2)
         {
-            return IExecute<bool>("requestChildRectangleOnScreen", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#requestSendAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)"/>
@@ -309,7 +309,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool RequestSendAccessibilityEvent(Android.View.View arg0, Android.View.Accessibility.AccessibilityEvent arg1)
         {
-            return IExecute<bool>("requestSendAccessibilityEvent", arg0, arg1);
+            return IExecuteWithSignature<bool>("requestSendAccessibilityEvent", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#showContextMenuForChild(android.view.View,float,float)"/>
@@ -320,7 +320,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool ShowContextMenuForChild(Android.View.View arg0, float arg1, float arg2)
         {
-            return IExecute<bool>("showContextMenuForChild", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("showContextMenuForChild", "(Landroid/view/View;FF)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#showContextMenuForChild(android.view.View)"/>
@@ -378,7 +378,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="bool"/></param>
         public void ChildHasTransientStateChanged(Android.View.View arg0, bool arg1)
         {
-            IExecute("childHasTransientStateChanged", arg0, arg1);
+            IExecuteWithSignature("childHasTransientStateChanged", "(Landroid/view/View;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#clearChildFocus(android.view.View)"/>
@@ -412,7 +412,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public void InvalidateChild(Android.View.View arg0, Android.Graphics.Rect arg1)
         {
-            IExecute("invalidateChild", arg0, arg1);
+            IExecuteWithSignature("invalidateChild", "(Landroid/view/View;Landroid/graphics/Rect;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#notifySubtreeAccessibilityStateChanged(android.view.View,android.view.View,int)"/>
@@ -422,7 +422,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void NotifySubtreeAccessibilityStateChanged(Android.View.View arg0, Android.View.View arg1, int arg2)
         {
-            IExecute("notifySubtreeAccessibilityStateChanged", arg0, arg1, arg2);
+            IExecuteWithSignature("notifySubtreeAccessibilityStateChanged", "(Landroid/view/View;Landroid/view/View;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onNestedPreScroll(android.view.View,int,int,int[])"/>
@@ -433,7 +433,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void OnNestedPreScroll(Android.View.View arg0, int arg1, int arg2, int[] arg3)
         {
-            IExecute("onNestedPreScroll", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onNestedPreScroll", "(Landroid/view/View;II[I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onNestedScroll(android.view.View,int,int,int,int)"/>
@@ -445,7 +445,7 @@ namespace Android.View
         /// <param name="arg4"><see cref="int"/></param>
         public void OnNestedScroll(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("onNestedScroll", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onNestedScroll", "(Landroid/view/View;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onNestedScrollAccepted(android.view.View,android.view.View,int)"/>
@@ -455,7 +455,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void OnNestedScrollAccepted(Android.View.View arg0, Android.View.View arg1, int arg2)
         {
-            IExecute("onNestedScrollAccepted", arg0, arg1, arg2);
+            IExecuteWithSignature("onNestedScrollAccepted", "(Landroid/view/View;Landroid/view/View;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onStopNestedScroll(android.view.View)"/>
@@ -480,7 +480,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         public void RequestChildFocus(Android.View.View arg0, Android.View.View arg1)
         {
-            IExecute("requestChildFocus", arg0, arg1);
+            IExecuteWithSignature("requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#requestDisallowInterceptTouchEvent(boolean)"/>
@@ -520,7 +520,7 @@ namespace Android.View
         /// <returns><see cref="Android.Window.OnBackInvokedDispatcher"/></returns>
         public Android.Window.OnBackInvokedDispatcher FindOnBackInvokedDispatcherForChild(Android.View.View arg0, Android.View.View arg1)
         {
-            return IExecute<Android.Window.OnBackInvokedDispatcher>("findOnBackInvokedDispatcherForChild", arg0, arg1);
+            return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("findOnBackInvokedDispatcherForChild", "(Landroid/view/View;Landroid/view/View;)Landroid/window/OnBackInvokedDispatcher;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#onDescendantInvalidated(android.view.View,android.view.View)"/>
@@ -529,15 +529,15 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         public void OnDescendantInvalidated(Android.View.View arg0, Android.View.View arg1)
         {
-            IExecute("onDescendantInvalidated", arg0, arg1);
+            IExecuteWithSignature("onDescendantInvalidated", "(Landroid/view/View;Landroid/view/View;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

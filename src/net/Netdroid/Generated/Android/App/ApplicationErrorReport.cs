@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ApplicationErrorReport(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AnrInfo declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AnrInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BatteryInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CrashInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RunningServiceInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -254,13 +254,13 @@ namespace Android.App
     public partial class ApplicationErrorReport
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.html#anrInfo"/>
@@ -338,9 +338,9 @@ namespace Android.App
         public static int TYPE_RUNNING_SERVICE { get { if (!_TYPE_RUNNING_SERVICEReady) { _TYPE_RUNNING_SERVICEContent = SGetField<int>(LocalBridgeClazz, "TYPE_RUNNING_SERVICE"); _TYPE_RUNNING_SERVICEReady = true; } return _TYPE_RUNNING_SERVICEContent; } }
         private static int _TYPE_RUNNING_SERVICEContent = default;
         private static bool _TYPE_RUNNING_SERVICEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.html#getErrorReportReceiver(android.content.Context,java.lang.String,int)"/>
@@ -351,11 +351,11 @@ namespace Android.App
         /// <returns><see cref="Android.Content.ComponentName"/></returns>
         public static Android.Content.ComponentName GetErrorReportReceiver(Android.Content.Context arg0, Java.Lang.String arg1, int arg2)
         {
-            return SExecute<Android.Content.ComponentName>(LocalBridgeClazz, "getErrorReportReceiver", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Content.ComponentName>(LocalBridgeClazz, "getErrorReportReceiver", "(Landroid/content/Context;Ljava/lang/String;I)Landroid/content/ComponentName;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.html#describeContents()"/>
@@ -372,7 +372,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
         {
-            IExecute("dump", arg0, arg1);
+            IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.html#readFromParcel(android.os.Parcel)"/>
@@ -389,11 +389,11 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AnrInfo implementation
         public partial class AnrInfo
@@ -407,13 +407,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.AnrInfo.html#activity"/>
@@ -427,13 +427,13 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.AnrInfo.html#info"/>
             /// </summary>
             public Java.Lang.String info { get { return IGetField<Java.Lang.String>("info"); } set { ISetField("info", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.AnrInfo.html#dump(android.util.Printer,java.lang.String)"/>
@@ -442,7 +442,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
             {
-                IExecute("dump", arg0, arg1);
+                IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.AnrInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -451,15 +451,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -476,13 +476,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.BatteryInfo.html#usagePercent"/>
@@ -500,13 +500,13 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.BatteryInfo.html#durationMicros"/>
             /// </summary>
             public long durationMicros { get { return IGetField<long>("durationMicros"); } set { ISetField("durationMicros", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.BatteryInfo.html#dump(android.util.Printer,java.lang.String)"/>
@@ -515,7 +515,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
             {
-                IExecute("dump", arg0, arg1);
+                IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.BatteryInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -524,15 +524,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -557,13 +557,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.CrashInfo.html#throwLineNumber"/>
@@ -593,13 +593,13 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.CrashInfo.html#throwMethodName"/>
             /// </summary>
             public Java.Lang.String throwMethodName { get { return IGetField<Java.Lang.String>("throwMethodName"); } set { ISetField("throwMethodName", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.CrashInfo.html#dump(android.util.Printer,java.lang.String)"/>
@@ -608,7 +608,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
             {
-                IExecute("dump", arg0, arg1);
+                IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.CrashInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -617,15 +617,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -642,13 +642,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.RunningServiceInfo.html#serviceDetails"/>
@@ -658,13 +658,13 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.RunningServiceInfo.html#durationMillis"/>
             /// </summary>
             public long durationMillis { get { return IGetField<long>("durationMillis"); } set { ISetField("durationMillis", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.RunningServiceInfo.html#dump(android.util.Printer,java.lang.String)"/>
@@ -673,7 +673,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
             {
-                IExecute("dump", arg0, arg1);
+                IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ApplicationErrorReport.RunningServiceInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -682,22 +682,22 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

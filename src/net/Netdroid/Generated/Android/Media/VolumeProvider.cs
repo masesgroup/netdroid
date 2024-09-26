@@ -42,10 +42,10 @@ namespace Android.Media
         /// </summary>
         [global::System.Obsolete("VolumeProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public VolumeProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -97,13 +97,13 @@ namespace Android.Media
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#VOLUME_CONTROL_ABSOLUTE"/>
@@ -123,13 +123,13 @@ namespace Android.Media
         public static int VOLUME_CONTROL_RELATIVE { get { if (!_VOLUME_CONTROL_RELATIVEReady) { _VOLUME_CONTROL_RELATIVEContent = SGetField<int>(LocalBridgeClazz, "VOLUME_CONTROL_RELATIVE"); _VOLUME_CONTROL_RELATIVEReady = true; } return _VOLUME_CONTROL_RELATIVEContent; } }
         private static int _VOLUME_CONTROL_RELATIVEContent = default;
         private static bool _VOLUME_CONTROL_RELATIVEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getCurrentVolume()"/>
@@ -187,13 +187,13 @@ namespace Android.Media
         {
             IExecuteWithSignature("onSetVolumeTo", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

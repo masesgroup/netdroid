@@ -42,10 +42,10 @@ namespace Android.Text.Style
         /// </summary>
         [global::System.Obsolete("CharacterStyle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterStyle(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Text.Style
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Android.Text.Style
     public partial class CharacterStyle
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/CharacterStyle.html#wrap(android.text.style.CharacterStyle)"/>
@@ -97,9 +97,9 @@ namespace Android.Text.Style
         {
             return SExecuteWithSignature<Android.Text.Style.CharacterStyle>(LocalBridgeClazz, "wrap", "(Landroid/text/style/CharacterStyle;)Landroid/text/style/CharacterStyle;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/CharacterStyle.html#updateDrawState(android.text.TextPaint)"/>
@@ -117,13 +117,13 @@ namespace Android.Text.Style
         {
             return IExecuteWithSignature<Android.Text.Style.CharacterStyle>("getUnderlying", "()Landroid/text/style/CharacterStyle;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

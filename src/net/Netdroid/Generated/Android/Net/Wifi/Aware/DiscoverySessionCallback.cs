@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Aware
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DiscoverySessionCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Net.Wifi.Aware
     public partial class DiscoverySessionCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onBootstrappingFailed(android.net.wifi.aware.PeerHandle)"/>
@@ -105,7 +105,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="int"/></param>
         public void OnBootstrappingSucceeded(Android.Net.Wifi.Aware.PeerHandle arg0, int arg1)
         {
-            IExecute("onBootstrappingSucceeded", arg0, arg1);
+            IExecuteWithSignature("onBootstrappingSucceeded", "(Landroid/net/wifi/aware/PeerHandle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onMessageReceived(android.net.wifi.aware.PeerHandle,byte[])"/>
@@ -114,7 +114,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="byte"/></param>
         public void OnMessageReceived(Android.Net.Wifi.Aware.PeerHandle arg0, byte[] arg1)
         {
-            IExecute("onMessageReceived", arg0, arg1);
+            IExecuteWithSignature("onMessageReceived", "(Landroid/net/wifi/aware/PeerHandle;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onMessageSendFailed(int)"/>
@@ -147,7 +147,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="int"/></param>
         public void OnPairingSetupRequestReceived(Android.Net.Wifi.Aware.PeerHandle arg0, int arg1)
         {
-            IExecute("onPairingSetupRequestReceived", arg0, arg1);
+            IExecuteWithSignature("onPairingSetupRequestReceived", "(Landroid/net/wifi/aware/PeerHandle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onPairingSetupSucceeded(android.net.wifi.aware.PeerHandle,java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnPairingSetupSucceeded(Android.Net.Wifi.Aware.PeerHandle arg0, Java.Lang.String arg1)
         {
-            IExecute("onPairingSetupSucceeded", arg0, arg1);
+            IExecuteWithSignature("onPairingSetupSucceeded", "(Landroid/net/wifi/aware/PeerHandle;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onPairingVerificationFailed(android.net.wifi.aware.PeerHandle)"/>
@@ -173,7 +173,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnPairingVerificationSucceed(Android.Net.Wifi.Aware.PeerHandle arg0, Java.Lang.String arg1)
         {
-            IExecute("onPairingVerificationSucceed", arg0, arg1);
+            IExecuteWithSignature("onPairingVerificationSucceed", "(Landroid/net/wifi/aware/PeerHandle;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onPublishStarted(android.net.wifi.aware.PublishDiscoverySession)"/>
@@ -191,7 +191,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         public void OnServiceDiscovered(Android.Net.Wifi.Aware.PeerHandle arg0, byte[] arg1, Java.Util.List<byte[]> arg2)
         {
-            IExecute("onServiceDiscovered", arg0, arg1, arg2);
+            IExecuteWithSignature("onServiceDiscovered", "(Landroid/net/wifi/aware/PeerHandle;[BLjava/util/List;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onServiceDiscovered(android.net.wifi.aware.ServiceDiscoveryInfo)"/>
@@ -210,7 +210,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg3"><see cref="int"/></param>
         public void OnServiceDiscoveredWithinRange(Android.Net.Wifi.Aware.PeerHandle arg0, byte[] arg1, Java.Util.List<byte[]> arg2, int arg3)
         {
-            IExecute("onServiceDiscoveredWithinRange", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onServiceDiscoveredWithinRange", "(Landroid/net/wifi/aware/PeerHandle;[BLjava/util/List;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onServiceDiscoveredWithinRange(android.net.wifi.aware.ServiceDiscoveryInfo,int)"/>
@@ -219,7 +219,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="int"/></param>
         public void OnServiceDiscoveredWithinRange(Android.Net.Wifi.Aware.ServiceDiscoveryInfo arg0, int arg1)
         {
-            IExecute("onServiceDiscoveredWithinRange", arg0, arg1);
+            IExecuteWithSignature("onServiceDiscoveredWithinRange", "(Landroid/net/wifi/aware/ServiceDiscoveryInfo;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onServiceLost(android.net.wifi.aware.PeerHandle,int)"/>
@@ -228,7 +228,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="int"/></param>
         public void OnServiceLost(Android.Net.Wifi.Aware.PeerHandle arg0, int arg1)
         {
-            IExecute("onServiceLost", arg0, arg1);
+            IExecuteWithSignature("onServiceLost", "(Landroid/net/wifi/aware/PeerHandle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySessionCallback.html#onSessionConfigFailed()"/>
@@ -259,13 +259,13 @@ namespace Android.Net.Wifi.Aware
         {
             IExecuteWithSignature("onSubscribeStarted", "(Landroid/net/wifi/aware/SubscribeDiscoverySession;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -41,10 +41,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothHealth(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.Bluetooth
     public partial class BluetoothHealth
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHealth.html#APP_CONFIG_REGISTRATION_FAILURE"/>
@@ -167,13 +167,13 @@ namespace Android.Bluetooth
         public static int STATE_CHANNEL_DISCONNECTING { get { if (!_STATE_CHANNEL_DISCONNECTINGReady) { _STATE_CHANNEL_DISCONNECTINGContent = SGetField<int>(LocalBridgeClazz, "STATE_CHANNEL_DISCONNECTING"); _STATE_CHANNEL_DISCONNECTINGReady = true; } return _STATE_CHANNEL_DISCONNECTINGContent; } }
         private static int _STATE_CHANNEL_DISCONNECTINGContent = default;
         private static bool _STATE_CHANNEL_DISCONNECTINGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHealth.html#getMainChannelFd(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothHealthAppConfiguration)"/>
@@ -184,7 +184,7 @@ namespace Android.Bluetooth
         [global::System.Obsolete()]
         public Android.Os.ParcelFileDescriptor GetMainChannelFd(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.BluetoothHealthAppConfiguration arg1)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("getMainChannelFd", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getMainChannelFd", "(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHealth.html#connectChannelToSource(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothHealthAppConfiguration)"/>
@@ -195,7 +195,7 @@ namespace Android.Bluetooth
         [global::System.Obsolete()]
         public bool ConnectChannelToSource(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.BluetoothHealthAppConfiguration arg1)
         {
-            return IExecute<bool>("connectChannelToSource", arg0, arg1);
+            return IExecuteWithSignature<bool>("connectChannelToSource", "(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHealth.html#disconnectChannel(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothHealthAppConfiguration,int)"/>
@@ -207,7 +207,7 @@ namespace Android.Bluetooth
         [global::System.Obsolete()]
         public bool DisconnectChannel(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.BluetoothHealthAppConfiguration arg1, int arg2)
         {
-            return IExecute<bool>("disconnectChannel", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("disconnectChannel", "(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHealth.html#registerSinkAppConfiguration(java.lang.String,int,android.bluetooth.BluetoothHealthCallback)"/>
@@ -219,7 +219,7 @@ namespace Android.Bluetooth
         [global::System.Obsolete()]
         public bool RegisterSinkAppConfiguration(Java.Lang.String arg0, int arg1, Android.Bluetooth.BluetoothHealthCallback arg2)
         {
-            return IExecute<bool>("registerSinkAppConfiguration", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("registerSinkAppConfiguration", "(Ljava/lang/String;ILandroid/bluetooth/BluetoothHealthCallback;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHealth.html#unregisterAppConfiguration(android.bluetooth.BluetoothHealthAppConfiguration)"/>
@@ -260,13 +260,13 @@ namespace Android.Bluetooth
         {
             return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

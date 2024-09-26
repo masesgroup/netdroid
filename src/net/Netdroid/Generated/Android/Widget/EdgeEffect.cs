@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EdgeEffect(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,13 +91,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#DEFAULT_BLEND_MODE"/>
@@ -105,13 +105,13 @@ namespace Android.Widget
         public static Android.Graphics.BlendMode DEFAULT_BLEND_MODE { get { if (!_DEFAULT_BLEND_MODEReady) { _DEFAULT_BLEND_MODEContent = SGetField<Android.Graphics.BlendMode>(LocalBridgeClazz, "DEFAULT_BLEND_MODE"); _DEFAULT_BLEND_MODEReady = true; } return _DEFAULT_BLEND_MODEContent; } }
         private static Android.Graphics.BlendMode _DEFAULT_BLEND_MODEContent = default;
         private static bool _DEFAULT_BLEND_MODEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getBlendMode()"/>
@@ -154,7 +154,7 @@ namespace Android.Widget
         /// <returns><see cref="float"/></returns>
         public float OnPullDistance(float arg0, float arg1)
         {
-            return IExecute<float>("onPullDistance", arg0, arg1);
+            return IExecuteWithSignature<float>("onPullDistance", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getColor()"/>
@@ -194,7 +194,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="float"/></param>
         public void OnPull(float arg0, float arg1)
         {
-            IExecute("onPull", arg0, arg1);
+            IExecuteWithSignature("onPull", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#onPull(float)"/>
@@ -234,15 +234,15 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSize(int arg0, int arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.App.Admin
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DelegatedAdminReceiver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.App.Admin
     public partial class DelegatedAdminReceiver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DelegatedAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,android.content.Intent,int,android.net.Uri,java.lang.String)"/>
@@ -101,7 +101,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String OnChoosePrivateKeyAlias(Android.Content.Context arg0, Android.Content.Intent arg1, int arg2, Android.Net.Uri arg3, Java.Lang.String arg4)
         {
-            return IExecute<Java.Lang.String>("onChoosePrivateKeyAlias", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Lang.String>("onChoosePrivateKeyAlias", "(Landroid/content/Context;Landroid/content/Intent;ILandroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DelegatedAdminReceiver.html#onNetworkLogsAvailable(android.content.Context,android.content.Intent,long,int)"/>
@@ -112,7 +112,7 @@ namespace Android.App.Admin
         /// <param name="arg3"><see cref="int"/></param>
         public void OnNetworkLogsAvailable(Android.Content.Context arg0, Android.Content.Intent arg1, long arg2, int arg3)
         {
-            IExecute("onNetworkLogsAvailable", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onNetworkLogsAvailable", "(Landroid/content/Context;Landroid/content/Intent;JI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DelegatedAdminReceiver.html#onSecurityLogsAvailable(android.content.Context,android.content.Intent)"/>
@@ -121,15 +121,15 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnSecurityLogsAvailable(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onSecurityLogsAvailable", arg0, arg1);
+            IExecuteWithSignature("onSecurityLogsAvailable", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

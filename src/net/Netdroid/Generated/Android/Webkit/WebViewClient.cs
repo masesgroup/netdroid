@@ -40,10 +40,10 @@ namespace Android.Webkit
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WebViewClient(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Webkit
     public partial class WebViewClient
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#ERROR_AUTHENTICATION"/>
@@ -208,13 +208,13 @@ namespace Android.Webkit
         public static int SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE { get { if (!_SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREReady) { _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREContent = SGetField<int>(LocalBridgeClazz, "SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE"); _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREReady = true; } return _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREContent; } }
         private static int _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREContent = default;
         private static bool _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest)"/>
@@ -224,7 +224,7 @@ namespace Android.Webkit
         /// <returns><see cref="Android.Webkit.WebResourceResponse"/></returns>
         public Android.Webkit.WebResourceResponse ShouldInterceptRequest(Android.Webkit.WebView arg0, Android.Webkit.WebResourceRequest arg1)
         {
-            return IExecute<Android.Webkit.WebResourceResponse>("shouldInterceptRequest", arg0, arg1);
+            return IExecuteWithSignature<Android.Webkit.WebResourceResponse>("shouldInterceptRequest", "(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Landroid/webkit/WebResourceResponse;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldInterceptRequest(android.webkit.WebView,java.lang.String)"/>
@@ -235,7 +235,7 @@ namespace Android.Webkit
         [global::System.Obsolete()]
         public Android.Webkit.WebResourceResponse ShouldInterceptRequest(Android.Webkit.WebView arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Webkit.WebResourceResponse>("shouldInterceptRequest", arg0, arg1);
+            return IExecuteWithSignature<Android.Webkit.WebResourceResponse>("shouldInterceptRequest", "(Landroid/webkit/WebView;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onRenderProcessGone(android.webkit.WebView,android.webkit.RenderProcessGoneDetail)"/>
@@ -245,7 +245,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool OnRenderProcessGone(Android.Webkit.WebView arg0, Android.Webkit.RenderProcessGoneDetail arg1)
         {
-            return IExecute<bool>("onRenderProcessGone", arg0, arg1);
+            return IExecuteWithSignature<bool>("onRenderProcessGone", "(Landroid/webkit/WebView;Landroid/webkit/RenderProcessGoneDetail;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldOverrideKeyEvent(android.webkit.WebView,android.view.KeyEvent)"/>
@@ -255,7 +255,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool ShouldOverrideKeyEvent(Android.Webkit.WebView arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("shouldOverrideKeyEvent", arg0, arg1);
+            return IExecuteWithSignature<bool>("shouldOverrideKeyEvent", "(Landroid/webkit/WebView;Landroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest)"/>
@@ -265,7 +265,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool ShouldOverrideUrlLoading(Android.Webkit.WebView arg0, Android.Webkit.WebResourceRequest arg1)
         {
-            return IExecute<bool>("shouldOverrideUrlLoading", arg0, arg1);
+            return IExecuteWithSignature<bool>("shouldOverrideUrlLoading", "(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)"/>
@@ -276,7 +276,7 @@ namespace Android.Webkit
         [global::System.Obsolete()]
         public bool ShouldOverrideUrlLoading(Android.Webkit.WebView arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("shouldOverrideUrlLoading", arg0, arg1);
+            return IExecuteWithSignature<bool>("shouldOverrideUrlLoading", "(Landroid/webkit/WebView;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#doUpdateVisitedHistory(android.webkit.WebView,java.lang.String,boolean)"/>
@@ -286,7 +286,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="bool"/></param>
         public void DoUpdateVisitedHistory(Android.Webkit.WebView arg0, Java.Lang.String arg1, bool arg2)
         {
-            IExecute("doUpdateVisitedHistory", arg0, arg1, arg2);
+            IExecuteWithSignature("doUpdateVisitedHistory", "(Landroid/webkit/WebView;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onFormResubmission(android.webkit.WebView,android.os.Message,android.os.Message)"/>
@@ -296,7 +296,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="Android.Os.Message"/></param>
         public void OnFormResubmission(Android.Webkit.WebView arg0, Android.Os.Message arg1, Android.Os.Message arg2)
         {
-            IExecute("onFormResubmission", arg0, arg1, arg2);
+            IExecuteWithSignature("onFormResubmission", "(Landroid/webkit/WebView;Landroid/os/Message;Landroid/os/Message;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onLoadResource(android.webkit.WebView,java.lang.String)"/>
@@ -305,7 +305,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnLoadResource(Android.Webkit.WebView arg0, Java.Lang.String arg1)
         {
-            IExecute("onLoadResource", arg0, arg1);
+            IExecuteWithSignature("onLoadResource", "(Landroid/webkit/WebView;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onPageCommitVisible(android.webkit.WebView,java.lang.String)"/>
@@ -314,7 +314,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnPageCommitVisible(Android.Webkit.WebView arg0, Java.Lang.String arg1)
         {
-            IExecute("onPageCommitVisible", arg0, arg1);
+            IExecuteWithSignature("onPageCommitVisible", "(Landroid/webkit/WebView;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onPageFinished(android.webkit.WebView,java.lang.String)"/>
@@ -323,7 +323,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnPageFinished(Android.Webkit.WebView arg0, Java.Lang.String arg1)
         {
-            IExecute("onPageFinished", arg0, arg1);
+            IExecuteWithSignature("onPageFinished", "(Landroid/webkit/WebView;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)"/>
@@ -333,7 +333,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="Android.Graphics.Bitmap"/></param>
         public void OnPageStarted(Android.Webkit.WebView arg0, Java.Lang.String arg1, Android.Graphics.Bitmap arg2)
         {
-            IExecute("onPageStarted", arg0, arg1, arg2);
+            IExecuteWithSignature("onPageStarted", "(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedClientCertRequest(android.webkit.WebView,android.webkit.ClientCertRequest)"/>
@@ -342,7 +342,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Android.Webkit.ClientCertRequest"/></param>
         public void OnReceivedClientCertRequest(Android.Webkit.WebView arg0, Android.Webkit.ClientCertRequest arg1)
         {
-            IExecute("onReceivedClientCertRequest", arg0, arg1);
+            IExecuteWithSignature("onReceivedClientCertRequest", "(Landroid/webkit/WebView;Landroid/webkit/ClientCertRequest;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError)"/>
@@ -352,7 +352,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="Android.Webkit.WebResourceError"/></param>
         public void OnReceivedError(Android.Webkit.WebView arg0, Android.Webkit.WebResourceRequest arg1, Android.Webkit.WebResourceError arg2)
         {
-            IExecute("onReceivedError", arg0, arg1, arg2);
+            IExecuteWithSignature("onReceivedError", "(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;Landroid/webkit/WebResourceError;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String)"/>
@@ -364,7 +364,7 @@ namespace Android.Webkit
         [global::System.Obsolete()]
         public void OnReceivedError(Android.Webkit.WebView arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("onReceivedError", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onReceivedError", "(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedHttpAuthRequest(android.webkit.WebView,android.webkit.HttpAuthHandler,java.lang.String,java.lang.String)"/>
@@ -375,7 +375,7 @@ namespace Android.Webkit
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void OnReceivedHttpAuthRequest(Android.Webkit.WebView arg0, Android.Webkit.HttpAuthHandler arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("onReceivedHttpAuthRequest", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onReceivedHttpAuthRequest", "(Landroid/webkit/WebView;Landroid/webkit/HttpAuthHandler;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedHttpError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceResponse)"/>
@@ -385,7 +385,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="Android.Webkit.WebResourceResponse"/></param>
         public void OnReceivedHttpError(Android.Webkit.WebView arg0, Android.Webkit.WebResourceRequest arg1, Android.Webkit.WebResourceResponse arg2)
         {
-            IExecute("onReceivedHttpError", arg0, arg1, arg2);
+            IExecuteWithSignature("onReceivedHttpError", "(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;Landroid/webkit/WebResourceResponse;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedLoginRequest(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -396,7 +396,7 @@ namespace Android.Webkit
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void OnReceivedLoginRequest(Android.Webkit.WebView arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("onReceivedLoginRequest", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onReceivedLoginRequest", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError)"/>
@@ -406,7 +406,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="Android.Net.Http.SslError"/></param>
         public void OnReceivedSslError(Android.Webkit.WebView arg0, Android.Webkit.SslErrorHandler arg1, Android.Net.Http.SslError arg2)
         {
-            IExecute("onReceivedSslError", arg0, arg1, arg2);
+            IExecuteWithSignature("onReceivedSslError", "(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onSafeBrowsingHit(android.webkit.WebView,android.webkit.WebResourceRequest,int,android.webkit.SafeBrowsingResponse)"/>
@@ -417,7 +417,7 @@ namespace Android.Webkit
         /// <param name="arg3"><see cref="Android.Webkit.SafeBrowsingResponse"/></param>
         public void OnSafeBrowsingHit(Android.Webkit.WebView arg0, Android.Webkit.WebResourceRequest arg1, int arg2, Android.Webkit.SafeBrowsingResponse arg3)
         {
-            IExecute("onSafeBrowsingHit", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onSafeBrowsingHit", "(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;ILandroid/webkit/SafeBrowsingResponse;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onScaleChanged(android.webkit.WebView,float,float)"/>
@@ -427,7 +427,7 @@ namespace Android.Webkit
         /// <param name="arg2"><see cref="float"/></param>
         public void OnScaleChanged(Android.Webkit.WebView arg0, float arg1, float arg2)
         {
-            IExecute("onScaleChanged", arg0, arg1, arg2);
+            IExecuteWithSignature("onScaleChanged", "(Landroid/webkit/WebView;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onTooManyRedirects(android.webkit.WebView,android.os.Message,android.os.Message)"/>
@@ -438,7 +438,7 @@ namespace Android.Webkit
         [global::System.Obsolete()]
         public void OnTooManyRedirects(Android.Webkit.WebView arg0, Android.Os.Message arg1, Android.Os.Message arg2)
         {
-            IExecute("onTooManyRedirects", arg0, arg1, arg2);
+            IExecuteWithSignature("onTooManyRedirects", "(Landroid/webkit/WebView;Landroid/os/Message;Landroid/os/Message;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onUnhandledKeyEvent(android.webkit.WebView,android.view.KeyEvent)"/>
@@ -447,15 +447,15 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         public void OnUnhandledKeyEvent(Android.Webkit.WebView arg0, Android.View.KeyEvent arg1)
         {
-            IExecute("onUnhandledKeyEvent", arg0, arg1);
+            IExecuteWithSignature("onUnhandledKeyEvent", "(Landroid/webkit/WebView;Landroid/view/KeyEvent;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

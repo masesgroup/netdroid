@@ -40,10 +40,10 @@ namespace Android.Location
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Location(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,13 +90,13 @@ namespace Android.Location
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#CREATOR"/>
@@ -122,9 +122,9 @@ namespace Android.Location
         public static int FORMAT_SECONDS { get { if (!_FORMAT_SECONDSReady) { _FORMAT_SECONDSContent = SGetField<int>(LocalBridgeClazz, "FORMAT_SECONDS"); _FORMAT_SECONDSReady = true; } return _FORMAT_SECONDSContent; } }
         private static int _FORMAT_SECONDSContent = default;
         private static bool _FORMAT_SECONDSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#convert(java.lang.String)"/>
@@ -143,7 +143,7 @@ namespace Android.Location
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Convert(double arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "convert", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "convert", "(DI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#distanceBetween(double,double,double,double,float[])"/>
@@ -155,11 +155,11 @@ namespace Android.Location
         /// <param name="arg4"><see cref="float"/></param>
         public static void DistanceBetween(double arg0, double arg1, double arg2, double arg3, float[] arg4)
         {
-            SExecute(LocalBridgeClazz, "distanceBetween", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "distanceBetween", "(DDDD[F)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#getExtras()"/>
@@ -453,7 +453,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
         {
-            IExecute("dump", arg0, arg1);
+            IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#removeAccuracy()"/>
@@ -683,15 +683,15 @@ namespace Android.Location
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

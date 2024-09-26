@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SearchSpec(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.App.Appsearch
     public partial class SearchSpec
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#CREATOR"/>
@@ -248,13 +248,13 @@ namespace Android.App.Appsearch
         public static Java.Lang.String SCHEMA_TYPE_WILDCARD { get { if (!_SCHEMA_TYPE_WILDCARDReady) { _SCHEMA_TYPE_WILDCARDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCHEMA_TYPE_WILDCARD"); _SCHEMA_TYPE_WILDCARDReady = true; } return _SCHEMA_TYPE_WILDCARDContent; } }
         private static Java.Lang.String _SCHEMA_TYPE_WILDCARDContent = default;
         private static bool _SCHEMA_TYPE_WILDCARDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getJoinSpec()"/>
@@ -463,31 +463,31 @@ namespace Android.App.Appsearch
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#build()"/>
@@ -541,7 +541,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
             public Android.App.Appsearch.SearchSpec.Builder AddFilterProperties(Java.Lang.String arg0, Java.Util.Collection<Java.Lang.String> arg1)
             {
-                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("addFilterProperties", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("addFilterProperties", "(Ljava/lang/String;Ljava/util/Collection;)Landroid/app/appsearch/SearchSpec$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#addFilterPropertyPaths(java.lang.String,java.util.Collection)"/>
@@ -551,7 +551,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
             public Android.App.Appsearch.SearchSpec.Builder AddFilterPropertyPaths(Java.Lang.String arg0, Java.Util.Collection<Android.App.Appsearch.PropertyPath> arg1)
             {
-                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("addFilterPropertyPaths", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("addFilterPropertyPaths", "(Ljava/lang/String;Ljava/util/Collection;)Landroid/app/appsearch/SearchSpec$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#addFilterSchemas(java.lang.String[])"/>
@@ -579,7 +579,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
             public Android.App.Appsearch.SearchSpec.Builder AddProjection(Java.Lang.String arg0, Java.Util.Collection<Java.Lang.String> arg1)
             {
-                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("addProjection", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("addProjection", "(Ljava/lang/String;Ljava/util/Collection;)Landroid/app/appsearch/SearchSpec$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#addProjectionPaths(java.lang.String,java.util.Collection)"/>
@@ -589,7 +589,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
             public Android.App.Appsearch.SearchSpec.Builder AddProjectionPaths(Java.Lang.String arg0, Java.Util.Collection<Android.App.Appsearch.PropertyPath> arg1)
             {
-                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("addProjectionPaths", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("addProjectionPaths", "(Ljava/lang/String;Ljava/util/Collection;)Landroid/app/appsearch/SearchSpec$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setJoinSpec(android.app.appsearch.JoinSpec)"/>
@@ -653,7 +653,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
             public Android.App.Appsearch.SearchSpec.Builder SetPropertyWeightPaths(Java.Lang.String arg0, Java.Util.Map<Android.App.Appsearch.PropertyPath, Java.Lang.Double> arg1)
             {
-                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("setPropertyWeightPaths", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("setPropertyWeightPaths", "(Ljava/lang/String;Ljava/util/Map;)Landroid/app/appsearch/SearchSpec$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setPropertyWeights(java.lang.String,java.util.Map)"/>
@@ -663,7 +663,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
             public Android.App.Appsearch.SearchSpec.Builder SetPropertyWeights(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Double> arg1)
             {
-                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("setPropertyWeights", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("setPropertyWeights", "(Ljava/lang/String;Ljava/util/Map;)Landroid/app/appsearch/SearchSpec$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setRankingStrategy(int)"/>
@@ -700,7 +700,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
             public Android.App.Appsearch.SearchSpec.Builder SetResultGrouping(int arg0, int arg1)
             {
-                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("setResultGrouping", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("setResultGrouping", "(II)Landroid/app/appsearch/SearchSpec$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setSearchSourceLogTag(java.lang.String)"/>
@@ -747,20 +747,20 @@ namespace Android.App.Appsearch
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("setVerbatimSearchEnabled", "(Z)Landroid/app/appsearch/SearchSpec$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

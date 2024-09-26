@@ -42,10 +42,10 @@ namespace Android.Os
         /// </summary>
         [global::System.Obsolete("TokenWatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TokenWatcher(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -85,21 +85,21 @@ namespace Android.Os
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/TokenWatcher.html#acquired()"/>
@@ -130,7 +130,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Acquire(Android.Os.IBinder arg0, Java.Lang.String arg1)
         {
-            IExecute("acquire", arg0, arg1);
+            IExecuteWithSignature("acquire", "(Landroid/os/IBinder;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/TokenWatcher.html#cleanup(android.os.IBinder,boolean)"/>
@@ -139,7 +139,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="bool"/></param>
         public void Cleanup(Android.Os.IBinder arg0, bool arg1)
         {
-            IExecute("cleanup", arg0, arg1);
+            IExecuteWithSignature("cleanup", "(Landroid/os/IBinder;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/TokenWatcher.html#dump()"/>
@@ -164,13 +164,13 @@ namespace Android.Os
         {
             IExecuteWithSignature("release", "(Landroid/os/IBinder;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

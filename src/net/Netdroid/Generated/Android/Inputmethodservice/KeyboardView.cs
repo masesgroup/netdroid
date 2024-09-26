@@ -41,10 +41,10 @@ namespace Android.Inputmethodservice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyboardView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Inputmethodservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnKeyboardActionListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.Inputmethodservice
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnKeyboardActionListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.inputmethodservice.KeyboardView_OnKeyboardActionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.Inputmethodservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnKeyboardActionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnKeyboardActionListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.Inputmethodservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.inputmethodservice.KeyboardView$OnKeyboardActionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -176,21 +176,21 @@ namespace Android.Inputmethodservice
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.html#getKeyboard()"/>
@@ -306,7 +306,7 @@ namespace Android.Inputmethodservice
         [global::System.Obsolete()]
         public void OnMeasure(int arg0, int arg1)
         {
-            IExecute("onMeasure", arg0, arg1);
+            IExecuteWithSignature("onMeasure", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.html#onSizeChanged(int,int,int,int)"/>
@@ -318,7 +318,7 @@ namespace Android.Inputmethodservice
         [global::System.Obsolete()]
         public void OnSizeChanged(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("onSizeChanged", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onSizeChanged", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.html#setKeyboard(android.inputmethodservice.Keyboard)"/>
@@ -346,7 +346,7 @@ namespace Android.Inputmethodservice
         [global::System.Obsolete()]
         public void SetPopupOffset(int arg0, int arg1)
         {
-            IExecute("setPopupOffset", arg0, arg1);
+            IExecuteWithSignature("setPopupOffset", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.html#setPopupParent(android.view.View)"/>
@@ -384,29 +384,29 @@ namespace Android.Inputmethodservice
         {
             IExecuteWithSignature("setVerticalCorrection", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnKeyboardActionListener implementation
         public partial class OnKeyboardActionListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnKeyboardActionListener"/>
@@ -423,13 +423,13 @@ namespace Android.Inputmethodservice
                 AddEventHandler("swipeUp", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(SwipeUpEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onKey(int,int[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnKey"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, int[]> OnOnKey { get; set; } = null;
-            
+
             bool hasOverrideOnKey = true;
             void OnKeyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -438,7 +438,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int[]>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnKey;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onKey(int,int[])"/>
             /// </summary>
@@ -449,13 +449,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideOnKey = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onPress(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPress"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnPress { get; set; } = null;
-            
+
             bool hasOverrideOnPress = true;
             void OnPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -464,7 +464,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPress;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onPress(int)"/>
             /// </summary>
@@ -474,13 +474,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideOnPress = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onRelease(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRelease"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnRelease { get; set; } = null;
-            
+
             bool hasOverrideOnRelease = true;
             void OnReleaseEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -489,7 +489,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnRelease;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onRelease(int)"/>
             /// </summary>
@@ -499,13 +499,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideOnRelease = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onText(java.lang.CharSequence)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnText"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.CharSequence> OnOnText { get; set; } = null;
-            
+
             bool hasOverrideOnText = true;
             void OnTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -514,7 +514,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.CharSequence>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnText;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onText(java.lang.CharSequence)"/>
             /// </summary>
@@ -524,13 +524,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideOnText = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeDown()"/>
             /// </summary>
             /// <remarks>If <see cref="OnSwipeDown"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnSwipeDown { get; set; } = null;
-            
+
             bool hasOverrideSwipeDown = true;
             void SwipeDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -539,7 +539,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideSwipeDown;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeDown()"/>
             /// </summary>
@@ -548,13 +548,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideSwipeDown = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeLeft()"/>
             /// </summary>
             /// <remarks>If <see cref="OnSwipeLeft"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnSwipeLeft { get; set; } = null;
-            
+
             bool hasOverrideSwipeLeft = true;
             void SwipeLeftEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -563,7 +563,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideSwipeLeft;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeLeft()"/>
             /// </summary>
@@ -572,13 +572,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideSwipeLeft = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeRight()"/>
             /// </summary>
             /// <remarks>If <see cref="OnSwipeRight"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnSwipeRight { get; set; } = null;
-            
+
             bool hasOverrideSwipeRight = true;
             void SwipeRightEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -587,7 +587,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideSwipeRight;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeRight()"/>
             /// </summary>
@@ -596,13 +596,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideSwipeRight = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeUp()"/>
             /// </summary>
             /// <remarks>If <see cref="OnSwipeUp"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnSwipeUp { get; set; } = null;
-            
+
             bool hasOverrideSwipeUp = true;
             void SwipeUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -611,7 +611,7 @@ namespace Android.Inputmethodservice
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideSwipeUp;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#swipeUp()"/>
             /// </summary>
@@ -620,13 +620,13 @@ namespace Android.Inputmethodservice
             {
                 hasOverrideSwipeUp = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -635,21 +635,21 @@ namespace Android.Inputmethodservice
         public partial class OnKeyboardActionListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onKey(int,int[])"/>
@@ -659,7 +659,7 @@ namespace Android.Inputmethodservice
             [global::System.Obsolete()]
             public override void OnKey(int arg0, int[] arg1)
             {
-                IExecute("onKey", arg0, arg1);
+                IExecuteWithSignature("onKey", "(I[I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html#onPress(int)"/>
@@ -720,20 +720,20 @@ namespace Android.Inputmethodservice
             {
                 IExecuteWithSignature("swipeUp", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

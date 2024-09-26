@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Properties(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,21 +90,21 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#getProperty(java.lang.String,java.lang.String)"/>
@@ -114,7 +114,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getProperty", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#getProperty(java.lang.String)"/>
@@ -149,7 +149,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object SetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute("setProperty", arg0, arg1);
+            return IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#load(java.io.InputStream)"/>
@@ -203,7 +203,7 @@ namespace Java.Util
         [global::System.Obsolete()]
         public void Save(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            IExecute("save", arg0, arg1);
+            IExecuteWithSignature("save", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#store(java.io.OutputStream,java.lang.String)"/>
@@ -213,7 +213,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Store(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            IExecute("store", arg0, arg1);
+            IExecuteWithSignature("store", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#store(java.io.Writer,java.lang.String)"/>
@@ -223,7 +223,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Store(Java.Io.Writer arg0, Java.Lang.String arg1)
         {
-            IExecute("store", arg0, arg1);
+            IExecuteWithSignature("store", "(Ljava/io/Writer;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.lang.String)"/>
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void StoreToXML(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("storeToXML", arg0, arg1, arg2);
+            IExecuteWithSignature("storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)"/>
@@ -245,7 +245,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void StoreToXML(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Nio.Charset.Charset arg2)
         {
-            IExecute("storeToXML", arg0, arg1, arg2);
+            IExecuteWithSignature("storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/nio/charset/Charset;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String)"/>
@@ -255,15 +255,15 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void StoreToXML(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            IExecute("storeToXML", arg0, arg1);
+            IExecuteWithSignature("storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

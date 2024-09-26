@@ -42,10 +42,10 @@ namespace Android.Content
         /// </summary>
         [global::System.Obsolete("ComponentCallbacks2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ComponentCallbacks2(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Content
     public partial interface IComponentCallbacks2 : Android.Content.IComponentCallbacks
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.Content
     public partial class ComponentCallbacks2 : Android.Content.IComponentCallbacks2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#TRIM_MEMORY_BACKGROUND"/>
@@ -149,13 +149,13 @@ namespace Android.Content
         public static int TRIM_MEMORY_UI_HIDDEN { get { if (!_TRIM_MEMORY_UI_HIDDENReady) { _TRIM_MEMORY_UI_HIDDENContent = SGetField<int>(LocalBridgeClazz, "TRIM_MEMORY_UI_HIDDEN"); _TRIM_MEMORY_UI_HIDDENReady = true; } return _TRIM_MEMORY_UI_HIDDENContent; } }
         private static int _TRIM_MEMORY_UI_HIDDENContent = default;
         private static bool _TRIM_MEMORY_UI_HIDDENReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#onTrimMemory(int)"/>
@@ -165,13 +165,13 @@ namespace Android.Content
         {
             IExecuteWithSignature("onTrimMemory", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

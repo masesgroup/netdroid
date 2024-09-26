@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppComponentFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.App
     public partial class AppComponentFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent)"/>
@@ -102,7 +102,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.App.Activity InstantiateActivity(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Android.Content.Intent arg2)
         {
-            return IExecute<Android.App.Activity>("instantiateActivity", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.Activity>("instantiateActivity", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateApplication(java.lang.ClassLoader,java.lang.String)"/>
@@ -115,7 +115,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.App.Application InstantiateApplication(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.App.Application>("instantiateApplication", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Application>("instantiateApplication", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Landroid/app/Application;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateService(java.lang.ClassLoader,java.lang.String,android.content.Intent)"/>
@@ -129,7 +129,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.App.Service InstantiateService(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Android.Content.Intent arg2)
         {
-            return IExecute<Android.App.Service>("instantiateService", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.Service>("instantiateService", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Service;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateReceiver(java.lang.ClassLoader,java.lang.String,android.content.Intent)"/>
@@ -143,7 +143,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.Content.BroadcastReceiver InstantiateReceiver(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Android.Content.Intent arg2)
         {
-            return IExecute<Android.Content.BroadcastReceiver>("instantiateReceiver", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.BroadcastReceiver>("instantiateReceiver", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/content/BroadcastReceiver;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateProvider(java.lang.ClassLoader,java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.Content.ContentProvider InstantiateProvider(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.ContentProvider>("instantiateProvider", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.ContentProvider>("instantiateProvider", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Landroid/content/ContentProvider;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateClassLoader(java.lang.ClassLoader,android.content.pm.ApplicationInfo)"/>
@@ -166,15 +166,15 @@ namespace Android.App
         /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
         public Java.Lang.ClassLoader InstantiateClassLoader(Java.Lang.ClassLoader arg0, Android.Content.Pm.ApplicationInfo arg1)
         {
-            return IExecute<Java.Lang.ClassLoader>("instantiateClassLoader", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("instantiateClassLoader", "(Ljava/lang/ClassLoader;Landroid/content/pm/ApplicationInfo;)Ljava/lang/ClassLoader;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.View.Inspector
         /// </summary>
         [global::System.Obsolete("PropertyReader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PropertyReader(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View.Inspector
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region PropertyTypeMismatchException declaration
         /// <summary>
@@ -79,9 +79,9 @@ namespace Android.View.Inspector
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -96,13 +96,13 @@ namespace Android.View.Inspector
     public partial interface IPropertyReader
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -111,21 +111,21 @@ namespace Android.View.Inspector
     public partial class PropertyReader : Android.View.Inspector.IPropertyReader
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readBoolean(int,boolean)"/>
@@ -134,7 +134,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="bool"/></param>
         public void ReadBoolean(int arg0, bool arg1)
         {
-            IExecute("readBoolean", arg0, arg1);
+            IExecuteWithSignature("readBoolean", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readByte(int,byte)"/>
@@ -143,7 +143,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="byte"/></param>
         public void ReadByte(int arg0, byte arg1)
         {
-            IExecute("readByte", arg0, arg1);
+            IExecuteWithSignature("readByte", "(IB)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readChar(int,char)"/>
@@ -152,7 +152,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="char"/></param>
         public void ReadChar(int arg0, char arg1)
         {
-            IExecute("readChar", arg0, arg1);
+            IExecuteWithSignature("readChar", "(IC)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readColor(int,android.graphics.Color)"/>
@@ -161,7 +161,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="Android.Graphics.Color"/></param>
         public void ReadColor(int arg0, Android.Graphics.Color arg1)
         {
-            IExecute("readColor", arg0, arg1);
+            IExecuteWithSignature("readColor", "(ILandroid/graphics/Color;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readColor(int,int)"/>
@@ -170,7 +170,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="int"/></param>
         public void ReadColor(int arg0, int arg1)
         {
-            IExecute("readColor", arg0, arg1);
+            IExecuteWithSignature("readColor", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readColor(int,long)"/>
@@ -179,7 +179,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="long"/></param>
         public void ReadColor(int arg0, long arg1)
         {
-            IExecute("readColor", arg0, arg1);
+            IExecuteWithSignature("readColor", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readDouble(int,double)"/>
@@ -188,7 +188,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="double"/></param>
         public void ReadDouble(int arg0, double arg1)
         {
-            IExecute("readDouble", arg0, arg1);
+            IExecuteWithSignature("readDouble", "(ID)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readFloat(int,float)"/>
@@ -197,7 +197,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="float"/></param>
         public void ReadFloat(int arg0, float arg1)
         {
-            IExecute("readFloat", arg0, arg1);
+            IExecuteWithSignature("readFloat", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readGravity(int,int)"/>
@@ -206,7 +206,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="int"/></param>
         public void ReadGravity(int arg0, int arg1)
         {
-            IExecute("readGravity", arg0, arg1);
+            IExecuteWithSignature("readGravity", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readInt(int,int)"/>
@@ -215,7 +215,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="int"/></param>
         public void ReadInt(int arg0, int arg1)
         {
-            IExecute("readInt", arg0, arg1);
+            IExecuteWithSignature("readInt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readIntEnum(int,int)"/>
@@ -224,7 +224,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="int"/></param>
         public void ReadIntEnum(int arg0, int arg1)
         {
-            IExecute("readIntEnum", arg0, arg1);
+            IExecuteWithSignature("readIntEnum", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readIntFlag(int,int)"/>
@@ -233,7 +233,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="int"/></param>
         public void ReadIntFlag(int arg0, int arg1)
         {
-            IExecute("readIntFlag", arg0, arg1);
+            IExecuteWithSignature("readIntFlag", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readLong(int,long)"/>
@@ -242,7 +242,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="long"/></param>
         public void ReadLong(int arg0, long arg1)
         {
-            IExecute("readLong", arg0, arg1);
+            IExecuteWithSignature("readLong", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readObject(int,java.lang.Object)"/>
@@ -251,7 +251,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="object"/></param>
         public void ReadObject(int arg0, object arg1)
         {
-            IExecute("readObject", arg0, arg1);
+            IExecuteWithSignature("readObject", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readResourceId(int,int)"/>
@@ -260,7 +260,7 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="int"/></param>
         public void ReadResourceId(int arg0, int arg1)
         {
-            IExecute("readResourceId", arg0, arg1);
+            IExecuteWithSignature("readResourceId", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inspector/PropertyReader.html#readShort(int,short)"/>
@@ -269,46 +269,46 @@ namespace Android.View.Inspector
         /// <param name="arg1"><see cref="short"/></param>
         public void ReadShort(int arg0, short arg1)
         {
-            IExecute("readShort", arg0, arg1);
+            IExecuteWithSignature("readShort", "(IS)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region PropertyTypeMismatchException implementation
         public partial class PropertyTypeMismatchException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

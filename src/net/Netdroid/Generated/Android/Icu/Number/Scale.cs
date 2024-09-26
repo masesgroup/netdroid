@@ -40,10 +40,10 @@ namespace Android.Icu.Number
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Scale(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Number
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Icu.Number
     public partial class Scale
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/Scale.html#byBigDecimal(java.math.BigDecimal)"/>
@@ -112,7 +112,7 @@ namespace Android.Icu.Number
         /// <returns><see cref="Android.Icu.Number.Scale"/></returns>
         public static Android.Icu.Number.Scale ByDoubleAndPowerOfTen(double arg0, int arg1)
         {
-            return SExecute<Android.Icu.Number.Scale>(LocalBridgeClazz, "byDoubleAndPowerOfTen", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Number.Scale>(LocalBridgeClazz, "byDoubleAndPowerOfTen", "(DI)Landroid/icu/number/Scale;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/Scale.html#none()"/>
@@ -131,17 +131,17 @@ namespace Android.Icu.Number
         {
             return SExecuteWithSignature<Android.Icu.Number.Scale>(LocalBridgeClazz, "powerOfTen", "(I)Landroid/icu/number/Scale;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

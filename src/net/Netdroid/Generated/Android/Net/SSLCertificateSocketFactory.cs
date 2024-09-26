@@ -41,10 +41,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLCertificateSocketFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,17 +84,17 @@ namespace Android.Net
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#getDefault(int)"/>
@@ -115,7 +115,7 @@ namespace Android.Net
         [global::System.Obsolete()]
         public static Javax.Net.Ssl.SSLSocketFactory GetDefault(int arg0, Android.Net.SSLSessionCache arg1)
         {
-            return SExecute<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getDefault", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getDefault", "(ILandroid/net/SSLSessionCache;)Ljavax/net/ssl/SSLSocketFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#getInsecure(int,android.net.SSLSessionCache)"/>
@@ -126,11 +126,11 @@ namespace Android.Net
         [global::System.Obsolete()]
         public static Javax.Net.Ssl.SSLSocketFactory GetInsecure(int arg0, Android.Net.SSLSessionCache arg1)
         {
-            return SExecute<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getInsecure", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getInsecure", "(ILandroid/net/SSLSessionCache;)Ljavax/net/ssl/SSLSocketFactory;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#getNpnSelectedProtocol(java.net.Socket)"/>
@@ -150,7 +150,7 @@ namespace Android.Net
         [global::System.Obsolete()]
         public void SetHostname(Java.Net.Socket arg0, Java.Lang.String arg1)
         {
-            IExecute("setHostname", arg0, arg1);
+            IExecuteWithSignature("setHostname", "(Ljava/net/Socket;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/SSLCertificateSocketFactory.html#setKeyManagers(javax.net.ssl.KeyManager[])"/>
@@ -187,15 +187,15 @@ namespace Android.Net
         [global::System.Obsolete()]
         public void SetUseSessionTickets(Java.Net.Socket arg0, bool arg1)
         {
-            IExecute("setUseSessionTickets", arg0, arg1);
+            IExecuteWithSignature("setUseSessionTickets", "(Ljava/net/Socket;Z)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

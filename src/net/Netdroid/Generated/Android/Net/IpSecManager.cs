@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IpSecManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ResourceUnavailableException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -98,10 +98,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SecurityParameterIndex(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -122,9 +122,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -139,9 +139,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -160,10 +160,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UdpEncapsulationSocket(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -184,9 +184,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -198,13 +198,13 @@ namespace Android.Net
     public partial class IpSecManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecManager.html#DIRECTION_IN"/>
@@ -218,13 +218,13 @@ namespace Android.Net
         public static int DIRECTION_OUT { get { if (!_DIRECTION_OUTReady) { _DIRECTION_OUTContent = SGetField<int>(LocalBridgeClazz, "DIRECTION_OUT"); _DIRECTION_OUTReady = true; } return _DIRECTION_OUTContent; } }
         private static int _DIRECTION_OUTContent = default;
         private static bool _DIRECTION_OUTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecManager.html#allocateSecurityParameterIndex(java.net.InetAddress,int)"/>
@@ -236,7 +236,7 @@ namespace Android.Net
         /// <exception cref="Android.Net.IpSecManager.SpiUnavailableException"/>
         public Android.Net.IpSecManager.SecurityParameterIndex AllocateSecurityParameterIndex(Java.Net.InetAddress arg0, int arg1)
         {
-            return IExecute<Android.Net.IpSecManager.SecurityParameterIndex>("allocateSecurityParameterIndex", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.IpSecManager.SecurityParameterIndex>("allocateSecurityParameterIndex", "(Ljava/net/InetAddress;I)Landroid/net/IpSecManager$SecurityParameterIndex;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecManager.html#allocateSecurityParameterIndex(java.net.InetAddress)"/>
@@ -278,7 +278,7 @@ namespace Android.Net
         /// <exception cref="Java.Io.IOException"/>
         public void ApplyTransportModeTransform(Java.Io.FileDescriptor arg0, int arg1, Android.Net.IpSecTransform arg2)
         {
-            IExecute("applyTransportModeTransform", arg0, arg1, arg2);
+            IExecuteWithSignature("applyTransportModeTransform", "(Ljava/io/FileDescriptor;ILandroid/net/IpSecTransform;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecManager.html#applyTransportModeTransform(java.net.DatagramSocket,int,android.net.IpSecTransform)"/>
@@ -289,7 +289,7 @@ namespace Android.Net
         /// <exception cref="Java.Io.IOException"/>
         public void ApplyTransportModeTransform(Java.Net.DatagramSocket arg0, int arg1, Android.Net.IpSecTransform arg2)
         {
-            IExecute("applyTransportModeTransform", arg0, arg1, arg2);
+            IExecuteWithSignature("applyTransportModeTransform", "(Ljava/net/DatagramSocket;ILandroid/net/IpSecTransform;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecManager.html#applyTransportModeTransform(java.net.Socket,int,android.net.IpSecTransform)"/>
@@ -300,7 +300,7 @@ namespace Android.Net
         /// <exception cref="Java.Io.IOException"/>
         public void ApplyTransportModeTransform(Java.Net.Socket arg0, int arg1, Android.Net.IpSecTransform arg2)
         {
-            IExecute("applyTransportModeTransform", arg0, arg1, arg2);
+            IExecuteWithSignature("applyTransportModeTransform", "(Ljava/net/Socket;ILandroid/net/IpSecTransform;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecManager.html#removeTransportModeTransforms(java.io.FileDescriptor)"/>
@@ -329,37 +329,37 @@ namespace Android.Net
         {
             IExecuteWithSignature("removeTransportModeTransforms", "(Ljava/net/Socket;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ResourceUnavailableException implementation
         public partial class ResourceUnavailableException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -368,21 +368,21 @@ namespace Android.Net
         public partial class SecurityParameterIndex
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/IpSecManager.SecurityParameterIndex.html#getSpi()"/>
@@ -399,13 +399,13 @@ namespace Android.Net
             {
                 IExecuteWithSignature("close", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -414,29 +414,29 @@ namespace Android.Net
         public partial class SpiUnavailableException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -445,21 +445,21 @@ namespace Android.Net
         public partial class UdpEncapsulationSocket
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/IpSecManager.UdpEncapsulationSocket.html#getPort()"/>
@@ -485,20 +485,20 @@ namespace Android.Net
             {
                 IExecuteWithSignature("close", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

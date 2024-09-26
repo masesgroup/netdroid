@@ -42,10 +42,10 @@ namespace Android.Window
         /// </summary>
         [global::System.Obsolete("SplashScreen class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SplashScreen(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Window
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnExitAnimationListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.Window
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnExitAnimationListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.window.SplashScreen_OnExitAnimationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.Window
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnExitAnimationListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnExitAnimationListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.Window
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.window.SplashScreen$OnExitAnimationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -146,13 +146,13 @@ namespace Android.Window
     public partial interface ISplashScreen
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -161,13 +161,13 @@ namespace Android.Window
     public partial class SplashScreen : Android.Window.ISplashScreen
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/window/SplashScreen.html#SPLASH_SCREEN_STYLE_ICON"/>
@@ -181,13 +181,13 @@ namespace Android.Window
         public static int SPLASH_SCREEN_STYLE_SOLID_COLOR { get { if (!_SPLASH_SCREEN_STYLE_SOLID_COLORReady) { _SPLASH_SCREEN_STYLE_SOLID_COLORContent = SGetField<int>(LocalBridgeClazz, "SPLASH_SCREEN_STYLE_SOLID_COLOR"); _SPLASH_SCREEN_STYLE_SOLID_COLORReady = true; } return _SPLASH_SCREEN_STYLE_SOLID_COLORContent; } }
         private static int _SPLASH_SCREEN_STYLE_SOLID_COLORContent = default;
         private static bool _SPLASH_SCREEN_STYLE_SOLID_COLORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/window/SplashScreen.html#clearOnExitAnimationListener()"/>
@@ -212,29 +212,29 @@ namespace Android.Window
         {
             IExecuteWithSignature("setSplashScreenTheme", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnExitAnimationListener implementation
         public partial class OnExitAnimationListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnExitAnimationListener"/>
@@ -244,13 +244,13 @@ namespace Android.Window
                 AddEventHandler("onSplashScreenExit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSplashScreenExitEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/window/SplashScreen.OnExitAnimationListener.html#onSplashScreenExit(android.window.SplashScreenView)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSplashScreenExit"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Window.SplashScreenView> OnOnSplashScreenExit { get; set; } = null;
-            
+
             bool hasOverrideOnSplashScreenExit = true;
             void OnSplashScreenExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -259,7 +259,7 @@ namespace Android.Window
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Window.SplashScreenView>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSplashScreenExit;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/window/SplashScreen.OnExitAnimationListener.html#onSplashScreenExit(android.window.SplashScreenView)"/>
             /// </summary>
@@ -268,13 +268,13 @@ namespace Android.Window
             {
                 hasOverrideOnSplashScreenExit = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -283,21 +283,21 @@ namespace Android.Window
         public partial class OnExitAnimationListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/window/SplashScreen.OnExitAnimationListener.html#onSplashScreenExit(android.window.SplashScreenView)"/>
@@ -307,20 +307,20 @@ namespace Android.Window
             {
                 IExecuteWithSignature("onSplashScreenExit", "(Landroid/window/SplashScreenView;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

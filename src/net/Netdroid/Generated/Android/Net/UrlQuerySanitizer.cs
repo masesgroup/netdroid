@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UrlQuerySanitizer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region IllegalCharacterValueSanitizer declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public IllegalCharacterValueSanitizer(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ParameterValuePair(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Net
             /// </summary>
             [global::System.Obsolete("ValueSanitizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ValueSanitizer(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -219,17 +219,17 @@ namespace Android.Net
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllButNulAndAngleBracketsLegal()"/>
@@ -303,9 +303,9 @@ namespace Android.Net
         {
             return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getUrlLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getEffectiveValueSanitizer(java.lang.String)"/>
@@ -415,7 +415,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></param>
         public void RegisterParameter(Java.Lang.String arg0, Android.Net.UrlQuerySanitizer.ValueSanitizer arg1)
         {
-            IExecute("registerParameter", arg0, arg1);
+            IExecuteWithSignature("registerParameter", "(Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#registerParameters(java.lang.String[],android.net.UrlQuerySanitizer.ValueSanitizer)"/>
@@ -424,7 +424,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></param>
         public void RegisterParameters(Java.Lang.String[] arg0, Android.Net.UrlQuerySanitizer.ValueSanitizer arg1)
         {
-            IExecute("registerParameters", arg0, arg1);
+            IExecuteWithSignature("registerParameters", "([Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#setAllowUnregisteredParamaters(boolean)"/>
@@ -450,9 +450,9 @@ namespace Android.Net
         {
             IExecuteWithSignature("setUnregisteredParameterValueSanitizer", "(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region IllegalCharacterValueSanitizer implementation
         public partial class IllegalCharacterValueSanitizer
@@ -466,13 +466,13 @@ namespace Android.Net
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer.html#ALL_BUT_NUL_AND_ANGLE_BRACKETS_LEGAL"/>
@@ -606,13 +606,13 @@ namespace Android.Net
             public static int URL_LEGAL { get { if (!_URL_LEGALReady) { _URL_LEGALContent = SGetField<int>(LocalBridgeClazz, "URL_LEGAL"); _URL_LEGALReady = true; } return _URL_LEGALContent; } }
             private static int _URL_LEGALContent = default;
             private static bool _URL_LEGALReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.IllegalCharacterValueSanitizer.html#sanitize(java.lang.String)"/>
@@ -623,13 +623,13 @@ namespace Android.Net
             {
                 return IExecuteWithSignature<Java.Lang.String>("sanitize", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -648,13 +648,13 @@ namespace Android.Net
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.ParameterValuePair.html#mParameter"/>
@@ -664,21 +664,21 @@ namespace Android.Net
             /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.ParameterValuePair.html#mValue"/>
             /// </summary>
             public Java.Lang.String mValue { get { return IGetField<Java.Lang.String>("mValue"); } set { ISetField("mValue", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -687,21 +687,21 @@ namespace Android.Net
         public partial class ValueSanitizer
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.ValueSanitizer.html#sanitize(java.lang.String)"/>
@@ -712,20 +712,20 @@ namespace Android.Net
             {
                 return IExecuteWithSignature<Java.Lang.String>("sanitize", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

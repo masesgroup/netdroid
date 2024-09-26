@@ -40,10 +40,10 @@ namespace Android.Graphics.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextRunShaper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Graphics.Text
     public partial class TextRunShaper
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/TextRunShaper.html#shapeTextRun(char[],int,int,int,int,float,float,boolean,android.graphics.Paint)"/>
@@ -101,7 +101,7 @@ namespace Android.Graphics.Text
         /// <returns><see cref="Android.Graphics.Text.PositionedGlyphs"/></returns>
         public static Android.Graphics.Text.PositionedGlyphs ShapeTextRun(char[] arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, bool arg7, Android.Graphics.Paint arg8)
         {
-            return SExecute<Android.Graphics.Text.PositionedGlyphs>(LocalBridgeClazz, "shapeTextRun", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Android.Graphics.Text.PositionedGlyphs>(LocalBridgeClazz, "shapeTextRun", "([CIIIIFFZLandroid/graphics/Paint;)Landroid/graphics/text/PositionedGlyphs;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/TextRunShaper.html#shapeTextRun(java.lang.CharSequence,int,int,int,int,float,float,boolean,android.graphics.Paint)"/>
@@ -118,19 +118,19 @@ namespace Android.Graphics.Text
         /// <returns><see cref="Android.Graphics.Text.PositionedGlyphs"/></returns>
         public static Android.Graphics.Text.PositionedGlyphs ShapeTextRun(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, bool arg7, Android.Graphics.Paint arg8)
         {
-            return SExecute<Android.Graphics.Text.PositionedGlyphs>(LocalBridgeClazz, "shapeTextRun", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Android.Graphics.Text.PositionedGlyphs>(LocalBridgeClazz, "shapeTextRun", "(Ljava/lang/CharSequence;IIIIFFZLandroid/graphics/Paint;)Landroid/graphics/text/PositionedGlyphs;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

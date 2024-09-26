@@ -42,10 +42,10 @@ namespace Java.Sql
         /// </summary>
         [global::System.Obsolete("Driver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Driver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Sql
     public partial interface IDriver
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Java.Sql
     public partial class Driver : Java.Sql.IDriver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Connection Connect(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
-            return IExecute<Java.Sql.Connection>("connect", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Connection>("connect", "(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
@@ -164,7 +164,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.DriverPropertyInfo[] GetPropertyInfo(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
-            return IExecuteArray<Java.Sql.DriverPropertyInfo>("getPropertyInfo", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Sql.DriverPropertyInfo>("getPropertyInfo", "(Ljava/lang/String;Ljava/util/Properties;)[Ljava/sql/DriverPropertyInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Driver.html#getParentLogger()"/>
@@ -175,13 +175,13 @@ namespace Java.Sql
         {
             return IExecuteWithSignature<Java.Util.Logging.Logger>("getParentLogger", "()Ljava/util/logging/Logger;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

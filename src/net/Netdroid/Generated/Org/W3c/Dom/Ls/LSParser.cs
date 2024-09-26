@@ -42,10 +42,10 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         [global::System.Obsolete("LSParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LSParser(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.W3c.Dom.Ls
     public partial interface ILSParser
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Org.W3c.Dom.Ls
     public partial class LSParser : Org.W3c.Dom.Ls.ILSParser
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#ACTION_APPEND_AS_CHILDREN"/>
@@ -132,13 +132,13 @@ namespace Org.W3c.Dom.Ls
         public static short ACTION_REPLACE_CHILDREN { get { if (!_ACTION_REPLACE_CHILDRENReady) { _ACTION_REPLACE_CHILDRENContent = SGetField<short>(LocalBridgeClazz, "ACTION_REPLACE_CHILDREN"); _ACTION_REPLACE_CHILDRENReady = true; } return _ACTION_REPLACE_CHILDRENContent; } }
         private static short _ACTION_REPLACE_CHILDRENContent = default;
         private static bool _ACTION_REPLACE_CHILDRENReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getAsync()"/>
@@ -205,7 +205,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Node ParseWithContext(Org.W3c.Dom.Ls.LSInput arg0, Org.W3c.Dom.Node arg1, short arg2)
         {
-            return IExecute<Org.W3c.Dom.Node>("parseWithContext", arg0, arg1, arg2);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("parseWithContext", "(Lorg/w3c/dom/ls/LSInput;Lorg/w3c/dom/Node;S)Lorg/w3c/dom/Node;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#abort()"/>
@@ -222,13 +222,13 @@ namespace Org.W3c.Dom.Ls
         {
             IExecuteWithSignature("setFilter", "(Lorg/w3c/dom/ls/LSParserFilter;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

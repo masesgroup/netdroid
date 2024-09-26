@@ -42,10 +42,10 @@ namespace Java.Nio.Channels
         /// </summary>
         [global::System.Obsolete("Pipe class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Pipe(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Nio.Channels
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region SinkChannel declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Java.Nio.Channels
             /// </summary>
             [global::System.Obsolete("SinkChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SinkChannel(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Java.Nio.Channels
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Java.Nio.Channels
             /// </summary>
             [global::System.Obsolete("SourceChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SourceChannel(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Java.Nio.Channels
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -170,17 +170,17 @@ namespace Java.Nio.Channels
     public partial class Pipe
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Pipe.html#open()"/>
@@ -191,9 +191,9 @@ namespace Java.Nio.Channels
         {
             return SExecuteWithSignature<Java.Nio.Channels.Pipe>(LocalBridgeClazz, "open", "()Ljava/nio/channels/Pipe;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Pipe.html#sink()"/>
@@ -211,17 +211,17 @@ namespace Java.Nio.Channels
         {
             return IExecuteWithSignature<Java.Nio.Channels.Pipe.SourceChannel>("source", "()Ljava/nio/channels/Pipe$SourceChannel;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region SinkChannel implementation
         public partial class SinkChannel : Java.Nio.Channels.IWritableByteChannel, Java.Nio.Channels.IGatheringByteChannel
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Nio.Channels.Pipe.SinkChannel"/> to <see cref="Java.Nio.Channels.WritableByteChannel"/>
@@ -231,25 +231,25 @@ namespace Java.Nio.Channels
             /// Converter from <see cref="Java.Nio.Channels.Pipe.SinkChannel"/> to <see cref="Java.Nio.Channels.GatheringByteChannel"/>
             /// </summary>
             public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -258,9 +258,9 @@ namespace Java.Nio.Channels
         public partial class SourceChannel : Java.Nio.Channels.IReadableByteChannel, Java.Nio.Channels.IScatteringByteChannel
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Nio.Channels.Pipe.SourceChannel"/> to <see cref="Java.Nio.Channels.ReadableByteChannel"/>
@@ -270,32 +270,32 @@ namespace Java.Nio.Channels
             /// Converter from <see cref="Java.Nio.Channels.Pipe.SourceChannel"/> to <see cref="Java.Nio.Channels.ScatteringByteChannel"/>
             /// </summary>
             public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

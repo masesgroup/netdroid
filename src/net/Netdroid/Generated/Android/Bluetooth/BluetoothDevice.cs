@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothDevice(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Bluetooth
     public partial class BluetoothDevice
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#CREATOR"/>
@@ -370,13 +370,13 @@ namespace Android.Bluetooth
         public static Java.Lang.String EXTRA_UUID { get { if (!_EXTRA_UUIDReady) { _EXTRA_UUIDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_UUID"); _EXTRA_UUIDReady = true; } return _EXTRA_UUIDContent; } }
         private static Java.Lang.String _EXTRA_UUIDContent = default;
         private static bool _EXTRA_UUIDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBluetoothClass()"/>
@@ -398,7 +398,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="Android.Bluetooth.BluetoothGatt"/></returns>
         public Android.Bluetooth.BluetoothGatt ConnectGatt(Android.Content.Context arg0, bool arg1, Android.Bluetooth.BluetoothGattCallback arg2, int arg3, int arg4, Android.Os.Handler arg5)
         {
-            return IExecute<Android.Bluetooth.BluetoothGatt>("connectGatt", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothGatt>("connectGatt", "(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;IILandroid/os/Handler;)Landroid/bluetooth/BluetoothGatt;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int,int)"/>
@@ -411,7 +411,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="Android.Bluetooth.BluetoothGatt"/></returns>
         public Android.Bluetooth.BluetoothGatt ConnectGatt(Android.Content.Context arg0, bool arg1, Android.Bluetooth.BluetoothGattCallback arg2, int arg3, int arg4)
         {
-            return IExecute<Android.Bluetooth.BluetoothGatt>("connectGatt", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothGatt>("connectGatt", "(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;II)Landroid/bluetooth/BluetoothGatt;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int)"/>
@@ -423,7 +423,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="Android.Bluetooth.BluetoothGatt"/></returns>
         public Android.Bluetooth.BluetoothGatt ConnectGatt(Android.Content.Context arg0, bool arg1, Android.Bluetooth.BluetoothGattCallback arg2, int arg3)
         {
-            return IExecute<Android.Bluetooth.BluetoothGatt>("connectGatt", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothGatt>("connectGatt", "(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;I)Landroid/bluetooth/BluetoothGatt;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback)"/>
@@ -434,7 +434,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="Android.Bluetooth.BluetoothGatt"/></returns>
         public Android.Bluetooth.BluetoothGatt ConnectGatt(Android.Content.Context arg0, bool arg1, Android.Bluetooth.BluetoothGattCallback arg2)
         {
-            return IExecute<Android.Bluetooth.BluetoothGatt>("connectGatt", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothGatt>("connectGatt", "(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;)Landroid/bluetooth/BluetoothGatt;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureL2capChannel(int)"/>
@@ -590,15 +590,15 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

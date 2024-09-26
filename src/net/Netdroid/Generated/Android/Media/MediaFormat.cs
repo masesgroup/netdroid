@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region QpOffsetRect declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public QpOffsetRect(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -127,13 +127,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#COLOR_RANGE_FULL"/>
@@ -1180,9 +1180,9 @@ namespace Android.Media
         public static Java.Lang.String MIMETYPE_VIDEO_VP9 { get { if (!_MIMETYPE_VIDEO_VP9Ready) { _MIMETYPE_VIDEO_VP9Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIMETYPE_VIDEO_VP9"); _MIMETYPE_VIDEO_VP9Ready = true; } return _MIMETYPE_VIDEO_VP9Content; } }
         private static Java.Lang.String _MIMETYPE_VIDEO_VP9Content = default;
         private static bool _MIMETYPE_VIDEO_VP9Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#createAudioFormat(java.lang.String,int,int)"/>
@@ -1193,7 +1193,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.MediaFormat"/></returns>
         public static Android.Media.MediaFormat CreateAudioFormat(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Media.MediaFormat>(LocalBridgeClazz, "createAudioFormat", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Media.MediaFormat>(LocalBridgeClazz, "createAudioFormat", "(Ljava/lang/String;II)Landroid/media/MediaFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#createSubtitleFormat(java.lang.String,java.lang.String)"/>
@@ -1203,7 +1203,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.MediaFormat"/></returns>
         public static Android.Media.MediaFormat CreateSubtitleFormat(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Media.MediaFormat>(LocalBridgeClazz, "createSubtitleFormat", arg0, arg1);
+            return SExecuteWithSignature<Android.Media.MediaFormat>(LocalBridgeClazz, "createSubtitleFormat", "(Ljava/lang/String;Ljava/lang/String;)Landroid/media/MediaFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#createVideoFormat(java.lang.String,int,int)"/>
@@ -1214,11 +1214,11 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.MediaFormat"/></returns>
         public static Android.Media.MediaFormat CreateVideoFormat(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Media.MediaFormat>(LocalBridgeClazz, "createVideoFormat", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Media.MediaFormat>(LocalBridgeClazz, "createVideoFormat", "(Ljava/lang/String;II)Landroid/media/MediaFormat;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#containsFeature(java.lang.String)"/>
@@ -1255,7 +1255,7 @@ namespace Android.Media
         /// <returns><see cref="float"/></returns>
         public float GetFloat(Java.Lang.String arg0, float arg1)
         {
-            return IExecute<float>("getFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/String;F)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getFloat(java.lang.String)"/>
@@ -1274,7 +1274,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int GetInteger(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getInteger", arg0, arg1);
+            return IExecuteWithSignature<int>("getInteger", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getInteger(java.lang.String)"/>
@@ -1302,7 +1302,7 @@ namespace Android.Media
         /// <returns><see cref="Java.Lang.Number"/></returns>
         public Java.Lang.Number GetNumber(Java.Lang.String arg0, Java.Lang.Number arg1)
         {
-            return IExecute<Java.Lang.Number>("getNumber", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Number>("getNumber", "(Ljava/lang/String;Ljava/lang/Number;)Ljava/lang/Number;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getNumber(java.lang.String)"/>
@@ -1321,7 +1321,7 @@ namespace Android.Media
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getString(java.lang.String)"/>
@@ -1340,7 +1340,7 @@ namespace Android.Media
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer GetByteBuffer(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("getByteBuffer", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("getByteBuffer", "(Ljava/lang/String;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getByteBuffer(java.lang.String)"/>
@@ -1375,7 +1375,7 @@ namespace Android.Media
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getLong", arg0, arg1);
+            return IExecuteWithSignature<long>("getLong", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#getLong(java.lang.String)"/>
@@ -1409,7 +1409,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
         public void SetByteBuffer(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1)
         {
-            IExecute("setByteBuffer", arg0, arg1);
+            IExecuteWithSignature("setByteBuffer", "(Ljava/lang/String;Ljava/nio/ByteBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#setFeatureEnabled(java.lang.String,boolean)"/>
@@ -1418,7 +1418,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetFeatureEnabled(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeatureEnabled", arg0, arg1);
+            IExecuteWithSignature("setFeatureEnabled", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#setFloat(java.lang.String,float)"/>
@@ -1427,7 +1427,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="float"/></param>
         public void SetFloat(Java.Lang.String arg0, float arg1)
         {
-            IExecute("setFloat", arg0, arg1);
+            IExecuteWithSignature("setFloat", "(Ljava/lang/String;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#setInteger(java.lang.String,int)"/>
@@ -1436,7 +1436,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void SetInteger(Java.Lang.String arg0, int arg1)
         {
-            IExecute("setInteger", arg0, arg1);
+            IExecuteWithSignature("setInteger", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#setLong(java.lang.String,long)"/>
@@ -1445,7 +1445,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="long"/></param>
         public void SetLong(Java.Lang.String arg0, long arg1)
         {
-            IExecute("setLong", arg0, arg1);
+            IExecuteWithSignature("setLong", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#setString(java.lang.String,java.lang.String)"/>
@@ -1454,11 +1454,11 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setString", arg0, arg1);
+            IExecuteWithSignature("setString", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region QpOffsetRect implementation
         public partial class QpOffsetRect
@@ -1473,17 +1473,17 @@ namespace Android.Media
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#flattenToString(java.util.List)"/>
@@ -1494,9 +1494,9 @@ namespace Android.Media
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "flattenToString", "(Ljava/util/List;)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#flattenToString()"/>
@@ -1513,22 +1513,22 @@ namespace Android.Media
             /// <param name="arg1"><see cref="int"/></param>
             public void Set(Android.Graphics.Rect arg0, int arg1)
             {
-                IExecute("set", arg0, arg1);
+                IExecuteWithSignature("set", "(Landroid/graphics/Rect;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

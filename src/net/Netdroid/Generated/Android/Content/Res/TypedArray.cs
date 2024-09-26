@@ -40,10 +40,10 @@ namespace Android.Content.Res
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TypedArray(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Content.Res
     public partial class TypedArray
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getColorStateList(int)"/>
@@ -142,7 +142,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(int arg0, bool arg1)
         {
-            return IExecute<bool>("getBoolean", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBoolean", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getValue(int,android.util.TypedValue)"/>
@@ -152,7 +152,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool GetValue(int arg0, Android.Util.TypedValue arg1)
         {
-            return IExecute<bool>("getValue", arg0, arg1);
+            return IExecuteWithSignature<bool>("getValue", "(ILandroid/util/TypedValue;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#hasValue(int)"/>
@@ -180,7 +180,7 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float GetDimension(int arg0, float arg1)
         {
-            return IExecute<float>("getDimension", arg0, arg1);
+            return IExecuteWithSignature<float>("getDimension", "(IF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getFloat(int,float)"/>
@@ -190,7 +190,7 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float GetFloat(int arg0, float arg1)
         {
-            return IExecute<float>("getFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("getFloat", "(IF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getFraction(int,int,int,float)"/>
@@ -202,7 +202,7 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float GetFraction(int arg0, int arg1, int arg2, float arg3)
         {
-            return IExecute<float>("getFraction", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<float>("getFraction", "(IIIF)F", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getChangingConfigurations()"/>
@@ -220,7 +220,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetColor(int arg0, int arg1)
         {
-            return IExecute<int>("getColor", arg0, arg1);
+            return IExecuteWithSignature<int>("getColor", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getDimensionPixelOffset(int,int)"/>
@@ -230,7 +230,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetDimensionPixelOffset(int arg0, int arg1)
         {
-            return IExecute<int>("getDimensionPixelOffset", arg0, arg1);
+            return IExecuteWithSignature<int>("getDimensionPixelOffset", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getDimensionPixelSize(int,int)"/>
@@ -240,7 +240,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetDimensionPixelSize(int arg0, int arg1)
         {
-            return IExecute<int>("getDimensionPixelSize", arg0, arg1);
+            return IExecuteWithSignature<int>("getDimensionPixelSize", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getIndex(int)"/>
@@ -267,7 +267,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetInt(int arg0, int arg1)
         {
-            return IExecute<int>("getInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getInt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getInteger(int,int)"/>
@@ -277,7 +277,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetInteger(int arg0, int arg1)
         {
-            return IExecute<int>("getInteger", arg0, arg1);
+            return IExecuteWithSignature<int>("getInteger", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getLayoutDimension(int,int)"/>
@@ -287,7 +287,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetLayoutDimension(int arg0, int arg1)
         {
-            return IExecute<int>("getLayoutDimension", arg0, arg1);
+            return IExecuteWithSignature<int>("getLayoutDimension", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getLayoutDimension(int,java.lang.String)"/>
@@ -297,7 +297,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetLayoutDimension(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getLayoutDimension", arg0, arg1);
+            return IExecuteWithSignature<int>("getLayoutDimension", "(ILjava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getResourceId(int,int)"/>
@@ -307,7 +307,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetResourceId(int arg0, int arg1)
         {
-            return IExecute<int>("getResourceId", arg0, arg1);
+            return IExecuteWithSignature<int>("getResourceId", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getSourceResourceId(int,int)"/>
@@ -317,7 +317,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetSourceResourceId(int arg0, int arg1)
         {
-            return IExecute<int>("getSourceResourceId", arg0, arg1);
+            return IExecuteWithSignature<int>("getSourceResourceId", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getType(int)"/>
@@ -394,13 +394,13 @@ namespace Android.Content.Res
         {
             IExecuteWithSignature("recycle", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

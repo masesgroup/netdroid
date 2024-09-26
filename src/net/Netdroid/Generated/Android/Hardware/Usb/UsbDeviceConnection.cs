@@ -40,10 +40,10 @@ namespace Android.Hardware.Usb
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UsbDeviceConnection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Usb
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Hardware.Usb
     public partial class UsbDeviceConnection
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#requestWait()"/>
@@ -116,7 +116,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool ClaimInterface(Android.Hardware.Usb.UsbInterface arg0, bool arg1)
         {
-            return IExecute<bool>("claimInterface", arg0, arg1);
+            return IExecuteWithSignature<bool>("claimInterface", "(Landroid/hardware/usb/UsbInterface;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#releaseInterface(android.hardware.usb.UsbInterface)"/>
@@ -164,7 +164,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int BulkTransfer(Android.Hardware.Usb.UsbEndpoint arg0, byte[] arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<int>("bulkTransfer", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("bulkTransfer", "(Landroid/hardware/usb/UsbEndpoint;[BIII)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#bulkTransfer(android.hardware.usb.UsbEndpoint,byte[],int,int)"/>
@@ -176,7 +176,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int BulkTransfer(Android.Hardware.Usb.UsbEndpoint arg0, byte[] arg1, int arg2, int arg3)
         {
-            return IExecute<int>("bulkTransfer", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("bulkTransfer", "(Landroid/hardware/usb/UsbEndpoint;[BII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#controlTransfer(int,int,int,int,byte[],int,int,int)"/>
@@ -192,7 +192,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int ControlTransfer(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
         {
-            return IExecute<int>("controlTransfer", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<int>("controlTransfer", "(IIII[BIII)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#controlTransfer(int,int,int,int,byte[],int,int)"/>
@@ -207,7 +207,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int ControlTransfer(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
         {
-            return IExecute<int>("controlTransfer", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<int>("controlTransfer", "(IIII[BII)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getFileDescriptor()"/>
@@ -232,13 +232,13 @@ namespace Android.Hardware.Usb
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

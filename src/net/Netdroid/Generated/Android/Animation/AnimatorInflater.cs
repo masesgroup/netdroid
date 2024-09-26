@@ -40,10 +40,10 @@ namespace Android.Animation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AnimatorInflater(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Animation
     public partial class AnimatorInflater
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorInflater.html#loadAnimator(android.content.Context,int)"/>
@@ -95,7 +95,7 @@ namespace Android.Animation
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public static Android.Animation.Animator LoadAnimator(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.Animation.Animator>(LocalBridgeClazz, "loadAnimator", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.Animator>(LocalBridgeClazz, "loadAnimator", "(Landroid/content/Context;I)Landroid/animation/Animator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorInflater.html#loadStateListAnimator(android.content.Context,int)"/>
@@ -106,19 +106,19 @@ namespace Android.Animation
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public static Android.Animation.StateListAnimator LoadStateListAnimator(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.Animation.StateListAnimator>(LocalBridgeClazz, "loadStateListAnimator", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.StateListAnimator>(LocalBridgeClazz, "loadStateListAnimator", "(Landroid/content/Context;I)Landroid/animation/StateListAnimator;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

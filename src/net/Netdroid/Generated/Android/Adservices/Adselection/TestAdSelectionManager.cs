@@ -40,10 +40,10 @@ namespace Android.Adservices.Adselection
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TestAdSelectionManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Adselection
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Adservices.Adselection
     public partial class TestAdSelectionManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#overrideAdSelectionConfigRemoteInfo(android.adservices.adselection.AddAdSelectionOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -98,7 +98,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OverrideAdSelectionConfigRemoteInfo(Android.Adservices.Adselection.AddAdSelectionOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("overrideAdSelectionConfigRemoteInfo", arg0, arg1, arg2);
+            IExecuteWithSignature("overrideAdSelectionConfigRemoteInfo", "(Landroid/adservices/adselection/AddAdSelectionOverrideRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#overrideAdSelectionFromOutcomesConfigRemoteInfo(android.adservices.adselection.AddAdSelectionFromOutcomesOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -108,7 +108,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OverrideAdSelectionFromOutcomesConfigRemoteInfo(Android.Adservices.Adselection.AddAdSelectionFromOutcomesOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("overrideAdSelectionFromOutcomesConfigRemoteInfo", arg0, arg1, arg2);
+            IExecuteWithSignature("overrideAdSelectionFromOutcomesConfigRemoteInfo", "(Landroid/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#removeAdSelectionConfigRemoteInfoOverride(android.adservices.adselection.RemoveAdSelectionOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -118,7 +118,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RemoveAdSelectionConfigRemoteInfoOverride(Android.Adservices.Adselection.RemoveAdSelectionOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("removeAdSelectionConfigRemoteInfoOverride", arg0, arg1, arg2);
+            IExecuteWithSignature("removeAdSelectionConfigRemoteInfoOverride", "(Landroid/adservices/adselection/RemoveAdSelectionOverrideRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#removeAdSelectionFromOutcomesConfigRemoteInfoOverride(android.adservices.adselection.RemoveAdSelectionFromOutcomesOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -128,7 +128,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RemoveAdSelectionFromOutcomesConfigRemoteInfoOverride(Android.Adservices.Adselection.RemoveAdSelectionFromOutcomesOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("removeAdSelectionFromOutcomesConfigRemoteInfoOverride", arg0, arg1, arg2);
+            IExecuteWithSignature("removeAdSelectionFromOutcomesConfigRemoteInfoOverride", "(Landroid/adservices/adselection/RemoveAdSelectionFromOutcomesOverrideRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#resetAllAdSelectionConfigRemoteOverrides(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -137,7 +137,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void ResetAllAdSelectionConfigRemoteOverrides(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg1)
         {
-            IExecute("resetAllAdSelectionConfigRemoteOverrides", arg0, arg1);
+            IExecuteWithSignature("resetAllAdSelectionConfigRemoteOverrides", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#resetAllAdSelectionFromOutcomesConfigRemoteOverrides(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -146,15 +146,15 @@ namespace Android.Adservices.Adselection
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void ResetAllAdSelectionFromOutcomesConfigRemoteOverrides(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg1)
         {
-            IExecute("resetAllAdSelectionFromOutcomesConfigRemoteOverrides", arg0, arg1);
+            IExecuteWithSignature("resetAllAdSelectionFromOutcomesConfigRemoteOverrides", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

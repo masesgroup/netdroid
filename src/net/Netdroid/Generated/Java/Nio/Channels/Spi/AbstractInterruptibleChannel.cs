@@ -42,10 +42,10 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         [global::System.Obsolete("AbstractInterruptibleChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractInterruptibleChannel(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio.Channels.Spi
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Nio.Channels.Spi
     public partial class AbstractInterruptibleChannel : Java.Nio.Channels.IChannel, Java.Nio.Channels.IInterruptibleChannel
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.Channels.Spi.AbstractInterruptibleChannel"/> to <see cref="Java.Nio.Channels.Channel"/>
@@ -88,17 +88,17 @@ namespace Java.Nio.Channels.Spi
         /// Converter from <see cref="Java.Nio.Channels.Spi.AbstractInterruptibleChannel"/> to <see cref="Java.Nio.Channels.InterruptibleChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.InterruptibleChannel(Java.Nio.Channels.Spi.AbstractInterruptibleChannel t) => t.Cast<Java.Nio.Channels.InterruptibleChannel>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AbstractInterruptibleChannel.html#isOpen()"/>
@@ -116,13 +116,13 @@ namespace Java.Nio.Channels.Spi
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

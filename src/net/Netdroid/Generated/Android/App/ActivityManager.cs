@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ActivityManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AppTask declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AppTask(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MemoryInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ProcessErrorStateInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RecentTaskInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -261,10 +261,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RunningAppProcessInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -285,9 +285,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -306,10 +306,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RunningServiceInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -351,10 +351,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RunningTaskInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -375,9 +375,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -396,10 +396,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TaskDescription(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -420,7 +420,7 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -437,10 +437,10 @@ namespace Android.App
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -461,9 +461,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -479,13 +479,13 @@ namespace Android.App
     public partial class ActivityManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#LOCK_TASK_MODE_LOCKED"/>
@@ -541,9 +541,9 @@ namespace Android.App
         public static Java.Lang.String META_HOME_ALTERNATE { get { if (!_META_HOME_ALTERNATEReady) { _META_HOME_ALTERNATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "META_HOME_ALTERNATE"); _META_HOME_ALTERNATEReady = true; } return _META_HOME_ALTERNATEContent; } }
         private static Java.Lang.String _META_HOME_ALTERNATEContent = default;
         private static bool _META_HOME_ALTERNATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isLowMemoryKillReportSupported()"/>
@@ -594,9 +594,9 @@ namespace Android.App
         {
             SExecuteWithSignature(LocalBridgeClazz, "setVrThread", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServiceControlPanel(android.content.ComponentName)"/>
@@ -650,7 +650,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool IsActivityStartAllowedOnDisplay(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2)
         {
-            return IExecute<bool>("isActivityStartAllowedOnDisplay", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("isActivityStartAllowedOnDisplay", "(Landroid/content/Context;ILandroid/content/Intent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isBackgroundRestricted()"/>
@@ -687,7 +687,7 @@ namespace Android.App
         /// <returns><see cref="int"/></returns>
         public int AddAppTask(Android.App.Activity arg0, Android.Content.Intent arg1, Android.App.ActivityManager.TaskDescription arg2, Android.Graphics.Bitmap arg3)
         {
-            return IExecute<int>("addAppTask", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("addAppTask", "(Landroid/app/Activity;Landroid/content/Intent;Landroid/app/ActivityManager$TaskDescription;Landroid/graphics/Bitmap;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getLargeMemoryClass()"/>
@@ -755,7 +755,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Java.Util.List<Android.App.ActivityManager.RecentTaskInfo> GetRecentTasks(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.App.ActivityManager.RecentTaskInfo>>("getRecentTasks", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.RecentTaskInfo>>("getRecentTasks", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningAppProcesses()"/>
@@ -796,7 +796,7 @@ namespace Android.App
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.App.ApplicationExitInfo> GetHistoricalProcessExitReasons(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Util.List<Android.App.ApplicationExitInfo>>("getHistoricalProcessExitReasons", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.App.ApplicationExitInfo>>("getHistoricalProcessExitReasons", "(Ljava/lang/String;II)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getHistoricalProcessStartReasons(int)"/>
@@ -814,7 +814,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void AddApplicationStartInfoCompletionListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.App.ApplicationStartInfo> arg1)
         {
-            IExecute("addApplicationStartInfoCompletionListener", arg0, arg1);
+            IExecuteWithSignature("addApplicationStartInfoCompletionListener", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#addStartInfoTimestamp(int,long)"/>
@@ -823,7 +823,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="long"/></param>
         public void AddStartInfoTimestamp(int arg0, long arg1)
         {
-            IExecute("addStartInfoTimestamp", arg0, arg1);
+            IExecuteWithSignature("addStartInfoTimestamp", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#appNotResponding(java.lang.String)"/>
@@ -847,7 +847,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void DumpPackageState(Java.Io.FileDescriptor arg0, Java.Lang.String arg1)
         {
-            IExecute("dumpPackageState", arg0, arg1);
+            IExecuteWithSignature("dumpPackageState", "(Ljava/io/FileDescriptor;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getMemoryInfo(android.app.ActivityManager.MemoryInfo)"/>
@@ -873,7 +873,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void MoveTaskToFront(int arg0, int arg1, Android.Os.Bundle arg2)
         {
-            IExecute("moveTaskToFront", arg0, arg1, arg2);
+            IExecuteWithSignature("moveTaskToFront", "(IILandroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#moveTaskToFront(int,int)"/>
@@ -882,7 +882,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void MoveTaskToFront(int arg0, int arg1)
         {
-            IExecute("moveTaskToFront", arg0, arg1);
+            IExecuteWithSignature("moveTaskToFront", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#removeApplicationStartInfoCompletionListener(java.util.function.Consumer)"/>
@@ -917,29 +917,29 @@ namespace Android.App
         {
             IExecuteWithSignature("setWatchHeapLimit", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AppTask implementation
         public partial class AppTask
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.AppTask.html#getTaskInfo()"/>
@@ -979,15 +979,15 @@ namespace Android.App
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
             public void StartActivity(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.Bundle arg2)
             {
-                IExecute("startActivity", arg0, arg1, arg2);
+                IExecuteWithSignature("startActivity", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -996,13 +996,13 @@ namespace Android.App
         public partial class MemoryInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.MemoryInfo.html#lowMemory"/>
@@ -1030,13 +1030,13 @@ namespace Android.App
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.MemoryInfo.html#describeContents()"/>
@@ -1061,15 +1061,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1078,13 +1078,13 @@ namespace Android.App
         public partial class ProcessErrorStateInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.ProcessErrorStateInfo.html#crashData"/>
@@ -1146,13 +1146,13 @@ namespace Android.App
             public static int NOT_RESPONDING { get { if (!_NOT_RESPONDINGReady) { _NOT_RESPONDINGContent = SGetField<int>(LocalBridgeClazz, "NOT_RESPONDING"); _NOT_RESPONDINGReady = true; } return _NOT_RESPONDINGContent; } }
             private static int _NOT_RESPONDINGContent = default;
             private static bool _NOT_RESPONDINGReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.ProcessErrorStateInfo.html#describeContents()"/>
@@ -1177,15 +1177,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1194,17 +1194,17 @@ namespace Android.App
         public partial class RecentTaskInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.App.ActivityManager.RecentTaskInfo"/> to <see cref="Android.Os.Parcelable"/>
             /// </summary>
             public static implicit operator Android.Os.Parcelable(Android.App.ActivityManager.RecentTaskInfo t) => t.Cast<Android.Os.Parcelable>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#affiliatedTaskId"/>
@@ -1232,13 +1232,13 @@ namespace Android.App
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#describeContents()"/>
@@ -1263,15 +1263,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1290,13 +1290,13 @@ namespace Android.App
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#importanceReasonComponent"/>
@@ -1443,13 +1443,13 @@ namespace Android.App
             public static int REASON_UNKNOWN { get { if (!_REASON_UNKNOWNReady) { _REASON_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "REASON_UNKNOWN"); _REASON_UNKNOWNReady = true; } return _REASON_UNKNOWNContent; } }
             private static int _REASON_UNKNOWNContent = default;
             private static bool _REASON_UNKNOWNReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#describeContents()"/>
@@ -1474,15 +1474,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1491,13 +1491,13 @@ namespace Android.App
         public partial class RunningServiceInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningServiceInfo.html#service"/>
@@ -1585,13 +1585,13 @@ namespace Android.App
             public static int FLAG_SYSTEM_PROCESS { get { if (!_FLAG_SYSTEM_PROCESSReady) { _FLAG_SYSTEM_PROCESSContent = SGetField<int>(LocalBridgeClazz, "FLAG_SYSTEM_PROCESS"); _FLAG_SYSTEM_PROCESSReady = true; } return _FLAG_SYSTEM_PROCESSContent; } }
             private static int _FLAG_SYSTEM_PROCESSContent = default;
             private static bool _FLAG_SYSTEM_PROCESSReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningServiceInfo.html#describeContents()"/>
@@ -1616,15 +1616,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1633,17 +1633,17 @@ namespace Android.App
         public partial class RunningTaskInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.App.ActivityManager.RunningTaskInfo"/> to <see cref="Android.Os.Parcelable"/>
             /// </summary>
             public static implicit operator Android.Os.Parcelable(Android.App.ActivityManager.RunningTaskInfo t) => t.Cast<Android.Os.Parcelable>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#thumbnail"/>
@@ -1671,13 +1671,13 @@ namespace Android.App
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#describeContents()"/>
@@ -1702,15 +1702,15 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1778,13 +1778,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#CREATOR"/>
@@ -1792,13 +1792,13 @@ namespace Android.App
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getIcon()"/>
@@ -1872,31 +1872,31 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.Builder.html#build()"/>
@@ -1960,27 +1960,27 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription.Builder>("setStatusBarColor", "(I)Landroid/app/ActivityManager$TaskDescription$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

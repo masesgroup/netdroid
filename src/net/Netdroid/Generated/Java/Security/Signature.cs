@@ -42,10 +42,10 @@ namespace Java.Security
         /// </summary>
         [global::System.Obsolete("Signature class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Signature(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Java.Security
     public partial class Signature
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -98,7 +98,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Signature;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -109,7 +109,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/Signature;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#getInstance(java.lang.String)"/>
@@ -121,9 +121,9 @@ namespace Java.Security
         {
             return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/Signature;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#verify(byte[],int,int)"/>
@@ -135,7 +135,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public bool Verify(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("verify", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("verify", "([BII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#verify(byte[])"/>
@@ -166,7 +166,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public int Sign(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("sign", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("sign", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#getParameter(java.lang.String)"/>
@@ -211,7 +211,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void InitSign(Java.Security.PrivateKey arg0, Java.Security.SecureRandom arg1)
         {
-            IExecute("initSign", arg0, arg1);
+            IExecuteWithSignature("initSign", "(Ljava/security/PrivateKey;Ljava/security/SecureRandom;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#initSign(java.security.PrivateKey)"/>
@@ -249,7 +249,7 @@ namespace Java.Security
         [global::System.Obsolete()]
         public void SetParameter(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setParameter", arg0, arg1);
+            IExecuteWithSignature("setParameter", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#setParameter(java.security.spec.AlgorithmParameterSpec)"/>
@@ -278,7 +278,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("update", arg0, arg1, arg2);
+            IExecuteWithSignature("update", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Signature.html#update(byte[])"/>
@@ -298,13 +298,13 @@ namespace Java.Security
         {
             IExecuteWithSignature("update", "(Ljava/nio/ByteBuffer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

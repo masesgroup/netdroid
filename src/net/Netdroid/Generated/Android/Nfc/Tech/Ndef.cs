@@ -40,10 +40,10 @@ namespace Android.Nfc.Tech
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Ndef(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Nfc.Tech
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Nfc.Tech
     public partial class Ndef
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#MIFARE_CLASSIC"/>
@@ -112,9 +112,9 @@ namespace Android.Nfc.Tech
         public static Java.Lang.String NFC_FORUM_TYPE_4 { get { if (!_NFC_FORUM_TYPE_4Ready) { _NFC_FORUM_TYPE_4Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "NFC_FORUM_TYPE_4"); _NFC_FORUM_TYPE_4Ready = true; } return _NFC_FORUM_TYPE_4Content; } }
         private static Java.Lang.String _NFC_FORUM_TYPE_4Content = default;
         private static bool _NFC_FORUM_TYPE_4Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#get(android.nfc.Tag)"/>
@@ -125,9 +125,9 @@ namespace Android.Nfc.Tech
         {
             return SExecuteWithSignature<Android.Nfc.Tech.Ndef>(LocalBridgeClazz, "get", "(Landroid/nfc/Tag;)Landroid/nfc/tech/Ndef;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/Ndef.html#getCachedNdefMessage()"/>
@@ -230,13 +230,13 @@ namespace Android.Nfc.Tech
         {
             IExecuteWithSignature("writeNdefMessage", "(Landroid/nfc/NdefMessage;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

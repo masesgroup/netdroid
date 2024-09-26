@@ -40,10 +40,10 @@ namespace Android.Icu.Number
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LocalizedNumberRangeFormatter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Number
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Icu.Number
     public partial class LocalizedNumberRangeFormatter
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberRangeFormatter.html#formatRange(double,double)"/>
@@ -98,7 +98,7 @@ namespace Android.Icu.Number
         /// <returns><see cref="Android.Icu.Number.FormattedNumberRange"/></returns>
         public Android.Icu.Number.FormattedNumberRange FormatRange(double arg0, double arg1)
         {
-            return IExecute<Android.Icu.Number.FormattedNumberRange>("formatRange", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Number.FormattedNumberRange>("formatRange", "(DD)Landroid/icu/number/FormattedNumberRange;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberRangeFormatter.html#formatRange(int,int)"/>
@@ -108,7 +108,7 @@ namespace Android.Icu.Number
         /// <returns><see cref="Android.Icu.Number.FormattedNumberRange"/></returns>
         public Android.Icu.Number.FormattedNumberRange FormatRange(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Number.FormattedNumberRange>("formatRange", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Number.FormattedNumberRange>("formatRange", "(II)Landroid/icu/number/FormattedNumberRange;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberRangeFormatter.html#formatRange(java.lang.Number,java.lang.Number)"/>
@@ -118,15 +118,15 @@ namespace Android.Icu.Number
         /// <returns><see cref="Android.Icu.Number.FormattedNumberRange"/></returns>
         public Android.Icu.Number.FormattedNumberRange FormatRange(Java.Lang.Number arg0, Java.Lang.Number arg1)
         {
-            return IExecute<Android.Icu.Number.FormattedNumberRange>("formatRange", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Number.FormattedNumberRange>("formatRange", "(Ljava/lang/Number;Ljava/lang/Number;)Landroid/icu/number/FormattedNumberRange;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

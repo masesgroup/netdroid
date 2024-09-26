@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ColorMatrix(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,21 +90,21 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorMatrix.html#getArray()"/>
@@ -160,7 +160,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.ColorMatrix"/></param>
         public void SetConcat(Android.Graphics.ColorMatrix arg0, Android.Graphics.ColorMatrix arg1)
         {
-            IExecute("setConcat", arg0, arg1);
+            IExecuteWithSignature("setConcat", "(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorMatrix.html#setRGB2YUV()"/>
@@ -176,7 +176,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetRotate(int arg0, float arg1)
         {
-            IExecute("setRotate", arg0, arg1);
+            IExecuteWithSignature("setRotate", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorMatrix.html#setSaturation(float)"/>
@@ -195,7 +195,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void SetScale(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setScale", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setScale", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorMatrix.html#setYUV2RGB()"/>
@@ -204,13 +204,13 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("setYUV2RGB", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

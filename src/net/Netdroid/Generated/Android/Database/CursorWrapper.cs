@@ -40,10 +40,10 @@ namespace Android.Database
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CursorWrapper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Database
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Database
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#getWrappedCursor()"/>
@@ -401,7 +401,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Database.CharArrayBuffer"/></param>
         public void CopyStringToBuffer(int arg0, Android.Database.CharArrayBuffer arg1)
         {
-            IExecute("copyStringToBuffer", arg0, arg1);
+            IExecuteWithSignature("copyStringToBuffer", "(ILandroid/database/CharArrayBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#deactivate()"/>
@@ -442,7 +442,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void SetNotificationUri(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
         {
-            IExecute("setNotificationUri", arg0, arg1);
+            IExecuteWithSignature("setNotificationUri", "(Landroid/content/ContentResolver;Landroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#setNotificationUris(android.content.ContentResolver,java.util.List)"/>
@@ -451,7 +451,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         public void SetNotificationUris(Android.Content.ContentResolver arg0, Java.Util.List<Android.Net.Uri> arg1)
         {
-            IExecute("setNotificationUris", arg0, arg1);
+            IExecuteWithSignature("setNotificationUris", "(Landroid/content/ContentResolver;Ljava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#unregisterContentObserver(android.database.ContentObserver)"/>
@@ -469,13 +469,13 @@ namespace Android.Database
         {
             IExecuteWithSignature("unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

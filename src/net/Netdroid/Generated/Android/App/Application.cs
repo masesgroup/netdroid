@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Application(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ActivityLifecycleCallbacks declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("ActivityLifecycleCallbacks class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ActivityLifecycleCallbacks(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnProvideAssistDataListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.Application_OnProvideAssistDataListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnProvideAssistDataListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnProvideAssistDataListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.Application$OnProvideAssistDataListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -188,21 +188,21 @@ namespace Android.App
     public partial class Application
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.Application"/> to <see cref="Android.Content.ComponentCallbacks2"/>
         /// </summary>
         public static implicit operator Android.Content.ComponentCallbacks2(Android.App.Application t) => t.Cast<Android.Content.ComponentCallbacks2>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Application.html#getProcessName()"/>
@@ -212,9 +212,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProcessName", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Application.html#onConfigurationChanged(android.content.res.Configuration)"/>
@@ -285,29 +285,29 @@ namespace Android.App
         {
             IExecuteWithSignature("unregisterOnProvideAssistDataListener", "(Landroid/app/Application$OnProvideAssistDataListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ActivityLifecycleCallbacks implementation
         public partial class ActivityLifecycleCallbacks
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityCreated(android.app.Activity,android.os.Bundle)"/>
@@ -316,7 +316,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnActivityCreated(Android.App.Activity arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onActivityCreated", arg0, arg1);
+                IExecuteWithSignature("onActivityCreated", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityDestroyed(android.app.Activity)"/>
@@ -349,7 +349,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnActivitySaveInstanceState(Android.App.Activity arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onActivitySaveInstanceState", arg0, arg1);
+                IExecuteWithSignature("onActivitySaveInstanceState", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityStarted(android.app.Activity)"/>
@@ -374,7 +374,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnActivityPostCreated(Android.App.Activity arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onActivityPostCreated", arg0, arg1);
+                IExecuteWithSignature("onActivityPostCreated", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityPostDestroyed(android.app.Activity)"/>
@@ -407,7 +407,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnActivityPostSaveInstanceState(Android.App.Activity arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onActivityPostSaveInstanceState", arg0, arg1);
+                IExecuteWithSignature("onActivityPostSaveInstanceState", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityPostStarted(android.app.Activity)"/>
@@ -432,7 +432,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnActivityPreCreated(Android.App.Activity arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onActivityPreCreated", arg0, arg1);
+                IExecuteWithSignature("onActivityPreCreated", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityPreDestroyed(android.app.Activity)"/>
@@ -465,7 +465,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnActivityPreSaveInstanceState(Android.App.Activity arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onActivityPreSaveInstanceState", arg0, arg1);
+                IExecuteWithSignature("onActivityPreSaveInstanceState", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.ActivityLifecycleCallbacks.html#onActivityPreStarted(android.app.Activity)"/>
@@ -483,13 +483,13 @@ namespace Android.App
             {
                 IExecuteWithSignature("onActivityPreStopped", "(Landroid/app/Activity;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -498,21 +498,21 @@ namespace Android.App
         public partial class OnProvideAssistDataListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnProvideAssistDataListener"/>
@@ -522,13 +522,13 @@ namespace Android.App
                 AddEventHandler("onProvideAssistData", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnProvideAssistDataEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/Application.OnProvideAssistDataListener.html#onProvideAssistData(android.app.Activity,android.os.Bundle)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnProvideAssistData"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.App.Activity, Android.Os.Bundle> OnOnProvideAssistData { get; set; } = null;
-            
+
             bool hasOverrideOnProvideAssistData = true;
             void OnProvideAssistDataEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -537,7 +537,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Android.App.Activity>(0), data.EventData.GetAt<Android.Os.Bundle>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnProvideAssistData;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.OnProvideAssistDataListener.html#onProvideAssistData(android.app.Activity,android.os.Bundle)"/>
             /// </summary>
@@ -547,13 +547,13 @@ namespace Android.App
             {
                 hasOverrideOnProvideAssistData = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -562,21 +562,21 @@ namespace Android.App
         public partial class OnProvideAssistDataListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Application.OnProvideAssistDataListener.html#onProvideAssistData(android.app.Activity,android.os.Bundle)"/>
@@ -585,22 +585,22 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public override void OnProvideAssistData(Android.App.Activity arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onProvideAssistData", arg0, arg1);
+                IExecuteWithSignature("onProvideAssistData", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

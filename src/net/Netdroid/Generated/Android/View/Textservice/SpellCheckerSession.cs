@@ -40,10 +40,10 @@ namespace Android.View.Textservice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SpellCheckerSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View.Textservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region SpellCheckerSessionListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.View.Textservice
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public SpellCheckerSessionListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.textservice.SpellCheckerSession_SpellCheckerSessionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.View.Textservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region SpellCheckerSessionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="SpellCheckerSessionListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.View.Textservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.textservice.SpellCheckerSession$SpellCheckerSessionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -148,10 +148,10 @@ namespace Android.View.Textservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SpellCheckerSessionParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -172,7 +172,7 @@ namespace Android.View.Textservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -189,10 +189,10 @@ namespace Android.View.Textservice
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -213,9 +213,9 @@ namespace Android.View.Textservice
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -231,13 +231,13 @@ namespace Android.View.Textservice
     public partial class SpellCheckerSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#SERVICE_META_DATA"/>
@@ -245,13 +245,13 @@ namespace Android.View.Textservice
         public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
         private static Java.Lang.String _SERVICE_META_DATAContent = default;
         private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#getSpellChecker()"/>
@@ -290,7 +290,7 @@ namespace Android.View.Textservice
         /// <param name="arg1"><see cref="int"/></param>
         public void GetSentenceSuggestions(Android.View.Textservice.TextInfo[] arg0, int arg1)
         {
-            IExecute("getSentenceSuggestions", arg0, arg1);
+            IExecuteWithSignature("getSentenceSuggestions", "([Landroid/view/textservice/TextInfo;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#getSuggestions(android.view.textservice.TextInfo,int)"/>
@@ -300,7 +300,7 @@ namespace Android.View.Textservice
         [global::System.Obsolete()]
         public void GetSuggestions(Android.View.Textservice.TextInfo arg0, int arg1)
         {
-            IExecute("getSuggestions", arg0, arg1);
+            IExecuteWithSignature("getSuggestions", "(Landroid/view/textservice/TextInfo;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#getSuggestions(android.view.textservice.TextInfo[],int,boolean)"/>
@@ -311,31 +311,31 @@ namespace Android.View.Textservice
         [global::System.Obsolete()]
         public void GetSuggestions(Android.View.Textservice.TextInfo[] arg0, int arg1, bool arg2)
         {
-            IExecute("getSuggestions", arg0, arg1, arg2);
+            IExecuteWithSignature("getSuggestions", "([Landroid/view/textservice/TextInfo;IZ)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region SpellCheckerSessionListener implementation
         public partial class SpellCheckerSessionListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="SpellCheckerSessionListener"/>
@@ -346,13 +346,13 @@ namespace Android.View.Textservice
                 AddEventHandler("onGetSuggestions", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGetSuggestionsEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.html#onGetSentenceSuggestions(android.view.textservice.SentenceSuggestionsInfo[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetSentenceSuggestions"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Textservice.SentenceSuggestionsInfo[]> OnOnGetSentenceSuggestions { get; set; } = null;
-            
+
             bool hasOverrideOnGetSentenceSuggestions = true;
             void OnGetSentenceSuggestionsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -361,7 +361,7 @@ namespace Android.View.Textservice
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Textservice.SentenceSuggestionsInfo[]>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGetSentenceSuggestions;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.html#onGetSentenceSuggestions(android.view.textservice.SentenceSuggestionsInfo[])"/>
             /// </summary>
@@ -370,13 +370,13 @@ namespace Android.View.Textservice
             {
                 hasOverrideOnGetSentenceSuggestions = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.html#onGetSuggestions(android.view.textservice.SuggestionsInfo[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetSuggestions"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Textservice.SuggestionsInfo[]> OnOnGetSuggestions { get; set; } = null;
-            
+
             bool hasOverrideOnGetSuggestions = true;
             void OnGetSuggestionsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -385,7 +385,7 @@ namespace Android.View.Textservice
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Textservice.SuggestionsInfo[]>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGetSuggestions;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.html#onGetSuggestions(android.view.textservice.SuggestionsInfo[])"/>
             /// </summary>
@@ -394,13 +394,13 @@ namespace Android.View.Textservice
             {
                 hasOverrideOnGetSuggestions = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -409,21 +409,21 @@ namespace Android.View.Textservice
         public partial class SpellCheckerSessionListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.html#onGetSentenceSuggestions(android.view.textservice.SentenceSuggestionsInfo[])"/>
@@ -441,13 +441,13 @@ namespace Android.View.Textservice
             {
                 IExecuteWithSignature("onGetSuggestions", "([Landroid/view/textservice/SuggestionsInfo;)V", new object[] { arg0 });
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -456,21 +456,21 @@ namespace Android.View.Textservice
         public partial class SpellCheckerSessionParams
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.html#getExtras()"/>
@@ -504,29 +504,29 @@ namespace Android.View.Textservice
             {
                 return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.Builder.html#build()"/>
@@ -572,27 +572,27 @@ namespace Android.View.Textservice
                 {
                     return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setSupportedAttributes", "(I)Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionParams$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

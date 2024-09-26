@@ -40,10 +40,10 @@ namespace Java.Time
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DayOfWeek(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Java.Time
     public partial class DayOfWeek : Java.Time.Temporal.ITemporalAccessor, Java.Time.Temporal.ITemporalAdjuster
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.DayOfWeek"/> to <see cref="Java.Time.Temporal.TemporalAccessor"/>
@@ -86,9 +86,9 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.DayOfWeek"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.DayOfWeek t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#FRIDAY"/>
@@ -132,9 +132,9 @@ namespace Java.Time
         public static Java.Time.DayOfWeek WEDNESDAY { get { if (!_WEDNESDAYReady) { _WEDNESDAYContent = SGetField<Java.Time.DayOfWeek>(LocalBridgeClazz, "WEDNESDAY"); _WEDNESDAYReady = true; } return _WEDNESDAYContent; } }
         private static Java.Time.DayOfWeek _WEDNESDAYContent = default;
         private static bool _WEDNESDAYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -171,9 +171,9 @@ namespace Java.Time
         {
             return SExecuteWithSignatureArray<Java.Time.DayOfWeek>(LocalBridgeClazz, "values", "()[Ljava/time/DayOfWeek;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#query(java.time.temporal.TemporalQuery)"/>
@@ -219,7 +219,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/time/format/TextStyle;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html#minus(long)"/>
@@ -266,13 +266,13 @@ namespace Java.Time
         {
             return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

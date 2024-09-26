@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ObjectOutputStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region PutField declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Io
             /// </summary>
             [global::System.Obsolete("PutField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PutField(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Io
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,9 +130,9 @@ namespace Java.Io
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.ObjectOutputStream"/> to <see cref="Java.Io.ObjectOutput"/>
@@ -142,17 +142,17 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.ObjectOutputStream"/> to <see cref="Java.Io.ObjectStreamConstants"/>
         /// </summary>
         public static implicit operator Java.Io.ObjectStreamConstants(Java.Io.ObjectOutputStream t) => t.Cast<Java.Io.ObjectStreamConstants>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeObject(java.lang.Object)"/>
@@ -313,29 +313,29 @@ namespace Java.Io
         {
             IExecuteWithSignature("writeUTF", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region PutField implementation
         public partial class PutField
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,boolean)"/>
@@ -344,7 +344,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="bool"/></param>
             public void Put(Java.Lang.String arg0, bool arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;Z)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,byte)"/>
@@ -353,7 +353,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="byte"/></param>
             public void Put(Java.Lang.String arg0, byte arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;B)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,char)"/>
@@ -362,7 +362,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="char"/></param>
             public void Put(Java.Lang.String arg0, char arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;C)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,double)"/>
@@ -371,7 +371,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="double"/></param>
             public void Put(Java.Lang.String arg0, double arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;D)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,float)"/>
@@ -380,7 +380,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="float"/></param>
             public void Put(Java.Lang.String arg0, float arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;F)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,int)"/>
@@ -389,7 +389,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="int"/></param>
             public void Put(Java.Lang.String arg0, int arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,java.lang.Object)"/>
@@ -398,7 +398,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="object"/></param>
             public void Put(Java.Lang.String arg0, object arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,long)"/>
@@ -407,7 +407,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="long"/></param>
             public void Put(Java.Lang.String arg0, long arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;J)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,short)"/>
@@ -416,7 +416,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="short"/></param>
             public void Put(Java.Lang.String arg0, short arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;S)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)"/>
@@ -428,20 +428,20 @@ namespace Java.Io
             {
                 IExecuteWithSignature("write", "(Ljava/io/ObjectOutput;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

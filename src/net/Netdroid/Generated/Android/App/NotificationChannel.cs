@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NotificationChannel(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,13 +84,13 @@ namespace Android.App
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#CREATOR"/>
@@ -146,13 +146,13 @@ namespace Android.App
         public static Java.Lang.String EDIT_ZEN { get { if (!_EDIT_ZENReady) { _EDIT_ZENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EDIT_ZEN"); _EDIT_ZENReady = true; } return _EDIT_ZENContent; } }
         private static Java.Lang.String _EDIT_ZENContent = default;
         private static bool _EDIT_ZENReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getAudioAttributes()"/>
@@ -401,7 +401,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetConversationId(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setConversationId", arg0, arg1);
+            IExecuteWithSignature("setConversationId", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setDescription(java.lang.String)"/>
@@ -466,7 +466,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
         public void SetSound(Android.Net.Uri arg0, Android.Media.AudioAttributes arg1)
         {
-            IExecute("setSound", arg0, arg1);
+            IExecuteWithSignature("setSound", "(Landroid/net/Uri;Landroid/media/AudioAttributes;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setVibrationEffect(android.os.VibrationEffect)"/>
@@ -491,15 +491,15 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

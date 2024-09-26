@@ -40,10 +40,10 @@ namespace Android.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TimeUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Util
     public partial class TimeUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#isTimeBetween(java.time.LocalTime,java.time.LocalTime,java.time.LocalTime)"/>
@@ -95,7 +95,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool IsTimeBetween(Java.Time.LocalTime arg0, Java.Time.LocalTime arg1, Java.Time.LocalTime arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isTimeBetween", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isTimeBetween", "(Ljava/time/LocalTime;Ljava/time/LocalTime;Ljava/time/LocalTime;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#getTimeZoneDatabaseVersion()"/>
@@ -124,19 +124,19 @@ namespace Android.Util
         /// <returns><see cref="Java.Util.TimeZone"/></returns>
         public static Java.Util.TimeZone GetTimeZone(int arg0, bool arg1, long arg2, Java.Lang.String arg3)
         {
-            return SExecute<Java.Util.TimeZone>(LocalBridgeClazz, "getTimeZone", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.TimeZone>(LocalBridgeClazz, "getTimeZone", "(IZJLjava/lang/String;)Ljava/util/TimeZone;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

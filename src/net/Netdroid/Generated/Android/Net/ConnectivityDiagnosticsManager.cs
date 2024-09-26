@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConnectivityDiagnosticsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ConnectivityDiagnosticsCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Net
             /// </summary>
             [global::System.Obsolete("ConnectivityDiagnosticsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ConnectivityDiagnosticsCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ConnectivityReport(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DataStallReport(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -211,21 +211,21 @@ namespace Android.Net
     public partial class ConnectivityDiagnosticsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.html#registerConnectivityDiagnosticsCallback(android.net.NetworkRequest,java.util.concurrent.Executor,android.net.ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback)"/>
@@ -235,7 +235,7 @@ namespace Android.Net
         /// <param name="arg2"><see cref="Android.Net.ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback"/></param>
         public void RegisterConnectivityDiagnosticsCallback(Android.Net.NetworkRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Net.ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback arg2)
         {
-            IExecute("registerConnectivityDiagnosticsCallback", arg0, arg1, arg2);
+            IExecuteWithSignature("registerConnectivityDiagnosticsCallback", "(Landroid/net/NetworkRequest;Ljava/util/concurrent/Executor;Landroid/net/ConnectivityDiagnosticsManager$ConnectivityDiagnosticsCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.html#unregisterConnectivityDiagnosticsCallback(android.net.ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback)"/>
@@ -245,29 +245,29 @@ namespace Android.Net
         {
             IExecuteWithSignature("unregisterConnectivityDiagnosticsCallback", "(Landroid/net/ConnectivityDiagnosticsManager$ConnectivityDiagnosticsCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ConnectivityDiagnosticsCallback implementation
         public partial class ConnectivityDiagnosticsCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback.html#onConnectivityReportAvailable(android.net.ConnectivityDiagnosticsManager.ConnectivityReport)"/>
@@ -292,15 +292,15 @@ namespace Android.Net
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnNetworkConnectivityReported(Android.Net.Network arg0, bool arg1)
             {
-                IExecute("onNetworkConnectivityReported", arg0, arg1);
+                IExecuteWithSignature("onNetworkConnectivityReported", "(Landroid/net/Network;Z)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -321,13 +321,13 @@ namespace Android.Net
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#CREATOR"/>
@@ -407,13 +407,13 @@ namespace Android.Net
             public static Java.Lang.String KEY_NETWORK_VALIDATION_RESULT { get { if (!_KEY_NETWORK_VALIDATION_RESULTReady) { _KEY_NETWORK_VALIDATION_RESULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_NETWORK_VALIDATION_RESULT"); _KEY_NETWORK_VALIDATION_RESULTReady = true; } return _KEY_NETWORK_VALIDATION_RESULTContent; } }
             private static Java.Lang.String _KEY_NETWORK_VALIDATION_RESULTContent = default;
             private static bool _KEY_NETWORK_VALIDATION_RESULTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getLinkProperties()"/>
@@ -470,15 +470,15 @@ namespace Android.Net
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -500,13 +500,13 @@ namespace Android.Net
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#CREATOR"/>
@@ -544,13 +544,13 @@ namespace Android.Net
             public static Java.Lang.String KEY_TCP_PACKET_FAIL_RATE { get { if (!_KEY_TCP_PACKET_FAIL_RATEReady) { _KEY_TCP_PACKET_FAIL_RATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_TCP_PACKET_FAIL_RATE"); _KEY_TCP_PACKET_FAIL_RATEReady = true; } return _KEY_TCP_PACKET_FAIL_RATEContent; } }
             private static Java.Lang.String _KEY_TCP_PACKET_FAIL_RATEContent = default;
             private static bool _KEY_TCP_PACKET_FAIL_RATEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getLinkProperties()"/>
@@ -615,22 +615,22 @@ namespace Android.Net
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

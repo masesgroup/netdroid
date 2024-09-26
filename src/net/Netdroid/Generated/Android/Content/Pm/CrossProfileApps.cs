@@ -40,10 +40,10 @@ namespace Android.Content.Pm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CrossProfileApps(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Content.Pm
     public partial class CrossProfileApps
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGED"/>
@@ -88,13 +88,13 @@ namespace Android.Content.Pm
         public static Java.Lang.String ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGED { get { if (!_ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGEDReady) { _ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGED"); _ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGEDReady = true; } return _ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGEDContent; } }
         private static Java.Lang.String _ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGEDContent = default;
         private static bool _ACTION_CAN_INTERACT_ACROSS_PROFILES_CHANGEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#createRequestInteractAcrossProfilesIntent()"/>
@@ -173,7 +173,7 @@ namespace Android.Content.Pm
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
         public void StartActivity(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Android.App.Activity arg2, Android.Os.Bundle arg3)
         {
-            IExecute("startActivity", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startActivity", "(Landroid/content/Intent;Landroid/os/UserHandle;Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#startActivity(android.content.Intent,android.os.UserHandle,android.app.Activity)"/>
@@ -183,7 +183,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Android.App.Activity"/></param>
         public void StartActivity(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Android.App.Activity arg2)
         {
-            IExecute("startActivity", arg0, arg1, arg2);
+            IExecuteWithSignature("startActivity", "(Landroid/content/Intent;Landroid/os/UserHandle;Landroid/app/Activity;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#startMainActivity(android.content.ComponentName,android.os.UserHandle,android.app.Activity,android.os.Bundle)"/>
@@ -194,7 +194,7 @@ namespace Android.Content.Pm
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
         public void StartMainActivity(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1, Android.App.Activity arg2, Android.Os.Bundle arg3)
         {
-            IExecute("startMainActivity", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startMainActivity", "(Landroid/content/ComponentName;Landroid/os/UserHandle;Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#startMainActivity(android.content.ComponentName,android.os.UserHandle)"/>
@@ -203,15 +203,15 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
         public void StartMainActivity(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1)
         {
-            IExecute("startMainActivity", arg0, arg1);
+            IExecuteWithSignature("startMainActivity", "(Landroid/content/ComponentName;Landroid/os/UserHandle;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

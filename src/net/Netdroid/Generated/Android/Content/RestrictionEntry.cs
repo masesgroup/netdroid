@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RestrictionEntry(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -127,13 +127,13 @@ namespace Android.Content
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#CREATOR"/>
@@ -189,9 +189,9 @@ namespace Android.Content
         public static int TYPE_STRING { get { if (!_TYPE_STRINGReady) { _TYPE_STRINGContent = SGetField<int>(LocalBridgeClazz, "TYPE_STRING"); _TYPE_STRINGReady = true; } return _TYPE_STRINGContent; } }
         private static int _TYPE_STRINGContent = default;
         private static bool _TYPE_STRINGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#createBundleArrayEntry(java.lang.String,android.content.RestrictionEntry[])"/>
@@ -201,7 +201,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.RestrictionEntry"/></returns>
         public static Android.Content.RestrictionEntry CreateBundleArrayEntry(Java.Lang.String arg0, Android.Content.RestrictionEntry[] arg1)
         {
-            return SExecute<Android.Content.RestrictionEntry>(LocalBridgeClazz, "createBundleArrayEntry", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.RestrictionEntry>(LocalBridgeClazz, "createBundleArrayEntry", "(Ljava/lang/String;[Landroid/content/RestrictionEntry;)Landroid/content/RestrictionEntry;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#createBundleEntry(java.lang.String,android.content.RestrictionEntry[])"/>
@@ -211,11 +211,11 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.RestrictionEntry"/></returns>
         public static Android.Content.RestrictionEntry CreateBundleEntry(Java.Lang.String arg0, Android.Content.RestrictionEntry[] arg1)
         {
-            return SExecute<Android.Content.RestrictionEntry>(LocalBridgeClazz, "createBundleEntry", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.RestrictionEntry>(LocalBridgeClazz, "createBundleEntry", "(Ljava/lang/String;[Landroid/content/RestrictionEntry;)Landroid/content/RestrictionEntry;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#getRestrictions()"/>
@@ -328,7 +328,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void SetChoiceEntries(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setChoiceEntries", arg0, arg1);
+            IExecuteWithSignature("setChoiceEntries", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceEntries(java.lang.String[])"/>
@@ -345,7 +345,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void SetChoiceValues(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setChoiceValues", arg0, arg1);
+            IExecuteWithSignature("setChoiceValues", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionEntry.html#setChoiceValues(java.lang.String[])"/>
@@ -418,15 +418,15 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

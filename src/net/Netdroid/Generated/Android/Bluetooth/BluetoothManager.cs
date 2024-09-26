@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Bluetooth
     public partial class BluetoothManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothManager.html#getAdapter()"/>
@@ -106,7 +106,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="Android.Bluetooth.BluetoothGattServer"/></returns>
         public Android.Bluetooth.BluetoothGattServer OpenGattServer(Android.Content.Context arg0, Android.Bluetooth.BluetoothGattServerCallback arg1)
         {
-            return IExecute<Android.Bluetooth.BluetoothGattServer>("openGattServer", arg0, arg1);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothGattServer>("openGattServer", "(Landroid/content/Context;Landroid/bluetooth/BluetoothGattServerCallback;)Landroid/bluetooth/BluetoothGattServer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothManager.html#getConnectionState(android.bluetooth.BluetoothDevice,int)"/>
@@ -116,7 +116,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="int"/></returns>
         public int GetConnectionState(Android.Bluetooth.BluetoothDevice arg0, int arg1)
         {
-            return IExecute<int>("getConnectionState", arg0, arg1);
+            return IExecuteWithSignature<int>("getConnectionState", "(Landroid/bluetooth/BluetoothDevice;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothManager.html#getConnectedDevices(int)"/>
@@ -135,15 +135,15 @@ namespace Android.Bluetooth
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetDevicesMatchingConnectionStates(int arg0, int[] arg1)
         {
-            return IExecute<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "(I[I)Ljava/util/List;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

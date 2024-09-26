@@ -42,10 +42,10 @@ namespace Android.Transition
         /// </summary>
         [global::System.Obsolete("Transition class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Transition(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Transition
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region EpicenterCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Transition
             /// </summary>
             [global::System.Obsolete("EpicenterCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public EpicenterCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Transition
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -125,7 +125,7 @@ namespace Android.Transition
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public TransitionListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.transition.Transition_TransitionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -134,13 +134,13 @@ namespace Android.Transition
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region TransitionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="TransitionListener"/> or its generic type if there is one
@@ -151,14 +151,14 @@ namespace Android.Transition
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.transition.Transition$TransitionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -199,13 +199,13 @@ namespace Android.Transition
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#MATCH_ID"/>
@@ -231,13 +231,13 @@ namespace Android.Transition
         public static int MATCH_NAME { get { if (!_MATCH_NAMEReady) { _MATCH_NAMEContent = SGetField<int>(LocalBridgeClazz, "MATCH_NAME"); _MATCH_NAMEReady = true; } return _MATCH_NAMEContent; } }
         private static int _MATCH_NAMEContent = default;
         private static bool _MATCH_NAMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#captureEndValues(android.transition.TransitionValues)"/>
@@ -264,7 +264,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Animation.Animator"/></returns>
         public Android.Animation.Animator CreateAnimator(Android.View.ViewGroup arg0, Android.Transition.TransitionValues arg1, Android.Transition.TransitionValues arg2)
         {
-            return IExecute<Android.Animation.Animator>("createAnimator", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Animation.Animator>("createAnimator", "(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getInterpolator()"/>
@@ -351,7 +351,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.Transition"/></returns>
         public Android.Transition.Transition ExcludeChildren(Android.View.View arg0, bool arg1)
         {
-            return IExecute<Android.Transition.Transition>("excludeChildren", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.Transition>("excludeChildren", "(Landroid/view/View;Z)Landroid/transition/Transition;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#excludeChildren(int,boolean)"/>
@@ -361,7 +361,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.Transition"/></returns>
         public Android.Transition.Transition ExcludeChildren(int arg0, bool arg1)
         {
-            return IExecute<Android.Transition.Transition>("excludeChildren", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.Transition>("excludeChildren", "(IZ)Landroid/transition/Transition;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#excludeChildren(java.lang.Class,boolean)"/>
@@ -371,7 +371,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.Transition"/></returns>
         public Android.Transition.Transition ExcludeChildren(Java.Lang.Class arg0, bool arg1)
         {
-            return IExecute<Android.Transition.Transition>("excludeChildren", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.Transition>("excludeChildren", "(Ljava/lang/Class;Z)Landroid/transition/Transition;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#excludeTarget(android.view.View,boolean)"/>
@@ -381,7 +381,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.Transition"/></returns>
         public Android.Transition.Transition ExcludeTarget(Android.View.View arg0, bool arg1)
         {
-            return IExecute<Android.Transition.Transition>("excludeTarget", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.Transition>("excludeTarget", "(Landroid/view/View;Z)Landroid/transition/Transition;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#excludeTarget(int,boolean)"/>
@@ -391,7 +391,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.Transition"/></returns>
         public Android.Transition.Transition ExcludeTarget(int arg0, bool arg1)
         {
-            return IExecute<Android.Transition.Transition>("excludeTarget", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.Transition>("excludeTarget", "(IZ)Landroid/transition/Transition;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#excludeTarget(java.lang.Class,boolean)"/>
@@ -401,7 +401,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.Transition"/></returns>
         public Android.Transition.Transition ExcludeTarget(Java.Lang.Class arg0, bool arg1)
         {
-            return IExecute<Android.Transition.Transition>("excludeTarget", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.Transition>("excludeTarget", "(Ljava/lang/Class;Z)Landroid/transition/Transition;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#excludeTarget(java.lang.String,boolean)"/>
@@ -411,7 +411,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.Transition"/></returns>
         public Android.Transition.Transition ExcludeTarget(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Android.Transition.Transition>("excludeTarget", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.Transition>("excludeTarget", "(Ljava/lang/String;Z)Landroid/transition/Transition;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#removeListener(android.transition.Transition.TransitionListener)"/>
@@ -509,7 +509,7 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.TransitionValues"/></returns>
         public Android.Transition.TransitionValues GetTransitionValues(Android.View.View arg0, bool arg1)
         {
-            return IExecute<Android.Transition.TransitionValues>("getTransitionValues", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.TransitionValues>("getTransitionValues", "(Landroid/view/View;Z)Landroid/transition/TransitionValues;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#canRemoveViews()"/>
@@ -527,7 +527,7 @@ namespace Android.Transition
         /// <returns><see cref="bool"/></returns>
         public bool IsTransitionRequired(Android.Transition.TransitionValues arg0, Android.Transition.TransitionValues arg1)
         {
-            return IExecute<bool>("isTransitionRequired", arg0, arg1);
+            return IExecuteWithSignature<bool>("isTransitionRequired", "(Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getName()"/>
@@ -625,29 +625,29 @@ namespace Android.Transition
         {
             IExecuteWithSignature("setPropagation", "(Landroid/transition/TransitionPropagation;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region EpicenterCallback implementation
         public partial class EpicenterCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/transition/Transition.EpicenterCallback.html#onGetEpicenter(android.transition.Transition)"/>
@@ -658,13 +658,13 @@ namespace Android.Transition
             {
                 return IExecuteWithSignature<Android.Graphics.Rect>("onGetEpicenter", "(Landroid/transition/Transition;)Landroid/graphics/Rect;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -673,21 +673,21 @@ namespace Android.Transition
         public partial class TransitionListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="TransitionListener"/>
@@ -701,13 +701,13 @@ namespace Android.Transition
                 AddEventHandler("onTransitionStart", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnTransitionStartEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionCancel(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionCancel"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Transition.Transition> OnOnTransitionCancel { get; set; } = null;
-            
+
             bool hasOverrideOnTransitionCancel = true;
             void OnTransitionCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -716,7 +716,7 @@ namespace Android.Transition
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Transition.Transition>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTransitionCancel;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionCancel(android.transition.Transition)"/>
             /// </summary>
@@ -725,13 +725,13 @@ namespace Android.Transition
             {
                 hasOverrideOnTransitionCancel = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionEnd(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionEnd"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Transition.Transition> OnOnTransitionEnd { get; set; } = null;
-            
+
             bool hasOverrideOnTransitionEnd = true;
             void OnTransitionEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -740,7 +740,7 @@ namespace Android.Transition
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Transition.Transition>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTransitionEnd;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionEnd(android.transition.Transition)"/>
             /// </summary>
@@ -749,13 +749,13 @@ namespace Android.Transition
             {
                 hasOverrideOnTransitionEnd = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionPause(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionPause"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Transition.Transition> OnOnTransitionPause { get; set; } = null;
-            
+
             bool hasOverrideOnTransitionPause = true;
             void OnTransitionPauseEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -764,7 +764,7 @@ namespace Android.Transition
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Transition.Transition>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTransitionPause;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionPause(android.transition.Transition)"/>
             /// </summary>
@@ -773,13 +773,13 @@ namespace Android.Transition
             {
                 hasOverrideOnTransitionPause = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionResume(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionResume"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Transition.Transition> OnOnTransitionResume { get; set; } = null;
-            
+
             bool hasOverrideOnTransitionResume = true;
             void OnTransitionResumeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -788,7 +788,7 @@ namespace Android.Transition
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Transition.Transition>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTransitionResume;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionResume(android.transition.Transition)"/>
             /// </summary>
@@ -797,13 +797,13 @@ namespace Android.Transition
             {
                 hasOverrideOnTransitionResume = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionStart(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionStart"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Transition.Transition> OnOnTransitionStart { get; set; } = null;
-            
+
             bool hasOverrideOnTransitionStart = true;
             void OnTransitionStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -812,7 +812,7 @@ namespace Android.Transition
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Transition.Transition>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTransitionStart;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionStart(android.transition.Transition)"/>
             /// </summary>
@@ -821,13 +821,13 @@ namespace Android.Transition
             {
                 hasOverrideOnTransitionStart = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -836,21 +836,21 @@ namespace Android.Transition
         public partial class TransitionListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionCancel(android.transition.Transition)"/>
@@ -892,20 +892,20 @@ namespace Android.Transition
             {
                 IExecuteWithSignature("onTransitionStart", "(Landroid/transition/Transition;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

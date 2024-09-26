@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GridLayout(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Alignment declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("Alignment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Alignment(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LayoutParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Spec(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -249,13 +249,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#BASELINE"/>
@@ -341,9 +341,9 @@ namespace Android.Widget
         public static int VERTICAL { get { if (!_VERTICALReady) { _VERTICALContent = SGetField<int>(LocalBridgeClazz, "VERTICAL"); _VERTICALReady = true; } return _VERTICALContent; } }
         private static int _VERTICALContent = default;
         private static bool _VERTICALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int,android.widget.GridLayout.Alignment,float)"/>
@@ -354,7 +354,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.GridLayout.Spec"/></returns>
         public static Android.Widget.GridLayout.Spec SpecMethod(int arg0, Android.Widget.GridLayout.Alignment arg1, float arg2)
         {
-            return SExecute<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(ILandroid/widget/GridLayout$Alignment;F)Landroid/widget/GridLayout$Spec;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int,android.widget.GridLayout.Alignment)"/>
@@ -364,7 +364,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.GridLayout.Spec"/></returns>
         public static Android.Widget.GridLayout.Spec SpecMethod(int arg0, Android.Widget.GridLayout.Alignment arg1)
         {
-            return SExecute<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", arg0, arg1);
+            return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(ILandroid/widget/GridLayout$Alignment;)Landroid/widget/GridLayout$Spec;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int,float)"/>
@@ -374,7 +374,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.GridLayout.Spec"/></returns>
         public static Android.Widget.GridLayout.Spec SpecMethod(int arg0, float arg1)
         {
-            return SExecute<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", arg0, arg1);
+            return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(IF)Landroid/widget/GridLayout$Spec;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int,int,android.widget.GridLayout.Alignment,float)"/>
@@ -386,7 +386,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.GridLayout.Spec"/></returns>
         public static Android.Widget.GridLayout.Spec SpecMethod(int arg0, int arg1, Android.Widget.GridLayout.Alignment arg2, float arg3)
         {
-            return SExecute<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(IILandroid/widget/GridLayout$Alignment;F)Landroid/widget/GridLayout$Spec;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int,int,android.widget.GridLayout.Alignment)"/>
@@ -397,7 +397,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.GridLayout.Spec"/></returns>
         public static Android.Widget.GridLayout.Spec SpecMethod(int arg0, int arg1, Android.Widget.GridLayout.Alignment arg2)
         {
-            return SExecute<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(IILandroid/widget/GridLayout$Alignment;)Landroid/widget/GridLayout$Spec;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int,int,float)"/>
@@ -408,7 +408,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.GridLayout.Spec"/></returns>
         public static Android.Widget.GridLayout.Spec SpecMethod(int arg0, int arg1, float arg2)
         {
-            return SExecute<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(IIF)Landroid/widget/GridLayout$Spec;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int,int)"/>
@@ -418,7 +418,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.GridLayout.Spec"/></returns>
         public static Android.Widget.GridLayout.Spec SpecMethod(int arg0, int arg1)
         {
-            return SExecute<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", arg0, arg1);
+            return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(II)Landroid/widget/GridLayout$Spec;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#spec(int)"/>
@@ -429,9 +429,9 @@ namespace Android.Widget
         {
             return SExecuteWithSignature<Android.Widget.GridLayout.Spec>(LocalBridgeClazz, "spec", "(I)Landroid/widget/GridLayout$Spec;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getUseDefaultMargins()"/>
@@ -545,37 +545,37 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setUseDefaultMargins", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Alignment implementation
         public partial class Alignment
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -626,13 +626,13 @@ namespace Android.Widget
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/GridLayout.LayoutParams.html#columnSpec"/>
@@ -642,13 +642,13 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/GridLayout.LayoutParams.html#rowSpec"/>
             /// </summary>
             public Android.Widget.GridLayout.Spec rowSpec { get { return IGetField<Android.Widget.GridLayout.Spec>("rowSpec"); } set { ISetField("rowSpec", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/GridLayout.LayoutParams.html#setGravity(int)"/>
@@ -658,13 +658,13 @@ namespace Android.Widget
             {
                 IExecuteWithSignature("setGravity", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -673,36 +673,36 @@ namespace Android.Widget
         public partial class Spec
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

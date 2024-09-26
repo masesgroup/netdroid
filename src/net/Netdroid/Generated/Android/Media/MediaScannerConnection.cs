@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaScannerConnection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region MediaScannerConnectionClient declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public MediaScannerConnectionClient() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaScannerConnection_MediaScannerConnectionClient";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region MediaScannerConnectionClientDirect declaration
         /// <summary>
         /// Direct override of <see cref="MediaScannerConnectionClient"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaScannerConnection$MediaScannerConnectionClient";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnScanCompletedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaScannerConnection_OnScanCompletedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnScanCompletedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnScanCompletedListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaScannerConnection$OnScanCompletedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -217,17 +217,17 @@ namespace Android.Media
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.html#scanFile(android.content.Context,java.lang.String[],java.lang.String[],android.media.MediaScannerConnection.OnScanCompletedListener)"/>
@@ -238,11 +238,11 @@ namespace Android.Media
         /// <param name="arg3"><see cref="Android.Media.MediaScannerConnection.OnScanCompletedListener"/></param>
         public static void ScanFile(Android.Content.Context arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, Android.Media.MediaScannerConnection.OnScanCompletedListener arg3)
         {
-            SExecute(LocalBridgeClazz, "scanFile", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "scanFile", "(Landroid/content/Context;[Ljava/lang/String;[Ljava/lang/String;Landroid/media/MediaScannerConnection$OnScanCompletedListener;)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.html#isConnected()"/>
@@ -273,7 +273,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.IBinder"/></param>
         public void OnServiceConnected(Android.Content.ComponentName arg0, Android.Os.IBinder arg1)
         {
-            IExecute("onServiceConnected", arg0, arg1);
+            IExecuteWithSignature("onServiceConnected", "(Landroid/content/ComponentName;Landroid/os/IBinder;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.html#onServiceDisconnected(android.content.ComponentName)"/>
@@ -290,31 +290,31 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void ScanFile(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("scanFile", arg0, arg1);
+            IExecuteWithSignature("scanFile", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region MediaScannerConnectionClient implementation
         public partial class MediaScannerConnectionClient
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="MediaScannerConnectionClient"/>
@@ -325,13 +325,13 @@ namespace Android.Media
                 AddEventHandler("onScanCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnScanCompletedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient.html#onMediaScannerConnected()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMediaScannerConnected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnMediaScannerConnected { get; set; } = null;
-            
+
             bool hasOverrideOnMediaScannerConnected = true;
             void OnMediaScannerConnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -340,7 +340,7 @@ namespace Android.Media
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnMediaScannerConnected;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient.html#onMediaScannerConnected()"/>
             /// </summary>
@@ -348,13 +348,13 @@ namespace Android.Media
             {
                 hasOverrideOnMediaScannerConnected = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScanCompleted"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, Android.Net.Uri> OnOnScanCompleted { get; set; } = null;
-            
+
             bool hasOverrideOnScanCompleted = true;
             void OnScanCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -363,7 +363,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Android.Net.Uri>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScanCompleted;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
             /// </summary>
@@ -373,13 +373,13 @@ namespace Android.Media
             {
                 hasOverrideOnScanCompleted = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -388,21 +388,21 @@ namespace Android.Media
         public partial class MediaScannerConnectionClientDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.MediaScannerConnectionClient.html#onMediaScannerConnected()"/>
@@ -420,13 +420,13 @@ namespace Android.Media
             {
                 IExecute("onScanCompleted", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -435,21 +435,21 @@ namespace Android.Media
         public partial class OnScanCompletedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnScanCompletedListener"/>
@@ -459,13 +459,13 @@ namespace Android.Media
                 AddEventHandler("onScanCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnScanCompletedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScanCompleted"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, Android.Net.Uri> OnOnScanCompleted { get; set; } = null;
-            
+
             bool hasOverrideOnScanCompleted = true;
             void OnScanCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -474,7 +474,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<Android.Net.Uri>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScanCompleted;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
             /// </summary>
@@ -484,13 +484,13 @@ namespace Android.Media
             {
                 hasOverrideOnScanCompleted = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -499,21 +499,21 @@ namespace Android.Media
         public partial class OnScanCompletedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
@@ -522,22 +522,22 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
             public override void OnScanCompleted(Java.Lang.String arg0, Android.Net.Uri arg1)
             {
-                IExecute("onScanCompleted", arg0, arg1);
+                IExecuteWithSignature("onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

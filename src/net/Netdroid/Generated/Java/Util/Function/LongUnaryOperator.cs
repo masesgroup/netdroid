@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public LongUnaryOperator() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.LongUnaryOperator";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region LongUnaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongUnaryOperator"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.LongUnaryOperator";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Java.Util.Function
     public partial interface ILongUnaryOperator
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,17 +114,17 @@ namespace Java.Util.Function
     public partial class LongUnaryOperator : Java.Util.Function.ILongUnaryOperator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#identity()"/>
@@ -135,9 +135,9 @@ namespace Java.Util.Function
         {
             return SExecuteWithSignature<Java.Util.Function.LongUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/LongUnaryOperator;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="LongUnaryOperator"/>
@@ -149,13 +149,13 @@ namespace Java.Util.Function
             AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComposeEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#applyAsLong(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long, long> OnApplyAsLong { get; set; } = null;
-        
+
         bool hasOverrideApplyAsLong = true;
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -164,7 +164,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<long>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsLong, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#applyAsLong(long)"/>
         /// </summary>
@@ -184,13 +184,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.LongUnaryOperator>("andThenDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnAndThen { get; set; } = null;
-        
+
         bool hasOverrideAndThen = true;
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -199,7 +199,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.LongUnaryOperator>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
         /// </summary>
@@ -220,13 +220,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.LongUnaryOperator>("composeDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.LongUnaryOperator, Java.Util.Function.LongUnaryOperator> OnCompose { get; set; } = null;
-        
+
         bool hasOverrideCompose = true;
         void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -235,7 +235,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.LongUnaryOperator>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideCompose, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
         /// </summary>
@@ -246,13 +246,13 @@ namespace Java.Util.Function
         {
             hasOverrideCompose = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -261,21 +261,21 @@ namespace Java.Util.Function
     public partial class LongUnaryOperatorDirect : Java.Util.Function.ILongUnaryOperator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/LongUnaryOperator.html#applyAsLong(long)"/>
@@ -304,13 +304,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>("compose", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

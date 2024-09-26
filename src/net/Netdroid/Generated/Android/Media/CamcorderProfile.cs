@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CamcorderProfile(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Media
     public partial class CamcorderProfile
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#audioBitRate"/>
@@ -352,9 +352,9 @@ namespace Android.Media
         public static int QUALITY_VGA { get { if (!_QUALITY_VGAReady) { _QUALITY_VGAContent = SGetField<int>(LocalBridgeClazz, "QUALITY_VGA"); _QUALITY_VGAReady = true; } return _QUALITY_VGAContent; } }
         private static int _QUALITY_VGAContent = default;
         private static bool _QUALITY_VGAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#get(int,int)"/>
@@ -365,7 +365,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public static Android.Media.CamcorderProfile Get(int arg0, int arg1)
         {
-            return SExecute<Android.Media.CamcorderProfile>(LocalBridgeClazz, "get", arg0, arg1);
+            return SExecuteWithSignature<Android.Media.CamcorderProfile>(LocalBridgeClazz, "get", "(II)Landroid/media/CamcorderProfile;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#get(int)"/>
@@ -385,7 +385,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.EncoderProfiles"/></returns>
         public static Android.Media.EncoderProfiles GetAll(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Media.EncoderProfiles>(LocalBridgeClazz, "getAll", arg0, arg1);
+            return SExecuteWithSignature<Android.Media.EncoderProfiles>(LocalBridgeClazz, "getAll", "(Ljava/lang/String;I)Landroid/media/EncoderProfiles;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#hasProfile(int,int)"/>
@@ -395,7 +395,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public static bool HasProfile(int arg0, int arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "hasProfile", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "hasProfile", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#hasProfile(int)"/>
@@ -406,17 +406,17 @@ namespace Android.Media
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "hasProfile", "(I)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

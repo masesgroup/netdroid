@@ -42,10 +42,10 @@ namespace Android.Crypto.Hpke
         /// </summary>
         [global::System.Obsolete("HpkeSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HpkeSpi(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Crypto.Hpke
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Crypto.Hpke
     public partial interface IHpkeSpi
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Crypto.Hpke
     public partial class HpkeSpi : Android.Crypto.Hpke.IHpkeSpi
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/crypto/hpke/HpkeSpi.html#engineExport(int,byte[])"/>
@@ -118,7 +118,7 @@ namespace Android.Crypto.Hpke
         /// <returns><see cref="byte"/></returns>
         public byte[] EngineExport(int arg0, byte[] arg1)
         {
-            return IExecuteArray<byte>("engineExport", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("engineExport", "(I[B)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/crypto/hpke/HpkeSpi.html#engineOpen(byte[],byte[])"/>
@@ -129,7 +129,7 @@ namespace Android.Crypto.Hpke
         /// <exception cref="Java.Security.GeneralSecurityException"/>
         public byte[] EngineOpen(byte[] arg0, byte[] arg1)
         {
-            return IExecuteArray<byte>("engineOpen", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("engineOpen", "([B[B)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/crypto/hpke/HpkeSpi.html#engineSeal(byte[],byte[])"/>
@@ -139,7 +139,7 @@ namespace Android.Crypto.Hpke
         /// <returns><see cref="byte"/></returns>
         public byte[] EngineSeal(byte[] arg0, byte[] arg1)
         {
-            return IExecuteArray<byte>("engineSeal", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("engineSeal", "([B[B)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/crypto/hpke/HpkeSpi.html#getEncapsulated()"/>
@@ -161,7 +161,7 @@ namespace Android.Crypto.Hpke
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void EngineInitRecipient(byte[] arg0, Java.Security.PrivateKey arg1, byte[] arg2, Java.Security.PublicKey arg3, byte[] arg4, byte[] arg5)
         {
-            IExecute("engineInitRecipient", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("engineInitRecipient", "([BLjava/security/PrivateKey;[BLjava/security/PublicKey;[B[B)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/crypto/hpke/HpkeSpi.html#engineInitSender(java.security.PublicKey,byte[],java.security.PrivateKey,byte[],byte[])"/>
@@ -174,7 +174,7 @@ namespace Android.Crypto.Hpke
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void EngineInitSender(Java.Security.PublicKey arg0, byte[] arg1, Java.Security.PrivateKey arg2, byte[] arg3, byte[] arg4)
         {
-            IExecute("engineInitSender", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("engineInitSender", "(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/crypto/hpke/HpkeSpi.html#engineInitSenderWithSeed(java.security.PublicKey,byte[],java.security.PrivateKey,byte[],byte[],byte[])"/>
@@ -188,15 +188,15 @@ namespace Android.Crypto.Hpke
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void EngineInitSenderWithSeed(Java.Security.PublicKey arg0, byte[] arg1, Java.Security.PrivateKey arg2, byte[] arg3, byte[] arg4, byte[] arg5)
         {
-            IExecute("engineInitSenderWithSeed", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("engineInitSenderWithSeed", "(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B[B)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

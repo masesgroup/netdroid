@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AudioManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AudioPlaybackCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("AudioPlaybackCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AudioPlaybackCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("AudioRecordingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AudioRecordingCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -170,7 +170,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnAudioFocusChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.AudioManager_OnAudioFocusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -179,13 +179,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnAudioFocusChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnAudioFocusChangeListener"/> or its generic type if there is one
@@ -196,14 +196,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.AudioManager$OnAudioFocusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -237,7 +237,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnCommunicationDeviceChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.AudioManager_OnCommunicationDeviceChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -246,13 +246,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnCommunicationDeviceChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnCommunicationDeviceChangedListener"/> or its generic type if there is one
@@ -263,14 +263,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.AudioManager$OnCommunicationDeviceChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -304,7 +304,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnModeChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.AudioManager_OnModeChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -313,13 +313,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnModeChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnModeChangedListener"/> or its generic type if there is one
@@ -330,14 +330,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.AudioManager$OnModeChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -371,7 +371,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnPreferredMixerAttributesChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.AudioManager_OnPreferredMixerAttributesChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -380,13 +380,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnPreferredMixerAttributesChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnPreferredMixerAttributesChangedListener"/> or its generic type if there is one
@@ -397,14 +397,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.AudioManager$OnPreferredMixerAttributesChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -436,13 +436,13 @@ namespace Android.Media
     public partial class AudioManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#ADJUST_LOWER"/>
@@ -1127,9 +1127,9 @@ namespace Android.Media
         public static Java.Lang.String VIBRATE_SETTING_CHANGED_ACTION { get { if (!_VIBRATE_SETTING_CHANGED_ACTIONReady) { _VIBRATE_SETTING_CHANGED_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIBRATE_SETTING_CHANGED_ACTION"); _VIBRATE_SETTING_CHANGED_ACTIONReady = true; } return _VIBRATE_SETTING_CHANGED_ACTIONContent; } }
         private static Java.Lang.String _VIBRATE_SETTING_CHANGED_ACTIONContent = default;
         private static bool _VIBRATE_SETTING_CHANGED_ACTIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#isHapticPlaybackSupported()"/>
@@ -1147,7 +1147,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public static bool IsOffloadedPlaybackSupported(Android.Media.AudioFormat arg0, Android.Media.AudioAttributes arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isOffloadedPlaybackSupported", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isOffloadedPlaybackSupported", "(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getDirectPlaybackSupport(android.media.AudioFormat,android.media.AudioAttributes)"/>
@@ -1157,7 +1157,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public static int GetDirectPlaybackSupport(Android.Media.AudioFormat arg0, Android.Media.AudioAttributes arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getDirectPlaybackSupport", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDirectPlaybackSupport", "(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getPlaybackOffloadSupport(android.media.AudioFormat,android.media.AudioAttributes)"/>
@@ -1168,11 +1168,11 @@ namespace Android.Media
         [global::System.Obsolete()]
         public static int GetPlaybackOffloadSupport(Android.Media.AudioFormat arg0, Android.Media.AudioAttributes arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getPlaybackOffloadSupport", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getPlaybackOffloadSupport", "(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getCommunicationDevice()"/>
@@ -1199,7 +1199,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.AudioMixerAttributes"/></returns>
         public Android.Media.AudioMixerAttributes GetPreferredMixerAttributes(Android.Media.AudioAttributes arg0, Android.Media.AudioDeviceInfo arg1)
         {
-            return IExecute<Android.Media.AudioMixerAttributes>("getPreferredMixerAttributes", arg0, arg1);
+            return IExecuteWithSignature<Android.Media.AudioMixerAttributes>("getPreferredMixerAttributes", "(Landroid/media/AudioAttributes;Landroid/media/AudioDeviceInfo;)Landroid/media/AudioMixerAttributes;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getSpatializer()"/>
@@ -1217,7 +1217,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public bool ClearPreferredMixerAttributes(Android.Media.AudioAttributes arg0, Android.Media.AudioDeviceInfo arg1)
         {
-            return IExecute<bool>("clearPreferredMixerAttributes", arg0, arg1);
+            return IExecuteWithSignature<bool>("clearPreferredMixerAttributes", "(Landroid/media/AudioAttributes;Landroid/media/AudioDeviceInfo;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#isBluetoothA2dpOn()"/>
@@ -1367,7 +1367,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public bool SetPreferredMixerAttributes(Android.Media.AudioAttributes arg0, Android.Media.AudioDeviceInfo arg1, Android.Media.AudioMixerAttributes arg2)
         {
-            return IExecute<bool>("setPreferredMixerAttributes", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setPreferredMixerAttributes", "(Landroid/media/AudioAttributes;Landroid/media/AudioDeviceInfo;Landroid/media/AudioMixerAttributes;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setSurroundFormatEnabled(int,boolean)"/>
@@ -1377,7 +1377,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public bool SetSurroundFormatEnabled(int arg0, bool arg1)
         {
-            return IExecute<bool>("setSurroundFormatEnabled", arg0, arg1);
+            return IExecuteWithSignature<bool>("setSurroundFormatEnabled", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#shouldVibrate(int)"/>
@@ -1398,7 +1398,7 @@ namespace Android.Media
         /// <returns><see cref="float"/></returns>
         public float GetStreamVolumeDb(int arg0, int arg1, int arg2)
         {
-            return IExecute<float>("getStreamVolumeDb", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("getStreamVolumeDb", "(III)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#abandonAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener)"/>
@@ -1543,7 +1543,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public int RequestAudioFocus(Android.Media.AudioManager.OnAudioFocusChangeListener arg0, int arg1, int arg2)
         {
-            return IExecute<int>("requestAudioFocus", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("requestAudioFocus", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getParameters(java.lang.String)"/>
@@ -1639,7 +1639,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.AudioManager.OnCommunicationDeviceChangedListener"/></param>
         public void AddOnCommunicationDeviceChangedListener(Java.Util.Concurrent.Executor arg0, Android.Media.AudioManager.OnCommunicationDeviceChangedListener arg1)
         {
-            IExecute("addOnCommunicationDeviceChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnCommunicationDeviceChangedListener", "(Ljava/util/concurrent/Executor;Landroid/media/AudioManager$OnCommunicationDeviceChangedListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#addOnModeChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnModeChangedListener)"/>
@@ -1648,7 +1648,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.AudioManager.OnModeChangedListener"/></param>
         public void AddOnModeChangedListener(Java.Util.Concurrent.Executor arg0, Android.Media.AudioManager.OnModeChangedListener arg1)
         {
-            IExecute("addOnModeChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnModeChangedListener", "(Ljava/util/concurrent/Executor;Landroid/media/AudioManager$OnModeChangedListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#addOnPreferredMixerAttributesChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnPreferredMixerAttributesChangedListener)"/>
@@ -1657,7 +1657,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.AudioManager.OnPreferredMixerAttributesChangedListener"/></param>
         public void AddOnPreferredMixerAttributesChangedListener(Java.Util.Concurrent.Executor arg0, Android.Media.AudioManager.OnPreferredMixerAttributesChangedListener arg1)
         {
-            IExecute("addOnPreferredMixerAttributesChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnPreferredMixerAttributesChangedListener", "(Ljava/util/concurrent/Executor;Landroid/media/AudioManager$OnPreferredMixerAttributesChangedListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#adjustStreamVolume(int,int,int)"/>
@@ -1667,7 +1667,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="int"/></param>
         public void AdjustStreamVolume(int arg0, int arg1, int arg2)
         {
-            IExecute("adjustStreamVolume", arg0, arg1, arg2);
+            IExecuteWithSignature("adjustStreamVolume", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#adjustSuggestedStreamVolume(int,int,int)"/>
@@ -1677,7 +1677,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="int"/></param>
         public void AdjustSuggestedStreamVolume(int arg0, int arg1, int arg2)
         {
-            IExecute("adjustSuggestedStreamVolume", arg0, arg1, arg2);
+            IExecuteWithSignature("adjustSuggestedStreamVolume", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#adjustVolume(int,int)"/>
@@ -1686,7 +1686,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void AdjustVolume(int arg0, int arg1)
         {
-            IExecute("adjustVolume", arg0, arg1);
+            IExecuteWithSignature("adjustVolume", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#adjustVolumeGroupVolume(int,int,int)"/>
@@ -1696,7 +1696,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="int"/></param>
         public void AdjustVolumeGroupVolume(int arg0, int arg1, int arg2)
         {
-            IExecute("adjustVolumeGroupVolume", arg0, arg1, arg2);
+            IExecuteWithSignature("adjustVolumeGroupVolume", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#clearCommunicationDevice()"/>
@@ -1727,7 +1727,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="float"/></param>
         public void PlaySoundEffect(int arg0, float arg1)
         {
-            IExecute("playSoundEffect", arg0, arg1);
+            IExecuteWithSignature("playSoundEffect", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#playSoundEffect(int)"/>
@@ -1744,7 +1744,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterAudioDeviceCallback(Android.Media.AudioDeviceCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerAudioDeviceCallback", arg0, arg1);
+            IExecuteWithSignature("registerAudioDeviceCallback", "(Landroid/media/AudioDeviceCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#registerAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback,android.os.Handler)"/>
@@ -1753,7 +1753,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterAudioPlaybackCallback(Android.Media.AudioManager.AudioPlaybackCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerAudioPlaybackCallback", arg0, arg1);
+            IExecuteWithSignature("registerAudioPlaybackCallback", "(Landroid/media/AudioManager$AudioPlaybackCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback,android.os.Handler)"/>
@@ -1762,7 +1762,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterAudioRecordingCallback(Android.Media.AudioManager.AudioRecordingCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerAudioRecordingCallback", arg0, arg1);
+            IExecuteWithSignature("registerAudioRecordingCallback", "(Landroid/media/AudioManager$AudioRecordingCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#registerMediaButtonEventReceiver(android.app.PendingIntent)"/>
@@ -1881,7 +1881,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public void SetRouting(int arg0, int arg1, int arg2)
         {
-            IExecute("setRouting", arg0, arg1, arg2);
+            IExecuteWithSignature("setRouting", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setSpeakerphoneOn(boolean)"/>
@@ -1900,7 +1900,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public void SetStreamMute(int arg0, bool arg1)
         {
-            IExecute("setStreamMute", arg0, arg1);
+            IExecuteWithSignature("setStreamMute", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setStreamSolo(int,boolean)"/>
@@ -1910,7 +1910,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public void SetStreamSolo(int arg0, bool arg1)
         {
-            IExecute("setStreamSolo", arg0, arg1);
+            IExecuteWithSignature("setStreamSolo", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setStreamVolume(int,int,int)"/>
@@ -1920,7 +1920,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="int"/></param>
         public void SetStreamVolume(int arg0, int arg1, int arg2)
         {
-            IExecute("setStreamVolume", arg0, arg1, arg2);
+            IExecuteWithSignature("setStreamVolume", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setVibrateSetting(int,int)"/>
@@ -1930,7 +1930,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public void SetVibrateSetting(int arg0, int arg1)
         {
-            IExecute("setVibrateSetting", arg0, arg1);
+            IExecuteWithSignature("setVibrateSetting", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#setWiredHeadsetOn(boolean)"/>
@@ -2024,29 +2024,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("unregisterRemoteController", "(Landroid/media/RemoteController;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AudioPlaybackCallback implementation
         public partial class AudioPlaybackCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.AudioPlaybackCallback.html#onPlaybackConfigChanged(java.util.List)"/>
@@ -2056,13 +2056,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onPlaybackConfigChanged", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2071,21 +2071,21 @@ namespace Android.Media
         public partial class AudioRecordingCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.AudioRecordingCallback.html#onRecordingConfigChanged(java.util.List)"/>
@@ -2095,13 +2095,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onRecordingConfigChanged", "(Ljava/util/List;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2110,21 +2110,21 @@ namespace Android.Media
         public partial class OnAudioFocusChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnAudioFocusChangeListener"/>
@@ -2134,13 +2134,13 @@ namespace Android.Media
                 AddEventHandler("onAudioFocusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAudioFocusChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnAudioFocusChangeListener.html#onAudioFocusChange(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAudioFocusChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnAudioFocusChange { get; set; } = null;
-            
+
             bool hasOverrideOnAudioFocusChange = true;
             void OnAudioFocusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2149,7 +2149,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAudioFocusChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnAudioFocusChangeListener.html#onAudioFocusChange(int)"/>
             /// </summary>
@@ -2158,13 +2158,13 @@ namespace Android.Media
             {
                 hasOverrideOnAudioFocusChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2173,21 +2173,21 @@ namespace Android.Media
         public partial class OnAudioFocusChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnAudioFocusChangeListener.html#onAudioFocusChange(int)"/>
@@ -2197,13 +2197,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onAudioFocusChange", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2212,21 +2212,21 @@ namespace Android.Media
         public partial class OnCommunicationDeviceChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnCommunicationDeviceChangedListener"/>
@@ -2236,13 +2236,13 @@ namespace Android.Media
                 AddEventHandler("onCommunicationDeviceChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCommunicationDeviceChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnCommunicationDeviceChangedListener.html#onCommunicationDeviceChanged(android.media.AudioDeviceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCommunicationDeviceChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.AudioDeviceInfo> OnOnCommunicationDeviceChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCommunicationDeviceChanged = true;
             void OnCommunicationDeviceChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2251,7 +2251,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.AudioDeviceInfo>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCommunicationDeviceChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnCommunicationDeviceChangedListener.html#onCommunicationDeviceChanged(android.media.AudioDeviceInfo)"/>
             /// </summary>
@@ -2260,13 +2260,13 @@ namespace Android.Media
             {
                 hasOverrideOnCommunicationDeviceChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2275,21 +2275,21 @@ namespace Android.Media
         public partial class OnCommunicationDeviceChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnCommunicationDeviceChangedListener.html#onCommunicationDeviceChanged(android.media.AudioDeviceInfo)"/>
@@ -2299,13 +2299,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onCommunicationDeviceChanged", "(Landroid/media/AudioDeviceInfo;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2314,21 +2314,21 @@ namespace Android.Media
         public partial class OnModeChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnModeChangedListener"/>
@@ -2338,13 +2338,13 @@ namespace Android.Media
                 AddEventHandler("onModeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnModeChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnModeChangedListener.html#onModeChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnModeChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnModeChanged { get; set; } = null;
-            
+
             bool hasOverrideOnModeChanged = true;
             void OnModeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2353,7 +2353,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnModeChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnModeChangedListener.html#onModeChanged(int)"/>
             /// </summary>
@@ -2362,13 +2362,13 @@ namespace Android.Media
             {
                 hasOverrideOnModeChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2377,21 +2377,21 @@ namespace Android.Media
         public partial class OnModeChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnModeChangedListener.html#onModeChanged(int)"/>
@@ -2401,13 +2401,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onModeChanged", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2416,21 +2416,21 @@ namespace Android.Media
         public partial class OnPreferredMixerAttributesChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnPreferredMixerAttributesChangedListener"/>
@@ -2440,13 +2440,13 @@ namespace Android.Media
                 AddEventHandler("onPreferredMixerAttributesChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPreferredMixerAttributesChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioManager.OnPreferredMixerAttributesChangedListener.html#onPreferredMixerAttributesChanged(android.media.AudioAttributes,android.media.AudioDeviceInfo,android.media.AudioMixerAttributes)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreferredMixerAttributesChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.AudioAttributes, Android.Media.AudioDeviceInfo, Android.Media.AudioMixerAttributes> OnOnPreferredMixerAttributesChanged { get; set; } = null;
-            
+
             bool hasOverrideOnPreferredMixerAttributesChanged = true;
             void OnPreferredMixerAttributesChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2455,7 +2455,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.AudioAttributes>(0), data.EventData.GetAt<Android.Media.AudioDeviceInfo>(1), data.EventData.GetAt<Android.Media.AudioMixerAttributes>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPreferredMixerAttributesChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnPreferredMixerAttributesChangedListener.html#onPreferredMixerAttributesChanged(android.media.AudioAttributes,android.media.AudioDeviceInfo,android.media.AudioMixerAttributes)"/>
             /// </summary>
@@ -2466,13 +2466,13 @@ namespace Android.Media
             {
                 hasOverrideOnPreferredMixerAttributesChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2481,21 +2481,21 @@ namespace Android.Media
         public partial class OnPreferredMixerAttributesChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioManager.OnPreferredMixerAttributesChangedListener.html#onPreferredMixerAttributesChanged(android.media.AudioAttributes,android.media.AudioDeviceInfo,android.media.AudioMixerAttributes)"/>
@@ -2505,22 +2505,22 @@ namespace Android.Media
             /// <param name="arg2"><see cref="Android.Media.AudioMixerAttributes"/></param>
             public override void OnPreferredMixerAttributesChanged(Android.Media.AudioAttributes arg0, Android.Media.AudioDeviceInfo arg1, Android.Media.AudioMixerAttributes arg2)
             {
-                IExecute("onPreferredMixerAttributesChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onPreferredMixerAttributesChanged", "(Landroid/media/AudioAttributes;Landroid/media/AudioDeviceInfo;Landroid/media/AudioMixerAttributes;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

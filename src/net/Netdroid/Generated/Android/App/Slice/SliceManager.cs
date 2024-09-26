@@ -41,10 +41,10 @@ namespace Android.App.Slice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SliceManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.App.Slice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.App.Slice
     public partial class SliceManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#CATEGORY_SLICE"/>
@@ -97,13 +97,13 @@ namespace Android.App.Slice
         public static Java.Lang.String SLICE_METADATA_KEY { get { if (!_SLICE_METADATA_KEYReady) { _SLICE_METADATA_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SLICE_METADATA_KEY"); _SLICE_METADATA_KEYReady = true; } return _SLICE_METADATA_KEYContent; } }
         private static Java.Lang.String _SLICE_METADATA_KEYContent = default;
         private static bool _SLICE_METADATA_KEYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#bindSlice(android.content.Intent,java.util.Set)"/>
@@ -114,7 +114,7 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public Android.App.Slice.Slice BindSlice(Android.Content.Intent arg0, Java.Util.Set<Android.App.Slice.SliceSpec> arg1)
         {
-            return IExecute<Android.App.Slice.Slice>("bindSlice", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Slice.Slice>("bindSlice", "(Landroid/content/Intent;Ljava/util/Set;)Landroid/app/slice/Slice;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#bindSlice(android.net.Uri,java.util.Set)"/>
@@ -125,7 +125,7 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public Android.App.Slice.Slice BindSlice(Android.Net.Uri arg0, Java.Util.Set<Android.App.Slice.SliceSpec> arg1)
         {
-            return IExecute<Android.App.Slice.Slice>("bindSlice", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Slice.Slice>("bindSlice", "(Landroid/net/Uri;Ljava/util/Set;)Landroid/app/slice/Slice;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#mapIntentToUri(android.content.Intent)"/>
@@ -147,7 +147,7 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public int CheckSlicePermission(Android.Net.Uri arg0, int arg1, int arg2)
         {
-            return IExecute<int>("checkSlicePermission", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("checkSlicePermission", "(Landroid/net/Uri;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#getSliceDescendants(android.net.Uri)"/>
@@ -186,7 +186,7 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public void GrantSlicePermission(Java.Lang.String arg0, Android.Net.Uri arg1)
         {
-            IExecute("grantSlicePermission", arg0, arg1);
+            IExecuteWithSignature("grantSlicePermission", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#pinSlice(android.net.Uri,java.util.Set)"/>
@@ -196,7 +196,7 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public void PinSlice(Android.Net.Uri arg0, Java.Util.Set<Android.App.Slice.SliceSpec> arg1)
         {
-            IExecute("pinSlice", arg0, arg1);
+            IExecuteWithSignature("pinSlice", "(Landroid/net/Uri;Ljava/util/Set;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#revokeSlicePermission(java.lang.String,android.net.Uri)"/>
@@ -206,7 +206,7 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public void RevokeSlicePermission(Java.Lang.String arg0, Android.Net.Uri arg1)
         {
-            IExecute("revokeSlicePermission", arg0, arg1);
+            IExecuteWithSignature("revokeSlicePermission", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#unpinSlice(android.net.Uri)"/>
@@ -217,13 +217,13 @@ namespace Android.App.Slice
         {
             IExecuteWithSignature("unpinSlice", "(Landroid/net/Uri;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

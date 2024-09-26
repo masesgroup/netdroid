@@ -40,10 +40,10 @@ namespace Android.Icu.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ULocale(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AvailableType declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AvailableType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Category(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -236,9 +236,9 @@ namespace Android.Icu.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Util.ULocale"/> to <see cref="Java.Io.Serializable"/>
@@ -248,9 +248,9 @@ namespace Android.Icu.Util
         /// Converter from <see cref="Android.Icu.Util.ULocale"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Icu.Util.ULocale t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#CANADA"/>
@@ -396,9 +396,9 @@ namespace Android.Icu.Util
         public static char UNICODE_LOCALE_EXTENSION { get { if (!_UNICODE_LOCALE_EXTENSIONReady) { _UNICODE_LOCALE_EXTENSIONContent = SGetField<char>(LocalBridgeClazz, "UNICODE_LOCALE_EXTENSION"); _UNICODE_LOCALE_EXTENSIONReady = true; } return _UNICODE_LOCALE_EXTENSIONContent; } }
         private static char _UNICODE_LOCALE_EXTENSIONContent = default;
         private static bool _UNICODE_LOCALE_EXTENSIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#acceptLanguage(android.icu.util.ULocale[],android.icu.util.ULocale[],boolean[])"/>
@@ -409,7 +409,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
         public static Android.Icu.Util.ULocale AcceptLanguage(Android.Icu.Util.ULocale[] arg0, Android.Icu.Util.ULocale[] arg1, bool[] arg2)
         {
-            return SExecute<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", "([Landroid/icu/util/ULocale;[Landroid/icu/util/ULocale;[Z)Landroid/icu/util/ULocale;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#acceptLanguage(android.icu.util.ULocale[],boolean[])"/>
@@ -419,7 +419,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
         public static Android.Icu.Util.ULocale AcceptLanguage(Android.Icu.Util.ULocale[] arg0, bool[] arg1)
         {
-            return SExecute<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", "([Landroid/icu/util/ULocale;[Z)Landroid/icu/util/ULocale;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#acceptLanguage(java.lang.String,android.icu.util.ULocale[],boolean[])"/>
@@ -430,7 +430,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
         public static Android.Icu.Util.ULocale AcceptLanguage(Java.Lang.String arg0, Android.Icu.Util.ULocale[] arg1, bool[] arg2)
         {
-            return SExecute<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", "(Ljava/lang/String;[Landroid/icu/util/ULocale;[Z)Landroid/icu/util/ULocale;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#acceptLanguage(java.lang.String,boolean[])"/>
@@ -440,7 +440,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
         public static Android.Icu.Util.ULocale AcceptLanguage(Java.Lang.String arg0, bool[] arg1)
         {
-            return SExecute<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Util.ULocale>(LocalBridgeClazz, "acceptLanguage", "(Ljava/lang/String;[Z)Landroid/icu/util/ULocale;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#addLikelySubtags(android.icu.util.ULocale)"/>
@@ -556,7 +556,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayCountry(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayCountry", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayCountry", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayCountry(java.lang.String,java.lang.String)"/>
@@ -566,7 +566,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayCountry(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayCountry", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayCountry", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayKeyword(java.lang.String,android.icu.util.ULocale)"/>
@@ -576,7 +576,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayKeyword(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeyword", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeyword", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayKeyword(java.lang.String,java.lang.String)"/>
@@ -586,7 +586,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayKeyword(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeyword", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeyword", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayKeyword(java.lang.String)"/>
@@ -606,7 +606,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayKeywordValue(Java.Lang.String arg0, Java.Lang.String arg1, Android.Icu.Util.ULocale arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeywordValue", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeywordValue", "(Ljava/lang/String;Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayKeywordValue(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -617,7 +617,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayKeywordValue(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeywordValue", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayKeywordValue", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguage(java.lang.String,android.icu.util.ULocale)"/>
@@ -627,7 +627,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayLanguage(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguage", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguage", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguage(java.lang.String,java.lang.String)"/>
@@ -637,7 +637,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayLanguage(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguage", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguage", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguageWithDialect(java.lang.String,android.icu.util.ULocale)"/>
@@ -647,7 +647,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayLanguageWithDialect(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguageWithDialect", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguageWithDialect", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayLanguageWithDialect(java.lang.String,java.lang.String)"/>
@@ -657,7 +657,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayLanguageWithDialect(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguageWithDialect", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayLanguageWithDialect", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayName(java.lang.String,android.icu.util.ULocale)"/>
@@ -667,7 +667,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayName(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayName", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayName", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayName(java.lang.String,java.lang.String)"/>
@@ -677,7 +677,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayName(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayName", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayName", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayNameWithDialect(java.lang.String,android.icu.util.ULocale)"/>
@@ -687,7 +687,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayNameWithDialect(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayNameWithDialect", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayNameWithDialect", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayNameWithDialect(java.lang.String,java.lang.String)"/>
@@ -697,7 +697,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayNameWithDialect(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayNameWithDialect", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayNameWithDialect", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayScript(java.lang.String,android.icu.util.ULocale)"/>
@@ -707,7 +707,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayScript(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayScript", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayScript", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayScript(java.lang.String,java.lang.String)"/>
@@ -717,7 +717,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayScript(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayScript", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayScript", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayVariant(java.lang.String,android.icu.util.ULocale)"/>
@@ -727,7 +727,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayVariant(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayVariant", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayVariant", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayVariant(java.lang.String,java.lang.String)"/>
@@ -737,7 +737,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetDisplayVariant(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayVariant", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayVariant", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getFallback(java.lang.String)"/>
@@ -774,7 +774,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetKeywordValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getKeywordValue", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getKeywordValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getLanguage(java.lang.String)"/>
@@ -821,7 +821,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String SetKeywordValue(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "setKeywordValue", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "setKeywordValue", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#toLegacyKey(java.lang.String)"/>
@@ -840,7 +840,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToLegacyType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toLegacyType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toLegacyType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#toUnicodeLocaleKey(java.lang.String)"/>
@@ -859,7 +859,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToUnicodeLocaleType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnicodeLocaleType", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnicodeLocaleType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getISOCountries()"/>
@@ -895,9 +895,9 @@ namespace Android.Icu.Util
         {
             return SExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>(LocalBridgeClazz, "getKeywords", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getFallback()"/>
@@ -915,7 +915,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
         public Android.Icu.Util.ULocale SetKeywordValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Icu.Util.ULocale>("setKeywordValue", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("setKeywordValue", "(Ljava/lang/String;Ljava/lang/String;)Landroid/icu/util/ULocale;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#isRightToLeft()"/>
@@ -992,7 +992,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayKeywordValue(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayKeywordValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayKeywordValue", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getDisplayKeywordValue(java.lang.String)"/>
@@ -1236,21 +1236,21 @@ namespace Android.Icu.Util
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AvailableType implementation
         public partial class AvailableType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.AvailableType.html#DEFAULT"/>
@@ -1270,9 +1270,9 @@ namespace Android.Icu.Util
             public static Android.Icu.Util.ULocale.AvailableType WITH_LEGACY_ALIASES { get { if (!_WITH_LEGACY_ALIASESReady) { _WITH_LEGACY_ALIASESContent = SGetField<Android.Icu.Util.ULocale.AvailableType>(LocalBridgeClazz, "WITH_LEGACY_ALIASES"); _WITH_LEGACY_ALIASESReady = true; } return _WITH_LEGACY_ALIASESContent; } }
             private static Android.Icu.Util.ULocale.AvailableType _WITH_LEGACY_ALIASESContent = default;
             private static bool _WITH_LEGACY_ALIASESReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.AvailableType.html#valueOf(java.lang.String)"/>
@@ -1291,17 +1291,17 @@ namespace Android.Icu.Util
             {
                 return SExecuteWithSignatureArray<Android.Icu.Util.ULocale.AvailableType>(LocalBridgeClazz, "values", "()[Landroid/icu/util/ULocale$AvailableType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1310,21 +1310,21 @@ namespace Android.Icu.Util
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Builder.html#build()"/>
@@ -1376,7 +1376,7 @@ namespace Android.Icu.Util
             /// <returns><see cref="Android.Icu.Util.ULocale.Builder"/></returns>
             public Android.Icu.Util.ULocale.Builder SetExtension(char arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Icu.Util.ULocale.Builder>("setExtension", arg0, arg1);
+                return IExecuteWithSignature<Android.Icu.Util.ULocale.Builder>("setExtension", "(CLjava/lang/String;)Landroid/icu/util/ULocale$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Builder.html#setLanguage(java.lang.String)"/>
@@ -1431,7 +1431,7 @@ namespace Android.Icu.Util
             /// <returns><see cref="Android.Icu.Util.ULocale.Builder"/></returns>
             public Android.Icu.Util.ULocale.Builder SetUnicodeLocaleKeyword(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Icu.Util.ULocale.Builder>("setUnicodeLocaleKeyword", arg0, arg1);
+                return IExecuteWithSignature<Android.Icu.Util.ULocale.Builder>("setUnicodeLocaleKeyword", "(Ljava/lang/String;Ljava/lang/String;)Landroid/icu/util/ULocale$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Builder.html#setVariant(java.lang.String)"/>
@@ -1442,13 +1442,13 @@ namespace Android.Icu.Util
             {
                 return IExecuteWithSignature<Android.Icu.Util.ULocale.Builder>("setVariant", "(Ljava/lang/String;)Landroid/icu/util/ULocale$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1457,13 +1457,13 @@ namespace Android.Icu.Util
         public partial class Category
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Category.html#DISPLAY"/>
@@ -1477,9 +1477,9 @@ namespace Android.Icu.Util
             public static Android.Icu.Util.ULocale.Category FORMAT { get { if (!_FORMATReady) { _FORMATContent = SGetField<Android.Icu.Util.ULocale.Category>(LocalBridgeClazz, "FORMAT"); _FORMATReady = true; } return _FORMATContent; } }
             private static Android.Icu.Util.ULocale.Category _FORMATContent = default;
             private static bool _FORMATReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Category.html#valueOf(java.lang.String)"/>
@@ -1498,24 +1498,24 @@ namespace Android.Icu.Util
             {
                 return SExecuteWithSignatureArray<Android.Icu.Util.ULocale.Category>(LocalBridgeClazz, "values", "()[Landroid/icu/util/ULocale$Category;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

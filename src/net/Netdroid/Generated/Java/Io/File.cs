@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public File(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -108,9 +108,9 @@ namespace Java.Io
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.File"/> to <see cref="Java.Io.Serializable"/>
@@ -120,9 +120,9 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.File"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Io.File t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#pathSeparatorChar"/>
@@ -148,9 +148,9 @@ namespace Java.Io
         public static Java.Lang.String separator { get { if (!_separatorReady) { _separatorContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "separator"); _separatorReady = true; } return _separatorContent; } }
         private static Java.Lang.String _separatorContent = default;
         private static bool _separatorReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#createTempFile(java.lang.String,java.lang.String,java.io.File)"/>
@@ -162,7 +162,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.File CreateTempFile(Java.Lang.String arg0, Java.Lang.String arg1, Java.Io.File arg2)
         {
-            return SExecute<Java.Io.File>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "createTempFile", "(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#createTempFile(java.lang.String,java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.File CreateTempFile(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Io.File>(LocalBridgeClazz, "createTempFile", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "createTempFile", "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#listRoots()"/>
@@ -183,9 +183,9 @@ namespace Java.Io
         {
             return SExecuteWithSignatureArray<Java.Io.File>(LocalBridgeClazz, "listRoots", "()[Ljava/io/File;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#canExecute()"/>
@@ -301,7 +301,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool SetExecutable(bool arg0, bool arg1)
         {
-            return IExecute<bool>("setExecutable", arg0, arg1);
+            return IExecuteWithSignature<bool>("setExecutable", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#setExecutable(boolean)"/>
@@ -329,7 +329,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool SetReadable(bool arg0, bool arg1)
         {
-            return IExecute<bool>("setReadable", arg0, arg1);
+            return IExecuteWithSignature<bool>("setReadable", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#setReadable(boolean)"/>
@@ -356,7 +356,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool SetWritable(bool arg0, bool arg1)
         {
-            return IExecute<bool>("setWritable", arg0, arg1);
+            return IExecuteWithSignature<bool>("setWritable", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/File.html#setWritable(boolean)"/>
@@ -567,13 +567,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("deleteOnExit", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

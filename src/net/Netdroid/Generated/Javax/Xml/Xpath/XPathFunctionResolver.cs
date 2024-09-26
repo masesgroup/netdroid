@@ -42,10 +42,10 @@ namespace Javax.Xml.Xpath
         /// </summary>
         [global::System.Obsolete("XPathFunctionResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFunctionResolver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Xpath
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Xml.Xpath
     public partial interface IXPathFunctionResolver
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Javax.Xml.Xpath
     public partial class XPathFunctionResolver : Javax.Xml.Xpath.IXPathFunctionResolver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFunctionResolver.html#resolveFunction(javax.xml.namespace.QName,int)"/>
@@ -118,15 +118,15 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Javax.Xml.Xpath.XPathFunction"/></returns>
         public Javax.Xml.Xpath.XPathFunction ResolveFunction(Javax.Xml.Namespace.QName arg0, int arg1)
         {
-            return IExecute<Javax.Xml.Xpath.XPathFunction>("resolveFunction", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathFunction>("resolveFunction", "(Ljavax/xml/namespace/QName;I)Ljavax/xml/xpath/XPathFunction;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

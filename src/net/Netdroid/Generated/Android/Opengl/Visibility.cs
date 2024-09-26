@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Visibility(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Opengl
     public partial class Visibility
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Visibility.html#frustumCullSpheres(float[],int,float[],int,int,int[],int,int)"/>
@@ -100,7 +100,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int FrustumCullSpheres(float[] arg0, int arg1, float[] arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
         {
-            return SExecute<int>(LocalBridgeClazz, "frustumCullSpheres", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "frustumCullSpheres", "([FI[FII[III)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Visibility.html#visibilityTest(float[],int,float[],int,char[],int,int)"/>
@@ -115,7 +115,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int VisibilityTest(float[] arg0, int arg1, float[] arg2, int arg3, char[] arg4, int arg5, int arg6)
         {
-            return SExecute<int>(LocalBridgeClazz, "visibilityTest", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "visibilityTest", "([FI[FI[CII)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Visibility.html#computeBoundingSphere(float[],int,int,float[],int)"/>
@@ -127,19 +127,19 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void ComputeBoundingSphere(float[] arg0, int arg1, int arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "computeBoundingSphere", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "computeBoundingSphere", "([FII[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

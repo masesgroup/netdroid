@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IntentFilter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AuthorityEntry declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AuthorityEntry(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -122,9 +122,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -162,13 +162,13 @@ namespace Android.Content
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#CREATOR"/>
@@ -272,9 +272,9 @@ namespace Android.Content
         public static int SYSTEM_LOW_PRIORITY { get { if (!_SYSTEM_LOW_PRIORITYReady) { _SYSTEM_LOW_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_LOW_PRIORITY"); _SYSTEM_LOW_PRIORITYReady = true; } return _SYSTEM_LOW_PRIORITYContent; } }
         private static int _SYSTEM_LOW_PRIORITYContent = default;
         private static bool _SYSTEM_LOW_PRIORITYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#create(java.lang.String,java.lang.String)"/>
@@ -284,11 +284,11 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.IntentFilter"/></returns>
         public static Android.Content.IntentFilter Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Content.IntentFilter>(LocalBridgeClazz, "create", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.IntentFilter>(LocalBridgeClazz, "create", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/IntentFilter;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#getDataAuthority(int)"/>
@@ -488,7 +488,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int Match(Android.Content.ContentResolver arg0, Android.Content.Intent arg1, bool arg2, Java.Lang.String arg3)
         {
-            return IExecute<int>("match", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("match", "(Landroid/content/ContentResolver;Landroid/content/Intent;ZLjava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#match(java.lang.String,java.lang.String,java.lang.String,android.net.Uri,java.util.Set,java.lang.String)"/>
@@ -502,7 +502,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int Match(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Net.Uri arg3, Java.Util.Set<Java.Lang.String> arg4, Java.Lang.String arg5)
         {
-            return IExecute<int>("match", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("match", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/Set;Ljava/lang/String;)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#matchData(java.lang.String,java.lang.String,android.net.Uri)"/>
@@ -513,7 +513,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int MatchData(Java.Lang.String arg0, Java.Lang.String arg1, Android.Net.Uri arg2)
         {
-            return IExecute<int>("matchData", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("matchData", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#matchDataAuthority(android.net.Uri)"/>
@@ -648,7 +648,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void AddDataAuthority(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("addDataAuthority", arg0, arg1);
+            IExecuteWithSignature("addDataAuthority", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#addDataPath(java.lang.String,int)"/>
@@ -657,7 +657,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void AddDataPath(Java.Lang.String arg0, int arg1)
         {
-            IExecute("addDataPath", arg0, arg1);
+            IExecuteWithSignature("addDataPath", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#addDataScheme(java.lang.String)"/>
@@ -674,7 +674,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void AddDataSchemeSpecificPart(Java.Lang.String arg0, int arg1)
         {
-            IExecute("addDataSchemeSpecificPart", arg0, arg1);
+            IExecuteWithSignature("addDataSchemeSpecificPart", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#addDataType(java.lang.String)"/>
@@ -715,7 +715,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#asPredicate()"/>
@@ -758,7 +758,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
         {
-            IExecute("dump", arg0, arg1);
+            IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#readFromXml(org.xmlpull.v1.XmlPullParser)"/>
@@ -779,9 +779,9 @@ namespace Android.Content
         {
             IExecuteWithSignature("writeToXml", "(Lorg/xmlpull/v1/XmlSerializer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AuthorityEntry implementation
         public partial class AuthorityEntry
@@ -796,21 +796,21 @@ namespace Android.Content
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/IntentFilter.AuthorityEntry.html#getPort()"/>
@@ -837,13 +837,13 @@ namespace Android.Content
             {
                 return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -852,36 +852,36 @@ namespace Android.Content
         public partial class MalformedMimeTypeException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

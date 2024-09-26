@@ -42,10 +42,10 @@ namespace Android.Content
         /// </summary>
         [global::System.Obsolete("AbstractThreadedSyncAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractThreadedSyncAdapter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -95,13 +95,13 @@ namespace Android.Content
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#LOG_SYNC_DETAILS"/>
@@ -110,13 +110,13 @@ namespace Android.Content
         public static int LOG_SYNC_DETAILS { get { if (!_LOG_SYNC_DETAILSReady) { _LOG_SYNC_DETAILSContent = SGetField<int>(LocalBridgeClazz, "LOG_SYNC_DETAILS"); _LOG_SYNC_DETAILSReady = true; } return _LOG_SYNC_DETAILSContent; } }
         private static int _LOG_SYNC_DETAILSContent = default;
         private static bool _LOG_SYNC_DETAILSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onPerformSync(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.ContentProviderClient,android.content.SyncResult)"/>
@@ -128,7 +128,7 @@ namespace Android.Content
         /// <param name="arg4"><see cref="Android.Content.SyncResult"/></param>
         public void OnPerformSync(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.ContentProviderClient arg3, Android.Content.SyncResult arg4)
         {
-            IExecute("onPerformSync", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onPerformSync", "(Landroid/accounts/Account;Landroid/os/Bundle;Ljava/lang/String;Landroid/content/ContentProviderClient;Landroid/content/SyncResult;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#getContext()"/>
@@ -163,7 +163,7 @@ namespace Android.Content
         /// <param name="arg3"><see cref="Android.Content.SyncResult"/></param>
         public void OnSecurityException(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Content.SyncResult arg3)
         {
-            IExecute("onSecurityException", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onSecurityException", "(Landroid/accounts/Account;Landroid/os/Bundle;Ljava/lang/String;Landroid/content/SyncResult;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html#onSyncCanceled()"/>
@@ -180,13 +180,13 @@ namespace Android.Content
         {
             IExecuteWithSignature("onSyncCanceled", "(Ljava/lang/Thread;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

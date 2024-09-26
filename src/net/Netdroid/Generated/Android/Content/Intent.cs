@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Intent(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region FilterComparison declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FilterComparison(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ShortcutIconResource(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -209,9 +209,9 @@ namespace Android.Content
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.Intent"/> to <see cref="Android.Os.Parcelable"/>
@@ -221,9 +221,9 @@ namespace Android.Content
         /// Converter from <see cref="Android.Content.Intent"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Content.Intent t) => t.Cast<Java.Lang.Cloneable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#CREATOR"/>
@@ -2307,9 +2307,9 @@ namespace Android.Content
         public static Java.Lang.String METADATA_DOCK_HOME { get { if (!_METADATA_DOCK_HOMEReady) { _METADATA_DOCK_HOMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "METADATA_DOCK_HOME"); _METADATA_DOCK_HOMEReady = true; } return _METADATA_DOCK_HOMEContent; } }
         private static Java.Lang.String _METADATA_DOCK_HOMEContent = default;
         private static bool _METADATA_DOCK_HOMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#createChooser(android.content.Intent,java.lang.CharSequence,android.content.IntentSender)"/>
@@ -2320,7 +2320,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public static Android.Content.Intent CreateChooser(Android.Content.Intent arg0, Java.Lang.CharSequence arg1, Android.Content.IntentSender arg2)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "createChooser", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "createChooser", "(Landroid/content/Intent;Ljava/lang/CharSequence;Landroid/content/IntentSender;)Landroid/content/Intent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#createChooser(android.content.Intent,java.lang.CharSequence)"/>
@@ -2330,7 +2330,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public static Android.Content.Intent CreateChooser(Android.Content.Intent arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "createChooser", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "createChooser", "(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getIntent(java.lang.String)"/>
@@ -2370,7 +2370,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public static Android.Content.Intent MakeMainSelectorActivity(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "makeMainSelectorActivity", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "makeMainSelectorActivity", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#makeRestartActivityTask(android.content.ComponentName)"/>
@@ -2392,7 +2392,7 @@ namespace Android.Content
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public static Android.Content.Intent ParseIntent(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1, Android.Util.AttributeSet arg2)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "parseIntent", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "parseIntent", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/content/Intent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#parseUri(java.lang.String,int)"/>
@@ -2403,7 +2403,7 @@ namespace Android.Content
         /// <exception cref="Java.Net.URISyntaxException"/>
         public static Android.Content.Intent ParseUri(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "parseUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "parseUri", "(Ljava/lang/String;I)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#normalizeMimeType(java.lang.String)"/>
@@ -2414,9 +2414,9 @@ namespace Android.Content
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "normalizeMimeType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayListExtra(java.lang.String)"/>
@@ -2449,7 +2449,7 @@ namespace Android.Content
         /// <returns><typeparamref name="T"/></returns>
         public T GetSerializableExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1) where T : Java.Io.ISerializable, new()
         {
-            return IExecute<T>("getSerializableExtra", arg0, arg1);
+            return IExecuteWithSignature<T>("getSerializableExtra", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/io/Serializable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayListExtra(java.lang.String,java.lang.Class)"/>
@@ -2460,7 +2460,7 @@ namespace Android.Content
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
         public Java.Util.ArrayList<T> GetParcelableArrayListExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Util.ArrayList<T>>("getParcelableArrayListExtra", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.ArrayList<T>>("getParcelableArrayListExtra", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/ArrayList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableExtra(java.lang.String,java.lang.Class)"/>
@@ -2471,7 +2471,7 @@ namespace Android.Content
         /// <returns><typeparamref name="T"/></returns>
         public T GetParcelableExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("getParcelableExtra", arg0, arg1);
+            return IExecuteWithSignature<T>("getParcelableExtra", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getParcelableArrayExtra(java.lang.String,java.lang.Class)"/>
@@ -2482,7 +2482,7 @@ namespace Android.Content
         /// <returns><typeparamref name="T"/></returns>
         public T[] GetParcelableArrayExtra<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecuteArray<T>("getParcelableArrayExtra", arg0, arg1);
+            return IExecuteWithSignatureArray<T>("getParcelableArrayExtra", "(Ljava/lang/String;Ljava/lang/Class;)[Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getClipData()"/>
@@ -2551,7 +2551,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutCharSequenceArrayListExtra(Java.Lang.String arg0, Java.Util.ArrayList<Java.Lang.CharSequence> arg1)
         {
-            return IExecute<Android.Content.Intent>("putCharSequenceArrayListExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putCharSequenceArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,android.os.Bundle)"/>
@@ -2561,7 +2561,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,android.os.Parcelable)"/>
@@ -2571,7 +2571,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Android.Os.Parcelable arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,android.os.Parcelable[])"/>
@@ -2581,7 +2581,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Android.Os.Parcelable[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,boolean)"/>
@@ -2591,7 +2591,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;Z)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,boolean[])"/>
@@ -2601,7 +2601,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, bool[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[Z)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,byte)"/>
@@ -2611,7 +2611,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, byte arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;B)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,byte[])"/>
@@ -2621,7 +2621,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, byte[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[B)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,char)"/>
@@ -2631,7 +2631,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, char arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;C)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,char[])"/>
@@ -2641,7 +2641,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, char[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[C)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,double)"/>
@@ -2651,7 +2651,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;D)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,double[])"/>
@@ -2661,7 +2661,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, double[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[D)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,float)"/>
@@ -2671,7 +2671,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, float arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;F)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,float[])"/>
@@ -2681,7 +2681,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, float[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[F)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,int)"/>
@@ -2691,7 +2691,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;I)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,int[])"/>
@@ -2701,7 +2701,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[I)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,java.io.Serializable)"/>
@@ -2711,7 +2711,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Java.Io.Serializable arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,java.lang.CharSequence)"/>
@@ -2721,7 +2721,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,java.lang.CharSequence[])"/>
@@ -2731,7 +2731,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Java.Lang.CharSequence[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[Ljava/lang/CharSequence;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,java.lang.String)"/>
@@ -2741,7 +2741,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,java.lang.String[])"/>
@@ -2751,7 +2751,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,long)"/>
@@ -2761,7 +2761,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;J)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,long[])"/>
@@ -2771,7 +2771,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, long[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[J)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,short)"/>
@@ -2781,7 +2781,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, short arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;S)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String,short[])"/>
@@ -2791,7 +2791,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutExtra(Java.Lang.String arg0, short[] arg1)
         {
-            return IExecute<Android.Content.Intent>("putExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putExtra", "(Ljava/lang/String;[S)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putExtras(android.content.Intent)"/>
@@ -2819,7 +2819,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutIntegerArrayListExtra(Java.Lang.String arg0, Java.Util.ArrayList<Java.Lang.Integer> arg1)
         {
-            return IExecute<Android.Content.Intent>("putIntegerArrayListExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putIntegerArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putParcelableArrayListExtra(java.lang.String,java.util.ArrayList)"/>
@@ -2830,7 +2830,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutParcelableArrayListExtra<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Java.Util.ArrayList<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable : Android.Os.Parcelable
         {
-            return IExecute<Android.Content.Intent>("putParcelableArrayListExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putParcelableArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#putStringArrayListExtra(java.lang.String,java.util.ArrayList)"/>
@@ -2840,7 +2840,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent PutStringArrayListExtra(Java.Lang.String arg0, Java.Util.ArrayList<Java.Lang.String> arg1)
         {
-            return IExecute<Android.Content.Intent>("putStringArrayListExtra", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("putStringArrayListExtra", "(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#replaceExtras(android.content.Intent)"/>
@@ -2877,7 +2877,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent SetClass(Android.Content.Context arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Android.Content.Intent>("setClass", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("setClass", "(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#setClassName(android.content.Context,java.lang.String)"/>
@@ -2887,7 +2887,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent SetClassName(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Intent>("setClassName", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("setClassName", "(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#setClassName(java.lang.String,java.lang.String)"/>
@@ -2897,7 +2897,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent SetClassName(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Intent>("setClassName", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("setClassName", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#setComponent(android.content.ComponentName)"/>
@@ -2934,7 +2934,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent SetDataAndType(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Intent>("setDataAndType", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("setDataAndType", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#setDataAndTypeAndNormalize(android.net.Uri,java.lang.String)"/>
@@ -2944,7 +2944,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent SetDataAndTypeAndNormalize(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Intent>("setDataAndTypeAndNormalize", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("setDataAndTypeAndNormalize", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#setFlags(int)"/>
@@ -2999,7 +2999,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Pm.ActivityInfo"/></returns>
         public Android.Content.Pm.ActivityInfo ResolveActivityInfo(Android.Content.Pm.PackageManager arg0, int arg1)
         {
-            return IExecute<Android.Content.Pm.ActivityInfo>("resolveActivityInfo", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("resolveActivityInfo", "(Landroid/content/pm/PackageManager;I)Landroid/content/pm/ActivityInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getSourceBounds()"/>
@@ -3061,7 +3061,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool GetBooleanExtra(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("getBooleanExtra", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBooleanExtra", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#hasCategory(java.lang.String)"/>
@@ -3114,7 +3114,7 @@ namespace Android.Content
         /// <returns><see cref="byte"/></returns>
         public byte GetByteExtra(Java.Lang.String arg0, byte arg1)
         {
-            return IExecute<byte>("getByteExtra", arg0, arg1);
+            return IExecuteWithSignature<byte>("getByteExtra", "(Ljava/lang/String;B)B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getByteArrayExtra(java.lang.String)"/>
@@ -3133,7 +3133,7 @@ namespace Android.Content
         /// <returns><see cref="char"/></returns>
         public char GetCharExtra(Java.Lang.String arg0, char arg1)
         {
-            return IExecute<char>("getCharExtra", arg0, arg1);
+            return IExecuteWithSignature<char>("getCharExtra", "(Ljava/lang/String;C)C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getCharArrayExtra(java.lang.String)"/>
@@ -3152,7 +3152,7 @@ namespace Android.Content
         /// <returns><see cref="double"/></returns>
         public double GetDoubleExtra(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<double>("getDoubleExtra", arg0, arg1);
+            return IExecuteWithSignature<double>("getDoubleExtra", "(Ljava/lang/String;D)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getDoubleArrayExtra(java.lang.String)"/>
@@ -3171,7 +3171,7 @@ namespace Android.Content
         /// <returns><see cref="float"/></returns>
         public float GetFloatExtra(Java.Lang.String arg0, float arg1)
         {
-            return IExecute<float>("getFloatExtra", arg0, arg1);
+            return IExecuteWithSignature<float>("getFloatExtra", "(Ljava/lang/String;F)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getFloatArrayExtra(java.lang.String)"/>
@@ -3198,7 +3198,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int FillIn(Android.Content.Intent arg0, int arg1)
         {
-            return IExecute<int>("fillIn", arg0, arg1);
+            return IExecuteWithSignature<int>("fillIn", "(Landroid/content/Intent;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#filterHashCode()"/>
@@ -3224,7 +3224,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int GetIntExtra(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getIntExtra", arg0, arg1);
+            return IExecuteWithSignature<int>("getIntExtra", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getIntArrayExtra(java.lang.String)"/>
@@ -3417,7 +3417,7 @@ namespace Android.Content
         /// <returns><see cref="long"/></returns>
         public long GetLongExtra(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getLongExtra", arg0, arg1);
+            return IExecuteWithSignature<long>("getLongExtra", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getLongArrayExtra(java.lang.String)"/>
@@ -3436,7 +3436,7 @@ namespace Android.Content
         /// <returns><see cref="short"/></returns>
         public short GetShortExtra(Java.Lang.String arg0, short arg1)
         {
-            return IExecute<short>("getShortExtra", arg0, arg1);
+            return IExecuteWithSignature<short>("getShortExtra", "(Ljava/lang/String;S)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getShortArrayExtra(java.lang.String)"/>
@@ -3518,11 +3518,11 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region FilterComparison implementation
         public partial class FilterComparison
@@ -3536,21 +3536,21 @@ namespace Android.Content
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/Intent.FilterComparison.html#getIntent()"/>
@@ -3560,13 +3560,13 @@ namespace Android.Content
             {
                 return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3575,13 +3575,13 @@ namespace Android.Content
         public partial class ShortcutIconResource
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/Intent.ShortcutIconResource.html#packageName"/>
@@ -3597,9 +3597,9 @@ namespace Android.Content
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/Intent.ShortcutIconResource.html#fromContext(android.content.Context,int)"/>
@@ -3609,11 +3609,11 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.Intent.ShortcutIconResource"/></returns>
             public static Android.Content.Intent.ShortcutIconResource FromContext(Android.Content.Context arg0, int arg1)
             {
-                return SExecute<Android.Content.Intent.ShortcutIconResource>(LocalBridgeClazz, "fromContext", arg0, arg1);
+                return SExecuteWithSignature<Android.Content.Intent.ShortcutIconResource>(LocalBridgeClazz, "fromContext", "(Landroid/content/Context;I)Landroid/content/Intent$ShortcutIconResource;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/Intent.ShortcutIconResource.html#describeContents()"/>
@@ -3630,22 +3630,22 @@ namespace Android.Content
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

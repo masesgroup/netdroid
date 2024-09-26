@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Parcel(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Os
     public partial class Parcel
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#STRING_CREATOR"/>
@@ -88,9 +88,9 @@ namespace Android.Os
         public static Android.Os.Parcelable.Creator STRING_CREATOR { get { if (!_STRING_CREATORReady) { _STRING_CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "STRING_CREATOR"); _STRING_CREATORReady = true; } return _STRING_CREATORContent; } }
         private static Android.Os.Parcelable.Creator _STRING_CREATORContent = default;
         private static bool _STRING_CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#obtain()"/>
@@ -109,9 +109,9 @@ namespace Android.Os
         {
             return SExecuteWithSignature<Android.Os.Parcel>(LocalBridgeClazz, "obtain", "(Landroid/os/IBinder;)Landroid/os/Parcel;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readHashMap(java.lang.ClassLoader,java.lang.Class,java.lang.Class)"/>
@@ -124,7 +124,7 @@ namespace Android.Os
         /// <returns><see cref="Java.Util.HashMap"/></returns>
         public Java.Util.HashMap<K, V> ReadHashMap<K, V>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
-            return IExecute<Java.Util.HashMap<K, V>>("readHashMap", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.HashMap<K, V>>("readHashMap", "(Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/HashMap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readMap(java.util.Map,java.lang.ClassLoader,java.lang.Class,java.lang.Class)"/>
@@ -139,7 +139,7 @@ namespace Android.Os
         /// <typeparam name="V"></typeparam>
         public void ReadMap<Arg0objectSuperK, K, Arg0objectSuperV, V>(Java.Util.Map<Arg0objectSuperK, Arg0objectSuperV> arg0, Java.Lang.ClassLoader arg1, Java.Lang.Class arg2, Java.Lang.Class arg3) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
-            IExecute("readMap", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("readMap", "(Ljava/util/Map;Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/lang/Class;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createInterfaceArrayList(java.util.function.Function)"/>
@@ -160,7 +160,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T[] CreateInterfaceArray<T>(Java.Util.Function.IntFunction<T[]> arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
         {
-            return IExecuteArray<T>("createInterfaceArray", arg0, arg1);
+            return IExecuteWithSignatureArray<T>("createInterfaceArray", "(Ljava/util/function/IntFunction;Ljava/util/function/Function;)[Landroid/os/IInterface;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readInterfaceArray(android.os.IInterface[],java.util.function.Function)"/>
@@ -170,7 +170,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
         public void ReadInterfaceArray<T>(T[] arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
         {
-            IExecute("readInterfaceArray", arg0, arg1);
+            IExecuteWithSignature("readInterfaceArray", "([Landroid/os/IInterface;Ljava/util/function/Function;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readInterfaceList(java.util.List,java.util.function.Function)"/>
@@ -180,7 +180,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IIInterface"/></typeparam>
         public void ReadInterfaceList<T>(Java.Util.List<T> arg0, Java.Util.Function.Function<Android.Os.IBinder, T> arg1) where T : Android.Os.IIInterface, new()
         {
-            IExecute("readInterfaceList", arg0, arg1);
+            IExecuteWithSignature("readInterfaceList", "(Ljava/util/List;Ljava/util/function/Function;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeInterfaceArray(android.os.IInterface[])"/>
@@ -230,7 +230,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public Java.Util.List<T> ReadParcelableList<T>(Java.Util.List<T> arg0, Java.Lang.ClassLoader arg1) where T : Android.Os.IParcelable, new()
         {
-            return IExecute<Java.Util.List<T>>("readParcelableList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<T>>("readParcelableList", "(Ljava/util/List;Ljava/lang/ClassLoader;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelable(java.lang.ClassLoader)"/>
@@ -251,7 +251,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         public void WriteParcelableArray<T>(T[] arg0, int arg1) where T : Android.Os.IParcelable, new()
         {
-            IExecute("writeParcelableArray", arg0, arg1);
+            IExecuteWithSignature("writeParcelableArray", "([Landroid/os/Parcelable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeParcelableList(java.util.List,int)"/>
@@ -261,7 +261,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         public void WriteParcelableList<T>(Java.Util.List<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
         {
-            IExecute("writeParcelableList", arg0, arg1);
+            IExecuteWithSignature("writeParcelableList", "(Ljava/util/List;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedArray(android.os.Parcelable[],int)"/>
@@ -271,7 +271,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         public void WriteTypedArray<T>(T[] arg0, int arg1) where T : Android.Os.IParcelable, new()
         {
-            IExecute("writeTypedArray", arg0, arg1);
+            IExecuteWithSignature("writeTypedArray", "([Landroid/os/Parcelable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedArrayMap(android.util.ArrayMap,int)"/>
@@ -281,7 +281,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         public void WriteTypedArrayMap<T>(Android.Util.ArrayMap<Java.Lang.String, T> arg0, int arg1) where T : Android.Os.IParcelable, new()
         {
-            IExecute("writeTypedArrayMap", arg0, arg1);
+            IExecuteWithSignature("writeTypedArrayMap", "(Landroid/util/ArrayMap;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedList(java.util.List,int)"/>
@@ -291,7 +291,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         public void WriteTypedList<T>(Java.Util.List<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
         {
-            IExecute("writeTypedList", arg0, arg1);
+            IExecuteWithSignature("writeTypedList", "(Ljava/util/List;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedList(java.util.List)"/>
@@ -310,7 +310,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         public void WriteTypedObject<T>(T arg0, int arg1) where T : Android.Os.IParcelable, new()
         {
-            IExecute("writeTypedObject", arg0, arg1);
+            IExecuteWithSignature("writeTypedObject", "(Landroid/os/Parcelable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeTypedSparseArray(android.util.SparseArray,int)"/>
@@ -320,7 +320,7 @@ namespace Android.Os
         /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
         public void WriteTypedSparseArray<T>(Android.Util.SparseArray<T> arg0, int arg1) where T : Android.Os.IParcelable, new()
         {
-            IExecute("writeTypedSparseArray", arg0, arg1);
+            IExecuteWithSignature("writeTypedSparseArray", "(Landroid/util/SparseArray;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createFixedArray(java.lang.Class,java.util.function.Function,int[])"/>
@@ -333,7 +333,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T CreateFixedArray<T, S>(Java.Lang.Class arg0, Java.Util.Function.Function<Android.Os.IBinder, S> arg1, params int[] arg2) where S : Android.Os.IIInterface, new()
         {
-            if (arg2.Length == 0) return IExecute<T>("createFixedArray", arg0, arg1); else return IExecute<T>("createFixedArray", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<T>("createFixedArray", "(Ljava/lang/Class;Ljava/util/function/Function;[I)Ljava/lang/Object;", arg0, arg1); else return IExecuteWithSignature<T>("createFixedArray", "(Ljava/lang/Class;Ljava/util/function/Function;[I)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFixedArray(java.lang.Object,java.util.function.Function)"/>
@@ -344,7 +344,7 @@ namespace Android.Os
         /// <typeparam name="S"><see cref="Android.Os.IIInterface"/></typeparam>
         public void ReadFixedArray<T, S>(T arg0, Java.Util.Function.Function<Android.Os.IBinder, S> arg1) where S : Android.Os.IIInterface, new()
         {
-            IExecute("readFixedArray", arg0, arg1);
+            IExecuteWithSignature("readFixedArray", "(Ljava/lang/Object;Ljava/util/function/Function;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createFixedArray(java.lang.Class,android.os.Parcelable.Creator,int[])"/>
@@ -357,7 +357,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T CreateFixedArray<T, S>(Java.Lang.Class arg0, Android.Os.Parcelable.Creator<S> arg1, params int[] arg2) where S : Android.Os.IParcelable, new()
         {
-            if (arg2.Length == 0) return IExecute<T>("createFixedArray", arg0, arg1); else return IExecute<T>("createFixedArray", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<T>("createFixedArray", "(Ljava/lang/Class;Landroid/os/Parcelable$Creator;[I)Ljava/lang/Object;", arg0, arg1); else return IExecuteWithSignature<T>("createFixedArray", "(Ljava/lang/Class;Landroid/os/Parcelable$Creator;[I)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFixedArray(java.lang.Object,android.os.Parcelable.Creator)"/>
@@ -368,7 +368,7 @@ namespace Android.Os
         /// <typeparam name="S"><see cref="Android.Os.IParcelable"/></typeparam>
         public void ReadFixedArray<T, S>(T arg0, Android.Os.Parcelable.Creator<S> arg1) where S : Android.Os.IParcelable, new()
         {
-            IExecute("readFixedArray", arg0, arg1);
+            IExecuteWithSignature("readFixedArray", "(Ljava/lang/Object;Landroid/os/Parcelable$Creator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableCreator(java.lang.ClassLoader,java.lang.Class)"/>
@@ -379,7 +379,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Parcelable.Creator"/></returns>
         public Android.Os.Parcelable.Creator<T> ReadParcelableCreator<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Android.Os.Parcelable.Creator<T>>("readParcelableCreator", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Parcelable.Creator<T>>("readParcelableCreator", "(Ljava/lang/ClassLoader;Ljava/lang/Class;)Landroid/os/Parcelable$Creator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readSparseArray(java.lang.ClassLoader,java.lang.Class)"/>
@@ -390,7 +390,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Util.SparseArray"/></returns>
         public Android.Util.SparseArray<T> ReadSparseArray<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Android.Util.SparseArray<T>>("readSparseArray", arg0, arg1);
+            return IExecuteWithSignature<Android.Util.SparseArray<T>>("readSparseArray", "(Ljava/lang/ClassLoader;Ljava/lang/Class;)Landroid/util/SparseArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readSparseArray(java.lang.ClassLoader)"/>
@@ -422,7 +422,7 @@ namespace Android.Os
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
         public Java.Util.ArrayList<T> ReadArrayList<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Util.ArrayList<T>>("readArrayList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.ArrayList<T>>("readArrayList", "(Ljava/lang/ClassLoader;Ljava/lang/Class;)Ljava/util/ArrayList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableList(java.util.List,java.lang.ClassLoader,java.lang.Class)"/>
@@ -434,7 +434,7 @@ namespace Android.Os
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<T> ReadParcelableList<T>(Java.Util.List<T> arg0, Java.Lang.ClassLoader arg1, Java.Lang.Class arg2)
         {
-            return IExecute<Java.Util.List<T>>("readParcelableList", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<T>>("readParcelableList", "(Ljava/util/List;Ljava/lang/ClassLoader;Ljava/lang/Class;)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createFixedArray(java.lang.Class,int[])"/>
@@ -445,7 +445,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T CreateFixedArray<T>(Java.Lang.Class arg0, params int[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<T>("createFixedArray", arg0); else return IExecute<T>("createFixedArray", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<T>("createFixedArray", "(Ljava/lang/Class;[I)Ljava/lang/Object;", arg0); else return IExecuteWithSignature<T>("createFixedArray", "(Ljava/lang/Class;[I)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelable(java.lang.ClassLoader,java.lang.Class)"/>
@@ -456,7 +456,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T ReadParcelable<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("readParcelable", arg0, arg1);
+            return IExecuteWithSignature<T>("readParcelable", "(Ljava/lang/ClassLoader;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readSerializable(java.lang.ClassLoader,java.lang.Class)"/>
@@ -467,7 +467,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T ReadSerializable<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("readSerializable", arg0, arg1);
+            return IExecuteWithSignature<T>("readSerializable", "(Ljava/lang/ClassLoader;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readTypedObject(android.os.Parcelable.Creator)"/>
@@ -498,7 +498,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T[] ReadArray<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
-            return IExecuteArray<T>("readArray", arg0, arg1);
+            return IExecuteWithSignatureArray<T>("readArray", "(Ljava/lang/ClassLoader;Ljava/lang/Class;)[Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableArray(java.lang.ClassLoader,java.lang.Class)"/>
@@ -509,7 +509,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T[] ReadParcelableArray<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
-            return IExecuteArray<T>("readParcelableArray", arg0, arg1);
+            return IExecuteWithSignatureArray<T>("readParcelableArray", "(Ljava/lang/ClassLoader;Ljava/lang/Class;)[Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFixedArray(java.lang.Object)"/>
@@ -530,7 +530,7 @@ namespace Android.Os
         /// <typeparam name="T"></typeparam>
         public void ReadList<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, Java.Lang.ClassLoader arg1, Java.Lang.Class arg2) where Arg0objectSuperT : T
         {
-            IExecute("readList", arg0, arg1, arg2);
+            IExecuteWithSignature("readList", "(Ljava/util/List;Ljava/lang/ClassLoader;Ljava/lang/Class;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readTypedArray(java.lang.Object[],android.os.Parcelable.Creator)"/>
@@ -540,7 +540,7 @@ namespace Android.Os
         /// <typeparam name="T"></typeparam>
         public void ReadTypedArray<T>(T[] arg0, Android.Os.Parcelable.Creator<T> arg1)
         {
-            IExecute("readTypedArray", arg0, arg1);
+            IExecuteWithSignature("readTypedArray", "([Ljava/lang/Object;Landroid/os/Parcelable$Creator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readTypedList(java.util.List,android.os.Parcelable.Creator)"/>
@@ -550,7 +550,7 @@ namespace Android.Os
         /// <typeparam name="T"></typeparam>
         public void ReadTypedList<T>(Java.Util.List<T> arg0, Android.Os.Parcelable.Creator<T> arg1)
         {
-            IExecute("readTypedList", arg0, arg1);
+            IExecuteWithSignature("readTypedList", "(Ljava/util/List;Landroid/os/Parcelable$Creator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeFixedArray(java.lang.Object,int,int[])"/>
@@ -561,7 +561,7 @@ namespace Android.Os
         /// <typeparam name="T"></typeparam>
         public void WriteFixedArray<T>(T arg0, int arg1, params int[] arg2)
         {
-            if (arg2.Length == 0) IExecute("writeFixedArray", arg0, arg1); else IExecute("writeFixedArray", arg0, arg1, arg2);
+            if (arg2.Length == 0) IExecuteWithSignature("writeFixedArray", "(Ljava/lang/Object;I[I)V", arg0, arg1); else IExecuteWithSignature("writeFixedArray", "(Ljava/lang/Object;I[I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeSparseArray(android.util.SparseArray)"/>
@@ -690,7 +690,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool HasFileDescriptors(int arg0, int arg1)
         {
-            return IExecute<bool>("hasFileDescriptors", arg0, arg1);
+            return IExecuteWithSignature<bool>("hasFileDescriptors", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readBoolean()"/>
@@ -932,7 +932,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="int"/></param>
         public void AppendFrom(Android.Os.Parcel arg0, int arg1, int arg2)
         {
-            IExecute("appendFrom", arg0, arg1, arg2);
+            IExecuteWithSignature("appendFrom", "(Landroid/os/Parcel;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#enforceInterface(java.lang.String)"/>
@@ -1011,7 +1011,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void ReadException(int arg0, Java.Lang.String arg1)
         {
-            IExecute("readException", arg0, arg1);
+            IExecuteWithSignature("readException", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFloatArray(float[])"/>
@@ -1037,7 +1037,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void ReadList(Java.Util.List arg0, Java.Lang.ClassLoader arg1)
         {
-            IExecute("readList", arg0, arg1);
+            IExecuteWithSignature("readList", "(Ljava/util/List;Ljava/lang/ClassLoader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readLongArray(long[])"/>
@@ -1055,7 +1055,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void ReadMap(Java.Util.Map arg0, Java.Lang.ClassLoader arg1)
         {
-            IExecute("readMap", arg0, arg1);
+            IExecuteWithSignature("readMap", "(Ljava/util/Map;Ljava/lang/ClassLoader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readStringArray(java.lang.String[])"/>
@@ -1119,7 +1119,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="int"/></param>
         public void Unmarshall(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("unmarshall", arg0, arg1, arg2);
+            IExecuteWithSignature("unmarshall", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeArray(java.lang.Object[])"/>
@@ -1153,7 +1153,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="int"/></param>
         public void WriteBlob(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("writeBlob", arg0, arg1, arg2);
+            IExecuteWithSignature("writeBlob", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeBlob(byte[])"/>
@@ -1203,7 +1203,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="int"/></param>
         public void WriteByteArray(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("writeByteArray", arg0, arg1, arg2);
+            IExecuteWithSignature("writeByteArray", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeByteArray(byte[])"/>
@@ -1339,7 +1339,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteParcelable(Android.Os.Parcelable arg0, int arg1)
         {
-            IExecute("writeParcelable", arg0, arg1);
+            IExecuteWithSignature("writeParcelable", "(Landroid/os/Parcelable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeParcelableCreator(android.os.Parcelable)"/>
@@ -1437,13 +1437,13 @@ namespace Android.Os
         {
             IExecuteWithSignature("writeValue", "(Ljava/lang/Object;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

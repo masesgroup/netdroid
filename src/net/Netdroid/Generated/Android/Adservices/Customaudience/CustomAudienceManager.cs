@@ -40,10 +40,10 @@ namespace Android.Adservices.Customaudience
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CustomAudienceManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Customaudience
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Adservices.Customaudience
     public partial class CustomAudienceManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#get(android.content.Context)"/>
@@ -93,11 +93,11 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Customaudience.CustomAudienceManager"/></returns>
         public static Android.Adservices.Customaudience.CustomAudienceManager Get(Android.Content.Context arg0)
         {
-            return SExecute<Android.Adservices.Customaudience.CustomAudienceManager>(LocalBridgeClazz, "get", arg0);
+            return SExecuteWithSignature<Android.Adservices.Customaudience.CustomAudienceManager>(LocalBridgeClazz, "get", "(Landroid/content/Context;)Landroid/adservices/customaudience/CustomAudienceManager;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#getTestCustomAudienceManager()"/>
@@ -105,7 +105,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Customaudience.TestCustomAudienceManager"/></returns>
         public Android.Adservices.Customaudience.TestCustomAudienceManager GetTestCustomAudienceManager()
         {
-            return IExecute<Android.Adservices.Customaudience.TestCustomAudienceManager>("getTestCustomAudienceManager");
+            return IExecuteWithSignature<Android.Adservices.Customaudience.TestCustomAudienceManager>("getTestCustomAudienceManager", "()Landroid/adservices/customaudience/TestCustomAudienceManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#fetchAndJoinCustomAudience(android.adservices.customaudience.FetchAndJoinCustomAudienceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -115,7 +115,7 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void FetchAndJoinCustomAudience(Android.Adservices.Customaudience.FetchAndJoinCustomAudienceRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("fetchAndJoinCustomAudience", arg0, arg1, arg2);
+            IExecuteWithSignature("fetchAndJoinCustomAudience", "(Landroid/adservices/customaudience/FetchAndJoinCustomAudienceRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#joinCustomAudience(android.adservices.customaudience.JoinCustomAudienceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -125,7 +125,7 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void JoinCustomAudience(Android.Adservices.Customaudience.JoinCustomAudienceRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("joinCustomAudience", arg0, arg1, arg2);
+            IExecuteWithSignature("joinCustomAudience", "(Landroid/adservices/customaudience/JoinCustomAudienceRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#leaveCustomAudience(android.adservices.customaudience.LeaveCustomAudienceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -135,7 +135,7 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void LeaveCustomAudience(Android.Adservices.Customaudience.LeaveCustomAudienceRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("leaveCustomAudience", arg0, arg1, arg2);
+            IExecuteWithSignature("leaveCustomAudience", "(Landroid/adservices/customaudience/LeaveCustomAudienceRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#scheduleCustomAudienceUpdate(android.adservices.customaudience.ScheduleCustomAudienceUpdateRequest,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -145,15 +145,15 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void ScheduleCustomAudienceUpdate(Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("scheduleCustomAudienceUpdate", arg0, arg1, arg2);
+            IExecuteWithSignature("scheduleCustomAudienceUpdate", "(Landroid/adservices/customaudience/ScheduleCustomAudienceUpdateRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Formatter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BigDecimalLayoutForm declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BigDecimalLayoutForm(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -277,9 +277,9 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Formatter"/> to <see cref="Java.Io.Closeable"/>
@@ -289,17 +289,17 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Formatter"/> to <see cref="Java.Io.Flushable"/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Util.Formatter t) => t.Cast<Java.Io.Flushable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Formatter.html#ioException()"/>
@@ -325,7 +325,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public Java.Util.Formatter Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Util.Formatter>("format", arg0); else return IExecute<Java.Util.Formatter>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0); else return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -336,7 +336,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public Java.Util.Formatter Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Util.Formatter>("format", arg0, arg1); else return IExecute<Java.Util.Formatter>("format", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0, arg1); else return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Formatter.html#locale()"/>
@@ -360,21 +360,21 @@ namespace Java.Util
         {
             IExecuteWithSignature("flush", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BigDecimalLayoutForm implementation
         public partial class BigDecimalLayoutForm
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Formatter.BigDecimalLayoutForm.html#DECIMAL_FLOAT"/>
@@ -388,9 +388,9 @@ namespace Java.Util
             public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC { get { if (!_SCIENTIFICReady) { _SCIENTIFICContent = SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "SCIENTIFIC"); _SCIENTIFICReady = true; } return _SCIENTIFICContent; } }
             private static Java.Util.Formatter.BigDecimalLayoutForm _SCIENTIFICContent = default;
             private static bool _SCIENTIFICReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String)"/>
@@ -409,24 +409,24 @@ namespace Java.Util
             {
                 return SExecuteWithSignatureArray<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "values", "()[Ljava/util/Formatter$BigDecimalLayoutForm;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

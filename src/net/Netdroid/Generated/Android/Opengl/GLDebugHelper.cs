@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLDebugHelper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Opengl
     public partial class GLDebugHelper
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLDebugHelper.html#CONFIG_CHECK_GL_ERROR"/>
@@ -106,9 +106,9 @@ namespace Android.Opengl
         public static int ERROR_WRONG_THREAD { get { if (!_ERROR_WRONG_THREADReady) { _ERROR_WRONG_THREADContent = SGetField<int>(LocalBridgeClazz, "ERROR_WRONG_THREAD"); _ERROR_WRONG_THREADReady = true; } return _ERROR_WRONG_THREADContent; } }
         private static int _ERROR_WRONG_THREADContent = default;
         private static bool _ERROR_WRONG_THREADReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLDebugHelper.html#wrap(javax.microedition.khronos.egl.EGL,int,java.io.Writer)"/>
@@ -119,7 +119,7 @@ namespace Android.Opengl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGL"/></returns>
         public static Javax.Microedition.Khronos.Egl.EGL Wrap(Javax.Microedition.Khronos.Egl.EGL arg0, int arg1, Java.Io.Writer arg2)
         {
-            return SExecute<Javax.Microedition.Khronos.Egl.EGL>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGL>(LocalBridgeClazz, "wrap", "(Ljavax/microedition/khronos/egl/EGL;ILjava/io/Writer;)Ljavax/microedition/khronos/egl/EGL;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLDebugHelper.html#wrap(javax.microedition.khronos.opengles.GL,int,java.io.Writer)"/>
@@ -130,19 +130,19 @@ namespace Android.Opengl
         /// <returns><see cref="Javax.Microedition.Khronos.Opengles.GL"/></returns>
         public static Javax.Microedition.Khronos.Opengles.GL Wrap(Javax.Microedition.Khronos.Opengles.GL arg0, int arg1, Java.Io.Writer arg2)
         {
-            return SExecute<Javax.Microedition.Khronos.Opengles.GL>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Microedition.Khronos.Opengles.GL>(LocalBridgeClazz, "wrap", "(Ljavax/microedition/khronos/opengles/GL;ILjava/io/Writer;)Ljavax/microedition/khronos/opengles/GL;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

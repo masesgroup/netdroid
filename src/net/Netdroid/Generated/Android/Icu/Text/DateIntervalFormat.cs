@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateIntervalFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region FormattedDateInterval declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FormattedDateInterval(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,17 +119,17 @@ namespace Android.Icu.Text
     public partial class DateIntervalFormat
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getInstance(java.lang.String,android.icu.text.DateIntervalInfo)"/>
@@ -139,7 +139,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DateIntervalFormat"/></returns>
         public static Android.Icu.Text.DateIntervalFormat GetInstance(Java.Lang.String arg0, Android.Icu.Text.DateIntervalInfo arg1)
         {
-            return SExecute<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Landroid/icu/text/DateIntervalInfo;)Landroid/icu/text/DateIntervalFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getInstance(java.lang.String,android.icu.util.ULocale,android.icu.text.DateIntervalInfo)"/>
@@ -150,7 +150,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DateIntervalFormat"/></returns>
         public static Android.Icu.Text.DateIntervalFormat GetInstance(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1, Android.Icu.Text.DateIntervalInfo arg2)
         {
-            return SExecute<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Landroid/icu/util/ULocale;Landroid/icu/text/DateIntervalInfo;)Landroid/icu/text/DateIntervalFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getInstance(java.lang.String,android.icu.util.ULocale)"/>
@@ -160,7 +160,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DateIntervalFormat"/></returns>
         public static Android.Icu.Text.DateIntervalFormat GetInstance(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Landroid/icu/util/ULocale;)Landroid/icu/text/DateIntervalFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getInstance(java.lang.String,java.util.Locale,android.icu.text.DateIntervalInfo)"/>
@@ -171,7 +171,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DateIntervalFormat"/></returns>
         public static Android.Icu.Text.DateIntervalFormat GetInstance(Java.Lang.String arg0, Java.Util.Locale arg1, Android.Icu.Text.DateIntervalInfo arg2)
         {
-            return SExecute<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/util/Locale;Landroid/icu/text/DateIntervalInfo;)Landroid/icu/text/DateIntervalFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getInstance(java.lang.String,java.util.Locale)"/>
@@ -181,7 +181,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DateIntervalFormat"/></returns>
         public static Android.Icu.Text.DateIntervalFormat GetInstance(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateIntervalFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getInstance(java.lang.String)"/>
@@ -192,9 +192,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.DateIntervalFormat>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Landroid/icu/text/DateIntervalFormat;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#formatToValue(android.icu.util.Calendar,android.icu.util.Calendar)"/>
@@ -204,7 +204,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DateIntervalFormat.FormattedDateInterval"/></returns>
         public Android.Icu.Text.DateIntervalFormat.FormattedDateInterval FormatToValue(Android.Icu.Util.Calendar arg0, Android.Icu.Util.Calendar arg1)
         {
-            return IExecute<Android.Icu.Text.DateIntervalFormat.FormattedDateInterval>("formatToValue", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.DateIntervalFormat.FormattedDateInterval>("formatToValue", "(Landroid/icu/util/Calendar;Landroid/icu/util/Calendar;)Landroid/icu/text/DateIntervalFormat$FormattedDateInterval;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#formatToValue(android.icu.util.DateInterval)"/>
@@ -250,7 +250,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Android.Icu.Util.Calendar arg0, Android.Icu.Util.Calendar arg1, Java.Lang.StringBuffer arg2, Java.Text.FieldPosition arg3)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Landroid/icu/util/Calendar;Landroid/icu/util/Calendar;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#format(android.icu.util.DateInterval,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -261,7 +261,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Android.Icu.Util.DateInterval arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Landroid/icu/util/DateInterval;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.html#getDateFormat()"/>
@@ -295,29 +295,29 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region FormattedDateInterval implementation
         public partial class FormattedDateInterval
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.FormattedDateInterval.html#appendTo(java.lang.Appendable)"/>
@@ -363,7 +363,7 @@ namespace Android.Icu.Text
             /// <returns><see cref="Java.Lang.CharSequence"/></returns>
             public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
             {
-                return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalFormat.FormattedDateInterval.html#toCharacterIterator()"/>
@@ -373,20 +373,20 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("toCharacterIterator", "()Ljava/text/AttributedCharacterIterator;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Paint(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Align declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Align(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Cap(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FontMetrics(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FontMetricsInt(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -261,10 +261,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Join(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -285,9 +285,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -306,10 +306,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Style(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -360,13 +360,13 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#ANTI_ALIAS_FLAG"/>
@@ -542,13 +542,13 @@ namespace Android.Graphics
         public static int UNDERLINE_TEXT_FLAG { get { if (!_UNDERLINE_TEXT_FLAGReady) { _UNDERLINE_TEXT_FLAGContent = SGetField<int>(LocalBridgeClazz, "UNDERLINE_TEXT_FLAG"); _UNDERLINE_TEXT_FLAGReady = true; } return _UNDERLINE_TEXT_FLAGContent; } }
         private static int _UNDERLINE_TEXT_FLAGContent = default;
         private static bool _UNDERLINE_TEXT_FLAGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getBlendMode()"/>
@@ -733,7 +733,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool GetFillPath(Android.Graphics.Path arg0, Android.Graphics.Path arg1)
         {
-            return IExecute<bool>("getFillPath", arg0, arg1);
+            return IExecuteWithSignature<bool>("getFillPath", "(Landroid/graphics/Path;Landroid/graphics/Path;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#hasGlyph(java.lang.String)"/>
@@ -879,7 +879,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float GetRunAdvance(char[] arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, int arg6)
         {
-            return IExecute<float>("getRunAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<float>("getRunAdvance", "([CIIIIZI)F", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getRunAdvance(java.lang.CharSequence,int,int,int,int,boolean,int)"/>
@@ -894,7 +894,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float GetRunAdvance(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, int arg6)
         {
-            return IExecute<float>("getRunAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<float>("getRunAdvance", "(Ljava/lang/CharSequence;IIIIZI)F", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getRunCharacterAdvance(char[],int,int,int,int,boolean,int,float[],int)"/>
@@ -911,7 +911,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float GetRunCharacterAdvance(char[] arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, int arg6, float[] arg7, int arg8)
         {
-            return IExecute<float>("getRunCharacterAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return IExecuteWithSignature<float>("getRunCharacterAdvance", "([CIIIIZI[FI)F", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getRunCharacterAdvance(java.lang.CharSequence,int,int,int,int,boolean,int,float[],int)"/>
@@ -928,7 +928,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float GetRunCharacterAdvance(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, int arg6, float[] arg7, int arg8)
         {
-            return IExecute<float>("getRunCharacterAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return IExecuteWithSignature<float>("getRunCharacterAdvance", "(Ljava/lang/CharSequence;IIIIZI[FI)F", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerDx()"/>
@@ -1000,7 +1000,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float GetTextRunAdvances(char[] arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, float[] arg6, int arg7)
         {
-            return IExecute<float>("getTextRunAdvances", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<float>("getTextRunAdvances", "([CIIIIZ[FI)F", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextScaleX()"/>
@@ -1059,7 +1059,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float MeasureText(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<float>("measureText", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("measureText", "([CII)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#measureText(java.lang.CharSequence,int,int)"/>
@@ -1070,7 +1070,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float MeasureText(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return IExecute<float>("measureText", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("measureText", "(Ljava/lang/CharSequence;II)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#measureText(java.lang.String,int,int)"/>
@@ -1081,7 +1081,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float MeasureText(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<float>("measureText", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("measureText", "(Ljava/lang/String;II)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#measureText(java.lang.String)"/>
@@ -1103,7 +1103,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int BreakText(char[] arg0, int arg1, int arg2, float arg3, float[] arg4)
         {
-            return IExecute<int>("breakText", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("breakText", "([CIIF[F)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#breakText(java.lang.CharSequence,int,int,boolean,float,float[])"/>
@@ -1117,7 +1117,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int BreakText(Java.Lang.CharSequence arg0, int arg1, int arg2, bool arg3, float arg4, float[] arg5)
         {
-            return IExecute<int>("breakText", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("breakText", "(Ljava/lang/CharSequence;IIZF[F)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#breakText(java.lang.String,boolean,float,float[])"/>
@@ -1129,7 +1129,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int BreakText(Java.Lang.String arg0, bool arg1, float arg2, float[] arg3)
         {
-            return IExecute<int>("breakText", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("breakText", "(Ljava/lang/String;ZF[F)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getAlpha()"/>
@@ -1193,7 +1193,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetOffsetForAdvance(char[] arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, float arg6)
         {
-            return IExecute<int>("getOffsetForAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<int>("getOffsetForAdvance", "([CIIIIZF)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getOffsetForAdvance(java.lang.CharSequence,int,int,int,int,boolean,float)"/>
@@ -1208,7 +1208,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetOffsetForAdvance(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, float arg6)
         {
-            return IExecute<int>("getOffsetForAdvance", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<int>("getOffsetForAdvance", "(Ljava/lang/CharSequence;IIIIZF)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getShadowLayerColor()"/>
@@ -1238,7 +1238,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetTextRunCursor(char[] arg0, int arg1, int arg2, bool arg3, int arg4, int arg5)
         {
-            return IExecute<int>("getTextRunCursor", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("getTextRunCursor", "([CIIZII)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextRunCursor(java.lang.CharSequence,int,int,boolean,int,int)"/>
@@ -1252,7 +1252,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetTextRunCursor(Java.Lang.CharSequence arg0, int arg1, int arg2, bool arg3, int arg4, int arg5)
         {
-            return IExecute<int>("getTextRunCursor", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("getTextRunCursor", "(Ljava/lang/CharSequence;IIZII)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextWidths(char[],int,int,float[])"/>
@@ -1264,7 +1264,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetTextWidths(char[] arg0, int arg1, int arg2, float[] arg3)
         {
-            return IExecute<int>("getTextWidths", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("getTextWidths", "([CII[F)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextWidths(java.lang.CharSequence,int,int,float[])"/>
@@ -1276,7 +1276,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetTextWidths(Java.Lang.CharSequence arg0, int arg1, int arg2, float[] arg3)
         {
-            return IExecute<int>("getTextWidths", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("getTextWidths", "(Ljava/lang/CharSequence;II[F)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextWidths(java.lang.String,float[])"/>
@@ -1286,7 +1286,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetTextWidths(Java.Lang.String arg0, float[] arg1)
         {
-            return IExecute<int>("getTextWidths", arg0, arg1);
+            return IExecuteWithSignature<int>("getTextWidths", "(Ljava/lang/String;[F)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextWidths(java.lang.String,int,int,float[])"/>
@@ -1298,7 +1298,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetTextWidths(Java.Lang.String arg0, int arg1, int arg2, float[] arg3)
         {
-            return IExecute<int>("getTextWidths", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("getTextWidths", "(Ljava/lang/String;II[F)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontFeatureSettings()"/>
@@ -1367,7 +1367,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
         public void GetFontMetricsInt(char[] arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, Android.Graphics.Paint.FontMetricsInt arg6)
         {
-            IExecute("getFontMetricsInt", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("getFontMetricsInt", "([CIIIIZLandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontMetricsInt(java.lang.CharSequence,int,int,int,int,boolean,android.graphics.Paint.FontMetricsInt)"/>
@@ -1381,7 +1381,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
         public void GetFontMetricsInt(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, Android.Graphics.Paint.FontMetricsInt arg6)
         {
-            IExecute("getFontMetricsInt", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("getFontMetricsInt", "(Ljava/lang/CharSequence;IIIIZLandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontMetricsIntForLocale(android.graphics.Paint.FontMetricsInt)"/>
@@ -1400,7 +1400,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Rect"/></param>
         public void GetTextBounds(char[] arg0, int arg1, int arg2, Android.Graphics.Rect arg3)
         {
-            IExecute("getTextBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getTextBounds", "([CIILandroid/graphics/Rect;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextBounds(java.lang.CharSequence,int,int,android.graphics.Rect)"/>
@@ -1411,7 +1411,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Rect"/></param>
         public void GetTextBounds(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Graphics.Rect arg3)
         {
-            IExecute("getTextBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getTextBounds", "(Ljava/lang/CharSequence;IILandroid/graphics/Rect;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextBounds(java.lang.String,int,int,android.graphics.Rect)"/>
@@ -1422,7 +1422,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Rect"/></param>
         public void GetTextBounds(Java.Lang.String arg0, int arg1, int arg2, Android.Graphics.Rect arg3)
         {
-            IExecute("getTextBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getTextBounds", "(Ljava/lang/String;IILandroid/graphics/Rect;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextPath(char[],int,int,float,float,android.graphics.Path)"/>
@@ -1435,7 +1435,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="Android.Graphics.Path"/></param>
         public void GetTextPath(char[] arg0, int arg1, int arg2, float arg3, float arg4, Android.Graphics.Path arg5)
         {
-            IExecute("getTextPath", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("getTextPath", "([CIIFFLandroid/graphics/Path;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextPath(java.lang.String,int,int,float,float,android.graphics.Path)"/>
@@ -1448,7 +1448,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="Android.Graphics.Path"/></param>
         public void GetTextPath(Java.Lang.String arg0, int arg1, int arg2, float arg3, float arg4, Android.Graphics.Path arg5)
         {
-            IExecute("getTextPath", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("getTextPath", "(Ljava/lang/String;IIFFLandroid/graphics/Path;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#reset()"/>
@@ -1490,7 +1490,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="int"/></param>
         public void SetARGB(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setARGB", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setARGB", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setBlendMode(android.graphics.BlendMode)"/>
@@ -1605,7 +1605,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="int"/></param>
         public void SetShadowLayer(float arg0, float arg1, float arg2, int arg3)
         {
-            IExecute("setShadowLayer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setShadowLayer", "(FFFI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setShadowLayer(float,float,float,long)"/>
@@ -1616,7 +1616,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="long"/></param>
         public void SetShadowLayer(float arg0, float arg1, float arg2, long arg3)
         {
-            IExecute("setShadowLayer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setShadowLayer", "(FFFJ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setStartHyphenEdit(int)"/>
@@ -1746,21 +1746,21 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("setWordSpacing", "(F)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Align implementation
         public partial class Align
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Align.html#CENTER"/>
@@ -1780,9 +1780,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Align RIGHT { get { if (!_RIGHTReady) { _RIGHTContent = SGetField<Android.Graphics.Paint.Align>(LocalBridgeClazz, "RIGHT"); _RIGHTReady = true; } return _RIGHTContent; } }
             private static Android.Graphics.Paint.Align _RIGHTContent = default;
             private static bool _RIGHTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Align.html#valueOf(java.lang.String)"/>
@@ -1801,17 +1801,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Align>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Align;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1820,13 +1820,13 @@ namespace Android.Graphics
         public partial class Cap
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Cap.html#BUTT"/>
@@ -1846,9 +1846,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Cap SQUARE { get { if (!_SQUAREReady) { _SQUAREContent = SGetField<Android.Graphics.Paint.Cap>(LocalBridgeClazz, "SQUARE"); _SQUAREReady = true; } return _SQUAREContent; } }
             private static Android.Graphics.Paint.Cap _SQUAREContent = default;
             private static bool _SQUAREReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Cap.html#valueOf(java.lang.String)"/>
@@ -1867,17 +1867,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Cap>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Cap;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1886,13 +1886,13 @@ namespace Android.Graphics
         public partial class FontMetrics
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetrics.html#ascent"/>
@@ -1914,21 +1914,21 @@ namespace Android.Graphics
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetrics.html#top"/>
             /// </summary>
             public float top { get { return IGetField<float>("top"); } set { ISetField("top", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1937,13 +1937,13 @@ namespace Android.Graphics
         public partial class FontMetricsInt
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#ascent"/>
@@ -1965,13 +1965,13 @@ namespace Android.Graphics
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#top"/>
             /// </summary>
             public int top { get { return IGetField<int>("top"); } set { ISetField("top", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#set(android.graphics.Paint.FontMetrics)"/>
@@ -1989,13 +1989,13 @@ namespace Android.Graphics
             {
                 IExecuteWithSignature("set", "(Landroid/graphics/Paint$FontMetricsInt;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2004,13 +2004,13 @@ namespace Android.Graphics
         public partial class Join
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Join.html#BEVEL"/>
@@ -2030,9 +2030,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Join ROUND { get { if (!_ROUNDReady) { _ROUNDContent = SGetField<Android.Graphics.Paint.Join>(LocalBridgeClazz, "ROUND"); _ROUNDReady = true; } return _ROUNDContent; } }
             private static Android.Graphics.Paint.Join _ROUNDContent = default;
             private static bool _ROUNDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Join.html#valueOf(java.lang.String)"/>
@@ -2051,17 +2051,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Join>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Join;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2070,13 +2070,13 @@ namespace Android.Graphics
         public partial class Style
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Style.html#FILL"/>
@@ -2096,9 +2096,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Style STROKE { get { if (!_STROKEReady) { _STROKEContent = SGetField<Android.Graphics.Paint.Style>(LocalBridgeClazz, "STROKE"); _STROKEReady = true; } return _STROKEContent; } }
             private static Android.Graphics.Paint.Style _STROKEContent = default;
             private static bool _STROKEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Style.html#valueOf(java.lang.String)"/>
@@ -2117,24 +2117,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Style>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Style;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

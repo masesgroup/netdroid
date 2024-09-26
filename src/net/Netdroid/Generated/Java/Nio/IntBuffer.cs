@@ -42,10 +42,10 @@ namespace Java.Nio
         /// </summary>
         [global::System.Obsolete("IntBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntBuffer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Java.Nio
     public partial class IntBuffer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.IntBuffer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.IntBuffer t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#allocate(int)"/>
@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public static Java.Nio.IntBuffer Wrap(int[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.IntBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.IntBuffer>(LocalBridgeClazz, "wrap", "([III)Ljava/nio/IntBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#wrap(int[])"/>
@@ -121,9 +121,9 @@ namespace Java.Nio
         {
             return SExecuteWithSignature<Java.Nio.IntBuffer>(LocalBridgeClazz, "wrap", "([I)Ljava/nio/IntBuffer;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#get()"/>
@@ -174,7 +174,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Put(int arg0, int arg1)
         {
-            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(II)Ljava/nio/IntBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int)"/>
@@ -231,7 +231,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Get(int arg0, int[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.IntBuffer>("get", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("get", "(I[III)Ljava/nio/IntBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#get(int,int[])"/>
@@ -241,7 +241,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Get(int arg0, int[] arg1)
         {
-            return IExecute<Java.Nio.IntBuffer>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("get", "(I[I)Ljava/nio/IntBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#get(int[],int,int)"/>
@@ -252,7 +252,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Get(int[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.IntBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("get", "([III)Ljava/nio/IntBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#get(int[])"/>
@@ -273,7 +273,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Put(int arg0, int[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(I[III)Ljava/nio/IntBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int,int[])"/>
@@ -283,7 +283,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Put(int arg0, int[] arg1)
         {
-            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(I[I)Ljava/nio/IntBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"/>
@@ -295,7 +295,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Put(int arg0, Java.Nio.IntBuffer arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(ILjava/nio/IntBuffer;II)Ljava/nio/IntBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(int[],int,int)"/>
@@ -306,7 +306,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer Put(int[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.IntBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "([III)Ljava/nio/IntBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html#put(java.nio.IntBuffer)"/>
@@ -317,13 +317,13 @@ namespace Java.Nio
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

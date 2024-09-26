@@ -40,10 +40,10 @@ namespace Java.Security.Cert
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CertificateFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Security.Cert
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Security.Cert
     public partial class CertificateFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertificateFactory.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -96,7 +96,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertificateFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertificateFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -107,7 +107,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertificateFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertificateFactory.html#getInstance(java.lang.String)"/>
@@ -119,9 +119,9 @@ namespace Java.Security.Cert
         {
             return SExecuteWithSignature<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/cert/CertificateFactory;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertificateFactory.html#getType()"/>
@@ -150,7 +150,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath GenerateCertPath(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("generateCertPath", "(Ljava/io/InputStream;Ljava/lang/String;)Ljava/security/cert/CertPath;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream)"/>
@@ -221,13 +221,13 @@ namespace Java.Security.Cert
         {
             return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getCertPathEncodings", "()Ljava/util/Iterator;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

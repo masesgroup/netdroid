@@ -40,10 +40,10 @@ namespace Android.Health.Connect.Datatypes
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MealType(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Health.Connect.Datatypes
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Health.Connect.Datatypes
     public partial class MealType
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/MealType.html#MEAL_TYPE_BREAKFAST"/>
@@ -112,21 +112,21 @@ namespace Android.Health.Connect.Datatypes
         public static int MEAL_TYPE_UNKNOWN { get { if (!_MEAL_TYPE_UNKNOWNReady) { _MEAL_TYPE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "MEAL_TYPE_UNKNOWN"); _MEAL_TYPE_UNKNOWNReady = true; } return _MEAL_TYPE_UNKNOWNContent; } }
         private static int _MEAL_TYPE_UNKNOWNContent = default;
         private static bool _MEAL_TYPE_UNKNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

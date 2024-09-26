@@ -40,10 +40,10 @@ namespace Android.Graphics.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LineBreaker(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Graphics.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ParagraphConstraints(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Graphics.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Graphics.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Result(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Graphics.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -209,13 +209,13 @@ namespace Android.Graphics.Text
     public partial class LineBreaker
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.html#BREAK_STRATEGY_BALANCED"/>
@@ -271,13 +271,13 @@ namespace Android.Graphics.Text
         public static int JUSTIFICATION_MODE_NONE { get { if (!_JUSTIFICATION_MODE_NONEReady) { _JUSTIFICATION_MODE_NONEContent = SGetField<int>(LocalBridgeClazz, "JUSTIFICATION_MODE_NONE"); _JUSTIFICATION_MODE_NONEReady = true; } return _JUSTIFICATION_MODE_NONEContent; } }
         private static int _JUSTIFICATION_MODE_NONEContent = default;
         private static bool _JUSTIFICATION_MODE_NONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.html#computeLineBreaks(android.graphics.text.MeasuredText,android.graphics.text.LineBreaker.ParagraphConstraints,int)"/>
@@ -288,31 +288,31 @@ namespace Android.Graphics.Text
         /// <returns><see cref="Android.Graphics.Text.LineBreaker.Result"/></returns>
         public Android.Graphics.Text.LineBreaker.Result ComputeLineBreaks(Android.Graphics.Text.MeasuredText arg0, Android.Graphics.Text.LineBreaker.ParagraphConstraints arg1, int arg2)
         {
-            return IExecute<Android.Graphics.Text.LineBreaker.Result>("computeLineBreaks", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Text.LineBreaker.Result>("computeLineBreaks", "(Landroid/graphics/text/MeasuredText;Landroid/graphics/text/LineBreaker$ParagraphConstraints;I)Landroid/graphics/text/LineBreaker$Result;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.Builder.html#build()"/>
@@ -367,13 +367,13 @@ namespace Android.Graphics.Text
             {
                 return IExecuteWithSignature<Android.Graphics.Text.LineBreaker.Builder>("setUseBoundsForWidth", "(Z)Landroid/graphics/text/LineBreaker$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -382,21 +382,21 @@ namespace Android.Graphics.Text
         public partial class ParagraphConstraints
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getDefaultTabStop()"/>
@@ -445,7 +445,7 @@ namespace Android.Graphics.Text
             /// <param name="arg1"><see cref="int"/></param>
             public void SetIndent(float arg0, int arg1)
             {
-                IExecute("setIndent", arg0, arg1);
+                IExecuteWithSignature("setIndent", "(FI)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#setTabStops(float[],float)"/>
@@ -454,7 +454,7 @@ namespace Android.Graphics.Text
             /// <param name="arg1"><see cref="float"/></param>
             public void SetTabStops(float[] arg0, float arg1)
             {
-                IExecute("setTabStops", arg0, arg1);
+                IExecuteWithSignature("setTabStops", "([FF)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#setWidth(float)"/>
@@ -464,13 +464,13 @@ namespace Android.Graphics.Text
             {
                 IExecuteWithSignature("setWidth", "(F)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -479,21 +479,21 @@ namespace Android.Graphics.Text
         public partial class Result
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.Result.html#hasLineTab(int)"/>
@@ -566,20 +566,20 @@ namespace Android.Graphics.Text
             {
                 return IExecuteWithSignature<int>("getStartLineHyphenEdit", "(I)I", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

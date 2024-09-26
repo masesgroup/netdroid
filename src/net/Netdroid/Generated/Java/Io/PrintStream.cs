@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PrintStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -172,9 +172,9 @@ namespace Java.Io
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.PrintStream"/> to <see cref="Java.Lang.Appendable"/>
@@ -184,17 +184,17 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.PrintStream"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.PrintStream t) => t.Cast<Java.Io.Closeable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintStream.html#checkError()"/>
@@ -212,7 +212,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintStream>("format", arg0); else return IExecute<Java.Io.PrintStream>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0); else return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintStream.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -223,7 +223,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintStream>("format", arg0, arg1); else return IExecute<Java.Io.PrintStream>("format", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintStream.html#printf(java.lang.String,java.lang.Object[])"/>
@@ -233,7 +233,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Printf(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintStream>("printf", arg0); else return IExecute<Java.Io.PrintStream>("printf", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0); else return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintStream.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -244,7 +244,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Printf(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintStream>("printf", arg0, arg1); else return IExecute<Java.Io.PrintStream>("printf", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintStream.html#append(char)"/>
@@ -266,7 +266,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Lang.Appendable>("append", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintStream.html#append(java.lang.CharSequence)"/>
@@ -437,13 +437,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("writeBytes", "([B)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

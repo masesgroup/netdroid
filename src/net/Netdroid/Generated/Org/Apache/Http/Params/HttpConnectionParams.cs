@@ -41,10 +41,10 @@ namespace Org.Apache.Http.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HttpConnectionParams(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Org.Apache.Http.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,17 +75,17 @@ namespace Org.Apache.Http.Params
     public partial class HttpConnectionParams
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpConnectionParams.html#getTcpNoDelay(org.apache.http.params.HttpParams)"/>
@@ -155,7 +155,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public static void SetConnectionTimeout(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setConnectionTimeout", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setConnectionTimeout", "(Lorg/apache/http/params/HttpParams;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpConnectionParams.html#setLinger(org.apache.http.params.HttpParams,int)"/>
@@ -165,7 +165,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public static void SetLinger(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setLinger", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setLinger", "(Lorg/apache/http/params/HttpParams;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpConnectionParams.html#setSocketBufferSize(org.apache.http.params.HttpParams,int)"/>
@@ -175,7 +175,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public static void SetSocketBufferSize(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setSocketBufferSize", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSocketBufferSize", "(Lorg/apache/http/params/HttpParams;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpConnectionParams.html#setSoTimeout(org.apache.http.params.HttpParams,int)"/>
@@ -185,7 +185,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public static void SetSoTimeout(Org.Apache.Http.Params.HttpParams arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setSoTimeout", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSoTimeout", "(Lorg/apache/http/params/HttpParams;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpConnectionParams.html#setStaleCheckingEnabled(org.apache.http.params.HttpParams,boolean)"/>
@@ -195,7 +195,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public static void SetStaleCheckingEnabled(Org.Apache.Http.Params.HttpParams arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setStaleCheckingEnabled", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setStaleCheckingEnabled", "(Lorg/apache/http/params/HttpParams;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpConnectionParams.html#setTcpNoDelay(org.apache.http.params.HttpParams,boolean)"/>
@@ -205,19 +205,19 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public static void SetTcpNoDelay(Org.Apache.Http.Params.HttpParams arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setTcpNoDelay", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setTcpNoDelay", "(Lorg/apache/http/params/HttpParams;Z)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

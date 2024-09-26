@@ -40,10 +40,10 @@ namespace Android.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Html(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ImageGetter declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Text
             /// </summary>
             [global::System.Obsolete("ImageGetter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ImageGetter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Text
             /// </summary>
             [global::System.Obsolete("TagHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TagHandler(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -168,13 +168,13 @@ namespace Android.Text
     public partial class Html
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#FROM_HTML_MODE_COMPACT"/>
@@ -242,9 +242,9 @@ namespace Android.Text
         public static int TO_HTML_PARAGRAPH_LINES_INDIVIDUAL { get { if (!_TO_HTML_PARAGRAPH_LINES_INDIVIDUALReady) { _TO_HTML_PARAGRAPH_LINES_INDIVIDUALContent = SGetField<int>(LocalBridgeClazz, "TO_HTML_PARAGRAPH_LINES_INDIVIDUAL"); _TO_HTML_PARAGRAPH_LINES_INDIVIDUALReady = true; } return _TO_HTML_PARAGRAPH_LINES_INDIVIDUALContent; } }
         private static int _TO_HTML_PARAGRAPH_LINES_INDIVIDUALContent = default;
         private static bool _TO_HTML_PARAGRAPH_LINES_INDIVIDUALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String,android.text.Html.ImageGetter,android.text.Html.TagHandler)"/>
@@ -256,7 +256,7 @@ namespace Android.Text
         [global::System.Obsolete()]
         public static Android.Text.Spanned FromHtml(Java.Lang.String arg0, Android.Text.Html.ImageGetter arg1, Android.Text.Html.TagHandler arg2)
         {
-            return SExecute<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", "(Ljava/lang/String;Landroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)"/>
@@ -268,7 +268,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.Spanned"/></returns>
         public static Android.Text.Spanned FromHtml(Java.Lang.String arg0, int arg1, Android.Text.Html.ImageGetter arg2, Android.Text.Html.TagHandler arg3)
         {
-            return SExecute<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", "(Ljava/lang/String;ILandroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String,int)"/>
@@ -278,7 +278,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.Spanned"/></returns>
         public static Android.Text.Spanned FromHtml(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", arg0, arg1);
+            return SExecuteWithSignature<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", "(Ljava/lang/String;I)Landroid/text/Spanned;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String)"/>
@@ -307,7 +307,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToHtml(Android.Text.Spanned arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toHtml", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHtml", "(Landroid/text/Spanned;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#toHtml(android.text.Spanned)"/>
@@ -319,33 +319,33 @@ namespace Android.Text
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHtml", "(Landroid/text/Spanned;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ImageGetter implementation
         public partial class ImageGetter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/Html.ImageGetter.html#getDrawable(java.lang.String)"/>
@@ -356,13 +356,13 @@ namespace Android.Text
             {
                 return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -371,21 +371,21 @@ namespace Android.Text
         public partial class TagHandler
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/Html.TagHandler.html#handleTag(boolean,java.lang.String,android.text.Editable,org.xml.sax.XMLReader)"/>
@@ -396,22 +396,22 @@ namespace Android.Text
             /// <param name="arg3"><see cref="Org.Xml.Sax.XMLReader"/></param>
             public void HandleTag(bool arg0, Java.Lang.String arg1, Android.Text.Editable arg2, Org.Xml.Sax.XMLReader arg3)
             {
-                IExecute("handleTag", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("handleTag", "(ZLjava/lang/String;Landroid/text/Editable;Lorg/xml/sax/XMLReader;)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

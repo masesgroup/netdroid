@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConnectivityManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region NetworkCallback declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Net
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public NetworkCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.Net
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnNetworkActiveListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.ConnectivityManager_OnNetworkActiveListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnNetworkActiveListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnNetworkActiveListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.ConnectivityManager$OnNetworkActiveListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -186,13 +186,13 @@ namespace Android.Net
     public partial class ConnectivityManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#DEFAULT_NETWORK_PREFERENCE"/>
@@ -411,9 +411,9 @@ namespace Android.Net
         public static Java.Lang.String EXTRA_REASON { get { if (!_EXTRA_REASONReady) { _EXTRA_REASONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_REASON"); _EXTRA_REASONReady = true; } return _EXTRA_REASONContent; } }
         private static Java.Lang.String _EXTRA_REASONContent = default;
         private static bool _EXTRA_REASONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getProcessDefaultNetwork()"/>
@@ -444,9 +444,9 @@ namespace Android.Net
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "setProcessDefaultNetwork", "(Landroid/net/Network;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getLinkProperties(android.net.Network)"/>
@@ -549,7 +549,7 @@ namespace Android.Net
         /// <returns><see cref="Android.Net.SocketKeepalive"/></returns>
         public Android.Net.SocketKeepalive CreateSocketKeepalive(Android.Net.Network arg0, Android.Net.IpSecManager.UdpEncapsulationSocket arg1, Java.Net.InetAddress arg2, Java.Net.InetAddress arg3, Java.Util.Concurrent.Executor arg4, Android.Net.SocketKeepalive.Callback arg5)
         {
-            return IExecute<Android.Net.SocketKeepalive>("createSocketKeepalive", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Net.SocketKeepalive>("createSocketKeepalive", "(Landroid/net/Network;Landroid/net/IpSecManager$UdpEncapsulationSocket;Ljava/net/InetAddress;Ljava/net/InetAddress;Ljava/util/concurrent/Executor;Landroid/net/SocketKeepalive$Callback;)Landroid/net/SocketKeepalive;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#bindProcessToNetwork(android.net.Network)"/>
@@ -611,7 +611,7 @@ namespace Android.Net
         /// <returns><see cref="int"/></returns>
         public int GetConnectionOwnerUid(int arg0, Java.Net.InetSocketAddress arg1, Java.Net.InetSocketAddress arg2)
         {
-            return IExecute<int>("getConnectionOwnerUid", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getConnectionOwnerUid", "(ILjava/net/InetSocketAddress;Ljava/net/InetSocketAddress;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getMultipathPreference(android.net.Network)"/>
@@ -655,7 +655,7 @@ namespace Android.Net
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void RegisterBestMatchingNetworkCallback(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1, Android.Os.Handler arg2)
         {
-            IExecute("registerBestMatchingNetworkCallback", arg0, arg1, arg2);
+            IExecuteWithSignature("registerBestMatchingNetworkCallback", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback,android.os.Handler)"/>
@@ -664,7 +664,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterDefaultNetworkCallback(Android.Net.ConnectivityManager.NetworkCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerDefaultNetworkCallback", arg0, arg1);
+            IExecuteWithSignature("registerDefaultNetworkCallback", "(Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback)"/>
@@ -681,7 +681,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void RegisterNetworkCallback(Android.Net.NetworkRequest arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("registerNetworkCallback", arg0, arg1);
+            IExecuteWithSignature("registerNetworkCallback", "(Landroid/net/NetworkRequest;Landroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)"/>
@@ -691,7 +691,7 @@ namespace Android.Net
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void RegisterNetworkCallback(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1, Android.Os.Handler arg2)
         {
-            IExecute("registerNetworkCallback", arg0, arg1, arg2);
+            IExecuteWithSignature("registerNetworkCallback", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback)"/>
@@ -700,7 +700,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.Net.ConnectivityManager.NetworkCallback"/></param>
         public void RegisterNetworkCallback(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1)
         {
-            IExecute("registerNetworkCallback", arg0, arg1);
+            IExecuteWithSignature("registerNetworkCallback", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#releaseNetworkRequest(android.app.PendingIntent)"/>
@@ -734,7 +734,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="bool"/></param>
         public void ReportNetworkConnectivity(Android.Net.Network arg0, bool arg1)
         {
-            IExecute("reportNetworkConnectivity", arg0, arg1);
+            IExecuteWithSignature("reportNetworkConnectivity", "(Landroid/net/Network;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.app.PendingIntent)"/>
@@ -743,7 +743,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void RequestNetwork(Android.Net.NetworkRequest arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("requestNetwork", arg0, arg1);
+            IExecuteWithSignature("requestNetwork", "(Landroid/net/NetworkRequest;Landroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler,int)"/>
@@ -754,7 +754,7 @@ namespace Android.Net
         /// <param name="arg3"><see cref="int"/></param>
         public void RequestNetwork(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1, Android.Os.Handler arg2, int arg3)
         {
-            IExecute("requestNetwork", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("requestNetwork", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)"/>
@@ -764,7 +764,7 @@ namespace Android.Net
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void RequestNetwork(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1, Android.Os.Handler arg2)
         {
-            IExecute("requestNetwork", arg0, arg1, arg2);
+            IExecuteWithSignature("requestNetwork", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,int)"/>
@@ -774,7 +774,7 @@ namespace Android.Net
         /// <param name="arg2"><see cref="int"/></param>
         public void RequestNetwork(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1, int arg2)
         {
-            IExecute("requestNetwork", arg0, arg1, arg2);
+            IExecuteWithSignature("requestNetwork", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback)"/>
@@ -783,7 +783,7 @@ namespace Android.Net
         /// <param name="arg1"><see cref="Android.Net.ConnectivityManager.NetworkCallback"/></param>
         public void RequestNetwork(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1)
         {
-            IExecute("requestNetwork", arg0, arg1);
+            IExecuteWithSignature("requestNetwork", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#setNetworkPreference(int)"/>
@@ -810,9 +810,9 @@ namespace Android.Net
         {
             IExecuteWithSignature("unregisterNetworkCallback", "(Landroid/net/ConnectivityManager$NetworkCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region NetworkCallback implementation
         public partial class NetworkCallback
@@ -826,13 +826,13 @@ namespace Android.Net
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#FLAG_INCLUDE_LOCATION_INFO"/>
@@ -840,13 +840,13 @@ namespace Android.Net
             public static int FLAG_INCLUDE_LOCATION_INFO { get { if (!_FLAG_INCLUDE_LOCATION_INFOReady) { _FLAG_INCLUDE_LOCATION_INFOContent = SGetField<int>(LocalBridgeClazz, "FLAG_INCLUDE_LOCATION_INFO"); _FLAG_INCLUDE_LOCATION_INFOReady = true; } return _FLAG_INCLUDE_LOCATION_INFOContent; } }
             private static int _FLAG_INCLUDE_LOCATION_INFOContent = default;
             private static bool _FLAG_INCLUDE_LOCATION_INFOReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#onAvailable(android.net.Network)"/>
@@ -863,7 +863,7 @@ namespace Android.Net
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnBlockedStatusChanged(Android.Net.Network arg0, bool arg1)
             {
-                IExecute("onBlockedStatusChanged", arg0, arg1);
+                IExecuteWithSignature("onBlockedStatusChanged", "(Landroid/net/Network;Z)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#onCapabilitiesChanged(android.net.Network,android.net.NetworkCapabilities)"/>
@@ -872,7 +872,7 @@ namespace Android.Net
             /// <param name="arg1"><see cref="Android.Net.NetworkCapabilities"/></param>
             public void OnCapabilitiesChanged(Android.Net.Network arg0, Android.Net.NetworkCapabilities arg1)
             {
-                IExecute("onCapabilitiesChanged", arg0, arg1);
+                IExecuteWithSignature("onCapabilitiesChanged", "(Landroid/net/Network;Landroid/net/NetworkCapabilities;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#onLinkPropertiesChanged(android.net.Network,android.net.LinkProperties)"/>
@@ -881,7 +881,7 @@ namespace Android.Net
             /// <param name="arg1"><see cref="Android.Net.LinkProperties"/></param>
             public void OnLinkPropertiesChanged(Android.Net.Network arg0, Android.Net.LinkProperties arg1)
             {
-                IExecute("onLinkPropertiesChanged", arg0, arg1);
+                IExecuteWithSignature("onLinkPropertiesChanged", "(Landroid/net/Network;Landroid/net/LinkProperties;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#onLosing(android.net.Network,int)"/>
@@ -890,7 +890,7 @@ namespace Android.Net
             /// <param name="arg1"><see cref="int"/></param>
             public void OnLosing(Android.Net.Network arg0, int arg1)
             {
-                IExecute("onLosing", arg0, arg1);
+                IExecuteWithSignature("onLosing", "(Landroid/net/Network;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#onLost(android.net.Network)"/>
@@ -907,13 +907,13 @@ namespace Android.Net
             {
                 IExecuteWithSignature("onUnavailable", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -922,21 +922,21 @@ namespace Android.Net
         public partial class OnNetworkActiveListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnNetworkActiveListener"/>
@@ -946,13 +946,13 @@ namespace Android.Net
                 AddEventHandler("onNetworkActive", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnNetworkActiveEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/ConnectivityManager.OnNetworkActiveListener.html#onNetworkActive()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNetworkActive"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnNetworkActive { get; set; } = null;
-            
+
             bool hasOverrideOnNetworkActive = true;
             void OnNetworkActiveEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -961,7 +961,7 @@ namespace Android.Net
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnNetworkActive;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.OnNetworkActiveListener.html#onNetworkActive()"/>
             /// </summary>
@@ -969,13 +969,13 @@ namespace Android.Net
             {
                 hasOverrideOnNetworkActive = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -984,21 +984,21 @@ namespace Android.Net
         public partial class OnNetworkActiveListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.OnNetworkActiveListener.html#onNetworkActive()"/>
@@ -1007,20 +1007,20 @@ namespace Android.Net
             {
                 IExecuteWithSignature("onNetworkActive", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

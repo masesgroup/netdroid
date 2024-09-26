@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SecurityStateManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Os
     public partial class SecurityStateManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/SecurityStateManager.html#KEY_KERNEL_VERSION"/>
@@ -100,13 +100,13 @@ namespace Android.Os
         public static Java.Lang.String KEY_VENDOR_SPL { get { if (!_KEY_VENDOR_SPLReady) { _KEY_VENDOR_SPLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_VENDOR_SPL"); _KEY_VENDOR_SPLReady = true; } return _KEY_VENDOR_SPLContent; } }
         private static Java.Lang.String _KEY_VENDOR_SPLContent = default;
         private static bool _KEY_VENDOR_SPLReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/SecurityStateManager.html#getGlobalSecurityState()"/>
@@ -116,13 +116,13 @@ namespace Android.Os
         {
             return IExecuteWithSignature<Android.Os.Bundle>("getGlobalSecurityState", "()Landroid/os/Bundle;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

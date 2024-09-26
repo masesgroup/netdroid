@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TreeMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -87,10 +87,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TreeMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -145,9 +145,9 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.TreeMap"/> to <see cref="Java.Util.NavigableMap"/>
@@ -161,17 +161,17 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TreeMap"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.TreeMap t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#comparator()"/>
@@ -265,7 +265,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap HeadMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("headMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -277,7 +277,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap SubMap(object arg0, bool arg1, object arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -287,7 +287,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap TailMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#descendingKeySet()"/>
@@ -322,7 +322,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap SubMap(object arg0, object arg1)
         {
-            return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedMap>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object)"/>
@@ -385,13 +385,13 @@ namespace Java.Util
         {
             return IExecuteWithSignature("lowerKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -424,9 +424,9 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.TreeMap{K, V}"/> to <see cref="Java.Util.NavigableMap{K, V}"/>
@@ -444,17 +444,17 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TreeMap{K, V}"/> to <see cref="Java.Util.TreeMap"/>
         /// </summary>
         public static implicit operator Java.Util.TreeMap(Java.Util.TreeMap<K, V> t) => t.Cast<Java.Util.TreeMap>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#comparator()"/>
@@ -549,7 +549,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> HeadMap(K arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap<K, V>>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap<K, V>>("headMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -561,7 +561,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> SubMap(K arg0, bool arg1, K arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableMap<K, V>>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableMap<K, V>>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -571,7 +571,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap<K, V> TailMap(K arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap<K, V>>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap<K, V>>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#descendingKeySet()"/>
@@ -606,7 +606,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap<K, V> SubMap(K arg0, K arg1)
         {
-            return IExecute<Java.Util.SortedMap<K, V>>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object)"/>
@@ -669,13 +669,13 @@ namespace Java.Util
         {
             return IExecuteWithSignature<K>("lowerKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Lang.Reflect
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Field(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang.Reflect
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,25 +74,25 @@ namespace Java.Lang.Reflect
     public partial class Field
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Reflect.Field"/> to <see cref="Java.Lang.Reflect.Member"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.Member(Java.Lang.Reflect.Field t) => t.Cast<Java.Lang.Reflect.Member>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#getBoolean(java.lang.Object)"/>
@@ -266,7 +266,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void Set(object arg0, object arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setBoolean(java.lang.Object,boolean)"/>
@@ -277,7 +277,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetBoolean(object arg0, bool arg1)
         {
-            IExecute("setBoolean", arg0, arg1);
+            IExecuteWithSignature("setBoolean", "(Ljava/lang/Object;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setByte(java.lang.Object,byte)"/>
@@ -288,7 +288,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetByte(object arg0, byte arg1)
         {
-            IExecute("setByte", arg0, arg1);
+            IExecuteWithSignature("setByte", "(Ljava/lang/Object;B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setChar(java.lang.Object,char)"/>
@@ -299,7 +299,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetChar(object arg0, char arg1)
         {
-            IExecute("setChar", arg0, arg1);
+            IExecuteWithSignature("setChar", "(Ljava/lang/Object;C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setDouble(java.lang.Object,double)"/>
@@ -310,7 +310,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetDouble(object arg0, double arg1)
         {
-            IExecute("setDouble", arg0, arg1);
+            IExecuteWithSignature("setDouble", "(Ljava/lang/Object;D)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setFloat(java.lang.Object,float)"/>
@@ -321,7 +321,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetFloat(object arg0, float arg1)
         {
-            IExecute("setFloat", arg0, arg1);
+            IExecuteWithSignature("setFloat", "(Ljava/lang/Object;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setInt(java.lang.Object,int)"/>
@@ -332,7 +332,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetInt(object arg0, int arg1)
         {
-            IExecute("setInt", arg0, arg1);
+            IExecuteWithSignature("setInt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setLong(java.lang.Object,long)"/>
@@ -343,7 +343,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetLong(object arg0, long arg1)
         {
-            IExecute("setLong", arg0, arg1);
+            IExecuteWithSignature("setLong", "(Ljava/lang/Object;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Field.html#setShort(java.lang.Object,short)"/>
@@ -354,15 +354,15 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetShort(object arg0, short arg1)
         {
-            IExecute("setShort", arg0, arg1);
+            IExecuteWithSignature("setShort", "(Ljava/lang/Object;S)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

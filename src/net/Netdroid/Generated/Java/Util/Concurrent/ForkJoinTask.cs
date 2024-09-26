@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ForkJoinTask(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ForkJoinTask(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -124,9 +124,9 @@ namespace Java.Util.Concurrent
     public partial class ForkJoinTask
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask"/> to <see cref="Java.Util.Concurrent.Future"/>
@@ -136,13 +136,13 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ForkJoinTask t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
@@ -161,7 +161,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Lang.Runnable arg0, object arg1)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/ForkJoinTask;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
@@ -227,7 +227,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(Java.Util.Concurrent.ForkJoinTask arg0, Java.Util.Concurrent.ForkJoinTask arg1)
         {
-            SExecute(LocalBridgeClazz, "invokeAll", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "(Ljava/util/concurrent/ForkJoinTask;Ljava/util/concurrent/ForkJoinTask;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
@@ -237,9 +237,9 @@ namespace Java.Util.Concurrent
         {
             if (arg0.Length == 0) SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V"); else SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getRawResult()"/>
@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSetForkJoinTaskTag(short arg0, short arg1)
         {
-            return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSetForkJoinTaskTag", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
@@ -362,7 +362,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("get", arg0, arg1);
+            return IExecuteWithSignature("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invoke()"/>
@@ -424,13 +424,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("reinitialize", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -439,9 +439,9 @@ namespace Java.Util.Concurrent
     public partial class ForkJoinTask<V> : Java.Util.Concurrent.IFuture<V>, Java.Io.ISerializable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask{V}"/> to <see cref="Java.Util.Concurrent.Future{V}"/>
@@ -455,13 +455,13 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask{V}"/> to <see cref="Java.Util.Concurrent.ForkJoinTask"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ForkJoinTask(Java.Util.Concurrent.ForkJoinTask<V> t) => t.Cast<Java.Util.Concurrent.ForkJoinTask>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
@@ -482,7 +482,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T>(Java.Lang.Runnable arg0, T arg1)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>(LocalBridgeClazz, "adapt", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<T>>(LocalBridgeClazz, "adapt", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/ForkJoinTask;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
@@ -550,7 +550,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(Java.Util.Concurrent.ForkJoinTask<object> arg0, Java.Util.Concurrent.ForkJoinTask<object> arg1)
         {
-            SExecute(LocalBridgeClazz, "invokeAll", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "(Ljava/util/concurrent/ForkJoinTask;Ljava/util/concurrent/ForkJoinTask;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
@@ -560,9 +560,9 @@ namespace Java.Util.Concurrent
         {
             if (arg0.Length == 0) SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V"); else SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getRawResult()"/>
@@ -597,7 +597,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSetForkJoinTaskTag(short arg0, short arg1)
         {
-            return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSetForkJoinTaskTag", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
@@ -685,7 +685,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public V Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<V>("get", arg0, arg1);
+            return IExecuteWithSignature<V>("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invoke()"/>
@@ -747,13 +747,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("reinitialize", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ActivityOptions(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.App
     public partial class ActivityOptions
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#MODE_BACKGROUND_ACTIVITY_START_ALLOWED"/>
@@ -112,9 +112,9 @@ namespace Android.App
         public static Java.Lang.String EXTRA_USAGE_TIME_REPORT_PACKAGES { get { if (!_EXTRA_USAGE_TIME_REPORT_PACKAGESReady) { _EXTRA_USAGE_TIME_REPORT_PACKAGESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_USAGE_TIME_REPORT_PACKAGES"); _EXTRA_USAGE_TIME_REPORT_PACKAGESReady = true; } return _EXTRA_USAGE_TIME_REPORT_PACKAGESContent; } }
         private static Java.Lang.String _EXTRA_USAGE_TIME_REPORT_PACKAGESContent = default;
         private static bool _EXTRA_USAGE_TIME_REPORT_PACKAGESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#makeBasic()"/>
@@ -135,7 +135,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.ActivityOptions"/></returns>
         public static Android.App.ActivityOptions MakeClipRevealAnimation(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeClipRevealAnimation", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeClipRevealAnimation", "(Landroid/view/View;IIII)Landroid/app/ActivityOptions;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#makeCustomAnimation(android.content.Context,int,int,int)"/>
@@ -147,7 +147,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.ActivityOptions"/></returns>
         public static Android.App.ActivityOptions MakeCustomAnimation(Android.Content.Context arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeCustomAnimation", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeCustomAnimation", "(Landroid/content/Context;III)Landroid/app/ActivityOptions;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#makeCustomAnimation(android.content.Context,int,int)"/>
@@ -158,7 +158,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.ActivityOptions"/></returns>
         public static Android.App.ActivityOptions MakeCustomAnimation(Android.Content.Context arg0, int arg1, int arg2)
         {
-            return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeCustomAnimation", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeCustomAnimation", "(Landroid/content/Context;II)Landroid/app/ActivityOptions;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#makeLaunchIntoPip(android.app.PictureInPictureParams)"/>
@@ -180,7 +180,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.ActivityOptions"/></returns>
         public static Android.App.ActivityOptions MakeScaleUpAnimation(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeScaleUpAnimation", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeScaleUpAnimation", "(Landroid/view/View;IIII)Landroid/app/ActivityOptions;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#makeSceneTransitionAnimation(android.app.Activity,android.util.Pair[])"/>
@@ -190,7 +190,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.ActivityOptions"/></returns>
         public static Android.App.ActivityOptions MakeSceneTransitionAnimation(Android.App.Activity arg0, params Android.Util.Pair<Android.View.View, Java.Lang.String>[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeSceneTransitionAnimation", arg0); else return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeSceneTransitionAnimation", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeSceneTransitionAnimation", "(Landroid/app/Activity;[Landroid/util/Pair;)Landroid/app/ActivityOptions;", arg0); else return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeSceneTransitionAnimation", "(Landroid/app/Activity;[Landroid/util/Pair;)Landroid/app/ActivityOptions;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#makeSceneTransitionAnimation(android.app.Activity,android.view.View,java.lang.String)"/>
@@ -201,7 +201,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.ActivityOptions"/></returns>
         public static Android.App.ActivityOptions MakeSceneTransitionAnimation(Android.App.Activity arg0, Android.View.View arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeSceneTransitionAnimation", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeSceneTransitionAnimation", "(Landroid/app/Activity;Landroid/view/View;Ljava/lang/String;)Landroid/app/ActivityOptions;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#makeTaskLaunchBehind()"/>
@@ -221,11 +221,11 @@ namespace Android.App
         /// <returns><see cref="Android.App.ActivityOptions"/></returns>
         public static Android.App.ActivityOptions MakeThumbnailScaleUpAnimation(Android.View.View arg0, Android.Graphics.Bitmap arg1, int arg2, int arg3)
         {
-            return SExecute<Android.App.ActivityOptions>(LocalBridgeClazz, "makeThumbnailScaleUpAnimation", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.App.ActivityOptions>(LocalBridgeClazz, "makeThumbnailScaleUpAnimation", "(Landroid/view/View;Landroid/graphics/Bitmap;II)Landroid/app/ActivityOptions;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#setAppVerificationBundle(android.os.Bundle)"/>
@@ -397,13 +397,13 @@ namespace Android.App
         {
             IExecuteWithSignature("update", "(Landroid/app/ActivityOptions;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

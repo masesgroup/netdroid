@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Matrix44(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#concat(android.graphics.Matrix44)"/>
@@ -117,7 +117,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Matrix44"/></returns>
         public Android.Graphics.Matrix44 Rotate(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<Android.Graphics.Matrix44>("rotate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Matrix44>("rotate", "(FFFF)Landroid/graphics/Matrix44;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#scale(float,float,float)"/>
@@ -128,7 +128,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Matrix44"/></returns>
         public Android.Graphics.Matrix44 Scale(float arg0, float arg1, float arg2)
         {
-            return IExecute<Android.Graphics.Matrix44>("scale", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Matrix44>("scale", "(FFF)Landroid/graphics/Matrix44;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#translate(float,float,float)"/>
@@ -139,7 +139,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Matrix44"/></returns>
         public Android.Graphics.Matrix44 Translate(float arg0, float arg1, float arg2)
         {
-            return IExecute<Android.Graphics.Matrix44>("translate", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Matrix44>("translate", "(FFF)Landroid/graphics/Matrix44;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#invert()"/>
@@ -165,7 +165,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float Get(int arg0, int arg1)
         {
-            return IExecute<float>("get", arg0, arg1);
+            return IExecuteWithSignature<float>("get", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#map(float,float,float,float)"/>
@@ -177,7 +177,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float[] Map(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecuteArray<float>("map", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<float>("map", "(FFFF)[F", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#getValues(float[])"/>
@@ -197,7 +197,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="float"/></param>
         public void Map(float arg0, float arg1, float arg2, float arg3, float[] arg4)
         {
-            IExecute("map", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("map", "(FFFF[F)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#reset()"/>
@@ -214,7 +214,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void Set(int arg0, int arg1, float arg2)
         {
-            IExecute("set", arg0, arg1, arg2);
+            IExecuteWithSignature("set", "(IIF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix44.html#setValues(float[])"/>
@@ -224,13 +224,13 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("setValues", "([F)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

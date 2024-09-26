@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Base64(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Decoder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Decoder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Encoder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,17 +164,17 @@ namespace Java.Util
     public partial class Base64
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Base64.html#getDecoder()"/>
@@ -224,7 +224,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
         public static Java.Util.Base64.Encoder GetMimeEncoder(int arg0, byte[] arg1)
         {
-            return SExecute<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getMimeEncoder", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getMimeEncoder", "(I[B)Ljava/util/Base64$Encoder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Base64.html#getUrlEncoder()"/>
@@ -234,33 +234,33 @@ namespace Java.Util
         {
             return SExecuteWithSignature<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getUrlEncoder", "()Ljava/util/Base64$Encoder;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Decoder implementation
         public partial class Decoder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Base64.Decoder.html#decode(byte[])"/>
@@ -288,7 +288,7 @@ namespace Java.Util
             /// <returns><see cref="int"/></returns>
             public int Decode(byte[] arg0, byte[] arg1)
             {
-                return IExecute<int>("decode", arg0, arg1);
+                return IExecuteWithSignature<int>("decode", "([B[B)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Base64.Decoder.html#wrap(java.io.InputStream)"/>
@@ -308,13 +308,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<Java.Nio.ByteBuffer>("decode", "(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -323,21 +323,21 @@ namespace Java.Util
         public partial class Encoder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Base64.Encoder.html#encode(byte[])"/>
@@ -356,7 +356,7 @@ namespace Java.Util
             /// <returns><see cref="int"/></returns>
             public int Encode(byte[] arg0, byte[] arg1)
             {
-                return IExecute<int>("encode", arg0, arg1);
+                return IExecuteWithSignature<int>("encode", "([B[B)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Base64.Encoder.html#wrap(java.io.OutputStream)"/>
@@ -393,20 +393,20 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<Java.Util.Base64.Encoder>("withoutPadding", "()Ljava/util/Base64$Encoder;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
