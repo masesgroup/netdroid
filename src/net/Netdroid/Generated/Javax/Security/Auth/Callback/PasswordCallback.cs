@@ -113,7 +113,7 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="bool"/></returns>
         public bool IsEchoOn()
         {
-            return IExecute<bool>("isEchoOn");
+            return IExecuteWithSignature<bool>("isEchoOn", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#getPassword()"/>
@@ -121,7 +121,7 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="char"/></returns>
         public char[] GetPassword()
         {
-            return IExecuteArray<char>("getPassword");
+            return IExecuteWithSignatureArray<char>("getPassword", "()[C");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#getPrompt()"/>
@@ -129,14 +129,14 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPrompt()
         {
-            return IExecute<Java.Lang.String>("getPrompt");
+            return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#clearPassword()"/>
         /// </summary>
         public void ClearPassword()
         {
-            IExecute("clearPassword");
+            IExecuteWithSignature("clearPassword", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#setPassword(char[])"/>
@@ -144,7 +144,7 @@ namespace Javax.Security.Auth.Callback
         /// <param name="arg0"><see cref="char"/></param>
         public void SetPassword(char[] arg0)
         {
-            IExecute("setPassword", new object[] { arg0 });
+            IExecuteWithSignature("setPassword", "([C)V", new object[] { arg0 });
         }
 
         #endregion
