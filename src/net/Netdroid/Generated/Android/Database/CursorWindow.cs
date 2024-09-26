@@ -40,10 +40,10 @@ namespace Android.Database
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CursorWindow(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Database
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -100,17 +100,17 @@ namespace Android.Database
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Database.CursorWindow"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Database.CursorWindow t) => t.Cast<Android.Os.Parcelable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#CREATOR"/>
@@ -118,9 +118,9 @@ namespace Android.Database
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#newFromParcel(android.os.Parcel)"/>
@@ -131,9 +131,9 @@ namespace Android.Database
         {
             return SExecuteWithSignature<Android.Database.CursorWindow>(LocalBridgeClazz, "newFromParcel", "(Landroid/os/Parcel;)Landroid/database/CursorWindow;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#allocRow()"/>
@@ -152,7 +152,7 @@ namespace Android.Database
         [global::System.Obsolete()]
         public bool IsBlob(int arg0, int arg1)
         {
-            return IExecute<bool>("isBlob", arg0, arg1);
+            return IExecuteWithSignature<bool>("isBlob", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isFloat(int,int)"/>
@@ -163,7 +163,7 @@ namespace Android.Database
         [global::System.Obsolete()]
         public bool IsFloat(int arg0, int arg1)
         {
-            return IExecute<bool>("isFloat", arg0, arg1);
+            return IExecuteWithSignature<bool>("isFloat", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isLong(int,int)"/>
@@ -174,7 +174,7 @@ namespace Android.Database
         [global::System.Obsolete()]
         public bool IsLong(int arg0, int arg1)
         {
-            return IExecute<bool>("isLong", arg0, arg1);
+            return IExecuteWithSignature<bool>("isLong", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isNull(int,int)"/>
@@ -185,7 +185,7 @@ namespace Android.Database
         [global::System.Obsolete()]
         public bool IsNull(int arg0, int arg1)
         {
-            return IExecute<bool>("isNull", arg0, arg1);
+            return IExecuteWithSignature<bool>("isNull", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isString(int,int)"/>
@@ -196,7 +196,7 @@ namespace Android.Database
         [global::System.Obsolete()]
         public bool IsString(int arg0, int arg1)
         {
-            return IExecute<bool>("isString", arg0, arg1);
+            return IExecuteWithSignature<bool>("isString", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#putBlob(byte[],int,int)"/>
@@ -207,7 +207,7 @@ namespace Android.Database
         /// <returns><see cref="bool"/></returns>
         public bool PutBlob(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("putBlob", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("putBlob", "([BII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#putDouble(double,int,int)"/>
@@ -218,7 +218,7 @@ namespace Android.Database
         /// <returns><see cref="bool"/></returns>
         public bool PutDouble(double arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("putDouble", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("putDouble", "(DII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#putLong(long,int,int)"/>
@@ -229,7 +229,7 @@ namespace Android.Database
         /// <returns><see cref="bool"/></returns>
         public bool PutLong(long arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("putLong", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("putLong", "(JII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#putNull(int,int)"/>
@@ -239,7 +239,7 @@ namespace Android.Database
         /// <returns><see cref="bool"/></returns>
         public bool PutNull(int arg0, int arg1)
         {
-            return IExecute<bool>("putNull", arg0, arg1);
+            return IExecuteWithSignature<bool>("putNull", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#putString(java.lang.String,int,int)"/>
@@ -250,7 +250,7 @@ namespace Android.Database
         /// <returns><see cref="bool"/></returns>
         public bool PutString(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("putString", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("putString", "(Ljava/lang/String;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#setNumColumns(int)"/>
@@ -269,7 +269,7 @@ namespace Android.Database
         /// <returns><see cref="byte"/></returns>
         public byte[] GetBlob(int arg0, int arg1)
         {
-            return IExecuteArray<byte>("getBlob", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("getBlob", "(II)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getDouble(int,int)"/>
@@ -279,7 +279,7 @@ namespace Android.Database
         /// <returns><see cref="double"/></returns>
         public double GetDouble(int arg0, int arg1)
         {
-            return IExecute<double>("getDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("getDouble", "(II)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getFloat(int,int)"/>
@@ -289,7 +289,7 @@ namespace Android.Database
         /// <returns><see cref="float"/></returns>
         public float GetFloat(int arg0, int arg1)
         {
-            return IExecute<float>("getFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("getFloat", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#describeContents()"/>
@@ -307,7 +307,7 @@ namespace Android.Database
         /// <returns><see cref="int"/></returns>
         public int GetInt(int arg0, int arg1)
         {
-            return IExecute<int>("getInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getInt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getNumRows()"/>
@@ -333,7 +333,7 @@ namespace Android.Database
         /// <returns><see cref="int"/></returns>
         public int GetType(int arg0, int arg1)
         {
-            return IExecute<int>("getType", arg0, arg1);
+            return IExecuteWithSignature<int>("getType", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getString(int,int)"/>
@@ -343,7 +343,7 @@ namespace Android.Database
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getLong(int,int)"/>
@@ -353,7 +353,7 @@ namespace Android.Database
         /// <returns><see cref="long"/></returns>
         public long GetLong(int arg0, int arg1)
         {
-            return IExecute<long>("getLong", arg0, arg1);
+            return IExecuteWithSignature<long>("getLong", "(II)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getShort(int,int)"/>
@@ -363,7 +363,7 @@ namespace Android.Database
         /// <returns><see cref="short"/></returns>
         public short GetShort(int arg0, int arg1)
         {
-            return IExecute<short>("getShort", arg0, arg1);
+            return IExecuteWithSignature<short>("getShort", "(II)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#clear()"/>
@@ -380,7 +380,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Android.Database.CharArrayBuffer"/></param>
         public void CopyStringToBuffer(int arg0, int arg1, Android.Database.CharArrayBuffer arg2)
         {
-            IExecute("copyStringToBuffer", arg0, arg1, arg2);
+            IExecuteWithSignature("copyStringToBuffer", "(IILandroid/database/CharArrayBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#freeLastRow()"/>
@@ -404,15 +404,15 @@ namespace Android.Database
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Script(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -129,10 +129,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FieldBase(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -153,9 +153,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -175,10 +175,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FieldID(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -199,9 +199,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -221,10 +221,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InvokeID(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -245,9 +245,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -267,10 +267,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public KernelID(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -291,9 +291,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -313,10 +313,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LaunchOptions(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -337,9 +337,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -351,21 +351,21 @@ namespace Android.Renderscript
     public partial class Script
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#getVarB(int)"/>
@@ -425,7 +425,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void BindAllocation(Android.Renderscript.Allocation arg0, int arg1)
         {
-            IExecute("bindAllocation", arg0, arg1);
+            IExecuteWithSignature("bindAllocation", "(Landroid/renderscript/Allocation;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#getVarV(int,android.renderscript.FieldPacker)"/>
@@ -435,7 +435,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void GetVarV(int arg0, Android.Renderscript.FieldPacker arg1)
         {
-            IExecute("getVarV", arg0, arg1);
+            IExecuteWithSignature("getVarV", "(ILandroid/renderscript/FieldPacker;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setTimeZone(java.lang.String)"/>
@@ -454,7 +454,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, Android.Renderscript.BaseObj arg1)
         {
-            IExecute("setVar", arg0, arg1);
+            IExecuteWithSignature("setVar", "(ILandroid/renderscript/BaseObj;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setVar(int,android.renderscript.FieldPacker,android.renderscript.Element,int[])"/>
@@ -466,7 +466,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, Android.Renderscript.FieldPacker arg1, Android.Renderscript.Element arg2, int[] arg3)
         {
-            IExecute("setVar", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setVar", "(ILandroid/renderscript/FieldPacker;Landroid/renderscript/Element;[I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setVar(int,android.renderscript.FieldPacker)"/>
@@ -476,7 +476,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, Android.Renderscript.FieldPacker arg1)
         {
-            IExecute("setVar", arg0, arg1);
+            IExecuteWithSignature("setVar", "(ILandroid/renderscript/FieldPacker;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setVar(int,boolean)"/>
@@ -486,7 +486,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, bool arg1)
         {
-            IExecute("setVar", arg0, arg1);
+            IExecuteWithSignature("setVar", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setVar(int,double)"/>
@@ -496,7 +496,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, double arg1)
         {
-            IExecute("setVar", arg0, arg1);
+            IExecuteWithSignature("setVar", "(ID)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setVar(int,float)"/>
@@ -506,7 +506,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, float arg1)
         {
-            IExecute("setVar", arg0, arg1);
+            IExecuteWithSignature("setVar", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setVar(int,int)"/>
@@ -516,7 +516,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, int arg1)
         {
-            IExecute("setVar", arg0, arg1);
+            IExecuteWithSignature("setVar", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setVar(int,long)"/>
@@ -526,39 +526,39 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetVar(int arg0, long arg1)
         {
-            IExecute("setVar", arg0, arg1);
+            IExecuteWithSignature("setVar", "(IJ)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -567,21 +567,21 @@ namespace Android.Renderscript
         public partial class FieldBase
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#getAllocation()"/>
@@ -618,13 +618,13 @@ namespace Android.Renderscript
             {
                 IExecuteWithSignature("updateAllocation", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -633,29 +633,29 @@ namespace Android.Renderscript
         public partial class FieldID
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -664,29 +664,29 @@ namespace Android.Renderscript
         public partial class InvokeID
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -695,29 +695,29 @@ namespace Android.Renderscript
         public partial class KernelID
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -726,21 +726,21 @@ namespace Android.Renderscript
         public partial class LaunchOptions
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#setX(int,int)"/>
@@ -751,7 +751,7 @@ namespace Android.Renderscript
             [global::System.Obsolete()]
             public Android.Renderscript.Script.LaunchOptions SetX(int arg0, int arg1)
             {
-                return IExecute<Android.Renderscript.Script.LaunchOptions>("setX", arg0, arg1);
+                return IExecuteWithSignature<Android.Renderscript.Script.LaunchOptions>("setX", "(II)Landroid/renderscript/Script$LaunchOptions;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#setY(int,int)"/>
@@ -762,7 +762,7 @@ namespace Android.Renderscript
             [global::System.Obsolete()]
             public Android.Renderscript.Script.LaunchOptions SetY(int arg0, int arg1)
             {
-                return IExecute<Android.Renderscript.Script.LaunchOptions>("setY", arg0, arg1);
+                return IExecuteWithSignature<Android.Renderscript.Script.LaunchOptions>("setY", "(II)Landroid/renderscript/Script$LaunchOptions;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#setZ(int,int)"/>
@@ -773,7 +773,7 @@ namespace Android.Renderscript
             [global::System.Obsolete()]
             public Android.Renderscript.Script.LaunchOptions SetZ(int arg0, int arg1)
             {
-                return IExecute<Android.Renderscript.Script.LaunchOptions>("setZ", arg0, arg1);
+                return IExecuteWithSignature<Android.Renderscript.Script.LaunchOptions>("setZ", "(II)Landroid/renderscript/Script$LaunchOptions;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getXEnd()"/>
@@ -829,20 +829,20 @@ namespace Android.Renderscript
             {
                 return IExecuteWithSignature<int>("getZStart", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

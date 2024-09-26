@@ -40,10 +40,10 @@ namespace Android.Text.Method
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MultiTapKeyListener(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,21 +83,21 @@ namespace Android.Text.Method
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Text.Method.MultiTapKeyListener"/> to <see cref="Android.Text.SpanWatcher"/>
         /// </summary>
         public static implicit operator Android.Text.SpanWatcher(Android.Text.Method.MultiTapKeyListener t) => t.Cast<Android.Text.SpanWatcher>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MultiTapKeyListener.html#getInstance(boolean,android.text.method.TextKeyListener.Capitalize)"/>
@@ -107,11 +107,11 @@ namespace Android.Text.Method
         /// <returns><see cref="Android.Text.Method.MultiTapKeyListener"/></returns>
         public static Android.Text.Method.MultiTapKeyListener GetInstance(bool arg0, Android.Text.Method.TextKeyListener.Capitalize arg1)
         {
-            return SExecute<Android.Text.Method.MultiTapKeyListener>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Text.Method.MultiTapKeyListener>(LocalBridgeClazz, "getInstance", "(ZLandroid/text/method/TextKeyListener$Capitalize;)Landroid/text/method/MultiTapKeyListener;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MultiTapKeyListener.html#onSpanAdded(android.text.Spannable,java.lang.Object,int,int)"/>
@@ -122,7 +122,7 @@ namespace Android.Text.Method
         /// <param name="arg3"><see cref="int"/></param>
         public void OnSpanAdded(Android.Text.Spannable arg0, object arg1, int arg2, int arg3)
         {
-            IExecute("onSpanAdded", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onSpanAdded", "(Landroid/text/Spannable;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MultiTapKeyListener.html#onSpanChanged(android.text.Spannable,java.lang.Object,int,int,int,int)"/>
@@ -135,7 +135,7 @@ namespace Android.Text.Method
         /// <param name="arg5"><see cref="int"/></param>
         public void OnSpanChanged(Android.Text.Spannable arg0, object arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("onSpanChanged", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("onSpanChanged", "(Landroid/text/Spannable;Ljava/lang/Object;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MultiTapKeyListener.html#onSpanRemoved(android.text.Spannable,java.lang.Object,int,int)"/>
@@ -146,15 +146,15 @@ namespace Android.Text.Method
         /// <param name="arg3"><see cref="int"/></param>
         public void OnSpanRemoved(Android.Text.Spannable arg0, object arg1, int arg2, int arg3)
         {
-            IExecute("onSpanRemoved", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onSpanRemoved", "(Landroid/text/Spannable;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -35,7 +35,7 @@ namespace Android.Widget
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Adapter() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.Adapter";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region AdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="Adapter"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.widget.Adapter";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Widget
     public partial interface IAdapter
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Widget
     public partial class Adapter : Android.Widget.IAdapter
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="Adapter"/>
@@ -148,13 +148,13 @@ namespace Android.Widget
             AddEventHandler("getAutofillOptions", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(GetAutofillOptionsEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetView"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetView { get; set; } = null;
-        
+
         bool hasOverrideGetView = true;
         void GetViewEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -163,7 +163,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<Android.View.View>(1), data.EventData.GetAt<Android.View.ViewGroup>(2));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetView, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
@@ -175,13 +175,13 @@ namespace Android.Widget
         {
             hasOverrideGetView = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()"/>
         /// </summary>
         /// <remarks>If <see cref="OnHasStableIds"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnHasStableIds { get; set; } = null;
-        
+
         bool hasOverrideHasStableIds = true;
         void HasStableIdsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -190,7 +190,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideHasStableIds, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()"/>
         /// </summary>
@@ -199,13 +199,13 @@ namespace Android.Widget
         {
             hasOverrideHasStableIds = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsEmpty"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnIsEmpty { get; set; } = null;
-        
+
         bool hasOverrideIsEmpty = true;
         void IsEmptyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -214,7 +214,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideIsEmpty, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()"/>
         /// </summary>
@@ -223,13 +223,13 @@ namespace Android.Widget
         {
             hasOverrideIsEmpty = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetCount"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int> OnGetCount { get; set; } = null;
-        
+
         bool hasOverrideGetCount = true;
         void GetCountEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -238,7 +238,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetCount, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/>
         /// </summary>
@@ -247,13 +247,13 @@ namespace Android.Widget
         {
             hasOverrideGetCount = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetItemViewType"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int> OnGetItemViewType { get; set; } = null;
-        
+
         bool hasOverrideGetItemViewType = true;
         void GetItemViewTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -262,7 +262,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetItemViewType, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)"/>
         /// </summary>
@@ -272,13 +272,13 @@ namespace Android.Widget
         {
             hasOverrideGetItemViewType = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetViewTypeCount"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int> OnGetViewTypeCount { get; set; } = null;
-        
+
         bool hasOverrideGetViewTypeCount = true;
         void GetViewTypeCountEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -287,7 +287,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetViewTypeCount, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()"/>
         /// </summary>
@@ -296,13 +296,13 @@ namespace Android.Widget
         {
             hasOverrideGetViewTypeCount = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetItem"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, object> OnGetItem { get; set; } = null;
-        
+
         bool hasOverrideGetItem = true;
         void GetItemEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -311,7 +311,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetItem, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)"/>
         /// </summary>
@@ -321,13 +321,13 @@ namespace Android.Widget
         {
             hasOverrideGetItem = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetItemId"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, long> OnGetItemId { get; set; } = null;
-        
+
         bool hasOverrideGetItemId = true;
         void GetItemIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -336,7 +336,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetItemId, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)"/>
         /// </summary>
@@ -346,13 +346,13 @@ namespace Android.Widget
         {
             hasOverrideGetItemId = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRegisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Database.DataSetObserver> OnRegisterDataSetObserver { get; set; } = null;
-        
+
         bool hasOverrideRegisterDataSetObserver = true;
         void RegisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -361,7 +361,7 @@ namespace Android.Widget
             methodToExecute.Invoke(data.EventData.GetAt<Android.Database.DataSetObserver>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideRegisterDataSetObserver;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
@@ -370,13 +370,13 @@ namespace Android.Widget
         {
             hasOverrideRegisterDataSetObserver = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnUnregisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Database.DataSetObserver> OnUnregisterDataSetObserver { get; set; } = null;
-        
+
         bool hasOverrideUnregisterDataSetObserver = true;
         void UnregisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -385,7 +385,7 @@ namespace Android.Widget
             methodToExecute.Invoke(data.EventData.GetAt<Android.Database.DataSetObserver>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideUnregisterDataSetObserver;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
@@ -403,13 +403,13 @@ namespace Android.Widget
         {
             return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getAutofillOptionsDefault", "()[Ljava/lang/CharSequence;");
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAutofillOptions"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Lang.CharSequence[]> OnGetAutofillOptions { get; set; } = null;
-        
+
         bool hasOverrideGetAutofillOptions = true;
         void GetAutofillOptionsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -418,7 +418,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetAutofillOptions, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()"/>
         /// </summary>
@@ -428,13 +428,13 @@ namespace Android.Widget
         {
             hasOverrideGetAutofillOptions = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -443,21 +443,21 @@ namespace Android.Widget
     public partial class AdapterDirect : Android.Widget.IAdapter
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)"/>
@@ -468,7 +468,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public override Android.View.View GetView(int arg0, Android.View.View arg1, Android.View.ViewGroup arg2)
         {
-            return IExecute<Android.View.View>("getView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()"/>
@@ -553,13 +553,13 @@ namespace Android.Widget
         {
             return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getAutofillOptions", "()[Ljava/lang/CharSequence;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

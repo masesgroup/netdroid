@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScheduledThreadPoolExecutor(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -110,25 +110,25 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ScheduledThreadPoolExecutor"/> to <see cref="Java.Util.Concurrent.ScheduledExecutorService"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ScheduledExecutorService(Java.Util.Concurrent.ScheduledThreadPoolExecutor t) => t.Cast<Java.Util.Concurrent.ScheduledExecutorService>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)"/>
@@ -140,7 +140,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<V> Schedule<V>(Java.Util.Concurrent.Callable<V> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<V>>("schedule", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<V>>("schedule", "(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#getContinueExistingPeriodicTasksAfterShutdownPolicy()"/>
@@ -175,7 +175,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<object> Schedule(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("schedule", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("schedule", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<object> ScheduleAtFixedRate(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleAtFixedRate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleAtFixedRate", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
@@ -199,7 +199,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<object> ScheduleWithFixedDelay(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleWithFixedDelay", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleWithFixedDelay", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#setContinueExistingPeriodicTasksAfterShutdownPolicy(boolean)"/>
@@ -225,13 +225,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("setRemoveOnCancelPolicy", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

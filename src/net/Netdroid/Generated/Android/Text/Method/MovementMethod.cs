@@ -42,10 +42,10 @@ namespace Android.Text.Method
         /// </summary>
         [global::System.Obsolete("MovementMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MovementMethod(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Text.Method
     public partial interface IMovementMethod
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Text.Method
     public partial class MovementMethod : Android.Text.Method.IMovementMethod
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#canSelectArbitrarily()"/>
@@ -127,7 +127,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public bool OnGenericMotionEvent(Android.Widget.TextView arg0, Android.Text.Spannable arg1, Android.View.MotionEvent arg2)
         {
-            return IExecute<bool>("onGenericMotionEvent", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onGenericMotionEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#onKeyDown(android.widget.TextView,android.text.Spannable,int,android.view.KeyEvent)"/>
@@ -139,7 +139,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyDown(Android.Widget.TextView arg0, Android.Text.Spannable arg1, int arg2, Android.View.KeyEvent arg3)
         {
-            return IExecute<bool>("onKeyDown", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onKeyDown", "(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#onKeyOther(android.widget.TextView,android.text.Spannable,android.view.KeyEvent)"/>
@@ -150,7 +150,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyOther(Android.Widget.TextView arg0, Android.Text.Spannable arg1, Android.View.KeyEvent arg2)
         {
-            return IExecute<bool>("onKeyOther", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onKeyOther", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/KeyEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#onKeyUp(android.widget.TextView,android.text.Spannable,int,android.view.KeyEvent)"/>
@@ -162,7 +162,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyUp(Android.Widget.TextView arg0, Android.Text.Spannable arg1, int arg2, Android.View.KeyEvent arg3)
         {
-            return IExecute<bool>("onKeyUp", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onKeyUp", "(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#onTouchEvent(android.widget.TextView,android.text.Spannable,android.view.MotionEvent)"/>
@@ -173,7 +173,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public bool OnTouchEvent(Android.Widget.TextView arg0, Android.Text.Spannable arg1, Android.View.MotionEvent arg2)
         {
-            return IExecute<bool>("onTouchEvent", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onTouchEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#onTrackballEvent(android.widget.TextView,android.text.Spannable,android.view.MotionEvent)"/>
@@ -184,7 +184,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public bool OnTrackballEvent(Android.Widget.TextView arg0, Android.Text.Spannable arg1, Android.View.MotionEvent arg2)
         {
-            return IExecute<bool>("onTrackballEvent", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onTrackballEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#initialize(android.widget.TextView,android.text.Spannable)"/>
@@ -193,7 +193,7 @@ namespace Android.Text.Method
         /// <param name="arg1"><see cref="Android.Text.Spannable"/></param>
         public void Initialize(Android.Widget.TextView arg0, Android.Text.Spannable arg1)
         {
-            IExecute("initialize", arg0, arg1);
+            IExecuteWithSignature("initialize", "(Landroid/widget/TextView;Landroid/text/Spannable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MovementMethod.html#onTakeFocus(android.widget.TextView,android.text.Spannable,int)"/>
@@ -203,15 +203,15 @@ namespace Android.Text.Method
         /// <param name="arg2"><see cref="int"/></param>
         public void OnTakeFocus(Android.Widget.TextView arg0, Android.Text.Spannable arg1, int arg2)
         {
-            IExecute("onTakeFocus", arg0, arg1, arg2);
+            IExecuteWithSignature("onTakeFocus", "(Landroid/widget/TextView;Landroid/text/Spannable;I)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

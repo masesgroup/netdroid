@@ -42,10 +42,10 @@ namespace Org.Xmlpull.V1
         /// </summary>
         [global::System.Obsolete("XmlPullParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XmlPullParser(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.Xmlpull.V1
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.Xmlpull.V1
     public partial interface IXmlPullParser
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Org.Xmlpull.V1
     public partial class XmlPullParser : Org.Xmlpull.V1.IXmlPullParser
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#CDSECT"/>
@@ -204,13 +204,13 @@ namespace Org.Xmlpull.V1
         public static Java.Lang.String[] TYPES { get { if (!_TYPESReady) { _TYPESContent = SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "TYPES"); _TYPESReady = true; } return _TYPESContent; } }
         private static Java.Lang.String[] _TYPESContent = default;
         private static bool _TYPESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getFeature(java.lang.String)"/>
@@ -400,7 +400,7 @@ namespace Org.Xmlpull.V1
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#getInputEncoding()"/>
@@ -497,7 +497,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void DefineEntityReplacementText(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("defineEntityReplacementText", arg0, arg1);
+            IExecuteWithSignature("defineEntityReplacementText", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#require(int,java.lang.String,java.lang.String)"/>
@@ -509,7 +509,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void Require(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("require", arg0, arg1, arg2);
+            IExecuteWithSignature("require", "(ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#setFeature(java.lang.String,boolean)"/>
@@ -519,7 +519,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#setInput(java.io.InputStream,java.lang.String)"/>
@@ -529,7 +529,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void SetInput(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
-            IExecute("setInput", arg0, arg1);
+            IExecuteWithSignature("setInput", "(Ljava/io/InputStream;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html#setInput(java.io.Reader)"/>
@@ -548,15 +548,15 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

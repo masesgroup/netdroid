@@ -42,10 +42,10 @@ namespace Android.Net.Ipsec.Ike
         /// </summary>
         [global::System.Obsolete("ChildSessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChildSessionCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Net.Ipsec.Ike
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Net.Ipsec.Ike
     public partial interface IChildSessionCallback
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Net.Ipsec.Ike
     public partial class ChildSessionCallback : Android.Net.Ipsec.Ike.IChildSessionCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onClosed()"/>
@@ -124,7 +124,7 @@ namespace Android.Net.Ipsec.Ike
         /// <param name="arg1"><see cref="int"/></param>
         public void OnIpSecTransformCreated(Android.Net.IpSecTransform arg0, int arg1)
         {
-            IExecute("onIpSecTransformCreated", arg0, arg1);
+            IExecuteWithSignature("onIpSecTransformCreated", "(Landroid/net/IpSecTransform;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onIpSecTransformDeleted(android.net.IpSecTransform,int)"/>
@@ -133,7 +133,7 @@ namespace Android.Net.Ipsec.Ike
         /// <param name="arg1"><see cref="int"/></param>
         public void OnIpSecTransformDeleted(Android.Net.IpSecTransform arg0, int arg1)
         {
-            IExecute("onIpSecTransformDeleted", arg0, arg1);
+            IExecuteWithSignature("onIpSecTransformDeleted", "(Landroid/net/IpSecTransform;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onOpened(android.net.ipsec.ike.ChildSessionConfiguration)"/>
@@ -151,13 +151,13 @@ namespace Android.Net.Ipsec.Ike
         {
             IExecuteWithSignature("onClosedWithException", "(Landroid/net/ipsec/ike/exceptions/IkeException;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

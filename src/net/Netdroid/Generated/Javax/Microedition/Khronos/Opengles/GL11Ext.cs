@@ -42,10 +42,10 @@ namespace Javax.Microedition.Khronos.Opengles
         /// </summary>
         [global::System.Obsolete("GL11Ext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GL11Ext(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Microedition.Khronos.Opengles
     public partial interface IGL11Ext : Javax.Microedition.Khronos.Opengles.IGL
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Javax.Microedition.Khronos.Opengles
     public partial class GL11Ext : Javax.Microedition.Khronos.Opengles.IGL11Ext
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES"/>
@@ -198,13 +198,13 @@ namespace Javax.Microedition.Khronos.Opengles
         public static int GL_WEIGHT_ARRAY_TYPE_OES { get { if (!_GL_WEIGHT_ARRAY_TYPE_OESReady) { _GL_WEIGHT_ARRAY_TYPE_OESContent = SGetField<int>(LocalBridgeClazz, "GL_WEIGHT_ARRAY_TYPE_OES"); _GL_WEIGHT_ARRAY_TYPE_OESReady = true; } return _GL_WEIGHT_ARRAY_TYPE_OESContent; } }
         private static int _GL_WEIGHT_ARRAY_TYPE_OESContent = default;
         private static bool _GL_WEIGHT_ARRAY_TYPE_OESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glCurrentPaletteMatrixOES(int)"/>
@@ -224,7 +224,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg4"><see cref="float"/></param>
         public void GlDrawTexfOES(float arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            IExecute("glDrawTexfOES", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("glDrawTexfOES", "(FFFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexfvOES(float[],int)"/>
@@ -233,7 +233,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="int"/></param>
         public void GlDrawTexfvOES(float[] arg0, int arg1)
         {
-            IExecute("glDrawTexfvOES", arg0, arg1);
+            IExecuteWithSignature("glDrawTexfvOES", "([FI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexfvOES(java.nio.FloatBuffer)"/>
@@ -253,7 +253,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg4"><see cref="int"/></param>
         public void GlDrawTexiOES(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("glDrawTexiOES", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("glDrawTexiOES", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexivOES(int[],int)"/>
@@ -262,7 +262,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="int"/></param>
         public void GlDrawTexivOES(int[] arg0, int arg1)
         {
-            IExecute("glDrawTexivOES", arg0, arg1);
+            IExecuteWithSignature("glDrawTexivOES", "([II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexivOES(java.nio.IntBuffer)"/>
@@ -282,7 +282,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg4"><see cref="short"/></param>
         public void GlDrawTexsOES(short arg0, short arg1, short arg2, short arg3, short arg4)
         {
-            IExecute("glDrawTexsOES", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("glDrawTexsOES", "(SSSSS)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexsvOES(java.nio.ShortBuffer)"/>
@@ -299,7 +299,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="int"/></param>
         public void GlDrawTexsvOES(short[] arg0, int arg1)
         {
-            IExecute("glDrawTexsvOES", arg0, arg1);
+            IExecuteWithSignature("glDrawTexsvOES", "([SI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexxOES(int,int,int,int,int)"/>
@@ -311,7 +311,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg4"><see cref="int"/></param>
         public void GlDrawTexxOES(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("glDrawTexxOES", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("glDrawTexxOES", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexxvOES(int[],int)"/>
@@ -320,7 +320,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="int"/></param>
         public void GlDrawTexxvOES(int[] arg0, int arg1)
         {
-            IExecute("glDrawTexxvOES", arg0, arg1);
+            IExecuteWithSignature("glDrawTexxvOES", "([II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glDrawTexxvOES(java.nio.IntBuffer)"/>
@@ -362,7 +362,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlMatrixIndexPointerOES(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("glMatrixIndexPointerOES", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glMatrixIndexPointerOES", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glMatrixIndexPointerOES(int,int,int,java.nio.Buffer)"/>
@@ -373,7 +373,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="Java.Nio.Buffer"/></param>
         public void GlMatrixIndexPointerOES(int arg0, int arg1, int arg2, Java.Nio.Buffer arg3)
         {
-            IExecute("glMatrixIndexPointerOES", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glMatrixIndexPointerOES", "(IIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glTexParameterfv(int,int,float[],int)"/>
@@ -384,7 +384,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlTexParameterfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            IExecute("glTexParameterfv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glTexParameterfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glWeightPointerOES(int,int,int,int)"/>
@@ -395,7 +395,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlWeightPointerOES(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("glWeightPointerOES", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glWeightPointerOES", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11Ext.html#glWeightPointerOES(int,int,int,java.nio.Buffer)"/>
@@ -406,15 +406,15 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="Java.Nio.Buffer"/></param>
         public void GlWeightPointerOES(int arg0, int arg1, int arg2, Java.Nio.Buffer arg3)
         {
-            IExecute("glWeightPointerOES", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glWeightPointerOES", "(IIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

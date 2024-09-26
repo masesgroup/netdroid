@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Gainmap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,13 +91,13 @@ namespace Android.Graphics
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#CREATOR"/>
@@ -105,13 +105,13 @@ namespace Android.Graphics
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGainmapContents()"/>
@@ -201,7 +201,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetEpsilonHdr(float arg0, float arg1, float arg2)
         {
-            IExecute("setEpsilonHdr", arg0, arg1, arg2);
+            IExecuteWithSignature("setEpsilonHdr", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setEpsilonSdr(float,float,float)"/>
@@ -211,7 +211,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetEpsilonSdr(float arg0, float arg1, float arg2)
         {
-            IExecute("setEpsilonSdr", arg0, arg1, arg2);
+            IExecuteWithSignature("setEpsilonSdr", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGainmapContents(android.graphics.Bitmap)"/>
@@ -229,7 +229,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetGamma(float arg0, float arg1, float arg2)
         {
-            IExecute("setGamma", arg0, arg1, arg2);
+            IExecuteWithSignature("setGamma", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setMinDisplayRatioForHdrTransition(float)"/>
@@ -247,7 +247,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetRatioMax(float arg0, float arg1, float arg2)
         {
-            IExecute("setRatioMax", arg0, arg1, arg2);
+            IExecuteWithSignature("setRatioMax", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setRatioMin(float,float,float)"/>
@@ -257,7 +257,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetRatioMin(float arg0, float arg1, float arg2)
         {
-            IExecute("setRatioMin", arg0, arg1, arg2);
+            IExecuteWithSignature("setRatioMin", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#writeToParcel(android.os.Parcel,int)"/>
@@ -266,15 +266,15 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

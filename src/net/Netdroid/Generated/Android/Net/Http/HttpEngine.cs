@@ -42,10 +42,10 @@ namespace Android.Net.Http
         /// </summary>
         [global::System.Obsolete("HttpEngine class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HttpEngine(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Net.Http
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Android.Net.Http
     public partial class HttpEngine
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.html#getVersionString()"/>
@@ -141,9 +141,9 @@ namespace Android.Net.Http
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getVersionString", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.html#newBidirectionalStreamBuilder(java.lang.String,java.util.concurrent.Executor,android.net.http.BidirectionalStream.Callback)"/>
@@ -154,7 +154,7 @@ namespace Android.Net.Http
         /// <returns><see cref="Android.Net.Http.BidirectionalStream.Builder"/></returns>
         public Android.Net.Http.BidirectionalStream.Builder NewBidirectionalStreamBuilder(Java.Lang.String arg0, Java.Util.Concurrent.Executor arg1, Android.Net.Http.BidirectionalStream.Callback arg2)
         {
-            return IExecute<Android.Net.Http.BidirectionalStream.Builder>("newBidirectionalStreamBuilder", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Net.Http.BidirectionalStream.Builder>("newBidirectionalStreamBuilder", "(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/net/http/BidirectionalStream$Callback;)Landroid/net/http/BidirectionalStream$Builder;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.html#newUrlRequestBuilder(java.lang.String,java.util.concurrent.Executor,android.net.http.UrlRequest.Callback)"/>
@@ -165,7 +165,7 @@ namespace Android.Net.Http
         /// <returns><see cref="Android.Net.Http.UrlRequest.Builder"/></returns>
         public Android.Net.Http.UrlRequest.Builder NewUrlRequestBuilder(Java.Lang.String arg0, Java.Util.Concurrent.Executor arg1, Android.Net.Http.UrlRequest.Callback arg2)
         {
-            return IExecute<Android.Net.Http.UrlRequest.Builder>("newUrlRequestBuilder", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Net.Http.UrlRequest.Builder>("newUrlRequestBuilder", "(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/net/http/UrlRequest$Callback;)Landroid/net/http/UrlRequest$Builder;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.html#openConnection(java.net.URL)"/>
@@ -200,9 +200,9 @@ namespace Android.Net.Http
         {
             IExecuteWithSignature("bindToNetwork", "(Landroid/net/Network;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -216,13 +216,13 @@ namespace Android.Net.Http
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#HTTP_CACHE_DISABLED"/>
@@ -248,13 +248,13 @@ namespace Android.Net.Http
             public static int HTTP_CACHE_IN_MEMORY { get { if (!_HTTP_CACHE_IN_MEMORYReady) { _HTTP_CACHE_IN_MEMORYContent = SGetField<int>(LocalBridgeClazz, "HTTP_CACHE_IN_MEMORY"); _HTTP_CACHE_IN_MEMORYReady = true; } return _HTTP_CACHE_IN_MEMORYContent; } }
             private static int _HTTP_CACHE_IN_MEMORYContent = default;
             private static bool _HTTP_CACHE_IN_MEMORYReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#build()"/>
@@ -274,7 +274,7 @@ namespace Android.Net.Http
             /// <returns><see cref="Android.Net.Http.HttpEngine.Builder"/></returns>
             public Android.Net.Http.HttpEngine.Builder AddPublicKeyPins(Java.Lang.String arg0, Java.Util.Set<byte[]> arg1, bool arg2, Java.Time.Instant arg3)
             {
-                return IExecute<Android.Net.Http.HttpEngine.Builder>("addPublicKeyPins", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Net.Http.HttpEngine.Builder>("addPublicKeyPins", "(Ljava/lang/String;Ljava/util/Set;ZLjava/time/Instant;)Landroid/net/http/HttpEngine$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#addQuicHint(java.lang.String,int,int)"/>
@@ -285,7 +285,7 @@ namespace Android.Net.Http
             /// <returns><see cref="Android.Net.Http.HttpEngine.Builder"/></returns>
             public Android.Net.Http.HttpEngine.Builder AddQuicHint(Java.Lang.String arg0, int arg1, int arg2)
             {
-                return IExecute<Android.Net.Http.HttpEngine.Builder>("addQuicHint", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Net.Http.HttpEngine.Builder>("addQuicHint", "(Ljava/lang/String;II)Landroid/net/http/HttpEngine$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#setConnectionMigrationOptions(android.net.http.ConnectionMigrationOptions)"/>
@@ -331,7 +331,7 @@ namespace Android.Net.Http
             /// <returns><see cref="Android.Net.Http.HttpEngine.Builder"/></returns>
             public Android.Net.Http.HttpEngine.Builder SetEnableHttpCache(int arg0, long arg1)
             {
-                return IExecute<Android.Net.Http.HttpEngine.Builder>("setEnableHttpCache", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Http.HttpEngine.Builder>("setEnableHttpCache", "(IJ)Landroid/net/http/HttpEngine$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#setEnablePublicKeyPinningBypassForLocalTrustAnchors(boolean)"/>
@@ -386,20 +386,20 @@ namespace Android.Net.Http
             {
                 return IExecuteWithSignature<Java.Lang.String>("getDefaultUserAgent", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

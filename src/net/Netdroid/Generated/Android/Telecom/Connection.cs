@@ -42,10 +42,10 @@ namespace Android.Telecom
         /// </summary>
         [global::System.Obsolete("Connection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Connection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region RttModifyStatus declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Telecom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RttModifyStatus(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Telecom
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Telecom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RttTextStream(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Telecom
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -175,10 +175,10 @@ namespace Android.Telecom
             /// </summary>
             [global::System.Obsolete("VideoProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public VideoProvider(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -199,9 +199,9 @@ namespace Android.Telecom
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -213,13 +213,13 @@ namespace Android.Telecom
     public partial class Connection
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#AUDIO_CODEC_AMR"/>
@@ -744,9 +744,9 @@ namespace Android.Telecom
         public static Java.Lang.String EXTRA_SIP_INVITE { get { if (!_EXTRA_SIP_INVITEReady) { _EXTRA_SIP_INVITEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SIP_INVITE"); _EXTRA_SIP_INVITEReady = true; } return _EXTRA_SIP_INVITEContent; } }
         private static Java.Lang.String _EXTRA_SIP_INVITEContent = default;
         private static bool _EXTRA_SIP_INVITEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#createCanceledConnection()"/>
@@ -792,9 +792,9 @@ namespace Android.Telecom
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "stateToString", "(I)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#getAddress()"/>
@@ -980,7 +980,7 @@ namespace Android.Telecom
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void QueryLocationForEmergency(long arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Android.Location.Location, Android.Telecom.QueryLocationException> arg3)
         {
-            IExecute("queryLocationForEmergency", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("queryLocationForEmergency", "(JLjava/lang/String;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#removeExtras(java.lang.String[])"/>
@@ -1006,7 +1006,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RequestCallEndpointChange(Android.Telecom.CallEndpoint arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallEndpointException> arg2)
         {
-            IExecute("requestCallEndpointChange", arg0, arg1, arg2);
+            IExecuteWithSignature("requestCallEndpointChange", "(Landroid/telecom/CallEndpoint;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#sendRemoteRttRequest()"/>
@@ -1051,7 +1051,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="int"/></param>
         public void SetAddress(Android.Net.Uri arg0, int arg1)
         {
-            IExecute("setAddress", arg0, arg1);
+            IExecuteWithSignature("setAddress", "(Landroid/net/Uri;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#setAudioModeIsVoip(boolean)"/>
@@ -1077,7 +1077,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="int"/></param>
         public void SetCallerDisplayName(Java.Lang.String arg0, int arg1)
         {
-            IExecute("setCallerDisplayName", arg0, arg1);
+            IExecuteWithSignature("setCallerDisplayName", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#setCallerNumberVerificationStatus(int)"/>
@@ -1295,7 +1295,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void OnCallEvent(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("onCallEvent", arg0, arg1);
+            IExecuteWithSignature("onCallEvent", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#onDeflect(android.net.Uri)"/>
@@ -1478,23 +1478,23 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void SendConnectionEvent(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendConnectionEvent", arg0, arg1);
+            IExecuteWithSignature("sendConnectionEvent", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region RttModifyStatus implementation
         public partial class RttModifyStatus
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Connection.RttModifyStatus.html#SESSION_MODIFY_REQUEST_FAIL"/>
@@ -1526,21 +1526,21 @@ namespace Android.Telecom
             public static int SESSION_MODIFY_REQUEST_TIMED_OUT { get { if (!_SESSION_MODIFY_REQUEST_TIMED_OUTReady) { _SESSION_MODIFY_REQUEST_TIMED_OUTContent = SGetField<int>(LocalBridgeClazz, "SESSION_MODIFY_REQUEST_TIMED_OUT"); _SESSION_MODIFY_REQUEST_TIMED_OUTReady = true; } return _SESSION_MODIFY_REQUEST_TIMED_OUTContent; } }
             private static int _SESSION_MODIFY_REQUEST_TIMED_OUTContent = default;
             private static bool _SESSION_MODIFY_REQUEST_TIMED_OUTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1549,21 +1549,21 @@ namespace Android.Telecom
         public partial class RttTextStream
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Connection.RttTextStream.html#read()"/>
@@ -1592,13 +1592,13 @@ namespace Android.Telecom
             {
                 IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1607,13 +1607,13 @@ namespace Android.Telecom
         public partial class VideoProvider
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Connection.VideoProvider.html#SESSION_EVENT_CAMERA_FAILURE"/>
@@ -1687,13 +1687,13 @@ namespace Android.Telecom
             public static int SESSION_MODIFY_REQUEST_TIMED_OUT { get { if (!_SESSION_MODIFY_REQUEST_TIMED_OUTReady) { _SESSION_MODIFY_REQUEST_TIMED_OUTContent = SGetField<int>(LocalBridgeClazz, "SESSION_MODIFY_REQUEST_TIMED_OUT"); _SESSION_MODIFY_REQUEST_TIMED_OUTReady = true; } return _SESSION_MODIFY_REQUEST_TIMED_OUTContent; } }
             private static int _SESSION_MODIFY_REQUEST_TIMED_OUTContent = default;
             private static bool _SESSION_MODIFY_REQUEST_TIMED_OUTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Connection.VideoProvider.html#onRequestCameraCapabilities()"/>
@@ -1716,7 +1716,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Telecom.VideoProfile"/></param>
             public void OnSendSessionModifyRequest(Android.Telecom.VideoProfile arg0, Android.Telecom.VideoProfile arg1)
             {
-                IExecute("onSendSessionModifyRequest", arg0, arg1);
+                IExecuteWithSignature("onSendSessionModifyRequest", "(Landroid/telecom/VideoProfile;Landroid/telecom/VideoProfile;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Connection.VideoProvider.html#onSendSessionModifyResponse(android.telecom.VideoProfile)"/>
@@ -1789,7 +1789,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void ChangePeerDimensions(int arg0, int arg1)
             {
-                IExecute("changePeerDimensions", arg0, arg1);
+                IExecuteWithSignature("changePeerDimensions", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Connection.VideoProvider.html#changeVideoQuality(int)"/>
@@ -1823,7 +1823,7 @@ namespace Android.Telecom
             /// <param name="arg2"><see cref="Android.Telecom.VideoProfile"/></param>
             public void ReceiveSessionModifyResponse(int arg0, Android.Telecom.VideoProfile arg1, Android.Telecom.VideoProfile arg2)
             {
-                IExecute("receiveSessionModifyResponse", arg0, arg1, arg2);
+                IExecuteWithSignature("receiveSessionModifyResponse", "(ILandroid/telecom/VideoProfile;Landroid/telecom/VideoProfile;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Connection.VideoProvider.html#setCallDataUsage(long)"/>
@@ -1833,20 +1833,20 @@ namespace Android.Telecom
             {
                 IExecuteWithSignature("setCallDataUsage", "(J)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

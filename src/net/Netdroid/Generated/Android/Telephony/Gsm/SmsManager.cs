@@ -41,10 +41,10 @@ namespace Android.Telephony.Gsm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SmsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Telephony.Gsm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.Telephony.Gsm
     public partial class SmsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsManager.html#RESULT_ERROR_GENERIC_FAILURE"/>
@@ -146,9 +146,9 @@ namespace Android.Telephony.Gsm
         public static int STATUS_ON_SIM_UNSENT { get { if (!_STATUS_ON_SIM_UNSENTReady) { _STATUS_ON_SIM_UNSENTContent = SGetField<int>(LocalBridgeClazz, "STATUS_ON_SIM_UNSENT"); _STATUS_ON_SIM_UNSENTReady = true; } return _STATUS_ON_SIM_UNSENTContent; } }
         private static int _STATUS_ON_SIM_UNSENTContent = default;
         private static bool _STATUS_ON_SIM_UNSENTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsManager.html#getDefault()"/>
@@ -159,9 +159,9 @@ namespace Android.Telephony.Gsm
         {
             return SExecuteWithSignature<Android.Telephony.Gsm.SmsManager>(LocalBridgeClazz, "getDefault", "()Landroid/telephony/gsm/SmsManager;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsManager.html#divideMessage(java.lang.String)"/>
@@ -185,7 +185,7 @@ namespace Android.Telephony.Gsm
         [global::System.Obsolete()]
         public void SendDataMessage(Java.Lang.String arg0, Java.Lang.String arg1, short arg2, byte[] arg3, Android.App.PendingIntent arg4, Android.App.PendingIntent arg5)
         {
-            IExecute("sendDataMessage", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("sendDataMessage", "(Ljava/lang/String;Ljava/lang/String;S[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsManager.html#sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)"/>
@@ -198,7 +198,7 @@ namespace Android.Telephony.Gsm
         [global::System.Obsolete()]
         public void SendMultipartTextMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.ArrayList<Java.Lang.String> arg2, Java.Util.ArrayList<Android.App.PendingIntent> arg3, Java.Util.ArrayList<Android.App.PendingIntent> arg4)
         {
-            IExecute("sendMultipartTextMessage", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("sendMultipartTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/SmsManager.html#sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)"/>
@@ -211,15 +211,15 @@ namespace Android.Telephony.Gsm
         [global::System.Obsolete()]
         public void SendTextMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.App.PendingIntent arg3, Android.App.PendingIntent arg4)
         {
-            IExecute("sendTextMessage", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("sendTextMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

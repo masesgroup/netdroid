@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Character(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Subset declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Lang
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Subset(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Java.Lang
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UnicodeBlock(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Java.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Java.Lang
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UnicodeScript(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Java.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -218,9 +218,9 @@ namespace Java.Lang
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Character"/> to <see cref="Java.Io.Serializable"/>
@@ -230,9 +230,9 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Character"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Character t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#COMBINING_SPACING_MARK"/>
@@ -654,9 +654,9 @@ namespace Java.Lang
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
         private static bool _TYPEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#isAlphabetic(int)"/>
@@ -957,7 +957,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsSurrogatePair(char arg0, char arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isSurrogatePair", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSurrogatePair", "(CC)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#isTitleCase(char)"/>
@@ -1084,7 +1084,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char ForDigit(int arg0, int arg1)
         {
-            return SExecute<char>(LocalBridgeClazz, "forDigit", arg0, arg1);
+            return SExecuteWithSignature<char>(LocalBridgeClazz, "forDigit", "(II)C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#highSurrogate(int)"/>
@@ -1167,7 +1167,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointAt(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointAt", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointAt", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointAt(char[],int)"/>
@@ -1177,7 +1177,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointAt(char[] arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointAt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointAt", "([CI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointAt(java.lang.CharSequence,int)"/>
@@ -1187,7 +1187,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointAt(Java.Lang.CharSequence arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointAt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointAt", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointBefore(char[],int,int)"/>
@@ -1198,7 +1198,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointBefore", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointBefore", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointBefore(char[],int)"/>
@@ -1208,7 +1208,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(char[] arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointBefore", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointBefore", "([CI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointBefore(java.lang.CharSequence,int)"/>
@@ -1218,7 +1218,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(Java.Lang.CharSequence arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointBefore", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointBefore", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointCount(char[],int,int)"/>
@@ -1229,7 +1229,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointCount(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointCount", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointCount", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointCount(java.lang.CharSequence,int,int)"/>
@@ -1240,7 +1240,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointCount(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointCount", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointCount", "(Ljava/lang/CharSequence;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#codePointOf(java.lang.String)"/>
@@ -1259,7 +1259,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(char arg0, char arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(CC)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#digit(char,int)"/>
@@ -1269,7 +1269,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Digit(char arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "digit", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "digit", "(CI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#digit(int,int)"/>
@@ -1279,7 +1279,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Digit(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "digit", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "digit", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#getNumericValue(char)"/>
@@ -1337,7 +1337,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int OffsetByCodePoints(char[] arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "offsetByCodePoints", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "offsetByCodePoints", "([CIIII)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#offsetByCodePoints(java.lang.CharSequence,int,int)"/>
@@ -1348,7 +1348,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int OffsetByCodePoints(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "offsetByCodePoints", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "offsetByCodePoints", "(Ljava/lang/CharSequence;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#toChars(int,char[],int)"/>
@@ -1359,7 +1359,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToChars(int arg0, char[] arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "toChars", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "toChars", "(I[CI)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#toCodePoint(char,char)"/>
@@ -1369,7 +1369,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToCodePoint(char arg0, char arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "toCodePoint", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "toCodePoint", "(CC)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#toLowerCase(int)"/>
@@ -1434,9 +1434,9 @@ namespace Java.Lang
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Character.html#charValue()"/>
@@ -1464,37 +1464,37 @@ namespace Java.Lang
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Subset implementation
         public partial class Subset
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1503,13 +1503,13 @@ namespace Java.Lang
         public partial class UnicodeBlock
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/Character.UnicodeBlock.html#ADLAM"/>
@@ -3366,9 +3366,9 @@ namespace Java.Lang
             public static Java.Lang.Character.UnicodeBlock ZANABAZAR_SQUARE { get { if (!_ZANABAZAR_SQUAREReady) { _ZANABAZAR_SQUAREContent = SGetField<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "ZANABAZAR_SQUARE"); _ZANABAZAR_SQUAREReady = true; } return _ZANABAZAR_SQUAREContent; } }
             private static Java.Lang.Character.UnicodeBlock _ZANABAZAR_SQUAREContent = default;
             private static bool _ZANABAZAR_SQUAREReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/Character.UnicodeBlock.html#forName(java.lang.String)"/>
@@ -3397,17 +3397,17 @@ namespace Java.Lang
             {
                 return SExecuteWithSignature<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "of", "(I)Ljava/lang/Character$UnicodeBlock;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3416,13 +3416,13 @@ namespace Java.Lang
         public partial class UnicodeScript
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/Character.UnicodeScript.html#ADLAM"/>
@@ -4366,9 +4366,9 @@ namespace Java.Lang
             public static Java.Lang.Character.UnicodeScript ZANABAZAR_SQUARE { get { if (!_ZANABAZAR_SQUAREReady) { _ZANABAZAR_SQUAREContent = SGetField<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "ZANABAZAR_SQUARE"); _ZANABAZAR_SQUAREReady = true; } return _ZANABAZAR_SQUAREContent; } }
             private static Java.Lang.Character.UnicodeScript _ZANABAZAR_SQUAREContent = default;
             private static bool _ZANABAZAR_SQUAREReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/Character.UnicodeScript.html#forName(java.lang.String)"/>
@@ -4405,24 +4405,24 @@ namespace Java.Lang
             {
                 return SExecuteWithSignatureArray<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "values", "()[Ljava/lang/Character$UnicodeScript;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

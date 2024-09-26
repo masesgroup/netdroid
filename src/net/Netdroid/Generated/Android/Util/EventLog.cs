@@ -40,10 +40,10 @@ namespace Android.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EventLog(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Event declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Event(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,17 +119,17 @@ namespace Android.Util
     public partial class EventLog
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#getTagCode(java.lang.String)"/>
@@ -157,7 +157,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, float arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(IF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,int)"/>
@@ -167,7 +167,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,java.lang.Object[])"/>
@@ -177,7 +177,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0); else return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(I[Ljava/lang/Object;)I", arg0); else return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(I[Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,java.lang.String)"/>
@@ -187,7 +187,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(ILjava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,long)"/>
@@ -197,7 +197,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, long arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(IJ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#readEvents(int[],java.util.Collection)"/>
@@ -207,35 +207,35 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public static void ReadEvents(int[] arg0, Java.Util.Collection<Android.Util.EventLog.Event> arg1)
         {
-            SExecute(LocalBridgeClazz, "readEvents", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "readEvents", "([ILjava/util/Collection;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Event implementation
         public partial class Event
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getProcessId()"/>
@@ -277,20 +277,20 @@ namespace Android.Util
             {
                 return IExecuteWithSignature("getData", "()Ljava/lang/Object;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

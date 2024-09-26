@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("CaseMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CaseMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Fold declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Fold(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Lower(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Title(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -218,10 +218,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Upper(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -256,17 +256,17 @@ namespace Android.Icu.Text
     public partial class CaseMap
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.html#fold()"/>
@@ -300,9 +300,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.CaseMap.Upper>(LocalBridgeClazz, "toUpper", "()Landroid/icu/text/CaseMap$Upper;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.html#omitUnchangedText()"/>
@@ -312,29 +312,29 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Android.Icu.Text.CaseMap>("omitUnchangedText", "()Landroid/icu/text/CaseMap;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Fold implementation
         public partial class Fold
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Fold.html#apply(java.lang.CharSequence,java.lang.Appendable,android.icu.text.Edits)"/>
@@ -346,7 +346,7 @@ namespace Android.Icu.Text
             /// <returns><typeparamref name="A"/></returns>
             public A Apply<A>(Java.Lang.CharSequence arg0, A arg1, Android.Icu.Text.Edits arg2) where A : Java.Lang.IAppendable, new()
             {
-                return IExecute<A>("apply", arg0, arg1, arg2);
+                return IExecuteWithSignature<A>("apply", "(Ljava/lang/CharSequence;Ljava/lang/Appendable;Landroid/icu/text/Edits;)Ljava/lang/Appendable;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Fold.html#turkic()"/>
@@ -365,13 +365,13 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<Java.Lang.String>("apply", "(Ljava/lang/CharSequence;)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -380,21 +380,21 @@ namespace Android.Icu.Text
         public partial class Lower
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Lower.html#apply(java.util.Locale,java.lang.CharSequence,java.lang.Appendable,android.icu.text.Edits)"/>
@@ -407,7 +407,7 @@ namespace Android.Icu.Text
             /// <returns><typeparamref name="A"/></returns>
             public A Apply<A>(Java.Util.Locale arg0, Java.Lang.CharSequence arg1, A arg2, Android.Icu.Text.Edits arg3) where A : Java.Lang.IAppendable, new()
             {
-                return IExecute<A>("apply", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<A>("apply", "(Ljava/util/Locale;Ljava/lang/CharSequence;Ljava/lang/Appendable;Landroid/icu/text/Edits;)Ljava/lang/Appendable;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Lower.html#apply(java.util.Locale,java.lang.CharSequence)"/>
@@ -417,15 +417,15 @@ namespace Android.Icu.Text
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Apply(Java.Util.Locale arg0, Java.Lang.CharSequence arg1)
             {
-                return IExecute<Java.Lang.String>("apply", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.String>("apply", "(Ljava/util/Locale;Ljava/lang/CharSequence;)Ljava/lang/String;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -434,21 +434,21 @@ namespace Android.Icu.Text
         public partial class Title
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Title.html#apply(java.util.Locale,android.icu.text.BreakIterator,java.lang.CharSequence,java.lang.Appendable,android.icu.text.Edits)"/>
@@ -462,7 +462,7 @@ namespace Android.Icu.Text
             /// <returns><typeparamref name="A"/></returns>
             public A Apply<A>(Java.Util.Locale arg0, Android.Icu.Text.BreakIterator arg1, Java.Lang.CharSequence arg2, A arg3, Android.Icu.Text.Edits arg4) where A : Java.Lang.IAppendable, new()
             {
-                return IExecute<A>("apply", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<A>("apply", "(Ljava/util/Locale;Landroid/icu/text/BreakIterator;Ljava/lang/CharSequence;Ljava/lang/Appendable;Landroid/icu/text/Edits;)Ljava/lang/Appendable;", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Title.html#adjustToCased()"/>
@@ -513,15 +513,15 @@ namespace Android.Icu.Text
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Apply(Java.Util.Locale arg0, Android.Icu.Text.BreakIterator arg1, Java.Lang.CharSequence arg2)
             {
-                return IExecute<Java.Lang.String>("apply", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Lang.String>("apply", "(Ljava/util/Locale;Landroid/icu/text/BreakIterator;Ljava/lang/CharSequence;)Ljava/lang/String;", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -530,21 +530,21 @@ namespace Android.Icu.Text
         public partial class Upper
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Upper.html#apply(java.util.Locale,java.lang.CharSequence,java.lang.Appendable,android.icu.text.Edits)"/>
@@ -557,7 +557,7 @@ namespace Android.Icu.Text
             /// <returns><typeparamref name="A"/></returns>
             public A Apply<A>(Java.Util.Locale arg0, Java.Lang.CharSequence arg1, A arg2, Android.Icu.Text.Edits arg3) where A : Java.Lang.IAppendable, new()
             {
-                return IExecute<A>("apply", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<A>("apply", "(Ljava/util/Locale;Ljava/lang/CharSequence;Ljava/lang/Appendable;Landroid/icu/text/Edits;)Ljava/lang/Appendable;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CaseMap.Upper.html#apply(java.util.Locale,java.lang.CharSequence)"/>
@@ -567,22 +567,22 @@ namespace Android.Icu.Text
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Apply(Java.Util.Locale arg0, Java.Lang.CharSequence arg1)
             {
-                return IExecute<Java.Lang.String>("apply", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.String>("apply", "(Ljava/util/Locale;Ljava/lang/CharSequence;)Ljava/lang/String;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

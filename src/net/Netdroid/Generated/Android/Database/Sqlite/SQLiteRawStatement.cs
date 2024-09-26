@@ -40,10 +40,10 @@ namespace Android.Database.Sqlite
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SQLiteRawStatement(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Database.Sqlite
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Database.Sqlite
     public partial class SQLiteRawStatement
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#SQLITE_DATA_TYPE_BLOB"/>
@@ -112,13 +112,13 @@ namespace Android.Database.Sqlite
         public static int SQLITE_DATA_TYPE_TEXT { get { if (!_SQLITE_DATA_TYPE_TEXTReady) { _SQLITE_DATA_TYPE_TEXTContent = SGetField<int>(LocalBridgeClazz, "SQLITE_DATA_TYPE_TEXT"); _SQLITE_DATA_TYPE_TEXTReady = true; } return _SQLITE_DATA_TYPE_TEXTContent; } }
         private static int _SQLITE_DATA_TYPE_TEXTContent = default;
         private static bool _SQLITE_DATA_TYPE_TEXTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#isOpen()"/>
@@ -217,7 +217,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="int"/></returns>
         public int ReadColumnBlob(int arg0, byte[] arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<int>("readColumnBlob", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("readColumnBlob", "(I[BIII)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#getColumnName(int)"/>
@@ -264,7 +264,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg3"><see cref="int"/></param>
         public void BindBlob(int arg0, byte[] arg1, int arg2, int arg3)
         {
-            IExecute("bindBlob", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("bindBlob", "(I[BII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#bindBlob(int,byte[])"/>
@@ -273,7 +273,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg1"><see cref="byte"/></param>
         public void BindBlob(int arg0, byte[] arg1)
         {
-            IExecute("bindBlob", arg0, arg1);
+            IExecuteWithSignature("bindBlob", "(I[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#bindDouble(int,double)"/>
@@ -282,7 +282,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg1"><see cref="double"/></param>
         public void BindDouble(int arg0, double arg1)
         {
-            IExecute("bindDouble", arg0, arg1);
+            IExecuteWithSignature("bindDouble", "(ID)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#bindInt(int,int)"/>
@@ -291,7 +291,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg1"><see cref="int"/></param>
         public void BindInt(int arg0, int arg1)
         {
-            IExecute("bindInt", arg0, arg1);
+            IExecuteWithSignature("bindInt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#bindLong(int,long)"/>
@@ -300,7 +300,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg1"><see cref="long"/></param>
         public void BindLong(int arg0, long arg1)
         {
-            IExecute("bindLong", arg0, arg1);
+            IExecuteWithSignature("bindLong", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#bindNull(int)"/>
@@ -317,7 +317,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void BindText(int arg0, Java.Lang.String arg1)
         {
-            IExecute("bindText", arg0, arg1);
+            IExecuteWithSignature("bindText", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#clearBindings()"/>
@@ -340,13 +340,13 @@ namespace Android.Database.Sqlite
         {
             IExecuteWithSignature("reset", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

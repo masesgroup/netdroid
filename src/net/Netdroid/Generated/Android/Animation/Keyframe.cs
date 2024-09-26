@@ -42,10 +42,10 @@ namespace Android.Animation
         /// </summary>
         [global::System.Obsolete("Keyframe class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Keyframe(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Android.Animation
     public partial class Keyframe
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#ofFloat(float,float)"/>
@@ -96,7 +96,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.Keyframe"/></returns>
         public static Android.Animation.Keyframe OfFloat(float arg0, float arg1)
         {
-            return SExecute<Android.Animation.Keyframe>(LocalBridgeClazz, "ofFloat", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.Keyframe>(LocalBridgeClazz, "ofFloat", "(FF)Landroid/animation/Keyframe;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#ofFloat(float)"/>
@@ -115,7 +115,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.Keyframe"/></returns>
         public static Android.Animation.Keyframe OfInt(float arg0, int arg1)
         {
-            return SExecute<Android.Animation.Keyframe>(LocalBridgeClazz, "ofInt", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.Keyframe>(LocalBridgeClazz, "ofInt", "(FI)Landroid/animation/Keyframe;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#ofInt(float)"/>
@@ -134,7 +134,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.Keyframe"/></returns>
         public static Android.Animation.Keyframe OfObject(float arg0, object arg1)
         {
-            return SExecute<Android.Animation.Keyframe>(LocalBridgeClazz, "ofObject", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.Keyframe>(LocalBridgeClazz, "ofObject", "(FLjava/lang/Object;)Landroid/animation/Keyframe;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#ofObject(float)"/>
@@ -145,9 +145,9 @@ namespace Android.Animation
         {
             return SExecuteWithSignature<Android.Animation.Keyframe>(LocalBridgeClazz, "ofObject", "(F)Landroid/animation/Keyframe;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#clone()"/>
@@ -221,13 +221,13 @@ namespace Android.Animation
         {
             IExecuteWithSignature("setInterpolator", "(Landroid/animation/TimeInterpolator;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

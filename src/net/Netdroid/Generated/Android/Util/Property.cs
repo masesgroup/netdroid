@@ -42,10 +42,10 @@ namespace Android.Util
         /// </summary>
         [global::System.Obsolete("Property class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Property(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,10 +91,10 @@ namespace Android.Util
         /// </summary>
         [global::System.Obsolete("Property class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Property(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -134,17 +134,17 @@ namespace Android.Util
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#of(java.lang.Class,java.lang.Class,java.lang.String)"/>
@@ -155,11 +155,11 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Property"/></returns>
         public static Android.Util.Property Of(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Util.Property>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Util.Property>(LocalBridgeClazz, "of", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Landroid/util/Property;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#get(java.lang.Object)"/>
@@ -201,15 +201,15 @@ namespace Android.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void Set(object arg0, object arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -227,21 +227,21 @@ namespace Android.Util
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Util.Property{T, V}"/> to <see cref="Android.Util.Property"/>
         /// </summary>
         public static implicit operator Android.Util.Property(Android.Util.Property<T, V> t) => t.Cast<Android.Util.Property>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#of(java.lang.Class,java.lang.Class,java.lang.String)"/>
@@ -252,11 +252,11 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Property"/></returns>
         public static Android.Util.Property<T, V> Of(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Util.Property<T, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Util.Property<T, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Landroid/util/Property;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#get(java.lang.Object)"/>
@@ -298,15 +298,15 @@ namespace Android.Util
         /// <param name="arg1"><typeparamref name="V"/></param>
         public void Set(T arg0, V arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

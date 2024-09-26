@@ -41,10 +41,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Movie(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,17 +75,17 @@ namespace Android.Graphics
     public partial class Movie
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Movie.html#decodeFile(java.lang.String)"/>
@@ -117,11 +117,11 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public static Android.Graphics.Movie DecodeByteArray(byte[] arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Graphics.Movie>(LocalBridgeClazz, "decodeByteArray", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Movie>(LocalBridgeClazz, "decodeByteArray", "([BII)Landroid/graphics/Movie;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Movie.html#isOpaque()"/>
@@ -179,7 +179,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public void Draw(Android.Graphics.Canvas arg0, float arg1, float arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("draw", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;FFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Movie.html#draw(android.graphics.Canvas,float,float)"/>
@@ -190,15 +190,15 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public void Draw(Android.Graphics.Canvas arg0, float arg1, float arg2)
         {
-            IExecute("draw", arg0, arg1, arg2);
+            IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;FF)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

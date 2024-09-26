@@ -42,10 +42,10 @@ namespace Android.Database
         /// </summary>
         [global::System.Obsolete("AbstractCursor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractCursor(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Database
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Database
     public partial class AbstractCursor
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/AbstractCursor.html#isNull(int)"/>
@@ -228,7 +228,7 @@ namespace Android.Database
         /// <returns><see cref="bool"/></returns>
         public bool OnMove(int arg0, int arg1)
         {
-            return IExecute<bool>("onMove", arg0, arg1);
+            return IExecuteWithSignature<bool>("onMove", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/AbstractCursor.html#requery()"/>
@@ -403,7 +403,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Database.CharArrayBuffer"/></param>
         public void CopyStringToBuffer(int arg0, Android.Database.CharArrayBuffer arg1)
         {
-            IExecute("copyStringToBuffer", arg0, arg1);
+            IExecuteWithSignature("copyStringToBuffer", "(ILandroid/database/CharArrayBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/AbstractCursor.html#deactivate()"/>
@@ -419,7 +419,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Database.CursorWindow"/></param>
         public void FillWindow(int arg0, Android.Database.CursorWindow arg1)
         {
-            IExecute("fillWindow", arg0, arg1);
+            IExecuteWithSignature("fillWindow", "(ILandroid/database/CursorWindow;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/AbstractCursor.html#registerContentObserver(android.database.ContentObserver)"/>
@@ -452,7 +452,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void SetNotificationUri(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
         {
-            IExecute("setNotificationUri", arg0, arg1);
+            IExecuteWithSignature("setNotificationUri", "(Landroid/content/ContentResolver;Landroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/AbstractCursor.html#setNotificationUris(android.content.ContentResolver,java.util.List)"/>
@@ -461,7 +461,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         public void SetNotificationUris(Android.Content.ContentResolver arg0, Java.Util.List<Android.Net.Uri> arg1)
         {
-            IExecute("setNotificationUris", arg0, arg1);
+            IExecuteWithSignature("setNotificationUris", "(Landroid/content/ContentResolver;Ljava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/AbstractCursor.html#unregisterContentObserver(android.database.ContentObserver)"/>
@@ -479,13 +479,13 @@ namespace Android.Database
         {
             IExecuteWithSignature("unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

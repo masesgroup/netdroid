@@ -40,10 +40,10 @@ namespace Android.Credentials
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CredentialManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Credentials
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Credentials
     public partial class CredentialManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialManager.html#isEnabledCredentialProviderService(android.content.ComponentName)"/>
@@ -108,7 +108,7 @@ namespace Android.Credentials
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void ClearCredentialState(Android.Credentials.ClearCredentialStateRequest arg0, Android.Os.CancellationSignal arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Credentials.ClearCredentialStateException> arg3)
         {
-            IExecute("clearCredentialState", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("clearCredentialState", "(Landroid/credentials/ClearCredentialStateRequest;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialManager.html#createCredential(android.content.Context,android.credentials.CreateCredentialRequest,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -120,7 +120,7 @@ namespace Android.Credentials
         /// <param name="arg4"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void CreateCredential(Android.Content.Context arg0, Android.Credentials.CreateCredentialRequest arg1, Android.Os.CancellationSignal arg2, Java.Util.Concurrent.Executor arg3, Android.Os.OutcomeReceiver<Android.Credentials.CreateCredentialResponse, Android.Credentials.CreateCredentialException> arg4)
         {
-            IExecute("createCredential", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("createCredential", "(Landroid/content/Context;Landroid/credentials/CreateCredentialRequest;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialManager.html#getCredential(android.content.Context,android.credentials.GetCredentialRequest,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -132,7 +132,7 @@ namespace Android.Credentials
         /// <param name="arg4"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetCredential(Android.Content.Context arg0, Android.Credentials.GetCredentialRequest arg1, Android.Os.CancellationSignal arg2, Java.Util.Concurrent.Executor arg3, Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> arg4)
         {
-            IExecute("getCredential", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("getCredential", "(Landroid/content/Context;Landroid/credentials/GetCredentialRequest;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialManager.html#getCredential(android.content.Context,android.credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -144,7 +144,7 @@ namespace Android.Credentials
         /// <param name="arg4"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetCredential(Android.Content.Context arg0, Android.Credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle arg1, Android.Os.CancellationSignal arg2, Java.Util.Concurrent.Executor arg3, Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> arg4)
         {
-            IExecute("getCredential", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("getCredential", "(Landroid/content/Context;Landroid/credentials/PrepareGetCredentialResponse$PendingGetCredentialHandle;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialManager.html#prepareGetCredential(android.credentials.GetCredentialRequest,android.os.CancellationSignal,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -155,7 +155,7 @@ namespace Android.Credentials
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void PrepareGetCredential(Android.Credentials.GetCredentialRequest arg0, Android.Os.CancellationSignal arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Android.Credentials.PrepareGetCredentialResponse, Android.Credentials.GetCredentialException> arg3)
         {
-            IExecute("prepareGetCredential", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("prepareGetCredential", "(Landroid/credentials/GetCredentialRequest;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialManager.html#registerCredentialDescription(android.credentials.RegisterCredentialDescriptionRequest)"/>
@@ -173,13 +173,13 @@ namespace Android.Credentials
         {
             IExecuteWithSignature("unregisterCredentialDescription", "(Landroid/credentials/UnregisterCredentialDescriptionRequest;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

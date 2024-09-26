@@ -42,10 +42,10 @@ namespace Android.Service.Notification
         /// </summary>
         [global::System.Obsolete("NotificationListenerService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NotificationListenerService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Service.Notification
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Ranking declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Service.Notification
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Ranking(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Service.Notification
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Service.Notification
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RankingMap(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Service.Notification
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -166,13 +166,13 @@ namespace Android.Service.Notification
     public partial class NotificationListenerService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#FLAG_FILTER_TYPE_ALERTING"/>
@@ -446,9 +446,9 @@ namespace Android.Service.Notification
         public static Java.Lang.String SERVICE_INTERFACE { get { if (!_SERVICE_INTERFACEReady) { _SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_INTERFACE"); _SERVICE_INTERFACEReady = true; } return _SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _SERVICE_INTERFACEContent = default;
         private static bool _SERVICE_INTERFACEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#requestRebind(android.content.ComponentName)"/>
@@ -466,9 +466,9 @@ namespace Android.Service.Notification
         {
             SExecuteWithSignature(LocalBridgeClazz, "requestUnbind", "(Landroid/content/ComponentName;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getCurrentRanking()"/>
@@ -527,7 +527,7 @@ namespace Android.Service.Notification
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.App.NotificationChannel> GetNotificationChannels(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Java.Util.List<Android.App.NotificationChannel>>("getNotificationChannels", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannel>>("getNotificationChannels", "(Ljava/lang/String;Landroid/os/UserHandle;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getNotificationChannelGroups(java.lang.String,android.os.UserHandle)"/>
@@ -537,7 +537,7 @@ namespace Android.Service.Notification
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.App.NotificationChannelGroup> GetNotificationChannelGroups(Java.Lang.String arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Java.Util.List<Android.App.NotificationChannelGroup>>("getNotificationChannelGroups", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannelGroup>>("getNotificationChannelGroups", "(Ljava/lang/String;Landroid/os/UserHandle;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#cancelAllNotifications()"/>
@@ -555,7 +555,7 @@ namespace Android.Service.Notification
         [global::System.Obsolete()]
         public void CancelNotification(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("cancelNotification", arg0, arg1, arg2);
+            IExecuteWithSignature("cancelNotification", "(Ljava/lang/String;Ljava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#cancelNotification(java.lang.String)"/>
@@ -587,7 +587,7 @@ namespace Android.Service.Notification
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         public void MigrateNotificationFilter(int arg0, Java.Util.List<Java.Lang.String> arg1)
         {
-            IExecute("migrateNotificationFilter", arg0, arg1);
+            IExecuteWithSignature("migrateNotificationFilter", "(ILjava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#requestInterruptionFilter(int)"/>
@@ -627,7 +627,7 @@ namespace Android.Service.Notification
         /// <param name="arg1"><see cref="long"/></param>
         public void SnoozeNotification(Java.Lang.String arg0, long arg1)
         {
-            IExecute("snoozeNotification", arg0, arg1);
+            IExecuteWithSignature("snoozeNotification", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#updateNotificationChannel(java.lang.String,android.os.UserHandle,android.app.NotificationChannel)"/>
@@ -637,7 +637,7 @@ namespace Android.Service.Notification
         /// <param name="arg2"><see cref="Android.App.NotificationChannel"/></param>
         public void UpdateNotificationChannel(Java.Lang.String arg0, Android.Os.UserHandle arg1, Android.App.NotificationChannel arg2)
         {
-            IExecute("updateNotificationChannel", arg0, arg1, arg2);
+            IExecuteWithSignature("updateNotificationChannel", "(Ljava/lang/String;Landroid/os/UserHandle;Landroid/app/NotificationChannel;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#onInterruptionFilterChanged(int)"/>
@@ -678,7 +678,7 @@ namespace Android.Service.Notification
         /// <param name="arg3"><see cref="int"/></param>
         public void OnNotificationChannelGroupModified(Java.Lang.String arg0, Android.Os.UserHandle arg1, Android.App.NotificationChannelGroup arg2, int arg3)
         {
-            IExecute("onNotificationChannelGroupModified", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onNotificationChannelGroupModified", "(Ljava/lang/String;Landroid/os/UserHandle;Landroid/app/NotificationChannelGroup;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#onNotificationChannelModified(java.lang.String,android.os.UserHandle,android.app.NotificationChannel,int)"/>
@@ -689,7 +689,7 @@ namespace Android.Service.Notification
         /// <param name="arg3"><see cref="int"/></param>
         public void OnNotificationChannelModified(Java.Lang.String arg0, Android.Os.UserHandle arg1, Android.App.NotificationChannel arg2, int arg3)
         {
-            IExecute("onNotificationChannelModified", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onNotificationChannelModified", "(Ljava/lang/String;Landroid/os/UserHandle;Landroid/app/NotificationChannel;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#onNotificationPosted(android.service.notification.StatusBarNotification,android.service.notification.NotificationListenerService.RankingMap)"/>
@@ -698,7 +698,7 @@ namespace Android.Service.Notification
         /// <param name="arg1"><see cref="Android.Service.Notification.NotificationListenerService.RankingMap"/></param>
         public void OnNotificationPosted(Android.Service.Notification.StatusBarNotification arg0, Android.Service.Notification.NotificationListenerService.RankingMap arg1)
         {
-            IExecute("onNotificationPosted", arg0, arg1);
+            IExecuteWithSignature("onNotificationPosted", "(Landroid/service/notification/StatusBarNotification;Landroid/service/notification/NotificationListenerService$RankingMap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#onNotificationPosted(android.service.notification.StatusBarNotification)"/>
@@ -724,7 +724,7 @@ namespace Android.Service.Notification
         /// <param name="arg2"><see cref="int"/></param>
         public void OnNotificationRemoved(Android.Service.Notification.StatusBarNotification arg0, Android.Service.Notification.NotificationListenerService.RankingMap arg1, int arg2)
         {
-            IExecute("onNotificationRemoved", arg0, arg1, arg2);
+            IExecuteWithSignature("onNotificationRemoved", "(Landroid/service/notification/StatusBarNotification;Landroid/service/notification/NotificationListenerService$RankingMap;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#onNotificationRemoved(android.service.notification.StatusBarNotification,android.service.notification.NotificationListenerService.RankingMap)"/>
@@ -733,7 +733,7 @@ namespace Android.Service.Notification
         /// <param name="arg1"><see cref="Android.Service.Notification.NotificationListenerService.RankingMap"/></param>
         public void OnNotificationRemoved(Android.Service.Notification.StatusBarNotification arg0, Android.Service.Notification.NotificationListenerService.RankingMap arg1)
         {
-            IExecute("onNotificationRemoved", arg0, arg1);
+            IExecuteWithSignature("onNotificationRemoved", "(Landroid/service/notification/StatusBarNotification;Landroid/service/notification/NotificationListenerService$RankingMap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#onNotificationRemoved(android.service.notification.StatusBarNotification)"/>
@@ -751,21 +751,21 @@ namespace Android.Service.Notification
         {
             IExecuteWithSignature("onSilentStatusBarIconsVisibilityChanged", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Ranking implementation
         public partial class Ranking
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#USER_SENTIMENT_NEGATIVE"/>
@@ -791,13 +791,13 @@ namespace Android.Service.Notification
             public static int VISIBILITY_NO_OVERRIDE { get { if (!_VISIBILITY_NO_OVERRIDEReady) { _VISIBILITY_NO_OVERRIDEContent = SGetField<int>(LocalBridgeClazz, "VISIBILITY_NO_OVERRIDE"); _VISIBILITY_NO_OVERRIDEReady = true; } return _VISIBILITY_NO_OVERRIDEContent; } }
             private static int _VISIBILITY_NO_OVERRIDEContent = default;
             private static bool _VISIBILITY_NO_OVERRIDEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getChannel()"/>
@@ -951,13 +951,13 @@ namespace Android.Service.Notification
             {
                 return IExecuteWithSignature<long>("getLastAudiblyAlertedMillis", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -966,13 +966,13 @@ namespace Android.Service.Notification
         public partial class RankingMap
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.RankingMap.html#CREATOR"/>
@@ -980,13 +980,13 @@ namespace Android.Service.Notification
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.RankingMap.html#getRanking(java.lang.String,android.service.notification.NotificationListenerService.Ranking)"/>
@@ -996,7 +996,7 @@ namespace Android.Service.Notification
             /// <returns><see cref="bool"/></returns>
             public bool GetRanking(Java.Lang.String arg0, Android.Service.Notification.NotificationListenerService.Ranking arg1)
             {
-                return IExecute<bool>("getRanking", arg0, arg1);
+                return IExecuteWithSignature<bool>("getRanking", "(Ljava/lang/String;Landroid/service/notification/NotificationListenerService$Ranking;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.RankingMap.html#describeContents()"/>
@@ -1021,22 +1021,22 @@ namespace Android.Service.Notification
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

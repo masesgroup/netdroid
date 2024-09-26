@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Camera(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Graphics
     public partial class Camera
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#dotWithNormal(float,float,float)"/>
@@ -99,7 +99,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float DotWithNormal(float arg0, float arg1, float arg2)
         {
-            return IExecute<float>("dotWithNormal", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("dotWithNormal", "(FFF)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#getLocationX()"/>
@@ -140,7 +140,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void Rotate(float arg0, float arg1, float arg2)
         {
-            IExecute("rotate", arg0, arg1, arg2);
+            IExecuteWithSignature("rotate", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#rotateX(float)"/>
@@ -181,7 +181,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetLocation(float arg0, float arg1, float arg2)
         {
-            IExecute("setLocation", arg0, arg1, arg2);
+            IExecuteWithSignature("setLocation", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#translate(float,float,float)"/>
@@ -191,7 +191,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void Translate(float arg0, float arg1, float arg2)
         {
-            IExecute("translate", arg0, arg1, arg2);
+            IExecuteWithSignature("translate", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Camera.html#applyToCanvas(android.graphics.Canvas)"/>
@@ -209,13 +209,13 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("getMatrix", "(Landroid/graphics/Matrix;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

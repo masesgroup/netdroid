@@ -40,10 +40,10 @@ namespace Android.Icu.Math
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BigDecimal(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Math
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -149,17 +149,17 @@ namespace Android.Icu.Math
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Math.BigDecimal"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Icu.Math.BigDecimal t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#ONE"/>
@@ -227,9 +227,9 @@ namespace Android.Icu.Math
         public static int ROUND_UP { get { if (!_ROUND_UPReady) { _ROUND_UPContent = SGetField<int>(LocalBridgeClazz, "ROUND_UP"); _ROUND_UPReady = true; } return _ROUND_UPContent; } }
         private static int _ROUND_UPContent = default;
         private static bool _ROUND_UPReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#valueOf(double)"/>
@@ -248,7 +248,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public static Android.Icu.Math.BigDecimal ValueOf(long arg0, int arg1)
         {
-            return SExecute<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "valueOf", "(JI)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#valueOf(long)"/>
@@ -259,9 +259,9 @@ namespace Android.Icu.Math
         {
             return SExecuteWithSignature<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "valueOf", "(J)Landroid/icu/math/BigDecimal;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#abs()"/>
@@ -288,7 +288,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Add(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("add", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("add", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#add(android.icu.math.BigDecimal)"/>
@@ -307,7 +307,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Divide(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("divide", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("divide", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#divide(android.icu.math.BigDecimal,int,int)"/>
@@ -318,7 +318,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Divide(Android.Icu.Math.BigDecimal arg0, int arg1, int arg2)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("divide", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("divide", "(Landroid/icu/math/BigDecimal;II)Landroid/icu/math/BigDecimal;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#divide(android.icu.math.BigDecimal,int)"/>
@@ -328,7 +328,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Divide(Android.Icu.Math.BigDecimal arg0, int arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("divide", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("divide", "(Landroid/icu/math/BigDecimal;I)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#divide(android.icu.math.BigDecimal)"/>
@@ -347,7 +347,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal DivideInteger(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("divideInteger", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("divideInteger", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#divideInteger(android.icu.math.BigDecimal)"/>
@@ -366,7 +366,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Max(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("max", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("max", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#max(android.icu.math.BigDecimal)"/>
@@ -385,7 +385,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Min(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("min", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("min", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#min(android.icu.math.BigDecimal)"/>
@@ -422,7 +422,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Multiply(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("multiply", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("multiply", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#multiply(android.icu.math.BigDecimal)"/>
@@ -475,7 +475,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Pow(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("pow", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("pow", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#pow(android.icu.math.BigDecimal)"/>
@@ -494,7 +494,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Remainder(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("remainder", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("remainder", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#remainder(android.icu.math.BigDecimal)"/>
@@ -513,7 +513,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal SetScale(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("setScale", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("setScale", "(II)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#setScale(int)"/>
@@ -532,7 +532,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public Android.Icu.Math.BigDecimal Subtract(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<Android.Icu.Math.BigDecimal>("subtract", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Math.BigDecimal>("subtract", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#subtract(android.icu.math.BigDecimal)"/>
@@ -567,7 +567,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Android.Icu.Math.BigDecimal arg0, Android.Icu.Math.MathContext arg1)
         {
-            return IExecute<int>("compareTo", arg0, arg1);
+            return IExecuteWithSignature<int>("compareTo", "(Landroid/icu/math/BigDecimal;Landroid/icu/math/MathContext;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#compareTo(android.icu.math.BigDecimal)"/>
@@ -623,7 +623,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            return IExecute<Java.Lang.String>("format", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Lang.String>("format", "(IIIIII)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#format(int,int)"/>
@@ -633,7 +633,7 @@ namespace Android.Icu.Math
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("format", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("format", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/math/BigDecimal.html#toBigDecimal()"/>
@@ -683,13 +683,13 @@ namespace Android.Icu.Math
         {
             return IExecuteWithSignature<short>("shortValueExact", "()S");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

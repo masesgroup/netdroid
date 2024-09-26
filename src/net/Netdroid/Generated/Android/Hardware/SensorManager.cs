@@ -42,10 +42,10 @@ namespace Android.Hardware
         /// </summary>
         [global::System.Obsolete("SensorManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SensorManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Hardware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region DynamicSensorCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Hardware
             /// </summary>
             [global::System.Obsolete("DynamicSensorCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public DynamicSensorCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Hardware
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,13 +123,13 @@ namespace Android.Hardware
     public partial class SensorManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_DEATH_STAR_I"/>
@@ -497,9 +497,9 @@ namespace Android.Hardware
         public static int SENSOR_TRICORDER { get { if (!_SENSOR_TRICORDERReady) { _SENSOR_TRICORDERContent = SGetField<int>(LocalBridgeClazz, "SENSOR_TRICORDER"); _SENSOR_TRICORDERReady = true; } return _SENSOR_TRICORDERContent; } }
         private static int _SENSOR_TRICORDERContent = default;
         private static bool _SENSOR_TRICORDERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getRotationMatrix(float[],float[],float[],float[])"/>
@@ -511,7 +511,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public static bool GetRotationMatrix(float[] arg0, float[] arg1, float[] arg2, float[] arg3)
         {
-            return SExecute<bool>(LocalBridgeClazz, "getRotationMatrix", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "getRotationMatrix", "([F[F[F[F)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#remapCoordinateSystem(float[],int,int,float[])"/>
@@ -523,7 +523,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public static bool RemapCoordinateSystem(float[] arg0, int arg1, int arg2, float[] arg3)
         {
-            return SExecute<bool>(LocalBridgeClazz, "remapCoordinateSystem", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "remapCoordinateSystem", "([FII[F)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getAltitude(float,float)"/>
@@ -533,7 +533,7 @@ namespace Android.Hardware
         /// <returns><see cref="float"/></returns>
         public static float GetAltitude(float arg0, float arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "getAltitude", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getAltitude", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getInclination(float[])"/>
@@ -552,7 +552,7 @@ namespace Android.Hardware
         /// <returns><see cref="float"/></returns>
         public static float[] GetOrientation(float[] arg0, float[] arg1)
         {
-            return SExecuteArray<float>(LocalBridgeClazz, "getOrientation", arg0, arg1);
+            return SExecuteWithSignatureArray<float>(LocalBridgeClazz, "getOrientation", "([F[F)[F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getAngleChange(float[],float[],float[])"/>
@@ -562,7 +562,7 @@ namespace Android.Hardware
         /// <param name="arg2"><see cref="float"/></param>
         public static void GetAngleChange(float[] arg0, float[] arg1, float[] arg2)
         {
-            SExecute(LocalBridgeClazz, "getAngleChange", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "getAngleChange", "([F[F[F)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getQuaternionFromVector(float[],float[])"/>
@@ -571,7 +571,7 @@ namespace Android.Hardware
         /// <param name="arg1"><see cref="float"/></param>
         public static void GetQuaternionFromVector(float[] arg0, float[] arg1)
         {
-            SExecute(LocalBridgeClazz, "getQuaternionFromVector", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "getQuaternionFromVector", "([F[F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getRotationMatrixFromVector(float[],float[])"/>
@@ -580,11 +580,11 @@ namespace Android.Hardware
         /// <param name="arg1"><see cref="float"/></param>
         public static void GetRotationMatrixFromVector(float[] arg0, float[] arg1)
         {
-            SExecute(LocalBridgeClazz, "getRotationMatrixFromVector", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "getRotationMatrixFromVector", "([F[F)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int,boolean)"/>
@@ -594,7 +594,7 @@ namespace Android.Hardware
         /// <returns><see cref="Android.Hardware.Sensor"/></returns>
         public Android.Hardware.Sensor GetDefaultSensor(int arg0, bool arg1)
         {
-            return IExecute<Android.Hardware.Sensor>("getDefaultSensor", arg0, arg1);
+            return IExecuteWithSignature<Android.Hardware.Sensor>("getDefaultSensor", "(IZ)Landroid/hardware/Sensor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int)"/>
@@ -631,7 +631,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public bool CancelTriggerSensor(Android.Hardware.TriggerEventListener arg0, Android.Hardware.Sensor arg1)
         {
-            return IExecute<bool>("cancelTriggerSensor", arg0, arg1);
+            return IExecuteWithSignature<bool>("cancelTriggerSensor", "(Landroid/hardware/TriggerEventListener;Landroid/hardware/Sensor;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#flush(android.hardware.SensorEventListener)"/>
@@ -660,7 +660,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public bool RegisterListener(Android.Hardware.SensorEventListener arg0, Android.Hardware.Sensor arg1, int arg2, Android.Os.Handler arg3)
         {
-            return IExecute<bool>("registerListener", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int,android.os.Handler)"/>
@@ -673,7 +673,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public bool RegisterListener(Android.Hardware.SensorEventListener arg0, Android.Hardware.Sensor arg1, int arg2, int arg3, Android.Os.Handler arg4)
         {
-            return IExecute<bool>("registerListener", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;IILandroid/os/Handler;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)"/>
@@ -685,7 +685,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public bool RegisterListener(Android.Hardware.SensorEventListener arg0, Android.Hardware.Sensor arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("registerListener", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;II)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)"/>
@@ -696,7 +696,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public bool RegisterListener(Android.Hardware.SensorEventListener arg0, Android.Hardware.Sensor arg1, int arg2)
         {
-            return IExecute<bool>("registerListener", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int,int)"/>
@@ -708,7 +708,7 @@ namespace Android.Hardware
         [global::System.Obsolete()]
         public bool RegisterListener(Android.Hardware.SensorListener arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("registerListener", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("registerListener", "(Landroid/hardware/SensorListener;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int)"/>
@@ -719,7 +719,7 @@ namespace Android.Hardware
         [global::System.Obsolete()]
         public bool RegisterListener(Android.Hardware.SensorListener arg0, int arg1)
         {
-            return IExecute<bool>("registerListener", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerListener", "(Landroid/hardware/SensorListener;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)"/>
@@ -729,7 +729,7 @@ namespace Android.Hardware
         /// <returns><see cref="bool"/></returns>
         public bool RequestTriggerSensor(Android.Hardware.TriggerEventListener arg0, Android.Hardware.Sensor arg1)
         {
-            return IExecute<bool>("requestTriggerSensor", arg0, arg1);
+            return IExecuteWithSignature<bool>("requestTriggerSensor", "(Landroid/hardware/TriggerEventListener;Landroid/hardware/Sensor;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getSensors()"/>
@@ -765,7 +765,7 @@ namespace Android.Hardware
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterDynamicSensorCallback(Android.Hardware.SensorManager.DynamicSensorCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerDynamicSensorCallback", arg0, arg1);
+            IExecuteWithSignature("registerDynamicSensorCallback", "(Landroid/hardware/SensorManager$DynamicSensorCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerDynamicSensorCallback(android.hardware.SensorManager.DynamicSensorCallback)"/>
@@ -790,7 +790,7 @@ namespace Android.Hardware
         /// <param name="arg1"><see cref="Android.Hardware.Sensor"/></param>
         public void UnregisterListener(Android.Hardware.SensorEventListener arg0, Android.Hardware.Sensor arg1)
         {
-            IExecute("unregisterListener", arg0, arg1);
+            IExecuteWithSignature("unregisterListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorEventListener)"/>
@@ -808,7 +808,7 @@ namespace Android.Hardware
         [global::System.Obsolete()]
         public void UnregisterListener(Android.Hardware.SensorListener arg0, int arg1)
         {
-            IExecute("unregisterListener", arg0, arg1);
+            IExecuteWithSignature("unregisterListener", "(Landroid/hardware/SensorListener;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorListener)"/>
@@ -819,29 +819,29 @@ namespace Android.Hardware
         {
             IExecuteWithSignature("unregisterListener", "(Landroid/hardware/SensorListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region DynamicSensorCallback implementation
         public partial class DynamicSensorCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.DynamicSensorCallback.html#onDynamicSensorConnected(android.hardware.Sensor)"/>
@@ -859,20 +859,20 @@ namespace Android.Hardware
             {
                 IExecuteWithSignature("onDynamicSensorDisconnected", "(Landroid/hardware/Sensor;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.View.Animation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AnimationUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.View.Animation
     public partial class AnimationUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/AnimationUtils.html#loadAnimation(android.content.Context,int)"/>
@@ -95,7 +95,7 @@ namespace Android.View.Animation
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public static Android.View.Animation.Animation LoadAnimation(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.View.Animation.Animation>(LocalBridgeClazz, "loadAnimation", arg0, arg1);
+            return SExecuteWithSignature<Android.View.Animation.Animation>(LocalBridgeClazz, "loadAnimation", "(Landroid/content/Context;I)Landroid/view/animation/Animation;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/AnimationUtils.html#makeInAnimation(android.content.Context,boolean)"/>
@@ -105,7 +105,7 @@ namespace Android.View.Animation
         /// <returns><see cref="Android.View.Animation.Animation"/></returns>
         public static Android.View.Animation.Animation MakeInAnimation(Android.Content.Context arg0, bool arg1)
         {
-            return SExecute<Android.View.Animation.Animation>(LocalBridgeClazz, "makeInAnimation", arg0, arg1);
+            return SExecuteWithSignature<Android.View.Animation.Animation>(LocalBridgeClazz, "makeInAnimation", "(Landroid/content/Context;Z)Landroid/view/animation/Animation;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/AnimationUtils.html#makeInChildBottomAnimation(android.content.Context)"/>
@@ -124,7 +124,7 @@ namespace Android.View.Animation
         /// <returns><see cref="Android.View.Animation.Animation"/></returns>
         public static Android.View.Animation.Animation MakeOutAnimation(Android.Content.Context arg0, bool arg1)
         {
-            return SExecute<Android.View.Animation.Animation>(LocalBridgeClazz, "makeOutAnimation", arg0, arg1);
+            return SExecuteWithSignature<Android.View.Animation.Animation>(LocalBridgeClazz, "makeOutAnimation", "(Landroid/content/Context;Z)Landroid/view/animation/Animation;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/AnimationUtils.html#loadInterpolator(android.content.Context,int)"/>
@@ -135,7 +135,7 @@ namespace Android.View.Animation
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public static Android.View.Animation.Interpolator LoadInterpolator(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.View.Animation.Interpolator>(LocalBridgeClazz, "loadInterpolator", arg0, arg1);
+            return SExecuteWithSignature<Android.View.Animation.Interpolator>(LocalBridgeClazz, "loadInterpolator", "(Landroid/content/Context;I)Landroid/view/animation/Interpolator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/AnimationUtils.html#loadLayoutAnimation(android.content.Context,int)"/>
@@ -146,7 +146,7 @@ namespace Android.View.Animation
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public static Android.View.Animation.LayoutAnimationController LoadLayoutAnimation(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.View.Animation.LayoutAnimationController>(LocalBridgeClazz, "loadLayoutAnimation", arg0, arg1);
+            return SExecuteWithSignature<Android.View.Animation.LayoutAnimationController>(LocalBridgeClazz, "loadLayoutAnimation", "(Landroid/content/Context;I)Landroid/view/animation/LayoutAnimationController;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/AnimationUtils.html#currentAnimationTimeMillis()"/>
@@ -156,17 +156,17 @@ namespace Android.View.Animation
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "currentAnimationTimeMillis", "()J");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

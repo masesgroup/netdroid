@@ -42,10 +42,10 @@ namespace Java.Lang.Invoke
         /// </summary>
         [global::System.Obsolete("MethodHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MethodHandle(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Lang.Invoke
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Java.Lang.Invoke
     public partial class MethodHandle
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandle.html#isVarargsCollector()"/>
@@ -129,7 +129,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsCollector(int arg0, Java.Lang.Class arg1, int arg2)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asCollector", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asCollector", "(ILjava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandle.html#asCollector(java.lang.Class,int)"/>
@@ -139,7 +139,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsCollector(Java.Lang.Class arg0, int arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asCollector", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asCollector", "(Ljava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandle.html#asFixedArity()"/>
@@ -158,7 +158,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsSpreader(int arg0, Java.Lang.Class arg1, int arg2)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asSpreader", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asSpreader", "(ILjava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandle.html#asSpreader(java.lang.Class,int)"/>
@@ -168,7 +168,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsSpreader(Java.Lang.Class arg0, int arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asSpreader", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asSpreader", "(Ljava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandle.html#asType(java.lang.invoke.MethodType)"/>
@@ -234,13 +234,13 @@ namespace Java.Lang.Invoke
         {
             return IExecuteWithSignature("invokeWithArguments", "(Ljava/util/List;)Ljava/lang/Object;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Org.Xml.Sax.Ext
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DefaultHandler2(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Org.Xml.Sax.Ext
     public partial class DefaultHandler2 : Org.Xml.Sax.Ext.ILexicalHandler, Org.Xml.Sax.Ext.IDeclHandler, Org.Xml.Sax.Ext.IEntityResolver2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Org.Xml.Sax.Ext.DefaultHandler2"/> to <see cref="Org.Xml.Sax.Ext.LexicalHandler"/>
@@ -90,17 +90,17 @@ namespace Org.Xml.Sax.Ext
         /// Converter from <see cref="Org.Xml.Sax.Ext.DefaultHandler2"/> to <see cref="Org.Xml.Sax.Ext.EntityResolver2"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.EntityResolver2(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.EntityResolver2>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
@@ -112,7 +112,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource GetExternalSubset(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("getExternalSubset", arg0, arg1);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -126,7 +126,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -139,7 +139,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void AttributeDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            IExecute("attributeDecl", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#comment(char[],int,int)"/>
@@ -150,7 +150,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Comment(char[] arg0, int arg1, int arg2)
         {
-            IExecute("comment", arg0, arg1, arg2);
+            IExecuteWithSignature("comment", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#elementDecl(java.lang.String,java.lang.String)"/>
@@ -160,7 +160,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ElementDecl(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("elementDecl", arg0, arg1);
+            IExecuteWithSignature("elementDecl", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#endCDATA()"/>
@@ -196,7 +196,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ExternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("externalEntityDecl", arg0, arg1, arg2);
+            IExecuteWithSignature("externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void InternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("internalEntityDecl", arg0, arg1);
+            IExecuteWithSignature("internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#startCDATA()"/>
@@ -225,7 +225,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDTD(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("startDTD", arg0, arg1, arg2);
+            IExecuteWithSignature("startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#startEntity(java.lang.String)"/>
@@ -236,13 +236,13 @@ namespace Org.Xml.Sax.Ext
         {
             IExecuteWithSignature("startEntity", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PendingIntent(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CanceledException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -100,10 +100,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("OnFinished class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OnFinished(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -124,9 +124,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -138,13 +138,13 @@ namespace Android.App
     public partial class PendingIntent
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#CREATOR"/>
@@ -194,9 +194,9 @@ namespace Android.App
         public static int FLAG_UPDATE_CURRENT { get { if (!_FLAG_UPDATE_CURRENTReady) { _FLAG_UPDATE_CURRENTContent = SGetField<int>(LocalBridgeClazz, "FLAG_UPDATE_CURRENT"); _FLAG_UPDATE_CURRENTReady = true; } return _FLAG_UPDATE_CURRENTContent; } }
         private static int _FLAG_UPDATE_CURRENTContent = default;
         private static bool _FLAG_UPDATE_CURRENTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getActivities(android.content.Context,int,android.content.Intent[],int,android.os.Bundle)"/>
@@ -209,7 +209,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent GetActivities(Android.Content.Context arg0, int arg1, Android.Content.Intent[] arg2, int arg3, Android.Os.Bundle arg4)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "getActivities", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "getActivities", "(Landroid/content/Context;I[Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getActivities(android.content.Context,int,android.content.Intent[],int)"/>
@@ -221,7 +221,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent GetActivities(Android.Content.Context arg0, int arg1, Android.Content.Intent[] arg2, int arg3)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "getActivities", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "getActivities", "(Landroid/content/Context;I[Landroid/content/Intent;I)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getActivity(android.content.Context,int,android.content.Intent,int,android.os.Bundle)"/>
@@ -234,7 +234,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent GetActivity(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, int arg3, Android.Os.Bundle arg4)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "getActivity", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "getActivity", "(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getActivity(android.content.Context,int,android.content.Intent,int)"/>
@@ -246,7 +246,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent GetActivity(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, int arg3)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "getActivity", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "getActivity", "(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getBroadcast(android.content.Context,int,android.content.Intent,int)"/>
@@ -258,7 +258,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent GetBroadcast(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, int arg3)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "getBroadcast", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "getBroadcast", "(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getForegroundService(android.content.Context,int,android.content.Intent,int)"/>
@@ -270,7 +270,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent GetForegroundService(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, int arg3)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "getForegroundService", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "getForegroundService", "(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getService(android.content.Context,int,android.content.Intent,int)"/>
@@ -282,7 +282,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent GetService(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, int arg3)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "getService", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "getService", "(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#readPendingIntentOrNullFromParcel(android.os.Parcel)"/>
@@ -300,11 +300,11 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Parcel"/></param>
         public static void WritePendingIntentOrNullToParcel(Android.App.PendingIntent arg0, Android.Os.Parcel arg1)
         {
-            SExecute(LocalBridgeClazz, "writePendingIntentOrNullToParcel", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "writePendingIntentOrNullToParcel", "(Landroid/app/PendingIntent;Landroid/os/Parcel;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getIntentSender()"/>
@@ -423,7 +423,7 @@ namespace Android.App
         /// <exception cref="Android.App.PendingIntent.CanceledException"/>
         public void Send(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, Android.App.PendingIntent.OnFinished arg3, Android.Os.Handler arg4, Java.Lang.String arg5, Android.Os.Bundle arg6)
         {
-            IExecute("send", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("send", "(Landroid/content/Context;ILandroid/content/Intent;Landroid/app/PendingIntent$OnFinished;Landroid/os/Handler;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#send(android.content.Context,int,android.content.Intent,android.app.PendingIntent.OnFinished,android.os.Handler,java.lang.String)"/>
@@ -437,7 +437,7 @@ namespace Android.App
         /// <exception cref="Android.App.PendingIntent.CanceledException"/>
         public void Send(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, Android.App.PendingIntent.OnFinished arg3, Android.Os.Handler arg4, Java.Lang.String arg5)
         {
-            IExecute("send", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("send", "(Landroid/content/Context;ILandroid/content/Intent;Landroid/app/PendingIntent$OnFinished;Landroid/os/Handler;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#send(android.content.Context,int,android.content.Intent,android.app.PendingIntent.OnFinished,android.os.Handler)"/>
@@ -450,7 +450,7 @@ namespace Android.App
         /// <exception cref="Android.App.PendingIntent.CanceledException"/>
         public void Send(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, Android.App.PendingIntent.OnFinished arg3, Android.Os.Handler arg4)
         {
-            IExecute("send", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("send", "(Landroid/content/Context;ILandroid/content/Intent;Landroid/app/PendingIntent$OnFinished;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#send(android.content.Context,int,android.content.Intent)"/>
@@ -461,7 +461,7 @@ namespace Android.App
         /// <exception cref="Android.App.PendingIntent.CanceledException"/>
         public void Send(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2)
         {
-            IExecute("send", arg0, arg1, arg2);
+            IExecuteWithSignature("send", "(Landroid/content/Context;ILandroid/content/Intent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#send(android.os.Bundle)"/>
@@ -481,7 +481,7 @@ namespace Android.App
         /// <exception cref="Android.App.PendingIntent.CanceledException"/>
         public void Send(int arg0, Android.App.PendingIntent.OnFinished arg1, Android.Os.Handler arg2)
         {
-            IExecute("send", arg0, arg1, arg2);
+            IExecuteWithSignature("send", "(ILandroid/app/PendingIntent$OnFinished;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#send(int)"/>
@@ -499,39 +499,39 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CanceledException implementation
         public partial class CanceledException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -540,21 +540,21 @@ namespace Android.App
         public partial class OnFinished
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/PendingIntent.OnFinished.html#onSendFinished(android.app.PendingIntent,android.content.Intent,int,java.lang.String,android.os.Bundle)"/>
@@ -566,22 +566,22 @@ namespace Android.App
             /// <param name="arg4"><see cref="Android.Os.Bundle"/></param>
             public void OnSendFinished(Android.App.PendingIntent arg0, Android.Content.Intent arg1, int arg2, Java.Lang.String arg3, Android.Os.Bundle arg4)
             {
-                IExecute("onSendFinished", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onSendFinished", "(Landroid/app/PendingIntent;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

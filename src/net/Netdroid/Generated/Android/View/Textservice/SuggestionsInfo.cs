@@ -40,10 +40,10 @@ namespace Android.View.Textservice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SuggestionsInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Textservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -102,13 +102,13 @@ namespace Android.View.Textservice
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#CREATOR"/>
@@ -146,13 +146,13 @@ namespace Android.View.Textservice
         public static int RESULT_ATTR_LOOKS_LIKE_TYPO { get { if (!_RESULT_ATTR_LOOKS_LIKE_TYPOReady) { _RESULT_ATTR_LOOKS_LIKE_TYPOContent = SGetField<int>(LocalBridgeClazz, "RESULT_ATTR_LOOKS_LIKE_TYPO"); _RESULT_ATTR_LOOKS_LIKE_TYPOReady = true; } return _RESULT_ATTR_LOOKS_LIKE_TYPOContent; } }
         private static int _RESULT_ATTR_LOOKS_LIKE_TYPOContent = default;
         private static bool _RESULT_ATTR_LOOKS_LIKE_TYPOReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#describeContents()"/>
@@ -210,7 +210,7 @@ namespace Android.View.Textservice
         /// <param name="arg1"><see cref="int"/></param>
         public void SetCookieAndSequence(int arg0, int arg1)
         {
-            IExecute("setCookieAndSequence", arg0, arg1);
+            IExecuteWithSignature("setCookieAndSequence", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -219,15 +219,15 @@ namespace Android.View.Textservice
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

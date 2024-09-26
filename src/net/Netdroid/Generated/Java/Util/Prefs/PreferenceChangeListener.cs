@@ -35,7 +35,7 @@ namespace Java.Util.Prefs
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public PreferenceChangeListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.prefs.PreferenceChangeListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Prefs
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region PreferenceChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="PreferenceChangeListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Prefs
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.prefs.PreferenceChangeListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Java.Util.Prefs
     public partial interface IPreferenceChangeListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Java.Util.Prefs
     public partial class PreferenceChangeListener : Java.Util.Prefs.IPreferenceChangeListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="PreferenceChangeListener"/>
@@ -138,13 +138,13 @@ namespace Java.Util.Prefs
             AddEventHandler("preferenceChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PreferenceChangeEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPreferenceChange"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Util.Prefs.PreferenceChangeEvent> OnPreferenceChange { get; set; } = null;
-        
+
         bool hasOverridePreferenceChange = true;
         void PreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -153,7 +153,7 @@ namespace Java.Util.Prefs
             methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Prefs.PreferenceChangeEvent>(0));
             data.EventData.TypedEventData.HasOverride = hasOverridePreferenceChange;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
@@ -162,13 +162,13 @@ namespace Java.Util.Prefs
         {
             hasOverridePreferenceChange = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -177,21 +177,21 @@ namespace Java.Util.Prefs
     public partial class PreferenceChangeListenerDirect : Java.Util.Prefs.IPreferenceChangeListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
@@ -199,15 +199,15 @@ namespace Java.Util.Prefs
         /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
         public override void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)
         {
-            IExecute("preferenceChange", arg0);
+            IExecuteWithSignature("preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

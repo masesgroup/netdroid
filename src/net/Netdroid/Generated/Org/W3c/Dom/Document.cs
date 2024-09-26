@@ -42,10 +42,10 @@ namespace Org.W3c.Dom
         /// </summary>
         [global::System.Obsolete("Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Document(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.W3c.Dom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.W3c.Dom
     public partial interface IDocument : Org.W3c.Dom.INode
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Org.W3c.Dom
     public partial class Document : Org.W3c.Dom.IDocument
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getStrictErrorChecking()"/>
@@ -177,7 +177,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Attr CreateAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Attr>("createAttributeNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Attr>("createAttributeNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Attr;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createCDATASection(java.lang.String)"/>
@@ -249,7 +249,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Element CreateElementNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Element>("createElementNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Element>("createElementNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Element;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDocumentElement()"/>
@@ -297,7 +297,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node ImportNode(Org.W3c.Dom.Node arg0, bool arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("importNode", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("importNode", "(Lorg/w3c/dom/Node;Z)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)"/>
@@ -309,7 +309,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node RenameNode(Org.W3c.Dom.Node arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Org.W3c.Dom.Node>("renameNode", arg0, arg1, arg2);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("renameNode", "(Lorg/w3c/dom/Node;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String)"/>
@@ -328,7 +328,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
         public Org.W3c.Dom.NodeList GetElementsByTagNameNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagNameNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getElementsByTagNameNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/NodeList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String,java.lang.String)"/>
@@ -339,7 +339,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.ProcessingInstruction CreateProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.ProcessingInstruction>("createProcessingInstruction", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.ProcessingInstruction>("createProcessingInstruction", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/ProcessingInstruction;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Document.html#createTextNode(java.lang.String)"/>
@@ -391,13 +391,13 @@ namespace Org.W3c.Dom
         {
             IExecuteWithSignature("setXmlVersion", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

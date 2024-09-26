@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ProfilingManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Os
     public partial class ProfilingManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#PROFILING_TYPE_HEAP_PROFILE"/>
@@ -106,13 +106,13 @@ namespace Android.Os
         public static int PROFILING_TYPE_SYSTEM_TRACE { get { if (!_PROFILING_TYPE_SYSTEM_TRACEReady) { _PROFILING_TYPE_SYSTEM_TRACEContent = SGetField<int>(LocalBridgeClazz, "PROFILING_TYPE_SYSTEM_TRACE"); _PROFILING_TYPE_SYSTEM_TRACEReady = true; } return _PROFILING_TYPE_SYSTEM_TRACEContent; } }
         private static int _PROFILING_TYPE_SYSTEM_TRACEContent = default;
         private static bool _PROFILING_TYPE_SYSTEM_TRACEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#registerForAllProfilingResults(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -121,7 +121,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void RegisterForAllProfilingResults(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.Os.ProfilingResult> arg1)
         {
-            IExecute("registerForAllProfilingResults", arg0, arg1);
+            IExecuteWithSignature("registerForAllProfilingResults", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#requestProfiling(int,android.os.Bundle,java.lang.String,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -134,7 +134,7 @@ namespace Android.Os
         /// <param name="arg5"><see cref="Java.Util.Function.Consumer"/></param>
         public void RequestProfiling(int arg0, Android.Os.Bundle arg1, Java.Lang.String arg2, Android.Os.CancellationSignal arg3, Java.Util.Concurrent.Executor arg4, Java.Util.Function.Consumer<Android.Os.ProfilingResult> arg5)
         {
-            IExecute("requestProfiling", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("requestProfiling", "(ILandroid/os/Bundle;Ljava/lang/String;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#unregisterForAllProfilingResults(java.util.function.Consumer)"/>
@@ -144,13 +144,13 @@ namespace Android.Os
         {
             IExecuteWithSignature("unregisterForAllProfilingResults", "(Ljava/util/function/Consumer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

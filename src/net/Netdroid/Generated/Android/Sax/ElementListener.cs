@@ -35,7 +35,7 @@ namespace Android.Sax
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public ElementListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.sax.ElementListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Sax
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region ElementListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ElementListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Sax
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.sax.ElementListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Sax
     public partial interface IElementListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Sax
     public partial class ElementListener : Android.Sax.IElementListener, Android.Sax.IStartElementListener, Android.Sax.IEndElementListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="ElementListener"/>
@@ -139,13 +139,13 @@ namespace Android.Sax
             AddEventHandler("start", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(StartEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/sax/EndElementListener.html#end()"/>
         /// </summary>
         /// <remarks>If <see cref="OnEnd"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnEnd { get; set; } = null;
-        
+
         bool hasOverrideEnd = true;
         void EndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -154,7 +154,7 @@ namespace Android.Sax
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideEnd;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/sax/EndElementListener.html#end()"/>
         /// </summary>
@@ -162,13 +162,13 @@ namespace Android.Sax
         {
             hasOverrideEnd = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/sax/StartElementListener.html#start(org.xml.sax.Attributes)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStart"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Org.Xml.Sax.Attributes> OnStart { get; set; } = null;
-        
+
         bool hasOverrideStart = true;
         void StartEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -177,7 +177,7 @@ namespace Android.Sax
             methodToExecute.Invoke(data.EventData.GetAt<Org.Xml.Sax.Attributes>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideStart;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/sax/StartElementListener.html#start(org.xml.sax.Attributes)"/>
         /// </summary>
@@ -186,13 +186,13 @@ namespace Android.Sax
         {
             hasOverrideStart = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -201,21 +201,21 @@ namespace Android.Sax
     public partial class ElementListenerDirect : Android.Sax.IElementListener, Android.Sax.IStartElementListener, Android.Sax.IEndElementListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/sax/EndElementListener.html#end()"/>
@@ -232,13 +232,13 @@ namespace Android.Sax
         {
             IExecute("start", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

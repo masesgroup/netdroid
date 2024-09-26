@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Color(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Graphics
     public partial class Color
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#BLACK"/>
@@ -154,9 +154,9 @@ namespace Android.Graphics
         public static int YELLOW { get { if (!_YELLOWReady) { _YELLOWContent = SGetField<int>(LocalBridgeClazz, "YELLOW"); _YELLOWReady = true; } return _YELLOWContent; } }
         private static int _YELLOWContent = default;
         private static bool _YELLOWReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#valueOf(float,float,float,float,android.graphics.ColorSpace)"/>
@@ -169,7 +169,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Color"/></returns>
         public static Android.Graphics.Color ValueOf(float arg0, float arg1, float arg2, float arg3, Android.Graphics.ColorSpace arg4)
         {
-            return SExecute<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", "(FFFFLandroid/graphics/ColorSpace;)Landroid/graphics/Color;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#valueOf(float,float,float,float)"/>
@@ -181,7 +181,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Color"/></returns>
         public static Android.Graphics.Color ValueOf(float arg0, float arg1, float arg2, float arg3)
         {
-            return SExecute<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", "(FFFF)Landroid/graphics/Color;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#valueOf(float,float,float)"/>
@@ -192,7 +192,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Color"/></returns>
         public static Android.Graphics.Color ValueOf(float arg0, float arg1, float arg2)
         {
-            return SExecute<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", "(FFF)Landroid/graphics/Color;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#valueOf(float[],android.graphics.ColorSpace)"/>
@@ -202,7 +202,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Color"/></returns>
         public static Android.Graphics.Color ValueOf(float[] arg0, Android.Graphics.ColorSpace arg1)
         {
-            return SExecute<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Color>(LocalBridgeClazz, "valueOf", "([FLandroid/graphics/ColorSpace;)Landroid/graphics/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#valueOf(int)"/>
@@ -239,7 +239,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public static bool IsInColorSpace(long arg0, Android.Graphics.ColorSpace arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isInColorSpace", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInColorSpace", "(JLandroid/graphics/ColorSpace;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#isSrgb(long)"/>
@@ -332,7 +332,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public static int Argb(float arg0, float arg1, float arg2, float arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "argb", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "argb", "(FFFF)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#argb(int,int,int,int)"/>
@@ -344,7 +344,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public static int Argb(int arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "argb", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "argb", "(IIII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#blue(int)"/>
@@ -381,7 +381,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public static int HSVToColor(int arg0, float[] arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "HSVToColor", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "HSVToColor", "(I[F)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)"/>
@@ -410,7 +410,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public static int Rgb(float arg0, float arg1, float arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "rgb", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "rgb", "(FFF)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#rgb(int,int,int)"/>
@@ -421,7 +421,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public static int Rgb(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "rgb", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "rgb", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#toArgb(long)"/>
@@ -444,7 +444,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Convert(float arg0, float arg1, float arg2, float arg3, Android.Graphics.ColorSpace arg4, Android.Graphics.ColorSpace arg5)
         {
-            return SExecute<long>(LocalBridgeClazz, "convert", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "convert", "(FFFFLandroid/graphics/ColorSpace;Landroid/graphics/ColorSpace;)J", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#convert(float,float,float,float,android.graphics.ColorSpace.Connector)"/>
@@ -457,7 +457,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Convert(float arg0, float arg1, float arg2, float arg3, Android.Graphics.ColorSpace.Connector arg4)
         {
-            return SExecute<long>(LocalBridgeClazz, "convert", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "convert", "(FFFFLandroid/graphics/ColorSpace$Connector;)J", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#convert(int,android.graphics.ColorSpace)"/>
@@ -467,7 +467,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Convert(int arg0, Android.Graphics.ColorSpace arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "convert", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "convert", "(ILandroid/graphics/ColorSpace;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#convert(long,android.graphics.ColorSpace)"/>
@@ -477,7 +477,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Convert(long arg0, Android.Graphics.ColorSpace arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "convert", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "convert", "(JLandroid/graphics/ColorSpace;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#convert(long,android.graphics.ColorSpace.Connector)"/>
@@ -487,7 +487,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Convert(long arg0, Android.Graphics.ColorSpace.Connector arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "convert", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "convert", "(JLandroid/graphics/ColorSpace$Connector;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#pack(float,float,float,float,android.graphics.ColorSpace)"/>
@@ -500,7 +500,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Pack(float arg0, float arg1, float arg2, float arg3, Android.Graphics.ColorSpace arg4)
         {
-            return SExecute<long>(LocalBridgeClazz, "pack", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "pack", "(FFFFLandroid/graphics/ColorSpace;)J", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#pack(float,float,float,float)"/>
@@ -512,7 +512,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Pack(float arg0, float arg1, float arg2, float arg3)
         {
-            return SExecute<long>(LocalBridgeClazz, "pack", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "pack", "(FFFF)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#pack(float,float,float)"/>
@@ -523,7 +523,7 @@ namespace Android.Graphics
         /// <returns><see cref="long"/></returns>
         public static long Pack(float arg0, float arg1, float arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "pack", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "pack", "(FFF)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#pack(int)"/>
@@ -541,7 +541,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public static void ColorToHSV(int arg0, float[] arg1)
         {
-            SExecute(LocalBridgeClazz, "colorToHSV", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "colorToHSV", "(I[F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#RGBToHSV(int,int,int,float[])"/>
@@ -552,11 +552,11 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public static void RGBToHSV(int arg0, int arg1, int arg2, float[] arg3)
         {
-            SExecute(LocalBridgeClazz, "RGBToHSV", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "RGBToHSV", "(III[F)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#convert(android.graphics.ColorSpace)"/>
@@ -689,13 +689,13 @@ namespace Android.Graphics
         {
             return IExecuteWithSignature<long>("pack", "()J");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

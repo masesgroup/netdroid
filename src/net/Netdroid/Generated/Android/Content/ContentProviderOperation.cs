@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ContentProviderOperation(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Content
     public partial class ContentProviderOperation
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#CREATOR"/>
@@ -133,9 +133,9 @@ namespace Android.Content
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#newAssertQuery(android.net.Uri)"/>
@@ -155,7 +155,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
         public static Android.Content.ContentProviderOperation.Builder NewCall(Android.Net.Uri arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Content.ContentProviderOperation.Builder>(LocalBridgeClazz, "newCall", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>(LocalBridgeClazz, "newCall", "(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#newDelete(android.net.Uri)"/>
@@ -184,9 +184,9 @@ namespace Android.Content
         {
             return SExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>(LocalBridgeClazz, "newUpdate", "(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#apply(android.content.ContentProvider,android.content.ContentProviderResult[],int)"/>
@@ -198,7 +198,7 @@ namespace Android.Content
         /// <exception cref="Android.Content.OperationApplicationException"/>
         public Android.Content.ContentProviderResult Apply(Android.Content.ContentProvider arg0, Android.Content.ContentProviderResult[] arg1, int arg2)
         {
-            return IExecute<Android.Content.ContentProviderResult>("apply", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.ContentProviderResult>("apply", "(Landroid/content/ContentProvider;[Landroid/content/ContentProviderResult;I)Landroid/content/ContentProviderResult;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#resolveValueBackReferences(android.content.ContentProviderResult[],int)"/>
@@ -208,7 +208,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.ContentValues"/></returns>
         public Android.Content.ContentValues ResolveValueBackReferences(Android.Content.ContentProviderResult[] arg0, int arg1)
         {
-            return IExecute<Android.Content.ContentValues>("resolveValueBackReferences", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.ContentValues>("resolveValueBackReferences", "([Landroid/content/ContentProviderResult;I)Landroid/content/ContentValues;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#getUri()"/>
@@ -226,7 +226,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle ResolveExtrasBackReferences(Android.Content.ContentProviderResult[] arg0, int arg1)
         {
-            return IExecute<Android.Os.Bundle>("resolveExtrasBackReferences", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Bundle>("resolveExtrasBackReferences", "([Landroid/content/ContentProviderResult;I)Landroid/os/Bundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#isAssertQuery()"/>
@@ -316,7 +316,7 @@ namespace Android.Content
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] ResolveSelectionArgsBackReferences(Android.Content.ContentProviderResult[] arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("resolveSelectionArgsBackReferences", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("resolveSelectionArgsBackReferences", "([Landroid/content/ContentProviderResult;I)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#writeToParcel(android.os.Parcel,int)"/>
@@ -325,31 +325,31 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#build()"/>
@@ -385,7 +385,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithExtra(Java.Lang.String arg0, object arg1)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withExtra", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withExtra", "(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withExtraBackReference(java.lang.String,int,java.lang.String)"/>
@@ -396,7 +396,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithExtraBackReference(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withExtraBackReference", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withExtraBackReference", "(Ljava/lang/String;ILjava/lang/String;)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withExtraBackReference(java.lang.String,int)"/>
@@ -406,7 +406,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithExtraBackReference(Java.Lang.String arg0, int arg1)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withExtraBackReference", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withExtraBackReference", "(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withExtras(android.os.Bundle)"/>
@@ -425,7 +425,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithSelection(Java.Lang.String arg0, Java.Lang.String[] arg1)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withSelection", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withSelection", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withSelectionBackReference(int,int,java.lang.String)"/>
@@ -436,7 +436,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithSelectionBackReference(int arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withSelectionBackReference", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withSelectionBackReference", "(IILjava/lang/String;)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withSelectionBackReference(int,int)"/>
@@ -446,7 +446,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithSelectionBackReference(int arg0, int arg1)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withSelectionBackReference", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withSelectionBackReference", "(II)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withValue(java.lang.String,java.lang.Object)"/>
@@ -456,7 +456,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithValue(Java.Lang.String arg0, object arg1)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withValue", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withValue", "(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withValueBackReference(java.lang.String,int,java.lang.String)"/>
@@ -467,7 +467,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithValueBackReference(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withValueBackReference", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withValueBackReference", "(Ljava/lang/String;ILjava/lang/String;)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withValueBackReference(java.lang.String,int)"/>
@@ -477,7 +477,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.ContentProviderOperation.Builder"/></returns>
             public Android.Content.ContentProviderOperation.Builder WithValueBackReference(Java.Lang.String arg0, int arg1)
             {
-                return IExecute<Android.Content.ContentProviderOperation.Builder>("withValueBackReference", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withValueBackReference", "(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.Builder.html#withValueBackReferences(android.content.ContentValues)"/>
@@ -506,20 +506,20 @@ namespace Android.Content
             {
                 return IExecuteWithSignature<Android.Content.ContentProviderOperation.Builder>("withYieldAllowed", "(Z)Landroid/content/ContentProviderOperation$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

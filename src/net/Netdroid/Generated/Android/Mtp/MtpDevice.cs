@@ -40,10 +40,10 @@ namespace Android.Mtp
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MtpDevice(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Mtp
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Mtp
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getDeviceInfo()"/>
@@ -160,7 +160,7 @@ namespace Android.Mtp
         /// <returns><see cref="bool"/></returns>
         public bool ImportFile(int arg0, Android.Os.ParcelFileDescriptor arg1)
         {
-            return IExecute<bool>("importFile", arg0, arg1);
+            return IExecuteWithSignature<bool>("importFile", "(ILandroid/os/ParcelFileDescriptor;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#importFile(int,java.lang.String)"/>
@@ -170,7 +170,7 @@ namespace Android.Mtp
         /// <returns><see cref="bool"/></returns>
         public bool ImportFile(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("importFile", arg0, arg1);
+            return IExecuteWithSignature<bool>("importFile", "(ILjava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#open(android.hardware.usb.UsbDeviceConnection)"/>
@@ -190,7 +190,7 @@ namespace Android.Mtp
         /// <returns><see cref="bool"/></returns>
         public bool SendObject(int arg0, long arg1, Android.Os.ParcelFileDescriptor arg2)
         {
-            return IExecute<bool>("sendObject", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("sendObject", "(IJLandroid/os/ParcelFileDescriptor;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getObject(int,int)"/>
@@ -200,7 +200,7 @@ namespace Android.Mtp
         /// <returns><see cref="byte"/></returns>
         public byte[] GetObject(int arg0, int arg1)
         {
-            return IExecuteArray<byte>("getObject", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("getObject", "(II)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getThumbnail(int)"/>
@@ -228,7 +228,7 @@ namespace Android.Mtp
         /// <returns><see cref="int"/></returns>
         public int[] GetObjectHandles(int arg0, int arg1, int arg2)
         {
-            return IExecuteArray<int>("getObjectHandles", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<int>("getObjectHandles", "(III)[I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getStorageIds()"/>
@@ -266,7 +266,7 @@ namespace Android.Mtp
         /// <exception cref="Java.Io.IOException"/>
         public long GetPartialObject(int arg0, long arg1, long arg2, byte[] arg3)
         {
-            return IExecute<long>("getPartialObject", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<long>("getPartialObject", "(IJJ[B)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getPartialObject64(int,long,long,byte[])"/>
@@ -279,7 +279,7 @@ namespace Android.Mtp
         /// <exception cref="Java.Io.IOException"/>
         public long GetPartialObject64(int arg0, long arg1, long arg2, byte[] arg3)
         {
-            return IExecute<long>("getPartialObject64", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<long>("getPartialObject64", "(IJJ[B)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getStorageId(int)"/>
@@ -297,13 +297,13 @@ namespace Android.Mtp
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

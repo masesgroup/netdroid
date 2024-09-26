@@ -40,10 +40,10 @@ namespace Android.Adservices.Measurement
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MeasurementManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Measurement
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Adservices.Measurement
     public partial class MeasurementManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#MEASUREMENT_API_STATE_DISABLED"/>
@@ -94,9 +94,9 @@ namespace Android.Adservices.Measurement
         public static int MEASUREMENT_API_STATE_ENABLED { get { if (!_MEASUREMENT_API_STATE_ENABLEDReady) { _MEASUREMENT_API_STATE_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "MEASUREMENT_API_STATE_ENABLED"); _MEASUREMENT_API_STATE_ENABLEDReady = true; } return _MEASUREMENT_API_STATE_ENABLEDContent; } }
         private static int _MEASUREMENT_API_STATE_ENABLEDContent = default;
         private static bool _MEASUREMENT_API_STATE_ENABLEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#get(android.content.Context)"/>
@@ -107,9 +107,9 @@ namespace Android.Adservices.Measurement
         {
             return SExecuteWithSignature<Android.Adservices.Measurement.MeasurementManager>(LocalBridgeClazz, "get", "(Landroid/content/Context;)Landroid/adservices/measurement/MeasurementManager;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#deleteRegistrations(android.adservices.measurement.DeletionRequest,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -119,7 +119,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void DeleteRegistrations(Android.Adservices.Measurement.DeletionRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("deleteRegistrations", arg0, arg1, arg2);
+            IExecuteWithSignature("deleteRegistrations", "(Landroid/adservices/measurement/DeletionRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#deleteRegistrations(android.adservices.measurement.DeletionRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -129,7 +129,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void DeleteRegistrations(Android.Adservices.Measurement.DeletionRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("deleteRegistrations", arg0, arg1, arg2);
+            IExecuteWithSignature("deleteRegistrations", "(Landroid/adservices/measurement/DeletionRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#getMeasurementApiStatus(java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -138,7 +138,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg1"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void GetMeasurementApiStatus(Java.Util.Concurrent.Executor arg0, Android.Adservices.Common.AdServicesOutcomeReceiver<Java.Lang.Integer, Java.Lang.Exception> arg1)
         {
-            IExecute("getMeasurementApiStatus", arg0, arg1);
+            IExecuteWithSignature("getMeasurementApiStatus", "(Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#getMeasurementApiStatus(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -147,7 +147,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetMeasurementApiStatus(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Lang.Integer, Java.Lang.Exception> arg1)
         {
-            IExecute("getMeasurementApiStatus", arg0, arg1);
+            IExecuteWithSignature("getMeasurementApiStatus", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerSource(android.adservices.measurement.SourceRegistrationRequest,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -157,7 +157,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void RegisterSource(Android.Adservices.Measurement.SourceRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerSource", arg0, arg1, arg2);
+            IExecuteWithSignature("registerSource", "(Landroid/adservices/measurement/SourceRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerSource(android.adservices.measurement.SourceRegistrationRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -167,7 +167,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RegisterSource(Android.Adservices.Measurement.SourceRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerSource", arg0, arg1, arg2);
+            IExecuteWithSignature("registerSource", "(Landroid/adservices/measurement/SourceRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerSource(android.net.Uri,android.view.InputEvent,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -178,7 +178,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg3"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void RegisterSource(Android.Net.Uri arg0, Android.View.InputEvent arg1, Java.Util.Concurrent.Executor arg2, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg3)
         {
-            IExecute("registerSource", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("registerSource", "(Landroid/net/Uri;Landroid/view/InputEvent;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerSource(android.net.Uri,android.view.InputEvent,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -189,7 +189,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RegisterSource(Android.Net.Uri arg0, Android.View.InputEvent arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg3)
         {
-            IExecute("registerSource", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("registerSource", "(Landroid/net/Uri;Landroid/view/InputEvent;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerTrigger(android.net.Uri,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -199,7 +199,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void RegisterTrigger(Android.Net.Uri arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerTrigger", arg0, arg1, arg2);
+            IExecuteWithSignature("registerTrigger", "(Landroid/net/Uri;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerTrigger(android.net.Uri,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -209,7 +209,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RegisterTrigger(Android.Net.Uri arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerTrigger", arg0, arg1, arg2);
+            IExecuteWithSignature("registerTrigger", "(Landroid/net/Uri;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerWebSource(android.adservices.measurement.WebSourceRegistrationRequest,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -219,7 +219,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void RegisterWebSource(Android.Adservices.Measurement.WebSourceRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerWebSource", arg0, arg1, arg2);
+            IExecuteWithSignature("registerWebSource", "(Landroid/adservices/measurement/WebSourceRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerWebSource(android.adservices.measurement.WebSourceRegistrationRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -229,7 +229,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RegisterWebSource(Android.Adservices.Measurement.WebSourceRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerWebSource", arg0, arg1, arg2);
+            IExecuteWithSignature("registerWebSource", "(Landroid/adservices/measurement/WebSourceRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerWebTrigger(android.adservices.measurement.WebTriggerRegistrationRequest,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
@@ -239,7 +239,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
         public void RegisterWebTrigger(Android.Adservices.Measurement.WebTriggerRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerWebTrigger", arg0, arg1, arg2);
+            IExecuteWithSignature("registerWebTrigger", "(Landroid/adservices/measurement/WebTriggerRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/MeasurementManager.html#registerWebTrigger(android.adservices.measurement.WebTriggerRegistrationRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -249,15 +249,15 @@ namespace Android.Adservices.Measurement
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RegisterWebTrigger(Android.Adservices.Measurement.WebTriggerRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("registerWebTrigger", arg0, arg1, arg2);
+            IExecuteWithSignature("registerWebTrigger", "(Landroid/adservices/measurement/WebTriggerRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Adservices.Customaudience
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PartialCustomAudience(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Adservices.Customaudience
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Adservices.Customaudience
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Adservices.Customaudience
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Adservices.Customaudience
     public partial class PartialCustomAudience
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#CREATOR"/>
@@ -133,13 +133,13 @@ namespace Android.Adservices.Customaudience
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#getUserBiddingSignals()"/>
@@ -147,7 +147,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
         public Android.Adservices.Common.AdSelectionSignals GetUserBiddingSignals()
         {
-            return IExecute<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals");
+            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#describeContents()"/>
@@ -155,7 +155,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#getName()"/>
@@ -163,7 +163,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecute<Java.Lang.String>("getName");
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#getActivationTime()"/>
@@ -171,7 +171,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant GetActivationTime()
         {
-            return IExecute<Java.Time.Instant>("getActivationTime");
+            return IExecuteWithSignature<Java.Time.Instant>("getActivationTime", "()Ljava/time/Instant;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#getExpirationTime()"/>
@@ -179,7 +179,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant GetExpirationTime()
         {
-            return IExecute<Java.Time.Instant>("getExpirationTime");
+            return IExecuteWithSignature<Java.Time.Instant>("getExpirationTime", "()Ljava/time/Instant;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#writeToParcel(android.os.Parcel,int)"/>
@@ -188,11 +188,11 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -206,21 +206,21 @@ namespace Android.Adservices.Customaudience
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.Builder.html#build()"/>
@@ -257,20 +257,20 @@ namespace Android.Adservices.Customaudience
             {
                 return IExecuteWithSignature<Android.Adservices.Customaudience.PartialCustomAudience.Builder>("setUserBiddingSignals", "(Landroid/adservices/common/AdSelectionSignals;)Landroid/adservices/customaudience/PartialCustomAudience$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

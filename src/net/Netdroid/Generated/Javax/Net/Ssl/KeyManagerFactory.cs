@@ -40,10 +40,10 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyManagerFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Javax.Net.Ssl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Javax.Net.Ssl
     public partial class KeyManagerFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()"/>
@@ -104,7 +104,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Net.Ssl.KeyManagerFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Javax.Net.Ssl.KeyManagerFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.KeyManagerFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/KeyManagerFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -115,7 +115,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Net.Ssl.KeyManagerFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Net.Ssl.KeyManagerFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.KeyManagerFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/net/ssl/KeyManagerFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String)"/>
@@ -127,9 +127,9 @@ namespace Javax.Net.Ssl
         {
             return SExecuteWithSignature<Javax.Net.Ssl.KeyManagerFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/net/ssl/KeyManagerFactory;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManagerFactory.html#getAlgorithm()"/>
@@ -165,7 +165,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.UnrecoverableKeyException"/>
         public void Init(Java.Security.KeyStore arg0, char[] arg1)
         {
-            IExecute("init", arg0, arg1);
+            IExecuteWithSignature("init", "(Ljava/security/KeyStore;[C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManagerFactory.html#init(javax.net.ssl.ManagerFactoryParameters)"/>
@@ -176,13 +176,13 @@ namespace Javax.Net.Ssl
         {
             IExecuteWithSignature("init", "(Ljavax/net/ssl/ManagerFactoryParameters;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -35,7 +35,7 @@ namespace Javax.Sql
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public RowSetListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.javax.sql.RowSetListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Javax.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region RowSetListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="RowSetListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Javax.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "javax.sql.RowSetListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Javax.Sql
     public partial interface IRowSetListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Javax.Sql
     public partial class RowSetListener : Javax.Sql.IRowSetListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="RowSetListener"/>
@@ -140,13 +140,13 @@ namespace Javax.Sql
             AddEventHandler("rowSetChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(RowSetChangedEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCursorMoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.RowSetEvent> OnCursorMoved { get; set; } = null;
-        
+
         bool hasOverrideCursorMoved = true;
         void CursorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -155,7 +155,7 @@ namespace Javax.Sql
             methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.RowSetEvent>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideCursorMoved;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
@@ -164,13 +164,13 @@ namespace Javax.Sql
         {
             hasOverrideCursorMoved = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRowChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.RowSetEvent> OnRowChanged { get; set; } = null;
-        
+
         bool hasOverrideRowChanged = true;
         void RowChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -179,7 +179,7 @@ namespace Javax.Sql
             methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.RowSetEvent>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideRowChanged;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
@@ -188,13 +188,13 @@ namespace Javax.Sql
         {
             hasOverrideRowChanged = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRowSetChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.RowSetEvent> OnRowSetChanged { get; set; } = null;
-        
+
         bool hasOverrideRowSetChanged = true;
         void RowSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -203,7 +203,7 @@ namespace Javax.Sql
             methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.RowSetEvent>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideRowSetChanged;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
@@ -212,13 +212,13 @@ namespace Javax.Sql
         {
             hasOverrideRowSetChanged = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -227,21 +227,21 @@ namespace Javax.Sql
     public partial class RowSetListenerDirect : Javax.Sql.IRowSetListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
@@ -267,13 +267,13 @@ namespace Javax.Sql
         {
             IExecuteWithSignature("rowSetChanged", "(Ljavax/sql/RowSetEvent;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Java.Nio
         /// </summary>
         [global::System.Obsolete("ShortBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ShortBuffer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Java.Nio
     public partial class ShortBuffer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.ShortBuffer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.ShortBuffer t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#allocate(int)"/>
@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public static Java.Nio.ShortBuffer Wrap(short[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#wrap(short[])"/>
@@ -121,9 +121,9 @@ namespace Java.Nio
         {
             return SExecuteWithSignature<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", "([S)Ljava/nio/ShortBuffer;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#order()"/>
@@ -157,7 +157,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(int arg0, short arg1)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(IS)Ljava/nio/ShortBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(short)"/>
@@ -231,7 +231,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Get(int arg0, short[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.ShortBuffer>("get", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("get", "(I[SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#get(int,short[])"/>
@@ -241,7 +241,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Get(int arg0, short[] arg1)
         {
-            return IExecute<Java.Nio.ShortBuffer>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("get", "(I[S)Ljava/nio/ShortBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#get(short[],int,int)"/>
@@ -252,7 +252,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Get(short[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.ShortBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("get", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#get(short[])"/>
@@ -273,7 +273,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(int arg0, Java.Nio.ShortBuffer arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(ILjava/nio/ShortBuffer;II)Ljava/nio/ShortBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(int,short[],int,int)"/>
@@ -285,7 +285,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(int arg0, short[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(I[SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(int,short[])"/>
@@ -295,7 +295,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(int arg0, short[] arg1)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(I[S)Ljava/nio/ShortBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(java.nio.ShortBuffer)"/>
@@ -315,15 +315,15 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(short[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

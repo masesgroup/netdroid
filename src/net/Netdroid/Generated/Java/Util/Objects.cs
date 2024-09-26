@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Objects(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Util
     public partial class Objects
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#compare(java.lang.Object,java.lang.Object,java.util.Comparator)"/>
@@ -97,7 +97,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT : T
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Comparator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNull(java.lang.Object,java.lang.String)"/>
@@ -108,7 +108,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNull<T>(T arg0, Java.Lang.String arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNull", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNull(java.lang.Object,java.util.function.Supplier)"/>
@@ -119,7 +119,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNull<T>(T arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNull", "(Ljava/lang/Object;Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNull(java.lang.Object)"/>
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNullElse<T>(T arg0, T arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNullElse", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNullElse", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#requireNonNullElseGet(java.lang.Object,java.util.function.Supplier)"/>
@@ -152,7 +152,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNullElseGet", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNullElseGet", "(Ljava/lang/Object;Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#deepEquals(java.lang.Object,java.lang.Object)"/>
@@ -162,7 +162,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool DeepEquals(object arg0, object arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "deepEquals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "deepEquals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)"/>
@@ -172,7 +172,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(object arg0, object arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "equals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#isNull(java.lang.Object)"/>
@@ -201,7 +201,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CheckFromIndexSize(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "checkFromIndexSize", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "checkFromIndexSize", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromToIndex(int,int,int)"/>
@@ -212,7 +212,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CheckFromToIndex(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "checkFromToIndex", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "checkFromToIndex", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkIndex(int,int)"/>
@@ -222,7 +222,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CheckIndex(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "checkIndex", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "checkIndex", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#hash(java.lang.Object[])"/>
@@ -250,7 +250,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(object arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#toString(java.lang.Object)"/>
@@ -270,7 +270,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public static long CheckFromIndexSize(long arg0, long arg1, long arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "checkFromIndexSize", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "checkFromIndexSize", "(JJJ)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkFromToIndex(long,long,long)"/>
@@ -281,7 +281,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public static long CheckFromToIndex(long arg0, long arg1, long arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "checkFromToIndex", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "checkFromToIndex", "(JJJ)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Objects.html#checkIndex(long,long)"/>
@@ -291,19 +291,19 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public static long CheckIndex(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "checkIndex", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "checkIndex", "(JJ)J", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

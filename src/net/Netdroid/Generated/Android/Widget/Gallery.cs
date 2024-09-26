@@ -41,10 +41,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Gallery(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region LayoutParams declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LayoutParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -163,21 +163,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#onDown(android.view.MotionEvent)"/>
@@ -200,7 +200,7 @@ namespace Android.Widget
         [global::System.Obsolete()]
         public bool OnFling(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("onFling", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onFling", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
@@ -213,7 +213,7 @@ namespace Android.Widget
         [global::System.Obsolete()]
         public bool OnScroll(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("onScroll", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onScroll", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.html#onSingleTapUp(android.view.MotionEvent)"/>
@@ -288,9 +288,9 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setUnselectedAlpha", "(F)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region LayoutParams implementation
         public partial class LayoutParams
@@ -325,36 +325,36 @@ namespace Android.Widget
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Animation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PropertyValuesHolder(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Animation
     public partial class PropertyValuesHolder
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofObject(android.util.Property,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])"/>
@@ -98,7 +98,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfObject<V, T>(Android.Util.Property<object, V> arg0, Android.Animation.TypeConverter<T, V> arg1, Android.Animation.TypeEvaluator<T> arg2, params T[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1, arg2); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Landroid/util/Property;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Landroid/util/Property;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiFloat(java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,android.animation.Keyframe[])"/>
@@ -111,7 +111,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiFloat<T>(Java.Lang.String arg0, Android.Animation.TypeConverter<T, float[]> arg1, Android.Animation.TypeEvaluator<T> arg2, params Android.Animation.Keyframe[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", arg0, arg1, arg2); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiInt(java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,android.animation.Keyframe[])"/>
@@ -124,7 +124,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiInt<T>(Java.Lang.String arg0, Android.Animation.TypeConverter<T, int[]> arg1, Android.Animation.TypeEvaluator<T> arg2, params Android.Animation.Keyframe[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", arg0, arg1, arg2); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiFloat(java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])"/>
@@ -137,7 +137,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiFloat<V>(Java.Lang.String arg0, Android.Animation.TypeConverter<V, float[]> arg1, Android.Animation.TypeEvaluator<V> arg2, params V[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", arg0, arg1, arg2); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiInt(java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])"/>
@@ -150,7 +150,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiInt<V>(Java.Lang.String arg0, Android.Animation.TypeConverter<V, int[]> arg1, Android.Animation.TypeEvaluator<V> arg2, params V[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", arg0, arg1, arg2); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofObject(android.util.Property,android.animation.TypeEvaluator,java.lang.Object[])"/>
@@ -162,7 +162,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfObject<V>(Android.Util.Property arg0, Android.Animation.TypeEvaluator<V> arg1, params V[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofObject(android.util.Property,android.animation.TypeConverter,android.graphics.Path)"/>
@@ -174,7 +174,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfObject<V>(Android.Util.Property<object, V> arg0, Android.Animation.TypeConverter<Android.Graphics.PointF, V> arg1, Android.Graphics.Path arg2)
         {
-            return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Landroid/util/Property;Landroid/animation/TypeConverter;Landroid/graphics/Path;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofFloat(android.util.Property,float[])"/>
@@ -184,7 +184,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfFloat(Android.Util.Property<object, Java.Lang.Float> arg0, params float[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", arg0); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", "(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;", arg0); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", "(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofFloat(java.lang.String,float[])"/>
@@ -194,7 +194,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfFloat(Java.Lang.String arg0, params float[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", arg0); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", "(Ljava/lang/String;[F)Landroid/animation/PropertyValuesHolder;", arg0); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofFloat", "(Ljava/lang/String;[F)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofInt(android.util.Property,int[])"/>
@@ -204,7 +204,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfInt(Android.Util.Property<object, Java.Lang.Integer> arg0, params int[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", arg0); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", "(Landroid/util/Property;[I)Landroid/animation/PropertyValuesHolder;", arg0); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", "(Landroid/util/Property;[I)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofInt(java.lang.String,int[])"/>
@@ -214,7 +214,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfInt(Java.Lang.String arg0, params int[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", arg0); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", "(Ljava/lang/String;[I)Landroid/animation/PropertyValuesHolder;", arg0); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofInt", "(Ljava/lang/String;[I)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofKeyframe(android.util.Property,android.animation.Keyframe[])"/>
@@ -224,7 +224,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfKeyframe(Android.Util.Property arg0, params Android.Animation.Keyframe[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", arg0); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", "(Landroid/util/Property;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", "(Landroid/util/Property;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofKeyframe(java.lang.String,android.animation.Keyframe[])"/>
@@ -234,7 +234,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfKeyframe(Java.Lang.String arg0, params Android.Animation.Keyframe[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", arg0); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", "(Ljava/lang/String;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofKeyframe", "(Ljava/lang/String;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiFloat(java.lang.String,android.graphics.Path)"/>
@@ -244,7 +244,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiFloat(Java.Lang.String arg0, Android.Graphics.Path arg1)
         {
-            return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", "(Ljava/lang/String;Landroid/graphics/Path;)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiFloat(java.lang.String,float[][])"/>
@@ -254,7 +254,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiFloat(Java.Lang.String arg0, float[][] arg1)
         {
-            return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiFloat", "(Ljava/lang/String;[[F)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiInt(java.lang.String,android.graphics.Path)"/>
@@ -264,7 +264,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiInt(Java.Lang.String arg0, Android.Graphics.Path arg1)
         {
-            return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", "(Ljava/lang/String;Landroid/graphics/Path;)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofMultiInt(java.lang.String,int[][])"/>
@@ -274,7 +274,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfMultiInt(Java.Lang.String arg0, int[][] arg1)
         {
-            return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", arg0, arg1);
+            return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofMultiInt", "(Ljava/lang/String;[[I)Landroid/animation/PropertyValuesHolder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofObject(java.lang.String,android.animation.TypeConverter,android.graphics.Path)"/>
@@ -285,7 +285,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfObject(Java.Lang.String arg0, Android.Animation.TypeConverter<Android.Graphics.PointF, object> arg1, Android.Graphics.Path arg2)
         {
-            return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Ljava/lang/String;Landroid/animation/TypeConverter;Landroid/graphics/Path;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#ofObject(java.lang.String,android.animation.TypeEvaluator,java.lang.Object[])"/>
@@ -296,11 +296,11 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public static Android.Animation.PropertyValuesHolder OfObject(Java.Lang.String arg0, Android.Animation.TypeEvaluator arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1); else return SExecute<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Ljava/lang/String;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1); else return SExecuteWithSignature<Android.Animation.PropertyValuesHolder>(LocalBridgeClazz, "ofObject", "(Ljava/lang/String;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#clone()"/>
@@ -382,13 +382,13 @@ namespace Android.Animation
         {
             IExecuteWithSignature("setPropertyName", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

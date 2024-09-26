@@ -40,10 +40,10 @@ namespace Android.App.Blob
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BlobStoreManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Blob
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Session declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Blob
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Session(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Blob
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,21 +119,21 @@ namespace Android.App.Blob
     public partial class BlobStoreManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#openSession(long)"/>
@@ -200,7 +200,7 @@ namespace Android.App.Blob
         /// <exception cref="Java.Io.IOException"/>
         public void AcquireLease(Android.App.Blob.BlobHandle arg0, int arg1, long arg2)
         {
-            IExecute("acquireLease", arg0, arg1, arg2);
+            IExecuteWithSignature("acquireLease", "(Landroid/app/blob/BlobHandle;IJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#acquireLease(android.app.blob.BlobHandle,int)"/>
@@ -210,7 +210,7 @@ namespace Android.App.Blob
         /// <exception cref="Java.Io.IOException"/>
         public void AcquireLease(Android.App.Blob.BlobHandle arg0, int arg1)
         {
-            IExecute("acquireLease", arg0, arg1);
+            IExecuteWithSignature("acquireLease", "(Landroid/app/blob/BlobHandle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#acquireLease(android.app.blob.BlobHandle,java.lang.CharSequence,long)"/>
@@ -221,7 +221,7 @@ namespace Android.App.Blob
         /// <exception cref="Java.Io.IOException"/>
         public void AcquireLease(Android.App.Blob.BlobHandle arg0, Java.Lang.CharSequence arg1, long arg2)
         {
-            IExecute("acquireLease", arg0, arg1, arg2);
+            IExecuteWithSignature("acquireLease", "(Landroid/app/blob/BlobHandle;Ljava/lang/CharSequence;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#acquireLease(android.app.blob.BlobHandle,java.lang.CharSequence)"/>
@@ -231,7 +231,7 @@ namespace Android.App.Blob
         /// <exception cref="Java.Io.IOException"/>
         public void AcquireLease(Android.App.Blob.BlobHandle arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("acquireLease", arg0, arg1);
+            IExecuteWithSignature("acquireLease", "(Landroid/app/blob/BlobHandle;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#releaseLease(android.app.blob.BlobHandle)"/>
@@ -242,29 +242,29 @@ namespace Android.App.Blob
         {
             IExecuteWithSignature("releaseLease", "(Landroid/app/blob/BlobHandle;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Session implementation
         public partial class Session
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#openRead()"/>
@@ -284,7 +284,7 @@ namespace Android.App.Blob
             /// <exception cref="Java.Io.IOException"/>
             public Android.Os.ParcelFileDescriptor OpenWrite(long arg0, long arg1)
             {
-                return IExecute<Android.Os.ParcelFileDescriptor>("openWrite", arg0, arg1);
+                return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openWrite", "(JJ)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#isPackageAccessAllowed(java.lang.String,byte[])"/>
@@ -295,7 +295,7 @@ namespace Android.App.Blob
             /// <exception cref="Java.Io.IOException"/>
             public bool IsPackageAccessAllowed(Java.Lang.String arg0, byte[] arg1)
             {
-                return IExecute<bool>("isPackageAccessAllowed", arg0, arg1);
+                return IExecuteWithSignature<bool>("isPackageAccessAllowed", "(Ljava/lang/String;[B)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#isPublicAccessAllowed()"/>
@@ -340,7 +340,7 @@ namespace Android.App.Blob
             /// <exception cref="Java.Io.IOException"/>
             public void AllowPackageAccess(Java.Lang.String arg0, byte[] arg1)
             {
-                IExecute("allowPackageAccess", arg0, arg1);
+                IExecuteWithSignature("allowPackageAccess", "(Ljava/lang/String;[B)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#allowPublicAccess()"/>
@@ -374,22 +374,22 @@ namespace Android.App.Blob
             /// <exception cref="Java.Io.IOException"/>
             public void Commit(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1)
             {
-                IExecute("commit", arg0, arg1);
+                IExecuteWithSignature("commit", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

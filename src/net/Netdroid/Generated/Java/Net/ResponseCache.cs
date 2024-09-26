@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("ResponseCache class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResponseCache(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Java.Net
     public partial class ResponseCache
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ResponseCache.html#getDefault()"/>
@@ -104,9 +104,9 @@ namespace Java.Net
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/ResponseCache;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ResponseCache.html#put(java.net.URI,java.net.URLConnection)"/>
@@ -117,7 +117,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.CacheRequest Put(Java.Net.URI arg0, Java.Net.URLConnection arg1)
         {
-            return IExecute<Java.Net.CacheRequest>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.CacheRequest>("put", "(Ljava/net/URI;Ljava/net/URLConnection;)Ljava/net/CacheRequest;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ResponseCache.html#get(java.net.URI,java.lang.String,java.util.Map)"/>
@@ -129,15 +129,15 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.CacheResponse Get(Java.Net.URI arg0, Java.Lang.String arg1, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg2)
         {
-            return IExecute<Java.Net.CacheResponse>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Net.CacheResponse>("get", "(Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Ljava/net/CacheResponse;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

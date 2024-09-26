@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Integer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -93,17 +93,17 @@ namespace Java.Lang
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Integer"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Integer t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#BYTES"/>
@@ -135,9 +135,9 @@ namespace Java.Lang
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
         private static bool _TYPEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#bitCount(int)"/>
@@ -156,7 +156,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#compareUnsigned(int,int)"/>
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compareUnsigned", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#divideUnsigned(int,int)"/>
@@ -176,7 +176,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int DivideUnsigned(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "divideUnsigned", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "divideUnsigned", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#hashCode(int)"/>
@@ -213,7 +213,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Max(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "max", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#min(int,int)"/>
@@ -223,7 +223,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Min(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "min", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#numberOfLeadingZeros(int)"/>
@@ -254,7 +254,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseInt(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "parseInt", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "parseInt", "(Ljava/lang/CharSequence;III)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseInt(java.lang.String,int)"/>
@@ -265,7 +265,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseInt(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "parseInt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "parseInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseInt(java.lang.String)"/>
@@ -288,7 +288,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseUnsignedInt(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "parseUnsignedInt", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "parseUnsignedInt", "(Ljava/lang/CharSequence;III)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseUnsignedInt(java.lang.String,int)"/>
@@ -299,7 +299,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseUnsignedInt(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "parseUnsignedInt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "parseUnsignedInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#parseUnsignedInt(java.lang.String)"/>
@@ -319,7 +319,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int RemainderUnsigned(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "remainderUnsigned", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "remainderUnsigned", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#reverse(int)"/>
@@ -347,7 +347,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int RotateLeft(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "rotateLeft", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "rotateLeft", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#rotateRight(int,int)"/>
@@ -357,7 +357,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int RotateRight(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "rotateRight", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "rotateRight", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#signum(int)"/>
@@ -376,7 +376,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Sum(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "sum", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "sum", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#decode(java.lang.String)"/>
@@ -396,7 +396,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         public static Java.Lang.Integer GetInteger(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", "(Ljava/lang/String;I)Ljava/lang/Integer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#getInteger(java.lang.String,java.lang.Integer)"/>
@@ -406,7 +406,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         public static Java.Lang.Integer GetInteger(Java.Lang.String arg0, Java.Lang.Integer arg1)
         {
-            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", "(Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#getInteger(java.lang.String)"/>
@@ -435,7 +435,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Integer ValueOf(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;I)Ljava/lang/Integer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#valueOf(java.lang.String)"/>
@@ -482,7 +482,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(int arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toString(int)"/>
@@ -501,7 +501,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToUnsignedString(int arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#toUnsignedString(int)"/>
@@ -521,9 +521,9 @@ namespace Java.Lang
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "toUnsignedLong", "(I)J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Integer.html#compareTo(java.lang.Integer)"/>
@@ -561,13 +561,13 @@ namespace Java.Lang
         {
             return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Integer>>("describeConstable", "()Ljava/util/Optional;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

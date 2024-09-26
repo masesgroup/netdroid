@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BitmapFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Options declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Options(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,17 +119,17 @@ namespace Android.Graphics
     public partial class BitmapFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeByteArray(byte[],int,int,android.graphics.BitmapFactory.Options)"/>
@@ -141,7 +141,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeByteArray(byte[] arg0, int arg1, int arg2, Android.Graphics.BitmapFactory.Options arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeByteArray", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeByteArray", "([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeByteArray(byte[],int,int)"/>
@@ -152,7 +152,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeByteArray(byte[] arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeByteArray", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeByteArray", "([BII)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeFile(java.lang.String,android.graphics.BitmapFactory.Options)"/>
@@ -162,7 +162,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeFile(Java.Lang.String arg0, Android.Graphics.BitmapFactory.Options arg1)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeFile", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeFile", "(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeFile(java.lang.String)"/>
@@ -182,7 +182,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeFileDescriptor(Java.Io.FileDescriptor arg0, Android.Graphics.Rect arg1, Android.Graphics.BitmapFactory.Options arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeFileDescriptor", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeFileDescriptor", "(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeFileDescriptor(java.io.FileDescriptor)"/>
@@ -202,7 +202,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeResource(Android.Content.Res.Resources arg0, int arg1, Android.Graphics.BitmapFactory.Options arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResource", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResource", "(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeResource(android.content.res.Resources,int)"/>
@@ -212,7 +212,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeResource(Android.Content.Res.Resources arg0, int arg1)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResource", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResource", "(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeResourceStream(android.content.res.Resources,android.util.TypedValue,java.io.InputStream,android.graphics.Rect,android.graphics.BitmapFactory.Options)"/>
@@ -225,7 +225,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeResourceStream(Android.Content.Res.Resources arg0, Android.Util.TypedValue arg1, Java.Io.InputStream arg2, Android.Graphics.Rect arg3, Android.Graphics.BitmapFactory.Options arg4)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResourceStream", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeStream(java.io.InputStream,android.graphics.Rect,android.graphics.BitmapFactory.Options)"/>
@@ -236,7 +236,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap DecodeStream(Java.Io.InputStream arg0, Android.Graphics.Rect arg1, Android.Graphics.BitmapFactory.Options arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeStream", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeStream", "(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeStream(java.io.InputStream)"/>
@@ -247,25 +247,25 @@ namespace Android.Graphics
         {
             return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeStream", "(Ljava/io/InputStream;)Landroid/graphics/Bitmap;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Options implementation
         public partial class Options
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inBitmap"/>
@@ -360,13 +360,13 @@ namespace Android.Graphics
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#outMimeType"/>
             /// </summary>
             public Java.Lang.String outMimeType { get { return IGetField<Java.Lang.String>("outMimeType"); } set { ISetField("outMimeType", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#requestCancelDecode()"/>
@@ -376,20 +376,20 @@ namespace Android.Graphics
             {
                 IExecuteWithSignature("requestCancelDecode", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

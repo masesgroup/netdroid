@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public String(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -208,9 +208,9 @@ namespace Java.Lang
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Io.Serializable"/>
@@ -224,9 +224,9 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Lang.String t) => t.Cast<Java.Lang.CharSequence>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#CASE_INSENSITIVE_ORDER"/>
@@ -234,9 +234,9 @@ namespace Java.Lang
         public static Java.Util.Comparator CASE_INSENSITIVE_ORDER { get { if (!_CASE_INSENSITIVE_ORDERReady) { _CASE_INSENSITIVE_ORDERContent = SGetField<Java.Util.Comparator>(LocalBridgeClazz, "CASE_INSENSITIVE_ORDER"); _CASE_INSENSITIVE_ORDERReady = true; } return _CASE_INSENSITIVE_ORDERContent; } }
         private static Java.Util.Comparator _CASE_INSENSITIVE_ORDERContent = default;
         private static bool _CASE_INSENSITIVE_ORDERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#copyValueOf(char[],int,int)"/>
@@ -247,7 +247,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String CopyValueOf(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "copyValueOf", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "copyValueOf", "([CII)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#copyValueOf(char[])"/>
@@ -266,7 +266,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -277,7 +277,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#join(java.lang.CharSequence,java.lang.CharSequence[])"/>
@@ -287,7 +287,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Join(Java.Lang.CharSequence arg0, params Java.Lang.CharSequence[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "join", "(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;", arg0); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "join", "(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#join(java.lang.CharSequence,java.lang.Iterable)"/>
@@ -298,7 +298,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "join", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "join", "(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(boolean)"/>
@@ -327,7 +327,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ValueOf(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "valueOf", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "([CII)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#valueOf(char[])"/>
@@ -383,9 +383,9 @@ namespace Java.Lang
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(J)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#transform(java.util.function.Function)"/>
@@ -480,7 +480,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool RegionMatches(bool arg0, int arg1, Java.Lang.String arg2, int arg3, int arg4)
         {
-            return IExecute<bool>("regionMatches", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("regionMatches", "(ZILjava/lang/String;II)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#regionMatches(int,java.lang.String,int,int)"/>
@@ -492,7 +492,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool RegionMatches(int arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("regionMatches", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("regionMatches", "(ILjava/lang/String;II)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#startsWith(java.lang.String,int)"/>
@@ -502,7 +502,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool StartsWith(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<bool>("startsWith", arg0, arg1);
+            return IExecuteWithSignature<bool>("startsWith", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#startsWith(java.lang.String)"/>
@@ -583,7 +583,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CodePointCount(int arg0, int arg1)
         {
-            return IExecute<int>("codePointCount", arg0, arg1);
+            return IExecuteWithSignature<int>("codePointCount", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#compareTo(java.lang.Object)"/>
@@ -620,7 +620,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int IndexOf(int arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#indexOf(int)"/>
@@ -639,7 +639,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int IndexOf(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("indexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#indexOf(java.lang.String)"/>
@@ -658,7 +658,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(int arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#lastIndexOf(int)"/>
@@ -677,7 +677,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("lastIndexOf", arg0, arg1);
+            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#lastIndexOf(java.lang.String)"/>
@@ -704,7 +704,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int OffsetByCodePoints(int arg0, int arg1)
         {
-            return IExecute<int>("offsetByCodePoints", arg0, arg1);
+            return IExecuteWithSignature<int>("offsetByCodePoints", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#subSequence(int,int)"/>
@@ -714,7 +714,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
@@ -770,7 +770,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Replace(char arg0, char arg1)
         {
-            return IExecute<Java.Lang.String>("replace", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("replace", "(CC)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#replace(java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -780,7 +780,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Replace(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Java.Lang.String>("replace", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("replace", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#replaceAll(java.lang.String,java.lang.String)"/>
@@ -790,7 +790,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceAll(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("replaceAll", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("replaceAll", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#replaceFirst(java.lang.String,java.lang.String)"/>
@@ -800,7 +800,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFirst(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("replaceFirst", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFirst", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#strip()"/>
@@ -842,7 +842,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Substring(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("substring", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("substring", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#substring(int)"/>
@@ -911,7 +911,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Split(Java.Lang.String arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("split", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/String;I)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#split(java.lang.String)"/>
@@ -972,7 +972,7 @@ namespace Java.Lang
         [global::System.Obsolete()]
         public void GetBytes(int arg0, int arg1, byte[] arg2, int arg3)
         {
-            IExecute("getBytes", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getBytes", "(II[BI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#getChars(int,int,char[],int)"/>
@@ -983,15 +983,15 @@ namespace Java.Lang
         /// <param name="arg3"><see cref="int"/></param>
         public void GetChars(int arg0, int arg1, char[] arg2, int arg3)
         {
-            IExecute("getChars", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getChars", "(II[CI)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.View.Inputmethod
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputConnectionWrapper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,21 +83,21 @@ namespace Android.View.Inputmethod
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#getHandler()"/>
@@ -115,7 +115,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="Android.View.Inputmethod.ExtractedText"/></returns>
         public Android.View.Inputmethod.ExtractedText GetExtractedText(Android.View.Inputmethod.ExtractedTextRequest arg0, int arg1)
         {
-            return IExecute<Android.View.Inputmethod.ExtractedText>("getExtractedText", arg0, arg1);
+            return IExecuteWithSignature<Android.View.Inputmethod.ExtractedText>("getExtractedText", "(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#getSurroundingText(int,int,int)"/>
@@ -126,7 +126,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="Android.View.Inputmethod.SurroundingText"/></returns>
         public Android.View.Inputmethod.SurroundingText GetSurroundingText(int arg0, int arg1, int arg2)
         {
-            return IExecute<Android.View.Inputmethod.SurroundingText>("getSurroundingText", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.Inputmethod.SurroundingText>("getSurroundingText", "(III)Landroid/view/inputmethod/SurroundingText;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#takeSnapshot()"/>
@@ -171,7 +171,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool CommitContent(Android.View.Inputmethod.InputContentInfo arg0, int arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("commitContent", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("commitContent", "(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#commitCorrection(android.view.inputmethod.CorrectionInfo)"/>
@@ -191,7 +191,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool CommitText(Java.Lang.CharSequence arg0, int arg1, Android.View.Inputmethod.TextAttribute arg2)
         {
-            return IExecute<bool>("commitText", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("commitText", "(Ljava/lang/CharSequence;ILandroid/view/inputmethod/TextAttribute;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#commitText(java.lang.CharSequence,int)"/>
@@ -201,7 +201,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool CommitText(Java.Lang.CharSequence arg0, int arg1)
         {
-            return IExecute<bool>("commitText", arg0, arg1);
+            return IExecuteWithSignature<bool>("commitText", "(Ljava/lang/CharSequence;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#deleteSurroundingText(int,int)"/>
@@ -211,7 +211,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool DeleteSurroundingText(int arg0, int arg1)
         {
-            return IExecute<bool>("deleteSurroundingText", arg0, arg1);
+            return IExecuteWithSignature<bool>("deleteSurroundingText", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#deleteSurroundingTextInCodePoints(int,int)"/>
@@ -221,7 +221,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool DeleteSurroundingTextInCodePoints(int arg0, int arg1)
         {
-            return IExecute<bool>("deleteSurroundingTextInCodePoints", arg0, arg1);
+            return IExecuteWithSignature<bool>("deleteSurroundingTextInCodePoints", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#endBatchEdit()"/>
@@ -265,7 +265,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool PerformPrivateCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<bool>("performPrivateCommand", arg0, arg1);
+            return IExecuteWithSignature<bool>("performPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#performSpellCheck()"/>
@@ -283,7 +283,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool PreviewHandwritingGesture(Android.View.Inputmethod.PreviewableHandwritingGesture arg0, Android.Os.CancellationSignal arg1)
         {
-            return IExecute<bool>("previewHandwritingGesture", arg0, arg1);
+            return IExecuteWithSignature<bool>("previewHandwritingGesture", "(Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroid/os/CancellationSignal;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#replaceText(int,int,java.lang.CharSequence,int,android.view.inputmethod.TextAttribute)"/>
@@ -296,7 +296,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool ReplaceText(int arg0, int arg1, Java.Lang.CharSequence arg2, int arg3, Android.View.Inputmethod.TextAttribute arg4)
         {
-            return IExecute<bool>("replaceText", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("replaceText", "(IILjava/lang/CharSequence;ILandroid/view/inputmethod/TextAttribute;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#reportFullscreenMode(boolean)"/>
@@ -315,7 +315,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool RequestCursorUpdates(int arg0, int arg1)
         {
-            return IExecute<bool>("requestCursorUpdates", arg0, arg1);
+            return IExecuteWithSignature<bool>("requestCursorUpdates", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#requestCursorUpdates(int)"/>
@@ -344,7 +344,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool SetComposingRegion(int arg0, int arg1, Android.View.Inputmethod.TextAttribute arg2)
         {
-            return IExecute<bool>("setComposingRegion", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setComposingRegion", "(IILandroid/view/inputmethod/TextAttribute;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#setComposingRegion(int,int)"/>
@@ -354,7 +354,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool SetComposingRegion(int arg0, int arg1)
         {
-            return IExecute<bool>("setComposingRegion", arg0, arg1);
+            return IExecuteWithSignature<bool>("setComposingRegion", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#setComposingText(java.lang.CharSequence,int,android.view.inputmethod.TextAttribute)"/>
@@ -365,7 +365,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool SetComposingText(Java.Lang.CharSequence arg0, int arg1, Android.View.Inputmethod.TextAttribute arg2)
         {
-            return IExecute<bool>("setComposingText", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setComposingText", "(Ljava/lang/CharSequence;ILandroid/view/inputmethod/TextAttribute;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#setComposingText(java.lang.CharSequence,int)"/>
@@ -375,7 +375,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool SetComposingText(Java.Lang.CharSequence arg0, int arg1)
         {
-            return IExecute<bool>("setComposingText", arg0, arg1);
+            return IExecuteWithSignature<bool>("setComposingText", "(Ljava/lang/CharSequence;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#setImeConsumesInput(boolean)"/>
@@ -394,7 +394,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool SetSelection(int arg0, int arg1)
         {
-            return IExecute<bool>("setSelection", arg0, arg1);
+            return IExecuteWithSignature<bool>("setSelection", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#getCursorCapsMode(int)"/>
@@ -422,7 +422,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetTextAfterCursor(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getTextAfterCursor", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextAfterCursor", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#getTextBeforeCursor(int,int)"/>
@@ -432,7 +432,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetTextBeforeCursor(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getTextBeforeCursor", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextBeforeCursor", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#closeConnection()"/>
@@ -449,7 +449,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void PerformHandwritingGesture(Android.View.Inputmethod.HandwritingGesture arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.IntConsumer arg2)
         {
-            IExecute("performHandwritingGesture", arg0, arg1, arg2);
+            IExecuteWithSignature("performHandwritingGesture", "(Landroid/view/inputmethod/HandwritingGesture;Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#requestTextBoundsInfo(android.graphics.RectF,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -459,7 +459,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void RequestTextBoundsInfo(Android.Graphics.RectF arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.View.Inputmethod.TextBoundsInfoResult> arg2)
         {
-            IExecute("requestTextBoundsInfo", arg0, arg1, arg2);
+            IExecuteWithSignature("requestTextBoundsInfo", "(Landroid/graphics/RectF;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#setTarget(android.view.inputmethod.InputConnection)"/>
@@ -469,13 +469,13 @@ namespace Android.View.Inputmethod
         {
             IExecuteWithSignature("setTarget", "(Landroid/view/inputmethod/InputConnection;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

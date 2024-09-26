@@ -40,10 +40,10 @@ namespace Java.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MessageFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Field declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Field(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -136,17 +136,17 @@ namespace Java.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object[])"/>
@@ -156,11 +156,11 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "format", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -171,7 +171,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(object[] arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "([Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -181,7 +181,7 @@ namespace Java.Text
         /// <returns><see cref="object"/></returns>
         public object[] Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecuteArray<object>("parse", arg0, arg1);
+            return IExecuteWithSignatureArray<object>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)[Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#parse(java.lang.String)"/>
@@ -240,7 +240,7 @@ namespace Java.Text
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormat(int arg0, Java.Text.Format arg1)
         {
-            IExecute("setFormat", arg0, arg1);
+            IExecuteWithSignature("setFormat", "(ILjava/text/Format;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
@@ -249,7 +249,7 @@ namespace Java.Text
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormatByArgumentIndex(int arg0, Java.Text.Format arg1)
         {
-            IExecute("setFormatByArgumentIndex", arg0, arg1);
+            IExecuteWithSignature("setFormatByArgumentIndex", "(ILjava/text/Format;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#setFormats(java.text.Format[])"/>
@@ -275,21 +275,21 @@ namespace Java.Text
         {
             IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Field implementation
         public partial class Field
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/text/MessageFormat.Field.html#ARGUMENT"/>
@@ -297,28 +297,28 @@ namespace Java.Text
             public static Java.Text.MessageFormat.Field ARGUMENT { get { if (!_ARGUMENTReady) { _ARGUMENTContent = SGetField<Java.Text.MessageFormat.Field>(LocalBridgeClazz, "ARGUMENT"); _ARGUMENTReady = true; } return _ARGUMENTContent; } }
             private static Java.Text.MessageFormat.Field _ARGUMENTContent = default;
             private static bool _ARGUMENTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

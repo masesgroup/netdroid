@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ThumbnailUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Media
     public partial class ThumbnailUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#OPTIONS_RECYCLE_INPUT"/>
@@ -88,9 +88,9 @@ namespace Android.Media
         public static int OPTIONS_RECYCLE_INPUT { get { if (!_OPTIONS_RECYCLE_INPUTReady) { _OPTIONS_RECYCLE_INPUTContent = SGetField<int>(LocalBridgeClazz, "OPTIONS_RECYCLE_INPUT"); _OPTIONS_RECYCLE_INPUTReady = true; } return _OPTIONS_RECYCLE_INPUTContent; } }
         private static int _OPTIONS_RECYCLE_INPUTContent = default;
         private static bool _OPTIONS_RECYCLE_INPUTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createAudioThumbnail(java.io.File,android.util.Size,android.os.CancellationSignal)"/>
@@ -102,7 +102,7 @@ namespace Android.Media
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Graphics.Bitmap CreateAudioThumbnail(Java.Io.File arg0, Android.Util.Size arg1, Android.Os.CancellationSignal arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createAudioThumbnail", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createAudioThumbnail", "(Ljava/io/File;Landroid/util/Size;Landroid/os/CancellationSignal;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createAudioThumbnail(java.lang.String,int)"/>
@@ -113,7 +113,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public static Android.Graphics.Bitmap CreateAudioThumbnail(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createAudioThumbnail", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createAudioThumbnail", "(Ljava/lang/String;I)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createImageThumbnail(java.io.File,android.util.Size,android.os.CancellationSignal)"/>
@@ -125,7 +125,7 @@ namespace Android.Media
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Graphics.Bitmap CreateImageThumbnail(Java.Io.File arg0, Android.Util.Size arg1, Android.Os.CancellationSignal arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createImageThumbnail", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createImageThumbnail", "(Ljava/io/File;Landroid/util/Size;Landroid/os/CancellationSignal;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createImageThumbnail(java.lang.String,int)"/>
@@ -136,7 +136,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public static Android.Graphics.Bitmap CreateImageThumbnail(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createImageThumbnail", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createImageThumbnail", "(Ljava/lang/String;I)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createVideoThumbnail(java.io.File,android.util.Size,android.os.CancellationSignal)"/>
@@ -148,7 +148,7 @@ namespace Android.Media
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Graphics.Bitmap CreateVideoThumbnail(Java.Io.File arg0, Android.Util.Size arg1, Android.Os.CancellationSignal arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createVideoThumbnail", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createVideoThumbnail", "(Ljava/io/File;Landroid/util/Size;Landroid/os/CancellationSignal;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createVideoThumbnail(java.lang.String,int)"/>
@@ -159,7 +159,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public static Android.Graphics.Bitmap CreateVideoThumbnail(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createVideoThumbnail", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createVideoThumbnail", "(Ljava/lang/String;I)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#extractThumbnail(android.graphics.Bitmap,int,int,int)"/>
@@ -171,7 +171,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap ExtractThumbnail(Android.Graphics.Bitmap arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "extractThumbnail", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "extractThumbnail", "(Landroid/graphics/Bitmap;III)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#extractThumbnail(android.graphics.Bitmap,int,int)"/>
@@ -182,19 +182,19 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap ExtractThumbnail(Android.Graphics.Bitmap arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "extractThumbnail", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "extractThumbnail", "(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

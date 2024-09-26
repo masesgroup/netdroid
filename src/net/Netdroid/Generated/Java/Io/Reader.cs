@@ -42,10 +42,10 @@ namespace Java.Io
         /// </summary>
         [global::System.Obsolete("Reader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Reader(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Io
     public partial class Reader : Java.Lang.IReadable, Java.Io.ICloseable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.Reader"/> to <see cref="Java.Lang.Readable"/>
@@ -88,13 +88,13 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.Reader"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.Reader t) => t.Cast<Java.Io.Closeable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Reader.html#nullReader()"/>
@@ -104,9 +104,9 @@ namespace Java.Io
         {
             return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "nullReader", "()Ljava/io/Reader;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Reader.html#read(char[],int,int)"/>
@@ -118,7 +118,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("read", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("read", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Reader.html#close()"/>
@@ -211,13 +211,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("reset", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

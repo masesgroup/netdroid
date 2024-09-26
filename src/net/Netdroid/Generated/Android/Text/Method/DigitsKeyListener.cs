@@ -40,10 +40,10 @@ namespace Android.Text.Method
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DigitsKeyListener(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -102,17 +102,17 @@ namespace Android.Text.Method
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance()"/>
@@ -132,7 +132,7 @@ namespace Android.Text.Method
         [global::System.Obsolete()]
         public static Android.Text.Method.DigitsKeyListener GetInstance(bool arg0, bool arg1)
         {
-            return SExecute<Android.Text.Method.DigitsKeyListener>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Text.Method.DigitsKeyListener>(LocalBridgeClazz, "getInstance", "(ZZ)Landroid/text/method/DigitsKeyListener;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(java.lang.String)"/>
@@ -152,7 +152,7 @@ namespace Android.Text.Method
         /// <returns><see cref="Android.Text.Method.DigitsKeyListener"/></returns>
         public static Android.Text.Method.DigitsKeyListener GetInstance(Java.Util.Locale arg0, bool arg1, bool arg2)
         {
-            return SExecute<Android.Text.Method.DigitsKeyListener>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Text.Method.DigitsKeyListener>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;ZZ)Landroid/text/method/DigitsKeyListener;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(java.util.Locale)"/>
@@ -163,17 +163,17 @@ namespace Android.Text.Method
         {
             return SExecuteWithSignature<Android.Text.Method.DigitsKeyListener>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Landroid/text/method/DigitsKeyListener;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

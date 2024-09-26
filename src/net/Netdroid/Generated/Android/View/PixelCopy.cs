@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PixelCopy(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnPixelCopyFinishedListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnPixelCopyFinishedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.PixelCopy_OnPixelCopyFinishedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnPixelCopyFinishedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnPixelCopyFinishedListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.PixelCopy$OnPixelCopyFinishedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -148,10 +148,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Request(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -172,7 +172,7 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -189,10 +189,10 @@ namespace Android.View
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -213,9 +213,9 @@ namespace Android.View
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -238,10 +238,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Result(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -262,9 +262,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -276,13 +276,13 @@ namespace Android.View
     public partial class PixelCopy
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#ERROR_DESTINATION_INVALID"/>
@@ -320,9 +320,9 @@ namespace Android.View
         public static int SUCCESS { get { if (!_SUCCESSReady) { _SUCCESSContent = SGetField<int>(LocalBridgeClazz, "SUCCESS"); _SUCCESSReady = true; } return _SUCCESSContent; } }
         private static int _SUCCESSContent = default;
         private static bool _SUCCESSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#request(android.view.PixelCopy.Request,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -332,7 +332,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public static void RequestMethod(Android.View.PixelCopy.Request arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.View.PixelCopy.Result> arg2)
         {
-            SExecute(LocalBridgeClazz, "request", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "request", "(Landroid/view/PixelCopy$Request;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#request(android.view.Surface,android.graphics.Bitmap,android.view.PixelCopy.OnPixelCopyFinishedListener,android.os.Handler)"/>
@@ -343,7 +343,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
         public static void RequestMethod(Android.View.Surface arg0, Android.Graphics.Bitmap arg1, Android.View.PixelCopy.OnPixelCopyFinishedListener arg2, Android.Os.Handler arg3)
         {
-            SExecute(LocalBridgeClazz, "request", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "request", "(Landroid/view/Surface;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#request(android.view.Surface,android.graphics.Rect,android.graphics.Bitmap,android.view.PixelCopy.OnPixelCopyFinishedListener,android.os.Handler)"/>
@@ -355,7 +355,7 @@ namespace Android.View
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
         public static void RequestMethod(Android.View.Surface arg0, Android.Graphics.Rect arg1, Android.Graphics.Bitmap arg2, Android.View.PixelCopy.OnPixelCopyFinishedListener arg3, Android.Os.Handler arg4)
         {
-            SExecute(LocalBridgeClazz, "request", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "request", "(Landroid/view/Surface;Landroid/graphics/Rect;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#request(android.view.SurfaceView,android.graphics.Bitmap,android.view.PixelCopy.OnPixelCopyFinishedListener,android.os.Handler)"/>
@@ -366,7 +366,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
         public static void RequestMethod(Android.View.SurfaceView arg0, Android.Graphics.Bitmap arg1, Android.View.PixelCopy.OnPixelCopyFinishedListener arg2, Android.Os.Handler arg3)
         {
-            SExecute(LocalBridgeClazz, "request", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "request", "(Landroid/view/SurfaceView;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#request(android.view.SurfaceView,android.graphics.Rect,android.graphics.Bitmap,android.view.PixelCopy.OnPixelCopyFinishedListener,android.os.Handler)"/>
@@ -378,7 +378,7 @@ namespace Android.View
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
         public static void RequestMethod(Android.View.SurfaceView arg0, Android.Graphics.Rect arg1, Android.Graphics.Bitmap arg2, Android.View.PixelCopy.OnPixelCopyFinishedListener arg3, Android.Os.Handler arg4)
         {
-            SExecute(LocalBridgeClazz, "request", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "request", "(Landroid/view/SurfaceView;Landroid/graphics/Rect;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#request(android.view.Window,android.graphics.Bitmap,android.view.PixelCopy.OnPixelCopyFinishedListener,android.os.Handler)"/>
@@ -389,7 +389,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
         public static void RequestMethod(Android.View.Window arg0, Android.Graphics.Bitmap arg1, Android.View.PixelCopy.OnPixelCopyFinishedListener arg2, Android.Os.Handler arg3)
         {
-            SExecute(LocalBridgeClazz, "request", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "request", "(Landroid/view/Window;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PixelCopy.html#request(android.view.Window,android.graphics.Rect,android.graphics.Bitmap,android.view.PixelCopy.OnPixelCopyFinishedListener,android.os.Handler)"/>
@@ -401,35 +401,35 @@ namespace Android.View
         /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
         public static void RequestMethod(Android.View.Window arg0, Android.Graphics.Rect arg1, Android.Graphics.Bitmap arg2, Android.View.PixelCopy.OnPixelCopyFinishedListener arg3, Android.Os.Handler arg4)
         {
-            SExecute(LocalBridgeClazz, "request", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "request", "(Landroid/view/Window;Landroid/graphics/Rect;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnPixelCopyFinishedListener implementation
         public partial class OnPixelCopyFinishedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnPixelCopyFinishedListener"/>
@@ -439,13 +439,13 @@ namespace Android.View
                 AddEventHandler("onPixelCopyFinished", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPixelCopyFinishedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/PixelCopy.OnPixelCopyFinishedListener.html#onPixelCopyFinished(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPixelCopyFinished"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnPixelCopyFinished { get; set; } = null;
-            
+
             bool hasOverrideOnPixelCopyFinished = true;
             void OnPixelCopyFinishedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -454,7 +454,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPixelCopyFinished;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/PixelCopy.OnPixelCopyFinishedListener.html#onPixelCopyFinished(int)"/>
             /// </summary>
@@ -463,13 +463,13 @@ namespace Android.View
             {
                 hasOverrideOnPixelCopyFinished = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -478,21 +478,21 @@ namespace Android.View
         public partial class OnPixelCopyFinishedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/PixelCopy.OnPixelCopyFinishedListener.html#onPixelCopyFinished(int)"/>
@@ -502,13 +502,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onPixelCopyFinished", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -517,21 +517,21 @@ namespace Android.View
         public partial class Request
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.html#getDestinationBitmap()"/>
@@ -549,25 +549,25 @@ namespace Android.View
             {
                 return IExecuteWithSignature<Android.Graphics.Rect>("getSourceRect", "()Landroid/graphics/Rect;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.Builder.html#ofSurface(android.view.Surface)"/>
@@ -605,9 +605,9 @@ namespace Android.View
                 {
                     return SExecuteWithSignature<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofWindow", "(Landroid/view/Window;)Landroid/view/PixelCopy$Request$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.Builder.html#build()"/>
@@ -635,20 +635,20 @@ namespace Android.View
                 {
                     return IExecuteWithSignature<Android.View.PixelCopy.Request.Builder>("setSourceRect", "(Landroid/graphics/Rect;)Landroid/view/PixelCopy$Request$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -657,21 +657,21 @@ namespace Android.View
         public partial class Result
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Result.html#getBitmap()"/>
@@ -689,20 +689,20 @@ namespace Android.View
             {
                 return IExecuteWithSignature<int>("getStatus", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

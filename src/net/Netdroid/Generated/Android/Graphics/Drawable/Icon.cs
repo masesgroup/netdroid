@@ -40,10 +40,10 @@ namespace Android.Graphics.Drawable
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Icon(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnDrawableLoadedListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Graphics.Drawable
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnDrawableLoadedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.graphics.drawable.Icon_OnDrawableLoadedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Graphics.Drawable
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnDrawableLoadedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnDrawableLoadedListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Graphics.Drawable
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.graphics.drawable.Icon$OnDrawableLoadedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,13 +141,13 @@ namespace Android.Graphics.Drawable
     public partial class Icon
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#CREATOR"/>
@@ -191,9 +191,9 @@ namespace Android.Graphics.Drawable
         public static int TYPE_URI_ADAPTIVE_BITMAP { get { if (!_TYPE_URI_ADAPTIVE_BITMAPReady) { _TYPE_URI_ADAPTIVE_BITMAPContent = SGetField<int>(LocalBridgeClazz, "TYPE_URI_ADAPTIVE_BITMAP"); _TYPE_URI_ADAPTIVE_BITMAPReady = true; } return _TYPE_URI_ADAPTIVE_BITMAPContent; } }
         private static int _TYPE_URI_ADAPTIVE_BITMAPContent = default;
         private static bool _TYPE_URI_ADAPTIVE_BITMAPReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#createWithAdaptiveBitmap(android.graphics.Bitmap)"/>
@@ -258,7 +258,7 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
         public static Android.Graphics.Drawable.Icon CreateWithData(byte[] arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Graphics.Drawable.Icon>(LocalBridgeClazz, "createWithData", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Icon>(LocalBridgeClazz, "createWithData", "([BII)Landroid/graphics/drawable/Icon;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#createWithFilePath(java.lang.String)"/>
@@ -277,7 +277,7 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
         public static Android.Graphics.Drawable.Icon CreateWithResource(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.Graphics.Drawable.Icon>(LocalBridgeClazz, "createWithResource", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Icon>(LocalBridgeClazz, "createWithResource", "(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#createWithResource(java.lang.String,int)"/>
@@ -287,11 +287,11 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
         public static Android.Graphics.Drawable.Icon CreateWithResource(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Graphics.Drawable.Icon>(LocalBridgeClazz, "createWithResource", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Icon>(LocalBridgeClazz, "createWithResource", "(Ljava/lang/String;I)Landroid/graphics/drawable/Icon;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#loadDrawable(android.content.Context)"/>
@@ -386,7 +386,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void LoadDrawableAsync(Android.Content.Context arg0, Android.Graphics.Drawable.Icon.OnDrawableLoadedListener arg1, Android.Os.Handler arg2)
         {
-            IExecute("loadDrawableAsync", arg0, arg1, arg2);
+            IExecuteWithSignature("loadDrawableAsync", "(Landroid/content/Context;Landroid/graphics/drawable/Icon$OnDrawableLoadedListener;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#loadDrawableAsync(android.content.Context,android.os.Message)"/>
@@ -395,7 +395,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="Android.Os.Message"/></param>
         public void LoadDrawableAsync(Android.Content.Context arg0, Android.Os.Message arg1)
         {
-            IExecute("loadDrawableAsync", arg0, arg1);
+            IExecuteWithSignature("loadDrawableAsync", "(Landroid/content/Context;Landroid/os/Message;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#writeToParcel(android.os.Parcel,int)"/>
@@ -404,31 +404,31 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnDrawableLoadedListener implementation
         public partial class OnDrawableLoadedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnDrawableLoadedListener"/>
@@ -438,13 +438,13 @@ namespace Android.Graphics.Drawable
                 AddEventHandler("onDrawableLoaded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDrawableLoadedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.OnDrawableLoadedListener.html#onDrawableLoaded(android.graphics.drawable.Drawable)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrawableLoaded"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Graphics.Drawable.Drawable> OnOnDrawableLoaded { get; set; } = null;
-            
+
             bool hasOverrideOnDrawableLoaded = true;
             void OnDrawableLoadedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -453,7 +453,7 @@ namespace Android.Graphics.Drawable
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Graphics.Drawable.Drawable>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDrawableLoaded;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.OnDrawableLoadedListener.html#onDrawableLoaded(android.graphics.drawable.Drawable)"/>
             /// </summary>
@@ -462,13 +462,13 @@ namespace Android.Graphics.Drawable
             {
                 hasOverrideOnDrawableLoaded = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -477,21 +477,21 @@ namespace Android.Graphics.Drawable
         public partial class OnDrawableLoadedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.OnDrawableLoadedListener.html#onDrawableLoaded(android.graphics.drawable.Drawable)"/>
@@ -501,20 +501,20 @@ namespace Android.Graphics.Drawable
             {
                 IExecuteWithSignature("onDrawableLoaded", "(Landroid/graphics/drawable/Drawable;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

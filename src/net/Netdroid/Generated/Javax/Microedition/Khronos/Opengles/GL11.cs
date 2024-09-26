@@ -42,10 +42,10 @@ namespace Javax.Microedition.Khronos.Opengles
         /// </summary>
         [global::System.Obsolete("GL11 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GL11(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Microedition.Khronos.Opengles
     public partial interface IGL11 : Javax.Microedition.Khronos.Opengles.IGL10
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Javax.Microedition.Khronos.Opengles
     public partial class GL11 : Javax.Microedition.Khronos.Opengles.IGL11
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#GL_ACTIVE_TEXTURE"/>
@@ -834,13 +834,13 @@ namespace Javax.Microedition.Khronos.Opengles
         public static int GL_WRITE_ONLY { get { if (!_GL_WRITE_ONLYReady) { _GL_WRITE_ONLYContent = SGetField<int>(LocalBridgeClazz, "GL_WRITE_ONLY"); _GL_WRITE_ONLYReady = true; } return _GL_WRITE_ONLYContent; } }
         private static int _GL_WRITE_ONLYContent = default;
         private static bool _GL_WRITE_ONLYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glIsBuffer(int)"/>
@@ -876,7 +876,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="int"/></param>
         public void GlBindBuffer(int arg0, int arg1)
         {
-            IExecute("glBindBuffer", arg0, arg1);
+            IExecuteWithSignature("glBindBuffer", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glBufferData(int,int,java.nio.Buffer,int)"/>
@@ -887,7 +887,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlBufferData(int arg0, int arg1, Java.Nio.Buffer arg2, int arg3)
         {
-            IExecute("glBufferData", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glBufferData", "(IILjava/nio/Buffer;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glBufferSubData(int,int,int,java.nio.Buffer)"/>
@@ -898,7 +898,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="Java.Nio.Buffer"/></param>
         public void GlBufferSubData(int arg0, int arg1, int arg2, Java.Nio.Buffer arg3)
         {
-            IExecute("glBufferSubData", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glBufferSubData", "(IIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glClipPlanef(int,float[],int)"/>
@@ -908,7 +908,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlClipPlanef(int arg0, float[] arg1, int arg2)
         {
-            IExecute("glClipPlanef", arg0, arg1, arg2);
+            IExecuteWithSignature("glClipPlanef", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glClipPlanef(int,java.nio.FloatBuffer)"/>
@@ -917,7 +917,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlClipPlanef(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            IExecute("glClipPlanef", arg0, arg1);
+            IExecuteWithSignature("glClipPlanef", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glClipPlanex(int,int[],int)"/>
@@ -927,7 +927,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlClipPlanex(int arg0, int[] arg1, int arg2)
         {
-            IExecute("glClipPlanex", arg0, arg1, arg2);
+            IExecuteWithSignature("glClipPlanex", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glClipPlanex(int,java.nio.IntBuffer)"/>
@@ -936,7 +936,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlClipPlanex(int arg0, Java.Nio.IntBuffer arg1)
         {
-            IExecute("glClipPlanex", arg0, arg1);
+            IExecuteWithSignature("glClipPlanex", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glColor4ub(byte,byte,byte,byte)"/>
@@ -947,7 +947,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="byte"/></param>
         public void GlColor4ub(byte arg0, byte arg1, byte arg2, byte arg3)
         {
-            IExecute("glColor4ub", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glColor4ub", "(BBBB)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glColorPointer(int,int,int,int)"/>
@@ -958,7 +958,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlColorPointer(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("glColorPointer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glColorPointer", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glDeleteBuffers(int,int[],int)"/>
@@ -968,7 +968,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlDeleteBuffers(int arg0, int[] arg1, int arg2)
         {
-            IExecute("glDeleteBuffers", arg0, arg1, arg2);
+            IExecuteWithSignature("glDeleteBuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glDeleteBuffers(int,java.nio.IntBuffer)"/>
@@ -977,7 +977,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlDeleteBuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            IExecute("glDeleteBuffers", arg0, arg1);
+            IExecuteWithSignature("glDeleteBuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glDrawElements(int,int,int,int)"/>
@@ -988,7 +988,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlDrawElements(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("glDrawElements", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glDrawElements", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGenBuffers(int,int[],int)"/>
@@ -998,7 +998,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlGenBuffers(int arg0, int[] arg1, int arg2)
         {
-            IExecute("glGenBuffers", arg0, arg1, arg2);
+            IExecuteWithSignature("glGenBuffers", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGenBuffers(int,java.nio.IntBuffer)"/>
@@ -1007,7 +1007,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGenBuffers(int arg0, Java.Nio.IntBuffer arg1)
         {
-            IExecute("glGenBuffers", arg0, arg1);
+            IExecuteWithSignature("glGenBuffers", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetBooleanv(int,boolean[],int)"/>
@@ -1017,7 +1017,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlGetBooleanv(int arg0, bool[] arg1, int arg2)
         {
-            IExecute("glGetBooleanv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetBooleanv", "(I[ZI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetBooleanv(int,java.nio.IntBuffer)"/>
@@ -1026,7 +1026,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetBooleanv(int arg0, Java.Nio.IntBuffer arg1)
         {
-            IExecute("glGetBooleanv", arg0, arg1);
+            IExecuteWithSignature("glGetBooleanv", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetBufferParameteriv(int,int,int[],int)"/>
@@ -1037,7 +1037,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetBufferParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glGetBufferParameteriv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetBufferParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetBufferParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -1047,7 +1047,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetBufferParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glGetBufferParameteriv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetBufferParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetClipPlanef(int,float[],int)"/>
@@ -1057,7 +1057,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlGetClipPlanef(int arg0, float[] arg1, int arg2)
         {
-            IExecute("glGetClipPlanef", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetClipPlanef", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetClipPlanef(int,java.nio.FloatBuffer)"/>
@@ -1066,7 +1066,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlGetClipPlanef(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            IExecute("glGetClipPlanef", arg0, arg1);
+            IExecuteWithSignature("glGetClipPlanef", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetClipPlanex(int,int[],int)"/>
@@ -1076,7 +1076,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlGetClipPlanex(int arg0, int[] arg1, int arg2)
         {
-            IExecute("glGetClipPlanex", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetClipPlanex", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetClipPlanex(int,java.nio.IntBuffer)"/>
@@ -1085,7 +1085,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetClipPlanex(int arg0, Java.Nio.IntBuffer arg1)
         {
-            IExecute("glGetClipPlanex", arg0, arg1);
+            IExecuteWithSignature("glGetClipPlanex", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetFixedv(int,int[],int)"/>
@@ -1095,7 +1095,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlGetFixedv(int arg0, int[] arg1, int arg2)
         {
-            IExecute("glGetFixedv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetFixedv", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetFixedv(int,java.nio.IntBuffer)"/>
@@ -1104,7 +1104,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetFixedv(int arg0, Java.Nio.IntBuffer arg1)
         {
-            IExecute("glGetFixedv", arg0, arg1);
+            IExecuteWithSignature("glGetFixedv", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetFloatv(int,float[],int)"/>
@@ -1114,7 +1114,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlGetFloatv(int arg0, float[] arg1, int arg2)
         {
-            IExecute("glGetFloatv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetFloatv", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetFloatv(int,java.nio.FloatBuffer)"/>
@@ -1123,7 +1123,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlGetFloatv(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            IExecute("glGetFloatv", arg0, arg1);
+            IExecuteWithSignature("glGetFloatv", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetLightfv(int,int,float[],int)"/>
@@ -1134,7 +1134,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetLightfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            IExecute("glGetLightfv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetLightfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetLightfv(int,int,java.nio.FloatBuffer)"/>
@@ -1144,7 +1144,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlGetLightfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            IExecute("glGetLightfv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetLightfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetLightxv(int,int,int[],int)"/>
@@ -1155,7 +1155,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetLightxv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glGetLightxv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetLightxv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetLightxv(int,int,java.nio.IntBuffer)"/>
@@ -1165,7 +1165,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetLightxv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glGetLightxv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetLightxv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetMaterialfv(int,int,float[],int)"/>
@@ -1176,7 +1176,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetMaterialfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            IExecute("glGetMaterialfv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetMaterialfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetMaterialfv(int,int,java.nio.FloatBuffer)"/>
@@ -1186,7 +1186,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlGetMaterialfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            IExecute("glGetMaterialfv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetMaterialfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetMaterialxv(int,int,int[],int)"/>
@@ -1197,7 +1197,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetMaterialxv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glGetMaterialxv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetMaterialxv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetMaterialxv(int,int,java.nio.IntBuffer)"/>
@@ -1207,7 +1207,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetMaterialxv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glGetMaterialxv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetMaterialxv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetPointerv(int,java.nio.Buffer[])"/>
@@ -1216,7 +1216,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.Buffer"/></param>
         public void GlGetPointerv(int arg0, Java.Nio.Buffer[] arg1)
         {
-            IExecute("glGetPointerv", arg0, arg1);
+            IExecuteWithSignature("glGetPointerv", "(I[Ljava/nio/Buffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexEnviv(int,int,int[],int)"/>
@@ -1227,7 +1227,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetTexEnviv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glGetTexEnviv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetTexEnviv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexEnviv(int,int,java.nio.IntBuffer)"/>
@@ -1237,7 +1237,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetTexEnviv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glGetTexEnviv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetTexEnviv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexEnvxv(int,int,int[],int)"/>
@@ -1248,7 +1248,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetTexEnvxv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glGetTexEnvxv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetTexEnvxv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexEnvxv(int,int,java.nio.IntBuffer)"/>
@@ -1258,7 +1258,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetTexEnvxv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glGetTexEnvxv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetTexEnvxv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexParameterfv(int,int,float[],int)"/>
@@ -1269,7 +1269,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetTexParameterfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            IExecute("glGetTexParameterfv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetTexParameterfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexParameterfv(int,int,java.nio.FloatBuffer)"/>
@@ -1279,7 +1279,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlGetTexParameterfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            IExecute("glGetTexParameterfv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetTexParameterfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexParameteriv(int,int,int[],int)"/>
@@ -1290,7 +1290,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetTexParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glGetTexParameteriv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetTexParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -1300,7 +1300,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetTexParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glGetTexParameteriv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetTexParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexParameterxv(int,int,int[],int)"/>
@@ -1311,7 +1311,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlGetTexParameterxv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glGetTexParameterxv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glGetTexParameterxv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glGetTexParameterxv(int,int,java.nio.IntBuffer)"/>
@@ -1321,7 +1321,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlGetTexParameterxv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glGetTexParameterxv", arg0, arg1, arg2);
+            IExecuteWithSignature("glGetTexParameterxv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glNormalPointer(int,int,int)"/>
@@ -1331,7 +1331,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlNormalPointer(int arg0, int arg1, int arg2)
         {
-            IExecute("glNormalPointer", arg0, arg1, arg2);
+            IExecuteWithSignature("glNormalPointer", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glPointParameterf(int,float)"/>
@@ -1340,7 +1340,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="float"/></param>
         public void GlPointParameterf(int arg0, float arg1)
         {
-            IExecute("glPointParameterf", arg0, arg1);
+            IExecuteWithSignature("glPointParameterf", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glPointParameterfv(int,float[],int)"/>
@@ -1350,7 +1350,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlPointParameterfv(int arg0, float[] arg1, int arg2)
         {
-            IExecute("glPointParameterfv", arg0, arg1, arg2);
+            IExecuteWithSignature("glPointParameterfv", "(I[FI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glPointParameterfv(int,java.nio.FloatBuffer)"/>
@@ -1359,7 +1359,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlPointParameterfv(int arg0, Java.Nio.FloatBuffer arg1)
         {
-            IExecute("glPointParameterfv", arg0, arg1);
+            IExecuteWithSignature("glPointParameterfv", "(ILjava/nio/FloatBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glPointParameterx(int,int)"/>
@@ -1368,7 +1368,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="int"/></param>
         public void GlPointParameterx(int arg0, int arg1)
         {
-            IExecute("glPointParameterx", arg0, arg1);
+            IExecuteWithSignature("glPointParameterx", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glPointParameterxv(int,int[],int)"/>
@@ -1378,7 +1378,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlPointParameterxv(int arg0, int[] arg1, int arg2)
         {
-            IExecute("glPointParameterxv", arg0, arg1, arg2);
+            IExecuteWithSignature("glPointParameterxv", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glPointParameterxv(int,java.nio.IntBuffer)"/>
@@ -1387,7 +1387,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlPointParameterxv(int arg0, Java.Nio.IntBuffer arg1)
         {
-            IExecute("glPointParameterxv", arg0, arg1);
+            IExecuteWithSignature("glPointParameterxv", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glPointSizePointerOES(int,int,java.nio.Buffer)"/>
@@ -1397,7 +1397,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.Buffer"/></param>
         public void GlPointSizePointerOES(int arg0, int arg1, Java.Nio.Buffer arg2)
         {
-            IExecute("glPointSizePointerOES", arg0, arg1, arg2);
+            IExecuteWithSignature("glPointSizePointerOES", "(IILjava/nio/Buffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexCoordPointer(int,int,int,int)"/>
@@ -1408,7 +1408,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlTexCoordPointer(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("glTexCoordPointer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glTexCoordPointer", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexEnvi(int,int,int)"/>
@@ -1418,7 +1418,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlTexEnvi(int arg0, int arg1, int arg2)
         {
-            IExecute("glTexEnvi", arg0, arg1, arg2);
+            IExecuteWithSignature("glTexEnvi", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexEnviv(int,int,int[],int)"/>
@@ -1429,7 +1429,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlTexEnviv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glTexEnviv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glTexEnviv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexEnviv(int,int,java.nio.IntBuffer)"/>
@@ -1439,7 +1439,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlTexEnviv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glTexEnviv", arg0, arg1, arg2);
+            IExecuteWithSignature("glTexEnviv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexParameterfv(int,int,float[],int)"/>
@@ -1450,7 +1450,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlTexParameterfv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            IExecute("glTexParameterfv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glTexParameterfv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexParameterfv(int,int,java.nio.FloatBuffer)"/>
@@ -1460,7 +1460,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public void GlTexParameterfv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            IExecute("glTexParameterfv", arg0, arg1, arg2);
+            IExecuteWithSignature("glTexParameterfv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexParameteri(int,int,int)"/>
@@ -1470,7 +1470,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="int"/></param>
         public void GlTexParameteri(int arg0, int arg1, int arg2)
         {
-            IExecute("glTexParameteri", arg0, arg1, arg2);
+            IExecuteWithSignature("glTexParameteri", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexParameteriv(int,int,int[],int)"/>
@@ -1481,7 +1481,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlTexParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glTexParameteriv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glTexParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -1491,7 +1491,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlTexParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glTexParameteriv", arg0, arg1, arg2);
+            IExecuteWithSignature("glTexParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexParameterxv(int,int,int[],int)"/>
@@ -1502,7 +1502,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlTexParameterxv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            IExecute("glTexParameterxv", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glTexParameterxv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glTexParameterxv(int,int,java.nio.IntBuffer)"/>
@@ -1512,7 +1512,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public void GlTexParameterxv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            IExecute("glTexParameterxv", arg0, arg1, arg2);
+            IExecuteWithSignature("glTexParameterxv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL11.html#glVertexPointer(int,int,int,int)"/>
@@ -1523,15 +1523,15 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <param name="arg3"><see cref="int"/></param>
         public void GlVertexPointer(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("glVertexPointer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("glVertexPointer", "(IIII)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

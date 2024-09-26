@@ -40,10 +40,10 @@ namespace Android.Nfc.Cardemulation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CardEmulation(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Nfc.Cardemulation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Nfc.Cardemulation
     public partial class CardEmulation
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#SELECTION_MODE_ALWAYS_ASK"/>
@@ -131,9 +131,9 @@ namespace Android.Nfc.Cardemulation
         public static Java.Lang.String EXTRA_SERVICE_COMPONENT { get { if (!_EXTRA_SERVICE_COMPONENTReady) { _EXTRA_SERVICE_COMPONENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SERVICE_COMPONENT"); _EXTRA_SERVICE_COMPONENTReady = true; } return _EXTRA_SERVICE_COMPONENTContent; } }
         private static Java.Lang.String _EXTRA_SERVICE_COMPONENTContent = default;
         private static bool _EXTRA_SERVICE_COMPONENTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getInstance(android.nfc.NfcAdapter)"/>
@@ -144,9 +144,9 @@ namespace Android.Nfc.Cardemulation
         {
             return SExecuteWithSignature<Android.Nfc.Cardemulation.CardEmulation>(LocalBridgeClazz, "getInstance", "(Landroid/nfc/NfcAdapter;)Landroid/nfc/cardemulation/CardEmulation;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#categoryAllowsForegroundPreference(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool IsDefaultServiceForAid(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isDefaultServiceForAid", arg0, arg1);
+            return IExecuteWithSignature<bool>("isDefaultServiceForAid", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#isDefaultServiceForCategory(android.content.ComponentName,java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool IsDefaultServiceForCategory(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isDefaultServiceForCategory", arg0, arg1);
+            return IExecuteWithSignature<bool>("isDefaultServiceForCategory", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerAidsForService(android.content.ComponentName,java.lang.String,java.util.List)"/>
@@ -186,7 +186,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool RegisterAidsForService(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
         {
-            return IExecute<bool>("registerAidsForService", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("registerAidsForService", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/util/List;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopFilterForService(android.content.ComponentName,java.lang.String,boolean)"/>
@@ -197,7 +197,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool RegisterPollingLoopFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
         {
-            return IExecute<bool>("registerPollingLoopFilterForService", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("registerPollingLoopFilterForService", "(Landroid/content/ComponentName;Ljava/lang/String;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String,boolean)"/>
@@ -208,7 +208,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool RegisterPollingLoopPatternFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
         {
-            return IExecute<bool>("registerPollingLoopPatternFilterForService", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("registerPollingLoopPatternFilterForService", "(Landroid/content/ComponentName;Ljava/lang/String;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removeAidsForService(android.content.ComponentName,java.lang.String)"/>
@@ -218,7 +218,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAidsForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("removeAidsForService", arg0, arg1);
+            return IExecuteWithSignature<bool>("removeAidsForService", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopFilterForService(android.content.ComponentName,java.lang.String)"/>
@@ -228,7 +228,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool RemovePollingLoopFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("removePollingLoopFilterForService", arg0, arg1);
+            return IExecuteWithSignature<bool>("removePollingLoopFilterForService", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String)"/>
@@ -238,7 +238,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool RemovePollingLoopPatternFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("removePollingLoopPatternFilterForService", arg0, arg1);
+            return IExecuteWithSignature<bool>("removePollingLoopPatternFilterForService", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setOffHostForService(android.content.ComponentName,java.lang.String)"/>
@@ -248,7 +248,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool SetOffHostForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("setOffHostForService", arg0, arg1);
+            return IExecuteWithSignature<bool>("setOffHostForService", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setPreferredService(android.app.Activity,android.content.ComponentName)"/>
@@ -258,7 +258,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool SetPreferredService(Android.App.Activity arg0, Android.Content.ComponentName arg1)
         {
-            return IExecute<bool>("setPreferredService", arg0, arg1);
+            return IExecuteWithSignature<bool>("setPreferredService", "(Landroid/app/Activity;Landroid/content/ComponentName;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setShouldDefaultToObserveModeForService(android.content.ComponentName,boolean)"/>
@@ -268,7 +268,7 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="bool"/></returns>
         public bool SetShouldDefaultToObserveModeForService(Android.Content.ComponentName arg0, bool arg1)
         {
-            return IExecute<bool>("setShouldDefaultToObserveModeForService", arg0, arg1);
+            return IExecuteWithSignature<bool>("setShouldDefaultToObserveModeForService", "(Landroid/content/ComponentName;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#supportsAidPrefixRegistration()"/>
@@ -337,15 +337,15 @@ namespace Android.Nfc.Cardemulation
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> GetAidsForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Util.List<Java.Lang.String>>("getAidsForService", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAidsForService", "(Landroid/content/ComponentName;Ljava/lang/String;)Ljava/util/List;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

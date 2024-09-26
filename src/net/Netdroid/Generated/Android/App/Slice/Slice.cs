@@ -41,10 +41,10 @@ namespace Android.App.Slice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Slice(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.App.Slice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App.Slice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App.Slice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.App.Slice
     public partial class Slice
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#CREATOR"/>
@@ -346,13 +346,13 @@ namespace Android.App.Slice
         public static Java.Lang.String SUBTYPE_VALUE { get { if (!_SUBTYPE_VALUEReady) { _SUBTYPE_VALUEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SUBTYPE_VALUE"); _SUBTYPE_VALUEReady = true; } return _SUBTYPE_VALUEContent; } }
         private static Java.Lang.String _SUBTYPE_VALUEContent = default;
         private static bool _SUBTYPE_VALUEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getSpec()"/>
@@ -416,11 +416,11 @@ namespace Android.App.Slice
         [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -445,21 +445,21 @@ namespace Android.App.Slice
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#build()"/>
@@ -480,7 +480,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddAction(Android.App.PendingIntent arg0, Android.App.Slice.Slice arg1, Java.Lang.String arg2)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addAction", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addAction", "(Landroid/app/PendingIntent;Landroid/app/slice/Slice;Ljava/lang/String;)Landroid/app/slice/Slice$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#addBundle(android.os.Bundle,java.lang.String,java.util.List)"/>
@@ -492,7 +492,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddBundle(Android.Os.Bundle arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addBundle", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addBundle", "(Landroid/os/Bundle;Ljava/lang/String;Ljava/util/List;)Landroid/app/slice/Slice$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#addHints(java.util.List)"/>
@@ -514,7 +514,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddIcon(Android.Graphics.Drawable.Icon arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addIcon", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addIcon", "(Landroid/graphics/drawable/Icon;Ljava/lang/String;Ljava/util/List;)Landroid/app/slice/Slice$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#addInt(int,java.lang.String,java.util.List)"/>
@@ -526,7 +526,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddInt(int arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addInt", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addInt", "(ILjava/lang/String;Ljava/util/List;)Landroid/app/slice/Slice$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#addLong(long,java.lang.String,java.util.List)"/>
@@ -538,7 +538,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddLong(long arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addLong", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addLong", "(JLjava/lang/String;Ljava/util/List;)Landroid/app/slice/Slice$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#addRemoteInput(android.app.RemoteInput,java.lang.String,java.util.List)"/>
@@ -550,7 +550,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddRemoteInput(Android.App.RemoteInput arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addRemoteInput", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addRemoteInput", "(Landroid/app/RemoteInput;Ljava/lang/String;Ljava/util/List;)Landroid/app/slice/Slice$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#addSubSlice(android.app.slice.Slice,java.lang.String)"/>
@@ -561,7 +561,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddSubSlice(Android.App.Slice.Slice arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addSubSlice", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addSubSlice", "(Landroid/app/slice/Slice;Ljava/lang/String;)Landroid/app/slice/Slice$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#addText(java.lang.CharSequence,java.lang.String,java.util.List)"/>
@@ -573,7 +573,7 @@ namespace Android.App.Slice
             [global::System.Obsolete()]
             public Android.App.Slice.Slice.Builder AddText(Java.Lang.CharSequence arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
             {
-                return IExecute<Android.App.Slice.Slice.Builder>("addText", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("addText", "(Ljava/lang/CharSequence;Ljava/lang/String;Ljava/util/List;)Landroid/app/slice/Slice$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html#setCallerNeeded(boolean)"/>
@@ -585,20 +585,20 @@ namespace Android.App.Slice
             {
                 return IExecuteWithSignature<Android.App.Slice.Slice.Builder>("setCallerNeeded", "(Z)Landroid/app/slice/Slice$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

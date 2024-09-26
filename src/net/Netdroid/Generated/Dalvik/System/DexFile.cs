@@ -40,10 +40,10 @@ namespace Dalvik.System
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DexFile(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Dalvik.System
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OptimizationInfo declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Dalvik.System
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public OptimizationInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Dalvik.System
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -139,17 +139,17 @@ namespace Dalvik.System
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/system/DexFile.html#loadDex(java.lang.String,java.lang.String,int)"/>
@@ -162,7 +162,7 @@ namespace Dalvik.System
         [global::System.Obsolete()]
         public static Dalvik.System.DexFile LoadDex(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return SExecute<Dalvik.System.DexFile>(LocalBridgeClazz, "loadDex", arg0, arg1, arg2);
+            return SExecuteWithSignature<Dalvik.System.DexFile>(LocalBridgeClazz, "loadDex", "(Ljava/lang/String;Ljava/lang/String;I)Ldalvik/system/DexFile;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/system/DexFile.html#isDexOptNeeded(java.lang.String)"/>
@@ -176,9 +176,9 @@ namespace Dalvik.System
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDexOptNeeded", "(Ljava/lang/String;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/system/DexFile.html#loadClass(java.lang.String,java.lang.ClassLoader)"/>
@@ -189,7 +189,7 @@ namespace Dalvik.System
         [global::System.Obsolete()]
         public Java.Lang.Class LoadClass(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return IExecute<Java.Lang.Class>("loadClass", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/system/DexFile.html#getName()"/>
@@ -218,29 +218,29 @@ namespace Dalvik.System
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OptimizationInfo implementation
         public partial class OptimizationInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/dalvik/system/DexFile.OptimizationInfo.html#isFullyCompiled()"/>
@@ -266,20 +266,20 @@ namespace Dalvik.System
             {
                 return IExecuteWithSignature<bool>("isVerified", "()Z");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

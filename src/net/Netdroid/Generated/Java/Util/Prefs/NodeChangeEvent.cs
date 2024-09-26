@@ -40,10 +40,10 @@ namespace Java.Util.Prefs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NodeChangeEvent(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Prefs
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,21 +83,21 @@ namespace Java.Util.Prefs
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeEvent.html#getChild()"/>
@@ -105,7 +105,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences GetChild()
         {
-            return IExecute<Java.Util.Prefs.Preferences>("getChild");
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getChild", "()Ljava/util/prefs/Preferences;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeEvent.html#getParent()"/>
@@ -113,15 +113,15 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences GetParent()
         {
-            return IExecute<Java.Util.Prefs.Preferences>("getParent");
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getParent", "()Ljava/util/prefs/Preferences;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

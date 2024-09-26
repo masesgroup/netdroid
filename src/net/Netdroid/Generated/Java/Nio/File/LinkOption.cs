@@ -40,10 +40,10 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkOption(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Java.Nio.File
     public partial class LinkOption : Java.Nio.File.IOpenOption, Java.Nio.File.ICopyOption
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.File.LinkOption"/> to <see cref="Java.Nio.File.OpenOption"/>
@@ -86,9 +86,9 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.LinkOption"/> to <see cref="Java.Nio.File.CopyOption"/>
         /// </summary>
         public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.LinkOption t) => t.Cast<Java.Nio.File.CopyOption>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/LinkOption.html#NOFOLLOW_LINKS"/>
@@ -96,9 +96,9 @@ namespace Java.Nio.File
         public static Java.Nio.File.LinkOption NOFOLLOW_LINKS { get { if (!_NOFOLLOW_LINKSReady) { _NOFOLLOW_LINKSContent = SGetField<Java.Nio.File.LinkOption>(LocalBridgeClazz, "NOFOLLOW_LINKS"); _NOFOLLOW_LINKSReady = true; } return _NOFOLLOW_LINKSContent; } }
         private static Java.Nio.File.LinkOption _NOFOLLOW_LINKSContent = default;
         private static bool _NOFOLLOW_LINKSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/LinkOption.html#valueOf(java.lang.String)"/>
@@ -117,17 +117,17 @@ namespace Java.Nio.File
         {
             return SExecuteWithSignatureArray<Java.Nio.File.LinkOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/LinkOption;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

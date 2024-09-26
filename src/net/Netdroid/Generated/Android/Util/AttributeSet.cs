@@ -42,10 +42,10 @@ namespace Android.Util
         /// </summary>
         [global::System.Obsolete("AttributeSet class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AttributeSet(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Util
     public partial interface IAttributeSet
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Util
     public partial class AttributeSet : Android.Util.IAttributeSet
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeBooleanValue(int,boolean)"/>
@@ -118,7 +118,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool GetAttributeBooleanValue(int arg0, bool arg1)
         {
-            return IExecute<bool>("getAttributeBooleanValue", arg0, arg1);
+            return IExecuteWithSignature<bool>("getAttributeBooleanValue", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeBooleanValue(java.lang.String,java.lang.String,boolean)"/>
@@ -129,7 +129,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool GetAttributeBooleanValue(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         {
-            return IExecute<bool>("getAttributeBooleanValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getAttributeBooleanValue", "(Ljava/lang/String;Ljava/lang/String;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeFloatValue(int,float)"/>
@@ -139,7 +139,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetAttributeFloatValue(int arg0, float arg1)
         {
-            return IExecute<float>("getAttributeFloatValue", arg0, arg1);
+            return IExecuteWithSignature<float>("getAttributeFloatValue", "(IF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeFloatValue(java.lang.String,java.lang.String,float)"/>
@@ -150,7 +150,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetAttributeFloatValue(Java.Lang.String arg0, Java.Lang.String arg1, float arg2)
         {
-            return IExecute<float>("getAttributeFloatValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("getAttributeFloatValue", "(Ljava/lang/String;Ljava/lang/String;F)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeCount()"/>
@@ -168,7 +168,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeIntValue(int arg0, int arg1)
         {
-            return IExecute<int>("getAttributeIntValue", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeIntValue", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeIntValue(java.lang.String,java.lang.String,int)"/>
@@ -179,7 +179,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeIntValue(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("getAttributeIntValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeListValue(int,java.lang.String[],int)"/>
@@ -190,7 +190,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeListValue(int arg0, Java.Lang.String[] arg1, int arg2)
         {
-            return IExecute<int>("getAttributeListValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeListValue", "(I[Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeListValue(java.lang.String,java.lang.String,java.lang.String[],int)"/>
@@ -202,7 +202,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeListValue(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, int arg3)
         {
-            return IExecute<int>("getAttributeListValue", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("getAttributeListValue", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;I)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeNameResource(int)"/>
@@ -221,7 +221,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeResourceValue(int arg0, int arg1)
         {
-            return IExecute<int>("getAttributeResourceValue", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeResourceValue", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeResourceValue(java.lang.String,java.lang.String,int)"/>
@@ -232,7 +232,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeResourceValue(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("getAttributeResourceValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeResourceValue", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeUnsignedIntValue(int,int)"/>
@@ -242,7 +242,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeUnsignedIntValue(int arg0, int arg1)
         {
-            return IExecute<int>("getAttributeUnsignedIntValue", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeUnsignedIntValue", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeUnsignedIntValue(java.lang.String,java.lang.String,int)"/>
@@ -253,7 +253,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeUnsignedIntValue(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("getAttributeUnsignedIntValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeUnsignedIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getIdAttributeResourceValue(int)"/>
@@ -298,7 +298,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getClassAttribute()"/>
@@ -333,13 +333,13 @@ namespace Android.Util
         {
             return IExecuteWithSignature<Java.Lang.String>("getAttributeNamespace", "(I)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

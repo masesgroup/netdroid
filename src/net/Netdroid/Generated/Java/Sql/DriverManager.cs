@@ -40,10 +40,10 @@ namespace Java.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DriverManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Sql
     public partial class DriverManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getLoginTimeout()"/>
@@ -121,7 +121,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getConnection(java.lang.String,java.util.Properties)"/>
@@ -132,7 +132,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
-            return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1);
+            return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
@@ -221,17 +221,17 @@ namespace Java.Sql
         {
             SExecuteWithSignature(LocalBridgeClazz, "setLogWriter", "(Ljava/io/PrintWriter;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

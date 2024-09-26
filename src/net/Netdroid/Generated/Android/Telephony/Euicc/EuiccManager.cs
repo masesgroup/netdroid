@@ -40,10 +40,10 @@ namespace Android.Telephony.Euicc
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EuiccManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telephony.Euicc
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Telephony.Euicc
     public partial class EuiccManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EMBEDDED_SUBSCRIPTION_RESULT_ERROR"/>
@@ -346,13 +346,13 @@ namespace Android.Telephony.Euicc
         public static long EUICC_MEMORY_FIELD_UNAVAILABLE { get { if (!_EUICC_MEMORY_FIELD_UNAVAILABLEReady) { _EUICC_MEMORY_FIELD_UNAVAILABLEContent = SGetField<long>(LocalBridgeClazz, "EUICC_MEMORY_FIELD_UNAVAILABLE"); _EUICC_MEMORY_FIELD_UNAVAILABLEReady = true; } return _EUICC_MEMORY_FIELD_UNAVAILABLEContent; } }
         private static long _EUICC_MEMORY_FIELD_UNAVAILABLEContent = default;
         private static bool _EUICC_MEMORY_FIELD_UNAVAILABLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEuiccInfo()"/>
@@ -411,7 +411,7 @@ namespace Android.Telephony.Euicc
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void DeleteSubscription(int arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("deleteSubscription", arg0, arg1);
+            IExecuteWithSignature("deleteSubscription", "(ILandroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#downloadSubscription(android.telephony.euicc.DownloadableSubscription,boolean,android.app.PendingIntent)"/>
@@ -421,7 +421,7 @@ namespace Android.Telephony.Euicc
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void DownloadSubscription(Android.Telephony.Euicc.DownloadableSubscription arg0, bool arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("downloadSubscription", arg0, arg1, arg2);
+            IExecuteWithSignature("downloadSubscription", "(Landroid/telephony/euicc/DownloadableSubscription;ZLandroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#startResolutionActivity(android.app.Activity,int,android.content.Intent,android.app.PendingIntent)"/>
@@ -433,7 +433,7 @@ namespace Android.Telephony.Euicc
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
         public void StartResolutionActivity(Android.App.Activity arg0, int arg1, Android.Content.Intent arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("startResolutionActivity", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startResolutionActivity", "(Landroid/app/Activity;ILandroid/content/Intent;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,android.app.PendingIntent)"/>
@@ -442,7 +442,7 @@ namespace Android.Telephony.Euicc
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
         public void SwitchToSubscription(int arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("switchToSubscription", arg0, arg1);
+            IExecuteWithSignature("switchToSubscription", "(ILandroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,int,android.app.PendingIntent)"/>
@@ -452,7 +452,7 @@ namespace Android.Telephony.Euicc
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void SwitchToSubscription(int arg0, int arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("switchToSubscription", arg0, arg1, arg2);
+            IExecuteWithSignature("switchToSubscription", "(IILandroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#updateSubscriptionNickname(int,java.lang.String,android.app.PendingIntent)"/>
@@ -462,15 +462,15 @@ namespace Android.Telephony.Euicc
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void UpdateSubscriptionNickname(int arg0, Java.Lang.String arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("updateSubscriptionNickname", arg0, arg1, arg2);
+            IExecuteWithSignature("updateSubscriptionNickname", "(ILjava/lang/String;Landroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

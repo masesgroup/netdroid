@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothGattServer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Bluetooth
     public partial class BluetoothGattServer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getService(java.util.UUID)"/>
@@ -116,7 +116,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool Connect(Android.Bluetooth.BluetoothDevice arg0, bool arg1)
         {
-            return IExecute<bool>("connect", arg0, arg1);
+            return IExecuteWithSignature<bool>("connect", "(Landroid/bluetooth/BluetoothDevice;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#notifyCharacteristicChanged(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothGattCharacteristic,boolean)"/>
@@ -128,7 +128,7 @@ namespace Android.Bluetooth
         [global::System.Obsolete()]
         public bool NotifyCharacteristicChanged(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.BluetoothGattCharacteristic arg1, bool arg2)
         {
-            return IExecute<bool>("notifyCharacteristicChanged", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("notifyCharacteristicChanged", "(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothGattCharacteristic;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#removeService(android.bluetooth.BluetoothGattService)"/>
@@ -150,7 +150,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool SendResponse(Android.Bluetooth.BluetoothDevice arg0, int arg1, int arg2, int arg3, byte[] arg4)
         {
-            return IExecute<bool>("sendResponse", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("sendResponse", "(Landroid/bluetooth/BluetoothDevice;III[B)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getConnectionState(android.bluetooth.BluetoothDevice)"/>
@@ -171,7 +171,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="int"/></returns>
         public int NotifyCharacteristicChanged(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.BluetoothGattCharacteristic arg1, bool arg2, byte[] arg3)
         {
-            return IExecute<int>("notifyCharacteristicChanged", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("notifyCharacteristicChanged", "(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothGattCharacteristic;Z[B)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#getConnectedDevices()"/>
@@ -237,15 +237,15 @@ namespace Android.Bluetooth
         /// <param name="arg3"><see cref="int"/></param>
         public void SetPreferredPhy(Android.Bluetooth.BluetoothDevice arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setPreferredPhy", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPreferredPhy", "(Landroid/bluetooth/BluetoothDevice;III)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Animation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ValueAnimator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AnimatorUpdateListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Animation
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public AnimatorUpdateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.animation.ValueAnimator_AnimatorUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region AnimatorUpdateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="AnimatorUpdateListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.animation.ValueAnimator$AnimatorUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.Animation
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DurationScaleChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.animation.ValueAnimator_DurationScaleChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region DurationScaleChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DurationScaleChangeListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.animation.ValueAnimator$DurationScaleChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -208,13 +208,13 @@ namespace Android.Animation
     public partial class ValueAnimator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#INFINITE"/>
@@ -234,9 +234,9 @@ namespace Android.Animation
         public static int REVERSE { get { if (!_REVERSEReady) { _REVERSEContent = SGetField<int>(LocalBridgeClazz, "REVERSE"); _REVERSEReady = true; } return _REVERSEContent; } }
         private static int _REVERSEContent = default;
         private static bool _REVERSEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#ofArgb(int[])"/>
@@ -273,7 +273,7 @@ namespace Android.Animation
         /// <returns><see cref="Android.Animation.ValueAnimator"/></returns>
         public static Android.Animation.ValueAnimator OfObject(Android.Animation.TypeEvaluator arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Android.Animation.ValueAnimator>(LocalBridgeClazz, "ofObject", arg0); else return SExecute<Android.Animation.ValueAnimator>(LocalBridgeClazz, "ofObject", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Android.Animation.ValueAnimator>(LocalBridgeClazz, "ofObject", "(Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ValueAnimator;", arg0); else return SExecuteWithSignature<Android.Animation.ValueAnimator>(LocalBridgeClazz, "ofObject", "(Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ValueAnimator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#ofPropertyValuesHolder(android.animation.PropertyValuesHolder[])"/>
@@ -334,9 +334,9 @@ namespace Android.Animation
         {
             SExecuteWithSignature(LocalBridgeClazz, "setFrameDelay", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.html#getValues()"/>
@@ -497,29 +497,29 @@ namespace Android.Animation
         {
             if (arg0.Length == 0) IExecuteWithSignature("setValues", "([Landroid/animation/PropertyValuesHolder;)V"); else IExecuteWithSignature("setValues", "([Landroid/animation/PropertyValuesHolder;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AnimatorUpdateListener implementation
         public partial class AnimatorUpdateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="AnimatorUpdateListener"/>
@@ -529,13 +529,13 @@ namespace Android.Animation
                 AddEventHandler("onAnimationUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAnimationUpdateEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/animation/ValueAnimator.AnimatorUpdateListener.html#onAnimationUpdate(android.animation.ValueAnimator)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Animation.ValueAnimator> OnOnAnimationUpdate { get; set; } = null;
-            
+
             bool hasOverrideOnAnimationUpdate = true;
             void OnAnimationUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -544,7 +544,7 @@ namespace Android.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Animation.ValueAnimator>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAnimationUpdate;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.AnimatorUpdateListener.html#onAnimationUpdate(android.animation.ValueAnimator)"/>
             /// </summary>
@@ -553,13 +553,13 @@ namespace Android.Animation
             {
                 hasOverrideOnAnimationUpdate = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -568,21 +568,21 @@ namespace Android.Animation
         public partial class AnimatorUpdateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.AnimatorUpdateListener.html#onAnimationUpdate(android.animation.ValueAnimator)"/>
@@ -592,13 +592,13 @@ namespace Android.Animation
             {
                 IExecuteWithSignature("onAnimationUpdate", "(Landroid/animation/ValueAnimator;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -607,21 +607,21 @@ namespace Android.Animation
         public partial class DurationScaleChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DurationScaleChangeListener"/>
@@ -631,13 +631,13 @@ namespace Android.Animation
                 AddEventHandler("onChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/animation/ValueAnimator.DurationScaleChangeListener.html#onChanged(float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<float> OnOnChanged { get; set; } = null;
-            
+
             bool hasOverrideOnChanged = true;
             void OnChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -646,7 +646,7 @@ namespace Android.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<float>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.DurationScaleChangeListener.html#onChanged(float)"/>
             /// </summary>
@@ -655,13 +655,13 @@ namespace Android.Animation
             {
                 hasOverrideOnChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -670,21 +670,21 @@ namespace Android.Animation
         public partial class DurationScaleChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/ValueAnimator.DurationScaleChangeListener.html#onChanged(float)"/>
@@ -694,20 +694,20 @@ namespace Android.Animation
             {
                 IExecuteWithSignature("onChanged", "(F)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

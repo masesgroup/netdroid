@@ -42,10 +42,10 @@ namespace Java.Text
         /// </summary>
         [global::System.Obsolete("DateFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DateFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Field declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Field(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Java.Text
     public partial class DateFormat
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#AM_PM_FIELD"/>
@@ -267,9 +267,9 @@ namespace Java.Text
         public static int YEAR_FIELD { get { if (!_YEAR_FIELDReady) { _YEAR_FIELDContent = SGetField<int>(LocalBridgeClazz, "YEAR_FIELD"); _YEAR_FIELDReady = true; } return _YEAR_FIELDContent; } }
         private static int _YEAR_FIELDContent = default;
         private static bool _YEAR_FIELDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#getDateInstance()"/>
@@ -287,7 +287,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateInstance(int arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#getDateInstance(int)"/>
@@ -315,7 +315,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1, Java.Util.Locale arg2)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", "(IILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#getDateTimeInstance(int,int)"/>
@@ -325,7 +325,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", "(II)Ljava/text/DateFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#getInstance()"/>
@@ -351,7 +351,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetTimeInstance(int arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#getTimeInstance(int)"/>
@@ -370,9 +370,9 @@ namespace Java.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#format(java.util.Date,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -383,7 +383,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Java.Util.Date arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -393,7 +393,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Java.Util.Date>("parse", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Date>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DateFormat.html#isLenient()"/>
@@ -478,21 +478,21 @@ namespace Java.Text
         {
             IExecuteWithSignature("setTimeZone", "(Ljava/util/TimeZone;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Field implementation
         public partial class Field
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/text/DateFormat.Field.html#AM_PM"/>
@@ -602,9 +602,9 @@ namespace Java.Text
             public static Java.Text.DateFormat.Field YEAR { get { if (!_YEARReady) { _YEARContent = SGetField<Java.Text.DateFormat.Field>(LocalBridgeClazz, "YEAR"); _YEARReady = true; } return _YEARContent; } }
             private static Java.Text.DateFormat.Field _YEARContent = default;
             private static bool _YEARReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/text/DateFormat.Field.html#ofCalendarField(int)"/>
@@ -615,9 +615,9 @@ namespace Java.Text
             {
                 return SExecuteWithSignature<Java.Text.DateFormat.Field>(LocalBridgeClazz, "ofCalendarField", "(I)Ljava/text/DateFormat$Field;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/text/DateFormat.Field.html#getCalendarField()"/>
@@ -627,20 +627,20 @@ namespace Java.Text
             {
                 return IExecuteWithSignature<int>("getCalendarField", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

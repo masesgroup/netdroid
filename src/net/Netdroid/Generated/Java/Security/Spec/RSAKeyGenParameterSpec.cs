@@ -40,10 +40,10 @@ namespace Java.Security.Spec
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RSAKeyGenParameterSpec(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Security.Spec
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -93,13 +93,13 @@ namespace Java.Security.Spec
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#F0"/>
@@ -113,13 +113,13 @@ namespace Java.Security.Spec
         public static Java.Math.BigInteger F4 { get { if (!_F4Ready) { _F4Content = SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "F4"); _F4Ready = true; } return _F4Content; } }
         private static Java.Math.BigInteger _F4Content = default;
         private static bool _F4Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#getKeysize()"/>
@@ -145,13 +145,13 @@ namespace Java.Security.Spec
         {
             return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getKeyParams", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

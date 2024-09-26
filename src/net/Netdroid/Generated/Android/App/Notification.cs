@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Notification(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Action declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Action(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,7 +105,7 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region WearableExtender declaration
             /// <summary>
@@ -122,10 +122,10 @@ namespace Android.App
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public WearableExtender(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -146,9 +146,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -169,10 +169,10 @@ namespace Android.App
                 /// </summary>
                 [global::System.Obsolete("Extender class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public Extender(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -193,9 +193,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -214,10 +214,10 @@ namespace Android.App
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -238,9 +238,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -263,10 +263,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BigPictureStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -287,9 +287,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -308,10 +308,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BigTextStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -332,9 +332,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -353,10 +353,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BubbleMetadata(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -377,7 +377,7 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -394,10 +394,10 @@ namespace Android.App
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -418,9 +418,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -443,10 +443,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -467,9 +467,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -488,10 +488,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CallStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -512,9 +512,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -533,10 +533,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CarExtender(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -557,7 +557,7 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region UnreadConversation declaration
             /// <summary>
@@ -574,10 +574,10 @@ namespace Android.App
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public UnreadConversation(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -598,9 +598,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -619,10 +619,10 @@ namespace Android.App
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -643,9 +643,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -668,10 +668,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DecoratedCustomViewStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -692,9 +692,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -713,10 +713,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DecoratedMediaCustomViewStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -737,9 +737,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -760,10 +760,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("Extender class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Extender(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -784,9 +784,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -805,10 +805,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InboxStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -829,9 +829,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -850,10 +850,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MediaStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -874,9 +874,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -895,10 +895,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MessagingStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -919,7 +919,7 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Message declaration
             /// <summary>
@@ -936,10 +936,10 @@ namespace Android.App
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Message(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -960,9 +960,9 @@ namespace Android.App
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -987,10 +987,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("Style class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Style(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1011,9 +1011,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -1032,10 +1032,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TvExtender(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1056,9 +1056,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -1077,10 +1077,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public WearableExtender(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1101,9 +1101,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -1134,13 +1134,13 @@ namespace Android.App
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#publicVersion"/>
@@ -1939,13 +1939,13 @@ namespace Android.App
         public static Java.Lang.String INTENT_CATEGORY_NOTIFICATION_PREFERENCES { get { if (!_INTENT_CATEGORY_NOTIFICATION_PREFERENCESReady) { _INTENT_CATEGORY_NOTIFICATION_PREFERENCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INTENT_CATEGORY_NOTIFICATION_PREFERENCES"); _INTENT_CATEGORY_NOTIFICATION_PREFERENCESReady = true; } return _INTENT_CATEGORY_NOTIFICATION_PREFERENCESContent; } }
         private static Java.Lang.String _INTENT_CATEGORY_NOTIFICATION_PREFERENCESContent = default;
         private static bool _INTENT_CATEGORY_NOTIFICATION_PREFERENCESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#clone()"/>
@@ -2099,11 +2099,11 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Action implementation
         public partial class Action
@@ -2120,13 +2120,13 @@ namespace Android.App
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#actionIntent"/>
@@ -2213,13 +2213,13 @@ namespace Android.App
             public static int SEMANTIC_ACTION_UNMUTE { get { if (!_SEMANTIC_ACTION_UNMUTEReady) { _SEMANTIC_ACTION_UNMUTEContent = SGetField<int>(LocalBridgeClazz, "SEMANTIC_ACTION_UNMUTE"); _SEMANTIC_ACTION_UNMUTEReady = true; } return _SEMANTIC_ACTION_UNMUTEContent; } }
             private static int _SEMANTIC_ACTION_UNMUTEContent = default;
             private static bool _SEMANTIC_ACTION_UNMUTEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#clone()"/>
@@ -2308,11 +2308,11 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region WearableExtender implementation
             public partial class WearableExtender
@@ -2326,21 +2326,21 @@ namespace Android.App
                     : base(arg0)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#extend(android.app.Notification.Action.Builder)"/>
@@ -2467,13 +2467,13 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<Java.Lang.CharSequence>("getInProgressLabel", "()Ljava/lang/CharSequence;");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2482,21 +2482,21 @@ namespace Android.App
             public partial class Extender
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Extender.html#extend(android.app.Notification.Action.Builder)"/>
@@ -2507,13 +2507,13 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<Android.App.Notification.Action.Builder>("extend", "(Landroid/app/Notification$Action$Builder;)Landroid/app/Notification$Action$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2551,21 +2551,21 @@ namespace Android.App
                     : base(arg0, arg1, arg2)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#build()"/>
@@ -2646,20 +2646,20 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2677,21 +2677,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.BigPictureStyle.html#bigLargeIcon(android.graphics.Bitmap)"/>
@@ -2765,13 +2765,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.App.Notification.BigPictureStyle>("showBigPictureWhenCollapsed", "(Z)Landroid/app/Notification$BigPictureStyle;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2789,21 +2789,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.BigTextStyle.html#bigText(java.lang.CharSequence)"/>
@@ -2832,13 +2832,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.App.Notification.BigTextStyle>("setSummaryText", "(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2847,13 +2847,13 @@ namespace Android.App
         public partial class BubbleMetadata
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#CREATOR"/>
@@ -2861,13 +2861,13 @@ namespace Android.App
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getDeleteIntent()"/>
@@ -2964,11 +2964,11 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
@@ -2991,21 +2991,21 @@ namespace Android.App
                     : base(arg0)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#build()"/>
@@ -3087,20 +3087,20 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setSuppressNotification", "(Z)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3127,17 +3127,17 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#recoverBuilder(android.content.Context,android.app.Notification)"/>
@@ -3147,11 +3147,11 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
             public static Android.App.Notification.Builder RecoverBuilder(Android.Content.Context arg0, Android.App.Notification arg1)
             {
-                return SExecute<Android.App.Notification.Builder>(LocalBridgeClazz, "recoverBuilder", arg0, arg1);
+                return SExecuteWithSignature<Android.App.Notification.Builder>(LocalBridgeClazz, "recoverBuilder", "(Landroid/content/Context;Landroid/app/Notification;)Landroid/app/Notification$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#build()"/>
@@ -3189,7 +3189,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public Android.App.Notification.Builder AddAction(int arg0, Java.Lang.CharSequence arg1, Android.App.PendingIntent arg2)
             {
-                return IExecute<Android.App.Notification.Builder>("addAction", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("addAction", "(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#addExtras(android.os.Bundle)"/>
@@ -3428,7 +3428,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
             public Android.App.Notification.Builder SetFlag(int arg0, bool arg1)
             {
-                return IExecute<Android.App.Notification.Builder>("setFlag", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setFlag", "(IZ)Landroid/app/Notification$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setForegroundServiceBehavior(int)"/>
@@ -3447,7 +3447,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
             public Android.App.Notification.Builder SetFullScreenIntent(Android.App.PendingIntent arg0, bool arg1)
             {
-                return IExecute<Android.App.Notification.Builder>("setFullScreenIntent", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setFullScreenIntent", "(Landroid/app/PendingIntent;Z)Landroid/app/Notification$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setGroup(java.lang.String)"/>
@@ -3504,7 +3504,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public Android.App.Notification.Builder SetLights(int arg0, int arg1, int arg2)
             {
-                return IExecute<Android.App.Notification.Builder>("setLights", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setLights", "(III)Landroid/app/Notification$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setLocalOnly(boolean)"/>
@@ -3570,7 +3570,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
             public Android.App.Notification.Builder SetProgress(int arg0, int arg1, bool arg2)
             {
-                return IExecute<Android.App.Notification.Builder>("setProgress", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setProgress", "(IIZ)Landroid/app/Notification$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setPublicVersion(android.app.Notification)"/>
@@ -3634,7 +3634,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
             public Android.App.Notification.Builder SetSmallIcon(int arg0, int arg1)
             {
-                return IExecute<Android.App.Notification.Builder>("setSmallIcon", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setSmallIcon", "(II)Landroid/app/Notification$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setSmallIcon(int)"/>
@@ -3663,7 +3663,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public Android.App.Notification.Builder SetSound(Android.Net.Uri arg0, Android.Media.AudioAttributes arg1)
             {
-                return IExecute<Android.App.Notification.Builder>("setSound", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setSound", "(Landroid/net/Uri;Landroid/media/AudioAttributes;)Landroid/app/Notification$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setSound(android.net.Uri,int)"/>
@@ -3674,7 +3674,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public Android.App.Notification.Builder SetSound(Android.Net.Uri arg0, int arg1)
             {
-                return IExecute<Android.App.Notification.Builder>("setSound", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setSound", "(Landroid/net/Uri;I)Landroid/app/Notification$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setSound(android.net.Uri)"/>
@@ -3713,7 +3713,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public Android.App.Notification.Builder SetTicker(Java.Lang.CharSequence arg0, Android.Widget.RemoteViews arg1)
             {
-                return IExecute<Android.App.Notification.Builder>("setTicker", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setTicker", "(Ljava/lang/CharSequence;Landroid/widget/RemoteViews;)Landroid/app/Notification$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setTicker(java.lang.CharSequence)"/>
@@ -3813,13 +3813,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.Widget.RemoteViews>("createHeadsUpContentView", "()Landroid/widget/RemoteViews;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3828,13 +3828,13 @@ namespace Android.App
         public partial class CallStyle
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.CallStyle.html#CALL_TYPE_INCOMING"/>
@@ -3860,9 +3860,9 @@ namespace Android.App
             public static int CALL_TYPE_UNKNOWN { get { if (!_CALL_TYPE_UNKNOWNReady) { _CALL_TYPE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "CALL_TYPE_UNKNOWN"); _CALL_TYPE_UNKNOWNReady = true; } return _CALL_TYPE_UNKNOWNContent; } }
             private static int _CALL_TYPE_UNKNOWNContent = default;
             private static bool _CALL_TYPE_UNKNOWNReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.CallStyle.html#forIncomingCall(android.app.Person,android.app.PendingIntent,android.app.PendingIntent)"/>
@@ -3873,7 +3873,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.CallStyle"/></returns>
             public static Android.App.Notification.CallStyle ForIncomingCall(Android.App.Person arg0, Android.App.PendingIntent arg1, Android.App.PendingIntent arg2)
             {
-                return SExecute<Android.App.Notification.CallStyle>(LocalBridgeClazz, "forIncomingCall", arg0, arg1, arg2);
+                return SExecuteWithSignature<Android.App.Notification.CallStyle>(LocalBridgeClazz, "forIncomingCall", "(Landroid/app/Person;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Landroid/app/Notification$CallStyle;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.CallStyle.html#forOngoingCall(android.app.Person,android.app.PendingIntent)"/>
@@ -3883,7 +3883,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.CallStyle"/></returns>
             public static Android.App.Notification.CallStyle ForOngoingCall(Android.App.Person arg0, Android.App.PendingIntent arg1)
             {
-                return SExecute<Android.App.Notification.CallStyle>(LocalBridgeClazz, "forOngoingCall", arg0, arg1);
+                return SExecuteWithSignature<Android.App.Notification.CallStyle>(LocalBridgeClazz, "forOngoingCall", "(Landroid/app/Person;Landroid/app/PendingIntent;)Landroid/app/Notification$CallStyle;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.CallStyle.html#forScreeningCall(android.app.Person,android.app.PendingIntent,android.app.PendingIntent)"/>
@@ -3894,11 +3894,11 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.CallStyle"/></returns>
             public static Android.App.Notification.CallStyle ForScreeningCall(Android.App.Person arg0, Android.App.PendingIntent arg1, Android.App.PendingIntent arg2)
             {
-                return SExecute<Android.App.Notification.CallStyle>(LocalBridgeClazz, "forScreeningCall", arg0, arg1, arg2);
+                return SExecuteWithSignature<Android.App.Notification.CallStyle>(LocalBridgeClazz, "forScreeningCall", "(Landroid/app/Person;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Landroid/app/Notification$CallStyle;", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.CallStyle.html#setAnswerButtonColorHint(int)"/>
@@ -3945,13 +3945,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.App.Notification.CallStyle>("setVerificationText", "(Ljava/lang/CharSequence;)Landroid/app/Notification$CallStyle;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3968,21 +3968,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#extend(android.app.Notification.Builder)"/>
@@ -4044,29 +4044,29 @@ namespace Android.App
             {
                 return IExecuteWithSignature<int>("getColor", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region UnreadConversation implementation
             public partial class UnreadConversation
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getReadPendingIntent()"/>
@@ -4124,13 +4124,13 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<long>("getLatestTimestamp", "()J");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -4147,21 +4147,21 @@ namespace Android.App
                     : base(arg0)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.Builder.html#addMessage(java.lang.String)"/>
@@ -4198,7 +4198,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.CarExtender.Builder"/></returns>
                 public Android.App.Notification.CarExtender.Builder SetReplyAction(Android.App.PendingIntent arg0, Android.App.RemoteInput arg1)
                 {
-                    return IExecute<Android.App.Notification.CarExtender.Builder>("setReplyAction", arg0, arg1);
+                    return IExecuteWithSignature<Android.App.Notification.CarExtender.Builder>("setReplyAction", "(Landroid/app/PendingIntent;Landroid/app/RemoteInput;)Landroid/app/Notification$CarExtender$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.Builder.html#build()"/>
@@ -4208,20 +4208,20 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<Android.App.Notification.CarExtender.UnreadConversation>("build", "()Landroid/app/Notification$CarExtender$UnreadConversation;");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4230,29 +4230,29 @@ namespace Android.App
         public partial class DecoratedCustomViewStyle
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4261,29 +4261,29 @@ namespace Android.App
         public partial class DecoratedMediaCustomViewStyle
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4292,21 +4292,21 @@ namespace Android.App
         public partial class Extender
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Extender.html#extend(android.app.Notification.Builder)"/>
@@ -4317,13 +4317,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("extend", "(Landroid/app/Notification$Builder;)Landroid/app/Notification$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4341,21 +4341,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.InboxStyle.html#addLine(java.lang.CharSequence)"/>
@@ -4384,13 +4384,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.App.Notification.InboxStyle>("setSummaryText", "(Ljava/lang/CharSequence;)Landroid/app/Notification$InboxStyle;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4408,21 +4408,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MediaStyle.html#setMediaSession(android.media.session.MediaSession.Token)"/>
@@ -4442,7 +4442,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.MediaStyle"/></returns>
             public Android.App.Notification.MediaStyle SetRemotePlaybackInfo(Java.Lang.CharSequence arg0, int arg1, Android.App.PendingIntent arg2)
             {
-                return IExecute<Android.App.Notification.MediaStyle>("setRemotePlaybackInfo", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Notification.MediaStyle>("setRemotePlaybackInfo", "(Ljava/lang/CharSequence;ILandroid/app/PendingIntent;)Landroid/app/Notification$MediaStyle;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MediaStyle.html#setShowActionsInCompactView(int[])"/>
@@ -4453,13 +4453,13 @@ namespace Android.App
             {
                 if (arg0.Length == 0) return IExecuteWithSignature<Android.App.Notification.MediaStyle>("setShowActionsInCompactView", "([I)Landroid/app/Notification$MediaStyle;"); else return IExecuteWithSignature<Android.App.Notification.MediaStyle>("setShowActionsInCompactView", "([I)Landroid/app/Notification$MediaStyle;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4485,13 +4485,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#MAXIMUM_RETAINED_MESSAGES"/>
@@ -4499,13 +4499,13 @@ namespace Android.App
             public static int MAXIMUM_RETAINED_MESSAGES { get { if (!_MAXIMUM_RETAINED_MESSAGESReady) { _MAXIMUM_RETAINED_MESSAGESContent = SGetField<int>(LocalBridgeClazz, "MAXIMUM_RETAINED_MESSAGES"); _MAXIMUM_RETAINED_MESSAGESReady = true; } return _MAXIMUM_RETAINED_MESSAGESContent; } }
             private static int _MAXIMUM_RETAINED_MESSAGESContent = default;
             private static bool _MAXIMUM_RETAINED_MESSAGESReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#addHistoricMessage(android.app.Notification.MessagingStyle.Message)"/>
@@ -4534,7 +4534,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.Notification.MessagingStyle"/></returns>
             public Android.App.Notification.MessagingStyle AddMessage(Java.Lang.CharSequence arg0, long arg1, Android.App.Person arg2)
             {
-                return IExecute<Android.App.Notification.MessagingStyle>("addMessage", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Notification.MessagingStyle>("addMessage", "(Ljava/lang/CharSequence;JLandroid/app/Person;)Landroid/app/Notification$MessagingStyle;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#addMessage(java.lang.CharSequence,long,java.lang.CharSequence)"/>
@@ -4546,7 +4546,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public Android.App.Notification.MessagingStyle AddMessage(Java.Lang.CharSequence arg0, long arg1, Java.Lang.CharSequence arg2)
             {
-                return IExecute<Android.App.Notification.MessagingStyle>("addMessage", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Notification.MessagingStyle>("addMessage", "(Ljava/lang/CharSequence;JLjava/lang/CharSequence;)Landroid/app/Notification$MessagingStyle;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#setConversationTitle(java.lang.CharSequence)"/>
@@ -4615,9 +4615,9 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>("getMessages", "()Ljava/util/List;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Message implementation
             public partial class Message
@@ -4644,17 +4644,17 @@ namespace Android.App
                     : base(arg0, arg1, arg2)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getMessagesFromBundleArray(android.os.Parcelable[])"/>
@@ -4665,9 +4665,9 @@ namespace Android.App
                 {
                     return SExecuteWithSignature<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>(LocalBridgeClazz, "getMessagesFromBundleArray", "([Landroid/os/Parcelable;)Ljava/util/List;", new object[] { arg0 });
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#setData(java.lang.String,android.net.Uri)"/>
@@ -4677,7 +4677,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.MessagingStyle.Message"/></returns>
                 public Android.App.Notification.MessagingStyle.Message SetData(Java.Lang.String arg0, Android.Net.Uri arg1)
                 {
-                    return IExecute<Android.App.Notification.MessagingStyle.Message>("setData", arg0, arg1);
+                    return IExecuteWithSignature<Android.App.Notification.MessagingStyle.Message>("setData", "(Ljava/lang/String;Landroid/net/Uri;)Landroid/app/Notification$MessagingStyle$Message;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getSenderPerson()"/>
@@ -4736,20 +4736,20 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<long>("getTimestamp", "()J");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4758,21 +4758,21 @@ namespace Android.App
         public partial class Style
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Style.html#build()"/>
@@ -4790,13 +4790,13 @@ namespace Android.App
             {
                 IExecuteWithSignature("setBuilder", "(Landroid/app/Notification$Builder;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4813,21 +4813,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#extend(android.app.Notification.Builder)"/>
@@ -4914,13 +4914,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Java.Lang.String>("getChannelId", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4937,13 +4937,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SCREEN_TIMEOUT_LONG"/>
@@ -5007,13 +5007,13 @@ namespace Android.App
             public static int UNSET_ACTION_INDEX { get { if (!_UNSET_ACTION_INDEXReady) { _UNSET_ACTION_INDEXContent = SGetField<int>(LocalBridgeClazz, "UNSET_ACTION_INDEX"); _UNSET_ACTION_INDEXReady = true; } return _UNSET_ACTION_INDEXContent; } }
             private static int _UNSET_ACTION_INDEXContent = default;
             private static bool _UNSET_ACTION_INDEXReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#extend(android.app.Notification.Builder)"/>
@@ -5415,20 +5415,20 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Java.Util.List<Android.App.Notification.Action>>("getActions", "()Ljava/util/List;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

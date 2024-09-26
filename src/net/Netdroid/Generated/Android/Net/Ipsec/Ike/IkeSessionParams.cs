@@ -40,10 +40,10 @@ namespace Android.Net.Ipsec.Ike
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IkeSessionParams(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net.Ipsec.Ike
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Net.Ipsec.Ike
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Net.Ipsec.Ike
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Net.Ipsec.Ike
             /// </summary>
             [global::System.Obsolete("IkeAuthConfig class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public IkeAuthConfig(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Net.Ipsec.Ike
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Net.Ipsec.Ike
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public IkeAuthDigitalSignLocalConfig(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Net.Ipsec.Ike
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -218,10 +218,10 @@ namespace Android.Net.Ipsec.Ike
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public IkeAuthDigitalSignRemoteConfig(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Android.Net.Ipsec.Ike
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -263,10 +263,10 @@ namespace Android.Net.Ipsec.Ike
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public IkeAuthEapConfig(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -287,9 +287,9 @@ namespace Android.Net.Ipsec.Ike
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -308,10 +308,10 @@ namespace Android.Net.Ipsec.Ike
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public IkeAuthPskConfig(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -332,9 +332,9 @@ namespace Android.Net.Ipsec.Ike
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -346,13 +346,13 @@ namespace Android.Net.Ipsec.Ike
     public partial class IkeSessionParams
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_DPD_DELAY_SEC_DISABLED"/>
@@ -390,13 +390,13 @@ namespace Android.Net.Ipsec.Ike
         public static int IKE_OPTION_MOBIKE { get { if (!_IKE_OPTION_MOBIKEReady) { _IKE_OPTION_MOBIKEContent = SGetField<int>(LocalBridgeClazz, "IKE_OPTION_MOBIKE"); _IKE_OPTION_MOBIKEReady = true; } return _IKE_OPTION_MOBIKEContent; } }
         private static int _IKE_OPTION_MOBIKEContent = default;
         private static bool _IKE_OPTION_MOBIKEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalIdentification()"/>
@@ -511,9 +511,9 @@ namespace Android.Net.Ipsec.Ike
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getIkeOptions", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -527,21 +527,21 @@ namespace Android.Net.Ipsec.Ike
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.Builder.html#build()"/>
@@ -587,7 +587,7 @@ namespace Android.Net.Ipsec.Ike
             /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionParams.Builder"/></returns>
             public Android.Net.Ipsec.Ike.IkeSessionParams.Builder SetAuthDigitalSignature(Java.Security.Cert.X509Certificate arg0, Java.Security.Cert.X509Certificate arg1, Java.Security.PrivateKey arg2)
             {
-                return IExecute<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setAuthDigitalSignature", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setAuthDigitalSignature", "(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;Ljava/security/PrivateKey;)Landroid/net/ipsec/ike/IkeSessionParams$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.Builder.html#setAuthDigitalSignature(java.security.cert.X509Certificate,java.security.cert.X509Certificate,java.util.List,java.security.PrivateKey)"/>
@@ -599,7 +599,7 @@ namespace Android.Net.Ipsec.Ike
             /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionParams.Builder"/></returns>
             public Android.Net.Ipsec.Ike.IkeSessionParams.Builder SetAuthDigitalSignature(Java.Security.Cert.X509Certificate arg0, Java.Security.Cert.X509Certificate arg1, Java.Util.List<Java.Security.Cert.X509Certificate> arg2, Java.Security.PrivateKey arg3)
             {
-                return IExecute<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setAuthDigitalSignature", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setAuthDigitalSignature", "(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;Ljava/util/List;Ljava/security/PrivateKey;)Landroid/net/ipsec/ike/IkeSessionParams$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.Builder.html#setAuthEap(java.security.cert.X509Certificate,android.net.eap.EapSessionConfig)"/>
@@ -609,7 +609,7 @@ namespace Android.Net.Ipsec.Ike
             /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionParams.Builder"/></returns>
             public Android.Net.Ipsec.Ike.IkeSessionParams.Builder SetAuthEap(Java.Security.Cert.X509Certificate arg0, Android.Net.Eap.EapSessionConfig arg1)
             {
-                return IExecute<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setAuthEap", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setAuthEap", "(Ljava/security/cert/X509Certificate;Landroid/net/eap/EapSessionConfig;)Landroid/net/ipsec/ike/IkeSessionParams$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.Builder.html#setAuthPsk(byte[])"/>
@@ -637,7 +637,7 @@ namespace Android.Net.Ipsec.Ike
             /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionParams.Builder"/></returns>
             public Android.Net.Ipsec.Ike.IkeSessionParams.Builder SetLifetimeSeconds(int arg0, int arg1)
             {
-                return IExecute<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setLifetimeSeconds", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setLifetimeSeconds", "(II)Landroid/net/ipsec/ike/IkeSessionParams$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.Builder.html#setLocalIdentification(android.net.ipsec.ike.IkeIdentification)"/>
@@ -693,13 +693,13 @@ namespace Android.Net.Ipsec.Ike
             {
                 return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.Builder>("setServerHostname", "(Ljava/lang/String;)Landroid/net/ipsec/ike/IkeSessionParams$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -708,29 +708,29 @@ namespace Android.Net.Ipsec.Ike
         public partial class IkeAuthConfig
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -739,21 +739,21 @@ namespace Android.Net.Ipsec.Ike
         public partial class IkeAuthDigitalSignLocalConfig
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html#getClientEndCertificate()"/>
@@ -779,13 +779,13 @@ namespace Android.Net.Ipsec.Ike
             {
                 return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.X509Certificate>>("getIntermediateCertificates", "()Ljava/util/List;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -794,21 +794,21 @@ namespace Android.Net.Ipsec.Ike
         public partial class IkeAuthDigitalSignRemoteConfig
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignRemoteConfig.html#getRemoteCaCert()"/>
@@ -818,13 +818,13 @@ namespace Android.Net.Ipsec.Ike
             {
                 return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getRemoteCaCert", "()Ljava/security/cert/X509Certificate;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -833,21 +833,21 @@ namespace Android.Net.Ipsec.Ike
         public partial class IkeAuthEapConfig
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthEapConfig.html#getEapConfig()"/>
@@ -857,13 +857,13 @@ namespace Android.Net.Ipsec.Ike
             {
                 return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig>("getEapConfig", "()Landroid/net/eap/EapSessionConfig;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -872,21 +872,21 @@ namespace Android.Net.Ipsec.Ike
         public partial class IkeAuthPskConfig
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthPskConfig.html#getPsk()"/>
@@ -896,20 +896,20 @@ namespace Android.Net.Ipsec.Ike
             {
                 return IExecuteWithSignatureArray<byte>("getPsk", "()[B");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent.Locks
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LockSupport(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Util.Concurrent.Locks
     public partial class LockSupport
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#getBlocker(java.lang.Thread)"/>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg1"><see cref="long"/></param>
         public static void ParkNanos(object arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "parkNanos", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "parkNanos", "(Ljava/lang/Object;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#parkNanos(long)"/>
@@ -134,7 +134,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg1"><see cref="long"/></param>
         public static void ParkUntil(object arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "parkUntil", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "parkUntil", "(Ljava/lang/Object;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#parkUntil(long)"/>
@@ -160,17 +160,17 @@ namespace Java.Util.Concurrent.Locks
         {
             SExecuteWithSignature(LocalBridgeClazz, "unpark", "(Ljava/lang/Thread;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

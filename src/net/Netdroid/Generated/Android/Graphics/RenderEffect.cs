@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RenderEffect(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Graphics
     public partial class RenderEffect
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createBitmapEffect(android.graphics.Bitmap,android.graphics.Rect,android.graphics.Rect)"/>
@@ -95,7 +95,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateBitmapEffect(Android.Graphics.Bitmap arg0, Android.Graphics.Rect arg1, Android.Graphics.Rect arg2)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBitmapEffect", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBitmapEffect", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/RenderEffect;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createBitmapEffect(android.graphics.Bitmap)"/>
@@ -115,7 +115,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateBlendModeEffect(Android.Graphics.RenderEffect arg0, Android.Graphics.RenderEffect arg1, Android.Graphics.BlendMode arg2)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBlendModeEffect", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBlendModeEffect", "(Landroid/graphics/RenderEffect;Landroid/graphics/RenderEffect;Landroid/graphics/BlendMode;)Landroid/graphics/RenderEffect;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createBlurEffect(float,float,android.graphics.RenderEffect,android.graphics.Shader.TileMode)"/>
@@ -127,7 +127,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateBlurEffect(float arg0, float arg1, Android.Graphics.RenderEffect arg2, Android.Graphics.Shader.TileMode arg3)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBlurEffect", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBlurEffect", "(FFLandroid/graphics/RenderEffect;Landroid/graphics/Shader$TileMode;)Landroid/graphics/RenderEffect;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createBlurEffect(float,float,android.graphics.Shader.TileMode)"/>
@@ -138,7 +138,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateBlurEffect(float arg0, float arg1, Android.Graphics.Shader.TileMode arg2)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBlurEffect", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createBlurEffect", "(FFLandroid/graphics/Shader$TileMode;)Landroid/graphics/RenderEffect;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createChainEffect(android.graphics.RenderEffect,android.graphics.RenderEffect)"/>
@@ -148,7 +148,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateChainEffect(Android.Graphics.RenderEffect arg0, Android.Graphics.RenderEffect arg1)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createChainEffect", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createChainEffect", "(Landroid/graphics/RenderEffect;Landroid/graphics/RenderEffect;)Landroid/graphics/RenderEffect;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createColorFilterEffect(android.graphics.ColorFilter,android.graphics.RenderEffect)"/>
@@ -158,7 +158,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateColorFilterEffect(Android.Graphics.ColorFilter arg0, Android.Graphics.RenderEffect arg1)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createColorFilterEffect", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createColorFilterEffect", "(Landroid/graphics/ColorFilter;Landroid/graphics/RenderEffect;)Landroid/graphics/RenderEffect;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createColorFilterEffect(android.graphics.ColorFilter)"/>
@@ -178,7 +178,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateOffsetEffect(float arg0, float arg1, Android.Graphics.RenderEffect arg2)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createOffsetEffect", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createOffsetEffect", "(FFLandroid/graphics/RenderEffect;)Landroid/graphics/RenderEffect;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createOffsetEffect(float,float)"/>
@@ -188,7 +188,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateOffsetEffect(float arg0, float arg1)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createOffsetEffect", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createOffsetEffect", "(FF)Landroid/graphics/RenderEffect;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createRuntimeShaderEffect(android.graphics.RuntimeShader,java.lang.String)"/>
@@ -198,7 +198,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RenderEffect"/></returns>
         public static Android.Graphics.RenderEffect CreateRuntimeShaderEffect(Android.Graphics.RuntimeShader arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createRuntimeShaderEffect", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createRuntimeShaderEffect", "(Landroid/graphics/RuntimeShader;Ljava/lang/String;)Landroid/graphics/RenderEffect;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderEffect.html#createShaderEffect(android.graphics.Shader)"/>
@@ -209,17 +209,17 @@ namespace Android.Graphics
         {
             return SExecuteWithSignature<Android.Graphics.RenderEffect>(LocalBridgeClazz, "createShaderEffect", "(Landroid/graphics/Shader;)Landroid/graphics/RenderEffect;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

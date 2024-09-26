@@ -40,10 +40,10 @@ namespace Android.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StatsLog(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Util
     public partial class StatsLog
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/StatsLog.html#logBinaryPushStateChanged(java.lang.String,long,int,int,long[])"/>
@@ -97,7 +97,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool LogBinaryPushStateChanged(Java.Lang.String arg0, long arg1, int arg2, int arg3, long[] arg4)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logBinaryPushStateChanged", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logBinaryPushStateChanged", "(Ljava/lang/String;JII[J)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/StatsLog.html#logEvent(int)"/>
@@ -126,17 +126,17 @@ namespace Android.Util
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "logStop", "(I)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

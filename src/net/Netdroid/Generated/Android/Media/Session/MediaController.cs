@@ -40,10 +40,10 @@ namespace Android.Media.Session
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Session
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media.Session
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Media.Session
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PlaybackInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Media.Session
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TransportControls(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -220,21 +220,21 @@ namespace Android.Media.Session
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getSessionActivity()"/>
@@ -364,7 +364,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="int"/></param>
         public void AdjustVolume(int arg0, int arg1)
         {
-            IExecute("adjustVolume", arg0, arg1);
+            IExecuteWithSignature("adjustVolume", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#registerCallback(android.media.session.MediaController.Callback,android.os.Handler)"/>
@@ -373,7 +373,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterCallback(Android.Media.Session.MediaController.Callback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerCallback", arg0, arg1);
+            IExecuteWithSignature("registerCallback", "(Landroid/media/session/MediaController$Callback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#registerCallback(android.media.session.MediaController.Callback)"/>
@@ -391,7 +391,7 @@ namespace Android.Media.Session
         /// <param name="arg2"><see cref="Android.Os.ResultReceiver"/></param>
         public void SendCommand(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.ResultReceiver arg2)
         {
-            IExecute("sendCommand", arg0, arg1, arg2);
+            IExecuteWithSignature("sendCommand", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ResultReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#setVolumeTo(int,int)"/>
@@ -400,7 +400,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="int"/></param>
         public void SetVolumeTo(int arg0, int arg1)
         {
-            IExecute("setVolumeTo", arg0, arg1);
+            IExecuteWithSignature("setVolumeTo", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#unregisterCallback(android.media.session.MediaController.Callback)"/>
@@ -410,29 +410,29 @@ namespace Android.Media.Session
         {
             IExecuteWithSignature("unregisterCallback", "(Landroid/media/session/MediaController$Callback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.Callback.html#onAudioInfoChanged(android.media.session.MediaController.PlaybackInfo)"/>
@@ -496,15 +496,15 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnSessionEvent(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onSessionEvent", arg0, arg1);
+                IExecuteWithSignature("onSessionEvent", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -513,13 +513,13 @@ namespace Android.Media.Session
         public partial class PlaybackInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#CREATOR"/>
@@ -539,13 +539,13 @@ namespace Android.Media.Session
             public static int PLAYBACK_TYPE_REMOTE { get { if (!_PLAYBACK_TYPE_REMOTEReady) { _PLAYBACK_TYPE_REMOTEContent = SGetField<int>(LocalBridgeClazz, "PLAYBACK_TYPE_REMOTE"); _PLAYBACK_TYPE_REMOTEReady = true; } return _PLAYBACK_TYPE_REMOTEContent; } }
             private static int _PLAYBACK_TYPE_REMOTEContent = default;
             private static bool _PLAYBACK_TYPE_REMOTEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getAudioAttributes()"/>
@@ -610,15 +610,15 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -627,21 +627,21 @@ namespace Android.Media.Session
         public partial class TransportControls
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#fastForward()"/>
@@ -671,7 +671,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void PlayFromMediaId(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("playFromMediaId", arg0, arg1);
+                IExecuteWithSignature("playFromMediaId", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#playFromSearch(java.lang.String,android.os.Bundle)"/>
@@ -680,7 +680,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void PlayFromSearch(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("playFromSearch", arg0, arg1);
+                IExecuteWithSignature("playFromSearch", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#playFromUri(android.net.Uri,android.os.Bundle)"/>
@@ -689,7 +689,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void PlayFromUri(Android.Net.Uri arg0, Android.Os.Bundle arg1)
             {
-                IExecute("playFromUri", arg0, arg1);
+                IExecuteWithSignature("playFromUri", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#prepare()"/>
@@ -705,7 +705,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void PrepareFromMediaId(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("prepareFromMediaId", arg0, arg1);
+                IExecuteWithSignature("prepareFromMediaId", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#prepareFromSearch(java.lang.String,android.os.Bundle)"/>
@@ -714,7 +714,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void PrepareFromSearch(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("prepareFromSearch", arg0, arg1);
+                IExecuteWithSignature("prepareFromSearch", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#prepareFromUri(android.net.Uri,android.os.Bundle)"/>
@@ -723,7 +723,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void PrepareFromUri(Android.Net.Uri arg0, Android.Os.Bundle arg1)
             {
-                IExecute("prepareFromUri", arg0, arg1);
+                IExecuteWithSignature("prepareFromUri", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#rewind()"/>
@@ -747,7 +747,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void SendCustomAction(Android.Media.Session.PlaybackState.CustomAction arg0, Android.Os.Bundle arg1)
             {
-                IExecute("sendCustomAction", arg0, arg1);
+                IExecuteWithSignature("sendCustomAction", "(Landroid/media/session/PlaybackState$CustomAction;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#sendCustomAction(java.lang.String,android.os.Bundle)"/>
@@ -756,7 +756,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void SendCustomAction(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("sendCustomAction", arg0, arg1);
+                IExecuteWithSignature("sendCustomAction", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.TransportControls.html#setPlaybackSpeed(float)"/>
@@ -803,20 +803,20 @@ namespace Android.Media.Session
             {
                 IExecuteWithSignature("stop", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

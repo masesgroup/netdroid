@@ -42,10 +42,10 @@ namespace Android.Net.Ipsec.Ike
         /// </summary>
         [global::System.Obsolete("SaProposal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SaProposal(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Net.Ipsec.Ike
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Net.Ipsec.Ike
     public partial class SaProposal
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#DH_GROUP_1024_BIT_MODP"/>
@@ -270,9 +270,9 @@ namespace Android.Net.Ipsec.Ike
         public static int PSEUDORANDOM_FUNCTION_SHA2_512 { get { if (!_PSEUDORANDOM_FUNCTION_SHA2_512Ready) { _PSEUDORANDOM_FUNCTION_SHA2_512Content = SGetField<int>(LocalBridgeClazz, "PSEUDORANDOM_FUNCTION_SHA2_512"); _PSEUDORANDOM_FUNCTION_SHA2_512Ready = true; } return _PSEUDORANDOM_FUNCTION_SHA2_512Content; } }
         private static int _PSEUDORANDOM_FUNCTION_SHA2_512Content = default;
         private static bool _PSEUDORANDOM_FUNCTION_SHA2_512Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getSupportedDhGroups()"/>
@@ -282,9 +282,9 @@ namespace Android.Net.Ipsec.Ike
         {
             return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedDhGroups", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getEncryptionAlgorithms()"/>
@@ -310,13 +310,13 @@ namespace Android.Net.Ipsec.Ike
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getIntegrityAlgorithms", "()Ljava/util/List;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

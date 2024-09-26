@@ -43,10 +43,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("OrientationListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OrientationListener(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -96,17 +96,17 @@ namespace Android.View
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.View.OrientationListener"/> to <see cref="Android.Hardware.SensorListener"/>
         /// </summary>
         public static implicit operator Android.Hardware.SensorListener(Android.View.OrientationListener t) => t.Cast<Android.Hardware.SensorListener>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#ORIENTATION_UNKNOWN"/>
@@ -115,13 +115,13 @@ namespace Android.View
         public static int ORIENTATION_UNKNOWN { get { if (!_ORIENTATION_UNKNOWNReady) { _ORIENTATION_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_UNKNOWN"); _ORIENTATION_UNKNOWNReady = true; } return _ORIENTATION_UNKNOWNContent; } }
         private static int _ORIENTATION_UNKNOWNContent = default;
         private static bool _ORIENTATION_UNKNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#onOrientationChanged(int)"/>
@@ -156,7 +156,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public void OnAccuracyChanged(int arg0, int arg1)
         {
-            IExecute("onAccuracyChanged", arg0, arg1);
+            IExecuteWithSignature("onAccuracyChanged", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#onSensorChanged(int,float[])"/>
@@ -166,15 +166,15 @@ namespace Android.View
         [global::System.Obsolete()]
         public void OnSensorChanged(int arg0, float[] arg1)
         {
-            IExecute("onSensorChanged", arg0, arg1);
+            IExecuteWithSignature("onSensorChanged", "(I[F)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

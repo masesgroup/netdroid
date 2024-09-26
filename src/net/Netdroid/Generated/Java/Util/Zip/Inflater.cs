@@ -40,10 +40,10 @@ namespace Java.Util.Zip
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Inflater(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Zip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#finished()"/>
@@ -164,7 +164,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Util.Zip.DataFormatException"/>
         public int Inflate(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("inflate", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("inflate", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#inflate(byte[])"/>
@@ -224,7 +224,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetDictionary(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setDictionary", arg0, arg1, arg2);
+            IExecuteWithSignature("setDictionary", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setDictionary(byte[])"/>
@@ -250,7 +250,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetInput(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setInput", arg0, arg1, arg2);
+            IExecuteWithSignature("setInput", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html#setInput(byte[])"/>
@@ -268,13 +268,13 @@ namespace Java.Util.Zip
         {
             IExecuteWithSignature("setInput", "(Ljava/nio/ByteBuffer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Log(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Util
     public partial class Log
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#ASSERT"/>
@@ -118,9 +118,9 @@ namespace Android.Util
         public static int WARN { get { if (!_WARNReady) { _WARNContent = SGetField<int>(LocalBridgeClazz, "WARN"); _WARNReady = true; } return _WARNContent; } }
         private static int _WARNContent = default;
         private static bool _WARNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#d(java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -131,7 +131,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int d(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "d", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "d", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#d(java.lang.String,java.lang.String)"/>
@@ -141,7 +141,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int d(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "d", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "d", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#e(java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -152,7 +152,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int e(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "e", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "e", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#e(java.lang.String,java.lang.String)"/>
@@ -162,7 +162,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int e(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "e", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "e", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#i(java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -173,7 +173,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int i(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "i", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "i", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#i(java.lang.String,java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int i(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "i", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "i", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#println(int,java.lang.String,java.lang.String)"/>
@@ -194,7 +194,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int Println(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "println", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "println", "(ILjava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#v(java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -205,7 +205,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int v(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "v", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "v", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#v(java.lang.String,java.lang.String)"/>
@@ -215,7 +215,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int v(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "v", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "v", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#w(java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -226,7 +226,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int w(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "w", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "w", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#w(java.lang.String,java.lang.String)"/>
@@ -236,7 +236,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int w(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "w", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "w", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#w(java.lang.String,java.lang.Throwable)"/>
@@ -246,7 +246,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int w(Java.Lang.String arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "w", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "w", "(Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#wtf(java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -257,7 +257,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int Wtf(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "wtf", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "wtf", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#wtf(java.lang.String,java.lang.String)"/>
@@ -267,7 +267,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int Wtf(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "wtf", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "wtf", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#wtf(java.lang.String,java.lang.Throwable)"/>
@@ -277,7 +277,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int Wtf(Java.Lang.String arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "wtf", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "wtf", "(Ljava/lang/String;Ljava/lang/Throwable;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Log.html#getStackTraceString(java.lang.Throwable)"/>
@@ -296,19 +296,19 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool IsLoggable(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isLoggable", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLoggable", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

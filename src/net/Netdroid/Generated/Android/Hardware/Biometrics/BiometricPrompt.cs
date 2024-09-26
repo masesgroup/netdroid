@@ -40,10 +40,10 @@ namespace Android.Hardware.Biometrics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BiometricPrompt(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Hardware.Biometrics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AuthenticationCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Hardware.Biometrics
             /// </summary>
             [global::System.Obsolete("AuthenticationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AuthenticationCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Hardware.Biometrics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Hardware.Biometrics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AuthenticationResult(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Hardware.Biometrics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Hardware.Biometrics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Hardware.Biometrics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -218,10 +218,10 @@ namespace Android.Hardware.Biometrics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CryptoObject(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Android.Hardware.Biometrics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -256,13 +256,13 @@ namespace Android.Hardware.Biometrics
     public partial class BiometricPrompt
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#AUTHENTICATION_RESULT_TYPE_BIOMETRIC"/>
@@ -396,13 +396,13 @@ namespace Android.Hardware.Biometrics
         public static long BIOMETRIC_NO_AUTHENTICATION { get { if (!_BIOMETRIC_NO_AUTHENTICATIONReady) { _BIOMETRIC_NO_AUTHENTICATIONContent = SGetField<long>(LocalBridgeClazz, "BIOMETRIC_NO_AUTHENTICATION"); _BIOMETRIC_NO_AUTHENTICATIONReady = true; } return _BIOMETRIC_NO_AUTHENTICATIONContent; } }
         private static long _BIOMETRIC_NO_AUTHENTICATIONContent = default;
         private static bool _BIOMETRIC_NO_AUTHENTICATIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getLogoBitmap()"/>
@@ -493,7 +493,7 @@ namespace Android.Hardware.Biometrics
         /// <param name="arg3"><see cref="Android.Hardware.Biometrics.BiometricPrompt.AuthenticationCallback"/></param>
         public void Authenticate(Android.Hardware.Biometrics.BiometricPrompt.CryptoObject arg0, Android.Os.CancellationSignal arg1, Java.Util.Concurrent.Executor arg2, Android.Hardware.Biometrics.BiometricPrompt.AuthenticationCallback arg3)
         {
-            IExecute("authenticate", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("authenticate", "(Landroid/hardware/biometrics/BiometricPrompt$CryptoObject;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/hardware/biometrics/BiometricPrompt$AuthenticationCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#authenticate(android.os.CancellationSignal,java.util.concurrent.Executor,android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)"/>
@@ -503,31 +503,31 @@ namespace Android.Hardware.Biometrics
         /// <param name="arg2"><see cref="Android.Hardware.Biometrics.BiometricPrompt.AuthenticationCallback"/></param>
         public void Authenticate(Android.Os.CancellationSignal arg0, Java.Util.Concurrent.Executor arg1, Android.Hardware.Biometrics.BiometricPrompt.AuthenticationCallback arg2)
         {
-            IExecute("authenticate", arg0, arg1, arg2);
+            IExecuteWithSignature("authenticate", "(Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/hardware/biometrics/BiometricPrompt$AuthenticationCallback;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AuthenticationCallback implementation
         public partial class AuthenticationCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback.html#onAuthenticationError(int,java.lang.CharSequence)"/>
@@ -536,7 +536,7 @@ namespace Android.Hardware.Biometrics
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
             public void OnAuthenticationError(int arg0, Java.Lang.CharSequence arg1)
             {
-                IExecute("onAuthenticationError", arg0, arg1);
+                IExecuteWithSignature("onAuthenticationError", "(ILjava/lang/CharSequence;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback.html#onAuthenticationFailed()"/>
@@ -552,7 +552,7 @@ namespace Android.Hardware.Biometrics
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
             public void OnAuthenticationHelp(int arg0, Java.Lang.CharSequence arg1)
             {
-                IExecute("onAuthenticationHelp", arg0, arg1);
+                IExecuteWithSignature("onAuthenticationHelp", "(ILjava/lang/CharSequence;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback.html#onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt.AuthenticationResult)"/>
@@ -562,13 +562,13 @@ namespace Android.Hardware.Biometrics
             {
                 IExecuteWithSignature("onAuthenticationSucceeded", "(Landroid/hardware/biometrics/BiometricPrompt$AuthenticationResult;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -577,21 +577,21 @@ namespace Android.Hardware.Biometrics
         public partial class AuthenticationResult
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationResult.html#getCryptoObject()"/>
@@ -609,13 +609,13 @@ namespace Android.Hardware.Biometrics
             {
                 return IExecuteWithSignature<int>("getAuthenticationType", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -632,21 +632,21 @@ namespace Android.Hardware.Biometrics
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#build()"/>
@@ -738,7 +738,7 @@ namespace Android.Hardware.Biometrics
             /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.Builder"/></returns>
             public Android.Hardware.Biometrics.BiometricPrompt.Builder SetNegativeButton(Java.Lang.CharSequence arg0, Java.Util.Concurrent.Executor arg1, Android.Content.DialogInterface.OnClickListener arg2)
             {
-                return IExecute<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setNegativeButton", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setNegativeButton", "(Ljava/lang/CharSequence;Ljava/util/concurrent/Executor;Landroid/content/DialogInterface$OnClickListener;)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setSubtitle(java.lang.CharSequence)"/>
@@ -758,13 +758,13 @@ namespace Android.Hardware.Biometrics
             {
                 return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setTitle", "(Ljava/lang/CharSequence;)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -822,21 +822,21 @@ namespace Android.Hardware.Biometrics
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getIdentityCredential()"/>
@@ -887,20 +887,20 @@ namespace Android.Hardware.Biometrics
             {
                 return IExecuteWithSignature<long>("getOperationHandle", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

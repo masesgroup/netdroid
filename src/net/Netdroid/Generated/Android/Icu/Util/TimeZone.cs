@@ -42,10 +42,10 @@ namespace Android.Icu.Util
         /// </summary>
         [global::System.Obsolete("TimeZone class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TimeZone(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region SystemTimeZoneType declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SystemTimeZoneType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,9 +121,9 @@ namespace Android.Icu.Util
     public partial class TimeZone : Java.Io.ISerializable, Java.Lang.ICloneable, Android.Icu.Util.IFreezable<Android.Icu.Util.TimeZone>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Util.TimeZone"/> to <see cref="Java.Io.Serializable"/>
@@ -137,9 +137,9 @@ namespace Android.Icu.Util
         /// Converter from <see cref="Android.Icu.Util.TimeZone"/> to <see cref="Android.Icu.Util.Freezable"/>
         /// </summary>
         public static implicit operator Android.Icu.Util.Freezable(Android.Icu.Util.TimeZone t) => t.Cast<Android.Icu.Util.Freezable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#GMT_ZONE"/>
@@ -219,9 +219,9 @@ namespace Android.Icu.Util
         public static Java.Lang.String UNKNOWN_ZONE_ID { get { if (!_UNKNOWN_ZONE_IDReady) { _UNKNOWN_ZONE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "UNKNOWN_ZONE_ID"); _UNKNOWN_ZONE_IDReady = true; } return _UNKNOWN_ZONE_IDContent; } }
         private static Java.Lang.String _UNKNOWN_ZONE_IDContent = default;
         private static bool _UNKNOWN_ZONE_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDefault()"/>
@@ -248,7 +248,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
         public static Android.Icu.Util.TimeZone GetTimeZone(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Android.Icu.Util.TimeZone>(LocalBridgeClazz, "getTimeZone", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Util.TimeZone>(LocalBridgeClazz, "getTimeZone", "(Ljava/lang/String;I)Landroid/icu/util/TimeZone;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getTimeZone(java.lang.String)"/>
@@ -276,7 +276,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetCanonicalID(Java.Lang.String arg0, bool[] arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getCanonicalID", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getCanonicalID", "(Ljava/lang/String;[Z)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getCanonicalID(java.lang.String)"/>
@@ -295,7 +295,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetEquivalentID(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getEquivalentID", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getEquivalentID", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getIDForWindowsID(java.lang.String,java.lang.String)"/>
@@ -305,7 +305,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetIDForWindowsID(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getIDForWindowsID", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getIDForWindowsID", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getRegion(java.lang.String)"/>
@@ -368,11 +368,11 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Java.Lang.String> GetAvailableIDs(Android.Icu.Util.TimeZone.SystemTimeZoneType arg0, Java.Lang.String arg1, Java.Lang.Integer arg2)
         {
-            return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableIDs", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableIDs", "(Landroid/icu/util/TimeZone$SystemTimeZoneType;Ljava/lang/String;Ljava/lang/Integer;)Ljava/util/Set;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#inDaylightTime(java.util.Date)"/>
@@ -403,7 +403,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            return IExecute<int>("getOffset", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("getOffset", "(IIIIII)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getRawOffset()"/>
@@ -471,7 +471,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(bool arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(ZI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDisplayName(java.util.Locale)"/>
@@ -524,7 +524,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(bool arg0, int arg1, Android.Icu.Util.ULocale arg2)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(ZILandroid/icu/util/ULocale;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getDisplayName(boolean,int,java.util.Locale)"/>
@@ -535,7 +535,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(bool arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(ZILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getID()"/>
@@ -553,7 +553,7 @@ namespace Android.Icu.Util
         /// <param name="arg2"><see cref="int"/></param>
         public void GetOffset(long arg0, bool arg1, int[] arg2)
         {
-            IExecute("getOffset", arg0, arg1, arg2);
+            IExecuteWithSignature("getOffset", "(JZ[I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#setID(java.lang.String)"/>
@@ -563,21 +563,21 @@ namespace Android.Icu.Util
         {
             IExecuteWithSignature("setID", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region SystemTimeZoneType implementation
         public partial class SystemTimeZoneType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.SystemTimeZoneType.html#ANY"/>
@@ -597,9 +597,9 @@ namespace Android.Icu.Util
             public static Android.Icu.Util.TimeZone.SystemTimeZoneType CANONICAL_LOCATION { get { if (!_CANONICAL_LOCATIONReady) { _CANONICAL_LOCATIONContent = SGetField<Android.Icu.Util.TimeZone.SystemTimeZoneType>(LocalBridgeClazz, "CANONICAL_LOCATION"); _CANONICAL_LOCATIONReady = true; } return _CANONICAL_LOCATIONContent; } }
             private static Android.Icu.Util.TimeZone.SystemTimeZoneType _CANONICAL_LOCATIONContent = default;
             private static bool _CANONICAL_LOCATIONReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.SystemTimeZoneType.html#valueOf(java.lang.String)"/>
@@ -618,24 +618,24 @@ namespace Android.Icu.Util
             {
                 return SExecuteWithSignatureArray<Android.Icu.Util.TimeZone.SystemTimeZoneType>(LocalBridgeClazz, "values", "()[Landroid/icu/util/TimeZone$SystemTimeZoneType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

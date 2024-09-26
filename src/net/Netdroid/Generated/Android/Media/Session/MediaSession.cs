@@ -40,10 +40,10 @@ namespace Android.Media.Session
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Session
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media.Session
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Media.Session
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public QueueItem(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Media.Session
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Token(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Media.Session
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -230,13 +230,13 @@ namespace Android.Media.Session
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#FLAG_HANDLES_MEDIA_BUTTONS"/>
@@ -252,13 +252,13 @@ namespace Android.Media.Session
         public static int FLAG_HANDLES_TRANSPORT_CONTROLS { get { if (!_FLAG_HANDLES_TRANSPORT_CONTROLSReady) { _FLAG_HANDLES_TRANSPORT_CONTROLSContent = SGetField<int>(LocalBridgeClazz, "FLAG_HANDLES_TRANSPORT_CONTROLS"); _FLAG_HANDLES_TRANSPORT_CONTROLSReady = true; } return _FLAG_HANDLES_TRANSPORT_CONTROLSContent; } }
         private static int _FLAG_HANDLES_TRANSPORT_CONTROLSContent = default;
         private static bool _FLAG_HANDLES_TRANSPORT_CONTROLSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#getController()"/>
@@ -306,7 +306,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void SendSessionEvent(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendSessionEvent", arg0, arg1);
+            IExecuteWithSignature("sendSessionEvent", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#setActive(boolean)"/>
@@ -323,7 +323,7 @@ namespace Android.Media.Session
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetCallback(Android.Media.Session.MediaSession.Callback arg0, Android.Os.Handler arg1)
         {
-            IExecute("setCallback", arg0, arg1);
+            IExecuteWithSignature("setCallback", "(Landroid/media/session/MediaSession$Callback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#setCallback(android.media.session.MediaSession.Callback)"/>
@@ -430,29 +430,29 @@ namespace Android.Media.Session
         {
             IExecuteWithSignature("setSessionActivity", "(Landroid/app/PendingIntent;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onMediaButtonEvent(android.content.Intent)"/>
@@ -471,7 +471,7 @@ namespace Android.Media.Session
             /// <param name="arg2"><see cref="Android.Os.ResultReceiver"/></param>
             public void OnCommand(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.ResultReceiver arg2)
             {
-                IExecute("onCommand", arg0, arg1, arg2);
+                IExecuteWithSignature("onCommand", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ResultReceiver;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onCustomAction(java.lang.String,android.os.Bundle)"/>
@@ -480,7 +480,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnCustomAction(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onCustomAction", arg0, arg1);
+                IExecuteWithSignature("onCustomAction", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onFastForward()"/>
@@ -510,7 +510,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnPlayFromMediaId(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onPlayFromMediaId", arg0, arg1);
+                IExecuteWithSignature("onPlayFromMediaId", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onPlayFromSearch(java.lang.String,android.os.Bundle)"/>
@@ -519,7 +519,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnPlayFromSearch(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onPlayFromSearch", arg0, arg1);
+                IExecuteWithSignature("onPlayFromSearch", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onPlayFromUri(android.net.Uri,android.os.Bundle)"/>
@@ -528,7 +528,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnPlayFromUri(Android.Net.Uri arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onPlayFromUri", arg0, arg1);
+                IExecuteWithSignature("onPlayFromUri", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onPrepare()"/>
@@ -544,7 +544,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnPrepareFromMediaId(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onPrepareFromMediaId", arg0, arg1);
+                IExecuteWithSignature("onPrepareFromMediaId", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onPrepareFromSearch(java.lang.String,android.os.Bundle)"/>
@@ -553,7 +553,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnPrepareFromSearch(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onPrepareFromSearch", arg0, arg1);
+                IExecuteWithSignature("onPrepareFromSearch", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onPrepareFromUri(android.net.Uri,android.os.Bundle)"/>
@@ -562,7 +562,7 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnPrepareFromUri(Android.Net.Uri arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onPrepareFromUri", arg0, arg1);
+                IExecuteWithSignature("onPrepareFromUri", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Callback.html#onRewind()"/>
@@ -624,13 +624,13 @@ namespace Android.Media.Session
             {
                 IExecuteWithSignature("onStop", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -648,13 +648,13 @@ namespace Android.Media.Session
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#CREATOR"/>
@@ -668,13 +668,13 @@ namespace Android.Media.Session
             public static int UNKNOWN_ID { get { if (!_UNKNOWN_IDReady) { _UNKNOWN_IDContent = SGetField<int>(LocalBridgeClazz, "UNKNOWN_ID"); _UNKNOWN_IDReady = true; } return _UNKNOWN_IDContent; } }
             private static int _UNKNOWN_IDContent = default;
             private static bool _UNKNOWN_IDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#getDescription()"/>
@@ -707,15 +707,15 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -724,13 +724,13 @@ namespace Android.Media.Session
         public partial class Token
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Token.html#CREATOR"/>
@@ -738,13 +738,13 @@ namespace Android.Media.Session
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.Token.html#describeContents()"/>
@@ -761,22 +761,22 @@ namespace Android.Media.Session
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

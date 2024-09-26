@@ -43,10 +43,10 @@ namespace Android.Preference
         /// </summary>
         [global::System.Obsolete("PreferenceActivity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreferenceActivity(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,7 +67,7 @@ namespace Android.Preference
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Header declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Preference
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Header(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,13 +123,13 @@ namespace Android.Preference
     public partial class PreferenceActivity
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#EXTRA_NO_HEADERS"/>
@@ -173,13 +173,13 @@ namespace Android.Preference
         public static long HEADER_ID_UNDEFINED { get { if (!_HEADER_ID_UNDEFINEDReady) { _HEADER_ID_UNDEFINEDContent = SGetField<long>(LocalBridgeClazz, "HEADER_ID_UNDEFINED"); _HEADER_ID_UNDEFINEDReady = true; } return _HEADER_ID_UNDEFINEDContent; } }
         private static long _HEADER_ID_UNDEFINEDContent = default;
         private static bool _HEADER_ID_UNDEFINEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onBuildStartFragmentIntent(java.lang.String,android.os.Bundle,int,int)"/>
@@ -192,7 +192,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public Android.Content.Intent OnBuildStartFragmentIntent(Java.Lang.String arg0, Android.Os.Bundle arg1, int arg2, int arg3)
         {
-            return IExecute<Android.Content.Intent>("onBuildStartFragmentIntent", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Content.Intent>("onBuildStartFragmentIntent", "(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#findPreference(java.lang.CharSequence)"/>
@@ -285,7 +285,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public bool OnPreferenceStartFragment(Android.Preference.PreferenceFragment arg0, Android.Preference.Preference arg1)
         {
-            return IExecute<bool>("onPreferenceStartFragment", arg0, arg1);
+            return IExecuteWithSignature<bool>("onPreferenceStartFragment", "(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onPreferenceTreeClick(android.preference.PreferenceScreen,android.preference.Preference)"/>
@@ -296,7 +296,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public bool OnPreferenceTreeClick(Android.Preference.PreferenceScreen arg0, Android.Preference.Preference arg1)
         {
-            return IExecute<bool>("onPreferenceTreeClick", arg0, arg1);
+            return IExecuteWithSignature<bool>("onPreferenceTreeClick", "(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#addPreferencesFromIntent(android.content.Intent)"/>
@@ -325,7 +325,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void FinishPreferencePanel(Android.App.Fragment arg0, int arg1, Android.Content.Intent arg2)
         {
-            IExecute("finishPreferencePanel", arg0, arg1, arg2);
+            IExecuteWithSignature("finishPreferencePanel", "(Landroid/app/Fragment;ILandroid/content/Intent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#invalidateHeaders()"/>
@@ -343,7 +343,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void LoadHeadersFromResource(int arg0, Java.Util.List<Android.Preference.PreferenceActivity.Header> arg1)
         {
-            IExecute("loadHeadersFromResource", arg0, arg1);
+            IExecuteWithSignature("loadHeadersFromResource", "(ILjava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onBuildHeaders(java.util.List)"/>
@@ -362,7 +362,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void OnHeaderClick(Android.Preference.PreferenceActivity.Header arg0, int arg1)
         {
-            IExecute("onHeaderClick", arg0, arg1);
+            IExecuteWithSignature("onHeaderClick", "(Landroid/preference/PreferenceActivity$Header;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#setListFooter(android.view.View)"/>
@@ -382,7 +382,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void SetParentTitle(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Android.View.View.OnClickListener arg2)
         {
-            IExecute("setParentTitle", arg0, arg1, arg2);
+            IExecuteWithSignature("setParentTitle", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#setPreferenceScreen(android.preference.PreferenceScreen)"/>
@@ -401,7 +401,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void ShowBreadCrumbs(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("showBreadCrumbs", arg0, arg1);
+            IExecuteWithSignature("showBreadCrumbs", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#startPreferenceFragment(android.app.Fragment,boolean)"/>
@@ -411,7 +411,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void StartPreferenceFragment(Android.App.Fragment arg0, bool arg1)
         {
-            IExecute("startPreferenceFragment", arg0, arg1);
+            IExecuteWithSignature("startPreferenceFragment", "(Landroid/app/Fragment;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#startPreferencePanel(java.lang.String,android.os.Bundle,int,java.lang.CharSequence,android.app.Fragment,int)"/>
@@ -425,7 +425,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void StartPreferencePanel(Java.Lang.String arg0, Android.Os.Bundle arg1, int arg2, Java.Lang.CharSequence arg3, Android.App.Fragment arg4, int arg5)
         {
-            IExecute("startPreferencePanel", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("startPreferencePanel", "(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#startWithFragment(java.lang.String,android.os.Bundle,android.app.Fragment,int,int,int)"/>
@@ -439,7 +439,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void StartWithFragment(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.App.Fragment arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("startWithFragment", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("startWithFragment", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#startWithFragment(java.lang.String,android.os.Bundle,android.app.Fragment,int)"/>
@@ -451,7 +451,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void StartWithFragment(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.App.Fragment arg2, int arg3)
         {
-            IExecute("startWithFragment", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startWithFragment", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#switchToHeader(android.preference.PreferenceActivity.Header)"/>
@@ -470,23 +470,23 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public void SwitchToHeader(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("switchToHeader", arg0, arg1);
+            IExecuteWithSignature("switchToHeader", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Header implementation
         public partial class Header
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#intent"/>
@@ -565,13 +565,13 @@ namespace Android.Preference
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#describeContents()"/>
@@ -639,22 +639,22 @@ namespace Android.Preference
             [global::System.Obsolete()]
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

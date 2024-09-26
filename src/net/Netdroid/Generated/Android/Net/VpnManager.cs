@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VpnManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Net
     public partial class VpnManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#ERROR_CLASS_NOT_RECOVERABLE"/>
@@ -196,13 +196,13 @@ namespace Android.Net
         public static Java.Lang.String EXTRA_VPN_PROFILE_STATE { get { if (!_EXTRA_VPN_PROFILE_STATEReady) { _EXTRA_VPN_PROFILE_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VPN_PROFILE_STATE"); _EXTRA_VPN_PROFILE_STATEReady = true; } return _EXTRA_VPN_PROFILE_STATEContent; } }
         private static Java.Lang.String _EXTRA_VPN_PROFILE_STATEContent = default;
         private static bool _EXTRA_VPN_PROFILE_STATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#provisionVpnProfile(android.net.PlatformVpnProfile)"/>
@@ -251,13 +251,13 @@ namespace Android.Net
         {
             IExecuteWithSignature("stopProvisionedVpnProfile", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

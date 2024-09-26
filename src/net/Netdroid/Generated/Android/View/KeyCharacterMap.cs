@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyCharacterMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region KeyData declaration
         /// <summary>
@@ -82,10 +82,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public KeyData(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -106,9 +106,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,9 +123,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -137,13 +137,13 @@ namespace Android.View
     public partial class KeyCharacterMap
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#CREATOR"/>
@@ -230,9 +230,9 @@ namespace Android.View
         public static int VIRTUAL_KEYBOARD { get { if (!_VIRTUAL_KEYBOARDReady) { _VIRTUAL_KEYBOARDContent = SGetField<int>(LocalBridgeClazz, "VIRTUAL_KEYBOARD"); _VIRTUAL_KEYBOARDReady = true; } return _VIRTUAL_KEYBOARDContent; } }
         private static int _VIRTUAL_KEYBOARDContent = default;
         private static bool _VIRTUAL_KEYBOARDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#load(int)"/>
@@ -269,11 +269,11 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public static int GetDeadChar(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getDeadChar", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDeadChar", "(II)I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#getEvents(char[])"/>
@@ -293,7 +293,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public bool GetKeyData(int arg0, Android.View.KeyCharacterMap.KeyData arg1)
         {
-            return IExecute<bool>("getKeyData", arg0, arg1);
+            return IExecuteWithSignature<bool>("getKeyData", "(ILandroid/view/KeyCharacterMap$KeyData;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#isPrintingKey(int)"/>
@@ -322,7 +322,7 @@ namespace Android.View
         /// <returns><see cref="char"/></returns>
         public char GetMatch(int arg0, char[] arg1, int arg2)
         {
-            return IExecute<char>("getMatch", arg0, arg1, arg2);
+            return IExecuteWithSignature<char>("getMatch", "(I[CI)C", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#getMatch(int,char[])"/>
@@ -332,7 +332,7 @@ namespace Android.View
         /// <returns><see cref="char"/></returns>
         public char GetMatch(int arg0, char[] arg1)
         {
-            return IExecute<char>("getMatch", arg0, arg1);
+            return IExecuteWithSignature<char>("getMatch", "(I[C)C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#getNumber(int)"/>
@@ -359,7 +359,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public int Get(int arg0, int arg1)
         {
-            return IExecute<int>("get", arg0, arg1);
+            return IExecuteWithSignature<int>("get", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#getKeyboardType()"/>
@@ -384,23 +384,23 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region KeyData implementation
         public partial class KeyData
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.KeyData.html#displayLabel"/>
@@ -424,21 +424,21 @@ namespace Android.View
             public static int META_LENGTH { get { if (!_META_LENGTHReady) { _META_LENGTHContent = SGetField<int>(LocalBridgeClazz, "META_LENGTH"); _META_LENGTHReady = true; } return _META_LENGTHContent; } }
             private static int _META_LENGTHContent = default;
             private static bool _META_LENGTHReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -447,36 +447,36 @@ namespace Android.View
         public partial class UnavailableException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

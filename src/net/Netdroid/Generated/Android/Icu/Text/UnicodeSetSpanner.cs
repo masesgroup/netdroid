@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UnicodeSetSpanner(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CountMethod declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CountMethod(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TrimOption(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -172,21 +172,21 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#getUnicodeSet()"/>
@@ -205,7 +205,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int CountIn(Java.Lang.CharSequence arg0, Android.Icu.Text.UnicodeSetSpanner.CountMethod arg1, Android.Icu.Text.UnicodeSet.SpanCondition arg2)
         {
-            return IExecute<int>("countIn", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("countIn", "(Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSetSpanner$CountMethod;Landroid/icu/text/UnicodeSet$SpanCondition;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#countIn(java.lang.CharSequence,android.icu.text.UnicodeSetSpanner.CountMethod)"/>
@@ -215,7 +215,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="int"/></returns>
         public int CountIn(Java.Lang.CharSequence arg0, Android.Icu.Text.UnicodeSetSpanner.CountMethod arg1)
         {
-            return IExecute<int>("countIn", arg0, arg1);
+            return IExecuteWithSignature<int>("countIn", "(Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSetSpanner$CountMethod;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#countIn(java.lang.CharSequence)"/>
@@ -235,7 +235,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence Trim(Java.Lang.CharSequence arg0, Android.Icu.Text.UnicodeSetSpanner.TrimOption arg1, Android.Icu.Text.UnicodeSet.SpanCondition arg2)
         {
-            return IExecute<Java.Lang.CharSequence>("trim", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("trim", "(Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSetSpanner$TrimOption;Landroid/icu/text/UnicodeSet$SpanCondition;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#trim(java.lang.CharSequence,android.icu.text.UnicodeSetSpanner.TrimOption)"/>
@@ -245,7 +245,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence Trim(Java.Lang.CharSequence arg0, Android.Icu.Text.UnicodeSetSpanner.TrimOption arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("trim", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("trim", "(Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSetSpanner$TrimOption;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#trim(java.lang.CharSequence)"/>
@@ -264,7 +264,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DeleteFrom(Java.Lang.CharSequence arg0, Android.Icu.Text.UnicodeSet.SpanCondition arg1)
         {
-            return IExecute<Java.Lang.String>("deleteFrom", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("deleteFrom", "(Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSet$SpanCondition;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#deleteFrom(java.lang.CharSequence)"/>
@@ -285,7 +285,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFrom(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Android.Icu.Text.UnicodeSetSpanner.CountMethod arg2, Android.Icu.Text.UnicodeSet.SpanCondition arg3)
         {
-            return IExecute<Java.Lang.String>("replaceFrom", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFrom", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSetSpanner$CountMethod;Landroid/icu/text/UnicodeSet$SpanCondition;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#replaceFrom(java.lang.CharSequence,java.lang.CharSequence,android.icu.text.UnicodeSetSpanner.CountMethod)"/>
@@ -296,7 +296,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFrom(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Android.Icu.Text.UnicodeSetSpanner.CountMethod arg2)
         {
-            return IExecute<Java.Lang.String>("replaceFrom", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFrom", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/icu/text/UnicodeSetSpanner$CountMethod;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#replaceFrom(java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -306,23 +306,23 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFrom(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Java.Lang.String>("replaceFrom", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFrom", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CountMethod implementation
         public partial class CountMethod
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.CountMethod.html#MIN_ELEMENTS"/>
@@ -336,9 +336,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.UnicodeSetSpanner.CountMethod WHOLE_SPAN { get { if (!_WHOLE_SPANReady) { _WHOLE_SPANContent = SGetField<Android.Icu.Text.UnicodeSetSpanner.CountMethod>(LocalBridgeClazz, "WHOLE_SPAN"); _WHOLE_SPANReady = true; } return _WHOLE_SPANContent; } }
             private static Android.Icu.Text.UnicodeSetSpanner.CountMethod _WHOLE_SPANContent = default;
             private static bool _WHOLE_SPANReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.CountMethod.html#valueOf(java.lang.String)"/>
@@ -357,17 +357,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.UnicodeSetSpanner.CountMethod>(LocalBridgeClazz, "values", "()[Landroid/icu/text/UnicodeSetSpanner$CountMethod;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -376,13 +376,13 @@ namespace Android.Icu.Text
         public partial class TrimOption
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.TrimOption.html#BOTH"/>
@@ -402,9 +402,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.UnicodeSetSpanner.TrimOption TRAILING { get { if (!_TRAILINGReady) { _TRAILINGContent = SGetField<Android.Icu.Text.UnicodeSetSpanner.TrimOption>(LocalBridgeClazz, "TRAILING"); _TRAILINGReady = true; } return _TRAILINGContent; } }
             private static Android.Icu.Text.UnicodeSetSpanner.TrimOption _TRAILINGContent = default;
             private static bool _TRAILINGReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.TrimOption.html#valueOf(java.lang.String)"/>
@@ -423,24 +423,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.UnicodeSetSpanner.TrimOption>(LocalBridgeClazz, "values", "()[Landroid/icu/text/UnicodeSetSpanner$TrimOption;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateTimePatternGenerator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region DisplayWidth declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DisplayWidth(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PatternInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,9 +164,9 @@ namespace Android.Icu.Text
     public partial class DateTimePatternGenerator : Android.Icu.Util.IFreezable<Android.Icu.Text.DateTimePatternGenerator>, Java.Lang.ICloneable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.DateTimePatternGenerator"/> to <see cref="Android.Icu.Util.Freezable"/>
@@ -176,9 +176,9 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.DateTimePatternGenerator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.DateTimePatternGenerator t) => t.Cast<Java.Lang.Cloneable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#DAY"/>
@@ -294,9 +294,9 @@ namespace Android.Icu.Text
         public static int ZONE { get { if (!_ZONEReady) { _ZONEContent = SGetField<int>(LocalBridgeClazz, "ZONE"); _ZONEReady = true; } return _ZONEContent; } }
         private static int _ZONEContent = default;
         private static bool _ZONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getEmptyInstance()"/>
@@ -332,9 +332,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.DateTimePatternGenerator>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Landroid/icu/text/DateTimePatternGenerator;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDefaultHourCycle()"/>
@@ -353,7 +353,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.DateTimePatternGenerator"/></returns>
         public Android.Icu.Text.DateTimePatternGenerator AddPattern(Java.Lang.String arg0, bool arg1, Android.Icu.Text.DateTimePatternGenerator.PatternInfo arg2)
         {
-            return IExecute<Android.Icu.Text.DateTimePatternGenerator>("addPattern", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Icu.Text.DateTimePatternGenerator>("addPattern", "(Ljava/lang/String;ZLandroid/icu/text/DateTimePatternGenerator$PatternInfo;)Landroid/icu/text/DateTimePatternGenerator;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#isFrozen()"/>
@@ -414,7 +414,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetBestPattern(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getBestPattern", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getBestPattern", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getBestPattern(java.lang.String)"/>
@@ -458,7 +458,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetFieldDisplayName(int arg0, Android.Icu.Text.DateTimePatternGenerator.DisplayWidth arg1)
         {
-            return IExecute<Java.Lang.String>("getFieldDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getFieldDisplayName", "(ILandroid/icu/text/DateTimePatternGenerator$DisplayWidth;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getSkeleton(java.lang.String)"/>
@@ -478,7 +478,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFieldTypes(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<Java.Lang.String>("replaceFieldTypes", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFieldTypes", "(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#replaceFieldTypes(java.lang.String,java.lang.String)"/>
@@ -488,7 +488,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReplaceFieldTypes(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("replaceFieldTypes", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("replaceFieldTypes", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getSkeletons(java.util.Map)"/>
@@ -515,7 +515,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetAppendItemFormat(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setAppendItemFormat", arg0, arg1);
+            IExecuteWithSignature("setAppendItemFormat", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setAppendItemName(int,java.lang.String)"/>
@@ -524,7 +524,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetAppendItemName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setAppendItemName", arg0, arg1);
+            IExecuteWithSignature("setAppendItemName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDateTimeFormat(int,java.lang.String)"/>
@@ -533,7 +533,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetDateTimeFormat(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setDateTimeFormat", arg0, arg1);
+            IExecuteWithSignature("setDateTimeFormat", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDateTimeFormat(java.lang.String)"/>
@@ -551,21 +551,21 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setDecimal", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region DisplayWidth implementation
         public partial class DisplayWidth
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.DisplayWidth.html#ABBREVIATED"/>
@@ -585,9 +585,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.DateTimePatternGenerator.DisplayWidth WIDE { get { if (!_WIDEReady) { _WIDEContent = SGetField<Android.Icu.Text.DateTimePatternGenerator.DisplayWidth>(LocalBridgeClazz, "WIDE"); _WIDEReady = true; } return _WIDEContent; } }
             private static Android.Icu.Text.DateTimePatternGenerator.DisplayWidth _WIDEContent = default;
             private static bool _WIDEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.DisplayWidth.html#valueOf(java.lang.String)"/>
@@ -606,17 +606,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.DateTimePatternGenerator.DisplayWidth>(LocalBridgeClazz, "values", "()[Landroid/icu/text/DateTimePatternGenerator$DisplayWidth;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -625,13 +625,13 @@ namespace Android.Icu.Text
         public partial class PatternInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.PatternInfo.html#status"/>
@@ -659,28 +659,28 @@ namespace Android.Icu.Text
             public static int OK { get { if (!_OKReady) { _OKContent = SGetField<int>(LocalBridgeClazz, "OK"); _OKReady = true; } return _OKContent; } }
             private static int _OKContent = default;
             private static bool _OKReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

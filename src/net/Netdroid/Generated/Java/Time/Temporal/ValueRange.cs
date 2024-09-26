@@ -40,10 +40,10 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ValueRange(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Temporal
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Time.Temporal
     public partial class ValueRange
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#of(long,long,long,long)"/>
@@ -96,7 +96,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2, long arg3)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJJJ)Ljava/time/temporal/ValueRange;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#of(long,long,long)"/>
@@ -107,7 +107,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJJ)Ljava/time/temporal/ValueRange;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#of(long,long)"/>
@@ -117,11 +117,11 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1)
         {
-            return SExecute<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJ)Ljava/time/temporal/ValueRange;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#isFixed()"/>
@@ -165,7 +165,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="int"/></returns>
         public int CheckValidIntValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
-            return IExecute<int>("checkValidIntValue", arg0, arg1);
+            return IExecuteWithSignature<int>("checkValidIntValue", "(JLjava/time/temporal/TemporalField;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#checkValidValue(long,java.time.temporal.TemporalField)"/>
@@ -175,7 +175,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="long"/></returns>
         public long CheckValidValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
-            return IExecute<long>("checkValidValue", arg0, arg1);
+            return IExecuteWithSignature<long>("checkValidValue", "(JLjava/time/temporal/TemporalField;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ValueRange.html#getLargestMinimum()"/>
@@ -209,13 +209,13 @@ namespace Java.Time.Temporal
         {
             return IExecuteWithSignature<long>("getSmallestMaximum", "()J");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

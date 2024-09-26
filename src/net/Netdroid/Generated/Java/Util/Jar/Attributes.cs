@@ -40,10 +40,10 @@ namespace Java.Util.Jar
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Attributes(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Util.Jar
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Name declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Util.Jar
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Name(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Util.Jar
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -135,9 +135,9 @@ namespace Java.Util.Jar
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Jar.Attributes"/> to <see cref="Java.Util.Map"/>
@@ -147,17 +147,17 @@ namespace Java.Util.Jar
         /// Converter from <see cref="Java.Util.Jar.Attributes"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Jar.Attributes t) => t.Cast<Java.Lang.Cloneable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/jar/Attributes.html#containsKey(java.lang.Object)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Jar
         /// <returns><see cref="object"/></returns>
         public object Put(object arg0, object arg1)
         {
-            return IExecute("put", arg0, arg1);
+            return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/jar/Attributes.html#remove(java.lang.Object)"/>
@@ -247,7 +247,7 @@ namespace Java.Util.Jar
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String PutValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("putValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("putValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/jar/Attributes.html#values()"/>
@@ -288,9 +288,9 @@ namespace Java.Util.Jar
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Name implementation
         public partial class Name
@@ -304,13 +304,13 @@ namespace Java.Util.Jar
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/jar/Attributes.Name.html#CLASS_PATH"/>
@@ -423,28 +423,28 @@ namespace Java.Util.Jar
             public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION { get { if (!_SPECIFICATION_VERSIONReady) { _SPECIFICATION_VERSIONContent = SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "SPECIFICATION_VERSION"); _SPECIFICATION_VERSIONReady = true; } return _SPECIFICATION_VERSIONContent; } }
             private static Java.Util.Jar.Attributes.Name _SPECIFICATION_VERSIONContent = default;
             private static bool _SPECIFICATION_VERSIONReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Security.Cert
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CRLReason(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Security.Cert
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Security.Cert
     public partial class CRLReason
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CRLReason.html#AA_COMPROMISE"/>
@@ -148,9 +148,9 @@ namespace Java.Security.Cert
         public static Java.Security.Cert.CRLReason UNUSED { get { if (!_UNUSEDReady) { _UNUSEDContent = SGetField<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "UNUSED"); _UNUSEDReady = true; } return _UNUSEDContent; } }
         private static Java.Security.Cert.CRLReason _UNUSEDContent = default;
         private static bool _UNUSEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CRLReason.html#valueOf(java.lang.String)"/>
@@ -169,17 +169,17 @@ namespace Java.Security.Cert
         {
             return SExecuteWithSignatureArray<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "values", "()[Ljava/security/cert/CRLReason;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Bidi(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -113,13 +113,13 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#LEVEL_DEFAULT_LTR"/>
@@ -295,9 +295,9 @@ namespace Android.Icu.Text
         public static short REORDER_RUNS_ONLY { get { if (!_REORDER_RUNS_ONLYReady) { _REORDER_RUNS_ONLYContent = SGetField<short>(LocalBridgeClazz, "REORDER_RUNS_ONLY"); _REORDER_RUNS_ONLYReady = true; } return _REORDER_RUNS_ONLYContent; } }
         private static short _REORDER_RUNS_ONLYContent = default;
         private static bool _REORDER_RUNS_ONLYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#requiresBidi(char[],int,int)"/>
@@ -308,7 +308,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public static bool RequiresBidi(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "requiresBidi", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "requiresBidi", "([CII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getBaseDirection(java.lang.CharSequence)"/>
@@ -354,7 +354,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String WriteReverse(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "writeReverse", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "writeReverse", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
@@ -366,11 +366,11 @@ namespace Android.Icu.Text
         /// <param name="arg4"><see cref="int"/></param>
         public static void ReorderVisually(byte[] arg0, int arg1, object[] arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "reorderVisually", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "reorderVisually", "([BI[Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#createLineBidi(int,int)"/>
@@ -380,7 +380,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.Bidi"/></returns>
         public Android.Icu.Text.Bidi CreateLineBidi(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.Bidi>("createLineBidi", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.Bidi>("createLineBidi", "(II)Landroid/icu/text/Bidi;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setLine(int,int)"/>
@@ -390,7 +390,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.Bidi"/></returns>
         public Android.Icu.Text.Bidi SetLine(int arg0, int arg1)
         {
-            return IExecute<Android.Icu.Text.Bidi>("setLine", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Text.Bidi>("setLine", "(II)Landroid/icu/text/Bidi;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getCustomClassifier()"/>
@@ -708,7 +708,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetContext(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setContext", arg0, arg1);
+            IExecuteWithSignature("setContext", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setCustomClassifier(android.icu.text.BidiClassifier)"/>
@@ -734,7 +734,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="byte"/></param>
         public void SetPara(char[] arg0, byte arg1, byte[] arg2)
         {
-            IExecute("setPara", arg0, arg1, arg2);
+            IExecuteWithSignature("setPara", "([CB[B)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setPara(java.lang.String,byte,byte[])"/>
@@ -744,7 +744,7 @@ namespace Android.Icu.Text
         /// <param name="arg2"><see cref="byte"/></param>
         public void SetPara(Java.Lang.String arg0, byte arg1, byte[] arg2)
         {
-            IExecute("setPara", arg0, arg1, arg2);
+            IExecuteWithSignature("setPara", "(Ljava/lang/String;B[B)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setPara(java.text.AttributedCharacterIterator)"/>
@@ -770,13 +770,13 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setReorderingOptions", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

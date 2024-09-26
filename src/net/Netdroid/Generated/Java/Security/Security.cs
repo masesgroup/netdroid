@@ -40,10 +40,10 @@ namespace Java.Security
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Security(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Security
     public partial class Security
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Security.html#addProvider(java.security.Provider)"/>
@@ -104,7 +104,7 @@ namespace Java.Security
         [global::System.Obsolete()]
         public static Java.Lang.String GetAlgorithmProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getAlgorithmProperty", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getAlgorithmProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Security.html#getProperty(java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Java.Security
         /// <returns><see cref="int"/></returns>
         public static int InsertProviderAt(Java.Security.Provider arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "insertProviderAt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "insertProviderAt", "(Ljava/security/Provider;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/Security.html#removeProvider(java.lang.String)"/>
@@ -184,19 +184,19 @@ namespace Java.Security
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void SetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "setProperty", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

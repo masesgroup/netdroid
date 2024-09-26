@@ -42,10 +42,10 @@ namespace Android.Telecom
         /// </summary>
         [global::System.Obsolete("CallControlCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallControlCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Telecom
     public partial interface ICallControlCallback
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Telecom
     public partial class CallControlCallback : Android.Telecom.ICallControlCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onAnswer(int,java.util.function.Consumer)"/>
@@ -117,7 +117,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void OnAnswer(int arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1)
         {
-            IExecute("onAnswer", arg0, arg1);
+            IExecuteWithSignature("onAnswer", "(ILjava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onCallStreamingStarted(java.util.function.Consumer)"/>
@@ -134,7 +134,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void OnDisconnect(Android.Telecom.DisconnectCause arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1)
         {
-            IExecute("onDisconnect", arg0, arg1);
+            IExecuteWithSignature("onDisconnect", "(Landroid/telecom/DisconnectCause;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onSetActive(java.util.function.Consumer)"/>
@@ -152,13 +152,13 @@ namespace Android.Telecom
         {
             IExecuteWithSignature("onSetInactive", "(Ljava/util/function/Consumer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

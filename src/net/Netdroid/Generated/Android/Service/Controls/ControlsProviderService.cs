@@ -42,10 +42,10 @@ namespace Android.Service.Controls
         /// </summary>
         [global::System.Obsolete("ControlsProviderService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ControlsProviderService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Service.Controls
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Service.Controls
     public partial class ControlsProviderService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#CONTROLS_SURFACE_ACTIVITY_PANEL"/>
@@ -126,9 +126,9 @@ namespace Android.Service.Controls
         public static Java.Lang.String TAG { get { if (!_TAGReady) { _TAGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG"); _TAGReady = true; } return _TAGContent; } }
         private static Java.Lang.String _TAGContent = default;
         private static bool _TAGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#requestAddControl(android.content.Context,android.content.ComponentName,android.service.controls.Control)"/>
@@ -138,11 +138,11 @@ namespace Android.Service.Controls
         /// <param name="arg2"><see cref="Android.Service.Controls.Control"/></param>
         public static void RequestAddControl(Android.Content.Context arg0, Android.Content.ComponentName arg1, Android.Service.Controls.Control arg2)
         {
-            SExecute(LocalBridgeClazz, "requestAddControl", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "requestAddControl", "(Landroid/content/Context;Landroid/content/ComponentName;Landroid/service/controls/Control;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#createPublisherFor(java.util.List)"/>
@@ -169,7 +169,7 @@ namespace Android.Service.Controls
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void PerformControlAction(Java.Lang.String arg0, Android.Service.Controls.Actions.ControlAction arg1, Java.Util.Function.Consumer<Java.Lang.Integer> arg2)
         {
-            IExecute("performControlAction", arg0, arg1, arg2);
+            IExecuteWithSignature("performControlAction", "(Ljava/lang/String;Landroid/service/controls/actions/ControlAction;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#createPublisherForSuggested()"/>
@@ -179,13 +179,13 @@ namespace Android.Service.Controls
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Flow.Publisher<Android.Service.Controls.Control>>("createPublisherForSuggested", "()Ljava/util/concurrent/Flow$Publisher;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

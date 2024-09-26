@@ -40,10 +40,10 @@ namespace Android.Gesture
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GestureUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Gesture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Gesture
     public partial class GestureUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureUtils.html#computeOrientedBoundingBox(float[])"/>
@@ -113,7 +113,7 @@ namespace Android.Gesture
         /// <returns><see cref="float"/></returns>
         public static float[] SpatialSampling(Android.Gesture.Gesture arg0, int arg1, bool arg2)
         {
-            return SExecuteArray<float>(LocalBridgeClazz, "spatialSampling", arg0, arg1, arg2);
+            return SExecuteWithSignatureArray<float>(LocalBridgeClazz, "spatialSampling", "(Landroid/gesture/Gesture;IZ)[F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureUtils.html#spatialSampling(android.gesture.Gesture,int)"/>
@@ -123,7 +123,7 @@ namespace Android.Gesture
         /// <returns><see cref="float"/></returns>
         public static float[] SpatialSampling(Android.Gesture.Gesture arg0, int arg1)
         {
-            return SExecuteArray<float>(LocalBridgeClazz, "spatialSampling", arg0, arg1);
+            return SExecuteWithSignatureArray<float>(LocalBridgeClazz, "spatialSampling", "(Landroid/gesture/Gesture;I)[F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureUtils.html#temporalSampling(android.gesture.GestureStroke,int)"/>
@@ -133,19 +133,19 @@ namespace Android.Gesture
         /// <returns><see cref="float"/></returns>
         public static float[] TemporalSampling(Android.Gesture.GestureStroke arg0, int arg1)
         {
-            return SExecuteArray<float>(LocalBridgeClazz, "temporalSampling", arg0, arg1);
+            return SExecuteWithSignatureArray<float>(LocalBridgeClazz, "temporalSampling", "(Landroid/gesture/GestureStroke;I)[F", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

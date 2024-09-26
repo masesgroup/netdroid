@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicLong(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#compareAndSet(long,long)"/>
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(long arg0, long arg1)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSet", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSet(long,long)"/>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent.Atomic
         [global::System.Obsolete()]
         public bool WeakCompareAndSet(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetAcquire(long,long)"/>
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetPlain(long,long)"/>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetRelease(long,long)"/>
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetVolatile(long,long)"/>
@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#accumulateAndGet(long,java.util.function.LongBinaryOperator)"/>
@@ -167,7 +167,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long AccumulateAndGet(long arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
-            return IExecute<long>("accumulateAndGet", arg0, arg1);
+            return IExecuteWithSignature<long>("accumulateAndGet", "(JLjava/util/function/LongBinaryOperator;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#addAndGet(long)"/>
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long CompareAndExchange(long arg0, long arg1)
         {
-            return IExecute<long>("compareAndExchange", arg0, arg1);
+            return IExecuteWithSignature<long>("compareAndExchange", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeAcquire(long,long)"/>
@@ -196,7 +196,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long CompareAndExchangeAcquire(long arg0, long arg1)
         {
-            return IExecute<long>("compareAndExchangeAcquire", arg0, arg1);
+            return IExecuteWithSignature<long>("compareAndExchangeAcquire", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeRelease(long,long)"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long CompareAndExchangeRelease(long arg0, long arg1)
         {
-            return IExecute<long>("compareAndExchangeRelease", arg0, arg1);
+            return IExecuteWithSignature<long>("compareAndExchangeRelease", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#decrementAndGet()"/>
@@ -240,7 +240,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long GetAndAccumulate(long arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
-            return IExecute<long>("getAndAccumulate", arg0, arg1);
+            return IExecuteWithSignature<long>("getAndAccumulate", "(JLjava/util/function/LongBinaryOperator;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAndAdd(long)"/>
@@ -358,13 +358,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecuteWithSignature("setRelease", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

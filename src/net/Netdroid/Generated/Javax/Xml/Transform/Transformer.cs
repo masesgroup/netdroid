@@ -42,10 +42,10 @@ namespace Javax.Xml.Transform
         /// </summary>
         [global::System.Obsolete("Transformer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Transformer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Transform
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Javax.Xml.Transform
     public partial class Transformer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#getParameter(java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetOutputProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setOutputProperty", arg0, arg1);
+            IExecuteWithSignature("setOutputProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#setParameter(java.lang.String,java.lang.Object)"/>
@@ -184,7 +184,7 @@ namespace Javax.Xml.Transform
         /// <param name="arg1"><see cref="object"/></param>
         public void SetParameter(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setParameter", arg0, arg1);
+            IExecuteWithSignature("setParameter", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#setURIResolver(javax.xml.transform.URIResolver)"/>
@@ -202,7 +202,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public void Transform(Javax.Xml.Transform.Source arg0, Javax.Xml.Transform.Result arg1)
         {
-            IExecute("transform", arg0, arg1);
+            IExecuteWithSignature("transform", "(Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#reset()"/>
@@ -211,13 +211,13 @@ namespace Javax.Xml.Transform
         {
             IExecuteWithSignature("reset", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

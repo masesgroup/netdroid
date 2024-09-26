@@ -40,10 +40,10 @@ namespace Java.Util.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StreamSupport(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Util.Stream
     public partial class StreamSupport
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#stream(java.util.function.Supplier,int,boolean)"/>
@@ -97,7 +97,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Stream<T, Arg0ExtendsJava_Util_Spliterator_T_>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_T_> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_T_ : Java.Util.Spliterator<T>
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/Stream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#stream(java.util.Spliterator,boolean)"/>
@@ -108,7 +108,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Stream<T>(Java.Util.Spliterator<T> arg0, bool arg1)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", "(Ljava/util/Spliterator;Z)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#doubleStream(java.util.function.Supplier,int,boolean)"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream DoubleStream<Arg0ExtendsJava_Util_Spliterator_OfDouble>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfDouble> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfDouble : Java.Util.Spliterator.OfDouble
         {
-            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "doubleStream", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "doubleStream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/DoubleStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#doubleStream(java.util.Spliterator.OfDouble,boolean)"/>
@@ -130,7 +130,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream DoubleStream(Java.Util.Spliterator.OfDouble arg0, bool arg1)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "doubleStream", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "doubleStream", "(Ljava/util/Spliterator$OfDouble;Z)Ljava/util/stream/DoubleStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#intStream(java.util.function.Supplier,int,boolean)"/>
@@ -142,7 +142,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream IntStream<Arg0ExtendsJava_Util_Spliterator_OfInt>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfInt> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfInt : Java.Util.Spliterator.OfInt
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "intStream", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "intStream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/IntStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#intStream(java.util.Spliterator.OfInt,boolean)"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream IntStream(Java.Util.Spliterator.OfInt arg0, bool arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "intStream", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "intStream", "(Ljava/util/Spliterator$OfInt;Z)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#longStream(java.util.function.Supplier,int,boolean)"/>
@@ -164,7 +164,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream LongStream<Arg0ExtendsJava_Util_Spliterator_OfLong>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfLong> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfLong : Java.Util.Spliterator.OfLong
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "longStream", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "longStream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/LongStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/StreamSupport.html#longStream(java.util.Spliterator.OfLong,boolean)"/>
@@ -174,19 +174,19 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream LongStream(Java.Util.Spliterator.OfLong arg0, bool arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "longStream", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "longStream", "(Ljava/util/Spliterator$OfLong;Z)Ljava/util/stream/LongStream;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

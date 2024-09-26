@@ -40,10 +40,10 @@ namespace Android.Adservices.Adselection
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AdSelectionManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Adselection
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Adservices.Adselection
     public partial class AdSelectionManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#get(android.content.Context)"/>
@@ -95,9 +95,9 @@ namespace Android.Adservices.Adselection
         {
             return SExecuteWithSignature<Android.Adservices.Adselection.AdSelectionManager>(LocalBridgeClazz, "get", "(Landroid/content/Context;)Landroid/adservices/adselection/AdSelectionManager;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#getTestAdSelectionManager()"/>
@@ -115,7 +115,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetAdSelectionData(Android.Adservices.Adselection.GetAdSelectionDataRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.GetAdSelectionDataOutcome, Java.Lang.Exception> arg2)
         {
-            IExecute("getAdSelectionData", arg0, arg1, arg2);
+            IExecuteWithSignature("getAdSelectionData", "(Landroid/adservices/adselection/GetAdSelectionDataRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#persistAdSelectionResult(android.adservices.adselection.PersistAdSelectionResultRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -125,7 +125,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void PersistAdSelectionResult(Android.Adservices.Adselection.PersistAdSelectionResultRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.AdSelectionOutcome, Java.Lang.Exception> arg2)
         {
-            IExecute("persistAdSelectionResult", arg0, arg1, arg2);
+            IExecuteWithSignature("persistAdSelectionResult", "(Landroid/adservices/adselection/PersistAdSelectionResultRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#reportEvent(android.adservices.adselection.ReportEventRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -135,7 +135,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void ReportEvent(Android.Adservices.Adselection.ReportEventRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("reportEvent", arg0, arg1, arg2);
+            IExecuteWithSignature("reportEvent", "(Landroid/adservices/adselection/ReportEventRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#reportImpression(android.adservices.adselection.ReportImpressionRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -145,7 +145,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void ReportImpression(Android.Adservices.Adselection.ReportImpressionRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("reportImpression", arg0, arg1, arg2);
+            IExecuteWithSignature("reportImpression", "(Landroid/adservices/adselection/ReportImpressionRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#selectAds(android.adservices.adselection.AdSelectionConfig,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -155,7 +155,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void SelectAds(Android.Adservices.Adselection.AdSelectionConfig arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.AdSelectionOutcome, Java.Lang.Exception> arg2)
         {
-            IExecute("selectAds", arg0, arg1, arg2);
+            IExecuteWithSignature("selectAds", "(Landroid/adservices/adselection/AdSelectionConfig;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#selectAds(android.adservices.adselection.AdSelectionFromOutcomesConfig,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -165,7 +165,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void SelectAds(Android.Adservices.Adselection.AdSelectionFromOutcomesConfig arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.AdSelectionOutcome, Java.Lang.Exception> arg2)
         {
-            IExecute("selectAds", arg0, arg1, arg2);
+            IExecuteWithSignature("selectAds", "(Landroid/adservices/adselection/AdSelectionFromOutcomesConfig;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#setAppInstallAdvertisers(android.adservices.adselection.SetAppInstallAdvertisersRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -175,7 +175,7 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void SetAppInstallAdvertisers(Android.Adservices.Adselection.SetAppInstallAdvertisersRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("setAppInstallAdvertisers", arg0, arg1, arg2);
+            IExecuteWithSignature("setAppInstallAdvertisers", "(Landroid/adservices/adselection/SetAppInstallAdvertisersRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#updateAdCounterHistogram(android.adservices.adselection.UpdateAdCounterHistogramRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -185,15 +185,15 @@ namespace Android.Adservices.Adselection
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void UpdateAdCounterHistogram(Android.Adservices.Adselection.UpdateAdCounterHistogramRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("updateAdCounterHistogram", arg0, arg1, arg2);
+            IExecuteWithSignature("updateAdCounterHistogram", "(Landroid/adservices/adselection/UpdateAdCounterHistogramRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

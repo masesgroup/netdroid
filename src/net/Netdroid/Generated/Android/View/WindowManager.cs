@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("WindowManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WindowManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BadTokenException declaration
         /// <summary>
@@ -79,9 +79,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -96,9 +96,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -117,10 +117,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LayoutParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -141,9 +141,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -158,13 +158,13 @@ namespace Android.View
     public partial interface IWindowManager : Android.View.IViewManager
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -173,13 +173,13 @@ namespace Android.View
     public partial class WindowManager : Android.View.IWindowManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#COMPAT_SMALL_COVER_SCREEN_OPT_IN"/>
@@ -301,13 +301,13 @@ namespace Android.View
         public static Java.Lang.String PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI { get { if (!_PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIReady) { _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI"); _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIReady = true; } return _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIContent; } }
         private static Java.Lang.String _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIContent = default;
         private static bool _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getDefaultDisplay()"/>
@@ -352,7 +352,7 @@ namespace Android.View
         /// <returns><see cref="Android.Window.InputTransferToken"/></returns>
         public Android.Window.InputTransferToken RegisterBatchedSurfaceControlInputReceiver(Android.Window.InputTransferToken arg0, Android.View.SurfaceControl arg1, Android.View.Choreographer arg2, Android.View.SurfaceControlInputReceiver arg3)
         {
-            return IExecute<Android.Window.InputTransferToken>("registerBatchedSurfaceControlInputReceiver", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Window.InputTransferToken>("registerBatchedSurfaceControlInputReceiver", "(Landroid/window/InputTransferToken;Landroid/view/SurfaceControl;Landroid/view/Choreographer;Landroid/view/SurfaceControlInputReceiver;)Landroid/window/InputTransferToken;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,android.view.SurfaceControl,android.os.Looper,android.view.SurfaceControlInputReceiver)"/>
@@ -364,7 +364,7 @@ namespace Android.View
         /// <returns><see cref="Android.Window.InputTransferToken"/></returns>
         public Android.Window.InputTransferToken RegisterUnbatchedSurfaceControlInputReceiver(Android.Window.InputTransferToken arg0, Android.View.SurfaceControl arg1, Android.Os.Looper arg2, Android.View.SurfaceControlInputReceiver arg3)
         {
-            return IExecute<Android.Window.InputTransferToken>("registerUnbatchedSurfaceControlInputReceiver", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Window.InputTransferToken>("registerUnbatchedSurfaceControlInputReceiver", "(Landroid/window/InputTransferToken;Landroid/view/SurfaceControl;Landroid/os/Looper;Landroid/view/SurfaceControlInputReceiver;)Landroid/window/InputTransferToken;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#isCrossWindowBlurEnabled()"/>
@@ -382,7 +382,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool TransferTouchGesture(Android.Window.InputTransferToken arg0, Android.Window.InputTransferToken arg1)
         {
-            return IExecute<bool>("transferTouchGesture", arg0, arg1);
+            return IExecuteWithSignature<bool>("transferTouchGesture", "(Landroid/window/InputTransferToken;Landroid/window/InputTransferToken;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addScreenRecordingCallback(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -392,7 +392,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public int AddScreenRecordingCallback(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1)
         {
-            return IExecute<int>("addScreenRecordingCallback", arg0, arg1);
+            return IExecuteWithSignature<int>("addScreenRecordingCallback", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addCrossWindowBlurEnabledListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -401,7 +401,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void AddCrossWindowBlurEnabledListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1)
         {
-            IExecute("addCrossWindowBlurEnabledListener", arg0, arg1);
+            IExecuteWithSignature("addCrossWindowBlurEnabledListener", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addCrossWindowBlurEnabledListener(java.util.function.Consumer)"/>
@@ -418,7 +418,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void AddProposedRotationListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.IntConsumer arg1)
         {
-            IExecute("addProposedRotationListener", arg0, arg1);
+            IExecuteWithSignature("addProposedRotationListener", "(Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#registerTrustedPresentationListener(android.os.IBinder,android.window.TrustedPresentationThresholds,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -429,7 +429,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void RegisterTrustedPresentationListener(Android.Os.IBinder arg0, Android.Window.TrustedPresentationThresholds arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Lang.Boolean> arg3)
         {
-            IExecute("registerTrustedPresentationListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("registerTrustedPresentationListener", "(Landroid/os/IBinder;Landroid/window/TrustedPresentationThresholds;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#removeCrossWindowBlurEnabledListener(java.util.function.Consumer)"/>
@@ -471,37 +471,37 @@ namespace Android.View
         {
             IExecuteWithSignature("unregisterTrustedPresentationListener", "(Ljava/util/function/Consumer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BadTokenException implementation
         public partial class BadTokenException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -510,29 +510,29 @@ namespace Android.View
         public partial class InvalidDisplayException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -602,17 +602,17 @@ namespace Android.View
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.View.WindowManager.LayoutParams"/> to <see cref="Android.Os.Parcelable"/>
             /// </summary>
             public static implicit operator Android.Os.Parcelable(Android.View.WindowManager.LayoutParams t) => t.Cast<Android.Os.Parcelable>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#token"/>
@@ -1367,9 +1367,9 @@ namespace Android.View
             public static int TYPE_WALLPAPER { get { if (!_TYPE_WALLPAPERReady) { _TYPE_WALLPAPERContent = SGetField<int>(LocalBridgeClazz, "TYPE_WALLPAPER"); _TYPE_WALLPAPERReady = true; } return _TYPE_WALLPAPERContent; } }
             private static int _TYPE_WALLPAPERContent = default;
             private static bool _TYPE_WALLPAPERReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#mayUseInputMethod(int)"/>
@@ -1380,9 +1380,9 @@ namespace Android.View
             {
                 return SExecuteWithSignature<bool>(LocalBridgeClazz, "mayUseInputMethod", "(I)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#areWallpaperTouchEventsEnabled()"/>
@@ -1609,22 +1609,22 @@ namespace Android.View
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

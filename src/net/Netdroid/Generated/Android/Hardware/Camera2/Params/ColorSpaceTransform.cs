@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ColorSpaceTransform(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,21 +90,21 @@ namespace Android.Hardware.Camera2.Params
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ColorSpaceTransform.html#getElement(int,int)"/>
@@ -114,7 +114,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="Android.Util.Rational"/></returns>
         public Android.Util.Rational GetElement(int arg0, int arg1)
         {
-            return IExecute<Android.Util.Rational>("getElement", arg0, arg1);
+            return IExecuteWithSignature<Android.Util.Rational>("getElement", "(II)Landroid/util/Rational;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ColorSpaceTransform.html#copyElements(android.util.Rational[],int)"/>
@@ -123,7 +123,7 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg1"><see cref="int"/></param>
         public void CopyElements(Android.Util.Rational[] arg0, int arg1)
         {
-            IExecute("copyElements", arg0, arg1);
+            IExecuteWithSignature("copyElements", "([Landroid/util/Rational;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ColorSpaceTransform.html#copyElements(int[],int)"/>
@@ -132,15 +132,15 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg1"><see cref="int"/></param>
         public void CopyElements(int[] arg0, int arg1)
         {
-            IExecute("copyElements", arg0, arg1);
+            IExecuteWithSignature("copyElements", "([II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

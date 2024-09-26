@@ -40,10 +40,10 @@ namespace Android.Text.Method
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public QwertyKeyListener(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,17 +83,17 @@ namespace Android.Text.Method
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/QwertyKeyListener.html#getInstance(boolean,android.text.method.TextKeyListener.Capitalize)"/>
@@ -103,7 +103,7 @@ namespace Android.Text.Method
         /// <returns><see cref="Android.Text.Method.QwertyKeyListener"/></returns>
         public static Android.Text.Method.QwertyKeyListener GetInstance(bool arg0, Android.Text.Method.TextKeyListener.Capitalize arg1)
         {
-            return SExecute<Android.Text.Method.QwertyKeyListener>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Text.Method.QwertyKeyListener>(LocalBridgeClazz, "getInstance", "(ZLandroid/text/method/TextKeyListener$Capitalize;)Landroid/text/method/QwertyKeyListener;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/QwertyKeyListener.html#getInstanceForFullKeyboard()"/>
@@ -122,19 +122,19 @@ namespace Android.Text.Method
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void MarkAsReplaced(Android.Text.Spannable arg0, int arg1, int arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "markAsReplaced", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "markAsReplaced", "(Landroid/text/Spannable;IILjava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

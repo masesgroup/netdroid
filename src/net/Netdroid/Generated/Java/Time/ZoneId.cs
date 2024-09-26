@@ -42,10 +42,10 @@ namespace Java.Time
         /// </summary>
         [global::System.Obsolete("ZoneId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ZoneId(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Java.Time
     public partial class ZoneId
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#SHORT_IDS"/>
@@ -90,9 +90,9 @@ namespace Java.Time
         public static Java.Util.Map SHORT_IDS { get { if (!_SHORT_IDSReady) { _SHORT_IDSContent = SGetField<Java.Util.Map>(LocalBridgeClazz, "SHORT_IDS"); _SHORT_IDSReady = true; } return _SHORT_IDSContent; } }
         private static Java.Util.Map _SHORT_IDSContent = default;
         private static bool _SHORT_IDSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -111,7 +111,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId Of(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
         {
-            return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "of", "(Ljava/lang/String;Ljava/util/Map;)Ljava/time/ZoneId;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#of(java.lang.String)"/>
@@ -130,7 +130,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId OfOffset(Java.Lang.String arg0, Java.Time.ZoneOffset arg1)
         {
-            return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "ofOffset", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "ofOffset", "(Ljava/lang/String;Ljava/time/ZoneOffset;)Ljava/time/ZoneId;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#systemDefault()"/>
@@ -148,9 +148,9 @@ namespace Java.Time
         {
             return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#getId()"/>
@@ -176,7 +176,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/time/format/TextStyle;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#normalized()"/>
@@ -186,13 +186,13 @@ namespace Java.Time
         {
             return IExecuteWithSignature<Java.Time.ZoneId>("normalized", "()Ljava/time/ZoneId;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -41,10 +41,10 @@ namespace Android.Preference
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PreferenceManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Preference
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnActivityDestroyListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.Preference
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnActivityDestroyListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.PreferenceManager_OnActivityDestroyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnActivityDestroyListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnActivityDestroyListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.preference.PreferenceManager$OnActivityDestroyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -146,7 +146,7 @@ namespace Android.Preference
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnActivityResultListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.PreferenceManager_OnActivityResultListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -155,13 +155,13 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnActivityResultListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnActivityResultListener"/> or its generic type if there is one
@@ -172,14 +172,14 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.preference.PreferenceManager$OnActivityResultListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -214,7 +214,7 @@ namespace Android.Preference
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnActivityStopListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.PreferenceManager_OnActivityStopListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -223,13 +223,13 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnActivityStopListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnActivityStopListener"/> or its generic type if there is one
@@ -240,14 +240,14 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.preference.PreferenceManager$OnActivityStopListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -279,13 +279,13 @@ namespace Android.Preference
     public partial class PreferenceManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#KEY_HAS_SET_DEFAULT_VALUES"/>
@@ -301,9 +301,9 @@ namespace Android.Preference
         public static Java.Lang.String METADATA_KEY_PREFERENCES { get { if (!_METADATA_KEY_PREFERENCESReady) { _METADATA_KEY_PREFERENCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "METADATA_KEY_PREFERENCES"); _METADATA_KEY_PREFERENCESReady = true; } return _METADATA_KEY_PREFERENCESContent; } }
         private static Java.Lang.String _METADATA_KEY_PREFERENCESContent = default;
         private static bool _METADATA_KEY_PREFERENCESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getDefaultSharedPreferences(android.content.Context)"/>
@@ -334,7 +334,7 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public static void SetDefaultValues(Android.Content.Context arg0, int arg1, bool arg2)
         {
-            SExecute(LocalBridgeClazz, "setDefaultValues", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultValues", "(Landroid/content/Context;IZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setDefaultValues(android.content.Context,java.lang.String,int,int,boolean)"/>
@@ -347,11 +347,11 @@ namespace Android.Preference
         [global::System.Obsolete()]
         public static void SetDefaultValues(Android.Content.Context arg0, Java.Lang.String arg1, int arg2, int arg3, bool arg4)
         {
-            SExecute(LocalBridgeClazz, "setDefaultValues", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultValues", "(Landroid/content/Context;Ljava/lang/String;IIZ)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getSharedPreferences()"/>
@@ -470,29 +470,29 @@ namespace Android.Preference
         {
             IExecuteWithSignature("setStorageDeviceProtected", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnActivityDestroyListener implementation
         public partial class OnActivityDestroyListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnActivityDestroyListener"/>
@@ -502,13 +502,13 @@ namespace Android.Preference
                 AddEventHandler("onActivityDestroy", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnActivityDestroyEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityDestroyListener.html#onActivityDestroy()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActivityDestroy"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnActivityDestroy { get; set; } = null;
-            
+
             bool hasOverrideOnActivityDestroy = true;
             void OnActivityDestroyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -517,7 +517,7 @@ namespace Android.Preference
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnActivityDestroy;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityDestroyListener.html#onActivityDestroy()"/>
             /// </summary>
@@ -526,13 +526,13 @@ namespace Android.Preference
             {
                 hasOverrideOnActivityDestroy = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -541,21 +541,21 @@ namespace Android.Preference
         public partial class OnActivityDestroyListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityDestroyListener.html#onActivityDestroy()"/>
@@ -565,13 +565,13 @@ namespace Android.Preference
             {
                 IExecuteWithSignature("onActivityDestroy", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -580,21 +580,21 @@ namespace Android.Preference
         public partial class OnActivityResultListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnActivityResultListener"/>
@@ -604,13 +604,13 @@ namespace Android.Preference
                 AddEventHandler("onActivityResult", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnActivityResultEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityResultListener.html#onActivityResult(int,int,android.content.Intent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActivityResult"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<int, int, Android.Content.Intent, bool> OnOnActivityResult { get; set; } = null;
-            
+
             bool hasOverrideOnActivityResult = true;
             void OnActivityResultEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -619,7 +619,7 @@ namespace Android.Preference
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Android.Content.Intent>(2));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnActivityResult, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityResultListener.html#onActivityResult(int,int,android.content.Intent)"/>
             /// </summary>
@@ -632,13 +632,13 @@ namespace Android.Preference
             {
                 hasOverrideOnActivityResult = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -647,21 +647,21 @@ namespace Android.Preference
         public partial class OnActivityResultListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityResultListener.html#onActivityResult(int,int,android.content.Intent)"/>
@@ -673,15 +673,15 @@ namespace Android.Preference
             [global::System.Obsolete()]
             public override bool OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2)
             {
-                return IExecute<bool>("onActivityResult", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("onActivityResult", "(IILandroid/content/Intent;)Z", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -690,21 +690,21 @@ namespace Android.Preference
         public partial class OnActivityStopListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnActivityStopListener"/>
@@ -714,13 +714,13 @@ namespace Android.Preference
                 AddEventHandler("onActivityStop", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnActivityStopEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener.html#onActivityStop()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActivityStop"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnActivityStop { get; set; } = null;
-            
+
             bool hasOverrideOnActivityStop = true;
             void OnActivityStopEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -729,7 +729,7 @@ namespace Android.Preference
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnActivityStop;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener.html#onActivityStop()"/>
             /// </summary>
@@ -738,13 +738,13 @@ namespace Android.Preference
             {
                 hasOverrideOnActivityStop = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -753,21 +753,21 @@ namespace Android.Preference
         public partial class OnActivityStopListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener.html#onActivityStop()"/>
@@ -777,20 +777,20 @@ namespace Android.Preference
             {
                 IExecuteWithSignature("onActivityStop", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

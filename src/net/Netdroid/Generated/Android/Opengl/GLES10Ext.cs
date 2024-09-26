@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLES10Ext(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Opengl
     public partial class GLES10Ext
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES10Ext.html#glQueryMatrixxOES(int[],int,int[],int)"/>
@@ -96,7 +96,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "glQueryMatrixxOES", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glQueryMatrixxOES", "([II[II)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES10Ext.html#glQueryMatrixxOES(java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -106,19 +106,19 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlQueryMatrixxOES(Java.Nio.IntBuffer arg0, Java.Nio.IntBuffer arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "glQueryMatrixxOES", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

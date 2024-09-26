@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BufferType declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BufferType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnEditorActionListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.TextView_OnEditorActionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnEditorActionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnEditorActionListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.widget.TextView$OnEditorActionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -193,10 +193,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SavedState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -217,9 +217,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -269,13 +269,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#AUTO_SIZE_TEXT_TYPE_NONE"/>
@@ -295,13 +295,13 @@ namespace Android.Widget
         public static int FOCUSED_SEARCH_RESULT_INDEX_NONE { get { if (!_FOCUSED_SEARCH_RESULT_INDEX_NONEReady) { _FOCUSED_SEARCH_RESULT_INDEX_NONEContent = SGetField<int>(LocalBridgeClazz, "FOCUSED_SEARCH_RESULT_INDEX_NONE"); _FOCUSED_SEARCH_RESULT_INDEX_NONEReady = true; } return _FOCUSED_SEARCH_RESULT_INDEX_NONEContent; } }
         private static int _FOCUSED_SEARCH_RESULT_INDEX_NONEContent = default;
         private static bool _FOCUSED_SEARCH_RESULT_INDEX_NONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintList()"/>
@@ -520,7 +520,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public bool BringPointIntoView(int arg0, bool arg1)
         {
-            return IExecute<bool>("bringPointIntoView", arg0, arg1);
+            return IExecuteWithSignature<bool>("bringPointIntoView", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#bringPointIntoView(int)"/>
@@ -547,7 +547,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public bool ExtractText(Android.View.Inputmethod.ExtractedTextRequest arg0, Android.View.Inputmethod.ExtractedText arg1)
         {
-            return IExecute<bool>("extractText", arg0, arg1);
+            return IExecuteWithSignature<bool>("extractText", "(Landroid/view/inputmethod/ExtractedTextRequest;Landroid/view/inputmethod/ExtractedText;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFreezesText()"/>
@@ -685,7 +685,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public bool OnPrivateIMECommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<bool>("onPrivateIMECommand", arg0, arg1);
+            return IExecuteWithSignature<bool>("onPrivateIMECommand", "(Ljava/lang/String;Landroid/os/Bundle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#onTextContextMenuItem(int)"/>
@@ -929,7 +929,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetText(char[] arg0, int arg1, int arg2)
         {
-            IExecute("setText", arg0, arg1, arg2);
+            IExecuteWithSignature("setText", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setText(int,android.widget.TextView.BufferType)"/>
@@ -938,7 +938,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Widget.TextView.BufferType"/></param>
         public void SetText(int arg0, Android.Widget.TextView.BufferType arg1)
         {
-            IExecute("setText", arg0, arg1);
+            IExecuteWithSignature("setText", "(ILandroid/widget/TextView$BufferType;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setText(int)"/>
@@ -963,7 +963,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Widget.TextView.BufferType"/></param>
         public void SetTextKeepState(Java.Lang.CharSequence arg0, Android.Widget.TextView.BufferType arg1)
         {
-            IExecute("setTextKeepState", arg0, arg1);
+            IExecuteWithSignature("setTextKeepState", "(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextKeepState(java.lang.CharSequence)"/>
@@ -1253,7 +1253,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public int GetLineBounds(int arg0, Android.Graphics.Rect arg1)
         {
-            return IExecute<int>("getLineBounds", arg0, arg1);
+            return IExecuteWithSignature<int>("getLineBounds", "(ILandroid/graphics/Rect;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineBreakStyle()"/>
@@ -1367,7 +1367,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public int GetOffsetForPosition(float arg0, float arg1)
         {
-            return IExecute<int>("getOffsetForPosition", arg0, arg1);
+            return IExecuteWithSignature<int>("getOffsetForPosition", "(FF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getPaintFlags()"/>
@@ -1569,7 +1569,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            IExecute("append", arg0, arg1, arg2);
+            IExecuteWithSignature("append", "(Ljava/lang/CharSequence;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#beginBatchEdit()"/>
@@ -1671,7 +1671,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetAutoSizeTextTypeUniformWithConfiguration(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setAutoSizeTextTypeUniformWithConfiguration", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setAutoSizeTextTypeUniformWithConfiguration", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setAutoSizeTextTypeUniformWithPresetSizes(int[],int)"/>
@@ -1680,7 +1680,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetAutoSizeTextTypeUniformWithPresetSizes(int[] arg0, int arg1)
         {
-            IExecute("setAutoSizeTextTypeUniformWithPresetSizes", arg0, arg1);
+            IExecuteWithSignature("setAutoSizeTextTypeUniformWithPresetSizes", "([II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setAutoSizeTextTypeWithDefaults(int)"/>
@@ -1715,7 +1715,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetCompoundDrawables(Android.Graphics.Drawable.Drawable arg0, Android.Graphics.Drawable.Drawable arg1, Android.Graphics.Drawable.Drawable arg2, Android.Graphics.Drawable.Drawable arg3)
         {
-            IExecute("setCompoundDrawables", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCompoundDrawables", "(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawablesRelative(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)"/>
@@ -1726,7 +1726,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetCompoundDrawablesRelative(Android.Graphics.Drawable.Drawable arg0, Android.Graphics.Drawable.Drawable arg1, Android.Graphics.Drawable.Drawable arg2, Android.Graphics.Drawable.Drawable arg3)
         {
-            IExecute("setCompoundDrawablesRelative", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCompoundDrawablesRelative", "(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawablesRelativeWithIntrinsicBounds(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)"/>
@@ -1737,7 +1737,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetCompoundDrawablesRelativeWithIntrinsicBounds(Android.Graphics.Drawable.Drawable arg0, Android.Graphics.Drawable.Drawable arg1, Android.Graphics.Drawable.Drawable arg2, Android.Graphics.Drawable.Drawable arg3)
         {
-            IExecute("setCompoundDrawablesRelativeWithIntrinsicBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCompoundDrawablesRelativeWithIntrinsicBounds", "(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawablesRelativeWithIntrinsicBounds(int,int,int,int)"/>
@@ -1748,7 +1748,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetCompoundDrawablesRelativeWithIntrinsicBounds(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setCompoundDrawablesRelativeWithIntrinsicBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCompoundDrawablesRelativeWithIntrinsicBounds", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawablesWithIntrinsicBounds(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)"/>
@@ -1759,7 +1759,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetCompoundDrawablesWithIntrinsicBounds(Android.Graphics.Drawable.Drawable arg0, Android.Graphics.Drawable.Drawable arg1, Android.Graphics.Drawable.Drawable arg2, Android.Graphics.Drawable.Drawable arg3)
         {
-            IExecute("setCompoundDrawablesWithIntrinsicBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCompoundDrawablesWithIntrinsicBounds", "(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawablesWithIntrinsicBounds(int,int,int,int)"/>
@@ -1770,7 +1770,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetCompoundDrawablesWithIntrinsicBounds(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setCompoundDrawablesWithIntrinsicBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCompoundDrawablesWithIntrinsicBounds", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawableTintBlendMode(android.graphics.BlendMode)"/>
@@ -1851,7 +1851,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetError(Java.Lang.CharSequence arg0, Android.Graphics.Drawable.Drawable arg1)
         {
-            IExecute("setError", arg0, arg1);
+            IExecuteWithSignature("setError", "(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)"/>
@@ -1980,7 +1980,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetImeActionLabel(Java.Lang.CharSequence arg0, int arg1)
         {
-            IExecute("setImeActionLabel", arg0, arg1);
+            IExecuteWithSignature("setImeActionLabel", "(Ljava/lang/CharSequence;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setImeHintLocales(android.os.LocaleList)"/>
@@ -2079,7 +2079,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="float"/></param>
         public void SetLineHeight(int arg0, float arg1)
         {
-            IExecute("setLineHeight", arg0, arg1);
+            IExecuteWithSignature("setLineHeight", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineHeight(int)"/>
@@ -2104,7 +2104,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="float"/></param>
         public void SetLineSpacing(float arg0, float arg1)
         {
-            IExecute("setLineSpacing", arg0, arg1);
+            IExecuteWithSignature("setLineSpacing", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLocalePreferredLineHeightForMinimumUsed(boolean)"/>
@@ -2267,7 +2267,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="int"/></param>
         public void SetShadowLayer(float arg0, float arg1, float arg2, int arg3)
         {
-            IExecute("setShadowLayer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setShadowLayer", "(FFFI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setShiftDrawingOffsetForStartOverhang(boolean)"/>
@@ -2299,7 +2299,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Widget.TextView.BufferType"/></param>
         public void SetText(Java.Lang.CharSequence arg0, Android.Widget.TextView.BufferType arg1)
         {
-            IExecute("setText", arg0, arg1);
+            IExecuteWithSignature("setText", "(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextAppearance(android.content.Context,int)"/>
@@ -2309,7 +2309,7 @@ namespace Android.Widget
         [global::System.Obsolete()]
         public void SetTextAppearance(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setTextAppearance", arg0, arg1);
+            IExecuteWithSignature("setTextAppearance", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextAppearance(int)"/>
@@ -2462,7 +2462,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="float"/></param>
         public void SetTextSize(int arg0, float arg1)
         {
-            IExecute("setTextSize", arg0, arg1);
+            IExecuteWithSignature("setTextSize", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTypeface(android.graphics.Typeface,int)"/>
@@ -2471,7 +2471,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetTypeface(Android.Graphics.Typeface arg0, int arg1)
         {
-            IExecute("setTypeface", arg0, arg1);
+            IExecuteWithSignature("setTypeface", "(Landroid/graphics/Typeface;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTypeface(android.graphics.Typeface)"/>
@@ -2497,21 +2497,21 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setWidth", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BufferType implementation
         public partial class BufferType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/TextView.BufferType.html#EDITABLE"/>
@@ -2531,9 +2531,9 @@ namespace Android.Widget
             public static Android.Widget.TextView.BufferType SPANNABLE { get { if (!_SPANNABLEReady) { _SPANNABLEContent = SGetField<Android.Widget.TextView.BufferType>(LocalBridgeClazz, "SPANNABLE"); _SPANNABLEReady = true; } return _SPANNABLEContent; } }
             private static Android.Widget.TextView.BufferType _SPANNABLEContent = default;
             private static bool _SPANNABLEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/TextView.BufferType.html#valueOf(java.lang.String)"/>
@@ -2552,17 +2552,17 @@ namespace Android.Widget
             {
                 return SExecuteWithSignatureArray<Android.Widget.TextView.BufferType>(LocalBridgeClazz, "values", "()[Landroid/widget/TextView$BufferType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2571,21 +2571,21 @@ namespace Android.Widget
         public partial class OnEditorActionListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnEditorActionListener"/>
@@ -2595,13 +2595,13 @@ namespace Android.Widget
                 AddEventHandler("onEditorAction", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnEditorActionEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/TextView.OnEditorActionListener.html#onEditorAction(android.widget.TextView,int,android.view.KeyEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEditorAction"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.Widget.TextView, int, Android.View.KeyEvent, bool> OnOnEditorAction { get; set; } = null;
-            
+
             bool hasOverrideOnEditorAction = true;
             void OnEditorActionEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2610,7 +2610,7 @@ namespace Android.Widget
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.TextView>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Android.View.KeyEvent>(2));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnEditorAction, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/TextView.OnEditorActionListener.html#onEditorAction(android.widget.TextView,int,android.view.KeyEvent)"/>
             /// </summary>
@@ -2622,13 +2622,13 @@ namespace Android.Widget
             {
                 hasOverrideOnEditorAction = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2637,21 +2637,21 @@ namespace Android.Widget
         public partial class OnEditorActionListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/TextView.OnEditorActionListener.html#onEditorAction(android.widget.TextView,int,android.view.KeyEvent)"/>
@@ -2662,15 +2662,15 @@ namespace Android.Widget
             /// <returns><see cref="bool"/></returns>
             public override bool OnEditorAction(Android.Widget.TextView arg0, int arg1, Android.View.KeyEvent arg2)
             {
-                return IExecute<bool>("onEditorAction", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("onEditorAction", "(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2679,13 +2679,13 @@ namespace Android.Widget
         public partial class SavedState
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/TextView.SavedState.html#CREATOR"/>
@@ -2693,28 +2693,28 @@ namespace Android.Widget
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

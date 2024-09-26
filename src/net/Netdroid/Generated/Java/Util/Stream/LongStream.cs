@@ -42,10 +42,10 @@ namespace Java.Util.Stream
         /// </summary>
         [global::System.Obsolete("LongStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LongStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Util.Stream
     public partial interface ILongStream : Java.Util.Stream.IBaseStream<Java.Lang.Long, Java.Util.Stream.LongStream>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,17 +94,17 @@ namespace Java.Util.Stream
     public partial class LongStream : Java.Util.Stream.ILongStream
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#concat(java.util.stream.LongStream,java.util.stream.LongStream)"/>
@@ -114,7 +114,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Concat(Java.Util.Stream.LongStream arg0, Java.Util.Stream.LongStream arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "concat", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "concat", "(Ljava/util/stream/LongStream;Ljava/util/stream/LongStream;)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#empty()"/>
@@ -142,7 +142,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Iterate(long arg0, Java.Util.Function.LongPredicate arg1, Java.Util.Function.LongUnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", "(JLjava/util/function/LongPredicate;Ljava/util/function/LongUnaryOperator;)Ljava/util/stream/LongStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#iterate(long,java.util.function.LongUnaryOperator)"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Iterate(long arg0, Java.Util.Function.LongUnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", "(JLjava/util/function/LongUnaryOperator;)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#of(long[])"/>
@@ -180,7 +180,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Range(long arg0, long arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "range", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "range", "(JJ)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#rangeClosed(long,long)"/>
@@ -190,11 +190,11 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream RangeClosed(long arg0, long arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "rangeClosed", "(JJ)Ljava/util/stream/LongStream;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#collect(java.util.function.Supplier,java.util.function.ObjLongConsumer,java.util.function.BiConsumer)"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="R"/></returns>
         public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjLongConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute<R>("collect", arg0, arg1, arg2);
+            return IExecuteWithSignature<R>("collect", "(Ljava/util/function/Supplier;Ljava/util/function/ObjLongConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#mapToObj(java.util.function.LongFunction)"/>
@@ -424,7 +424,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="long"/></returns>
         public long Reduce(long arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
-            return IExecute<long>("reduce", arg0, arg1);
+            return IExecuteWithSignature<long>("reduce", "(JLjava/util/function/LongBinaryOperator;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/LongStream.html#sum()"/>
@@ -508,13 +508,13 @@ namespace Java.Util.Stream
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("takeWhile", "(Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

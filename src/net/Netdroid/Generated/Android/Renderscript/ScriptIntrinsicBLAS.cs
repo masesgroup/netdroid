@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScriptIntrinsicBLAS(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.Renderscript
     public partial class ScriptIntrinsicBLAS
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CONJ_TRANSPOSE"/>
@@ -146,9 +146,9 @@ namespace Android.Renderscript
         public static int UPPER { get { if (!_UPPERReady) { _UPPERContent = SGetField<int>(LocalBridgeClazz, "UPPER"); _UPPERReady = true; } return _UPPERContent; } }
         private static int _UPPERContent = default;
         private static bool _UPPERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#create(android.renderscript.RenderScript)"/>
@@ -160,9 +160,9 @@ namespace Android.Renderscript
         {
             return SExecuteWithSignature<Android.Renderscript.ScriptIntrinsicBLAS>(LocalBridgeClazz, "create", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/ScriptIntrinsicBLAS;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#BNNM(android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation,int,int)"/>
@@ -177,7 +177,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void BNNM(Android.Renderscript.Allocation arg0, int arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, int arg6)
         {
-            IExecute("BNNM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("BNNM", "(Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;II)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CGBMV(int,int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Float2,android.renderscript.Allocation,int)"/>
@@ -195,7 +195,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CGBMV(int arg0, int arg1, int arg2, Android.Renderscript.Float2 arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, Android.Renderscript.Float2 arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
-            IExecute("CGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            IExecuteWithSignature("CGBMV", "(IIILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CGEMM(int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Float2,android.renderscript.Allocation)"/>
@@ -210,7 +210,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CGEMM(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CGEMM", "(IILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Float2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CGEMV(int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Float2,android.renderscript.Allocation,int)"/>
@@ -226,7 +226,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CGEMV(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("CGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("CGEMV", "(ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CGERC(android.renderscript.Float2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -240,7 +240,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CGERC(Android.Renderscript.Float2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("CGERC", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CGERC", "(Landroid/renderscript/Float2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CGERU(android.renderscript.Float2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -254,7 +254,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CGERU(Android.Renderscript.Float2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("CGERU", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CGERU", "(Landroid/renderscript/Float2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHBMV(int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Float2,android.renderscript.Allocation,int)"/>
@@ -271,7 +271,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHBMV(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Float2 arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
-            IExecute("CHBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("CHBMV", "(IILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHEMM(int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Float2,android.renderscript.Allocation)"/>
@@ -286,7 +286,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHEMM(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CHEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CHEMM", "(IILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Float2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHEMV(int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Float2,android.renderscript.Allocation,int)"/>
@@ -302,7 +302,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHEMV(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("CHEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("CHEMV", "(ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHER(int,float,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -315,7 +315,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHER(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("CHER", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("CHER", "(IFLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHER2(int,android.renderscript.Float2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -330,7 +330,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHER2(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CHER2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CHER2", "(ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHER2K(int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,float,android.renderscript.Allocation)"/>
@@ -345,7 +345,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHER2K(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CHER2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CHER2K", "(IILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;FLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHERK(int,int,float,android.renderscript.Allocation,float,android.renderscript.Allocation)"/>
@@ -359,7 +359,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHERK(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, float arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("CHERK", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CHERK", "(IIFLandroid/renderscript/Allocation;FLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHPMV(int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Float2,android.renderscript.Allocation,int)"/>
@@ -375,7 +375,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHPMV(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("CHPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("CHPMV", "(ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHPR(int,float,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -388,7 +388,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHPR(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("CHPR", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("CHPR", "(IFLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CHPR2(int,android.renderscript.Float2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -403,7 +403,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CHPR2(int arg0, Android.Renderscript.Float2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CHPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CHPR2", "(ILandroid/renderscript/Float2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CSYMM(int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Float2,android.renderscript.Allocation)"/>
@@ -418,7 +418,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CSYMM(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CSYMM", "(IILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Float2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CSYR2K(int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Float2,android.renderscript.Allocation)"/>
@@ -433,7 +433,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CSYR2K(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Float2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CSYR2K", "(IILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Float2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CSYRK(int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Float2,android.renderscript.Allocation)"/>
@@ -447,7 +447,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CSYRK(int arg0, int arg1, Android.Renderscript.Float2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Float2 arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("CSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CSYRK", "(IILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Float2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTBMV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -462,7 +462,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("CTBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CTBMV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTBSV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -477,7 +477,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("CTBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CTBSV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTPMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -491,7 +491,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("CTPMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CTPMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTPSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -505,7 +505,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("CTPSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CTPSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTRMM(int,int,int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -520,7 +520,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTRMM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Float2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CTRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CTRMM", "(IIIILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTRMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -534,7 +534,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("CTRMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CTRMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTRSM(int,int,int,int,android.renderscript.Float2,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -549,7 +549,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTRSM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Float2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("CTRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("CTRSM", "(IIIILandroid/renderscript/Float2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#CTRSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -563,7 +563,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void CTRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("CTRSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("CTRSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DGBMV(int,int,int,double,android.renderscript.Allocation,android.renderscript.Allocation,int,double,android.renderscript.Allocation,int)"/>
@@ -581,7 +581,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DGBMV(int arg0, int arg1, int arg2, double arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, double arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
-            IExecute("DGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            IExecuteWithSignature("DGBMV", "(IIIDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IDLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DGEMM(int,int,double,android.renderscript.Allocation,android.renderscript.Allocation,double,android.renderscript.Allocation)"/>
@@ -596,7 +596,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DGEMM(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("DGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DGEMM", "(IIDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;DLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DGEMV(int,double,android.renderscript.Allocation,android.renderscript.Allocation,int,double,android.renderscript.Allocation,int)"/>
@@ -612,7 +612,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DGEMV(int arg0, double arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, double arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("DGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("DGEMV", "(IDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IDLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DGER(double,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -626,7 +626,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DGER(double arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("DGER", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("DGER", "(DLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSBMV(int,int,double,android.renderscript.Allocation,android.renderscript.Allocation,int,double,android.renderscript.Allocation,int)"/>
@@ -643,7 +643,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSBMV(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, double arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
-            IExecute("DSBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("DSBMV", "(IIDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IDLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSPMV(int,double,android.renderscript.Allocation,android.renderscript.Allocation,int,double,android.renderscript.Allocation,int)"/>
@@ -659,7 +659,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSPMV(int arg0, double arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, double arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("DSPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("DSPMV", "(IDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IDLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSPR(int,double,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -672,7 +672,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSPR(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("DSPR", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("DSPR", "(IDLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSPR2(int,double,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -687,7 +687,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSPR2(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("DSPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DSPR2", "(IDLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSYMM(int,int,double,android.renderscript.Allocation,android.renderscript.Allocation,double,android.renderscript.Allocation)"/>
@@ -702,7 +702,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSYMM(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("DSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DSYMM", "(IIDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;DLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSYMV(int,double,android.renderscript.Allocation,android.renderscript.Allocation,int,double,android.renderscript.Allocation,int)"/>
@@ -718,7 +718,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSYMV(int arg0, double arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, double arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("DSYMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("DSYMV", "(IDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IDLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSYR(int,double,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -731,7 +731,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSYR(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("DSYR", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("DSYR", "(IDLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSYR2(int,double,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -746,7 +746,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSYR2(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("DSYR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DSYR2", "(IDLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSYR2K(int,int,double,android.renderscript.Allocation,android.renderscript.Allocation,double,android.renderscript.Allocation)"/>
@@ -761,7 +761,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSYR2K(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("DSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DSYR2K", "(IIDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;DLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DSYRK(int,int,double,android.renderscript.Allocation,double,android.renderscript.Allocation)"/>
@@ -775,7 +775,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DSYRK(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, double arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("DSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("DSYRK", "(IIDLandroid/renderscript/Allocation;DLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTBMV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -790,7 +790,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("DTBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DTBMV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTBSV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -805,7 +805,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("DTBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DTBSV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTPMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -819,7 +819,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("DTPMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("DTPMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTPSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -833,7 +833,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("DTPSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("DTPSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTRMM(int,int,int,int,double,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -848,7 +848,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTRMM(int arg0, int arg1, int arg2, int arg3, double arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("DTRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DTRMM", "(IIIIDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTRMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -862,7 +862,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("DTRMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("DTRMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTRSM(int,int,int,int,double,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -877,7 +877,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTRSM(int arg0, int arg1, int arg2, int arg3, double arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("DTRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("DTRSM", "(IIIIDLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#DTRSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -891,7 +891,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void DTRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("DTRSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("DTRSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SGBMV(int,int,int,float,android.renderscript.Allocation,android.renderscript.Allocation,int,float,android.renderscript.Allocation,int)"/>
@@ -909,7 +909,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SGBMV(int arg0, int arg1, int arg2, float arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, float arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
-            IExecute("SGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            IExecuteWithSignature("SGBMV", "(IIIFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IFLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SGEMM(int,int,float,android.renderscript.Allocation,android.renderscript.Allocation,float,android.renderscript.Allocation)"/>
@@ -924,7 +924,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SGEMM(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("SGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("SGEMM", "(IIFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;FLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SGEMV(int,float,android.renderscript.Allocation,android.renderscript.Allocation,int,float,android.renderscript.Allocation,int)"/>
@@ -940,7 +940,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SGEMV(int arg0, float arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, float arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("SGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("SGEMV", "(IFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IFLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SGER(float,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -954,7 +954,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SGER(float arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("SGER", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("SGER", "(FLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSBMV(int,int,float,android.renderscript.Allocation,android.renderscript.Allocation,int,float,android.renderscript.Allocation,int)"/>
@@ -971,7 +971,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSBMV(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, float arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
-            IExecute("SSBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("SSBMV", "(IIFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IFLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSPMV(int,float,android.renderscript.Allocation,android.renderscript.Allocation,int,float,android.renderscript.Allocation,int)"/>
@@ -987,7 +987,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSPMV(int arg0, float arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, float arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("SSPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("SSPMV", "(IFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IFLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSPR(int,float,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1000,7 +1000,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSPR(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("SSPR", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("SSPR", "(IFLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSPR2(int,float,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1015,7 +1015,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSPR2(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("SSPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("SSPR2", "(IFLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSYMM(int,int,float,android.renderscript.Allocation,android.renderscript.Allocation,float,android.renderscript.Allocation)"/>
@@ -1030,7 +1030,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSYMM(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("SSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("SSYMM", "(IIFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;FLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSYMV(int,float,android.renderscript.Allocation,android.renderscript.Allocation,int,float,android.renderscript.Allocation,int)"/>
@@ -1046,7 +1046,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSYMV(int arg0, float arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, float arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("SSYMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("SSYMV", "(IFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;IFLandroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSYR(int,float,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1059,7 +1059,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSYR(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("SSYR", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("SSYR", "(IFLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSYR2(int,float,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1074,7 +1074,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSYR2(int arg0, float arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("SSYR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("SSYR2", "(IFLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSYR2K(int,int,float,android.renderscript.Allocation,android.renderscript.Allocation,float,android.renderscript.Allocation)"/>
@@ -1089,7 +1089,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSYR2K(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, float arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("SSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("SSYR2K", "(IIFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;FLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#SSYRK(int,int,float,android.renderscript.Allocation,float,android.renderscript.Allocation)"/>
@@ -1103,7 +1103,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SSYRK(int arg0, int arg1, float arg2, Android.Renderscript.Allocation arg3, float arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("SSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("SSYRK", "(IIFLandroid/renderscript/Allocation;FLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STBMV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1118,7 +1118,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("STBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("STBMV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STBSV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1133,7 +1133,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("STBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("STBSV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STPMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1147,7 +1147,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("STPMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("STPMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STPSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1161,7 +1161,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("STPSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("STPSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STRMM(int,int,int,int,float,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -1176,7 +1176,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STRMM(int arg0, int arg1, int arg2, int arg3, float arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("STRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("STRMM", "(IIIIFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STRMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1190,7 +1190,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("STRMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("STRMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STRSM(int,int,int,int,float,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -1205,7 +1205,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STRSM(int arg0, int arg1, int arg2, int arg3, float arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("STRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("STRSM", "(IIIIFLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#STRSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1219,7 +1219,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void STRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("STRSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("STRSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZGBMV(int,int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Double2,android.renderscript.Allocation,int)"/>
@@ -1237,7 +1237,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZGBMV(int arg0, int arg1, int arg2, Android.Renderscript.Double2 arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6, Android.Renderscript.Double2 arg7, Android.Renderscript.Allocation arg8, int arg9)
         {
-            IExecute("ZGBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            IExecuteWithSignature("ZGBMV", "(IIILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZGEMM(int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Double2,android.renderscript.Allocation)"/>
@@ -1252,7 +1252,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZGEMM(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZGEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZGEMM", "(IILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Double2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZGEMV(int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Double2,android.renderscript.Allocation,int)"/>
@@ -1268,7 +1268,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZGEMV(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("ZGEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("ZGEMV", "(ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZGERC(android.renderscript.Double2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1282,7 +1282,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZGERC(Android.Renderscript.Double2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("ZGERC", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZGERC", "(Landroid/renderscript/Double2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZGERU(android.renderscript.Double2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1296,7 +1296,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZGERU(Android.Renderscript.Double2 arg0, Android.Renderscript.Allocation arg1, int arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("ZGERU", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZGERU", "(Landroid/renderscript/Double2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHBMV(int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Double2,android.renderscript.Allocation,int)"/>
@@ -1313,7 +1313,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHBMV(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Double2 arg6, Android.Renderscript.Allocation arg7, int arg8)
         {
-            IExecute("ZHBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("ZHBMV", "(IILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHEMM(int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Double2,android.renderscript.Allocation)"/>
@@ -1328,7 +1328,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHEMM(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZHEMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZHEMM", "(IILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Double2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHEMV(int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Double2,android.renderscript.Allocation,int)"/>
@@ -1344,7 +1344,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHEMV(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("ZHEMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("ZHEMV", "(ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHER(int,double,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1357,7 +1357,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHER(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("ZHER", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("ZHER", "(IDLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHER2(int,android.renderscript.Double2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1372,7 +1372,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHER2(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZHER2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZHER2", "(ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHER2K(int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,double,android.renderscript.Allocation)"/>
@@ -1387,7 +1387,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHER2K(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, double arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZHER2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZHER2K", "(IILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;DLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHERK(int,int,double,android.renderscript.Allocation,double,android.renderscript.Allocation)"/>
@@ -1401,7 +1401,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHERK(int arg0, int arg1, double arg2, Android.Renderscript.Allocation arg3, double arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("ZHERK", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZHERK", "(IIDLandroid/renderscript/Allocation;DLandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHPMV(int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,int,android.renderscript.Double2,android.renderscript.Allocation,int)"/>
@@ -1417,7 +1417,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHPMV(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, Android.Renderscript.Allocation arg3, int arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6, int arg7)
         {
-            IExecute("ZHPMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("ZHPMV", "(ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHPR(int,double,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1430,7 +1430,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHPR(int arg0, double arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4)
         {
-            IExecute("ZHPR", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("ZHPR", "(IDLandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZHPR2(int,android.renderscript.Double2,android.renderscript.Allocation,int,android.renderscript.Allocation,int,android.renderscript.Allocation)"/>
@@ -1445,7 +1445,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZHPR2(int arg0, Android.Renderscript.Double2 arg1, Android.Renderscript.Allocation arg2, int arg3, Android.Renderscript.Allocation arg4, int arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZHPR2", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZHPR2", "(ILandroid/renderscript/Double2;Landroid/renderscript/Allocation;ILandroid/renderscript/Allocation;ILandroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZSYMM(int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Double2,android.renderscript.Allocation)"/>
@@ -1460,7 +1460,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZSYMM(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZSYMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZSYMM", "(IILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Double2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZSYR2K(int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Double2,android.renderscript.Allocation)"/>
@@ -1475,7 +1475,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZSYR2K(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Double2 arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZSYR2K", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZSYR2K", "(IILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Double2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZSYRK(int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Double2,android.renderscript.Allocation)"/>
@@ -1489,7 +1489,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZSYRK(int arg0, int arg1, Android.Renderscript.Double2 arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Double2 arg4, Android.Renderscript.Allocation arg5)
         {
-            IExecute("ZSYRK", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZSYRK", "(IILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Double2;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTBMV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1504,7 +1504,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTBMV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("ZTBMV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZTBMV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTBSV(int,int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1519,7 +1519,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTBSV(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Allocation arg4, Android.Renderscript.Allocation arg5, int arg6)
         {
-            IExecute("ZTBSV", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZTBSV", "(IIIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTPMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1533,7 +1533,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTPMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("ZTPMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZTPMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTPSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1547,7 +1547,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTPSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("ZTPSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZTPSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTRMM(int,int,int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -1562,7 +1562,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTRMM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Double2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZTRMM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZTRMM", "(IIIILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTRMV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1576,7 +1576,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTRMV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("ZTRMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZTRMV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTRSM(int,int,int,int,android.renderscript.Double2,android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -1591,7 +1591,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTRSM(int arg0, int arg1, int arg2, int arg3, Android.Renderscript.Double2 arg4, Android.Renderscript.Allocation arg5, Android.Renderscript.Allocation arg6)
         {
-            IExecute("ZTRSM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("ZTRSM", "(IIIILandroid/renderscript/Double2;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html#ZTRSV(int,int,int,android.renderscript.Allocation,android.renderscript.Allocation,int)"/>
@@ -1605,15 +1605,15 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ZTRSV(int arg0, int arg1, int arg2, Android.Renderscript.Allocation arg3, Android.Renderscript.Allocation arg4, int arg5)
         {
-            IExecute("ZTRSV", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("ZTRSV", "(IIILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

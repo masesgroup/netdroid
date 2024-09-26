@@ -42,10 +42,10 @@ namespace Javax.Microedition.Khronos.Egl
         /// </summary>
         [global::System.Obsolete("EGL11 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EGL11(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Microedition.Khronos.Egl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Microedition.Khronos.Egl
     public partial interface IEGL11 : Javax.Microedition.Khronos.Egl.IEGL10
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Javax.Microedition.Khronos.Egl
     public partial class EGL11 : Javax.Microedition.Khronos.Egl.IEGL11
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL11.html#EGL_CONTEXT_LOST"/>
@@ -108,21 +108,21 @@ namespace Javax.Microedition.Khronos.Egl
         public static int EGL_CONTEXT_LOST { get { if (!_EGL_CONTEXT_LOSTReady) { _EGL_CONTEXT_LOSTContent = SGetField<int>(LocalBridgeClazz, "EGL_CONTEXT_LOST"); _EGL_CONTEXT_LOSTReady = true; } return _EGL_CONTEXT_LOSTContent; } }
         private static int _EGL_CONTEXT_LOSTContent = default;
         private static bool _EGL_CONTEXT_LOSTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

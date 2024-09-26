@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UserManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region UserOperationException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -91,13 +91,13 @@ namespace Android.Os
     public partial class UserManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED"/>
@@ -605,9 +605,9 @@ namespace Android.Os
         public static Java.Lang.String USER_TYPE_PROFILE_PRIVATE { get { if (!_USER_TYPE_PROFILE_PRIVATEReady) { _USER_TYPE_PROFILE_PRIVATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER_TYPE_PROFILE_PRIVATE"); _USER_TYPE_PROFILE_PRIVATEReady = true; } return _USER_TYPE_PROFILE_PRIVATEContent; } }
         private static Java.Lang.String _USER_TYPE_PROFILE_PRIVATEContent = default;
         private static bool _USER_TYPE_PROFILE_PRIVATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#createUserCreationIntent(java.lang.String,java.lang.String,java.lang.String,android.os.PersistableBundle)"/>
@@ -619,7 +619,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public static Android.Content.Intent CreateUserCreationIntent(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Os.PersistableBundle arg3)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "createUserCreationIntent", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "createUserCreationIntent", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/PersistableBundle;)Landroid/content/Intent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#isHeadlessSystemUserMode()"/>
@@ -637,9 +637,9 @@ namespace Android.Os
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "supportsMultipleUsers", "()Z");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getApplicationRestrictions(java.lang.String)"/>
@@ -794,7 +794,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool RequestQuietModeEnabled(bool arg0, Android.Os.UserHandle arg1, int arg2)
         {
-            return IExecute<bool>("requestQuietModeEnabled", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("requestQuietModeEnabled", "(ZLandroid/os/UserHandle;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle)"/>
@@ -804,7 +804,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool RequestQuietModeEnabled(bool arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<bool>("requestQuietModeEnabled", arg0, arg1);
+            return IExecuteWithSignature<bool>("requestQuietModeEnabled", "(ZLandroid/os/UserHandle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#setRestrictionsChallenge(java.lang.String)"/>
@@ -866,7 +866,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void SetUserRestriction(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setUserRestriction", arg0, arg1);
+            IExecuteWithSignature("setUserRestriction", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle,android.os.UserHandle)"/>
@@ -876,7 +876,7 @@ namespace Android.Os
         [global::System.Obsolete()]
         public void SetUserRestrictions(Android.Os.Bundle arg0, Android.Os.UserHandle arg1)
         {
-            IExecute("setUserRestrictions", arg0, arg1);
+            IExecuteWithSignature("setUserRestrictions", "(Landroid/os/Bundle;Landroid/os/UserHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)"/>
@@ -887,44 +887,44 @@ namespace Android.Os
         {
             IExecuteWithSignature("setUserRestrictions", "(Landroid/os/Bundle;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region UserOperationException implementation
         public partial class UserOperationException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SplittableRandom(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,25 +82,25 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.SplittableRandom"/> to <see cref="Java.Util.RandomNs.RandomGenerator"/>
         /// </summary>
         public static implicit operator Java.Util.RandomNs.RandomGenerator(Java.Util.SplittableRandom t) => t.Cast<Java.Util.RandomNs.RandomGenerator>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#nextInt()"/>
@@ -143,7 +143,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(double arg0, double arg1)
         {
-            return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(DD)Ljava/util/stream/DoubleStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#doubles(long,double,double)"/>
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(long arg0, double arg1, double arg2)
         {
-            return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(JDD)Ljava/util/stream/DoubleStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#doubles(long)"/>
@@ -181,7 +181,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(int arg0, int arg1)
         {
-            return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(II)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#ints(long,int,int)"/>
@@ -192,7 +192,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(long arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(JII)Ljava/util/stream/IntStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#ints(long)"/>
@@ -220,7 +220,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1, long arg2)
         {
-            return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(JJJ)Ljava/util/stream/LongStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#longs(long,long)"/>
@@ -230,7 +230,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1)
         {
-            return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(JJ)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#longs(long)"/>
@@ -266,7 +266,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.SplittableGenerator> Splits(long arg0, Java.Util.RandomNs.RandomGenerator.SplittableGenerator arg1)
         {
-            return IExecute<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.SplittableGenerator>>("splits", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.SplittableGenerator>>("splits", "(JLjava/util/random/RandomGenerator$SplittableGenerator;)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SplittableRandom.html#splits(long)"/>
@@ -293,13 +293,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("nextBytes", "([B)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

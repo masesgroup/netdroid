@@ -40,10 +40,10 @@ namespace Android.Media.Audiofx
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DynamicsProcessing(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Audiofx
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BandBase declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BandBase(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BandStage(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Channel(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Config(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,7 +240,7 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -257,10 +257,10 @@ namespace Android.Media.Audiofx
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -281,9 +281,9 @@ namespace Android.Media.Audiofx
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -306,10 +306,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Eq(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -351,10 +351,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public EqBand(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -375,9 +375,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -396,10 +396,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Limiter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -420,9 +420,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -441,10 +441,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Mbc(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -465,9 +465,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -486,10 +486,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MbcBand(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -510,9 +510,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -531,10 +531,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Stage(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -555,9 +555,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -587,13 +587,13 @@ namespace Android.Media.Audiofx
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#VARIANT_FAVOR_FREQUENCY_RESOLUTION"/>
@@ -607,13 +607,13 @@ namespace Android.Media.Audiofx
         public static int VARIANT_FAVOR_TIME_RESOLUTION { get { if (!_VARIANT_FAVOR_TIME_RESOLUTIONReady) { _VARIANT_FAVOR_TIME_RESOLUTIONContent = SGetField<int>(LocalBridgeClazz, "VARIANT_FAVOR_TIME_RESOLUTION"); _VARIANT_FAVOR_TIME_RESOLUTIONReady = true; } return _VARIANT_FAVOR_TIME_RESOLUTIONContent; } }
         private static int _VARIANT_FAVOR_TIME_RESOLUTIONContent = default;
         private static bool _VARIANT_FAVOR_TIME_RESOLUTIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getChannelByChannelIndex(int)"/>
@@ -658,7 +658,7 @@ namespace Android.Media.Audiofx
         /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></returns>
         public Android.Media.Audiofx.DynamicsProcessing.EqBand GetPostEqBandByChannelIndex(int arg0, int arg1)
         {
-            return IExecute<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPostEqBandByChannelIndex", arg0, arg1);
+            return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPostEqBandByChannelIndex", "(II)Landroid/media/audiofx/DynamicsProcessing$EqBand;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getPreEqBandByChannelIndex(int,int)"/>
@@ -668,7 +668,7 @@ namespace Android.Media.Audiofx
         /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></returns>
         public Android.Media.Audiofx.DynamicsProcessing.EqBand GetPreEqBandByChannelIndex(int arg0, int arg1)
         {
-            return IExecute<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPreEqBandByChannelIndex", arg0, arg1);
+            return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPreEqBandByChannelIndex", "(II)Landroid/media/audiofx/DynamicsProcessing$EqBand;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getLimiterByChannelIndex(int)"/>
@@ -696,7 +696,7 @@ namespace Android.Media.Audiofx
         /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></returns>
         public Android.Media.Audiofx.DynamicsProcessing.MbcBand GetMbcBandByChannelIndex(int arg0, int arg1)
         {
-            return IExecute<Android.Media.Audiofx.DynamicsProcessing.MbcBand>("getMbcBandByChannelIndex", arg0, arg1);
+            return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.MbcBand>("getMbcBandByChannelIndex", "(II)Landroid/media/audiofx/DynamicsProcessing$MbcBand;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#getInputGainByChannelIndex(int)"/>
@@ -730,7 +730,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Channel"/></param>
         public void SetChannelTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.Channel arg1)
         {
-            IExecute("setChannelTo", arg0, arg1);
+            IExecuteWithSignature("setChannelTo", "(ILandroid/media/audiofx/DynamicsProcessing$Channel;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setInputGainAllChannelsTo(float)"/>
@@ -747,7 +747,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="float"/></param>
         public void SetInputGainbyChannel(int arg0, float arg1)
         {
-            IExecute("setInputGainbyChannel", arg0, arg1);
+            IExecuteWithSignature("setInputGainbyChannel", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setLimiterAllChannelsTo(android.media.audiofx.DynamicsProcessing.Limiter)"/>
@@ -764,7 +764,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Limiter"/></param>
         public void SetLimiterByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Limiter arg1)
         {
-            IExecute("setLimiterByChannelIndex", arg0, arg1);
+            IExecuteWithSignature("setLimiterByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Limiter;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcAllChannelsTo(android.media.audiofx.DynamicsProcessing.Mbc)"/>
@@ -781,7 +781,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></param>
         public void SetMbcBandAllChannelsTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.MbcBand arg1)
         {
-            IExecute("setMbcBandAllChannelsTo", arg0, arg1);
+            IExecuteWithSignature("setMbcBandAllChannelsTo", "(ILandroid/media/audiofx/DynamicsProcessing$MbcBand;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.MbcBand)"/>
@@ -791,7 +791,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg2"><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></param>
         public void SetMbcBandByChannelIndex(int arg0, int arg1, Android.Media.Audiofx.DynamicsProcessing.MbcBand arg2)
         {
-            IExecute("setMbcBandByChannelIndex", arg0, arg1, arg2);
+            IExecuteWithSignature("setMbcBandByChannelIndex", "(IILandroid/media/audiofx/DynamicsProcessing$MbcBand;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setMbcByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Mbc)"/>
@@ -800,7 +800,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Mbc"/></param>
         public void SetMbcByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Mbc arg1)
         {
-            IExecute("setMbcByChannelIndex", arg0, arg1);
+            IExecuteWithSignature("setMbcByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Mbc;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -817,7 +817,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
         public void SetPostEqBandAllChannelsTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
         {
-            IExecute("setPostEqBandAllChannelsTo", arg0, arg1);
+            IExecuteWithSignature("setPostEqBandAllChannelsTo", "(ILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)"/>
@@ -827,7 +827,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg2"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
         public void SetPostEqBandByChannelIndex(int arg0, int arg1, Android.Media.Audiofx.DynamicsProcessing.EqBand arg2)
         {
-            IExecute("setPostEqBandByChannelIndex", arg0, arg1, arg2);
+            IExecuteWithSignature("setPostEqBandByChannelIndex", "(IILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPostEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -836,7 +836,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></param>
         public void SetPostEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
         {
-            IExecute("setPostEqByChannelIndex", arg0, arg1);
+            IExecuteWithSignature("setPostEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -853,7 +853,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
         public void SetPreEqBandAllChannelsTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
         {
-            IExecute("setPreEqBandAllChannelsTo", arg0, arg1);
+            IExecuteWithSignature("setPreEqBandAllChannelsTo", "(ILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)"/>
@@ -863,7 +863,7 @@ namespace Android.Media.Audiofx
         /// <param name="arg2"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
         public void SetPreEqBandByChannelIndex(int arg0, int arg1, Android.Media.Audiofx.DynamicsProcessing.EqBand arg2)
         {
-            IExecute("setPreEqBandByChannelIndex", arg0, arg1, arg2);
+            IExecuteWithSignature("setPreEqBandByChannelIndex", "(IILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.html#setPreEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -872,11 +872,11 @@ namespace Android.Media.Audiofx
         /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></param>
         public void SetPreEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
         {
-            IExecute("setPreEqByChannelIndex", arg0, arg1);
+            IExecuteWithSignature("setPreEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BandBase implementation
         public partial class BandBase
@@ -891,21 +891,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandBase.html#isEnabled()"/>
@@ -939,13 +939,13 @@ namespace Android.Media.Audiofx
             {
                 IExecuteWithSignature("setEnabled", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -964,21 +964,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.BandStage.html#getBandCount()"/>
@@ -988,13 +988,13 @@ namespace Android.Media.Audiofx
             {
                 return IExecuteWithSignature<int>("getBandCount", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1026,21 +1026,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#getPostEq()"/>
@@ -1140,7 +1140,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></param>
             public void SetMbcBand(int arg0, Android.Media.Audiofx.DynamicsProcessing.MbcBand arg1)
             {
-                IExecute("setMbcBand", arg0, arg1);
+                IExecuteWithSignature("setMbcBand", "(ILandroid/media/audiofx/DynamicsProcessing$MbcBand;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPostEq(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1157,7 +1157,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
             public void SetPostEqBand(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
             {
-                IExecute("setPostEqBand", arg0, arg1);
+                IExecuteWithSignature("setPostEqBand", "(ILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Channel.html#setPreEq(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1174,15 +1174,15 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
             public void SetPreEqBand(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
             {
-                IExecute("setPreEqBand", arg0, arg1);
+                IExecuteWithSignature("setPreEqBand", "(ILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1191,21 +1191,21 @@ namespace Android.Media.Audiofx
         public partial class Config
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getChannelByChannelIndex(int)"/>
@@ -1242,7 +1242,7 @@ namespace Android.Media.Audiofx
             /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></returns>
             public Android.Media.Audiofx.DynamicsProcessing.EqBand GetPostEqBandByChannelIndex(int arg0, int arg1)
             {
-                return IExecute<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPostEqBandByChannelIndex", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPostEqBandByChannelIndex", "(II)Landroid/media/audiofx/DynamicsProcessing$EqBand;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getPreEqBandByChannelIndex(int,int)"/>
@@ -1252,7 +1252,7 @@ namespace Android.Media.Audiofx
             /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></returns>
             public Android.Media.Audiofx.DynamicsProcessing.EqBand GetPreEqBandByChannelIndex(int arg0, int arg1)
             {
-                return IExecute<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPreEqBandByChannelIndex", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.EqBand>("getPreEqBandByChannelIndex", "(II)Landroid/media/audiofx/DynamicsProcessing$EqBand;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#getLimiterByChannelIndex(int)"/>
@@ -1280,7 +1280,7 @@ namespace Android.Media.Audiofx
             /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></returns>
             public Android.Media.Audiofx.DynamicsProcessing.MbcBand GetMbcBandByChannelIndex(int arg0, int arg1)
             {
-                return IExecute<Android.Media.Audiofx.DynamicsProcessing.MbcBand>("getMbcBandByChannelIndex", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.MbcBand>("getMbcBandByChannelIndex", "(II)Landroid/media/audiofx/DynamicsProcessing$MbcBand;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#isLimiterInUse()"/>
@@ -1378,7 +1378,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Channel"/></param>
             public void SetChannelTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.Channel arg1)
             {
-                IExecute("setChannelTo", arg0, arg1);
+                IExecuteWithSignature("setChannelTo", "(ILandroid/media/audiofx/DynamicsProcessing$Channel;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setInputGainAllChannelsTo(float)"/>
@@ -1395,7 +1395,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="float"/></param>
             public void SetInputGainByChannelIndex(int arg0, float arg1)
             {
-                IExecute("setInputGainByChannelIndex", arg0, arg1);
+                IExecuteWithSignature("setInputGainByChannelIndex", "(IF)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setLimiterAllChannelsTo(android.media.audiofx.DynamicsProcessing.Limiter)"/>
@@ -1412,7 +1412,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Limiter"/></param>
             public void SetLimiterByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Limiter arg1)
             {
-                IExecute("setLimiterByChannelIndex", arg0, arg1);
+                IExecuteWithSignature("setLimiterByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Limiter;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setMbcAllChannelsTo(android.media.audiofx.DynamicsProcessing.Mbc)"/>
@@ -1429,7 +1429,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></param>
             public void SetMbcBandAllChannelsTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.MbcBand arg1)
             {
-                IExecute("setMbcBandAllChannelsTo", arg0, arg1);
+                IExecuteWithSignature("setMbcBandAllChannelsTo", "(ILandroid/media/audiofx/DynamicsProcessing$MbcBand;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setMbcBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.MbcBand)"/>
@@ -1439,7 +1439,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg2"><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></param>
             public void SetMbcBandByChannelIndex(int arg0, int arg1, Android.Media.Audiofx.DynamicsProcessing.MbcBand arg2)
             {
-                IExecute("setMbcBandByChannelIndex", arg0, arg1, arg2);
+                IExecuteWithSignature("setMbcBandByChannelIndex", "(IILandroid/media/audiofx/DynamicsProcessing$MbcBand;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setMbcByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Mbc)"/>
@@ -1448,7 +1448,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Mbc"/></param>
             public void SetMbcByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Mbc arg1)
             {
-                IExecute("setMbcByChannelIndex", arg0, arg1);
+                IExecuteWithSignature("setMbcByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Mbc;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setPostEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1465,7 +1465,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
             public void SetPostEqBandAllChannelsTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
             {
-                IExecute("setPostEqBandAllChannelsTo", arg0, arg1);
+                IExecuteWithSignature("setPostEqBandAllChannelsTo", "(ILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setPostEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)"/>
@@ -1475,7 +1475,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg2"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
             public void SetPostEqBandByChannelIndex(int arg0, int arg1, Android.Media.Audiofx.DynamicsProcessing.EqBand arg2)
             {
-                IExecute("setPostEqBandByChannelIndex", arg0, arg1, arg2);
+                IExecuteWithSignature("setPostEqBandByChannelIndex", "(IILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setPostEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1484,7 +1484,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></param>
             public void SetPostEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
             {
-                IExecute("setPostEqByChannelIndex", arg0, arg1);
+                IExecuteWithSignature("setPostEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setPreEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1501,7 +1501,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
             public void SetPreEqBandAllChannelsTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
             {
-                IExecute("setPreEqBandAllChannelsTo", arg0, arg1);
+                IExecuteWithSignature("setPreEqBandAllChannelsTo", "(ILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setPreEqBandByChannelIndex(int,int,android.media.audiofx.DynamicsProcessing.EqBand)"/>
@@ -1511,7 +1511,7 @@ namespace Android.Media.Audiofx
             /// <param name="arg2"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
             public void SetPreEqBandByChannelIndex(int arg0, int arg1, Android.Media.Audiofx.DynamicsProcessing.EqBand arg2)
             {
-                IExecute("setPreEqBandByChannelIndex", arg0, arg1, arg2);
+                IExecuteWithSignature("setPreEqBandByChannelIndex", "(IILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.html#setPreEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1520,11 +1520,11 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.Eq"/></param>
             public void SetPreEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
             {
-                IExecute("setPreEqByChannelIndex", arg0, arg1);
+                IExecuteWithSignature("setPreEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
@@ -1546,21 +1546,21 @@ namespace Android.Media.Audiofx
                     : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#build()"/>
@@ -1587,7 +1587,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetChannelTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.Channel arg1)
                 {
-                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setChannelTo", arg0, arg1);
+                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setChannelTo", "(ILandroid/media/audiofx/DynamicsProcessing$Channel;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setInputGainAllChannelsTo(float)"/>
@@ -1606,7 +1606,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetInputGainByChannelIndex(int arg0, float arg1)
                 {
-                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setInputGainByChannelIndex", arg0, arg1);
+                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setInputGainByChannelIndex", "(IF)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setLimiterAllChannelsTo(android.media.audiofx.DynamicsProcessing.Limiter)"/>
@@ -1625,7 +1625,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetLimiterByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Limiter arg1)
                 {
-                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setLimiterByChannelIndex", arg0, arg1);
+                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setLimiterByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Limiter;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setMbcAllChannelsTo(android.media.audiofx.DynamicsProcessing.Mbc)"/>
@@ -1644,7 +1644,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetMbcByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Mbc arg1)
                 {
-                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setMbcByChannelIndex", arg0, arg1);
+                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setMbcByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Mbc;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPostEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1663,7 +1663,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetPostEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
                 {
-                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPostEqByChannelIndex", arg0, arg1);
+                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPostEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPreEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1682,7 +1682,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetPreEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
                 {
-                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreEqByChannelIndex", arg0, arg1);
+                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPreferredFrameDuration(float)"/>
@@ -1693,20 +1693,20 @@ namespace Android.Media.Audiofx
                 {
                     return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreferredFrameDuration", "(F)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1733,21 +1733,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Eq.html#getBand(int)"/>
@@ -1765,15 +1765,15 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.EqBand"/></param>
             public void SetBand(int arg0, Android.Media.Audiofx.DynamicsProcessing.EqBand arg1)
             {
-                IExecute("setBand", arg0, arg1);
+                IExecuteWithSignature("setBand", "(ILandroid/media/audiofx/DynamicsProcessing$EqBand;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1800,21 +1800,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.EqBand.html#getGain()"/>
@@ -1832,13 +1832,13 @@ namespace Android.Media.Audiofx
             {
                 IExecuteWithSignature("setGain", "(F)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1870,21 +1870,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Limiter.html#getAttackTime()"/>
@@ -1982,13 +1982,13 @@ namespace Android.Media.Audiofx
             {
                 IExecuteWithSignature("setThreshold", "(F)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2015,21 +2015,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Mbc.html#getBand(int)"/>
@@ -2047,15 +2047,15 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="Android.Media.Audiofx.DynamicsProcessing.MbcBand"/></param>
             public void SetBand(int arg0, Android.Media.Audiofx.DynamicsProcessing.MbcBand arg1)
             {
-                IExecute("setBand", arg0, arg1);
+                IExecuteWithSignature("setBand", "(ILandroid/media/audiofx/DynamicsProcessing$MbcBand;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2090,21 +2090,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.MbcBand.html#getAttackTime()"/>
@@ -2250,13 +2250,13 @@ namespace Android.Media.Audiofx
             {
                 IExecuteWithSignature("setThreshold", "(F)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2274,21 +2274,21 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Stage.html#isEnabled()"/>
@@ -2314,20 +2314,20 @@ namespace Android.Media.Audiofx
             {
                 IExecuteWithSignature("setEnabled", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BoringLayout(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Metrics declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Metrics(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -169,17 +169,17 @@ namespace Android.Text
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#make(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,android.text.BoringLayout.Metrics,boolean,android.text.TextUtils.TruncateAt,int,boolean)"/>
@@ -196,7 +196,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout"/></returns>
         public static Android.Text.BoringLayout Make(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, Android.Text.BoringLayout.Metrics arg4, bool arg5, Android.Text.TextUtils.TruncateAt arg6, int arg7, bool arg8)
         {
-            return SExecute<Android.Text.BoringLayout>(LocalBridgeClazz, "make", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Android.Text.BoringLayout>(LocalBridgeClazz, "make", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;IZ)Landroid/text/BoringLayout;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#make(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,android.text.BoringLayout.Metrics,boolean,android.text.TextUtils.TruncateAt,int)"/>
@@ -214,7 +214,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout"/></returns>
         public static Android.Text.BoringLayout Make(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, float arg4, float arg5, Android.Text.BoringLayout.Metrics arg6, bool arg7, Android.Text.TextUtils.TruncateAt arg8, int arg9)
         {
-            return SExecute<Android.Text.BoringLayout>(LocalBridgeClazz, "make", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecuteWithSignature<Android.Text.BoringLayout>(LocalBridgeClazz, "make", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#make(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,android.text.BoringLayout.Metrics,boolean)"/>
@@ -230,7 +230,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout"/></returns>
         public static Android.Text.BoringLayout Make(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, float arg4, float arg5, Android.Text.BoringLayout.Metrics arg6, bool arg7)
         {
-            return SExecute<Android.Text.BoringLayout>(LocalBridgeClazz, "make", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Android.Text.BoringLayout>(LocalBridgeClazz, "make", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.BoringLayout.Metrics)"/>
@@ -241,7 +241,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout.Metrics"/></returns>
         public static Android.Text.BoringLayout.Metrics IsBoring(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, Android.Text.BoringLayout.Metrics arg2)
         {
-            return SExecute<Android.Text.BoringLayout.Metrics>(LocalBridgeClazz, "isBoring", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Text.BoringLayout.Metrics>(LocalBridgeClazz, "isBoring", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/BoringLayout$Metrics;)Landroid/text/BoringLayout$Metrics;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic,boolean,android.text.BoringLayout.Metrics)"/>
@@ -254,7 +254,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout.Metrics"/></returns>
         public static Android.Text.BoringLayout.Metrics IsBoring(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, Android.Text.TextDirectionHeuristic arg2, bool arg3, Android.Text.BoringLayout.Metrics arg4)
         {
-            return SExecute<Android.Text.BoringLayout.Metrics>(LocalBridgeClazz, "isBoring", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Text.BoringLayout.Metrics>(LocalBridgeClazz, "isBoring", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/TextDirectionHeuristic;ZLandroid/text/BoringLayout$Metrics;)Landroid/text/BoringLayout$Metrics;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#isBoring(java.lang.CharSequence,android.text.TextPaint)"/>
@@ -264,11 +264,11 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout.Metrics"/></returns>
         public static Android.Text.BoringLayout.Metrics IsBoring(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1)
         {
-            return SExecute<Android.Text.BoringLayout.Metrics>(LocalBridgeClazz, "isBoring", arg0, arg1);
+            return SExecuteWithSignature<Android.Text.BoringLayout.Metrics>(LocalBridgeClazz, "isBoring", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;)Landroid/text/BoringLayout$Metrics;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#replaceOrMake(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,android.text.BoringLayout.Metrics,boolean,android.text.TextUtils.TruncateAt,int,boolean)"/>
@@ -285,7 +285,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout"/></returns>
         public Android.Text.BoringLayout ReplaceOrMake(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, Android.Text.BoringLayout.Metrics arg4, bool arg5, Android.Text.TextUtils.TruncateAt arg6, int arg7, bool arg8)
         {
-            return IExecute<Android.Text.BoringLayout>("replaceOrMake", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return IExecuteWithSignature<Android.Text.BoringLayout>("replaceOrMake", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;IZ)Landroid/text/BoringLayout;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#replaceOrMake(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,android.text.BoringLayout.Metrics,boolean,android.text.TextUtils.TruncateAt,int)"/>
@@ -303,7 +303,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout"/></returns>
         public Android.Text.BoringLayout ReplaceOrMake(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, float arg4, float arg5, Android.Text.BoringLayout.Metrics arg6, bool arg7, Android.Text.TextUtils.TruncateAt arg8, int arg9)
         {
-            return IExecute<Android.Text.BoringLayout>("replaceOrMake", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return IExecuteWithSignature<Android.Text.BoringLayout>("replaceOrMake", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#replaceOrMake(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,android.text.BoringLayout.Metrics,boolean)"/>
@@ -319,7 +319,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.BoringLayout"/></returns>
         public Android.Text.BoringLayout ReplaceOrMake(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, float arg4, float arg5, Android.Text.BoringLayout.Metrics arg6, bool arg7)
         {
-            return IExecute<Android.Text.BoringLayout>("replaceOrMake", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Android.Text.BoringLayout>("replaceOrMake", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/BoringLayout.html#ellipsized(int,int)"/>
@@ -328,35 +328,35 @@ namespace Android.Text
         /// <param name="arg1"><see cref="int"/></param>
         public void Ellipsized(int arg0, int arg1)
         {
-            IExecute("ellipsized", arg0, arg1);
+            IExecuteWithSignature("ellipsized", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Metrics implementation
         public partial class Metrics
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/BoringLayout.Metrics.html#width"/>
             /// </summary>
             public int width { get { return IGetField<int>("width"); } set { ISetField("width", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/BoringLayout.Metrics.html#getDrawingBoundingBox()"/>
@@ -366,20 +366,20 @@ namespace Android.Text
             {
                 return IExecuteWithSignature<Android.Graphics.RectF>("getDrawingBoundingBox", "()Landroid/graphics/RectF;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

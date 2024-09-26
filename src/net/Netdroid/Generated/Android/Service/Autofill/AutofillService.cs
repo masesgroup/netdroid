@@ -42,10 +42,10 @@ namespace Android.Service.Autofill
         /// </summary>
         [global::System.Obsolete("AutofillService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AutofillService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Service.Autofill
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Service.Autofill
     public partial class AutofillService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#EXTRA_FILL_RESPONSE"/>
@@ -102,13 +102,13 @@ namespace Android.Service.Autofill
         public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
         private static Java.Lang.String _SERVICE_META_DATAContent = default;
         private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,android.os.CancellationSignal,android.service.autofill.FillCallback)"/>
@@ -118,7 +118,7 @@ namespace Android.Service.Autofill
         /// <param name="arg2"><see cref="Android.Service.Autofill.FillCallback"/></param>
         public void OnFillRequest(Android.Service.Autofill.FillRequest arg0, Android.Os.CancellationSignal arg1, Android.Service.Autofill.FillCallback arg2)
         {
-            IExecute("onFillRequest", arg0, arg1, arg2);
+            IExecuteWithSignature("onFillRequest", "(Landroid/service/autofill/FillRequest;Landroid/os/CancellationSignal;Landroid/service/autofill/FillCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#onSaveRequest(android.service.autofill.SaveRequest,android.service.autofill.SaveCallback)"/>
@@ -127,7 +127,7 @@ namespace Android.Service.Autofill
         /// <param name="arg1"><see cref="Android.Service.Autofill.SaveCallback"/></param>
         public void OnSaveRequest(Android.Service.Autofill.SaveRequest arg0, Android.Service.Autofill.SaveCallback arg1)
         {
-            IExecute("onSaveRequest", arg0, arg1);
+            IExecuteWithSignature("onSaveRequest", "(Landroid/service/autofill/SaveRequest;Landroid/service/autofill/SaveCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#getFillEventHistory()"/>
@@ -159,13 +159,13 @@ namespace Android.Service.Autofill
         {
             IExecuteWithSignature("onSavedDatasetsInfoRequest", "(Landroid/service/autofill/SavedDatasetsInfoCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

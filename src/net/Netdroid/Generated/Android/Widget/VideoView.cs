@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VideoView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -112,21 +112,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/VideoView.html#canPause()"/>
@@ -200,7 +200,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public int ResolveAdjustedSize(int arg0, int arg1)
         {
-            return IExecute<int>("resolveAdjustedSize", arg0, arg1);
+            return IExecuteWithSignature<int>("resolveAdjustedSize", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/VideoView.html#addSubtitleSource(java.io.InputStream,android.media.MediaFormat)"/>
@@ -209,7 +209,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Media.MediaFormat"/></param>
         public void AddSubtitleSource(Java.Io.InputStream arg0, Android.Media.MediaFormat arg1)
         {
-            IExecute("addSubtitleSource", arg0, arg1);
+            IExecuteWithSignature("addSubtitleSource", "(Ljava/io/InputStream;Landroid/media/MediaFormat;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/VideoView.html#pause()"/>
@@ -304,7 +304,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         public void SetVideoURI(Android.Net.Uri arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
         {
-            IExecute("setVideoURI", arg0, arg1);
+            IExecuteWithSignature("setVideoURI", "(Landroid/net/Uri;Ljava/util/Map;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/VideoView.html#setVideoURI(android.net.Uri)"/>
@@ -335,13 +335,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("suspend", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

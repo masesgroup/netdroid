@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public View(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AccessibilityDelegate declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AccessibilityDelegate(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BaseSavedState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DragShadowBuilder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MeasureSpec(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -256,7 +256,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnApplyWindowInsetsListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnApplyWindowInsetsListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -265,13 +265,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnApplyWindowInsetsListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnApplyWindowInsetsListener"/> or its generic type if there is one
@@ -282,14 +282,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnApplyWindowInsetsListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -323,7 +323,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnAttachStateChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnAttachStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -332,13 +332,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnAttachStateChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnAttachStateChangeListener"/> or its generic type if there is one
@@ -349,14 +349,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnAttachStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -390,7 +390,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnCapturedPointerListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnCapturedPointerListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -399,13 +399,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnCapturedPointerListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnCapturedPointerListener"/> or its generic type if there is one
@@ -416,14 +416,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnCapturedPointerListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -457,7 +457,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnClickListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -466,13 +466,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnClickListener"/> or its generic type if there is one
@@ -483,14 +483,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -524,7 +524,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnContextClickListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnContextClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -533,13 +533,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnContextClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnContextClickListener"/> or its generic type if there is one
@@ -550,14 +550,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnContextClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -591,7 +591,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnCreateContextMenuListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnCreateContextMenuListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -600,13 +600,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnCreateContextMenuListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnCreateContextMenuListener"/> or its generic type if there is one
@@ -617,14 +617,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnCreateContextMenuListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -658,7 +658,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnDragListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnDragListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -667,13 +667,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnDragListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnDragListener"/> or its generic type if there is one
@@ -684,14 +684,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnDragListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -725,7 +725,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnFocusChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnFocusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -734,13 +734,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnFocusChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnFocusChangeListener"/> or its generic type if there is one
@@ -751,14 +751,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnFocusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -792,7 +792,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnGenericMotionListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnGenericMotionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -801,13 +801,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnGenericMotionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnGenericMotionListener"/> or its generic type if there is one
@@ -818,14 +818,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnGenericMotionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -859,7 +859,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnHoverListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnHoverListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -868,13 +868,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnHoverListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnHoverListener"/> or its generic type if there is one
@@ -885,14 +885,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnHoverListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -926,7 +926,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnKeyListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnKeyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -935,13 +935,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnKeyListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnKeyListener"/> or its generic type if there is one
@@ -952,14 +952,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnKeyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -993,7 +993,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnLayoutChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnLayoutChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1002,13 +1002,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnLayoutChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnLayoutChangeListener"/> or its generic type if there is one
@@ -1019,14 +1019,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnLayoutChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1060,7 +1060,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnLongClickListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnLongClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1069,13 +1069,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnLongClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnLongClickListener"/> or its generic type if there is one
@@ -1086,14 +1086,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnLongClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1127,7 +1127,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnScrollChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnScrollChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1136,13 +1136,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnScrollChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnScrollChangeListener"/> or its generic type if there is one
@@ -1153,14 +1153,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnScrollChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1195,7 +1195,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnSystemUiVisibilityChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnSystemUiVisibilityChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1204,13 +1204,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnSystemUiVisibilityChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnSystemUiVisibilityChangeListener"/> or its generic type if there is one
@@ -1221,14 +1221,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnSystemUiVisibilityChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1262,7 +1262,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnTouchListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnTouchListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1271,13 +1271,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnTouchListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnTouchListener"/> or its generic type if there is one
@@ -1288,14 +1288,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnTouchListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1329,7 +1329,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnUnhandledKeyEventListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.View_OnUnhandledKeyEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -1338,13 +1338,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnUnhandledKeyEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnUnhandledKeyEventListener"/> or its generic type if there is one
@@ -1355,14 +1355,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.View$OnUnhandledKeyEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -1432,17 +1432,17 @@ namespace Android.View
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.View.View"/> to <see cref="Android.View.Accessibility.AccessibilityEventSource"/>
         /// </summary>
         public static implicit operator Android.View.Accessibility.AccessibilityEventSource(Android.View.View t) => t.Cast<Android.View.Accessibility.AccessibilityEventSource>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#ALPHA"/>
@@ -2397,9 +2397,9 @@ namespace Android.View
         public static Java.Lang.String AUTOFILL_HINT_USERNAME { get { if (!_AUTOFILL_HINT_USERNAMEReady) { _AUTOFILL_HINT_USERNAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AUTOFILL_HINT_USERNAME"); _AUTOFILL_HINT_USERNAMEReady = true; } return _AUTOFILL_HINT_USERNAMEContent; } }
         private static Java.Lang.String _AUTOFILL_HINT_USERNAMEContent = default;
         private static bool _AUTOFILL_HINT_USERNAMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#inflate(android.content.Context,int,android.view.ViewGroup)"/>
@@ -2410,7 +2410,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public static Android.View.View Inflate(Android.Content.Context arg0, int arg1, Android.View.ViewGroup arg2)
         {
-            return SExecute<Android.View.View>(LocalBridgeClazz, "inflate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.View.View>(LocalBridgeClazz, "inflate", "(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#combineMeasuredStates(int,int)"/>
@@ -2420,7 +2420,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public static int CombineMeasuredStates(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "combineMeasuredStates", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "combineMeasuredStates", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#generateViewId()"/>
@@ -2438,7 +2438,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public static int GetDefaultSize(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getDefaultSize", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSize", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#resolveSize(int,int)"/>
@@ -2448,7 +2448,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public static int ResolveSize(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "resolveSize", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "resolveSize", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#resolveSizeAndState(int,int,int)"/>
@@ -2459,11 +2459,11 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public static int ResolveSizeAndState(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "resolveSizeAndState", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "resolveSizeAndState", "(III)I", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getStateListAnimator()"/>
@@ -2668,7 +2668,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.ActionMode"/></returns>
         public Android.View.ActionMode StartActionMode(Android.View.ActionMode.Callback arg0, int arg1)
         {
-            return IExecute<Android.View.ActionMode>("startActionMode", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ActionMode>("startActionMode", "(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#startActionMode(android.view.ActionMode.Callback)"/>
@@ -2762,7 +2762,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.PointerIcon"/></returns>
         public Android.View.PointerIcon OnResolvePointerIcon(Android.View.MotionEvent arg0, int arg1)
         {
-            return IExecute<Android.View.PointerIcon>("onResolvePointerIcon", arg0, arg1);
+            return IExecuteWithSignature<Android.View.PointerIcon>("onResolvePointerIcon", "(Landroid/view/MotionEvent;I)Landroid/view/PointerIcon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getTouchDelegate()"/>
@@ -2813,7 +2813,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View KeyboardNavigationClusterSearch(Android.View.View arg0, int arg1)
         {
-            return IExecute<Android.View.View>("keyboardNavigationClusterSearch", arg0, arg1);
+            return IExecuteWithSignature<Android.View.View>("keyboardNavigationClusterSearch", "(Landroid/view/View;I)Landroid/view/View;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getAccessibilityDelegate()"/>
@@ -2903,7 +2903,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
         public Android.View.WindowInsets ComputeSystemWindowInsets(Android.View.WindowInsets arg0, Android.Graphics.Rect arg1)
         {
-            return IExecute<Android.View.WindowInsets>("computeSystemWindowInsets", arg0, arg1);
+            return IExecuteWithSignature<Android.View.WindowInsets>("computeSystemWindowInsets", "(Landroid/view/WindowInsets;Landroid/graphics/Rect;)Landroid/view/WindowInsets;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchApplyWindowInsets(android.view.WindowInsets)"/>
@@ -2922,7 +2922,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
         public Android.View.WindowInsets DispatchWindowInsetsAnimationProgress(Android.View.WindowInsets arg0, Java.Util.List<Android.View.WindowInsetsAnimation> arg1)
         {
-            return IExecute<Android.View.WindowInsets>("dispatchWindowInsetsAnimationProgress", arg0, arg1);
+            return IExecuteWithSignature<Android.View.WindowInsets>("dispatchWindowInsetsAnimationProgress", "(Landroid/view/WindowInsets;Ljava/util/List;)Landroid/view/WindowInsets;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getRootWindowInsets()"/>
@@ -2949,7 +2949,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.WindowInsetsAnimation.Bounds"/></returns>
         public Android.View.WindowInsetsAnimation.Bounds DispatchWindowInsetsAnimationStart(Android.View.WindowInsetsAnimation arg0, Android.View.WindowInsetsAnimation.Bounds arg1)
         {
-            return IExecute<Android.View.WindowInsetsAnimation.Bounds>("dispatchWindowInsetsAnimationStart", arg0, arg1);
+            return IExecuteWithSignature<Android.View.WindowInsetsAnimation.Bounds>("dispatchWindowInsetsAnimationStart", "(Landroid/view/WindowInsetsAnimation;Landroid/view/WindowInsetsAnimation$Bounds;)Landroid/view/WindowInsetsAnimation$Bounds;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowInsetsController()"/>
@@ -3081,7 +3081,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool DispatchNestedFling(float arg0, float arg1, bool arg2)
         {
-            return IExecute<bool>("dispatchNestedFling", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("dispatchNestedFling", "(FFZ)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchNestedPreFling(float,float)"/>
@@ -3091,7 +3091,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool DispatchNestedPreFling(float arg0, float arg1)
         {
-            return IExecute<bool>("dispatchNestedPreFling", arg0, arg1);
+            return IExecuteWithSignature<bool>("dispatchNestedPreFling", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchNestedPrePerformAccessibilityAction(int,android.os.Bundle)"/>
@@ -3101,7 +3101,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool DispatchNestedPrePerformAccessibilityAction(int arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<bool>("dispatchNestedPrePerformAccessibilityAction", arg0, arg1);
+            return IExecuteWithSignature<bool>("dispatchNestedPrePerformAccessibilityAction", "(ILandroid/os/Bundle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchNestedPreScroll(int,int,int[],int[])"/>
@@ -3113,7 +3113,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool DispatchNestedPreScroll(int arg0, int arg1, int[] arg2, int[] arg3)
         {
-            return IExecute<bool>("dispatchNestedPreScroll", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("dispatchNestedPreScroll", "(II[I[I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchNestedScroll(int,int,int,int,int[])"/>
@@ -3126,7 +3126,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool DispatchNestedScroll(int arg0, int arg1, int arg2, int arg3, int[] arg4)
         {
-            return IExecute<bool>("dispatchNestedScroll", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("dispatchNestedScroll", "(IIII[I)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
@@ -3163,7 +3163,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool DispatchUnhandledMove(Android.View.View arg0, int arg1)
         {
-            return IExecute<bool>("dispatchUnhandledMove", arg0, arg1);
+            return IExecuteWithSignature<bool>("dispatchUnhandledMove", "(Landroid/view/View;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#gatherTransparentRegion(android.graphics.Region)"/>
@@ -3207,7 +3207,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool GetGlobalVisibleRect(Android.Graphics.Rect arg0, Android.Graphics.Point arg1)
         {
-            return IExecute<bool>("getGlobalVisibleRect", arg0, arg1);
+            return IExecuteWithSignature<bool>("getGlobalVisibleRect", "(Landroid/graphics/Rect;Landroid/graphics/Point;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getKeepScreenOn()"/>
@@ -3736,7 +3736,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyDown(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyDown", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyDown", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onKeyLongPress(int,android.view.KeyEvent)"/>
@@ -3746,7 +3746,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyLongPress(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyLongPress", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyLongPress", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onKeyMultiple(int,int,android.view.KeyEvent)"/>
@@ -3757,7 +3757,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyMultiple(int arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return IExecute<bool>("onKeyMultiple", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onKeyPreIme(int,android.view.KeyEvent)"/>
@@ -3767,7 +3767,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyPreIme(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyPreIme", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyPreIme", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onKeyShortcut(int,android.view.KeyEvent)"/>
@@ -3777,7 +3777,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyShortcut(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyShortcut", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyShortcut", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onKeyUp(int,android.view.KeyEvent)"/>
@@ -3787,7 +3787,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyUp(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyUp", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyUp", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onTouchEvent(android.view.MotionEvent)"/>
@@ -3815,7 +3815,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformAccessibilityAction(int arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<bool>("performAccessibilityAction", arg0, arg1);
+            return IExecuteWithSignature<bool>("performAccessibilityAction", "(ILandroid/os/Bundle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#performClick()"/>
@@ -3841,7 +3841,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformContextClick(float arg0, float arg1)
         {
-            return IExecute<bool>("performContextClick", arg0, arg1);
+            return IExecuteWithSignature<bool>("performContextClick", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#performHapticFeedback(int,int)"/>
@@ -3851,7 +3851,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformHapticFeedback(int arg0, int arg1)
         {
-            return IExecute<bool>("performHapticFeedback", arg0, arg1);
+            return IExecuteWithSignature<bool>("performHapticFeedback", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#performHapticFeedback(int)"/>
@@ -3878,7 +3878,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformLongClick(float arg0, float arg1)
         {
-            return IExecute<bool>("performLongClick", arg0, arg1);
+            return IExecuteWithSignature<bool>("performLongClick", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#post(java.lang.Runnable)"/>
@@ -3897,7 +3897,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PostDelayed(Java.Lang.Runnable arg0, long arg1)
         {
-            return IExecute<bool>("postDelayed", arg0, arg1);
+            return IExecuteWithSignature<bool>("postDelayed", "(Ljava/lang/Runnable;J)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#removeCallbacks(java.lang.Runnable)"/>
@@ -3916,7 +3916,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool RequestFocus(int arg0, Android.Graphics.Rect arg1)
         {
-            return IExecute<bool>("requestFocus", arg0, arg1);
+            return IExecuteWithSignature<bool>("requestFocus", "(ILandroid/graphics/Rect;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#requestRectangleOnScreen(android.graphics.Rect,boolean)"/>
@@ -3926,7 +3926,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool RequestRectangleOnScreen(Android.Graphics.Rect arg0, bool arg1)
         {
-            return IExecute<bool>("requestRectangleOnScreen", arg0, arg1);
+            return IExecuteWithSignature<bool>("requestRectangleOnScreen", "(Landroid/graphics/Rect;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#requestRectangleOnScreen(android.graphics.Rect)"/>
@@ -3961,7 +3961,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool ShowContextMenu(float arg0, float arg1)
         {
-            return IExecute<bool>("showContextMenu", arg0, arg1);
+            return IExecuteWithSignature<bool>("showContextMenu", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#startNestedScroll(int)"/>
@@ -4241,7 +4241,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public bool StartDrag(Android.Content.ClipData arg0, Android.View.View.DragShadowBuilder arg1, object arg2, int arg3)
         {
-            return IExecute<bool>("startDrag", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("startDrag", "(Landroid/content/ClipData;Landroid/view/View$DragShadowBuilder;Ljava/lang/Object;I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#startDragAndDrop(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)"/>
@@ -4253,7 +4253,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool StartDragAndDrop(Android.Content.ClipData arg0, Android.View.View.DragShadowBuilder arg1, object arg2, int arg3)
         {
-            return IExecute<bool>("startDragAndDrop", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("startDragAndDrop", "(Landroid/content/ClipData;Landroid/view/View$DragShadowBuilder;Ljava/lang/Object;I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getBottom()"/>
@@ -4412,7 +4412,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void Measure(int arg0, int arg1)
         {
-            IExecute("measure", arg0, arg1);
+            IExecuteWithSignature("measure", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#requestUnbufferedDispatch(android.view.MotionEvent)"/>
@@ -4441,7 +4441,7 @@ namespace Android.View
         /// <param name="arg5"><see cref="int"/></param>
         public void SaveAttributeDataForStyleable(Android.Content.Context arg0, int[] arg1, Android.Util.AttributeSet arg2, Android.Content.Res.TypedArray arg3, int arg4, int arg5)
         {
-            IExecute("saveAttributeDataForStyleable", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("saveAttributeDataForStyleable", "(Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setBottom(int)"/>
@@ -4476,7 +4476,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void SetLeftTopRightBottom(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setLeftTopRightBottom", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setLeftTopRightBottom", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setPreferKeepClear(boolean)"/>
@@ -5325,7 +5325,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void AddExtraDataToAccessibilityNodeInfo(Android.View.Accessibility.AccessibilityNodeInfo arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            IExecute("addExtraDataToAccessibilityNodeInfo", arg0, arg1, arg2);
+            IExecuteWithSignature("addExtraDataToAccessibilityNodeInfo", "(Landroid/view/accessibility/AccessibilityNodeInfo;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#addFocusables(java.util.ArrayList,int,int)"/>
@@ -5335,7 +5335,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void AddFocusables(Java.Util.ArrayList<Android.View.View> arg0, int arg1, int arg2)
         {
-            IExecute("addFocusables", arg0, arg1, arg2);
+            IExecuteWithSignature("addFocusables", "(Ljava/util/ArrayList;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#addFocusables(java.util.ArrayList,int)"/>
@@ -5344,7 +5344,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void AddFocusables(Java.Util.ArrayList<Android.View.View> arg0, int arg1)
         {
-            IExecute("addFocusables", arg0, arg1);
+            IExecuteWithSignature("addFocusables", "(Ljava/util/ArrayList;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#addKeyboardNavigationClusters(java.util.Collection,int)"/>
@@ -5353,7 +5353,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void AddKeyboardNavigationClusters(Java.Util.Collection<Android.View.View> arg0, int arg1)
         {
-            IExecute("addKeyboardNavigationClusters", arg0, arg1);
+            IExecuteWithSignature("addKeyboardNavigationClusters", "(Ljava/util/Collection;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#addOnAttachStateChangeListener(android.view.View.OnAttachStateChangeListener)"/>
@@ -5517,7 +5517,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Java.Util.List"/></param>
         public void DispatchCreateViewTranslationRequest(Java.Util.Map<Android.View.Autofill.AutofillId, long[]> arg0, int[] arg1, Android.View.Translation.TranslationCapability arg2, Java.Util.List<Android.View.Translation.ViewTranslationRequest> arg3)
         {
-            IExecute("dispatchCreateViewTranslationRequest", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("dispatchCreateViewTranslationRequest", "(Ljava/util/Map;[ILandroid/view/translation/TranslationCapability;Ljava/util/List;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchDisplayHint(int)"/>
@@ -5534,7 +5534,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="float"/></param>
         public void DispatchDrawableHotspotChanged(float arg0, float arg1)
         {
-            IExecute("dispatchDrawableHotspotChanged", arg0, arg1);
+            IExecuteWithSignature("dispatchDrawableHotspotChanged", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchFinishTemporaryDetach()"/>
@@ -5558,7 +5558,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void DispatchProvideAutofillStructure(Android.View.ViewStructure arg0, int arg1)
         {
-            IExecute("dispatchProvideAutofillStructure", arg0, arg1);
+            IExecuteWithSignature("dispatchProvideAutofillStructure", "(Landroid/view/ViewStructure;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchProvideStructure(android.view.ViewStructure)"/>
@@ -5576,7 +5576,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void DispatchScrollCaptureSearch(Android.Graphics.Rect arg0, Android.Graphics.Point arg1, Java.Util.Function.Consumer<Android.View.ScrollCaptureTarget> arg2)
         {
-            IExecute("dispatchScrollCaptureSearch", arg0, arg1, arg2);
+            IExecuteWithSignature("dispatchScrollCaptureSearch", "(Landroid/graphics/Rect;Landroid/graphics/Point;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchStartTemporaryDetach()"/>
@@ -5650,7 +5650,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="float"/></param>
         public void DrawableHotspotChanged(float arg0, float arg1)
         {
-            IExecute("drawableHotspotChanged", arg0, arg1);
+            IExecuteWithSignature("drawableHotspotChanged", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#findViewsWithText(java.util.ArrayList,java.lang.CharSequence,int)"/>
@@ -5660,7 +5660,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void FindViewsWithText(Java.Util.ArrayList<Android.View.View> arg0, Java.Lang.CharSequence arg1, int arg2)
         {
-            IExecute("findViewsWithText", arg0, arg1, arg2);
+            IExecuteWithSignature("findViewsWithText", "(Ljava/util/ArrayList;Ljava/lang/CharSequence;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#forceHasOverlappingRendering(boolean)"/>
@@ -5686,7 +5686,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Android.View.Displayhash.DisplayHashResultCallback"/></param>
         public void GenerateDisplayHash(Java.Lang.String arg0, Android.Graphics.Rect arg1, Java.Util.Concurrent.Executor arg2, Android.View.Displayhash.DisplayHashResultCallback arg3)
         {
-            IExecute("generateDisplayHash", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("generateDisplayHash", "(Ljava/lang/String;Landroid/graphics/Rect;Ljava/util/concurrent/Executor;Landroid/view/displayhash/DisplayHashResultCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingRect(android.graphics.Rect)"/>
@@ -5770,7 +5770,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public void Invalidate(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("invalidate", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("invalidate", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#invalidateDrawable(android.graphics.drawable.Drawable)"/>
@@ -5803,7 +5803,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void Layout(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("layout", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("layout", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#offsetLeftAndRight(int)"/>
@@ -5835,7 +5835,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void OnCreateViewTranslationRequest(int[] arg0, Java.Util.Function.Consumer<Android.View.Translation.ViewTranslationRequest> arg1)
         {
-            IExecute("onCreateViewTranslationRequest", arg0, arg1);
+            IExecuteWithSignature("onCreateViewTranslationRequest", "([ILjava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onCreateVirtualViewTranslationRequests(long[],int[],java.util.function.Consumer)"/>
@@ -5845,7 +5845,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void OnCreateVirtualViewTranslationRequests(long[] arg0, int[] arg1, Java.Util.Function.Consumer<Android.View.Translation.ViewTranslationRequest> arg2)
         {
-            IExecute("onCreateVirtualViewTranslationRequests", arg0, arg1, arg2);
+            IExecuteWithSignature("onCreateVirtualViewTranslationRequests", "([J[ILjava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onDrawForeground(android.graphics.Canvas)"/>
@@ -5909,7 +5909,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void OnProvideAutofillStructure(Android.View.ViewStructure arg0, int arg1)
         {
-            IExecute("onProvideAutofillStructure", arg0, arg1);
+            IExecuteWithSignature("onProvideAutofillStructure", "(Landroid/view/ViewStructure;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onProvideAutofillVirtualStructure(android.view.ViewStructure,int)"/>
@@ -5918,7 +5918,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void OnProvideAutofillVirtualStructure(Android.View.ViewStructure arg0, int arg1)
         {
-            IExecute("onProvideAutofillVirtualStructure", arg0, arg1);
+            IExecuteWithSignature("onProvideAutofillVirtualStructure", "(Landroid/view/ViewStructure;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onProvideContentCaptureStructure(android.view.ViewStructure,int)"/>
@@ -5927,7 +5927,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void OnProvideContentCaptureStructure(Android.View.ViewStructure arg0, int arg1)
         {
-            IExecute("onProvideContentCaptureStructure", arg0, arg1);
+            IExecuteWithSignature("onProvideContentCaptureStructure", "(Landroid/view/ViewStructure;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onProvideStructure(android.view.ViewStructure)"/>
@@ -5969,7 +5969,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void OnScrollCaptureSearch(Android.Graphics.Rect arg0, Android.Graphics.Point arg1, Java.Util.Function.Consumer<Android.View.ScrollCaptureTarget> arg2)
         {
-            IExecute("onScrollCaptureSearch", arg0, arg1, arg2);
+            IExecuteWithSignature("onScrollCaptureSearch", "(Landroid/graphics/Rect;Landroid/graphics/Point;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#onStartTemporaryDetach()"/>
@@ -6043,7 +6043,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void PostInvalidate(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("postInvalidate", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("postInvalidate", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#postInvalidateDelayed(long,int,int,int,int)"/>
@@ -6055,7 +6055,7 @@ namespace Android.View
         /// <param name="arg4"><see cref="int"/></param>
         public void PostInvalidateDelayed(long arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("postInvalidateDelayed", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("postInvalidateDelayed", "(JIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#postInvalidateDelayed(long)"/>
@@ -6081,7 +6081,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void PostInvalidateOnAnimation(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("postInvalidateOnAnimation", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("postInvalidateOnAnimation", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#postOnAnimation(java.lang.Runnable)"/>
@@ -6098,7 +6098,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="long"/></param>
         public void PostOnAnimationDelayed(Java.Lang.Runnable arg0, long arg1)
         {
-            IExecute("postOnAnimationDelayed", arg0, arg1);
+            IExecuteWithSignature("postOnAnimationDelayed", "(Ljava/lang/Runnable;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#refreshDrawableState()"/>
@@ -6198,7 +6198,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="long"/></param>
         public void ScheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1, long arg2)
         {
-            IExecute("scheduleDrawable", arg0, arg1, arg2);
+            IExecuteWithSignature("scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#scrollBy(int,int)"/>
@@ -6207,7 +6207,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void ScrollBy(int arg0, int arg1)
         {
-            IExecute("scrollBy", arg0, arg1);
+            IExecuteWithSignature("scrollBy", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#scrollTo(int,int)"/>
@@ -6216,7 +6216,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void ScrollTo(int arg0, int arg1)
         {
-            IExecute("scrollTo", arg0, arg1);
+            IExecuteWithSignature("scrollTo", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#sendAccessibilityEvent(int)"/>
@@ -6663,7 +6663,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="float"/></param>
         public void SetHandwritingBoundsOffsets(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setHandwritingBoundsOffsets", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setHandwritingBoundsOffsets", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setHandwritingDelegateFlags(int)"/>
@@ -6824,7 +6824,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void SetLayerType(int arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("setLayerType", arg0, arg1);
+            IExecuteWithSignature("setLayerType", "(ILandroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setLayoutDirection(int)"/>
@@ -7017,7 +7017,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.OnReceiveContentListener"/></param>
         public void SetOnReceiveContentListener(Java.Lang.String[] arg0, Android.View.OnReceiveContentListener arg1)
         {
-            IExecute("setOnReceiveContentListener", arg0, arg1);
+            IExecuteWithSignature("setOnReceiveContentListener", "([Ljava/lang/String;Landroid/view/OnReceiveContentListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setOnScrollChangeListener(android.view.View.OnScrollChangeListener)"/>
@@ -7085,7 +7085,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void SetPadding(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setPadding", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPadding", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setPaddingRelative(int,int,int,int)"/>
@@ -7096,7 +7096,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void SetPaddingRelative(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setPaddingRelative", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPaddingRelative", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setPendingCredentialRequest(android.credentials.GetCredentialRequest,android.os.OutcomeReceiver)"/>
@@ -7105,7 +7105,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void SetPendingCredentialRequest(Android.Credentials.GetCredentialRequest arg0, Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> arg1)
         {
-            IExecute("setPendingCredentialRequest", arg0, arg1);
+            IExecuteWithSignature("setPendingCredentialRequest", "(Landroid/credentials/GetCredentialRequest;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setPivotX(float)"/>
@@ -7282,7 +7282,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetScrollIndicators(int arg0, int arg1)
         {
-            IExecute("setScrollIndicators", arg0, arg1);
+            IExecuteWithSignature("setScrollIndicators", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setScrollIndicators(int)"/>
@@ -7364,7 +7364,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="object"/></param>
         public void SetTag(int arg0, object arg1)
         {
-            IExecute("setTag", arg0, arg1);
+            IExecuteWithSignature("setTag", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setTag(java.lang.Object)"/>
@@ -7589,7 +7589,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public void UnscheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1)
         {
-            IExecute("unscheduleDrawable", arg0, arg1);
+            IExecuteWithSignature("unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#unscheduleDrawable(android.graphics.drawable.Drawable)"/>
@@ -7599,29 +7599,29 @@ namespace Android.View
         {
             IExecuteWithSignature("unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AccessibilityDelegate implementation
         public partial class AccessibilityDelegate
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#getAccessibilityNodeProvider(android.view.View)"/>
@@ -7640,7 +7640,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool DispatchPopulateAccessibilityEvent(Android.View.View arg0, Android.View.Accessibility.AccessibilityEvent arg1)
             {
-                return IExecute<bool>("dispatchPopulateAccessibilityEvent", arg0, arg1);
+                return IExecuteWithSignature<bool>("dispatchPopulateAccessibilityEvent", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)"/>
@@ -7651,7 +7651,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnRequestSendAccessibilityEvent(Android.View.ViewGroup arg0, Android.View.View arg1, Android.View.Accessibility.AccessibilityEvent arg2)
             {
-                return IExecute<bool>("onRequestSendAccessibilityEvent", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("onRequestSendAccessibilityEvent", "(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#performAccessibilityAction(android.view.View,int,android.os.Bundle)"/>
@@ -7662,7 +7662,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool PerformAccessibilityAction(Android.View.View arg0, int arg1, Android.Os.Bundle arg2)
             {
-                return IExecute<bool>("performAccessibilityAction", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("performAccessibilityAction", "(Landroid/view/View;ILandroid/os/Bundle;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#addExtraDataToAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo,java.lang.String,android.os.Bundle)"/>
@@ -7673,7 +7673,7 @@ namespace Android.View
             /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
             public void AddExtraDataToAccessibilityNodeInfo(Android.View.View arg0, Android.View.Accessibility.AccessibilityNodeInfo arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
             {
-                IExecute("addExtraDataToAccessibilityNodeInfo", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("addExtraDataToAccessibilityNodeInfo", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)"/>
@@ -7682,7 +7682,7 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.View.Accessibility.AccessibilityEvent"/></param>
             public void OnInitializeAccessibilityEvent(Android.View.View arg0, Android.View.Accessibility.AccessibilityEvent arg1)
             {
-                IExecute("onInitializeAccessibilityEvent", arg0, arg1);
+                IExecuteWithSignature("onInitializeAccessibilityEvent", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#onInitializeAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo)"/>
@@ -7691,7 +7691,7 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></param>
             public void OnInitializeAccessibilityNodeInfo(Android.View.View arg0, Android.View.Accessibility.AccessibilityNodeInfo arg1)
             {
-                IExecute("onInitializeAccessibilityNodeInfo", arg0, arg1);
+                IExecuteWithSignature("onInitializeAccessibilityNodeInfo", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)"/>
@@ -7700,7 +7700,7 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.View.Accessibility.AccessibilityEvent"/></param>
             public void OnPopulateAccessibilityEvent(Android.View.View arg0, Android.View.Accessibility.AccessibilityEvent arg1)
             {
-                IExecute("onPopulateAccessibilityEvent", arg0, arg1);
+                IExecuteWithSignature("onPopulateAccessibilityEvent", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#sendAccessibilityEvent(android.view.View,int)"/>
@@ -7709,7 +7709,7 @@ namespace Android.View
             /// <param name="arg1"><see cref="int"/></param>
             public void SendAccessibilityEvent(Android.View.View arg0, int arg1)
             {
-                IExecute("sendAccessibilityEvent", arg0, arg1);
+                IExecuteWithSignature("sendAccessibilityEvent", "(Landroid/view/View;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.AccessibilityDelegate.html#sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)"/>
@@ -7718,15 +7718,15 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.View.Accessibility.AccessibilityEvent"/></param>
             public void SendAccessibilityEventUnchecked(Android.View.View arg0, Android.View.Accessibility.AccessibilityEvent arg1)
             {
-                IExecute("sendAccessibilityEventUnchecked", arg0, arg1);
+                IExecuteWithSignature("sendAccessibilityEventUnchecked", "(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -7760,13 +7760,13 @@ namespace Android.View
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.BaseSavedState.html#CREATOR"/>
@@ -7774,21 +7774,21 @@ namespace Android.View
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -7805,21 +7805,21 @@ namespace Android.View
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.DragShadowBuilder.html#getView()"/>
@@ -7844,15 +7844,15 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.Graphics.Point"/></param>
             public void OnProvideShadowMetrics(Android.Graphics.Point arg0, Android.Graphics.Point arg1)
             {
-                IExecute("onProvideShadowMetrics", arg0, arg1);
+                IExecuteWithSignature("onProvideShadowMetrics", "(Landroid/graphics/Point;Landroid/graphics/Point;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -7861,13 +7861,13 @@ namespace Android.View
         public partial class MeasureSpec
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.MeasureSpec.html#AT_MOST"/>
@@ -7887,9 +7887,9 @@ namespace Android.View
             public static int UNSPECIFIED { get { if (!_UNSPECIFIEDReady) { _UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "UNSPECIFIED"); _UNSPECIFIEDReady = true; } return _UNSPECIFIEDContent; } }
             private static int _UNSPECIFIEDContent = default;
             private static bool _UNSPECIFIEDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.MeasureSpec.html#getMode(int)"/>
@@ -7917,7 +7917,7 @@ namespace Android.View
             /// <returns><see cref="int"/></returns>
             public static int MakeMeasureSpec(int arg0, int arg1)
             {
-                return SExecute<int>(LocalBridgeClazz, "makeMeasureSpec", arg0, arg1);
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "makeMeasureSpec", "(II)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.MeasureSpec.html#toString(int)"/>
@@ -7928,17 +7928,17 @@ namespace Android.View
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -7947,21 +7947,21 @@ namespace Android.View
         public partial class OnApplyWindowInsetsListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnApplyWindowInsetsListener"/>
@@ -7971,13 +7971,13 @@ namespace Android.View
                 AddEventHandler("onApplyWindowInsets", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnApplyWindowInsetsEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnApplyWindowInsetsListener.html#onApplyWindowInsets(android.view.View,android.view.WindowInsets)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnApplyWindowInsets"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, Android.View.WindowInsets, Android.View.WindowInsets> OnOnApplyWindowInsets { get; set; } = null;
-            
+
             bool hasOverrideOnApplyWindowInsets = true;
             void OnApplyWindowInsetsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -7986,7 +7986,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.WindowInsets>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnApplyWindowInsets, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnApplyWindowInsetsListener.html#onApplyWindowInsets(android.view.View,android.view.WindowInsets)"/>
             /// </summary>
@@ -7997,13 +7997,13 @@ namespace Android.View
             {
                 hasOverrideOnApplyWindowInsets = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8012,21 +8012,21 @@ namespace Android.View
         public partial class OnApplyWindowInsetsListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnApplyWindowInsetsListener.html#onApplyWindowInsets(android.view.View,android.view.WindowInsets)"/>
@@ -8036,15 +8036,15 @@ namespace Android.View
             /// <returns><see cref="Android.View.WindowInsets"/></returns>
             public override Android.View.WindowInsets OnApplyWindowInsets(Android.View.View arg0, Android.View.WindowInsets arg1)
             {
-                return IExecute<Android.View.WindowInsets>("onApplyWindowInsets", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets>("onApplyWindowInsets", "(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8053,21 +8053,21 @@ namespace Android.View
         public partial class OnAttachStateChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnAttachStateChangeListener"/>
@@ -8078,13 +8078,13 @@ namespace Android.View
                 AddEventHandler("onViewDetachedFromWindow", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnViewDetachedFromWindowEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener.html#onViewAttachedToWindow(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnViewAttachedToWindow"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View> OnOnViewAttachedToWindow { get; set; } = null;
-            
+
             bool hasOverrideOnViewAttachedToWindow = true;
             void OnViewAttachedToWindowEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8093,7 +8093,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnViewAttachedToWindow;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener.html#onViewAttachedToWindow(android.view.View)"/>
             /// </summary>
@@ -8102,13 +8102,13 @@ namespace Android.View
             {
                 hasOverrideOnViewAttachedToWindow = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener.html#onViewDetachedFromWindow(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnViewDetachedFromWindow"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View> OnOnViewDetachedFromWindow { get; set; } = null;
-            
+
             bool hasOverrideOnViewDetachedFromWindow = true;
             void OnViewDetachedFromWindowEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8117,7 +8117,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnViewDetachedFromWindow;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener.html#onViewDetachedFromWindow(android.view.View)"/>
             /// </summary>
@@ -8126,13 +8126,13 @@ namespace Android.View
             {
                 hasOverrideOnViewDetachedFromWindow = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8141,21 +8141,21 @@ namespace Android.View
         public partial class OnAttachStateChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnAttachStateChangeListener.html#onViewAttachedToWindow(android.view.View)"/>
@@ -8173,13 +8173,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onViewDetachedFromWindow", "(Landroid/view/View;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8188,21 +8188,21 @@ namespace Android.View
         public partial class OnCapturedPointerListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnCapturedPointerListener"/>
@@ -8212,13 +8212,13 @@ namespace Android.View
                 AddEventHandler("onCapturedPointer", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCapturedPointerEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnCapturedPointerListener.html#onCapturedPointer(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCapturedPointer"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnCapturedPointer { get; set; } = null;
-            
+
             bool hasOverrideOnCapturedPointer = true;
             void OnCapturedPointerEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8227,7 +8227,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnCapturedPointer, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnCapturedPointerListener.html#onCapturedPointer(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
@@ -8238,13 +8238,13 @@ namespace Android.View
             {
                 hasOverrideOnCapturedPointer = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8253,21 +8253,21 @@ namespace Android.View
         public partial class OnCapturedPointerListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnCapturedPointerListener.html#onCapturedPointer(android.view.View,android.view.MotionEvent)"/>
@@ -8277,15 +8277,15 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnCapturedPointer(Android.View.View arg0, Android.View.MotionEvent arg1)
             {
-                return IExecute<bool>("onCapturedPointer", arg0, arg1);
+                return IExecuteWithSignature<bool>("onCapturedPointer", "(Landroid/view/View;Landroid/view/MotionEvent;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8294,21 +8294,21 @@ namespace Android.View
         public partial class OnClickListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnClickListener"/>
@@ -8318,13 +8318,13 @@ namespace Android.View
                 AddEventHandler("onClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnClickEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnClickListener.html#onClick(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View> OnOnClick { get; set; } = null;
-            
+
             bool hasOverrideOnClick = true;
             void OnClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8333,7 +8333,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnClick;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnClickListener.html#onClick(android.view.View)"/>
             /// </summary>
@@ -8342,13 +8342,13 @@ namespace Android.View
             {
                 hasOverrideOnClick = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8357,21 +8357,21 @@ namespace Android.View
         public partial class OnClickListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnClickListener.html#onClick(android.view.View)"/>
@@ -8381,13 +8381,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onClick", "(Landroid/view/View;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8396,21 +8396,21 @@ namespace Android.View
         public partial class OnContextClickListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnContextClickListener"/>
@@ -8420,13 +8420,13 @@ namespace Android.View
                 AddEventHandler("onContextClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnContextClickEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnContextClickListener.html#onContextClick(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnContextClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, bool> OnOnContextClick { get; set; } = null;
-            
+
             bool hasOverrideOnContextClick = true;
             void OnContextClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8435,7 +8435,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnContextClick, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnContextClickListener.html#onContextClick(android.view.View)"/>
             /// </summary>
@@ -8445,13 +8445,13 @@ namespace Android.View
             {
                 hasOverrideOnContextClick = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8460,21 +8460,21 @@ namespace Android.View
         public partial class OnContextClickListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnContextClickListener.html#onContextClick(android.view.View)"/>
@@ -8485,13 +8485,13 @@ namespace Android.View
             {
                 return IExecuteWithSignature<bool>("onContextClick", "(Landroid/view/View;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8500,21 +8500,21 @@ namespace Android.View
         public partial class OnCreateContextMenuListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnCreateContextMenuListener"/>
@@ -8524,13 +8524,13 @@ namespace Android.View
                 AddEventHandler("onCreateContextMenu", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCreateContextMenuEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu.ContextMenuInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCreateContextMenu"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.ContextMenu, Android.View.View, Android.View.ContextMenu.ContextMenuInfo> OnOnCreateContextMenu { get; set; } = null;
-            
+
             bool hasOverrideOnCreateContextMenu = true;
             void OnCreateContextMenuEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8539,7 +8539,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.ContextMenu>(0), data.EventData.GetAt<Android.View.View>(1), data.EventData.GetAt<Android.View.ContextMenu.ContextMenuInfo>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCreateContextMenu;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu.ContextMenuInfo)"/>
             /// </summary>
@@ -8550,13 +8550,13 @@ namespace Android.View
             {
                 hasOverrideOnCreateContextMenu = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8565,21 +8565,21 @@ namespace Android.View
         public partial class OnCreateContextMenuListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu.ContextMenuInfo)"/>
@@ -8589,15 +8589,15 @@ namespace Android.View
             /// <param name="arg2"><see cref="Android.View.ContextMenu.ContextMenuInfo"/></param>
             public override void OnCreateContextMenu(Android.View.ContextMenu arg0, Android.View.View arg1, Android.View.ContextMenu.ContextMenuInfo arg2)
             {
-                IExecute("onCreateContextMenu", arg0, arg1, arg2);
+                IExecuteWithSignature("onCreateContextMenu", "(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8606,21 +8606,21 @@ namespace Android.View
         public partial class OnDragListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnDragListener"/>
@@ -8630,13 +8630,13 @@ namespace Android.View
                 AddEventHandler("onDrag", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDragEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnDragListener.html#onDrag(android.view.View,android.view.DragEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrag"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, Android.View.DragEvent, bool> OnOnDrag { get; set; } = null;
-            
+
             bool hasOverrideOnDrag = true;
             void OnDragEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8645,7 +8645,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.DragEvent>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnDrag, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnDragListener.html#onDrag(android.view.View,android.view.DragEvent)"/>
             /// </summary>
@@ -8656,13 +8656,13 @@ namespace Android.View
             {
                 hasOverrideOnDrag = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8671,21 +8671,21 @@ namespace Android.View
         public partial class OnDragListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnDragListener.html#onDrag(android.view.View,android.view.DragEvent)"/>
@@ -8695,15 +8695,15 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnDrag(Android.View.View arg0, Android.View.DragEvent arg1)
             {
-                return IExecute<bool>("onDrag", arg0, arg1);
+                return IExecuteWithSignature<bool>("onDrag", "(Landroid/view/View;Landroid/view/DragEvent;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8712,21 +8712,21 @@ namespace Android.View
         public partial class OnFocusChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnFocusChangeListener"/>
@@ -8736,13 +8736,13 @@ namespace Android.View
                 AddEventHandler("onFocusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnFocusChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnFocusChangeListener.html#onFocusChange(android.view.View,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFocusChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View, bool> OnOnFocusChange { get; set; } = null;
-            
+
             bool hasOverrideOnFocusChange = true;
             void OnFocusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8751,7 +8751,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<bool>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFocusChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnFocusChangeListener.html#onFocusChange(android.view.View,boolean)"/>
             /// </summary>
@@ -8761,13 +8761,13 @@ namespace Android.View
             {
                 hasOverrideOnFocusChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8776,21 +8776,21 @@ namespace Android.View
         public partial class OnFocusChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnFocusChangeListener.html#onFocusChange(android.view.View,boolean)"/>
@@ -8799,15 +8799,15 @@ namespace Android.View
             /// <param name="arg1"><see cref="bool"/></param>
             public override void OnFocusChange(Android.View.View arg0, bool arg1)
             {
-                IExecute("onFocusChange", arg0, arg1);
+                IExecuteWithSignature("onFocusChange", "(Landroid/view/View;Z)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8816,21 +8816,21 @@ namespace Android.View
         public partial class OnGenericMotionListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnGenericMotionListener"/>
@@ -8840,13 +8840,13 @@ namespace Android.View
                 AddEventHandler("onGenericMotion", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGenericMotionEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnGenericMotionListener.html#onGenericMotion(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGenericMotion"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnGenericMotion { get; set; } = null;
-            
+
             bool hasOverrideOnGenericMotion = true;
             void OnGenericMotionEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8855,7 +8855,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnGenericMotion, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnGenericMotionListener.html#onGenericMotion(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
@@ -8866,13 +8866,13 @@ namespace Android.View
             {
                 hasOverrideOnGenericMotion = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8881,21 +8881,21 @@ namespace Android.View
         public partial class OnGenericMotionListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnGenericMotionListener.html#onGenericMotion(android.view.View,android.view.MotionEvent)"/>
@@ -8905,15 +8905,15 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnGenericMotion(Android.View.View arg0, Android.View.MotionEvent arg1)
             {
-                return IExecute<bool>("onGenericMotion", arg0, arg1);
+                return IExecuteWithSignature<bool>("onGenericMotion", "(Landroid/view/View;Landroid/view/MotionEvent;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8922,21 +8922,21 @@ namespace Android.View
         public partial class OnHoverListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnHoverListener"/>
@@ -8946,13 +8946,13 @@ namespace Android.View
                 AddEventHandler("onHover", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnHoverEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnHoverListener.html#onHover(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnHover"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnHover { get; set; } = null;
-            
+
             bool hasOverrideOnHover = true;
             void OnHoverEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -8961,7 +8961,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnHover, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnHoverListener.html#onHover(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
@@ -8972,13 +8972,13 @@ namespace Android.View
             {
                 hasOverrideOnHover = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -8987,21 +8987,21 @@ namespace Android.View
         public partial class OnHoverListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnHoverListener.html#onHover(android.view.View,android.view.MotionEvent)"/>
@@ -9011,15 +9011,15 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnHover(Android.View.View arg0, Android.View.MotionEvent arg1)
             {
-                return IExecute<bool>("onHover", arg0, arg1);
+                return IExecuteWithSignature<bool>("onHover", "(Landroid/view/View;Landroid/view/MotionEvent;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9028,21 +9028,21 @@ namespace Android.View
         public partial class OnKeyListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnKeyListener"/>
@@ -9052,13 +9052,13 @@ namespace Android.View
                 AddEventHandler("onKey", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnKeyEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnKeyListener.html#onKey(android.view.View,int,android.view.KeyEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnKey"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, int, Android.View.KeyEvent, bool> OnOnKey { get; set; } = null;
-            
+
             bool hasOverrideOnKey = true;
             void OnKeyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9067,7 +9067,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Android.View.KeyEvent>(2));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnKey, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnKeyListener.html#onKey(android.view.View,int,android.view.KeyEvent)"/>
             /// </summary>
@@ -9079,13 +9079,13 @@ namespace Android.View
             {
                 hasOverrideOnKey = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9094,21 +9094,21 @@ namespace Android.View
         public partial class OnKeyListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnKeyListener.html#onKey(android.view.View,int,android.view.KeyEvent)"/>
@@ -9119,15 +9119,15 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnKey(Android.View.View arg0, int arg1, Android.View.KeyEvent arg2)
             {
-                return IExecute<bool>("onKey", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("onKey", "(Landroid/view/View;ILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9136,21 +9136,21 @@ namespace Android.View
         public partial class OnLayoutChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnLayoutChangeListener"/>
@@ -9160,13 +9160,13 @@ namespace Android.View
                 AddEventHandler("onLayoutChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnLayoutChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnLayoutChangeListener.html#onLayoutChange(android.view.View,int,int,int,int,int,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLayoutChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View, int, int, int, int, int, int, int, int> OnOnLayoutChange { get; set; } = null;
-            
+
             bool hasOverrideOnLayoutChange = true;
             void OnLayoutChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9175,7 +9175,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int>(8));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnLayoutChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnLayoutChangeListener.html#onLayoutChange(android.view.View,int,int,int,int,int,int,int,int)"/>
             /// </summary>
@@ -9192,13 +9192,13 @@ namespace Android.View
             {
                 hasOverrideOnLayoutChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9207,21 +9207,21 @@ namespace Android.View
         public partial class OnLayoutChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnLayoutChangeListener.html#onLayoutChange(android.view.View,int,int,int,int,int,int,int,int)"/>
@@ -9237,15 +9237,15 @@ namespace Android.View
             /// <param name="arg8"><see cref="int"/></param>
             public override void OnLayoutChange(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8)
             {
-                IExecute("onLayoutChange", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+                IExecuteWithSignature("onLayoutChange", "(Landroid/view/View;IIIIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9254,21 +9254,21 @@ namespace Android.View
         public partial class OnLongClickListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnLongClickListener"/>
@@ -9279,13 +9279,13 @@ namespace Android.View
                 AddEventHandler("onLongClickUseDefaultHapticFeedback", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnLongClickUseDefaultHapticFeedbackEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html#onLongClick(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, bool> OnOnLongClick { get; set; } = null;
-            
+
             bool hasOverrideOnLongClick = true;
             void OnLongClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9294,7 +9294,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnLongClick, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html#onLongClick(android.view.View)"/>
             /// </summary>
@@ -9314,13 +9314,13 @@ namespace Android.View
             {
                 return IExecuteWithSignature<bool>("onLongClickUseDefaultHapticFeedbackDefault", "(Landroid/view/View;)Z", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html#onLongClickUseDefaultHapticFeedback(android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongClickUseDefaultHapticFeedback"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, bool> OnOnLongClickUseDefaultHapticFeedback { get; set; } = null;
-            
+
             bool hasOverrideOnLongClickUseDefaultHapticFeedback = true;
             void OnLongClickUseDefaultHapticFeedbackEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9329,7 +9329,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnLongClickUseDefaultHapticFeedback, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html#onLongClickUseDefaultHapticFeedback(android.view.View)"/>
             /// </summary>
@@ -9340,13 +9340,13 @@ namespace Android.View
             {
                 hasOverrideOnLongClickUseDefaultHapticFeedback = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9355,21 +9355,21 @@ namespace Android.View
         public partial class OnLongClickListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnLongClickListener.html#onLongClick(android.view.View)"/>
@@ -9389,13 +9389,13 @@ namespace Android.View
             {
                 return IExecuteWithSignature<bool>("onLongClickUseDefaultHapticFeedback", "(Landroid/view/View;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9404,21 +9404,21 @@ namespace Android.View
         public partial class OnScrollChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnScrollChangeListener"/>
@@ -9428,13 +9428,13 @@ namespace Android.View
                 AddEventHandler("onScrollChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnScrollChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnScrollChangeListener.html#onScrollChange(android.view.View,int,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.View, int, int, int, int> OnOnScrollChange { get; set; } = null;
-            
+
             bool hasOverrideOnScrollChange = true;
             void OnScrollChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9443,7 +9443,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScrollChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnScrollChangeListener.html#onScrollChange(android.view.View,int,int,int,int)"/>
             /// </summary>
@@ -9456,13 +9456,13 @@ namespace Android.View
             {
                 hasOverrideOnScrollChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9471,21 +9471,21 @@ namespace Android.View
         public partial class OnScrollChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnScrollChangeListener.html#onScrollChange(android.view.View,int,int,int,int)"/>
@@ -9497,15 +9497,15 @@ namespace Android.View
             /// <param name="arg4"><see cref="int"/></param>
             public override void OnScrollChange(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
             {
-                IExecute("onScrollChange", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onScrollChange", "(Landroid/view/View;IIII)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9514,21 +9514,21 @@ namespace Android.View
         public partial class OnSystemUiVisibilityChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnSystemUiVisibilityChangeListener"/>
@@ -9538,13 +9538,13 @@ namespace Android.View
                 AddEventHandler("onSystemUiVisibilityChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSystemUiVisibilityChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSystemUiVisibilityChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnSystemUiVisibilityChange { get; set; } = null;
-            
+
             bool hasOverrideOnSystemUiVisibilityChange = true;
             void OnSystemUiVisibilityChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9553,7 +9553,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSystemUiVisibilityChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
             /// </summary>
@@ -9563,13 +9563,13 @@ namespace Android.View
             {
                 hasOverrideOnSystemUiVisibilityChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9578,21 +9578,21 @@ namespace Android.View
         public partial class OnSystemUiVisibilityChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
@@ -9603,13 +9603,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onSystemUiVisibilityChange", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9618,21 +9618,21 @@ namespace Android.View
         public partial class OnTouchListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnTouchListener"/>
@@ -9642,13 +9642,13 @@ namespace Android.View
                 AddEventHandler("onTouch", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnTouchEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnTouchListener.html#onTouch(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTouch"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, Android.View.MotionEvent, bool> OnOnTouch { get; set; } = null;
-            
+
             bool hasOverrideOnTouch = true;
             void OnTouchEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9657,7 +9657,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.MotionEvent>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnTouch, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnTouchListener.html#onTouch(android.view.View,android.view.MotionEvent)"/>
             /// </summary>
@@ -9668,13 +9668,13 @@ namespace Android.View
             {
                 hasOverrideOnTouch = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9683,21 +9683,21 @@ namespace Android.View
         public partial class OnTouchListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnTouchListener.html#onTouch(android.view.View,android.view.MotionEvent)"/>
@@ -9707,15 +9707,15 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnTouch(Android.View.View arg0, Android.View.MotionEvent arg1)
             {
-                return IExecute<bool>("onTouch", arg0, arg1);
+                return IExecuteWithSignature<bool>("onTouch", "(Landroid/view/View;Landroid/view/MotionEvent;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9724,21 +9724,21 @@ namespace Android.View
         public partial class OnUnhandledKeyEventListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnUnhandledKeyEventListener"/>
@@ -9748,13 +9748,13 @@ namespace Android.View
                 AddEventHandler("onUnhandledKeyEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUnhandledKeyEventEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnUnhandledKeyEventListener.html#onUnhandledKeyEvent(android.view.View,android.view.KeyEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledKeyEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.View, Android.View.KeyEvent, bool> OnOnUnhandledKeyEvent { get; set; } = null;
-            
+
             bool hasOverrideOnUnhandledKeyEvent = true;
             void OnUnhandledKeyEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -9763,7 +9763,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.View>(0), data.EventData.GetAt<Android.View.KeyEvent>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnUnhandledKeyEvent, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnUnhandledKeyEventListener.html#onUnhandledKeyEvent(android.view.View,android.view.KeyEvent)"/>
             /// </summary>
@@ -9774,13 +9774,13 @@ namespace Android.View
             {
                 hasOverrideOnUnhandledKeyEvent = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -9789,21 +9789,21 @@ namespace Android.View
         public partial class OnUnhandledKeyEventListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/View.OnUnhandledKeyEventListener.html#onUnhandledKeyEvent(android.view.View,android.view.KeyEvent)"/>
@@ -9813,22 +9813,22 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnUnhandledKeyEvent(Android.View.View arg0, Android.View.KeyEvent arg1)
             {
-                return IExecute<bool>("onUnhandledKeyEvent", arg0, arg1);
+                return IExecuteWithSignature<bool>("onUnhandledKeyEvent", "(Landroid/view/View;Landroid/view/KeyEvent;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

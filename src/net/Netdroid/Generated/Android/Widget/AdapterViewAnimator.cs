@@ -42,10 +42,10 @@ namespace Android.Widget
         /// </summary>
         [global::System.Obsolete("AdapterViewAnimator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterViewAnimator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -114,25 +114,25 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Widget.AdapterViewAnimator"/> to <see cref="Android.Widget.Advanceable"/>
         /// </summary>
         public static implicit operator Android.Widget.Advanceable(Android.Widget.AdapterViewAnimator t) => t.Cast<Android.Widget.Advanceable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getInAnimation()"/>
@@ -249,7 +249,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetInAnimation(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setInAnimation", arg0, arg1);
+            IExecuteWithSignature("setInAnimation", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.animation.ObjectAnimator)"/>
@@ -266,7 +266,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetOutAnimation(Android.Content.Context arg0, int arg1)
         {
-            IExecute("setOutAnimation", arg0, arg1);
+            IExecuteWithSignature("setOutAnimation", "(Landroid/content/Context;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setRemoteViewsAdapter(android.content.Intent)"/>
@@ -290,13 +290,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("showPrevious", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

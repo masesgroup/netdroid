@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaDescrambler(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDescrambler.html#SCRAMBLE_CONTROL_EVEN_KEY"/>
@@ -121,13 +121,13 @@ namespace Android.Media
         public static byte SCRAMBLE_FLAG_PES_HEADER { get { if (!_SCRAMBLE_FLAG_PES_HEADERReady) { _SCRAMBLE_FLAG_PES_HEADERContent = SGetField<byte>(LocalBridgeClazz, "SCRAMBLE_FLAG_PES_HEADER"); _SCRAMBLE_FLAG_PES_HEADERReady = true; } return _SCRAMBLE_FLAG_PES_HEADERContent; } }
         private static byte _SCRAMBLE_FLAG_PES_HEADERContent = default;
         private static bool _SCRAMBLE_FLAG_PES_HEADERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDescrambler.html#requiresSecureDecoderComponent(java.lang.String)"/>
@@ -147,7 +147,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Descramble(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1, Android.Media.MediaCodec.CryptoInfo arg2)
         {
-            return IExecute<int>("descramble", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("descramble", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;Landroid/media/MediaCodec$CryptoInfo;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDescrambler.html#close()"/>
@@ -164,13 +164,13 @@ namespace Android.Media
         {
             IExecuteWithSignature("setMediaCasSession", "(Landroid/media/MediaCas$Session;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

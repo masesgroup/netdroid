@@ -42,10 +42,10 @@ namespace Android.Security.Identity
         /// </summary>
         [global::System.Obsolete("CredentialDataResult class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CredentialDataResult(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Security.Identity
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Entries declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Security.Identity
             /// </summary>
             [global::System.Obsolete("Entries class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Entries(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Security.Identity
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,21 +123,21 @@ namespace Android.Security.Identity
     public partial class CredentialDataResult
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.html#getDeviceSignedEntries()"/>
@@ -187,21 +187,21 @@ namespace Android.Security.Identity
         {
             return IExecuteWithSignatureArray<byte>("getDeviceSignature", "()[B");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Entries implementation
         public partial class Entries
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#STATUS_NO_ACCESS_CONTROL_PROFILES"/>
@@ -245,13 +245,13 @@ namespace Android.Security.Identity
             public static int STATUS_USER_AUTHENTICATION_FAILED { get { if (!_STATUS_USER_AUTHENTICATION_FAILEDReady) { _STATUS_USER_AUTHENTICATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_USER_AUTHENTICATION_FAILED"); _STATUS_USER_AUTHENTICATION_FAILEDReady = true; } return _STATUS_USER_AUTHENTICATION_FAILEDContent; } }
             private static int _STATUS_USER_AUTHENTICATION_FAILEDContent = default;
             private static bool _STATUS_USER_AUTHENTICATION_FAILEDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#getEntry(java.lang.String,java.lang.String)"/>
@@ -261,7 +261,7 @@ namespace Android.Security.Identity
             /// <returns><see cref="byte"/></returns>
             public byte[] GetEntry(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecuteArray<byte>("getEntry", arg0, arg1);
+                return IExecuteWithSignatureArray<byte>("getEntry", "(Ljava/lang/String;Ljava/lang/String;)[B", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#getStatus(java.lang.String,java.lang.String)"/>
@@ -271,7 +271,7 @@ namespace Android.Security.Identity
             /// <returns><see cref="int"/></returns>
             public int GetStatus(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<int>("getStatus", arg0, arg1);
+                return IExecuteWithSignature<int>("getStatus", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/identity/CredentialDataResult.Entries.html#getEntryNames(java.lang.String)"/>
@@ -299,20 +299,20 @@ namespace Android.Security.Identity
             {
                 return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getRetrievedEntryNames", "(Ljava/lang/String;)Ljava/util/Collection;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

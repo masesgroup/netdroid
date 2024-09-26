@@ -40,10 +40,10 @@ namespace Android.View.Textservice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextServicesManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Textservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.View.Textservice
     public partial class TextServicesManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#getCurrentSpellCheckerInfo()"/>
@@ -108,7 +108,7 @@ namespace Android.View.Textservice
         /// <returns><see cref="Android.View.Textservice.SpellCheckerSession"/></returns>
         public Android.View.Textservice.SpellCheckerSession NewSpellCheckerSession(Android.Os.Bundle arg0, Java.Util.Locale arg1, Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionListener arg2, bool arg3)
         {
-            return IExecute<Android.View.Textservice.SpellCheckerSession>("newSpellCheckerSession", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession>("newSpellCheckerSession", "(Landroid/os/Bundle;Ljava/util/Locale;Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionListener;Z)Landroid/view/textservice/SpellCheckerSession;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#newSpellCheckerSession(android.view.textservice.SpellCheckerSession.SpellCheckerSessionParams,java.util.concurrent.Executor,android.view.textservice.SpellCheckerSession.SpellCheckerSessionListener)"/>
@@ -119,7 +119,7 @@ namespace Android.View.Textservice
         /// <returns><see cref="Android.View.Textservice.SpellCheckerSession"/></returns>
         public Android.View.Textservice.SpellCheckerSession NewSpellCheckerSession(Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams arg0, Java.Util.Concurrent.Executor arg1, Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionListener arg2)
         {
-            return IExecute<Android.View.Textservice.SpellCheckerSession>("newSpellCheckerSession", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession>("newSpellCheckerSession", "(Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionParams;Ljava/util/concurrent/Executor;Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionListener;)Landroid/view/textservice/SpellCheckerSession;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/TextServicesManager.html#isSpellCheckerEnabled()"/>
@@ -137,13 +137,13 @@ namespace Android.View.Textservice
         {
             return IExecuteWithSignature<Java.Util.List<Android.View.Textservice.SpellCheckerInfo>>("getEnabledSpellCheckerInfos", "()Ljava/util/List;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

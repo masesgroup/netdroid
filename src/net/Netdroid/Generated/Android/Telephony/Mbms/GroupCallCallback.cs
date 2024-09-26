@@ -42,10 +42,10 @@ namespace Android.Telephony.Mbms
         /// </summary>
         [global::System.Obsolete("GroupCallCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GroupCallCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Telephony.Mbms
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Telephony.Mbms
     public partial interface IGroupCallCallback
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.Telephony.Mbms
     public partial class GroupCallCallback : Android.Telephony.Mbms.IGroupCallCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback.html#SIGNAL_STRENGTH_UNAVAILABLE"/>
@@ -108,13 +108,13 @@ namespace Android.Telephony.Mbms
         public static int SIGNAL_STRENGTH_UNAVAILABLE { get { if (!_SIGNAL_STRENGTH_UNAVAILABLEReady) { _SIGNAL_STRENGTH_UNAVAILABLEContent = SGetField<int>(LocalBridgeClazz, "SIGNAL_STRENGTH_UNAVAILABLE"); _SIGNAL_STRENGTH_UNAVAILABLEReady = true; } return _SIGNAL_STRENGTH_UNAVAILABLEContent; } }
         private static int _SIGNAL_STRENGTH_UNAVAILABLEContent = default;
         private static bool _SIGNAL_STRENGTH_UNAVAILABLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback.html#onBroadcastSignalStrengthUpdated(int)"/>
@@ -131,7 +131,7 @@ namespace Android.Telephony.Mbms
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void OnError(int arg0, Java.Lang.String arg1)
         {
-            IExecute("onError", arg0, arg1);
+            IExecuteWithSignature("onError", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback.html#onGroupCallStateChanged(int,int)"/>
@@ -140,15 +140,15 @@ namespace Android.Telephony.Mbms
         /// <param name="arg1"><see cref="int"/></param>
         public void OnGroupCallStateChanged(int arg0, int arg1)
         {
-            IExecute("onGroupCallStateChanged", arg0, arg1);
+            IExecuteWithSignature("onGroupCallStateChanged", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

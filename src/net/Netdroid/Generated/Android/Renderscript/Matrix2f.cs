@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Matrix2f(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,21 +84,21 @@ namespace Android.Renderscript
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix2f.html#get(int,int)"/>
@@ -109,7 +109,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public float Get(int arg0, int arg1)
         {
-            return IExecute<float>("get", arg0, arg1);
+            return IExecuteWithSignature<float>("get", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix2f.html#getArray()"/>
@@ -145,7 +145,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void LoadMultiply(Android.Renderscript.Matrix2f arg0, Android.Renderscript.Matrix2f arg1)
         {
-            IExecute("loadMultiply", arg0, arg1);
+            IExecuteWithSignature("loadMultiply", "(Landroid/renderscript/Matrix2f;Landroid/renderscript/Matrix2f;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix2f.html#loadRotate(float)"/>
@@ -164,7 +164,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void LoadScale(float arg0, float arg1)
         {
-            IExecute("loadScale", arg0, arg1);
+            IExecuteWithSignature("loadScale", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix2f.html#multiply(android.renderscript.Matrix2f)"/>
@@ -192,7 +192,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void Scale(float arg0, float arg1)
         {
-            IExecute("scale", arg0, arg1);
+            IExecuteWithSignature("scale", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix2f.html#set(int,int,float)"/>
@@ -203,7 +203,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void Set(int arg0, int arg1, float arg2)
         {
-            IExecute("set", arg0, arg1, arg2);
+            IExecuteWithSignature("set", "(IIF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Matrix2f.html#transpose()"/>
@@ -213,13 +213,13 @@ namespace Android.Renderscript
         {
             IExecuteWithSignature("transpose", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Javax.Net
         /// </summary>
         [global::System.Obsolete("SocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SocketFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Javax.Net
     public partial class SocketFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#getDefault()"/>
@@ -96,9 +96,9 @@ namespace Javax.Net
         {
             return SExecuteWithSignature<Javax.Net.SocketFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/net/SocketFactory;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.lang.String,int,java.net.InetAddress,int)"/>
@@ -112,7 +112,7 @@ namespace Javax.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public Java.Net.Socket CreateSocket(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.lang.String,int)"/>
@@ -124,7 +124,7 @@ namespace Javax.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public Java.Net.Socket CreateSocket(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int,java.net.InetAddress,int)"/>
@@ -137,7 +137,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int)"/>
@@ -148,7 +148,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.InetAddress arg0, int arg1)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/InetAddress;I)Ljava/net/Socket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/SocketFactory.html#createSocket()"/>
@@ -159,13 +159,13 @@ namespace Javax.Net
         {
             return IExecuteWithSignature<Java.Net.Socket>("createSocket", "()Ljava/net/Socket;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

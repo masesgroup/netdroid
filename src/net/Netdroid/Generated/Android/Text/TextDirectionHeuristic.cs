@@ -42,10 +42,10 @@ namespace Android.Text
         /// </summary>
         [global::System.Obsolete("TextDirectionHeuristic class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TextDirectionHeuristic(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Text
     public partial interface ITextDirectionHeuristic
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Text
     public partial class TextDirectionHeuristic : Android.Text.ITextDirectionHeuristic
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextDirectionHeuristic.html#isRtl(char[],int,int)"/>
@@ -119,7 +119,7 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsRtl(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("isRtl", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("isRtl", "([CII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextDirectionHeuristic.html#isRtl(java.lang.CharSequence,int,int)"/>
@@ -130,15 +130,15 @@ namespace Android.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsRtl(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("isRtl", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("isRtl", "(Ljava/lang/CharSequence;II)Z", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -43,10 +43,10 @@ namespace Android.App
         /// </summary>
         [global::System.Obsolete("FragmentManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FragmentManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,7 +67,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BackStackEntry declaration
         /// <summary>
@@ -87,10 +87,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("BackStackEntry class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public BackStackEntry(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -111,9 +111,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -135,10 +135,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("FragmentLifecycleCallbacks class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public FragmentLifecycleCallbacks(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -159,9 +159,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -176,7 +176,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnBackStackChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.FragmentManager_OnBackStackChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -185,13 +185,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnBackStackChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnBackStackChangedListener"/> or its generic type if there is one
@@ -202,14 +202,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.FragmentManager$OnBackStackChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -241,13 +241,13 @@ namespace Android.App
     public partial class FragmentManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#POP_BACK_STACK_INCLUSIVE"/>
@@ -256,9 +256,9 @@ namespace Android.App
         public static int POP_BACK_STACK_INCLUSIVE { get { if (!_POP_BACK_STACK_INCLUSIVEReady) { _POP_BACK_STACK_INCLUSIVEContent = SGetField<int>(LocalBridgeClazz, "POP_BACK_STACK_INCLUSIVE"); _POP_BACK_STACK_INCLUSIVEReady = true; } return _POP_BACK_STACK_INCLUSIVEContent; } }
         private static int _POP_BACK_STACK_INCLUSIVEContent = default;
         private static bool _POP_BACK_STACK_INCLUSIVEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#enableDebugLogging(boolean)"/>
@@ -269,9 +269,9 @@ namespace Android.App
         {
             SExecuteWithSignature(LocalBridgeClazz, "enableDebugLogging", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#findFragmentById(int)"/>
@@ -302,7 +302,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.Fragment GetFragment(Android.Os.Bundle arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.App.Fragment>("getFragment", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Fragment>("getFragment", "(Landroid/os/Bundle;Ljava/lang/String;)Landroid/app/Fragment;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getPrimaryNavigationFragment()"/>
@@ -387,7 +387,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public bool PopBackStackImmediate(int arg0, int arg1)
         {
-            return IExecute<bool>("popBackStackImmediate", arg0, arg1);
+            return IExecuteWithSignature<bool>("popBackStackImmediate", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#popBackStackImmediate(java.lang.String,int)"/>
@@ -398,7 +398,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public bool PopBackStackImmediate(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<bool>("popBackStackImmediate", arg0, arg1);
+            return IExecuteWithSignature<bool>("popBackStackImmediate", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getBackStackEntryCount()"/>
@@ -437,7 +437,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
-            IExecute("dump", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("dump", "(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#popBackStack()"/>
@@ -455,7 +455,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void PopBackStack(int arg0, int arg1)
         {
-            IExecute("popBackStack", arg0, arg1);
+            IExecuteWithSignature("popBackStack", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#popBackStack(java.lang.String,int)"/>
@@ -465,7 +465,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void PopBackStack(Java.Lang.String arg0, int arg1)
         {
-            IExecute("popBackStack", arg0, arg1);
+            IExecuteWithSignature("popBackStack", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#putFragment(android.os.Bundle,java.lang.String,android.app.Fragment)"/>
@@ -476,7 +476,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void PutFragment(Android.Os.Bundle arg0, Java.Lang.String arg1, Android.App.Fragment arg2)
         {
-            IExecute("putFragment", arg0, arg1, arg2);
+            IExecuteWithSignature("putFragment", "(Landroid/os/Bundle;Ljava/lang/String;Landroid/app/Fragment;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#registerFragmentLifecycleCallbacks(android.app.FragmentManager.FragmentLifecycleCallbacks,boolean)"/>
@@ -486,7 +486,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void RegisterFragmentLifecycleCallbacks(Android.App.FragmentManager.FragmentLifecycleCallbacks arg0, bool arg1)
         {
-            IExecute("registerFragmentLifecycleCallbacks", arg0, arg1);
+            IExecuteWithSignature("registerFragmentLifecycleCallbacks", "(Landroid/app/FragmentManager$FragmentLifecycleCallbacks;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#removeOnBackStackChangedListener(android.app.FragmentManager.OnBackStackChangedListener)"/>
@@ -514,29 +514,29 @@ namespace Android.App
         {
             IExecuteWithSignature("invalidateOptionsMenu", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BackStackEntry implementation
         public partial class BackStackEntry
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbShortTitleRes()"/>
@@ -592,13 +592,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -607,21 +607,21 @@ namespace Android.App
         public partial class FragmentLifecycleCallbacks
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentActivityCreated(android.app.FragmentManager,android.app.Fragment,android.os.Bundle)"/>
@@ -632,7 +632,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentActivityCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onFragmentActivityCreated", arg0, arg1, arg2);
+                IExecuteWithSignature("onFragmentActivityCreated", "(Landroid/app/FragmentManager;Landroid/app/Fragment;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentAttached(android.app.FragmentManager,android.app.Fragment,android.content.Context)"/>
@@ -643,7 +643,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentAttached(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Content.Context arg2)
             {
-                IExecute("onFragmentAttached", arg0, arg1, arg2);
+                IExecuteWithSignature("onFragmentAttached", "(Landroid/app/FragmentManager;Landroid/app/Fragment;Landroid/content/Context;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentCreated(android.app.FragmentManager,android.app.Fragment,android.os.Bundle)"/>
@@ -654,7 +654,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onFragmentCreated", arg0, arg1, arg2);
+                IExecuteWithSignature("onFragmentCreated", "(Landroid/app/FragmentManager;Landroid/app/Fragment;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentDestroyed(android.app.FragmentManager,android.app.Fragment)"/>
@@ -664,7 +664,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentDestroyed(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
-                IExecute("onFragmentDestroyed", arg0, arg1);
+                IExecuteWithSignature("onFragmentDestroyed", "(Landroid/app/FragmentManager;Landroid/app/Fragment;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentDetached(android.app.FragmentManager,android.app.Fragment)"/>
@@ -674,7 +674,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentDetached(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
-                IExecute("onFragmentDetached", arg0, arg1);
+                IExecuteWithSignature("onFragmentDetached", "(Landroid/app/FragmentManager;Landroid/app/Fragment;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentPaused(android.app.FragmentManager,android.app.Fragment)"/>
@@ -684,7 +684,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentPaused(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
-                IExecute("onFragmentPaused", arg0, arg1);
+                IExecuteWithSignature("onFragmentPaused", "(Landroid/app/FragmentManager;Landroid/app/Fragment;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentPreAttached(android.app.FragmentManager,android.app.Fragment,android.content.Context)"/>
@@ -695,7 +695,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentPreAttached(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Content.Context arg2)
             {
-                IExecute("onFragmentPreAttached", arg0, arg1, arg2);
+                IExecuteWithSignature("onFragmentPreAttached", "(Landroid/app/FragmentManager;Landroid/app/Fragment;Landroid/content/Context;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentPreCreated(android.app.FragmentManager,android.app.Fragment,android.os.Bundle)"/>
@@ -706,7 +706,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentPreCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onFragmentPreCreated", arg0, arg1, arg2);
+                IExecuteWithSignature("onFragmentPreCreated", "(Landroid/app/FragmentManager;Landroid/app/Fragment;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentResumed(android.app.FragmentManager,android.app.Fragment)"/>
@@ -716,7 +716,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentResumed(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
-                IExecute("onFragmentResumed", arg0, arg1);
+                IExecuteWithSignature("onFragmentResumed", "(Landroid/app/FragmentManager;Landroid/app/Fragment;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentSaveInstanceState(android.app.FragmentManager,android.app.Fragment,android.os.Bundle)"/>
@@ -727,7 +727,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentSaveInstanceState(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onFragmentSaveInstanceState", arg0, arg1, arg2);
+                IExecuteWithSignature("onFragmentSaveInstanceState", "(Landroid/app/FragmentManager;Landroid/app/Fragment;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentStarted(android.app.FragmentManager,android.app.Fragment)"/>
@@ -737,7 +737,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentStarted(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
-                IExecute("onFragmentStarted", arg0, arg1);
+                IExecuteWithSignature("onFragmentStarted", "(Landroid/app/FragmentManager;Landroid/app/Fragment;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentStopped(android.app.FragmentManager,android.app.Fragment)"/>
@@ -747,7 +747,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentStopped(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
-                IExecute("onFragmentStopped", arg0, arg1);
+                IExecuteWithSignature("onFragmentStopped", "(Landroid/app/FragmentManager;Landroid/app/Fragment;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentViewCreated(android.app.FragmentManager,android.app.Fragment,android.view.View,android.os.Bundle)"/>
@@ -759,7 +759,7 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentViewCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.View.View arg2, Android.Os.Bundle arg3)
             {
-                IExecute("onFragmentViewCreated", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onFragmentViewCreated", "(Landroid/app/FragmentManager;Landroid/app/Fragment;Landroid/view/View;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.FragmentLifecycleCallbacks.html#onFragmentViewDestroyed(android.app.FragmentManager,android.app.Fragment)"/>
@@ -769,15 +769,15 @@ namespace Android.App
             [global::System.Obsolete()]
             public void OnFragmentViewDestroyed(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
-                IExecute("onFragmentViewDestroyed", arg0, arg1);
+                IExecuteWithSignature("onFragmentViewDestroyed", "(Landroid/app/FragmentManager;Landroid/app/Fragment;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -786,21 +786,21 @@ namespace Android.App
         public partial class OnBackStackChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnBackStackChangedListener"/>
@@ -810,13 +810,13 @@ namespace Android.App
                 AddEventHandler("onBackStackChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnBackStackChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener.html#onBackStackChanged()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBackStackChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnBackStackChanged { get; set; } = null;
-            
+
             bool hasOverrideOnBackStackChanged = true;
             void OnBackStackChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -825,7 +825,7 @@ namespace Android.App
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnBackStackChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener.html#onBackStackChanged()"/>
             /// </summary>
@@ -834,13 +834,13 @@ namespace Android.App
             {
                 hasOverrideOnBackStackChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -849,21 +849,21 @@ namespace Android.App
         public partial class OnBackStackChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener.html#onBackStackChanged()"/>
@@ -873,20 +873,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("onBackStackChanged", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LoudnessCodecController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnLoudnessCodecUpdateListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnLoudnessCodecUpdateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.LoudnessCodecController_OnLoudnessCodecUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnLoudnessCodecUpdateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnLoudnessCodecUpdateListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.LoudnessCodecController$OnLoudnessCodecUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,17 +141,17 @@ namespace Android.Media
     public partial class LoudnessCodecController
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/LoudnessCodecController.html#create(int,java.util.concurrent.Executor,android.media.LoudnessCodecController.OnLoudnessCodecUpdateListener)"/>
@@ -162,7 +162,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.LoudnessCodecController"/></returns>
         public static Android.Media.LoudnessCodecController Create(int arg0, Java.Util.Concurrent.Executor arg1, Android.Media.LoudnessCodecController.OnLoudnessCodecUpdateListener arg2)
         {
-            return SExecute<Android.Media.LoudnessCodecController>(LocalBridgeClazz, "create", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Media.LoudnessCodecController>(LocalBridgeClazz, "create", "(ILjava/util/concurrent/Executor;Landroid/media/LoudnessCodecController$OnLoudnessCodecUpdateListener;)Landroid/media/LoudnessCodecController;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/LoudnessCodecController.html#create(int)"/>
@@ -173,9 +173,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<Android.Media.LoudnessCodecController>(LocalBridgeClazz, "create", "(I)Landroid/media/LoudnessCodecController;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/LoudnessCodecController.html#getLoudnessCodecParams(android.media.MediaCodec)"/>
@@ -210,29 +210,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("removeMediaCodec", "(Landroid/media/MediaCodec;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnLoudnessCodecUpdateListener implementation
         public partial class OnLoudnessCodecUpdateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnLoudnessCodecUpdateListener"/>
@@ -251,15 +251,15 @@ namespace Android.Media
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public Android.Os.Bundle OnLoudnessCodecUpdateDefault(Android.Media.MediaCodec arg0, Android.Os.Bundle arg1)
             {
-                return IExecute<Android.Os.Bundle>("onLoudnessCodecUpdateDefault", arg0, arg1);
+                return IExecuteWithSignature<Android.Os.Bundle>("onLoudnessCodecUpdateDefault", "(Landroid/media/MediaCodec;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/LoudnessCodecController.OnLoudnessCodecUpdateListener.html#onLoudnessCodecUpdate(android.media.MediaCodec,android.os.Bundle)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLoudnessCodecUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.Media.MediaCodec, Android.Os.Bundle, Android.Os.Bundle> OnOnLoudnessCodecUpdate { get; set; } = null;
-            
+
             bool hasOverrideOnLoudnessCodecUpdate = true;
             void OnLoudnessCodecUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -268,7 +268,7 @@ namespace Android.Media
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaCodec>(0), data.EventData.GetAt<Android.Os.Bundle>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnLoudnessCodecUpdate, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/LoudnessCodecController.OnLoudnessCodecUpdateListener.html#onLoudnessCodecUpdate(android.media.MediaCodec,android.os.Bundle)"/>
             /// </summary>
@@ -280,13 +280,13 @@ namespace Android.Media
             {
                 hasOverrideOnLoudnessCodecUpdate = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -295,21 +295,21 @@ namespace Android.Media
         public partial class OnLoudnessCodecUpdateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/LoudnessCodecController.OnLoudnessCodecUpdateListener.html#onLoudnessCodecUpdate(android.media.MediaCodec,android.os.Bundle)"/>
@@ -319,22 +319,22 @@ namespace Android.Media
             /// <returns><see cref="Android.Os.Bundle"/></returns>
             public override Android.Os.Bundle OnLoudnessCodecUpdate(Android.Media.MediaCodec arg0, Android.Os.Bundle arg1)
             {
-                return IExecute<Android.Os.Bundle>("onLoudnessCodecUpdate", arg0, arg1);
+                return IExecuteWithSignature<Android.Os.Bundle>("onLoudnessCodecUpdate", "(Landroid/media/MediaCodec;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

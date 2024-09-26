@@ -42,10 +42,10 @@ namespace Android.Service.Carrier
         /// </summary>
         [global::System.Obsolete("CarrierService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CarrierService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Service.Carrier
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Service.Carrier
     public partial class CarrierService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierService.html#CARRIER_SERVICE_INTERFACE"/>
@@ -90,13 +90,13 @@ namespace Android.Service.Carrier
         public static Java.Lang.String CARRIER_SERVICE_INTERFACE { get { if (!_CARRIER_SERVICE_INTERFACEReady) { _CARRIER_SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CARRIER_SERVICE_INTERFACE"); _CARRIER_SERVICE_INTERFACEReady = true; } return _CARRIER_SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _CARRIER_SERVICE_INTERFACEContent = default;
         private static bool _CARRIER_SERVICE_INTERFACEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierService.html#onLoadConfig(android.service.carrier.CarrierIdentifier)"/>
@@ -116,7 +116,7 @@ namespace Android.Service.Carrier
         /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
         public Android.Os.PersistableBundle OnLoadConfig(int arg0, Android.Service.Carrier.CarrierIdentifier arg1)
         {
-            return IExecute<Android.Os.PersistableBundle>("onLoadConfig", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("onLoadConfig", "(ILandroid/service/carrier/CarrierIdentifier;)Landroid/os/PersistableBundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierService.html#notifyCarrierNetworkChange(boolean)"/>
@@ -134,15 +134,15 @@ namespace Android.Service.Carrier
         /// <param name="arg1"><see cref="bool"/></param>
         public void NotifyCarrierNetworkChange(int arg0, bool arg1)
         {
-            IExecute("notifyCarrierNetworkChange", arg0, arg1);
+            IExecuteWithSignature("notifyCarrierNetworkChange", "(IZ)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

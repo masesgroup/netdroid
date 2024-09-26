@@ -42,10 +42,10 @@ namespace Java.Sql
         /// </summary>
         [global::System.Obsolete("Blob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Blob(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Sql
     public partial interface IBlob
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Java.Sql
     public partial class Blob : Java.Sql.IBlob
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Blob.html#getBytes(long,int)"/>
@@ -119,7 +119,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(long arg0, int arg1)
         {
-            return IExecuteArray<byte>("getBytes", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("getBytes", "(JI)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Blob.html#setBytes(long,byte[],int,int)"/>
@@ -132,7 +132,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1, int arg2, int arg3)
         {
-            return IExecute<int>("setBytes", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("setBytes", "(J[BII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Blob.html#setBytes(long,byte[])"/>
@@ -143,7 +143,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1)
         {
-            return IExecute<int>("setBytes", arg0, arg1);
+            return IExecuteWithSignature<int>("setBytes", "(J[B)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Blob.html#getBinaryStream()"/>
@@ -163,7 +163,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(long arg0, long arg1)
         {
-            return IExecute<Java.Io.InputStream>("getBinaryStream", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "(JJ)Ljava/io/InputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Blob.html#setBinaryStream(long)"/>
@@ -193,7 +193,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(byte[] arg0, long arg1)
         {
-            return IExecute<long>("position", arg0, arg1);
+            return IExecuteWithSignature<long>("position", "([BJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Blob.html#position(java.sql.Blob,long)"/>
@@ -204,7 +204,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Blob arg0, long arg1)
         {
-            return IExecute<long>("position", arg0, arg1);
+            return IExecuteWithSignature<long>("position", "(Ljava/sql/Blob;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Blob.html#free()"/>
@@ -223,13 +223,13 @@ namespace Java.Sql
         {
             IExecuteWithSignature("truncate", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

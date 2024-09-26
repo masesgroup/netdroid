@@ -41,10 +41,10 @@ namespace Android.Drm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DrmManagerClient(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Drm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnErrorListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.Drm
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnErrorListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.drm.DrmManagerClient_OnErrorListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.Drm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnErrorListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnErrorListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.Drm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.drm.DrmManagerClient$OnErrorListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -146,7 +146,7 @@ namespace Android.Drm
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnEventListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.drm.DrmManagerClient_OnEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -155,13 +155,13 @@ namespace Android.Drm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnEventListener"/> or its generic type if there is one
@@ -172,14 +172,14 @@ namespace Android.Drm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.drm.DrmManagerClient$OnEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -214,7 +214,7 @@ namespace Android.Drm
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnInfoListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.drm.DrmManagerClient_OnInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -223,13 +223,13 @@ namespace Android.Drm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnInfoListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnInfoListener"/> or its generic type if there is one
@@ -240,14 +240,14 @@ namespace Android.Drm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.drm.DrmManagerClient$OnInfoListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -288,13 +288,13 @@ namespace Android.Drm
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#ERROR_NONE"/>
@@ -310,13 +310,13 @@ namespace Android.Drm
         public static int ERROR_UNKNOWN { get { if (!_ERROR_UNKNOWNReady) { _ERROR_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "ERROR_UNKNOWN"); _ERROR_UNKNOWNReady = true; } return _ERROR_UNKNOWNContent; } }
         private static int _ERROR_UNKNOWNContent = default;
         private static bool _ERROR_UNKNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getConstraints(android.net.Uri,int)"/>
@@ -327,7 +327,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public Android.Content.ContentValues GetConstraints(Android.Net.Uri arg0, int arg1)
         {
-            return IExecute<Android.Content.ContentValues>("getConstraints", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.ContentValues>("getConstraints", "(Landroid/net/Uri;I)Landroid/content/ContentValues;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getConstraints(java.lang.String,int)"/>
@@ -338,7 +338,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public Android.Content.ContentValues GetConstraints(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.ContentValues>("getConstraints", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.ContentValues>("getConstraints", "(Ljava/lang/String;I)Landroid/content/ContentValues;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getMetadata(android.net.Uri)"/>
@@ -379,7 +379,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public Android.Drm.DrmConvertedStatus ConvertData(int arg0, byte[] arg1)
         {
-            return IExecute<Android.Drm.DrmConvertedStatus>("convertData", arg0, arg1);
+            return IExecuteWithSignature<Android.Drm.DrmConvertedStatus>("convertData", "(I[B)Landroid/drm/DrmConvertedStatus;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#acquireDrmInfo(android.drm.DrmInfoRequest)"/>
@@ -400,7 +400,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public bool CanHandle(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("canHandle", arg0, arg1);
+            return IExecuteWithSignature<bool>("canHandle", "(Landroid/net/Uri;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#canHandle(java.lang.String,java.lang.String)"/>
@@ -411,7 +411,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public bool CanHandle(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("canHandle", arg0, arg1);
+            return IExecuteWithSignature<bool>("canHandle", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#acquireRights(android.drm.DrmInfoRequest)"/>
@@ -432,7 +432,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public int CheckRightsStatus(Android.Net.Uri arg0, int arg1)
         {
-            return IExecute<int>("checkRightsStatus", arg0, arg1);
+            return IExecuteWithSignature<int>("checkRightsStatus", "(Landroid/net/Uri;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#checkRightsStatus(android.net.Uri)"/>
@@ -453,7 +453,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public int CheckRightsStatus(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("checkRightsStatus", arg0, arg1);
+            return IExecuteWithSignature<int>("checkRightsStatus", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#checkRightsStatus(java.lang.String)"/>
@@ -474,7 +474,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public int GetDrmObjectType(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getDrmObjectType", arg0, arg1);
+            return IExecuteWithSignature<int>("getDrmObjectType", "(Landroid/net/Uri;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getDrmObjectType(java.lang.String,java.lang.String)"/>
@@ -485,7 +485,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public int GetDrmObjectType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getDrmObjectType", arg0, arg1);
+            return IExecuteWithSignature<int>("getDrmObjectType", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#openConvertSession(java.lang.String)"/>
@@ -547,7 +547,7 @@ namespace Android.Drm
         [global::System.Obsolete()]
         public int SaveRights(Android.Drm.DrmRights arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("saveRights", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("saveRights", "(Landroid/drm/DrmRights;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getOriginalMimeType(android.net.Uri)"/>
@@ -630,29 +630,29 @@ namespace Android.Drm
         {
             IExecuteWithSignature("release", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnErrorListener implementation
         public partial class OnErrorListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnErrorListener"/>
@@ -662,13 +662,13 @@ namespace Android.Drm
                 AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnErrorEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnErrorListener.html#onError(android.drm.DrmManagerClient,android.drm.DrmErrorEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmErrorEvent> OnOnError { get; set; } = null;
-            
+
             bool hasOverrideOnError = true;
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -677,7 +677,7 @@ namespace Android.Drm
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Drm.DrmManagerClient>(0), data.EventData.GetAt<Android.Drm.DrmErrorEvent>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnError;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnErrorListener.html#onError(android.drm.DrmManagerClient,android.drm.DrmErrorEvent)"/>
             /// </summary>
@@ -688,13 +688,13 @@ namespace Android.Drm
             {
                 hasOverrideOnError = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -703,21 +703,21 @@ namespace Android.Drm
         public partial class OnErrorListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnErrorListener.html#onError(android.drm.DrmManagerClient,android.drm.DrmErrorEvent)"/>
@@ -727,15 +727,15 @@ namespace Android.Drm
             [global::System.Obsolete()]
             public override void OnError(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmErrorEvent arg1)
             {
-                IExecute("onError", arg0, arg1);
+                IExecuteWithSignature("onError", "(Landroid/drm/DrmManagerClient;Landroid/drm/DrmErrorEvent;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -744,21 +744,21 @@ namespace Android.Drm
         public partial class OnEventListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnEventListener"/>
@@ -768,13 +768,13 @@ namespace Android.Drm
                 AddEventHandler("onEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnEventEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnEventListener.html#onEvent(android.drm.DrmManagerClient,android.drm.DrmEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmEvent> OnOnEvent { get; set; } = null;
-            
+
             bool hasOverrideOnEvent = true;
             void OnEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -783,7 +783,7 @@ namespace Android.Drm
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Drm.DrmManagerClient>(0), data.EventData.GetAt<Android.Drm.DrmEvent>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnEvent;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnEventListener.html#onEvent(android.drm.DrmManagerClient,android.drm.DrmEvent)"/>
             /// </summary>
@@ -794,13 +794,13 @@ namespace Android.Drm
             {
                 hasOverrideOnEvent = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -809,21 +809,21 @@ namespace Android.Drm
         public partial class OnEventListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnEventListener.html#onEvent(android.drm.DrmManagerClient,android.drm.DrmEvent)"/>
@@ -833,15 +833,15 @@ namespace Android.Drm
             [global::System.Obsolete()]
             public override void OnEvent(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmEvent arg1)
             {
-                IExecute("onEvent", arg0, arg1);
+                IExecuteWithSignature("onEvent", "(Landroid/drm/DrmManagerClient;Landroid/drm/DrmEvent;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -850,21 +850,21 @@ namespace Android.Drm
         public partial class OnInfoListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnInfoListener"/>
@@ -874,13 +874,13 @@ namespace Android.Drm
                 AddEventHandler("onInfo", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnInfoEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnInfoListener.html#onInfo(android.drm.DrmManagerClient,android.drm.DrmInfoEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInfo"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmInfoEvent> OnOnInfo { get; set; } = null;
-            
+
             bool hasOverrideOnInfo = true;
             void OnInfoEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -889,7 +889,7 @@ namespace Android.Drm
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Drm.DrmManagerClient>(0), data.EventData.GetAt<Android.Drm.DrmInfoEvent>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnInfo;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnInfoListener.html#onInfo(android.drm.DrmManagerClient,android.drm.DrmInfoEvent)"/>
             /// </summary>
@@ -900,13 +900,13 @@ namespace Android.Drm
             {
                 hasOverrideOnInfo = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -915,21 +915,21 @@ namespace Android.Drm
         public partial class OnInfoListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnInfoListener.html#onInfo(android.drm.DrmManagerClient,android.drm.DrmInfoEvent)"/>
@@ -939,22 +939,22 @@ namespace Android.Drm
             [global::System.Obsolete()]
             public override void OnInfo(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmInfoEvent arg1)
             {
-                IExecute("onInfo", arg0, arg1);
+                IExecuteWithSignature("onInfo", "(Landroid/drm/DrmManagerClient;Landroid/drm/DrmInfoEvent;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("ViewStructure class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ViewStructure(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region HtmlInfo declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("HtmlInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public HtmlInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,7 +109,7 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -128,10 +128,10 @@ namespace Android.View
                 /// </summary>
                 [global::System.Obsolete("Builder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -152,9 +152,9 @@ namespace Android.View
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -170,21 +170,21 @@ namespace Android.View
     public partial class ViewStructure
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getExtras()"/>
@@ -332,7 +332,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetAutofillId(Android.View.Autofill.AutofillId arg0, int arg1)
         {
-            IExecute("setAutofillId", arg0, arg1);
+            IExecuteWithSignature("setAutofillId", "(Landroid/view/autofill/AutofillId;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setAutofillId(android.view.autofill.AutofillId)"/>
@@ -441,7 +441,7 @@ namespace Android.View
         /// <param name="arg5"><see cref="int"/></param>
         public void SetDimens(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("setDimens", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setDimens", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setElevation(float)"/>
@@ -500,7 +500,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void SetId(int arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("setId", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setId", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setInputType(int)"/>
@@ -550,7 +550,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="int"/></param>
         public void SetText(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            IExecute("setText", arg0, arg1, arg2);
+            IExecuteWithSignature("setText", "(Ljava/lang/CharSequence;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setText(java.lang.CharSequence)"/>
@@ -567,7 +567,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetTextLines(int[] arg0, int[] arg1)
         {
-            IExecute("setTextLines", arg0, arg1);
+            IExecuteWithSignature("setTextLines", "([I[I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setTextStyle(float,int,int,int)"/>
@@ -578,7 +578,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="int"/></param>
         public void SetTextStyle(float arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setTextStyle", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setTextStyle", "(FIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setTransformation(android.graphics.Matrix)"/>
@@ -674,7 +674,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void SetPendingCredentialRequest(Android.Credentials.GetCredentialRequest arg0, Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> arg1)
         {
-            IExecute("setPendingCredentialRequest", arg0, arg1);
+            IExecuteWithSignature("setPendingCredentialRequest", "(Landroid/credentials/GetCredentialRequest;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setReceiveContentMimeTypes(java.lang.String[])"/>
@@ -692,29 +692,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setTextIdEntry", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region HtmlInfo implementation
         public partial class HtmlInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.html#getTag()"/>
@@ -732,29 +732,29 @@ namespace Android.View
             {
                 return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>>>("getAttributes", "()Ljava/util/List;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.Builder.html#build()"/>
@@ -772,29 +772,29 @@ namespace Android.View
                 /// <returns><see cref="Android.View.ViewStructure.HtmlInfo.Builder"/></returns>
                 public Android.View.ViewStructure.HtmlInfo.Builder AddAttribute(Java.Lang.String arg0, Java.Lang.String arg1)
                 {
-                    return IExecute<Android.View.ViewStructure.HtmlInfo.Builder>("addAttribute", arg0, arg1);
+                    return IExecuteWithSignature<Android.View.ViewStructure.HtmlInfo.Builder>("addAttribute", "(Ljava/lang/String;Ljava/lang/String;)Landroid/view/ViewStructure$HtmlInfo$Builder;", arg0, arg1);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

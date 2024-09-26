@@ -42,10 +42,10 @@ namespace Java.Util.Stream
         /// </summary>
         [global::System.Obsolete("IntStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Util.Stream
     public partial interface IIntStream : Java.Util.Stream.IBaseStream<Java.Lang.Integer, Java.Util.Stream.IntStream>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,17 +94,17 @@ namespace Java.Util.Stream
     public partial class IntStream : Java.Util.Stream.IIntStream
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#concat(java.util.stream.IntStream,java.util.stream.IntStream)"/>
@@ -114,7 +114,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Concat(Java.Util.Stream.IntStream arg0, Java.Util.Stream.IntStream arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "concat", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "concat", "(Ljava/util/stream/IntStream;Ljava/util/stream/IntStream;)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#empty()"/>
@@ -142,7 +142,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Iterate(int arg0, Java.Util.Function.IntPredicate arg1, Java.Util.Function.IntUnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", "(ILjava/util/function/IntPredicate;Ljava/util/function/IntUnaryOperator;)Ljava/util/stream/IntStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#iterate(int,java.util.function.IntUnaryOperator)"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Iterate(int arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", "(ILjava/util/function/IntUnaryOperator;)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#of(int[])"/>
@@ -180,7 +180,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Range(int arg0, int arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "range", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "range", "(II)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#rangeClosed(int,int)"/>
@@ -190,11 +190,11 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream RangeClosed(int arg0, int arg1)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "rangeClosed", "(II)Ljava/util/stream/IntStream;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="R"/></returns>
         public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjIntConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute<R>("collect", arg0, arg1, arg2);
+            return IExecuteWithSignature<R>("collect", "(Ljava/util/function/Supplier;Ljava/util/function/ObjIntConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction)"/>
@@ -254,7 +254,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="int"/></returns>
         public int Reduce(int arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
-            return IExecute<int>("reduce", arg0, arg1);
+            return IExecuteWithSignature<int>("reduce", "(ILjava/util/function/IntBinaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#sum()"/>
@@ -516,13 +516,13 @@ namespace Java.Util.Stream
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("takeWhile", "(Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

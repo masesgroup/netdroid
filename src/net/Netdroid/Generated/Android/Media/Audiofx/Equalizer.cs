@@ -40,10 +40,10 @@ namespace Android.Media.Audiofx
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Equalizer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Audiofx
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnParameterChangeListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media.Audiofx
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnParameterChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.audiofx.Equalizer_OnParameterChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnParameterChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnParameterChangeListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.audiofx.Equalizer$OnParameterChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -148,10 +148,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Settings(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -172,9 +172,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -199,13 +199,13 @@ namespace Android.Media.Audiofx
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#PARAM_BAND_FREQ_RANGE"/>
@@ -267,13 +267,13 @@ namespace Android.Media.Audiofx
         public static int PARAM_STRING_SIZE_MAX { get { if (!_PARAM_STRING_SIZE_MAXReady) { _PARAM_STRING_SIZE_MAXContent = SGetField<int>(LocalBridgeClazz, "PARAM_STRING_SIZE_MAX"); _PARAM_STRING_SIZE_MAXReady = true; } return _PARAM_STRING_SIZE_MAXContent; } }
         private static int _PARAM_STRING_SIZE_MAXContent = default;
         private static bool _PARAM_STRING_SIZE_MAXReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getProperties()"/>
@@ -397,7 +397,7 @@ namespace Android.Media.Audiofx
         /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public void SetBandLevel(short arg0, short arg1)
         {
-            IExecute("setBandLevel", arg0, arg1);
+            IExecuteWithSignature("setBandLevel", "(SS)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#setParameterListener(android.media.audiofx.Equalizer.OnParameterChangeListener)"/>
@@ -429,29 +429,29 @@ namespace Android.Media.Audiofx
         {
             IExecuteWithSignature("usePreset", "(S)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnParameterChangeListener implementation
         public partial class OnParameterChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnParameterChangeListener"/>
@@ -461,13 +461,13 @@ namespace Android.Media.Audiofx
                 AddEventHandler("onParameterChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnParameterChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Equalizer,int,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnParameterChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.Audiofx.Equalizer, int, int, int, int> OnOnParameterChange { get; set; } = null;
-            
+
             bool hasOverrideOnParameterChange = true;
             void OnParameterChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -476,7 +476,7 @@ namespace Android.Media.Audiofx
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.Audiofx.Equalizer>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnParameterChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Equalizer,int,int,int,int)"/>
             /// </summary>
@@ -489,13 +489,13 @@ namespace Android.Media.Audiofx
             {
                 hasOverrideOnParameterChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -504,21 +504,21 @@ namespace Android.Media.Audiofx
         public partial class OnParameterChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Equalizer,int,int,int,int)"/>
@@ -530,15 +530,15 @@ namespace Android.Media.Audiofx
             /// <param name="arg4"><see cref="int"/></param>
             public override void OnParameterChange(Android.Media.Audiofx.Equalizer arg0, int arg1, int arg2, int arg3, int arg4)
             {
-                IExecute("onParameterChange", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onParameterChange", "(Landroid/media/audiofx/Equalizer;IIII)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -555,13 +555,13 @@ namespace Android.Media.Audiofx
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.Settings.html#curPreset"/>
@@ -575,28 +575,28 @@ namespace Android.Media.Audiofx
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.Settings.html#bandLevels"/>
             /// </summary>
             public short[] bandLevels { get { return IGetFieldArray<short>("bandLevels"); } set { ISetField("bandLevels", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

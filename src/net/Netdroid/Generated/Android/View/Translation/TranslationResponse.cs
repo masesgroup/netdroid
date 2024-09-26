@@ -40,10 +40,10 @@ namespace Android.View.Translation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TranslationResponse(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View.Translation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View.Translation
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View.Translation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.View.Translation
     public partial class TranslationResponse
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#CREATOR"/>
@@ -151,13 +151,13 @@ namespace Android.View.Translation
         public static int TRANSLATION_STATUS_UNKNOWN_ERROR { get { if (!_TRANSLATION_STATUS_UNKNOWN_ERRORReady) { _TRANSLATION_STATUS_UNKNOWN_ERRORContent = SGetField<int>(LocalBridgeClazz, "TRANSLATION_STATUS_UNKNOWN_ERROR"); _TRANSLATION_STATUS_UNKNOWN_ERRORReady = true; } return _TRANSLATION_STATUS_UNKNOWN_ERRORContent; } }
         private static int _TRANSLATION_STATUS_UNKNOWN_ERRORContent = default;
         private static bool _TRANSLATION_STATUS_UNKNOWN_ERRORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#getTranslationResponseValues()"/>
@@ -206,11 +206,11 @@ namespace Android.View.Translation
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -224,21 +224,21 @@ namespace Android.View.Translation
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.Builder.html#build()"/>
@@ -265,7 +265,7 @@ namespace Android.View.Translation
             /// <returns><see cref="Android.View.Translation.TranslationResponse.Builder"/></returns>
             public Android.View.Translation.TranslationResponse.Builder SetTranslationResponseValue(int arg0, Android.View.Translation.TranslationResponseValue arg1)
             {
-                return IExecute<Android.View.Translation.TranslationResponse.Builder>("setTranslationResponseValue", arg0, arg1);
+                return IExecuteWithSignature<Android.View.Translation.TranslationResponse.Builder>("setTranslationResponseValue", "(ILandroid/view/translation/TranslationResponseValue;)Landroid/view/translation/TranslationResponse$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.Builder.html#setTranslationResponseValues(android.util.SparseArray)"/>
@@ -284,7 +284,7 @@ namespace Android.View.Translation
             /// <returns><see cref="Android.View.Translation.TranslationResponse.Builder"/></returns>
             public Android.View.Translation.TranslationResponse.Builder SetViewTranslationResponse(int arg0, Android.View.Translation.ViewTranslationResponse arg1)
             {
-                return IExecute<Android.View.Translation.TranslationResponse.Builder>("setViewTranslationResponse", arg0, arg1);
+                return IExecuteWithSignature<Android.View.Translation.TranslationResponse.Builder>("setViewTranslationResponse", "(ILandroid/view/translation/ViewTranslationResponse;)Landroid/view/translation/TranslationResponse$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.Builder.html#setViewTranslationResponses(android.util.SparseArray)"/>
@@ -295,20 +295,20 @@ namespace Android.View.Translation
             {
                 return IExecuteWithSignature<Android.View.Translation.TranslationResponse.Builder>("setViewTranslationResponses", "(Landroid/util/SparseArray;)Landroid/view/translation/TranslationResponse$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

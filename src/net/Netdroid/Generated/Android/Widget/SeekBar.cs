@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SeekBar(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnSeekBarChangeListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnSeekBarChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SeekBar_OnSeekBarChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnSeekBarChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnSeekBarChangeListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.widget.SeekBar$OnSeekBarChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -179,21 +179,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SeekBar.html#setOnSeekBarChangeListener(android.widget.SeekBar.OnSeekBarChangeListener)"/>
@@ -203,29 +203,29 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setOnSeekBarChangeListener", "(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnSeekBarChangeListener implementation
         public partial class OnSeekBarChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnSeekBarChangeListener"/>
@@ -237,13 +237,13 @@ namespace Android.Widget
                 AddEventHandler("onStopTrackingTouch", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnStopTrackingTouchEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onProgressChanged(android.widget.SeekBar,int,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnProgressChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.SeekBar, int, bool> OnOnProgressChanged { get; set; } = null;
-            
+
             bool hasOverrideOnProgressChanged = true;
             void OnProgressChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -252,7 +252,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.SeekBar>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<bool>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnProgressChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onProgressChanged(android.widget.SeekBar,int,boolean)"/>
             /// </summary>
@@ -263,13 +263,13 @@ namespace Android.Widget
             {
                 hasOverrideOnProgressChanged = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onStartTrackingTouch(android.widget.SeekBar)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStartTrackingTouch"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.SeekBar> OnOnStartTrackingTouch { get; set; } = null;
-            
+
             bool hasOverrideOnStartTrackingTouch = true;
             void OnStartTrackingTouchEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -278,7 +278,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.SeekBar>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnStartTrackingTouch;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onStartTrackingTouch(android.widget.SeekBar)"/>
             /// </summary>
@@ -287,13 +287,13 @@ namespace Android.Widget
             {
                 hasOverrideOnStartTrackingTouch = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onStopTrackingTouch(android.widget.SeekBar)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStopTrackingTouch"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.SeekBar> OnOnStopTrackingTouch { get; set; } = null;
-            
+
             bool hasOverrideOnStopTrackingTouch = true;
             void OnStopTrackingTouchEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -302,7 +302,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.SeekBar>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnStopTrackingTouch;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onStopTrackingTouch(android.widget.SeekBar)"/>
             /// </summary>
@@ -311,13 +311,13 @@ namespace Android.Widget
             {
                 hasOverrideOnStopTrackingTouch = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -326,21 +326,21 @@ namespace Android.Widget
         public partial class OnSeekBarChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onProgressChanged(android.widget.SeekBar,int,boolean)"/>
@@ -350,7 +350,7 @@ namespace Android.Widget
             /// <param name="arg2"><see cref="bool"/></param>
             public override void OnProgressChanged(Android.Widget.SeekBar arg0, int arg1, bool arg2)
             {
-                IExecute("onProgressChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onProgressChanged", "(Landroid/widget/SeekBar;IZ)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html#onStartTrackingTouch(android.widget.SeekBar)"/>
@@ -368,20 +368,20 @@ namespace Android.Widget
             {
                 IExecuteWithSignature("onStopTrackingTouch", "(Landroid/widget/SeekBar;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

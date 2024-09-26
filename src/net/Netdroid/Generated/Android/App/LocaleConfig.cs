@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LocaleConfig(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,13 +90,13 @@ namespace Android.App
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#CREATOR"/>
@@ -134,9 +134,9 @@ namespace Android.App
         public static Java.Lang.String TAG_LOCALE_CONFIG { get { if (!_TAG_LOCALE_CONFIGReady) { _TAG_LOCALE_CONFIGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_LOCALE_CONFIG"); _TAG_LOCALE_CONFIGReady = true; } return _TAG_LOCALE_CONFIGContent; } }
         private static Java.Lang.String _TAG_LOCALE_CONFIGContent = default;
         private static bool _TAG_LOCALE_CONFIGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#fromContextIgnoringOverride(android.content.Context)"/>
@@ -147,9 +147,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Android.App.LocaleConfig>(LocalBridgeClazz, "fromContextIgnoringOverride", "(Landroid/content/Context;)Landroid/app/LocaleConfig;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#getSupportedLocales()"/>
@@ -190,15 +190,15 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

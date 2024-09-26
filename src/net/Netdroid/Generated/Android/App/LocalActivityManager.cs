@@ -41,10 +41,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LocalActivityManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -85,21 +85,21 @@ namespace Android.App
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getActivity(java.lang.String)"/>
@@ -138,7 +138,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.View.Window DestroyActivity(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Android.View.Window>("destroyActivity", arg0, arg1);
+            return IExecuteWithSignature<Android.View.Window>("destroyActivity", "(Ljava/lang/String;Z)Landroid/view/Window;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#startActivity(java.lang.String,android.content.Intent)"/>
@@ -149,7 +149,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.View.Window StartActivity(Java.Lang.String arg0, Android.Content.Intent arg1)
         {
-            return IExecute<Android.View.Window>("startActivity", arg0, arg1);
+            return IExecuteWithSignature<Android.View.Window>("startActivity", "(Ljava/lang/String;Landroid/content/Intent;)Landroid/view/Window;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getCurrentId()"/>
@@ -211,13 +211,13 @@ namespace Android.App
         {
             IExecuteWithSignature("removeAllActivities", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

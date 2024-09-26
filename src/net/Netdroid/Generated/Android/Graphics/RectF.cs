@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RectF(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -101,13 +101,13 @@ namespace Android.Graphics
             : base(arg0, arg1, arg2, arg3)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#bottom"/>
@@ -131,9 +131,9 @@ namespace Android.Graphics
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#intersects(android.graphics.RectF,android.graphics.RectF)"/>
@@ -143,11 +143,11 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public static bool Intersects(Android.Graphics.RectF arg0, Android.Graphics.RectF arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "intersects", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "intersects", "(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#contains(android.graphics.RectF)"/>
@@ -168,7 +168,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Contains(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("contains", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#contains(float,float)"/>
@@ -178,7 +178,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Contains(float arg0, float arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#intersect(android.graphics.RectF)"/>
@@ -199,7 +199,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Intersect(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("intersect", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersect", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#intersects(float,float,float,float)"/>
@@ -211,7 +211,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersects", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#setIntersect(android.graphics.RectF,android.graphics.RectF)"/>
@@ -221,7 +221,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool SetIntersect(Android.Graphics.RectF arg0, Android.Graphics.RectF arg1)
         {
-            return IExecute<bool>("setIntersect", arg0, arg1);
+            return IExecuteWithSignature<bool>("setIntersect", "(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#isEmpty()"/>
@@ -286,7 +286,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void Inset(float arg0, float arg1)
         {
-            IExecute("inset", arg0, arg1);
+            IExecuteWithSignature("inset", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#offset(float,float)"/>
@@ -295,7 +295,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void Offset(float arg0, float arg1)
         {
-            IExecute("offset", arg0, arg1);
+            IExecuteWithSignature("offset", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#offsetTo(float,float)"/>
@@ -304,7 +304,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void OffsetTo(float arg0, float arg1)
         {
-            IExecute("offsetTo", arg0, arg1);
+            IExecuteWithSignature("offsetTo", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#readFromParcel(android.os.Parcel)"/>
@@ -355,7 +355,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void Set(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("set", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("set", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#setEmpty()"/>
@@ -388,7 +388,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void Union(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("union", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("union", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#union(float,float)"/>
@@ -397,7 +397,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void Union(float arg0, float arg1)
         {
-            IExecute("union", arg0, arg1);
+            IExecuteWithSignature("union", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RectF.html#writeToParcel(android.os.Parcel,int)"/>
@@ -406,15 +406,15 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

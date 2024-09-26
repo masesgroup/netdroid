@@ -40,10 +40,10 @@ namespace Android.Transition
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TransitionInflater(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Transition
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Transition
     public partial class TransitionInflater
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionInflater.html#from(android.content.Context)"/>
@@ -95,9 +95,9 @@ namespace Android.Transition
         {
             return SExecuteWithSignature<Android.Transition.TransitionInflater>(LocalBridgeClazz, "from", "(Landroid/content/Context;)Landroid/transition/TransitionInflater;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionInflater.html#inflateTransition(int)"/>
@@ -116,15 +116,15 @@ namespace Android.Transition
         /// <returns><see cref="Android.Transition.TransitionManager"/></returns>
         public Android.Transition.TransitionManager InflateTransitionManager(int arg0, Android.View.ViewGroup arg1)
         {
-            return IExecute<Android.Transition.TransitionManager>("inflateTransitionManager", arg0, arg1);
+            return IExecuteWithSignature<Android.Transition.TransitionManager>("inflateTransitionManager", "(ILandroid/view/ViewGroup;)Landroid/transition/TransitionManager;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Database.Sqlite
         /// </summary>
         [global::System.Obsolete("SQLiteCursorDriver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLiteCursorDriver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Database.Sqlite
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Database.Sqlite
     public partial interface ISQLiteCursorDriver
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Database.Sqlite
     public partial class SQLiteCursorDriver : Android.Database.Sqlite.ISQLiteCursorDriver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver.html#query(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String[])"/>
@@ -118,7 +118,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver.html#cursorClosed()"/>
@@ -150,13 +150,13 @@ namespace Android.Database.Sqlite
         {
             IExecuteWithSignature("setBindArguments", "([Ljava/lang/String;)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

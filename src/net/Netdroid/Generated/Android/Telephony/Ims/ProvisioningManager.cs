@@ -40,10 +40,10 @@ namespace Android.Telephony.Ims
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ProvisioningManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony.Ims
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region FeatureProvisioningCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Telephony.Ims
             /// </summary>
             [global::System.Obsolete("FeatureProvisioningCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public FeatureProvisioningCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Telephony.Ims
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Android.Telephony.Ims
     public partial class ProvisioningManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#getProvisioningStatusForCapability(int,int)"/>
@@ -145,7 +145,7 @@ namespace Android.Telephony.Ims
         /// <returns><see cref="bool"/></returns>
         public bool GetProvisioningStatusForCapability(int arg0, int arg1)
         {
-            return IExecute<bool>("getProvisioningStatusForCapability", arg0, arg1);
+            return IExecuteWithSignature<bool>("getProvisioningStatusForCapability", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#getRcsProvisioningStatusForCapability(int,int)"/>
@@ -155,7 +155,7 @@ namespace Android.Telephony.Ims
         /// <returns><see cref="bool"/></returns>
         public bool GetRcsProvisioningStatusForCapability(int arg0, int arg1)
         {
-            return IExecute<bool>("getRcsProvisioningStatusForCapability", arg0, arg1);
+            return IExecuteWithSignature<bool>("getRcsProvisioningStatusForCapability", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#isProvisioningRequiredForCapability(int,int)"/>
@@ -165,7 +165,7 @@ namespace Android.Telephony.Ims
         /// <returns><see cref="bool"/></returns>
         public bool IsProvisioningRequiredForCapability(int arg0, int arg1)
         {
-            return IExecute<bool>("isProvisioningRequiredForCapability", arg0, arg1);
+            return IExecuteWithSignature<bool>("isProvisioningRequiredForCapability", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#isRcsProvisioningRequiredForCapability(int,int)"/>
@@ -175,7 +175,7 @@ namespace Android.Telephony.Ims
         /// <returns><see cref="bool"/></returns>
         public bool IsRcsProvisioningRequiredForCapability(int arg0, int arg1)
         {
-            return IExecute<bool>("isRcsProvisioningRequiredForCapability", arg0, arg1);
+            return IExecuteWithSignature<bool>("isRcsProvisioningRequiredForCapability", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#registerFeatureProvisioningChangedCallback(java.util.concurrent.Executor,android.telephony.ims.ProvisioningManager.FeatureProvisioningCallback)"/>
@@ -185,7 +185,7 @@ namespace Android.Telephony.Ims
         /// <exception cref="Android.Telephony.Ims.ImsException"/>
         public void RegisterFeatureProvisioningChangedCallback(Java.Util.Concurrent.Executor arg0, Android.Telephony.Ims.ProvisioningManager.FeatureProvisioningCallback arg1)
         {
-            IExecute("registerFeatureProvisioningChangedCallback", arg0, arg1);
+            IExecuteWithSignature("registerFeatureProvisioningChangedCallback", "(Ljava/util/concurrent/Executor;Landroid/telephony/ims/ProvisioningManager$FeatureProvisioningCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#setProvisioningStatusForCapability(int,int,boolean)"/>
@@ -195,7 +195,7 @@ namespace Android.Telephony.Ims
         /// <param name="arg2"><see cref="bool"/></param>
         public void SetProvisioningStatusForCapability(int arg0, int arg1, bool arg2)
         {
-            IExecute("setProvisioningStatusForCapability", arg0, arg1, arg2);
+            IExecuteWithSignature("setProvisioningStatusForCapability", "(IIZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#setRcsProvisioningStatusForCapability(int,int,boolean)"/>
@@ -205,7 +205,7 @@ namespace Android.Telephony.Ims
         /// <param name="arg2"><see cref="bool"/></param>
         public void SetRcsProvisioningStatusForCapability(int arg0, int arg1, bool arg2)
         {
-            IExecute("setRcsProvisioningStatusForCapability", arg0, arg1, arg2);
+            IExecuteWithSignature("setRcsProvisioningStatusForCapability", "(IIZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.html#unregisterFeatureProvisioningChangedCallback(android.telephony.ims.ProvisioningManager.FeatureProvisioningCallback)"/>
@@ -215,29 +215,29 @@ namespace Android.Telephony.Ims
         {
             IExecuteWithSignature("unregisterFeatureProvisioningChangedCallback", "(Landroid/telephony/ims/ProvisioningManager$FeatureProvisioningCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region FeatureProvisioningCallback implementation
         public partial class FeatureProvisioningCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.FeatureProvisioningCallback.html#onFeatureProvisioningChanged(int,int,boolean)"/>
@@ -247,7 +247,7 @@ namespace Android.Telephony.Ims
             /// <param name="arg2"><see cref="bool"/></param>
             public void OnFeatureProvisioningChanged(int arg0, int arg1, bool arg2)
             {
-                IExecute("onFeatureProvisioningChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onFeatureProvisioningChanged", "(IIZ)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/ims/ProvisioningManager.FeatureProvisioningCallback.html#onRcsFeatureProvisioningChanged(int,int,boolean)"/>
@@ -257,22 +257,22 @@ namespace Android.Telephony.Ims
             /// <param name="arg2"><see cref="bool"/></param>
             public void OnRcsFeatureProvisioningChanged(int arg0, int arg1, bool arg2)
             {
-                IExecute("onRcsFeatureProvisioningChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onRcsFeatureProvisioningChanged", "(IIZ)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

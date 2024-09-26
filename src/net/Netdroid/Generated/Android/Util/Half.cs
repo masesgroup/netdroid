@@ -40,10 +40,10 @@ namespace Android.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Half(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -107,17 +107,17 @@ namespace Android.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Util.Half"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Util.Half t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#MAX_EXPONENT"/>
@@ -197,9 +197,9 @@ namespace Android.Util
         public static short POSITIVE_ZERO { get { if (!_POSITIVE_ZEROReady) { _POSITIVE_ZEROContent = SGetField<short>(LocalBridgeClazz, "POSITIVE_ZERO"); _POSITIVE_ZEROReady = true; } return _POSITIVE_ZEROContent; } }
         private static short _POSITIVE_ZEROContent = default;
         private static bool _POSITIVE_ZEROReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#valueOf(float)"/>
@@ -236,7 +236,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "equals", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#greater(short,short)"/>
@@ -246,7 +246,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Greater(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "greater", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "greater", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#greaterEquals(short,short)"/>
@@ -256,7 +256,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool GreaterEquals(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "greaterEquals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "greaterEquals", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#isInfinite(short)"/>
@@ -293,7 +293,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Less(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "less", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "less", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#lessEquals(short,short)"/>
@@ -303,7 +303,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool LessEquals(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "lessEquals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "lessEquals", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#toFloat(short)"/>
@@ -322,7 +322,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(short arg0, short arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(SS)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#getExponent(short)"/>
@@ -422,7 +422,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short CopySign(short arg0, short arg1)
         {
-            return SExecute<short>(LocalBridgeClazz, "copySign", arg0, arg1);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "copySign", "(SS)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#floor(short)"/>
@@ -459,7 +459,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Max(short arg0, short arg1)
         {
-            return SExecute<short>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "max", "(SS)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#min(short,short)"/>
@@ -469,7 +469,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Min(short arg0, short arg1)
         {
-            return SExecute<short>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "min", "(SS)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#parseHalf(java.lang.String)"/>
@@ -508,9 +508,9 @@ namespace Android.Util
         {
             return SExecuteWithSignature<short>(LocalBridgeClazz, "trunc", "(S)S", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#isNaN()"/>
@@ -546,13 +546,13 @@ namespace Android.Util
         {
             return IExecuteWithSignature<short>("halfValue", "()S");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

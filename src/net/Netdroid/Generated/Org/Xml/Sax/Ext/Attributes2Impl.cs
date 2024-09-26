@@ -40,10 +40,10 @@ namespace Org.Xml.Sax.Ext
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Attributes2Impl(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,25 +82,25 @@ namespace Org.Xml.Sax.Ext
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Org.Xml.Sax.Ext.Attributes2Impl"/> to <see cref="Org.Xml.Sax.Ext.Attributes2"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.Attributes2(Org.Xml.Sax.Ext.Attributes2Impl t) => t.Cast<Org.Xml.Sax.Ext.Attributes2>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isDeclared(int)"/>
@@ -119,7 +119,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isDeclared", arg0, arg1);
+            return IExecuteWithSignature<bool>("isDeclared", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String)"/>
@@ -147,7 +147,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isSpecified", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSpecified", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetDeclared(int arg0, bool arg1)
         {
-            IExecute("setDeclared", arg0, arg1);
+            IExecuteWithSignature("setDeclared", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2Impl.html#setSpecified(int,boolean)"/>
@@ -174,15 +174,15 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSpecified(int arg0, bool arg1)
         {
-            IExecute("setSpecified", arg0, arg1);
+            IExecuteWithSignature("setSpecified", "(IZ)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

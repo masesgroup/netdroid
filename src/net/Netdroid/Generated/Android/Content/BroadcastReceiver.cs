@@ -42,10 +42,10 @@ namespace Android.Content
         /// </summary>
         [global::System.Obsolete("BroadcastReceiver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BroadcastReceiver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region PendingResult declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PendingResult(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Android.Content
     public partial class BroadcastReceiver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#onReceive(android.content.Context,android.content.Intent)"/>
@@ -144,7 +144,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnReceive(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onReceive", arg0, arg1);
+            IExecuteWithSignature("onReceive", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#peekService(android.content.Context,android.content.Intent)"/>
@@ -154,7 +154,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Os.IBinder"/></returns>
         public Android.Os.IBinder PeekService(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            return IExecute<Android.Os.IBinder>("peekService", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.IBinder>("peekService", "(Landroid/content/Context;Landroid/content/Intent;)Landroid/os/IBinder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#goAsync()"/>
@@ -259,7 +259,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void SetResult(int arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            IExecute("setResult", arg0, arg1, arg2);
+            IExecuteWithSignature("setResult", "(ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setResultCode(int)"/>
@@ -301,29 +301,29 @@ namespace Android.Content
         {
             return IExecuteWithSignature<Java.Lang.String>("getSentFromPackage", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region PendingResult implementation
         public partial class PendingResult
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#getResultExtras(boolean)"/>
@@ -387,7 +387,7 @@ namespace Android.Content
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
             public void SetResult(int arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
             {
-                IExecute("setResult", arg0, arg1, arg2);
+                IExecuteWithSignature("setResult", "(ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#setResultCode(int)"/>
@@ -413,20 +413,20 @@ namespace Android.Content
             {
                 IExecuteWithSignature("setResultExtras", "(Landroid/os/Bundle;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

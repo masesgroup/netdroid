@@ -40,10 +40,10 @@ namespace Android.Hardware.Usb
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UsbRequest(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Usb
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Hardware.Usb
     public partial class UsbRequest
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getEndpoint()"/>
@@ -114,7 +114,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool Initialize(Android.Hardware.Usb.UsbDeviceConnection arg0, Android.Hardware.Usb.UsbEndpoint arg1)
         {
-            return IExecute<bool>("initialize", arg0, arg1);
+            return IExecuteWithSignature<bool>("initialize", "(Landroid/hardware/usb/UsbDeviceConnection;Landroid/hardware/usb/UsbEndpoint;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#queue(java.nio.ByteBuffer,int)"/>
@@ -125,7 +125,7 @@ namespace Android.Hardware.Usb
         [global::System.Obsolete()]
         public bool Queue(Java.Nio.ByteBuffer arg0, int arg1)
         {
-            return IExecute<bool>("queue", arg0, arg1);
+            return IExecuteWithSignature<bool>("queue", "(Ljava/nio/ByteBuffer;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#queue(java.nio.ByteBuffer)"/>
@@ -159,13 +159,13 @@ namespace Android.Hardware.Usb
         {
             IExecuteWithSignature("setClientData", "(Ljava/lang/Object;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

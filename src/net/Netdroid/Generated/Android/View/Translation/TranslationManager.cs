@@ -40,10 +40,10 @@ namespace Android.View.Translation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TranslationManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Translation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.View.Translation
     public partial class TranslationManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationManager.html#getOnDeviceTranslationSettingsActivityIntent()"/>
@@ -106,7 +106,7 @@ namespace Android.View.Translation
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Android.View.Translation.TranslationCapability> GetOnDeviceTranslationCapabilities(int arg0, int arg1)
         {
-            return IExecute<Java.Util.Set<Android.View.Translation.TranslationCapability>>("getOnDeviceTranslationCapabilities", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Set<Android.View.Translation.TranslationCapability>>("getOnDeviceTranslationCapabilities", "(II)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationManager.html#addOnDeviceTranslationCapabilityUpdateListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -115,7 +115,7 @@ namespace Android.View.Translation
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void AddOnDeviceTranslationCapabilityUpdateListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.View.Translation.TranslationCapability> arg1)
         {
-            IExecute("addOnDeviceTranslationCapabilityUpdateListener", arg0, arg1);
+            IExecuteWithSignature("addOnDeviceTranslationCapabilityUpdateListener", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationManager.html#createOnDeviceTranslator(android.view.translation.TranslationContext,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -125,7 +125,7 @@ namespace Android.View.Translation
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void CreateOnDeviceTranslator(Android.View.Translation.TranslationContext arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.View.Translation.Translator> arg2)
         {
-            IExecute("createOnDeviceTranslator", arg0, arg1, arg2);
+            IExecuteWithSignature("createOnDeviceTranslator", "(Landroid/view/translation/TranslationContext;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationManager.html#removeOnDeviceTranslationCapabilityUpdateListener(java.util.function.Consumer)"/>
@@ -135,13 +135,13 @@ namespace Android.View.Translation
         {
             IExecuteWithSignature("removeOnDeviceTranslationCapabilityUpdateListener", "(Ljava/util/function/Consumer;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

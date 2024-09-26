@@ -40,10 +40,10 @@ namespace Android.Content.Res.Loader
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ResourcesProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Res.Loader
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Android.Content.Res.Loader
     public partial class ResourcesProvider : Java.Lang.IAutoCloseable, Java.Io.ICloseable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.Res.Loader.ResourcesProvider"/> to <see cref="Java.Lang.AutoCloseable"/>
@@ -86,13 +86,13 @@ namespace Android.Content.Res.Loader
         /// Converter from <see cref="Android.Content.Res.Loader.ResourcesProvider"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Android.Content.Res.Loader.ResourcesProvider t) => t.Cast<Java.Io.Closeable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesProvider.html#empty(android.content.res.loader.AssetsProvider)"/>
@@ -112,7 +112,7 @@ namespace Android.Content.Res.Loader
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Content.Res.Loader.ResourcesProvider LoadFromApk(Android.Os.ParcelFileDescriptor arg0, Android.Content.Res.Loader.AssetsProvider arg1)
         {
-            return SExecute<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromApk", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromApk", "(Landroid/os/ParcelFileDescriptor;Landroid/content/res/loader/AssetsProvider;)Landroid/content/res/loader/ResourcesProvider;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesProvider.html#loadFromApk(android.os.ParcelFileDescriptor)"/>
@@ -133,7 +133,7 @@ namespace Android.Content.Res.Loader
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Content.Res.Loader.ResourcesProvider LoadFromDirectory(Java.Lang.String arg0, Android.Content.Res.Loader.AssetsProvider arg1)
         {
-            return SExecute<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromDirectory", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromDirectory", "(Ljava/lang/String;Landroid/content/res/loader/AssetsProvider;)Landroid/content/res/loader/ResourcesProvider;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesProvider.html#loadFromSplit(android.content.Context,java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Android.Content.Res.Loader
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Content.Res.Loader.ResourcesProvider LoadFromSplit(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromSplit", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromSplit", "(Landroid/content/Context;Ljava/lang/String;)Landroid/content/res/loader/ResourcesProvider;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesProvider.html#loadFromTable(android.os.ParcelFileDescriptor,android.content.res.loader.AssetsProvider)"/>
@@ -155,7 +155,7 @@ namespace Android.Content.Res.Loader
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Content.Res.Loader.ResourcesProvider LoadFromTable(Android.Os.ParcelFileDescriptor arg0, Android.Content.Res.Loader.AssetsProvider arg1)
         {
-            return SExecute<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromTable", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadFromTable", "(Landroid/os/ParcelFileDescriptor;Landroid/content/res/loader/AssetsProvider;)Landroid/content/res/loader/ResourcesProvider;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesProvider.html#loadOverlay(android.content.om.OverlayInfo)"/>
@@ -167,9 +167,9 @@ namespace Android.Content.Res.Loader
         {
             return SExecuteWithSignature<Android.Content.Res.Loader.ResourcesProvider>(LocalBridgeClazz, "loadOverlay", "(Landroid/content/om/OverlayInfo;)Landroid/content/res/loader/ResourcesProvider;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesProvider.html#close()"/>
@@ -178,13 +178,13 @@ namespace Android.Content.Res.Loader
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

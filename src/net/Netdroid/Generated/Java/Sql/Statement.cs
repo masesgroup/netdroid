@@ -42,10 +42,10 @@ namespace Java.Sql
         /// </summary>
         [global::System.Obsolete("Statement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Statement(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Sql
     public partial interface IStatement
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,9 +94,9 @@ namespace Java.Sql
     public partial class Statement : Java.Sql.IStatement, Java.Sql.IWrapper, Java.Lang.IAutoCloseable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Sql.Statement"/> to <see cref="Java.Sql.Wrapper"/>
@@ -106,9 +106,9 @@ namespace Java.Sql
         /// Converter from <see cref="Java.Sql.Statement"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Sql.Statement t) => t.Cast<Java.Lang.AutoCloseable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#CLOSE_ALL_RESULTS"/>
@@ -152,13 +152,13 @@ namespace Java.Sql
         public static int SUCCESS_NO_INFO { get { if (!_SUCCESS_NO_INFOReady) { _SUCCESS_NO_INFOContent = SGetField<int>(LocalBridgeClazz, "SUCCESS_NO_INFO"); _SUCCESS_NO_INFOReady = true; } return _SUCCESS_NO_INFOContent; } }
         private static int _SUCCESS_NO_INFOContent = default;
         private static bool _SUCCESS_NO_INFOReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String,int)"/>
@@ -169,7 +169,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<bool>("execute", arg0, arg1);
+            return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String,int[])"/>
@@ -180,7 +180,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<bool>("execute", arg0, arg1);
+            return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;[I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String,java.lang.String[])"/>
@@ -191,7 +191,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<bool>("execute", arg0, arg1);
+            return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;[Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String)"/>
@@ -258,7 +258,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("executeUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeUpdate(java.lang.String,int[])"/>
@@ -269,7 +269,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<int>("executeUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;[I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeUpdate(java.lang.String,java.lang.String[])"/>
@@ -280,7 +280,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<int>("executeUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeUpdate(java.lang.String)"/>
@@ -568,7 +568,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String EnquoteIdentifier(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Java.Lang.String>("enquoteIdentifier", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("enquoteIdentifier", "(Ljava/lang/String;Z)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#enquoteLiteral(java.lang.String)"/>
@@ -599,7 +599,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<long>("executeLargeUpdate", arg0, arg1);
+            return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int[])"/>
@@ -610,7 +610,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<long>("executeLargeUpdate", arg0, arg1);
+            return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;[I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeUpdate(java.lang.String,java.lang.String[])"/>
@@ -621,7 +621,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<long>("executeLargeUpdate", arg0, arg1);
+            return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;[Ljava/lang/String;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeUpdate(java.lang.String)"/>
@@ -669,13 +669,13 @@ namespace Java.Sql
         {
             IExecuteWithSignature("setLargeMaxRows", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Javax.Xml.Validation
         /// </summary>
         [global::System.Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Validator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Validation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Javax.Xml.Validation
     public partial class Validator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getResourceResolver()"/>
@@ -98,7 +98,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></returns>
         public Org.W3c.Dom.Ls.LSResourceResolver GetResourceResolver()
         {
-            return IExecute<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver");
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getErrorHandler()"/>
@@ -106,14 +106,14 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
         public Org.Xml.Sax.ErrorHandler GetErrorHandler()
         {
-            return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler");
+            return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
@@ -121,7 +121,7 @@ namespace Javax.Xml.Validation
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
-            IExecute("setErrorHandler", arg0);
+            IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)"/>
@@ -129,7 +129,7 @@ namespace Javax.Xml.Validation
         /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></param>
         public void SetResourceResolver(Org.W3c.Dom.Ls.LSResourceResolver arg0)
         {
-            IExecute("setResourceResolver", arg0);
+            IExecuteWithSignature("setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source,javax.xml.transform.Result)"/>
@@ -140,7 +140,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Java.Io.IOException"/>
         public void Validate(Javax.Xml.Transform.Source arg0, Javax.Xml.Transform.Result arg1)
         {
-            IExecute("validate", arg0, arg1);
+            IExecuteWithSignature("validate", "(Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getFeature(java.lang.String)"/>
@@ -151,7 +151,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecute<bool>("getFeature", arg0);
+            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getProperty(java.lang.String)"/>
@@ -162,7 +162,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setFeature(java.lang.String,boolean)"/>
@@ -173,7 +173,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -184,7 +184,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source)"/>
@@ -194,15 +194,15 @@ namespace Javax.Xml.Validation
         /// <exception cref="Java.Io.IOException"/>
         public void Validate(Javax.Xml.Transform.Source arg0)
         {
-            IExecute("validate", arg0);
+            IExecuteWithSignature("validate", "(Ljavax/xml/transform/Source;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

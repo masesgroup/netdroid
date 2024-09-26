@@ -42,10 +42,10 @@ namespace Android.Telephony
         /// </summary>
         [global::System.Obsolete("VisualVoicemailService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public VisualVoicemailService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region VisualVoicemailTask declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public VisualVoicemailTask(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Telephony
     public partial class VisualVoicemailService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailService.html#SERVICE_INTERFACE"/>
@@ -135,13 +135,13 @@ namespace Android.Telephony
         public static Java.Lang.String SERVICE_INTERFACE { get { if (!_SERVICE_INTERFACEReady) { _SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_INTERFACE"); _SERVICE_INTERFACEReady = true; } return _SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _SERVICE_INTERFACEContent = default;
         private static bool _SERVICE_INTERFACEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailService.html#onCellServiceConnected(android.telephony.VisualVoicemailService.VisualVoicemailTask,android.telecom.PhoneAccountHandle)"/>
@@ -150,7 +150,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telecom.PhoneAccountHandle"/></param>
         public void OnCellServiceConnected(Android.Telephony.VisualVoicemailService.VisualVoicemailTask arg0, Android.Telecom.PhoneAccountHandle arg1)
         {
-            IExecute("onCellServiceConnected", arg0, arg1);
+            IExecuteWithSignature("onCellServiceConnected", "(Landroid/telephony/VisualVoicemailService$VisualVoicemailTask;Landroid/telecom/PhoneAccountHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailService.html#onSimRemoved(android.telephony.VisualVoicemailService.VisualVoicemailTask,android.telecom.PhoneAccountHandle)"/>
@@ -159,7 +159,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telecom.PhoneAccountHandle"/></param>
         public void OnSimRemoved(Android.Telephony.VisualVoicemailService.VisualVoicemailTask arg0, Android.Telecom.PhoneAccountHandle arg1)
         {
-            IExecute("onSimRemoved", arg0, arg1);
+            IExecuteWithSignature("onSimRemoved", "(Landroid/telephony/VisualVoicemailService$VisualVoicemailTask;Landroid/telecom/PhoneAccountHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailService.html#onSmsReceived(android.telephony.VisualVoicemailService.VisualVoicemailTask,android.telephony.VisualVoicemailSms)"/>
@@ -168,7 +168,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telephony.VisualVoicemailSms"/></param>
         public void OnSmsReceived(Android.Telephony.VisualVoicemailService.VisualVoicemailTask arg0, Android.Telephony.VisualVoicemailSms arg1)
         {
-            IExecute("onSmsReceived", arg0, arg1);
+            IExecuteWithSignature("onSmsReceived", "(Landroid/telephony/VisualVoicemailService$VisualVoicemailTask;Landroid/telephony/VisualVoicemailSms;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailService.html#onStopped(android.telephony.VisualVoicemailService.VisualVoicemailTask)"/>
@@ -178,29 +178,29 @@ namespace Android.Telephony
         {
             IExecuteWithSignature("onStopped", "(Landroid/telephony/VisualVoicemailService$VisualVoicemailTask;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region VisualVoicemailTask implementation
         public partial class VisualVoicemailTask
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailService.VisualVoicemailTask.html#finish()"/>
@@ -209,20 +209,20 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("finish", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

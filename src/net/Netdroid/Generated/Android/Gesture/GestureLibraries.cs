@@ -40,10 +40,10 @@ namespace Android.Gesture
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GestureLibraries(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Gesture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Gesture
     public partial class GestureLibraries
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureLibraries.html#fromFile(java.io.File)"/>
@@ -121,7 +121,7 @@ namespace Android.Gesture
         /// <returns><see cref="Android.Gesture.GestureLibrary"/></returns>
         public static Android.Gesture.GestureLibrary FromPrivateFile(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Gesture.GestureLibrary>(LocalBridgeClazz, "fromPrivateFile", arg0, arg1);
+            return SExecuteWithSignature<Android.Gesture.GestureLibrary>(LocalBridgeClazz, "fromPrivateFile", "(Landroid/content/Context;Ljava/lang/String;)Landroid/gesture/GestureLibrary;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureLibraries.html#fromRawResource(android.content.Context,int)"/>
@@ -131,19 +131,19 @@ namespace Android.Gesture
         /// <returns><see cref="Android.Gesture.GestureLibrary"/></returns>
         public static Android.Gesture.GestureLibrary FromRawResource(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.Gesture.GestureLibrary>(LocalBridgeClazz, "fromRawResource", arg0, arg1);
+            return SExecuteWithSignature<Android.Gesture.GestureLibrary>(LocalBridgeClazz, "fromRawResource", "(Landroid/content/Context;I)Landroid/gesture/GestureLibrary;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

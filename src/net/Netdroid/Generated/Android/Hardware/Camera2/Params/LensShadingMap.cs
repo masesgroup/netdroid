@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LensShadingMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Hardware.Camera2.Params
     public partial class LensShadingMap
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#MINIMUM_GAIN_FACTOR"/>
@@ -88,13 +88,13 @@ namespace Android.Hardware.Camera2.Params
         public static float MINIMUM_GAIN_FACTOR { get { if (!_MINIMUM_GAIN_FACTORReady) { _MINIMUM_GAIN_FACTORContent = SGetField<float>(LocalBridgeClazz, "MINIMUM_GAIN_FACTOR"); _MINIMUM_GAIN_FACTORReady = true; } return _MINIMUM_GAIN_FACTORContent; } }
         private static float _MINIMUM_GAIN_FACTORContent = default;
         private static bool _MINIMUM_GAIN_FACTORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getGainFactorVector(int,int)"/>
@@ -104,7 +104,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="Android.Hardware.Camera2.Params.RggbChannelVector"/></returns>
         public Android.Hardware.Camera2.Params.RggbChannelVector GetGainFactorVector(int arg0, int arg1)
         {
-            return IExecute<Android.Hardware.Camera2.Params.RggbChannelVector>("getGainFactorVector", arg0, arg1);
+            return IExecuteWithSignature<Android.Hardware.Camera2.Params.RggbChannelVector>("getGainFactorVector", "(II)Landroid/hardware/camera2/params/RggbChannelVector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getGainFactor(int,int,int)"/>
@@ -115,7 +115,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="float"/></returns>
         public float GetGainFactor(int arg0, int arg1, int arg2)
         {
-            return IExecute<float>("getGainFactor", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("getGainFactor", "(III)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getColumnCount()"/>
@@ -148,15 +148,15 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg1"><see cref="int"/></param>
         public void CopyGainFactors(float[] arg0, int arg1)
         {
-            IExecute("copyGainFactors", arg0, arg1);
+            IExecuteWithSignature("copyGainFactors", "([FI)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

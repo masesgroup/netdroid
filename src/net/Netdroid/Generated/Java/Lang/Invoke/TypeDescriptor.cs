@@ -42,10 +42,10 @@ namespace Java.Lang.Invoke
         /// </summary>
         [global::System.Obsolete("TypeDescriptor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeDescriptor(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OfField declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Java.Lang.Invoke
             /// </summary>
             [global::System.Obsolete("OfField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OfField(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Java.Lang.Invoke
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -133,10 +133,10 @@ namespace Java.Lang.Invoke
             /// </summary>
             [global::System.Obsolete("OfField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OfField(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -157,9 +157,9 @@ namespace Java.Lang.Invoke
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -180,10 +180,10 @@ namespace Java.Lang.Invoke
             /// </summary>
             [global::System.Obsolete("OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OfMethod(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -204,9 +204,9 @@ namespace Java.Lang.Invoke
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -229,10 +229,10 @@ namespace Java.Lang.Invoke
             /// </summary>
             [global::System.Obsolete("OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OfMethod(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -253,9 +253,9 @@ namespace Java.Lang.Invoke
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -270,13 +270,13 @@ namespace Java.Lang.Invoke
     public partial interface ITypeDescriptor
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -285,21 +285,21 @@ namespace Java.Lang.Invoke
     public partial class TypeDescriptor : Java.Lang.Invoke.ITypeDescriptor
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.html#descriptorString()"/>
@@ -309,29 +309,29 @@ namespace Java.Lang.Invoke
         {
             return IExecuteWithSignature<Java.Lang.String>("descriptorString", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OfField implementation
         public partial class OfField
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#isArray()"/>
@@ -365,13 +365,13 @@ namespace Java.Lang.Invoke
             {
                 return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("componentType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -380,25 +380,25 @@ namespace Java.Lang.Invoke
         public partial class OfField<F>
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Lang.Invoke.TypeDescriptor.OfField{F}"/> to <see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/>
             /// </summary>
             public static implicit operator Java.Lang.Invoke.TypeDescriptor.OfField(Java.Lang.Invoke.TypeDescriptor.OfField<F> t) => t.Cast<Java.Lang.Invoke.TypeDescriptor.OfField>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfField.html#isArray()"/>
@@ -432,13 +432,13 @@ namespace Java.Lang.Invoke
             {
                 return IExecuteWithSignature<F>("componentType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -447,21 +447,21 @@ namespace Java.Lang.Invoke
         public partial class OfMethod
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)"/>
@@ -512,7 +512,7 @@ namespace Java.Lang.Invoke
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
             public Java.Lang.Invoke.TypeDescriptor.OfMethod ChangeParameterType(int arg0, Java.Lang.Invoke.TypeDescriptor.OfField arg1)
             {
-                return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeParameterType", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeParameterType", "(ILjava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
@@ -531,7 +531,7 @@ namespace Java.Lang.Invoke
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
             public Java.Lang.Invoke.TypeDescriptor.OfMethod DropParameterTypes(int arg0, int arg1)
             {
-                return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("dropParameterTypes", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("dropParameterTypes", "(II)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
@@ -541,15 +541,15 @@ namespace Java.Lang.Invoke
             /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
             public Java.Lang.Invoke.TypeDescriptor.OfMethod InsertParameterTypes(int arg0, params Java.Lang.Invoke.TypeDescriptor.OfField[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", arg0); else return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", "(I[Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0); else return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", "(I[Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -558,25 +558,25 @@ namespace Java.Lang.Invoke
         public partial class OfMethod<F, M>
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod{F, M}"/> to <see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/>
             /// </summary>
             public static implicit operator Java.Lang.Invoke.TypeDescriptor.OfMethod(Java.Lang.Invoke.TypeDescriptor.OfMethod<F, M> t) => t.Cast<Java.Lang.Invoke.TypeDescriptor.OfMethod>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)"/>
@@ -627,7 +627,7 @@ namespace Java.Lang.Invoke
             /// <returns><typeparamref name="M"/></returns>
             public M ChangeParameterType(int arg0, F arg1)
             {
-                return IExecute<M>("changeParameterType", arg0, arg1);
+                return IExecuteWithSignature<M>("changeParameterType", "(ILjava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
@@ -646,7 +646,7 @@ namespace Java.Lang.Invoke
             /// <returns><typeparamref name="M"/></returns>
             public M DropParameterTypes(int arg0, int arg1)
             {
-                return IExecute<M>("dropParameterTypes", arg0, arg1);
+                return IExecuteWithSignature<M>("dropParameterTypes", "(II)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
@@ -656,22 +656,22 @@ namespace Java.Lang.Invoke
             /// <returns><typeparamref name="M"/></returns>
             public M InsertParameterTypes(int arg0, params F[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<M>("insertParameterTypes", arg0); else return IExecute<M>("insertParameterTypes", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<M>("insertParameterTypes", "(I[Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0); else return IExecuteWithSignature<M>("insertParameterTypes", "(I[Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

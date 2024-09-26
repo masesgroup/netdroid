@@ -40,10 +40,10 @@ namespace Android.App.Job
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JobInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Job
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Job
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Job
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.App.Job
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TriggerContentUri(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.App.Job
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.App.Job
     public partial class JobInfo
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#CREATOR"/>
@@ -275,9 +275,9 @@ namespace Android.App.Job
         public static long MAX_BACKOFF_DELAY_MILLIS { get { if (!_MAX_BACKOFF_DELAY_MILLISReady) { _MAX_BACKOFF_DELAY_MILLISContent = SGetField<long>(LocalBridgeClazz, "MAX_BACKOFF_DELAY_MILLIS"); _MAX_BACKOFF_DELAY_MILLISReady = true; } return _MAX_BACKOFF_DELAY_MILLISContent; } }
         private static long _MAX_BACKOFF_DELAY_MILLISContent = default;
         private static bool _MAX_BACKOFF_DELAY_MILLISReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinFlexMillis()"/>
@@ -295,9 +295,9 @@ namespace Android.App.Job
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getMinPeriodMillis", "()J");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTriggerContentUris()"/>
@@ -579,11 +579,11 @@ namespace Android.App.Job
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -598,21 +598,21 @@ namespace Android.App.Job
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#build()"/>
@@ -657,7 +657,7 @@ namespace Android.App.Job
             /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
             public Android.App.Job.JobInfo.Builder SetBackoffCriteria(long arg0, int arg1)
             {
-                return IExecute<Android.App.Job.JobInfo.Builder>("setBackoffCriteria", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setBackoffCriteria", "(JI)Landroid/app/job/JobInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setClipData(android.content.ClipData,int)"/>
@@ -667,7 +667,7 @@ namespace Android.App.Job
             /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
             public Android.App.Job.JobInfo.Builder SetClipData(Android.Content.ClipData arg0, int arg1)
             {
-                return IExecute<Android.App.Job.JobInfo.Builder>("setClipData", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setClipData", "(Landroid/content/ClipData;I)Landroid/app/job/JobInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setEstimatedNetworkBytes(long,long)"/>
@@ -677,7 +677,7 @@ namespace Android.App.Job
             /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
             public Android.App.Job.JobInfo.Builder SetEstimatedNetworkBytes(long arg0, long arg1)
             {
-                return IExecute<Android.App.Job.JobInfo.Builder>("setEstimatedNetworkBytes", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setEstimatedNetworkBytes", "(JJ)Landroid/app/job/JobInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setExpedited(boolean)"/>
@@ -742,7 +742,7 @@ namespace Android.App.Job
             /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
             public Android.App.Job.JobInfo.Builder SetPeriodic(long arg0, long arg1)
             {
-                return IExecute<Android.App.Job.JobInfo.Builder>("setPeriodic", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setPeriodic", "(JJ)Landroid/app/job/JobInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setPeriodic(long)"/>
@@ -879,13 +879,13 @@ namespace Android.App.Job
             {
                 return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setUserInitiated", "(Z)Landroid/app/job/JobInfo$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -903,13 +903,13 @@ namespace Android.App.Job
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#CREATOR"/>
@@ -923,13 +923,13 @@ namespace Android.App.Job
             public static int FLAG_NOTIFY_FOR_DESCENDANTS { get { if (!_FLAG_NOTIFY_FOR_DESCENDANTSReady) { _FLAG_NOTIFY_FOR_DESCENDANTSContent = SGetField<int>(LocalBridgeClazz, "FLAG_NOTIFY_FOR_DESCENDANTS"); _FLAG_NOTIFY_FOR_DESCENDANTSReady = true; } return _FLAG_NOTIFY_FOR_DESCENDANTSContent; } }
             private static int _FLAG_NOTIFY_FOR_DESCENDANTSContent = default;
             private static bool _FLAG_NOTIFY_FOR_DESCENDANTSReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#getUri()"/>
@@ -962,22 +962,22 @@ namespace Android.App.Job
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

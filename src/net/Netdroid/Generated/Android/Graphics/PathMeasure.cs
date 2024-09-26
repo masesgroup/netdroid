@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PathMeasure(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.Graphics
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#POSITION_MATRIX_FLAG"/>
@@ -103,13 +103,13 @@ namespace Android.Graphics
         public static int TANGENT_MATRIX_FLAG { get { if (!_TANGENT_MATRIX_FLAGReady) { _TANGENT_MATRIX_FLAGContent = SGetField<int>(LocalBridgeClazz, "TANGENT_MATRIX_FLAG"); _TANGENT_MATRIX_FLAGReady = true; } return _TANGENT_MATRIX_FLAGContent; } }
         private static int _TANGENT_MATRIX_FLAGContent = default;
         private static bool _TANGENT_MATRIX_FLAGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#getMatrix(float,android.graphics.Matrix,int)"/>
@@ -120,7 +120,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool GetMatrix(float arg0, Android.Graphics.Matrix arg1, int arg2)
         {
-            return IExecute<bool>("getMatrix", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getMatrix", "(FLandroid/graphics/Matrix;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#getPosTan(float,float[],float[])"/>
@@ -131,7 +131,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool GetPosTan(float arg0, float[] arg1, float[] arg2)
         {
-            return IExecute<bool>("getPosTan", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getPosTan", "(F[F[F)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#getSegment(float,float,android.graphics.Path,boolean)"/>
@@ -143,7 +143,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool GetSegment(float arg0, float arg1, Android.Graphics.Path arg2, bool arg3)
         {
-            return IExecute<bool>("getSegment", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("getSegment", "(FFLandroid/graphics/Path;Z)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PathMeasure.html#isClosed()"/>
@@ -176,15 +176,15 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetPath(Android.Graphics.Path arg0, bool arg1)
         {
-            IExecute("setPath", arg0, arg1);
+            IExecuteWithSignature("setPath", "(Landroid/graphics/Path;Z)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

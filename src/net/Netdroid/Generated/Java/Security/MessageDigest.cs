@@ -42,10 +42,10 @@ namespace Java.Security
         /// </summary>
         [global::System.Obsolete("MessageDigest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MessageDigest(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Java.Security
     public partial class MessageDigest
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#isEqual(byte[],byte[])"/>
@@ -96,7 +96,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public static bool IsEqual(byte[] arg0, byte[] arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isEqual", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isEqual", "([B[B)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -108,7 +108,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.MessageDigest GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/MessageDigest;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -119,7 +119,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.MessageDigest GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/MessageDigest;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#getInstance(java.lang.String)"/>
@@ -131,9 +131,9 @@ namespace Java.Security
         {
             return SExecuteWithSignature<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/MessageDigest;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#digest()"/>
@@ -194,7 +194,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.DigestException"/>
         public int Digest(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("digest", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("digest", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#reset()"/>
@@ -219,7 +219,7 @@ namespace Java.Security
         /// <param name="arg2"><see cref="int"/></param>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("update", arg0, arg1, arg2);
+            IExecuteWithSignature("update", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/MessageDigest.html#update(byte[])"/>
@@ -229,13 +229,13 @@ namespace Java.Security
         {
             IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

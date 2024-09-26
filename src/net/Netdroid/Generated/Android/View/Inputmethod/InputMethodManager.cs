@@ -40,10 +40,10 @@ namespace Android.View.Inputmethod
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputMethodManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.View.Inputmethod
     public partial class InputMethodManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED"/>
@@ -137,13 +137,13 @@ namespace Android.View.Inputmethod
         public static int SHOW_IMPLICIT { get { if (!_SHOW_IMPLICITReady) { _SHOW_IMPLICITContent = SGetField<int>(LocalBridgeClazz, "SHOW_IMPLICIT"); _SHOW_IMPLICITReady = true; } return _SHOW_IMPLICITContent; } }
         private static int _SHOW_IMPLICITContent = default;
         private static bool _SHOW_IMPLICITReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodInfo()"/>
@@ -177,7 +177,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool AcceptStylusHandwritingDelegation(Android.View.View arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("acceptStylusHandwritingDelegation", arg0, arg1);
+            return IExecuteWithSignature<bool>("acceptStylusHandwritingDelegation", "(Landroid/view/View;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View)"/>
@@ -197,7 +197,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool HideSoftInputFromWindow(Android.Os.IBinder arg0, int arg1, Android.Os.ResultReceiver arg2)
         {
-            return IExecute<bool>("hideSoftInputFromWindow", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("hideSoftInputFromWindow", "(Landroid/os/IBinder;ILandroid/os/ResultReceiver;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromWindow(android.os.IBinder,int)"/>
@@ -207,7 +207,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool HideSoftInputFromWindow(Android.Os.IBinder arg0, int arg1)
         {
-            return IExecute<bool>("hideSoftInputFromWindow", arg0, arg1);
+            return IExecuteWithSignature<bool>("hideSoftInputFromWindow", "(Landroid/os/IBinder;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isAcceptingText()"/>
@@ -305,7 +305,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool ShowSoftInput(Android.View.View arg0, int arg1, Android.Os.ResultReceiver arg2)
         {
-            return IExecute<bool>("showSoftInput", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("showSoftInput", "(Landroid/view/View;ILandroid/os/ResultReceiver;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showSoftInput(android.view.View,int)"/>
@@ -315,7 +315,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="bool"/></returns>
         public bool ShowSoftInput(Android.View.View arg0, int arg1)
         {
-            return IExecute<bool>("showSoftInput", arg0, arg1);
+            return IExecuteWithSignature<bool>("showSoftInput", "(Landroid/view/View;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#switchToLastInputMethod(android.os.IBinder)"/>
@@ -336,7 +336,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public bool SwitchToNextInputMethod(Android.Os.IBinder arg0, bool arg1)
         {
-            return IExecute<bool>("switchToNextInputMethod", arg0, arg1);
+            return IExecuteWithSignature<bool>("switchToNextInputMethod", "(Landroid/os/IBinder;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodList()"/>
@@ -362,7 +362,7 @@ namespace Android.View.Inputmethod
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.View.Inputmethod.InputMethodSubtype> GetEnabledInputMethodSubtypeList(Android.View.Inputmethod.InputMethodInfo arg0, bool arg1)
         {
-            return IExecute<Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>>("getEnabledInputMethodSubtypeList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>>("getEnabledInputMethodSubtypeList", "(Landroid/view/inputmethod/InputMethodInfo;Z)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getShortcutInputMethodsAndSubtypes()"/>
@@ -382,7 +382,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg4"><see cref="Java.Util.Function.Consumer"/></param>
         public void AcceptStylusHandwritingDelegation(Android.View.View arg0, Java.Lang.String arg1, int arg2, Java.Util.Concurrent.Executor arg3, Java.Util.Function.Consumer<Java.Lang.Boolean> arg4)
         {
-            IExecute("acceptStylusHandwritingDelegation", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("acceptStylusHandwritingDelegation", "(Landroid/view/View;Ljava/lang/String;ILjava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -393,7 +393,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void AcceptStylusHandwritingDelegation(Android.View.View arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Lang.Boolean> arg3)
         {
-            IExecute("acceptStylusHandwritingDelegation", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("acceptStylusHandwritingDelegation", "(Landroid/view/View;Ljava/lang/String;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#dispatchKeyEventFromInputMethod(android.view.View,android.view.KeyEvent)"/>
@@ -402,7 +402,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         public void DispatchKeyEventFromInputMethod(Android.View.View arg0, Android.View.KeyEvent arg1)
         {
-            IExecute("dispatchKeyEventFromInputMethod", arg0, arg1);
+            IExecuteWithSignature("dispatchKeyEventFromInputMethod", "(Landroid/view/View;Landroid/view/KeyEvent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#displayCompletions(android.view.View,android.view.inputmethod.CompletionInfo[])"/>
@@ -411,7 +411,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.View.Inputmethod.CompletionInfo"/></param>
         public void DisplayCompletions(Android.View.View arg0, Android.View.Inputmethod.CompletionInfo[] arg1)
         {
-            IExecute("displayCompletions", arg0, arg1);
+            IExecuteWithSignature("displayCompletions", "(Landroid/view/View;[Landroid/view/inputmethod/CompletionInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromInputMethod(android.os.IBinder,int)"/>
@@ -421,7 +421,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void HideSoftInputFromInputMethod(Android.Os.IBinder arg0, int arg1)
         {
-            IExecute("hideSoftInputFromInputMethod", arg0, arg1);
+            IExecuteWithSignature("hideSoftInputFromInputMethod", "(Landroid/os/IBinder;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideStatusIcon(android.os.IBinder)"/>
@@ -447,7 +447,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void PrepareStylusHandwritingDelegation(Android.View.View arg0, Java.Lang.String arg1)
         {
-            IExecute("prepareStylusHandwritingDelegation", arg0, arg1);
+            IExecuteWithSignature("prepareStylusHandwritingDelegation", "(Landroid/view/View;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#prepareStylusHandwritingDelegation(android.view.View)"/>
@@ -473,7 +473,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void SendAppPrivateCommand(Android.View.View arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            IExecute("sendAppPrivateCommand", arg0, arg1, arg2);
+            IExecuteWithSignature("sendAppPrivateCommand", "(Landroid/view/View;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setAdditionalInputMethodSubtypes(java.lang.String,android.view.inputmethod.InputMethodSubtype[])"/>
@@ -483,7 +483,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void SetAdditionalInputMethodSubtypes(Java.Lang.String arg0, Android.View.Inputmethod.InputMethodSubtype[] arg1)
         {
-            IExecute("setAdditionalInputMethodSubtypes", arg0, arg1);
+            IExecuteWithSignature("setAdditionalInputMethodSubtypes", "(Ljava/lang/String;[Landroid/view/inputmethod/InputMethodSubtype;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setExplicitlyEnabledInputMethodSubtypes(java.lang.String,int[])"/>
@@ -492,7 +492,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="int"/></param>
         public void SetExplicitlyEnabledInputMethodSubtypes(Java.Lang.String arg0, int[] arg1)
         {
-            IExecute("setExplicitlyEnabledInputMethodSubtypes", arg0, arg1);
+            IExecuteWithSignature("setExplicitlyEnabledInputMethodSubtypes", "(Ljava/lang/String;[I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setInputMethod(android.os.IBinder,java.lang.String)"/>
@@ -502,7 +502,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void SetInputMethod(Android.Os.IBinder arg0, Java.Lang.String arg1)
         {
-            IExecute("setInputMethod", arg0, arg1);
+            IExecuteWithSignature("setInputMethod", "(Landroid/os/IBinder;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setInputMethodAndSubtype(android.os.IBinder,java.lang.String,android.view.inputmethod.InputMethodSubtype)"/>
@@ -513,7 +513,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void SetInputMethodAndSubtype(Android.Os.IBinder arg0, Java.Lang.String arg1, Android.View.Inputmethod.InputMethodSubtype arg2)
         {
-            IExecute("setInputMethodAndSubtype", arg0, arg1, arg2);
+            IExecuteWithSignature("setInputMethodAndSubtype", "(Landroid/os/IBinder;Ljava/lang/String;Landroid/view/inputmethod/InputMethodSubtype;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showInputMethodAndSubtypeEnabler(java.lang.String)"/>
@@ -538,7 +538,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void ShowSoftInputFromInputMethod(Android.Os.IBinder arg0, int arg1)
         {
-            IExecute("showSoftInputFromInputMethod", arg0, arg1);
+            IExecuteWithSignature("showSoftInputFromInputMethod", "(Landroid/os/IBinder;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showStatusIcon(android.os.IBinder,java.lang.String,int)"/>
@@ -549,7 +549,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void ShowStatusIcon(Android.Os.IBinder arg0, Java.Lang.String arg1, int arg2)
         {
-            IExecute("showStatusIcon", arg0, arg1, arg2);
+            IExecuteWithSignature("showStatusIcon", "(Landroid/os/IBinder;Ljava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwriting(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)"/>
@@ -560,7 +560,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg3"><see cref="Android.View.Inputmethod.ConnectionlessHandwritingCallback"/></param>
         public void StartConnectionlessStylusHandwriting(Android.View.View arg0, Android.View.Inputmethod.CursorAnchorInfo arg1, Java.Util.Concurrent.Executor arg2, Android.View.Inputmethod.ConnectionlessHandwritingCallback arg3)
         {
-            IExecute("startConnectionlessStylusHandwriting", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startConnectionlessStylusHandwriting", "(Landroid/view/View;Landroid/view/inputmethod/CursorAnchorInfo;Ljava/util/concurrent/Executor;Landroid/view/inputmethod/ConnectionlessHandwritingCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.lang.String,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)"/>
@@ -572,7 +572,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg4"><see cref="Android.View.Inputmethod.ConnectionlessHandwritingCallback"/></param>
         public void StartConnectionlessStylusHandwritingForDelegation(Android.View.View arg0, Android.View.Inputmethod.CursorAnchorInfo arg1, Java.Lang.String arg2, Java.Util.Concurrent.Executor arg3, Android.View.Inputmethod.ConnectionlessHandwritingCallback arg4)
         {
-            IExecute("startConnectionlessStylusHandwritingForDelegation", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("startConnectionlessStylusHandwritingForDelegation", "(Landroid/view/View;Landroid/view/inputmethod/CursorAnchorInfo;Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/view/inputmethod/ConnectionlessHandwritingCallback;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)"/>
@@ -583,7 +583,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg3"><see cref="Android.View.Inputmethod.ConnectionlessHandwritingCallback"/></param>
         public void StartConnectionlessStylusHandwritingForDelegation(Android.View.View arg0, Android.View.Inputmethod.CursorAnchorInfo arg1, Java.Util.Concurrent.Executor arg2, Android.View.Inputmethod.ConnectionlessHandwritingCallback arg3)
         {
-            IExecute("startConnectionlessStylusHandwritingForDelegation", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startConnectionlessStylusHandwritingForDelegation", "(Landroid/view/View;Landroid/view/inputmethod/CursorAnchorInfo;Ljava/util/concurrent/Executor;Landroid/view/inputmethod/ConnectionlessHandwritingCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startStylusHandwriting(android.view.View)"/>
@@ -601,7 +601,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void ToggleSoftInput(int arg0, int arg1)
         {
-            IExecute("toggleSoftInput", arg0, arg1);
+            IExecuteWithSignature("toggleSoftInput", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#toggleSoftInputFromWindow(android.os.IBinder,int,int)"/>
@@ -612,7 +612,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void ToggleSoftInputFromWindow(Android.Os.IBinder arg0, int arg1, int arg2)
         {
-            IExecute("toggleSoftInputFromWindow", arg0, arg1, arg2);
+            IExecuteWithSignature("toggleSoftInputFromWindow", "(Landroid/os/IBinder;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateCursor(android.view.View,int,int,int,int)"/>
@@ -625,7 +625,7 @@ namespace Android.View.Inputmethod
         [global::System.Obsolete()]
         public void UpdateCursor(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("updateCursor", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("updateCursor", "(Landroid/view/View;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateCursorAnchorInfo(android.view.View,android.view.inputmethod.CursorAnchorInfo)"/>
@@ -634,7 +634,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="Android.View.Inputmethod.CursorAnchorInfo"/></param>
         public void UpdateCursorAnchorInfo(Android.View.View arg0, Android.View.Inputmethod.CursorAnchorInfo arg1)
         {
-            IExecute("updateCursorAnchorInfo", arg0, arg1);
+            IExecuteWithSignature("updateCursorAnchorInfo", "(Landroid/view/View;Landroid/view/inputmethod/CursorAnchorInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateExtractedText(android.view.View,int,android.view.inputmethod.ExtractedText)"/>
@@ -644,7 +644,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="Android.View.Inputmethod.ExtractedText"/></param>
         public void UpdateExtractedText(Android.View.View arg0, int arg1, Android.View.Inputmethod.ExtractedText arg2)
         {
-            IExecute("updateExtractedText", arg0, arg1, arg2);
+            IExecuteWithSignature("updateExtractedText", "(Landroid/view/View;ILandroid/view/inputmethod/ExtractedText;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateSelection(android.view.View,int,int,int,int)"/>
@@ -656,7 +656,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg4"><see cref="int"/></param>
         public void UpdateSelection(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("updateSelection", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("updateSelection", "(Landroid/view/View;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#viewClicked(android.view.View)"/>
@@ -667,13 +667,13 @@ namespace Android.View.Inputmethod
         {
             IExecuteWithSignature("viewClicked", "(Landroid/view/View;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

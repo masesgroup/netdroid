@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Aware
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SubscribeConfig(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Net.Wifi.Aware
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Net.Wifi.Aware
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Net.Wifi.Aware
     public partial class SubscribeConfig
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#CREATOR"/>
@@ -145,13 +145,13 @@ namespace Android.Net.Wifi.Aware
         public static int SUBSCRIBE_TYPE_PASSIVE { get { if (!_SUBSCRIBE_TYPE_PASSIVEReady) { _SUBSCRIBE_TYPE_PASSIVEContent = SGetField<int>(LocalBridgeClazz, "SUBSCRIBE_TYPE_PASSIVE"); _SUBSCRIBE_TYPE_PASSIVEReady = true; } return _SUBSCRIBE_TYPE_PASSIVEContent; } }
         private static int _SUBSCRIBE_TYPE_PASSIVEContent = default;
         private static bool _SUBSCRIBE_TYPE_PASSIVEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.html#getPairingConfig()"/>
@@ -192,31 +192,31 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.Builder.html#build()"/>
@@ -234,7 +234,7 @@ namespace Android.Net.Wifi.Aware
             /// <returns><see cref="Android.Net.Wifi.Aware.SubscribeConfig.Builder"/></returns>
             public Android.Net.Wifi.Aware.SubscribeConfig.Builder SetInstantCommunicationModeEnabled(bool arg0, int arg1)
             {
-                return IExecute<Android.Net.Wifi.Aware.SubscribeConfig.Builder>("setInstantCommunicationModeEnabled", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Wifi.Aware.SubscribeConfig.Builder>("setInstantCommunicationModeEnabled", "(ZI)Landroid/net/wifi/aware/SubscribeConfig$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/aware/SubscribeConfig.Builder.html#setMatchFilter(java.util.List)"/>
@@ -317,20 +317,20 @@ namespace Android.Net.Wifi.Aware
             {
                 return IExecuteWithSignature<Android.Net.Wifi.Aware.SubscribeConfig.Builder>("setTtlSec", "(I)Landroid/net/wifi/aware/SubscribeConfig$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

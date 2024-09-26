@@ -42,10 +42,10 @@ namespace Android.Hardware.Camera2
         /// </summary>
         [global::System.Obsolete("CameraCaptureSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CameraCaptureSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CaptureCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Hardware.Camera2
             /// </summary>
             [global::System.Obsolete("CaptureCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CaptureCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Hardware.Camera2
             /// </summary>
             [global::System.Obsolete("StateCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public StateCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -170,21 +170,21 @@ namespace Android.Hardware.Camera2
     public partial class CameraCaptureSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#getDevice()"/>
@@ -220,7 +220,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int Capture(Android.Hardware.Camera2.CaptureRequest arg0, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg1, Android.Os.Handler arg2)
         {
-            return IExecute<int>("capture", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("capture", "(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#captureBurst(java.util.List,android.hardware.camera2.CameraCaptureSession.CaptureCallback,android.os.Handler)"/>
@@ -232,7 +232,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int CaptureBurst(Java.Util.List<Android.Hardware.Camera2.CaptureRequest> arg0, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg1, Android.Os.Handler arg2)
         {
-            return IExecute<int>("captureBurst", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("captureBurst", "(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#setRepeatingBurst(java.util.List,android.hardware.camera2.CameraCaptureSession.CaptureCallback,android.os.Handler)"/>
@@ -244,7 +244,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int SetRepeatingBurst(Java.Util.List<Android.Hardware.Camera2.CaptureRequest> arg0, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg1, Android.Os.Handler arg2)
         {
-            return IExecute<int>("setRepeatingBurst", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("setRepeatingBurst", "(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#setRepeatingRequest(android.hardware.camera2.CaptureRequest,android.hardware.camera2.CameraCaptureSession.CaptureCallback,android.os.Handler)"/>
@@ -256,7 +256,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int SetRepeatingRequest(Android.Hardware.Camera2.CaptureRequest arg0, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg1, Android.Os.Handler arg2)
         {
-            return IExecute<int>("setRepeatingRequest", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("setRepeatingRequest", "(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#abortCaptures()"/>
@@ -309,7 +309,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public Android.Hardware.Camera2.CameraOfflineSession SwitchToOffline(Java.Util.Collection<Android.View.Surface> arg0, Java.Util.Concurrent.Executor arg1, Android.Hardware.Camera2.CameraOfflineSession.CameraOfflineSessionCallback arg2)
         {
-            return IExecute<Android.Hardware.Camera2.CameraOfflineSession>("switchToOffline", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Hardware.Camera2.CameraOfflineSession>("switchToOffline", "(Ljava/util/Collection;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraOfflineSession$CameraOfflineSessionCallback;)Landroid/hardware/camera2/CameraOfflineSession;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#supportsOfflineProcessing(android.view.Surface)"/>
@@ -330,7 +330,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int CaptureBurstRequests(Java.Util.List<Android.Hardware.Camera2.CaptureRequest> arg0, Java.Util.Concurrent.Executor arg1, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg2)
         {
-            return IExecute<int>("captureBurstRequests", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("captureBurstRequests", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#captureSingleRequest(android.hardware.camera2.CaptureRequest,java.util.concurrent.Executor,android.hardware.camera2.CameraCaptureSession.CaptureCallback)"/>
@@ -342,7 +342,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int CaptureSingleRequest(Android.Hardware.Camera2.CaptureRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg2)
         {
-            return IExecute<int>("captureSingleRequest", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("captureSingleRequest", "(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#setRepeatingBurstRequests(java.util.List,java.util.concurrent.Executor,android.hardware.camera2.CameraCaptureSession.CaptureCallback)"/>
@@ -354,7 +354,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int SetRepeatingBurstRequests(Java.Util.List<Android.Hardware.Camera2.CaptureRequest> arg0, Java.Util.Concurrent.Executor arg1, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg2)
         {
-            return IExecute<int>("setRepeatingBurstRequests", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("setRepeatingBurstRequests", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#setSingleRepeatingRequest(android.hardware.camera2.CaptureRequest,java.util.concurrent.Executor,android.hardware.camera2.CameraCaptureSession.CaptureCallback)"/>
@@ -366,7 +366,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public int SetSingleRepeatingRequest(Android.Hardware.Camera2.CaptureRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Hardware.Camera2.CameraCaptureSession.CaptureCallback arg2)
         {
-            return IExecute<int>("setSingleRepeatingRequest", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("setSingleRepeatingRequest", "(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#updateOutputConfiguration(android.hardware.camera2.params.OutputConfiguration)"/>
@@ -377,29 +377,29 @@ namespace Android.Hardware.Camera2
         {
             IExecuteWithSignature("updateOutputConfiguration", "(Landroid/hardware/camera2/params/OutputConfiguration;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CaptureCallback implementation
         public partial class CaptureCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onCaptureBufferLost(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.view.Surface,long)"/>
@@ -410,7 +410,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg3"><see cref="long"/></param>
             public void OnCaptureBufferLost(Android.Hardware.Camera2.CameraCaptureSession arg0, Android.Hardware.Camera2.CaptureRequest arg1, Android.View.Surface arg2, long arg3)
             {
-                IExecute("onCaptureBufferLost", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onCaptureBufferLost", "(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/view/Surface;J)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onCaptureCompleted(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.hardware.camera2.TotalCaptureResult)"/>
@@ -420,7 +420,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg2"><see cref="Android.Hardware.Camera2.TotalCaptureResult"/></param>
             public void OnCaptureCompleted(Android.Hardware.Camera2.CameraCaptureSession arg0, Android.Hardware.Camera2.CaptureRequest arg1, Android.Hardware.Camera2.TotalCaptureResult arg2)
             {
-                IExecute("onCaptureCompleted", arg0, arg1, arg2);
+                IExecuteWithSignature("onCaptureCompleted", "(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/TotalCaptureResult;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onCaptureFailed(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.hardware.camera2.CaptureFailure)"/>
@@ -430,7 +430,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg2"><see cref="Android.Hardware.Camera2.CaptureFailure"/></param>
             public void OnCaptureFailed(Android.Hardware.Camera2.CameraCaptureSession arg0, Android.Hardware.Camera2.CaptureRequest arg1, Android.Hardware.Camera2.CaptureFailure arg2)
             {
-                IExecute("onCaptureFailed", arg0, arg1, arg2);
+                IExecuteWithSignature("onCaptureFailed", "(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureFailure;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onCaptureProgressed(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.hardware.camera2.CaptureResult)"/>
@@ -440,7 +440,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg2"><see cref="Android.Hardware.Camera2.CaptureResult"/></param>
             public void OnCaptureProgressed(Android.Hardware.Camera2.CameraCaptureSession arg0, Android.Hardware.Camera2.CaptureRequest arg1, Android.Hardware.Camera2.CaptureResult arg2)
             {
-                IExecute("onCaptureProgressed", arg0, arg1, arg2);
+                IExecuteWithSignature("onCaptureProgressed", "(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onCaptureSequenceAborted(android.hardware.camera2.CameraCaptureSession,int)"/>
@@ -449,7 +449,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg1"><see cref="int"/></param>
             public void OnCaptureSequenceAborted(Android.Hardware.Camera2.CameraCaptureSession arg0, int arg1)
             {
-                IExecute("onCaptureSequenceAborted", arg0, arg1);
+                IExecuteWithSignature("onCaptureSequenceAborted", "(Landroid/hardware/camera2/CameraCaptureSession;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onCaptureSequenceCompleted(android.hardware.camera2.CameraCaptureSession,int,long)"/>
@@ -459,7 +459,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg2"><see cref="long"/></param>
             public void OnCaptureSequenceCompleted(Android.Hardware.Camera2.CameraCaptureSession arg0, int arg1, long arg2)
             {
-                IExecute("onCaptureSequenceCompleted", arg0, arg1, arg2);
+                IExecuteWithSignature("onCaptureSequenceCompleted", "(Landroid/hardware/camera2/CameraCaptureSession;IJ)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onCaptureStarted(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,long,long)"/>
@@ -470,7 +470,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg3"><see cref="long"/></param>
             public void OnCaptureStarted(Android.Hardware.Camera2.CameraCaptureSession arg0, Android.Hardware.Camera2.CaptureRequest arg1, long arg2, long arg3)
             {
-                IExecute("onCaptureStarted", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onCaptureStarted", "(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;JJ)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html#onReadoutStarted(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,long,long)"/>
@@ -481,15 +481,15 @@ namespace Android.Hardware.Camera2
             /// <param name="arg3"><see cref="long"/></param>
             public void OnReadoutStarted(Android.Hardware.Camera2.CameraCaptureSession arg0, Android.Hardware.Camera2.CaptureRequest arg1, long arg2, long arg3)
             {
-                IExecute("onReadoutStarted", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onReadoutStarted", "(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;JJ)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -498,21 +498,21 @@ namespace Android.Hardware.Camera2
         public partial class StateCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.StateCallback.html#onConfigured(android.hardware.camera2.CameraCaptureSession)"/>
@@ -569,22 +569,22 @@ namespace Android.Hardware.Camera2
             /// <param name="arg1"><see cref="Android.View.Surface"/></param>
             public void OnSurfacePrepared(Android.Hardware.Camera2.CameraCaptureSession arg0, Android.View.Surface arg1)
             {
-                IExecute("onSurfacePrepared", arg0, arg1);
+                IExecuteWithSignature("onSurfacePrepared", "(Landroid/hardware/camera2/CameraCaptureSession;Landroid/view/Surface;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

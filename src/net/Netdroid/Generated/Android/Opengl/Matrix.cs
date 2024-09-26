@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Matrix(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Opengl
     public partial class Matrix
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#invertM(float[],int,float[],int)"/>
@@ -96,7 +96,7 @@ namespace Android.Opengl
         /// <returns><see cref="bool"/></returns>
         public static bool InvertM(float[] arg0, int arg1, float[] arg2, int arg3)
         {
-            return SExecute<bool>(LocalBridgeClazz, "invertM", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "invertM", "([FI[FI)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#length(float,float,float)"/>
@@ -107,7 +107,7 @@ namespace Android.Opengl
         /// <returns><see cref="float"/></returns>
         public static float Length(float arg0, float arg1, float arg2)
         {
-            return SExecute<float>(LocalBridgeClazz, "length", arg0, arg1, arg2);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "length", "(FFF)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#frustumM(float[],int,float,float,float,float,float,float)"/>
@@ -122,7 +122,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="float"/></param>
         public static void FrustumM(float[] arg0, int arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
         {
-            SExecute(LocalBridgeClazz, "frustumM", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "frustumM", "([FIFFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#multiplyMM(float[],int,float[],int,float[],int)"/>
@@ -135,7 +135,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void MultiplyMM(float[] arg0, int arg1, float[] arg2, int arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "multiplyMM", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "multiplyMM", "([FI[FI[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#multiplyMV(float[],int,float[],int,float[],int)"/>
@@ -148,7 +148,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void MultiplyMV(float[] arg0, int arg1, float[] arg2, int arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "multiplyMV", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "multiplyMV", "([FI[FI[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#orthoM(float[],int,float,float,float,float,float,float)"/>
@@ -163,7 +163,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="float"/></param>
         public static void OrthoM(float[] arg0, int arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
         {
-            SExecute(LocalBridgeClazz, "orthoM", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "orthoM", "([FIFFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#perspectiveM(float[],int,float,float,float,float)"/>
@@ -176,7 +176,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="float"/></param>
         public static void PerspectiveM(float[] arg0, int arg1, float arg2, float arg3, float arg4, float arg5)
         {
-            SExecute(LocalBridgeClazz, "perspectiveM", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "perspectiveM", "([FIFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#rotateM(float[],int,float,float,float,float)"/>
@@ -189,7 +189,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="float"/></param>
         public static void RotateM(float[] arg0, int arg1, float arg2, float arg3, float arg4, float arg5)
         {
-            SExecute(LocalBridgeClazz, "rotateM", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "rotateM", "([FIFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#rotateM(float[],int,float[],int,float,float,float,float)"/>
@@ -204,7 +204,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="float"/></param>
         public static void RotateM(float[] arg0, int arg1, float[] arg2, int arg3, float arg4, float arg5, float arg6, float arg7)
         {
-            SExecute(LocalBridgeClazz, "rotateM", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "rotateM", "([FI[FIFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#scaleM(float[],int,float,float,float)"/>
@@ -216,7 +216,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void ScaleM(float[] arg0, int arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "scaleM", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "scaleM", "([FIFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#scaleM(float[],int,float[],int,float,float,float)"/>
@@ -230,7 +230,7 @@ namespace Android.Opengl
         /// <param name="arg6"><see cref="float"/></param>
         public static void ScaleM(float[] arg0, int arg1, float[] arg2, int arg3, float arg4, float arg5, float arg6)
         {
-            SExecute(LocalBridgeClazz, "scaleM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "scaleM", "([FI[FIFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#setIdentityM(float[],int)"/>
@@ -239,7 +239,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void SetIdentityM(float[] arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setIdentityM", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setIdentityM", "([FI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#setLookAtM(float[],int,float,float,float,float,float,float,float,float,float)"/>
@@ -257,7 +257,7 @@ namespace Android.Opengl
         /// <param name="arg10"><see cref="float"/></param>
         public static void SetLookAtM(float[] arg0, int arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10)
         {
-            SExecute(LocalBridgeClazz, "setLookAtM", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            SExecuteWithSignature(LocalBridgeClazz, "setLookAtM", "([FIFFFFFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#setRotateEulerM(float[],int,float,float,float)"/>
@@ -270,7 +270,7 @@ namespace Android.Opengl
         [global::System.Obsolete()]
         public static void SetRotateEulerM(float[] arg0, int arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "setRotateEulerM", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "setRotateEulerM", "([FIFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#setRotateEulerM2(float[],int,float,float,float)"/>
@@ -282,7 +282,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void SetRotateEulerM2(float[] arg0, int arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "setRotateEulerM2", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "setRotateEulerM2", "([FIFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#setRotateM(float[],int,float,float,float,float)"/>
@@ -295,7 +295,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="float"/></param>
         public static void SetRotateM(float[] arg0, int arg1, float arg2, float arg3, float arg4, float arg5)
         {
-            SExecute(LocalBridgeClazz, "setRotateM", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "setRotateM", "([FIFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#translateM(float[],int,float,float,float)"/>
@@ -307,7 +307,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void TranslateM(float[] arg0, int arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "translateM", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "translateM", "([FIFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#translateM(float[],int,float[],int,float,float,float)"/>
@@ -321,7 +321,7 @@ namespace Android.Opengl
         /// <param name="arg6"><see cref="float"/></param>
         public static void TranslateM(float[] arg0, int arg1, float[] arg2, int arg3, float arg4, float arg5, float arg6)
         {
-            SExecute(LocalBridgeClazz, "translateM", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "translateM", "([FI[FIFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#transposeM(float[],int,float[],int)"/>
@@ -332,19 +332,19 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void TransposeM(float[] arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "transposeM", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "transposeM", "([FI[FI)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

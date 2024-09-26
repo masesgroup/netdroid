@@ -42,10 +42,10 @@ namespace Java.Lang.Invoke
         /// </summary>
         [global::System.Obsolete("MethodHandleInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MethodHandleInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Lang.Invoke
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Lang.Invoke
     public partial interface IMethodHandleInfo
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Java.Lang.Invoke
     public partial class MethodHandleInfo : Java.Lang.Invoke.IMethodHandleInfo
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_getField"/>
@@ -156,9 +156,9 @@ namespace Java.Lang.Invoke
         public static int REF_putStatic { get { if (!_REF_putStaticReady) { _REF_putStaticContent = SGetField<int>(LocalBridgeClazz, "REF_putStatic"); _REF_putStaticReady = true; } return _REF_putStaticContent; } }
         private static int _REF_putStaticContent = default;
         private static bool _REF_putStaticReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)"/>
@@ -179,11 +179,11 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(int arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.Invoke.MethodType arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
@@ -194,7 +194,7 @@ namespace Java.Lang.Invoke
         /// <returns><typeparamref name="T"/></returns>
         public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T : Java.Lang.Reflect.IMember, new()
         {
-            return IExecute<T>("reflectAs", arg0, arg1);
+            return IExecuteWithSignature<T>("reflectAs", "(Ljava/lang/Class;Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/reflect/Member;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#getModifiers()"/>
@@ -244,13 +244,13 @@ namespace Java.Lang.Invoke
         {
             return IExecuteWithSignature<bool>("isVarArgs", "()Z");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

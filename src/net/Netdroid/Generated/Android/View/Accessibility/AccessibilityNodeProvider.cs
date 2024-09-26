@@ -42,10 +42,10 @@ namespace Android.View.Accessibility
         /// </summary>
         [global::System.Obsolete("AccessibilityNodeProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityNodeProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Accessibility
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.View.Accessibility
     public partial class AccessibilityNodeProvider
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeProvider.html#HOST_VIEW_ID"/>
@@ -90,13 +90,13 @@ namespace Android.View.Accessibility
         public static int HOST_VIEW_ID { get { if (!_HOST_VIEW_IDReady) { _HOST_VIEW_IDContent = SGetField<int>(LocalBridgeClazz, "HOST_VIEW_ID"); _HOST_VIEW_IDReady = true; } return _HOST_VIEW_IDContent; } }
         private static int _HOST_VIEW_IDContent = default;
         private static bool _HOST_VIEW_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeProvider.html#createAccessibilityNodeInfo(int)"/>
@@ -125,7 +125,7 @@ namespace Android.View.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool PerformAction(int arg0, int arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("performAction", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("performAction", "(IILandroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeProvider.html#findAccessibilityNodeInfosByText(java.lang.String,int)"/>
@@ -135,7 +135,7 @@ namespace Android.View.Accessibility
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo> FindAccessibilityNodeInfosByText(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo>>("findAccessibilityNodeInfosByText", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo>>("findAccessibilityNodeInfosByText", "(Ljava/lang/String;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeProvider.html#addExtraDataToAccessibilityNodeInfo(int,android.view.accessibility.AccessibilityNodeInfo,java.lang.String,android.os.Bundle)"/>
@@ -146,15 +146,15 @@ namespace Android.View.Accessibility
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
         public void AddExtraDataToAccessibilityNodeInfo(int arg0, Android.View.Accessibility.AccessibilityNodeInfo arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
-            IExecute("addExtraDataToAccessibilityNodeInfo", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addExtraDataToAccessibilityNodeInfo", "(ILandroid/view/accessibility/AccessibilityNodeInfo;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

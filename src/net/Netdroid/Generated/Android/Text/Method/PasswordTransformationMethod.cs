@@ -40,10 +40,10 @@ namespace Android.Text.Method
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PasswordTransformationMethod(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Android.Text.Method
     public partial class PasswordTransformationMethod : Android.Text.Method.ITransformationMethod, Android.Text.ITextWatcher
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Text.Method.PasswordTransformationMethod"/> to <see cref="Android.Text.Method.TransformationMethod"/>
@@ -86,13 +86,13 @@ namespace Android.Text.Method
         /// Converter from <see cref="Android.Text.Method.PasswordTransformationMethod"/> to <see cref="Android.Text.TextWatcher"/>
         /// </summary>
         public static implicit operator Android.Text.TextWatcher(Android.Text.Method.PasswordTransformationMethod t) => t.Cast<Android.Text.TextWatcher>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/PasswordTransformationMethod.html#getInstance()"/>
@@ -102,9 +102,9 @@ namespace Android.Text.Method
         {
             return SExecuteWithSignature<Android.Text.Method.PasswordTransformationMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/PasswordTransformationMethod;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/PasswordTransformationMethod.html#getTransformation(java.lang.CharSequence,android.view.View)"/>
@@ -114,7 +114,7 @@ namespace Android.Text.Method
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetTransformation(Java.Lang.CharSequence arg0, Android.View.View arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getTransformation", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/PasswordTransformationMethod.html#afterTextChanged(android.text.Editable)"/>
@@ -133,7 +133,7 @@ namespace Android.Text.Method
         /// <param name="arg3"><see cref="int"/></param>
         public void BeforeTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("beforeTextChanged", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("beforeTextChanged", "(Ljava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/PasswordTransformationMethod.html#onFocusChanged(android.view.View,java.lang.CharSequence,boolean,int,android.graphics.Rect)"/>
@@ -145,7 +145,7 @@ namespace Android.Text.Method
         /// <param name="arg4"><see cref="Android.Graphics.Rect"/></param>
         public void OnFocusChanged(Android.View.View arg0, Java.Lang.CharSequence arg1, bool arg2, int arg3, Android.Graphics.Rect arg4)
         {
-            IExecute("onFocusChanged", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onFocusChanged", "(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/PasswordTransformationMethod.html#onTextChanged(java.lang.CharSequence,int,int,int)"/>
@@ -156,15 +156,15 @@ namespace Android.Text.Method
         /// <param name="arg3"><see cref="int"/></param>
         public void OnTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("onTextChanged", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onTextChanged", "(Ljava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

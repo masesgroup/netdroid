@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HardwareRenderer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region FrameRenderRequest declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FrameRenderRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Graphics
     public partial class HardwareRenderer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/HardwareRenderer.html#SYNC_CONTEXT_IS_STOPPED"/>
@@ -157,9 +157,9 @@ namespace Android.Graphics
         public static int SYNC_REDRAW_REQUESTED { get { if (!_SYNC_REDRAW_REQUESTEDReady) { _SYNC_REDRAW_REQUESTEDContent = SGetField<int>(LocalBridgeClazz, "SYNC_REDRAW_REQUESTED"); _SYNC_REDRAW_REQUESTEDReady = true; } return _SYNC_REDRAW_REQUESTEDContent; } }
         private static int _SYNC_REDRAW_REQUESTEDContent = default;
         private static bool _SYNC_REDRAW_REQUESTEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/HardwareRenderer.html#isDrawingEnabled()"/>
@@ -177,9 +177,9 @@ namespace Android.Graphics
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDrawingEnabled", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/HardwareRenderer.html#createRenderRequest()"/>
@@ -233,7 +233,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetLightSourceAlpha(float arg0, float arg1)
         {
-            IExecute("setLightSourceAlpha", arg0, arg1);
+            IExecuteWithSignature("setLightSourceAlpha", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/HardwareRenderer.html#setLightSourceGeometry(float,float,float,float)"/>
@@ -244,7 +244,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void SetLightSourceGeometry(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setLightSourceGeometry", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setLightSourceGeometry", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/HardwareRenderer.html#setName(java.lang.String)"/>
@@ -284,29 +284,29 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("stop", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region FrameRenderRequest implementation
         public partial class FrameRenderRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/HardwareRenderer.FrameRenderRequest.html#setFrameCommitCallback(java.util.concurrent.Executor,java.lang.Runnable)"/>
@@ -316,7 +316,7 @@ namespace Android.Graphics
             /// <returns><see cref="Android.Graphics.HardwareRenderer.FrameRenderRequest"/></returns>
             public Android.Graphics.HardwareRenderer.FrameRenderRequest SetFrameCommitCallback(Java.Util.Concurrent.Executor arg0, Java.Lang.Runnable arg1)
             {
-                return IExecute<Android.Graphics.HardwareRenderer.FrameRenderRequest>("setFrameCommitCallback", arg0, arg1);
+                return IExecuteWithSignature<Android.Graphics.HardwareRenderer.FrameRenderRequest>("setFrameCommitCallback", "(Ljava/util/concurrent/Executor;Ljava/lang/Runnable;)Landroid/graphics/HardwareRenderer$FrameRenderRequest;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/HardwareRenderer.FrameRenderRequest.html#setVsyncTime(long)"/>
@@ -344,20 +344,20 @@ namespace Android.Graphics
             {
                 return IExecuteWithSignature<int>("syncAndDraw", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

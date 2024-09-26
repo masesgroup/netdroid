@@ -40,10 +40,10 @@ namespace Android.Text.Format
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Format
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Text.Format
     public partial class DateFormat
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateFormat.html#is24HourFormat(android.content.Context)"/>
@@ -112,7 +112,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence Format(Java.Lang.CharSequence arg0, Java.Util.Calendar arg1)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "format", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "format", "(Ljava/lang/CharSequence;Ljava/util/Calendar;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateFormat.html#format(java.lang.CharSequence,java.util.Date)"/>
@@ -122,7 +122,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence Format(Java.Lang.CharSequence arg0, Java.Util.Date arg1)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "format", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "format", "(Ljava/lang/CharSequence;Ljava/util/Date;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateFormat.html#format(java.lang.CharSequence,long)"/>
@@ -132,7 +132,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence Format(Java.Lang.CharSequence arg0, long arg1)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "format", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "format", "(Ljava/lang/CharSequence;J)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateFormat.html#getBestDateTimePattern(java.util.Locale,java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetBestDateTimePattern(Java.Util.Locale arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getBestDateTimePattern", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getBestDateTimePattern", "(Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateFormat.html#getDateFormat(android.content.Context)"/>
@@ -180,17 +180,17 @@ namespace Android.Text.Format
         {
             return SExecuteWithSignature<Java.Text.DateFormat>(LocalBridgeClazz, "getTimeFormat", "(Landroid/content/Context;)Ljava/text/DateFormat;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

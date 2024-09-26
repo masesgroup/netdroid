@@ -40,10 +40,10 @@ namespace Android.Service.Voice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VoiceInteractionSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Service.Voice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AbortVoiceRequest declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AbortVoiceRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ActivityId(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AssistState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CommandRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -261,10 +261,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CompleteVoiceRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -285,9 +285,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -306,10 +306,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ConfirmationRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -351,10 +351,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Insets(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -375,9 +375,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -396,10 +396,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PickOptionRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -420,9 +420,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -441,10 +441,10 @@ namespace Android.Service.Voice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Request(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -465,9 +465,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -488,10 +488,10 @@ namespace Android.Service.Voice
             /// </summary>
             [global::System.Obsolete("VisibleActivityCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public VisibleActivityCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -512,9 +512,9 @@ namespace Android.Service.Voice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -543,17 +543,17 @@ namespace Android.Service.Voice
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Service.Voice.VoiceInteractionSession"/> to <see cref="Android.Content.ComponentCallbacks2"/>
         /// </summary>
         public static implicit operator Android.Content.ComponentCallbacks2(Android.Service.Voice.VoiceInteractionSession t) => t.Cast<Android.Content.ComponentCallbacks2>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_ACTIVITY"/>
@@ -615,13 +615,13 @@ namespace Android.Service.Voice
         public static Java.Lang.String KEY_SHOW_SESSION_ID { get { if (!_KEY_SHOW_SESSION_IDReady) { _KEY_SHOW_SESSION_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SHOW_SESSION_ID"); _KEY_SHOW_SESSION_IDReady = true; } return _KEY_SHOW_SESSION_IDContent; } }
         private static Java.Lang.String _KEY_SHOW_SESSION_IDContent = default;
         private static bool _KEY_SHOW_SESSION_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getWindow()"/>
@@ -663,7 +663,7 @@ namespace Android.Service.Voice
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyDown(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyDown", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyDown", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyLongPress(int,android.view.KeyEvent)"/>
@@ -673,7 +673,7 @@ namespace Android.Service.Voice
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyLongPress(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyLongPress", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyLongPress", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyMultiple(int,int,android.view.KeyEvent)"/>
@@ -684,7 +684,7 @@ namespace Android.Service.Voice
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyMultiple(int arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return IExecute<bool>("onKeyMultiple", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyUp(int,android.view.KeyEvent)"/>
@@ -694,7 +694,7 @@ namespace Android.Service.Voice
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyUp(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyUp", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyUp", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onGetSupportedCommands(java.lang.String[])"/>
@@ -715,7 +715,7 @@ namespace Android.Service.Voice
         /// <param name="arg4"><see cref="Java.Util.Function.Consumer"/></param>
         public void PerformDirectAction(Android.App.DirectAction arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2, Java.Util.Concurrent.Executor arg3, Java.Util.Function.Consumer<Android.Os.Bundle> arg4)
         {
-            IExecute("performDirectAction", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("performDirectAction", "(Landroid/app/DirectAction;Landroid/os/Bundle;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#registerVisibleActivityCallback(java.util.concurrent.Executor,android.service.voice.VoiceInteractionSession.VisibleActivityCallback)"/>
@@ -724,7 +724,7 @@ namespace Android.Service.Voice
         /// <param name="arg1"><see cref="Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback"/></param>
         public void RegisterVisibleActivityCallback(Java.Util.Concurrent.Executor arg0, Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback arg1)
         {
-            IExecute("registerVisibleActivityCallback", arg0, arg1);
+            IExecuteWithSignature("registerVisibleActivityCallback", "(Ljava/util/concurrent/Executor;Landroid/service/voice/VoiceInteractionSession$VisibleActivityCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#requestDirectActions(android.service.voice.VoiceInteractionSession.ActivityId,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -735,7 +735,7 @@ namespace Android.Service.Voice
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void RequestDirectActions(Android.Service.Voice.VoiceInteractionSession.ActivityId arg0, Android.Os.CancellationSignal arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Util.List<Android.App.DirectAction>> arg3)
         {
-            IExecute("requestDirectActions", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("requestDirectActions", "(Landroid/service/voice/VoiceInteractionSession$ActivityId;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#unregisterVisibleActivityCallback(android.service.voice.VoiceInteractionSession.VisibleActivityCallback)"/>
@@ -777,7 +777,7 @@ namespace Android.Service.Voice
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
-            IExecute("dump", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("dump", "(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#finish()"/>
@@ -870,7 +870,7 @@ namespace Android.Service.Voice
         [global::System.Obsolete()]
         public void OnHandleAssist(Android.Os.Bundle arg0, Android.App.Assist.AssistStructure arg1, Android.App.Assist.AssistContent arg2)
         {
-            IExecute("onHandleAssist", arg0, arg1, arg2);
+            IExecuteWithSignature("onHandleAssist", "(Landroid/os/Bundle;Landroid/app/assist/AssistStructure;Landroid/app/assist/AssistContent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssist(android.service.voice.VoiceInteractionSession.AssistState)"/>
@@ -891,7 +891,7 @@ namespace Android.Service.Voice
         [global::System.Obsolete()]
         public void OnHandleAssistSecondary(Android.Os.Bundle arg0, Android.App.Assist.AssistStructure arg1, Android.App.Assist.AssistContent arg2, int arg3, int arg4)
         {
-            IExecute("onHandleAssistSecondary", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onHandleAssistSecondary", "(Landroid/os/Bundle;Landroid/app/assist/AssistStructure;Landroid/app/assist/AssistContent;II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleScreenshot(android.graphics.Bitmap)"/>
@@ -929,7 +929,7 @@ namespace Android.Service.Voice
         /// <param name="arg1"><see cref="int"/></param>
         public void OnPrepareShow(Android.Os.Bundle arg0, int arg1)
         {
-            IExecute("onPrepareShow", arg0, arg1);
+            IExecuteWithSignature("onPrepareShow", "(Landroid/os/Bundle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestAbortVoice(android.service.voice.VoiceInteractionSession.AbortVoiceRequest)"/>
@@ -978,7 +978,7 @@ namespace Android.Service.Voice
         /// <param name="arg1"><see cref="int"/></param>
         public void OnShow(Android.Os.Bundle arg0, int arg1)
         {
-            IExecute("onShow", arg0, arg1);
+            IExecuteWithSignature("onShow", "(Landroid/os/Bundle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTaskFinished(android.content.Intent,int)"/>
@@ -987,7 +987,7 @@ namespace Android.Service.Voice
         /// <param name="arg1"><see cref="int"/></param>
         public void OnTaskFinished(Android.Content.Intent arg0, int arg1)
         {
-            IExecute("onTaskFinished", arg0, arg1);
+            IExecuteWithSignature("onTaskFinished", "(Landroid/content/Intent;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTaskStarted(android.content.Intent,int)"/>
@@ -996,7 +996,7 @@ namespace Android.Service.Voice
         /// <param name="arg1"><see cref="int"/></param>
         public void OnTaskStarted(Android.Content.Intent arg0, int arg1)
         {
-            IExecute("onTaskStarted", arg0, arg1);
+            IExecuteWithSignature("onTaskStarted", "(Landroid/content/Intent;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTrimMemory(int)"/>
@@ -1053,7 +1053,7 @@ namespace Android.Service.Voice
         /// <param name="arg1"><see cref="int"/></param>
         public void Show(Android.Os.Bundle arg0, int arg1)
         {
-            IExecute("show", arg0, arg1);
+            IExecuteWithSignature("show", "(Landroid/os/Bundle;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startAssistantActivity(android.content.Intent,android.os.Bundle)"/>
@@ -1062,7 +1062,7 @@ namespace Android.Service.Voice
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void StartAssistantActivity(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
-            IExecute("startAssistantActivity", arg0, arg1);
+            IExecuteWithSignature("startAssistantActivity", "(Landroid/content/Intent;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startAssistantActivity(android.content.Intent)"/>
@@ -1080,29 +1080,29 @@ namespace Android.Service.Voice
         {
             IExecuteWithSignature("startVoiceActivity", "(Landroid/content/Intent;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AbortVoiceRequest implementation
         public partial class AbortVoiceRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#getVoicePrompt()"/>
@@ -1129,13 +1129,13 @@ namespace Android.Service.Voice
             {
                 IExecuteWithSignature("sendAbortResult", "(Landroid/os/Bundle;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1144,29 +1144,29 @@ namespace Android.Service.Voice
         public partial class ActivityId
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1175,21 +1175,21 @@ namespace Android.Service.Voice
         public partial class AssistState
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getAssistContent()"/>
@@ -1247,13 +1247,13 @@ namespace Android.Service.Voice
             {
                 return IExecuteWithSignature<int>("getIndex", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1262,21 +1262,21 @@ namespace Android.Service.Voice
         public partial class CommandRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CommandRequest.html#getCommand()"/>
@@ -1302,13 +1302,13 @@ namespace Android.Service.Voice
             {
                 IExecuteWithSignature("sendResult", "(Landroid/os/Bundle;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1317,21 +1317,21 @@ namespace Android.Service.Voice
         public partial class CompleteVoiceRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#getVoicePrompt()"/>
@@ -1358,13 +1358,13 @@ namespace Android.Service.Voice
             {
                 IExecuteWithSignature("sendCompleteResult", "(Landroid/os/Bundle;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1373,21 +1373,21 @@ namespace Android.Service.Voice
         public partial class ConfirmationRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#getVoicePrompt()"/>
@@ -1413,15 +1413,15 @@ namespace Android.Service.Voice
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void SendConfirmationResult(bool arg0, Android.Os.Bundle arg1)
             {
-                IExecute("sendConfirmationResult", arg0, arg1);
+                IExecuteWithSignature("sendConfirmationResult", "(ZLandroid/os/Bundle;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1430,13 +1430,13 @@ namespace Android.Service.Voice
         public partial class Insets
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Insets.html#contentInsets"/>
@@ -1472,21 +1472,21 @@ namespace Android.Service.Voice
             public static int TOUCHABLE_INSETS_REGION { get { if (!_TOUCHABLE_INSETS_REGIONReady) { _TOUCHABLE_INSETS_REGIONContent = SGetField<int>(LocalBridgeClazz, "TOUCHABLE_INSETS_REGION"); _TOUCHABLE_INSETS_REGIONReady = true; } return _TOUCHABLE_INSETS_REGIONContent; } }
             private static int _TOUCHABLE_INSETS_REGIONContent = default;
             private static bool _TOUCHABLE_INSETS_REGIONReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1495,21 +1495,21 @@ namespace Android.Service.Voice
         public partial class PickOptionRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getOptions()"/>
@@ -1543,7 +1543,7 @@ namespace Android.Service.Voice
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void SendIntermediatePickOptionResult(Android.App.VoiceInteractor.PickOptionRequest.Option[] arg0, Android.Os.Bundle arg1)
             {
-                IExecute("sendIntermediatePickOptionResult", arg0, arg1);
+                IExecuteWithSignature("sendIntermediatePickOptionResult", "([Landroid/app/VoiceInteractor$PickOptionRequest$Option;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#sendPickOptionResult(android.app.VoiceInteractor.PickOptionRequest.Option[],android.os.Bundle)"/>
@@ -1552,15 +1552,15 @@ namespace Android.Service.Voice
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void SendPickOptionResult(Android.App.VoiceInteractor.PickOptionRequest.Option[] arg0, Android.Os.Bundle arg1)
             {
-                IExecute("sendPickOptionResult", arg0, arg1);
+                IExecuteWithSignature("sendPickOptionResult", "([Landroid/app/VoiceInteractor$PickOptionRequest$Option;Landroid/os/Bundle;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1569,21 +1569,21 @@ namespace Android.Service.Voice
         public partial class Request
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#getExtras()"/>
@@ -1624,13 +1624,13 @@ namespace Android.Service.Voice
             {
                 IExecuteWithSignature("cancel", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1639,21 +1639,21 @@ namespace Android.Service.Voice
         public partial class VisibleActivityCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.VisibleActivityCallback.html#onInvisible(android.service.voice.VoiceInteractionSession.ActivityId)"/>
@@ -1671,20 +1671,20 @@ namespace Android.Service.Voice
             {
                 IExecuteWithSignature("onVisible", "(Landroid/service/voice/VisibleActivityInfo;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

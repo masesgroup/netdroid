@@ -41,10 +41,10 @@ namespace Android.Net.Sip
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SipManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Net.Sip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.Net.Sip
     public partial class SipManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#INCOMING_CALL_RESULT_CODE"/>
@@ -104,9 +104,9 @@ namespace Android.Net.Sip
         public static Java.Lang.String EXTRA_OFFER_SD { get { if (!_EXTRA_OFFER_SDReady) { _EXTRA_OFFER_SDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_OFFER_SD"); _EXTRA_OFFER_SDReady = true; } return _EXTRA_OFFER_SDContent; } }
         private static Java.Lang.String _EXTRA_OFFER_SDContent = default;
         private static bool _EXTRA_OFFER_SDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#newInstance(android.content.Context)"/>
@@ -178,9 +178,9 @@ namespace Android.Net.Sip
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getOfferSessionDescription", "(Landroid/content/Intent;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#makeAudioCall(android.net.sip.SipProfile,android.net.sip.SipProfile,android.net.sip.SipAudioCall.Listener,int)"/>
@@ -194,7 +194,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public Android.Net.Sip.SipAudioCall MakeAudioCall(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipProfile arg1, Android.Net.Sip.SipAudioCall.Listener arg2, int arg3)
         {
-            return IExecute<Android.Net.Sip.SipAudioCall>("makeAudioCall", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Net.Sip.SipAudioCall>("makeAudioCall", "(Landroid/net/sip/SipProfile;Landroid/net/sip/SipProfile;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#makeAudioCall(java.lang.String,java.lang.String,android.net.sip.SipAudioCall.Listener,int)"/>
@@ -208,7 +208,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public Android.Net.Sip.SipAudioCall MakeAudioCall(Java.Lang.String arg0, Java.Lang.String arg1, Android.Net.Sip.SipAudioCall.Listener arg2, int arg3)
         {
-            return IExecute<Android.Net.Sip.SipAudioCall>("makeAudioCall", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Net.Sip.SipAudioCall>("makeAudioCall", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#takeAudioCall(android.content.Intent,android.net.sip.SipAudioCall.Listener)"/>
@@ -220,7 +220,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public Android.Net.Sip.SipAudioCall TakeAudioCall(Android.Content.Intent arg0, Android.Net.Sip.SipAudioCall.Listener arg1)
         {
-            return IExecute<Android.Net.Sip.SipAudioCall>("takeAudioCall", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.Sip.SipAudioCall>("takeAudioCall", "(Landroid/content/Intent;Landroid/net/sip/SipAudioCall$Listener;)Landroid/net/sip/SipAudioCall;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#createSipSession(android.net.sip.SipProfile,android.net.sip.SipSession.Listener)"/>
@@ -232,7 +232,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public Android.Net.Sip.SipSession CreateSipSession(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipSession.Listener arg1)
         {
-            return IExecute<Android.Net.Sip.SipSession>("createSipSession", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.Sip.SipSession>("createSipSession", "(Landroid/net/sip/SipProfile;Landroid/net/sip/SipSession$Listener;)Landroid/net/sip/SipSession;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#getSessionFor(android.content.Intent)"/>
@@ -287,7 +287,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void Open(Android.Net.Sip.SipProfile arg0, Android.App.PendingIntent arg1, Android.Net.Sip.SipRegistrationListener arg2)
         {
-            IExecute("open", arg0, arg1, arg2);
+            IExecuteWithSignature("open", "(Landroid/net/sip/SipProfile;Landroid/app/PendingIntent;Landroid/net/sip/SipRegistrationListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#open(android.net.sip.SipProfile)"/>
@@ -309,7 +309,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void Register(Android.Net.Sip.SipProfile arg0, int arg1, Android.Net.Sip.SipRegistrationListener arg2)
         {
-            IExecute("register", arg0, arg1, arg2);
+            IExecuteWithSignature("register", "(Landroid/net/sip/SipProfile;ILandroid/net/sip/SipRegistrationListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#setRegistrationListener(java.lang.String,android.net.sip.SipRegistrationListener)"/>
@@ -320,7 +320,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void SetRegistrationListener(Java.Lang.String arg0, Android.Net.Sip.SipRegistrationListener arg1)
         {
-            IExecute("setRegistrationListener", arg0, arg1);
+            IExecuteWithSignature("setRegistrationListener", "(Ljava/lang/String;Landroid/net/sip/SipRegistrationListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html#unregister(android.net.sip.SipProfile,android.net.sip.SipRegistrationListener)"/>
@@ -331,15 +331,15 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void Unregister(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipRegistrationListener arg1)
         {
-            IExecute("unregister", arg0, arg1);
+            IExecuteWithSignature("unregister", "(Landroid/net/sip/SipProfile;Landroid/net/sip/SipRegistrationListener;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

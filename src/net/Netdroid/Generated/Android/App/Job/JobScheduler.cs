@@ -42,10 +42,10 @@ namespace Android.App.Job
         /// </summary>
         [global::System.Obsolete("JobScheduler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public JobScheduler(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.App.Job
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.App.Job
     public partial class JobScheduler
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#PENDING_JOB_REASON_APP"/>
@@ -204,13 +204,13 @@ namespace Android.App.Job
         public static int RESULT_SUCCESS { get { if (!_RESULT_SUCCESSReady) { _RESULT_SUCCESSContent = SGetField<int>(LocalBridgeClazz, "RESULT_SUCCESS"); _RESULT_SUCCESSReady = true; } return _RESULT_SUCCESSContent; } }
         private static int _RESULT_SUCCESSContent = default;
         private static bool _RESULT_SUCCESSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getPendingJob(int)"/>
@@ -229,7 +229,7 @@ namespace Android.App.Job
         /// <returns><see cref="int"/></returns>
         public int Enqueue(Android.App.Job.JobInfo arg0, Android.App.Job.JobWorkItem arg1)
         {
-            return IExecute<int>("enqueue", arg0, arg1);
+            return IExecuteWithSignature<int>("enqueue", "(Landroid/app/job/JobInfo;Landroid/app/job/JobWorkItem;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#schedule(android.app.job.JobInfo)"/>
@@ -312,13 +312,13 @@ namespace Android.App.Job
         {
             IExecuteWithSignature("cancelInAllNamespaces", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

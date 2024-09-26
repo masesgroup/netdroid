@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Toast(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -129,13 +129,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#LENGTH_LONG"/>
@@ -149,9 +149,9 @@ namespace Android.Widget
         public static int LENGTH_SHORT { get { if (!_LENGTH_SHORTReady) { _LENGTH_SHORTContent = SGetField<int>(LocalBridgeClazz, "LENGTH_SHORT"); _LENGTH_SHORTReady = true; } return _LENGTH_SHORTContent; } }
         private static int _LENGTH_SHORTContent = default;
         private static bool _LENGTH_SHORTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#makeText(android.content.Context,int,int)"/>
@@ -163,7 +163,7 @@ namespace Android.Widget
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public static Android.Widget.Toast MakeText(Android.Content.Context arg0, int arg1, int arg2)
         {
-            return SExecute<Android.Widget.Toast>(LocalBridgeClazz, "makeText", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Widget.Toast>(LocalBridgeClazz, "makeText", "(Landroid/content/Context;II)Landroid/widget/Toast;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#makeText(android.content.Context,java.lang.CharSequence,int)"/>
@@ -174,11 +174,11 @@ namespace Android.Widget
         /// <returns><see cref="Android.Widget.Toast"/></returns>
         public static Android.Widget.Toast MakeText(Android.Content.Context arg0, Java.Lang.CharSequence arg1, int arg2)
         {
-            return SExecute<Android.Widget.Toast>(LocalBridgeClazz, "makeText", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Widget.Toast>(LocalBridgeClazz, "makeText", "(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getView()"/>
@@ -276,7 +276,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void SetGravity(int arg0, int arg1, int arg2)
         {
-            IExecute("setGravity", arg0, arg1, arg2);
+            IExecuteWithSignature("setGravity", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#setMargin(float,float)"/>
@@ -285,7 +285,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="float"/></param>
         public void SetMargin(float arg0, float arg1)
         {
-            IExecute("setMargin", arg0, arg1);
+            IExecuteWithSignature("setMargin", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#setText(int)"/>
@@ -319,29 +319,29 @@ namespace Android.Widget
         {
             IExecuteWithSignature("show", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/Toast.Callback.html#onToastHidden()"/>
@@ -357,20 +357,20 @@ namespace Android.Widget
             {
                 IExecuteWithSignature("onToastShown", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

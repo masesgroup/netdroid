@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RuntimeShader(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setColorUniform(java.lang.String,android.graphics.Color)"/>
@@ -105,7 +105,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Color"/></param>
         public void SetColorUniform(Java.Lang.String arg0, Android.Graphics.Color arg1)
         {
-            IExecute("setColorUniform", arg0, arg1);
+            IExecuteWithSignature("setColorUniform", "(Ljava/lang/String;Landroid/graphics/Color;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setColorUniform(java.lang.String,int)"/>
@@ -114,7 +114,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void SetColorUniform(Java.Lang.String arg0, int arg1)
         {
-            IExecute("setColorUniform", arg0, arg1);
+            IExecuteWithSignature("setColorUniform", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setColorUniform(java.lang.String,long)"/>
@@ -123,7 +123,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="long"/></param>
         public void SetColorUniform(Java.Lang.String arg0, long arg1)
         {
-            IExecute("setColorUniform", arg0, arg1);
+            IExecuteWithSignature("setColorUniform", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setFloatUniform(java.lang.String,float,float,float,float)"/>
@@ -135,7 +135,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="float"/></param>
         public void SetFloatUniform(Java.Lang.String arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            IExecute("setFloatUniform", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setFloatUniform", "(Ljava/lang/String;FFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setFloatUniform(java.lang.String,float,float,float)"/>
@@ -146,7 +146,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void SetFloatUniform(Java.Lang.String arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setFloatUniform", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setFloatUniform", "(Ljava/lang/String;FFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setFloatUniform(java.lang.String,float,float)"/>
@@ -156,7 +156,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetFloatUniform(Java.Lang.String arg0, float arg1, float arg2)
         {
-            IExecute("setFloatUniform", arg0, arg1, arg2);
+            IExecuteWithSignature("setFloatUniform", "(Ljava/lang/String;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setFloatUniform(java.lang.String,float)"/>
@@ -165,7 +165,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetFloatUniform(Java.Lang.String arg0, float arg1)
         {
-            IExecute("setFloatUniform", arg0, arg1);
+            IExecuteWithSignature("setFloatUniform", "(Ljava/lang/String;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setFloatUniform(java.lang.String,float[])"/>
@@ -174,7 +174,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetFloatUniform(Java.Lang.String arg0, float[] arg1)
         {
-            IExecute("setFloatUniform", arg0, arg1);
+            IExecuteWithSignature("setFloatUniform", "(Ljava/lang/String;[F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setInputBuffer(java.lang.String,android.graphics.BitmapShader)"/>
@@ -183,7 +183,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.BitmapShader"/></param>
         public void SetInputBuffer(Java.Lang.String arg0, Android.Graphics.BitmapShader arg1)
         {
-            IExecute("setInputBuffer", arg0, arg1);
+            IExecuteWithSignature("setInputBuffer", "(Ljava/lang/String;Landroid/graphics/BitmapShader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setInputShader(java.lang.String,android.graphics.Shader)"/>
@@ -192,7 +192,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Shader"/></param>
         public void SetInputShader(Java.Lang.String arg0, Android.Graphics.Shader arg1)
         {
-            IExecute("setInputShader", arg0, arg1);
+            IExecuteWithSignature("setInputShader", "(Ljava/lang/String;Landroid/graphics/Shader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setIntUniform(java.lang.String,int,int,int,int)"/>
@@ -204,7 +204,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="int"/></param>
         public void SetIntUniform(Java.Lang.String arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setIntUniform", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setIntUniform", "(Ljava/lang/String;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setIntUniform(java.lang.String,int,int,int)"/>
@@ -215,7 +215,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="int"/></param>
         public void SetIntUniform(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setIntUniform", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setIntUniform", "(Ljava/lang/String;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setIntUniform(java.lang.String,int,int)"/>
@@ -225,7 +225,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="int"/></param>
         public void SetIntUniform(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("setIntUniform", arg0, arg1, arg2);
+            IExecuteWithSignature("setIntUniform", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setIntUniform(java.lang.String,int)"/>
@@ -234,7 +234,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void SetIntUniform(Java.Lang.String arg0, int arg1)
         {
-            IExecute("setIntUniform", arg0, arg1);
+            IExecuteWithSignature("setIntUniform", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setIntUniform(java.lang.String,int[])"/>
@@ -243,15 +243,15 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void SetIntUniform(Java.Lang.String arg0, int[] arg1)
         {
-            IExecute("setIntUniform", arg0, arg1);
+            IExecuteWithSignature("setIntUniform", "(Ljava/lang/String;[I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

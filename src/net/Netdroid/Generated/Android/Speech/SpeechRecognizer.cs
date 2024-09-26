@@ -40,10 +40,10 @@ namespace Android.Speech
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SpeechRecognizer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Speech
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Speech
     public partial class SpeechRecognizer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#ERROR_AUDIO"/>
@@ -268,9 +268,9 @@ namespace Android.Speech
         public static Java.Lang.String TOP_LOCALE_ALTERNATIVES { get { if (!_TOP_LOCALE_ALTERNATIVESReady) { _TOP_LOCALE_ALTERNATIVESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TOP_LOCALE_ALTERNATIVES"); _TOP_LOCALE_ALTERNATIVESReady = true; } return _TOP_LOCALE_ALTERNATIVESContent; } }
         private static Java.Lang.String _TOP_LOCALE_ALTERNATIVESContent = default;
         private static bool _TOP_LOCALE_ALTERNATIVESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createOnDeviceSpeechRecognizer(android.content.Context)"/>
@@ -289,7 +289,7 @@ namespace Android.Speech
         /// <returns><see cref="Android.Speech.SpeechRecognizer"/></returns>
         public static Android.Speech.SpeechRecognizer CreateSpeechRecognizer(Android.Content.Context arg0, Android.Content.ComponentName arg1)
         {
-            return SExecute<Android.Speech.SpeechRecognizer>(LocalBridgeClazz, "createSpeechRecognizer", arg0, arg1);
+            return SExecuteWithSignature<Android.Speech.SpeechRecognizer>(LocalBridgeClazz, "createSpeechRecognizer", "(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/speech/SpeechRecognizer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#createSpeechRecognizer(android.content.Context)"/>
@@ -318,9 +318,9 @@ namespace Android.Speech
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isRecognitionAvailable", "(Landroid/content/Context;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#cancel()"/>
@@ -337,7 +337,7 @@ namespace Android.Speech
         /// <param name="arg2"><see cref="Android.Speech.RecognitionSupportCallback"/></param>
         public void CheckRecognitionSupport(Android.Content.Intent arg0, Java.Util.Concurrent.Executor arg1, Android.Speech.RecognitionSupportCallback arg2)
         {
-            IExecute("checkRecognitionSupport", arg0, arg1, arg2);
+            IExecuteWithSignature("checkRecognitionSupport", "(Landroid/content/Intent;Ljava/util/concurrent/Executor;Landroid/speech/RecognitionSupportCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#destroy()"/>
@@ -377,7 +377,7 @@ namespace Android.Speech
         /// <param name="arg2"><see cref="Android.Speech.ModelDownloadListener"/></param>
         public void TriggerModelDownload(Android.Content.Intent arg0, Java.Util.Concurrent.Executor arg1, Android.Speech.ModelDownloadListener arg2)
         {
-            IExecute("triggerModelDownload", arg0, arg1, arg2);
+            IExecuteWithSignature("triggerModelDownload", "(Landroid/content/Intent;Ljava/util/concurrent/Executor;Landroid/speech/ModelDownloadListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/SpeechRecognizer.html#triggerModelDownload(android.content.Intent)"/>
@@ -387,13 +387,13 @@ namespace Android.Speech
         {
             IExecuteWithSignature("triggerModelDownload", "(Landroid/content/Intent;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

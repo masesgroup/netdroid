@@ -42,10 +42,10 @@ namespace Android.Speech.Tts
         /// </summary>
         [global::System.Obsolete("TextToSpeechService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TextToSpeechService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Speech.Tts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Speech.Tts
     public partial class TextToSpeechService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeechService.html#onIsValidVoiceName(java.lang.String)"/>
@@ -119,7 +119,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String OnGetDefaultVoiceNameFor(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Lang.String>("onGetDefaultVoiceNameFor", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("onGetDefaultVoiceNameFor", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeechService.html#onGetVoices()"/>
@@ -129,13 +129,13 @@ namespace Android.Speech.Tts
         {
             return IExecuteWithSignature<Java.Util.List<Android.Speech.Tts.Voice>>("onGetVoices", "()Ljava/util/List;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

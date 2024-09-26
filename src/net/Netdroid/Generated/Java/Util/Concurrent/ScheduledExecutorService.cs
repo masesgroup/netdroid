@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("ScheduledExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScheduledExecutorService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Util.Concurrent
     public partial interface IScheduledExecutorService : Java.Util.Concurrent.IExecutorService
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Java.Util.Concurrent
     public partial class ScheduledExecutorService : Java.Util.Concurrent.IScheduledExecutorService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledExecutorService.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<V> Schedule<V>(Java.Util.Concurrent.Callable<V> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<V>>("schedule", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<V>>("schedule", "(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledExecutorService.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)"/>
@@ -131,7 +131,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<object> Schedule(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("schedule", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("schedule", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledExecutorService.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
@@ -143,7 +143,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<object> ScheduleAtFixedRate(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleAtFixedRate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleAtFixedRate", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledExecutorService.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
@@ -155,15 +155,15 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
         public Java.Util.Concurrent.ScheduledFuture<object> ScheduleWithFixedDelay(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleWithFixedDelay", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleWithFixedDelay", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

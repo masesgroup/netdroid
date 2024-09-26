@@ -40,10 +40,10 @@ namespace Java.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Socket(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -151,17 +151,17 @@ namespace Java.Net
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)"/>
@@ -173,9 +173,9 @@ namespace Java.Net
         {
             SExecuteWithSignature(LocalBridgeClazz, "setSocketImplFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
@@ -187,7 +187,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
         {
-            return IExecute<Java.Net.Socket>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Socket>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/net/Socket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#getOption(java.net.SocketOption)"/>
@@ -455,7 +455,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Net.SocketAddress arg0, int arg1)
         {
-            IExecute("connect", arg0, arg1);
+            IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#connect(java.net.SocketAddress)"/>
@@ -501,7 +501,7 @@ namespace Java.Net
         /// <param name="arg2"><see cref="int"/></param>
         public void SetPerformancePreferences(int arg0, int arg1, int arg2)
         {
-            IExecute("setPerformancePreferences", arg0, arg1, arg2);
+            IExecuteWithSignature("setPerformancePreferences", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#setReuseAddress(boolean)"/>
@@ -520,7 +520,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetSoLinger(bool arg0, int arg1)
         {
-            IExecute("setSoLinger", arg0, arg1);
+            IExecuteWithSignature("setSoLinger", "(ZI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Socket.html#setTcpNoDelay(boolean)"/>
@@ -556,13 +556,13 @@ namespace Java.Net
         {
             IExecuteWithSignature("shutdownOutput", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

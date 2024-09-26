@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Bundle(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -106,9 +106,9 @@ namespace Android.Os
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Os.Bundle"/> to <see cref="Java.Lang.Cloneable"/>
@@ -118,9 +118,9 @@ namespace Android.Os
         /// Converter from <see cref="Android.Os.Bundle"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Os.Bundle t) => t.Cast<Android.Os.Parcelable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#EMPTY"/>
@@ -134,13 +134,13 @@ namespace Android.Os
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String)"/>
@@ -184,7 +184,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T GetSerializable<T>(Java.Lang.String arg0, Java.Lang.Class arg1) where T : Java.Io.ISerializable, new()
         {
-            return IExecute<T>("getSerializable", arg0, arg1);
+            return IExecuteWithSignature<T>("getSerializable", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/io/Serializable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String,java.lang.Class)"/>
@@ -195,7 +195,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Util.SparseArray"/></returns>
         public Android.Util.SparseArray<T> GetSparseParcelableArray<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Android.Util.SparseArray<T>>("getSparseParcelableArray", arg0, arg1);
+            return IExecuteWithSignature<Android.Util.SparseArray<T>>("getSparseParcelableArray", "(Ljava/lang/String;Ljava/lang/Class;)Landroid/util/SparseArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String,java.lang.Class)"/>
@@ -206,7 +206,7 @@ namespace Android.Os
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
         public Java.Util.ArrayList<T> GetParcelableArrayList<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Util.ArrayList<T>>("getParcelableArrayList", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.ArrayList<T>>("getParcelableArrayList", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/ArrayList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String,java.lang.Class)"/>
@@ -217,7 +217,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T GetParcelable<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("getParcelable", arg0, arg1);
+            return IExecuteWithSignature<T>("getParcelable", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArray(java.lang.String,java.lang.Class)"/>
@@ -228,7 +228,7 @@ namespace Android.Os
         /// <returns><typeparamref name="T"/></returns>
         public T[] GetParcelableArray<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecuteArray<T>("getParcelableArray", arg0, arg1);
+            return IExecuteWithSignatureArray<T>("getParcelableArray", "(Ljava/lang/String;Ljava/lang/Class;)[Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#deepCopy()"/>
@@ -318,7 +318,7 @@ namespace Android.Os
         /// <returns><see cref="char"/></returns>
         public char GetChar(Java.Lang.String arg0, char arg1)
         {
-            return IExecute<char>("getChar", arg0, arg1);
+            return IExecuteWithSignature<char>("getChar", "(Ljava/lang/String;C)C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getChar(java.lang.String)"/>
@@ -346,7 +346,7 @@ namespace Android.Os
         /// <returns><see cref="float"/></returns>
         public float GetFloat(Java.Lang.String arg0, float arg1)
         {
-            return IExecute<float>("getFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/String;F)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getFloat(java.lang.String)"/>
@@ -392,7 +392,7 @@ namespace Android.Os
         /// <returns><see cref="Java.Lang.Byte"/></returns>
         public Java.Lang.Byte GetByte(Java.Lang.String arg0, byte arg1)
         {
-            return IExecute<Java.Lang.Byte>("getByte", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Byte>("getByte", "(Ljava/lang/String;B)Ljava/lang/Byte;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getCharSequence(java.lang.String,java.lang.CharSequence)"/>
@@ -402,7 +402,7 @@ namespace Android.Os
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetCharSequence(Java.Lang.String arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getCharSequence", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCharSequence", "(Ljava/lang/String;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getCharSequence(java.lang.String)"/>
@@ -465,7 +465,7 @@ namespace Android.Os
         /// <returns><see cref="short"/></returns>
         public short GetShort(Java.Lang.String arg0, short arg1)
         {
-            return IExecute<short>("getShort", arg0, arg1);
+            return IExecuteWithSignature<short>("getShort", "(Ljava/lang/String;S)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getShort(java.lang.String)"/>
@@ -500,7 +500,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Android.Os.IBinder"/></param>
         public void PutBinder(Java.Lang.String arg0, Android.Os.IBinder arg1)
         {
-            IExecute("putBinder", arg0, arg1);
+            IExecuteWithSignature("putBinder", "(Ljava/lang/String;Landroid/os/IBinder;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putBundle(java.lang.String,android.os.Bundle)"/>
@@ -509,7 +509,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void PutBundle(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("putBundle", arg0, arg1);
+            IExecuteWithSignature("putBundle", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putByte(java.lang.String,byte)"/>
@@ -518,7 +518,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="byte"/></param>
         public void PutByte(Java.Lang.String arg0, byte arg1)
         {
-            IExecute("putByte", arg0, arg1);
+            IExecuteWithSignature("putByte", "(Ljava/lang/String;B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putByteArray(java.lang.String,byte[])"/>
@@ -527,7 +527,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="byte"/></param>
         public void PutByteArray(Java.Lang.String arg0, byte[] arg1)
         {
-            IExecute("putByteArray", arg0, arg1);
+            IExecuteWithSignature("putByteArray", "(Ljava/lang/String;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putChar(java.lang.String,char)"/>
@@ -536,7 +536,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="char"/></param>
         public void PutChar(Java.Lang.String arg0, char arg1)
         {
-            IExecute("putChar", arg0, arg1);
+            IExecuteWithSignature("putChar", "(Ljava/lang/String;C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putCharArray(java.lang.String,char[])"/>
@@ -545,7 +545,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="char"/></param>
         public void PutCharArray(Java.Lang.String arg0, char[] arg1)
         {
-            IExecute("putCharArray", arg0, arg1);
+            IExecuteWithSignature("putCharArray", "(Ljava/lang/String;[C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putCharSequence(java.lang.String,java.lang.CharSequence)"/>
@@ -554,7 +554,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void PutCharSequence(Java.Lang.String arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("putCharSequence", arg0, arg1);
+            IExecuteWithSignature("putCharSequence", "(Ljava/lang/String;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putCharSequenceArray(java.lang.String,java.lang.CharSequence[])"/>
@@ -563,7 +563,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void PutCharSequenceArray(Java.Lang.String arg0, Java.Lang.CharSequence[] arg1)
         {
-            IExecute("putCharSequenceArray", arg0, arg1);
+            IExecuteWithSignature("putCharSequenceArray", "(Ljava/lang/String;[Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putCharSequenceArrayList(java.lang.String,java.util.ArrayList)"/>
@@ -572,7 +572,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Util.ArrayList"/></param>
         public void PutCharSequenceArrayList(Java.Lang.String arg0, Java.Util.ArrayList<Java.Lang.CharSequence> arg1)
         {
-            IExecute("putCharSequenceArrayList", arg0, arg1);
+            IExecuteWithSignature("putCharSequenceArrayList", "(Ljava/lang/String;Ljava/util/ArrayList;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putFloat(java.lang.String,float)"/>
@@ -581,7 +581,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="float"/></param>
         public void PutFloat(Java.Lang.String arg0, float arg1)
         {
-            IExecute("putFloat", arg0, arg1);
+            IExecuteWithSignature("putFloat", "(Ljava/lang/String;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putFloatArray(java.lang.String,float[])"/>
@@ -590,7 +590,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="float"/></param>
         public void PutFloatArray(Java.Lang.String arg0, float[] arg1)
         {
-            IExecute("putFloatArray", arg0, arg1);
+            IExecuteWithSignature("putFloatArray", "(Ljava/lang/String;[F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putIntegerArrayList(java.lang.String,java.util.ArrayList)"/>
@@ -599,7 +599,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Util.ArrayList"/></param>
         public void PutIntegerArrayList(Java.Lang.String arg0, Java.Util.ArrayList<Java.Lang.Integer> arg1)
         {
-            IExecute("putIntegerArrayList", arg0, arg1);
+            IExecuteWithSignature("putIntegerArrayList", "(Ljava/lang/String;Ljava/util/ArrayList;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putParcelable(java.lang.String,android.os.Parcelable)"/>
@@ -608,7 +608,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Android.Os.Parcelable"/></param>
         public void PutParcelable(Java.Lang.String arg0, Android.Os.Parcelable arg1)
         {
-            IExecute("putParcelable", arg0, arg1);
+            IExecuteWithSignature("putParcelable", "(Ljava/lang/String;Landroid/os/Parcelable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putParcelableArray(java.lang.String,android.os.Parcelable[])"/>
@@ -617,7 +617,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Android.Os.Parcelable"/></param>
         public void PutParcelableArray(Java.Lang.String arg0, Android.Os.Parcelable[] arg1)
         {
-            IExecute("putParcelableArray", arg0, arg1);
+            IExecuteWithSignature("putParcelableArray", "(Ljava/lang/String;[Landroid/os/Parcelable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putParcelableArrayList(java.lang.String,java.util.ArrayList)"/>
@@ -627,7 +627,7 @@ namespace Android.Os
         /// <typeparam name="Arg1ExtendsAndroid_Os_Parcelable"><see cref="Android.Os.Parcelable"/></typeparam>
         public void PutParcelableArrayList<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Java.Util.ArrayList<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable : Android.Os.Parcelable
         {
-            IExecute("putParcelableArrayList", arg0, arg1);
+            IExecuteWithSignature("putParcelableArrayList", "(Ljava/lang/String;Ljava/util/ArrayList;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putSerializable(java.lang.String,java.io.Serializable)"/>
@@ -636,7 +636,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Io.Serializable"/></param>
         public void PutSerializable(Java.Lang.String arg0, Java.Io.Serializable arg1)
         {
-            IExecute("putSerializable", arg0, arg1);
+            IExecuteWithSignature("putSerializable", "(Ljava/lang/String;Ljava/io/Serializable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putShort(java.lang.String,short)"/>
@@ -645,7 +645,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="short"/></param>
         public void PutShort(Java.Lang.String arg0, short arg1)
         {
-            IExecute("putShort", arg0, arg1);
+            IExecuteWithSignature("putShort", "(Ljava/lang/String;S)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putShortArray(java.lang.String,short[])"/>
@@ -654,7 +654,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="short"/></param>
         public void PutShortArray(Java.Lang.String arg0, short[] arg1)
         {
-            IExecute("putShortArray", arg0, arg1);
+            IExecuteWithSignature("putShortArray", "(Ljava/lang/String;[S)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putSize(java.lang.String,android.util.Size)"/>
@@ -663,7 +663,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Android.Util.Size"/></param>
         public void PutSize(Java.Lang.String arg0, Android.Util.Size arg1)
         {
-            IExecute("putSize", arg0, arg1);
+            IExecuteWithSignature("putSize", "(Ljava/lang/String;Landroid/util/Size;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putSizeF(java.lang.String,android.util.SizeF)"/>
@@ -672,7 +672,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Android.Util.SizeF"/></param>
         public void PutSizeF(Java.Lang.String arg0, Android.Util.SizeF arg1)
         {
-            IExecute("putSizeF", arg0, arg1);
+            IExecuteWithSignature("putSizeF", "(Ljava/lang/String;Landroid/util/SizeF;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putSparseParcelableArray(java.lang.String,android.util.SparseArray)"/>
@@ -682,7 +682,7 @@ namespace Android.Os
         /// <typeparam name="Arg1ExtendsAndroid_Os_Parcelable"><see cref="Android.Os.Parcelable"/></typeparam>
         public void PutSparseParcelableArray<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Android.Util.SparseArray<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable : Android.Os.Parcelable
         {
-            IExecute("putSparseParcelableArray", arg0, arg1);
+            IExecuteWithSignature("putSparseParcelableArray", "(Ljava/lang/String;Landroid/util/SparseArray;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#putStringArrayList(java.lang.String,java.util.ArrayList)"/>
@@ -691,7 +691,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Util.ArrayList"/></param>
         public void PutStringArrayList(Java.Lang.String arg0, Java.Util.ArrayList<Java.Lang.String> arg1)
         {
-            IExecute("putStringArrayList", arg0, arg1);
+            IExecuteWithSignature("putStringArrayList", "(Ljava/lang/String;Ljava/util/ArrayList;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#readFromParcel(android.os.Parcel)"/>
@@ -716,15 +716,15 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

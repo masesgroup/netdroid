@@ -42,10 +42,10 @@ namespace Android.View.Translation
         /// </summary>
         [global::System.Obsolete("UiTranslationStateCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UiTranslationStateCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Translation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.View.Translation
     public partial interface IUiTranslationStateCallback
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.View.Translation
     public partial class UiTranslationStateCallback : Android.View.Translation.IUiTranslationStateCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onFinished()"/>
@@ -148,7 +148,7 @@ namespace Android.View.Translation
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void OnResumed(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1, Java.Lang.String arg2)
         {
-            IExecute("onResumed", arg0, arg1, arg2);
+            IExecuteWithSignature("onResumed", "(Landroid/icu/util/ULocale;Landroid/icu/util/ULocale;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onResumed(android.icu.util.ULocale,android.icu.util.ULocale)"/>
@@ -157,7 +157,7 @@ namespace Android.View.Translation
         /// <param name="arg1"><see cref="Android.Icu.Util.ULocale"/></param>
         public void OnResumed(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1)
         {
-            IExecute("onResumed", arg0, arg1);
+            IExecuteWithSignature("onResumed", "(Landroid/icu/util/ULocale;Landroid/icu/util/ULocale;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onStarted(android.icu.util.ULocale,android.icu.util.ULocale,java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Android.View.Translation
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void OnStarted(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1, Java.Lang.String arg2)
         {
-            IExecute("onStarted", arg0, arg1, arg2);
+            IExecuteWithSignature("onStarted", "(Landroid/icu/util/ULocale;Landroid/icu/util/ULocale;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onStarted(android.icu.util.ULocale,android.icu.util.ULocale)"/>
@@ -176,15 +176,15 @@ namespace Android.View.Translation
         /// <param name="arg1"><see cref="Android.Icu.Util.ULocale"/></param>
         public void OnStarted(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1)
         {
-            IExecute("onStarted", arg0, arg1);
+            IExecuteWithSignature("onStarted", "(Landroid/icu/util/ULocale;Landroid/icu/util/ULocale;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

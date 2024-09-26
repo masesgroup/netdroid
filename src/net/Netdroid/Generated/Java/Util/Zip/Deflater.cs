@@ -40,10 +40,10 @@ namespace Java.Util.Zip
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Deflater(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Zip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,13 +91,13 @@ namespace Java.Util.Zip
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html#BEST_COMPRESSION"/>
@@ -165,13 +165,13 @@ namespace Java.Util.Zip
         public static int SYNC_FLUSH { get { if (!_SYNC_FLUSHReady) { _SYNC_FLUSHContent = SGetField<int>(LocalBridgeClazz, "SYNC_FLUSH"); _SYNC_FLUSHReady = true; } return _SYNC_FLUSHContent; } }
         private static int _SYNC_FLUSHContent = default;
         private static bool _SYNC_FLUSHReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html#finished()"/>
@@ -199,7 +199,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Deflate(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("deflate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("deflate", "([BIII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html#deflate(byte[],int,int)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Deflate(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("deflate", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("deflate", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html#deflate(byte[])"/>
@@ -229,7 +229,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Deflate(Java.Nio.ByteBuffer arg0, int arg1)
         {
-            return IExecute<int>("deflate", arg0, arg1);
+            return IExecuteWithSignature<int>("deflate", "(Ljava/nio/ByteBuffer;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer)"/>
@@ -309,7 +309,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetDictionary(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setDictionary", arg0, arg1, arg2);
+            IExecuteWithSignature("setDictionary", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html#setDictionary(byte[])"/>
@@ -335,7 +335,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetInput(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setInput", arg0, arg1, arg2);
+            IExecuteWithSignature("setInput", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html#setInput(byte[])"/>
@@ -369,13 +369,13 @@ namespace Java.Util.Zip
         {
             IExecuteWithSignature("setStrategy", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

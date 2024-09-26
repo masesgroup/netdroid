@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NumberFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Field declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Field(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Icu.Text
     public partial class NumberFormat
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#ACCOUNTINGCURRENCYSTYLE"/>
@@ -201,9 +201,9 @@ namespace Android.Icu.Text
         public static int STANDARDCURRENCYSTYLE { get { if (!_STANDARDCURRENCYSTYLEReady) { _STANDARDCURRENCYSTYLEContent = SGetField<int>(LocalBridgeClazz, "STANDARDCURRENCYSTYLE"); _STANDARDCURRENCYSTYLEReady = true; } return _STANDARDCURRENCYSTYLEContent; } }
         private static int _STANDARDCURRENCYSTYLEContent = default;
         private static bool _STANDARDCURRENCYSTYLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getCurrencyInstance(android.icu.util.ULocale)"/>
@@ -231,7 +231,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
         public static Android.Icu.Text.NumberFormat GetInstance(Android.Icu.Util.ULocale arg0, int arg1)
         {
-            return SExecute<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "(Landroid/icu/util/ULocale;I)Landroid/icu/text/NumberFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(android.icu.util.ULocale)"/>
@@ -250,7 +250,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
         public static Android.Icu.Text.NumberFormat GetInstance(Java.Util.Locale arg0, int arg1)
         {
-            return SExecute<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;I)Landroid/icu/text/NumberFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getInstance(java.util.Locale)"/>
@@ -398,9 +398,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -410,7 +410,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.Number"/></returns>
         public Java.Lang.Number Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Java.Lang.Number>("parse", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Number>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(android.icu.math.BigDecimal,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -421,7 +421,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Android.Icu.Math.BigDecimal arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Landroid/icu/math/BigDecimal;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(double,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -432,7 +432,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(double arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigDecimal,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -443,7 +443,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Java.Math.BigDecimal arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Ljava/math/BigDecimal;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(java.math.BigInteger,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -454,7 +454,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Java.Math.BigInteger arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Ljava/math/BigInteger;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#format(long,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -465,7 +465,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(long arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#getContext(android.icu.text.DisplayContext.Type)"/>
@@ -492,7 +492,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Util.CurrencyAmount"/></returns>
         public Android.Icu.Util.CurrencyAmount ParseCurrency(Java.Lang.CharSequence arg0, Java.Text.ParsePosition arg1)
         {
-            return IExecute<Android.Icu.Util.CurrencyAmount>("parseCurrency", arg0, arg1);
+            return IExecuteWithSignature<Android.Icu.Util.CurrencyAmount>("parseCurrency", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Landroid/icu/util/CurrencyAmount;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#isGroupingUsed()"/>
@@ -631,7 +631,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(Android.Icu.Util.CurrencyAmount arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
-            return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Landroid/icu/util/CurrencyAmount;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.html#setContext(android.icu.text.DisplayContext)"/>
@@ -713,21 +713,21 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setRoundingMode", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Field implementation
         public partial class Field
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.Field.html#APPROXIMATELY_SIGN"/>
@@ -813,28 +813,28 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.NumberFormat.Field SIGN { get { if (!_SIGNReady) { _SIGNContent = SGetField<Android.Icu.Text.NumberFormat.Field>(LocalBridgeClazz, "SIGN"); _SIGNReady = true; } return _SIGNContent; } }
             private static Android.Icu.Text.NumberFormat.Field _SIGNContent = default;
             private static bool _SIGNReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

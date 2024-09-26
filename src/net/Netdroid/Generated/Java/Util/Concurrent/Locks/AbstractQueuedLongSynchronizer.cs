@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         [global::System.Obsolete("AbstractQueuedLongSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractQueuedLongSynchronizer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent.Locks
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ConditionObject declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Util.Concurrent.Locks
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ConditionObject(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Util.Concurrent.Locks
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Java.Util.Concurrent.Locks
     public partial class AbstractQueuedLongSynchronizer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasContended()"/>
@@ -215,7 +215,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquireNanos(long arg0, long arg1)
         {
-            return IExecute<bool>("tryAcquireNanos", arg0, arg1);
+            return IExecuteWithSignature<bool>("tryAcquireNanos", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#tryAcquireSharedNanos(long,long)"/>
@@ -226,7 +226,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryAcquireSharedNanos(long arg0, long arg1)
         {
-            return IExecute<bool>("tryAcquireSharedNanos", arg0, arg1);
+            return IExecuteWithSignature<bool>("tryAcquireSharedNanos", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getQueueLength()"/>
@@ -320,9 +320,9 @@ namespace Java.Util.Concurrent.Locks
         {
             IExecuteWithSignature("acquireSharedInterruptibly", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ConditionObject implementation
         public partial class ConditionObject : Java.Util.Concurrent.Locks.ICondition, Java.Io.ISerializable
@@ -336,9 +336,9 @@ namespace Java.Util.Concurrent.Locks
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject"/> to <see cref="Java.Util.Concurrent.Locks.Condition"/>
@@ -348,17 +348,17 @@ namespace Java.Util.Concurrent.Locks
             /// Converter from <see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject t) => t.Cast<Java.Io.Serializable>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await(long,java.util.concurrent.TimeUnit)"/>
@@ -369,7 +369,7 @@ namespace Java.Util.Concurrent.Locks
             /// <exception cref="Java.Lang.InterruptedException"/>
             public bool Await(long arg0, Java.Util.Concurrent.TimeUnit arg1)
             {
-                return IExecute<bool>("await", arg0, arg1);
+                return IExecuteWithSignature<bool>("await", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUntil(java.util.Date)"/>
@@ -420,20 +420,20 @@ namespace Java.Util.Concurrent.Locks
             {
                 IExecuteWithSignature("signalAll", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

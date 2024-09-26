@@ -40,10 +40,10 @@ namespace Android.View.Inputmethod
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CursorAnchorInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View.Inputmethod
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View.Inputmethod
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -127,13 +127,13 @@ namespace Android.View.Inputmethod
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#CREATOR"/>
@@ -159,13 +159,13 @@ namespace Android.View.Inputmethod
         public static int FLAG_IS_RTL { get { if (!_FLAG_IS_RTLReady) { _FLAG_IS_RTLContent = SGetField<int>(LocalBridgeClazz, "FLAG_IS_RTL"); _FLAG_IS_RTLReady = true; } return _FLAG_IS_RTLContent; } }
         private static int _FLAG_IS_RTLContent = default;
         private static bool _FLAG_IS_RTLReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getMatrix()"/>
@@ -304,31 +304,31 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.Builder.html#build()"/>
@@ -350,7 +350,7 @@ namespace Android.View.Inputmethod
             /// <returns><see cref="Android.View.Inputmethod.CursorAnchorInfo.Builder"/></returns>
             public Android.View.Inputmethod.CursorAnchorInfo.Builder AddCharacterBounds(int arg0, float arg1, float arg2, float arg3, float arg4, int arg5)
             {
-                return IExecute<Android.View.Inputmethod.CursorAnchorInfo.Builder>("addCharacterBounds", arg0, arg1, arg2, arg3, arg4, arg5);
+                return IExecuteWithSignature<Android.View.Inputmethod.CursorAnchorInfo.Builder>("addCharacterBounds", "(IFFFFI)Landroid/view/inputmethod/CursorAnchorInfo$Builder;", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.Builder.html#addVisibleLineBounds(float,float,float,float)"/>
@@ -362,7 +362,7 @@ namespace Android.View.Inputmethod
             /// <returns><see cref="Android.View.Inputmethod.CursorAnchorInfo.Builder"/></returns>
             public Android.View.Inputmethod.CursorAnchorInfo.Builder AddVisibleLineBounds(float arg0, float arg1, float arg2, float arg3)
             {
-                return IExecute<Android.View.Inputmethod.CursorAnchorInfo.Builder>("addVisibleLineBounds", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.View.Inputmethod.CursorAnchorInfo.Builder>("addVisibleLineBounds", "(FFFF)Landroid/view/inputmethod/CursorAnchorInfo$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.Builder.html#clearVisibleLineBounds()"/>
@@ -380,7 +380,7 @@ namespace Android.View.Inputmethod
             /// <returns><see cref="Android.View.Inputmethod.CursorAnchorInfo.Builder"/></returns>
             public Android.View.Inputmethod.CursorAnchorInfo.Builder SetComposingText(int arg0, Java.Lang.CharSequence arg1)
             {
-                return IExecute<Android.View.Inputmethod.CursorAnchorInfo.Builder>("setComposingText", arg0, arg1);
+                return IExecuteWithSignature<Android.View.Inputmethod.CursorAnchorInfo.Builder>("setComposingText", "(ILjava/lang/CharSequence;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.Builder.html#setEditorBoundsInfo(android.view.inputmethod.EditorBoundsInfo)"/>
@@ -402,7 +402,7 @@ namespace Android.View.Inputmethod
             /// <returns><see cref="Android.View.Inputmethod.CursorAnchorInfo.Builder"/></returns>
             public Android.View.Inputmethod.CursorAnchorInfo.Builder SetInsertionMarkerLocation(float arg0, float arg1, float arg2, float arg3, int arg4)
             {
-                return IExecute<Android.View.Inputmethod.CursorAnchorInfo.Builder>("setInsertionMarkerLocation", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<Android.View.Inputmethod.CursorAnchorInfo.Builder>("setInsertionMarkerLocation", "(FFFFI)Landroid/view/inputmethod/CursorAnchorInfo$Builder;", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.Builder.html#setMatrix(android.graphics.Matrix)"/>
@@ -421,7 +421,7 @@ namespace Android.View.Inputmethod
             /// <returns><see cref="Android.View.Inputmethod.CursorAnchorInfo.Builder"/></returns>
             public Android.View.Inputmethod.CursorAnchorInfo.Builder SetSelectionRange(int arg0, int arg1)
             {
-                return IExecute<Android.View.Inputmethod.CursorAnchorInfo.Builder>("setSelectionRange", arg0, arg1);
+                return IExecuteWithSignature<Android.View.Inputmethod.CursorAnchorInfo.Builder>("setSelectionRange", "(II)Landroid/view/inputmethod/CursorAnchorInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.Builder.html#setTextAppearanceInfo(android.view.inputmethod.TextAppearanceInfo)"/>
@@ -439,20 +439,20 @@ namespace Android.View.Inputmethod
             {
                 IExecuteWithSignature("reset", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

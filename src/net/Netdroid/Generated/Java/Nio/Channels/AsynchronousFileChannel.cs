@@ -42,10 +42,10 @@ namespace Java.Nio.Channels
         /// </summary>
         [global::System.Obsolete("AsynchronousFileChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AsynchronousFileChannel(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio.Channels
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Java.Nio.Channels
     public partial class AsynchronousFileChannel
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -97,7 +97,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousFileChannel Open(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/nio/channels/AsynchronousFileChannel;", arg0); else return SExecuteWithSignature<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/nio/channels/AsynchronousFileChannel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.util.Set,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute[])"/>
@@ -111,11 +111,11 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousFileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute<object>[] arg3) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
-            if (arg3.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0, arg1, arg2); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;Ljava/util/Set;Ljava/util/concurrent/ExecutorService;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/AsynchronousFileChannel;", arg0, arg1, arg2); else return SExecuteWithSignature<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;Ljava/util/Set;Ljava/util/concurrent/ExecutorService;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/AsynchronousFileChannel;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -129,7 +129,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
         public void Lock<A, Arg4objectSuperA>(long arg0, long arg1, bool arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg4objectSuperA> arg4) where Arg4objectSuperA : A
         {
-            IExecute("lock", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("lock", "(JJZLjava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -142,7 +142,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg3objectSuperA"><typeparamref name="A"/></typeparam>
         public void Read<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg3objectSuperA> arg3) where Arg3objectSuperA : A
         {
-            IExecute("read", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("read", "(Ljava/nio/ByteBuffer;JLjava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -155,7 +155,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg3objectSuperA"><typeparamref name="A"/></typeparam>
         public void Write<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg3objectSuperA> arg3) where Arg3objectSuperA : A
         {
-            IExecute("write", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("write", "(Ljava/nio/ByteBuffer;JLjava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#truncate(long)"/>
@@ -177,7 +177,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock TryLock(long arg0, long arg1, bool arg2)
         {
-            return IExecute<Java.Nio.Channels.FileLock>("tryLock", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.Channels.FileLock>("tryLock", "(JJZ)Ljava/nio/channels/FileLock;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long)"/>
@@ -187,7 +187,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Lang.Integer> Read(Java.Nio.ByteBuffer arg0, long arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future<Java.Lang.Integer>>("read", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Integer>>("read", "(Ljava/nio/ByteBuffer;J)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long)"/>
@@ -197,7 +197,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Lang.Integer> Write(Java.Nio.ByteBuffer arg0, long arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future<Java.Lang.Integer>>("write", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Integer>>("write", "(Ljava/nio/ByteBuffer;J)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean)"/>
@@ -208,7 +208,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock> Lock(long arg0, long arg1, bool arg2)
         {
-            return IExecute<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock", "(JJZ)Ljava/util/concurrent/Future;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#size()"/>
@@ -237,7 +237,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
         public void Lock<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg1objectSuperA> arg1) where Arg1objectSuperA : A
         {
-            IExecute("lock", arg0, arg1);
+            IExecuteWithSignature("lock", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#tryLock()"/>
@@ -256,13 +256,13 @@ namespace Java.Nio.Channels
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock", "()Ljava/util/concurrent/Future;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

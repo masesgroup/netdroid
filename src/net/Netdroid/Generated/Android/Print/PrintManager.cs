@@ -40,10 +40,10 @@ namespace Android.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PrintManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Print
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Print
     public partial class PrintManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintManager.html#print(java.lang.String,android.print.PrintDocumentAdapter,android.print.PrintAttributes)"/>
@@ -99,7 +99,7 @@ namespace Android.Print
         /// <returns><see cref="Android.Print.PrintJob"/></returns>
         public Android.Print.PrintJob Print(Java.Lang.String arg0, Android.Print.PrintDocumentAdapter arg1, Android.Print.PrintAttributes arg2)
         {
-            return IExecute<Android.Print.PrintJob>("print", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Print.PrintJob>("print", "(Ljava/lang/String;Landroid/print/PrintDocumentAdapter;Landroid/print/PrintAttributes;)Landroid/print/PrintJob;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintManager.html#isPrintServiceEnabled(android.content.ComponentName)"/>
@@ -118,13 +118,13 @@ namespace Android.Print
         {
             return IExecuteWithSignature<Java.Util.List<Android.Print.PrintJob>>("getPrintJobs", "()Ljava/util/List;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("ScrollCaptureCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScrollCaptureCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.View
     public partial interface IScrollCaptureCallback
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.View
     public partial class ScrollCaptureCallback : Android.View.IScrollCaptureCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureCallback.html#onScrollCaptureEnd(java.lang.Runnable)"/>
@@ -127,7 +127,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void OnScrollCaptureImageRequest(Android.View.ScrollCaptureSession arg0, Android.Os.CancellationSignal arg1, Android.Graphics.Rect arg2, Java.Util.Function.Consumer<Android.Graphics.Rect> arg3)
         {
-            IExecute("onScrollCaptureImageRequest", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onScrollCaptureImageRequest", "(Landroid/view/ScrollCaptureSession;Landroid/os/CancellationSignal;Landroid/graphics/Rect;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureCallback.html#onScrollCaptureSearch(android.os.CancellationSignal,java.util.function.Consumer)"/>
@@ -136,7 +136,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void OnScrollCaptureSearch(Android.Os.CancellationSignal arg0, Java.Util.Function.Consumer<Android.Graphics.Rect> arg1)
         {
-            IExecute("onScrollCaptureSearch", arg0, arg1);
+            IExecuteWithSignature("onScrollCaptureSearch", "(Landroid/os/CancellationSignal;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureCallback.html#onScrollCaptureStart(android.view.ScrollCaptureSession,android.os.CancellationSignal,java.lang.Runnable)"/>
@@ -146,15 +146,15 @@ namespace Android.View
         /// <param name="arg2"><see cref="Java.Lang.Runnable"/></param>
         public void OnScrollCaptureStart(Android.View.ScrollCaptureSession arg0, Android.Os.CancellationSignal arg1, Java.Lang.Runnable arg2)
         {
-            IExecute("onScrollCaptureStart", arg0, arg1, arg2);
+            IExecuteWithSignature("onScrollCaptureStart", "(Landroid/view/ScrollCaptureSession;Landroid/os/CancellationSignal;Ljava/lang/Runnable;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

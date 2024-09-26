@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Interpolator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Result declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Result(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -136,21 +136,21 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#timeToValues(float[])"/>
@@ -169,7 +169,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Interpolator.Result"/></returns>
         public Android.Graphics.Interpolator.Result TimeToValues(int arg0, float[] arg1)
         {
-            return IExecute<Android.Graphics.Interpolator.Result>("timeToValues", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Interpolator.Result>("timeToValues", "(I[F)Landroid/graphics/Interpolator$Result;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#getKeyFrameCount()"/>
@@ -194,7 +194,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void Reset(int arg0, int arg1)
         {
-            IExecute("reset", arg0, arg1);
+            IExecuteWithSignature("reset", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#reset(int)"/>
@@ -213,7 +213,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void SetKeyFrame(int arg0, int arg1, float[] arg2, float[] arg3)
         {
-            IExecute("setKeyFrame", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setKeyFrame", "(II[F[F)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#setKeyFrame(int,int,float[])"/>
@@ -223,7 +223,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetKeyFrame(int arg0, int arg1, float[] arg2)
         {
-            IExecute("setKeyFrame", arg0, arg1, arg2);
+            IExecuteWithSignature("setKeyFrame", "(II[F)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.html#setRepeatMirror(float,boolean)"/>
@@ -232,23 +232,23 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetRepeatMirror(float arg0, bool arg1)
         {
-            IExecute("setRepeatMirror", arg0, arg1);
+            IExecuteWithSignature("setRepeatMirror", "(FZ)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Result implementation
         public partial class Result
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.Result.html#FREEZE_END"/>
@@ -268,9 +268,9 @@ namespace Android.Graphics
             public static Android.Graphics.Interpolator.Result NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Graphics.Interpolator.Result>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
             private static Android.Graphics.Interpolator.Result _NORMALContent = default;
             private static bool _NORMALReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Interpolator.Result.html#valueOf(java.lang.String)"/>
@@ -289,24 +289,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Interpolator.Result>(LocalBridgeClazz, "values", "()[Landroid/graphics/Interpolator$Result;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.App.Backup
         /// </summary>
         [global::System.Obsolete("BackupAgent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BackupAgent(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.App.Backup
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.App.Backup
     public partial class BackupAgent
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED"/>
@@ -108,13 +108,13 @@ namespace Android.App.Backup
         public static int TYPE_FILE { get { if (!_TYPE_FILEReady) { _TYPE_FILEContent = SGetField<int>(LocalBridgeClazz, "TYPE_FILE"); _TYPE_FILEReady = true; } return _TYPE_FILEContent; } }
         private static int _TYPE_FILEContent = default;
         private static bool _TYPE_FILEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor)"/>
@@ -125,7 +125,7 @@ namespace Android.App.Backup
         /// <exception cref="Java.Io.IOException"/>
         public void OnBackup(Android.Os.ParcelFileDescriptor arg0, Android.App.Backup.BackupDataOutput arg1, Android.Os.ParcelFileDescriptor arg2)
         {
-            IExecute("onBackup", arg0, arg1, arg2);
+            IExecuteWithSignature("onBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,int,android.os.ParcelFileDescriptor)"/>
@@ -136,7 +136,7 @@ namespace Android.App.Backup
         /// <exception cref="Java.Io.IOException"/>
         public void OnRestore(Android.App.Backup.BackupDataInput arg0, int arg1, Android.Os.ParcelFileDescriptor arg2)
         {
-            IExecute("onRestore", arg0, arg1, arg2);
+            IExecuteWithSignature("onRestore", "(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#fullBackupFile(java.io.File,android.app.backup.FullBackupDataOutput)"/>
@@ -145,7 +145,7 @@ namespace Android.App.Backup
         /// <param name="arg1"><see cref="Android.App.Backup.FullBackupDataOutput"/></param>
         public void FullBackupFile(Java.Io.File arg0, Android.App.Backup.FullBackupDataOutput arg1)
         {
-            IExecute("fullBackupFile", arg0, arg1);
+            IExecuteWithSignature("fullBackupFile", "(Ljava/io/File;Landroid/app/backup/FullBackupDataOutput;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onCreate()"/>
@@ -177,7 +177,7 @@ namespace Android.App.Backup
         /// <param name="arg1"><see cref="long"/></param>
         public void OnQuotaExceeded(long arg0, long arg1)
         {
-            IExecute("onQuotaExceeded", arg0, arg1);
+            IExecuteWithSignature("onQuotaExceeded", "(JJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,long,android.os.ParcelFileDescriptor)"/>
@@ -188,7 +188,7 @@ namespace Android.App.Backup
         /// <exception cref="Java.Io.IOException"/>
         public void OnRestore(Android.App.Backup.BackupDataInput arg0, long arg1, Android.Os.ParcelFileDescriptor arg2)
         {
-            IExecute("onRestore", arg0, arg1, arg2);
+            IExecuteWithSignature("onRestore", "(Landroid/app/backup/BackupDataInput;JLandroid/os/ParcelFileDescriptor;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestoreFile(android.os.ParcelFileDescriptor,long,java.io.File,int,long,long)"/>
@@ -202,7 +202,7 @@ namespace Android.App.Backup
         /// <exception cref="Java.Io.IOException"/>
         public void OnRestoreFile(Android.Os.ParcelFileDescriptor arg0, long arg1, Java.Io.File arg2, int arg3, long arg4, long arg5)
         {
-            IExecute("onRestoreFile", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("onRestoreFile", "(Landroid/os/ParcelFileDescriptor;JLjava/io/File;IJJ)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestoreFinished()"/>
@@ -211,13 +211,13 @@ namespace Android.App.Backup
         {
             IExecuteWithSignature("onRestoreFinished", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

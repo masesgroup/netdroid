@@ -40,10 +40,10 @@ namespace Java.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Inet6Address(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Net
     public partial class Inet6Address
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],int)"/>
@@ -96,7 +96,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.Inet6Address GetByAddress(Java.Lang.String arg0, byte[] arg1, int arg2)
         {
-            return SExecute<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", "(Ljava/lang/String;[BI)Ljava/net/Inet6Address;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],java.net.NetworkInterface)"/>
@@ -108,11 +108,11 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.Inet6Address GetByAddress(Java.Lang.String arg0, byte[] arg1, Java.Net.NetworkInterface arg2)
         {
-            return SExecute<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", "(Ljava/lang/String;[BLjava/net/NetworkInterface;)Ljava/net/Inet6Address;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#isIPv4CompatibleAddress()"/>
@@ -138,13 +138,13 @@ namespace Java.Net
         {
             return IExecuteWithSignature<Java.Net.NetworkInterface>("getScopedInterface", "()Ljava/net/NetworkInterface;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

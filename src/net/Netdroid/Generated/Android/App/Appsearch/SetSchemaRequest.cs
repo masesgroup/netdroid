@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SetSchemaRequest(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.App.Appsearch
     public partial class SetSchemaRequest
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#READ_ASSISTANT_APP_SEARCH_DATA"/>
@@ -163,13 +163,13 @@ namespace Android.App.Appsearch
         public static int READ_SMS { get { if (!_READ_SMSReady) { _READ_SMSContent = SGetField<int>(LocalBridgeClazz, "READ_SMS"); _READ_SMSReady = true; } return _READ_SMSContent; } }
         private static int _READ_SMSContent = default;
         private static bool _READ_SMSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#isForceOverride()"/>
@@ -243,29 +243,29 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSchemasNotDisplayedBySystem", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#build()"/>
@@ -283,7 +283,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
             public Android.App.Appsearch.SetSchemaRequest.Builder AddRequiredPermissionsForSchemaTypeVisibility(Java.Lang.String arg0, Java.Util.Set<Java.Lang.Integer> arg1)
             {
-                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("addRequiredPermissionsForSchemaTypeVisibility", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("addRequiredPermissionsForSchemaTypeVisibility", "(Ljava/lang/String;Ljava/util/Set;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#addSchemas(android.app.appsearch.AppSearchSchema[])"/>
@@ -311,7 +311,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
             public Android.App.Appsearch.SetSchemaRequest.Builder AddSchemaTypeVisibleToConfig(Java.Lang.String arg0, Android.App.Appsearch.SchemaVisibilityConfig arg1)
             {
-                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("addSchemaTypeVisibleToConfig", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("addSchemaTypeVisibleToConfig", "(Ljava/lang/String;Landroid/app/appsearch/SchemaVisibilityConfig;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#clearRequiredPermissionsForSchemaTypeVisibility(java.lang.String)"/>
@@ -348,7 +348,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
             public Android.App.Appsearch.SetSchemaRequest.Builder SetMigrator(Java.Lang.String arg0, Android.App.Appsearch.Migrator arg1)
             {
-                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("setMigrator", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("setMigrator", "(Ljava/lang/String;Landroid/app/appsearch/Migrator;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#setMigrators(java.util.Map)"/>
@@ -367,7 +367,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
             public Android.App.Appsearch.SetSchemaRequest.Builder SetPubliclyVisibleSchema(Java.Lang.String arg0, Android.App.Appsearch.PackageIdentifier arg1)
             {
-                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("setPubliclyVisibleSchema", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("setPubliclyVisibleSchema", "(Ljava/lang/String;Landroid/app/appsearch/PackageIdentifier;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#setSchemaTypeDisplayedBySystem(java.lang.String,boolean)"/>
@@ -377,7 +377,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
             public Android.App.Appsearch.SetSchemaRequest.Builder SetSchemaTypeDisplayedBySystem(Java.Lang.String arg0, bool arg1)
             {
-                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("setSchemaTypeDisplayedBySystem", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("setSchemaTypeDisplayedBySystem", "(Ljava/lang/String;Z)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#setSchemaTypeVisibilityForPackage(java.lang.String,boolean,android.app.appsearch.PackageIdentifier)"/>
@@ -388,7 +388,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
             public Android.App.Appsearch.SetSchemaRequest.Builder SetSchemaTypeVisibilityForPackage(Java.Lang.String arg0, bool arg1, Android.App.Appsearch.PackageIdentifier arg2)
             {
-                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("setSchemaTypeVisibilityForPackage", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("setSchemaTypeVisibilityForPackage", "(Ljava/lang/String;ZLandroid/app/appsearch/PackageIdentifier;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#setVersion(int)"/>
@@ -399,20 +399,20 @@ namespace Android.App.Appsearch
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("setVersion", "(I)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

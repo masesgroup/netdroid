@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BroadcastOptions(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.App
     public partial class BroadcastOptions
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#DEFERRAL_POLICY_DEFAULT"/>
@@ -112,9 +112,9 @@ namespace Android.App
         public static int DELIVERY_GROUP_POLICY_MOST_RECENT { get { if (!_DELIVERY_GROUP_POLICY_MOST_RECENTReady) { _DELIVERY_GROUP_POLICY_MOST_RECENTContent = SGetField<int>(LocalBridgeClazz, "DELIVERY_GROUP_POLICY_MOST_RECENT"); _DELIVERY_GROUP_POLICY_MOST_RECENTReady = true; } return _DELIVERY_GROUP_POLICY_MOST_RECENTContent; } }
         private static int _DELIVERY_GROUP_POLICY_MOST_RECENTContent = default;
         private static bool _DELIVERY_GROUP_POLICY_MOST_RECENTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#fromBundle(android.os.Bundle)"/>
@@ -133,9 +133,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Android.App.BroadcastOptions>(LocalBridgeClazz, "makeBasic", "()Landroid/app/BroadcastOptions;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#setDeferralPolicy(int)"/>
@@ -154,7 +154,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.BroadcastOptions"/></returns>
         public Android.App.BroadcastOptions SetDeliveryGroupMatchingKey(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.App.BroadcastOptions>("setDeliveryGroupMatchingKey", arg0, arg1);
+            return IExecuteWithSignature<Android.App.BroadcastOptions>("setDeliveryGroupMatchingKey", "(Ljava/lang/String;Ljava/lang/String;)Landroid/app/BroadcastOptions;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#setDeliveryGroupPolicy(int)"/>
@@ -235,13 +235,13 @@ namespace Android.App
         {
             IExecuteWithSignature("clearDeliveryGroupPolicy", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ParcelFileDescriptor(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AutoCloseInputStream declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AutoCloseInputStream(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AutoCloseOutputStream(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -167,9 +167,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -183,7 +183,7 @@ namespace Android.Os
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnCloseListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.os.ParcelFileDescriptor_OnCloseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -192,13 +192,13 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnCloseListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnCloseListener"/> or its generic type if there is one
@@ -209,14 +209,14 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.os.ParcelFileDescriptor$OnCloseListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -256,9 +256,9 @@ namespace Android.Os
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Os.ParcelFileDescriptor"/> to <see cref="Android.Os.Parcelable"/>
@@ -268,9 +268,9 @@ namespace Android.Os
         /// Converter from <see cref="Android.Os.ParcelFileDescriptor"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Android.Os.ParcelFileDescriptor t) => t.Cast<Java.Io.Closeable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#CREATOR"/>
@@ -328,9 +328,9 @@ namespace Android.Os
         public static int MODE_WRITE_ONLY { get { if (!_MODE_WRITE_ONLYReady) { _MODE_WRITE_ONLYContent = SGetField<int>(LocalBridgeClazz, "MODE_WRITE_ONLY"); _MODE_WRITE_ONLYReady = true; } return _MODE_WRITE_ONLYContent; } }
         private static int _MODE_WRITE_ONLYContent = default;
         private static bool _MODE_WRITE_ONLYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#adoptFd(int)"/>
@@ -390,7 +390,7 @@ namespace Android.Os
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Os.ParcelFileDescriptor Open(Java.Io.File arg0, int arg1, Android.Os.Handler arg2, Android.Os.ParcelFileDescriptor.OnCloseListener arg3)
         {
-            return SExecute<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "open", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "open", "(Ljava/io/File;ILandroid/os/Handler;Landroid/os/ParcelFileDescriptor$OnCloseListener;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#open(java.io.File,int)"/>
@@ -401,7 +401,7 @@ namespace Android.Os
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Os.ParcelFileDescriptor Open(Java.Io.File arg0, int arg1)
         {
-            return SExecute<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "open", arg0, arg1);
+            return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "open", "(Ljava/io/File;I)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#wrap(android.os.ParcelFileDescriptor,android.os.Handler,android.os.ParcelFileDescriptor.OnCloseListener)"/>
@@ -413,7 +413,7 @@ namespace Android.Os
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Os.ParcelFileDescriptor Wrap(Android.Os.ParcelFileDescriptor arg0, Android.Os.Handler arg1, Android.Os.ParcelFileDescriptor.OnCloseListener arg2)
         {
-            return SExecute<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "wrap", "(Landroid/os/ParcelFileDescriptor;Landroid/os/Handler;Landroid/os/ParcelFileDescriptor$OnCloseListener;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#createPipe()"/>
@@ -460,9 +460,9 @@ namespace Android.Os
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "parseMode", "(Ljava/lang/String;)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#dup()"/>
@@ -553,11 +553,11 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AutoCloseInputStream implementation
         public partial class AutoCloseInputStream
@@ -571,29 +571,29 @@ namespace Android.Os
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -610,29 +610,29 @@ namespace Android.Os
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -641,29 +641,29 @@ namespace Android.Os
         public partial class FileDescriptorDetachedException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -672,21 +672,21 @@ namespace Android.Os
         public partial class OnCloseListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnCloseListener"/>
@@ -696,13 +696,13 @@ namespace Android.Os
                 AddEventHandler("onClose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCloseEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.OnCloseListener.html#onClose(java.io.IOException)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClose"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnClose { get; set; } = null;
-            
+
             bool hasOverrideOnClose = true;
             void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -711,7 +711,7 @@ namespace Android.Os
                 methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnClose;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.OnCloseListener.html#onClose(java.io.IOException)"/>
             /// </summary>
@@ -720,13 +720,13 @@ namespace Android.Os
             {
                 hasOverrideOnClose = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -735,21 +735,21 @@ namespace Android.Os
         public partial class OnCloseListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.OnCloseListener.html#onClose(java.io.IOException)"/>
@@ -759,20 +759,20 @@ namespace Android.Os
             {
                 IExecuteWithSignature("onClose", "(Ljava/io/IOException;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

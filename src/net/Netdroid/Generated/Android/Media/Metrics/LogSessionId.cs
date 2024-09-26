@@ -40,10 +40,10 @@ namespace Android.Media.Metrics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LogSessionId(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media.Metrics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Media.Metrics
     public partial class LogSessionId
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/LogSessionId.html#LOG_SESSION_ID_NONE"/>
@@ -88,13 +88,13 @@ namespace Android.Media.Metrics
         public static Android.Media.Metrics.LogSessionId LOG_SESSION_ID_NONE { get { if (!_LOG_SESSION_ID_NONEReady) { _LOG_SESSION_ID_NONEContent = SGetField<Android.Media.Metrics.LogSessionId>(LocalBridgeClazz, "LOG_SESSION_ID_NONE"); _LOG_SESSION_ID_NONEReady = true; } return _LOG_SESSION_ID_NONEContent; } }
         private static Android.Media.Metrics.LogSessionId _LOG_SESSION_ID_NONEContent = default;
         private static bool _LOG_SESSION_ID_NONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/LogSessionId.html#getStringId()"/>
@@ -104,13 +104,13 @@ namespace Android.Media.Metrics
         {
             return IExecuteWithSignature<Java.Lang.String>("getStringId", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

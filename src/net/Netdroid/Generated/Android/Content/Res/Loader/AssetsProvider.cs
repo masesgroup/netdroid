@@ -42,10 +42,10 @@ namespace Android.Content.Res.Loader
         /// </summary>
         [global::System.Obsolete("AssetsProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AssetsProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Content.Res.Loader
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Content.Res.Loader
     public partial interface IAssetsProvider
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Android.Content.Res.Loader
     public partial class AssetsProvider : Android.Content.Res.Loader.IAssetsProvider
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/AssetsProvider.html#loadAssetFd(java.lang.String,int)"/>
@@ -118,15 +118,15 @@ namespace Android.Content.Res.Loader
         /// <returns><see cref="Android.Content.Res.AssetFileDescriptor"/></returns>
         public Android.Content.Res.AssetFileDescriptor LoadAssetFd(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("loadAssetFd", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("loadAssetFd", "(Ljava/lang/String;I)Landroid/content/res/AssetFileDescriptor;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("CookieHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CookieHandler(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Java.Net
     public partial class CookieHandler
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/CookieHandler.html#getDefault()"/>
@@ -104,9 +104,9 @@ namespace Java.Net
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/CookieHandler;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/CookieHandler.html#get(java.net.URI,java.util.Map)"/>
@@ -117,7 +117,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> Get(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg1)
         {
-            return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("get", "(Ljava/net/URI;Ljava/util/Map;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/CookieHandler.html#put(java.net.URI,java.util.Map)"/>
@@ -127,15 +127,15 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Put(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(Ljava/net/URI;Ljava/util/Map;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

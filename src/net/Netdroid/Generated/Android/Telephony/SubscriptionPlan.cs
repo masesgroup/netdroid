@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SubscriptionPlan(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Telephony
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Telephony
     public partial class SubscriptionPlan
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#CREATOR"/>
@@ -175,13 +175,13 @@ namespace Android.Telephony
         public static long TIME_UNKNOWN { get { if (!_TIME_UNKNOWNReady) { _TIME_UNKNOWNContent = SGetField<long>(LocalBridgeClazz, "TIME_UNKNOWN"); _TIME_UNKNOWNReady = true; } return _TIME_UNKNOWNContent; } }
         private static long _TIME_UNKNOWNContent = default;
         private static bool _TIME_UNKNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#describeContents()"/>
@@ -254,27 +254,27 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.Builder.html#createNonrecurring(java.time.ZonedDateTime,java.time.ZonedDateTime)"/>
@@ -284,7 +284,7 @@ namespace Android.Telephony
             /// <returns><see cref="Android.Telephony.SubscriptionPlan.Builder"/></returns>
             public static Android.Telephony.SubscriptionPlan.Builder CreateNonrecurring(Java.Time.ZonedDateTime arg0, Java.Time.ZonedDateTime arg1)
             {
-                return SExecute<Android.Telephony.SubscriptionPlan.Builder>(LocalBridgeClazz, "createNonrecurring", arg0, arg1);
+                return SExecuteWithSignature<Android.Telephony.SubscriptionPlan.Builder>(LocalBridgeClazz, "createNonrecurring", "(Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;)Landroid/telephony/SubscriptionPlan$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.Builder.html#createRecurring(java.time.ZonedDateTime,java.time.Period)"/>
@@ -294,11 +294,11 @@ namespace Android.Telephony
             /// <returns><see cref="Android.Telephony.SubscriptionPlan.Builder"/></returns>
             public static Android.Telephony.SubscriptionPlan.Builder CreateRecurring(Java.Time.ZonedDateTime arg0, Java.Time.Period arg1)
             {
-                return SExecute<Android.Telephony.SubscriptionPlan.Builder>(LocalBridgeClazz, "createRecurring", arg0, arg1);
+                return SExecuteWithSignature<Android.Telephony.SubscriptionPlan.Builder>(LocalBridgeClazz, "createRecurring", "(Ljava/time/ZonedDateTime;Ljava/time/Period;)Landroid/telephony/SubscriptionPlan$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.Builder.html#build()"/>
@@ -324,7 +324,7 @@ namespace Android.Telephony
             /// <returns><see cref="Android.Telephony.SubscriptionPlan.Builder"/></returns>
             public Android.Telephony.SubscriptionPlan.Builder SetDataLimit(long arg0, int arg1)
             {
-                return IExecute<Android.Telephony.SubscriptionPlan.Builder>("setDataLimit", arg0, arg1);
+                return IExecuteWithSignature<Android.Telephony.SubscriptionPlan.Builder>("setDataLimit", "(JI)Landroid/telephony/SubscriptionPlan$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.Builder.html#setDataUsage(long,long)"/>
@@ -334,7 +334,7 @@ namespace Android.Telephony
             /// <returns><see cref="Android.Telephony.SubscriptionPlan.Builder"/></returns>
             public Android.Telephony.SubscriptionPlan.Builder SetDataUsage(long arg0, long arg1)
             {
-                return IExecute<Android.Telephony.SubscriptionPlan.Builder>("setDataUsage", arg0, arg1);
+                return IExecuteWithSignature<Android.Telephony.SubscriptionPlan.Builder>("setDataUsage", "(JJ)Landroid/telephony/SubscriptionPlan$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.Builder.html#setNetworkTypes(int[])"/>
@@ -363,20 +363,20 @@ namespace Android.Telephony
             {
                 return IExecuteWithSignature<Android.Telephony.SubscriptionPlan.Builder>("setTitle", "(Ljava/lang/CharSequence;)Landroid/telephony/SubscriptionPlan$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

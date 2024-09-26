@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EGLExt(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Opengl
     public partial class EGLExt
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGLExt.html#EGL_CONTEXT_FLAGS_KHR"/>
@@ -136,9 +136,9 @@ namespace Android.Opengl
         public static int EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID { get { if (!_EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROIDReady) { _EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROIDContent = SGetField<int>(LocalBridgeClazz, "EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID"); _EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROIDReady = true; } return _EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROIDContent; } }
         private static int _EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROIDContent = default;
         private static bool _EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROIDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGLExt.html#eglDupNativeFenceFDANDROID(android.opengl.EGLDisplay,android.opengl.EGLSync)"/>
@@ -148,7 +148,7 @@ namespace Android.Opengl
         /// <returns><see cref="Android.Hardware.SyncFence"/></returns>
         public static Android.Hardware.SyncFence EglDupNativeFenceFDANDROID(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLSync arg1)
         {
-            return SExecute<Android.Hardware.SyncFence>(LocalBridgeClazz, "eglDupNativeFenceFDANDROID", arg0, arg1);
+            return SExecuteWithSignature<Android.Hardware.SyncFence>(LocalBridgeClazz, "eglDupNativeFenceFDANDROID", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSync;)Landroid/hardware/SyncFence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGLExt.html#eglPresentationTimeANDROID(android.opengl.EGLDisplay,android.opengl.EGLSurface,long)"/>
@@ -159,19 +159,19 @@ namespace Android.Opengl
         /// <returns><see cref="bool"/></returns>
         public static bool EglPresentationTimeANDROID(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLSurface arg1, long arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "eglPresentationTimeANDROID", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "eglPresentationTimeANDROID", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSurface;J)Z", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Javax.Xml.Datatype
         /// </summary>
         [global::System.Obsolete("DatatypeFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DatatypeFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Datatype
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Javax.Xml.Datatype
     public partial class DatatypeFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_IMPLEMENTATION_CLASS"/>
@@ -96,9 +96,9 @@ namespace Javax.Xml.Datatype
         public static Java.Lang.String DATATYPEFACTORY_PROPERTY { get { if (!_DATATYPEFACTORY_PROPERTYReady) { _DATATYPEFACTORY_PROPERTYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATATYPEFACTORY_PROPERTY"); _DATATYPEFACTORY_PROPERTYReady = true; } return _DATATYPEFACTORY_PROPERTYContent; } }
         private static Java.Lang.String _DATATYPEFACTORY_PROPERTYContent = default;
         private static bool _DATATYPEFACTORY_PROPERTYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDefaultInstance()"/>
@@ -126,11 +126,11 @@ namespace Javax.Xml.Datatype
         /// <exception cref="Javax.Xml.Datatype.DatatypeConfigurationException"/>
         public static Javax.Xml.Datatype.DatatypeFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/datatype/DatatypeFactory;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDuration(boolean,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigDecimal)"/>
@@ -145,7 +145,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDuration(bool arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigDecimal arg6)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDuration", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDuration", "(ZLjava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigDecimal;)Ljavax/xml/datatype/Duration;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDuration(java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar(Java.Math.BigInteger arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Java.Math.BigDecimal arg6, int arg7)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", "(Ljava/math/BigInteger;IIIIILjava/math/BigDecimal;I)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendar(java.util.GregorianCalendar)"/>
@@ -220,7 +220,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDuration(bool arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDuration", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDuration", "(ZIIIIII)Ljavax/xml/datatype/Duration;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDurationDayTime(boolean,int,int,int,int)"/>
@@ -233,7 +233,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationDayTime(bool arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationDayTime", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationDayTime", "(ZIIII)Ljavax/xml/datatype/Duration;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDurationDayTime(boolean,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)"/>
@@ -246,7 +246,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationDayTime(bool arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationDayTime", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationDayTime", "(ZLjava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljavax/xml/datatype/Duration;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDurationDayTime(java.lang.String)"/>
@@ -275,7 +275,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationYearMonth(bool arg0, int arg1, int arg2)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationYearMonth", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationYearMonth", "(ZII)Ljavax/xml/datatype/Duration;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDurationYearMonth(boolean,java.math.BigInteger,java.math.BigInteger)"/>
@@ -286,7 +286,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration NewDurationYearMonth(bool arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
         {
-            return IExecute<Javax.Xml.Datatype.Duration>("newDurationYearMonth", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Xml.Datatype.Duration>("newDurationYearMonth", "(ZLjava/math/BigInteger;Ljava/math/BigInteger;)Ljavax/xml/datatype/Duration;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newDurationYearMonth(java.lang.String)"/>
@@ -320,7 +320,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendar", "(IIIIIIII)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendarDate(int,int,int,int)"/>
@@ -332,7 +332,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendarDate(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarDate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarDate", "(IIII)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendarTime(int,int,int,int,int)"/>
@@ -345,7 +345,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendarTime(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarTime", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarTime", "(IIIII)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendarTime(int,int,int,int)"/>
@@ -357,7 +357,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendarTime(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarTime", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarTime", "(IIII)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/datatype/DatatypeFactory.html#newXMLGregorianCalendarTime(int,int,int,java.math.BigDecimal,int)"/>
@@ -370,15 +370,15 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar NewXMLGregorianCalendarTime(int arg0, int arg1, int arg2, Java.Math.BigDecimal arg3, int arg4)
         {
-            return IExecute<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarTime", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("newXMLGregorianCalendarTime", "(IIILjava/math/BigDecimal;I)Ljavax/xml/datatype/XMLGregorianCalendar;", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

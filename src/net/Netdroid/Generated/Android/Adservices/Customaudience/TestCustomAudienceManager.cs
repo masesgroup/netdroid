@@ -40,10 +40,10 @@ namespace Android.Adservices.Customaudience
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TestCustomAudienceManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Customaudience
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Adservices.Customaudience
     public partial class TestCustomAudienceManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TestCustomAudienceManager.html#overrideCustomAudienceRemoteInfo(android.adservices.customaudience.AddCustomAudienceOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -98,7 +98,7 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void OverrideCustomAudienceRemoteInfo(Android.Adservices.Customaudience.AddCustomAudienceOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("overrideCustomAudienceRemoteInfo", arg0, arg1, arg2);
+            IExecuteWithSignature("overrideCustomAudienceRemoteInfo", "(Landroid/adservices/customaudience/AddCustomAudienceOverrideRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TestCustomAudienceManager.html#removeCustomAudienceRemoteInfoOverride(android.adservices.customaudience.RemoveCustomAudienceOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -108,7 +108,7 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RemoveCustomAudienceRemoteInfoOverride(Android.Adservices.Customaudience.RemoveCustomAudienceOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
-            IExecute("removeCustomAudienceRemoteInfoOverride", arg0, arg1, arg2);
+            IExecuteWithSignature("removeCustomAudienceRemoteInfoOverride", "(Landroid/adservices/customaudience/RemoveCustomAudienceOverrideRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TestCustomAudienceManager.html#resetAllCustomAudienceOverrides(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -117,15 +117,15 @@ namespace Android.Adservices.Customaudience
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void ResetAllCustomAudienceOverrides(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg1)
         {
-            IExecute("resetAllCustomAudienceOverrides", arg0, arg1);
+            IExecuteWithSignature("resetAllCustomAudienceOverrides", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

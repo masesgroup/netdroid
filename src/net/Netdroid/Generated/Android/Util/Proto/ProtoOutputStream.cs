@@ -40,10 +40,10 @@ namespace Android.Util.Proto
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ProtoOutputStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Util.Proto
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,13 +90,13 @@ namespace Android.Util.Proto
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#FIELD_COUNT_SHIFT"/>
@@ -296,9 +296,9 @@ namespace Android.Util.Proto
         public static long FIELD_TYPE_UINT64 { get { if (!_FIELD_TYPE_UINT64Ready) { _FIELD_TYPE_UINT64Content = SGetField<long>(LocalBridgeClazz, "FIELD_TYPE_UINT64"); _FIELD_TYPE_UINT64Ready = true; } return _FIELD_TYPE_UINT64Content; } }
         private static long _FIELD_TYPE_UINT64Content = default;
         private static bool _FIELD_TYPE_UINT64Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#checkFieldId(long,long)"/>
@@ -308,7 +308,7 @@ namespace Android.Util.Proto
         /// <returns><see cref="int"/></returns>
         public static int CheckFieldId(long arg0, long arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "checkFieldId", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "checkFieldId", "(JJ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#getFieldCountString(long)"/>
@@ -363,7 +363,7 @@ namespace Android.Util.Proto
         /// <returns><see cref="long"/></returns>
         public static long MakeFieldId(int arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "makeFieldId", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "makeFieldId", "(IJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#makeToken(int,boolean,int,int,int)"/>
@@ -376,11 +376,11 @@ namespace Android.Util.Proto
         /// <returns><see cref="long"/></returns>
         public static long MakeToken(int arg0, bool arg1, int arg2, int arg3, int arg4)
         {
-            return SExecute<long>(LocalBridgeClazz, "makeToken", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "makeToken", "(IZIII)J", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#getBytes()"/>
@@ -437,7 +437,7 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="bool"/></param>
         public void Write(long arg0, bool arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(JZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#write(long,byte[])"/>
@@ -446,7 +446,7 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="byte"/></param>
         public void Write(long arg0, byte[] arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(J[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#write(long,double)"/>
@@ -455,7 +455,7 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="double"/></param>
         public void Write(long arg0, double arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(JD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#write(long,float)"/>
@@ -464,7 +464,7 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="float"/></param>
         public void Write(long arg0, float arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(JF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#write(long,int)"/>
@@ -473,7 +473,7 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="int"/></param>
         public void Write(long arg0, int arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(JI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#write(long,java.lang.String)"/>
@@ -482,7 +482,7 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Write(long arg0, Java.Lang.String arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(JLjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#write(long,long)"/>
@@ -491,7 +491,7 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="long"/></param>
         public void Write(long arg0, long arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(JJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/proto/ProtoOutputStream.html#writeTag(int,int)"/>
@@ -500,15 +500,15 @@ namespace Android.Util.Proto
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteTag(int arg0, int arg1)
         {
-            IExecute("writeTag", arg0, arg1);
+            IExecuteWithSignature("writeTag", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

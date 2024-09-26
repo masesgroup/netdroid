@@ -40,10 +40,10 @@ namespace Android.Content.Res
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Resources(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region NotFoundException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.Content.Res
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -98,10 +98,10 @@ namespace Android.Content.Res
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Theme(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -122,9 +122,9 @@ namespace Android.Content.Res
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -147,13 +147,13 @@ namespace Android.Content.Res
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#ID_NULL"/>
@@ -161,9 +161,9 @@ namespace Android.Content.Res
         public static int ID_NULL { get { if (!_ID_NULLReady) { _ID_NULLContent = SGetField<int>(LocalBridgeClazz, "ID_NULL"); _ID_NULLReady = true; } return _ID_NULLContent; } }
         private static int _ID_NULLContent = default;
         private static bool _ID_NULLReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getSystem()"/>
@@ -189,11 +189,11 @@ namespace Android.Content.Res
         /// <param name="arg1"><see cref="Android.Content.Pm.ApplicationInfo"/></param>
         public static void RegisterResourcePaths(Java.Lang.String arg0, Android.Content.Pm.ApplicationInfo arg1)
         {
-            SExecute(LocalBridgeClazz, "registerResourcePaths", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "registerResourcePaths", "(Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResourceFd(int)"/>
@@ -214,7 +214,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Android.Content.Res.ColorStateList GetColorStateList(int arg0, Android.Content.Res.Resources.Theme arg1)
         {
-            return IExecute<Android.Content.Res.ColorStateList>("getColorStateList", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColorStateList", "(ILandroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getColorStateList(int)"/>
@@ -243,7 +243,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.TypedArray"/></returns>
         public Android.Content.Res.TypedArray ObtainAttributes(Android.Util.AttributeSet arg0, int[] arg1)
         {
-            return IExecute<Android.Content.Res.TypedArray>("obtainAttributes", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.TypedArray>("obtainAttributes", "(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#obtainTypedArray(int)"/>
@@ -294,7 +294,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Android.Graphics.Drawable.Drawable GetDrawable(int arg0, Android.Content.Res.Resources.Theme arg1)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawable", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getDrawable(int)"/>
@@ -316,7 +316,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawableForDensity(int arg0, int arg1, Android.Content.Res.Resources.Theme arg2)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", "(IILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getDrawableForDensity(int,int)"/>
@@ -328,7 +328,7 @@ namespace Android.Content.Res
         [global::System.Obsolete()]
         public Android.Graphics.Drawable.Drawable GetDrawableForDensity(int arg0, int arg1)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", "(II)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getMovie(int)"/>
@@ -427,7 +427,7 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float GetFraction(int arg0, int arg1, int arg2)
         {
-            return IExecute<float>("getFraction", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("getFraction", "(III)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getColor(int,android.content.res.Resources.Theme)"/>
@@ -438,7 +438,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public int GetColor(int arg0, Android.Content.Res.Resources.Theme arg1)
         {
-            return IExecute<int>("getColor", arg0, arg1);
+            return IExecuteWithSignature<int>("getColor", "(ILandroid/content/res/Resources$Theme;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getColor(int)"/>
@@ -480,7 +480,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetIdentifier(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("getIdentifier", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getIdentifier", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getInteger(int)"/>
@@ -511,7 +511,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Java.Io.InputStream OpenRawResource(int arg0, Android.Util.TypedValue arg1)
         {
-            return IExecute<Java.Io.InputStream>("openRawResource", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.InputStream>("openRawResource", "(ILandroid/util/TypedValue;)Ljava/io/InputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int)"/>
@@ -532,7 +532,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Java.Lang.CharSequence GetQuantityText(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getQuantityText", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getQuantityText", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getText(int,java.lang.CharSequence)"/>
@@ -542,7 +542,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetText(int arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getText", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "(ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getText(int)"/>
@@ -574,7 +574,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Java.Lang.String GetQuantityString(int arg0, int arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Lang.String>("getQuantityString", arg0, arg1); else return IExecute<Java.Lang.String>("getQuantityString", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Lang.String>("getQuantityString", "(II[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1); else return IExecuteWithSignature<Java.Lang.String>("getQuantityString", "(II[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getQuantityString(int,int)"/>
@@ -585,7 +585,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Java.Lang.String GetQuantityString(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getQuantityString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getQuantityString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getResourceEntryName(int)"/>
@@ -636,7 +636,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Java.Lang.String GetString(int arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.String>("getString", arg0); else return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.String>("getString", "(I[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return IExecuteWithSignature<Java.Lang.String>("getString", "(I[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getString(int)"/>
@@ -675,7 +675,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public void GetValue(int arg0, Android.Util.TypedValue arg1, bool arg2)
         {
-            IExecute("getValue", arg0, arg1, arg2);
+            IExecuteWithSignature("getValue", "(ILandroid/util/TypedValue;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValue(java.lang.String,android.util.TypedValue,boolean)"/>
@@ -686,7 +686,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public void GetValue(Java.Lang.String arg0, Android.Util.TypedValue arg1, bool arg2)
         {
-            IExecute("getValue", arg0, arg1, arg2);
+            IExecuteWithSignature("getValue", "(Ljava/lang/String;Landroid/util/TypedValue;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValueForDensity(int,int,android.util.TypedValue,boolean)"/>
@@ -698,7 +698,7 @@ namespace Android.Content.Res
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public void GetValueForDensity(int arg0, int arg1, Android.Util.TypedValue arg2, bool arg3)
         {
-            IExecute("getValueForDensity", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getValueForDensity", "(IILandroid/util/TypedValue;Z)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtra(java.lang.String,android.util.AttributeSet,android.os.Bundle)"/>
@@ -709,7 +709,7 @@ namespace Android.Content.Res
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void ParseBundleExtra(Java.Lang.String arg0, Android.Util.AttributeSet arg1, Android.Os.Bundle arg2)
         {
-            IExecute("parseBundleExtra", arg0, arg1, arg2);
+            IExecuteWithSignature("parseBundleExtra", "(Ljava/lang/String;Landroid/util/AttributeSet;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtras(android.content.res.XmlResourceParser,android.os.Bundle)"/>
@@ -720,7 +720,7 @@ namespace Android.Content.Res
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void ParseBundleExtras(Android.Content.Res.XmlResourceParser arg0, Android.Os.Bundle arg1)
         {
-            IExecute("parseBundleExtras", arg0, arg1);
+            IExecuteWithSignature("parseBundleExtras", "(Landroid/content/res/XmlResourceParser;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#removeLoaders(android.content.res.loader.ResourcesLoader[])"/>
@@ -738,39 +738,39 @@ namespace Android.Content.Res
         [global::System.Obsolete()]
         public void UpdateConfiguration(Android.Content.Res.Configuration arg0, Android.Util.DisplayMetrics arg1)
         {
-            IExecute("updateConfiguration", arg0, arg1);
+            IExecuteWithSignature("updateConfiguration", "(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region NotFoundException implementation
         public partial class NotFoundException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -779,21 +779,21 @@ namespace Android.Content.Res
         public partial class Theme
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getResources()"/>
@@ -813,7 +813,7 @@ namespace Android.Content.Res
             /// <returns><see cref="Android.Content.Res.TypedArray"/></returns>
             public Android.Content.Res.TypedArray ObtainStyledAttributes(Android.Util.AttributeSet arg0, int[] arg1, int arg2, int arg3)
             {
-                return IExecute<Android.Content.Res.TypedArray>("obtainStyledAttributes", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Content.Res.TypedArray>("obtainStyledAttributes", "(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#obtainStyledAttributes(int,int[])"/>
@@ -824,7 +824,7 @@ namespace Android.Content.Res
             /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
             public Android.Content.Res.TypedArray ObtainStyledAttributes(int arg0, int[] arg1)
             {
-                return IExecute<Android.Content.Res.TypedArray>("obtainStyledAttributes", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.Res.TypedArray>("obtainStyledAttributes", "(I[I)Landroid/content/res/TypedArray;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#obtainStyledAttributes(int[])"/>
@@ -854,7 +854,7 @@ namespace Android.Content.Res
             /// <returns><see cref="bool"/></returns>
             public bool ResolveAttribute(int arg0, Android.Util.TypedValue arg1, bool arg2)
             {
-                return IExecute<bool>("resolveAttribute", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("resolveAttribute", "(ILandroid/util/TypedValue;Z)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getChangingConfigurations()"/>
@@ -882,7 +882,7 @@ namespace Android.Content.Res
             /// <returns><see cref="int"/></returns>
             public int[] GetAttributeResolutionStack(int arg0, int arg1, int arg2)
             {
-                return IExecuteArray<int>("getAttributeResolutionStack", arg0, arg1, arg2);
+                return IExecuteWithSignatureArray<int>("getAttributeResolutionStack", "(III)[I", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#applyStyle(int,boolean)"/>
@@ -891,7 +891,7 @@ namespace Android.Content.Res
             /// <param name="arg1"><see cref="bool"/></param>
             public void ApplyStyle(int arg0, bool arg1)
             {
-                IExecute("applyStyle", arg0, arg1);
+                IExecuteWithSignature("applyStyle", "(IZ)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#dump(int,java.lang.String,java.lang.String)"/>
@@ -901,7 +901,7 @@ namespace Android.Content.Res
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             public void Dump(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             {
-                IExecute("dump", arg0, arg1, arg2);
+                IExecuteWithSignature("dump", "(ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#rebase()"/>
@@ -918,20 +918,20 @@ namespace Android.Content.Res
             {
                 IExecuteWithSignature("setTo", "(Landroid/content/res/Resources$Theme;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

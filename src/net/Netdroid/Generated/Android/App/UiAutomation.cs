@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UiAutomation(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AccessibilityEventFilter declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("AccessibilityEventFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AccessibilityEventFilter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnAccessibilityEventListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.UiAutomation_OnAccessibilityEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnAccessibilityEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnAccessibilityEventListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.UiAutomation$OnAccessibilityEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -188,13 +188,13 @@ namespace Android.App
     public partial class UiAutomation
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#FLAG_DONT_SUPPRESS_ACCESSIBILITY_SERVICES"/>
@@ -244,13 +244,13 @@ namespace Android.App
         public static int ROTATION_UNFREEZE { get { if (!_ROTATION_UNFREEZEReady) { _ROTATION_UNFREEZEContent = SGetField<int>(LocalBridgeClazz, "ROTATION_UNFREEZE"); _ROTATION_UNFREEZEReady = true; } return _ROTATION_UNFREEZEContent; } }
         private static int _ROTATION_UNFREEZEContent = default;
         private static bool _ROTATION_UNFREEZEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getServiceInfo()"/>
@@ -322,7 +322,7 @@ namespace Android.App
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public Android.View.Accessibility.AccessibilityEvent ExecuteAndWaitForEvent(Java.Lang.Runnable arg0, Android.App.UiAutomation.AccessibilityEventFilter arg1, long arg2)
         {
-            return IExecute<Android.View.Accessibility.AccessibilityEvent>("executeAndWaitForEvent", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityEvent>("executeAndWaitForEvent", "(Ljava/lang/Runnable;Landroid/app/UiAutomation$AccessibilityEventFilter;J)Landroid/view/accessibility/AccessibilityEvent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#findFocus(int)"/>
@@ -384,7 +384,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool InjectInputEvent(Android.View.InputEvent arg0, bool arg1)
         {
-            return IExecute<bool>("injectInputEvent", arg0, arg1);
+            return IExecuteWithSignature<bool>("injectInputEvent", "(Landroid/view/InputEvent;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#performGlobalAction(int)"/>
@@ -449,7 +449,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void GrantRuntimePermission(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("grantRuntimePermission", arg0, arg1);
+            IExecuteWithSignature("grantRuntimePermission", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#grantRuntimePermissionAsUser(java.lang.String,java.lang.String,android.os.UserHandle)"/>
@@ -459,7 +459,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void GrantRuntimePermissionAsUser(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("grantRuntimePermissionAsUser", arg0, arg1, arg2);
+            IExecuteWithSignature("grantRuntimePermissionAsUser", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#revokeRuntimePermission(java.lang.String,java.lang.String)"/>
@@ -468,7 +468,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void RevokeRuntimePermission(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("revokeRuntimePermission", arg0, arg1);
+            IExecuteWithSignature("revokeRuntimePermission", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#revokeRuntimePermissionAsUser(java.lang.String,java.lang.String,android.os.UserHandle)"/>
@@ -478,7 +478,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void RevokeRuntimePermissionAsUser(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("revokeRuntimePermissionAsUser", arg0, arg1, arg2);
+            IExecuteWithSignature("revokeRuntimePermissionAsUser", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#setAnimationScale(float)"/>
@@ -520,31 +520,31 @@ namespace Android.App
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public void WaitForIdle(long arg0, long arg1)
         {
-            IExecute("waitForIdle", arg0, arg1);
+            IExecuteWithSignature("waitForIdle", "(JJ)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AccessibilityEventFilter implementation
         public partial class AccessibilityEventFilter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/UiAutomation.AccessibilityEventFilter.html#accept(android.view.accessibility.AccessibilityEvent)"/>
@@ -555,13 +555,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<bool>("accept", "(Landroid/view/accessibility/AccessibilityEvent;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -570,21 +570,21 @@ namespace Android.App
         public partial class OnAccessibilityEventListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnAccessibilityEventListener"/>
@@ -594,13 +594,13 @@ namespace Android.App
                 AddEventHandler("onAccessibilityEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAccessibilityEventEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/UiAutomation.OnAccessibilityEventListener.html#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAccessibilityEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Accessibility.AccessibilityEvent> OnOnAccessibilityEvent { get; set; } = null;
-            
+
             bool hasOverrideOnAccessibilityEvent = true;
             void OnAccessibilityEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -609,7 +609,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Accessibility.AccessibilityEvent>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAccessibilityEvent;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/UiAutomation.OnAccessibilityEventListener.html#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
             /// </summary>
@@ -618,13 +618,13 @@ namespace Android.App
             {
                 hasOverrideOnAccessibilityEvent = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -633,21 +633,21 @@ namespace Android.App
         public partial class OnAccessibilityEventListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/UiAutomation.OnAccessibilityEventListener.html#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
@@ -657,20 +657,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("onAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

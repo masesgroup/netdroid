@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Opengl
     public partial class GLUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLUtils.html#getInternalFormat(android.graphics.Bitmap)"/>
@@ -122,7 +122,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void TexImage2D(int arg0, int arg1, Android.Graphics.Bitmap arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "texImage2D", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "texImage2D", "(IILandroid/graphics/Bitmap;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLUtils.html#texImage2D(int,int,int,android.graphics.Bitmap,int,int)"/>
@@ -135,7 +135,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void TexImage2D(int arg0, int arg1, int arg2, Android.Graphics.Bitmap arg3, int arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "texImage2D", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "texImage2D", "(IIILandroid/graphics/Bitmap;II)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLUtils.html#texImage2D(int,int,int,android.graphics.Bitmap,int)"/>
@@ -147,7 +147,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void TexImage2D(int arg0, int arg1, int arg2, Android.Graphics.Bitmap arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "texImage2D", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "texImage2D", "(IIILandroid/graphics/Bitmap;I)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLUtils.html#texSubImage2D(int,int,int,int,android.graphics.Bitmap,int,int)"/>
@@ -161,7 +161,7 @@ namespace Android.Opengl
         /// <param name="arg6"><see cref="int"/></param>
         public static void TexSubImage2D(int arg0, int arg1, int arg2, int arg3, Android.Graphics.Bitmap arg4, int arg5, int arg6)
         {
-            SExecute(LocalBridgeClazz, "texSubImage2D", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "texSubImage2D", "(IIIILandroid/graphics/Bitmap;II)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLUtils.html#texSubImage2D(int,int,int,int,android.graphics.Bitmap)"/>
@@ -173,19 +173,19 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Android.Graphics.Bitmap"/></param>
         public static void TexSubImage2D(int arg0, int arg1, int arg2, int arg3, Android.Graphics.Bitmap arg4)
         {
-            SExecute(LocalBridgeClazz, "texSubImage2D", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "texSubImage2D", "(IIIILandroid/graphics/Bitmap;)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

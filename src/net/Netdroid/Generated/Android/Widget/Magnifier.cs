@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Magnifier(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,13 +128,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#SOURCE_BOUND_MAX_IN_SURFACE"/>
@@ -148,13 +148,13 @@ namespace Android.Widget
         public static int SOURCE_BOUND_MAX_VISIBLE { get { if (!_SOURCE_BOUND_MAX_VISIBLEReady) { _SOURCE_BOUND_MAX_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "SOURCE_BOUND_MAX_VISIBLE"); _SOURCE_BOUND_MAX_VISIBLEReady = true; } return _SOURCE_BOUND_MAX_VISIBLEContent; } }
         private static int _SOURCE_BOUND_MAX_VISIBLEContent = default;
         private static bool _SOURCE_BOUND_MAX_VISIBLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#getOverlay()"/>
@@ -284,7 +284,7 @@ namespace Android.Widget
         /// <param name="arg3"><see cref="float"/></param>
         public void Show(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("show", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("show", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#show(float,float)"/>
@@ -293,7 +293,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="float"/></param>
         public void Show(float arg0, float arg1)
         {
-            IExecute("show", arg0, arg1);
+            IExecuteWithSignature("show", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#update()"/>
@@ -302,9 +302,9 @@ namespace Android.Widget
         {
             IExecuteWithSignature("update", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -318,21 +318,21 @@ namespace Android.Widget
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/Magnifier.Builder.html#build()"/>
@@ -368,7 +368,7 @@ namespace Android.Widget
             /// <returns><see cref="Android.Widget.Magnifier.Builder"/></returns>
             public Android.Widget.Magnifier.Builder SetDefaultSourceToMagnifierOffset(int arg0, int arg1)
             {
-                return IExecute<Android.Widget.Magnifier.Builder>("setDefaultSourceToMagnifierOffset", arg0, arg1);
+                return IExecuteWithSignature<Android.Widget.Magnifier.Builder>("setDefaultSourceToMagnifierOffset", "(II)Landroid/widget/Magnifier$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/Magnifier.Builder.html#setElevation(float)"/>
@@ -405,7 +405,7 @@ namespace Android.Widget
             /// <returns><see cref="Android.Widget.Magnifier.Builder"/></returns>
             public Android.Widget.Magnifier.Builder SetSize(int arg0, int arg1)
             {
-                return IExecute<Android.Widget.Magnifier.Builder>("setSize", arg0, arg1);
+                return IExecuteWithSignature<Android.Widget.Magnifier.Builder>("setSize", "(II)Landroid/widget/Magnifier$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/Magnifier.Builder.html#setSourceBounds(int,int,int,int)"/>
@@ -417,22 +417,22 @@ namespace Android.Widget
             /// <returns><see cref="Android.Widget.Magnifier.Builder"/></returns>
             public Android.Widget.Magnifier.Builder SetSourceBounds(int arg0, int arg1, int arg2, int arg3)
             {
-                return IExecute<Android.Widget.Magnifier.Builder>("setSourceBounds", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Widget.Magnifier.Builder>("setSourceBounds", "(IIII)Landroid/widget/Magnifier$Builder;", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

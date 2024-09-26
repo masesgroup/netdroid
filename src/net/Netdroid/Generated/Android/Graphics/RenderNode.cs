@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RenderNode(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#beginRecording()"/>
@@ -114,7 +114,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.RecordingCanvas"/></returns>
         public Android.Graphics.RecordingCanvas BeginRecording(int arg0, int arg1)
         {
-            return IExecute<Android.Graphics.RecordingCanvas>("beginRecording", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.RecordingCanvas>("beginRecording", "(II)Landroid/graphics/RecordingCanvas;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getClipToBounds()"/>
@@ -341,7 +341,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool SetPosition(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("setPosition", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("setPosition", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#setProjectBackwards(boolean)"/>
@@ -459,7 +459,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool SetUseCompositingLayer(bool arg0, Android.Graphics.Paint arg1)
         {
-            return IExecute<bool>("setUseCompositingLayer", arg0, arg1);
+            return IExecuteWithSignature<bool>("setUseCompositingLayer", "(ZLandroid/graphics/Paint;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getAlpha()"/>
@@ -675,13 +675,13 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("getMatrix", "(Landroid/graphics/Matrix;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Appwidget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppWidgetProviderInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Appwidget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,13 +82,13 @@ namespace Android.Appwidget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#configure"/>
@@ -249,13 +249,13 @@ namespace Android.Appwidget
         public static int WIDGET_FEATURE_RECONFIGURABLE { get { if (!_WIDGET_FEATURE_RECONFIGURABLEReady) { _WIDGET_FEATURE_RECONFIGURABLEContent = SGetField<int>(LocalBridgeClazz, "WIDGET_FEATURE_RECONFIGURABLE"); _WIDGET_FEATURE_RECONFIGURABLEReady = true; } return _WIDGET_FEATURE_RECONFIGURABLEContent; } }
         private static int _WIDGET_FEATURE_RECONFIGURABLEContent = default;
         private static bool _WIDGET_FEATURE_RECONFIGURABLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#clone()"/>
@@ -281,7 +281,7 @@ namespace Android.Appwidget
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable LoadIcon(Android.Content.Context arg0, int arg1)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("loadIcon", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("loadIcon", "(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#loadPreviewImage(android.content.Context,int)"/>
@@ -291,7 +291,7 @@ namespace Android.Appwidget
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable LoadPreviewImage(Android.Content.Context arg0, int arg1)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("loadPreviewImage", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("loadPreviewImage", "(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#getProfile()"/>
@@ -334,15 +334,15 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

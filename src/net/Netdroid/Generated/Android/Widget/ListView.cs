@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ListView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region FixedViewInfo declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FixedViewInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -157,21 +157,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getDivider()"/>
@@ -288,7 +288,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="bool"/></param>
         public void AddFooterView(Android.View.View arg0, object arg1, bool arg2)
         {
-            IExecute("addFooterView", arg0, arg1, arg2);
+            IExecuteWithSignature("addFooterView", "(Landroid/view/View;Ljava/lang/Object;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#addFooterView(android.view.View)"/>
@@ -306,7 +306,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="bool"/></param>
         public void AddHeaderView(Android.View.View arg0, object arg1, bool arg2)
         {
-            IExecute("addHeaderView", arg0, arg1, arg2);
+            IExecuteWithSignature("addHeaderView", "(Landroid/view/View;Ljava/lang/Object;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#addHeaderView(android.view.View)"/>
@@ -387,9 +387,9 @@ namespace Android.Widget
         {
             IExecuteWithSignature("smoothScrollByOffset", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region FixedViewInfo implementation
         public partial class FixedViewInfo
@@ -403,13 +403,13 @@ namespace Android.Widget
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/ListView.FixedViewInfo.html#view"/>
@@ -423,28 +423,28 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/ListView.FixedViewInfo.html#data"/>
             /// </summary>
             public object data { get { return IGetField("data"); } set { ISetField("data", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

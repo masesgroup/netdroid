@@ -40,10 +40,10 @@ namespace Java.Security
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DrbgParameters(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Capability declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Capability(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Instantiation(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public NextBytes(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Reseed(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -254,17 +254,17 @@ namespace Java.Security
     public partial class DrbgParameters
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.html#instantiation(int,java.security.DrbgParameters.Capability,byte[])"/>
@@ -275,7 +275,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.DrbgParameters.Instantiation"/></returns>
         public static Java.Security.DrbgParameters.Instantiation InstantiationMethod(int arg0, Java.Security.DrbgParameters.Capability arg1, byte[] arg2)
         {
-            return SExecute<Java.Security.DrbgParameters.Instantiation>(LocalBridgeClazz, "instantiation", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.DrbgParameters.Instantiation>(LocalBridgeClazz, "instantiation", "(ILjava/security/DrbgParameters$Capability;[B)Ljava/security/DrbgParameters$Instantiation;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.html#nextBytes(int,boolean,byte[])"/>
@@ -286,7 +286,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.DrbgParameters.NextBytes"/></returns>
         public static Java.Security.DrbgParameters.NextBytes NextBytesMethod(int arg0, bool arg1, byte[] arg2)
         {
-            return SExecute<Java.Security.DrbgParameters.NextBytes>(LocalBridgeClazz, "nextBytes", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.DrbgParameters.NextBytes>(LocalBridgeClazz, "nextBytes", "(IZ[B)Ljava/security/DrbgParameters$NextBytes;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.html#reseed(boolean,byte[])"/>
@@ -296,27 +296,27 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.DrbgParameters.Reseed"/></returns>
         public static Java.Security.DrbgParameters.Reseed ReseedMethod(bool arg0, byte[] arg1)
         {
-            return SExecute<Java.Security.DrbgParameters.Reseed>(LocalBridgeClazz, "reseed", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.DrbgParameters.Reseed>(LocalBridgeClazz, "reseed", "(Z[B)Ljava/security/DrbgParameters$Reseed;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Capability implementation
         public partial class Capability
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.Capability.html#NONE"/>
@@ -336,9 +336,9 @@ namespace Java.Security
             public static Java.Security.DrbgParameters.Capability RESEED_ONLY { get { if (!_RESEED_ONLYReady) { _RESEED_ONLYContent = SGetField<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "RESEED_ONLY"); _RESEED_ONLYReady = true; } return _RESEED_ONLYContent; } }
             private static Java.Security.DrbgParameters.Capability _RESEED_ONLYContent = default;
             private static bool _RESEED_ONLYReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.Capability.html#valueOf(java.lang.String)"/>
@@ -357,9 +357,9 @@ namespace Java.Security
             {
                 return SExecuteWithSignatureArray<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "values", "()[Ljava/security/DrbgParameters$Capability;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/>
@@ -377,13 +377,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<bool>("supportsReseeding", "()Z");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -392,21 +392,21 @@ namespace Java.Security
         public partial class Instantiation
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.Instantiation.html#getPersonalizationString()"/>
@@ -432,13 +432,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Java.Security.DrbgParameters.Capability>("getCapability", "()Ljava/security/DrbgParameters$Capability;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -447,21 +447,21 @@ namespace Java.Security
         public partial class NextBytes
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.NextBytes.html#getPredictionResistance()"/>
@@ -487,13 +487,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<int>("getStrength", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -502,21 +502,21 @@ namespace Java.Security
         public partial class Reseed
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/DrbgParameters.Reseed.html#getPredictionResistance()"/>
@@ -534,20 +534,20 @@ namespace Java.Security
             {
                 return IExecuteWithSignatureArray<byte>("getAdditionalInput", "()[B");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

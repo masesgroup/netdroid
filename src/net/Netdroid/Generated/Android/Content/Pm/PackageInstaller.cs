@@ -40,10 +40,10 @@ namespace Android.Content.Pm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PackageInstaller(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region InstallConstraints declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InstallConstraints(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,7 +105,7 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -122,10 +122,10 @@ namespace Android.Content.Pm
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -146,9 +146,9 @@ namespace Android.Content.Pm
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InstallConstraintsResult(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PreapprovalDetails(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,7 +240,7 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -257,10 +257,10 @@ namespace Android.Content.Pm
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -281,9 +281,9 @@ namespace Android.Content.Pm
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -306,10 +306,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Session(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -353,10 +353,10 @@ namespace Android.Content.Pm
             /// </summary>
             [global::System.Obsolete("SessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SessionCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -377,9 +377,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -398,10 +398,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SessionInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -422,9 +422,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -443,10 +443,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SessionParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -467,9 +467,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -488,10 +488,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UnarchivalState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -512,9 +512,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -526,13 +526,13 @@ namespace Android.Content.Pm
     public partial class PackageInstaller
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#PACKAGE_SOURCE_DOWNLOADED_FILE"/>
@@ -768,13 +768,13 @@ namespace Android.Content.Pm
         public static Java.Lang.String EXTRA_UNARCHIVE_STATUS { get { if (!_EXTRA_UNARCHIVE_STATUSReady) { _EXTRA_UNARCHIVE_STATUSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_UNARCHIVE_STATUS"); _EXTRA_UNARCHIVE_STATUSReady = true; } return _EXTRA_UNARCHIVE_STATUSContent; } }
         private static Java.Lang.String _EXTRA_UNARCHIVE_STATUSContent = default;
         private static bool _EXTRA_UNARCHIVE_STATUSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#openSession(int)"/>
@@ -863,7 +863,7 @@ namespace Android.Content.Pm
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void CheckInstallConstraints(Java.Util.List<Java.Lang.String> arg0, Android.Content.Pm.PackageInstaller.InstallConstraints arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Android.Content.Pm.PackageInstaller.InstallConstraintsResult> arg3)
         {
-            IExecute("checkInstallConstraints", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("checkInstallConstraints", "(Ljava/util/List;Landroid/content/pm/PackageInstaller$InstallConstraints;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#commitSessionAfterInstallConstraintsAreMet(int,android.content.IntentSender,android.content.pm.PackageInstaller.InstallConstraints,long)"/>
@@ -874,7 +874,7 @@ namespace Android.Content.Pm
         /// <param name="arg3"><see cref="long"/></param>
         public void CommitSessionAfterInstallConstraintsAreMet(int arg0, Android.Content.IntentSender arg1, Android.Content.Pm.PackageInstaller.InstallConstraints arg2, long arg3)
         {
-            IExecute("commitSessionAfterInstallConstraintsAreMet", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("commitSessionAfterInstallConstraintsAreMet", "(ILandroid/content/IntentSender;Landroid/content/pm/PackageInstaller$InstallConstraints;J)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#installExistingPackage(java.lang.String,int,android.content.IntentSender)"/>
@@ -884,7 +884,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Android.Content.IntentSender"/></param>
         public void InstallExistingPackage(Java.Lang.String arg0, int arg1, Android.Content.IntentSender arg2)
         {
-            IExecute("installExistingPackage", arg0, arg1, arg2);
+            IExecuteWithSignature("installExistingPackage", "(Ljava/lang/String;ILandroid/content/IntentSender;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#installPackageArchived(android.content.pm.ArchivedPackageInfo,android.content.pm.PackageInstaller.SessionParams,android.content.IntentSender)"/>
@@ -894,7 +894,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Android.Content.IntentSender"/></param>
         public void InstallPackageArchived(Android.Content.Pm.ArchivedPackageInfo arg0, Android.Content.Pm.PackageInstaller.SessionParams arg1, Android.Content.IntentSender arg2)
         {
-            IExecute("installPackageArchived", arg0, arg1, arg2);
+            IExecuteWithSignature("installPackageArchived", "(Landroid/content/pm/ArchivedPackageInfo;Landroid/content/pm/PackageInstaller$SessionParams;Landroid/content/IntentSender;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback,android.os.Handler)"/>
@@ -903,7 +903,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterSessionCallback(Android.Content.Pm.PackageInstaller.SessionCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerSessionCallback", arg0, arg1);
+            IExecuteWithSignature("registerSessionCallback", "(Landroid/content/pm/PackageInstaller$SessionCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback)"/>
@@ -932,7 +932,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public void ReportUnarchivalStatus(int arg0, int arg1, long arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("reportUnarchivalStatus", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("reportUnarchivalStatus", "(IIJLandroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestArchive(java.lang.String,android.content.IntentSender)"/>
@@ -942,7 +942,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public void RequestArchive(Java.Lang.String arg0, Android.Content.IntentSender arg1)
         {
-            IExecute("requestArchive", arg0, arg1);
+            IExecuteWithSignature("requestArchive", "(Ljava/lang/String;Landroid/content/IntentSender;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestUnarchive(java.lang.String,android.content.IntentSender)"/>
@@ -953,7 +953,7 @@ namespace Android.Content.Pm
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public void RequestUnarchive(Java.Lang.String arg0, Android.Content.IntentSender arg1)
         {
-            IExecute("requestUnarchive", arg0, arg1);
+            IExecuteWithSignature("requestUnarchive", "(Ljava/lang/String;Landroid/content/IntentSender;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,android.content.IntentSender)"/>
@@ -962,7 +962,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
         public void Uninstall(Android.Content.Pm.VersionedPackage arg0, Android.Content.IntentSender arg1)
         {
-            IExecute("uninstall", arg0, arg1);
+            IExecuteWithSignature("uninstall", "(Landroid/content/pm/VersionedPackage;Landroid/content/IntentSender;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,int,android.content.IntentSender)"/>
@@ -972,7 +972,7 @@ namespace Android.Content.Pm
         /// <param name="arg2"><see cref="Android.Content.IntentSender"/></param>
         public void Uninstall(Android.Content.Pm.VersionedPackage arg0, int arg1, Android.Content.IntentSender arg2)
         {
-            IExecute("uninstall", arg0, arg1, arg2);
+            IExecuteWithSignature("uninstall", "(Landroid/content/pm/VersionedPackage;ILandroid/content/IntentSender;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(java.lang.String,android.content.IntentSender)"/>
@@ -981,7 +981,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
         public void Uninstall(Java.Lang.String arg0, Android.Content.IntentSender arg1)
         {
-            IExecute("uninstall", arg0, arg1);
+            IExecuteWithSignature("uninstall", "(Ljava/lang/String;Landroid/content/IntentSender;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstallExistingPackage(java.lang.String,android.content.IntentSender)"/>
@@ -990,7 +990,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
         public void UninstallExistingPackage(Java.Lang.String arg0, Android.Content.IntentSender arg1)
         {
-            IExecute("uninstallExistingPackage", arg0, arg1);
+            IExecuteWithSignature("uninstallExistingPackage", "(Ljava/lang/String;Landroid/content/IntentSender;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#unregisterSessionCallback(android.content.pm.PackageInstaller.SessionCallback)"/>
@@ -1007,7 +1007,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         public void UpdateSessionAppIcon(int arg0, Android.Graphics.Bitmap arg1)
         {
-            IExecute("updateSessionAppIcon", arg0, arg1);
+            IExecuteWithSignature("updateSessionAppIcon", "(ILandroid/graphics/Bitmap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#updateSessionAppLabel(int,java.lang.CharSequence)"/>
@@ -1016,7 +1016,7 @@ namespace Android.Content.Pm
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void UpdateSessionAppLabel(int arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("updateSessionAppLabel", arg0, arg1);
+            IExecuteWithSignature("updateSessionAppLabel", "(ILjava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#waitForInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,android.content.IntentSender,long)"/>
@@ -1027,23 +1027,23 @@ namespace Android.Content.Pm
         /// <param name="arg3"><see cref="long"/></param>
         public void WaitForInstallConstraints(Java.Util.List<Java.Lang.String> arg0, Android.Content.Pm.PackageInstaller.InstallConstraints arg1, Android.Content.IntentSender arg2, long arg3)
         {
-            IExecute("waitForInstallConstraints", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("waitForInstallConstraints", "(Ljava/util/List;Landroid/content/pm/PackageInstaller$InstallConstraints;Landroid/content/IntentSender;J)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region InstallConstraints implementation
         public partial class InstallConstraints
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.html#GENTLE_UPDATE"/>
@@ -1057,13 +1057,13 @@ namespace Android.Content.Pm
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.html#isAppNotForegroundRequired()"/>
@@ -1120,31 +1120,31 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.Builder.html#build()"/>
@@ -1194,20 +1194,20 @@ namespace Android.Content.Pm
                 {
                     return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setNotInCallRequired", "()Landroid/content/pm/PackageInstaller$InstallConstraints$Builder;");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1216,13 +1216,13 @@ namespace Android.Content.Pm
         public partial class InstallConstraintsResult
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraintsResult.html#CREATOR"/>
@@ -1230,13 +1230,13 @@ namespace Android.Content.Pm
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraintsResult.html#areAllConstraintsSatisfied()"/>
@@ -1261,15 +1261,15 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1278,13 +1278,13 @@ namespace Android.Content.Pm
         public partial class PreapprovalDetails
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#CREATOR"/>
@@ -1292,13 +1292,13 @@ namespace Android.Content.Pm
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getIcon()"/>
@@ -1347,31 +1347,31 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.Builder.html#build()"/>
@@ -1417,20 +1417,20 @@ namespace Android.Content.Pm
                 {
                     return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setPackageName", "(Ljava/lang/String;)Landroid/content/pm/PackageInstaller$PreapprovalDetails$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1439,21 +1439,21 @@ namespace Android.Content.Pm
         public partial class Session
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getAppMetadata()"/>
@@ -1531,7 +1531,7 @@ namespace Android.Content.Pm
             /// <exception cref="Java.Io.IOException"/>
             public Java.Io.OutputStream OpenWrite(Java.Lang.String arg0, long arg1, long arg2)
             {
-                return IExecute<Java.Io.OutputStream>("openWrite", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Io.OutputStream>("openWrite", "(Ljava/lang/String;JJ)Ljava/io/OutputStream;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getNames()"/>
@@ -1610,7 +1610,7 @@ namespace Android.Content.Pm
             /// <exception cref="Java.Io.FileNotFoundException"/>
             public void RequestChecksums(Java.Lang.String arg0, int arg1, Java.Util.List<Java.Security.Cert.Certificate> arg2, Java.Util.Concurrent.Executor arg3, Android.Content.Pm.PackageManager.OnChecksumsReadyListener arg4)
             {
-                IExecute("requestChecksums", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("requestChecksums", "(Ljava/lang/String;ILjava/util/List;Ljava/util/concurrent/Executor;Landroid/content/pm/PackageManager$OnChecksumsReadyListener;)V", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#requestUserPreapproval(android.content.pm.PackageInstaller.PreapprovalDetails,android.content.IntentSender)"/>
@@ -1619,7 +1619,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
             public void RequestUserPreapproval(Android.Content.Pm.PackageInstaller.PreapprovalDetails arg0, Android.Content.IntentSender arg1)
             {
-                IExecute("requestUserPreapproval", arg0, arg1);
+                IExecuteWithSignature("requestUserPreapproval", "(Landroid/content/pm/PackageInstaller$PreapprovalDetails;Landroid/content/IntentSender;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#setAppMetadata(android.os.PersistableBundle)"/>
@@ -1640,7 +1640,7 @@ namespace Android.Content.Pm
             [global::System.Obsolete()]
             public void SetChecksums(Java.Lang.String arg0, Java.Util.List<Android.Content.Pm.Checksum> arg1, byte[] arg2)
             {
-                IExecute("setChecksums", arg0, arg1, arg2);
+                IExecuteWithSignature("setChecksums", "(Ljava/lang/String;Ljava/util/List;[B)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#setStagingProgress(float)"/>
@@ -1659,13 +1659,13 @@ namespace Android.Content.Pm
             {
                 IExecuteWithSignature("transfer", "(Ljava/lang/String;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1674,21 +1674,21 @@ namespace Android.Content.Pm
         public partial class SessionCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionCallback.html#onActiveChanged(int,boolean)"/>
@@ -1697,7 +1697,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnActiveChanged(int arg0, bool arg1)
             {
-                IExecute("onActiveChanged", arg0, arg1);
+                IExecuteWithSignature("onActiveChanged", "(IZ)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionCallback.html#onBadgingChanged(int)"/>
@@ -1722,7 +1722,7 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnFinished(int arg0, bool arg1)
             {
-                IExecute("onFinished", arg0, arg1);
+                IExecuteWithSignature("onFinished", "(IZ)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionCallback.html#onProgressChanged(int,float)"/>
@@ -1731,15 +1731,15 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="float"/></param>
             public void OnProgressChanged(int arg0, float arg1)
             {
-                IExecute("onProgressChanged", arg0, arg1);
+                IExecuteWithSignature("onProgressChanged", "(IF)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1748,13 +1748,13 @@ namespace Android.Content.Pm
         public partial class SessionInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#CREATOR"/>
@@ -1833,13 +1833,13 @@ namespace Android.Content.Pm
             public static int STAGED_SESSION_VERIFICATION_FAILED { get { if (!_STAGED_SESSION_VERIFICATION_FAILEDReady) { _STAGED_SESSION_VERIFICATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_VERIFICATION_FAILED"); _STAGED_SESSION_VERIFICATION_FAILEDReady = true; } return _STAGED_SESSION_VERIFICATION_FAILEDContent; } }
             private static int _STAGED_SESSION_VERIFICATION_FAILEDContent = default;
             private static bool _STAGED_SESSION_VERIFICATION_FAILEDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#createDetailsIntent()"/>
@@ -2176,15 +2176,15 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2201,13 +2201,13 @@ namespace Android.Content.Pm
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#CREATOR"/>
@@ -2269,13 +2269,13 @@ namespace Android.Content.Pm
             public static Java.Util.Set RESTRICTED_PERMISSIONS_ALL { get { if (!_RESTRICTED_PERMISSIONS_ALLReady) { _RESTRICTED_PERMISSIONS_ALLContent = SGetField<Java.Util.Set>(LocalBridgeClazz, "RESTRICTED_PERMISSIONS_ALL"); _RESTRICTED_PERMISSIONS_ALLReady = true; } return _RESTRICTED_PERMISSIONS_ALLContent; } }
             private static Java.Util.Set _RESTRICTED_PERMISSIONS_ALLContent = default;
             private static bool _RESTRICTED_PERMISSIONS_ALLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setPermissionState(java.lang.String,int)"/>
@@ -2285,7 +2285,7 @@ namespace Android.Content.Pm
             /// <returns><see cref="Android.Content.Pm.PackageInstaller.SessionParams"/></returns>
             public Android.Content.Pm.PackageInstaller.SessionParams SetPermissionState(Java.Lang.String arg0, int arg1)
             {
-                return IExecute<Android.Content.Pm.PackageInstaller.SessionParams>("setPermissionState", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.SessionParams>("setPermissionState", "(Ljava/lang/String;I)Landroid/content/pm/PackageInstaller$SessionParams;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#describeContents()"/>
@@ -2461,15 +2461,15 @@ namespace Android.Content.Pm
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2478,17 +2478,17 @@ namespace Android.Content.Pm
         public partial class UnarchivalState
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.UnarchivalState.html#createGenericErrorState(int)"/>
@@ -2508,7 +2508,7 @@ namespace Android.Content.Pm
             /// <returns><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></returns>
             public static Android.Content.Pm.PackageInstaller.UnarchivalState CreateInsufficientStorageState(int arg0, long arg1, Android.App.PendingIntent arg2)
             {
-                return SExecute<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createInsufficientStorageState", arg0, arg1, arg2);
+                return SExecuteWithSignature<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createInsufficientStorageState", "(IJLandroid/app/PendingIntent;)Landroid/content/pm/PackageInstaller$UnarchivalState;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.UnarchivalState.html#createNoConnectivityState(int)"/>
@@ -2536,26 +2536,26 @@ namespace Android.Content.Pm
             /// <returns><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></returns>
             public static Android.Content.Pm.PackageInstaller.UnarchivalState CreateUserActionRequiredState(int arg0, Android.App.PendingIntent arg1)
             {
-                return SExecute<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createUserActionRequiredState", arg0, arg1);
+                return SExecuteWithSignature<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createUserActionRequiredState", "(ILandroid/app/PendingIntent;)Landroid/content/pm/PackageInstaller$UnarchivalState;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

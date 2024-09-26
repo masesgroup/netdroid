@@ -40,10 +40,10 @@ namespace Android.Transition
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TransitionManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Transition
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Transition
     public partial class TransitionManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionManager.html#beginDelayedTransition(android.view.ViewGroup,android.transition.Transition)"/>
@@ -93,7 +93,7 @@ namespace Android.Transition
         /// <param name="arg1"><see cref="Android.Transition.Transition"/></param>
         public static void BeginDelayedTransition(Android.View.ViewGroup arg0, Android.Transition.Transition arg1)
         {
-            SExecute(LocalBridgeClazz, "beginDelayedTransition", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "beginDelayedTransition", "(Landroid/view/ViewGroup;Landroid/transition/Transition;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionManager.html#beginDelayedTransition(android.view.ViewGroup)"/>
@@ -118,7 +118,7 @@ namespace Android.Transition
         /// <param name="arg1"><see cref="Android.Transition.Transition"/></param>
         public static void Go(Android.Transition.Scene arg0, Android.Transition.Transition arg1)
         {
-            SExecute(LocalBridgeClazz, "go", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "go", "(Landroid/transition/Scene;Landroid/transition/Transition;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionManager.html#go(android.transition.Scene)"/>
@@ -128,9 +128,9 @@ namespace Android.Transition
         {
             SExecuteWithSignature(LocalBridgeClazz, "go", "(Landroid/transition/Scene;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionManager.html#setTransition(android.transition.Scene,android.transition.Scene,android.transition.Transition)"/>
@@ -140,7 +140,7 @@ namespace Android.Transition
         /// <param name="arg2"><see cref="Android.Transition.Transition"/></param>
         public void SetTransition(Android.Transition.Scene arg0, Android.Transition.Scene arg1, Android.Transition.Transition arg2)
         {
-            IExecute("setTransition", arg0, arg1, arg2);
+            IExecuteWithSignature("setTransition", "(Landroid/transition/Scene;Landroid/transition/Scene;Landroid/transition/Transition;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionManager.html#setTransition(android.transition.Scene,android.transition.Transition)"/>
@@ -149,7 +149,7 @@ namespace Android.Transition
         /// <param name="arg1"><see cref="Android.Transition.Transition"/></param>
         public void SetTransition(Android.Transition.Scene arg0, Android.Transition.Transition arg1)
         {
-            IExecute("setTransition", arg0, arg1);
+            IExecuteWithSignature("setTransition", "(Landroid/transition/Scene;Landroid/transition/Transition;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionManager.html#transitionTo(android.transition.Scene)"/>
@@ -159,13 +159,13 @@ namespace Android.Transition
         {
             IExecuteWithSignature("transitionTo", "(Landroid/transition/Scene;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

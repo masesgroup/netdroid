@@ -42,10 +42,10 @@ namespace Android.Widget
         /// </summary>
         [global::System.Obsolete("CursorAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CursorAdapter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -106,9 +106,9 @@ namespace Android.Widget
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Widget.CursorAdapter"/> to <see cref="Android.Widget.Filterable"/>
@@ -118,9 +118,9 @@ namespace Android.Widget
         /// Converter from <see cref="Android.Widget.CursorAdapter"/> to <see cref="Android.Widget.ThemedSpinnerAdapter"/>
         /// </summary>
         public static implicit operator Android.Widget.ThemedSpinnerAdapter(Android.Widget.CursorAdapter t) => t.Cast<Android.Widget.ThemedSpinnerAdapter>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#FLAG_AUTO_REQUERY"/>
@@ -135,13 +135,13 @@ namespace Android.Widget
         public static int FLAG_REGISTER_CONTENT_OBSERVER { get { if (!_FLAG_REGISTER_CONTENT_OBSERVERReady) { _FLAG_REGISTER_CONTENT_OBSERVERContent = SGetField<int>(LocalBridgeClazz, "FLAG_REGISTER_CONTENT_OBSERVER"); _FLAG_REGISTER_CONTENT_OBSERVERReady = true; } return _FLAG_REGISTER_CONTENT_OBSERVERContent; } }
         private static int _FLAG_REGISTER_CONTENT_OBSERVERContent = default;
         private static bool _FLAG_REGISTER_CONTENT_OBSERVERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#newView(android.content.Context,android.database.Cursor,android.view.ViewGroup)"/>
@@ -152,7 +152,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View NewView(Android.Content.Context arg0, Android.Database.Cursor arg1, Android.View.ViewGroup arg2)
         {
-            return IExecute<Android.View.View>("newView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("newView", "(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#bindView(android.view.View,android.content.Context,android.database.Cursor)"/>
@@ -162,7 +162,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="Android.Database.Cursor"/></param>
         public void BindView(Android.View.View arg0, Android.Content.Context arg1, Android.Database.Cursor arg2)
         {
-            IExecute("bindView", arg0, arg1, arg2);
+            IExecuteWithSignature("bindView", "(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getDropDownViewTheme()"/>
@@ -207,7 +207,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public Android.View.View NewDropDownView(Android.Content.Context arg0, Android.Database.Cursor arg1, Android.View.ViewGroup arg2)
         {
-            return IExecute<Android.View.View>("newDropDownView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("newDropDownView", "(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getFilter()"/>
@@ -258,13 +258,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setFilterQueryProvider", "(Landroid/widget/FilterQueryProvider;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
