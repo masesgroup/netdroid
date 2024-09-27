@@ -576,7 +576,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.PixelCopy.Request.Builder"/></returns>
                 public static Android.View.PixelCopy.Request.Builder OfSurface(Android.View.Surface arg0)
                 {
-                    return SExecuteWithSignature<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofSurface", "(Landroid/view/Surface;)Landroid/view/PixelCopy$Request$Builder;", arg0);
+                    return SExecute<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofSurface", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.Builder.html#ofSurface(android.view.SurfaceView)"/>
@@ -585,7 +585,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.PixelCopy.Request.Builder"/></returns>
                 public static Android.View.PixelCopy.Request.Builder OfSurface(Android.View.SurfaceView arg0)
                 {
-                    return SExecuteWithSignature<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofSurface", "(Landroid/view/SurfaceView;)Landroid/view/PixelCopy$Request$Builder;", arg0);
+                    return SExecute<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofSurface", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.Builder.html#ofWindow(android.view.View)"/>
@@ -594,7 +594,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.PixelCopy.Request.Builder"/></returns>
                 public static Android.View.PixelCopy.Request.Builder OfWindow(Android.View.View arg0)
                 {
-                    return SExecuteWithSignature<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofWindow", "(Landroid/view/View;)Landroid/view/PixelCopy$Request$Builder;", arg0);
+                    return SExecute<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofWindow", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.Builder.html#ofWindow(android.view.Window)"/>
@@ -603,7 +603,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.PixelCopy.Request.Builder"/></returns>
                 public static Android.View.PixelCopy.Request.Builder OfWindow(Android.View.Window arg0)
                 {
-                    return SExecuteWithSignature<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofWindow", "(Landroid/view/Window;)Landroid/view/PixelCopy$Request$Builder;", arg0);
+                    return SExecute<Android.View.PixelCopy.Request.Builder>(LocalBridgeClazz, "ofWindow", arg0);
                 }
 
                 #endregion
@@ -615,7 +615,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.PixelCopy.Request"/></returns>
                 public Android.View.PixelCopy.Request Build()
                 {
-                    return IExecuteWithSignature<Android.View.PixelCopy.Request>("build", "()Landroid/view/PixelCopy$Request;");
+                    return IExecute<Android.View.PixelCopy.Request>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.Builder.html#setDestinationBitmap(android.graphics.Bitmap)"/>
@@ -624,7 +624,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.PixelCopy.Request.Builder"/></returns>
                 public Android.View.PixelCopy.Request.Builder SetDestinationBitmap(Android.Graphics.Bitmap arg0)
                 {
-                    return IExecuteWithSignature<Android.View.PixelCopy.Request.Builder>("setDestinationBitmap", "(Landroid/graphics/Bitmap;)Landroid/view/PixelCopy$Request$Builder;", arg0);
+                    return IExecute<Android.View.PixelCopy.Request.Builder>("setDestinationBitmap", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.Builder.html#setSourceRect(android.graphics.Rect)"/>
@@ -633,7 +633,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.PixelCopy.Request.Builder"/></returns>
                 public Android.View.PixelCopy.Request.Builder SetSourceRect(Android.Graphics.Rect arg0)
                 {
-                    return IExecuteWithSignature<Android.View.PixelCopy.Request.Builder>("setSourceRect", "(Landroid/graphics/Rect;)Landroid/view/PixelCopy$Request$Builder;", arg0);
+                    return IExecute<Android.View.PixelCopy.Request.Builder>("setSourceRect", arg0);
                 }
 
                 #endregion

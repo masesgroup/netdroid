@@ -122,6 +122,18 @@ namespace Android.Widget
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#IGNORE_ITEM_VIEW_TYPE"/>
+        /// </summary>
+        public static int IGNORE_ITEM_VIEW_TYPE { get { if (!_IGNORE_ITEM_VIEW_TYPEReady) { _IGNORE_ITEM_VIEW_TYPEContent = SGetField<int>(LocalBridgeClazz, "IGNORE_ITEM_VIEW_TYPE"); _IGNORE_ITEM_VIEW_TYPEReady = true; } return _IGNORE_ITEM_VIEW_TYPEContent; } }
+        private static int _IGNORE_ITEM_VIEW_TYPEContent = default;
+        private static bool _IGNORE_ITEM_VIEW_TYPEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#NO_SELECTION"/>
+        /// </summary>
+        public static int NO_SELECTION { get { if (!_NO_SELECTIONReady) { _NO_SELECTIONContent = SGetField<int>(LocalBridgeClazz, "NO_SELECTION"); _NO_SELECTIONReady = true; } return _NO_SELECTIONContent; } }
+        private static int _NO_SELECTIONContent = default;
+        private static bool _NO_SELECTIONReady = false; // this is used because in case of generics 
 
         #endregion
 

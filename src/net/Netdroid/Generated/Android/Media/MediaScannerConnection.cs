@@ -418,7 +418,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
             public override void OnScanCompleted(Java.Lang.String arg0, Android.Net.Uri arg1)
             {
-                IExecute("onScanCompleted", arg0, arg1);
+                IExecuteWithSignature("onScanCompleted", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
             }
 
             #endregion

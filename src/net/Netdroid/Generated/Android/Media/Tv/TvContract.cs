@@ -2256,7 +2256,7 @@ namespace Android.Media.Tv
                 /// <returns><see cref="bool"/></returns>
                 public static bool IsCanonical(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCanonical", "(Ljava/lang/String;)Z", arg0);
+                    return SExecute<bool>(LocalBridgeClazz, "isCanonical", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.Genres.html#encode(java.lang.String[])"/>
@@ -2265,7 +2265,7 @@ namespace Android.Media.Tv
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public static Java.Lang.String Encode(params Java.Lang.String[] arg0)
                 {
-                    if (arg0.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encode", "([Ljava/lang/String;)Ljava/lang/String;"); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encode", "([Ljava/lang/String;)Ljava/lang/String;", arg0);
+                    if (arg0.Length == 0) return SExecute<Java.Lang.String>(LocalBridgeClazz, "encode"); else return SExecute<Java.Lang.String>(LocalBridgeClazz, "encode", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.Genres.html#decode(java.lang.String)"/>
@@ -2274,7 +2274,7 @@ namespace Android.Media.Tv
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public static Java.Lang.String[] Decode(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
+                    return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "decode", arg0);
                 }
 
                 #endregion

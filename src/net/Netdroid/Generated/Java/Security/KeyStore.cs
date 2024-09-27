@@ -1063,7 +1063,7 @@ namespace Java.Security
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public Java.Lang.String GetName()
                 {
-                    return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+                    return IExecute<Java.Lang.String>("getName");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/java/security/KeyStore.Entry.Attribute.html#getValue()"/>
@@ -1071,7 +1071,7 @@ namespace Java.Security
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public Java.Lang.String GetValue()
                 {
-                    return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
+                    return IExecute<Java.Lang.String>("getValue");
                 }
 
                 #endregion

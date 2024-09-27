@@ -105,6 +105,20 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.Activity>("instantiateActivity", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        /// <exception cref="Java.Lang.InstantiationException"/>
+        public Android.App.Activity InstantiateActivityDirect(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Android.Content.Intent arg2)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("instantiateActivity", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppComponentFactory.html#instantiateApplication(java.lang.ClassLoader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>

@@ -431,7 +431,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration"/></returns>
                 public Android.Media.VolumeShaper.Configuration Build()
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration>("build", "()Landroid/media/VolumeShaper$Configuration;");
+                    return IExecute<Android.Media.VolumeShaper.Configuration>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.Builder.html#invertVolumes()"/>
@@ -439,7 +439,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration.Builder"/></returns>
                 public Android.Media.VolumeShaper.Configuration.Builder InvertVolumes()
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration.Builder>("invertVolumes", "()Landroid/media/VolumeShaper$Configuration$Builder;");
+                    return IExecute<Android.Media.VolumeShaper.Configuration.Builder>("invertVolumes");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.Builder.html#reflectTimes()"/>
@@ -447,7 +447,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration.Builder"/></returns>
                 public Android.Media.VolumeShaper.Configuration.Builder ReflectTimes()
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration.Builder>("reflectTimes", "()Landroid/media/VolumeShaper$Configuration$Builder;");
+                    return IExecute<Android.Media.VolumeShaper.Configuration.Builder>("reflectTimes");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.Builder.html#scaleToEndVolume(float)"/>
@@ -456,7 +456,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration.Builder"/></returns>
                 public Android.Media.VolumeShaper.Configuration.Builder ScaleToEndVolume(float arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration.Builder>("scaleToEndVolume", "(F)Landroid/media/VolumeShaper$Configuration$Builder;", arg0);
+                    return IExecute<Android.Media.VolumeShaper.Configuration.Builder>("scaleToEndVolume", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.Builder.html#scaleToStartVolume(float)"/>
@@ -465,7 +465,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration.Builder"/></returns>
                 public Android.Media.VolumeShaper.Configuration.Builder ScaleToStartVolume(float arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration.Builder>("scaleToStartVolume", "(F)Landroid/media/VolumeShaper$Configuration$Builder;", arg0);
+                    return IExecute<Android.Media.VolumeShaper.Configuration.Builder>("scaleToStartVolume", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.Builder.html#setCurve(float[],float[])"/>
@@ -475,7 +475,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration.Builder"/></returns>
                 public Android.Media.VolumeShaper.Configuration.Builder SetCurve(float[] arg0, float[] arg1)
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration.Builder>("setCurve", "([F[F)Landroid/media/VolumeShaper$Configuration$Builder;", arg0, arg1);
+                    return IExecute<Android.Media.VolumeShaper.Configuration.Builder>("setCurve", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.Builder.html#setDuration(long)"/>
@@ -484,7 +484,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration.Builder"/></returns>
                 public Android.Media.VolumeShaper.Configuration.Builder SetDuration(long arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration.Builder>("setDuration", "(J)Landroid/media/VolumeShaper$Configuration$Builder;", arg0);
+                    return IExecute<Android.Media.VolumeShaper.Configuration.Builder>("setDuration", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.Builder.html#setInterpolatorType(int)"/>
@@ -493,7 +493,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.VolumeShaper.Configuration.Builder"/></returns>
                 public Android.Media.VolumeShaper.Configuration.Builder SetInterpolatorType(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.VolumeShaper.Configuration.Builder>("setInterpolatorType", "(I)Landroid/media/VolumeShaper$Configuration$Builder;", arg0);
+                    return IExecute<Android.Media.VolumeShaper.Configuration.Builder>("setInterpolatorType", arg0);
                 }
 
                 #endregion

@@ -2306,7 +2306,7 @@ namespace Android.Provider
                     [global::System.Obsolete()]
                     public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                     {
-                        return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
+                        return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
                     }
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#moveItem(android.content.ContentResolver,long,int,int)"/>
@@ -2319,7 +2319,7 @@ namespace Android.Provider
                     [global::System.Obsolete()]
                     public static bool MoveItem(Android.Content.ContentResolver arg0, long arg1, int arg2, int arg3)
                     {
-                        return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveItem", "(Landroid/content/ContentResolver;JII)Z", arg0, arg1, arg2, arg3);
+                        return SExecute<bool>(LocalBridgeClazz, "moveItem", arg0, arg1, arg2, arg3);
                     }
 
                     #endregion
@@ -2607,7 +2607,7 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Net.Uri"/></returns>
                     public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                     {
-                        return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
+                        return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
                     }
 
                     #endregion
@@ -2875,7 +2875,7 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Net.Uri"/></returns>
                     public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                     {
-                        return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
+                        return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
                     }
 
                     #endregion
@@ -3524,7 +3524,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Android.Graphics.BitmapFactory.Options arg3)
                 {
-                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,long,int,android.graphics.BitmapFactory.Options)"/>
@@ -3538,7 +3538,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, long arg2, int arg3, Android.Graphics.BitmapFactory.Options arg4)
                 {
-                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3, arg4);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getContentUri(java.lang.String)"/>
@@ -3548,7 +3548,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getKindSize(int)"/>
@@ -3558,7 +3558,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Util.Size GetKindSize(int arg0)
                 {
-                    return SExecuteWithSignature<Android.Util.Size>(LocalBridgeClazz, "getKindSize", "(I)Landroid/util/Size;", arg0);
+                    return SExecute<Android.Util.Size>(LocalBridgeClazz, "getKindSize", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[])"/>
@@ -3570,7 +3570,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
                 {
-                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#queryMiniThumbnail(android.content.ContentResolver,long,int,java.lang.String[])"/>
@@ -3583,7 +3583,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor QueryMiniThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Java.Lang.String[] arg3)
                 {
-                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnail", "(Landroid/content/ContentResolver;JI[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnail", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#queryMiniThumbnails(android.content.ContentResolver,android.net.Uri,int,java.lang.String[])"/>
@@ -3596,7 +3596,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor QueryMiniThumbnails(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, int arg2, Java.Lang.String[] arg3)
                 {
-                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnails", "(Landroid/content/ContentResolver;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnails", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long,long)"/>
@@ -3607,7 +3607,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1, long arg2)
                 {
-                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;JJ)V", arg0, arg1, arg2);
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long)"/>
@@ -3617,7 +3617,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1)
                 {
-                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V", arg0, arg1);
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1);
                 }
 
                 #endregion
@@ -3686,7 +3686,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String arg4)
                 {
-                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4);
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3, arg4);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -3701,7 +3701,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String[] arg4, Java.Lang.String arg5)
                 {
-                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5);
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3, arg4, arg5);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[])"/>
@@ -3713,7 +3713,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
                 {
-                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getBitmap(android.content.ContentResolver,android.net.Uri)"/>
@@ -3726,7 +3726,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetBitmap(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
                 {
-                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getBitmap", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/graphics/Bitmap;", arg0, arg1);
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getBitmap", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getContentUri(java.lang.String,long)"/>
@@ -3736,7 +3736,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getContentUri(java.lang.String)"/>
@@ -3745,7 +3745,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#insertImage(android.content.ContentResolver,android.graphics.Bitmap,java.lang.String,java.lang.String)"/>
@@ -3758,7 +3758,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Java.Lang.String InsertImage(Android.Content.ContentResolver arg0, Android.Graphics.Bitmap arg1, Java.Lang.String arg2, Java.Lang.String arg3)
                 {
-                    return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "insertImage", "(Landroid/content/ContentResolver;Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
+                    return SExecute<Java.Lang.String>(LocalBridgeClazz, "insertImage", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#insertImage(android.content.ContentResolver,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -3772,7 +3772,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Java.Lang.String InsertImage(Android.Content.ContentResolver arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
                 {
-                    return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "insertImage", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
+                    return SExecute<Java.Lang.String>(LocalBridgeClazz, "insertImage", arg0, arg1, arg2, arg3);
                 }
 
                 #endregion
@@ -4523,7 +4523,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Android.Graphics.BitmapFactory.Options arg3)
                 {
-                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,long,int,android.graphics.BitmapFactory.Options)"/>
@@ -4537,7 +4537,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, long arg2, int arg3, Android.Graphics.BitmapFactory.Options arg4)
                 {
-                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3, arg4);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getContentUri(java.lang.String)"/>
@@ -4547,7 +4547,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getKindSize(int)"/>
@@ -4557,7 +4557,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Util.Size GetKindSize(int arg0)
                 {
-                    return SExecuteWithSignature<Android.Util.Size>(LocalBridgeClazz, "getKindSize", "(I)Landroid/util/Size;", arg0);
+                    return SExecute<Android.Util.Size>(LocalBridgeClazz, "getKindSize", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long,long)"/>
@@ -4568,7 +4568,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1, long arg2)
                 {
-                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;JJ)V", arg0, arg1, arg2);
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long)"/>
@@ -4578,7 +4578,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1)
                 {
-                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V", arg0, arg1);
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1);
                 }
 
                 #endregion
@@ -4643,7 +4643,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Media.html#getContentUri(java.lang.String)"/>
@@ -4652,7 +4652,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
 
                 #endregion

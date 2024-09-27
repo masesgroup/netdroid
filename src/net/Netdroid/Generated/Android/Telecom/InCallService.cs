@@ -500,7 +500,7 @@ namespace Android.Telecom
                 /// <param name="arg0"><see cref="long"/></param>
                 public void OnCallDataUsageChanged(long arg0)
                 {
-                    IExecuteWithSignature("onCallDataUsageChanged", "(J)V", arg0);
+                    IExecute("onCallDataUsageChanged", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.Callback.html#onCallSessionEvent(int)"/>
@@ -508,7 +508,7 @@ namespace Android.Telecom
                 /// <param name="arg0"><see cref="int"/></param>
                 public void OnCallSessionEvent(int arg0)
                 {
-                    IExecuteWithSignature("onCallSessionEvent", "(I)V", arg0);
+                    IExecute("onCallSessionEvent", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.Callback.html#onCameraCapabilitiesChanged(android.telecom.VideoProfile.CameraCapabilities)"/>
@@ -516,7 +516,7 @@ namespace Android.Telecom
                 /// <param name="arg0"><see cref="Android.Telecom.VideoProfile.CameraCapabilities"/></param>
                 public void OnCameraCapabilitiesChanged(Android.Telecom.VideoProfile.CameraCapabilities arg0)
                 {
-                    IExecuteWithSignature("onCameraCapabilitiesChanged", "(Landroid/telecom/VideoProfile$CameraCapabilities;)V", arg0);
+                    IExecute("onCameraCapabilitiesChanged", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.Callback.html#onPeerDimensionsChanged(int,int)"/>
@@ -525,7 +525,7 @@ namespace Android.Telecom
                 /// <param name="arg1"><see cref="int"/></param>
                 public void OnPeerDimensionsChanged(int arg0, int arg1)
                 {
-                    IExecuteWithSignature("onPeerDimensionsChanged", "(II)V", arg0, arg1);
+                    IExecute("onPeerDimensionsChanged", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.Callback.html#onSessionModifyRequestReceived(android.telecom.VideoProfile)"/>
@@ -533,7 +533,7 @@ namespace Android.Telecom
                 /// <param name="arg0"><see cref="Android.Telecom.VideoProfile"/></param>
                 public void OnSessionModifyRequestReceived(Android.Telecom.VideoProfile arg0)
                 {
-                    IExecuteWithSignature("onSessionModifyRequestReceived", "(Landroid/telecom/VideoProfile;)V", arg0);
+                    IExecute("onSessionModifyRequestReceived", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.Callback.html#onSessionModifyResponseReceived(int,android.telecom.VideoProfile,android.telecom.VideoProfile)"/>
@@ -543,7 +543,7 @@ namespace Android.Telecom
                 /// <param name="arg2"><see cref="Android.Telecom.VideoProfile"/></param>
                 public void OnSessionModifyResponseReceived(int arg0, Android.Telecom.VideoProfile arg1, Android.Telecom.VideoProfile arg2)
                 {
-                    IExecuteWithSignature("onSessionModifyResponseReceived", "(ILandroid/telecom/VideoProfile;Landroid/telecom/VideoProfile;)V", arg0, arg1, arg2);
+                    IExecute("onSessionModifyResponseReceived", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.Callback.html#onVideoQualityChanged(int)"/>
@@ -551,7 +551,7 @@ namespace Android.Telecom
                 /// <param name="arg0"><see cref="int"/></param>
                 public void OnVideoQualityChanged(int arg0)
                 {
-                    IExecuteWithSignature("onVideoQualityChanged", "(I)V", arg0);
+                    IExecute("onVideoQualityChanged", arg0);
                 }
 
                 #endregion

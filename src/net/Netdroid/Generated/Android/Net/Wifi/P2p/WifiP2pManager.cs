@@ -2606,6 +2606,48 @@ namespace Android.Net.Wifi.P2p
             #endregion
 
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#APPROVER_DETACH_REASON_CLOSE"/>
+            /// </summary>
+            public static int APPROVER_DETACH_REASON_CLOSE { get { if (!_APPROVER_DETACH_REASON_CLOSEReady) { _APPROVER_DETACH_REASON_CLOSEContent = SGetField<int>(LocalBridgeClazz, "APPROVER_DETACH_REASON_CLOSE"); _APPROVER_DETACH_REASON_CLOSEReady = true; } return _APPROVER_DETACH_REASON_CLOSEContent; } }
+            private static int _APPROVER_DETACH_REASON_CLOSEContent = default;
+            private static bool _APPROVER_DETACH_REASON_CLOSEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#APPROVER_DETACH_REASON_FAILURE"/>
+            /// </summary>
+            public static int APPROVER_DETACH_REASON_FAILURE { get { if (!_APPROVER_DETACH_REASON_FAILUREReady) { _APPROVER_DETACH_REASON_FAILUREContent = SGetField<int>(LocalBridgeClazz, "APPROVER_DETACH_REASON_FAILURE"); _APPROVER_DETACH_REASON_FAILUREReady = true; } return _APPROVER_DETACH_REASON_FAILUREContent; } }
+            private static int _APPROVER_DETACH_REASON_FAILUREContent = default;
+            private static bool _APPROVER_DETACH_REASON_FAILUREReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#APPROVER_DETACH_REASON_REMOVE"/>
+            /// </summary>
+            public static int APPROVER_DETACH_REASON_REMOVE { get { if (!_APPROVER_DETACH_REASON_REMOVEReady) { _APPROVER_DETACH_REASON_REMOVEContent = SGetField<int>(LocalBridgeClazz, "APPROVER_DETACH_REASON_REMOVE"); _APPROVER_DETACH_REASON_REMOVEReady = true; } return _APPROVER_DETACH_REASON_REMOVEContent; } }
+            private static int _APPROVER_DETACH_REASON_REMOVEContent = default;
+            private static bool _APPROVER_DETACH_REASON_REMOVEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#APPROVER_DETACH_REASON_REPLACE"/>
+            /// </summary>
+            public static int APPROVER_DETACH_REASON_REPLACE { get { if (!_APPROVER_DETACH_REASON_REPLACEReady) { _APPROVER_DETACH_REASON_REPLACEContent = SGetField<int>(LocalBridgeClazz, "APPROVER_DETACH_REASON_REPLACE"); _APPROVER_DETACH_REASON_REPLACEReady = true; } return _APPROVER_DETACH_REASON_REPLACEContent; } }
+            private static int _APPROVER_DETACH_REASON_REPLACEContent = default;
+            private static bool _APPROVER_DETACH_REASON_REPLACEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#REQUEST_TYPE_INVITATION"/>
+            /// </summary>
+            public static int REQUEST_TYPE_INVITATION { get { if (!_REQUEST_TYPE_INVITATIONReady) { _REQUEST_TYPE_INVITATIONContent = SGetField<int>(LocalBridgeClazz, "REQUEST_TYPE_INVITATION"); _REQUEST_TYPE_INVITATIONReady = true; } return _REQUEST_TYPE_INVITATIONContent; } }
+            private static int _REQUEST_TYPE_INVITATIONContent = default;
+            private static bool _REQUEST_TYPE_INVITATIONReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#REQUEST_TYPE_JOIN"/>
+            /// </summary>
+            public static int REQUEST_TYPE_JOIN { get { if (!_REQUEST_TYPE_JOINReady) { _REQUEST_TYPE_JOINContent = SGetField<int>(LocalBridgeClazz, "REQUEST_TYPE_JOIN"); _REQUEST_TYPE_JOINReady = true; } return _REQUEST_TYPE_JOINContent; } }
+            private static int _REQUEST_TYPE_JOINContent = default;
+            private static bool _REQUEST_TYPE_JOINReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#REQUEST_TYPE_NEGOTIATION"/>
+            /// </summary>
+            public static int REQUEST_TYPE_NEGOTIATION { get { if (!_REQUEST_TYPE_NEGOTIATIONReady) { _REQUEST_TYPE_NEGOTIATIONContent = SGetField<int>(LocalBridgeClazz, "REQUEST_TYPE_NEGOTIATION"); _REQUEST_TYPE_NEGOTIATIONReady = true; } return _REQUEST_TYPE_NEGOTIATIONContent; } }
+            private static int _REQUEST_TYPE_NEGOTIATIONContent = default;
+            private static bool _REQUEST_TYPE_NEGOTIATIONReady = false; // this is used because in case of generics 
 
             #endregion
 

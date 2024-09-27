@@ -226,6 +226,26 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.Activity>("newActivity", "(Ljava/lang/Class;Landroid/content/Context;Landroid/os/IBinder;Landroid/app/Application;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Ljava/lang/CharSequence;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Object;)Landroid/app/Activity;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.Class,android.content.Context,android.os.IBinder,android.app.Application,android.content.Intent,android.content.pm.ActivityInfo,java.lang.CharSequence,android.app.Activity,java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg2"><see cref="Android.Os.IBinder"/></param>
+        /// <param name="arg3"><see cref="Android.App.Application"/></param>
+        /// <param name="arg4"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg5"><see cref="Android.Content.Pm.ActivityInfo"/></param>
+        /// <param name="arg6"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg7"><see cref="Android.App.Activity"/></param>
+        /// <param name="arg8"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg9"><see cref="object"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        /// <exception cref="Java.Lang.InstantiationException"/>
+        public Android.App.Activity NewActivityDirect(Java.Lang.Class arg0, Android.Content.Context arg1, Android.Os.IBinder arg2, Android.App.Application arg3, Android.Content.Intent arg4, Android.Content.Pm.ActivityInfo arg5, Java.Lang.CharSequence arg6, Android.App.Activity arg7, Java.Lang.String arg8, object arg9)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("newActivity", "(Ljava/lang/Class;Landroid/content/Context;Landroid/os/IBinder;Landroid/app/Application;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Ljava/lang/CharSequence;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Object;)Landroid/app/Activity;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
@@ -240,6 +260,20 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.Activity>("newActivity", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        /// <exception cref="Java.Lang.InstantiationException"/>
+        public Android.App.Activity NewActivityDirect(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Android.Content.Intent arg2)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("newActivity", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
@@ -248,6 +282,16 @@ namespace Android.App
         public Android.App.Activity StartActivitySync(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
             return IExecuteWithSignature<Android.App.Activity>("startActivitySync", "(Landroid/content/Intent;Landroid/os/Bundle;)Landroid/app/Activity;", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        public Android.App.Activity StartActivitySyncDirect(Android.Content.Intent arg0, Android.Os.Bundle arg1)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("startActivitySync", "(Landroid/content/Intent;Landroid/os/Bundle;)Landroid/app/Activity;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent)"/>
@@ -259,6 +303,15 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.Activity>("startActivitySync", "(Landroid/content/Intent;)Landroid/app/Activity;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        public Android.App.Activity StartActivitySyncDirect(Android.Content.Intent arg0)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("startActivitySync", "(Landroid/content/Intent;)Landroid/app/Activity;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitor(android.app.Instrumentation.ActivityMonitor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Instrumentation.ActivityMonitor"/></param>
@@ -266,6 +319,15 @@ namespace Android.App
         public Android.App.Activity WaitForMonitor(Android.App.Instrumentation.ActivityMonitor arg0)
         {
             return IExecuteWithSignature<Android.App.Activity>("waitForMonitor", "(Landroid/app/Instrumentation$ActivityMonitor;)Landroid/app/Activity;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitor(android.app.Instrumentation.ActivityMonitor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Instrumentation.ActivityMonitor"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        public Android.App.Activity WaitForMonitorDirect(Android.App.Instrumentation.ActivityMonitor arg0)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("waitForMonitor", "(Landroid/app/Instrumentation$ActivityMonitor;)Landroid/app/Activity;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitorWithTimeout(android.app.Instrumentation.ActivityMonitor,long)"/>
@@ -276,6 +338,16 @@ namespace Android.App
         public Android.App.Activity WaitForMonitorWithTimeout(Android.App.Instrumentation.ActivityMonitor arg0, long arg1)
         {
             return IExecuteWithSignature<Android.App.Activity>("waitForMonitorWithTimeout", "(Landroid/app/Instrumentation$ActivityMonitor;J)Landroid/app/Activity;", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForMonitorWithTimeout(android.app.Instrumentation.ActivityMonitor,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Instrumentation.ActivityMonitor"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        public Android.App.Activity WaitForMonitorWithTimeoutDirect(Android.App.Instrumentation.ActivityMonitor arg0, long arg1)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("waitForMonitorWithTimeout", "(Landroid/app/Instrumentation$ActivityMonitor;J)Landroid/app/Activity;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newApplication(java.lang.ClassLoader,java.lang.String,android.content.Context)"/>
@@ -874,12 +946,28 @@ namespace Android.App
                 return IExecuteWithSignature<Android.App.Activity>("getLastActivity", "()Landroid/app/Activity;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getLastActivity()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Activity"/></returns>
+            public Android.App.Activity GetLastActivityDirect()
+            {
+                return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("getLastActivity", "()Landroid/app/Activity;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#waitForActivity()"/>
             /// </summary>
             /// <returns><see cref="Android.App.Activity"/></returns>
             public Android.App.Activity WaitForActivity()
             {
                 return IExecuteWithSignature<Android.App.Activity>("waitForActivity", "()Landroid/app/Activity;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#waitForActivity()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Activity"/></returns>
+            public Android.App.Activity WaitForActivityDirect()
+            {
+                return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("waitForActivity", "()Landroid/app/Activity;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#waitForActivityWithTimeout(long)"/>
@@ -889,6 +977,15 @@ namespace Android.App
             public Android.App.Activity WaitForActivityWithTimeout(long arg0)
             {
                 return IExecuteWithSignature<Android.App.Activity>("waitForActivityWithTimeout", "(J)Landroid/app/Activity;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#waitForActivityWithTimeout(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.App.Activity"/></returns>
+            public Android.App.Activity WaitForActivityWithTimeoutDirect(long arg0)
+            {
+                return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("waitForActivityWithTimeout", "(J)Landroid/app/Activity;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#getResult()"/>

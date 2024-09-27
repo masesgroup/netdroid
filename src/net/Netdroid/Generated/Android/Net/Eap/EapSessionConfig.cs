@@ -773,7 +773,7 @@ namespace Android.Net.Eap
                 /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapAkaOption"/></returns>
                 public Android.Net.Eap.EapSessionConfig.EapAkaOption Build()
                 {
-                    return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaOption>("build", "()Landroid/net/eap/EapSessionConfig$EapAkaOption;");
+                    return IExecute<Android.Net.Eap.EapSessionConfig.EapAkaOption>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaOption.Builder.html#setReauthId(byte[])"/>
@@ -782,7 +782,7 @@ namespace Android.Net.Eap
                 /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapAkaOption.Builder"/></returns>
                 public Android.Net.Eap.EapSessionConfig.EapAkaOption.Builder SetReauthId(byte[] arg0)
                 {
-                    return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaOption.Builder>("setReauthId", "([B)Landroid/net/eap/EapSessionConfig$EapAkaOption$Builder;", new object[] { arg0 });
+                    return IExecute<Android.Net.Eap.EapSessionConfig.EapAkaOption.Builder>("setReauthId", new object[] { arg0 });
                 }
 
                 #endregion

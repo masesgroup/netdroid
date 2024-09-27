@@ -1510,7 +1510,7 @@ namespace Android.Accessibilityservice
                 /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
                 public void OnMagnificationChangedDefault(Android.Accessibilityservice.AccessibilityService.MagnificationController arg0, Android.Graphics.Region arg1, Android.Accessibilityservice.MagnificationConfig arg2)
                 {
-                    IExecuteWithSignature("onMagnificationChangedDefault", "(Landroid/accessibilityservice/AccessibilityService$MagnificationController;Landroid/graphics/Region;Landroid/accessibilityservice/MagnificationConfig;)V", arg0, arg1, arg2);
+                    IExecute("onMagnificationChangedDefault", arg0, arg1, arg2);
                 }
 
                 /// <summary>
@@ -1581,7 +1581,7 @@ namespace Android.Accessibilityservice
                 [global::System.Obsolete()]
                 public override void OnMagnificationChanged(Android.Accessibilityservice.AccessibilityService.MagnificationController arg0, Android.Graphics.Region arg1, float arg2, float arg3, float arg4)
                 {
-                    IExecuteWithSignature("onMagnificationChanged", "(Landroid/accessibilityservice/AccessibilityService$MagnificationController;Landroid/graphics/Region;FFF)V", arg0, arg1, arg2, arg3, arg4);
+                    IExecute("onMagnificationChanged", arg0, arg1, arg2, arg3, arg4);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,android.accessibilityservice.MagnificationConfig)"/>
@@ -1591,7 +1591,7 @@ namespace Android.Accessibilityservice
                 /// <param name="arg2"><see cref="Android.Accessibilityservice.MagnificationConfig"/></param>
                 public override void OnMagnificationChanged(Android.Accessibilityservice.AccessibilityService.MagnificationController arg0, Android.Graphics.Region arg1, Android.Accessibilityservice.MagnificationConfig arg2)
                 {
-                    IExecuteWithSignature("onMagnificationChanged", "(Landroid/accessibilityservice/AccessibilityService$MagnificationController;Landroid/graphics/Region;Landroid/accessibilityservice/MagnificationConfig;)V", arg0, arg1, arg2);
+                    IExecute("onMagnificationChanged", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -1862,7 +1862,7 @@ namespace Android.Accessibilityservice
                 /// <param name="arg1"><see cref="int"/></param>
                 public override void OnShowModeChanged(Android.Accessibilityservice.AccessibilityService.SoftKeyboardController arg0, int arg1)
                 {
-                    IExecuteWithSignature("onShowModeChanged", "(Landroid/accessibilityservice/AccessibilityService$SoftKeyboardController;I)V", arg0, arg1);
+                    IExecute("onShowModeChanged", arg0, arg1);
                 }
 
                 #endregion

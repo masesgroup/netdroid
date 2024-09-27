@@ -470,7 +470,7 @@ namespace Android.Net.Http
                 /// <returns><see cref="Android.Net.Http.DnsOptions.StaleDnsOptions"/></returns>
                 public Android.Net.Http.DnsOptions.StaleDnsOptions Build()
                 {
-                    return IExecuteWithSignature<Android.Net.Http.DnsOptions.StaleDnsOptions>("build", "()Landroid/net/http/DnsOptions$StaleDnsOptions;");
+                    return IExecute<Android.Net.Http.DnsOptions.StaleDnsOptions>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.Builder.html#setAllowCrossNetworkUsage(int)"/>
@@ -479,7 +479,7 @@ namespace Android.Net.Http
                 /// <returns><see cref="Android.Net.Http.DnsOptions.StaleDnsOptions.Builder"/></returns>
                 public Android.Net.Http.DnsOptions.StaleDnsOptions.Builder SetAllowCrossNetworkUsage(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setAllowCrossNetworkUsage", "(I)Landroid/net/http/DnsOptions$StaleDnsOptions$Builder;", arg0);
+                    return IExecute<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setAllowCrossNetworkUsage", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.Builder.html#setFreshLookupTimeout(java.time.Duration)"/>
@@ -488,7 +488,7 @@ namespace Android.Net.Http
                 /// <returns><see cref="Android.Net.Http.DnsOptions.StaleDnsOptions.Builder"/></returns>
                 public Android.Net.Http.DnsOptions.StaleDnsOptions.Builder SetFreshLookupTimeout(Java.Time.Duration arg0)
                 {
-                    return IExecuteWithSignature<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setFreshLookupTimeout", "(Ljava/time/Duration;)Landroid/net/http/DnsOptions$StaleDnsOptions$Builder;", arg0);
+                    return IExecute<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setFreshLookupTimeout", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.Builder.html#setMaxExpiredDelay(java.time.Duration)"/>
@@ -497,7 +497,7 @@ namespace Android.Net.Http
                 /// <returns><see cref="Android.Net.Http.DnsOptions.StaleDnsOptions.Builder"/></returns>
                 public Android.Net.Http.DnsOptions.StaleDnsOptions.Builder SetMaxExpiredDelay(Java.Time.Duration arg0)
                 {
-                    return IExecuteWithSignature<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setMaxExpiredDelay", "(Ljava/time/Duration;)Landroid/net/http/DnsOptions$StaleDnsOptions$Builder;", arg0);
+                    return IExecute<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setMaxExpiredDelay", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/net/http/DnsOptions.StaleDnsOptions.Builder.html#setUseStaleOnNameNotResolved(int)"/>
@@ -506,7 +506,7 @@ namespace Android.Net.Http
                 /// <returns><see cref="Android.Net.Http.DnsOptions.StaleDnsOptions.Builder"/></returns>
                 public Android.Net.Http.DnsOptions.StaleDnsOptions.Builder SetUseStaleOnNameNotResolved(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setUseStaleOnNameNotResolved", "(I)Landroid/net/http/DnsOptions$StaleDnsOptions$Builder;", arg0);
+                    return IExecute<Android.Net.Http.DnsOptions.StaleDnsOptions.Builder>("setUseStaleOnNameNotResolved", arg0);
                 }
 
                 #endregion

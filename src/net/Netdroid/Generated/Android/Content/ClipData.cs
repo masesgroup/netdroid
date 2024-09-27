@@ -507,7 +507,7 @@ namespace Android.Content
                 /// <returns><see cref="Android.Content.ClipData.Item"/></returns>
                 public Android.Content.ClipData.Item Build()
                 {
-                    return IExecuteWithSignature<Android.Content.ClipData.Item>("build", "()Landroid/content/ClipData$Item;");
+                    return IExecute<Android.Content.ClipData.Item>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setHtmlText(java.lang.String)"/>
@@ -516,7 +516,7 @@ namespace Android.Content
                 /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
                 public Android.Content.ClipData.Item.Builder SetHtmlText(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setHtmlText", "(Ljava/lang/String;)Landroid/content/ClipData$Item$Builder;", arg0);
+                    return IExecute<Android.Content.ClipData.Item.Builder>("setHtmlText", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setIntent(android.content.Intent)"/>
@@ -525,7 +525,7 @@ namespace Android.Content
                 /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
                 public Android.Content.ClipData.Item.Builder SetIntent(Android.Content.Intent arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setIntent", "(Landroid/content/Intent;)Landroid/content/ClipData$Item$Builder;", arg0);
+                    return IExecute<Android.Content.ClipData.Item.Builder>("setIntent", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setIntentSender(android.content.IntentSender)"/>
@@ -534,7 +534,7 @@ namespace Android.Content
                 /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
                 public Android.Content.ClipData.Item.Builder SetIntentSender(Android.Content.IntentSender arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setIntentSender", "(Landroid/content/IntentSender;)Landroid/content/ClipData$Item$Builder;", arg0);
+                    return IExecute<Android.Content.ClipData.Item.Builder>("setIntentSender", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setText(java.lang.CharSequence)"/>
@@ -543,7 +543,7 @@ namespace Android.Content
                 /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
                 public Android.Content.ClipData.Item.Builder SetText(Java.Lang.CharSequence arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setText", "(Ljava/lang/CharSequence;)Landroid/content/ClipData$Item$Builder;", arg0);
+                    return IExecute<Android.Content.ClipData.Item.Builder>("setText", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setUri(android.net.Uri)"/>
@@ -552,7 +552,7 @@ namespace Android.Content
                 /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
                 public Android.Content.ClipData.Item.Builder SetUri(Android.Net.Uri arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setUri", "(Landroid/net/Uri;)Landroid/content/ClipData$Item$Builder;", arg0);
+                    return IExecute<Android.Content.ClipData.Item.Builder>("setUri", arg0);
                 }
 
                 #endregion

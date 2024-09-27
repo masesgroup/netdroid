@@ -117,7 +117,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static bool IsMetaTracker(Java.Lang.CharSequence arg0, object arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isMetaTracker", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMetaTracker", "(Ljava/lang/CharSequence;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#isSelectingMetaTracker(java.lang.CharSequence,java.lang.Object)"/>
@@ -128,7 +128,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static bool IsSelectingMetaTracker(Java.Lang.CharSequence arg0, object arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isSelectingMetaTracker", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSelectingMetaTracker", "(Ljava/lang/CharSequence;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,android.view.KeyEvent)"/>
@@ -139,7 +139,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static int GetMetaState(Java.Lang.CharSequence arg0, Android.View.KeyEvent arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMetaState", "(Ljava/lang/CharSequence;Landroid/view/KeyEvent;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,int,android.view.KeyEvent)"/>
@@ -151,7 +151,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static int GetMetaState(Java.Lang.CharSequence arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMetaState", "(Ljava/lang/CharSequence;ILandroid/view/KeyEvent;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,int)"/>
@@ -162,7 +162,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static int GetMetaState(Java.Lang.CharSequence arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMetaState", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence)"/>
@@ -172,7 +172,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static int GetMetaState(Java.Lang.CharSequence arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMetaState", "(Ljava/lang/CharSequence;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(long,int)"/>
@@ -183,7 +183,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static int GetMetaState(long arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMetaState", "(JI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(long)"/>
@@ -193,7 +193,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static int GetMetaState(long arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMetaState", "(J)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#adjustMetaAfterKeypress(long)"/>
@@ -203,7 +203,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static long AdjustMetaAfterKeypress(long arg0)
         {
-            return SExecute<long>(LocalBridgeClazz, "adjustMetaAfterKeypress", arg0);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "adjustMetaAfterKeypress", "(J)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#handleKeyDown(long,int,android.view.KeyEvent)"/>
@@ -215,7 +215,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static long HandleKeyDown(long arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "handleKeyDown", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "handleKeyDown", "(JILandroid/view/KeyEvent;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#handleKeyUp(long,int,android.view.KeyEvent)"/>
@@ -227,7 +227,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static long HandleKeyUp(long arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "handleKeyUp", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "handleKeyUp", "(JILandroid/view/KeyEvent;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#resetLockedMeta(long)"/>
@@ -237,7 +237,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static long ResetLockedMeta(long arg0)
         {
-            return SExecute<long>(LocalBridgeClazz, "resetLockedMeta", arg0);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "resetLockedMeta", "(J)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#adjustMetaAfterKeypress(android.text.Spannable)"/>
@@ -246,7 +246,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static void AdjustMetaAfterKeypress(Android.Text.Spannable arg0)
         {
-            SExecute(LocalBridgeClazz, "adjustMetaAfterKeypress", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "adjustMetaAfterKeypress", "(Landroid/text/Spannable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#clearMetaKeyState(android.text.Editable,int)"/>
@@ -256,7 +256,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static void ClearMetaKeyState(Android.Text.Editable arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "clearMetaKeyState", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "clearMetaKeyState", "(Landroid/text/Editable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#resetMetaState(android.text.Spannable)"/>
@@ -265,7 +265,7 @@ namespace Android.Text.Method
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static void ResetMetaState(Android.Text.Spannable arg0)
         {
-            SExecute(LocalBridgeClazz, "resetMetaState", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "resetMetaState", "(Landroid/text/Spannable;)V", arg0);
         }
 
         #endregion
@@ -509,7 +509,7 @@ namespace Android.Text.Method
         /// <returns><see cref="int"/></returns>
         public override int GetInputType()
         {
-            return IExecute<int>("getInputType");
+            return IExecuteWithSignature<int>("getInputType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/BaseKeyListener.html#backspace(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
@@ -556,7 +556,7 @@ namespace Android.Text.Method
         /// <returns><see cref="bool"/></returns>
         public override bool OnKeyUp(Android.View.View arg0, Android.Text.Editable arg1, int arg2, Android.View.KeyEvent arg3)
         {
-            return IExecute<bool>("onKeyUp", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#clearMetaKeyState(long,int)"/>
@@ -566,7 +566,7 @@ namespace Android.Text.Method
         /// <returns><see cref="long"/></returns>
         public override long ClearMetaKeyState(long arg0, int arg1)
         {
-            return IExecute<long>("clearMetaKeyState", arg0, arg1);
+            return IExecuteWithSignature<long>("clearMetaKeyState", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#clearMetaKeyState(android.view.View,android.text.Editable,int)"/>
@@ -576,7 +576,7 @@ namespace Android.Text.Method
         /// <param name="arg2"><see cref="int"/></param>
         public override void ClearMetaKeyState(Android.View.View arg0, Android.Text.Editable arg1, int arg2)
         {
-            IExecute("clearMetaKeyState", arg0, arg1, arg2);
+            IExecuteWithSignature("clearMetaKeyState", "(Landroid/view/View;Landroid/text/Editable;I)V", arg0, arg1, arg2);
         }
 
         #endregion

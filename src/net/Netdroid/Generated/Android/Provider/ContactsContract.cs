@@ -2993,7 +2993,7 @@ namespace Android.Provider
                 /// <returns><see cref="int"/></returns>
                 public static int GetTypeLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.StructuredPostal.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -3004,7 +3004,7 @@ namespace Android.Provider
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -3219,7 +3219,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static int GetTypeLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -3231,7 +3231,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -3385,7 +3385,7 @@ namespace Android.Provider
                 /// <returns><see cref="int"/></returns>
                 public static int GetTypeLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Relation.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -3396,7 +3396,7 @@ namespace Android.Provider
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -3701,7 +3701,7 @@ namespace Android.Provider
                 /// <returns><see cref="int"/></returns>
                 public static int GetTypeLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Phone.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -3712,7 +3712,7 @@ namespace Android.Provider
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -3836,7 +3836,7 @@ namespace Android.Provider
                 /// <returns><see cref="int"/></returns>
                 public static int GetTypeLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Organization.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -3847,7 +3847,7 @@ namespace Android.Provider
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -4177,7 +4177,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static int GetProtocolLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getProtocolLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getProtocolLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#getTypeLabelResource(int)"/>
@@ -4187,7 +4187,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static int GetTypeLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#getProtocolLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -4199,7 +4199,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Java.Lang.CharSequence GetProtocolLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getProtocolLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getProtocolLabel", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -4211,7 +4211,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -4433,7 +4433,7 @@ namespace Android.Provider
                 /// <returns><see cref="int"/></returns>
                 public static int GetTypeResource(Java.Lang.Integer arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeResource", "(Ljava/lang/Integer;)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Event.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -4444,7 +4444,7 @@ namespace Android.Provider
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -4580,7 +4580,7 @@ namespace Android.Provider
                 /// <returns><see cref="int"/></returns>
                 public static int GetTypeLabelResource(int arg0)
                 {
-                    return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
+                    return SExecute<int>(LocalBridgeClazz, "getTypeLabelResource", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Email.html#getTypeLabel(android.content.res.Resources,int,java.lang.CharSequence)"/>
@@ -4591,7 +4591,7 @@ namespace Android.Provider
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
-                    return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", "(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+                    return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
                 }
 
                 #endregion
@@ -5206,7 +5206,7 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Net.Uri"/></returns>
                     public Android.Net.Uri Build()
                     {
-                        return IExecuteWithSignature<Android.Net.Uri>("build", "()Landroid/net/Uri;");
+                        return IExecute<Android.Net.Uri>("build");
                     }
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.AggregationSuggestions.Builder.html#addNameParameter(java.lang.String)"/>
@@ -5215,7 +5215,7 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder"/></returns>
                     public Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder AddNameParameter(Java.Lang.String arg0)
                     {
-                        return IExecuteWithSignature<Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder>("addNameParameter", "(Ljava/lang/String;)Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;", arg0);
+                        return IExecute<Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder>("addNameParameter", arg0);
                     }
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.AggregationSuggestions.Builder.html#setContactId(long)"/>
@@ -5224,7 +5224,7 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder"/></returns>
                     public Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder SetContactId(long arg0)
                     {
-                        return IExecuteWithSignature<Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder>("setContactId", "(J)Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;", arg0);
+                        return IExecute<Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder>("setContactId", arg0);
                     }
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.AggregationSuggestions.Builder.html#setLimit(int)"/>
@@ -5233,7 +5233,7 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder"/></returns>
                     public Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder SetLimit(int arg0)
                     {
-                        return IExecuteWithSignature<Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder>("setLimit", "(I)Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;", arg0);
+                        return IExecute<Android.Provider.ContactsContract.Contacts.AggregationSuggestions.Builder>("setLimit", arg0);
                     }
 
                     #endregion

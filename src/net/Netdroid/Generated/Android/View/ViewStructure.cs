@@ -762,7 +762,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.ViewStructure.HtmlInfo"/></returns>
                 public Android.View.ViewStructure.HtmlInfo Build()
                 {
-                    return IExecuteWithSignature<Android.View.ViewStructure.HtmlInfo>("build", "()Landroid/view/ViewStructure$HtmlInfo;");
+                    return IExecute<Android.View.ViewStructure.HtmlInfo>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.Builder.html#addAttribute(java.lang.String,java.lang.String)"/>
@@ -772,7 +772,7 @@ namespace Android.View
                 /// <returns><see cref="Android.View.ViewStructure.HtmlInfo.Builder"/></returns>
                 public Android.View.ViewStructure.HtmlInfo.Builder AddAttribute(Java.Lang.String arg0, Java.Lang.String arg1)
                 {
-                    return IExecuteWithSignature<Android.View.ViewStructure.HtmlInfo.Builder>("addAttribute", "(Ljava/lang/String;Ljava/lang/String;)Landroid/view/ViewStructure$HtmlInfo$Builder;", arg0, arg1);
+                    return IExecute<Android.View.ViewStructure.HtmlInfo.Builder>("addAttribute", arg0, arg1);
                 }
 
                 #endregion

@@ -331,7 +331,7 @@ namespace Android.Telecom
                 /// <returns><see cref="Android.Telecom.CallScreeningService.CallResponse"/></returns>
                 public Android.Telecom.CallScreeningService.CallResponse Build()
                 {
-                    return IExecuteWithSignature<Android.Telecom.CallScreeningService.CallResponse>("build", "()Landroid/telecom/CallScreeningService$CallResponse;");
+                    return IExecute<Android.Telecom.CallScreeningService.CallResponse>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.Builder.html#setCallComposerAttachmentsToShow(int)"/>
@@ -340,7 +340,7 @@ namespace Android.Telecom
                 /// <returns><see cref="Android.Telecom.CallScreeningService.CallResponse.Builder"/></returns>
                 public Android.Telecom.CallScreeningService.CallResponse.Builder SetCallComposerAttachmentsToShow(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Telecom.CallScreeningService.CallResponse.Builder>("setCallComposerAttachmentsToShow", "(I)Landroid/telecom/CallScreeningService$CallResponse$Builder;", arg0);
+                    return IExecute<Android.Telecom.CallScreeningService.CallResponse.Builder>("setCallComposerAttachmentsToShow", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.Builder.html#setDisallowCall(boolean)"/>
@@ -349,7 +349,7 @@ namespace Android.Telecom
                 /// <returns><see cref="Android.Telecom.CallScreeningService.CallResponse.Builder"/></returns>
                 public Android.Telecom.CallScreeningService.CallResponse.Builder SetDisallowCall(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.Telecom.CallScreeningService.CallResponse.Builder>("setDisallowCall", "(Z)Landroid/telecom/CallScreeningService$CallResponse$Builder;", arg0);
+                    return IExecute<Android.Telecom.CallScreeningService.CallResponse.Builder>("setDisallowCall", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.Builder.html#setRejectCall(boolean)"/>
@@ -358,7 +358,7 @@ namespace Android.Telecom
                 /// <returns><see cref="Android.Telecom.CallScreeningService.CallResponse.Builder"/></returns>
                 public Android.Telecom.CallScreeningService.CallResponse.Builder SetRejectCall(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.Telecom.CallScreeningService.CallResponse.Builder>("setRejectCall", "(Z)Landroid/telecom/CallScreeningService$CallResponse$Builder;", arg0);
+                    return IExecute<Android.Telecom.CallScreeningService.CallResponse.Builder>("setRejectCall", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.Builder.html#setSilenceCall(boolean)"/>
@@ -367,7 +367,7 @@ namespace Android.Telecom
                 /// <returns><see cref="Android.Telecom.CallScreeningService.CallResponse.Builder"/></returns>
                 public Android.Telecom.CallScreeningService.CallResponse.Builder SetSilenceCall(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.Telecom.CallScreeningService.CallResponse.Builder>("setSilenceCall", "(Z)Landroid/telecom/CallScreeningService$CallResponse$Builder;", arg0);
+                    return IExecute<Android.Telecom.CallScreeningService.CallResponse.Builder>("setSilenceCall", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.Builder.html#setSkipCallLog(boolean)"/>
@@ -376,7 +376,7 @@ namespace Android.Telecom
                 /// <returns><see cref="Android.Telecom.CallScreeningService.CallResponse.Builder"/></returns>
                 public Android.Telecom.CallScreeningService.CallResponse.Builder SetSkipCallLog(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.Telecom.CallScreeningService.CallResponse.Builder>("setSkipCallLog", "(Z)Landroid/telecom/CallScreeningService$CallResponse$Builder;", arg0);
+                    return IExecute<Android.Telecom.CallScreeningService.CallResponse.Builder>("setSkipCallLog", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.Builder.html#setSkipNotification(boolean)"/>
@@ -385,7 +385,7 @@ namespace Android.Telecom
                 /// <returns><see cref="Android.Telecom.CallScreeningService.CallResponse.Builder"/></returns>
                 public Android.Telecom.CallScreeningService.CallResponse.Builder SetSkipNotification(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.Telecom.CallScreeningService.CallResponse.Builder>("setSkipNotification", "(Z)Landroid/telecom/CallScreeningService$CallResponse$Builder;", arg0);
+                    return IExecute<Android.Telecom.CallScreeningService.CallResponse.Builder>("setSkipNotification", arg0);
                 }
 
                 #endregion

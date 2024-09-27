@@ -800,7 +800,7 @@ namespace Android.Icu.Text
                 /// <returns><see cref="Android.Icu.Text.AlphabeticIndex.Bucket.LabelType"/></returns>
                 public static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;", arg0);
+                    return SExecute<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.LabelType.html#values()"/>
@@ -808,7 +808,7 @@ namespace Android.Icu.Text
                 /// <returns><see cref="Android.Icu.Text.AlphabeticIndex.Bucket.LabelType"/></returns>
                 public static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType[] Values()
                 {
-                    return SExecuteWithSignatureArray<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "values", "()[Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;");
+                    return SExecuteArray<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "values");
                 }
 
                 #endregion
@@ -939,7 +939,7 @@ namespace Android.Icu.Text
                 /// <returns><see cref="Android.Icu.Text.AlphabeticIndex.Bucket.LabelType"/></returns>
                 public static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;", arg0);
+                    return SExecute<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.LabelType.html#values()"/>
@@ -947,7 +947,7 @@ namespace Android.Icu.Text
                 /// <returns><see cref="Android.Icu.Text.AlphabeticIndex.Bucket.LabelType"/></returns>
                 public static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType[] Values()
                 {
-                    return SExecuteWithSignatureArray<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "values", "()[Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;");
+                    return SExecuteArray<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "values");
                 }
 
                 #endregion

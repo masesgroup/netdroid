@@ -2135,7 +2135,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetPartUriForMessage(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getPartUriForMessage", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getPartUriForMessage", arg0);
                 }
 
                 #endregion
@@ -2377,7 +2377,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetAddrUriForMessage(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getAddrUriForMessage", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getAddrUriForMessage", arg0);
                 }
 
                 #endregion
@@ -3052,7 +3052,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Telephony.SmsMessage"/></returns>
                 public static Android.Telephony.SmsMessage[] GetMessagesFromIntent(Android.Content.Intent arg0)
                 {
-                    return SExecuteWithSignatureArray<Android.Telephony.SmsMessage>(LocalBridgeClazz, "getMessagesFromIntent", "(Landroid/content/Intent;)[Landroid/telephony/SmsMessage;", arg0);
+                    return SExecuteArray<Android.Telephony.SmsMessage>(LocalBridgeClazz, "getMessagesFromIntent", arg0);
                 }
 
                 #endregion

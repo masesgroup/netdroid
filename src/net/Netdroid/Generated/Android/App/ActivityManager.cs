@@ -1904,7 +1904,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.ActivityManager.TaskDescription"/></returns>
                 public Android.App.ActivityManager.TaskDescription Build()
                 {
-                    return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription>("build", "()Landroid/app/ActivityManager$TaskDescription;");
+                    return IExecute<Android.App.ActivityManager.TaskDescription>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.Builder.html#setBackgroundColor(int)"/>
@@ -1913,7 +1913,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.ActivityManager.TaskDescription.Builder"/></returns>
                 public Android.App.ActivityManager.TaskDescription.Builder SetBackgroundColor(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription.Builder>("setBackgroundColor", "(I)Landroid/app/ActivityManager$TaskDescription$Builder;", arg0);
+                    return IExecute<Android.App.ActivityManager.TaskDescription.Builder>("setBackgroundColor", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.Builder.html#setIcon(int)"/>
@@ -1922,7 +1922,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.ActivityManager.TaskDescription.Builder"/></returns>
                 public Android.App.ActivityManager.TaskDescription.Builder SetIcon(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription.Builder>("setIcon", "(I)Landroid/app/ActivityManager$TaskDescription$Builder;", arg0);
+                    return IExecute<Android.App.ActivityManager.TaskDescription.Builder>("setIcon", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.Builder.html#setLabel(java.lang.String)"/>
@@ -1931,7 +1931,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.ActivityManager.TaskDescription.Builder"/></returns>
                 public Android.App.ActivityManager.TaskDescription.Builder SetLabel(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription.Builder>("setLabel", "(Ljava/lang/String;)Landroid/app/ActivityManager$TaskDescription$Builder;", arg0);
+                    return IExecute<Android.App.ActivityManager.TaskDescription.Builder>("setLabel", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.Builder.html#setNavigationBarColor(int)"/>
@@ -1940,7 +1940,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.ActivityManager.TaskDescription.Builder"/></returns>
                 public Android.App.ActivityManager.TaskDescription.Builder SetNavigationBarColor(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription.Builder>("setNavigationBarColor", "(I)Landroid/app/ActivityManager$TaskDescription$Builder;", arg0);
+                    return IExecute<Android.App.ActivityManager.TaskDescription.Builder>("setNavigationBarColor", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.Builder.html#setPrimaryColor(int)"/>
@@ -1949,7 +1949,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.ActivityManager.TaskDescription.Builder"/></returns>
                 public Android.App.ActivityManager.TaskDescription.Builder SetPrimaryColor(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription.Builder>("setPrimaryColor", "(I)Landroid/app/ActivityManager$TaskDescription$Builder;", arg0);
+                    return IExecute<Android.App.ActivityManager.TaskDescription.Builder>("setPrimaryColor", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.Builder.html#setStatusBarColor(int)"/>
@@ -1958,7 +1958,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.ActivityManager.TaskDescription.Builder"/></returns>
                 public Android.App.ActivityManager.TaskDescription.Builder SetStatusBarColor(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.ActivityManager.TaskDescription.Builder>("setStatusBarColor", "(I)Landroid/app/ActivityManager$TaskDescription$Builder;", arg0);
+                    return IExecute<Android.App.ActivityManager.TaskDescription.Builder>("setStatusBarColor", arg0);
                 }
 
                 #endregion

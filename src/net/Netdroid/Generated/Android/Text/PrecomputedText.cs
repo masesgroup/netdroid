@@ -460,7 +460,7 @@ namespace Android.Text
                 /// <returns><see cref="Android.Text.PrecomputedText.Params"/></returns>
                 public Android.Text.PrecomputedText.Params Build()
                 {
-                    return IExecuteWithSignature<Android.Text.PrecomputedText.Params>("build", "()Landroid/text/PrecomputedText$Params;");
+                    return IExecute<Android.Text.PrecomputedText.Params>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.Builder.html#setBreakStrategy(int)"/>
@@ -469,7 +469,7 @@ namespace Android.Text
                 /// <returns><see cref="Android.Text.PrecomputedText.Params.Builder"/></returns>
                 public Android.Text.PrecomputedText.Params.Builder SetBreakStrategy(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Text.PrecomputedText.Params.Builder>("setBreakStrategy", "(I)Landroid/text/PrecomputedText$Params$Builder;", arg0);
+                    return IExecute<Android.Text.PrecomputedText.Params.Builder>("setBreakStrategy", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.Builder.html#setHyphenationFrequency(int)"/>
@@ -478,7 +478,7 @@ namespace Android.Text
                 /// <returns><see cref="Android.Text.PrecomputedText.Params.Builder"/></returns>
                 public Android.Text.PrecomputedText.Params.Builder SetHyphenationFrequency(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Text.PrecomputedText.Params.Builder>("setHyphenationFrequency", "(I)Landroid/text/PrecomputedText$Params$Builder;", arg0);
+                    return IExecute<Android.Text.PrecomputedText.Params.Builder>("setHyphenationFrequency", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.Builder.html#setLineBreakConfig(android.graphics.text.LineBreakConfig)"/>
@@ -487,7 +487,7 @@ namespace Android.Text
                 /// <returns><see cref="Android.Text.PrecomputedText.Params.Builder"/></returns>
                 public Android.Text.PrecomputedText.Params.Builder SetLineBreakConfig(Android.Graphics.Text.LineBreakConfig arg0)
                 {
-                    return IExecuteWithSignature<Android.Text.PrecomputedText.Params.Builder>("setLineBreakConfig", "(Landroid/graphics/text/LineBreakConfig;)Landroid/text/PrecomputedText$Params$Builder;", arg0);
+                    return IExecute<Android.Text.PrecomputedText.Params.Builder>("setLineBreakConfig", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.Builder.html#setTextDirection(android.text.TextDirectionHeuristic)"/>
@@ -496,7 +496,7 @@ namespace Android.Text
                 /// <returns><see cref="Android.Text.PrecomputedText.Params.Builder"/></returns>
                 public Android.Text.PrecomputedText.Params.Builder SetTextDirection(Android.Text.TextDirectionHeuristic arg0)
                 {
-                    return IExecuteWithSignature<Android.Text.PrecomputedText.Params.Builder>("setTextDirection", "(Landroid/text/TextDirectionHeuristic;)Landroid/text/PrecomputedText$Params$Builder;", arg0);
+                    return IExecute<Android.Text.PrecomputedText.Params.Builder>("setTextDirection", arg0);
                 }
 
                 #endregion

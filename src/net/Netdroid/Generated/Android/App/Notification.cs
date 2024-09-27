@@ -2349,7 +2349,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder Extend(Android.App.Notification.Action.Builder arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("extend", "(Landroid/app/Notification$Action$Builder;)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("extend", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#clone()"/>
@@ -2357,7 +2357,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.WearableExtender"/></returns>
                 public Android.App.Notification.Action.WearableExtender Clone()
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("clone", "()Landroid/app/Notification$Action$WearableExtender;");
+                    return IExecute<Android.App.Notification.Action.WearableExtender>("clone");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#setAvailableOffline(boolean)"/>
@@ -2366,7 +2366,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.WearableExtender"/></returns>
                 public Android.App.Notification.Action.WearableExtender SetAvailableOffline(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setAvailableOffline", "(Z)Landroid/app/Notification$Action$WearableExtender;", arg0);
+                    return IExecute<Android.App.Notification.Action.WearableExtender>("setAvailableOffline", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#setCancelLabel(java.lang.CharSequence)"/>
@@ -2376,7 +2376,7 @@ namespace Android.App
                 [global::System.Obsolete()]
                 public Android.App.Notification.Action.WearableExtender SetCancelLabel(Java.Lang.CharSequence arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setCancelLabel", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Action$WearableExtender;", arg0);
+                    return IExecute<Android.App.Notification.Action.WearableExtender>("setCancelLabel", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#setConfirmLabel(java.lang.CharSequence)"/>
@@ -2386,7 +2386,7 @@ namespace Android.App
                 [global::System.Obsolete()]
                 public Android.App.Notification.Action.WearableExtender SetConfirmLabel(Java.Lang.CharSequence arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setConfirmLabel", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Action$WearableExtender;", arg0);
+                    return IExecute<Android.App.Notification.Action.WearableExtender>("setConfirmLabel", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#setHintDisplayActionInline(boolean)"/>
@@ -2395,7 +2395,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.WearableExtender"/></returns>
                 public Android.App.Notification.Action.WearableExtender SetHintDisplayActionInline(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setHintDisplayActionInline", "(Z)Landroid/app/Notification$Action$WearableExtender;", arg0);
+                    return IExecute<Android.App.Notification.Action.WearableExtender>("setHintDisplayActionInline", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#setHintLaunchesActivity(boolean)"/>
@@ -2404,7 +2404,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.WearableExtender"/></returns>
                 public Android.App.Notification.Action.WearableExtender SetHintLaunchesActivity(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setHintLaunchesActivity", "(Z)Landroid/app/Notification$Action$WearableExtender;", arg0);
+                    return IExecute<Android.App.Notification.Action.WearableExtender>("setHintLaunchesActivity", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#setInProgressLabel(java.lang.CharSequence)"/>
@@ -2414,7 +2414,7 @@ namespace Android.App
                 [global::System.Obsolete()]
                 public Android.App.Notification.Action.WearableExtender SetInProgressLabel(Java.Lang.CharSequence arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setInProgressLabel", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Action$WearableExtender;", arg0);
+                    return IExecute<Android.App.Notification.Action.WearableExtender>("setInProgressLabel", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getHintDisplayActionInline()"/>
@@ -2422,7 +2422,7 @@ namespace Android.App
                 /// <returns><see cref="bool"/></returns>
                 public bool GetHintDisplayActionInline()
                 {
-                    return IExecuteWithSignature<bool>("getHintDisplayActionInline", "()Z");
+                    return IExecute<bool>("getHintDisplayActionInline");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getHintLaunchesActivity()"/>
@@ -2430,7 +2430,7 @@ namespace Android.App
                 /// <returns><see cref="bool"/></returns>
                 public bool GetHintLaunchesActivity()
                 {
-                    return IExecuteWithSignature<bool>("getHintLaunchesActivity", "()Z");
+                    return IExecute<bool>("getHintLaunchesActivity");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#isAvailableOffline()"/>
@@ -2438,7 +2438,7 @@ namespace Android.App
                 /// <returns><see cref="bool"/></returns>
                 public bool IsAvailableOffline()
                 {
-                    return IExecuteWithSignature<bool>("isAvailableOffline", "()Z");
+                    return IExecute<bool>("isAvailableOffline");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getCancelLabel()"/>
@@ -2447,7 +2447,7 @@ namespace Android.App
                 [global::System.Obsolete()]
                 public Java.Lang.CharSequence GetCancelLabel()
                 {
-                    return IExecuteWithSignature<Java.Lang.CharSequence>("getCancelLabel", "()Ljava/lang/CharSequence;");
+                    return IExecute<Java.Lang.CharSequence>("getCancelLabel");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getConfirmLabel()"/>
@@ -2456,7 +2456,7 @@ namespace Android.App
                 [global::System.Obsolete()]
                 public Java.Lang.CharSequence GetConfirmLabel()
                 {
-                    return IExecuteWithSignature<Java.Lang.CharSequence>("getConfirmLabel", "()Ljava/lang/CharSequence;");
+                    return IExecute<Java.Lang.CharSequence>("getConfirmLabel");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getInProgressLabel()"/>
@@ -2465,7 +2465,7 @@ namespace Android.App
                 [global::System.Obsolete()]
                 public Java.Lang.CharSequence GetInProgressLabel()
                 {
-                    return IExecuteWithSignature<Java.Lang.CharSequence>("getInProgressLabel", "()Ljava/lang/CharSequence;");
+                    return IExecute<Java.Lang.CharSequence>("getInProgressLabel");
                 }
 
                 #endregion
@@ -2505,7 +2505,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder Extend(Android.App.Notification.Action.Builder arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("extend", "(Landroid/app/Notification$Action$Builder;)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("extend", arg0);
                 }
 
                 #endregion
@@ -2573,7 +2573,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action"/></returns>
                 public Android.App.Notification.Action Build()
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action>("build", "()Landroid/app/Notification$Action;");
+                    return IExecute<Android.App.Notification.Action>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#addExtras(android.os.Bundle)"/>
@@ -2582,7 +2582,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder AddExtras(Android.Os.Bundle arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("addExtras", "(Landroid/os/Bundle;)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("addExtras", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#addRemoteInput(android.app.RemoteInput)"/>
@@ -2591,7 +2591,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder AddRemoteInput(Android.App.RemoteInput arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("addRemoteInput", "(Landroid/app/RemoteInput;)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("addRemoteInput", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#extend(android.app.Notification.Action.Extender)"/>
@@ -2600,7 +2600,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder Extend(Android.App.Notification.Action.Extender arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("extend", "(Landroid/app/Notification$Action$Extender;)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("extend", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#setAllowGeneratedReplies(boolean)"/>
@@ -2609,7 +2609,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder SetAllowGeneratedReplies(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("setAllowGeneratedReplies", "(Z)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("setAllowGeneratedReplies", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#setAuthenticationRequired(boolean)"/>
@@ -2618,7 +2618,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder SetAuthenticationRequired(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("setAuthenticationRequired", "(Z)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("setAuthenticationRequired", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#setContextual(boolean)"/>
@@ -2627,7 +2627,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder SetContextual(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("setContextual", "(Z)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("setContextual", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#setSemanticAction(int)"/>
@@ -2636,7 +2636,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.Action.Builder"/></returns>
                 public Android.App.Notification.Action.Builder SetSemanticAction(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.Action.Builder>("setSemanticAction", "(I)Landroid/app/Notification$Action$Builder;", arg0);
+                    return IExecute<Android.App.Notification.Action.Builder>("setSemanticAction", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#getExtras()"/>
@@ -2644,7 +2644,7 @@ namespace Android.App
                 /// <returns><see cref="Android.Os.Bundle"/></returns>
                 public Android.Os.Bundle GetExtras()
                 {
-                    return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+                    return IExecute<Android.Os.Bundle>("getExtras");
                 }
 
                 #endregion
@@ -3013,7 +3013,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata"/></returns>
                 public Android.App.Notification.BubbleMetadata Build()
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata>("build", "()Landroid/app/Notification$BubbleMetadata;");
+                    return IExecute<Android.App.Notification.BubbleMetadata>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setAutoExpandBubble(boolean)"/>
@@ -3022,7 +3022,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetAutoExpandBubble(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setAutoExpandBubble", "(Z)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setAutoExpandBubble", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setDeleteIntent(android.app.PendingIntent)"/>
@@ -3031,7 +3031,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetDeleteIntent(Android.App.PendingIntent arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setDeleteIntent", "(Landroid/app/PendingIntent;)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setDeleteIntent", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setDesiredHeight(int)"/>
@@ -3040,7 +3040,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetDesiredHeight(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setDesiredHeight", "(I)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setDesiredHeight", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setDesiredHeightResId(int)"/>
@@ -3049,7 +3049,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetDesiredHeightResId(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setDesiredHeightResId", "(I)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setDesiredHeightResId", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setIcon(android.graphics.drawable.Icon)"/>
@@ -3058,7 +3058,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetIcon(Android.Graphics.Drawable.Icon arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setIcon", "(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setIcon", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setIntent(android.app.PendingIntent)"/>
@@ -3067,7 +3067,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetIntent(Android.App.PendingIntent arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setIntent", "(Landroid/app/PendingIntent;)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setIntent", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setSuppressableBubble(boolean)"/>
@@ -3076,7 +3076,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetSuppressableBubble(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setSuppressableBubble", "(Z)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setSuppressableBubble", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.Builder.html#setSuppressNotification(boolean)"/>
@@ -3085,7 +3085,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.BubbleMetadata.Builder"/></returns>
                 public Android.App.Notification.BubbleMetadata.Builder SetSuppressNotification(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.BubbleMetadata.Builder>("setSuppressNotification", "(Z)Landroid/app/Notification$BubbleMetadata$Builder;", arg0);
+                    return IExecute<Android.App.Notification.BubbleMetadata.Builder>("setSuppressNotification", arg0);
                 }
 
                 #endregion
@@ -4074,7 +4074,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.PendingIntent"/></returns>
                 public Android.App.PendingIntent GetReadPendingIntent()
                 {
-                    return IExecuteWithSignature<Android.App.PendingIntent>("getReadPendingIntent", "()Landroid/app/PendingIntent;");
+                    return IExecute<Android.App.PendingIntent>("getReadPendingIntent");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getReplyPendingIntent()"/>
@@ -4082,7 +4082,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.PendingIntent"/></returns>
                 public Android.App.PendingIntent GetReplyPendingIntent()
                 {
-                    return IExecuteWithSignature<Android.App.PendingIntent>("getReplyPendingIntent", "()Landroid/app/PendingIntent;");
+                    return IExecute<Android.App.PendingIntent>("getReplyPendingIntent");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getRemoteInput()"/>
@@ -4090,7 +4090,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.RemoteInput"/></returns>
                 public Android.App.RemoteInput GetRemoteInput()
                 {
-                    return IExecuteWithSignature<Android.App.RemoteInput>("getRemoteInput", "()Landroid/app/RemoteInput;");
+                    return IExecute<Android.App.RemoteInput>("getRemoteInput");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getParticipant()"/>
@@ -4098,7 +4098,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public Java.Lang.String GetParticipant()
                 {
-                    return IExecuteWithSignature<Java.Lang.String>("getParticipant", "()Ljava/lang/String;");
+                    return IExecute<Java.Lang.String>("getParticipant");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getMessages()"/>
@@ -4106,7 +4106,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public Java.Lang.String[] GetMessages()
                 {
-                    return IExecuteWithSignatureArray<Java.Lang.String>("getMessages", "()[Ljava/lang/String;");
+                    return IExecuteArray<Java.Lang.String>("getMessages");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getParticipants()"/>
@@ -4114,7 +4114,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public Java.Lang.String[] GetParticipants()
                 {
-                    return IExecuteWithSignatureArray<Java.Lang.String>("getParticipants", "()[Ljava/lang/String;");
+                    return IExecuteArray<Java.Lang.String>("getParticipants");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getLatestTimestamp()"/>
@@ -4122,7 +4122,7 @@ namespace Android.App
                 /// <returns><see cref="long"/></returns>
                 public long GetLatestTimestamp()
                 {
-                    return IExecuteWithSignature<long>("getLatestTimestamp", "()J");
+                    return IExecute<long>("getLatestTimestamp");
                 }
 
                 #endregion
@@ -4170,7 +4170,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.CarExtender.Builder"/></returns>
                 public Android.App.Notification.CarExtender.Builder AddMessage(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.CarExtender.Builder>("addMessage", "(Ljava/lang/String;)Landroid/app/Notification$CarExtender$Builder;", arg0);
+                    return IExecute<Android.App.Notification.CarExtender.Builder>("addMessage", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.Builder.html#setLatestTimestamp(long)"/>
@@ -4179,7 +4179,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.CarExtender.Builder"/></returns>
                 public Android.App.Notification.CarExtender.Builder SetLatestTimestamp(long arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.CarExtender.Builder>("setLatestTimestamp", "(J)Landroid/app/Notification$CarExtender$Builder;", arg0);
+                    return IExecute<Android.App.Notification.CarExtender.Builder>("setLatestTimestamp", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.Builder.html#setReadPendingIntent(android.app.PendingIntent)"/>
@@ -4188,7 +4188,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.CarExtender.Builder"/></returns>
                 public Android.App.Notification.CarExtender.Builder SetReadPendingIntent(Android.App.PendingIntent arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.CarExtender.Builder>("setReadPendingIntent", "(Landroid/app/PendingIntent;)Landroid/app/Notification$CarExtender$Builder;", arg0);
+                    return IExecute<Android.App.Notification.CarExtender.Builder>("setReadPendingIntent", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.Builder.html#setReplyAction(android.app.PendingIntent,android.app.RemoteInput)"/>
@@ -4198,7 +4198,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.CarExtender.Builder"/></returns>
                 public Android.App.Notification.CarExtender.Builder SetReplyAction(Android.App.PendingIntent arg0, Android.App.RemoteInput arg1)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.CarExtender.Builder>("setReplyAction", "(Landroid/app/PendingIntent;Landroid/app/RemoteInput;)Landroid/app/Notification$CarExtender$Builder;", arg0, arg1);
+                    return IExecute<Android.App.Notification.CarExtender.Builder>("setReplyAction", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.Builder.html#build()"/>
@@ -4206,7 +4206,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.CarExtender.UnreadConversation"/></returns>
                 public Android.App.Notification.CarExtender.UnreadConversation Build()
                 {
-                    return IExecuteWithSignature<Android.App.Notification.CarExtender.UnreadConversation>("build", "()Landroid/app/Notification$CarExtender$UnreadConversation;");
+                    return IExecute<Android.App.Notification.CarExtender.UnreadConversation>("build");
                 }
 
                 #endregion
@@ -4663,7 +4663,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Util.List"/></returns>
                 public static Java.Util.List<Android.App.Notification.MessagingStyle.Message> GetMessagesFromBundleArray(Android.Os.Parcelable[] arg0)
                 {
-                    return SExecuteWithSignature<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>(LocalBridgeClazz, "getMessagesFromBundleArray", "([Landroid/os/Parcelable;)Ljava/util/List;", new object[] { arg0 });
+                    return SExecute<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>(LocalBridgeClazz, "getMessagesFromBundleArray", new object[] { arg0 });
                 }
 
                 #endregion
@@ -4677,7 +4677,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Notification.MessagingStyle.Message"/></returns>
                 public Android.App.Notification.MessagingStyle.Message SetData(Java.Lang.String arg0, Android.Net.Uri arg1)
                 {
-                    return IExecuteWithSignature<Android.App.Notification.MessagingStyle.Message>("setData", "(Ljava/lang/String;Landroid/net/Uri;)Landroid/app/Notification$MessagingStyle$Message;", arg0, arg1);
+                    return IExecute<Android.App.Notification.MessagingStyle.Message>("setData", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getSenderPerson()"/>
@@ -4685,7 +4685,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.Person"/></returns>
                 public Android.App.Person GetSenderPerson()
                 {
-                    return IExecuteWithSignature<Android.App.Person>("getSenderPerson", "()Landroid/app/Person;");
+                    return IExecute<Android.App.Person>("getSenderPerson");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getDataUri()"/>
@@ -4693,7 +4693,7 @@ namespace Android.App
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public Android.Net.Uri GetDataUri()
                 {
-                    return IExecuteWithSignature<Android.Net.Uri>("getDataUri", "()Landroid/net/Uri;");
+                    return IExecute<Android.Net.Uri>("getDataUri");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getExtras()"/>
@@ -4701,7 +4701,7 @@ namespace Android.App
                 /// <returns><see cref="Android.Os.Bundle"/></returns>
                 public Android.Os.Bundle GetExtras()
                 {
-                    return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+                    return IExecute<Android.Os.Bundle>("getExtras");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getSender()"/>
@@ -4710,7 +4710,7 @@ namespace Android.App
                 [global::System.Obsolete()]
                 public Java.Lang.CharSequence GetSender()
                 {
-                    return IExecuteWithSignature<Java.Lang.CharSequence>("getSender", "()Ljava/lang/CharSequence;");
+                    return IExecute<Java.Lang.CharSequence>("getSender");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getText()"/>
@@ -4718,7 +4718,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public Java.Lang.CharSequence GetText()
                 {
-                    return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+                    return IExecute<Java.Lang.CharSequence>("getText");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getDataMimeType()"/>
@@ -4726,7 +4726,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Lang.String"/></returns>
                 public Java.Lang.String GetDataMimeType()
                 {
-                    return IExecuteWithSignature<Java.Lang.String>("getDataMimeType", "()Ljava/lang/String;");
+                    return IExecute<Java.Lang.String>("getDataMimeType");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getTimestamp()"/>
@@ -4734,7 +4734,7 @@ namespace Android.App
                 /// <returns><see cref="long"/></returns>
                 public long GetTimestamp()
                 {
-                    return IExecuteWithSignature<long>("getTimestamp", "()J");
+                    return IExecute<long>("getTimestamp");
                 }
 
                 #endregion

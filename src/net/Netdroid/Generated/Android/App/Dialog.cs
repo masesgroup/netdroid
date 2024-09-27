@@ -450,6 +450,14 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.Activity>("getOwnerActivity", "()Landroid/app/Activity;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getOwnerActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        public Android.App.Activity GetOwnerActivityDirect()
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("getOwnerActivity", "()Landroid/app/Activity;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#getContext()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Context"/></returns>

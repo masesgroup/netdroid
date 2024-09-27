@@ -852,7 +852,7 @@ namespace Android.Icu.Text
                 /// <returns><see cref="Android.Icu.Text.MessagePattern.Part.Type"/></returns>
                 public static Android.Icu.Text.MessagePattern.Part.Type ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Icu.Text.MessagePattern.Part.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/icu/text/MessagePattern$Part$Type;", arg0);
+                    return SExecute<Android.Icu.Text.MessagePattern.Part.Type>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.Type.html#values()"/>
@@ -860,7 +860,7 @@ namespace Android.Icu.Text
                 /// <returns><see cref="Android.Icu.Text.MessagePattern.Part.Type"/></returns>
                 public static Android.Icu.Text.MessagePattern.Part.Type[] Values()
                 {
-                    return SExecuteWithSignatureArray<Android.Icu.Text.MessagePattern.Part.Type>(LocalBridgeClazz, "values", "()[Landroid/icu/text/MessagePattern$Part$Type;");
+                    return SExecuteArray<Android.Icu.Text.MessagePattern.Part.Type>(LocalBridgeClazz, "values");
                 }
 
                 #endregion
@@ -872,7 +872,7 @@ namespace Android.Icu.Text
                 /// <returns><see cref="bool"/></returns>
                 public bool HasNumericValue()
                 {
-                    return IExecuteWithSignature<bool>("hasNumericValue", "()Z");
+                    return IExecute<bool>("hasNumericValue");
                 }
 
                 #endregion

@@ -116,7 +116,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public Java.Io.OutputStream GetByteStream()
         {
-            return IExecute<Java.Io.OutputStream>("getByteStream");
+            return IExecuteWithSignature<Java.Io.OutputStream>("getByteStream", "()Ljava/io/OutputStream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#getCharacterStream()"/>
@@ -124,7 +124,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public Java.Io.Writer GetCharacterStream()
         {
-            return IExecute<Java.Io.Writer>("getCharacterStream");
+            return IExecuteWithSignature<Java.Io.Writer>("getCharacterStream", "()Ljava/io/Writer;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#getEncoding()"/>
@@ -132,7 +132,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetEncoding()
         {
-            return IExecute<Java.Lang.String>("getEncoding");
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#getSystemId()"/>
@@ -140,7 +140,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSystemId()
         {
-            return IExecute<Java.Lang.String>("getSystemId");
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setByteStream(java.io.OutputStream)"/>
@@ -148,7 +148,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public void SetByteStream(Java.Io.OutputStream arg0)
         {
-            IExecute("setByteStream", arg0);
+            IExecuteWithSignature("setByteStream", "(Ljava/io/OutputStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setCharacterStream(java.io.Writer)"/>
@@ -156,7 +156,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         public void SetCharacterStream(Java.Io.Writer arg0)
         {
-            IExecute("setCharacterStream", arg0);
+            IExecuteWithSignature("setCharacterStream", "(Ljava/io/Writer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setEncoding(java.lang.String)"/>
@@ -164,7 +164,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetEncoding(Java.Lang.String arg0)
         {
-            IExecute("setEncoding", arg0);
+            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setSystemId(java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetSystemId(Java.Lang.String arg0)
         {
-            IExecute("setSystemId", arg0);
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

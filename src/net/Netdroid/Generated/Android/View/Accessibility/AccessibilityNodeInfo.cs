@@ -2646,7 +2646,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo Build()
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo>("build", "()Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;");
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setColumnCount(int)"/>
@@ -2655,7 +2655,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetColumnCount(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setColumnCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setColumnCount", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setHierarchical(boolean)"/>
@@ -2664,7 +2664,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetHierarchical(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setHierarchical", "(Z)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setHierarchical", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setImportantForAccessibilityItemCount(int)"/>
@@ -2673,7 +2673,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetImportantForAccessibilityItemCount(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setImportantForAccessibilityItemCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setImportantForAccessibilityItemCount", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setItemCount(int)"/>
@@ -2682,7 +2682,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetItemCount(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setItemCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setItemCount", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setRowCount(int)"/>
@@ -2691,7 +2691,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetRowCount(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setRowCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setRowCount", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setSelectionMode(int)"/>
@@ -2700,7 +2700,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetSelectionMode(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setSelectionMode", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setSelectionMode", arg0);
                 }
 
                 #endregion
@@ -2889,7 +2889,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo Build()
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo>("build", "()Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;");
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setColumnIndex(int)"/>
@@ -2898,7 +2898,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetColumnIndex(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setColumnIndex", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setColumnIndex", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setColumnSpan(int)"/>
@@ -2907,7 +2907,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetColumnSpan(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setColumnSpan", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setColumnSpan", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setColumnTitle(java.lang.String)"/>
@@ -2916,7 +2916,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetColumnTitle(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setColumnTitle", "(Ljava/lang/String;)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setColumnTitle", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setHeading(boolean)"/>
@@ -2925,7 +2925,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetHeading(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setHeading", "(Z)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setHeading", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setRowIndex(int)"/>
@@ -2934,7 +2934,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetRowIndex(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setRowIndex", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setRowIndex", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setRowSpan(int)"/>
@@ -2943,7 +2943,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetRowSpan(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setRowSpan", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setRowSpan", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setRowTitle(java.lang.String)"/>
@@ -2952,7 +2952,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetRowTitle(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setRowTitle", "(Ljava/lang/String;)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setRowTitle", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#setSelected(boolean)"/>
@@ -2961,7 +2961,7 @@ namespace Android.View.Accessibility
                 /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder"/></returns>
                 public Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder SetSelected(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setSelected", "(Z)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
+                    return IExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setSelected", arg0);
                 }
 
                 #endregion

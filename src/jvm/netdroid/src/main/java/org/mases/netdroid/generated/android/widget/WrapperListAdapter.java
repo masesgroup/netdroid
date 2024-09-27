@@ -138,11 +138,11 @@ public final class WrapperListAdapter implements org.mases.jcobridge.IJCListener
     //@Override
     public java.lang.CharSequence[] getAutofillOptions() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("getAutofillOptions", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = android.widget.WrapperListAdapter.super.getAutofillOptions(); else retVal = eventDataExchange.getReturnData(); return (java.lang.CharSequence[])retVal;
+        raiseEvent("getAutofillOptions", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = android.widget.Adapter.super.getAutofillOptions(); else retVal = eventDataExchange.getReturnData(); return (java.lang.CharSequence[])retVal;
     }
     //@Override
     public java.lang.CharSequence[] getAutofillOptionsDefault() {
-        return android.widget.WrapperListAdapter.super.getAutofillOptions();
+        return android.widget.Adapter.super.getAutofillOptions();
     }
 
 }

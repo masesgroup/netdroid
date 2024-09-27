@@ -1090,7 +1090,7 @@ namespace Java.Lang.Invoke
                 /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></returns>
                 public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/invoke/MethodHandles$Lookup$ClassOption;", arg0);
+                    return SExecute<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#values()"/>
@@ -1098,7 +1098,7 @@ namespace Java.Lang.Invoke
                 /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></returns>
                 public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption[] Values()
                 {
-                    return SExecuteWithSignatureArray<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "values", "()[Ljava/lang/invoke/MethodHandles$Lookup$ClassOption;");
+                    return SExecuteArray<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "values");
                 }
 
                 #endregion

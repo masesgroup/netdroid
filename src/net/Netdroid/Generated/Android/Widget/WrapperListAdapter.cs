@@ -477,7 +477,7 @@ namespace Android.Widget
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Lang.CharSequence[] GetAutofillOptionsDefault()
         {
-            return IExecuteArray<Java.Lang.CharSequence>("getAutofillOptionsDefault");
+            return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getAutofillOptionsDefault", "()[Ljava/lang/CharSequence;");
         }
 
         /// <summary>
@@ -544,7 +544,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public override Android.View.View GetView(int arg0, Android.View.View arg1, Android.View.ViewGroup arg2)
         {
-            return IExecute<Android.View.View>("getView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/WrapperListAdapter.html#getWrappedAdapter()"/>
@@ -560,7 +560,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public override bool HasStableIds()
         {
-            return IExecute<bool>("hasStableIds");
+            return IExecuteWithSignature<bool>("hasStableIds", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()"/>
@@ -568,7 +568,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public override bool IsEmpty()
         {
-            return IExecute<bool>("isEmpty");
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListAdapter.html#areAllItemsEnabled()"/>
@@ -576,7 +576,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public override bool AreAllItemsEnabled()
         {
-            return IExecute<bool>("areAllItemsEnabled");
+            return IExecuteWithSignature<bool>("areAllItemsEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListAdapter.html#isEnabled(int)"/>
@@ -585,7 +585,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public override bool IsEnabled(int arg0)
         {
-            return IExecute<bool>("isEnabled", arg0);
+            return IExecuteWithSignature<bool>("isEnabled", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/>
@@ -593,7 +593,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public override int GetCount()
         {
-            return IExecute<int>("getCount");
+            return IExecuteWithSignature<int>("getCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)"/>
@@ -602,7 +602,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public override int GetItemViewType(int arg0)
         {
-            return IExecute<int>("getItemViewType", arg0);
+            return IExecuteWithSignature<int>("getItemViewType", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()"/>
@@ -610,7 +610,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public override int GetViewTypeCount()
         {
-            return IExecute<int>("getViewTypeCount");
+            return IExecuteWithSignature<int>("getViewTypeCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)"/>
@@ -619,7 +619,7 @@ namespace Android.Widget
         /// <returns><see cref="object"/></returns>
         public override object GetItem(int arg0)
         {
-            return IExecute("getItem", arg0);
+            return IExecuteWithSignature("getItem", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)"/>
@@ -628,7 +628,7 @@ namespace Android.Widget
         /// <returns><see cref="long"/></returns>
         public override long GetItemId(int arg0)
         {
-            return IExecute<long>("getItemId", arg0);
+            return IExecuteWithSignature<long>("getItemId", "(I)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
@@ -636,7 +636,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
         public override void RegisterDataSetObserver(Android.Database.DataSetObserver arg0)
         {
-            IExecute("registerDataSetObserver", arg0);
+            IExecuteWithSignature("registerDataSetObserver", "(Landroid/database/DataSetObserver;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
@@ -644,7 +644,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
         public override void UnregisterDataSetObserver(Android.Database.DataSetObserver arg0)
         {
-            IExecute("unregisterDataSetObserver", arg0);
+            IExecuteWithSignature("unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()"/>
@@ -652,7 +652,7 @@ namespace Android.Widget
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public override Java.Lang.CharSequence[] GetAutofillOptions()
         {
-            return IExecuteArray<Java.Lang.CharSequence>("getAutofillOptions");
+            return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getAutofillOptions", "()[Ljava/lang/CharSequence;");
         }
 
         #endregion

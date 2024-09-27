@@ -140,7 +140,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="int"/></returns>
         public int GetWhatToShow()
         {
-            return IExecute<int>("getWhatToShow");
+            return IExecuteWithSignature<int>("getWhatToShow", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
@@ -149,7 +149,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="short"/></returns>
         public short AcceptNode(Org.W3c.Dom.Node arg0)
         {
-            return IExecute<short>("acceptNode", arg0);
+            return IExecuteWithSignature<short>("acceptNode", "(Lorg/w3c/dom/Node;)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
@@ -158,7 +158,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="short"/></returns>
         public short StartElement(Org.W3c.Dom.Element arg0)
         {
-            return IExecute<short>("startElement", arg0);
+            return IExecuteWithSignature<short>("startElement", "(Lorg/w3c/dom/Element;)S", arg0);
         }
 
         #endregion

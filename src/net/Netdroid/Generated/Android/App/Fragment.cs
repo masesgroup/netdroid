@@ -364,6 +364,15 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.Activity>("getActivity", "()Landroid/app/Activity;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Activity GetActivityDirect()
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("getActivity", "()Landroid/app/Activity;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getParentFragment()"/>
         /// </summary>
         /// <returns><see cref="Android.App.Fragment"/></returns>

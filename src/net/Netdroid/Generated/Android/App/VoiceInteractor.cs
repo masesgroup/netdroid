@@ -823,7 +823,7 @@ namespace Android.App
                 /// <returns><see cref="Android.App.VoiceInteractor.PickOptionRequest.Option"/></returns>
                 public Android.App.VoiceInteractor.PickOptionRequest.Option AddSynonym(Java.Lang.CharSequence arg0)
                 {
-                    return IExecuteWithSignature<Android.App.VoiceInteractor.PickOptionRequest.Option>("addSynonym", "(Ljava/lang/CharSequence;)Landroid/app/VoiceInteractor$PickOptionRequest$Option;", arg0);
+                    return IExecute<Android.App.VoiceInteractor.PickOptionRequest.Option>("addSynonym", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getExtras()"/>
@@ -831,7 +831,7 @@ namespace Android.App
                 /// <returns><see cref="Android.Os.Bundle"/></returns>
                 public Android.Os.Bundle GetExtras()
                 {
-                    return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+                    return IExecute<Android.Os.Bundle>("getExtras");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#countSynonyms()"/>
@@ -839,7 +839,7 @@ namespace Android.App
                 /// <returns><see cref="int"/></returns>
                 public int CountSynonyms()
                 {
-                    return IExecuteWithSignature<int>("countSynonyms", "()I");
+                    return IExecute<int>("countSynonyms");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#describeContents()"/>
@@ -847,7 +847,7 @@ namespace Android.App
                 /// <returns><see cref="int"/></returns>
                 public int DescribeContents()
                 {
-                    return IExecuteWithSignature<int>("describeContents", "()I");
+                    return IExecute<int>("describeContents");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getIndex()"/>
@@ -855,7 +855,7 @@ namespace Android.App
                 /// <returns><see cref="int"/></returns>
                 public int GetIndex()
                 {
-                    return IExecuteWithSignature<int>("getIndex", "()I");
+                    return IExecute<int>("getIndex");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getLabel()"/>
@@ -863,7 +863,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public Java.Lang.CharSequence GetLabel()
                 {
-                    return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+                    return IExecute<Java.Lang.CharSequence>("getLabel");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#getSynonymAt(int)"/>
@@ -872,7 +872,7 @@ namespace Android.App
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
                 public Java.Lang.CharSequence GetSynonymAt(int arg0)
                 {
-                    return IExecuteWithSignature<Java.Lang.CharSequence>("getSynonymAt", "(I)Ljava/lang/CharSequence;", arg0);
+                    return IExecute<Java.Lang.CharSequence>("getSynonymAt", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#setExtras(android.os.Bundle)"/>
@@ -880,7 +880,7 @@ namespace Android.App
                 /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
                 public void SetExtras(Android.Os.Bundle arg0)
                 {
-                    IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", arg0);
+                    IExecute("setExtras", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.PickOptionRequest.Option.html#writeToParcel(android.os.Parcel,int)"/>
@@ -889,7 +889,7 @@ namespace Android.App
                 /// <param name="arg1"><see cref="int"/></param>
                 public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
                 {
-                    IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+                    IExecute("writeToParcel", arg0, arg1);
                 }
 
                 #endregion
@@ -1032,6 +1032,14 @@ namespace Android.App
             public Android.App.Activity GetActivity()
             {
                 return IExecuteWithSignature<Android.App.Activity>("getActivity", "()Landroid/app/Activity;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getActivity()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Activity"/></returns>
+            public Android.App.Activity GetActivityDirect()
+            {
+                return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("getActivity", "()Landroid/app/Activity;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/VoiceInteractor.Request.html#getContext()"/>

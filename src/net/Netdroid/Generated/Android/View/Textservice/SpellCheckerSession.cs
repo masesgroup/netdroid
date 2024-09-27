@@ -534,7 +534,7 @@ namespace Android.View.Textservice
                 /// <returns><see cref="Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams"/></returns>
                 public Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams Build()
                 {
-                    return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams>("build", "()Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionParams;");
+                    return IExecute<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.Builder.html#setExtras(android.os.Bundle)"/>
@@ -543,7 +543,7 @@ namespace Android.View.Textservice
                 /// <returns><see cref="Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder"/></returns>
                 public Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder SetExtras(Android.Os.Bundle arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setExtras", "(Landroid/os/Bundle;)Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionParams$Builder;", arg0);
+                    return IExecute<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setExtras", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.Builder.html#setLocale(java.util.Locale)"/>
@@ -552,7 +552,7 @@ namespace Android.View.Textservice
                 /// <returns><see cref="Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder"/></returns>
                 public Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder SetLocale(Java.Util.Locale arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setLocale", "(Ljava/util/Locale;)Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionParams$Builder;", arg0);
+                    return IExecute<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setLocale", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.Builder.html#setShouldReferToSpellCheckerLanguageSettings(boolean)"/>
@@ -561,7 +561,7 @@ namespace Android.View.Textservice
                 /// <returns><see cref="Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder"/></returns>
                 public Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder SetShouldReferToSpellCheckerLanguageSettings(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setShouldReferToSpellCheckerLanguageSettings", "(Z)Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionParams$Builder;", arg0);
+                    return IExecute<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setShouldReferToSpellCheckerLanguageSettings", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.Builder.html#setSupportedAttributes(int)"/>
@@ -570,7 +570,7 @@ namespace Android.View.Textservice
                 /// <returns><see cref="Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder"/></returns>
                 public Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder SetSupportedAttributes(int arg0)
                 {
-                    return IExecuteWithSignature<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setSupportedAttributes", "(I)Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionParams$Builder;", arg0);
+                    return IExecute<Android.View.Textservice.SpellCheckerSession.SpellCheckerSessionParams.Builder>("setSupportedAttributes", arg0);
                 }
 
                 #endregion

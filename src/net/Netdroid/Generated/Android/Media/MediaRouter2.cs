@@ -1103,7 +1103,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.MediaRouter2.ScanRequest"/></returns>
                 public Android.Media.MediaRouter2.ScanRequest Build()
                 {
-                    return IExecuteWithSignature<Android.Media.MediaRouter2.ScanRequest>("build", "()Landroid/media/MediaRouter2$ScanRequest;");
+                    return IExecute<Android.Media.MediaRouter2.ScanRequest>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.ScanRequest.Builder.html#setScreenOffScan(boolean)"/>
@@ -1112,7 +1112,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.MediaRouter2.ScanRequest.Builder"/></returns>
                 public Android.Media.MediaRouter2.ScanRequest.Builder SetScreenOffScan(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.MediaRouter2.ScanRequest.Builder>("setScreenOffScan", "(Z)Landroid/media/MediaRouter2$ScanRequest$Builder;", arg0);
+                    return IExecute<Android.Media.MediaRouter2.ScanRequest.Builder>("setScreenOffScan", arg0);
                 }
 
                 #endregion
