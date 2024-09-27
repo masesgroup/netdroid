@@ -145,7 +145,7 @@ namespace Java.Math
         /// <returns><see cref="int"/></returns>
         public int GetPrecision()
         {
-            return IExecute<int>("getPrecision");
+            return IExecuteWithSignature<int>("getPrecision", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/MathContext.html#getRoundingMode()"/>
@@ -153,7 +153,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public Java.Math.RoundingMode GetRoundingMode()
         {
-            return IExecute<Java.Math.RoundingMode>("getRoundingMode");
+            return IExecuteWithSignature<Java.Math.RoundingMode>("getRoundingMode", "()Ljava/math/RoundingMode;");
         }
 
         #endregion
