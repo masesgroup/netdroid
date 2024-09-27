@@ -2811,7 +2811,7 @@ namespace Android.Media
                 /// <returns><see cref="bool"/></returns>
                 public bool Covers(Android.Media.MediaCodecInfo.VideoCapabilities.PerformancePoint arg0)
                 {
-                    return IExecuteWithSignature<bool>("covers", "(Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;)Z", arg0);
+                    return IExecute<bool>("covers", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.PerformancePoint.html#covers(android.media.MediaFormat)"/>
@@ -2820,7 +2820,7 @@ namespace Android.Media
                 /// <returns><see cref="bool"/></returns>
                 public bool Covers(Android.Media.MediaFormat arg0)
                 {
-                    return IExecuteWithSignature<bool>("covers", "(Landroid/media/MediaFormat;)Z", arg0);
+                    return IExecute<bool>("covers", arg0);
                 }
 
                 #endregion

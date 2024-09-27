@@ -251,7 +251,7 @@ namespace Android.Hardware
         /// <param name="arg1"><see cref="int"/></param>
         public override void OnAccuracyChanged(Android.Hardware.Sensor arg0, int arg1)
         {
-            IExecute("onAccuracyChanged", arg0, arg1);
+            IExecuteWithSignature("onAccuracyChanged", "(Landroid/hardware/Sensor;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onSensorChanged(android.hardware.SensorEvent)"/>
@@ -259,7 +259,7 @@ namespace Android.Hardware
         /// <param name="arg0"><see cref="Android.Hardware.SensorEvent"/></param>
         public override void OnSensorChanged(Android.Hardware.SensorEvent arg0)
         {
-            IExecute("onSensorChanged", arg0);
+            IExecuteWithSignature("onSensorChanged", "(Landroid/hardware/SensorEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener2.html#onFlushCompleted(android.hardware.Sensor)"/>

@@ -222,7 +222,7 @@ namespace Android.Sax
         /// </summary>
         public override void End()
         {
-            IExecute("end");
+            IExecuteWithSignature("end", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/sax/StartElementListener.html#start(org.xml.sax.Attributes)"/>
@@ -230,7 +230,7 @@ namespace Android.Sax
         /// <param name="arg0"><see cref="Org.Xml.Sax.Attributes"/></param>
         public override void Start(Org.Xml.Sax.Attributes arg0)
         {
-            IExecute("start", arg0);
+            IExecuteWithSignature("start", "(Lorg/xml/sax/Attributes;)V", arg0);
         }
 
         #endregion

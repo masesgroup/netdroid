@@ -301,6 +301,24 @@ namespace Android.Os
             #endregion
 
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener.html#EVENT_ERROR"/>
+            /// </summary>
+            public static int EVENT_ERROR { get { if (!_EVENT_ERRORReady) { _EVENT_ERRORContent = SGetField<int>(LocalBridgeClazz, "EVENT_ERROR"); _EVENT_ERRORReady = true; } return _EVENT_ERRORContent; } }
+            private static int _EVENT_ERRORContent = default;
+            private static bool _EVENT_ERRORReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener.html#EVENT_INPUT"/>
+            /// </summary>
+            public static int EVENT_INPUT { get { if (!_EVENT_INPUTReady) { _EVENT_INPUTContent = SGetField<int>(LocalBridgeClazz, "EVENT_INPUT"); _EVENT_INPUTReady = true; } return _EVENT_INPUTContent; } }
+            private static int _EVENT_INPUTContent = default;
+            private static bool _EVENT_INPUTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener.html#EVENT_OUTPUT"/>
+            /// </summary>
+            public static int EVENT_OUTPUT { get { if (!_EVENT_OUTPUTReady) { _EVENT_OUTPUTContent = SGetField<int>(LocalBridgeClazz, "EVENT_OUTPUT"); _EVENT_OUTPUTReady = true; } return _EVENT_OUTPUTContent; } }
+            private static int _EVENT_OUTPUTContent = default;
+            private static bool _EVENT_OUTPUTReady = false; // this is used because in case of generics 
 
             #endregion
 

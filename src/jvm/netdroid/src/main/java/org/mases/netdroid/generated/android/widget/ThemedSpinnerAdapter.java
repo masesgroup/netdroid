@@ -138,11 +138,11 @@ public final class ThemedSpinnerAdapter implements org.mases.jcobridge.IJCListen
     //@Override
     public java.lang.CharSequence[] getAutofillOptions() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("getAutofillOptions", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = android.widget.ThemedSpinnerAdapter.super.getAutofillOptions(); else retVal = eventDataExchange.getReturnData(); return (java.lang.CharSequence[])retVal;
+        raiseEvent("getAutofillOptions", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = android.widget.Adapter.super.getAutofillOptions(); else retVal = eventDataExchange.getReturnData(); return (java.lang.CharSequence[])retVal;
     }
     //@Override
     public java.lang.CharSequence[] getAutofillOptionsDefault() {
-        return android.widget.ThemedSpinnerAdapter.super.getAutofillOptions();
+        return android.widget.Adapter.super.getAutofillOptions();
     }
 
 }

@@ -592,7 +592,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public override Android.View.View GetView(int arg0, Android.View.View arg1, Android.View.ViewGroup arg2)
         {
-            return IExecute<Android.View.View>("getView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/>
@@ -600,7 +600,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public override int GetCount()
         {
-            return IExecute<int>("getCount");
+            return IExecuteWithSignature<int>("getCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)"/>
@@ -609,7 +609,7 @@ namespace Android.Widget
         /// <returns><see cref="object"/></returns>
         public override object GetItem(int arg0)
         {
-            return IExecute("getItem", arg0);
+            return IExecuteWithSignature("getItem", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)"/>
@@ -618,7 +618,7 @@ namespace Android.Widget
         /// <returns><see cref="long"/></returns>
         public override long GetItemId(int arg0)
         {
-            return IExecute<long>("getItemId", arg0);
+            return IExecuteWithSignature<long>("getItemId", "(I)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getDropDownView(int,android.view.View,android.view.ViewGroup)"/>

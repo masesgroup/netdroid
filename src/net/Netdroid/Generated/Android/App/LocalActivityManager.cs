@@ -112,6 +112,16 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.Activity>("getActivity", "(Ljava/lang/String;)Landroid/app/Activity;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getActivity(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Activity GetActivityDirect(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("getActivity", "(Ljava/lang/String;)Landroid/app/Activity;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getCurrentActivity()"/>
         /// </summary>
         /// <returns><see cref="Android.App.Activity"/></returns>
@@ -119,6 +129,15 @@ namespace Android.App
         public Android.App.Activity GetCurrentActivity()
         {
             return IExecuteWithSignature<Android.App.Activity>("getCurrentActivity", "()Landroid/app/Activity;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getCurrentActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Activity GetCurrentActivityDirect()
+        {
+            return IExecuteWithSignature<Android.App.ActivityDirect, Android.App.Activity>("getCurrentActivity", "()Landroid/app/Activity;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#saveInstanceState()"/>

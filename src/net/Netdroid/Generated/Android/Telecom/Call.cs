@@ -748,7 +748,7 @@ namespace Android.Telecom
             /// <param name="arg0"><see cref="Android.Telecom.Call"/></param>
             public void OnCallDestroyed(Android.Telecom.Call arg0)
             {
-                IExecute("onCallDestroyed", arg0);
+                IExecuteWithSignature("onCallDestroyed", "(Landroid/telecom/Call;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onCannedTextResponsesLoaded(android.telecom.Call,java.util.List)"/>
@@ -757,7 +757,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             public void OnCannedTextResponsesLoaded(Android.Telecom.Call arg0, Java.Util.List<Java.Lang.String> arg1)
             {
-                IExecute("onCannedTextResponsesLoaded", arg0, arg1);
+                IExecuteWithSignature("onCannedTextResponsesLoaded", "(Landroid/telecom/Call;Ljava/util/List;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onChildrenChanged(android.telecom.Call,java.util.List)"/>
@@ -766,7 +766,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             public void OnChildrenChanged(Android.Telecom.Call arg0, Java.Util.List<Android.Telecom.Call> arg1)
             {
-                IExecute("onChildrenChanged", arg0, arg1);
+                IExecuteWithSignature("onChildrenChanged", "(Landroid/telecom/Call;Ljava/util/List;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onConferenceableCallsChanged(android.telecom.Call,java.util.List)"/>
@@ -775,7 +775,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             public void OnConferenceableCallsChanged(Android.Telecom.Call arg0, Java.Util.List<Android.Telecom.Call> arg1)
             {
-                IExecute("onConferenceableCallsChanged", arg0, arg1);
+                IExecuteWithSignature("onConferenceableCallsChanged", "(Landroid/telecom/Call;Ljava/util/List;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onConnectionEvent(android.telecom.Call,java.lang.String,android.os.Bundle)"/>
@@ -785,7 +785,7 @@ namespace Android.Telecom
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
             public void OnConnectionEvent(Android.Telecom.Call arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onConnectionEvent", arg0, arg1, arg2);
+                IExecuteWithSignature("onConnectionEvent", "(Landroid/telecom/Call;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onDetailsChanged(android.telecom.Call,android.telecom.Call.Details)"/>
@@ -794,7 +794,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Telecom.Call.Details"/></param>
             public void OnDetailsChanged(Android.Telecom.Call arg0, Android.Telecom.Call.Details arg1)
             {
-                IExecute("onDetailsChanged", arg0, arg1);
+                IExecuteWithSignature("onDetailsChanged", "(Landroid/telecom/Call;Landroid/telecom/Call$Details;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onHandoverComplete(android.telecom.Call)"/>
@@ -802,7 +802,7 @@ namespace Android.Telecom
             /// <param name="arg0"><see cref="Android.Telecom.Call"/></param>
             public void OnHandoverComplete(Android.Telecom.Call arg0)
             {
-                IExecute("onHandoverComplete", arg0);
+                IExecuteWithSignature("onHandoverComplete", "(Landroid/telecom/Call;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onHandoverFailed(android.telecom.Call,int)"/>
@@ -811,7 +811,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void OnHandoverFailed(Android.Telecom.Call arg0, int arg1)
             {
-                IExecute("onHandoverFailed", arg0, arg1);
+                IExecuteWithSignature("onHandoverFailed", "(Landroid/telecom/Call;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onParentChanged(android.telecom.Call,android.telecom.Call)"/>
@@ -820,7 +820,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Telecom.Call"/></param>
             public void OnParentChanged(Android.Telecom.Call arg0, Android.Telecom.Call arg1)
             {
-                IExecute("onParentChanged", arg0, arg1);
+                IExecuteWithSignature("onParentChanged", "(Landroid/telecom/Call;Landroid/telecom/Call;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onPostDialWait(android.telecom.Call,java.lang.String)"/>
@@ -829,7 +829,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void OnPostDialWait(Android.Telecom.Call arg0, Java.Lang.String arg1)
             {
-                IExecute("onPostDialWait", arg0, arg1);
+                IExecuteWithSignature("onPostDialWait", "(Landroid/telecom/Call;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onRttInitiationFailure(android.telecom.Call,int)"/>
@@ -838,7 +838,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void OnRttInitiationFailure(Android.Telecom.Call arg0, int arg1)
             {
-                IExecute("onRttInitiationFailure", arg0, arg1);
+                IExecuteWithSignature("onRttInitiationFailure", "(Landroid/telecom/Call;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onRttModeChanged(android.telecom.Call,int)"/>
@@ -847,7 +847,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void OnRttModeChanged(Android.Telecom.Call arg0, int arg1)
             {
-                IExecute("onRttModeChanged", arg0, arg1);
+                IExecuteWithSignature("onRttModeChanged", "(Landroid/telecom/Call;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onRttRequest(android.telecom.Call,int)"/>
@@ -856,7 +856,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void OnRttRequest(Android.Telecom.Call arg0, int arg1)
             {
-                IExecute("onRttRequest", arg0, arg1);
+                IExecuteWithSignature("onRttRequest", "(Landroid/telecom/Call;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onRttStatusChanged(android.telecom.Call,boolean,android.telecom.Call.RttCall)"/>
@@ -866,7 +866,7 @@ namespace Android.Telecom
             /// <param name="arg2"><see cref="Android.Telecom.Call.RttCall"/></param>
             public void OnRttStatusChanged(Android.Telecom.Call arg0, bool arg1, Android.Telecom.Call.RttCall arg2)
             {
-                IExecute("onRttStatusChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onRttStatusChanged", "(Landroid/telecom/Call;ZLandroid/telecom/Call$RttCall;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onStateChanged(android.telecom.Call,int)"/>
@@ -875,7 +875,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void OnStateChanged(Android.Telecom.Call arg0, int arg1)
             {
-                IExecute("onStateChanged", arg0, arg1);
+                IExecuteWithSignature("onStateChanged", "(Landroid/telecom/Call;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Callback.html#onVideoCallChanged(android.telecom.Call,android.telecom.InCallService.VideoCall)"/>
@@ -884,7 +884,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Telecom.InCallService.VideoCall"/></param>
             public void OnVideoCallChanged(Android.Telecom.Call arg0, Android.Telecom.InCallService.VideoCall arg1)
             {
-                IExecute("onVideoCallChanged", arg0, arg1);
+                IExecuteWithSignature("onVideoCallChanged", "(Landroid/telecom/Call;Landroid/telecom/InCallService$VideoCall;)V", arg0, arg1);
             }
 
             #endregion
@@ -1161,7 +1161,7 @@ namespace Android.Telecom
             /// <returns><see cref="bool"/></returns>
             public static bool Can(int arg0, int arg1)
             {
-                return SExecute<bool>(LocalBridgeClazz, "can", arg0, arg1);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "can", "(II)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#hasProperty(int,int)"/>
@@ -1171,7 +1171,7 @@ namespace Android.Telecom
             /// <returns><see cref="bool"/></returns>
             public static bool HasProperty(int arg0, int arg1)
             {
-                return SExecute<bool>(LocalBridgeClazz, "hasProperty", arg0, arg1);
+                return SExecuteWithSignature<bool>(LocalBridgeClazz, "hasProperty", "(II)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#capabilitiesToString(int)"/>
@@ -1180,7 +1180,7 @@ namespace Android.Telecom
             /// <returns><see cref="Java.Lang.String"/></returns>
             public static Java.Lang.String CapabilitiesToString(int arg0)
             {
-                return SExecute<Java.Lang.String>(LocalBridgeClazz, "capabilitiesToString", arg0);
+                return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "capabilitiesToString", "(I)Ljava/lang/String;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#propertiesToString(int)"/>
@@ -1189,7 +1189,7 @@ namespace Android.Telecom
             /// <returns><see cref="Java.Lang.String"/></returns>
             public static Java.Lang.String PropertiesToString(int arg0)
             {
-                return SExecute<Java.Lang.String>(LocalBridgeClazz, "propertiesToString", arg0);
+                return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "propertiesToString", "(I)Ljava/lang/String;", arg0);
             }
 
             #endregion
@@ -1201,7 +1201,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Net.Uri"/></returns>
             public Android.Net.Uri GetContactPhotoUri()
             {
-                return IExecute<Android.Net.Uri>("getContactPhotoUri");
+                return IExecuteWithSignature<Android.Net.Uri>("getContactPhotoUri", "()Landroid/net/Uri;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandle()"/>
@@ -1209,7 +1209,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Net.Uri"/></returns>
             public Android.Net.Uri GetHandle()
             {
-                return IExecute<Android.Net.Uri>("getHandle");
+                return IExecuteWithSignature<Android.Net.Uri>("getHandle", "()Landroid/net/Uri;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getExtras()"/>
@@ -1217,7 +1217,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Os.Bundle"/></returns>
             public Android.Os.Bundle GetExtras()
             {
-                return IExecute<Android.Os.Bundle>("getExtras");
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getIntentExtras()"/>
@@ -1225,7 +1225,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Os.Bundle"/></returns>
             public Android.Os.Bundle GetIntentExtras()
             {
-                return IExecute<Android.Os.Bundle>("getIntentExtras");
+                return IExecuteWithSignature<Android.Os.Bundle>("getIntentExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getDisconnectCause()"/>
@@ -1233,7 +1233,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Telecom.DisconnectCause"/></returns>
             public Android.Telecom.DisconnectCause GetDisconnectCause()
             {
-                return IExecute<Android.Telecom.DisconnectCause>("getDisconnectCause");
+                return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getGatewayInfo()"/>
@@ -1241,7 +1241,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Telecom.GatewayInfo"/></returns>
             public Android.Telecom.GatewayInfo GetGatewayInfo()
             {
-                return IExecute<Android.Telecom.GatewayInfo>("getGatewayInfo");
+                return IExecuteWithSignature<Android.Telecom.GatewayInfo>("getGatewayInfo", "()Landroid/telecom/GatewayInfo;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getAccountHandle()"/>
@@ -1249,7 +1249,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
             public Android.Telecom.PhoneAccountHandle GetAccountHandle()
             {
-                return IExecute<Android.Telecom.PhoneAccountHandle>("getAccountHandle");
+                return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getStatusHints()"/>
@@ -1257,7 +1257,7 @@ namespace Android.Telecom
             /// <returns><see cref="Android.Telecom.StatusHints"/></returns>
             public Android.Telecom.StatusHints GetStatusHints()
             {
-                return IExecute<Android.Telecom.StatusHints>("getStatusHints");
+                return IExecuteWithSignature<Android.Telecom.StatusHints>("getStatusHints", "()Landroid/telecom/StatusHints;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#can(int)"/>
@@ -1266,7 +1266,7 @@ namespace Android.Telecom
             /// <returns><see cref="bool"/></returns>
             public bool Can(int arg0)
             {
-                return IExecute<bool>("can", arg0);
+                return IExecuteWithSignature<bool>("can", "(I)Z", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#hasProperty(int)"/>
@@ -1275,7 +1275,7 @@ namespace Android.Telecom
             /// <returns><see cref="bool"/></returns>
             public bool HasProperty(int arg0)
             {
-                return IExecute<bool>("hasProperty", arg0);
+                return IExecuteWithSignature<bool>("hasProperty", "(I)Z", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getState()"/>
@@ -1283,7 +1283,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetState()
             {
-                return IExecute<int>("getState");
+                return IExecuteWithSignature<int>("getState", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getConnectTimeMillis()"/>
@@ -1291,7 +1291,7 @@ namespace Android.Telecom
             /// <returns><see cref="long"/></returns>
             public long GetConnectTimeMillis()
             {
-                return IExecute<long>("getConnectTimeMillis");
+                return IExecuteWithSignature<long>("getConnectTimeMillis", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallCapabilities()"/>
@@ -1299,7 +1299,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetCallCapabilities()
             {
-                return IExecute<int>("getCallCapabilities");
+                return IExecuteWithSignature<int>("getCallCapabilities", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallDirection()"/>
@@ -1307,7 +1307,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetCallDirection()
             {
-                return IExecute<int>("getCallDirection");
+                return IExecuteWithSignature<int>("getCallDirection", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayNamePresentation()"/>
@@ -1315,7 +1315,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetCallerDisplayNamePresentation()
             {
-                return IExecute<int>("getCallerDisplayNamePresentation");
+                return IExecuteWithSignature<int>("getCallerDisplayNamePresentation", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerNumberVerificationStatus()"/>
@@ -1323,7 +1323,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetCallerNumberVerificationStatus()
             {
-                return IExecute<int>("getCallerNumberVerificationStatus");
+                return IExecuteWithSignature<int>("getCallerNumberVerificationStatus", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallProperties()"/>
@@ -1331,7 +1331,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetCallProperties()
             {
-                return IExecute<int>("getCallProperties");
+                return IExecuteWithSignature<int>("getCallProperties", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandlePresentation()"/>
@@ -1339,7 +1339,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetHandlePresentation()
             {
-                return IExecute<int>("getHandlePresentation");
+                return IExecuteWithSignature<int>("getHandlePresentation", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getVideoState()"/>
@@ -1347,7 +1347,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetVideoState()
             {
-                return IExecute<int>("getVideoState");
+                return IExecuteWithSignature<int>("getVideoState", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayName()"/>
@@ -1355,7 +1355,7 @@ namespace Android.Telecom
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetCallerDisplayName()
             {
-                return IExecute<Java.Lang.String>("getCallerDisplayName");
+                return IExecuteWithSignature<Java.Lang.String>("getCallerDisplayName", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getContactDisplayName()"/>
@@ -1363,7 +1363,7 @@ namespace Android.Telecom
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetContactDisplayName()
             {
-                return IExecute<Java.Lang.String>("getContactDisplayName");
+                return IExecuteWithSignature<Java.Lang.String>("getContactDisplayName", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getId()"/>
@@ -1371,7 +1371,7 @@ namespace Android.Telecom
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetId()
             {
-                return IExecute<Java.Lang.String>("getId");
+                return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCreationTimeMillis()"/>
@@ -1379,7 +1379,7 @@ namespace Android.Telecom
             /// <returns><see cref="long"/></returns>
             public long GetCreationTimeMillis()
             {
-                return IExecute<long>("getCreationTimeMillis");
+                return IExecuteWithSignature<long>("getCreationTimeMillis", "()J");
             }
 
             #endregion
@@ -1436,7 +1436,7 @@ namespace Android.Telecom
             /// <returns><see cref="int"/></returns>
             public int GetRttAudioMode()
             {
-                return IExecute<int>("getRttAudioMode");
+                return IExecuteWithSignature<int>("getRttAudioMode", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.RttCall.html#read()"/>
@@ -1444,7 +1444,7 @@ namespace Android.Telecom
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Read()
             {
-                return IExecute<Java.Lang.String>("read");
+                return IExecuteWithSignature<Java.Lang.String>("read", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.RttCall.html#readImmediately()"/>
@@ -1453,7 +1453,7 @@ namespace Android.Telecom
             /// <exception cref="Java.Io.IOException"/>
             public Java.Lang.String ReadImmediately()
             {
-                return IExecute<Java.Lang.String>("readImmediately");
+                return IExecuteWithSignature<Java.Lang.String>("readImmediately", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.RttCall.html#setRttMode(int)"/>
@@ -1461,7 +1461,7 @@ namespace Android.Telecom
             /// <param name="arg0"><see cref="int"/></param>
             public void SetRttMode(int arg0)
             {
-                IExecute("setRttMode", arg0);
+                IExecuteWithSignature("setRttMode", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.RttCall.html#write(java.lang.String)"/>
@@ -1470,7 +1470,7 @@ namespace Android.Telecom
             /// <exception cref="Java.Io.IOException"/>
             public void Write(Java.Lang.String arg0)
             {
-                IExecute("write", arg0);
+                IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);
             }
 
             #endregion

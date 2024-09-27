@@ -831,7 +831,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig>("build", "()Landroid/app/appsearch/AppSearchSchema$BooleanPropertyConfig;");
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BooleanPropertyConfig.Builder.html#setCardinality(int)"/>
@@ -840,7 +840,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder SetCardinality(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder>("setCardinality", "(I)Landroid/app/appsearch/AppSearchSchema$BooleanPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder>("setCardinality", arg0);
                 }
 
                 #endregion
@@ -983,7 +983,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig>("build", "()Landroid/app/appsearch/AppSearchSchema$BytesPropertyConfig;");
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BytesPropertyConfig.Builder.html#setCardinality(int)"/>
@@ -992,7 +992,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig.Builder SetCardinality(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig.Builder>("setCardinality", "(I)Landroid/app/appsearch/AppSearchSchema$BytesPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.BytesPropertyConfig.Builder>("setCardinality", arg0);
                 }
 
                 #endregion
@@ -1095,7 +1095,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig>("build", "()Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig;");
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedProperties(java.lang.String[])"/>
@@ -1104,7 +1104,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedProperties(params Java.Lang.String[] arg0)
                 {
-                    if (arg0.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", "([Ljava/lang/String;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;"); else return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", "([Ljava/lang/String;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                    if (arg0.Length == 0) return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties"); else return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedProperties(java.util.Collection)"/>
@@ -1113,7 +1113,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedProperties(Java.Util.Collection<Java.Lang.String> arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", "(Ljava/util/Collection;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedPropertyPaths(android.app.appsearch.PropertyPath[])"/>
@@ -1122,7 +1122,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedPropertyPaths(params Android.App.Appsearch.PropertyPath[] arg0)
                 {
-                    if (arg0.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", "([Landroid/app/appsearch/PropertyPath;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;"); else return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", "([Landroid/app/appsearch/PropertyPath;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                    if (arg0.Length == 0) return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths"); else return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedPropertyPaths(java.util.Collection)"/>
@@ -1131,7 +1131,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedPropertyPaths(Java.Util.Collection<Android.App.Appsearch.PropertyPath> arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", "(Ljava/util/Collection;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#setCardinality(int)"/>
@@ -1140,7 +1140,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder SetCardinality(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("setCardinality", "(I)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("setCardinality", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#setShouldIndexNestedProperties(boolean)"/>
@@ -1149,7 +1149,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder SetShouldIndexNestedProperties(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("setShouldIndexNestedProperties", "(Z)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("setShouldIndexNestedProperties", arg0);
                 }
 
                 #endregion
@@ -1227,7 +1227,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig>("build", "()Landroid/app/appsearch/AppSearchSchema$DoublePropertyConfig;");
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DoublePropertyConfig.Builder.html#setCardinality(int)"/>
@@ -1236,7 +1236,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder SetCardinality(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder>("setCardinality", "(I)Landroid/app/appsearch/AppSearchSchema$DoublePropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder>("setCardinality", arg0);
                 }
 
                 #endregion
@@ -1334,7 +1334,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.LongPropertyConfig"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.LongPropertyConfig Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig>("build", "()Landroid/app/appsearch/AppSearchSchema$LongPropertyConfig;");
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.Builder.html#setCardinality(int)"/>
@@ -1343,7 +1343,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder SetCardinality(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder>("setCardinality", "(I)Landroid/app/appsearch/AppSearchSchema$LongPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder>("setCardinality", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.Builder.html#setIndexingType(int)"/>
@@ -1352,7 +1352,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder SetIndexingType(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder>("setIndexingType", "(I)Landroid/app/appsearch/AppSearchSchema$LongPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder>("setIndexingType", arg0);
                 }
 
                 #endregion
@@ -1573,7 +1573,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.StringPropertyConfig"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.StringPropertyConfig Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig>("build", "()Landroid/app/appsearch/AppSearchSchema$StringPropertyConfig;");
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.Builder.html#setCardinality(int)"/>
@@ -1582,7 +1582,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder SetCardinality(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setCardinality", "(I)Landroid/app/appsearch/AppSearchSchema$StringPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setCardinality", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.Builder.html#setIndexingType(int)"/>
@@ -1591,7 +1591,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder SetIndexingType(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setIndexingType", "(I)Landroid/app/appsearch/AppSearchSchema$StringPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setIndexingType", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.Builder.html#setJoinableValueType(int)"/>
@@ -1600,7 +1600,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder SetJoinableValueType(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setJoinableValueType", "(I)Landroid/app/appsearch/AppSearchSchema$StringPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setJoinableValueType", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.Builder.html#setTokenizerType(int)"/>
@@ -1609,7 +1609,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder"/></returns>
                 public Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder SetTokenizerType(int arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setTokenizerType", "(I)Landroid/app/appsearch/AppSearchSchema$StringPropertyConfig$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.StringPropertyConfig.Builder>("setTokenizerType", arg0);
                 }
 
                 #endregion

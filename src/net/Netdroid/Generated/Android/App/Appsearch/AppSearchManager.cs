@@ -278,7 +278,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.AppSearchManager.SearchContext"/></returns>
                 public Android.App.Appsearch.AppSearchManager.SearchContext Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchManager.SearchContext>("build", "()Landroid/app/appsearch/AppSearchManager$SearchContext;");
+                    return IExecute<Android.App.Appsearch.AppSearchManager.SearchContext>("build");
                 }
 
                 #endregion

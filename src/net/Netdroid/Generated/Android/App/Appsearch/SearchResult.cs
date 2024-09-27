@@ -582,7 +582,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.SearchResult.MatchInfo"/></returns>
                 public Android.App.Appsearch.SearchResult.MatchInfo Build()
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchInfo>("build", "()Landroid/app/appsearch/SearchResult$MatchInfo;");
+                    return IExecute<Android.App.Appsearch.SearchResult.MatchInfo>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.Builder.html#setExactMatchRange(android.app.appsearch.SearchResult.MatchRange)"/>
@@ -591,7 +591,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.SearchResult.MatchInfo.Builder"/></returns>
                 public Android.App.Appsearch.SearchResult.MatchInfo.Builder SetExactMatchRange(Android.App.Appsearch.SearchResult.MatchRange arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchInfo.Builder>("setExactMatchRange", "(Landroid/app/appsearch/SearchResult$MatchRange;)Landroid/app/appsearch/SearchResult$MatchInfo$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.SearchResult.MatchInfo.Builder>("setExactMatchRange", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.Builder.html#setSnippetRange(android.app.appsearch.SearchResult.MatchRange)"/>
@@ -600,7 +600,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.SearchResult.MatchInfo.Builder"/></returns>
                 public Android.App.Appsearch.SearchResult.MatchInfo.Builder SetSnippetRange(Android.App.Appsearch.SearchResult.MatchRange arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchInfo.Builder>("setSnippetRange", "(Landroid/app/appsearch/SearchResult$MatchRange;)Landroid/app/appsearch/SearchResult$MatchInfo$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.SearchResult.MatchInfo.Builder>("setSnippetRange", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.Builder.html#setSubmatchRange(android.app.appsearch.SearchResult.MatchRange)"/>
@@ -609,7 +609,7 @@ namespace Android.App.Appsearch
                 /// <returns><see cref="Android.App.Appsearch.SearchResult.MatchInfo.Builder"/></returns>
                 public Android.App.Appsearch.SearchResult.MatchInfo.Builder SetSubmatchRange(Android.App.Appsearch.SearchResult.MatchRange arg0)
                 {
-                    return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchInfo.Builder>("setSubmatchRange", "(Landroid/app/appsearch/SearchResult$MatchRange;)Landroid/app/appsearch/SearchResult$MatchInfo$Builder;", arg0);
+                    return IExecute<Android.App.Appsearch.SearchResult.MatchInfo.Builder>("setSubmatchRange", arg0);
                 }
 
                 #endregion

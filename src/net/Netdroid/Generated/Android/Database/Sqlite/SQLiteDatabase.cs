@@ -1280,7 +1280,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams Build()
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams>("build", "()Landroid/database/sqlite/SQLiteDatabase$OpenParams;");
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#addOpenFlags(int)"/>
@@ -1289,7 +1289,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder AddOpenFlags(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("addOpenFlags", "(I)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("addOpenFlags", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#removeOpenFlags(int)"/>
@@ -1298,7 +1298,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder RemoveOpenFlags(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("removeOpenFlags", "(I)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("removeOpenFlags", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory)"/>
@@ -1307,7 +1307,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetCursorFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setCursorFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setCursorFactory", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setErrorHandler(android.database.DatabaseErrorHandler)"/>
@@ -1316,7 +1316,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetErrorHandler(Android.Database.DatabaseErrorHandler arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setErrorHandler", "(Landroid/database/DatabaseErrorHandler;)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setErrorHandler", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setIdleConnectionTimeout(long)"/>
@@ -1326,7 +1326,7 @@ namespace Android.Database.Sqlite
                 [global::System.Obsolete()]
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetIdleConnectionTimeout(long arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setIdleConnectionTimeout", "(J)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setIdleConnectionTimeout", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setJournalMode(java.lang.String)"/>
@@ -1335,7 +1335,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetJournalMode(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setJournalMode", "(Ljava/lang/String;)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setJournalMode", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setLookasideConfig(int,int)"/>
@@ -1345,7 +1345,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetLookasideConfig(int arg0, int arg1)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setLookasideConfig", "(II)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0, arg1);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setLookasideConfig", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setOpenFlags(int)"/>
@@ -1354,7 +1354,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetOpenFlags(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setOpenFlags", "(I)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setOpenFlags", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setSynchronousMode(java.lang.String)"/>
@@ -1363,7 +1363,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetSynchronousMode(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setSynchronousMode", "(Ljava/lang/String;)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
+                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setSynchronousMode", arg0);
                 }
 
                 #endregion

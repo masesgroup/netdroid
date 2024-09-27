@@ -565,7 +565,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.RouteListingPreference.Item"/></returns>
                 public Android.Media.RouteListingPreference.Item Build()
                 {
-                    return IExecuteWithSignature<Android.Media.RouteListingPreference.Item>("build", "()Landroid/media/RouteListingPreference$Item;");
+                    return IExecute<Android.Media.RouteListingPreference.Item>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.Builder.html#setCustomSubtextMessage(java.lang.CharSequence)"/>
@@ -574,7 +574,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.RouteListingPreference.Item.Builder"/></returns>
                 public Android.Media.RouteListingPreference.Item.Builder SetCustomSubtextMessage(Java.Lang.CharSequence arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.RouteListingPreference.Item.Builder>("setCustomSubtextMessage", "(Ljava/lang/CharSequence;)Landroid/media/RouteListingPreference$Item$Builder;", arg0);
+                    return IExecute<Android.Media.RouteListingPreference.Item.Builder>("setCustomSubtextMessage", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.Builder.html#setFlags(int)"/>
@@ -583,7 +583,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.RouteListingPreference.Item.Builder"/></returns>
                 public Android.Media.RouteListingPreference.Item.Builder SetFlags(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.RouteListingPreference.Item.Builder>("setFlags", "(I)Landroid/media/RouteListingPreference$Item$Builder;", arg0);
+                    return IExecute<Android.Media.RouteListingPreference.Item.Builder>("setFlags", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.Builder.html#setSelectionBehavior(int)"/>
@@ -592,7 +592,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.RouteListingPreference.Item.Builder"/></returns>
                 public Android.Media.RouteListingPreference.Item.Builder SetSelectionBehavior(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.RouteListingPreference.Item.Builder>("setSelectionBehavior", "(I)Landroid/media/RouteListingPreference$Item$Builder;", arg0);
+                    return IExecute<Android.Media.RouteListingPreference.Item.Builder>("setSelectionBehavior", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.Builder.html#setSubText(int)"/>
@@ -601,7 +601,7 @@ namespace Android.Media
                 /// <returns><see cref="Android.Media.RouteListingPreference.Item.Builder"/></returns>
                 public Android.Media.RouteListingPreference.Item.Builder SetSubText(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.RouteListingPreference.Item.Builder>("setSubText", "(I)Landroid/media/RouteListingPreference$Item$Builder;", arg0);
+                    return IExecute<Android.Media.RouteListingPreference.Item.Builder>("setSubText", arg0);
                 }
 
                 #endregion

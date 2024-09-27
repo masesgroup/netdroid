@@ -782,7 +782,7 @@ namespace Android.Media.Session
                 /// <returns><see cref="Android.Media.Session.PlaybackState.CustomAction"/></returns>
                 public Android.Media.Session.PlaybackState.CustomAction Build()
                 {
-                    return IExecuteWithSignature<Android.Media.Session.PlaybackState.CustomAction>("build", "()Landroid/media/session/PlaybackState$CustomAction;");
+                    return IExecute<Android.Media.Session.PlaybackState.CustomAction>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.Builder.html#setExtras(android.os.Bundle)"/>
@@ -791,7 +791,7 @@ namespace Android.Media.Session
                 /// <returns><see cref="Android.Media.Session.PlaybackState.CustomAction.Builder"/></returns>
                 public Android.Media.Session.PlaybackState.CustomAction.Builder SetExtras(Android.Os.Bundle arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Session.PlaybackState.CustomAction.Builder>("setExtras", "(Landroid/os/Bundle;)Landroid/media/session/PlaybackState$CustomAction$Builder;", arg0);
+                    return IExecute<Android.Media.Session.PlaybackState.CustomAction.Builder>("setExtras", arg0);
                 }
 
                 #endregion

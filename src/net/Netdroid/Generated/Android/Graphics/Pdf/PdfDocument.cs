@@ -409,7 +409,7 @@ namespace Android.Graphics.Pdf
                 /// <returns><see cref="Android.Graphics.Pdf.PdfDocument.PageInfo"/></returns>
                 public Android.Graphics.Pdf.PdfDocument.PageInfo Create()
                 {
-                    return IExecuteWithSignature<Android.Graphics.Pdf.PdfDocument.PageInfo>("create", "()Landroid/graphics/pdf/PdfDocument$PageInfo;");
+                    return IExecute<Android.Graphics.Pdf.PdfDocument.PageInfo>("create");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.Builder.html#setContentRect(android.graphics.Rect)"/>
@@ -418,7 +418,7 @@ namespace Android.Graphics.Pdf
                 /// <returns><see cref="Android.Graphics.Pdf.PdfDocument.PageInfo.Builder"/></returns>
                 public Android.Graphics.Pdf.PdfDocument.PageInfo.Builder SetContentRect(Android.Graphics.Rect arg0)
                 {
-                    return IExecuteWithSignature<Android.Graphics.Pdf.PdfDocument.PageInfo.Builder>("setContentRect", "(Landroid/graphics/Rect;)Landroid/graphics/pdf/PdfDocument$PageInfo$Builder;", arg0);
+                    return IExecute<Android.Graphics.Pdf.PdfDocument.PageInfo.Builder>("setContentRect", arg0);
                 }
 
                 #endregion

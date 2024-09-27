@@ -1568,7 +1568,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config Build()
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config>("build", "()Landroid/media/audiofx/DynamicsProcessing$Config;");
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setAllChannelsTo(android.media.audiofx.DynamicsProcessing.Channel)"/>
@@ -1577,7 +1577,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Channel arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setAllChannelsTo", "(Landroid/media/audiofx/DynamicsProcessing$Channel;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setAllChannelsTo", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setChannelTo(int,android.media.audiofx.DynamicsProcessing.Channel)"/>
@@ -1587,7 +1587,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetChannelTo(int arg0, Android.Media.Audiofx.DynamicsProcessing.Channel arg1)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setChannelTo", "(ILandroid/media/audiofx/DynamicsProcessing$Channel;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setChannelTo", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setInputGainAllChannelsTo(float)"/>
@@ -1596,7 +1596,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetInputGainAllChannelsTo(float arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setInputGainAllChannelsTo", "(F)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setInputGainAllChannelsTo", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setInputGainByChannelIndex(int,float)"/>
@@ -1606,7 +1606,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetInputGainByChannelIndex(int arg0, float arg1)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setInputGainByChannelIndex", "(IF)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setInputGainByChannelIndex", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setLimiterAllChannelsTo(android.media.audiofx.DynamicsProcessing.Limiter)"/>
@@ -1615,7 +1615,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetLimiterAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Limiter arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setLimiterAllChannelsTo", "(Landroid/media/audiofx/DynamicsProcessing$Limiter;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setLimiterAllChannelsTo", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setLimiterByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Limiter)"/>
@@ -1625,7 +1625,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetLimiterByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Limiter arg1)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setLimiterByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Limiter;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setLimiterByChannelIndex", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setMbcAllChannelsTo(android.media.audiofx.DynamicsProcessing.Mbc)"/>
@@ -1634,7 +1634,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetMbcAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Mbc arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setMbcAllChannelsTo", "(Landroid/media/audiofx/DynamicsProcessing$Mbc;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setMbcAllChannelsTo", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setMbcByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Mbc)"/>
@@ -1644,7 +1644,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetMbcByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Mbc arg1)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setMbcByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Mbc;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setMbcByChannelIndex", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPostEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1653,7 +1653,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetPostEqAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Eq arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPostEqAllChannelsTo", "(Landroid/media/audiofx/DynamicsProcessing$Eq;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPostEqAllChannelsTo", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPostEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1663,7 +1663,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetPostEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPostEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPostEqByChannelIndex", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPreEqAllChannelsTo(android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1672,7 +1672,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetPreEqAllChannelsTo(Android.Media.Audiofx.DynamicsProcessing.Eq arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreEqAllChannelsTo", "(Landroid/media/audiofx/DynamicsProcessing$Eq;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreEqAllChannelsTo", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPreEqByChannelIndex(int,android.media.audiofx.DynamicsProcessing.Eq)"/>
@@ -1682,7 +1682,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetPreEqByChannelIndex(int arg0, Android.Media.Audiofx.DynamicsProcessing.Eq arg1)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreEqByChannelIndex", "(ILandroid/media/audiofx/DynamicsProcessing$Eq;)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0, arg1);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreEqByChannelIndex", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/audiofx/DynamicsProcessing.Config.Builder.html#setPreferredFrameDuration(float)"/>
@@ -1691,7 +1691,7 @@ namespace Android.Media.Audiofx
                 /// <returns><see cref="Android.Media.Audiofx.DynamicsProcessing.Config.Builder"/></returns>
                 public Android.Media.Audiofx.DynamicsProcessing.Config.Builder SetPreferredFrameDuration(float arg0)
                 {
-                    return IExecuteWithSignature<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreferredFrameDuration", "(F)Landroid/media/audiofx/DynamicsProcessing$Config$Builder;", arg0);
+                    return IExecute<Android.Media.Audiofx.DynamicsProcessing.Config.Builder>("setPreferredFrameDuration", arg0);
                 }
 
                 #endregion

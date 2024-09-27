@@ -815,7 +815,7 @@ namespace Android.Telecom
                 /// <param name="arg1"><see cref="long"/></param>
                 public void OnCallDataUsageChanged(Android.Telecom.RemoteConnection.VideoProvider arg0, long arg1)
                 {
-                    IExecuteWithSignature("onCallDataUsageChanged", "(Landroid/telecom/RemoteConnection$VideoProvider;J)V", arg0, arg1);
+                    IExecute("onCallDataUsageChanged", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.VideoProvider.Callback.html#onCallSessionEvent(android.telecom.RemoteConnection.VideoProvider,int)"/>
@@ -824,7 +824,7 @@ namespace Android.Telecom
                 /// <param name="arg1"><see cref="int"/></param>
                 public void OnCallSessionEvent(Android.Telecom.RemoteConnection.VideoProvider arg0, int arg1)
                 {
-                    IExecuteWithSignature("onCallSessionEvent", "(Landroid/telecom/RemoteConnection$VideoProvider;I)V", arg0, arg1);
+                    IExecute("onCallSessionEvent", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.VideoProvider.Callback.html#onCameraCapabilitiesChanged(android.telecom.RemoteConnection.VideoProvider,android.telecom.VideoProfile.CameraCapabilities)"/>
@@ -833,7 +833,7 @@ namespace Android.Telecom
                 /// <param name="arg1"><see cref="Android.Telecom.VideoProfile.CameraCapabilities"/></param>
                 public void OnCameraCapabilitiesChanged(Android.Telecom.RemoteConnection.VideoProvider arg0, Android.Telecom.VideoProfile.CameraCapabilities arg1)
                 {
-                    IExecuteWithSignature("onCameraCapabilitiesChanged", "(Landroid/telecom/RemoteConnection$VideoProvider;Landroid/telecom/VideoProfile$CameraCapabilities;)V", arg0, arg1);
+                    IExecute("onCameraCapabilitiesChanged", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.VideoProvider.Callback.html#onPeerDimensionsChanged(android.telecom.RemoteConnection.VideoProvider,int,int)"/>
@@ -843,7 +843,7 @@ namespace Android.Telecom
                 /// <param name="arg2"><see cref="int"/></param>
                 public void OnPeerDimensionsChanged(Android.Telecom.RemoteConnection.VideoProvider arg0, int arg1, int arg2)
                 {
-                    IExecuteWithSignature("onPeerDimensionsChanged", "(Landroid/telecom/RemoteConnection$VideoProvider;II)V", arg0, arg1, arg2);
+                    IExecute("onPeerDimensionsChanged", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.VideoProvider.Callback.html#onSessionModifyRequestReceived(android.telecom.RemoteConnection.VideoProvider,android.telecom.VideoProfile)"/>
@@ -852,7 +852,7 @@ namespace Android.Telecom
                 /// <param name="arg1"><see cref="Android.Telecom.VideoProfile"/></param>
                 public void OnSessionModifyRequestReceived(Android.Telecom.RemoteConnection.VideoProvider arg0, Android.Telecom.VideoProfile arg1)
                 {
-                    IExecuteWithSignature("onSessionModifyRequestReceived", "(Landroid/telecom/RemoteConnection$VideoProvider;Landroid/telecom/VideoProfile;)V", arg0, arg1);
+                    IExecute("onSessionModifyRequestReceived", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.VideoProvider.Callback.html#onSessionModifyResponseReceived(android.telecom.RemoteConnection.VideoProvider,int,android.telecom.VideoProfile,android.telecom.VideoProfile)"/>
@@ -863,7 +863,7 @@ namespace Android.Telecom
                 /// <param name="arg3"><see cref="Android.Telecom.VideoProfile"/></param>
                 public void OnSessionModifyResponseReceived(Android.Telecom.RemoteConnection.VideoProvider arg0, int arg1, Android.Telecom.VideoProfile arg2, Android.Telecom.VideoProfile arg3)
                 {
-                    IExecuteWithSignature("onSessionModifyResponseReceived", "(Landroid/telecom/RemoteConnection$VideoProvider;ILandroid/telecom/VideoProfile;Landroid/telecom/VideoProfile;)V", arg0, arg1, arg2, arg3);
+                    IExecute("onSessionModifyResponseReceived", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/RemoteConnection.VideoProvider.Callback.html#onVideoQualityChanged(android.telecom.RemoteConnection.VideoProvider,int)"/>
@@ -872,7 +872,7 @@ namespace Android.Telecom
                 /// <param name="arg1"><see cref="int"/></param>
                 public void OnVideoQualityChanged(Android.Telecom.RemoteConnection.VideoProvider arg0, int arg1)
                 {
-                    IExecuteWithSignature("onVideoQualityChanged", "(Landroid/telecom/RemoteConnection$VideoProvider;I)V", arg0, arg1);
+                    IExecute("onVideoQualityChanged", arg0, arg1);
                 }
 
                 #endregion

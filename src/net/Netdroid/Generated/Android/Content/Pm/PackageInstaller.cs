@@ -1152,7 +1152,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.InstallConstraints"/></returns>
                 public Android.Content.Pm.PackageInstaller.InstallConstraints Build()
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.InstallConstraints>("build", "()Landroid/content/pm/PackageInstaller$InstallConstraints;");
+                    return IExecute<Android.Content.Pm.PackageInstaller.InstallConstraints>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.Builder.html#setAppNotForegroundRequired()"/>
@@ -1160,7 +1160,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.InstallConstraints.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.InstallConstraints.Builder SetAppNotForegroundRequired()
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setAppNotForegroundRequired", "()Landroid/content/pm/PackageInstaller$InstallConstraints$Builder;");
+                    return IExecute<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setAppNotForegroundRequired");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.Builder.html#setAppNotInteractingRequired()"/>
@@ -1168,7 +1168,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.InstallConstraints.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.InstallConstraints.Builder SetAppNotInteractingRequired()
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setAppNotInteractingRequired", "()Landroid/content/pm/PackageInstaller$InstallConstraints$Builder;");
+                    return IExecute<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setAppNotInteractingRequired");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.Builder.html#setAppNotTopVisibleRequired()"/>
@@ -1176,7 +1176,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.InstallConstraints.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.InstallConstraints.Builder SetAppNotTopVisibleRequired()
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setAppNotTopVisibleRequired", "()Landroid/content/pm/PackageInstaller$InstallConstraints$Builder;");
+                    return IExecute<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setAppNotTopVisibleRequired");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.Builder.html#setDeviceIdleRequired()"/>
@@ -1184,7 +1184,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.InstallConstraints.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.InstallConstraints.Builder SetDeviceIdleRequired()
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setDeviceIdleRequired", "()Landroid/content/pm/PackageInstaller$InstallConstraints$Builder;");
+                    return IExecute<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setDeviceIdleRequired");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.InstallConstraints.Builder.html#setNotInCallRequired()"/>
@@ -1192,7 +1192,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.InstallConstraints.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.InstallConstraints.Builder SetNotInCallRequired()
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setNotInCallRequired", "()Landroid/content/pm/PackageInstaller$InstallConstraints$Builder;");
+                    return IExecute<Android.Content.Pm.PackageInstaller.InstallConstraints.Builder>("setNotInCallRequired");
                 }
 
                 #endregion
@@ -1379,7 +1379,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.PreapprovalDetails"/></returns>
                 public Android.Content.Pm.PackageInstaller.PreapprovalDetails Build()
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.PreapprovalDetails>("build", "()Landroid/content/pm/PackageInstaller$PreapprovalDetails;");
+                    return IExecute<Android.Content.Pm.PackageInstaller.PreapprovalDetails>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.Builder.html#setIcon(android.graphics.Bitmap)"/>
@@ -1388,7 +1388,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder SetIcon(Android.Graphics.Bitmap arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setIcon", "(Landroid/graphics/Bitmap;)Landroid/content/pm/PackageInstaller$PreapprovalDetails$Builder;", arg0);
+                    return IExecute<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setIcon", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.Builder.html#setLabel(java.lang.CharSequence)"/>
@@ -1397,7 +1397,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder SetLabel(Java.Lang.CharSequence arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setLabel", "(Ljava/lang/CharSequence;)Landroid/content/pm/PackageInstaller$PreapprovalDetails$Builder;", arg0);
+                    return IExecute<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setLabel", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.Builder.html#setLocale(android.icu.util.ULocale)"/>
@@ -1406,7 +1406,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder SetLocale(Android.Icu.Util.ULocale arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setLocale", "(Landroid/icu/util/ULocale;)Landroid/content/pm/PackageInstaller$PreapprovalDetails$Builder;", arg0);
+                    return IExecute<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setLocale", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.Builder.html#setPackageName(java.lang.String)"/>
@@ -1415,7 +1415,7 @@ namespace Android.Content.Pm
                 /// <returns><see cref="Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder"/></returns>
                 public Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder SetPackageName(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setPackageName", "(Ljava/lang/String;)Landroid/content/pm/PackageInstaller$PreapprovalDetails$Builder;", arg0);
+                    return IExecute<Android.Content.Pm.PackageInstaller.PreapprovalDetails.Builder>("setPackageName", arg0);
                 }
 
                 #endregion

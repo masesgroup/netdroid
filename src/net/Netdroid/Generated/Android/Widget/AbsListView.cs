@@ -1397,7 +1397,7 @@ namespace Android.Widget
             /// <returns><see cref="bool"/></returns>
             public override bool OnActionItemClicked(Android.View.ActionMode arg0, Android.View.MenuItem arg1)
             {
-                return IExecute<bool>("onActionItemClicked", arg0, arg1);
+                return IExecuteWithSignature<bool>("onActionItemClicked", "(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onCreateActionMode(android.view.ActionMode,android.view.Menu)"/>
@@ -1407,7 +1407,7 @@ namespace Android.Widget
             /// <returns><see cref="bool"/></returns>
             public override bool OnCreateActionMode(Android.View.ActionMode arg0, Android.View.Menu arg1)
             {
-                return IExecute<bool>("onCreateActionMode", arg0, arg1);
+                return IExecuteWithSignature<bool>("onCreateActionMode", "(Landroid/view/ActionMode;Landroid/view/Menu;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onPrepareActionMode(android.view.ActionMode,android.view.Menu)"/>
@@ -1417,7 +1417,7 @@ namespace Android.Widget
             /// <returns><see cref="bool"/></returns>
             public override bool OnPrepareActionMode(Android.View.ActionMode arg0, Android.View.Menu arg1)
             {
-                return IExecute<bool>("onPrepareActionMode", arg0, arg1);
+                return IExecuteWithSignature<bool>("onPrepareActionMode", "(Landroid/view/ActionMode;Landroid/view/Menu;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onDestroyActionMode(android.view.ActionMode)"/>
@@ -1425,7 +1425,7 @@ namespace Android.Widget
             /// <param name="arg0"><see cref="Android.View.ActionMode"/></param>
             public override void OnDestroyActionMode(Android.View.ActionMode arg0)
             {
-                IExecute("onDestroyActionMode", arg0);
+                IExecuteWithSignature("onDestroyActionMode", "(Landroid/view/ActionMode;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsListView.MultiChoiceModeListener.html#onItemCheckedStateChanged(android.view.ActionMode,int,long,boolean)"/>
@@ -1461,6 +1461,24 @@ namespace Android.Widget
             #endregion
 
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#SCROLL_STATE_FLING"/>
+            /// </summary>
+            public static int SCROLL_STATE_FLING { get { if (!_SCROLL_STATE_FLINGReady) { _SCROLL_STATE_FLINGContent = SGetField<int>(LocalBridgeClazz, "SCROLL_STATE_FLING"); _SCROLL_STATE_FLINGReady = true; } return _SCROLL_STATE_FLINGContent; } }
+            private static int _SCROLL_STATE_FLINGContent = default;
+            private static bool _SCROLL_STATE_FLINGReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#SCROLL_STATE_IDLE"/>
+            /// </summary>
+            public static int SCROLL_STATE_IDLE { get { if (!_SCROLL_STATE_IDLEReady) { _SCROLL_STATE_IDLEContent = SGetField<int>(LocalBridgeClazz, "SCROLL_STATE_IDLE"); _SCROLL_STATE_IDLEReady = true; } return _SCROLL_STATE_IDLEContent; } }
+            private static int _SCROLL_STATE_IDLEContent = default;
+            private static bool _SCROLL_STATE_IDLEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/AbsListView.OnScrollListener.html#SCROLL_STATE_TOUCH_SCROLL"/>
+            /// </summary>
+            public static int SCROLL_STATE_TOUCH_SCROLL { get { if (!_SCROLL_STATE_TOUCH_SCROLLReady) { _SCROLL_STATE_TOUCH_SCROLLContent = SGetField<int>(LocalBridgeClazz, "SCROLL_STATE_TOUCH_SCROLL"); _SCROLL_STATE_TOUCH_SCROLLReady = true; } return _SCROLL_STATE_TOUCH_SCROLLContent; } }
+            private static int _SCROLL_STATE_TOUCH_SCROLLContent = default;
+            private static bool _SCROLL_STATE_TOUCH_SCROLLReady = false; // this is used because in case of generics 
 
             #endregion
 

@@ -1637,7 +1637,7 @@ namespace Android.Media
                 /// <returns><see cref="int"/></returns>
                 public int GetEncryptBlocks()
                 {
-                    return IExecuteWithSignature<int>("getEncryptBlocks", "()I");
+                    return IExecute<int>("getEncryptBlocks");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#getSkipBlocks()"/>
@@ -1645,7 +1645,7 @@ namespace Android.Media
                 /// <returns><see cref="int"/></returns>
                 public int GetSkipBlocks()
                 {
-                    return IExecuteWithSignature<int>("getSkipBlocks", "()I");
+                    return IExecute<int>("getSkipBlocks");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#set(int,int)"/>
@@ -1654,7 +1654,7 @@ namespace Android.Media
                 /// <param name="arg1"><see cref="int"/></param>
                 public void Set(int arg0, int arg1)
                 {
-                    IExecuteWithSignature("set", "(II)V", arg0, arg1);
+                    IExecute("set", arg0, arg1);
                 }
 
                 #endregion

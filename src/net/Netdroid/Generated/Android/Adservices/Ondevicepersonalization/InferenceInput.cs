@@ -447,7 +447,7 @@ namespace Android.Adservices.Ondevicepersonalization
                 /// <returns><see cref="Android.Adservices.Ondevicepersonalization.InferenceInput.Params"/></returns>
                 public Android.Adservices.Ondevicepersonalization.InferenceInput.Params Build()
                 {
-                    return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceInput.Params>("build", "()Landroid/adservices/ondevicepersonalization/InferenceInput$Params;");
+                    return IExecute<Android.Adservices.Ondevicepersonalization.InferenceInput.Params>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceInput.Params.Builder.html#setDelegateType(int)"/>
@@ -456,7 +456,7 @@ namespace Android.Adservices.Ondevicepersonalization
                 /// <returns><see cref="Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder"/></returns>
                 public Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder SetDelegateType(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setDelegateType", "(I)Landroid/adservices/ondevicepersonalization/InferenceInput$Params$Builder;", arg0);
+                    return IExecute<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setDelegateType", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceInput.Params.Builder.html#setKeyValueStore(android.adservices.ondevicepersonalization.KeyValueStore)"/>
@@ -465,7 +465,7 @@ namespace Android.Adservices.Ondevicepersonalization
                 /// <returns><see cref="Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder"/></returns>
                 public Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder SetKeyValueStore(Android.Adservices.Ondevicepersonalization.KeyValueStore arg0)
                 {
-                    return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setKeyValueStore", "(Landroid/adservices/ondevicepersonalization/KeyValueStore;)Landroid/adservices/ondevicepersonalization/InferenceInput$Params$Builder;", arg0);
+                    return IExecute<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setKeyValueStore", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceInput.Params.Builder.html#setModelKey(java.lang.String)"/>
@@ -474,7 +474,7 @@ namespace Android.Adservices.Ondevicepersonalization
                 /// <returns><see cref="Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder"/></returns>
                 public Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder SetModelKey(Java.Lang.String arg0)
                 {
-                    return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setModelKey", "(Ljava/lang/String;)Landroid/adservices/ondevicepersonalization/InferenceInput$Params$Builder;", arg0);
+                    return IExecute<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setModelKey", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceInput.Params.Builder.html#setModelType(int)"/>
@@ -483,7 +483,7 @@ namespace Android.Adservices.Ondevicepersonalization
                 /// <returns><see cref="Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder"/></returns>
                 public Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder SetModelType(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setModelType", "(I)Landroid/adservices/ondevicepersonalization/InferenceInput$Params$Builder;", arg0);
+                    return IExecute<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setModelType", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/InferenceInput.Params.Builder.html#setRecommendedNumThreads(int)"/>
@@ -492,7 +492,7 @@ namespace Android.Adservices.Ondevicepersonalization
                 /// <returns><see cref="Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder"/></returns>
                 public Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder SetRecommendedNumThreads(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setRecommendedNumThreads", "(I)Landroid/adservices/ondevicepersonalization/InferenceInput$Params$Builder;", arg0);
+                    return IExecute<Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder>("setRecommendedNumThreads", arg0);
                 }
 
                 #endregion

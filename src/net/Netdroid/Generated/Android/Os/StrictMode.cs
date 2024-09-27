@@ -739,7 +739,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy Build()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy>("build", "()Landroid/os/StrictMode$ThreadPolicy;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectAll()"/>
@@ -747,7 +747,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectAll()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectAll", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectAll");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectCustomSlowCalls()"/>
@@ -755,7 +755,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectCustomSlowCalls()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectCustomSlowCalls", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectCustomSlowCalls");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectDiskReads()"/>
@@ -763,7 +763,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectDiskReads()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectDiskReads", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectDiskReads");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectDiskWrites()"/>
@@ -771,7 +771,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectDiskWrites()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectDiskWrites", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectDiskWrites");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectExplicitGc()"/>
@@ -779,7 +779,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectExplicitGc()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectExplicitGc", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectExplicitGc");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectNetwork()"/>
@@ -787,7 +787,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectNetwork()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectNetwork", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectNetwork");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectResourceMismatches()"/>
@@ -795,7 +795,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectResourceMismatches()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectResourceMismatches", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectResourceMismatches");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#detectUnbufferedIo()"/>
@@ -803,7 +803,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder DetectUnbufferedIo()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("detectUnbufferedIo", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("detectUnbufferedIo");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#penaltyDeath()"/>
@@ -811,7 +811,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PenaltyDeath()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDeath", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDeath");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#penaltyDeathOnNetwork()"/>
@@ -819,7 +819,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PenaltyDeathOnNetwork()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDeathOnNetwork", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDeathOnNetwork");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#penaltyDialog()"/>
@@ -827,7 +827,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PenaltyDialog()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDialog", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDialog");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#penaltyDropBox()"/>
@@ -835,7 +835,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PenaltyDropBox()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDropBox", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyDropBox");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#penaltyFlashScreen()"/>
@@ -843,7 +843,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PenaltyFlashScreen()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyFlashScreen", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyFlashScreen");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#penaltyListener(java.util.concurrent.Executor,android.os.StrictMode.OnThreadViolationListener)"/>
@@ -853,7 +853,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PenaltyListener(Java.Util.Concurrent.Executor arg0, Android.Os.StrictMode.OnThreadViolationListener arg1)
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyListener", "(Ljava/util/concurrent/Executor;Landroid/os/StrictMode$OnThreadViolationListener;)Landroid/os/StrictMode$ThreadPolicy$Builder;", arg0, arg1);
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyListener", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#penaltyLog()"/>
@@ -861,7 +861,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PenaltyLog()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyLog", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("penaltyLog");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitAll()"/>
@@ -869,7 +869,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitAll()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitAll", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitAll");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitCustomSlowCalls()"/>
@@ -877,7 +877,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitCustomSlowCalls()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitCustomSlowCalls", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitCustomSlowCalls");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitDiskReads()"/>
@@ -885,7 +885,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitDiskReads()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitDiskReads", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitDiskReads");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitDiskWrites()"/>
@@ -893,7 +893,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitDiskWrites()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitDiskWrites", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitDiskWrites");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitExplicitGc()"/>
@@ -901,7 +901,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitExplicitGc()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitExplicitGc", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitExplicitGc");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitNetwork()"/>
@@ -909,7 +909,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitNetwork()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitNetwork", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitNetwork");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitResourceMismatches()"/>
@@ -917,7 +917,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitResourceMismatches()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitResourceMismatches", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitResourceMismatches");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.ThreadPolicy.Builder.html#permitUnbufferedIo()"/>
@@ -925,7 +925,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.ThreadPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.ThreadPolicy.Builder PermitUnbufferedIo()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.ThreadPolicy.Builder>("permitUnbufferedIo", "()Landroid/os/StrictMode$ThreadPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.ThreadPolicy.Builder>("permitUnbufferedIo");
                 }
 
                 #endregion
@@ -1009,7 +1009,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy"/></returns>
                 public Android.Os.StrictMode.VmPolicy Build()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy>("build", "()Landroid/os/StrictMode$VmPolicy;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectActivityLeaks()"/>
@@ -1017,7 +1017,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectActivityLeaks()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectActivityLeaks", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectActivityLeaks");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectAll()"/>
@@ -1025,7 +1025,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectAll()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectAll", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectAll");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectCleartextNetwork()"/>
@@ -1033,7 +1033,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectCleartextNetwork()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectCleartextNetwork", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectCleartextNetwork");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectContentUriWithoutPermission()"/>
@@ -1041,7 +1041,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectContentUriWithoutPermission()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectContentUriWithoutPermission", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectContentUriWithoutPermission");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectCredentialProtectedWhileLocked()"/>
@@ -1049,7 +1049,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectCredentialProtectedWhileLocked()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectCredentialProtectedWhileLocked", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectCredentialProtectedWhileLocked");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectFileUriExposure()"/>
@@ -1057,7 +1057,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectFileUriExposure()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectFileUriExposure", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectFileUriExposure");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectImplicitDirectBoot()"/>
@@ -1065,7 +1065,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectImplicitDirectBoot()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectImplicitDirectBoot", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectImplicitDirectBoot");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectIncorrectContextUse()"/>
@@ -1073,7 +1073,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectIncorrectContextUse()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectIncorrectContextUse", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectIncorrectContextUse");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectLeakedClosableObjects()"/>
@@ -1081,7 +1081,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectLeakedClosableObjects()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectLeakedClosableObjects", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectLeakedClosableObjects");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectLeakedRegistrationObjects()"/>
@@ -1089,7 +1089,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectLeakedRegistrationObjects()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectLeakedRegistrationObjects", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectLeakedRegistrationObjects");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectLeakedSqlLiteObjects()"/>
@@ -1097,7 +1097,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectLeakedSqlLiteObjects()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectLeakedSqlLiteObjects", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectLeakedSqlLiteObjects");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectNonSdkApiUsage()"/>
@@ -1105,7 +1105,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectNonSdkApiUsage()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectNonSdkApiUsage", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectNonSdkApiUsage");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectUnsafeIntentLaunch()"/>
@@ -1113,7 +1113,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectUnsafeIntentLaunch()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectUnsafeIntentLaunch", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectUnsafeIntentLaunch");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectUntaggedSockets()"/>
@@ -1121,7 +1121,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder DetectUntaggedSockets()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("detectUntaggedSockets", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectUntaggedSockets");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#penaltyDeath()"/>
@@ -1129,7 +1129,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PenaltyDeath()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDeath", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDeath");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#penaltyDeathOnCleartextNetwork()"/>
@@ -1137,7 +1137,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PenaltyDeathOnCleartextNetwork()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDeathOnCleartextNetwork", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDeathOnCleartextNetwork");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#penaltyDeathOnFileUriExposure()"/>
@@ -1145,7 +1145,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PenaltyDeathOnFileUriExposure()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDeathOnFileUriExposure", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDeathOnFileUriExposure");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#penaltyDropBox()"/>
@@ -1153,7 +1153,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PenaltyDropBox()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDropBox", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("penaltyDropBox");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#penaltyListener(java.util.concurrent.Executor,android.os.StrictMode.OnVmViolationListener)"/>
@@ -1163,7 +1163,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PenaltyListener(Java.Util.Concurrent.Executor arg0, Android.Os.StrictMode.OnVmViolationListener arg1)
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("penaltyListener", "(Ljava/util/concurrent/Executor;Landroid/os/StrictMode$OnVmViolationListener;)Landroid/os/StrictMode$VmPolicy$Builder;", arg0, arg1);
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("penaltyListener", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#penaltyLog()"/>
@@ -1171,7 +1171,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PenaltyLog()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("penaltyLog", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("penaltyLog");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#permitNonSdkApiUsage()"/>
@@ -1179,7 +1179,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PermitNonSdkApiUsage()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("permitNonSdkApiUsage", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("permitNonSdkApiUsage");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#permitUnsafeIntentLaunch()"/>
@@ -1187,7 +1187,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder PermitUnsafeIntentLaunch()
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("permitUnsafeIntentLaunch", "()Landroid/os/StrictMode$VmPolicy$Builder;");
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("permitUnsafeIntentLaunch");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#setClassInstanceLimit(java.lang.Class,int)"/>
@@ -1197,7 +1197,7 @@ namespace Android.Os
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
                 public Android.Os.StrictMode.VmPolicy.Builder SetClassInstanceLimit(Java.Lang.Class arg0, int arg1)
                 {
-                    return IExecuteWithSignature<Android.Os.StrictMode.VmPolicy.Builder>("setClassInstanceLimit", "(Ljava/lang/Class;I)Landroid/os/StrictMode$VmPolicy$Builder;", arg0, arg1);
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("setClassInstanceLimit", arg0, arg1);
                 }
 
                 #endregion

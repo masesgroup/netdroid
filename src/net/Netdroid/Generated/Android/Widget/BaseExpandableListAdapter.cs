@@ -783,7 +783,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public override Android.View.View GetChildView(int arg0, int arg1, bool arg2, Android.View.View arg3, Android.View.ViewGroup arg4)
         {
-            return IExecute<Android.View.View>("getChildView", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.View.View>("getChildView", "(IIZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)"/>
@@ -795,7 +795,7 @@ namespace Android.Widget
         /// <returns><see cref="Android.View.View"/></returns>
         public override Android.View.View GetGroupView(int arg0, bool arg1, Android.View.View arg2, Android.View.ViewGroup arg3)
         {
-            return IExecute<Android.View.View>("getGroupView", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.View>("getGroupView", "(IZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()"/>
@@ -803,7 +803,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public override bool HasStableIds()
         {
-            return IExecute<bool>("hasStableIds");
+            return IExecuteWithSignature<bool>("hasStableIds", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)"/>
@@ -813,7 +813,7 @@ namespace Android.Widget
         /// <returns><see cref="bool"/></returns>
         public override bool IsChildSelectable(int arg0, int arg1)
         {
-            return IExecute<bool>("isChildSelectable", arg0, arg1);
+            return IExecuteWithSignature<bool>("isChildSelectable", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)"/>
@@ -822,7 +822,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public override int GetChildrenCount(int arg0)
         {
-            return IExecute<int>("getChildrenCount", arg0);
+            return IExecuteWithSignature<int>("getChildrenCount", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()"/>
@@ -830,7 +830,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public override int GetGroupCount()
         {
-            return IExecute<int>("getGroupCount");
+            return IExecuteWithSignature<int>("getGroupCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)"/>
@@ -840,7 +840,7 @@ namespace Android.Widget
         /// <returns><see cref="object"/></returns>
         public override object GetChild(int arg0, int arg1)
         {
-            return IExecute("getChild", arg0, arg1);
+            return IExecuteWithSignature("getChild", "(II)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)"/>
@@ -849,7 +849,7 @@ namespace Android.Widget
         /// <returns><see cref="object"/></returns>
         public override object GetGroup(int arg0)
         {
-            return IExecute("getGroup", arg0);
+            return IExecuteWithSignature("getGroup", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)"/>
@@ -859,7 +859,7 @@ namespace Android.Widget
         /// <returns><see cref="long"/></returns>
         public override long GetChildId(int arg0, int arg1)
         {
-            return IExecute<long>("getChildId", arg0, arg1);
+            return IExecuteWithSignature<long>("getChildId", "(II)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)"/>
@@ -868,7 +868,7 @@ namespace Android.Widget
         /// <returns><see cref="long"/></returns>
         public override long GetGroupId(int arg0)
         {
-            return IExecute<long>("getGroupId", arg0);
+            return IExecuteWithSignature<long>("getGroupId", "(I)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#areAllItemsEnabled()"/>

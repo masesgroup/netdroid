@@ -354,7 +354,7 @@ namespace Android.Health.Connect.Datatypes
                 /// <returns><see cref="Android.Health.Connect.Datatypes.ExerciseRoute.Location"/></returns>
                 public Android.Health.Connect.Datatypes.ExerciseRoute.Location Build()
                 {
-                    return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseRoute.Location>("build", "()Landroid/health/connect/datatypes/ExerciseRoute$Location;");
+                    return IExecute<Android.Health.Connect.Datatypes.ExerciseRoute.Location>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.Builder.html#setAltitude(android.health.connect.datatypes.units.Length)"/>
@@ -363,7 +363,7 @@ namespace Android.Health.Connect.Datatypes
                 /// <returns><see cref="Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder"/></returns>
                 public Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder SetAltitude(Android.Health.Connect.Datatypes.Units.Length arg0)
                 {
-                    return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder>("setAltitude", "(Landroid/health/connect/datatypes/units/Length;)Landroid/health/connect/datatypes/ExerciseRoute$Location$Builder;", arg0);
+                    return IExecute<Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder>("setAltitude", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.Builder.html#setHorizontalAccuracy(android.health.connect.datatypes.units.Length)"/>
@@ -372,7 +372,7 @@ namespace Android.Health.Connect.Datatypes
                 /// <returns><see cref="Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder"/></returns>
                 public Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder SetHorizontalAccuracy(Android.Health.Connect.Datatypes.Units.Length arg0)
                 {
-                    return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder>("setHorizontalAccuracy", "(Landroid/health/connect/datatypes/units/Length;)Landroid/health/connect/datatypes/ExerciseRoute$Location$Builder;", arg0);
+                    return IExecute<Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder>("setHorizontalAccuracy", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.Builder.html#setVerticalAccuracy(android.health.connect.datatypes.units.Length)"/>
@@ -381,7 +381,7 @@ namespace Android.Health.Connect.Datatypes
                 /// <returns><see cref="Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder"/></returns>
                 public Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder SetVerticalAccuracy(Android.Health.Connect.Datatypes.Units.Length arg0)
                 {
-                    return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder>("setVerticalAccuracy", "(Landroid/health/connect/datatypes/units/Length;)Landroid/health/connect/datatypes/ExerciseRoute$Location$Builder;", arg0);
+                    return IExecute<Android.Health.Connect.Datatypes.ExerciseRoute.Location.Builder>("setVerticalAccuracy", arg0);
                 }
 
                 #endregion

@@ -1529,7 +1529,7 @@ namespace Android.Widget
                 /// <returns><see cref="Android.Widget.RemoteViews.DrawInstructions"/></returns>
                 public Android.Widget.RemoteViews.DrawInstructions Build()
                 {
-                    return IExecuteWithSignature<Android.Widget.RemoteViews.DrawInstructions>("build", "()Landroid/widget/RemoteViews$DrawInstructions;");
+                    return IExecute<Android.Widget.RemoteViews.DrawInstructions>("build");
                 }
 
                 #endregion
@@ -1664,7 +1664,7 @@ namespace Android.Widget
                 /// <returns><see cref="Android.Widget.RemoteViews.RemoteCollectionItems"/></returns>
                 public Android.Widget.RemoteViews.RemoteCollectionItems Build()
                 {
-                    return IExecuteWithSignature<Android.Widget.RemoteViews.RemoteCollectionItems>("build", "()Landroid/widget/RemoteViews$RemoteCollectionItems;");
+                    return IExecute<Android.Widget.RemoteViews.RemoteCollectionItems>("build");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.Builder.html#addItem(long,android.widget.RemoteViews)"/>
@@ -1674,7 +1674,7 @@ namespace Android.Widget
                 /// <returns><see cref="Android.Widget.RemoteViews.RemoteCollectionItems.Builder"/></returns>
                 public Android.Widget.RemoteViews.RemoteCollectionItems.Builder AddItem(long arg0, Android.Widget.RemoteViews arg1)
                 {
-                    return IExecuteWithSignature<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("addItem", "(JLandroid/widget/RemoteViews;)Landroid/widget/RemoteViews$RemoteCollectionItems$Builder;", arg0, arg1);
+                    return IExecute<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("addItem", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.Builder.html#setHasStableIds(boolean)"/>
@@ -1683,7 +1683,7 @@ namespace Android.Widget
                 /// <returns><see cref="Android.Widget.RemoteViews.RemoteCollectionItems.Builder"/></returns>
                 public Android.Widget.RemoteViews.RemoteCollectionItems.Builder SetHasStableIds(bool arg0)
                 {
-                    return IExecuteWithSignature<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("setHasStableIds", "(Z)Landroid/widget/RemoteViews$RemoteCollectionItems$Builder;", arg0);
+                    return IExecute<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("setHasStableIds", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.RemoteCollectionItems.Builder.html#setViewTypeCount(int)"/>
@@ -1692,7 +1692,7 @@ namespace Android.Widget
                 /// <returns><see cref="Android.Widget.RemoteViews.RemoteCollectionItems.Builder"/></returns>
                 public Android.Widget.RemoteViews.RemoteCollectionItems.Builder SetViewTypeCount(int arg0)
                 {
-                    return IExecuteWithSignature<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("setViewTypeCount", "(I)Landroid/widget/RemoteViews$RemoteCollectionItems$Builder;", arg0);
+                    return IExecute<Android.Widget.RemoteViews.RemoteCollectionItems.Builder>("setViewTypeCount", arg0);
                 }
 
                 #endregion
