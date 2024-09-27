@@ -348,6 +348,15 @@ namespace Android.App
         {
             return IExecuteWithSignature<Android.Net.Uri>("getReferrer", "()Landroid/net/Uri;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideReferrer()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Android.Net.Uri OnProvideReferrerBase()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("onProvideReferrerBase", "()Landroid/net/Uri;");
+        }
 
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideReferrer()"/>
@@ -368,6 +377,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideReferrer()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.Uri"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnProvideReferrerBase"/>; override the method to implement a different behavior</remarks>
         public virtual Android.Net.Uri OnProvideReferrer()
         {
             hasOverrideOnProvideReferrer = false; return default;
@@ -387,6 +397,17 @@ namespace Android.App
         public Android.Transition.TransitionManager GetContentTransitionManager()
         {
             return IExecuteWithSignature<Android.Transition.TransitionManager>("getContentTransitionManager", "()Landroid/transition/TransitionManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onWindowStartingActionMode(android.view.ActionMode.Callback,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ActionMode.Callback"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Android.View.ActionMode"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Android.View.ActionMode OnWindowStartingActionModeBase(Android.View.ActionMode.Callback arg0, int arg1)
+        {
+            return IExecuteWithSignature<Android.View.ActionMode>("onWindowStartingActionModeBase", "(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;", arg0, arg1);
         }
 
         /// <summary>
@@ -410,9 +431,20 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.View.ActionMode.Callback"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.View.ActionMode"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnWindowStartingActionModeBase"/>; override the method to implement a different behavior</remarks>
         public virtual Android.View.ActionMode OnWindowStartingActionMode(Android.View.ActionMode.Callback arg0, int arg1)
         {
             hasOverrideOnWindowStartingActionMode = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onWindowStartingActionMode(android.view.ActionMode.Callback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ActionMode.Callback"/></param>
+        /// <returns><see cref="Android.View.ActionMode"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Android.View.ActionMode OnWindowStartingActionModeBase(Android.View.ActionMode.Callback arg0)
+        {
+            return IExecuteWithSignature<Android.View.ActionMode>("onWindowStartingActionModeBase", "(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;", arg0);
         }
 
         /// <summary>
@@ -435,6 +467,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ActionMode.Callback"/></param>
         /// <returns><see cref="Android.View.ActionMode"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnWindowStartingActionModeBase"/>; override the method to implement a different behavior</remarks>
         public virtual Android.View.ActionMode OnWindowStartingActionMode(Android.View.ActionMode.Callback arg0)
         {
             hasOverrideOnWindowStartingActionMode1 = false; return default;
@@ -491,6 +524,16 @@ namespace Android.App
         {
             return IExecuteWithSignature<Android.View.View>("getCurrentFocus", "()Landroid/view/View;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreatePanelView(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.View.View"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Android.View.View OnCreatePanelViewBase(int arg0)
+        {
+            return IExecuteWithSignature<Android.View.View>("onCreatePanelViewBase", "(I)Landroid/view/View;", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/app/Activity.html#onCreatePanelView(int)"/>
@@ -512,9 +555,23 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.View.View"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreatePanelViewBase"/>; override the method to implement a different behavior</remarks>
         public virtual Android.View.View OnCreatePanelView(int arg0)
         {
             hasOverrideOnCreatePanelView = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateView(android.view.View,java.lang.String,android.content.Context,android.util.AttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg3"><see cref="Android.Util.AttributeSet"/></param>
+        /// <returns><see cref="Android.View.View"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Android.View.View OnCreateViewBase(Android.View.View arg0, Java.Lang.String arg1, Android.Content.Context arg2, Android.Util.AttributeSet arg3)
+        {
+            return IExecuteWithSignature<Android.View.View>("onCreateViewBase", "(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2, arg3);
         }
 
         /// <summary>
@@ -540,9 +597,22 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Content.Context"/></param>
         /// <param name="arg3"><see cref="Android.Util.AttributeSet"/></param>
         /// <returns><see cref="Android.View.View"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateViewBase"/>; override the method to implement a different behavior</remarks>
         public virtual Android.View.View OnCreateView(Android.View.View arg0, Java.Lang.String arg1, Android.Content.Context arg2, Android.Util.AttributeSet arg3)
         {
             hasOverrideOnCreateView = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg2"><see cref="Android.Util.AttributeSet"/></param>
+        /// <returns><see cref="Android.View.View"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Android.View.View OnCreateViewBase(Java.Lang.String arg0, Android.Content.Context arg1, Android.Util.AttributeSet arg2)
+        {
+            return IExecuteWithSignature<Android.View.View>("onCreateViewBase", "(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2);
         }
 
         /// <summary>
@@ -567,6 +637,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Content.Context"/></param>
         /// <param name="arg2"><see cref="Android.Util.AttributeSet"/></param>
         /// <returns><see cref="Android.View.View"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateViewBase"/>; override the method to implement a different behavior</remarks>
         public virtual Android.View.View OnCreateView(Java.Lang.String arg0, Android.Content.Context arg1, Android.Util.AttributeSet arg2)
         {
             hasOverrideOnCreateView3 = false; return default;
@@ -809,6 +880,16 @@ namespace Android.App
         {
             return IExecuteWithSignature<bool>("navigateUpToFromChild", "(Landroid/app/Activity;Landroid/content/Intent;)Z", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onContextItemSelected(android.view.MenuItem)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.MenuItem"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnContextItemSelectedBase(Android.View.MenuItem arg0)
+        {
+            return IExecuteWithSignature<bool>("onContextItemSelectedBase", "(Landroid/view/MenuItem;)Z", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/app/Activity.html#onContextItemSelected(android.view.MenuItem)"/>
@@ -830,9 +911,20 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MenuItem"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnContextItemSelectedBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnContextItemSelected(Android.View.MenuItem arg0)
         {
             hasOverrideOnContextItemSelected = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateOptionsMenu(android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Menu"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnCreateOptionsMenuBase(Android.View.Menu arg0)
+        {
+            return IExecuteWithSignature<bool>("onCreateOptionsMenuBase", "(Landroid/view/Menu;)Z", arg0);
         }
 
         /// <summary>
@@ -855,9 +947,21 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateOptionsMenuBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnCreateOptionsMenu(Android.View.Menu arg0)
         {
             hasOverrideOnCreateOptionsMenu = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreatePanelMenu(int,android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.Menu"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnCreatePanelMenuBase(int arg0, Android.View.Menu arg1)
+        {
+            return IExecuteWithSignature<bool>("onCreatePanelMenuBase", "(ILandroid/view/Menu;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -881,9 +985,22 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.Menu"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreatePanelMenuBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnCreatePanelMenu(int arg0, Android.View.Menu arg1)
         {
             hasOverrideOnCreatePanelMenu = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateThumbnail(android.graphics.Bitmap,android.graphics.Canvas)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Canvas"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnCreateThumbnailBase(Android.Graphics.Bitmap arg0, Android.Graphics.Canvas arg1)
+        {
+            return IExecuteWithSignature<bool>("onCreateThumbnailBase", "(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -908,9 +1025,20 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Graphics.Canvas"/></param>
         /// <returns><see cref="bool"/></returns>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateThumbnailBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnCreateThumbnail(Android.Graphics.Bitmap arg0, Android.Graphics.Canvas arg1)
         {
             hasOverrideOnCreateThumbnail = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onGenericMotionEvent(android.view.MotionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnGenericMotionEventBase(Android.View.MotionEvent arg0)
+        {
+            return IExecuteWithSignature<bool>("onGenericMotionEventBase", "(Landroid/view/MotionEvent;)Z", arg0);
         }
 
         /// <summary>
@@ -933,9 +1061,21 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnGenericMotionEventBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnGenericMotionEvent(Android.View.MotionEvent arg0)
         {
             hasOverrideOnGenericMotionEvent = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onKeyDown(int,android.view.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnKeyDownBase(int arg0, Android.View.KeyEvent arg1)
+        {
+            return IExecuteWithSignature<bool>("onKeyDownBase", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -959,9 +1099,21 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnKeyDownBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnKeyDown(int arg0, Android.View.KeyEvent arg1)
         {
             hasOverrideOnKeyDown = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onKeyLongPress(int,android.view.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnKeyLongPressBase(int arg0, Android.View.KeyEvent arg1)
+        {
+            return IExecuteWithSignature<bool>("onKeyLongPressBase", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -985,9 +1137,22 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnKeyLongPressBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnKeyLongPress(int arg0, Android.View.KeyEvent arg1)
         {
             hasOverrideOnKeyLongPress = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onKeyMultiple(int,int,android.view.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.View.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnKeyMultipleBase(int arg0, int arg1, Android.View.KeyEvent arg2)
+        {
+            return IExecuteWithSignature<bool>("onKeyMultipleBase", "(IILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
         }
 
         /// <summary>
@@ -1012,9 +1177,21 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnKeyMultipleBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnKeyMultiple(int arg0, int arg1, Android.View.KeyEvent arg2)
         {
             hasOverrideOnKeyMultiple = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onKeyShortcut(int,android.view.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnKeyShortcutBase(int arg0, Android.View.KeyEvent arg1)
+        {
+            return IExecuteWithSignature<bool>("onKeyShortcutBase", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -1038,9 +1215,21 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnKeyShortcutBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnKeyShortcut(int arg0, Android.View.KeyEvent arg1)
         {
             hasOverrideOnKeyShortcut = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onKeyUp(int,android.view.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnKeyUpBase(int arg0, Android.View.KeyEvent arg1)
+        {
+            return IExecuteWithSignature<bool>("onKeyUpBase", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -1064,9 +1253,21 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnKeyUpBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnKeyUp(int arg0, Android.View.KeyEvent arg1)
         {
             hasOverrideOnKeyUp = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onMenuItemSelected(int,android.view.MenuItem)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.MenuItem"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnMenuItemSelectedBase(int arg0, Android.View.MenuItem arg1)
+        {
+            return IExecuteWithSignature<bool>("onMenuItemSelectedBase", "(ILandroid/view/MenuItem;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -1090,9 +1291,21 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.MenuItem"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnMenuItemSelectedBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnMenuItemSelected(int arg0, Android.View.MenuItem arg1)
         {
             hasOverrideOnMenuItemSelected = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onMenuOpened(int,android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.Menu"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnMenuOpenedBase(int arg0, Android.View.Menu arg1)
+        {
+            return IExecuteWithSignature<bool>("onMenuOpenedBase", "(ILandroid/view/Menu;)Z", arg0, arg1);
         }
 
         /// <summary>
@@ -1116,9 +1329,19 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.Menu"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnMenuOpenedBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnMenuOpened(int arg0, Android.View.Menu arg1)
         {
             hasOverrideOnMenuOpened = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onNavigateUp()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnNavigateUpBase()
+        {
+            return IExecuteWithSignature<bool>("onNavigateUpBase", "()Z");
         }
 
         /// <summary>
@@ -1140,9 +1363,21 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onNavigateUp()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnNavigateUpBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnNavigateUp()
         {
             hasOverrideOnNavigateUp = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onNavigateUpFromChild(android.app.Activity)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Activity"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnNavigateUpFromChildBase(Android.App.Activity arg0)
+        {
+            return IExecuteWithSignature<bool>("onNavigateUpFromChildBase", "(Landroid/app/Activity;)Z", arg0);
         }
 
         /// <summary>
@@ -1166,9 +1401,20 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
         /// <returns><see cref="bool"/></returns>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnNavigateUpFromChildBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnNavigateUpFromChild(Android.App.Activity arg0)
         {
             hasOverrideOnNavigateUpFromChild = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onOptionsItemSelected(android.view.MenuItem)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.MenuItem"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnOptionsItemSelectedBase(Android.View.MenuItem arg0)
+        {
+            return IExecuteWithSignature<bool>("onOptionsItemSelectedBase", "(Landroid/view/MenuItem;)Z", arg0);
         }
 
         /// <summary>
@@ -1191,9 +1437,19 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MenuItem"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnOptionsItemSelectedBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnOptionsItemSelected(Android.View.MenuItem arg0)
         {
             hasOverrideOnOptionsItemSelected = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPictureInPictureRequested()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnPictureInPictureRequestedBase()
+        {
+            return IExecuteWithSignature<bool>("onPictureInPictureRequestedBase", "()Z");
         }
 
         /// <summary>
@@ -1215,9 +1471,20 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPictureInPictureRequested()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPictureInPictureRequestedBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnPictureInPictureRequested()
         {
             hasOverrideOnPictureInPictureRequested = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPrepareOptionsMenu(android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Menu"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnPrepareOptionsMenuBase(Android.View.Menu arg0)
+        {
+            return IExecuteWithSignature<bool>("onPrepareOptionsMenuBase", "(Landroid/view/Menu;)Z", arg0);
         }
 
         /// <summary>
@@ -1240,9 +1507,22 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPrepareOptionsMenuBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnPrepareOptionsMenu(Android.View.Menu arg0)
         {
             hasOverrideOnPrepareOptionsMenu = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPreparePanel(int,android.view.View,android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.View"/></param>
+        /// <param name="arg2"><see cref="Android.View.Menu"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnPreparePanelBase(int arg0, Android.View.View arg1, Android.View.Menu arg2)
+        {
+            return IExecuteWithSignature<bool>("onPreparePanelBase", "(ILandroid/view/View;Landroid/view/Menu;)Z", arg0, arg1, arg2);
         }
 
         /// <summary>
@@ -1267,9 +1547,19 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         /// <param name="arg2"><see cref="Android.View.Menu"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPreparePanelBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnPreparePanel(int arg0, Android.View.View arg1, Android.View.Menu arg2)
         {
             hasOverrideOnPreparePanel = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onSearchRequested()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnSearchRequestedBase()
+        {
+            return IExecuteWithSignature<bool>("onSearchRequestedBase", "()Z");
         }
 
         /// <summary>
@@ -1291,9 +1581,20 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onSearchRequested()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnSearchRequestedBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnSearchRequested()
         {
             hasOverrideOnSearchRequested = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onSearchRequested(android.view.SearchEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.SearchEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnSearchRequestedBase(Android.View.SearchEvent arg0)
+        {
+            return IExecuteWithSignature<bool>("onSearchRequestedBase", "(Landroid/view/SearchEvent;)Z", arg0);
         }
 
         /// <summary>
@@ -1316,9 +1617,20 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.SearchEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnSearchRequestedBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnSearchRequested(Android.View.SearchEvent arg0)
         {
             hasOverrideOnSearchRequested1 = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onTouchEvent(android.view.MotionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnTouchEventBase(Android.View.MotionEvent arg0)
+        {
+            return IExecuteWithSignature<bool>("onTouchEventBase", "(Landroid/view/MotionEvent;)Z", arg0);
         }
 
         /// <summary>
@@ -1341,9 +1653,20 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnTouchEventBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnTouchEvent(Android.View.MotionEvent arg0)
         {
             hasOverrideOnTouchEvent = false; return default;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onTrackballEvent(android.view.MotionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool OnTrackballEventBase(Android.View.MotionEvent arg0)
+        {
+            return IExecuteWithSignature<bool>("onTrackballEventBase", "(Landroid/view/MotionEvent;)Z", arg0);
         }
 
         /// <summary>
@@ -1366,6 +1689,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnTrackballEventBase"/>; override the method to implement a different behavior</remarks>
         public virtual bool OnTrackballEvent(Android.View.MotionEvent arg0)
         {
             hasOverrideOnTrackballEvent = false; return default;
@@ -1499,6 +1823,16 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onPointerCaptureChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPointerCaptureChangedBase(bool arg0)
+        {
+            IExecuteWithSignature("onPointerCaptureChangedDefaultBase", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onPointerCaptureChanged(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPointerCaptureChangedBase"/>; override the method to implement a different behavior</remarks>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public void OnPointerCaptureChangedDefault(bool arg0)
         {
@@ -2002,6 +2336,15 @@ namespace Android.App
         {
             return IExecuteWithSignature<int>("getTaskId", "()I");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Lang.CharSequence OnCreateDescriptionBase()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("onCreateDescriptionBase", "()Ljava/lang/CharSequence;");
+        }
 
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateDescription()"/>
@@ -2022,6 +2365,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateDescription()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateDescriptionBase"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Lang.CharSequence OnCreateDescription()
         {
             hasOverrideOnCreateDescription = false; return default;
@@ -2033,6 +2377,15 @@ namespace Android.App
         public object GetLastNonConfigurationInstance()
         {
             return IExecuteWithSignature("getLastNonConfigurationInstance", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRetainNonConfigurationInstance()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public object OnRetainNonConfigurationInstanceBase()
+        {
+            return IExecuteWithSignature("onRetainNonConfigurationInstanceBase", "()Ljava/lang/Object;");
         }
 
         /// <summary>
@@ -2054,6 +2407,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRetainNonConfigurationInstance()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnRetainNonConfigurationInstanceBase"/>; override the method to implement a different behavior</remarks>
         public virtual object OnRetainNonConfigurationInstance()
         {
             hasOverrideOnRetainNonConfigurationInstance = false; return default;
@@ -2194,6 +2548,15 @@ namespace Android.App
         {
             IExecuteWithSignature("invalidateOptionsMenu", "()V");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onActionModeFinished(android.view.ActionMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ActionMode"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnActionModeFinishedBase(Android.View.ActionMode arg0)
+        {
+            IExecuteWithSignature("onActionModeFinishedBase", "(Landroid/view/ActionMode;)V", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/app/Activity.html#onActionModeFinished(android.view.ActionMode)"/>
@@ -2214,9 +2577,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onActionModeFinished(android.view.ActionMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ActionMode"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnActionModeFinishedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnActionModeFinished(Android.View.ActionMode arg0)
         {
             hasOverrideOnActionModeFinished = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onActionModeStarted(android.view.ActionMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ActionMode"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnActionModeStartedBase(Android.View.ActionMode arg0)
+        {
+            IExecuteWithSignature("onActionModeStartedBase", "(Landroid/view/ActionMode;)V", arg0);
         }
 
         /// <summary>
@@ -2238,9 +2611,20 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onActionModeStarted(android.view.ActionMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ActionMode"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnActionModeStartedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnActionModeStarted(Android.View.ActionMode arg0)
         {
             hasOverrideOnActionModeStarted = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onActivityReenter(int,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnActivityReenterBase(int arg0, Android.Content.Intent arg1)
+        {
+            IExecuteWithSignature("onActivityReenterBase", "(ILandroid/content/Intent;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2263,9 +2647,22 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnActivityReenterBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnActivityReenter(int arg0, Android.Content.Intent arg1)
         {
             hasOverrideOnActivityReenter = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onActivityResult(int,int,android.content.Intent,android.app.ComponentCaller)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg3"><see cref="Android.App.ComponentCaller"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnActivityResultBase(int arg0, int arg1, Android.Content.Intent arg2, Android.App.ComponentCaller arg3)
+        {
+            IExecuteWithSignature("onActivityResultBase", "(IILandroid/content/Intent;Landroid/app/ComponentCaller;)V", arg0, arg1, arg2, arg3);
         }
 
         /// <summary>
@@ -2290,9 +2687,18 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg3"><see cref="Android.App.ComponentCaller"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnActivityResultBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2, Android.App.ComponentCaller arg3)
         {
             hasOverrideOnActivityResult = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onAttachedToWindow()"/>
+        /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnAttachedToWindowBase()
+        {
+            IExecuteWithSignature("onAttachedToWindowBase", "()V");
         }
 
         /// <summary>
@@ -2313,9 +2719,20 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onAttachedToWindow()"/>
         /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnAttachedToWindowBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnAttachedToWindow()
         {
             hasOverrideOnAttachedToWindow = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onAttachFragment(android.app.Fragment)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnAttachFragmentBase(Android.App.Fragment arg0)
+        {
+            IExecuteWithSignature("onAttachFragmentBase", "(Landroid/app/Fragment;)V", arg0);
         }
 
         /// <summary>
@@ -2338,9 +2755,19 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnAttachFragmentBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnAttachFragment(Android.App.Fragment arg0)
         {
             hasOverrideOnAttachFragment = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onBackPressed()"/>
+        /// </summary>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnBackPressedBase()
+        {
+            IExecuteWithSignature("onBackPressedBase", "()V");
         }
 
         /// <summary>
@@ -2362,9 +2789,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onBackPressed()"/>
         /// </summary>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnBackPressedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnBackPressed()
         {
             hasOverrideOnBackPressed = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onConfigurationChanged(android.content.res.Configuration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnConfigurationChangedBase(Android.Content.Res.Configuration arg0)
+        {
+            IExecuteWithSignature("onConfigurationChangedBase", "(Landroid/content/res/Configuration;)V", arg0);
         }
 
         /// <summary>
@@ -2386,9 +2823,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onConfigurationChanged(android.content.res.Configuration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnConfigurationChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnConfigurationChanged(Android.Content.Res.Configuration arg0)
         {
             hasOverrideOnConfigurationChanged = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onContextMenuClosed(android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Menu"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnContextMenuClosedBase(Android.View.Menu arg0)
+        {
+            IExecuteWithSignature("onContextMenuClosedBase", "(Landroid/view/Menu;)V", arg0);
         }
 
         /// <summary>
@@ -2410,9 +2857,20 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onContextMenuClosed(android.view.Menu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnContextMenuClosedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnContextMenuClosed(Android.View.Menu arg0)
         {
             hasOverrideOnContextMenuClosed = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle,android.os.PersistableBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnCreateBase(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
+        {
+            IExecuteWithSignature("onCreateBase", "(Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2435,9 +2893,21 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnCreate(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
         {
             hasOverrideOnCreate = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu.ContextMenuInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ContextMenu"/></param>
+        /// <param name="arg1"><see cref="Android.View.View"/></param>
+        /// <param name="arg2"><see cref="Android.View.ContextMenu.ContextMenuInfo"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnCreateContextMenuBase(Android.View.ContextMenu arg0, Android.View.View arg1, Android.View.ContextMenu.ContextMenuInfo arg2)
+        {
+            IExecuteWithSignature("onCreateContextMenuBase", "(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V", arg0, arg1, arg2);
         }
 
         /// <summary>
@@ -2461,9 +2931,19 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.View.ContextMenu"/></param>
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         /// <param name="arg2"><see cref="Android.View.ContextMenu.ContextMenuInfo"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateContextMenuBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnCreateContextMenu(Android.View.ContextMenu arg0, Android.View.View arg1, Android.View.ContextMenu.ContextMenuInfo arg2)
         {
             hasOverrideOnCreateContextMenu = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateNavigateUpTaskStack(android.app.TaskStackBuilder)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.TaskStackBuilder"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnCreateNavigateUpTaskStackBase(Android.App.TaskStackBuilder arg0)
+        {
+            IExecuteWithSignature("onCreateNavigateUpTaskStackBase", "(Landroid/app/TaskStackBuilder;)V", arg0);
         }
 
         /// <summary>
@@ -2485,9 +2965,18 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onCreateNavigateUpTaskStack(android.app.TaskStackBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.TaskStackBuilder"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCreateNavigateUpTaskStackBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnCreateNavigateUpTaskStack(Android.App.TaskStackBuilder arg0)
         {
             hasOverrideOnCreateNavigateUpTaskStack = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onDetachedFromWindow()"/>
+        /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnDetachedFromWindowBase()
+        {
+            IExecuteWithSignature("onDetachedFromWindowBase", "()V");
         }
 
         /// <summary>
@@ -2508,9 +2997,18 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onDetachedFromWindow()"/>
         /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnDetachedFromWindowBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnDetachedFromWindow()
         {
             hasOverrideOnDetachedFromWindow = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onEnterAnimationComplete()"/>
+        /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnEnterAnimationCompleteBase()
+        {
+            IExecuteWithSignature("onEnterAnimationCompleteBase", "()V");
         }
 
         /// <summary>
@@ -2531,9 +3029,20 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onEnterAnimationComplete()"/>
         /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnEnterAnimationCompleteBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnEnterAnimationComplete()
         {
             hasOverrideOnEnterAnimationComplete = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onGetDirectActions(android.os.CancellationSignal,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnGetDirectActionsBase(Android.Os.CancellationSignal arg0, Java.Util.Function.Consumer<Java.Util.List<Android.App.DirectAction>> arg1)
+        {
+            IExecuteWithSignature("onGetDirectActionsBase", "(Landroid/os/CancellationSignal;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2556,9 +3065,18 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.CancellationSignal"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnGetDirectActionsBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnGetDirectActions(Android.Os.CancellationSignal arg0, Java.Util.Function.Consumer<Java.Util.List<Android.App.DirectAction>> arg1)
         {
             hasOverrideOnGetDirectActions = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onLocalVoiceInteractionStarted()"/>
+        /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnLocalVoiceInteractionStartedBase()
+        {
+            IExecuteWithSignature("onLocalVoiceInteractionStartedBase", "()V");
         }
 
         /// <summary>
@@ -2579,9 +3097,18 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onLocalVoiceInteractionStarted()"/>
         /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnLocalVoiceInteractionStartedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnLocalVoiceInteractionStarted()
         {
             hasOverrideOnLocalVoiceInteractionStarted = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onLocalVoiceInteractionStopped()"/>
+        /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnLocalVoiceInteractionStoppedBase()
+        {
+            IExecuteWithSignature("onLocalVoiceInteractionStoppedBase", "()V");
         }
 
         /// <summary>
@@ -2602,9 +3129,18 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onLocalVoiceInteractionStopped()"/>
         /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnLocalVoiceInteractionStoppedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnLocalVoiceInteractionStopped()
         {
             hasOverrideOnLocalVoiceInteractionStopped = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onLowMemory()"/>
+        /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnLowMemoryBase()
+        {
+            IExecuteWithSignature("onLowMemoryBase", "()V");
         }
 
         /// <summary>
@@ -2625,9 +3161,20 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onLowMemory()"/>
         /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnLowMemoryBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnLowMemory()
         {
             hasOverrideOnLowMemory = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onMultiWindowModeChanged(boolean,android.content.res.Configuration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Res.Configuration"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnMultiWindowModeChangedBase(bool arg0, Android.Content.Res.Configuration arg1)
+        {
+            IExecuteWithSignature("onMultiWindowModeChangedBase", "(ZLandroid/content/res/Configuration;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2650,9 +3197,20 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="Android.Content.Res.Configuration"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnMultiWindowModeChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnMultiWindowModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
             hasOverrideOnMultiWindowModeChanged = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onMultiWindowModeChanged(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnMultiWindowModeChangedBase(bool arg0)
+        {
+            IExecuteWithSignature("onMultiWindowModeChangedBase", "(Z)V", arg0);
         }
 
         /// <summary>
@@ -2675,9 +3233,20 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnMultiWindowModeChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnMultiWindowModeChanged(bool arg0)
         {
             hasOverrideOnMultiWindowModeChanged1 = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent,android.app.ComponentCaller)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.App.ComponentCaller"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnNewIntentBase(Android.Content.Intent arg0, Android.App.ComponentCaller arg1)
+        {
+            IExecuteWithSignature("onNewIntentBase", "(Landroid/content/Intent;Landroid/app/ComponentCaller;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2700,9 +3269,19 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="Android.App.ComponentCaller"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnNewIntentBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnNewIntent(Android.Content.Intent arg0, Android.App.ComponentCaller arg1)
         {
             hasOverrideOnNewIntent = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onOptionsMenuClosed(android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Menu"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnOptionsMenuClosedBase(Android.View.Menu arg0)
+        {
+            IExecuteWithSignature("onOptionsMenuClosedBase", "(Landroid/view/Menu;)V", arg0);
         }
 
         /// <summary>
@@ -2724,9 +3303,20 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onOptionsMenuClosed(android.view.Menu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnOptionsMenuClosedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnOptionsMenuClosed(Android.View.Menu arg0)
         {
             hasOverrideOnOptionsMenuClosed = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPanelClosed(int,android.view.Menu)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.Menu"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPanelClosedBase(int arg0, Android.View.Menu arg1)
+        {
+            IExecuteWithSignature("onPanelClosedBase", "(ILandroid/view/Menu;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2749,9 +3339,22 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.Menu"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPanelClosedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnPanelClosed(int arg0, Android.View.Menu arg1)
         {
             hasOverrideOnPanelClosed = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPerformDirectAction(java.lang.String,android.os.Bundle,android.os.CancellationSignal,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPerformDirectActionBase(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2, Java.Util.Function.Consumer<Android.Os.Bundle> arg3)
+        {
+            IExecuteWithSignature("onPerformDirectActionBase", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
 
         /// <summary>
@@ -2776,9 +3379,20 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPerformDirectActionBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnPerformDirectAction(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2, Java.Util.Function.Consumer<Android.Os.Bundle> arg3)
         {
             hasOverrideOnPerformDirectAction = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPictureInPictureModeChanged(boolean,android.content.res.Configuration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Res.Configuration"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPictureInPictureModeChangedBase(bool arg0, Android.Content.Res.Configuration arg1)
+        {
+            IExecuteWithSignature("onPictureInPictureModeChangedBase", "(ZLandroid/content/res/Configuration;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2801,9 +3415,20 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="Android.Content.Res.Configuration"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPictureInPictureModeChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnPictureInPictureModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
             hasOverrideOnPictureInPictureModeChanged = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPictureInPictureModeChanged(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPictureInPictureModeChangedBase(bool arg0)
+        {
+            IExecuteWithSignature("onPictureInPictureModeChangedBase", "(Z)V", arg0);
         }
 
         /// <summary>
@@ -2826,9 +3451,19 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPictureInPictureModeChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnPictureInPictureModeChanged(bool arg0)
         {
             hasOverrideOnPictureInPictureModeChanged1 = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPictureInPictureUiStateChanged(android.app.PictureInPictureUiState)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.PictureInPictureUiState"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPictureInPictureUiStateChangedBase(Android.App.PictureInPictureUiState arg0)
+        {
+            IExecuteWithSignature("onPictureInPictureUiStateChangedBase", "(Landroid/app/PictureInPictureUiState;)V", arg0);
         }
 
         /// <summary>
@@ -2850,9 +3485,20 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPictureInPictureUiStateChanged(android.app.PictureInPictureUiState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PictureInPictureUiState"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPictureInPictureUiStateChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnPictureInPictureUiStateChanged(Android.App.PictureInPictureUiState arg0)
         {
             hasOverrideOnPictureInPictureUiStateChanged = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPostCreate(android.os.Bundle,android.os.PersistableBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPostCreateBase(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
+        {
+            IExecuteWithSignature("onPostCreateBase", "(Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -2875,9 +3521,19 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPostCreateBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnPostCreate(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
         {
             hasOverrideOnPostCreate = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPrepareNavigateUpTaskStack(android.app.TaskStackBuilder)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.TaskStackBuilder"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnPrepareNavigateUpTaskStackBase(Android.App.TaskStackBuilder arg0)
+        {
+            IExecuteWithSignature("onPrepareNavigateUpTaskStackBase", "(Landroid/app/TaskStackBuilder;)V", arg0);
         }
 
         /// <summary>
@@ -2899,9 +3555,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onPrepareNavigateUpTaskStack(android.app.TaskStackBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.TaskStackBuilder"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPrepareNavigateUpTaskStackBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnPrepareNavigateUpTaskStack(Android.App.TaskStackBuilder arg0)
         {
             hasOverrideOnPrepareNavigateUpTaskStack = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Assist.AssistContent"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnProvideAssistContentBase(Android.App.Assist.AssistContent arg0)
+        {
+            IExecuteWithSignature("onProvideAssistContentBase", "(Landroid/app/assist/AssistContent;)V", arg0);
         }
 
         /// <summary>
@@ -2923,9 +3589,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideAssistContent(android.app.assist.AssistContent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Assist.AssistContent"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnProvideAssistContentBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnProvideAssistContent(Android.App.Assist.AssistContent arg0)
         {
             hasOverrideOnProvideAssistContent = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideAssistData(android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnProvideAssistDataBase(Android.Os.Bundle arg0)
+        {
+            IExecuteWithSignature("onProvideAssistDataBase", "(Landroid/os/Bundle;)V", arg0);
         }
 
         /// <summary>
@@ -2947,9 +3623,21 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideAssistData(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnProvideAssistDataBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnProvideAssistData(Android.Os.Bundle arg0)
         {
             hasOverrideOnProvideAssistData = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onProvideKeyboardShortcuts(java.util.List,android.view.Menu,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Android.View.Menu"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnProvideKeyboardShortcutsBase(Java.Util.List<Android.View.KeyboardShortcutGroup> arg0, Android.View.Menu arg1, int arg2)
+        {
+            IExecuteWithSignature("onProvideKeyboardShortcutsBase", "(Ljava/util/List;Landroid/view/Menu;I)V", arg0, arg1, arg2);
         }
 
         /// <summary>
@@ -2973,9 +3661,22 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Android.View.Menu"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnProvideKeyboardShortcutsBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnProvideKeyboardShortcuts(Java.Util.List<Android.View.KeyboardShortcutGroup> arg0, Android.View.Menu arg1, int arg2)
         {
             hasOverrideOnProvideKeyboardShortcuts = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int,java.lang.String[],int[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnRequestPermissionsResultBase(int arg0, Java.Lang.String[] arg1, int[] arg2, int arg3)
+        {
+            IExecuteWithSignature("onRequestPermissionsResultBase", "(I[Ljava/lang/String;[II)V", arg0, arg1, arg2, arg3);
         }
 
         /// <summary>
@@ -3000,9 +3701,21 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnRequestPermissionsResultBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnRequestPermissionsResult(int arg0, Java.Lang.String[] arg1, int[] arg2, int arg3)
         {
             hasOverrideOnRequestPermissionsResult = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int,java.lang.String[],int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnRequestPermissionsResultBase(int arg0, Java.Lang.String[] arg1, int[] arg2)
+        {
+            IExecuteWithSignature("onRequestPermissionsResultBase", "(I[Ljava/lang/String;[I)V", arg0, arg1, arg2);
         }
 
         /// <summary>
@@ -3026,9 +3739,20 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnRequestPermissionsResultBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnRequestPermissionsResult(int arg0, Java.Lang.String[] arg1, int[] arg2)
         {
             hasOverrideOnRequestPermissionsResult3 = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRestoreInstanceState(android.os.Bundle,android.os.PersistableBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnRestoreInstanceStateBase(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
+        {
+            IExecuteWithSignature("onRestoreInstanceStateBase", "(Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -3051,9 +3775,20 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnRestoreInstanceStateBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnRestoreInstanceState(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
         {
             hasOverrideOnRestoreInstanceState = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle,android.os.PersistableBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnSaveInstanceStateBase(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
+        {
+            IExecuteWithSignature("onSaveInstanceStateBase", "(Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1);
         }
 
         /// <summary>
@@ -3076,9 +3811,19 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnSaveInstanceStateBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnSaveInstanceState(Android.Os.Bundle arg0, Android.Os.PersistableBundle arg1)
         {
             hasOverrideOnSaveInstanceState = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onStateNotSaved()"/>
+        /// </summary>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnStateNotSavedBase()
+        {
+            IExecuteWithSignature("onStateNotSavedBase", "()V");
         }
 
         /// <summary>
@@ -3100,9 +3845,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onStateNotSaved()"/>
         /// </summary>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnStateNotSavedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnStateNotSaved()
         {
             hasOverrideOnStateNotSaved = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onTopResumedActivityChanged(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnTopResumedActivityChangedBase(bool arg0)
+        {
+            IExecuteWithSignature("onTopResumedActivityChangedBase", "(Z)V", arg0);
         }
 
         /// <summary>
@@ -3124,9 +3879,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onTopResumedActivityChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnTopResumedActivityChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnTopResumedActivityChanged(bool arg0)
         {
             hasOverrideOnTopResumedActivityChanged = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onTrimMemory(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnTrimMemoryBase(int arg0)
+        {
+            IExecuteWithSignature("onTrimMemoryBase", "(I)V", arg0);
         }
 
         /// <summary>
@@ -3148,9 +3913,18 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onTrimMemory(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnTrimMemoryBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnTrimMemory(int arg0)
         {
             hasOverrideOnTrimMemory = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onUserInteraction()"/>
+        /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnUserInteractionBase()
+        {
+            IExecuteWithSignature("onUserInteractionBase", "()V");
         }
 
         /// <summary>
@@ -3171,9 +3945,19 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onUserInteraction()"/>
         /// </summary>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnUserInteractionBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnUserInteraction()
         {
             hasOverrideOnUserInteraction = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onVisibleBehindCanceled()"/>
+        /// </summary>
+        [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnVisibleBehindCanceledBase()
+        {
+            IExecuteWithSignature("onVisibleBehindCanceledBase", "()V");
         }
 
         /// <summary>
@@ -3195,9 +3979,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onVisibleBehindCanceled()"/>
         /// </summary>
         [global::System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnVisibleBehindCanceledBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnVisibleBehindCanceled()
         {
             hasOverrideOnVisibleBehindCanceled = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onWindowAttributesChanged(android.view.WindowManager.LayoutParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.WindowManager.LayoutParams"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnWindowAttributesChangedBase(Android.View.WindowManager.LayoutParams arg0)
+        {
+            IExecuteWithSignature("onWindowAttributesChangedBase", "(Landroid/view/WindowManager$LayoutParams;)V", arg0);
         }
 
         /// <summary>
@@ -3219,9 +4013,19 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onWindowAttributesChanged(android.view.WindowManager.LayoutParams)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.WindowManager.LayoutParams"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnWindowAttributesChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnWindowAttributesChanged(Android.View.WindowManager.LayoutParams arg0)
         {
             hasOverrideOnWindowAttributesChanged = false;
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onWindowFocusChanged(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnWindowFocusChangedBase(bool arg0)
+        {
+            IExecuteWithSignature("onWindowFocusChangedBase", "(Z)V", arg0);
         }
 
         /// <summary>
@@ -3243,6 +4047,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onWindowFocusChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnWindowFocusChangedBase"/>; override the method to implement a different behavior</remarks>
         public virtual void OnWindowFocusChanged(bool arg0)
         {
             hasOverrideOnWindowFocusChanged = false;

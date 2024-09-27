@@ -76,9 +76,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onProvideReferrer", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onProvideReferrer(); else retVal = eventDataExchange.getReturnData(); return (android.net.Uri)retVal;
     }
     //@Override
+    public android.net.Uri onProvideReferrerBase() {
+        return super.onProvideReferrer();
+    }
+    //@Override
     public android.view.ActionMode onWindowStartingActionMode(android.view.ActionMode.Callback arg0, int arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onWindowStartingActionMode", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onWindowStartingActionMode(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (android.view.ActionMode)retVal;
+    }
+    //@Override
+    public android.view.ActionMode onWindowStartingActionModeBase(android.view.ActionMode.Callback arg0, int arg1) {
+        return super.onWindowStartingActionMode(arg0, arg1);
     }
     //@Override
     public android.view.ActionMode onWindowStartingActionMode(android.view.ActionMode.Callback arg0) {
@@ -86,9 +94,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onWindowStartingActionMode1", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onWindowStartingActionMode(arg0); else retVal = eventDataExchange.getReturnData(); return (android.view.ActionMode)retVal;
     }
     //@Override
+    public android.view.ActionMode onWindowStartingActionModeBase(android.view.ActionMode.Callback arg0) {
+        return super.onWindowStartingActionMode(arg0);
+    }
+    //@Override
     public android.view.View onCreatePanelView(int arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onCreatePanelView", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onCreatePanelView(arg0); else retVal = eventDataExchange.getReturnData(); return (android.view.View)retVal;
+    }
+    //@Override
+    public android.view.View onCreatePanelViewBase(int arg0) {
+        return super.onCreatePanelView(arg0);
     }
     //@Override
     public android.view.View onCreateView(android.view.View arg0, java.lang.String arg1, android.content.Context arg2, android.util.AttributeSet arg3) {
@@ -96,9 +112,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onCreateView", eventDataExchange, arg0, arg1, arg2, arg3); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onCreateView(arg0, arg1, arg2, arg3); else retVal = eventDataExchange.getReturnData(); return (android.view.View)retVal;
     }
     //@Override
+    public android.view.View onCreateViewBase(android.view.View arg0, java.lang.String arg1, android.content.Context arg2, android.util.AttributeSet arg3) {
+        return super.onCreateView(arg0, arg1, arg2, arg3);
+    }
+    //@Override
     public android.view.View onCreateView(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onCreateView3", eventDataExchange, arg0, arg1, arg2); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onCreateView(arg0, arg1, arg2); else retVal = eventDataExchange.getReturnData(); return (android.view.View)retVal;
+    }
+    //@Override
+    public android.view.View onCreateViewBase(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2) {
+        return super.onCreateView(arg0, arg1, arg2);
     }
     //@Override
     public boolean onContextItemSelected(android.view.MenuItem arg0) {
@@ -106,9 +130,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onContextItemSelected", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onContextItemSelected(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onContextItemSelectedBase(android.view.MenuItem arg0) {
+        return super.onContextItemSelected(arg0);
+    }
+    //@Override
     public boolean onCreateOptionsMenu(android.view.Menu arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onCreateOptionsMenu", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onCreateOptionsMenu(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onCreateOptionsMenuBase(android.view.Menu arg0) {
+        return super.onCreateOptionsMenu(arg0);
     }
     //@Override
     public boolean onCreatePanelMenu(int arg0, android.view.Menu arg1) {
@@ -116,9 +148,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onCreatePanelMenu", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onCreatePanelMenu(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onCreatePanelMenuBase(int arg0, android.view.Menu arg1) {
+        return super.onCreatePanelMenu(arg0, arg1);
+    }
+    //@Override
     public boolean onCreateThumbnail(android.graphics.Bitmap arg0, android.graphics.Canvas arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onCreateThumbnail", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onCreateThumbnail(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onCreateThumbnailBase(android.graphics.Bitmap arg0, android.graphics.Canvas arg1) {
+        return super.onCreateThumbnail(arg0, arg1);
     }
     //@Override
     public boolean onGenericMotionEvent(android.view.MotionEvent arg0) {
@@ -126,9 +166,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onGenericMotionEvent", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onGenericMotionEvent(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onGenericMotionEventBase(android.view.MotionEvent arg0) {
+        return super.onGenericMotionEvent(arg0);
+    }
+    //@Override
     public boolean onKeyDown(int arg0, android.view.KeyEvent arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onKeyDown", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onKeyDown(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onKeyDownBase(int arg0, android.view.KeyEvent arg1) {
+        return super.onKeyDown(arg0, arg1);
     }
     //@Override
     public boolean onKeyLongPress(int arg0, android.view.KeyEvent arg1) {
@@ -136,9 +184,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onKeyLongPress", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onKeyLongPress(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onKeyLongPressBase(int arg0, android.view.KeyEvent arg1) {
+        return super.onKeyLongPress(arg0, arg1);
+    }
+    //@Override
     public boolean onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onKeyMultiple", eventDataExchange, arg0, arg1, arg2); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onKeyMultiple(arg0, arg1, arg2); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onKeyMultipleBase(int arg0, int arg1, android.view.KeyEvent arg2) {
+        return super.onKeyMultiple(arg0, arg1, arg2);
     }
     //@Override
     public boolean onKeyShortcut(int arg0, android.view.KeyEvent arg1) {
@@ -146,9 +202,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onKeyShortcut", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onKeyShortcut(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onKeyShortcutBase(int arg0, android.view.KeyEvent arg1) {
+        return super.onKeyShortcut(arg0, arg1);
+    }
+    //@Override
     public boolean onKeyUp(int arg0, android.view.KeyEvent arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onKeyUp", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onKeyUp(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onKeyUpBase(int arg0, android.view.KeyEvent arg1) {
+        return super.onKeyUp(arg0, arg1);
     }
     //@Override
     public boolean onMenuItemSelected(int arg0, android.view.MenuItem arg1) {
@@ -156,9 +220,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onMenuItemSelected", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onMenuItemSelected(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onMenuItemSelectedBase(int arg0, android.view.MenuItem arg1) {
+        return super.onMenuItemSelected(arg0, arg1);
+    }
+    //@Override
     public boolean onMenuOpened(int arg0, android.view.Menu arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onMenuOpened", eventDataExchange, arg0, arg1); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onMenuOpened(arg0, arg1); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onMenuOpenedBase(int arg0, android.view.Menu arg1) {
+        return super.onMenuOpened(arg0, arg1);
     }
     //@Override
     public boolean onNavigateUp() {
@@ -166,9 +238,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onNavigateUp", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onNavigateUp(); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onNavigateUpBase() {
+        return super.onNavigateUp();
+    }
+    //@Override
     public boolean onNavigateUpFromChild(android.app.Activity arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onNavigateUpFromChild", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onNavigateUpFromChild(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onNavigateUpFromChildBase(android.app.Activity arg0) {
+        return super.onNavigateUpFromChild(arg0);
     }
     //@Override
     public boolean onOptionsItemSelected(android.view.MenuItem arg0) {
@@ -176,9 +256,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onOptionsItemSelected", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onOptionsItemSelected(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onOptionsItemSelectedBase(android.view.MenuItem arg0) {
+        return super.onOptionsItemSelected(arg0);
+    }
+    //@Override
     public boolean onPictureInPictureRequested() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onPictureInPictureRequested", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onPictureInPictureRequested(); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onPictureInPictureRequestedBase() {
+        return super.onPictureInPictureRequested();
     }
     //@Override
     public boolean onPrepareOptionsMenu(android.view.Menu arg0) {
@@ -186,9 +274,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onPrepareOptionsMenu", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onPrepareOptionsMenu(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onPrepareOptionsMenuBase(android.view.Menu arg0) {
+        return super.onPrepareOptionsMenu(arg0);
+    }
+    //@Override
     public boolean onPreparePanel(int arg0, android.view.View arg1, android.view.Menu arg2) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onPreparePanel", eventDataExchange, arg0, arg1, arg2); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onPreparePanel(arg0, arg1, arg2); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onPreparePanelBase(int arg0, android.view.View arg1, android.view.Menu arg2) {
+        return super.onPreparePanel(arg0, arg1, arg2);
     }
     //@Override
     public boolean onSearchRequested() {
@@ -196,9 +292,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onSearchRequested", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onSearchRequested(); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onSearchRequestedBase() {
+        return super.onSearchRequested();
+    }
+    //@Override
     public boolean onSearchRequested(android.view.SearchEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onSearchRequested1", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onSearchRequested(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+    }
+    //@Override
+    public boolean onSearchRequestedBase(android.view.SearchEvent arg0) {
+        return super.onSearchRequested(arg0);
     }
     //@Override
     public boolean onTouchEvent(android.view.MotionEvent arg0) {
@@ -206,18 +310,26 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onTouchEvent", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onTouchEvent(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
+    public boolean onTouchEventBase(android.view.MotionEvent arg0) {
+        return super.onTouchEvent(arg0);
+    }
+    //@Override
     public boolean onTrackballEvent(android.view.MotionEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onTrackballEvent", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onTrackballEvent(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
-    public void onPointerCaptureChanged(boolean arg0) {
-        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("onPointerCaptureChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) android.view.Window.Callback.super.onPointerCaptureChanged(arg0);
+    public boolean onTrackballEventBase(android.view.MotionEvent arg0) {
+        return super.onTrackballEvent(arg0);
     }
     //@Override
-    public void onPointerCaptureChangedDefault(boolean arg0) {
-        android.view.Window.Callback.super.onPointerCaptureChanged(arg0);
+    public void onPointerCaptureChanged(boolean arg0) {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("onPointerCaptureChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onPointerCaptureChanged(arg0);
+    }
+    //@Override
+    public void onPointerCaptureChangedBase(boolean arg0) {
+        super.onPointerCaptureChanged(arg0);
     }
     //@Override
     public java.lang.CharSequence onCreateDescription() {
@@ -225,9 +337,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onCreateDescription", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onCreateDescription(); else retVal = eventDataExchange.getReturnData(); return (java.lang.CharSequence)retVal;
     }
     //@Override
+    public java.lang.CharSequence onCreateDescriptionBase() {
+        return super.onCreateDescription();
+    }
+    //@Override
     public java.lang.Object onRetainNonConfigurationInstance() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onRetainNonConfigurationInstance", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.onRetainNonConfigurationInstance(); else retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
+    }
+    //@Override
+    public java.lang.Object onRetainNonConfigurationInstanceBase() {
+        return super.onRetainNonConfigurationInstance();
     }
     //@Override
     public void onActionModeFinished(android.view.ActionMode arg0) {
@@ -235,9 +355,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onActionModeFinished", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onActionModeFinished(arg0);
     }
     //@Override
+    public void onActionModeFinishedBase(android.view.ActionMode arg0) {
+        super.onActionModeFinished(arg0);
+    }
+    //@Override
     public void onActionModeStarted(android.view.ActionMode arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onActionModeStarted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onActionModeStarted(arg0);
+    }
+    //@Override
+    public void onActionModeStartedBase(android.view.ActionMode arg0) {
+        super.onActionModeStarted(arg0);
     }
     //@Override
     public void onActivityReenter(int arg0, android.content.Intent arg1) {
@@ -245,9 +373,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onActivityReenter", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onActivityReenter(arg0, arg1);
     }
     //@Override
+    public void onActivityReenterBase(int arg0, android.content.Intent arg1) {
+        super.onActivityReenter(arg0, arg1);
+    }
+    //@Override
     public void onActivityResult(int arg0, int arg1, android.content.Intent arg2, android.app.ComponentCaller arg3) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onActivityResult", eventDataExchange, arg0, arg1, arg2, arg3); if (!eventDataExchange.getHasOverride()) super.onActivityResult(arg0, arg1, arg2, arg3);
+    }
+    //@Override
+    public void onActivityResultBase(int arg0, int arg1, android.content.Intent arg2, android.app.ComponentCaller arg3) {
+        super.onActivityResult(arg0, arg1, arg2, arg3);
     }
     //@Override
     public void onAttachedToWindow() {
@@ -255,9 +391,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onAttachedToWindow", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onAttachedToWindow();
     }
     //@Override
+    public void onAttachedToWindowBase() {
+        super.onAttachedToWindow();
+    }
+    //@Override
     public void onAttachFragment(android.app.Fragment arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onAttachFragment", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onAttachFragment(arg0);
+    }
+    //@Override
+    public void onAttachFragmentBase(android.app.Fragment arg0) {
+        super.onAttachFragment(arg0);
     }
     //@Override
     public void onBackPressed() {
@@ -265,9 +409,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onBackPressed", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onBackPressed();
     }
     //@Override
+    public void onBackPressedBase() {
+        super.onBackPressed();
+    }
+    //@Override
     public void onContentChanged() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onContentChanged", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onContentChanged();
+    }
+    //@Override
+    public void onContentChangedBase() {
+        super.onContentChanged();
     }
     //@Override
     public void onContextMenuClosed(android.view.Menu arg0) {
@@ -275,9 +427,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onContextMenuClosed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onContextMenuClosed(arg0);
     }
     //@Override
+    public void onContextMenuClosedBase(android.view.Menu arg0) {
+        super.onContextMenuClosed(arg0);
+    }
+    //@Override
     public void onCreate(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onCreate", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onCreate(arg0, arg1);
+    }
+    //@Override
+    public void onCreateBase(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
+        super.onCreate(arg0, arg1);
     }
     //@Override
     public void onCreateContextMenu(android.view.ContextMenu arg0, android.view.View arg1, android.view.ContextMenu.ContextMenuInfo arg2) {
@@ -285,9 +445,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onCreateContextMenu", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.onCreateContextMenu(arg0, arg1, arg2);
     }
     //@Override
+    public void onCreateContextMenuBase(android.view.ContextMenu arg0, android.view.View arg1, android.view.ContextMenu.ContextMenuInfo arg2) {
+        super.onCreateContextMenu(arg0, arg1, arg2);
+    }
+    //@Override
     public void onCreateNavigateUpTaskStack(android.app.TaskStackBuilder arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onCreateNavigateUpTaskStack", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onCreateNavigateUpTaskStack(arg0);
+    }
+    //@Override
+    public void onCreateNavigateUpTaskStackBase(android.app.TaskStackBuilder arg0) {
+        super.onCreateNavigateUpTaskStack(arg0);
     }
     //@Override
     public void onDetachedFromWindow() {
@@ -295,9 +463,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onDetachedFromWindow", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onDetachedFromWindow();
     }
     //@Override
+    public void onDetachedFromWindowBase() {
+        super.onDetachedFromWindow();
+    }
+    //@Override
     public void onEnterAnimationComplete() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onEnterAnimationComplete", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onEnterAnimationComplete();
+    }
+    //@Override
+    public void onEnterAnimationCompleteBase() {
+        super.onEnterAnimationComplete();
     }
     //@Override
     public void onGetDirectActions(android.os.CancellationSignal arg0, java.util.function.Consumer arg1) {
@@ -305,9 +481,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onGetDirectActions", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onGetDirectActions(arg0, arg1);
     }
     //@Override
+    public void onGetDirectActionsBase(android.os.CancellationSignal arg0, java.util.function.Consumer arg1) {
+        super.onGetDirectActions(arg0, arg1);
+    }
+    //@Override
     public void onLocalVoiceInteractionStarted() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onLocalVoiceInteractionStarted", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onLocalVoiceInteractionStarted();
+    }
+    //@Override
+    public void onLocalVoiceInteractionStartedBase() {
+        super.onLocalVoiceInteractionStarted();
     }
     //@Override
     public void onLocalVoiceInteractionStopped() {
@@ -315,9 +499,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onLocalVoiceInteractionStopped", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onLocalVoiceInteractionStopped();
     }
     //@Override
+    public void onLocalVoiceInteractionStoppedBase() {
+        super.onLocalVoiceInteractionStopped();
+    }
+    //@Override
     public void onMultiWindowModeChanged(boolean arg0, android.content.res.Configuration arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onMultiWindowModeChanged", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onMultiWindowModeChanged(arg0, arg1);
+    }
+    //@Override
+    public void onMultiWindowModeChangedBase(boolean arg0, android.content.res.Configuration arg1) {
+        super.onMultiWindowModeChanged(arg0, arg1);
     }
     //@Override
     public void onMultiWindowModeChanged(boolean arg0) {
@@ -325,9 +517,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onMultiWindowModeChanged1", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onMultiWindowModeChanged(arg0);
     }
     //@Override
+    public void onMultiWindowModeChangedBase(boolean arg0) {
+        super.onMultiWindowModeChanged(arg0);
+    }
+    //@Override
     public void onNewIntent(android.content.Intent arg0, android.app.ComponentCaller arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onNewIntent", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onNewIntent(arg0, arg1);
+    }
+    //@Override
+    public void onNewIntentBase(android.content.Intent arg0, android.app.ComponentCaller arg1) {
+        super.onNewIntent(arg0, arg1);
     }
     //@Override
     public void onOptionsMenuClosed(android.view.Menu arg0) {
@@ -335,9 +535,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onOptionsMenuClosed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onOptionsMenuClosed(arg0);
     }
     //@Override
+    public void onOptionsMenuClosedBase(android.view.Menu arg0) {
+        super.onOptionsMenuClosed(arg0);
+    }
+    //@Override
     public void onPanelClosed(int arg0, android.view.Menu arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onPanelClosed", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onPanelClosed(arg0, arg1);
+    }
+    //@Override
+    public void onPanelClosedBase(int arg0, android.view.Menu arg1) {
+        super.onPanelClosed(arg0, arg1);
     }
     //@Override
     public void onPerformDirectAction(java.lang.String arg0, android.os.Bundle arg1, android.os.CancellationSignal arg2, java.util.function.Consumer arg3) {
@@ -345,9 +553,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onPerformDirectAction", eventDataExchange, arg0, arg1, arg2, arg3); if (!eventDataExchange.getHasOverride()) super.onPerformDirectAction(arg0, arg1, arg2, arg3);
     }
     //@Override
+    public void onPerformDirectActionBase(java.lang.String arg0, android.os.Bundle arg1, android.os.CancellationSignal arg2, java.util.function.Consumer arg3) {
+        super.onPerformDirectAction(arg0, arg1, arg2, arg3);
+    }
+    //@Override
     public void onPictureInPictureModeChanged(boolean arg0, android.content.res.Configuration arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onPictureInPictureModeChanged", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onPictureInPictureModeChanged(arg0, arg1);
+    }
+    //@Override
+    public void onPictureInPictureModeChangedBase(boolean arg0, android.content.res.Configuration arg1) {
+        super.onPictureInPictureModeChanged(arg0, arg1);
     }
     //@Override
     public void onPictureInPictureModeChanged(boolean arg0) {
@@ -355,9 +571,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onPictureInPictureModeChanged1", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onPictureInPictureModeChanged(arg0);
     }
     //@Override
+    public void onPictureInPictureModeChangedBase(boolean arg0) {
+        super.onPictureInPictureModeChanged(arg0);
+    }
+    //@Override
     public void onPictureInPictureUiStateChanged(android.app.PictureInPictureUiState arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onPictureInPictureUiStateChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onPictureInPictureUiStateChanged(arg0);
+    }
+    //@Override
+    public void onPictureInPictureUiStateChangedBase(android.app.PictureInPictureUiState arg0) {
+        super.onPictureInPictureUiStateChanged(arg0);
     }
     //@Override
     public void onPostCreate(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
@@ -365,9 +589,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onPostCreate", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onPostCreate(arg0, arg1);
     }
     //@Override
+    public void onPostCreateBase(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
+        super.onPostCreate(arg0, arg1);
+    }
+    //@Override
     public void onPrepareNavigateUpTaskStack(android.app.TaskStackBuilder arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onPrepareNavigateUpTaskStack", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onPrepareNavigateUpTaskStack(arg0);
+    }
+    //@Override
+    public void onPrepareNavigateUpTaskStackBase(android.app.TaskStackBuilder arg0) {
+        super.onPrepareNavigateUpTaskStack(arg0);
     }
     //@Override
     public void onProvideAssistContent(android.app.assist.AssistContent arg0) {
@@ -375,9 +607,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onProvideAssistContent", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onProvideAssistContent(arg0);
     }
     //@Override
+    public void onProvideAssistContentBase(android.app.assist.AssistContent arg0) {
+        super.onProvideAssistContent(arg0);
+    }
+    //@Override
     public void onProvideAssistData(android.os.Bundle arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onProvideAssistData", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onProvideAssistData(arg0);
+    }
+    //@Override
+    public void onProvideAssistDataBase(android.os.Bundle arg0) {
+        super.onProvideAssistData(arg0);
     }
     //@Override
     public void onProvideKeyboardShortcuts(java.util.List arg0, android.view.Menu arg1, int arg2) {
@@ -385,9 +625,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onProvideKeyboardShortcuts", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.onProvideKeyboardShortcuts(arg0, arg1, arg2);
     }
     //@Override
+    public void onProvideKeyboardShortcutsBase(java.util.List arg0, android.view.Menu arg1, int arg2) {
+        super.onProvideKeyboardShortcuts(arg0, arg1, arg2);
+    }
+    //@Override
     public void onRequestPermissionsResult(int arg0, java.lang.String[] arg1, int[] arg2, int arg3) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onRequestPermissionsResult", eventDataExchange, arg0, arg1, arg2, arg3); if (!eventDataExchange.getHasOverride()) super.onRequestPermissionsResult(arg0, arg1, arg2, arg3);
+    }
+    //@Override
+    public void onRequestPermissionsResultBase(int arg0, java.lang.String[] arg1, int[] arg2, int arg3) {
+        super.onRequestPermissionsResult(arg0, arg1, arg2, arg3);
     }
     //@Override
     public void onRequestPermissionsResult(int arg0, java.lang.String[] arg1, int[] arg2) {
@@ -395,9 +643,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onRequestPermissionsResult3", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.onRequestPermissionsResult(arg0, arg1, arg2);
     }
     //@Override
+    public void onRequestPermissionsResultBase(int arg0, java.lang.String[] arg1, int[] arg2) {
+        super.onRequestPermissionsResult(arg0, arg1, arg2);
+    }
+    //@Override
     public void onRestoreInstanceState(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onRestoreInstanceState", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onRestoreInstanceState(arg0, arg1);
+    }
+    //@Override
+    public void onRestoreInstanceStateBase(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
+        super.onRestoreInstanceState(arg0, arg1);
     }
     //@Override
     public void onSaveInstanceState(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
@@ -405,9 +661,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onSaveInstanceState", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.onSaveInstanceState(arg0, arg1);
     }
     //@Override
+    public void onSaveInstanceStateBase(android.os.Bundle arg0, android.os.PersistableBundle arg1) {
+        super.onSaveInstanceState(arg0, arg1);
+    }
+    //@Override
     public void onStateNotSaved() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onStateNotSaved", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onStateNotSaved();
+    }
+    //@Override
+    public void onStateNotSavedBase() {
+        super.onStateNotSaved();
     }
     //@Override
     public void onTopResumedActivityChanged(boolean arg0) {
@@ -415,9 +679,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onTopResumedActivityChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onTopResumedActivityChanged(arg0);
     }
     //@Override
+    public void onTopResumedActivityChangedBase(boolean arg0) {
+        super.onTopResumedActivityChanged(arg0);
+    }
+    //@Override
     public void onTrimMemory(int arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onTrimMemory", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onTrimMemory(arg0);
+    }
+    //@Override
+    public void onTrimMemoryBase(int arg0) {
+        super.onTrimMemory(arg0);
     }
     //@Override
     public void onUserInteraction() {
@@ -425,9 +697,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onUserInteraction", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onUserInteraction();
     }
     //@Override
+    public void onUserInteractionBase() {
+        super.onUserInteraction();
+    }
+    //@Override
     public void onVisibleBehindCanceled() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onVisibleBehindCanceled", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onVisibleBehindCanceled();
+    }
+    //@Override
+    public void onVisibleBehindCanceledBase() {
+        super.onVisibleBehindCanceled();
     }
     //@Override
     public void onWindowAttributesChanged(android.view.WindowManager.LayoutParams arg0) {
@@ -435,9 +715,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onWindowAttributesChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onWindowAttributesChanged(arg0);
     }
     //@Override
+    public void onWindowAttributesChangedBase(android.view.WindowManager.LayoutParams arg0) {
+        super.onWindowAttributesChanged(arg0);
+    }
+    //@Override
     public void onConfigurationChanged(android.content.res.Configuration arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onConfigurationChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onConfigurationChanged(arg0);
+    }
+    //@Override
+    public void onConfigurationChangedBase(android.content.res.Configuration arg0) {
+        super.onConfigurationChanged(arg0);
     }
     //@Override
     public void onGlobalLayout() {
@@ -445,9 +733,17 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onGlobalLayout", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onGlobalLayout();
     }
     //@Override
+    public void onGlobalLayoutBase() {
+        super.onGlobalLayout();
+    }
+    //@Override
     public void onInputQueueCreated(android.view.InputQueue arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onInputQueueCreated", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onInputQueueCreated(arg0);
+    }
+    //@Override
+    public void onInputQueueCreatedBase(android.view.InputQueue arg0) {
+        super.onInputQueueCreated(arg0);
     }
     //@Override
     public void onInputQueueDestroyed(android.view.InputQueue arg0) {
@@ -455,14 +751,26 @@ public final class NativeActivity extends android.app.NativeActivity implements 
         raiseEvent("onInputQueueDestroyed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onInputQueueDestroyed(arg0);
     }
     //@Override
+    public void onInputQueueDestroyedBase(android.view.InputQueue arg0) {
+        super.onInputQueueDestroyed(arg0);
+    }
+    //@Override
     public void onLowMemory() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onLowMemory", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.onLowMemory();
     }
     //@Override
+    public void onLowMemoryBase() {
+        super.onLowMemory();
+    }
+    //@Override
     public void onWindowFocusChanged(boolean arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onWindowFocusChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.onWindowFocusChanged(arg0);
+    }
+    //@Override
+    public void onWindowFocusChangedBase(boolean arg0) {
+        super.onWindowFocusChanged(arg0);
     }
 
 }
