@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Stack_1" data-uid="Java.Util.Stack`1" class="text-break">
-Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L102"><i class="bi bi-code-slash"></i></a>
+Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -118,7 +118,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
       <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;E&gt;&gt;</div>
       <div><span class="xref">JVMBridgeBaseEnumerable</span>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;E&gt;&gt;</div>
       <div><span class="xref">JVMBridgeBaseEnumerable</span>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;E&gt;, E&gt;</div>
-      <div><a class="xref" href="MASES.Netdroid.Specific.NetdroidAsyncEnumerable-2.html">NetdroidAsyncEnumerable</a>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;E&gt;, E&gt;</div>
+      <div><a class="xref" href="MASES.JNet.Specific.JNetAsyncEnumerable-2.html">JNetAsyncEnumerable</a>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;E&gt;, E&gt;</div>
       <div><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;E&gt;</div>
       <div><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;E&gt;</div>
       <div><a class="xref" href="Java.Util.AbstractCollection-1.html">AbstractCollection</a>&lt;E&gt;</div>
@@ -154,6 +154,24 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Util.Vector-1.html#Java_Util_Vector_1_Clone">Vector&lt;E&gt;.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Vector-1.html#Java_Util_Vector_1_ForEach__1_Java_Util_Function_Consumer___0__">Vector&lt;E&gt;.ForEach&lt;T&gt;(Consumer&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Vector-1.html#Java_Util_Vector_1_RemoveIf__1_Java_Util_Function_Predicate___0__">Vector&lt;E&gt;.RemoveIf&lt;T&gt;(Predicate&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Vector-1.html#Java_Util_Vector_1_ReplaceAll_Java_Util_Function_UnaryOperator__0__">Vector&lt;E&gt;.ReplaceAll(UnaryOperator&lt;E&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Vector-1.html#Java_Util_Vector_1_Sort__1_Java_Util_Comparator___0__">Vector&lt;E&gt;.Sort&lt;T&gt;(Comparator&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Vector-1.html#Java_Util_Vector_1_Spliterator">Vector&lt;E&gt;.Spliterator()</a>
+    </div>
     <div>
       <a class="xref" href="Java.Util.Vector-1.html#Java_Util_Vector_1_Elements">Vector&lt;E&gt;.Elements()</a>
     </div>
@@ -281,16 +299,13 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveIf__1_Java_Util_Function_Predicate___0__">Collection&lt;E&gt;.RemoveIf&lt;Arg0objectSuperE&gt;(Predicate&lt;Arg0objectSuperE&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Spliterator">Collection&lt;E&gt;.Spliterator()</a>
-    </div>
-    <div>
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ParallelStream">Collection&lt;E&gt;.ParallelStream()</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Stream">Collection&lt;E&gt;.Stream()</a>
     </div>
     <div>
-      <a class="xref" href="MASES.Netdroid.Specific.NetdroidAsyncEnumerable-2.html#MASES_Netdroid_Specific_NetdroidAsyncEnumerable_2_GetAsyncEnumerator_System_Threading_CancellationToken_">NetdroidAsyncEnumerable&lt;Iterable&lt;E&gt;, E&gt;.GetAsyncEnumerator(CancellationToken)</a>
+      <a class="xref" href="MASES.JNet.Specific.JNetAsyncEnumerable-2.html#MASES_JNet_Specific_JNetAsyncEnumerable_2_GetAsyncEnumerator_System_Threading_CancellationToken_">JNetAsyncEnumerable&lt;Iterable&lt;E&gt;, E&gt;.GetAsyncEnumerator(CancellationToken)</a>
     </div>
     <div>
       <span class="xref">JVMBridgeBaseEnumerable&lt;Iterable&lt;E&gt;, E&gt;.GetEnumerator()</span>
@@ -649,19 +664,19 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html#MASES_Netdroid_Specific_Extensions_JavaUtilExtensions_ToJVMCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__">JavaUtilExtensions.ToJVMCollectionType&lt;TIterableType, TJVMTypeInner, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMTypeInner&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__">JavaUtilExtensions.ToJVMCollectionType&lt;TIterableType, TJVMTypeInner, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMTypeInner&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html#MASES_Netdroid_Specific_Extensions_JavaUtilExtensions_ToJVMCollection__2_System_Collections_Generic_IEnumerable___1__System_Func___1___0__">JavaUtilExtensions.ToJVMCollection&lt;TJVMType, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMType&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollection__2_System_Collections_Generic_IEnumerable___1__System_Func___1___0__">JavaUtilExtensions.ToJVMCollection&lt;TJVMType, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMType&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html#MASES_Netdroid_Specific_Extensions_JavaUtilExtensions_ToNetArray__2_System_Collections_Generic_IEnumerable___1__">JavaUtilExtensions.ToNetArray&lt;TNetType, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetArray__2_System_Collections_Generic_IEnumerable___1__">JavaUtilExtensions.ToNetArray&lt;TNetType, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html#MASES_Netdroid_Specific_Extensions_JavaUtilExtensions_ToNetCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__">JavaUtilExtensions.ToNetCollectionType&lt;TEnumerableType, TNetTypeInner, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;, Func&lt;TJVMType, TNetTypeInner&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__">JavaUtilExtensions.ToNetCollectionType&lt;TEnumerableType, TNetTypeInner, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;, Func&lt;TJVMType, TNetTypeInner&gt;)</a>
   </div>
   </dd></dl>
 
@@ -677,7 +692,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1__ctor" data-uid="Java.Util.Stack`1.#ctor">
   Stack()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6686"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -704,7 +719,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1__ctor_System_Object___" data-uid="Java.Util.Stack`1.#ctor(System.Object[])">
   Stack(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6690"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -740,7 +755,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_BridgeClassName" data-uid="Java.Util.Stack`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6698"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -772,7 +787,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_IsBridgeAbstract" data-uid="Java.Util.Stack`1.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6702"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -804,7 +819,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_IsBridgeCloseable" data-uid="Java.Util.Stack`1.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6706"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -836,7 +851,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_IsBridgeInterface" data-uid="Java.Util.Stack`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6710"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -868,7 +883,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_IsBridgeStatic" data-uid="Java.Util.Stack`1.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6714"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -904,7 +919,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_Empty" data-uid="Java.Util.Stack`1.Empty">
   Empty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Stack.html#empty()">https://developer.android.com/reference/java/util/Stack.html#empty()</a></p>
@@ -937,7 +952,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_Peek" data-uid="Java.Util.Stack`1.Peek">
   Peek()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Stack.html#peek()">https://developer.android.com/reference/java/util/Stack.html#peek()</a></p>
@@ -970,7 +985,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_Pop" data-uid="Java.Util.Stack`1.Pop">
   Pop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Stack.html#pop()">https://developer.android.com/reference/java/util/Stack.html#pop()</a></p>
@@ -1003,7 +1018,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_Push__0_" data-uid="Java.Util.Stack`1.Push(`0)">
   Push(E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Stack.html#push(java.lang.Object)">https://developer.android.com/reference/java/util/Stack.html#push(java.lang.Object)</a></p>
@@ -1042,7 +1057,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_Search_System_Object_" data-uid="Java.Util.Stack`1.Search(System.Object)">
   Search(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Stack.html#search(java.lang.Object)">https://developer.android.com/reference/java/util/Stack.html#search(java.lang.Object)</a></p>
@@ -1085,7 +1100,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Util_Stack_1_op_Implicit_Java_Util_Stack__0___Java_Util_Stack" data-uid="Java.Util.Stack`1.op_Implicit(Java.Util.Stack{`0})~Java.Util.Stack">
   implicit operator Stack(Stack&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Stack-1.html">Stack&lt;E&gt;</a> to <a class="xref" href="Java.Util.Stack.html">Stack</a></p>
@@ -1122,7 +1137,7 @@ Class Stack&lt;E&gt;  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L102" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stack.cs/#L193" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -1,5 +1,5 @@
 {
-  "source_base_path": "D:/a/netdroid/netdroid/src/documentation",
+  "source_base_path": "/home/runner/work/netdroid/netdroid/src/documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -318,6 +318,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Accounts.AccountAuthenticatorActivity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Accounts.AccountAuthenticatorActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Accounts.AccountAuthenticatorActivityDirect.html"
         }
       },
       "version": ""
@@ -2674,10 +2684,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.ActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.ActivityDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.ActivityGroup.yml",
       "output": {
         ".html": {
           "relative_path": "api/Android.App.ActivityGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.ActivityGroupDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.ActivityGroupDirect.html"
         }
       },
       "version": ""
@@ -3178,6 +3208,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.App.AliasActivity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.AliasActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.AliasActivityDirect.html"
         }
       },
       "version": ""
@@ -4604,6 +4644,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.ExpandableListActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.ExpandableListActivityDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.ForegroundServiceStartNotAllowedException.yml",
       "output": {
         ".html": {
@@ -5074,10 +5124,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.LauncherActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.LauncherActivityDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.ListActivity.yml",
       "output": {
         ".html": {
           "relative_path": "api/Android.App.ListActivity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.ListActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.ListActivityDirect.html"
         }
       },
       "version": ""
@@ -5188,6 +5258,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.App.NativeActivity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.NativeActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.NativeActivityDirect.html"
         }
       },
       "version": ""
@@ -6018,6 +6098,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.App.TabActivity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.TabActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.TabActivityDirect.html"
         }
       },
       "version": ""
@@ -30774,10 +30864,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode_1.yml",
+      "source_relative_path": "api/Android.Os.Strictmode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode_1.html"
+          "relative_path": "api/Android.Os.Strictmode.html"
         }
       },
       "version": ""
@@ -31088,6 +31178,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Preference.PreferenceActivity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Preference.PreferenceActivityDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Preference.PreferenceActivityDirect.html"
         }
       },
       "version": ""
@@ -41034,30 +41134,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Text.Method.MultiTapKeyListenerDirect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Text.Method.MultiTapKeyListenerDirect.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Android.Text.Method.NumberKeyListener.yml",
       "output": {
         ".html": {
           "relative_path": "api/Android.Text.Method.NumberKeyListener.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Android.Text.Method.NumberKeyListenerDirect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Text.Method.NumberKeyListenerDirect.html"
         }
       },
       "version": ""
@@ -41128,16 +41208,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Text.Method.TextKeyListener.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Android.Text.Method.TextKeyListenerDirect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Text.Method.TextKeyListenerDirect.html"
         }
       },
       "version": ""
@@ -45924,16 +45994,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.View.OrientationListenerDirect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.View.OrientationListenerDirect.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Android.View.PixelCopy.OnPixelCopyFinishedListener.yml",
       "output": {
         ".html": {
@@ -49624,16 +49684,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Widget.CursorAdapterDirect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Widget.CursorAdapterDirect.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Android.Widget.CursorTreeAdapter.yml",
       "output": {
         ".html": {
@@ -50928,16 +50978,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Widget.SimpleAdapter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Android.Widget.SimpleAdapterDirect.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Widget.SimpleAdapterDirect.html"
         }
       },
       "version": ""
@@ -54214,6 +54254,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.ModuleNs.ModuleDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.ModuleNs.ModuleDescriptor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.ModuleNs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.ModuleNs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Lang.NegativeArraySizeException.yml",
       "output": {
         ".html": {
@@ -54548,6 +54608,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.Reflect.AnnotatedElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.Reflect.AnnotatedType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.Reflect.AnnotatedType.html"
         }
       },
       "version": ""
@@ -71854,6 +71924,126 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.JNetCoreBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.JNetCoreBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.Extensions.INativeConvertible-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.Extensions.INativeConvertible-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.Extensions.JNetCoreExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.Extensions.JNetCoreExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.Extensions.JavaUtilExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.Extensions.JavaUtilExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.GenericCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.GenericCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerable-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetAsyncEnumerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetEventResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetEventResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.Netdroid.Const.yml",
       "output": {
         ".html": {
@@ -71868,96 +72058,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.Netdroid.NetdroidCore-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.NetdroidCoreBase-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.NetdroidCoreBase-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.INativeConvertible-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.Extensions.INativeConvertible-2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.Extensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.NetdroidAsyncEnumerable-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.NetdroidAsyncEnumerable-2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.NetdroidAsyncEnumerator-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.NetdroidAsyncEnumerator-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.NetdroidHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.NetdroidHelper.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.html"
         }
       },
       "version": ""
@@ -73666,11 +73766,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -73739,11 +73839,11 @@
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "articles/toc.html"
-        },
         ".json": {
           "relative_path": "articles/toc.json"
+        },
+        ".html": {
+          "relative_path": "articles/toc.html"
         }
       },
       "version": ""
@@ -73792,11 +73892,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
