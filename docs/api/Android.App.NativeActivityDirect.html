@@ -1,0 +1,2054 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class NativeActivityDirect | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NativeActivityDirect | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="Direct override of  or its generic type if there is one">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_NativeActivityDirect.md&amp;value=---%0Auid%3A%20Android.App.NativeActivityDirect%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.NativeActivityDirect">
+
+
+
+  <h1 id="Android_App_NativeActivityDirect" data-uid="Android.App.NativeActivityDirect" class="text-break">
+Class NativeActivityDirect  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Direct override of <a class="xref" href="Android.App.NativeActivity.html">NativeActivity</a> or its generic type if there is one</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NativeActivityDirect : NativeActivity, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
+      <div><span class="xref">JVMBridgeListener</span></div>
+      <div><a class="xref" href="Android.App.NativeActivity.html">NativeActivity</a></div>
+      <div><span class="xref">NativeActivityDirect</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_META_DATA_FUNC_NAME">NativeActivity.META_DATA_FUNC_NAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_META_DATA_LIB_NAME">NativeActivity.META_DATA_LIB_NAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_FindViewById__1_System_Int32_">NativeActivity.FindViewById&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetActionBar">NativeActivity.GetActionBar()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetCaller">NativeActivity.GetCaller()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetCurrentCaller">NativeActivity.GetCurrentCaller()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetInitialCaller">NativeActivity.GetInitialCaller()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetFragmentManager">NativeActivity.GetFragmentManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetLoaderManager">NativeActivity.GetLoaderManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_CreatePendingResult_System_Int32_Android_Content_Intent_System_Int32_">NativeActivity.CreatePendingResult(int, Intent, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetVoiceInteractor">NativeActivity.GetVoiceInteractor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetCallingActivity">NativeActivity.GetCallingActivity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetComponentName">NativeActivity.GetComponentName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetBaseContext">NativeActivity.GetBaseContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetIntent">NativeActivity.GetIntent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetParentActivityIntent">NativeActivity.GetParentActivityIntent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetPreferences_System_Int32_">NativeActivity.GetPreferences(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetReferrer">NativeActivity.GetReferrer()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideReferrerBase">NativeActivity.OnProvideReferrerBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnProvideReferrer">NativeActivity.OnOnProvideReferrer</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideReferrer">NativeActivity.OnProvideReferrer()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetContentScene">NativeActivity.GetContentScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetContentTransitionManager">NativeActivity.GetContentTransitionManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnWindowStartingActionModeBase_Android_View_ActionMode_Callback_System_Int32_">NativeActivity.OnWindowStartingActionModeBase(ActionMode.Callback, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnWindowStartingActionMode">NativeActivity.OnOnWindowStartingActionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnWindowStartingActionMode_Android_View_ActionMode_Callback_System_Int32_">NativeActivity.OnWindowStartingActionMode(ActionMode.Callback, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnWindowStartingActionModeBase_Android_View_ActionMode_Callback_">NativeActivity.OnWindowStartingActionModeBase(ActionMode.Callback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnWindowStartingActionMode1">NativeActivity.OnOnWindowStartingActionMode1</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnWindowStartingActionMode_Android_View_ActionMode_Callback_">NativeActivity.OnWindowStartingActionMode(ActionMode.Callback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActionMode_Android_View_ActionMode_Callback_System_Int32_">NativeActivity.StartActionMode(ActionMode.Callback, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActionMode_Android_View_ActionMode_Callback_">NativeActivity.StartActionMode(ActionMode.Callback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequestDragAndDropPermissions_Android_View_DragEvent_">NativeActivity.RequestDragAndDropPermissions(DragEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetLayoutInflater">NativeActivity.GetLayoutInflater()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetMenuInflater">NativeActivity.GetMenuInflater()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetCurrentFocus">NativeActivity.GetCurrentFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreatePanelViewBase_System_Int32_">NativeActivity.OnCreatePanelViewBase(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreatePanelView">NativeActivity.OnOnCreatePanelView</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreatePanelView_System_Int32_">NativeActivity.OnCreatePanelView(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateViewBase_Android_View_View_Java_Lang_String_Android_Content_Context_Android_Util_AttributeSet_">NativeActivity.OnCreateViewBase(View, String, Context, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreateView">NativeActivity.OnOnCreateView</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateView_Android_View_View_Java_Lang_String_Android_Content_Context_Android_Util_AttributeSet_">NativeActivity.OnCreateView(View, String, Context, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateViewBase_Java_Lang_String_Android_Content_Context_Android_Util_AttributeSet_">NativeActivity.OnCreateViewBase(String, Context, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreateView3">NativeActivity.OnOnCreateView3</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateView_Java_Lang_String_Android_Content_Context_Android_Util_AttributeSet_">NativeActivity.OnCreateView(String, Context, AttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetWindow">NativeActivity.GetWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetWindowManager">NativeActivity.GetWindowManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetOnBackInvokedDispatcher">NativeActivity.GetOnBackInvokedDispatcher()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DispatchGenericMotionEvent_Android_View_MotionEvent_">NativeActivity.DispatchGenericMotionEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DispatchKeyEvent_Android_View_KeyEvent_">NativeActivity.DispatchKeyEvent(KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DispatchKeyShortcutEvent_Android_View_KeyEvent_">NativeActivity.DispatchKeyShortcutEvent(KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DispatchPopulateAccessibilityEvent_Android_View_Accessibility_AccessibilityEvent_">NativeActivity.DispatchPopulateAccessibilityEvent(AccessibilityEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DispatchTouchEvent_Android_View_MotionEvent_">NativeActivity.DispatchTouchEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DispatchTrackballEvent_Android_View_MotionEvent_">NativeActivity.DispatchTrackballEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_EnterPictureInPictureMode_Android_App_PictureInPictureParams_">NativeActivity.EnterPictureInPictureMode(PictureInPictureParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_HasWindowFocus">NativeActivity.HasWindowFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsActivityTransitionRunning">NativeActivity.IsActivityTransitionRunning()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsChangingConfigurations">NativeActivity.IsChangingConfigurations()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsDestroyed">NativeActivity.IsDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsFinishing">NativeActivity.IsFinishing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsImmersive">NativeActivity.IsImmersive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsInMultiWindowMode">NativeActivity.IsInMultiWindowMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsInPictureInPictureMode">NativeActivity.IsInPictureInPictureMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsLaunchedFromBubble">NativeActivity.IsLaunchedFromBubble()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsLocalVoiceInteractionSupported">NativeActivity.IsLocalVoiceInteractionSupported()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsTaskRoot">NativeActivity.IsTaskRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsVoiceInteraction">NativeActivity.IsVoiceInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsVoiceInteractionRoot">NativeActivity.IsVoiceInteractionRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_MoveTaskToBack_System_Boolean_">NativeActivity.MoveTaskToBack(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_NavigateUpTo_Android_Content_Intent_">NativeActivity.NavigateUpTo(Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_NavigateUpToFromChild_Android_App_Activity_Android_Content_Intent_">NativeActivity.NavigateUpToFromChild(Activity, Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnContextItemSelectedBase_Android_View_MenuItem_">NativeActivity.OnContextItemSelectedBase(MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnContextItemSelected">NativeActivity.OnOnContextItemSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnContextItemSelected_Android_View_MenuItem_">NativeActivity.OnContextItemSelected(MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateOptionsMenuBase_Android_View_Menu_">NativeActivity.OnCreateOptionsMenuBase(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreateOptionsMenu">NativeActivity.OnOnCreateOptionsMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateOptionsMenu_Android_View_Menu_">NativeActivity.OnCreateOptionsMenu(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreatePanelMenuBase_System_Int32_Android_View_Menu_">NativeActivity.OnCreatePanelMenuBase(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreatePanelMenu">NativeActivity.OnOnCreatePanelMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreatePanelMenu_System_Int32_Android_View_Menu_">NativeActivity.OnCreatePanelMenu(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateThumbnailBase_Android_Graphics_Bitmap_Android_Graphics_Canvas_">NativeActivity.OnCreateThumbnailBase(Bitmap, Canvas)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreateThumbnail">NativeActivity.OnOnCreateThumbnail</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateThumbnail_Android_Graphics_Bitmap_Android_Graphics_Canvas_">NativeActivity.OnCreateThumbnail(Bitmap, Canvas)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnGenericMotionEventBase_Android_View_MotionEvent_">NativeActivity.OnGenericMotionEventBase(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnGenericMotionEvent">NativeActivity.OnOnGenericMotionEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnGenericMotionEvent_Android_View_MotionEvent_">NativeActivity.OnGenericMotionEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyDownBase_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyDownBase(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnKeyDown">NativeActivity.OnOnKeyDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyDown_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyDown(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyLongPressBase_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyLongPressBase(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnKeyLongPress">NativeActivity.OnOnKeyLongPress</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyLongPress_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyLongPress(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyMultipleBase_System_Int32_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyMultipleBase(int, int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnKeyMultiple">NativeActivity.OnOnKeyMultiple</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyMultiple_System_Int32_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyMultiple(int, int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyShortcutBase_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyShortcutBase(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnKeyShortcut">NativeActivity.OnOnKeyShortcut</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyShortcut_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyShortcut(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyUpBase_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyUpBase(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnKeyUp">NativeActivity.OnOnKeyUp</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnKeyUp_System_Int32_Android_View_KeyEvent_">NativeActivity.OnKeyUp(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMenuItemSelectedBase_System_Int32_Android_View_MenuItem_">NativeActivity.OnMenuItemSelectedBase(int, MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnMenuItemSelected">NativeActivity.OnOnMenuItemSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMenuItemSelected_System_Int32_Android_View_MenuItem_">NativeActivity.OnMenuItemSelected(int, MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMenuOpenedBase_System_Int32_Android_View_Menu_">NativeActivity.OnMenuOpenedBase(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnMenuOpened">NativeActivity.OnOnMenuOpened</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMenuOpened_System_Int32_Android_View_Menu_">NativeActivity.OnMenuOpened(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnNavigateUpBase">NativeActivity.OnNavigateUpBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnNavigateUp">NativeActivity.OnOnNavigateUp</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnNavigateUp">NativeActivity.OnNavigateUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnNavigateUpFromChildBase_Android_App_Activity_">NativeActivity.OnNavigateUpFromChildBase(Activity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnNavigateUpFromChild">NativeActivity.OnOnNavigateUpFromChild</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnNavigateUpFromChild_Android_App_Activity_">NativeActivity.OnNavigateUpFromChild(Activity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOptionsItemSelectedBase_Android_View_MenuItem_">NativeActivity.OnOptionsItemSelectedBase(MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnOptionsItemSelected">NativeActivity.OnOnOptionsItemSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOptionsItemSelected_Android_View_MenuItem_">NativeActivity.OnOptionsItemSelected(MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureRequestedBase">NativeActivity.OnPictureInPictureRequestedBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPictureInPictureRequested">NativeActivity.OnOnPictureInPictureRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureRequested">NativeActivity.OnPictureInPictureRequested()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPrepareOptionsMenuBase_Android_View_Menu_">NativeActivity.OnPrepareOptionsMenuBase(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPrepareOptionsMenu">NativeActivity.OnOnPrepareOptionsMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPrepareOptionsMenu_Android_View_Menu_">NativeActivity.OnPrepareOptionsMenu(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPreparePanelBase_System_Int32_Android_View_View_Android_View_Menu_">NativeActivity.OnPreparePanelBase(int, View, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPreparePanel">NativeActivity.OnOnPreparePanel</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPreparePanel_System_Int32_Android_View_View_Android_View_Menu_">NativeActivity.OnPreparePanel(int, View, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnSearchRequestedBase">NativeActivity.OnSearchRequestedBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnSearchRequested">NativeActivity.OnOnSearchRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnSearchRequested">NativeActivity.OnSearchRequested()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnSearchRequestedBase_Android_View_SearchEvent_">NativeActivity.OnSearchRequestedBase(SearchEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnSearchRequested1">NativeActivity.OnOnSearchRequested1</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnSearchRequested_Android_View_SearchEvent_">NativeActivity.OnSearchRequested(SearchEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTouchEventBase_Android_View_MotionEvent_">NativeActivity.OnTouchEventBase(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnTouchEvent">NativeActivity.OnOnTouchEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTouchEvent_Android_View_MotionEvent_">NativeActivity.OnTouchEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTrackballEventBase_Android_View_MotionEvent_">NativeActivity.OnTrackballEventBase(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnTrackballEvent">NativeActivity.OnOnTrackballEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTrackballEvent_Android_View_MotionEvent_">NativeActivity.OnTrackballEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ReleaseInstance">NativeActivity.ReleaseInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequestVisibleBehind_System_Boolean_">NativeActivity.RequestVisibleBehind(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetTranslucent_System_Boolean_">NativeActivity.SetTranslucent(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShouldDockBigOverlays">NativeActivity.ShouldDockBigOverlays()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShouldShowRequestPermissionRationale_Java_Lang_String_System_Int32_">NativeActivity.ShouldShowRequestPermissionRationale(String, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShouldShowRequestPermissionRationale_Java_Lang_String_">NativeActivity.ShouldShowRequestPermissionRationale(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShouldUpRecreateTask_Android_Content_Intent_">NativeActivity.ShouldUpRecreateTask(Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShowAssist_Android_Os_Bundle_">NativeActivity.ShowAssist(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityIfNeeded_Android_Content_Intent_System_Int32_Android_Os_Bundle_">NativeActivity.StartActivityIfNeeded(Intent, int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityIfNeeded_Android_Content_Intent_System_Int32_">NativeActivity.StartActivityIfNeeded(Intent, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartNextMatchingActivity_Android_Content_Intent_Android_Os_Bundle_">NativeActivity.StartNextMatchingActivity(Intent, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartNextMatchingActivity_Android_Content_Intent_">NativeActivity.StartNextMatchingActivity(Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_BindIsolatedService_Android_Content_Intent_Android_Content_Context_BindServiceFlags_Java_Lang_String_Java_Util_Concurrent_Executor_Android_Content_ServiceConnection_">NativeActivity.BindIsolatedService(Intent, Context.BindServiceFlags, String, Executor, ServiceConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SurfaceRedrawNeededAsync_Android_View_SurfaceHolder_Java_Lang_Runnable_">NativeActivity.SurfaceRedrawNeededAsync(SurfaceHolder, Runnable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPointerCaptureChangedBase_System_Boolean_">NativeActivity.OnPointerCaptureChangedBase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPointerCaptureChangedDefault_System_Boolean_">NativeActivity.OnPointerCaptureChangedDefault(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPointerCaptureChanged">NativeActivity.OnOnPointerCaptureChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPointerCaptureChanged_System_Boolean_">NativeActivity.OnPointerCaptureChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequireViewById__1_System_Int32_">NativeActivity.RequireViewById&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetSystemService__1_Java_Lang_Class_">NativeActivity.GetSystemService&lt;T&gt;(Class)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetParent">NativeActivity.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetParentDirect">NativeActivity.GetParentDirect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetApplication">NativeActivity.GetApplication()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetColorStateList_System_Int32_">NativeActivity.GetColorStateList(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ObtainStyledAttributes_Android_Util_AttributeSet_System_Int32___System_Int32_System_Int32_">NativeActivity.ObtainStyledAttributes(AttributeSet, int[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ObtainStyledAttributes_Android_Util_AttributeSet_System_Int32___">NativeActivity.ObtainStyledAttributes(AttributeSet, int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ObtainStyledAttributes_System_Int32_System_Int32___">NativeActivity.ObtainStyledAttributes(int, int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ObtainStyledAttributes_System_Int32___">NativeActivity.ObtainStyledAttributes(int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ManagedQuery_Android_Net_Uri_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_">NativeActivity.ManagedQuery(Uri, String[], String, String[], String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetDrawable_System_Int32_">NativeActivity.GetDrawable(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetMediaController">NativeActivity.GetMediaController()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetSearchEvent">NativeActivity.GetSearchEvent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetSplashScreen">NativeActivity.GetSplashScreen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_IsChild">NativeActivity.IsChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequestWindowFeature_System_Int32_">NativeActivity.RequestWindowFeature(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShowDialog_System_Int32_Android_Os_Bundle_">NativeActivity.ShowDialog(int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetTitleColor">NativeActivity.GetTitleColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetVolumeControlStream">NativeActivity.GetVolumeControlStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetColor_System_Int32_">NativeActivity.GetColor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetTitle">NativeActivity.GetTitle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetText_System_Int32_">NativeActivity.GetText(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetString_System_Int32_System_Object___">NativeActivity.GetString(int, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetString_System_Int32_">NativeActivity.GetString(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DismissDialog_System_Int32_">NativeActivity.DismissDialog(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_DismissKeyboardShortcutsHelper">NativeActivity.DismissKeyboardShortcutsHelper()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RemoveDialog_System_Int32_">NativeActivity.RemoveDialog(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequestPermissions_Java_Lang_String___System_Int32_System_Int32_">NativeActivity.RequestPermissions(String[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequestPermissions_Java_Lang_String___System_Int32_">NativeActivity.RequestPermissions(String[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequestShowKeyboardShortcuts">NativeActivity.RequestShowKeyboardShortcuts()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RunOnUiThread_Java_Lang_Runnable_">NativeActivity.RunOnUiThread(Runnable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetDefaultKeyMode_System_Int32_">NativeActivity.SetDefaultKeyMode(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetFeatureDrawable_System_Int32_Android_Graphics_Drawable_Drawable_">NativeActivity.SetFeatureDrawable(int, Drawable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetFeatureDrawableAlpha_System_Int32_System_Int32_">NativeActivity.SetFeatureDrawableAlpha(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetFeatureDrawableResource_System_Int32_System_Int32_">NativeActivity.SetFeatureDrawableResource(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetFeatureDrawableUri_System_Int32_Android_Net_Uri_">NativeActivity.SetFeatureDrawableUri(int, Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetMediaController_Android_Media_Session_MediaController_">NativeActivity.SetMediaController(MediaController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetProgress_System_Int32_">NativeActivity.SetProgress(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetProgressBarIndeterminate_System_Boolean_">NativeActivity.SetProgressBarIndeterminate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetProgressBarIndeterminateVisibility_System_Boolean_">NativeActivity.SetProgressBarIndeterminateVisibility(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetProgressBarVisibility_System_Boolean_">NativeActivity.SetProgressBarVisibility(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetResult_System_Int32_Android_Content_Intent_">NativeActivity.SetResult(int, Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetResult_System_Int32_">NativeActivity.SetResult(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetSecondaryProgress_System_Int32_">NativeActivity.SetSecondaryProgress(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetVolumeControlStream_System_Int32_">NativeActivity.SetVolumeControlStream(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShowDialog_System_Int32_">NativeActivity.ShowDialog(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetChangingConfigurations">NativeActivity.GetChangingConfigurations()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetLaunchedFromUid">NativeActivity.GetLaunchedFromUid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetMaxNumPictureInPictureActions">NativeActivity.GetMaxNumPictureInPictureActions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetRequestedOrientation">NativeActivity.GetRequestedOrientation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetTaskId">NativeActivity.GetTaskId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateDescriptionBase">NativeActivity.OnCreateDescriptionBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreateDescription">NativeActivity.OnOnCreateDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateDescription">NativeActivity.OnCreateDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetLastNonConfigurationInstance">NativeActivity.GetLastNonConfigurationInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRetainNonConfigurationInstanceBase">NativeActivity.OnRetainNonConfigurationInstanceBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnRetainNonConfigurationInstance">NativeActivity.OnOnRetainNonConfigurationInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRetainNonConfigurationInstance">NativeActivity.OnRetainNonConfigurationInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetCallingPackage">NativeActivity.GetCallingPackage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetLaunchedFromPackage">NativeActivity.GetLaunchedFromPackage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_GetLocalClassName">NativeActivity.GetLocalClassName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_AddContentView_Android_View_View_Android_View_ViewGroup_LayoutParams_">NativeActivity.AddContentView(View, ViewGroup.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ClearOverrideActivityTransition_System_Int32_">NativeActivity.ClearOverrideActivityTransition(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_CloseContextMenu">NativeActivity.CloseContextMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_CloseOptionsMenu">NativeActivity.CloseOptionsMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_Dump_Java_Lang_String_Java_Io_FileDescriptor_Java_Io_PrintWriter_Java_Lang_String___">NativeActivity.Dump(String, FileDescriptor, PrintWriter, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_EnterPictureInPictureMode">NativeActivity.EnterPictureInPictureMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_Finish">NativeActivity.Finish()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_FinishActivity_System_Int32_">NativeActivity.FinishActivity(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_FinishActivityFromChild_Android_App_Activity_System_Int32_">NativeActivity.FinishActivityFromChild(Activity, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_FinishAffinity">NativeActivity.FinishAffinity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_FinishAfterTransition">NativeActivity.FinishAfterTransition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_FinishAndRemoveTask">NativeActivity.FinishAndRemoveTask()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_FinishFromChild_Android_App_Activity_">NativeActivity.FinishFromChild(Activity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_InvalidateOptionsMenu">NativeActivity.InvalidateOptionsMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActionModeFinishedBase_Android_View_ActionMode_">NativeActivity.OnActionModeFinishedBase(ActionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnActionModeFinished">NativeActivity.OnOnActionModeFinished</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActionModeFinished_Android_View_ActionMode_">NativeActivity.OnActionModeFinished(ActionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActionModeStartedBase_Android_View_ActionMode_">NativeActivity.OnActionModeStartedBase(ActionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnActionModeStarted">NativeActivity.OnOnActionModeStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActionModeStarted_Android_View_ActionMode_">NativeActivity.OnActionModeStarted(ActionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActivityReenterBase_System_Int32_Android_Content_Intent_">NativeActivity.OnActivityReenterBase(int, Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnActivityReenter">NativeActivity.OnOnActivityReenter</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActivityReenter_System_Int32_Android_Content_Intent_">NativeActivity.OnActivityReenter(int, Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActivityResultBase_System_Int32_System_Int32_Android_Content_Intent_Android_App_ComponentCaller_">NativeActivity.OnActivityResultBase(int, int, Intent, ComponentCaller)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnActivityResult">NativeActivity.OnOnActivityResult</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnActivityResult_System_Int32_System_Int32_Android_Content_Intent_Android_App_ComponentCaller_">NativeActivity.OnActivityResult(int, int, Intent, ComponentCaller)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnAttachedToWindowBase">NativeActivity.OnAttachedToWindowBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnAttachedToWindow">NativeActivity.OnOnAttachedToWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnAttachedToWindow">NativeActivity.OnAttachedToWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnAttachFragmentBase_Android_App_Fragment_">NativeActivity.OnAttachFragmentBase(Fragment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnAttachFragment">NativeActivity.OnOnAttachFragment</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnAttachFragment_Android_App_Fragment_">NativeActivity.OnAttachFragment(Fragment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnBackPressedBase">NativeActivity.OnBackPressedBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnBackPressed">NativeActivity.OnOnBackPressed</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnBackPressed">NativeActivity.OnBackPressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnContentChangedBase">NativeActivity.OnContentChangedBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnContentChanged">NativeActivity.OnOnContentChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnContentChanged">NativeActivity.OnContentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnContextMenuClosedBase_Android_View_Menu_">NativeActivity.OnContextMenuClosedBase(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnContextMenuClosed">NativeActivity.OnOnContextMenuClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnContextMenuClosed_Android_View_Menu_">NativeActivity.OnContextMenuClosed(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateBase_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnCreateBase(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreate">NativeActivity.OnOnCreate</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreate_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnCreate(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateContextMenuBase_Android_View_ContextMenu_Android_View_View_Android_View_ContextMenu_ContextMenuInfo_">NativeActivity.OnCreateContextMenuBase(ContextMenu, View, ContextMenu.ContextMenuInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreateContextMenu">NativeActivity.OnOnCreateContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateContextMenu_Android_View_ContextMenu_Android_View_View_Android_View_ContextMenu_ContextMenuInfo_">NativeActivity.OnCreateContextMenu(ContextMenu, View, ContextMenu.ContextMenuInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateNavigateUpTaskStackBase_Android_App_TaskStackBuilder_">NativeActivity.OnCreateNavigateUpTaskStackBase(TaskStackBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnCreateNavigateUpTaskStack">NativeActivity.OnOnCreateNavigateUpTaskStack</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnCreateNavigateUpTaskStack_Android_App_TaskStackBuilder_">NativeActivity.OnCreateNavigateUpTaskStack(TaskStackBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnDetachedFromWindowBase">NativeActivity.OnDetachedFromWindowBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnDetachedFromWindow">NativeActivity.OnOnDetachedFromWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnDetachedFromWindow">NativeActivity.OnDetachedFromWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnEnterAnimationCompleteBase">NativeActivity.OnEnterAnimationCompleteBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnEnterAnimationComplete">NativeActivity.OnOnEnterAnimationComplete</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnEnterAnimationComplete">NativeActivity.OnEnterAnimationComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnGetDirectActionsBase_Android_Os_CancellationSignal_Java_Util_Function_Consumer_Java_Util_List_Android_App_DirectAction___">NativeActivity.OnGetDirectActionsBase(CancellationSignal, Consumer&lt;List&lt;DirectAction&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnGetDirectActions">NativeActivity.OnOnGetDirectActions</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnGetDirectActions_Android_Os_CancellationSignal_Java_Util_Function_Consumer_Java_Util_List_Android_App_DirectAction___">NativeActivity.OnGetDirectActions(CancellationSignal, Consumer&lt;List&lt;DirectAction&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnLocalVoiceInteractionStartedBase">NativeActivity.OnLocalVoiceInteractionStartedBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnLocalVoiceInteractionStarted">NativeActivity.OnOnLocalVoiceInteractionStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnLocalVoiceInteractionStarted">NativeActivity.OnLocalVoiceInteractionStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnLocalVoiceInteractionStoppedBase">NativeActivity.OnLocalVoiceInteractionStoppedBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnLocalVoiceInteractionStopped">NativeActivity.OnOnLocalVoiceInteractionStopped</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnLocalVoiceInteractionStopped">NativeActivity.OnLocalVoiceInteractionStopped()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMultiWindowModeChangedBase_System_Boolean_Android_Content_Res_Configuration_">NativeActivity.OnMultiWindowModeChangedBase(bool, Configuration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnMultiWindowModeChanged">NativeActivity.OnOnMultiWindowModeChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMultiWindowModeChanged_System_Boolean_Android_Content_Res_Configuration_">NativeActivity.OnMultiWindowModeChanged(bool, Configuration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMultiWindowModeChangedBase_System_Boolean_">NativeActivity.OnMultiWindowModeChangedBase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnMultiWindowModeChanged1">NativeActivity.OnOnMultiWindowModeChanged1</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnMultiWindowModeChanged_System_Boolean_">NativeActivity.OnMultiWindowModeChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnNewIntentBase_Android_Content_Intent_Android_App_ComponentCaller_">NativeActivity.OnNewIntentBase(Intent, ComponentCaller)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnNewIntent">NativeActivity.OnOnNewIntent</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnNewIntent_Android_Content_Intent_Android_App_ComponentCaller_">NativeActivity.OnNewIntent(Intent, ComponentCaller)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOptionsMenuClosedBase_Android_View_Menu_">NativeActivity.OnOptionsMenuClosedBase(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnOptionsMenuClosed">NativeActivity.OnOnOptionsMenuClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOptionsMenuClosed_Android_View_Menu_">NativeActivity.OnOptionsMenuClosed(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPanelClosedBase_System_Int32_Android_View_Menu_">NativeActivity.OnPanelClosedBase(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPanelClosed">NativeActivity.OnOnPanelClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPanelClosed_System_Int32_Android_View_Menu_">NativeActivity.OnPanelClosed(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPerformDirectActionBase_Java_Lang_String_Android_Os_Bundle_Android_Os_CancellationSignal_Java_Util_Function_Consumer_Android_Os_Bundle__">NativeActivity.OnPerformDirectActionBase(String, Bundle, CancellationSignal, Consumer&lt;Bundle&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPerformDirectAction">NativeActivity.OnOnPerformDirectAction</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPerformDirectAction_Java_Lang_String_Android_Os_Bundle_Android_Os_CancellationSignal_Java_Util_Function_Consumer_Android_Os_Bundle__">NativeActivity.OnPerformDirectAction(String, Bundle, CancellationSignal, Consumer&lt;Bundle&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureModeChangedBase_System_Boolean_Android_Content_Res_Configuration_">NativeActivity.OnPictureInPictureModeChangedBase(bool, Configuration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPictureInPictureModeChanged">NativeActivity.OnOnPictureInPictureModeChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureModeChanged_System_Boolean_Android_Content_Res_Configuration_">NativeActivity.OnPictureInPictureModeChanged(bool, Configuration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureModeChangedBase_System_Boolean_">NativeActivity.OnPictureInPictureModeChangedBase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPictureInPictureModeChanged1">NativeActivity.OnOnPictureInPictureModeChanged1</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureModeChanged_System_Boolean_">NativeActivity.OnPictureInPictureModeChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureUiStateChangedBase_Android_App_PictureInPictureUiState_">NativeActivity.OnPictureInPictureUiStateChangedBase(PictureInPictureUiState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPictureInPictureUiStateChanged">NativeActivity.OnOnPictureInPictureUiStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPictureInPictureUiStateChanged_Android_App_PictureInPictureUiState_">NativeActivity.OnPictureInPictureUiStateChanged(PictureInPictureUiState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPostCreateBase_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnPostCreateBase(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPostCreate">NativeActivity.OnOnPostCreate</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPostCreate_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnPostCreate(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPrepareNavigateUpTaskStackBase_Android_App_TaskStackBuilder_">NativeActivity.OnPrepareNavigateUpTaskStackBase(TaskStackBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnPrepareNavigateUpTaskStack">NativeActivity.OnOnPrepareNavigateUpTaskStack</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnPrepareNavigateUpTaskStack_Android_App_TaskStackBuilder_">NativeActivity.OnPrepareNavigateUpTaskStack(TaskStackBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideAssistContentBase_Android_App_Assist_AssistContent_">NativeActivity.OnProvideAssistContentBase(AssistContent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnProvideAssistContent">NativeActivity.OnOnProvideAssistContent</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideAssistContent_Android_App_Assist_AssistContent_">NativeActivity.OnProvideAssistContent(AssistContent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideAssistDataBase_Android_Os_Bundle_">NativeActivity.OnProvideAssistDataBase(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnProvideAssistData">NativeActivity.OnOnProvideAssistData</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideAssistData_Android_Os_Bundle_">NativeActivity.OnProvideAssistData(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideKeyboardShortcutsBase_Java_Util_List_Android_View_KeyboardShortcutGroup__Android_View_Menu_System_Int32_">NativeActivity.OnProvideKeyboardShortcutsBase(List&lt;KeyboardShortcutGroup&gt;, Menu, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnProvideKeyboardShortcuts">NativeActivity.OnOnProvideKeyboardShortcuts</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnProvideKeyboardShortcuts_Java_Util_List_Android_View_KeyboardShortcutGroup__Android_View_Menu_System_Int32_">NativeActivity.OnProvideKeyboardShortcuts(List&lt;KeyboardShortcutGroup&gt;, Menu, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRequestPermissionsResultBase_System_Int32_Java_Lang_String___System_Int32___System_Int32_">NativeActivity.OnRequestPermissionsResultBase(int, String[], int[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnRequestPermissionsResult">NativeActivity.OnOnRequestPermissionsResult</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRequestPermissionsResult_System_Int32_Java_Lang_String___System_Int32___System_Int32_">NativeActivity.OnRequestPermissionsResult(int, String[], int[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRequestPermissionsResultBase_System_Int32_Java_Lang_String___System_Int32___">NativeActivity.OnRequestPermissionsResultBase(int, String[], int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnRequestPermissionsResult3">NativeActivity.OnOnRequestPermissionsResult3</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRequestPermissionsResult_System_Int32_Java_Lang_String___System_Int32___">NativeActivity.OnRequestPermissionsResult(int, String[], int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRestoreInstanceStateBase_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnRestoreInstanceStateBase(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnRestoreInstanceState">NativeActivity.OnOnRestoreInstanceState</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnRestoreInstanceState_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnRestoreInstanceState(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnSaveInstanceStateBase_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnSaveInstanceStateBase(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnSaveInstanceState">NativeActivity.OnOnSaveInstanceState</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnSaveInstanceState_Android_Os_Bundle_Android_Os_PersistableBundle_">NativeActivity.OnSaveInstanceState(Bundle, PersistableBundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnStateNotSavedBase">NativeActivity.OnStateNotSavedBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnStateNotSaved">NativeActivity.OnOnStateNotSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnStateNotSaved">NativeActivity.OnStateNotSaved()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTopResumedActivityChangedBase_System_Boolean_">NativeActivity.OnTopResumedActivityChangedBase(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnTopResumedActivityChanged">NativeActivity.OnOnTopResumedActivityChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTopResumedActivityChanged_System_Boolean_">NativeActivity.OnTopResumedActivityChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTrimMemoryBase_System_Int32_">NativeActivity.OnTrimMemoryBase(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnTrimMemory">NativeActivity.OnOnTrimMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnTrimMemory_System_Int32_">NativeActivity.OnTrimMemory(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnUserInteractionBase">NativeActivity.OnUserInteractionBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnUserInteraction">NativeActivity.OnOnUserInteraction</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnUserInteraction">NativeActivity.OnUserInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnVisibleBehindCanceledBase">NativeActivity.OnVisibleBehindCanceledBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnVisibleBehindCanceled">NativeActivity.OnOnVisibleBehindCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnVisibleBehindCanceled">NativeActivity.OnVisibleBehindCanceled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnWindowAttributesChangedBase_Android_View_WindowManager_LayoutParams_">NativeActivity.OnWindowAttributesChangedBase(WindowManager.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnWindowAttributesChanged">NativeActivity.OnOnWindowAttributesChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnWindowAttributesChanged_Android_View_WindowManager_LayoutParams_">NativeActivity.OnWindowAttributesChanged(WindowManager.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OpenContextMenu_Android_View_View_">NativeActivity.OpenContextMenu(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OpenOptionsMenu">NativeActivity.OpenOptionsMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OverrideActivityTransition_System_Int32_System_Int32_System_Int32_System_Int32_">NativeActivity.OverrideActivityTransition(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OverrideActivityTransition_System_Int32_System_Int32_System_Int32_">NativeActivity.OverrideActivityTransition(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OverridePendingTransition_System_Int32_System_Int32_System_Int32_">NativeActivity.OverridePendingTransition(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OverridePendingTransition_System_Int32_System_Int32_">NativeActivity.OverridePendingTransition(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_PostponeEnterTransition">NativeActivity.PostponeEnterTransition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_Recreate">NativeActivity.Recreate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RegisterActivityLifecycleCallbacks_Android_App_Application_ActivityLifecycleCallbacks_">NativeActivity.RegisterActivityLifecycleCallbacks(Application.ActivityLifecycleCallbacks)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RegisterForContextMenu_Android_View_View_">NativeActivity.RegisterForContextMenu(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RegisterScreenCaptureCallback_Java_Util_Concurrent_Executor_Android_App_Activity_ScreenCaptureCallback_">NativeActivity.RegisterScreenCaptureCallback(Executor, Activity.ScreenCaptureCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ReportFullyDrawn">NativeActivity.ReportFullyDrawn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RequestFullscreenMode_System_Int32_Android_Os_OutcomeReceiver_Java_Lang_Void_Java_Lang_Throwable__">NativeActivity.RequestFullscreenMode(int, OutcomeReceiver&lt;Void, Throwable&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetActionBar_Android_Widget_Toolbar_">NativeActivity.SetActionBar(Toolbar)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetAllowCrossUidActivitySwitchFromBelow_System_Boolean_">NativeActivity.SetAllowCrossUidActivitySwitchFromBelow(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetContentTransitionManager_Android_Transition_TransitionManager_">NativeActivity.SetContentTransitionManager(TransitionManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetContentView_Android_View_View_Android_View_ViewGroup_LayoutParams_">NativeActivity.SetContentView(View, ViewGroup.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetContentView_Android_View_View_">NativeActivity.SetContentView(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetContentView_System_Int32_">NativeActivity.SetContentView(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetEnterSharedElementCallback_Android_App_SharedElementCallback_">NativeActivity.SetEnterSharedElementCallback(SharedElementCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetExitSharedElementCallback_Android_App_SharedElementCallback_">NativeActivity.SetExitSharedElementCallback(SharedElementCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetFinishOnTouchOutside_System_Boolean_">NativeActivity.SetFinishOnTouchOutside(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetImmersive_System_Boolean_">NativeActivity.SetImmersive(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetInheritShowWhenLocked_System_Boolean_">NativeActivity.SetInheritShowWhenLocked(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetIntent_Android_Content_Intent_Android_App_ComponentCaller_">NativeActivity.SetIntent(Intent, ComponentCaller)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetIntent_Android_Content_Intent_">NativeActivity.SetIntent(Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetLocusContext_Android_Content_LocusId_Android_Os_Bundle_">NativeActivity.SetLocusContext(LocusId, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetPictureInPictureParams_Android_App_PictureInPictureParams_">NativeActivity.SetPictureInPictureParams(PictureInPictureParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetRecentsScreenshotEnabled_System_Boolean_">NativeActivity.SetRecentsScreenshotEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetRequestedOrientation_System_Int32_">NativeActivity.SetRequestedOrientation(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetShouldDockBigOverlays_System_Boolean_">NativeActivity.SetShouldDockBigOverlays(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetShowWhenLocked_System_Boolean_">NativeActivity.SetShowWhenLocked(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetTaskDescription_Android_App_ActivityManager_TaskDescription_">NativeActivity.SetTaskDescription(ActivityManager.TaskDescription)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetTitle_System_Int32_">NativeActivity.SetTitle(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetTitle_Java_Lang_CharSequence_">NativeActivity.SetTitle(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetTitleColor_System_Int32_">NativeActivity.SetTitleColor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetTurnScreenOn_System_Boolean_">NativeActivity.SetTurnScreenOn(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetVisible_System_Boolean_">NativeActivity.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetVrModeEnabled_System_Boolean_Android_Content_ComponentName_">NativeActivity.SetVrModeEnabled(bool, ComponentName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ShowLockTaskEscapeMessage">NativeActivity.ShowLockTaskEscapeMessage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityForResult_Android_Content_Intent_System_Int32_Android_Os_Bundle_">NativeActivity.StartActivityForResult(Intent, int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityForResult_Android_Content_Intent_System_Int32_">NativeActivity.StartActivityForResult(Intent, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityFromChild_Android_App_Activity_Android_Content_Intent_System_Int32_Android_Os_Bundle_">NativeActivity.StartActivityFromChild(Activity, Intent, int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityFromChild_Android_App_Activity_Android_Content_Intent_System_Int32_">NativeActivity.StartActivityFromChild(Activity, Intent, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityFromFragment_Android_App_Fragment_Android_Content_Intent_System_Int32_Android_Os_Bundle_">NativeActivity.StartActivityFromFragment(Fragment, Intent, int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartActivityFromFragment_Android_App_Fragment_Android_Content_Intent_System_Int32_">NativeActivity.StartActivityFromFragment(Fragment, Intent, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartIntentSenderForResult_Android_Content_IntentSender_System_Int32_Android_Content_Intent_System_Int32_System_Int32_System_Int32_Android_Os_Bundle_">NativeActivity.StartIntentSenderForResult(IntentSender, int, Intent, int, int, int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartIntentSenderForResult_Android_Content_IntentSender_System_Int32_Android_Content_Intent_System_Int32_System_Int32_System_Int32_">NativeActivity.StartIntentSenderForResult(IntentSender, int, Intent, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartIntentSenderFromChild_Android_App_Activity_Android_Content_IntentSender_System_Int32_Android_Content_Intent_System_Int32_System_Int32_System_Int32_Android_Os_Bundle_">NativeActivity.StartIntentSenderFromChild(Activity, IntentSender, int, Intent, int, int, int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartIntentSenderFromChild_Android_App_Activity_Android_Content_IntentSender_System_Int32_Android_Content_Intent_System_Int32_System_Int32_System_Int32_">NativeActivity.StartIntentSenderFromChild(Activity, IntentSender, int, Intent, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartLocalVoiceInteraction_Android_Os_Bundle_">NativeActivity.StartLocalVoiceInteraction(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartLockTask">NativeActivity.StartLockTask()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartManagingCursor_Android_Database_Cursor_">NativeActivity.StartManagingCursor(Cursor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartPostponedEnterTransition">NativeActivity.StartPostponedEnterTransition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StartSearch_Java_Lang_String_System_Boolean_Android_Os_Bundle_System_Boolean_">NativeActivity.StartSearch(String, bool, Bundle, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StopLocalVoiceInteraction">NativeActivity.StopLocalVoiceInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StopLockTask">NativeActivity.StopLockTask()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_StopManagingCursor_Android_Database_Cursor_">NativeActivity.StopManagingCursor(Cursor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_TakeKeyEvents_System_Boolean_">NativeActivity.TakeKeyEvents(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_TriggerSearch_Java_Lang_String_Android_Os_Bundle_">NativeActivity.TriggerSearch(String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_UnregisterActivityLifecycleCallbacks_Android_App_Application_ActivityLifecycleCallbacks_">NativeActivity.UnregisterActivityLifecycleCallbacks(Application.ActivityLifecycleCallbacks)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_UnregisterForContextMenu_Android_View_View_">NativeActivity.UnregisterForContextMenu(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_UnregisterScreenCaptureCallback_Android_App_Activity_ScreenCaptureCallback_">NativeActivity.UnregisterScreenCaptureCallback(Activity.ScreenCaptureCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnGlobalLayoutBase">NativeActivity.OnGlobalLayoutBase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnGlobalLayout">NativeActivity.OnOnGlobalLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnGlobalLayout">NativeActivity.OnGlobalLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnInputQueueCreatedBase_Android_View_InputQueue_">NativeActivity.OnInputQueueCreatedBase(InputQueue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnInputQueueCreated">NativeActivity.OnOnInputQueueCreated</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnInputQueueCreated_Android_View_InputQueue_">NativeActivity.OnInputQueueCreated(InputQueue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnInputQueueDestroyedBase_Android_View_InputQueue_">NativeActivity.OnInputQueueDestroyedBase(InputQueue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnOnInputQueueDestroyed">NativeActivity.OnOnInputQueueDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_OnInputQueueDestroyed_Android_View_InputQueue_">NativeActivity.OnInputQueueDestroyed(InputQueue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SurfaceChanged_Android_View_SurfaceHolder_System_Int32_System_Int32_System_Int32_">NativeActivity.SurfaceChanged(SurfaceHolder, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SurfaceCreated_Android_View_SurfaceHolder_">NativeActivity.SurfaceCreated(SurfaceHolder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SurfaceDestroyed_Android_View_SurfaceHolder_">NativeActivity.SurfaceDestroyed(SurfaceHolder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SurfaceRedrawNeeded_Android_View_SurfaceHolder_">NativeActivity.SurfaceRedrawNeeded(SurfaceHolder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_RevokeSelfPermissionOnKill_Java_Lang_String_">NativeActivity.RevokeSelfPermissionOnKill(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SendBroadcastWithMultiplePermissions_Android_Content_Intent_Java_Lang_String___">NativeActivity.SendBroadcastWithMultiplePermissions(Intent, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SendOrderedBroadcast_Android_Content_Intent_System_Int32_Java_Lang_String_Java_Lang_String_Android_Content_BroadcastReceiver_Android_Os_Handler_Java_Lang_String_Android_Os_Bundle_Android_Os_Bundle_">NativeActivity.SendOrderedBroadcast(Intent, int, String, String, BroadcastReceiver, Handler, String, Bundle, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_ApplyOverrideConfiguration_Android_Content_Res_Configuration_">NativeActivity.ApplyOverrideConfiguration(Configuration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.NativeActivity.html#Android_App_NativeActivity_SetTheme_Android_Content_Res_Resources_Theme_">NativeActivity.SetTheme(Resources.Theme)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;JVMBridgeListener&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_NativeActivityDirect_AutoInit_" data-uid="Android.App.NativeActivityDirect.AutoInit*"></a>
+
+  <h3 id="Android_App_NativeActivityDirect_AutoInit" data-uid="Android.App.NativeActivityDirect.AutoInit">
+  AutoInit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AutoInit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NativeActivityDirect_BridgeClassName_" data-uid="Android.App.NativeActivityDirect.BridgeClassName*"></a>
+
+  <h3 id="Android_App_NativeActivityDirect_BridgeClassName" data-uid="Android.App.NativeActivityDirect.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NativeActivityDirect_IsBridgeAbstract_" data-uid="Android.App.NativeActivityDirect.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_NativeActivityDirect_IsBridgeAbstract" data-uid="Android.App.NativeActivityDirect.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NativeActivityDirect_IsBridgeCloseable_" data-uid="Android.App.NativeActivityDirect.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_NativeActivityDirect_IsBridgeCloseable" data-uid="Android.App.NativeActivityDirect.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NativeActivityDirect_IsBridgeInterface_" data-uid="Android.App.NativeActivityDirect.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_NativeActivityDirect_IsBridgeInterface" data-uid="Android.App.NativeActivityDirect.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NativeActivityDirect_IsBridgeStatic_" data-uid="Android.App.NativeActivityDirect.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_NativeActivityDirect_IsBridgeStatic" data-uid="Android.App.NativeActivityDirect.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_NativeActivityDirect_InitializeHandlers_" data-uid="Android.App.NativeActivityDirect.InitializeHandlers*"></a>
+
+  <h3 id="Android_App_NativeActivityDirect_InitializeHandlers" data-uid="Android.App.NativeActivityDirect.InitializeHandlers">
+  InitializeHandlers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handlers initializer for <a class="xref" href="Android.App.NativeActivity.html">NativeActivity</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitializeHandlers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NativeActivity.cs/#L58" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
