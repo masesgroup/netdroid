@@ -164,7 +164,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSErrorHandler.html"/>
         /// </summary>
         [global::System.Obsolete()]
-        public partial class RSErrorHandler : Java.Lang.Runnable
+        public partial class RSErrorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSErrorHandler>
         {
             const string _bridgeClassName = "android.renderscript.RenderScript$RSErrorHandler";
             /// <summary>
@@ -210,7 +210,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSMessageHandler.html"/>
         /// </summary>
         [global::System.Obsolete()]
-        public partial class RSMessageHandler : Java.Lang.Runnable
+        public partial class RSMessageHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSMessageHandler>
         {
             const string _bridgeClassName = "android.renderscript.RenderScript$RSMessageHandler";
             /// <summary>
@@ -590,6 +590,10 @@ namespace Android.Renderscript
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Android.Renderscript.RenderScript.RSErrorHandler"/> to <see cref="Java.Lang.Runnable"/>
+            /// </summary>
+            public static implicit operator Java.Lang.Runnable(Android.Renderscript.RenderScript.RSErrorHandler t) => t.Cast<Java.Lang.Runnable>();
 
             #endregion
 
@@ -629,6 +633,10 @@ namespace Android.Renderscript
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Android.Renderscript.RenderScript.RSMessageHandler"/> to <see cref="Java.Lang.Runnable"/>
+            /// </summary>
+            public static implicit operator Java.Lang.Runnable(Android.Renderscript.RenderScript.RSMessageHandler t) => t.Cast<Java.Lang.Runnable>();
 
             #endregion
 

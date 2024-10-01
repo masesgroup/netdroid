@@ -149,6 +149,14 @@ namespace Javax.Net.Ssl
             return IExecuteWithSignature<Java.Lang.Runnable>("getDelegatedTask", "()Ljava/lang/Runnable;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#getDelegatedTask()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Runnable"/></returns>
+        public Java.Lang.Runnable GetDelegatedTaskDirect()
+        {
+            return IExecuteWithSignature<Java.Lang.RunnableDirect, Java.Lang.Runnable>("getDelegatedTask", "()Ljava/lang/Runnable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#getEnabledCipherSuites()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>

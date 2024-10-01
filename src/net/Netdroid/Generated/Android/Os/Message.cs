@@ -251,6 +251,14 @@ namespace Android.Os
             return IExecuteWithSignature<Java.Lang.Runnable>("getCallback", "()Ljava/lang/Runnable;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Message.html#getCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Runnable"/></returns>
+        public Java.Lang.Runnable GetCallbackDirect()
+        {
+            return IExecuteWithSignature<Java.Lang.RunnableDirect, Java.Lang.Runnable>("getCallback", "()Ljava/lang/Runnable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#getWhen()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
