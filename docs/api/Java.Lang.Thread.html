@@ -98,7 +98,7 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Thread : Runnable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IRunnable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Thread : JVMBridgeBase&lt;Thread&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -110,8 +110,7 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
       <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Runnable.html">Runnable</a>&gt;</div>
-      <div><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Thread.html">Thread</a>&gt;</div>
       <div><span class="xref">Thread</span></div>
     </dd>
   </dl>
@@ -125,7 +124,6 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
       <div><span class="xref">IJVMBridgeBaseStatic</span></div>
       <div><span class="xref">IJVMBridgeBase</span></div>
       <div><span class="xref">IJVMBridgeDefinition</span></div>
-      <div><a class="xref" href="Java.Lang.IRunnable.html">IRunnable</a></div>
     </dd>
   </dl>
 
@@ -141,154 +139,154 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecute(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecute(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecute(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SGetField(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SGetField(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SGetField(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SGetField&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SSetField(IJavaType, string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SSetField(IJavaType, string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SSetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SSetField(string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.IsAssignableFrom(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.IsAssignableFrom(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase&lt;Runnable&gt;.IsAssignableFrom(IJavaType)</span>
+      <span class="xref">JVMBridgeBase&lt;Thread&gt;.IsAssignableFrom(IJavaType)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase&lt;Runnable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase&lt;Thread&gt;.IsAssignableFrom&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Runnable&gt;.New(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Thread&gt;.New(params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Runnable&gt;.NewWithSignature(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Thread&gt;.NewWithSignature(string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase&lt;Runnable&gt;.Execute&lt;T&gt;(params T[])</span>
+      <span class="xref">JVMBridgeBase&lt;Thread&gt;.Execute&lt;T&gt;(params T[])</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase&lt;Runnable&gt;.DynBridgeClazz</span>
+      <span class="xref">JVMBridgeBase&lt;Thread&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase&lt;Runnable&gt;.BridgeClazz</span>
+      <span class="xref">JVMBridgeBase&lt;Thread&gt;.BridgeClazz</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
@@ -1030,7 +1028,7 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Thread_MAX_PRIORITY" data-uid="Java.Lang.Thread.MAX_PRIORITY">
   MAX_PRIORITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#MAX_PRIORITY">https://developer.android.com/reference/java/lang/Thread.html#MAX_PRIORITY</a></p>
@@ -1062,7 +1060,7 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Thread_MIN_PRIORITY" data-uid="Java.Lang.Thread.MIN_PRIORITY">
   MIN_PRIORITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#MIN_PRIORITY">https://developer.android.com/reference/java/lang/Thread.html#MIN_PRIORITY</a></p>
@@ -1094,7 +1092,7 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Thread_NORM_PRIORITY" data-uid="Java.Lang.Thread.NORM_PRIORITY">
   NORM_PRIORITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#NORM_PRIORITY">https://developer.android.com/reference/java/lang/Thread.html#NORM_PRIORITY</a></p>
@@ -1130,7 +1128,7 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Thread_ActiveCount" data-uid="Java.Lang.Thread.ActiveCount">
   ActiveCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#activeCount()">https://developer.android.com/reference/java/lang/Thread.html#activeCount()</a></p>
@@ -1163,7 +1161,7 @@ Class Thread  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Thread_CheckAccess" data-uid="Java.Lang.Thread.CheckAccess">
   CheckAccess()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#checkAccess()">https://developer.android.com/reference/java/lang/Thread.html#checkAccess()</a></p>
@@ -1191,7 +1189,7 @@ public void CheckAccess()</code></pre>
 
   <h3 id="Java_Lang_Thread_CountStackFrames" data-uid="Java.Lang.Thread.CountStackFrames">
   CountStackFrames()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L461"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#countStackFrames()">https://developer.android.com/reference/java/lang/Thread.html#countStackFrames()</a></p>
@@ -1225,7 +1223,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_CurrentThread" data-uid="Java.Lang.Thread.CurrentThread">
   CurrentThread()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#currentThread()">https://developer.android.com/reference/java/lang/Thread.html#currentThread()</a></p>
@@ -1258,7 +1256,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_DumpStack" data-uid="Java.Lang.Thread.DumpStack">
   DumpStack()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L301"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#dumpStack()">https://developer.android.com/reference/java/lang/Thread.html#dumpStack()</a></p>
@@ -1285,7 +1283,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_Enumerate_Java_Lang_Thread___" data-uid="Java.Lang.Thread.Enumerate(Java.Lang.Thread[])">
   Enumerate(Thread[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#enumerate(java.lang.Thread[])">https://developer.android.com/reference/java/lang/Thread.html#enumerate(java.lang.Thread[])</a></p>
@@ -1324,7 +1322,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetAllStackTraces" data-uid="Java.Lang.Thread.GetAllStackTraces">
   GetAllStackTraces()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getAllStackTraces()">https://developer.android.com/reference/java/lang/Thread.html#getAllStackTraces()</a></p>
@@ -1357,7 +1355,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetContextClassLoader" data-uid="Java.Lang.Thread.GetContextClassLoader">
   GetContextClassLoader()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L470"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getContextClassLoader()">https://developer.android.com/reference/java/lang/Thread.html#getContextClassLoader()</a></p>
@@ -1390,7 +1388,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetId" data-uid="Java.Lang.Thread.GetId">
   GetId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L494"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getId()">https://developer.android.com/reference/java/lang/Thread.html#getId()</a></p>
@@ -1423,7 +1421,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetName" data-uid="Java.Lang.Thread.GetName">
   GetName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getName()">https://developer.android.com/reference/java/lang/Thread.html#getName()</a></p>
@@ -1456,7 +1454,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetPriority" data-uid="Java.Lang.Thread.GetPriority">
   GetPriority()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getPriority()">https://developer.android.com/reference/java/lang/Thread.html#getPriority()</a></p>
@@ -1489,7 +1487,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetStackTrace" data-uid="Java.Lang.Thread.GetStackTrace">
   GetStackTrace()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L478"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getStackTrace()">https://developer.android.com/reference/java/lang/Thread.html#getStackTrace()</a></p>
@@ -1522,7 +1520,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetState" data-uid="Java.Lang.Thread.GetState">
   GetState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L486"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getState()">https://developer.android.com/reference/java/lang/Thread.html#getState()</a></p>
@@ -1555,7 +1553,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_GetThreadGroup" data-uid="Java.Lang.Thread.GetThreadGroup">
   GetThreadGroup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L370"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#getThreadGroup()">https://developer.android.com/reference/java/lang/Thread.html#getThreadGroup()</a></p>
@@ -1588,7 +1586,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_HoldsLock_System_Object_" data-uid="Java.Lang.Thread.HoldsLock(System.Object)">
   HoldsLock(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#holdsLock(java.lang.Object)">https://developer.android.com/reference/java/lang/Thread.html#holdsLock(java.lang.Object)</a></p>
@@ -1627,7 +1625,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_Interrupt" data-uid="Java.Lang.Thread.Interrupt">
   Interrupt()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L508"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#interrupt()">https://developer.android.com/reference/java/lang/Thread.html#interrupt()</a></p>
@@ -1654,7 +1652,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_Interrupted" data-uid="Java.Lang.Thread.Interrupted">
   Interrupted()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#interrupted()">https://developer.android.com/reference/java/lang/Thread.html#interrupted()</a></p>
@@ -1687,7 +1685,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_IsAlive" data-uid="Java.Lang.Thread.IsAlive">
   IsAlive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#isAlive()">https://developer.android.com/reference/java/lang/Thread.html#isAlive()</a></p>
@@ -1720,7 +1718,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_IsDaemon" data-uid="Java.Lang.Thread.IsDaemon">
   IsDaemon()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#isDaemon()">https://developer.android.com/reference/java/lang/Thread.html#isDaemon()</a></p>
@@ -1753,7 +1751,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_IsInterrupted" data-uid="Java.Lang.Thread.IsInterrupted">
   IsInterrupted()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#isInterrupted()">https://developer.android.com/reference/java/lang/Thread.html#isInterrupted()</a></p>
@@ -1786,7 +1784,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_Join" data-uid="Java.Lang.Thread.Join">
   Join()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#join()">https://developer.android.com/reference/java/lang/Thread.html#join()</a></p>
@@ -1818,7 +1816,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_Join_System_Int64_" data-uid="Java.Lang.Thread.Join(System.Int64)">
   Join(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#join(long)">https://developer.android.com/reference/java/lang/Thread.html#join(long)</a></p>
@@ -1856,7 +1854,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_Join_System_Int64_System_Int32_" data-uid="Java.Lang.Thread.Join(System.Int64,System.Int32)">
   Join(long, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L380"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#join(long,int)">https://developer.android.com/reference/java/lang/Thread.html#join(long,int)</a></p>
@@ -1897,7 +1895,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_OnSpinWait" data-uid="Java.Lang.Thread.OnSpinWait">
   OnSpinWait()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#onSpinWait()">https://developer.android.com/reference/java/lang/Thread.html#onSpinWait()</a></p>
@@ -1924,7 +1922,7 @@ public int CountStackFrames()</code></pre>
 
   <h3 id="Java_Lang_Thread_Resume" data-uid="Java.Lang.Thread.Resume">
   Resume()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#resume()">https://developer.android.com/reference/java/lang/Thread.html#resume()</a></p>
@@ -1952,7 +1950,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_Run" data-uid="Java.Lang.Thread.Run">
   Run()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L515"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#run()">https://developer.android.com/reference/java/lang/Thread.html#run()</a></p>
@@ -1979,7 +1977,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_SetContextClassLoader_Java_Lang_ClassLoader_" data-uid="Java.Lang.Thread.SetContextClassLoader(Java.Lang.ClassLoader)">
   SetContextClassLoader(ClassLoader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)">https://developer.android.com/reference/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)</a></p>
@@ -2012,7 +2010,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_SetDaemon_System_Boolean_" data-uid="Java.Lang.Thread.SetDaemon(System.Boolean)">
   SetDaemon(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#setDaemon(boolean)">https://developer.android.com/reference/java/lang/Thread.html#setDaemon(boolean)</a></p>
@@ -2045,7 +2043,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_SetName_Java_Lang_String_" data-uid="Java.Lang.Thread.SetName(Java.Lang.String)">
   SetName(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#setName(java.lang.String)">https://developer.android.com/reference/java/lang/Thread.html#setName(java.lang.String)</a></p>
@@ -2078,7 +2076,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_SetPriority_System_Int32_" data-uid="Java.Lang.Thread.SetPriority(System.Int32)">
   SetPriority(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L437"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#setPriority(int)">https://developer.android.com/reference/java/lang/Thread.html#setPriority(int)</a></p>
@@ -2144,7 +2142,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_Sleep_System_Int64_" data-uid="Java.Lang.Thread.Sleep(System.Int64)">
   Sleep(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#sleep(long)">https://developer.android.com/reference/java/lang/Thread.html#sleep(long)</a></p>
@@ -2182,7 +2180,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_Sleep_System_Int64_System_Int32_" data-uid="Java.Lang.Thread.Sleep(System.Int64,System.Int32)">
   Sleep(long, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#sleep(long,int)">https://developer.android.com/reference/java/lang/Thread.html#sleep(long,int)</a></p>
@@ -2223,7 +2221,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_Start" data-uid="Java.Lang.Thread.Start">
   Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L501"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#start()">https://developer.android.com/reference/java/lang/Thread.html#start()</a></p>
@@ -2250,7 +2248,7 @@ public void Resume()</code></pre>
 
   <h3 id="Java_Lang_Thread_Stop" data-uid="Java.Lang.Thread.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L444"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#stop()">https://developer.android.com/reference/java/lang/Thread.html#stop()</a></p>
@@ -2278,7 +2276,7 @@ public void Stop()</code></pre>
 
   <h3 id="Java_Lang_Thread_Suspend" data-uid="Java.Lang.Thread.Suspend">
   Suspend()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L452"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#suspend()">https://developer.android.com/reference/java/lang/Thread.html#suspend()</a></p>
@@ -2306,7 +2304,7 @@ public void Suspend()</code></pre>
 
   <h3 id="Java_Lang_Thread_Yield" data-uid="Java.Lang.Thread.Yield">
   Yield()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/Thread.html#yield()">https://developer.android.com/reference/java/lang/Thread.html#yield()</a></p>
@@ -2318,6 +2316,47 @@ public void Suspend()</code></pre>
   </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Java_Lang_Thread_op_Implicit_" data-uid="Java.Lang.Thread.op_Implicit*"></a>
+
+  <h3 id="Java_Lang_Thread_op_Implicit_Java_Lang_Thread__Java_Lang_Runnable" data-uid="Java.Lang.Thread.op_Implicit(Java.Lang.Thread)~Java.Lang.Runnable">
+  implicit operator Runnable(Thread)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Thread.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.Thread.html">Thread</a> to <a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Runnable(Thread t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Lang.Thread.html">Thread</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
