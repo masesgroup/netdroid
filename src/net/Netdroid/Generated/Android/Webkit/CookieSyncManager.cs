@@ -30,7 +30,7 @@ namespace Android.Webkit
     /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html"/>
     /// </summary>
     [global::System.Obsolete()]
-    public partial class CookieSyncManager : Java.Lang.Runnable
+    public partial class CookieSyncManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CookieSyncManager>
     {
         const string _bridgeClassName = "android.webkit.CookieSyncManager";
         /// <summary>
@@ -79,6 +79,10 @@ namespace Android.Webkit
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Android.Webkit.CookieSyncManager"/> to <see cref="Java.Lang.Runnable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Runnable(Android.Webkit.CookieSyncManager t) => t.Cast<Java.Lang.Runnable>();
 
         #endregion
 

@@ -5221,6 +5221,14 @@ namespace Android.View
             return IExecuteWithSignature<Java.Lang.Runnable>("getHandwritingDelegatorCallback", "()Ljava/lang/Runnable;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingDelegatorCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Runnable"/></returns>
+        public Java.Lang.Runnable GetHandwritingDelegatorCallbackDirect()
+        {
+            return IExecuteWithSignature<Java.Lang.RunnableDirect, Java.Lang.Runnable>("getHandwritingDelegatorCallback", "()Ljava/lang/Runnable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getAllowedHandwritingDelegatePackageName()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
