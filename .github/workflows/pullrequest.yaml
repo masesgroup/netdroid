@@ -138,7 +138,7 @@ jobs:
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
-      - uses: nuget/setup-nuget@v2.0.0
+      - uses: nuget/setup-nuget@v2.0.1
         with:
           nuget-version: '5.x'
 
