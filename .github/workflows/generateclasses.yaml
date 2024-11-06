@@ -76,7 +76,7 @@ jobs:
 
       - name: Download latest published version of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == false }}
-        run: dotnet tool update --version 2.5.9 -g MASES.JNetReflector
+        run: dotnet tool update --version 2.5.10 -g MASES.JNetReflector
 
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v4
