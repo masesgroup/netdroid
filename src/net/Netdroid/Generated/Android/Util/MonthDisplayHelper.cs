@@ -117,7 +117,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsWithinCurrentMonth(int arg0, int arg1)
         {
-            return IExecute<bool>("isWithinCurrentMonth", arg0, arg1);
+            return IExecuteWithSignature<bool>("isWithinCurrentMonth", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getColumnOf(int)"/>
@@ -126,7 +126,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetColumnOf(int arg0)
         {
-            return IExecute<int>("getColumnOf", arg0);
+            return IExecuteWithSignature<int>("getColumnOf", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getDayAt(int,int)"/>
@@ -136,7 +136,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetDayAt(int arg0, int arg1)
         {
-            return IExecute<int>("getDayAt", arg0, arg1);
+            return IExecuteWithSignature<int>("getDayAt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getFirstDayOfMonth()"/>
@@ -144,7 +144,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetFirstDayOfMonth()
         {
-            return IExecute<int>("getFirstDayOfMonth");
+            return IExecuteWithSignature<int>("getFirstDayOfMonth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getMonth()"/>
@@ -152,7 +152,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetMonth()
         {
-            return IExecute<int>("getMonth");
+            return IExecuteWithSignature<int>("getMonth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getNumberOfDaysInMonth()"/>
@@ -160,7 +160,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetNumberOfDaysInMonth()
         {
-            return IExecute<int>("getNumberOfDaysInMonth");
+            return IExecuteWithSignature<int>("getNumberOfDaysInMonth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getOffset()"/>
@@ -168,7 +168,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetOffset()
         {
-            return IExecute<int>("getOffset");
+            return IExecuteWithSignature<int>("getOffset", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getRowOf(int)"/>
@@ -177,7 +177,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetRowOf(int arg0)
         {
-            return IExecute<int>("getRowOf", arg0);
+            return IExecuteWithSignature<int>("getRowOf", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getWeekStartDay()"/>
@@ -185,7 +185,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetWeekStartDay()
         {
-            return IExecute<int>("getWeekStartDay");
+            return IExecuteWithSignature<int>("getWeekStartDay", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getYear()"/>
@@ -193,7 +193,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetYear()
         {
-            return IExecute<int>("getYear");
+            return IExecuteWithSignature<int>("getYear", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#getDigitsForRow(int)"/>
@@ -202,21 +202,21 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int[] GetDigitsForRow(int arg0)
         {
-            return IExecuteArray<int>("getDigitsForRow", arg0);
+            return IExecuteWithSignatureArray<int>("getDigitsForRow", "(I)[I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#nextMonth()"/>
         /// </summary>
         public void NextMonth()
         {
-            IExecute("nextMonth");
+            IExecuteWithSignature("nextMonth", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MonthDisplayHelper.html#previousMonth()"/>
         /// </summary>
         public void PreviousMonth()
         {
-            IExecute("previousMonth");
+            IExecuteWithSignature("previousMonth", "()V");
         }
     
         #endregion

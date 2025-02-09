@@ -281,14 +281,14 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Android.Util.DisplayMetrics"/></param>
         public void SetTo(Android.Util.DisplayMetrics arg0)
         {
-            IExecute("setTo", arg0);
+            IExecuteWithSignature("setTo", "(Landroid/util/DisplayMetrics;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/DisplayMetrics.html#setToDefaults()"/>
         /// </summary>
         public void SetToDefaults()
         {
-            IExecute("setToDefaults");
+            IExecuteWithSignature("setToDefaults", "()V");
         }
     
         #endregion

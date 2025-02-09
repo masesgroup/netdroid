@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region WebViewMethodCalledOnWrongThreadViolation declaration
+    #region UnbufferedIoViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/WebViewMethodCalledOnWrongThreadViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/UnbufferedIoViolation.html"/>
     /// </summary>
-    public partial class WebViewMethodCalledOnWrongThreadViolation : Android.Os.Strictmode.Violation
+    public partial class UnbufferedIoViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.WebViewMethodCalledOnWrongThreadViolation";
+        const string _bridgeClassName = "android.os.strictmode.UnbufferedIoViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region WebViewMethodCalledOnWrongThreadViolation implementation
-    public partial class WebViewMethodCalledOnWrongThreadViolation
+    #region UnbufferedIoViolation implementation
+    public partial class UnbufferedIoViolation
     {
         #region Constructors
     

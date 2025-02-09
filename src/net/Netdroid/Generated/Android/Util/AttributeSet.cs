@@ -118,7 +118,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool GetAttributeBooleanValue(int arg0, bool arg1)
         {
-            return IExecute<bool>("getAttributeBooleanValue", arg0, arg1);
+            return IExecuteWithSignature<bool>("getAttributeBooleanValue", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeBooleanValue(java.lang.String,java.lang.String,boolean)"/>
@@ -129,7 +129,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool GetAttributeBooleanValue(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         {
-            return IExecute<bool>("getAttributeBooleanValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getAttributeBooleanValue", "(Ljava/lang/String;Ljava/lang/String;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeFloatValue(int,float)"/>
@@ -139,7 +139,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetAttributeFloatValue(int arg0, float arg1)
         {
-            return IExecute<float>("getAttributeFloatValue", arg0, arg1);
+            return IExecuteWithSignature<float>("getAttributeFloatValue", "(IF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeFloatValue(java.lang.String,java.lang.String,float)"/>
@@ -150,7 +150,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetAttributeFloatValue(Java.Lang.String arg0, Java.Lang.String arg1, float arg2)
         {
-            return IExecute<float>("getAttributeFloatValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<float>("getAttributeFloatValue", "(Ljava/lang/String;Ljava/lang/String;F)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeCount()"/>
@@ -158,7 +158,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeCount()
         {
-            return IExecute<int>("getAttributeCount");
+            return IExecuteWithSignature<int>("getAttributeCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeIntValue(int,int)"/>
@@ -168,7 +168,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeIntValue(int arg0, int arg1)
         {
-            return IExecute<int>("getAttributeIntValue", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeIntValue", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeIntValue(java.lang.String,java.lang.String,int)"/>
@@ -179,7 +179,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeIntValue(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("getAttributeIntValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeListValue(int,java.lang.String[],int)"/>
@@ -190,7 +190,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeListValue(int arg0, Java.Lang.String[] arg1, int arg2)
         {
-            return IExecute<int>("getAttributeListValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeListValue", "(I[Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeListValue(java.lang.String,java.lang.String,java.lang.String[],int)"/>
@@ -202,7 +202,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeListValue(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, int arg3)
         {
-            return IExecute<int>("getAttributeListValue", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("getAttributeListValue", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;I)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeNameResource(int)"/>
@@ -211,7 +211,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeNameResource(int arg0)
         {
-            return IExecute<int>("getAttributeNameResource", arg0);
+            return IExecuteWithSignature<int>("getAttributeNameResource", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeResourceValue(int,int)"/>
@@ -221,7 +221,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeResourceValue(int arg0, int arg1)
         {
-            return IExecute<int>("getAttributeResourceValue", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeResourceValue", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeResourceValue(java.lang.String,java.lang.String,int)"/>
@@ -232,7 +232,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeResourceValue(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("getAttributeResourceValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeResourceValue", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeUnsignedIntValue(int,int)"/>
@@ -242,7 +242,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeUnsignedIntValue(int arg0, int arg1)
         {
-            return IExecute<int>("getAttributeUnsignedIntValue", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeUnsignedIntValue", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeUnsignedIntValue(java.lang.String,java.lang.String,int)"/>
@@ -253,7 +253,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetAttributeUnsignedIntValue(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("getAttributeUnsignedIntValue", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getAttributeUnsignedIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getIdAttributeResourceValue(int)"/>
@@ -262,7 +262,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetIdAttributeResourceValue(int arg0)
         {
-            return IExecute<int>("getIdAttributeResourceValue", arg0);
+            return IExecuteWithSignature<int>("getIdAttributeResourceValue", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getStyleAttribute()"/>
@@ -270,7 +270,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetStyleAttribute()
         {
-            return IExecute<int>("getStyleAttribute");
+            return IExecuteWithSignature<int>("getStyleAttribute", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeName(int)"/>
@@ -279,7 +279,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeName(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeName", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeValue(int)"/>
@@ -288,7 +288,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeValue(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeValue", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeValue", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeValue(java.lang.String,java.lang.String)"/>
@@ -298,7 +298,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getClassAttribute()"/>
@@ -306,7 +306,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetClassAttribute()
         {
-            return IExecute<Java.Lang.String>("getClassAttribute");
+            return IExecuteWithSignature<Java.Lang.String>("getClassAttribute", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getIdAttribute()"/>
@@ -314,7 +314,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetIdAttribute()
         {
-            return IExecute<Java.Lang.String>("getIdAttribute");
+            return IExecuteWithSignature<Java.Lang.String>("getIdAttribute", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getPositionDescription()"/>
@@ -322,7 +322,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPositionDescription()
         {
-            return IExecute<Java.Lang.String>("getPositionDescription");
+            return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeNamespace(int)"/>
@@ -331,7 +331,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeNamespace(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeNamespace", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeNamespace", "(I)Ljava/lang/String;", arg0);
         }
     
         #endregion

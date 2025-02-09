@@ -162,7 +162,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Pair"/></returns>
         public static Android.Util.Pair Create(object arg0, object arg1)
         {
-            return SExecute<Android.Util.Pair>(LocalBridgeClazz, "create", arg0, arg1);
+            return SExecuteWithSignature<Android.Util.Pair>(LocalBridgeClazz, "create", "(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;", arg0, arg1);
         }
     
         #endregion
@@ -230,7 +230,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Pair"/></returns>
         public static Android.Util.Pair<A, B> Create<A, B>(A arg0, B arg1)
         {
-            return SExecute<Android.Util.Pair<A, B>>(LocalBridgeClazz, "create", arg0, arg1);
+            return SExecuteWithSignature<Android.Util.Pair<A, B>>(LocalBridgeClazz, "create", "(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;", arg0, arg1);
         }
     
         #endregion

@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region DiskWriteViolation declaration
+    #region UnsafeIntentLaunchViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/DiskWriteViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/UnsafeIntentLaunchViolation.html"/>
     /// </summary>
-    public partial class DiskWriteViolation : Android.Os.Strictmode.Violation
+    public partial class UnsafeIntentLaunchViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.DiskWriteViolation";
+        const string _bridgeClassName = "android.os.strictmode.UnsafeIntentLaunchViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region DiskWriteViolation implementation
-    public partial class DiskWriteViolation
+    #region UnsafeIntentLaunchViolation implementation
+    public partial class UnsafeIntentLaunchViolation
     {
         #region Constructors
     

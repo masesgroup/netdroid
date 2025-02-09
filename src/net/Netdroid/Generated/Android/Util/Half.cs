@@ -208,7 +208,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Half"/></returns>
         public static Android.Util.Half ValueOf(float arg0)
         {
-            return SExecute<Android.Util.Half>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Android.Util.Half>(LocalBridgeClazz, "valueOf", "(F)Landroid/util/Half;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#valueOf(java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Half"/></returns>
         public static Android.Util.Half ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Android.Util.Half>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Android.Util.Half>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/util/Half;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#valueOf(short)"/>
@@ -226,7 +226,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Half"/></returns>
         public static Android.Util.Half ValueOf(short arg0)
         {
-            return SExecute<Android.Util.Half>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Android.Util.Half>(LocalBridgeClazz, "valueOf", "(S)Landroid/util/Half;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#equals(short,short)"/>
@@ -236,7 +236,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "equals", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#greater(short,short)"/>
@@ -246,7 +246,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Greater(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "greater", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "greater", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#greaterEquals(short,short)"/>
@@ -256,7 +256,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool GreaterEquals(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "greaterEquals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "greaterEquals", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#isInfinite(short)"/>
@@ -265,7 +265,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool IsInfinite(short arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isInfinite", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInfinite", "(S)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#isNaN(short)"/>
@@ -274,7 +274,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool IsNaN(short arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isNaN", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNaN", "(S)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#isNormalized(short)"/>
@@ -283,7 +283,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool IsNormalized(short arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isNormalized", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNormalized", "(S)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#less(short,short)"/>
@@ -293,7 +293,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Less(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "less", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "less", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#lessEquals(short,short)"/>
@@ -303,7 +303,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool LessEquals(short arg0, short arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "lessEquals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "lessEquals", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#toFloat(short)"/>
@@ -312,7 +312,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float ToFloat(short arg0)
         {
-            return SExecute<float>(LocalBridgeClazz, "toFloat", arg0);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "toFloat", "(S)F", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#compare(short,short)"/>
@@ -322,7 +322,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(short arg0, short arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(SS)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#getExponent(short)"/>
@@ -331,7 +331,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int GetExponent(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "getExponent", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getExponent", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#getSign(short)"/>
@@ -340,7 +340,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int GetSign(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "getSign", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSign", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#getSignificand(short)"/>
@@ -349,7 +349,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int GetSignificand(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "getSignificand", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSignificand", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#halfToIntBits(short)"/>
@@ -358,7 +358,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int HalfToIntBits(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "halfToIntBits", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "halfToIntBits", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#halfToRawIntBits(short)"/>
@@ -367,7 +367,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int HalfToRawIntBits(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "halfToRawIntBits", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "halfToRawIntBits", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#hashCode(short)"/>
@@ -376,7 +376,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(short arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(S)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#toHexString(short)"/>
@@ -385,7 +385,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToHexString(short arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toHexString", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHexString", "(S)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#toString(short)"/>
@@ -394,7 +394,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(short arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(S)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#abs(short)"/>
@@ -403,7 +403,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Abs(short arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "abs", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "abs", "(S)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#ceil(short)"/>
@@ -412,7 +412,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Ceil(short arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "ceil", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "ceil", "(S)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#copySign(short,short)"/>
@@ -422,7 +422,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short CopySign(short arg0, short arg1)
         {
-            return SExecute<short>(LocalBridgeClazz, "copySign", arg0, arg1);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "copySign", "(SS)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#floor(short)"/>
@@ -431,7 +431,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Floor(short arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "floor", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "floor", "(S)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#halfToShortBits(short)"/>
@@ -440,7 +440,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short HalfToShortBits(short arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "halfToShortBits", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "halfToShortBits", "(S)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#intBitsToHalf(int)"/>
@@ -449,7 +449,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short IntBitsToHalf(int arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "intBitsToHalf", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "intBitsToHalf", "(I)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#max(short,short)"/>
@@ -459,7 +459,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Max(short arg0, short arg1)
         {
-            return SExecute<short>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "max", "(SS)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#min(short,short)"/>
@@ -469,7 +469,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Min(short arg0, short arg1)
         {
-            return SExecute<short>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "min", "(SS)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#parseHalf(java.lang.String)"/>
@@ -479,7 +479,7 @@ namespace Android.Util
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseHalf(Java.Lang.String arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "parseHalf", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "parseHalf", "(Ljava/lang/String;)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#round(short)"/>
@@ -488,7 +488,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Round(short arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "round", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "round", "(S)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#toHalf(float)"/>
@@ -497,7 +497,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short ToHalf(float arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "toHalf", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "toHalf", "(F)S", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#trunc(short)"/>
@@ -506,7 +506,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public static short Trunc(short arg0)
         {
-            return SExecute<short>(LocalBridgeClazz, "trunc", arg0);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "trunc", "(S)S", arg0);
         }
     
         #endregion
@@ -518,7 +518,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
         {
-            return IExecute<bool>("isNaN");
+            return IExecuteWithSignature<bool>("isNaN", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#compareTo(android.util.Half)"/>
@@ -527,7 +527,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Android.Util.Half arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Landroid/util/Half;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#compareTo(java.lang.Object)"/>
@@ -536,7 +536,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Half.html#halfValue()"/>
@@ -544,7 +544,7 @@ namespace Android.Util
         /// <returns><see cref="short"/></returns>
         public short HalfValue()
         {
-            return IExecute<short>("halfValue");
+            return IExecuteWithSignature<short>("halfValue", "()S");
         }
     
         #endregion

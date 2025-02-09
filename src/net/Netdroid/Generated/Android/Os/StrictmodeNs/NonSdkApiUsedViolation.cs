@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region SqliteObjectLeakedViolation declaration
+    #region NonSdkApiUsedViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/SqliteObjectLeakedViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/NonSdkApiUsedViolation.html"/>
     /// </summary>
-    public partial class SqliteObjectLeakedViolation : Android.Os.Strictmode.Violation
+    public partial class NonSdkApiUsedViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.SqliteObjectLeakedViolation";
+        const string _bridgeClassName = "android.os.strictmode.NonSdkApiUsedViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region SqliteObjectLeakedViolation implementation
-    public partial class SqliteObjectLeakedViolation
+    #region NonSdkApiUsedViolation implementation
+    public partial class NonSdkApiUsedViolation
     {
         #region Constructors
     

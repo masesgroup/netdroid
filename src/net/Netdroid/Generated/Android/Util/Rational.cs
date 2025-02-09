@@ -131,7 +131,7 @@ namespace Android.Util
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Android.Util.Rational ParseRational(Java.Lang.String arg0)
         {
-            return SExecute<Android.Util.Rational>(LocalBridgeClazz, "parseRational", arg0);
+            return SExecuteWithSignature<Android.Util.Rational>(LocalBridgeClazz, "parseRational", "(Ljava/lang/String;)Landroid/util/Rational;", arg0);
         }
     
         #endregion
@@ -143,7 +143,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsFinite()
         {
-            return IExecute<bool>("isFinite");
+            return IExecuteWithSignature<bool>("isFinite", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#isInfinite()"/>
@@ -151,7 +151,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
         {
-            return IExecute<bool>("isInfinite");
+            return IExecuteWithSignature<bool>("isInfinite", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#isNaN()"/>
@@ -159,7 +159,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
         {
-            return IExecute<bool>("isNaN");
+            return IExecuteWithSignature<bool>("isNaN", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#isZero()"/>
@@ -167,7 +167,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
         {
-            return IExecute<bool>("isZero");
+            return IExecuteWithSignature<bool>("isZero", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#compareTo(android.util.Rational)"/>
@@ -176,7 +176,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Android.Util.Rational arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Landroid/util/Rational;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#compareTo(java.lang.Object)"/>
@@ -185,7 +185,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#getDenominator()"/>
@@ -193,7 +193,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetDenominator()
         {
-            return IExecute<int>("getDenominator");
+            return IExecuteWithSignature<int>("getDenominator", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#getNumerator()"/>
@@ -201,7 +201,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetNumerator()
         {
-            return IExecute<int>("getNumerator");
+            return IExecuteWithSignature<int>("getNumerator", "()I");
         }
     
         #endregion

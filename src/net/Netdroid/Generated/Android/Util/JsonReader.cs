@@ -105,7 +105,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonToken Peek()
         {
-            return IExecute<Android.Util.JsonToken>("peek");
+            return IExecuteWithSignature<Android.Util.JsonToken>("peek", "()Landroid/util/JsonToken;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#hasNext()"/>
@@ -114,7 +114,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public bool HasNext()
         {
-            return IExecute<bool>("hasNext");
+            return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#isLenient()"/>
@@ -122,7 +122,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsLenient()
         {
-            return IExecute<bool>("isLenient");
+            return IExecuteWithSignature<bool>("isLenient", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#nextBoolean()"/>
@@ -131,7 +131,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public bool NextBoolean()
         {
-            return IExecute<bool>("nextBoolean");
+            return IExecuteWithSignature<bool>("nextBoolean", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#nextDouble()"/>
@@ -140,7 +140,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public double NextDouble()
         {
-            return IExecute<double>("nextDouble");
+            return IExecuteWithSignature<double>("nextDouble", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#nextInt()"/>
@@ -149,7 +149,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public int NextInt()
         {
-            return IExecute<int>("nextInt");
+            return IExecuteWithSignature<int>("nextInt", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#nextName()"/>
@@ -158,7 +158,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String NextName()
         {
-            return IExecute<Java.Lang.String>("nextName");
+            return IExecuteWithSignature<Java.Lang.String>("nextName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#nextString()"/>
@@ -167,7 +167,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String NextString()
         {
-            return IExecute<Java.Lang.String>("nextString");
+            return IExecuteWithSignature<Java.Lang.String>("nextString", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#nextLong()"/>
@@ -176,7 +176,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public long NextLong()
         {
-            return IExecute<long>("nextLong");
+            return IExecuteWithSignature<long>("nextLong", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#beginArray()"/>
@@ -184,7 +184,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void BeginArray()
         {
-            IExecute("beginArray");
+            IExecuteWithSignature("beginArray", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#beginObject()"/>
@@ -192,7 +192,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void BeginObject()
         {
-            IExecute("beginObject");
+            IExecuteWithSignature("beginObject", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#close()"/>
@@ -200,7 +200,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#endArray()"/>
@@ -208,7 +208,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void EndArray()
         {
-            IExecute("endArray");
+            IExecuteWithSignature("endArray", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#endObject()"/>
@@ -216,7 +216,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void EndObject()
         {
-            IExecute("endObject");
+            IExecuteWithSignature("endObject", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#nextNull()"/>
@@ -224,7 +224,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void NextNull()
         {
-            IExecute("nextNull");
+            IExecuteWithSignature("nextNull", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#setLenient(boolean)"/>
@@ -232,7 +232,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLenient(bool arg0)
         {
-            IExecute("setLenient", arg0);
+            IExecuteWithSignature("setLenient", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonReader.html#skipValue()"/>
@@ -240,7 +240,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void SkipValue()
         {
-            IExecute("skipValue");
+            IExecuteWithSignature("skipValue", "()V");
         }
     
         #endregion

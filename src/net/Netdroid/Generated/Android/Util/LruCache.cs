@@ -151,7 +151,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int CreateCount()
         {
-            return IExecute<int>("createCount");
+            return IExecuteWithSignature<int>("createCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#evictionCount()"/>
@@ -159,7 +159,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int EvictionCount()
         {
-            return IExecute<int>("evictionCount");
+            return IExecuteWithSignature<int>("evictionCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#hitCount()"/>
@@ -167,7 +167,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int HitCount()
         {
-            return IExecute<int>("hitCount");
+            return IExecuteWithSignature<int>("hitCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#maxSize()"/>
@@ -175,7 +175,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int MaxSize()
         {
-            return IExecute<int>("maxSize");
+            return IExecuteWithSignature<int>("maxSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#missCount()"/>
@@ -183,7 +183,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int MissCount()
         {
-            return IExecute<int>("missCount");
+            return IExecuteWithSignature<int>("missCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#putCount()"/>
@@ -191,7 +191,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int PutCount()
         {
-            return IExecute<int>("putCount");
+            return IExecuteWithSignature<int>("putCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#size()"/>
@@ -199,7 +199,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#snapshot()"/>
@@ -207,7 +207,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map Snapshot()
         {
-            return IExecute<Java.Util.Map>("snapshot");
+            return IExecuteWithSignature<Java.Util.Map>("snapshot", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#get(java.lang.Object)"/>
@@ -216,7 +216,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#put(java.lang.Object,java.lang.Object)"/>
@@ -226,7 +226,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object Put(object arg0, object arg1)
         {
-            return IExecute("put", arg0, arg1);
+            return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#remove(java.lang.Object)"/>
@@ -235,14 +235,14 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object Remove(object arg0)
         {
-            return IExecute("remove", arg0);
+            return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#evictAll()"/>
         /// </summary>
         public void EvictAll()
         {
-            IExecute("evictAll");
+            IExecuteWithSignature("evictAll", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#resize(int)"/>
@@ -250,7 +250,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Resize(int arg0)
         {
-            IExecute("resize", arg0);
+            IExecuteWithSignature("resize", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#trimToSize(int)"/>
@@ -258,7 +258,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void TrimToSize(int arg0)
         {
-            IExecute("trimToSize", arg0);
+            IExecuteWithSignature("trimToSize", "(I)V", arg0);
         }
     
         #endregion
@@ -309,7 +309,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int CreateCount()
         {
-            return IExecute<int>("createCount");
+            return IExecuteWithSignature<int>("createCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#evictionCount()"/>
@@ -317,7 +317,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int EvictionCount()
         {
-            return IExecute<int>("evictionCount");
+            return IExecuteWithSignature<int>("evictionCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#hitCount()"/>
@@ -325,7 +325,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int HitCount()
         {
-            return IExecute<int>("hitCount");
+            return IExecuteWithSignature<int>("hitCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#maxSize()"/>
@@ -333,7 +333,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int MaxSize()
         {
-            return IExecute<int>("maxSize");
+            return IExecuteWithSignature<int>("maxSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#missCount()"/>
@@ -341,7 +341,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int MissCount()
         {
-            return IExecute<int>("missCount");
+            return IExecuteWithSignature<int>("missCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#putCount()"/>
@@ -349,7 +349,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int PutCount()
         {
-            return IExecute<int>("putCount");
+            return IExecuteWithSignature<int>("putCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#size()"/>
@@ -357,7 +357,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#snapshot()"/>
@@ -365,7 +365,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<K, V> Snapshot()
         {
-            return IExecute<Java.Util.Map<K, V>>("snapshot");
+            return IExecuteWithSignature<Java.Util.Map<K, V>>("snapshot", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#get(java.lang.Object)"/>
@@ -374,7 +374,7 @@ namespace Android.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Get(K arg0)
         {
-            return IExecute<V>("get", arg0);
+            return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#put(java.lang.Object,java.lang.Object)"/>
@@ -384,7 +384,7 @@ namespace Android.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Put(K arg0, V arg1)
         {
-            return IExecute<V>("put", arg0, arg1);
+            return IExecuteWithSignature<V>("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#remove(java.lang.Object)"/>
@@ -393,14 +393,14 @@ namespace Android.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Remove(K arg0)
         {
-            return IExecute<V>("remove", arg0);
+            return IExecuteWithSignature<V>("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#evictAll()"/>
         /// </summary>
         public void EvictAll()
         {
-            IExecute("evictAll");
+            IExecuteWithSignature("evictAll", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#resize(int)"/>
@@ -408,7 +408,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Resize(int arg0)
         {
-            IExecute("resize", arg0);
+            IExecuteWithSignature("resize", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/LruCache.html#trimToSize(int)"/>
@@ -416,7 +416,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void TrimToSize(int arg0)
         {
-            IExecute("trimToSize", arg0);
+            IExecuteWithSignature("trimToSize", "(I)V", arg0);
         }
     
         #endregion

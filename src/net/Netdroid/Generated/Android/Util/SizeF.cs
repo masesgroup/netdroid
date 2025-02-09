@@ -109,7 +109,7 @@ namespace Android.Util
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Android.Util.SizeF ParseSizeF(Java.Lang.String arg0)
         {
-            return SExecute<Android.Util.SizeF>(LocalBridgeClazz, "parseSizeF", arg0);
+            return SExecuteWithSignature<Android.Util.SizeF>(LocalBridgeClazz, "parseSizeF", "(Ljava/lang/String;)Landroid/util/SizeF;", arg0);
         }
     
         #endregion
@@ -121,7 +121,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetHeight()
         {
-            return IExecute<float>("getHeight");
+            return IExecuteWithSignature<float>("getHeight", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SizeF.html#getWidth()"/>
@@ -129,7 +129,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetWidth()
         {
-            return IExecute<float>("getWidth");
+            return IExecuteWithSignature<float>("getWidth", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SizeF.html#describeContents()"/>
@@ -137,7 +137,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SizeF.html#writeToParcel(android.os.Parcel,int)"/>
@@ -146,7 +146,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
     
         #endregion

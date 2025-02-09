@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region CleartextNetworkViolation declaration
+    #region CustomViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/CleartextNetworkViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/CustomViolation.html"/>
     /// </summary>
-    public partial class CleartextNetworkViolation : Android.Os.Strictmode.Violation
+    public partial class CustomViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.CleartextNetworkViolation";
+        const string _bridgeClassName = "android.os.strictmode.CustomViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region CleartextNetworkViolation implementation
-    public partial class CleartextNetworkViolation
+    #region CustomViolation implementation
+    public partial class CustomViolation
     {
         #region Constructors
     
