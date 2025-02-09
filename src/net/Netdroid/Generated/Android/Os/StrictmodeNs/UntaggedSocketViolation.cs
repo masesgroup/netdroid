@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region InstanceCountViolation declaration
+    #region UntaggedSocketViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/InstanceCountViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/UntaggedSocketViolation.html"/>
     /// </summary>
-    public partial class InstanceCountViolation : Android.Os.Strictmode.Violation
+    public partial class UntaggedSocketViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.InstanceCountViolation";
+        const string _bridgeClassName = "android.os.strictmode.UntaggedSocketViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region InstanceCountViolation implementation
-    public partial class InstanceCountViolation
+    #region UntaggedSocketViolation implementation
+    public partial class UntaggedSocketViolation
     {
         #region Constructors
     

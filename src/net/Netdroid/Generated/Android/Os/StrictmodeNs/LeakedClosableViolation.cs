@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region CredentialProtectedWhileLockedViolation declaration
+    #region LeakedClosableViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/CredentialProtectedWhileLockedViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/LeakedClosableViolation.html"/>
     /// </summary>
-    public partial class CredentialProtectedWhileLockedViolation : Android.Os.Strictmode.Violation
+    public partial class LeakedClosableViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.CredentialProtectedWhileLockedViolation";
+        const string _bridgeClassName = "android.os.strictmode.LeakedClosableViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region CredentialProtectedWhileLockedViolation implementation
-    public partial class CredentialProtectedWhileLockedViolation
+    #region LeakedClosableViolation implementation
+    public partial class LeakedClosableViolation
     {
         #region Constructors
     

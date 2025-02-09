@@ -155,7 +155,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="float"/></param>
         public void SetValue(object arg0, float arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/FloatProperty.html#set(java.lang.Object,java.lang.Float)"/>
@@ -164,7 +164,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="Java.Lang.Float"/></param>
         public void Set(object arg0, Java.Lang.Float arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Float;)V", arg0, arg1);
         }
     
         #endregion
@@ -216,7 +216,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="float"/></param>
         public void SetValue(T arg0, float arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/FloatProperty.html#set(java.lang.Object,java.lang.Float)"/>
@@ -225,7 +225,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="Java.Lang.Float"/></param>
         public void Set(T arg0, Java.Lang.Float arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Float;)V", arg0, arg1);
         }
     
         #endregion

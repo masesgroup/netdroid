@@ -153,7 +153,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.JsonToken"/></returns>
         public static Android.Util.JsonToken ValueOf(Java.Lang.String arg0)
         {
-            return SExecute<Android.Util.JsonToken>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecuteWithSignature<Android.Util.JsonToken>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/util/JsonToken;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonToken.html#values()"/>
@@ -161,7 +161,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.JsonToken"/></returns>
         public static Android.Util.JsonToken[] Values()
         {
-            return SExecuteArray<Android.Util.JsonToken>(LocalBridgeClazz, "values");
+            return SExecuteWithSignatureArray<Android.Util.JsonToken>(LocalBridgeClazz, "values", "()[Landroid/util/JsonToken;");
         }
     
         #endregion

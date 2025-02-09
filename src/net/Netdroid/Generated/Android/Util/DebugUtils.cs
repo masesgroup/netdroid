@@ -93,7 +93,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool IsObjectSelected(object arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isObjectSelected", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isObjectSelected", "(Ljava/lang/Object;)Z", arg0);
         }
     
         #endregion

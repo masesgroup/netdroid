@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region UntaggedSocketViolation declaration
+    #region CredentialProtectedWhileLockedViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/UntaggedSocketViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/CredentialProtectedWhileLockedViolation.html"/>
     /// </summary>
-    public partial class UntaggedSocketViolation : Android.Os.Strictmode.Violation
+    public partial class CredentialProtectedWhileLockedViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.UntaggedSocketViolation";
+        const string _bridgeClassName = "android.os.strictmode.CredentialProtectedWhileLockedViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region UntaggedSocketViolation implementation
-    public partial class UntaggedSocketViolation
+    #region CredentialProtectedWhileLockedViolation implementation
+    public partial class CredentialProtectedWhileLockedViolation
     {
         #region Constructors
     

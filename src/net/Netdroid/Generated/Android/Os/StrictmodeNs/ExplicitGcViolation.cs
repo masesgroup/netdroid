@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region UnbufferedIoViolation declaration
+    #region ExplicitGcViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/UnbufferedIoViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/ExplicitGcViolation.html"/>
     /// </summary>
-    public partial class UnbufferedIoViolation : Android.Os.Strictmode.Violation
+    public partial class ExplicitGcViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.UnbufferedIoViolation";
+        const string _bridgeClassName = "android.os.strictmode.ExplicitGcViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region UnbufferedIoViolation implementation
-    public partial class UnbufferedIoViolation
+    #region ExplicitGcViolation implementation
+    public partial class ExplicitGcViolation
     {
         #region Constructors
     

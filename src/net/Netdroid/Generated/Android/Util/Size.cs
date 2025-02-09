@@ -103,7 +103,7 @@ namespace Android.Util
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Android.Util.Size ParseSize(Java.Lang.String arg0)
         {
-            return SExecute<Android.Util.Size>(LocalBridgeClazz, "parseSize", arg0);
+            return SExecuteWithSignature<Android.Util.Size>(LocalBridgeClazz, "parseSize", "(Ljava/lang/String;)Landroid/util/Size;", arg0);
         }
     
         #endregion
@@ -115,7 +115,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetHeight()
         {
-            return IExecute<int>("getHeight");
+            return IExecuteWithSignature<int>("getHeight", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Size.html#getWidth()"/>
@@ -123,7 +123,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetWidth()
         {
-            return IExecute<int>("getWidth");
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
     
         #endregion

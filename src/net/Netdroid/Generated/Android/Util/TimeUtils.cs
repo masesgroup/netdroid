@@ -95,7 +95,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool IsTimeBetween(Java.Time.LocalTime arg0, Java.Time.LocalTime arg1, Java.Time.LocalTime arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isTimeBetween", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isTimeBetween", "(Ljava/time/LocalTime;Ljava/time/LocalTime;Ljava/time/LocalTime;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#getTimeZoneDatabaseVersion()"/>
@@ -103,7 +103,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetTimeZoneDatabaseVersion()
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getTimeZoneDatabaseVersion");
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTimeZoneDatabaseVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#getTimeZoneIdsForCountryCode(java.lang.String)"/>
@@ -112,7 +112,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Lang.String> GetTimeZoneIdsForCountryCode(Java.Lang.String arg0)
         {
-            return SExecute<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "getTimeZoneIdsForCountryCode", arg0);
+            return SExecuteWithSignature<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "getTimeZoneIdsForCountryCode", "(Ljava/lang/String;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#getTimeZone(int,boolean,long,java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Util.TimeZone"/></returns>
         public static Java.Util.TimeZone GetTimeZone(int arg0, bool arg1, long arg2, Java.Lang.String arg3)
         {
-            return SExecute<Java.Util.TimeZone>(LocalBridgeClazz, "getTimeZone", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.TimeZone>(LocalBridgeClazz, "getTimeZone", "(IZJLjava/lang/String;)Ljava/util/TimeZone;", arg0, arg1, arg2, arg3);
         }
     
         #endregion

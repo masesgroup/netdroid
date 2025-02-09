@@ -152,7 +152,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ConcatGroups(Java.Util.Regex.Matcher arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "concatGroups", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "concatGroups", "(Ljava/util/regex/Matcher;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Patterns.html#digitsAndPlusOnly(java.util.regex.Matcher)"/>
@@ -161,7 +161,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String DigitsAndPlusOnly(Java.Util.Regex.Matcher arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "digitsAndPlusOnly", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "digitsAndPlusOnly", "(Ljava/util/regex/Matcher;)Ljava/lang/String;", arg0);
         }
     
         #endregion

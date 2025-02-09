@@ -155,7 +155,7 @@ namespace Android.Util
         [global::System.Obsolete()]
         public Android.Util.EventLogTags.Description Get(int arg0)
         {
-            return IExecute<Android.Util.EventLogTags.Description>("get", arg0);
+            return IExecuteWithSignature<Android.Util.EventLogTags.Description>("get", "(I)Landroid/util/EventLogTags$Description;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLogTags.html#get(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Android.Util
         [global::System.Obsolete()]
         public Android.Util.EventLogTags.Description Get(Java.Lang.String arg0)
         {
-            return IExecute<Android.Util.EventLogTags.Description>("get", arg0);
+            return IExecuteWithSignature<Android.Util.EventLogTags.Description>("get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;", arg0);
         }
     
         #endregion

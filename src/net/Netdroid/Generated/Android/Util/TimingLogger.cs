@@ -108,7 +108,7 @@ namespace Android.Util
         [global::System.Obsolete()]
         public void AddSplit(Java.Lang.String arg0)
         {
-            IExecute("addSplit", arg0);
+            IExecuteWithSignature("addSplit", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimingLogger.html#dumpToLog()"/>
@@ -116,7 +116,7 @@ namespace Android.Util
         [global::System.Obsolete()]
         public void DumpToLog()
         {
-            IExecute("dumpToLog");
+            IExecuteWithSignature("dumpToLog", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimingLogger.html#reset()"/>
@@ -124,7 +124,7 @@ namespace Android.Util
         [global::System.Obsolete()]
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimingLogger.html#reset(java.lang.String,java.lang.String)"/>
@@ -134,7 +134,7 @@ namespace Android.Util
         [global::System.Obsolete()]
         public void Reset(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("reset", arg0, arg1);
+            IExecuteWithSignature("reset", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
     
         #endregion

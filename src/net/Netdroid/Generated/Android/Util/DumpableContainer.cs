@@ -117,7 +117,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddDumpable(Android.Util.Dumpable arg0)
         {
-            return IExecute<bool>("addDumpable", arg0);
+            return IExecuteWithSignature<bool>("addDumpable", "(Landroid/util/Dumpable;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/DumpableContainer.html#removeDumpable(android.util.Dumpable)"/>
@@ -126,7 +126,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveDumpable(Android.Util.Dumpable arg0)
         {
-            return IExecute<bool>("removeDumpable", arg0);
+            return IExecuteWithSignature<bool>("removeDumpable", "(Landroid/util/Dumpable;)Z", arg0);
         }
     
         #endregion

@@ -366,7 +366,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String CoerceToString(int arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "coerceToString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "coerceToString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#applyDimension(int,float,android.util.DisplayMetrics)"/>
@@ -377,7 +377,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float ApplyDimension(int arg0, float arg1, Android.Util.DisplayMetrics arg2)
         {
-            return SExecute<float>(LocalBridgeClazz, "applyDimension", arg0, arg1, arg2);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "applyDimension", "(IFLandroid/util/DisplayMetrics;)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#complexToDimension(int,android.util.DisplayMetrics)"/>
@@ -387,7 +387,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float ComplexToDimension(int arg0, Android.Util.DisplayMetrics arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "complexToDimension", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "complexToDimension", "(ILandroid/util/DisplayMetrics;)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#complexToFloat(int)"/>
@@ -396,7 +396,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float ComplexToFloat(int arg0)
         {
-            return SExecute<float>(LocalBridgeClazz, "complexToFloat", arg0);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "complexToFloat", "(I)F", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#complexToFraction(int,float,float)"/>
@@ -407,7 +407,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float ComplexToFraction(int arg0, float arg1, float arg2)
         {
-            return SExecute<float>(LocalBridgeClazz, "complexToFraction", arg0, arg1, arg2);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "complexToFraction", "(IFF)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#convertDimensionToPixels(int,float,android.util.DisplayMetrics)"/>
@@ -418,7 +418,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float ConvertDimensionToPixels(int arg0, float arg1, Android.Util.DisplayMetrics arg2)
         {
-            return SExecute<float>(LocalBridgeClazz, "convertDimensionToPixels", arg0, arg1, arg2);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "convertDimensionToPixels", "(IFLandroid/util/DisplayMetrics;)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#convertPixelsToDimension(int,float,android.util.DisplayMetrics)"/>
@@ -429,7 +429,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float ConvertPixelsToDimension(int arg0, float arg1, Android.Util.DisplayMetrics arg2)
         {
-            return SExecute<float>(LocalBridgeClazz, "convertPixelsToDimension", arg0, arg1, arg2);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "convertPixelsToDimension", "(IFLandroid/util/DisplayMetrics;)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#deriveDimension(int,float,android.util.DisplayMetrics)"/>
@@ -440,7 +440,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public static float DeriveDimension(int arg0, float arg1, Android.Util.DisplayMetrics arg2)
         {
-            return SExecute<float>(LocalBridgeClazz, "deriveDimension", arg0, arg1, arg2);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "deriveDimension", "(IFLandroid/util/DisplayMetrics;)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#complexToDimensionPixelOffset(int,android.util.DisplayMetrics)"/>
@@ -450,7 +450,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int ComplexToDimensionPixelOffset(int arg0, Android.Util.DisplayMetrics arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "complexToDimensionPixelOffset", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "complexToDimensionPixelOffset", "(ILandroid/util/DisplayMetrics;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#complexToDimensionPixelSize(int,android.util.DisplayMetrics)"/>
@@ -460,7 +460,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int ComplexToDimensionPixelSize(int arg0, Android.Util.DisplayMetrics arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "complexToDimensionPixelSize", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "complexToDimensionPixelSize", "(ILandroid/util/DisplayMetrics;)I", arg0, arg1);
         }
     
         #endregion
@@ -472,7 +472,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsColorType()
         {
-            return IExecute<bool>("isColorType");
+            return IExecuteWithSignature<bool>("isColorType", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#getFloat()"/>
@@ -480,7 +480,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetFloat()
         {
-            return IExecute<float>("getFloat");
+            return IExecuteWithSignature<float>("getFloat", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#coerceToString()"/>
@@ -488,7 +488,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence CoerceToString()
         {
-            return IExecute<Java.Lang.CharSequence>("coerceToString");
+            return IExecuteWithSignature<Java.Lang.CharSequence>("coerceToString", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#getDimension(android.util.DisplayMetrics)"/>
@@ -497,7 +497,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetDimension(Android.Util.DisplayMetrics arg0)
         {
-            return IExecute<float>("getDimension", arg0);
+            return IExecuteWithSignature<float>("getDimension", "(Landroid/util/DisplayMetrics;)F", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#getFraction(float,float)"/>
@@ -507,7 +507,7 @@ namespace Android.Util
         /// <returns><see cref="float"/></returns>
         public float GetFraction(float arg0, float arg1)
         {
-            return IExecute<float>("getFraction", arg0, arg1);
+            return IExecuteWithSignature<float>("getFraction", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#getComplexUnit()"/>
@@ -515,7 +515,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int GetComplexUnit()
         {
-            return IExecute<int>("getComplexUnit");
+            return IExecuteWithSignature<int>("getComplexUnit", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#setTo(android.util.TypedValue)"/>
@@ -523,7 +523,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Android.Util.TypedValue"/></param>
         public void SetTo(Android.Util.TypedValue arg0)
         {
-            IExecute("setTo", arg0);
+            IExecuteWithSignature("setTo", "(Landroid/util/TypedValue;)V", arg0);
         }
     
         #endregion

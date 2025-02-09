@@ -132,7 +132,7 @@ namespace Android.Util
         /// <returns><see cref="byte"/></returns>
         public static byte[] Decode(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "decode", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "decode", "([BIII)[B", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Base64.html#decode(byte[],int)"/>
@@ -142,7 +142,7 @@ namespace Android.Util
         /// <returns><see cref="byte"/></returns>
         public static byte[] Decode(byte[] arg0, int arg1)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "decode", arg0, arg1);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "decode", "([BI)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Base64.html#decode(java.lang.String,int)"/>
@@ -152,7 +152,7 @@ namespace Android.Util
         /// <returns><see cref="byte"/></returns>
         public static byte[] Decode(Java.Lang.String arg0, int arg1)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "decode", arg0, arg1);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "decode", "(Ljava/lang/String;I)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Base64.html#encode(byte[],int,int,int)"/>
@@ -164,7 +164,7 @@ namespace Android.Util
         /// <returns><see cref="byte"/></returns>
         public static byte[] Encode(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "encode", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "encode", "([BIII)[B", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Base64.html#encode(byte[],int)"/>
@@ -174,7 +174,7 @@ namespace Android.Util
         /// <returns><see cref="byte"/></returns>
         public static byte[] Encode(byte[] arg0, int arg1)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "encode", arg0, arg1);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "encode", "([BI)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Base64.html#encodeToString(byte[],int,int,int)"/>
@@ -186,7 +186,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String EncodeToString(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encodeToString", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encodeToString", "([BIII)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Base64.html#encodeToString(byte[],int)"/>
@@ -196,7 +196,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String EncodeToString(byte[] arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encodeToString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encodeToString", "([BI)Ljava/lang/String;", arg0, arg1);
         }
     
         #endregion

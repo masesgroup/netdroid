@@ -104,7 +104,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.SparseBooleanArray"/></returns>
         public Android.Util.SparseBooleanArray Clone()
         {
-            return IExecute<Android.Util.SparseBooleanArray>("clone");
+            return IExecuteWithSignature<Android.Util.SparseBooleanArray>("clone", "()Landroid/util/SparseBooleanArray;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#get(int,boolean)"/>
@@ -114,7 +114,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Get(int arg0, bool arg1)
         {
-            return IExecute<bool>("get", arg0, arg1);
+            return IExecuteWithSignature<bool>("get", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#get(int)"/>
@@ -123,7 +123,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Get(int arg0)
         {
-            return IExecute<bool>("get", arg0);
+            return IExecuteWithSignature<bool>("get", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#valueAt(int)"/>
@@ -132,7 +132,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool ValueAt(int arg0)
         {
-            return IExecute<bool>("valueAt", arg0);
+            return IExecuteWithSignature<bool>("valueAt", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#indexOfKey(int)"/>
@@ -141,7 +141,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfKey(int arg0)
         {
-            return IExecute<int>("indexOfKey", arg0);
+            return IExecuteWithSignature<int>("indexOfKey", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#indexOfValue(boolean)"/>
@@ -150,7 +150,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfValue(bool arg0)
         {
-            return IExecute<int>("indexOfValue", arg0);
+            return IExecuteWithSignature<int>("indexOfValue", "(Z)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#keyAt(int)"/>
@@ -159,7 +159,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int KeyAt(int arg0)
         {
-            return IExecute<int>("keyAt", arg0);
+            return IExecuteWithSignature<int>("keyAt", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#size()"/>
@@ -167,7 +167,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#append(int,boolean)"/>
@@ -176,14 +176,14 @@ namespace Android.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void Append(int arg0, bool arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#delete(int)"/>
@@ -191,7 +191,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Delete(int arg0)
         {
-            IExecute("delete", arg0);
+            IExecuteWithSignature("delete", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#put(int,boolean)"/>
@@ -200,7 +200,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void Put(int arg0, bool arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#removeAt(int)"/>
@@ -208,7 +208,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveAt(int arg0)
         {
-            IExecute("removeAt", arg0);
+            IExecuteWithSignature("removeAt", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#setValueAt(int,boolean)"/>
@@ -217,7 +217,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetValueAt(int arg0, bool arg1)
         {
-            IExecute("setValueAt", arg0, arg1);
+            IExecuteWithSignature("setValueAt", "(IZ)V", arg0, arg1);
         }
     
         #endregion

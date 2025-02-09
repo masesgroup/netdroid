@@ -142,7 +142,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.AttributeSet"/></returns>
         public static Android.Util.AttributeSet AsAttributeSet(Org.Xmlpull.V1.XmlPullParser arg0)
         {
-            return SExecute<Android.Util.AttributeSet>(LocalBridgeClazz, "asAttributeSet", arg0);
+            return SExecuteWithSignature<Android.Util.AttributeSet>(LocalBridgeClazz, "asAttributeSet", "(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Xml.html#findEncodingByName(java.lang.String)"/>
@@ -152,7 +152,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public static Android.Util.Xml.Encoding FindEncodingByName(Java.Lang.String arg0)
         {
-            return SExecute<Android.Util.Xml.Encoding>(LocalBridgeClazz, "findEncodingByName", arg0);
+            return SExecuteWithSignature<Android.Util.Xml.Encoding>(LocalBridgeClazz, "findEncodingByName", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Xml.html#newPullParser()"/>
@@ -160,7 +160,7 @@ namespace Android.Util
         /// <returns><see cref="Org.Xmlpull.V1.XmlPullParser"/></returns>
         public static Org.Xmlpull.V1.XmlPullParser NewPullParser()
         {
-            return SExecute<Org.Xmlpull.V1.XmlPullParser>(LocalBridgeClazz, "newPullParser");
+            return SExecuteWithSignature<Org.Xmlpull.V1.XmlPullParser>(LocalBridgeClazz, "newPullParser", "()Lorg/xmlpull/v1/XmlPullParser;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Xml.html#newSerializer()"/>
@@ -168,7 +168,7 @@ namespace Android.Util
         /// <returns><see cref="Org.Xmlpull.V1.XmlSerializer"/></returns>
         public static Org.Xmlpull.V1.XmlSerializer NewSerializer()
         {
-            return SExecute<Org.Xmlpull.V1.XmlSerializer>(LocalBridgeClazz, "newSerializer");
+            return SExecuteWithSignature<Org.Xmlpull.V1.XmlSerializer>(LocalBridgeClazz, "newSerializer", "()Lorg/xmlpull/v1/XmlSerializer;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Xml.html#parse(java.io.InputStream,android.util.Xml.Encoding,org.xml.sax.ContentHandler)"/>
@@ -180,7 +180,7 @@ namespace Android.Util
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public static void Parse(Java.Io.InputStream arg0, Android.Util.Xml.Encoding arg1, Org.Xml.Sax.ContentHandler arg2)
         {
-            SExecute(LocalBridgeClazz, "parse", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "parse", "(Ljava/io/InputStream;Landroid/util/Xml$Encoding;Lorg/xml/sax/ContentHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Xml.html#parse(java.io.Reader,org.xml.sax.ContentHandler)"/>
@@ -191,7 +191,7 @@ namespace Android.Util
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public static void Parse(Java.Io.Reader arg0, Org.Xml.Sax.ContentHandler arg1)
         {
-            SExecute(LocalBridgeClazz, "parse", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "parse", "(Ljava/io/Reader;Lorg/xml/sax/ContentHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Xml.html#parse(java.lang.String,org.xml.sax.ContentHandler)"/>
@@ -201,7 +201,7 @@ namespace Android.Util
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public static void Parse(Java.Lang.String arg0, Org.Xml.Sax.ContentHandler arg1)
         {
-            SExecute(LocalBridgeClazz, "parse", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "parse", "(Ljava/lang/String;Lorg/xml/sax/ContentHandler;)V", arg0, arg1);
         }
     
         #endregion
@@ -258,7 +258,7 @@ namespace Android.Util
             /// <returns><see cref="Android.Util.Xml.Encoding"/></returns>
             public static Android.Util.Xml.Encoding ValueOf(Java.Lang.String arg0)
             {
-                return SExecute<Android.Util.Xml.Encoding>(LocalBridgeClazz, "valueOf", arg0);
+                return SExecuteWithSignature<Android.Util.Xml.Encoding>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/Xml.Encoding.html#values()"/>
@@ -266,7 +266,7 @@ namespace Android.Util
             /// <returns><see cref="Android.Util.Xml.Encoding"/></returns>
             public static Android.Util.Xml.Encoding[] Values()
             {
-                return SExecuteArray<Android.Util.Xml.Encoding>(LocalBridgeClazz, "values");
+                return SExecuteWithSignatureArray<Android.Util.Xml.Encoding>(LocalBridgeClazz, "values", "()[Landroid/util/Xml$Encoding;");
             }
         
             #endregion

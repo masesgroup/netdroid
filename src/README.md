@@ -10,8 +10,8 @@ The configuration is:
 
 ```json
 {
-  "RelativeDestinationCSharpClassPath": "net\\Netdroid\\Generated",
-  "RelativeDestinationJavaListenerPath": "jvm\\netdroid\\src\\main\\java",
+  "RelativeDestinationCSharpClassPath": "net/Netdroid/Generated",
+  "RelativeDestinationJavaListenerPath": "jvm/netdroid/src/main/java",
   "JavaListenerBasePackage": "org.mases.netdroid.generated",
   "ReflectDeprecated": true,
   "PreferMethodWithSignature": true,
@@ -42,9 +42,72 @@ The configuration is:
     "org.mases",
     "org.slf4j"
   ],
+  "ClassesWithCallbacks": [
+    {
+      "ClassName": "android.accounts.AccountAuthenticatorActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.Activity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.ActivityGroup",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.AliasActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.ExpandableListActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.LauncherActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.ListActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.NativeActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.app.TabActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    },
+    {
+      "ClassName": "android.preference.PreferenceActivity",
+      "Patterns": [
+        "^on.*"
+      ]
+    }
+  ],
   "ClassesToBeListener": [
     "android.hardware.SensorEventListener2",
     "android.media.MediaScannerConnection$MediaScannerConnectionClient",
+    "java.lang.Runnable",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
@@ -72,7 +135,10 @@ The configuration is:
     "android.text.method.DialerKeyListener",
     "android.text.method.DigitsKeyListener",
     "android.text.method.MetaKeyKeyListener",
+    "android.text.method.MultiTapKeyListener",
+    "android.text.method.NumberKeyListener",
     "android.text.method.QwertyKeyListener",
+    "android.text.method.TextKeyListener",
     "android.text.method.TimeKeyListener",
     "android.widget.ArrayAdapter",
     "android.widget.CursorTreeAdapter",
@@ -82,8 +148,11 @@ The configuration is:
     "android.widget.SimpleCursorAdapter",
     "android.widget.SimpleCursorTreeAdapter",
     "android.widget.SimpleExpandableListAdapter",
+    "android.view.OrientationListener",
     "android.view.OrientationEventListener",
     "android.view.accessibility.CaptioningManager$CaptioningChangeListener",
+    "android.widget.CursorAdapter",
+    "android.widget.SimpleAdapter",
     "org.xml.sax.helpers.XMLReaderAdapter"
   ],
   "ClassesManuallyDeveloped": [
@@ -91,6 +160,9 @@ The configuration is:
     "java.util.EventListener"
   ],
   "ClassesToAvoid": [
+    "android.content.pm.ApplicationInfo$DisplayNameComparator",
+    "android.content.pm.PackageItemInfo$DisplayNameComparator",
+    "android.content.pm.ResolveInfo$DisplayNameComparator",
     "android.net.TransportInfo",
     "android.util.Range",
     "java.io.ObjectInputFilter",
@@ -132,6 +204,7 @@ The configuration is:
     "java.time.chrono.ChronoZonedDateTime"
   ],
   "NamespacesInConflict": [
+    "android.os.strictmode",
     "java.awt.color",
     "java.awt.desktop",
     "java.awt.image",

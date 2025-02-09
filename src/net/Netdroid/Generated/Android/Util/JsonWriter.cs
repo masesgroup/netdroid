@@ -105,7 +105,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter BeginArray()
         {
-            return IExecute<Android.Util.JsonWriter>("beginArray");
+            return IExecuteWithSignature<Android.Util.JsonWriter>("beginArray", "()Landroid/util/JsonWriter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#beginObject()"/>
@@ -114,7 +114,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter BeginObject()
         {
-            return IExecute<Android.Util.JsonWriter>("beginObject");
+            return IExecuteWithSignature<Android.Util.JsonWriter>("beginObject", "()Landroid/util/JsonWriter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#endArray()"/>
@@ -123,7 +123,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter EndArray()
         {
-            return IExecute<Android.Util.JsonWriter>("endArray");
+            return IExecuteWithSignature<Android.Util.JsonWriter>("endArray", "()Landroid/util/JsonWriter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#endObject()"/>
@@ -132,7 +132,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter EndObject()
         {
-            return IExecute<Android.Util.JsonWriter>("endObject");
+            return IExecuteWithSignature<Android.Util.JsonWriter>("endObject", "()Landroid/util/JsonWriter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#name(java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter Name(Java.Lang.String arg0)
         {
-            return IExecute<Android.Util.JsonWriter>("name", arg0);
+            return IExecuteWithSignature<Android.Util.JsonWriter>("name", "(Ljava/lang/String;)Landroid/util/JsonWriter;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#nullValue()"/>
@@ -151,7 +151,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter NullValue()
         {
-            return IExecute<Android.Util.JsonWriter>("nullValue");
+            return IExecuteWithSignature<Android.Util.JsonWriter>("nullValue", "()Landroid/util/JsonWriter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#value(boolean)"/>
@@ -161,7 +161,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter Value(bool arg0)
         {
-            return IExecute<Android.Util.JsonWriter>("value", arg0);
+            return IExecuteWithSignature<Android.Util.JsonWriter>("value", "(Z)Landroid/util/JsonWriter;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#value(double)"/>
@@ -171,7 +171,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter Value(double arg0)
         {
-            return IExecute<Android.Util.JsonWriter>("value", arg0);
+            return IExecuteWithSignature<Android.Util.JsonWriter>("value", "(D)Landroid/util/JsonWriter;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#value(java.lang.Number)"/>
@@ -181,7 +181,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter Value(Java.Lang.Number arg0)
         {
-            return IExecute<Android.Util.JsonWriter>("value", arg0);
+            return IExecuteWithSignature<Android.Util.JsonWriter>("value", "(Ljava/lang/Number;)Landroid/util/JsonWriter;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#value(java.lang.String)"/>
@@ -191,7 +191,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter Value(Java.Lang.String arg0)
         {
-            return IExecute<Android.Util.JsonWriter>("value", arg0);
+            return IExecuteWithSignature<Android.Util.JsonWriter>("value", "(Ljava/lang/String;)Landroid/util/JsonWriter;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#value(long)"/>
@@ -201,7 +201,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Android.Util.JsonWriter Value(long arg0)
         {
-            return IExecute<Android.Util.JsonWriter>("value", arg0);
+            return IExecuteWithSignature<Android.Util.JsonWriter>("value", "(J)Landroid/util/JsonWriter;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#isLenient()"/>
@@ -209,7 +209,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsLenient()
         {
-            return IExecute<bool>("isLenient");
+            return IExecuteWithSignature<bool>("isLenient", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#close()"/>
@@ -217,7 +217,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#flush()"/>
@@ -225,7 +225,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
-            IExecute("flush");
+            IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#setIndent(java.lang.String)"/>
@@ -233,7 +233,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetIndent(Java.Lang.String arg0)
         {
-            IExecute("setIndent", arg0);
+            IExecuteWithSignature("setIndent", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/JsonWriter.html#setLenient(boolean)"/>
@@ -241,7 +241,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLenient(bool arg0)
         {
-            IExecute("setLenient", arg0);
+            IExecuteWithSignature("setLenient", "(Z)V", arg0);
         }
     
         #endregion

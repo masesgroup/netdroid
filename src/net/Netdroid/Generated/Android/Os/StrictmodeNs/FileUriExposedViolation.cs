@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region NetworkViolation declaration
+    #region FileUriExposedViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/NetworkViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/FileUriExposedViolation.html"/>
     /// </summary>
-    public partial class NetworkViolation : Android.Os.Strictmode.Violation
+    public partial class FileUriExposedViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.NetworkViolation";
+        const string _bridgeClassName = "android.os.strictmode.FileUriExposedViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region NetworkViolation implementation
-    public partial class NetworkViolation
+    #region FileUriExposedViolation implementation
+    public partial class FileUriExposedViolation
     {
         #region Constructors
     
