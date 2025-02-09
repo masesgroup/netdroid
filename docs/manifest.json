@@ -30642,240 +30642,240 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.CleartextNetworkViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.CleartextNetworkViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.CleartextNetworkViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.CleartextNetworkViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.ContentUriWithoutPermissionViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.ContentUriWithoutPermissionViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.ContentUriWithoutPermissionViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.ContentUriWithoutPermissionViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.CredentialProtectedWhileLockedViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.CredentialProtectedWhileLockedViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.CredentialProtectedWhileLockedViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.CredentialProtectedWhileLockedViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.CustomViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.CustomViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.CustomViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.CustomViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.DiskReadViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.DiskReadViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.DiskReadViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.DiskReadViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.DiskWriteViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.DiskWriteViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.DiskWriteViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.DiskWriteViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.ExplicitGcViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.ExplicitGcViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.ExplicitGcViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.ExplicitGcViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.FileUriExposedViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.FileUriExposedViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.FileUriExposedViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.FileUriExposedViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.ImplicitDirectBootViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.ImplicitDirectBootViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.ImplicitDirectBootViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.ImplicitDirectBootViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.IncorrectContextUseViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.IncorrectContextUseViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.IncorrectContextUseViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.IncorrectContextUseViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.InstanceCountViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.InstanceCountViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.InstanceCountViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.InstanceCountViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.IntentReceiverLeakedViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.IntentReceiverLeakedViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.IntentReceiverLeakedViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.IntentReceiverLeakedViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.LeakedClosableViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.LeakedClosableViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.LeakedClosableViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.LeakedClosableViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.NetworkViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.NetworkViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.NetworkViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.NetworkViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.NonSdkApiUsedViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.NonSdkApiUsedViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.NonSdkApiUsedViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.NonSdkApiUsedViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.ResourceMismatchViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.ResourceMismatchViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.ResourceMismatchViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.ResourceMismatchViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.ServiceConnectionLeakedViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.ServiceConnectionLeakedViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.ServiceConnectionLeakedViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.ServiceConnectionLeakedViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.SqliteObjectLeakedViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.SqliteObjectLeakedViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.SqliteObjectLeakedViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.SqliteObjectLeakedViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.UnbufferedIoViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.UnbufferedIoViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.UnbufferedIoViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.UnbufferedIoViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.UnsafeIntentLaunchViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.UnsafeIntentLaunchViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.UnsafeIntentLaunchViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.UnsafeIntentLaunchViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.UntaggedSocketViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.UntaggedSocketViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.UntaggedSocketViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.UntaggedSocketViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.Violation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.Violation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.Violation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.Violation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.WebViewMethodCalledOnWrongThreadViolation.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.WebViewMethodCalledOnWrongThreadViolation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.WebViewMethodCalledOnWrongThreadViolation.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.WebViewMethodCalledOnWrongThreadViolation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Os.Strictmode.yml",
+      "source_relative_path": "api/Android.Os.StrictmodeNs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Os.Strictmode.html"
+          "relative_path": "api/Android.Os.StrictmodeNs.html"
         }
       },
       "version": ""
