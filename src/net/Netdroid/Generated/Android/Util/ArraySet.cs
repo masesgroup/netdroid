@@ -175,7 +175,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
-            return IExecuteArray<object>("toArray", new object[] { arg0 });
+            return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#add(java.lang.Object)"/>
@@ -184,7 +184,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Add(object arg0)
         {
-            return IExecute<bool>("add", arg0);
+            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#addAll(java.util.Collection)"/>
@@ -193,7 +193,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(Java.Util.Collection arg0)
         {
-            return IExecute<bool>("addAll", arg0);
+            return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#contains(java.lang.Object)"/>
@@ -202,7 +202,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#containsAll(java.util.Collection)"/>
@@ -211,7 +211,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll(Java.Util.Collection arg0)
         {
-            return IExecute<bool>("containsAll", arg0);
+            return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#isEmpty()"/>
@@ -219,7 +219,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecute<bool>("isEmpty");
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#remove(java.lang.Object)"/>
@@ -228,7 +228,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecute<bool>("remove", arg0);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeAll(android.util.ArraySet)"/>
@@ -237,7 +237,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Android.Util.ArraySet arg0)
         {
-            return IExecute<bool>("removeAll", arg0);
+            return IExecuteWithSignature<bool>("removeAll", "(Landroid/util/ArraySet;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeAll(java.util.Collection)"/>
@@ -246,7 +246,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Java.Util.Collection arg0)
         {
-            return IExecute<bool>("removeAll", arg0);
+            return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeIf(java.util.function.Predicate)"/>
@@ -255,7 +255,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveIf(Java.Util.Function.Predicate arg0)
         {
-            return IExecute<bool>("removeIf", arg0);
+            return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#retainAll(java.util.Collection)"/>
@@ -264,7 +264,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll(Java.Util.Collection arg0)
         {
-            return IExecute<bool>("retainAll", arg0);
+            return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeAt(int)"/>
@@ -273,7 +273,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object RemoveAt(int arg0)
         {
-            return IExecute("removeAt", arg0);
+            return IExecuteWithSignature("removeAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#valueAt(int)"/>
@@ -282,7 +282,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object ValueAt(int arg0)
         {
-            return IExecute("valueAt", arg0);
+            return IExecuteWithSignature("valueAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#indexOf(java.lang.Object)"/>
@@ -291,7 +291,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0)
         {
-            return IExecute<int>("indexOf", arg0);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#size()"/>
@@ -299,7 +299,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#toArray()"/>
@@ -307,7 +307,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteArray<object>("toArray");
+            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#iterator()"/>
@@ -315,7 +315,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
-            return IExecute<Java.Util.Iterator>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#addAll(android.util.ArraySet)"/>
@@ -323,14 +323,14 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Android.Util.ArraySet"/></param>
         public void AddAll(Android.Util.ArraySet arg0)
         {
-            IExecute("addAll", arg0);
+            IExecuteWithSignature("addAll", "(Landroid/util/ArraySet;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#ensureCapacity(int)"/>
@@ -338,7 +338,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
         {
-            IExecute("ensureCapacity", arg0);
+            IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#forEach(java.util.function.Consumer)"/>
@@ -346,7 +346,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void ForEach(Java.Util.Function.Consumer arg0)
         {
-            IExecute("forEach", arg0);
+            IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }
     
         #endregion
@@ -431,7 +431,7 @@ namespace Android.Util
         /// <returns><typeparamref name="T"/></returns>
         public T[] ToArray<T>(T[] arg0)
         {
-            return IExecuteArray<T>("toArray", new object[] { arg0 });
+            return IExecuteWithSignatureArray<T>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#add(java.lang.Object)"/>
@@ -440,7 +440,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Add(E arg0)
         {
-            return IExecute<bool>("add", arg0);
+            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#addAll(java.util.Collection)"/>
@@ -450,7 +450,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
-            return IExecute<bool>("addAll", arg0);
+            return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#contains(java.lang.Object)"/>
@@ -459,7 +459,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#containsAll(java.util.Collection)"/>
@@ -468,7 +468,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll(Java.Util.Collection<object> arg0)
         {
-            return IExecute<bool>("containsAll", arg0);
+            return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#isEmpty()"/>
@@ -476,7 +476,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecute<bool>("isEmpty");
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#remove(java.lang.Object)"/>
@@ -485,7 +485,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecute<bool>("remove", arg0);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeAll(android.util.ArraySet)"/>
@@ -495,7 +495,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll<Arg0ExtendsE>(Android.Util.ArraySet<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
-            return IExecute<bool>("removeAll", arg0);
+            return IExecuteWithSignature<bool>("removeAll", "(Landroid/util/ArraySet;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeAll(java.util.Collection)"/>
@@ -504,7 +504,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Java.Util.Collection<object> arg0)
         {
-            return IExecute<bool>("removeAll", arg0);
+            return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeIf(java.util.function.Predicate)"/>
@@ -514,7 +514,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            return IExecute<bool>("removeIf", arg0);
+            return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#retainAll(java.util.Collection)"/>
@@ -523,7 +523,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll(Java.Util.Collection<object> arg0)
         {
-            return IExecute<bool>("retainAll", arg0);
+            return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#removeAt(int)"/>
@@ -532,7 +532,7 @@ namespace Android.Util
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveAt(int arg0)
         {
-            return IExecute<E>("removeAt", arg0);
+            return IExecuteWithSignature<E>("removeAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#valueAt(int)"/>
@@ -541,7 +541,7 @@ namespace Android.Util
         /// <returns><typeparamref name="E"/></returns>
         public E ValueAt(int arg0)
         {
-            return IExecute<E>("valueAt", arg0);
+            return IExecuteWithSignature<E>("valueAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#indexOf(java.lang.Object)"/>
@@ -550,7 +550,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0)
         {
-            return IExecute<int>("indexOf", arg0);
+            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#size()"/>
@@ -558,7 +558,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#toArray()"/>
@@ -566,7 +566,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteArray<object>("toArray");
+            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#iterator()"/>
@@ -574,7 +574,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
         {
-            return IExecute<Java.Util.Iterator<E>>("iterator");
+            return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#addAll(android.util.ArraySet)"/>
@@ -583,14 +583,14 @@ namespace Android.Util
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         public void AddAll<Arg0ExtendsE>(Android.Util.ArraySet<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
-            IExecute("addAll", arg0);
+            IExecuteWithSignature("addAll", "(Landroid/util/ArraySet;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#ensureCapacity(int)"/>
@@ -598,7 +598,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
         {
-            IExecute("ensureCapacity", arg0);
+            IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/ArraySet.html#forEach(java.util.function.Consumer)"/>
@@ -607,7 +607,7 @@ namespace Android.Util
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            IExecute("forEach", arg0);
+            IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }
     
         #endregion

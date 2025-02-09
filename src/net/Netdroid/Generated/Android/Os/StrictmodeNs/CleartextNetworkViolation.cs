@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region ImplicitDirectBootViolation declaration
+    #region CleartextNetworkViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/ImplicitDirectBootViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/CleartextNetworkViolation.html"/>
     /// </summary>
-    public partial class ImplicitDirectBootViolation : Android.Os.Strictmode.Violation
+    public partial class CleartextNetworkViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.ImplicitDirectBootViolation";
+        const string _bridgeClassName = "android.os.strictmode.CleartextNetworkViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region ImplicitDirectBootViolation implementation
-    public partial class ImplicitDirectBootViolation
+    #region CleartextNetworkViolation implementation
+    public partial class CleartextNetworkViolation
     {
         #region Constructors
     

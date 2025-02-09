@@ -105,7 +105,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public byte[] ReadFully()
         {
-            return IExecuteArray<byte>("readFully");
+            return IExecuteWithSignatureArray<byte>("readFully", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#getBaseFile()"/>
@@ -113,7 +113,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File GetBaseFile()
         {
-            return IExecute<Java.Io.File>("getBaseFile");
+            return IExecuteWithSignature<Java.Io.File>("getBaseFile", "()Ljava/io/File;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#openRead()"/>
@@ -122,7 +122,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Java.Io.FileInputStream OpenRead()
         {
-            return IExecute<Java.Io.FileInputStream>("openRead");
+            return IExecuteWithSignature<Java.Io.FileInputStream>("openRead", "()Ljava/io/FileInputStream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#startWrite()"/>
@@ -131,7 +131,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.FileOutputStream StartWrite()
         {
-            return IExecute<Java.Io.FileOutputStream>("startWrite");
+            return IExecuteWithSignature<Java.Io.FileOutputStream>("startWrite", "()Ljava/io/FileOutputStream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#getLastModifiedTime()"/>
@@ -139,14 +139,14 @@ namespace Android.Util
         /// <returns><see cref="long"/></returns>
         public long GetLastModifiedTime()
         {
-            return IExecute<long>("getLastModifiedTime");
+            return IExecuteWithSignature<long>("getLastModifiedTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#delete()"/>
         /// </summary>
         public void Delete()
         {
-            IExecute("delete");
+            IExecuteWithSignature("delete", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#failWrite(java.io.FileOutputStream)"/>
@@ -154,7 +154,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Io.FileOutputStream"/></param>
         public void FailWrite(Java.Io.FileOutputStream arg0)
         {
-            IExecute("failWrite", arg0);
+            IExecuteWithSignature("failWrite", "(Ljava/io/FileOutputStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AtomicFile.html#finishWrite(java.io.FileOutputStream)"/>
@@ -162,7 +162,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Io.FileOutputStream"/></param>
         public void FinishWrite(Java.Io.FileOutputStream arg0)
         {
-            IExecute("finishWrite", arg0);
+            IExecuteWithSignature("finishWrite", "(Ljava/io/FileOutputStream;)V", arg0);
         }
     
         #endregion

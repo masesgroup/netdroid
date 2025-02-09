@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region IntentReceiverLeakedViolation declaration
+    #region ServiceConnectionLeakedViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/IntentReceiverLeakedViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/ServiceConnectionLeakedViolation.html"/>
     /// </summary>
-    public partial class IntentReceiverLeakedViolation : Android.Os.Strictmode.Violation
+    public partial class ServiceConnectionLeakedViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.IntentReceiverLeakedViolation";
+        const string _bridgeClassName = "android.os.strictmode.ServiceConnectionLeakedViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region IntentReceiverLeakedViolation implementation
-    public partial class IntentReceiverLeakedViolation
+    #region ServiceConnectionLeakedViolation implementation
+    public partial class ServiceConnectionLeakedViolation
     {
         #region Constructors
     

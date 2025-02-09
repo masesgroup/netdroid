@@ -138,7 +138,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int GetTagCode(Java.Lang.String arg0)
         {
-            return SExecute<int>(LocalBridgeClazz, "getTagCode", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getTagCode", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#getTagName(int)"/>
@@ -147,7 +147,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetTagName(int arg0)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getTagName", arg0);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTagName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,float)"/>
@@ -157,7 +157,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, float arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(IF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,int)"/>
@@ -167,7 +167,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,java.lang.Object[])"/>
@@ -177,7 +177,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0); else return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(I[Ljava/lang/Object;)I", arg0); else return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(I[Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,java.lang.String)"/>
@@ -187,7 +187,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(ILjava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#writeEvent(int,long)"/>
@@ -197,7 +197,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public static int WriteEvent(int arg0, long arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "writeEvent", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writeEvent", "(IJ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/EventLog.html#readEvents(int[],java.util.Collection)"/>
@@ -207,7 +207,7 @@ namespace Android.Util
         /// <exception cref="Java.Io.IOException"/>
         public static void ReadEvents(int[] arg0, Java.Util.Collection<Android.Util.EventLog.Event> arg1)
         {
-            SExecute(LocalBridgeClazz, "readEvents", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "readEvents", "([ILjava/util/Collection;)V", arg0, arg1);
         }
     
         #endregion
@@ -243,7 +243,7 @@ namespace Android.Util
             /// <returns><see cref="int"/></returns>
             public int GetProcessId()
             {
-                return IExecute<int>("getProcessId");
+                return IExecuteWithSignature<int>("getProcessId", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getTag()"/>
@@ -251,7 +251,7 @@ namespace Android.Util
             /// <returns><see cref="int"/></returns>
             public int GetTag()
             {
-                return IExecute<int>("getTag");
+                return IExecuteWithSignature<int>("getTag", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getThreadId()"/>
@@ -259,7 +259,7 @@ namespace Android.Util
             /// <returns><see cref="int"/></returns>
             public int GetThreadId()
             {
-                return IExecute<int>("getThreadId");
+                return IExecuteWithSignature<int>("getThreadId", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getTimeNanos()"/>
@@ -267,7 +267,7 @@ namespace Android.Util
             /// <returns><see cref="long"/></returns>
             public long GetTimeNanos()
             {
-                return IExecute<long>("getTimeNanos");
+                return IExecuteWithSignature<long>("getTimeNanos", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getData()"/>
@@ -275,7 +275,7 @@ namespace Android.Util
             /// <returns><see cref="object"/></returns>
             public object GetData()
             {
-                return IExecute("getData");
+                return IExecuteWithSignature("getData", "()Ljava/lang/Object;");
             }
         
             #endregion

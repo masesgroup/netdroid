@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region Violation declaration
+    #region DiskReadViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/Violation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/DiskReadViolation.html"/>
     /// </summary>
-    public partial class Violation : Java.Lang.Throwable
+    public partial class DiskReadViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.Violation";
+        const string _bridgeClassName = "android.os.strictmode.DiskReadViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region Violation implementation
-    public partial class Violation
+    #region DiskReadViolation implementation
+    public partial class DiskReadViolation
     {
         #region Constructors
     

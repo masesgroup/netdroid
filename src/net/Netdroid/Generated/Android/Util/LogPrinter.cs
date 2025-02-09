@@ -105,7 +105,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Println(Java.Lang.String arg0)
         {
-            IExecute("println", arg0);
+            IExecuteWithSignature("println", "(Ljava/lang/String;)V", arg0);
         }
     
         #endregion

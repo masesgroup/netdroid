@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region UnsafeIntentLaunchViolation declaration
+    #region InstanceCountViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/UnsafeIntentLaunchViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/InstanceCountViolation.html"/>
     /// </summary>
-    public partial class UnsafeIntentLaunchViolation : Android.Os.Strictmode.Violation
+    public partial class InstanceCountViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.UnsafeIntentLaunchViolation";
+        const string _bridgeClassName = "android.os.strictmode.InstanceCountViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region UnsafeIntentLaunchViolation implementation
-    public partial class UnsafeIntentLaunchViolation
+    #region InstanceCountViolation implementation
+    public partial class InstanceCountViolation
     {
         #region Constructors
     

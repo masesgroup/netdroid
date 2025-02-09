@@ -97,7 +97,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool LogBinaryPushStateChanged(Java.Lang.String arg0, long arg1, int arg2, int arg3, long[] arg4)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logBinaryPushStateChanged", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logBinaryPushStateChanged", "(Ljava/lang/String;JII[J)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/StatsLog.html#logEvent(int)"/>
@@ -106,7 +106,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool LogEvent(int arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logEvent", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logEvent", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/StatsLog.html#logStart(int)"/>
@@ -115,7 +115,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool LogStart(int arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logStart", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logStart", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/StatsLog.html#logStop(int)"/>
@@ -124,7 +124,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public static bool LogStop(int arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "logStop", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "logStop", "(I)Z", arg0);
         }
     
         #endregion

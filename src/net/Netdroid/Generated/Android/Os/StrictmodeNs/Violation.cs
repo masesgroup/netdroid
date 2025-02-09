@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region ContentUriWithoutPermissionViolation declaration
+    #region Violation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/ContentUriWithoutPermissionViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/Violation.html"/>
     /// </summary>
-    public partial class ContentUriWithoutPermissionViolation : Android.Os.Strictmode.Violation
+    public partial class Violation : Java.Lang.Throwable
     {
-        const string _bridgeClassName = "android.os.strictmode.ContentUriWithoutPermissionViolation";
+        const string _bridgeClassName = "android.os.strictmode.Violation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region ContentUriWithoutPermissionViolation implementation
-    public partial class ContentUriWithoutPermissionViolation
+    #region Violation implementation
+    public partial class Violation
     {
         #region Constructors
     

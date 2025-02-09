@@ -155,7 +155,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Property"/></returns>
         public static Android.Util.Property Of(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Util.Property>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Util.Property>(LocalBridgeClazz, "of", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Landroid/util/Property;", arg0, arg1, arg2);
         }
     
         #endregion
@@ -168,7 +168,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#isReadOnly()"/>
@@ -176,7 +176,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecute<bool>("isReadOnly");
+            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#getType()"/>
@@ -184,7 +184,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetType()
         {
-            return IExecute<Java.Lang.Class>("getType");
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#getName()"/>
@@ -192,7 +192,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecute<Java.Lang.String>("getName");
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#set(java.lang.Object,java.lang.Object)"/>
@@ -201,7 +201,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void Set(object arg0, object arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
     
         #endregion
@@ -252,7 +252,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.Property"/></returns>
         public static Android.Util.Property<T, V> Of(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Util.Property<T, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Util.Property<T, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Landroid/util/Property;", arg0, arg1, arg2);
         }
     
         #endregion
@@ -265,7 +265,7 @@ namespace Android.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Get(T arg0)
         {
-            return IExecute<V>("get", arg0);
+            return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#isReadOnly()"/>
@@ -273,7 +273,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecute<bool>("isReadOnly");
+            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#getType()"/>
@@ -281,7 +281,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetType()
         {
-            return IExecute<Java.Lang.Class>("getType");
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#getName()"/>
@@ -289,7 +289,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecute<Java.Lang.String>("getName");
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Property.html#set(java.lang.Object,java.lang.Object)"/>
@@ -298,7 +298,7 @@ namespace Android.Util
         /// <param name="arg1"><typeparamref name="V"/></param>
         public void Set(T arg0, V arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
     
         #endregion

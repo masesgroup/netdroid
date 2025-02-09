@@ -150,7 +150,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.SparseArray"/></returns>
         public Android.Util.SparseArray Clone()
         {
-            return IExecute<Android.Util.SparseArray>("clone");
+            return IExecuteWithSignature<Android.Util.SparseArray>("clone", "()Landroid/util/SparseArray;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#contains(int)"/>
@@ -159,7 +159,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#contentEquals(android.util.SparseArray)"/>
@@ -168,7 +168,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContentEquals(Android.Util.SparseArray arg0)
         {
-            return IExecute<bool>("contentEquals", arg0);
+            return IExecuteWithSignature<bool>("contentEquals", "(Landroid/util/SparseArray;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#get(int,java.lang.Object)"/>
@@ -178,7 +178,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object Get(int arg0, object arg1)
         {
-            return IExecute("get", arg0, arg1);
+            return IExecuteWithSignature("get", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#get(int)"/>
@@ -187,7 +187,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object Get(int arg0)
         {
-            return IExecute("get", arg0);
+            return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#valueAt(int)"/>
@@ -196,7 +196,7 @@ namespace Android.Util
         /// <returns><see cref="object"/></returns>
         public object ValueAt(int arg0)
         {
-            return IExecute("valueAt", arg0);
+            return IExecuteWithSignature("valueAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#contentHashCode()"/>
@@ -204,7 +204,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int ContentHashCode()
         {
-            return IExecute<int>("contentHashCode");
+            return IExecuteWithSignature<int>("contentHashCode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#indexOfKey(int)"/>
@@ -213,7 +213,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfKey(int arg0)
         {
-            return IExecute<int>("indexOfKey", arg0);
+            return IExecuteWithSignature<int>("indexOfKey", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#indexOfValue(java.lang.Object)"/>
@@ -222,7 +222,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfValue(object arg0)
         {
-            return IExecute<int>("indexOfValue", arg0);
+            return IExecuteWithSignature<int>("indexOfValue", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#keyAt(int)"/>
@@ -231,7 +231,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int KeyAt(int arg0)
         {
-            return IExecute<int>("keyAt", arg0);
+            return IExecuteWithSignature<int>("keyAt", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#size()"/>
@@ -239,7 +239,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#append(int,java.lang.Object)"/>
@@ -248,14 +248,14 @@ namespace Android.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void Append(int arg0, object arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#delete(int)"/>
@@ -263,7 +263,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Delete(int arg0)
         {
-            IExecute("delete", arg0);
+            IExecuteWithSignature("delete", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#put(int,java.lang.Object)"/>
@@ -272,7 +272,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void Put(int arg0, object arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#remove(int)"/>
@@ -280,7 +280,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
-            IExecute("remove", arg0);
+            IExecuteWithSignature("remove", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#removeAt(int)"/>
@@ -288,7 +288,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveAt(int arg0)
         {
-            IExecute("removeAt", arg0);
+            IExecuteWithSignature("removeAt", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#removeAtRange(int,int)"/>
@@ -297,7 +297,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveAtRange(int arg0, int arg1)
         {
-            IExecute("removeAtRange", arg0, arg1);
+            IExecuteWithSignature("removeAtRange", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#set(int,java.lang.Object)"/>
@@ -306,7 +306,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void Set(int arg0, object arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#setValueAt(int,java.lang.Object)"/>
@@ -315,7 +315,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="object"/></param>
         public void SetValueAt(int arg0, object arg1)
         {
-            IExecute("setValueAt", arg0, arg1);
+            IExecuteWithSignature("setValueAt", "(ILjava/lang/Object;)V", arg0, arg1);
         }
     
         #endregion
@@ -366,7 +366,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.SparseArray"/></returns>
         public Android.Util.SparseArray<E> Clone()
         {
-            return IExecute<Android.Util.SparseArray<E>>("clone");
+            return IExecuteWithSignature<Android.Util.SparseArray<E>>("clone", "()Landroid/util/SparseArray;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#contains(int)"/>
@@ -375,7 +375,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0)
         {
-            return IExecute<bool>("contains", arg0);
+            return IExecuteWithSignature<bool>("contains", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#contentEquals(android.util.SparseArray)"/>
@@ -384,7 +384,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContentEquals(Android.Util.SparseArray<object> arg0)
         {
-            return IExecute<bool>("contentEquals", arg0);
+            return IExecuteWithSignature<bool>("contentEquals", "(Landroid/util/SparseArray;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#get(int,java.lang.Object)"/>
@@ -394,7 +394,7 @@ namespace Android.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0, E arg1)
         {
-            return IExecute<E>("get", arg0, arg1);
+            return IExecuteWithSignature<E>("get", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#get(int)"/>
@@ -403,7 +403,7 @@ namespace Android.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0)
         {
-            return IExecute<E>("get", arg0);
+            return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#valueAt(int)"/>
@@ -412,7 +412,7 @@ namespace Android.Util
         /// <returns><typeparamref name="E"/></returns>
         public E ValueAt(int arg0)
         {
-            return IExecute<E>("valueAt", arg0);
+            return IExecuteWithSignature<E>("valueAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#contentHashCode()"/>
@@ -420,7 +420,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int ContentHashCode()
         {
-            return IExecute<int>("contentHashCode");
+            return IExecuteWithSignature<int>("contentHashCode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#indexOfKey(int)"/>
@@ -429,7 +429,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfKey(int arg0)
         {
-            return IExecute<int>("indexOfKey", arg0);
+            return IExecuteWithSignature<int>("indexOfKey", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#indexOfValue(java.lang.Object)"/>
@@ -438,7 +438,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfValue(E arg0)
         {
-            return IExecute<int>("indexOfValue", arg0);
+            return IExecuteWithSignature<int>("indexOfValue", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#keyAt(int)"/>
@@ -447,7 +447,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int KeyAt(int arg0)
         {
-            return IExecute<int>("keyAt", arg0);
+            return IExecuteWithSignature<int>("keyAt", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#size()"/>
@@ -455,7 +455,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#append(int,java.lang.Object)"/>
@@ -464,14 +464,14 @@ namespace Android.Util
         /// <param name="arg1"><typeparamref name="E"/></param>
         public void Append(int arg0, E arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#delete(int)"/>
@@ -479,7 +479,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Delete(int arg0)
         {
-            IExecute("delete", arg0);
+            IExecuteWithSignature("delete", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#put(int,java.lang.Object)"/>
@@ -488,7 +488,7 @@ namespace Android.Util
         /// <param name="arg1"><typeparamref name="E"/></param>
         public void Put(int arg0, E arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#remove(int)"/>
@@ -496,7 +496,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
-            IExecute("remove", arg0);
+            IExecuteWithSignature("remove", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#removeAt(int)"/>
@@ -504,7 +504,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveAt(int arg0)
         {
-            IExecute("removeAt", arg0);
+            IExecuteWithSignature("removeAt", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#removeAtRange(int,int)"/>
@@ -513,7 +513,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveAtRange(int arg0, int arg1)
         {
-            IExecute("removeAtRange", arg0, arg1);
+            IExecuteWithSignature("removeAtRange", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#set(int,java.lang.Object)"/>
@@ -522,7 +522,7 @@ namespace Android.Util
         /// <param name="arg1"><typeparamref name="E"/></param>
         public void Set(int arg0, E arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseArray.html#setValueAt(int,java.lang.Object)"/>
@@ -531,7 +531,7 @@ namespace Android.Util
         /// <param name="arg1"><typeparamref name="E"/></param>
         public void SetValueAt(int arg0, E arg1)
         {
-            IExecute("setValueAt", arg0, arg1);
+            IExecuteWithSignature("setValueAt", "(ILjava/lang/Object;)V", arg0, arg1);
         }
     
         #endregion

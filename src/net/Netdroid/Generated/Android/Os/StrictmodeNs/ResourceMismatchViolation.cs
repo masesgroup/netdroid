@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region DiskReadViolation declaration
+    #region ResourceMismatchViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/DiskReadViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/ResourceMismatchViolation.html"/>
     /// </summary>
-    public partial class DiskReadViolation : Android.Os.Strictmode.Violation
+    public partial class ResourceMismatchViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.DiskReadViolation";
+        const string _bridgeClassName = "android.os.strictmode.ResourceMismatchViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region DiskReadViolation implementation
-    public partial class DiskReadViolation
+    #region ResourceMismatchViolation implementation
+    public partial class ResourceMismatchViolation
     {
         #region Constructors
     

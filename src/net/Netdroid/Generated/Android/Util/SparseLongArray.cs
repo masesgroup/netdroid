@@ -104,7 +104,7 @@ namespace Android.Util
         /// <returns><see cref="Android.Util.SparseLongArray"/></returns>
         public Android.Util.SparseLongArray Clone()
         {
-            return IExecute<Android.Util.SparseLongArray>("clone");
+            return IExecuteWithSignature<Android.Util.SparseLongArray>("clone", "()Landroid/util/SparseLongArray;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#indexOfKey(int)"/>
@@ -113,7 +113,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfKey(int arg0)
         {
-            return IExecute<int>("indexOfKey", arg0);
+            return IExecuteWithSignature<int>("indexOfKey", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#indexOfValue(long)"/>
@@ -122,7 +122,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOfValue(long arg0)
         {
-            return IExecute<int>("indexOfValue", arg0);
+            return IExecuteWithSignature<int>("indexOfValue", "(J)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#keyAt(int)"/>
@@ -131,7 +131,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int KeyAt(int arg0)
         {
-            return IExecute<int>("keyAt", arg0);
+            return IExecuteWithSignature<int>("keyAt", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#size()"/>
@@ -139,7 +139,7 @@ namespace Android.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecute<int>("size");
+            return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#get(int,long)"/>
@@ -149,7 +149,7 @@ namespace Android.Util
         /// <returns><see cref="long"/></returns>
         public long Get(int arg0, long arg1)
         {
-            return IExecute<long>("get", arg0, arg1);
+            return IExecuteWithSignature<long>("get", "(IJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#get(int)"/>
@@ -158,7 +158,7 @@ namespace Android.Util
         /// <returns><see cref="long"/></returns>
         public long Get(int arg0)
         {
-            return IExecute<long>("get", arg0);
+            return IExecuteWithSignature<long>("get", "(I)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#valueAt(int)"/>
@@ -167,7 +167,7 @@ namespace Android.Util
         /// <returns><see cref="long"/></returns>
         public long ValueAt(int arg0)
         {
-            return IExecute<long>("valueAt", arg0);
+            return IExecuteWithSignature<long>("valueAt", "(I)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#append(int,long)"/>
@@ -176,14 +176,14 @@ namespace Android.Util
         /// <param name="arg1"><see cref="long"/></param>
         public void Append(int arg0, long arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecute("clear");
+            IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#delete(int)"/>
@@ -191,7 +191,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Delete(int arg0)
         {
-            IExecute("delete", arg0);
+            IExecuteWithSignature("delete", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#put(int,long)"/>
@@ -200,7 +200,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="long"/></param>
         public void Put(int arg0, long arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseLongArray.html#removeAt(int)"/>
@@ -208,7 +208,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveAt(int arg0)
         {
-            IExecute("removeAt", arg0);
+            IExecuteWithSignature("removeAt", "(I)V", arg0);
         }
     
         #endregion

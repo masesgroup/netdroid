@@ -518,7 +518,7 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/StrictMode.OnThreadViolationListener.html#onThreadViolation(android.os.strictmode.Violation)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Android.Os.Strictmode.Violation"/></param>
+            /// <param name="arg0"><see cref="Android.Os.StrictmodeNs.Violation"/></param>
             public virtual void OnThreadViolation(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
                 hasOverrideOnThreadViolation = false;
@@ -557,7 +557,7 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/StrictMode.OnThreadViolationListener.html#onThreadViolation(android.os.strictmode.Violation)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Android.Os.Strictmode.Violation"/></param>
+            /// <param name="arg0"><see cref="Android.Os.StrictmodeNs.Violation"/></param>
             public override void OnThreadViolation(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
                 IExecuteWithSignature("onThreadViolation", "(Landroid/os/strictmode/Violation;)V", arg0);
@@ -620,7 +620,7 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/StrictMode.OnVmViolationListener.html#onVmViolation(android.os.strictmode.Violation)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Android.Os.Strictmode.Violation"/></param>
+            /// <param name="arg0"><see cref="Android.Os.StrictmodeNs.Violation"/></param>
             public virtual void OnVmViolation(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
                 hasOverrideOnVmViolation = false;
@@ -659,7 +659,7 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/StrictMode.OnVmViolationListener.html#onVmViolation(android.os.strictmode.Violation)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Android.Os.Strictmode.Violation"/></param>
+            /// <param name="arg0"><see cref="Android.Os.StrictmodeNs.Violation"/></param>
             public override void OnVmViolation(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
                 IExecuteWithSignature("onVmViolation", "(Landroid/os/strictmode/Violation;)V", arg0);

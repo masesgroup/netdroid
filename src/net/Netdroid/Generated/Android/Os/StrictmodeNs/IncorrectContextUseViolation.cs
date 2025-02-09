@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region CustomViolation declaration
+    #region IncorrectContextUseViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/CustomViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/IncorrectContextUseViolation.html"/>
     /// </summary>
-    public partial class CustomViolation : Android.Os.Strictmode.Violation
+    public partial class IncorrectContextUseViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.CustomViolation";
+        const string _bridgeClassName = "android.os.strictmode.IncorrectContextUseViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region CustomViolation implementation
-    public partial class CustomViolation
+    #region IncorrectContextUseViolation implementation
+    public partial class IncorrectContextUseViolation
     {
         #region Constructors
     

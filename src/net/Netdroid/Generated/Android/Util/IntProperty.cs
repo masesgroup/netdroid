@@ -155,7 +155,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetValue(object arg0, int arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/IntProperty.html#set(java.lang.Object,java.lang.Integer)"/>
@@ -164,7 +164,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
         public void Set(object arg0, Java.Lang.Integer arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Integer;)V", arg0, arg1);
         }
     
         #endregion
@@ -216,7 +216,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetValue(T arg0, int arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/IntProperty.html#set(java.lang.Object,java.lang.Integer)"/>
@@ -225,7 +225,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
         public void Set(T arg0, Java.Lang.Integer arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Integer;)V", arg0, arg1);
         }
     
         #endregion

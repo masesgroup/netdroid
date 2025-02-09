@@ -95,7 +95,7 @@ namespace Android.Util
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/CloseGuard.html#open(java.lang.String)"/>
@@ -103,14 +103,14 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Open(Java.Lang.String arg0)
         {
-            IExecute("open", arg0);
+            IExecuteWithSignature("open", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/CloseGuard.html#warnIfOpen()"/>
         /// </summary>
         public void WarnIfOpen()
         {
-            IExecute("warnIfOpen");
+            IExecuteWithSignature("warnIfOpen", "()V");
         }
     
         #endregion

@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region IncorrectContextUseViolation declaration
+    #region NetworkViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/IncorrectContextUseViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/NetworkViolation.html"/>
     /// </summary>
-    public partial class IncorrectContextUseViolation : Android.Os.Strictmode.Violation
+    public partial class NetworkViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.IncorrectContextUseViolation";
+        const string _bridgeClassName = "android.os.strictmode.NetworkViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region IncorrectContextUseViolation implementation
-    public partial class IncorrectContextUseViolation
+    #region NetworkViolation implementation
+    public partial class NetworkViolation
     {
         #region Constructors
     

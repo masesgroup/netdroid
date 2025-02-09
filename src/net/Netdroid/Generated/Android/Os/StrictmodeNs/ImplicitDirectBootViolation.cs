@@ -23,15 +23,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Strictmode
+namespace Android.Os.StrictmodeNs
 {
-    #region ServiceConnectionLeakedViolation declaration
+    #region ImplicitDirectBootViolation declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/os/strictmode/ServiceConnectionLeakedViolation.html"/>
+    /// <see href="https://developer.android.com/reference/android/os/strictmode/ImplicitDirectBootViolation.html"/>
     /// </summary>
-    public partial class ServiceConnectionLeakedViolation : Android.Os.Strictmode.Violation
+    public partial class ImplicitDirectBootViolation : Android.Os.StrictmodeNs.Violation
     {
-        const string _bridgeClassName = "android.os.strictmode.ServiceConnectionLeakedViolation";
+        const string _bridgeClassName = "android.os.strictmode.ImplicitDirectBootViolation";
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
@@ -42,8 +42,8 @@ namespace Android.Os.Strictmode
     }
     #endregion
 
-    #region ServiceConnectionLeakedViolation implementation
-    public partial class ServiceConnectionLeakedViolation
+    #region ImplicitDirectBootViolation implementation
+    public partial class ImplicitDirectBootViolation
     {
         #region Constructors
     

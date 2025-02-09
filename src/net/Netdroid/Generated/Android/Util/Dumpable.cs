@@ -117,7 +117,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Dump(Java.Io.PrintWriter arg0, Java.Lang.String[] arg1)
         {
-            IExecute("dump", arg0, arg1);
+            IExecuteWithSignature("dump", "(Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Dumpable.html#getDumpableName()"/>
@@ -125,7 +125,7 @@ namespace Android.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDumpableName()
         {
-            return IExecute<Java.Lang.String>("getDumpableName");
+            return IExecuteWithSignature<Java.Lang.String>("getDumpableName", "()Ljava/lang/String;");
         }
     
         #endregion
