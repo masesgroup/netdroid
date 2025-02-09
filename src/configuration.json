@@ -193,6 +193,7 @@
 		"java.time.chrono.ChronoZonedDateTime"
 	],
 	"NamespacesInConflict": [
+		"android.os.strictmode",
 		"java.awt.color",
 		"java.awt.desktop",
 		"java.awt.image",
