@@ -1,6 +1,6 @@
 ---
-title: Current development state of Android suite for .NET
-_description: Describes the current development state of Android suite for .NET
+title: Current development state of .NET suite for Android
+_description: Describes the current development state of .NET suite for Android
 ---
 
 # Netdroid: development state

@@ -1,8 +1,8 @@
 ---
-title: APIs of Android suite for .NET
-_description: Describes the current available APIs of Android suite for .NET
+title: APIs of .NET suite for Android
+_description: Describes the current available APIs of .NET suite for Android
 ---
 
-# Netdroid: Android suite for .NET
+# Netdroid: .NET suite for Android
 
 Open left menu to browse API

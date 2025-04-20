@@ -29,6 +29,12 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
+      - name: Common site
+        uses: actions/checkout@v4
+        with:
+          repository: masesgroup/CommonTools
+          path: CommonTools
+          
       - name: Clear documentation folder
         shell: pwsh
         run: Remove-Item ./docs/* -Recurse -Force -Exclude _config.yml,CNAME
@@ -37,6 +43,7 @@ jobs:
 
       - name: Build documentation
         run: |
+          Copy-Item ${{ github.workspace }}\CommonTools\website\en\* -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
           cd src/documentation
           docfx
 

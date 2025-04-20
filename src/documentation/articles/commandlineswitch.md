@@ -1,6 +1,6 @@
 ---
-title: Command-line switch of Android suite for .NET
-_description: Describes the command-line switch of Android suite for .NET
+title: Command-line switch of .NET suite for Android
+_description: Describes the command-line switch of .NET suite for Android
 ---
 
 # Netdroid: Command line switches available
