@@ -1,6 +1,6 @@
 ---
-title: APIs extendibility of Android suite for .NET
-_description: Describes how to extend available APIs with Android suite for .NET
+title: APIs extendibility of .NET suite for Android
+_description: Describes how to extend available APIs with .NET suite for Android
 ---
 
 # Netdroid: APIs extendibility

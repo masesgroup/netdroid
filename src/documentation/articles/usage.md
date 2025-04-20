@@ -1,6 +1,6 @@
 ---
-title: Usage of Android suite for .NET
-_description: Describes how to use Android suite for .NET
+title: Usage of .NET suite for Android
+_description: Describes how to use .NET suite for Android
 ---
 
 TDB

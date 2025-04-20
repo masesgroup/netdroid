@@ -5,8 +5,8 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>MASES.NetdroidCLI</AssemblyName>
     <RootNamespace>MASES.NetdroidCLI</RootNamespace>
-    <Title>NetdroidCLI - Android suite for .NET command line interface</Title>
-    <Description>NetdroidCLI - Android suite for .NET command line interface</Description>
+    <Title>NetdroidCLI - .NET suite for Android command line interface</Title>
+    <Description>NetdroidCLI - .NET suite for Android command line interface</Description>
     <Product>NetdroidCLI</Product>
     <OutputPath>..\..\..\bin\</OutputPath>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>

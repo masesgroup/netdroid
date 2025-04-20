@@ -1,6 +1,6 @@
 ---
-title: Roadmap of Android suite for .NET
-_description: Describes the roadmap of Android suite for .NET
+title: Roadmap of .NET suite for Android
+_description: Describes the roadmap of .NET suite for Android
 ---
 
 # Netdroid roadmap

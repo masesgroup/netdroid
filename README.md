@@ -1,10 +1,10 @@
-# Netdroid: Android suite for .NET
+# Netdroid: .NET suite for Android
 
 Netdroid is a comprehensive suite of libraries and tools to use Android and .NET side-by-side.
 
 ### Project disclaimer
 
-Netdroid is an Android suite for .NET, curated by MASES Group, can be supported by the open-source community.
+Netdroid is an .NET suite for Android, curated by MASES Group, can be supported by the open-source community.
 
 Its primary scope is to support other, public or internal, MASES Group projects: open-source community and commercial entities can use it for their needs and support this project, moreover there are dedicated community and commercial subscription plans.
 

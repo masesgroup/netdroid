@@ -1,6 +1,6 @@
 ---
 title: JVM callbacks within Netdroid powered code
-_description: Describes how to manage callbacks from JVM using the Android suite for .NET
+_description: Describes how to manage callbacks from JVM using the .NET suite for Android
 ---
 
 # Netdroid: JVM callbacks
