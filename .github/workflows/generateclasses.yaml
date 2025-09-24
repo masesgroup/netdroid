@@ -28,6 +28,15 @@ jobs:
   build_classes:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      DOTNET_DbgEnableMiniDump: 1
+      DOTNET_DbgMiniDumpType: 3
+      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
+      DOTNET_CreateDumpDiagnostics: 1
+      DOTNET_CreateDumpVerboseDiagnostics: 1
+      DOTNET_EnableCrashReport: 1
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_4 }}
+      JNet_Version: 2.6.4
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -64,7 +73,7 @@ jobs:
 
       - name: Create Jars of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
-        run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
+        run: mvn "-DbinFolderName=binReflector" --file ./JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
@@ -76,7 +85,7 @@ jobs:
 
       - name: Download latest published version of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == false }}
-        run: dotnet tool update --version 2.5.12 -g MASES.JNetReflector
+        run: dotnet tool update --version ${{ env.JNet_Version }} -g MASES.JNetReflector
 
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v4
@@ -95,14 +104,10 @@ jobs:
         run: |
           cd JNet/binReflector/net8.0
           dotnet MASES.JNetReflector.dll -TraceLevel 1 -TraceTo $GITHUB_WORKSPACE/JNetReflector.txt -OriginRootPath $ANDROID_HOME/platforms/android-35 -DestinationRootPath $GITHUB_WORKSPACE/src/ -ConfigurationFile $GITHUB_WORKSPACE/src/configuration.json
-        env:
-          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
 
       - name: Create classes with latest published version of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == false }}
         run: jnetreflector -TraceLevel 1 -TraceTo $GITHUB_WORKSPACE/JNetReflector.txt -OriginRootPath $ANDROID_HOME/platforms/android-35 -DestinationRootPath $GITHUB_WORKSPACE/src/ -ConfigurationFile $GITHUB_WORKSPACE/src/configuration.json
-        env:
-          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
 
       - uses: actions/upload-artifact@v4
         with:

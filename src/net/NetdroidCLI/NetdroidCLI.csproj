@@ -1,26 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\Common\Common.props" />
-  <PropertyGroup>
-	<PackageType>DotnetTool</PackageType>
-    <OutputType>Exe</OutputType>
-    <AssemblyName>MASES.NetdroidCLI</AssemblyName>
-    <RootNamespace>MASES.NetdroidCLI</RootNamespace>
-    <Title>NetdroidCLI - .NET suite for Android command line interface</Title>
-    <Description>NetdroidCLI - .NET suite for Android command line interface</Description>
-    <Product>NetdroidCLI</Product>
-    <OutputPath>..\..\..\bin\</OutputPath>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageTags>Netdroid android cli dotnet clr netcore net8</PackageTags>
-    <PackageId>MASES.NetdroidCLI</PackageId>
-    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
-    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
-  </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Netdroid\Netdroid.csproj">
-		<IncludeAssets>All</IncludeAssets>
-        <PrivateAssets>None</PrivateAssets>
-    </ProjectReference>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.13.0" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-  </ItemGroup>
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<PackageType>DotnetTool</PackageType>
+		<OutputType>Exe</OutputType>
+		<AssemblyName>MASES.NetdroidCLI</AssemblyName>
+		<RootNamespace>MASES.Netdroid.CLI</RootNamespace>
+		<Title>NetdroidCLI - .NET suite for Android command line interface</Title>
+		<Description>NetdroidCLI - .NET suite for Android command line interface</Description>
+		<Product>NetdroidCLI</Product>
+		<OutputPath>..\..\..\bin\</OutputPath>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageTags>Netdroid android cli dotnet clr netcore net8</PackageTags>
+		<PackageId>MASES.NetdroidCLI</PackageId>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Netdroid\Netdroid.csproj">
+			<IncludeAssets>All</IncludeAssets>
+			<PrivateAssets>None</PrivateAssets>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MASES.JNetCLICore" Version="2.6.4" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+	</ItemGroup>
 </Project>
