@@ -50,7 +50,7 @@ namespace MASES.Netdroid.CLI
                 switch (className)
                 {
                     default:
-                        ApplicationInitialHeapSize = ApplicationHeapSize = Environment.Is64BitOperatingSystem ? "1G" : "512M";
+                        ApplicationInitialHeapSize = ApplicationHeapSize = System.Environment.Is64BitOperatingSystem ? "1G" : "512M";
                         break;
                 }
             });
