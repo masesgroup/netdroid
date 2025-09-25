@@ -107,7 +107,6 @@ The configuration is:
   "ClassesToBeListener": [
     "android.hardware.SensorEventListener2",
     "android.media.MediaScannerConnection$MediaScannerConnectionClient",
-    "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback",
     "java.lang.Runnable",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
@@ -165,6 +164,7 @@ The configuration is:
     "android.content.pm.PackageItemInfo$DisplayNameComparator",
     "android.content.pm.ResolveInfo$DisplayNameComparator",
     "android.net.TransportInfo",
+    "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback",
     "android.util.Range",
     "java.io.ObjectInputFilter",
     "java.lang.Enum$EnumDesc",
