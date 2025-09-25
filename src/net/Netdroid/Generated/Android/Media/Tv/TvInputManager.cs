@@ -380,6 +380,12 @@ namespace Android.Media.Tv
         private static int _VIDEO_UNAVAILABLE_REASON_NOT_CONNECTEDContent = default;
         private static bool _VIDEO_UNAVAILABLE_REASON_NOT_CONNECTEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_STOPPED"/>
+        /// </summary>
+        public static int VIDEO_UNAVAILABLE_REASON_STOPPED { get { if (!_VIDEO_UNAVAILABLE_REASON_STOPPEDReady) { _VIDEO_UNAVAILABLE_REASON_STOPPEDContent = SGetField<int>(LocalBridgeClazz, "VIDEO_UNAVAILABLE_REASON_STOPPED"); _VIDEO_UNAVAILABLE_REASON_STOPPEDReady = true; } return _VIDEO_UNAVAILABLE_REASON_STOPPEDContent; } }
+        private static int _VIDEO_UNAVAILABLE_REASON_STOPPEDContent = default;
+        private static bool _VIDEO_UNAVAILABLE_REASON_STOPPEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_TUNING"/>
         /// </summary>
         public static int VIDEO_UNAVAILABLE_REASON_TUNING { get { if (!_VIDEO_UNAVAILABLE_REASON_TUNINGReady) { _VIDEO_UNAVAILABLE_REASON_TUNINGContent = SGetField<int>(LocalBridgeClazz, "VIDEO_UNAVAILABLE_REASON_TUNING"); _VIDEO_UNAVAILABLE_REASON_TUNINGReady = true; } return _VIDEO_UNAVAILABLE_REASON_TUNINGContent; } }
@@ -433,6 +439,114 @@ namespace Android.Media.Tv
         public static Java.Lang.String META_DATA_CONTENT_RATING_SYSTEMS { get { if (!_META_DATA_CONTENT_RATING_SYSTEMSReady) { _META_DATA_CONTENT_RATING_SYSTEMSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "META_DATA_CONTENT_RATING_SYSTEMS"); _META_DATA_CONTENT_RATING_SYSTEMSReady = true; } return _META_DATA_CONTENT_RATING_SYSTEMSContent; } }
         private static Java.Lang.String _META_DATA_CONTENT_RATING_SYSTEMSContent = default;
         private static bool _META_DATA_CONTENT_RATING_SYSTEMSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_AD_BUFFER"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_AD_BUFFER { get { if (!_SESSION_DATA_KEY_AD_BUFFERReady) { _SESSION_DATA_KEY_AD_BUFFERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_AD_BUFFER"); _SESSION_DATA_KEY_AD_BUFFERReady = true; } return _SESSION_DATA_KEY_AD_BUFFERContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_AD_BUFFERContent = default;
+        private static bool _SESSION_DATA_KEY_AD_BUFFERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_AD_RESPONSE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_AD_RESPONSE { get { if (!_SESSION_DATA_KEY_AD_RESPONSEReady) { _SESSION_DATA_KEY_AD_RESPONSEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_AD_RESPONSE"); _SESSION_DATA_KEY_AD_RESPONSEReady = true; } return _SESSION_DATA_KEY_AD_RESPONSEContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_AD_RESPONSEContent = default;
+        private static bool _SESSION_DATA_KEY_AD_RESPONSEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_BROADCAST_INFO_RESPONSE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_BROADCAST_INFO_RESPONSE { get { if (!_SESSION_DATA_KEY_BROADCAST_INFO_RESPONSEReady) { _SESSION_DATA_KEY_BROADCAST_INFO_RESPONSEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_BROADCAST_INFO_RESPONSE"); _SESSION_DATA_KEY_BROADCAST_INFO_RESPONSEReady = true; } return _SESSION_DATA_KEY_BROADCAST_INFO_RESPONSEContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_BROADCAST_INFO_RESPONSEContent = default;
+        private static bool _SESSION_DATA_KEY_BROADCAST_INFO_RESPONSEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_CHANNEL_URI"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_CHANNEL_URI { get { if (!_SESSION_DATA_KEY_CHANNEL_URIReady) { _SESSION_DATA_KEY_CHANNEL_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_CHANNEL_URI"); _SESSION_DATA_KEY_CHANNEL_URIReady = true; } return _SESSION_DATA_KEY_CHANNEL_URIContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_CHANNEL_URIContent = default;
+        private static bool _SESSION_DATA_KEY_CHANNEL_URIReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_TRACK_ID"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_TRACK_ID { get { if (!_SESSION_DATA_KEY_TRACK_IDReady) { _SESSION_DATA_KEY_TRACK_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_TRACK_ID"); _SESSION_DATA_KEY_TRACK_IDReady = true; } return _SESSION_DATA_KEY_TRACK_IDContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_TRACK_IDContent = default;
+        private static bool _SESSION_DATA_KEY_TRACK_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_TRACK_TYPE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_TRACK_TYPE { get { if (!_SESSION_DATA_KEY_TRACK_TYPEReady) { _SESSION_DATA_KEY_TRACK_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_TRACK_TYPE"); _SESSION_DATA_KEY_TRACK_TYPEReady = true; } return _SESSION_DATA_KEY_TRACK_TYPEContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_TRACK_TYPEContent = default;
+        private static bool _SESSION_DATA_KEY_TRACK_TYPEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_TRACKS"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_TRACKS { get { if (!_SESSION_DATA_KEY_TRACKSReady) { _SESSION_DATA_KEY_TRACKSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_TRACKS"); _SESSION_DATA_KEY_TRACKSReady = true; } return _SESSION_DATA_KEY_TRACKSContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_TRACKSContent = default;
+        private static bool _SESSION_DATA_KEY_TRACKSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_TV_MESSAGE_TYPE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_TV_MESSAGE_TYPE { get { if (!_SESSION_DATA_KEY_TV_MESSAGE_TYPEReady) { _SESSION_DATA_KEY_TV_MESSAGE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_TV_MESSAGE_TYPE"); _SESSION_DATA_KEY_TV_MESSAGE_TYPEReady = true; } return _SESSION_DATA_KEY_TV_MESSAGE_TYPEContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_TV_MESSAGE_TYPEContent = default;
+        private static bool _SESSION_DATA_KEY_TV_MESSAGE_TYPEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASON"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASON { get { if (!_SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASONReady) { _SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASON"); _SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASONReady = true; } return _SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASONContent; } }
+        private static Java.Lang.String _SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASONContent = default;
+        private static bool _SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_AD_BUFFER_CONSUMED"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_AD_BUFFER_CONSUMED { get { if (!_SESSION_DATA_TYPE_AD_BUFFER_CONSUMEDReady) { _SESSION_DATA_TYPE_AD_BUFFER_CONSUMEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_AD_BUFFER_CONSUMED"); _SESSION_DATA_TYPE_AD_BUFFER_CONSUMEDReady = true; } return _SESSION_DATA_TYPE_AD_BUFFER_CONSUMEDContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_AD_BUFFER_CONSUMEDContent = default;
+        private static bool _SESSION_DATA_TYPE_AD_BUFFER_CONSUMEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_AD_RESPONSE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_AD_RESPONSE { get { if (!_SESSION_DATA_TYPE_AD_RESPONSEReady) { _SESSION_DATA_TYPE_AD_RESPONSEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_AD_RESPONSE"); _SESSION_DATA_TYPE_AD_RESPONSEReady = true; } return _SESSION_DATA_TYPE_AD_RESPONSEContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_AD_RESPONSEContent = default;
+        private static bool _SESSION_DATA_TYPE_AD_RESPONSEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSE { get { if (!_SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSEReady) { _SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSE"); _SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSEReady = true; } return _SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSEContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSEContent = default;
+        private static bool _SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_TRACK_SELECTED"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_TRACK_SELECTED { get { if (!_SESSION_DATA_TYPE_TRACK_SELECTEDReady) { _SESSION_DATA_TYPE_TRACK_SELECTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_TRACK_SELECTED"); _SESSION_DATA_TYPE_TRACK_SELECTEDReady = true; } return _SESSION_DATA_TYPE_TRACK_SELECTEDContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_TRACK_SELECTEDContent = default;
+        private static bool _SESSION_DATA_TYPE_TRACK_SELECTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_TRACKS_CHANGED"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_TRACKS_CHANGED { get { if (!_SESSION_DATA_TYPE_TRACKS_CHANGEDReady) { _SESSION_DATA_TYPE_TRACKS_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_TRACKS_CHANGED"); _SESSION_DATA_TYPE_TRACKS_CHANGEDReady = true; } return _SESSION_DATA_TYPE_TRACKS_CHANGEDContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_TRACKS_CHANGEDContent = default;
+        private static bool _SESSION_DATA_TYPE_TRACKS_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_TUNED"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_TUNED { get { if (!_SESSION_DATA_TYPE_TUNEDReady) { _SESSION_DATA_TYPE_TUNEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_TUNED"); _SESSION_DATA_TYPE_TUNEDReady = true; } return _SESSION_DATA_TYPE_TUNEDContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_TUNEDContent = default;
+        private static bool _SESSION_DATA_TYPE_TUNEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_TV_MESSAGE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_TV_MESSAGE { get { if (!_SESSION_DATA_TYPE_TV_MESSAGEReady) { _SESSION_DATA_TYPE_TV_MESSAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_TV_MESSAGE"); _SESSION_DATA_TYPE_TV_MESSAGEReady = true; } return _SESSION_DATA_TYPE_TV_MESSAGEContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_TV_MESSAGEContent = default;
+        private static bool _SESSION_DATA_TYPE_TV_MESSAGEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_VIDEO_AVAILABLE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_VIDEO_AVAILABLE { get { if (!_SESSION_DATA_TYPE_VIDEO_AVAILABLEReady) { _SESSION_DATA_TYPE_VIDEO_AVAILABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_VIDEO_AVAILABLE"); _SESSION_DATA_TYPE_VIDEO_AVAILABLEReady = true; } return _SESSION_DATA_TYPE_VIDEO_AVAILABLEContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_VIDEO_AVAILABLEContent = default;
+        private static bool _SESSION_DATA_TYPE_VIDEO_AVAILABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SESSION_DATA_TYPE_VIDEO_UNAVAILABLE"/>
+        /// </summary>
+        public static Java.Lang.String SESSION_DATA_TYPE_VIDEO_UNAVAILABLE { get { if (!_SESSION_DATA_TYPE_VIDEO_UNAVAILABLEReady) { _SESSION_DATA_TYPE_VIDEO_UNAVAILABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_DATA_TYPE_VIDEO_UNAVAILABLE"); _SESSION_DATA_TYPE_VIDEO_UNAVAILABLEReady = true; } return _SESSION_DATA_TYPE_VIDEO_UNAVAILABLEContent; } }
+        private static Java.Lang.String _SESSION_DATA_TYPE_VIDEO_UNAVAILABLEContent = default;
+        private static bool _SESSION_DATA_TYPE_VIDEO_UNAVAILABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_GROUP_ID"/>
         /// </summary>

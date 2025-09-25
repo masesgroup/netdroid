@@ -192,6 +192,14 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getSearchStringParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSearchStringParameters()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSearchStringParameters", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterDocumentIds()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map"/></returns>
@@ -331,6 +339,24 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.SearchSuggestionSpec.Builder AddFilterSchemas(Java.Util.Collection<Java.Lang.String> arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SearchSuggestionSpec.Builder>("addFilterSchemas", "(Ljava/util/Collection;)Landroid/app/appsearch/SearchSuggestionSpec$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.Builder.html#addSearchStringParameters(java.lang.String...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSuggestionSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSuggestionSpec.Builder AddSearchStringParameters(params Java.Lang.String[] arg0)
+            {
+                if (arg0.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.SearchSuggestionSpec.Builder>("addSearchStringParameters", "([Ljava/lang/String;)Landroid/app/appsearch/SearchSuggestionSpec$Builder;"); else return IExecuteWithSignature<Android.App.Appsearch.SearchSuggestionSpec.Builder>("addSearchStringParameters", "([Ljava/lang/String;)Landroid/app/appsearch/SearchSuggestionSpec$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.Builder.html#addSearchStringParameters(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSuggestionSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSuggestionSpec.Builder AddSearchStringParameters(Java.Util.List<Java.Lang.String> arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSuggestionSpec.Builder>("addSearchStringParameters", "(Ljava/util/List;)Landroid/app/appsearch/SearchSuggestionSpec$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.Builder.html#setRankingStrategy(int)"/>

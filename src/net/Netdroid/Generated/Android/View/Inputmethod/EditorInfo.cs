@@ -273,6 +273,14 @@ namespace Android.View.Inputmethod
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getAutofillId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
+        public Android.View.Autofill.AutofillId GetAutofillId()
+        {
+            return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getAutofillId", "()Landroid/view/autofill/AutofillId;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSurroundingText(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -290,6 +298,14 @@ namespace Android.View.Inputmethod
         public bool IsStylusHandwritingEnabled()
         {
             return IExecuteWithSignature<bool>("isStylusHandwritingEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#isWritingToolsEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWritingToolsEnabled()
+        {
+            return IExecuteWithSignature<bool>("isWritingToolsEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#makeCompatible(int)"/>
@@ -372,6 +388,14 @@ namespace Android.View.Inputmethod
             IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setAutofillId(android.view.autofill.AutofillId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
+        public void SetAutofillId(Android.View.Autofill.AutofillId arg0)
+        {
+            IExecuteWithSignature("setAutofillId", "(Landroid/view/autofill/AutofillId;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialSurroundingSubText(java.lang.CharSequence,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -421,6 +445,14 @@ namespace Android.View.Inputmethod
         public void SetSupportedHandwritingGestures<Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture>(Java.Util.List<Java.Lang.Class> arg0) where Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture : Android.View.Inputmethod.HandwritingGesture
         {
             IExecuteWithSignature("setSupportedHandwritingGestures", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setWritingToolsEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetWritingToolsEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setWritingToolsEnabled", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#writeToParcel(android.os.Parcel,int)"/>

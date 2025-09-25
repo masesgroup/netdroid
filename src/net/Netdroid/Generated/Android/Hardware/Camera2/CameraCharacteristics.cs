@@ -330,6 +330,12 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _CONTROL_AE_AVAILABLE_TARGET_FPS_RANGESContent = default;
         private static bool _CONTROL_AE_AVAILABLE_TARGET_FPS_RANGESReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#COLOR_CORRECTION_COLOR_TEMPERATURE_RANGE"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key COLOR_CORRECTION_COLOR_TEMPERATURE_RANGE { get { if (!_COLOR_CORRECTION_COLOR_TEMPERATURE_RANGEReady) { _COLOR_CORRECTION_COLOR_TEMPERATURE_RANGEContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "COLOR_CORRECTION_COLOR_TEMPERATURE_RANGE"); _COLOR_CORRECTION_COLOR_TEMPERATURE_RANGEReady = true; } return _COLOR_CORRECTION_COLOR_TEMPERATURE_RANGEContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _COLOR_CORRECTION_COLOR_TEMPERATURE_RANGEContent = default;
+        private static bool _COLOR_CORRECTION_COLOR_TEMPERATURE_RANGEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#CONTROL_AE_COMPENSATION_RANGE"/>
         /// </summary>
         public static Android.Hardware.Camera2.CameraCharacteristics.Key CONTROL_AE_COMPENSATION_RANGE { get { if (!_CONTROL_AE_COMPENSATION_RANGEReady) { _CONTROL_AE_COMPENSATION_RANGEContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "CONTROL_AE_COMPENSATION_RANGE"); _CONTROL_AE_COMPENSATION_RANGEReady = true; } return _CONTROL_AE_COMPENSATION_RANGEContent; } }
@@ -475,6 +481,12 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _COLOR_CORRECTION_AVAILABLE_ABERRATION_MODESContent = default;
         private static bool _COLOR_CORRECTION_AVAILABLE_ABERRATION_MODESReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#COLOR_CORRECTION_AVAILABLE_MODES"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key COLOR_CORRECTION_AVAILABLE_MODES { get { if (!_COLOR_CORRECTION_AVAILABLE_MODESReady) { _COLOR_CORRECTION_AVAILABLE_MODESContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "COLOR_CORRECTION_AVAILABLE_MODES"); _COLOR_CORRECTION_AVAILABLE_MODESReady = true; } return _COLOR_CORRECTION_AVAILABLE_MODESContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _COLOR_CORRECTION_AVAILABLE_MODESContent = default;
+        private static bool _COLOR_CORRECTION_AVAILABLE_MODESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#CONTROL_AE_AVAILABLE_ANTIBANDING_MODES"/>
         /// </summary>
         public static Android.Hardware.Camera2.CameraCharacteristics.Key CONTROL_AE_AVAILABLE_ANTIBANDING_MODES { get { if (!_CONTROL_AE_AVAILABLE_ANTIBANDING_MODESReady) { _CONTROL_AE_AVAILABLE_ANTIBANDING_MODESContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "CONTROL_AE_AVAILABLE_ANTIBANDING_MODES"); _CONTROL_AE_AVAILABLE_ANTIBANDING_MODESReady = true; } return _CONTROL_AE_AVAILABLE_ANTIBANDING_MODESContent; } }
@@ -486,6 +498,12 @@ namespace Android.Hardware.Camera2
         public static Android.Hardware.Camera2.CameraCharacteristics.Key CONTROL_AE_AVAILABLE_MODES { get { if (!_CONTROL_AE_AVAILABLE_MODESReady) { _CONTROL_AE_AVAILABLE_MODESContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "CONTROL_AE_AVAILABLE_MODES"); _CONTROL_AE_AVAILABLE_MODESReady = true; } return _CONTROL_AE_AVAILABLE_MODESContent; } }
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _CONTROL_AE_AVAILABLE_MODESContent = default;
         private static bool _CONTROL_AE_AVAILABLE_MODESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#CONTROL_AE_AVAILABLE_PRIORITY_MODES"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key CONTROL_AE_AVAILABLE_PRIORITY_MODES { get { if (!_CONTROL_AE_AVAILABLE_PRIORITY_MODESReady) { _CONTROL_AE_AVAILABLE_PRIORITY_MODESContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "CONTROL_AE_AVAILABLE_PRIORITY_MODES"); _CONTROL_AE_AVAILABLE_PRIORITY_MODESReady = true; } return _CONTROL_AE_AVAILABLE_PRIORITY_MODESContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _CONTROL_AE_AVAILABLE_PRIORITY_MODESContent = default;
+        private static bool _CONTROL_AE_AVAILABLE_PRIORITY_MODESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#CONTROL_AF_AVAILABLE_MODES"/>
         /// </summary>

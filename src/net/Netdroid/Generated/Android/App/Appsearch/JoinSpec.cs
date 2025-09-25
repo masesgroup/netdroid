@@ -235,6 +235,14 @@ namespace Android.App.Appsearch
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.Builder.html#%3Cinit%3E(android.app.appsearch.JoinSpec)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.JoinSpec"/></param>
+            public Builder(Android.App.Appsearch.JoinSpec arg0)
+                : base(arg0)
+            {
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.Builder.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -274,6 +282,15 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.JoinSpec.Builder SetAggregationScoringStrategy(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.JoinSpec.Builder>("setAggregationScoringStrategy", "(I)Landroid/app/appsearch/JoinSpec$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.Builder.html#setChildPropertyExpression(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.JoinSpec.Builder"/></returns>
+            public Android.App.Appsearch.JoinSpec.Builder SetChildPropertyExpression(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.JoinSpec.Builder>("setChildPropertyExpression", "(Ljava/lang/String;)Landroid/app/appsearch/JoinSpec$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.Builder.html#setMaxJoinedResultCount(int)"/>

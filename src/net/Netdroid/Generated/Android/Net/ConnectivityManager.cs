@@ -784,6 +784,16 @@ namespace Android.Net
             IExecuteWithSignature("requestNetwork", "(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#reserveNetwork(android.net.NetworkRequest,android.os.Handler,android.net.ConnectivityManager.NetworkCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.NetworkRequest"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
+        /// <param name="arg2"><see cref="Android.Net.ConnectivityManager.NetworkCallback"/></param>
+        public void ReserveNetwork(Android.Net.NetworkRequest arg0, Android.Os.Handler arg1, Android.Net.ConnectivityManager.NetworkCallback arg2)
+        {
+            IExecuteWithSignature("reserveNetwork", "(Landroid/net/NetworkRequest;Landroid/os/Handler;Landroid/net/ConnectivityManager$NetworkCallback;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#setNetworkPreference(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -897,6 +907,14 @@ namespace Android.Net
             public void OnLost(Android.Net.Network arg0)
             {
                 IExecuteWithSignature("onLost", "(Landroid/net/Network;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#onReserved(android.net.NetworkCapabilities)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.NetworkCapabilities"/></param>
+            public void OnReserved(Android.Net.NetworkCapabilities arg0)
+            {
+                IExecuteWithSignature("onReserved", "(Landroid/net/NetworkCapabilities;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.NetworkCallback.html#onUnavailable()"/>

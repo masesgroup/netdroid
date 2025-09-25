@@ -100,6 +100,7 @@ namespace Android.Adservices.Adid
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void GetAdId(Java.Util.Concurrent.Executor arg0, Android.Adservices.Common.AdServicesOutcomeReceiver<Android.Adservices.Adid.AdId, Java.Lang.Exception> arg1)
         {
             IExecuteWithSignature("getAdId", "(Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1);

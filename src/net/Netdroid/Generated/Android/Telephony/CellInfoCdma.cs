@@ -29,6 +29,7 @@ namespace Android.Telephony
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/CellInfoCdma.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class CellInfoCdma : Android.Telephony.CellInfo
     {
         const string _bridgeClassName = "android.telephony.CellInfoCdma";
@@ -81,6 +82,7 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellInfoCdma.html#CREATOR"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 

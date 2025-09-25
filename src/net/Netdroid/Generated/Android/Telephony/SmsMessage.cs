@@ -503,6 +503,14 @@ namespace Android.Telephony
             return IExecuteWithSignature<Java.Lang.String>("getPseudoSubject", "()Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getRecipientAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRecipientAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRecipientAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getServiceCenterAddress()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>

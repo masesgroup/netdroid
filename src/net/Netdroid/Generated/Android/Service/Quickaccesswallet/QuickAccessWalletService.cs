@@ -137,6 +137,14 @@ namespace Android.Service.Quickaccesswallet
             IExecuteWithSignature("onWalletDismissed", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/QuickAccessWalletService.html#getGestureTargetActivityPendingIntent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetGestureTargetActivityPendingIntent()
+        {
+            return IExecuteWithSignature<Android.App.PendingIntent>("getGestureTargetActivityPendingIntent", "()Landroid/app/PendingIntent;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/QuickAccessWalletService.html#getTargetActivityPendingIntent()"/>
         /// </summary>
         /// <returns><see cref="Android.App.PendingIntent"/></returns>

@@ -103,6 +103,30 @@ namespace Android.Content.Pm
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#VERSION_JAR"/>
+        /// </summary>
+        public static int VERSION_JAR { get { if (!_VERSION_JARReady) { _VERSION_JARContent = SGetField<int>(LocalBridgeClazz, "VERSION_JAR"); _VERSION_JARReady = true; } return _VERSION_JARContent; } }
+        private static int _VERSION_JARContent = default;
+        private static bool _VERSION_JARReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#VERSION_SIGNING_BLOCK_V2"/>
+        /// </summary>
+        public static int VERSION_SIGNING_BLOCK_V2 { get { if (!_VERSION_SIGNING_BLOCK_V2Ready) { _VERSION_SIGNING_BLOCK_V2Content = SGetField<int>(LocalBridgeClazz, "VERSION_SIGNING_BLOCK_V2"); _VERSION_SIGNING_BLOCK_V2Ready = true; } return _VERSION_SIGNING_BLOCK_V2Content; } }
+        private static int _VERSION_SIGNING_BLOCK_V2Content = default;
+        private static bool _VERSION_SIGNING_BLOCK_V2Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#VERSION_SIGNING_BLOCK_V3"/>
+        /// </summary>
+        public static int VERSION_SIGNING_BLOCK_V3 { get { if (!_VERSION_SIGNING_BLOCK_V3Ready) { _VERSION_SIGNING_BLOCK_V3Content = SGetField<int>(LocalBridgeClazz, "VERSION_SIGNING_BLOCK_V3"); _VERSION_SIGNING_BLOCK_V3Ready = true; } return _VERSION_SIGNING_BLOCK_V3Content; } }
+        private static int _VERSION_SIGNING_BLOCK_V3Content = default;
+        private static bool _VERSION_SIGNING_BLOCK_V3Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#VERSION_SIGNING_BLOCK_V4"/>
+        /// </summary>
+        public static int VERSION_SIGNING_BLOCK_V4 { get { if (!_VERSION_SIGNING_BLOCK_V4Ready) { _VERSION_SIGNING_BLOCK_V4Content = SGetField<int>(LocalBridgeClazz, "VERSION_SIGNING_BLOCK_V4"); _VERSION_SIGNING_BLOCK_V4Ready = true; } return _VERSION_SIGNING_BLOCK_V4Content; } }
+        private static int _VERSION_SIGNING_BLOCK_V4Content = default;
+        private static bool _VERSION_SIGNING_BLOCK_V4Ready = false; // this is used because in case of generics 
     
         #endregion
     
@@ -142,6 +166,15 @@ namespace Android.Content.Pm
         public bool HasPastSigningCertificates()
         {
             return IExecuteWithSignature<bool>("hasPastSigningCertificates", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#signersMatchExactly(android.content.pm.SigningInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Pm.SigningInfo"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool SignersMatchExactly(Android.Content.Pm.SigningInfo arg0)
+        {
+            return IExecuteWithSignature<bool>("signersMatchExactly", "(Landroid/content/pm/SigningInfo;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#describeContents()"/>

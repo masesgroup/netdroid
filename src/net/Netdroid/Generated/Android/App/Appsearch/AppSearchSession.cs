@@ -104,6 +104,16 @@ namespace Android.App.Appsearch
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#commitBlob(java.util.Set,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void CommitBlob(Java.Util.Set<Android.App.Appsearch.AppSearchBlobHandle> arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.CommitBlobResponse>> arg2)
+        {
+            IExecuteWithSignature("commitBlob", "(Ljava/util/Set;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#getByDocumentId(android.app.appsearch.GetByDocumentIdRequest,java.util.concurrent.Executor,android.app.appsearch.BatchResultCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Appsearch.GetByDocumentIdRequest"/></param>
@@ -141,6 +151,26 @@ namespace Android.App.Appsearch
             IExecuteWithSignature("getStorageInfo", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#openBlobForRead(java.util.Set,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void OpenBlobForRead(Java.Util.Set<Android.App.Appsearch.AppSearchBlobHandle> arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.OpenBlobForReadResponse>> arg2)
+        {
+            IExecuteWithSignature("openBlobForRead", "(Ljava/util/Set;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#openBlobForWrite(java.util.Set,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void OpenBlobForWrite(Java.Util.Set<Android.App.Appsearch.AppSearchBlobHandle> arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.OpenBlobForWriteResponse>> arg2)
+        {
+            IExecuteWithSignature("openBlobForWrite", "(Ljava/util/Set;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#put(android.app.appsearch.PutDocumentsRequest,java.util.concurrent.Executor,android.app.appsearch.BatchResultCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Appsearch.PutDocumentsRequest"/></param>
@@ -172,6 +202,16 @@ namespace Android.App.Appsearch
             IExecuteWithSignature("remove", "(Ljava/lang/String;Landroid/app/appsearch/SearchSpec;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#removeBlob(java.util.Set,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void RemoveBlob(Java.Util.Set<Android.App.Appsearch.AppSearchBlobHandle> arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.RemoveBlobResponse>> arg2)
+        {
+            IExecuteWithSignature("removeBlob", "(Ljava/util/Set;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#reportUsage(android.app.appsearch.ReportUsageRequest,java.util.concurrent.Executor,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Appsearch.ReportUsageRequest"/></param>
@@ -191,6 +231,16 @@ namespace Android.App.Appsearch
         public void SearchSuggestion(Java.Lang.String arg0, Android.App.Appsearch.SearchSuggestionSpec arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Java.Util.List<Android.App.Appsearch.SearchSuggestionResult>>> arg3)
         {
             IExecuteWithSignature("searchSuggestion", "(Ljava/lang/String;Landroid/app/appsearch/SearchSuggestionSpec;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#setBlobVisibility(android.app.appsearch.SetBlobVisibilityRequest,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Appsearch.SetBlobVisibilityRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void SetBlobVisibility(Android.App.Appsearch.SetBlobVisibilityRequest arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Java.Lang.Void>> arg2)
+        {
+            IExecuteWithSignature("setBlobVisibility", "(Landroid/app/appsearch/SetBlobVisibilityRequest;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSession.html#setSchema(android.app.appsearch.SetSchemaRequest,java.util.concurrent.Executor,java.util.concurrent.Executor,java.util.function.Consumer)"/>

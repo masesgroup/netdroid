@@ -149,7 +149,7 @@ namespace Android.Content
     #endregion
 
     #region Intent implementation
-    public partial class Intent : Android.Os.IParcelable, Java.Lang.ICloneable
+    public partial class Intent : Java.Lang.ICloneable, Android.Os.IParcelable
     {
         #region Constructors
         /// <summary>
@@ -202,13 +202,13 @@ namespace Android.Content
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Content.Intent"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Content.Intent t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Content.Intent"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Content.Intent t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Content.Intent"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Content.Intent t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     
@@ -3466,6 +3466,13 @@ namespace Android.Content
         public void RemoveFlags(int arg0)
         {
             IExecuteWithSignature("removeFlags", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#removeLaunchSecurityProtection()"/>
+        /// </summary>
+        public void RemoveLaunchSecurityProtection()
+        {
+            IExecuteWithSignature("removeLaunchSecurityProtection", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#setClipData(android.content.ClipData)"/>

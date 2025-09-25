@@ -169,6 +169,12 @@ namespace Android.Hardware.Biometrics
         private static int _BIOMETRIC_ERROR_HW_UNAVAILABLEContent = default;
         private static bool _BIOMETRIC_ERROR_HW_UNAVAILABLEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVE"/>
+        /// </summary>
+        public static int BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVE { get { if (!_BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVEReady) { _BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVEContent = SGetField<int>(LocalBridgeClazz, "BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVE"); _BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVEReady = true; } return _BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVEContent; } }
+        private static int _BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVEContent = default;
+        private static bool _BIOMETRIC_ERROR_IDENTITY_CHECK_NOT_ACTIVEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#BIOMETRIC_ERROR_NO_HARDWARE"/>
         /// </summary>
         public static int BIOMETRIC_ERROR_NO_HARDWARE { get { if (!_BIOMETRIC_ERROR_NO_HARDWAREReady) { _BIOMETRIC_ERROR_NO_HARDWAREContent = SGetField<int>(LocalBridgeClazz, "BIOMETRIC_ERROR_NO_HARDWARE"); _BIOMETRIC_ERROR_NO_HARDWAREReady = true; } return _BIOMETRIC_ERROR_NO_HARDWAREContent; } }
@@ -180,6 +186,12 @@ namespace Android.Hardware.Biometrics
         public static int BIOMETRIC_ERROR_NONE_ENROLLED { get { if (!_BIOMETRIC_ERROR_NONE_ENROLLEDReady) { _BIOMETRIC_ERROR_NONE_ENROLLEDContent = SGetField<int>(LocalBridgeClazz, "BIOMETRIC_ERROR_NONE_ENROLLED"); _BIOMETRIC_ERROR_NONE_ENROLLEDReady = true; } return _BIOMETRIC_ERROR_NONE_ENROLLEDContent; } }
         private static int _BIOMETRIC_ERROR_NONE_ENROLLEDContent = default;
         private static bool _BIOMETRIC_ERROR_NONE_ENROLLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPS"/>
+        /// </summary>
+        public static int BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPS { get { if (!_BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPSReady) { _BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPSContent = SGetField<int>(LocalBridgeClazz, "BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPS"); _BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPSReady = true; } return _BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPSContent; } }
+        private static int _BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPSContent = default;
+        private static bool _BIOMETRIC_ERROR_NOT_ENABLED_FOR_APPSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#BIOMETRIC_ERROR_SECURITY_UPDATE_REQUIRED"/>
         /// </summary>
@@ -276,6 +288,12 @@ namespace Android.Hardware.Biometrics
             public static int DEVICE_CREDENTIAL { get { if (!_DEVICE_CREDENTIALReady) { _DEVICE_CREDENTIALContent = SGetField<int>(LocalBridgeClazz, "DEVICE_CREDENTIAL"); _DEVICE_CREDENTIALReady = true; } return _DEVICE_CREDENTIALContent; } }
             private static int _DEVICE_CREDENTIALContent = default;
             private static bool _DEVICE_CREDENTIALReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Authenticators.html#IDENTITY_CHECK"/>
+            /// </summary>
+            public static int IDENTITY_CHECK { get { if (!_IDENTITY_CHECKReady) { _IDENTITY_CHECKContent = SGetField<int>(LocalBridgeClazz, "IDENTITY_CHECK"); _IDENTITY_CHECKReady = true; } return _IDENTITY_CHECKContent; } }
+            private static int _IDENTITY_CHECKContent = default;
+            private static bool _IDENTITY_CHECKReady = false; // this is used because in case of generics 
         
             #endregion
         

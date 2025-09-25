@@ -866,6 +866,14 @@ namespace Android.Media.Tv
                 IExecuteWithSignature("notifyVideoAvailable", "()V");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#notifyVideoFreezeUpdated(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void NotifyVideoFreezeUpdated(bool arg0)
+            {
+                IExecuteWithSignature("notifyVideoFreezeUpdated", "(Z)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#notifyVideoUnavailable(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -924,6 +932,13 @@ namespace Android.Media.Tv
                 IExecuteWithSignature("onRequestBroadcastInfo", "(Landroid/media/tv/BroadcastInfoRequest;)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onResumePlayback()"/>
+            /// </summary>
+            public void OnResumePlayback()
+            {
+                IExecuteWithSignature("onResumePlayback", "()V");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onSetInteractiveAppNotificationEnabled(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
@@ -939,6 +954,14 @@ namespace Android.Media.Tv
             public void OnSetTvMessageEnabled(int arg0, bool arg1)
             {
                 IExecuteWithSignature("onSetTvMessageEnabled", "(IZ)V", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onStopPlayback(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void OnStopPlayback(int arg0)
+            {
+                IExecuteWithSignature("onStopPlayback", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onSurfaceChanged(int,int,int)"/>
@@ -997,6 +1020,15 @@ namespace Android.Media.Tv
                 IExecuteWithSignature("onTimeShiftSetPlaybackParams", "(Landroid/media/PlaybackParams;)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onTvAdSessionData(java.lang.String,android.os.Bundle)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+            public void OnTvAdSessionData(Java.Lang.String arg0, Android.Os.Bundle arg1)
+            {
+                IExecuteWithSignature("onTvAdSessionData", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onTvMessage(int,android.os.Bundle)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -1012,6 +1044,15 @@ namespace Android.Media.Tv
             public void OnUnblockContent(Android.Media.Tv.TvContentRating arg0)
             {
                 IExecuteWithSignature("onUnblockContent", "(Landroid/media/tv/TvContentRating;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#sendTvInputSessionData(java.lang.String,android.os.Bundle)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+            public void SendTvInputSessionData(Java.Lang.String arg0, Android.Os.Bundle arg1)
+            {
+                IExecuteWithSignature("sendTvInputSessionData", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#setOverlayViewEnabled(boolean)"/>

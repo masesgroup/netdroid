@@ -67,7 +67,7 @@ namespace Android.Text
     #endregion
 
     #region SpannableStringBuilder implementation
-    public partial class SpannableStringBuilder : Java.Lang.ICharSequence, Android.Text.IGetChars, Android.Text.ISpannable, Android.Text.IEditable, Java.Lang.IAppendable
+    public partial class SpannableStringBuilder : Java.Lang.IAppendable, Java.Lang.ICharSequence, Android.Text.IEditable, Android.Text.IGetChars, Android.Text.ISpannable
     {
         #region Constructors
         /// <summary>
@@ -93,9 +93,17 @@ namespace Android.Text
     
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Java.Lang.Appendable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Appendable(Android.Text.SpannableStringBuilder t) => t.Cast<Java.Lang.Appendable>();
+        /// <summary>
         /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Android.Text.SpannableStringBuilder t) => t.Cast<Java.Lang.CharSequence>();
+        /// <summary>
+        /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Android.Text.Editable"/>
+        /// </summary>
+        public static implicit operator Android.Text.Editable(Android.Text.SpannableStringBuilder t) => t.Cast<Android.Text.Editable>();
         /// <summary>
         /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Android.Text.GetChars"/>
         /// </summary>
@@ -104,14 +112,6 @@ namespace Android.Text
         /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Android.Text.Spannable"/>
         /// </summary>
         public static implicit operator Android.Text.Spannable(Android.Text.SpannableStringBuilder t) => t.Cast<Android.Text.Spannable>();
-        /// <summary>
-        /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Android.Text.Editable"/>
-        /// </summary>
-        public static implicit operator Android.Text.Editable(Android.Text.SpannableStringBuilder t) => t.Cast<Android.Text.Editable>();
-        /// <summary>
-        /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Java.Lang.Appendable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Appendable(Android.Text.SpannableStringBuilder t) => t.Cast<Java.Lang.Appendable>();
     
         #endregion
     

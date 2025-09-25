@@ -79,6 +79,48 @@ namespace Android.Os
     
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_CAPACITY_LEVEL_CRITICAL"/>
+        /// </summary>
+        public static int BATTERY_CAPACITY_LEVEL_CRITICAL { get { if (!_BATTERY_CAPACITY_LEVEL_CRITICALReady) { _BATTERY_CAPACITY_LEVEL_CRITICALContent = SGetField<int>(LocalBridgeClazz, "BATTERY_CAPACITY_LEVEL_CRITICAL"); _BATTERY_CAPACITY_LEVEL_CRITICALReady = true; } return _BATTERY_CAPACITY_LEVEL_CRITICALContent; } }
+        private static int _BATTERY_CAPACITY_LEVEL_CRITICALContent = default;
+        private static bool _BATTERY_CAPACITY_LEVEL_CRITICALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_CAPACITY_LEVEL_FULL"/>
+        /// </summary>
+        public static int BATTERY_CAPACITY_LEVEL_FULL { get { if (!_BATTERY_CAPACITY_LEVEL_FULLReady) { _BATTERY_CAPACITY_LEVEL_FULLContent = SGetField<int>(LocalBridgeClazz, "BATTERY_CAPACITY_LEVEL_FULL"); _BATTERY_CAPACITY_LEVEL_FULLReady = true; } return _BATTERY_CAPACITY_LEVEL_FULLContent; } }
+        private static int _BATTERY_CAPACITY_LEVEL_FULLContent = default;
+        private static bool _BATTERY_CAPACITY_LEVEL_FULLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_CAPACITY_LEVEL_HIGH"/>
+        /// </summary>
+        public static int BATTERY_CAPACITY_LEVEL_HIGH { get { if (!_BATTERY_CAPACITY_LEVEL_HIGHReady) { _BATTERY_CAPACITY_LEVEL_HIGHContent = SGetField<int>(LocalBridgeClazz, "BATTERY_CAPACITY_LEVEL_HIGH"); _BATTERY_CAPACITY_LEVEL_HIGHReady = true; } return _BATTERY_CAPACITY_LEVEL_HIGHContent; } }
+        private static int _BATTERY_CAPACITY_LEVEL_HIGHContent = default;
+        private static bool _BATTERY_CAPACITY_LEVEL_HIGHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_CAPACITY_LEVEL_LOW"/>
+        /// </summary>
+        public static int BATTERY_CAPACITY_LEVEL_LOW { get { if (!_BATTERY_CAPACITY_LEVEL_LOWReady) { _BATTERY_CAPACITY_LEVEL_LOWContent = SGetField<int>(LocalBridgeClazz, "BATTERY_CAPACITY_LEVEL_LOW"); _BATTERY_CAPACITY_LEVEL_LOWReady = true; } return _BATTERY_CAPACITY_LEVEL_LOWContent; } }
+        private static int _BATTERY_CAPACITY_LEVEL_LOWContent = default;
+        private static bool _BATTERY_CAPACITY_LEVEL_LOWReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_CAPACITY_LEVEL_NORMAL"/>
+        /// </summary>
+        public static int BATTERY_CAPACITY_LEVEL_NORMAL { get { if (!_BATTERY_CAPACITY_LEVEL_NORMALReady) { _BATTERY_CAPACITY_LEVEL_NORMALContent = SGetField<int>(LocalBridgeClazz, "BATTERY_CAPACITY_LEVEL_NORMAL"); _BATTERY_CAPACITY_LEVEL_NORMALReady = true; } return _BATTERY_CAPACITY_LEVEL_NORMALContent; } }
+        private static int _BATTERY_CAPACITY_LEVEL_NORMALContent = default;
+        private static bool _BATTERY_CAPACITY_LEVEL_NORMALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_CAPACITY_LEVEL_UNKNOWN"/>
+        /// </summary>
+        public static int BATTERY_CAPACITY_LEVEL_UNKNOWN { get { if (!_BATTERY_CAPACITY_LEVEL_UNKNOWNReady) { _BATTERY_CAPACITY_LEVEL_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "BATTERY_CAPACITY_LEVEL_UNKNOWN"); _BATTERY_CAPACITY_LEVEL_UNKNOWNReady = true; } return _BATTERY_CAPACITY_LEVEL_UNKNOWNContent; } }
+        private static int _BATTERY_CAPACITY_LEVEL_UNKNOWNContent = default;
+        private static bool _BATTERY_CAPACITY_LEVEL_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_CAPACITY_LEVEL_UNSUPPORTED"/>
+        /// </summary>
+        public static int BATTERY_CAPACITY_LEVEL_UNSUPPORTED { get { if (!_BATTERY_CAPACITY_LEVEL_UNSUPPORTEDReady) { _BATTERY_CAPACITY_LEVEL_UNSUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "BATTERY_CAPACITY_LEVEL_UNSUPPORTED"); _BATTERY_CAPACITY_LEVEL_UNSUPPORTEDReady = true; } return _BATTERY_CAPACITY_LEVEL_UNSUPPORTEDContent; } }
+        private static int _BATTERY_CAPACITY_LEVEL_UNSUPPORTEDContent = default;
+        private static bool _BATTERY_CAPACITY_LEVEL_UNSUPPORTEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#BATTERY_HEALTH_COLD"/>
         /// </summary>
         public static int BATTERY_HEALTH_COLD { get { if (!_BATTERY_HEALTH_COLDReady) { _BATTERY_HEALTH_COLDContent = SGetField<int>(LocalBridgeClazz, "BATTERY_HEALTH_COLD"); _BATTERY_HEALTH_COLDReady = true; } return _BATTERY_HEALTH_COLDContent; } }
@@ -228,6 +270,12 @@ namespace Android.Os
         public static Java.Lang.String EXTRA_BATTERY_LOW { get { if (!_EXTRA_BATTERY_LOWReady) { _EXTRA_BATTERY_LOWContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_BATTERY_LOW"); _EXTRA_BATTERY_LOWReady = true; } return _EXTRA_BATTERY_LOWContent; } }
         private static Java.Lang.String _EXTRA_BATTERY_LOWContent = default;
         private static bool _EXTRA_BATTERY_LOWReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#EXTRA_CAPACITY_LEVEL"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CAPACITY_LEVEL { get { if (!_EXTRA_CAPACITY_LEVELReady) { _EXTRA_CAPACITY_LEVELContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CAPACITY_LEVEL"); _EXTRA_CAPACITY_LEVELReady = true; } return _EXTRA_CAPACITY_LEVELContent; } }
+        private static Java.Lang.String _EXTRA_CAPACITY_LEVELContent = default;
+        private static bool _EXTRA_CAPACITY_LEVELReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#EXTRA_CHARGING_STATUS"/>
         /// </summary>

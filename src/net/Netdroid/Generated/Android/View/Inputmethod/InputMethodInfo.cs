@@ -107,6 +107,12 @@ namespace Android.View.Inputmethod
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#ACTION_IME_LANGUAGE_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_IME_LANGUAGE_SETTINGS { get { if (!_ACTION_IME_LANGUAGE_SETTINGSReady) { _ACTION_IME_LANGUAGE_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_IME_LANGUAGE_SETTINGS"); _ACTION_IME_LANGUAGE_SETTINGSReady = true; } return _ACTION_IME_LANGUAGE_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_IME_LANGUAGE_SETTINGSContent = default;
+        private static bool _ACTION_IME_LANGUAGE_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#ACTION_STYLUS_HANDWRITING_SETTINGS"/>
         /// </summary>
         public static Java.Lang.String ACTION_STYLUS_HANDWRITING_SETTINGS { get { if (!_ACTION_STYLUS_HANDWRITING_SETTINGSReady) { _ACTION_STYLUS_HANDWRITING_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_STYLUS_HANDWRITING_SETTINGS"); _ACTION_STYLUS_HANDWRITING_SETTINGSReady = true; } return _ACTION_STYLUS_HANDWRITING_SETTINGSContent; } }
@@ -127,6 +133,14 @@ namespace Android.View.Inputmethod
         public Android.Content.ComponentName GetComponent()
         {
             return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#createImeLanguageSettingsActivityIntent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent CreateImeLanguageSettingsActivityIntent()
+        {
+            return IExecuteWithSignature<Android.Content.Intent>("createImeLanguageSettingsActivityIntent", "()Landroid/content/Intent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#createStylusHandwritingSettingsActivityIntent()"/>

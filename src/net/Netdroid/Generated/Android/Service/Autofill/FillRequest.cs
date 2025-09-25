@@ -99,6 +99,7 @@ namespace Android.Service.Autofill
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#FLAG_SUPPORTS_FILL_DIALOG"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FLAG_SUPPORTS_FILL_DIALOG { get { if (!_FLAG_SUPPORTS_FILL_DIALOGReady) { _FLAG_SUPPORTS_FILL_DIALOGContent = SGetField<int>(LocalBridgeClazz, "FLAG_SUPPORTS_FILL_DIALOG"); _FLAG_SUPPORTS_FILL_DIALOGReady = true; } return _FLAG_SUPPORTS_FILL_DIALOGContent; } }
         private static int _FLAG_SUPPORTS_FILL_DIALOGContent = default;
         private static bool _FLAG_SUPPORTS_FILL_DIALOGReady = false; // this is used because in case of generics 

@@ -221,6 +221,7 @@ namespace Android.View.Autofill
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool ShowAutofillDialog(Android.View.View arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("showAutofillDialog", "(Landroid/view/View;I)Z", arg0, arg1);
@@ -230,6 +231,7 @@ namespace Android.View.Autofill
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool ShowAutofillDialog(Android.View.View arg0)
         {
             return IExecuteWithSignature<bool>("showAutofillDialog", "(Landroid/view/View;)Z", arg0);
@@ -373,6 +375,7 @@ namespace Android.View.Autofill
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.Util.SparseArray"/></param>
+        [global::System.Obsolete()]
         public void NotifyVirtualViewsReady(Android.View.View arg0, Android.Util.SparseArray<Android.View.Autofill.VirtualViewFillInfo> arg1)
         {
             IExecuteWithSignature("notifyVirtualViewsReady", "(Landroid/view/View;Landroid/util/SparseArray;)V", arg0, arg1);

@@ -62,6 +62,79 @@ namespace Android.Os
         public override bool IsBridgeStatic => false;
     
         // TODO: complete the class
+        #region OnThermalHeadroomChangedListener declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalHeadroomChangedListener.html"/>
+        /// </summary>
+        public partial class OnThermalHeadroomChangedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnThermalHeadroomChangedListener() { InitializeHandlers(); }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public OnThermalHeadroomChangedListener(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public OnThermalHeadroomChangedListener(params object[] args) : base(args) { InitializeHandlers(); }
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.os.PowerManager_OnThermalHeadroomChangedListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+            /// <inheritdoc />
+            public override string BridgeClassName => _bridgeClassName;
+        
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+        
+        #region OnThermalHeadroomChangedListenerDirect declaration
+        /// <summary>
+        /// Direct override of <see cref="OnThermalHeadroomChangedListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class OnThermalHeadroomChangedListenerDirect : OnThermalHeadroomChangedListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnThermalHeadroomChangedListenerDirect() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public OnThermalHeadroomChangedListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        
+            /// <inheritdoc/>
+            public override bool AutoInit => false;
+        
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+        
+            const string _bridgeClassName = "android.os.PowerManager$OnThermalHeadroomChangedListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
         #region OnThermalStatusChangedListener declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalStatusChangedListener.html"/>
@@ -621,6 +694,23 @@ namespace Android.Os
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, Java.Lang.Float>>("getThermalHeadroomThresholds", "()Ljava/util/Map;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#addThermalHeadroomListener(android.os.PowerManager.OnThermalHeadroomChangedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.PowerManager.OnThermalHeadroomChangedListener"/></param>
+        public void AddThermalHeadroomListener(Android.Os.PowerManager.OnThermalHeadroomChangedListener arg0)
+        {
+            IExecuteWithSignature("addThermalHeadroomListener", "(Landroid/os/PowerManager$OnThermalHeadroomChangedListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#addThermalHeadroomListener(java.util.concurrent.Executor,android.os.PowerManager.OnThermalHeadroomChangedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Os.PowerManager.OnThermalHeadroomChangedListener"/></param>
+        public void AddThermalHeadroomListener(Java.Util.Concurrent.Executor arg0, Android.Os.PowerManager.OnThermalHeadroomChangedListener arg1)
+        {
+            IExecuteWithSignature("addThermalHeadroomListener", "(Ljava/util/concurrent/Executor;Landroid/os/PowerManager$OnThermalHeadroomChangedListener;)V", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#addThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.PowerManager.OnThermalStatusChangedListener"/></param>
@@ -646,6 +736,14 @@ namespace Android.Os
             IExecuteWithSignature("reboot", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#removeThermalHeadroomListener(android.os.PowerManager.OnThermalHeadroomChangedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.PowerManager.OnThermalHeadroomChangedListener"/></param>
+        public void RemoveThermalHeadroomListener(Android.Os.PowerManager.OnThermalHeadroomChangedListener arg0)
+        {
+            IExecuteWithSignature("removeThermalHeadroomListener", "(Landroid/os/PowerManager$OnThermalHeadroomChangedListener;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#removeThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.PowerManager.OnThermalStatusChangedListener"/></param>
@@ -657,6 +755,114 @@ namespace Android.Os
         #endregion
     
         #region Nested classes
+        #region OnThermalHeadroomChangedListener implementation
+        public partial class OnThermalHeadroomChangedListener
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="OnThermalHeadroomChangedListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onThermalHeadroomChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnThermalHeadroomChangedEventHandler));
+
+            }
+            
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalHeadroomChangedListener.html#onThermalHeadroomChanged(float,float,int,java.util.Map)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnThermalHeadroomChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<float, float, int, Java.Util.Map<Java.Lang.Integer, Java.Lang.Float>> OnOnThermalHeadroomChanged { get; set; } = null;
+            
+            bool hasOverrideOnThermalHeadroomChanged = true;
+            void OnThermalHeadroomChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+            {
+                hasOverrideOnThermalHeadroomChanged = true;
+                var methodToExecute = (OnOnThermalHeadroomChanged != null) ? OnOnThermalHeadroomChanged : OnThermalHeadroomChanged;
+                methodToExecute.Invoke(data.EventData.GetAt<float>(0), data.EventData.GetAt<float>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<Java.Util.Map<Java.Lang.Integer, Java.Lang.Float>>(3));
+                data.EventData.TypedEventData.HasOverride = hasOverrideOnThermalHeadroomChanged;
+            }
+            
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalHeadroomChangedListener.html#onThermalHeadroomChanged(float,float,int,java.util.Map)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+            public virtual void OnThermalHeadroomChanged(float arg0, float arg1, int arg2, Java.Util.Map<Java.Lang.Integer, Java.Lang.Float> arg3)
+            {
+                hasOverrideOnThermalHeadroomChanged = false;
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnThermalHeadroomChangedListenerDirect implementation
+        public partial class OnThermalHeadroomChangedListenerDirect
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalHeadroomChangedListener.html#onThermalHeadroomChanged(float,float,int,java.util.Map)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+            public override void OnThermalHeadroomChanged(float arg0, float arg1, int arg2, Java.Util.Map<Java.Lang.Integer, Java.Lang.Float> arg3)
+            {
+                IExecuteWithSignature("onThermalHeadroomChanged", "(FFILjava/util/Map;)V", arg0, arg1, arg2, arg3);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
         #region OnThermalStatusChangedListener implementation
         public partial class OnThermalStatusChangedListener
         {

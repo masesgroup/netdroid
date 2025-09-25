@@ -67,7 +67,7 @@ namespace Android.Text.Style
     #endregion
 
     #region StrikethroughSpan implementation
-    public partial class StrikethroughSpan : Android.Text.Style.IUpdateAppearance, Android.Text.IParcelableSpan
+    public partial class StrikethroughSpan : Android.Text.IParcelableSpan, Android.Text.Style.IUpdateAppearance
     {
         #region Constructors
         /// <summary>
@@ -83,13 +83,13 @@ namespace Android.Text.Style
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Text.Style.StrikethroughSpan"/> to <see cref="Android.Text.Style.UpdateAppearance"/>
-        /// </summary>
-        public static implicit operator Android.Text.Style.UpdateAppearance(Android.Text.Style.StrikethroughSpan t) => t.Cast<Android.Text.Style.UpdateAppearance>();
-        /// <summary>
         /// Converter from <see cref="Android.Text.Style.StrikethroughSpan"/> to <see cref="Android.Text.ParcelableSpan"/>
         /// </summary>
         public static implicit operator Android.Text.ParcelableSpan(Android.Text.Style.StrikethroughSpan t) => t.Cast<Android.Text.ParcelableSpan>();
+        /// <summary>
+        /// Converter from <see cref="Android.Text.Style.StrikethroughSpan"/> to <see cref="Android.Text.Style.UpdateAppearance"/>
+        /// </summary>
+        public static implicit operator Android.Text.Style.UpdateAppearance(Android.Text.Style.StrikethroughSpan t) => t.Cast<Android.Text.Style.UpdateAppearance>();
     
         #endregion
     

@@ -158,6 +158,22 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<int>("getAliveNamespacesCount", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getBlobsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBlobsCount()
+        {
+            return IExecuteWithSignature<int>("getBlobsCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getBlobsSizeBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetBlobsSizeBytes()
+        {
+            return IExecuteWithSignature<long>("getBlobsSizeBytes", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getSizeBytes()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
@@ -223,6 +239,24 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.StorageInfo.Builder SetAliveNamespacesCount(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.StorageInfo.Builder>("setAliveNamespacesCount", "(I)Landroid/app/appsearch/StorageInfo$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.Builder.html#setBlobsCount(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.App.Appsearch.StorageInfo.Builder"/></returns>
+            public Android.App.Appsearch.StorageInfo.Builder SetBlobsCount(int arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.StorageInfo.Builder>("setBlobsCount", "(I)Landroid/app/appsearch/StorageInfo$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.Builder.html#setBlobsSizeBytes(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.App.Appsearch.StorageInfo.Builder"/></returns>
+            public Android.App.Appsearch.StorageInfo.Builder SetBlobsSizeBytes(long arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.StorageInfo.Builder>("setBlobsSizeBytes", "(J)Landroid/app/appsearch/StorageInfo$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.Builder.html#setSizeBytes(long)"/>

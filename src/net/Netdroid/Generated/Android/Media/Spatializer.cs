@@ -293,6 +293,14 @@ namespace Android.Media
             return IExecuteWithSignature<int>("getImmersiveAudioLevel", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Spatializer.html#getSpatializedChannelMasks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetSpatializedChannelMasks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSpatializedChannelMasks", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Spatializer.html#addOnHeadTrackerAvailableListener(java.util.concurrent.Executor,android.media.Spatializer.OnHeadTrackerAvailableListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>

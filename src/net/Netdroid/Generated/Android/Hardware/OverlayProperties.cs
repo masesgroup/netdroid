@@ -93,6 +93,14 @@ namespace Android.Hardware
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/OverlayProperties.html#getLutProperties()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Hardware.LutProperties"/></returns>
+        public Android.Hardware.LutProperties[] GetLutProperties()
+        {
+            return IExecuteWithSignatureArray<Android.Hardware.LutProperties>("getLutProperties", "()[Landroid/hardware/LutProperties;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/OverlayProperties.html#isCombinationSupported(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

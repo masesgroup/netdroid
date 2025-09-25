@@ -842,6 +842,12 @@ namespace Android.Content.Pm
         private static Java.Lang.String _FEATURE_AUDIO_PROContent = default;
         private static bool _FEATURE_AUDIO_PROReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCY"/>
+        /// </summary>
+        public static Java.Lang.String FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCY { get { if (!_FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCYReady) { _FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCY"); _FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCYReady = true; } return _FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCYContent; } }
+        private static Java.Lang.String _FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCYContent = default;
+        private static bool _FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_AUTOFILL"/>
         /// </summary>
         public static Java.Lang.String FEATURE_AUTOFILL { get { if (!_FEATURE_AUTOFILLReady) { _FEATURE_AUTOFILLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_AUTOFILL"); _FEATURE_AUTOFILLReady = true; } return _FEATURE_AUTOFILLContent; } }
@@ -871,6 +877,12 @@ namespace Android.Content.Pm
         public static Java.Lang.String FEATURE_BLUETOOTH_LE { get { if (!_FEATURE_BLUETOOTH_LEReady) { _FEATURE_BLUETOOTH_LEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_BLUETOOTH_LE"); _FEATURE_BLUETOOTH_LEReady = true; } return _FEATURE_BLUETOOTH_LEContent; } }
         private static Java.Lang.String _FEATURE_BLUETOOTH_LEContent = default;
         private static bool _FEATURE_BLUETOOTH_LEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDING"/>
+        /// </summary>
+        public static Java.Lang.String FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDING { get { if (!_FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDINGReady) { _FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDING"); _FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDINGReady = true; } return _FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDINGContent; } }
+        private static Java.Lang.String _FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDINGContent = default;
+        private static bool _FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_CAMERA"/>
         /// </summary>
@@ -1528,6 +1540,12 @@ namespace Android.Content.Pm
         private static Java.Lang.String _FEATURE_TELEVISIONContent = default;
         private static bool _FEATURE_TELEVISIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_THREAD_NETWORK"/>
+        /// </summary>
+        public static Java.Lang.String FEATURE_THREAD_NETWORK { get { if (!_FEATURE_THREAD_NETWORKReady) { _FEATURE_THREAD_NETWORKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_THREAD_NETWORK"); _FEATURE_THREAD_NETWORKReady = true; } return _FEATURE_THREAD_NETWORKContent; } }
+        private static Java.Lang.String _FEATURE_THREAD_NETWORKContent = default;
+        private static bool _FEATURE_THREAD_NETWORKReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN"/>
         /// </summary>
         public static Java.Lang.String FEATURE_TOUCHSCREEN { get { if (!_FEATURE_TOUCHSCREENReady) { _FEATURE_TOUCHSCREENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_TOUCHSCREEN"); _FEATURE_TOUCHSCREENReady = true; } return _FEATURE_TOUCHSCREENContent; } }
@@ -1697,6 +1715,12 @@ namespace Android.Content.Pm
         private static Java.Lang.String _PROPERTY_SPECIAL_USE_FGS_SUBTYPEContent = default;
         private static bool _PROPERTY_SPECIAL_USE_FGS_SUBTYPEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#PROPERTY_USE_RESTRICTED_BACKUP_MODE"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_USE_RESTRICTED_BACKUP_MODE { get { if (!_PROPERTY_USE_RESTRICTED_BACKUP_MODEReady) { _PROPERTY_USE_RESTRICTED_BACKUP_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_USE_RESTRICTED_BACKUP_MODE"); _PROPERTY_USE_RESTRICTED_BACKUP_MODEReady = true; } return _PROPERTY_USE_RESTRICTED_BACKUP_MODEContent; } }
+        private static Java.Lang.String _PROPERTY_USE_RESTRICTED_BACKUP_MODEContent = default;
+        private static bool _PROPERTY_USE_RESTRICTED_BACKUP_MODEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#TRUST_ALL"/>
         /// </summary>
         public static Java.Util.List TRUST_ALL { get { if (!_TRUST_ALLReady) { _TRUST_ALLContent = SGetField<Java.Util.List>(LocalBridgeClazz, "TRUST_ALL"); _TRUST_ALLReady = true; } return _TRUST_ALLContent; } }
@@ -1730,10 +1754,33 @@ namespace Android.Content.Pm
         #endregion
     
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getVerifiedSigningInfo(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Android.Content.Pm.SigningInfo"/></returns>
+        /// <exception cref="Android.Content.Pm.SigningInfoException"/>
+        public static Android.Content.Pm.SigningInfo GetVerifiedSigningInfo(Java.Lang.String arg0, int arg1)
+        {
+            return SExecuteWithSignature<Android.Content.Pm.SigningInfo>(LocalBridgeClazz, "getVerifiedSigningInfo", "(Ljava/lang/String;I)Landroid/content/pm/SigningInfo;", arg0, arg1);
+        }
     
         #endregion
     
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#parseAndroidManifest(android.os.ParcelFileDescriptor,java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.ParcelFileDescriptor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public T ParseAndroidManifest<T>(Android.Os.ParcelFileDescriptor arg0, Java.Util.Function.Function<Android.Content.Res.XmlResourceParser, T> arg1)
+        {
+            return IExecuteWithSignature<T>("parseAndroidManifest", "(Landroid/os/ParcelFileDescriptor;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#parseAndroidManifest(java.io.File,java.util.function.Function)"/>
         /// </summary>

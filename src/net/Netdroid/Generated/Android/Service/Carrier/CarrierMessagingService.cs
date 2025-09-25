@@ -297,6 +297,78 @@ namespace Android.Service.Carrier
         private static int _DOWNLOAD_STATUS_ERRORContent = default;
         private static bool _DOWNLOAD_STATUS_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERRORReady) { _DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERRORContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR"); _DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERRORReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERRORContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERRORContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLEDReady) { _DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED"); _DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLEDReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLEDContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLEDContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILUREReady) { _DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILUREContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE"); _DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILUREReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILUREContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILUREContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONReady) { _DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION"); _DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_INVALID_APNReady) { _DOWNLOAD_STATUS_MMS_ERROR_INVALID_APNContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN"); _DOWNLOAD_STATUS_MMS_ERROR_INVALID_APNReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_INVALID_APNContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_INVALID_APNContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_INVALID_APNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDReady) { _DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID"); _DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_IO_ERRORReady) { _DOWNLOAD_STATUS_MMS_ERROR_IO_ERRORContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR"); _DOWNLOAD_STATUS_MMS_ERROR_IO_ERRORReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_IO_ERRORContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_IO_ERRORContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_IO_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERReady) { _DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER"); _DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORKReady) { _DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORKContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK"); _DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORKReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORKContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORKContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_RETRY"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_RETRY { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_RETRYReady) { _DOWNLOAD_STATUS_MMS_ERROR_RETRYContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_RETRY"); _DOWNLOAD_STATUS_MMS_ERROR_RETRYReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_RETRYContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_RETRYContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_RETRYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSReady) { _DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS"); _DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED"/>
+        /// </summary>
+        public static int DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED { get { if (!_DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIEDReady) { _DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED"); _DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIEDReady = true; } return _DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIEDContent; } }
+        private static int _DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIEDContent = default;
+        private static bool _DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_OK"/>
         /// </summary>
         public static int DOWNLOAD_STATUS_OK { get { if (!_DOWNLOAD_STATUS_OKReady) { _DOWNLOAD_STATUS_OKContent = SGetField<int>(LocalBridgeClazz, "DOWNLOAD_STATUS_OK"); _DOWNLOAD_STATUS_OKReady = true; } return _DOWNLOAD_STATUS_OKContent; } }
@@ -339,11 +411,197 @@ namespace Android.Service.Carrier
         private static int _SEND_STATUS_ERRORContent = default;
         private static bool _SEND_STATUS_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR { get { if (!_SEND_STATUS_MMS_ERROR_CONFIGURATION_ERRORReady) { _SEND_STATUS_MMS_ERROR_CONFIGURATION_ERRORContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR"); _SEND_STATUS_MMS_ERROR_CONFIGURATION_ERRORReady = true; } return _SEND_STATUS_MMS_ERROR_CONFIGURATION_ERRORContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_CONFIGURATION_ERRORContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_CONFIGURATION_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_DATA_DISABLED"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_DATA_DISABLED { get { if (!_SEND_STATUS_MMS_ERROR_DATA_DISABLEDReady) { _SEND_STATUS_MMS_ERROR_DATA_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_DATA_DISABLED"); _SEND_STATUS_MMS_ERROR_DATA_DISABLEDReady = true; } return _SEND_STATUS_MMS_ERROR_DATA_DISABLEDContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_DATA_DISABLEDContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_DATA_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_HTTP_FAILURE"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_HTTP_FAILURE { get { if (!_SEND_STATUS_MMS_ERROR_HTTP_FAILUREReady) { _SEND_STATUS_MMS_ERROR_HTTP_FAILUREContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_HTTP_FAILURE"); _SEND_STATUS_MMS_ERROR_HTTP_FAILUREReady = true; } return _SEND_STATUS_MMS_ERROR_HTTP_FAILUREContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_HTTP_FAILUREContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_HTTP_FAILUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION { get { if (!_SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONReady) { _SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION"); _SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONReady = true; } return _SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INVALID_APN"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_INVALID_APN { get { if (!_SEND_STATUS_MMS_ERROR_INVALID_APNReady) { _SEND_STATUS_MMS_ERROR_INVALID_APNContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_INVALID_APN"); _SEND_STATUS_MMS_ERROR_INVALID_APNReady = true; } return _SEND_STATUS_MMS_ERROR_INVALID_APNContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_INVALID_APNContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_INVALID_APNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID { get { if (!_SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDReady) { _SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID"); _SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDReady = true; } return _SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_IO_ERROR"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_IO_ERROR { get { if (!_SEND_STATUS_MMS_ERROR_IO_ERRORReady) { _SEND_STATUS_MMS_ERROR_IO_ERRORContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_IO_ERROR"); _SEND_STATUS_MMS_ERROR_IO_ERRORReady = true; } return _SEND_STATUS_MMS_ERROR_IO_ERRORContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_IO_ERRORContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_IO_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER { get { if (!_SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERReady) { _SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER"); _SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERReady = true; } return _SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK { get { if (!_SEND_STATUS_MMS_ERROR_NO_DATA_NETWORKReady) { _SEND_STATUS_MMS_ERROR_NO_DATA_NETWORKContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK"); _SEND_STATUS_MMS_ERROR_NO_DATA_NETWORKReady = true; } return _SEND_STATUS_MMS_ERROR_NO_DATA_NETWORKContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_NO_DATA_NETWORKContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_NO_DATA_NETWORKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_RETRY"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_RETRY { get { if (!_SEND_STATUS_MMS_ERROR_RETRYReady) { _SEND_STATUS_MMS_ERROR_RETRYContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_RETRY"); _SEND_STATUS_MMS_ERROR_RETRYReady = true; } return _SEND_STATUS_MMS_ERROR_RETRYContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_RETRYContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_RETRYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS { get { if (!_SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSReady) { _SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS"); _SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSReady = true; } return _SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_UNSPECIFIED"/>
+        /// </summary>
+        public static int SEND_STATUS_MMS_ERROR_UNSPECIFIED { get { if (!_SEND_STATUS_MMS_ERROR_UNSPECIFIEDReady) { _SEND_STATUS_MMS_ERROR_UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_MMS_ERROR_UNSPECIFIED"); _SEND_STATUS_MMS_ERROR_UNSPECIFIEDReady = true; } return _SEND_STATUS_MMS_ERROR_UNSPECIFIEDContent; } }
+        private static int _SEND_STATUS_MMS_ERROR_UNSPECIFIEDContent = default;
+        private static bool _SEND_STATUS_MMS_ERROR_UNSPECIFIEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_OK"/>
         /// </summary>
         public static int SEND_STATUS_OK { get { if (!_SEND_STATUS_OKReady) { _SEND_STATUS_OKContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_OK"); _SEND_STATUS_OKReady = true; } return _SEND_STATUS_OKContent; } }
         private static int _SEND_STATUS_OKContent = default;
         private static bool _SEND_STATUS_OKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_CANCELLED"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_CANCELLED { get { if (!_SEND_STATUS_RESULT_CANCELLEDReady) { _SEND_STATUS_RESULT_CANCELLEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_CANCELLED"); _SEND_STATUS_RESULT_CANCELLEDReady = true; } return _SEND_STATUS_RESULT_CANCELLEDContent; } }
+        private static int _SEND_STATUS_RESULT_CANCELLEDContent = default;
+        private static bool _SEND_STATUS_RESULT_CANCELLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ENCODING_ERROR"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ENCODING_ERROR { get { if (!_SEND_STATUS_RESULT_ENCODING_ERRORReady) { _SEND_STATUS_RESULT_ENCODING_ERRORContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ENCODING_ERROR"); _SEND_STATUS_RESULT_ENCODING_ERRORReady = true; } return _SEND_STATUS_RESULT_ENCODING_ERRORContent; } }
+        private static int _SEND_STATUS_RESULT_ENCODING_ERRORContent = default;
+        private static bool _SEND_STATUS_RESULT_ENCODING_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE { get { if (!_SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILUREReady) { _SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILUREContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE"); _SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILUREReady = true; } return _SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILUREContent; } }
+        private static int _SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILUREContent = default;
+        private static bool _SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE { get { if (!_SEND_STATUS_RESULT_ERROR_GENERIC_FAILUREReady) { _SEND_STATUS_RESULT_ERROR_GENERIC_FAILUREContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE"); _SEND_STATUS_RESULT_ERROR_GENERIC_FAILUREReady = true; } return _SEND_STATUS_RESULT_ERROR_GENERIC_FAILUREContent; } }
+        private static int _SEND_STATUS_RESULT_ERROR_GENERIC_FAILUREContent = default;
+        private static bool _SEND_STATUS_RESULT_ERROR_GENERIC_FAILUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED { get { if (!_SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDEDReady) { _SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED"); _SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDEDReady = true; } return _SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDEDContent; } }
+        private static int _SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDEDContent = default;
+        private static bool _SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_NO_SERVICE"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ERROR_NO_SERVICE { get { if (!_SEND_STATUS_RESULT_ERROR_NO_SERVICEReady) { _SEND_STATUS_RESULT_ERROR_NO_SERVICEContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ERROR_NO_SERVICE"); _SEND_STATUS_RESULT_ERROR_NO_SERVICEReady = true; } return _SEND_STATUS_RESULT_ERROR_NO_SERVICEContent; } }
+        private static int _SEND_STATUS_RESULT_ERROR_NO_SERVICEContent = default;
+        private static bool _SEND_STATUS_RESULT_ERROR_NO_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_NULL_PDU"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ERROR_NULL_PDU { get { if (!_SEND_STATUS_RESULT_ERROR_NULL_PDUReady) { _SEND_STATUS_RESULT_ERROR_NULL_PDUContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ERROR_NULL_PDU"); _SEND_STATUS_RESULT_ERROR_NULL_PDUReady = true; } return _SEND_STATUS_RESULT_ERROR_NULL_PDUContent; } }
+        private static int _SEND_STATUS_RESULT_ERROR_NULL_PDUContent = default;
+        private static bool _SEND_STATUS_RESULT_ERROR_NULL_PDUReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED { get { if (!_SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWEDReady) { _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED"); _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWEDReady = true; } return _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWEDContent; } }
+        private static int _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWEDContent = default;
+        private static bool _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED { get { if (!_SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWEDReady) { _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED"); _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWEDReady = true; } return _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWEDContent; } }
+        private static int _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWEDContent = default;
+        private static bool _SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_ARGUMENTS"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_INVALID_ARGUMENTS { get { if (!_SEND_STATUS_RESULT_INVALID_ARGUMENTSReady) { _SEND_STATUS_RESULT_INVALID_ARGUMENTSContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_INVALID_ARGUMENTS"); _SEND_STATUS_RESULT_INVALID_ARGUMENTSReady = true; } return _SEND_STATUS_RESULT_INVALID_ARGUMENTSContent; } }
+        private static int _SEND_STATUS_RESULT_INVALID_ARGUMENTSContent = default;
+        private static bool _SEND_STATUS_RESULT_INVALID_ARGUMENTSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_SMS_FORMAT"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_INVALID_SMS_FORMAT { get { if (!_SEND_STATUS_RESULT_INVALID_SMS_FORMATReady) { _SEND_STATUS_RESULT_INVALID_SMS_FORMATContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_INVALID_SMS_FORMAT"); _SEND_STATUS_RESULT_INVALID_SMS_FORMATReady = true; } return _SEND_STATUS_RESULT_INVALID_SMS_FORMATContent; } }
+        private static int _SEND_STATUS_RESULT_INVALID_SMS_FORMATContent = default;
+        private static bool _SEND_STATUS_RESULT_INVALID_SMS_FORMATReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS { get { if (!_SEND_STATUS_RESULT_INVALID_SMSC_ADDRESSReady) { _SEND_STATUS_RESULT_INVALID_SMSC_ADDRESSContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS"); _SEND_STATUS_RESULT_INVALID_SMSC_ADDRESSReady = true; } return _SEND_STATUS_RESULT_INVALID_SMSC_ADDRESSContent; } }
+        private static int _SEND_STATUS_RESULT_INVALID_SMSC_ADDRESSContent = default;
+        private static bool _SEND_STATUS_RESULT_INVALID_SMSC_ADDRESSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_STATE"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_INVALID_STATE { get { if (!_SEND_STATUS_RESULT_INVALID_STATEReady) { _SEND_STATUS_RESULT_INVALID_STATEContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_INVALID_STATE"); _SEND_STATUS_RESULT_INVALID_STATEReady = true; } return _SEND_STATUS_RESULT_INVALID_STATEContent; } }
+        private static int _SEND_STATUS_RESULT_INVALID_STATEContent = default;
+        private static bool _SEND_STATUS_RESULT_INVALID_STATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_NETWORK_ERROR"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_NETWORK_ERROR { get { if (!_SEND_STATUS_RESULT_NETWORK_ERRORReady) { _SEND_STATUS_RESULT_NETWORK_ERRORContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_NETWORK_ERROR"); _SEND_STATUS_RESULT_NETWORK_ERRORReady = true; } return _SEND_STATUS_RESULT_NETWORK_ERRORContent; } }
+        private static int _SEND_STATUS_RESULT_NETWORK_ERRORContent = default;
+        private static bool _SEND_STATUS_RESULT_NETWORK_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_NETWORK_REJECT"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_NETWORK_REJECT { get { if (!_SEND_STATUS_RESULT_NETWORK_REJECTReady) { _SEND_STATUS_RESULT_NETWORK_REJECTContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_NETWORK_REJECT"); _SEND_STATUS_RESULT_NETWORK_REJECTReady = true; } return _SEND_STATUS_RESULT_NETWORK_REJECTContent; } }
+        private static int _SEND_STATUS_RESULT_NETWORK_REJECTContent = default;
+        private static bool _SEND_STATUS_RESULT_NETWORK_REJECTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED { get { if (!_SEND_STATUS_RESULT_OPERATION_NOT_ALLOWEDReady) { _SEND_STATUS_RESULT_OPERATION_NOT_ALLOWEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED"); _SEND_STATUS_RESULT_OPERATION_NOT_ALLOWEDReady = true; } return _SEND_STATUS_RESULT_OPERATION_NOT_ALLOWEDContent; } }
+        private static int _SEND_STATUS_RESULT_OPERATION_NOT_ALLOWEDContent = default;
+        private static bool _SEND_STATUS_RESULT_OPERATION_NOT_ALLOWEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED { get { if (!_SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTEDReady) { _SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED"); _SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTEDReady = true; } return _SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTEDContent; } }
+        private static int _SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTEDContent = default;
+        private static bool _SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY { get { if (!_SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCYReady) { _SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCYContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY"); _SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCYReady = true; } return _SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCYContent; } }
+        private static int _SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCYContent = default;
+        private static bool _SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED"/>
+        /// </summary>
+        public static int SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED { get { if (!_SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILEDReady) { _SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILEDContent = SGetField<int>(LocalBridgeClazz, "SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED"); _SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILEDReady = true; } return _SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILEDContent; } }
+        private static int _SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILEDContent = default;
+        private static bool _SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RETRY_ON_CARRIER_NETWORK"/>
         /// </summary>

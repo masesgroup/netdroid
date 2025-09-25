@@ -1099,6 +1099,15 @@ namespace Android.Graphics
             IExecuteWithSignature("drawRect", "(FFFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRegion(android.graphics.Region,android.graphics.Paint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Region"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
+        public void DrawRegion(Android.Graphics.Region arg0, Android.Graphics.Paint arg1)
+        {
+            IExecuteWithSignature("drawRegion", "(Landroid/graphics/Region;Landroid/graphics/Paint;)V", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRenderNode(android.graphics.RenderNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.RenderNode"/></param>

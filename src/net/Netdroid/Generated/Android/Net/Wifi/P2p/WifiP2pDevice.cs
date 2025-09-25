@@ -167,6 +167,46 @@ namespace Android.Net.Wifi.P2p
             return IExecuteWithSignature<bool>("isGroupOwner", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#isOpportunisticBootstrappingMethodSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOpportunisticBootstrappingMethodSupported()
+        {
+            return IExecuteWithSignature<bool>("isOpportunisticBootstrappingMethodSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#isPassphraseDisplayBootstrappingMethodSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPassphraseDisplayBootstrappingMethodSupported()
+        {
+            return IExecuteWithSignature<bool>("isPassphraseDisplayBootstrappingMethodSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#isPassphraseKeypadBootstrappingMethodSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPassphraseKeypadBootstrappingMethodSupported()
+        {
+            return IExecuteWithSignature<bool>("isPassphraseKeypadBootstrappingMethodSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#isPinCodeDisplayBootstrappingMethodSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPinCodeDisplayBootstrappingMethodSupported()
+        {
+            return IExecuteWithSignature<bool>("isPinCodeDisplayBootstrappingMethodSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#isPinCodeKeypadBootstrappingMethodSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPinCodeKeypadBootstrappingMethodSupported()
+        {
+            return IExecuteWithSignature<bool>("isPinCodeKeypadBootstrappingMethodSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#isServiceDiscoveryCapable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

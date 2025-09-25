@@ -67,7 +67,7 @@ namespace Android.Content.Res
     #endregion
 
     #region Configuration implementation
-    public partial class Configuration : Android.Os.IParcelable, Java.Lang.IComparable<Android.Content.Res.Configuration>
+    public partial class Configuration : Java.Lang.IComparable<Android.Content.Res.Configuration>, Android.Os.IParcelable
     {
         #region Constructors
         /// <summary>
@@ -83,13 +83,13 @@ namespace Android.Content.Res
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Content.Res.Configuration"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Content.Res.Configuration t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Content.Res.Configuration"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Content.Res.Configuration t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Content.Res.Configuration"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Content.Res.Configuration t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     

@@ -70,6 +70,16 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class WebTriggerInput
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/WebTriggerInput.html#%3Cinit%3E(android.net.Uri,java.lang.String,byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        public WebTriggerInput(Android.Net.Uri arg0, Java.Lang.String arg1, byte[] arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
     
         #endregion
     

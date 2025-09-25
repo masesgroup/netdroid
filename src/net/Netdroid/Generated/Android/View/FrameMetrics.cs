@@ -117,6 +117,12 @@ namespace Android.View
         private static int _FIRST_DRAW_FRAMEContent = default;
         private static bool _FIRST_DRAW_FRAMEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/FrameMetrics.html#FRAME_TIMELINE_VSYNC_ID"/>
+        /// </summary>
+        public static int FRAME_TIMELINE_VSYNC_ID { get { if (!_FRAME_TIMELINE_VSYNC_IDReady) { _FRAME_TIMELINE_VSYNC_IDContent = SGetField<int>(LocalBridgeClazz, "FRAME_TIMELINE_VSYNC_ID"); _FRAME_TIMELINE_VSYNC_IDReady = true; } return _FRAME_TIMELINE_VSYNC_IDContent; } }
+        private static int _FRAME_TIMELINE_VSYNC_IDContent = default;
+        private static bool _FRAME_TIMELINE_VSYNC_IDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/FrameMetrics.html#GPU_DURATION"/>
         /// </summary>
         public static int GPU_DURATION { get { if (!_GPU_DURATIONReady) { _GPU_DURATIONContent = SGetField<int>(LocalBridgeClazz, "GPU_DURATION"); _GPU_DURATIONReady = true; } return _GPU_DURATIONContent; } }

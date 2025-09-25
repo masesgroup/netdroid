@@ -224,6 +224,12 @@ namespace Android.Content.Pm
         private static int _COLOR_MODE_WIDE_COLOR_GAMUTContent = default;
         private static bool _COLOR_MODE_WIDE_COLOR_GAMUTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#CONFIG_ASSETS_PATHS"/>
+        /// </summary>
+        public static int CONFIG_ASSETS_PATHS { get { if (!_CONFIG_ASSETS_PATHSReady) { _CONFIG_ASSETS_PATHSContent = SGetField<int>(LocalBridgeClazz, "CONFIG_ASSETS_PATHS"); _CONFIG_ASSETS_PATHSReady = true; } return _CONFIG_ASSETS_PATHSContent; } }
+        private static int _CONFIG_ASSETS_PATHSContent = default;
+        private static bool _CONFIG_ASSETS_PATHSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#CONFIG_COLOR_MODE"/>
         /// </summary>
         public static int CONFIG_COLOR_MODE { get { if (!_CONFIG_COLOR_MODEReady) { _CONFIG_COLOR_MODEContent = SGetField<int>(LocalBridgeClazz, "CONFIG_COLOR_MODE"); _CONFIG_COLOR_MODEReady = true; } return _CONFIG_COLOR_MODEContent; } }
@@ -301,6 +307,12 @@ namespace Android.Content.Pm
         public static int CONFIG_ORIENTATION { get { if (!_CONFIG_ORIENTATIONReady) { _CONFIG_ORIENTATIONContent = SGetField<int>(LocalBridgeClazz, "CONFIG_ORIENTATION"); _CONFIG_ORIENTATIONReady = true; } return _CONFIG_ORIENTATIONContent; } }
         private static int _CONFIG_ORIENTATIONContent = default;
         private static bool _CONFIG_ORIENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#CONFIG_RESOURCES_UNUSED"/>
+        /// </summary>
+        public static int CONFIG_RESOURCES_UNUSED { get { if (!_CONFIG_RESOURCES_UNUSEDReady) { _CONFIG_RESOURCES_UNUSEDContent = SGetField<int>(LocalBridgeClazz, "CONFIG_RESOURCES_UNUSED"); _CONFIG_RESOURCES_UNUSEDReady = true; } return _CONFIG_RESOURCES_UNUSEDContent; } }
+        private static int _CONFIG_RESOURCES_UNUSEDContent = default;
+        private static bool _CONFIG_RESOURCES_UNUSEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#CONFIG_SCREEN_LAYOUT"/>
         /// </summary>

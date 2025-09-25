@@ -1870,6 +1870,14 @@ namespace Android.Content.Pm
                 return IExecuteWithSignature<bool>("isApplicationEnabledSettingPersistent", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#isAutoInstallDependenciesEnabled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsAutoInstallDependenciesEnabled()
+            {
+                return IExecuteWithSignature<bool>("isAutoInstallDependenciesEnabled", "()Z");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#isCommitted()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
@@ -2281,6 +2289,14 @@ namespace Android.Content.Pm
             public void SetAppPackageName(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("setAppPackageName", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setAutoInstallDependenciesEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void SetAutoInstallDependenciesEnabled(bool arg0)
+            {
+                IExecuteWithSignature("setAutoInstallDependenciesEnabled", "(Z)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setAutoRevokePermissionsMode(boolean)"/>

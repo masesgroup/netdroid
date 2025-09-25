@@ -67,7 +67,7 @@ namespace Android.Content
     #endregion
 
     #region ComponentName implementation
-    public partial class ComponentName : Android.Os.IParcelable, Java.Lang.ICloneable, Java.Lang.IComparable<Android.Content.ComponentName>
+    public partial class ComponentName : Java.Lang.ICloneable, Java.Lang.IComparable<Android.Content.ComponentName>, Android.Os.IParcelable
     {
         #region Constructors
         /// <summary>
@@ -110,10 +110,6 @@ namespace Android.Content
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Content.ComponentName"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Content.ComponentName t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Content.ComponentName"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Content.ComponentName t) => t.Cast<Java.Lang.Cloneable>();
@@ -121,6 +117,10 @@ namespace Android.Content
         /// Converter from <see cref="Android.Content.ComponentName"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Content.ComponentName t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Content.ComponentName"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Content.ComponentName t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     

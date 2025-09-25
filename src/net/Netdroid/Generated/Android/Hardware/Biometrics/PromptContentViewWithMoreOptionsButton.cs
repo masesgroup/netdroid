@@ -108,7 +108,7 @@ namespace Android.Hardware.Biometrics
     #endregion
 
     #region PromptContentViewWithMoreOptionsButton implementation
-    public partial class PromptContentViewWithMoreOptionsButton : Android.Hardware.Biometrics.IPromptContentView, Android.Os.IParcelable
+    public partial class PromptContentViewWithMoreOptionsButton : Android.Os.IParcelable, Android.Hardware.Biometrics.IPromptContentView
     {
         #region Constructors
     
@@ -116,13 +116,13 @@ namespace Android.Hardware.Biometrics
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton"/> to <see cref="Android.Hardware.Biometrics.PromptContentView"/>
-        /// </summary>
-        public static implicit operator Android.Hardware.Biometrics.PromptContentView(Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton t) => t.Cast<Android.Hardware.Biometrics.PromptContentView>();
-        /// <summary>
         /// Converter from <see cref="Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton"/> to <see cref="Android.Hardware.Biometrics.PromptContentView"/>
+        /// </summary>
+        public static implicit operator Android.Hardware.Biometrics.PromptContentView(Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton t) => t.Cast<Android.Hardware.Biometrics.PromptContentView>();
     
         #endregion
     

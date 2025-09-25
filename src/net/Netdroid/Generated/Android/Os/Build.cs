@@ -185,6 +185,47 @@ namespace Android.Os
         }
         #endregion
 
+        #region VERSION_CODES_FULL declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html"/>
+        /// </summary>
+        public partial class VERSION_CODES_FULL : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VERSION_CODES_FULL>
+        {
+            const string _bridgeClassName = "android.os.Build$VERSION_CODES_FULL";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public VERSION_CODES_FULL() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public VERSION_CODES_FULL(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public VERSION_CODES_FULL(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
     
     }
     #endregion
@@ -378,6 +419,24 @@ namespace Android.Os
     
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#getMajorSdkVersion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        public static int GetMajorSdkVersion(int arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMajorSdkVersion", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#getMinorSdkVersion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        public static int GetMinorSdkVersion(int arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinorSdkVersion", "(I)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Build.html#getRadioVersion()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -501,6 +560,12 @@ namespace Android.Os
             private static int _SDK_INTContent = default;
             private static bool _SDK_INTReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION.html#SDK_INT_FULL"/>
+            /// </summary>
+            public static int SDK_INT_FULL { get { if (!_SDK_INT_FULLReady) { _SDK_INT_FULLContent = SGetField<int>(LocalBridgeClazz, "SDK_INT_FULL"); _SDK_INT_FULLReady = true; } return _SDK_INT_FULLContent; } }
+            private static int _SDK_INT_FULLContent = default;
+            private static bool _SDK_INT_FULLReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Build.VERSION.html#BASE_OS"/>
             /// </summary>
             public static Java.Lang.String BASE_OS { get { if (!_BASE_OSReady) { _BASE_OSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BASE_OS"); _BASE_OSReady = true; } return _BASE_OSContent; } }
@@ -580,6 +645,12 @@ namespace Android.Os
             #endregion
         
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#BAKLAVA"/>
+            /// </summary>
+            public static int BAKLAVA { get { if (!_BAKLAVAReady) { _BAKLAVAContent = SGetField<int>(LocalBridgeClazz, "BAKLAVA"); _BAKLAVAReady = true; } return _BAKLAVAContent; } }
+            private static int _BAKLAVAContent = default;
+            private static bool _BAKLAVAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#BASE"/>
             /// </summary>
@@ -792,6 +863,253 @@ namespace Android.Os
             private static bool _UPSIDE_DOWN_CAKEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM"/>
+            /// </summary>
+            public static int VANILLA_ICE_CREAM { get { if (!_VANILLA_ICE_CREAMReady) { _VANILLA_ICE_CREAMContent = SGetField<int>(LocalBridgeClazz, "VANILLA_ICE_CREAM"); _VANILLA_ICE_CREAMReady = true; } return _VANILLA_ICE_CREAMContent; } }
+            private static int _VANILLA_ICE_CREAMContent = default;
+            private static bool _VANILLA_ICE_CREAMReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region VERSION_CODES_FULL implementation
+        public partial class VERSION_CODES_FULL
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#BAKLAVA"/>
+            /// </summary>
+            public static int BAKLAVA { get { if (!_BAKLAVAReady) { _BAKLAVAContent = SGetField<int>(LocalBridgeClazz, "BAKLAVA"); _BAKLAVAReady = true; } return _BAKLAVAContent; } }
+            private static int _BAKLAVAContent = default;
+            private static bool _BAKLAVAReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#BASE"/>
+            /// </summary>
+            public static int BASE { get { if (!_BASEReady) { _BASEContent = SGetField<int>(LocalBridgeClazz, "BASE"); _BASEReady = true; } return _BASEContent; } }
+            private static int _BASEContent = default;
+            private static bool _BASEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#BASE_1_1"/>
+            /// </summary>
+            public static int BASE_1_1 { get { if (!_BASE_1_1Ready) { _BASE_1_1Content = SGetField<int>(LocalBridgeClazz, "BASE_1_1"); _BASE_1_1Ready = true; } return _BASE_1_1Content; } }
+            private static int _BASE_1_1Content = default;
+            private static bool _BASE_1_1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#CUPCAKE"/>
+            /// </summary>
+            public static int CUPCAKE { get { if (!_CUPCAKEReady) { _CUPCAKEContent = SGetField<int>(LocalBridgeClazz, "CUPCAKE"); _CUPCAKEReady = true; } return _CUPCAKEContent; } }
+            private static int _CUPCAKEContent = default;
+            private static bool _CUPCAKEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#DONUT"/>
+            /// </summary>
+            public static int DONUT { get { if (!_DONUTReady) { _DONUTContent = SGetField<int>(LocalBridgeClazz, "DONUT"); _DONUTReady = true; } return _DONUTContent; } }
+            private static int _DONUTContent = default;
+            private static bool _DONUTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#ECLAIR"/>
+            /// </summary>
+            public static int ECLAIR { get { if (!_ECLAIRReady) { _ECLAIRContent = SGetField<int>(LocalBridgeClazz, "ECLAIR"); _ECLAIRReady = true; } return _ECLAIRContent; } }
+            private static int _ECLAIRContent = default;
+            private static bool _ECLAIRReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#ECLAIR_0_1"/>
+            /// </summary>
+            public static int ECLAIR_0_1 { get { if (!_ECLAIR_0_1Ready) { _ECLAIR_0_1Content = SGetField<int>(LocalBridgeClazz, "ECLAIR_0_1"); _ECLAIR_0_1Ready = true; } return _ECLAIR_0_1Content; } }
+            private static int _ECLAIR_0_1Content = default;
+            private static bool _ECLAIR_0_1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#ECLAIR_MR1"/>
+            /// </summary>
+            public static int ECLAIR_MR1 { get { if (!_ECLAIR_MR1Ready) { _ECLAIR_MR1Content = SGetField<int>(LocalBridgeClazz, "ECLAIR_MR1"); _ECLAIR_MR1Ready = true; } return _ECLAIR_MR1Content; } }
+            private static int _ECLAIR_MR1Content = default;
+            private static bool _ECLAIR_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#FROYO"/>
+            /// </summary>
+            public static int FROYO { get { if (!_FROYOReady) { _FROYOContent = SGetField<int>(LocalBridgeClazz, "FROYO"); _FROYOReady = true; } return _FROYOContent; } }
+            private static int _FROYOContent = default;
+            private static bool _FROYOReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#GINGERBREAD"/>
+            /// </summary>
+            public static int GINGERBREAD { get { if (!_GINGERBREADReady) { _GINGERBREADContent = SGetField<int>(LocalBridgeClazz, "GINGERBREAD"); _GINGERBREADReady = true; } return _GINGERBREADContent; } }
+            private static int _GINGERBREADContent = default;
+            private static bool _GINGERBREADReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#GINGERBREAD_MR1"/>
+            /// </summary>
+            public static int GINGERBREAD_MR1 { get { if (!_GINGERBREAD_MR1Ready) { _GINGERBREAD_MR1Content = SGetField<int>(LocalBridgeClazz, "GINGERBREAD_MR1"); _GINGERBREAD_MR1Ready = true; } return _GINGERBREAD_MR1Content; } }
+            private static int _GINGERBREAD_MR1Content = default;
+            private static bool _GINGERBREAD_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#HONEYCOMB"/>
+            /// </summary>
+            public static int HONEYCOMB { get { if (!_HONEYCOMBReady) { _HONEYCOMBContent = SGetField<int>(LocalBridgeClazz, "HONEYCOMB"); _HONEYCOMBReady = true; } return _HONEYCOMBContent; } }
+            private static int _HONEYCOMBContent = default;
+            private static bool _HONEYCOMBReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#HONEYCOMB_MR1"/>
+            /// </summary>
+            public static int HONEYCOMB_MR1 { get { if (!_HONEYCOMB_MR1Ready) { _HONEYCOMB_MR1Content = SGetField<int>(LocalBridgeClazz, "HONEYCOMB_MR1"); _HONEYCOMB_MR1Ready = true; } return _HONEYCOMB_MR1Content; } }
+            private static int _HONEYCOMB_MR1Content = default;
+            private static bool _HONEYCOMB_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#HONEYCOMB_MR2"/>
+            /// </summary>
+            public static int HONEYCOMB_MR2 { get { if (!_HONEYCOMB_MR2Ready) { _HONEYCOMB_MR2Content = SGetField<int>(LocalBridgeClazz, "HONEYCOMB_MR2"); _HONEYCOMB_MR2Ready = true; } return _HONEYCOMB_MR2Content; } }
+            private static int _HONEYCOMB_MR2Content = default;
+            private static bool _HONEYCOMB_MR2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#ICE_CREAM_SANDWICH"/>
+            /// </summary>
+            public static int ICE_CREAM_SANDWICH { get { if (!_ICE_CREAM_SANDWICHReady) { _ICE_CREAM_SANDWICHContent = SGetField<int>(LocalBridgeClazz, "ICE_CREAM_SANDWICH"); _ICE_CREAM_SANDWICHReady = true; } return _ICE_CREAM_SANDWICHContent; } }
+            private static int _ICE_CREAM_SANDWICHContent = default;
+            private static bool _ICE_CREAM_SANDWICHReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#ICE_CREAM_SANDWICH_MR1"/>
+            /// </summary>
+            public static int ICE_CREAM_SANDWICH_MR1 { get { if (!_ICE_CREAM_SANDWICH_MR1Ready) { _ICE_CREAM_SANDWICH_MR1Content = SGetField<int>(LocalBridgeClazz, "ICE_CREAM_SANDWICH_MR1"); _ICE_CREAM_SANDWICH_MR1Ready = true; } return _ICE_CREAM_SANDWICH_MR1Content; } }
+            private static int _ICE_CREAM_SANDWICH_MR1Content = default;
+            private static bool _ICE_CREAM_SANDWICH_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#JELLY_BEAN"/>
+            /// </summary>
+            public static int JELLY_BEAN { get { if (!_JELLY_BEANReady) { _JELLY_BEANContent = SGetField<int>(LocalBridgeClazz, "JELLY_BEAN"); _JELLY_BEANReady = true; } return _JELLY_BEANContent; } }
+            private static int _JELLY_BEANContent = default;
+            private static bool _JELLY_BEANReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#JELLY_BEAN_MR1"/>
+            /// </summary>
+            public static int JELLY_BEAN_MR1 { get { if (!_JELLY_BEAN_MR1Ready) { _JELLY_BEAN_MR1Content = SGetField<int>(LocalBridgeClazz, "JELLY_BEAN_MR1"); _JELLY_BEAN_MR1Ready = true; } return _JELLY_BEAN_MR1Content; } }
+            private static int _JELLY_BEAN_MR1Content = default;
+            private static bool _JELLY_BEAN_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#JELLY_BEAN_MR2"/>
+            /// </summary>
+            public static int JELLY_BEAN_MR2 { get { if (!_JELLY_BEAN_MR2Ready) { _JELLY_BEAN_MR2Content = SGetField<int>(LocalBridgeClazz, "JELLY_BEAN_MR2"); _JELLY_BEAN_MR2Ready = true; } return _JELLY_BEAN_MR2Content; } }
+            private static int _JELLY_BEAN_MR2Content = default;
+            private static bool _JELLY_BEAN_MR2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#KITKAT"/>
+            /// </summary>
+            public static int KITKAT { get { if (!_KITKATReady) { _KITKATContent = SGetField<int>(LocalBridgeClazz, "KITKAT"); _KITKATReady = true; } return _KITKATContent; } }
+            private static int _KITKATContent = default;
+            private static bool _KITKATReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#KITKAT_WATCH"/>
+            /// </summary>
+            public static int KITKAT_WATCH { get { if (!_KITKAT_WATCHReady) { _KITKAT_WATCHContent = SGetField<int>(LocalBridgeClazz, "KITKAT_WATCH"); _KITKAT_WATCHReady = true; } return _KITKAT_WATCHContent; } }
+            private static int _KITKAT_WATCHContent = default;
+            private static bool _KITKAT_WATCHReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#LOLLIPOP"/>
+            /// </summary>
+            public static int LOLLIPOP { get { if (!_LOLLIPOPReady) { _LOLLIPOPContent = SGetField<int>(LocalBridgeClazz, "LOLLIPOP"); _LOLLIPOPReady = true; } return _LOLLIPOPContent; } }
+            private static int _LOLLIPOPContent = default;
+            private static bool _LOLLIPOPReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#LOLLIPOP_MR1"/>
+            /// </summary>
+            public static int LOLLIPOP_MR1 { get { if (!_LOLLIPOP_MR1Ready) { _LOLLIPOP_MR1Content = SGetField<int>(LocalBridgeClazz, "LOLLIPOP_MR1"); _LOLLIPOP_MR1Ready = true; } return _LOLLIPOP_MR1Content; } }
+            private static int _LOLLIPOP_MR1Content = default;
+            private static bool _LOLLIPOP_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#M"/>
+            /// </summary>
+            public static int M { get { if (!_MReady) { _MContent = SGetField<int>(LocalBridgeClazz, "M"); _MReady = true; } return _MContent; } }
+            private static int _MContent = default;
+            private static bool _MReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#N"/>
+            /// </summary>
+            public static int N { get { if (!_NReady) { _NContent = SGetField<int>(LocalBridgeClazz, "N"); _NReady = true; } return _NContent; } }
+            private static int _NContent = default;
+            private static bool _NReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#N_MR1"/>
+            /// </summary>
+            public static int N_MR1 { get { if (!_N_MR1Ready) { _N_MR1Content = SGetField<int>(LocalBridgeClazz, "N_MR1"); _N_MR1Ready = true; } return _N_MR1Content; } }
+            private static int _N_MR1Content = default;
+            private static bool _N_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#O"/>
+            /// </summary>
+            public static int O { get { if (!_OReady) { _OContent = SGetField<int>(LocalBridgeClazz, "O"); _OReady = true; } return _OContent; } }
+            private static int _OContent = default;
+            private static bool _OReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#O_MR1"/>
+            /// </summary>
+            public static int O_MR1 { get { if (!_O_MR1Ready) { _O_MR1Content = SGetField<int>(LocalBridgeClazz, "O_MR1"); _O_MR1Ready = true; } return _O_MR1Content; } }
+            private static int _O_MR1Content = default;
+            private static bool _O_MR1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#P"/>
+            /// </summary>
+            public static int P { get { if (!_PReady) { _PContent = SGetField<int>(LocalBridgeClazz, "P"); _PReady = true; } return _PContent; } }
+            private static int _PContent = default;
+            private static bool _PReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#Q"/>
+            /// </summary>
+            public static int Q { get { if (!_QReady) { _QContent = SGetField<int>(LocalBridgeClazz, "Q"); _QReady = true; } return _QContent; } }
+            private static int _QContent = default;
+            private static bool _QReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#R"/>
+            /// </summary>
+            public static int R { get { if (!_RReady) { _RContent = SGetField<int>(LocalBridgeClazz, "R"); _RReady = true; } return _RContent; } }
+            private static int _RContent = default;
+            private static bool _RReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#S"/>
+            /// </summary>
+            public static int S { get { if (!_SReady) { _SContent = SGetField<int>(LocalBridgeClazz, "S"); _SReady = true; } return _SContent; } }
+            private static int _SContent = default;
+            private static bool _SReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#S_V2"/>
+            /// </summary>
+            public static int S_V2 { get { if (!_S_V2Ready) { _S_V2Content = SGetField<int>(LocalBridgeClazz, "S_V2"); _S_V2Ready = true; } return _S_V2Content; } }
+            private static int _S_V2Content = default;
+            private static bool _S_V2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#TIRAMISU"/>
+            /// </summary>
+            public static int TIRAMISU { get { if (!_TIRAMISUReady) { _TIRAMISUContent = SGetField<int>(LocalBridgeClazz, "TIRAMISU"); _TIRAMISUReady = true; } return _TIRAMISUContent; } }
+            private static int _TIRAMISUContent = default;
+            private static bool _TIRAMISUReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#UPSIDE_DOWN_CAKE"/>
+            /// </summary>
+            public static int UPSIDE_DOWN_CAKE { get { if (!_UPSIDE_DOWN_CAKEReady) { _UPSIDE_DOWN_CAKEContent = SGetField<int>(LocalBridgeClazz, "UPSIDE_DOWN_CAKE"); _UPSIDE_DOWN_CAKEReady = true; } return _UPSIDE_DOWN_CAKEContent; } }
+            private static int _UPSIDE_DOWN_CAKEContent = default;
+            private static bool _UPSIDE_DOWN_CAKEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES_FULL.html#VANILLA_ICE_CREAM"/>
             /// </summary>
             public static int VANILLA_ICE_CREAM { get { if (!_VANILLA_ICE_CREAMReady) { _VANILLA_ICE_CREAMContent = SGetField<int>(LocalBridgeClazz, "VANILLA_ICE_CREAM"); _VANILLA_ICE_CREAMReady = true; } return _VANILLA_ICE_CREAMContent; } }
             private static int _VANILLA_ICE_CREAMContent = default;

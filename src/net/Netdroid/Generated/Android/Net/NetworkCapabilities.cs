@@ -183,6 +183,12 @@ namespace Android.Net
         private static int _NET_CAPABILITY_MMTELContent = default;
         private static bool _NET_CAPABILITY_MMTELReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINED"/>
+        /// </summary>
+        public static int NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINED { get { if (!_NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINEDReady) { _NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINEDContent = SGetField<int>(LocalBridgeClazz, "NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINED"); _NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINEDReady = true; } return _NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINEDContent; } }
+        private static int _NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINEDContent = default;
+        private static bool _NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#NET_CAPABILITY_NOT_CONGESTED"/>
         /// </summary>
         public static int NET_CAPABILITY_NOT_CONGESTED { get { if (!_NET_CAPABILITY_NOT_CONGESTEDReady) { _NET_CAPABILITY_NOT_CONGESTEDContent = SGetField<int>(LocalBridgeClazz, "NET_CAPABILITY_NOT_CONGESTED"); _NET_CAPABILITY_NOT_CONGESTEDReady = true; } return _NET_CAPABILITY_NOT_CONGESTEDContent; } }

@@ -228,6 +228,14 @@ namespace Android.Net.Wifi.Aware
             return IExecuteWithSignature<int>("getBootstrappingMethods", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig.html#getSupportedCipherSuites()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSupportedCipherSuites()
+        {
+            return IExecuteWithSignature<int>("getSupportedCipherSuites", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
@@ -303,6 +311,15 @@ namespace Android.Net.Wifi.Aware
             public Android.Net.Wifi.Aware.AwarePairingConfig.Builder SetPairingVerificationEnabled(bool arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig.Builder>("setPairingVerificationEnabled", "(Z)Landroid/net/wifi/aware/AwarePairingConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig.Builder.html#setSupportedCipherSuites(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Aware.AwarePairingConfig.Builder"/></returns>
+            public Android.Net.Wifi.Aware.AwarePairingConfig.Builder SetSupportedCipherSuites(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig.Builder>("setSupportedCipherSuites", "(I)Landroid/net/wifi/aware/AwarePairingConfig$Builder;", arg0);
             }
         
             #endregion

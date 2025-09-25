@@ -210,102 +210,119 @@ namespace Android.Hardware.Fingerprint
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ACQUIRED_GOOD"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ACQUIRED_GOOD { get { if (!_FINGERPRINT_ACQUIRED_GOODReady) { _FINGERPRINT_ACQUIRED_GOODContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ACQUIRED_GOOD"); _FINGERPRINT_ACQUIRED_GOODReady = true; } return _FINGERPRINT_ACQUIRED_GOODContent; } }
         private static int _FINGERPRINT_ACQUIRED_GOODContent = default;
         private static bool _FINGERPRINT_ACQUIRED_GOODReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ACQUIRED_IMAGER_DIRTY"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ACQUIRED_IMAGER_DIRTY { get { if (!_FINGERPRINT_ACQUIRED_IMAGER_DIRTYReady) { _FINGERPRINT_ACQUIRED_IMAGER_DIRTYContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ACQUIRED_IMAGER_DIRTY"); _FINGERPRINT_ACQUIRED_IMAGER_DIRTYReady = true; } return _FINGERPRINT_ACQUIRED_IMAGER_DIRTYContent; } }
         private static int _FINGERPRINT_ACQUIRED_IMAGER_DIRTYContent = default;
         private static bool _FINGERPRINT_ACQUIRED_IMAGER_DIRTYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ACQUIRED_INSUFFICIENT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ACQUIRED_INSUFFICIENT { get { if (!_FINGERPRINT_ACQUIRED_INSUFFICIENTReady) { _FINGERPRINT_ACQUIRED_INSUFFICIENTContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ACQUIRED_INSUFFICIENT"); _FINGERPRINT_ACQUIRED_INSUFFICIENTReady = true; } return _FINGERPRINT_ACQUIRED_INSUFFICIENTContent; } }
         private static int _FINGERPRINT_ACQUIRED_INSUFFICIENTContent = default;
         private static bool _FINGERPRINT_ACQUIRED_INSUFFICIENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ACQUIRED_PARTIAL"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ACQUIRED_PARTIAL { get { if (!_FINGERPRINT_ACQUIRED_PARTIALReady) { _FINGERPRINT_ACQUIRED_PARTIALContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ACQUIRED_PARTIAL"); _FINGERPRINT_ACQUIRED_PARTIALReady = true; } return _FINGERPRINT_ACQUIRED_PARTIALContent; } }
         private static int _FINGERPRINT_ACQUIRED_PARTIALContent = default;
         private static bool _FINGERPRINT_ACQUIRED_PARTIALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ACQUIRED_TOO_FAST"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ACQUIRED_TOO_FAST { get { if (!_FINGERPRINT_ACQUIRED_TOO_FASTReady) { _FINGERPRINT_ACQUIRED_TOO_FASTContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ACQUIRED_TOO_FAST"); _FINGERPRINT_ACQUIRED_TOO_FASTReady = true; } return _FINGERPRINT_ACQUIRED_TOO_FASTContent; } }
         private static int _FINGERPRINT_ACQUIRED_TOO_FASTContent = default;
         private static bool _FINGERPRINT_ACQUIRED_TOO_FASTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ACQUIRED_TOO_SLOW"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ACQUIRED_TOO_SLOW { get { if (!_FINGERPRINT_ACQUIRED_TOO_SLOWReady) { _FINGERPRINT_ACQUIRED_TOO_SLOWContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ACQUIRED_TOO_SLOW"); _FINGERPRINT_ACQUIRED_TOO_SLOWReady = true; } return _FINGERPRINT_ACQUIRED_TOO_SLOWContent; } }
         private static int _FINGERPRINT_ACQUIRED_TOO_SLOWContent = default;
         private static bool _FINGERPRINT_ACQUIRED_TOO_SLOWReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_CANCELED"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_CANCELED { get { if (!_FINGERPRINT_ERROR_CANCELEDReady) { _FINGERPRINT_ERROR_CANCELEDContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_CANCELED"); _FINGERPRINT_ERROR_CANCELEDReady = true; } return _FINGERPRINT_ERROR_CANCELEDContent; } }
         private static int _FINGERPRINT_ERROR_CANCELEDContent = default;
         private static bool _FINGERPRINT_ERROR_CANCELEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_HW_NOT_PRESENT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_HW_NOT_PRESENT { get { if (!_FINGERPRINT_ERROR_HW_NOT_PRESENTReady) { _FINGERPRINT_ERROR_HW_NOT_PRESENTContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_HW_NOT_PRESENT"); _FINGERPRINT_ERROR_HW_NOT_PRESENTReady = true; } return _FINGERPRINT_ERROR_HW_NOT_PRESENTContent; } }
         private static int _FINGERPRINT_ERROR_HW_NOT_PRESENTContent = default;
         private static bool _FINGERPRINT_ERROR_HW_NOT_PRESENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_HW_UNAVAILABLE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_HW_UNAVAILABLE { get { if (!_FINGERPRINT_ERROR_HW_UNAVAILABLEReady) { _FINGERPRINT_ERROR_HW_UNAVAILABLEContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_HW_UNAVAILABLE"); _FINGERPRINT_ERROR_HW_UNAVAILABLEReady = true; } return _FINGERPRINT_ERROR_HW_UNAVAILABLEContent; } }
         private static int _FINGERPRINT_ERROR_HW_UNAVAILABLEContent = default;
         private static bool _FINGERPRINT_ERROR_HW_UNAVAILABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_LOCKOUT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_LOCKOUT { get { if (!_FINGERPRINT_ERROR_LOCKOUTReady) { _FINGERPRINT_ERROR_LOCKOUTContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_LOCKOUT"); _FINGERPRINT_ERROR_LOCKOUTReady = true; } return _FINGERPRINT_ERROR_LOCKOUTContent; } }
         private static int _FINGERPRINT_ERROR_LOCKOUTContent = default;
         private static bool _FINGERPRINT_ERROR_LOCKOUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_LOCKOUT_PERMANENT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_LOCKOUT_PERMANENT { get { if (!_FINGERPRINT_ERROR_LOCKOUT_PERMANENTReady) { _FINGERPRINT_ERROR_LOCKOUT_PERMANENTContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_LOCKOUT_PERMANENT"); _FINGERPRINT_ERROR_LOCKOUT_PERMANENTReady = true; } return _FINGERPRINT_ERROR_LOCKOUT_PERMANENTContent; } }
         private static int _FINGERPRINT_ERROR_LOCKOUT_PERMANENTContent = default;
         private static bool _FINGERPRINT_ERROR_LOCKOUT_PERMANENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_NO_FINGERPRINTS"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_NO_FINGERPRINTS { get { if (!_FINGERPRINT_ERROR_NO_FINGERPRINTSReady) { _FINGERPRINT_ERROR_NO_FINGERPRINTSContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_NO_FINGERPRINTS"); _FINGERPRINT_ERROR_NO_FINGERPRINTSReady = true; } return _FINGERPRINT_ERROR_NO_FINGERPRINTSContent; } }
         private static int _FINGERPRINT_ERROR_NO_FINGERPRINTSContent = default;
         private static bool _FINGERPRINT_ERROR_NO_FINGERPRINTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_NO_SPACE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_NO_SPACE { get { if (!_FINGERPRINT_ERROR_NO_SPACEReady) { _FINGERPRINT_ERROR_NO_SPACEContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_NO_SPACE"); _FINGERPRINT_ERROR_NO_SPACEReady = true; } return _FINGERPRINT_ERROR_NO_SPACEContent; } }
         private static int _FINGERPRINT_ERROR_NO_SPACEContent = default;
         private static bool _FINGERPRINT_ERROR_NO_SPACEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_TIMEOUT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_TIMEOUT { get { if (!_FINGERPRINT_ERROR_TIMEOUTReady) { _FINGERPRINT_ERROR_TIMEOUTContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_TIMEOUT"); _FINGERPRINT_ERROR_TIMEOUTReady = true; } return _FINGERPRINT_ERROR_TIMEOUTContent; } }
         private static int _FINGERPRINT_ERROR_TIMEOUTContent = default;
         private static bool _FINGERPRINT_ERROR_TIMEOUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_UNABLE_TO_PROCESS"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_UNABLE_TO_PROCESS { get { if (!_FINGERPRINT_ERROR_UNABLE_TO_PROCESSReady) { _FINGERPRINT_ERROR_UNABLE_TO_PROCESSContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_UNABLE_TO_PROCESS"); _FINGERPRINT_ERROR_UNABLE_TO_PROCESSReady = true; } return _FINGERPRINT_ERROR_UNABLE_TO_PROCESSContent; } }
         private static int _FINGERPRINT_ERROR_UNABLE_TO_PROCESSContent = default;
         private static bool _FINGERPRINT_ERROR_UNABLE_TO_PROCESSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_USER_CANCELED"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_USER_CANCELED { get { if (!_FINGERPRINT_ERROR_USER_CANCELEDReady) { _FINGERPRINT_ERROR_USER_CANCELEDContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_USER_CANCELED"); _FINGERPRINT_ERROR_USER_CANCELEDReady = true; } return _FINGERPRINT_ERROR_USER_CANCELEDContent; } }
         private static int _FINGERPRINT_ERROR_USER_CANCELEDContent = default;
         private static bool _FINGERPRINT_ERROR_USER_CANCELEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#FINGERPRINT_ERROR_VENDOR"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int FINGERPRINT_ERROR_VENDOR { get { if (!_FINGERPRINT_ERROR_VENDORReady) { _FINGERPRINT_ERROR_VENDORContent = SGetField<int>(LocalBridgeClazz, "FINGERPRINT_ERROR_VENDOR"); _FINGERPRINT_ERROR_VENDORReady = true; } return _FINGERPRINT_ERROR_VENDORContent; } }
         private static int _FINGERPRINT_ERROR_VENDORContent = default;
         private static bool _FINGERPRINT_ERROR_VENDORReady = false; // this is used because in case of generics 

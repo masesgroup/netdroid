@@ -180,6 +180,14 @@ namespace Android.Adservices.Customaudience
             return IExecuteWithSignature<Android.Net.Uri>("getDailyUpdateUri", "()Landroid/net/Uri;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetPriority()
+        {
+            return IExecuteWithSignature<double>("getPriority", "()D");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -226,6 +234,14 @@ namespace Android.Adservices.Customaudience
         public Java.Util.List<Android.Adservices.Common.AdData> GetAds()
         {
             return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.AdData>>("getAds", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getComponentAds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Common.ComponentAdData> GetComponentAds()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.ComponentAdData>>("getComponentAds", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#writeToParcel(android.os.Parcel,int)"/>
@@ -314,6 +330,15 @@ namespace Android.Adservices.Customaudience
                 return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience.Builder>("setBuyer", "(Landroid/adservices/common/AdTechIdentifier;)Landroid/adservices/customaudience/CustomAudience$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.Builder.html#setComponentAds(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Android.Adservices.Customaudience.CustomAudience.Builder"/></returns>
+            public Android.Adservices.Customaudience.CustomAudience.Builder SetComponentAds(Java.Util.List<Android.Adservices.Common.ComponentAdData> arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience.Builder>("setComponentAds", "(Ljava/util/List;)Landroid/adservices/customaudience/CustomAudience$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.Builder.html#setDailyUpdateUri(android.net.Uri)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
@@ -339,6 +364,15 @@ namespace Android.Adservices.Customaudience
             public Android.Adservices.Customaudience.CustomAudience.Builder SetName(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience.Builder>("setName", "(Ljava/lang/String;)Landroid/adservices/customaudience/CustomAudience$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.Builder.html#setPriority(double)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="double"/></param>
+            /// <returns><see cref="Android.Adservices.Customaudience.CustomAudience.Builder"/></returns>
+            public Android.Adservices.Customaudience.CustomAudience.Builder SetPriority(double arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience.Builder>("setPriority", "(D)Landroid/adservices/customaudience/CustomAudience$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.Builder.html#setTrustedBiddingData(android.adservices.customaudience.TrustedBiddingData)"/>

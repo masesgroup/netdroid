@@ -29,6 +29,7 @@ namespace Android.Adservices.Common
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class AdServicesOutcomeReceiver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AdServicesOutcomeReceiver>
     {
         const string _bridgeClassName = "android.adservices.common.AdServicesOutcomeReceiver";
@@ -74,6 +75,7 @@ namespace Android.Adservices.Common
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="E"><see cref="Java.Lang.Throwable"/></typeparam>
+    [global::System.Obsolete()]
     public partial class AdServicesOutcomeReceiver<R, E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AdServicesOutcomeReceiver<R, E>> where E : Java.Lang.Throwable
     {
         const string _bridgeClassName = "android.adservices.common.AdServicesOutcomeReceiver";
@@ -137,6 +139,7 @@ namespace Android.Adservices.Common
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver.html#onResult(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
+        [global::System.Obsolete()]
         public void OnResult(object arg0)
         {
             IExecuteWithSignature("onResult", "(Ljava/lang/Object;)V", arg0);
@@ -145,6 +148,7 @@ namespace Android.Adservices.Common
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver.html#onError(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        [global::System.Obsolete()]
         public void OnError(Java.Lang.Throwable arg0)
         {
             IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
@@ -206,6 +210,7 @@ namespace Android.Adservices.Common
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver.html#onResult(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
+        [global::System.Obsolete()]
         public void OnResult(R arg0)
         {
             IExecuteWithSignature("onResult", "(Ljava/lang/Object;)V", arg0);
@@ -214,6 +219,7 @@ namespace Android.Adservices.Common
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver.html#onError(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
+        [global::System.Obsolete()]
         public void OnError(E arg0)
         {
             IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);

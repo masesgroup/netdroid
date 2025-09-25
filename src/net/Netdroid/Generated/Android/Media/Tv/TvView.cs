@@ -332,6 +332,13 @@ namespace Android.Media.Tv
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#resumePlayback()"/>
+        /// </summary>
+        public void ResumePlayback()
+        {
+            IExecuteWithSignature("resumePlayback", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#selectAudioPresentation(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -416,6 +423,14 @@ namespace Android.Media.Tv
             IExecuteWithSignature("setTvMessageEnabled", "(IZ)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#setVideoFrozen(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetVideoFrozen(bool arg0)
+        {
+            IExecuteWithSignature("setVideoFrozen", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#setZOrderMediaOverlay(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -430,6 +445,14 @@ namespace Android.Media.Tv
         public void SetZOrderOnTop(bool arg0)
         {
             IExecuteWithSignature("setZOrderOnTop", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#stopPlayback(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void StopPlayback(int arg0)
+        {
+            IExecuteWithSignature("stopPlayback", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#timeShiftPause()"/>
@@ -834,6 +857,15 @@ namespace Android.Media.Tv
             public void OnVideoAvailable(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("onVideoAvailable", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onVideoFreezeUpdated(java.lang.String,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="bool"/></param>
+            public void OnVideoFreezeUpdated(Java.Lang.String arg0, bool arg1)
+            {
+                IExecuteWithSignature("onVideoFreezeUpdated", "(Ljava/lang/String;Z)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onVideoSizeChanged(java.lang.String,int,int)"/>

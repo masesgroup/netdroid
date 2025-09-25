@@ -384,6 +384,16 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingRfcommWithServiceRecord", "(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothSocketSettings"/></param>
+        /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Android.Bluetooth.BluetoothServerSocket ListenUsingSocketSettings(Android.Bluetooth.BluetoothSocketSettings arg0)
+        {
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingSocketSettings", "(Landroid/bluetooth/BluetoothSocketSettings;)Landroid/bluetooth/BluetoothServerSocket;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeAdvertiser()"/>
         /// </summary>
         /// <returns><see cref="Android.Bluetooth.Le.BluetoothLeAdvertiser"/></returns>

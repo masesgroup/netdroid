@@ -145,12 +145,29 @@ namespace Android.App.Sdksandbox.Sdkprovider
             IExecuteWithSignature("loadSdk", "(Ljava/lang/String;Landroid/os/Bundle;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#registerSdkSandboxClientImportanceListener(java.util.concurrent.Executor,android.app.sdksandbox.sdkprovider.SdkSandboxClientImportanceListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.App.Sdksandbox.Sdkprovider.SdkSandboxClientImportanceListener"/></param>
+        public void RegisterSdkSandboxClientImportanceListener(Java.Util.Concurrent.Executor arg0, Android.App.Sdksandbox.Sdkprovider.SdkSandboxClientImportanceListener arg1)
+        {
+            IExecuteWithSignature("registerSdkSandboxClientImportanceListener", "(Ljava/util/concurrent/Executor;Landroid/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener;)V", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#unregisterSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Sdksandbox.Sdkprovider.SdkSandboxActivityHandler"/></param>
         public void UnregisterSdkSandboxActivityHandler(Android.App.Sdksandbox.Sdkprovider.SdkSandboxActivityHandler arg0)
         {
             IExecuteWithSignature("unregisterSdkSandboxActivityHandler", "(Landroid/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#unregisterSdkSandboxClientImportanceListener(android.app.sdksandbox.sdkprovider.SdkSandboxClientImportanceListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Sdksandbox.Sdkprovider.SdkSandboxClientImportanceListener"/></param>
+        public void UnregisterSdkSandboxClientImportanceListener(Android.App.Sdksandbox.Sdkprovider.SdkSandboxClientImportanceListener arg0)
+        {
+            IExecuteWithSignature("unregisterSdkSandboxClientImportanceListener", "(Landroid/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener;)V", arg0);
         }
     
         #endregion

@@ -613,6 +613,79 @@ namespace Android.Net.Wifi
         }
         #endregion
 
+        #region WifiStateChangedListener declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WifiStateChangedListener.html"/>
+        /// </summary>
+        public partial class WifiStateChangedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public WifiStateChangedListener() { InitializeHandlers(); }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public WifiStateChangedListener(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public WifiStateChangedListener(params object[] args) : base(args) { InitializeHandlers(); }
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.WifiManager_WifiStateChangedListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+            /// <inheritdoc />
+            public override string BridgeClassName => _bridgeClassName;
+        
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+        
+        #region WifiStateChangedListenerDirect declaration
+        /// <summary>
+        /// Direct override of <see cref="WifiStateChangedListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class WifiStateChangedListenerDirect : WifiStateChangedListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public WifiStateChangedListenerDirect() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public WifiStateChangedListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        
+            /// <inheritdoc/>
+            public override bool AutoInit => false;
+        
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+        
+            const string _bridgeClassName = "android.net.wifi.WifiManager$WifiStateChangedListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
         #region WpsCallback declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WpsCallback.html"/>
@@ -758,6 +831,12 @@ namespace Android.Net.Wifi
         public static int STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWN { get { if (!_STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWNReady) { _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWN"); _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWNReady = true; } return _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWNContent; } }
         private static int _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWNContent = default;
         private static bool _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECT"/>
+        /// </summary>
+        public static int STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECT { get { if (!_STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECTReady) { _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECTContent = SGetField<int>(LocalBridgeClazz, "STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECT"); _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECTReady = true; } return _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECTContent; } }
+        private static int _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECTContent = default;
+        private static bool _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_USER_REJECTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_DUPLICATE"/>
         /// </summary>
@@ -1904,6 +1983,15 @@ namespace Android.Net.Wifi
             IExecuteWithSignature("addSuggestionUserApprovalStatusListener", "(Ljava/util/concurrent/Executor;Landroid/net/wifi/WifiManager$SuggestionUserApprovalStatusListener;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#addWifiStateChangedListener(java.util.concurrent.Executor,android.net.wifi.WifiManager.WifiStateChangedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Wifi.WifiManager.WifiStateChangedListener"/></param>
+        public void AddWifiStateChangedListener(Java.Util.Concurrent.Executor arg0, Android.Net.Wifi.WifiManager.WifiStateChangedListener arg1)
+        {
+            IExecuteWithSignature("addWifiStateChangedListener", "(Ljava/util/concurrent/Executor;Landroid/net/wifi/WifiManager$WifiStateChangedListener;)V", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#allowAutojoinGlobal(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1919,6 +2007,14 @@ namespace Android.Net.Wifi
         public void CancelWps(Android.Net.Wifi.WifiManager.WpsCallback arg0)
         {
             IExecuteWithSignature("cancelWps", "(Landroid/net/wifi/WifiManager$WpsCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#disallowCurrentSuggestedNetwork(android.net.wifi.BlockingOption)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.BlockingOption"/></param>
+        public void DisallowCurrentSuggestedNetwork(Android.Net.Wifi.BlockingOption arg0)
+        {
+            IExecuteWithSignature("disallowCurrentSuggestedNetwork", "(Landroid/net/wifi/BlockingOption;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#flushPasspointAnqpCache()"/>
@@ -2050,6 +2146,14 @@ namespace Android.Net.Wifi
             IExecuteWithSignature("removeSuggestionUserApprovalStatusListener", "(Landroid/net/wifi/WifiManager$SuggestionUserApprovalStatusListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#removeWifiStateChangedListener(android.net.wifi.WifiManager.WifiStateChangedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.WifiManager.WifiStateChangedListener"/></param>
+        public void RemoveWifiStateChangedListener(Android.Net.Wifi.WifiManager.WifiStateChangedListener arg0)
+        {
+            IExecuteWithSignature("removeWifiStateChangedListener", "(Landroid/net/wifi/WifiManager$WifiStateChangedListener;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#reportCreateInterfaceImpact(int,boolean,java.util.concurrent.Executor,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -2125,6 +2229,16 @@ namespace Android.Net.Wifi
         public void StartLocalOnlyHotspot(Android.Net.Wifi.WifiManager.LocalOnlyHotspotCallback arg0, Android.Os.Handler arg1)
         {
             IExecuteWithSignature("startLocalOnlyHotspot", "(Landroid/net/wifi/WifiManager$LocalOnlyHotspotCallback;Landroid/os/Handler;)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#startLocalOnlyHotspotWithConfiguration(android.net.wifi.SoftApConfiguration,java.util.concurrent.Executor,android.net.wifi.WifiManager.LocalOnlyHotspotCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.SoftApConfiguration"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Wifi.WifiManager.LocalOnlyHotspotCallback"/></param>
+        public void StartLocalOnlyHotspotWithConfiguration(Android.Net.Wifi.SoftApConfiguration arg0, Java.Util.Concurrent.Executor arg1, Android.Net.Wifi.WifiManager.LocalOnlyHotspotCallback arg2)
+        {
+            IExecuteWithSignature("startLocalOnlyHotspotWithConfiguration", "(Landroid/net/wifi/SoftApConfiguration;Ljava/util/concurrent/Executor;Landroid/net/wifi/WifiManager$LocalOnlyHotspotCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#startWps(android.net.wifi.WpsInfo,android.net.wifi.WifiManager.WpsCallback)"/>
@@ -2997,6 +3111,106 @@ namespace Android.Net.Wifi
             public void SetWorkSource(Android.Os.WorkSource arg0)
             {
                 IExecuteWithSignature("setWorkSource", "(Landroid/os/WorkSource;)V", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region WifiStateChangedListener implementation
+        public partial class WifiStateChangedListener
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="WifiStateChangedListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onWifiStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnWifiStateChangedEventHandler));
+
+            }
+            
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WifiStateChangedListener.html#onWifiStateChanged()"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnWifiStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action OnOnWifiStateChanged { get; set; } = null;
+            
+            bool hasOverrideOnWifiStateChanged = true;
+            void OnWifiStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+            {
+                hasOverrideOnWifiStateChanged = true;
+                var methodToExecute = (OnOnWifiStateChanged != null) ? OnOnWifiStateChanged : OnWifiStateChanged;
+                methodToExecute.Invoke();
+                data.EventData.TypedEventData.HasOverride = hasOverrideOnWifiStateChanged;
+            }
+            
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WifiStateChangedListener.html#onWifiStateChanged()"/>
+            /// </summary>
+            public virtual void OnWifiStateChanged()
+            {
+                hasOverrideOnWifiStateChanged = false;
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region WifiStateChangedListenerDirect implementation
+        public partial class WifiStateChangedListenerDirect
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WifiStateChangedListener.html#onWifiStateChanged()"/>
+            /// </summary>
+            public override void OnWifiStateChanged()
+            {
+                IExecuteWithSignature("onWifiStateChanged", "()V");
             }
         
             #endregion

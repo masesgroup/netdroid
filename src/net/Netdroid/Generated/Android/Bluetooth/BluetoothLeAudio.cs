@@ -67,7 +67,7 @@ namespace Android.Bluetooth
     #endregion
 
     #region BluetoothLeAudio implementation
-    public partial class BluetoothLeAudio : Android.Bluetooth.IBluetoothProfile, Java.Lang.IAutoCloseable
+    public partial class BluetoothLeAudio : Java.Lang.IAutoCloseable, Android.Bluetooth.IBluetoothProfile
     {
         #region Constructors
     
@@ -75,13 +75,13 @@ namespace Android.Bluetooth
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Bluetooth.BluetoothLeAudio"/> to <see cref="Android.Bluetooth.BluetoothProfile"/>
-        /// </summary>
-        public static implicit operator Android.Bluetooth.BluetoothProfile(Android.Bluetooth.BluetoothLeAudio t) => t.Cast<Android.Bluetooth.BluetoothProfile>();
-        /// <summary>
         /// Converter from <see cref="Android.Bluetooth.BluetoothLeAudio"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Android.Bluetooth.BluetoothLeAudio t) => t.Cast<Java.Lang.AutoCloseable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Bluetooth.BluetoothLeAudio"/> to <see cref="Android.Bluetooth.BluetoothProfile"/>
+        /// </summary>
+        public static implicit operator Android.Bluetooth.BluetoothProfile(Android.Bluetooth.BluetoothLeAudio t) => t.Cast<Android.Bluetooth.BluetoothProfile>();
     
         #endregion
     

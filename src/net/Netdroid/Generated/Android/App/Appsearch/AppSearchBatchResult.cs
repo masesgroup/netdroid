@@ -253,6 +253,14 @@ namespace Android.App.Appsearch
         public partial class Builder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#%3Cinit%3E(android.app.appsearch.AppSearchBatchResult)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.AppSearchBatchResult"/></param>
+            public Builder(Android.App.Appsearch.AppSearchBatchResult arg0)
+                : base(arg0)
+            {
+            }
         
             #endregion
         
@@ -323,6 +331,14 @@ namespace Android.App.Appsearch
         public partial class Builder<KeyType, ValueType>
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchBatchResult.Builder.html#%3Cinit%3E(android.app.appsearch.AppSearchBatchResult)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.AppSearchBatchResult"/></param>
+            public Builder(Android.App.Appsearch.AppSearchBatchResult<KeyType, ValueType> arg0)
+                : base(arg0)
+            {
+            }
         
             #endregion
         

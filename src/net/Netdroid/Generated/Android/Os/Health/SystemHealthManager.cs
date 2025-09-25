@@ -113,6 +113,64 @@ namespace Android.Os.Health
             return IExecuteWithSignatureArray<Android.Os.Health.HealthStats>("takeUidSnapshots", "([I)[Landroid/os/health/HealthStats;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getCpuHeadroomCalculationWindowRange()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.Pair"/></returns>
+        public Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer> GetCpuHeadroomCalculationWindowRange()
+        {
+            return IExecuteWithSignature<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>>("getCpuHeadroomCalculationWindowRange", "()Landroid/util/Pair;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getGpuHeadroomCalculationWindowRange()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.Pair"/></returns>
+        public Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer> GetGpuHeadroomCalculationWindowRange()
+        {
+            return IExecuteWithSignature<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>>("getGpuHeadroomCalculationWindowRange", "()Landroid/util/Pair;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getCpuHeadroom(android.os.CpuHeadroomParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.CpuHeadroomParams"/></param>
+        /// <returns><see cref="float"/></returns>
+        public float GetCpuHeadroom(Android.Os.CpuHeadroomParams arg0)
+        {
+            return IExecuteWithSignature<float>("getCpuHeadroom", "(Landroid/os/CpuHeadroomParams;)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getGpuHeadroom(android.os.GpuHeadroomParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.GpuHeadroomParams"/></param>
+        /// <returns><see cref="float"/></returns>
+        public float GetGpuHeadroom(Android.Os.GpuHeadroomParams arg0)
+        {
+            return IExecuteWithSignature<float>("getGpuHeadroom", "(Landroid/os/GpuHeadroomParams;)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getMaxCpuHeadroomTidsSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxCpuHeadroomTidsSize()
+        {
+            return IExecuteWithSignature<int>("getMaxCpuHeadroomTidsSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getCpuHeadroomMinIntervalMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCpuHeadroomMinIntervalMillis()
+        {
+            return IExecuteWithSignature<long>("getCpuHeadroomMinIntervalMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getGpuHeadroomMinIntervalMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetGpuHeadroomMinIntervalMillis()
+        {
+            return IExecuteWithSignature<long>("getGpuHeadroomMinIntervalMillis", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getPowerMonitorReadings(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>

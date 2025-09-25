@@ -129,6 +129,7 @@ namespace Android.Service.Autofill
         /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#getFillEventHistory()"/>
         /// </summary>
         /// <returns><see cref="Android.Service.Autofill.FillEventHistory"/></returns>
+        [global::System.Obsolete()]
         public Android.Service.Autofill.FillEventHistory GetFillEventHistory()
         {
             return IExecuteWithSignature<Android.Service.Autofill.FillEventHistory>("getFillEventHistory", "()Landroid/service/autofill/FillEventHistory;");
@@ -154,6 +155,14 @@ namespace Android.Service.Autofill
         public void OnSavedDatasetsInfoRequest(Android.Service.Autofill.SavedDatasetsInfoCallback arg0)
         {
             IExecuteWithSignature("onSavedDatasetsInfoRequest", "(Landroid/service/autofill/SavedDatasetsInfoCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/AutofillService.html#onSessionDestroyed(android.service.autofill.FillEventHistory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Service.Autofill.FillEventHistory"/></param>
+        public void OnSessionDestroyed(Android.Service.Autofill.FillEventHistory arg0)
+        {
+            IExecuteWithSignature("onSessionDestroyed", "(Landroid/service/autofill/FillEventHistory;)V", arg0);
         }
     
         #endregion

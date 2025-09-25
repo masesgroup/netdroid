@@ -121,6 +121,12 @@ namespace Android.App.Appsearch
     
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_ALREADY_EXISTS"/>
+        /// </summary>
+        public static int RESULT_ALREADY_EXISTS { get { if (!_RESULT_ALREADY_EXISTSReady) { _RESULT_ALREADY_EXISTSContent = SGetField<int>(LocalBridgeClazz, "RESULT_ALREADY_EXISTS"); _RESULT_ALREADY_EXISTSReady = true; } return _RESULT_ALREADY_EXISTSContent; } }
+        private static int _RESULT_ALREADY_EXISTSContent = default;
+        private static bool _RESULT_ALREADY_EXISTSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_DENIED"/>
         /// </summary>
         public static int RESULT_DENIED { get { if (!_RESULT_DENIEDReady) { _RESULT_DENIEDContent = SGetField<int>(LocalBridgeClazz, "RESULT_DENIED"); _RESULT_DENIEDReady = true; } return _RESULT_DENIEDContent; } }
@@ -272,6 +278,12 @@ namespace Android.App.Appsearch
         #endregion
     
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_ALREADY_EXISTS"/>
+        /// </summary>
+        public static int RESULT_ALREADY_EXISTS { get { if (!_RESULT_ALREADY_EXISTSReady) { _RESULT_ALREADY_EXISTSContent = SGetField<int>(LocalBridgeClazz, "RESULT_ALREADY_EXISTS"); _RESULT_ALREADY_EXISTSReady = true; } return _RESULT_ALREADY_EXISTSContent; } }
+        private static int _RESULT_ALREADY_EXISTSContent = default;
+        private static bool _RESULT_ALREADY_EXISTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_DENIED"/>
         /// </summary>

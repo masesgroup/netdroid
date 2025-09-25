@@ -62,6 +62,47 @@ namespace Android.Bluetooth
         public override bool IsBridgeStatic => false;
     
         // TODO: complete the class
+        #region BluetoothAddress declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.BluetoothAddress.html"/>
+        /// </summary>
+        public partial class BluetoothAddress : Android.Os.Parcelable
+        {
+            const string _bridgeClassName = "android.bluetooth.BluetoothDevice$BluetoothAddress";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public BluetoothAddress() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public BluetoothAddress(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public BluetoothAddress(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
     
     }
     #endregion
@@ -150,6 +191,24 @@ namespace Android.Bluetooth
         public static int DEVICE_TYPE_UNKNOWN { get { if (!_DEVICE_TYPE_UNKNOWNReady) { _DEVICE_TYPE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "DEVICE_TYPE_UNKNOWN"); _DEVICE_TYPE_UNKNOWNReady = true; } return _DEVICE_TYPE_UNKNOWNContent; } }
         private static int _DEVICE_TYPE_UNKNOWNContent = default;
         private static bool _DEVICE_TYPE_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ENCRYPTION_ALGORITHM_AES"/>
+        /// </summary>
+        public static int ENCRYPTION_ALGORITHM_AES { get { if (!_ENCRYPTION_ALGORITHM_AESReady) { _ENCRYPTION_ALGORITHM_AESContent = SGetField<int>(LocalBridgeClazz, "ENCRYPTION_ALGORITHM_AES"); _ENCRYPTION_ALGORITHM_AESReady = true; } return _ENCRYPTION_ALGORITHM_AESContent; } }
+        private static int _ENCRYPTION_ALGORITHM_AESContent = default;
+        private static bool _ENCRYPTION_ALGORITHM_AESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ENCRYPTION_ALGORITHM_E0"/>
+        /// </summary>
+        public static int ENCRYPTION_ALGORITHM_E0 { get { if (!_ENCRYPTION_ALGORITHM_E0Ready) { _ENCRYPTION_ALGORITHM_E0Content = SGetField<int>(LocalBridgeClazz, "ENCRYPTION_ALGORITHM_E0"); _ENCRYPTION_ALGORITHM_E0Ready = true; } return _ENCRYPTION_ALGORITHM_E0Content; } }
+        private static int _ENCRYPTION_ALGORITHM_E0Content = default;
+        private static bool _ENCRYPTION_ALGORITHM_E0Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ENCRYPTION_ALGORITHM_NONE"/>
+        /// </summary>
+        public static int ENCRYPTION_ALGORITHM_NONE { get { if (!_ENCRYPTION_ALGORITHM_NONEReady) { _ENCRYPTION_ALGORITHM_NONEContent = SGetField<int>(LocalBridgeClazz, "ENCRYPTION_ALGORITHM_NONE"); _ENCRYPTION_ALGORITHM_NONEReady = true; } return _ENCRYPTION_ALGORITHM_NONEContent; } }
+        private static int _ENCRYPTION_ALGORITHM_NONEContent = default;
+        private static bool _ENCRYPTION_ALGORITHM_NONEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ERROR"/>
         /// </summary>
@@ -277,11 +336,23 @@ namespace Android.Bluetooth
         private static Java.Lang.String _ACTION_CLASS_CHANGEDContent = default;
         private static bool _ACTION_CLASS_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ENCRYPTION_CHANGE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_ENCRYPTION_CHANGE { get { if (!_ACTION_ENCRYPTION_CHANGEReady) { _ACTION_ENCRYPTION_CHANGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_ENCRYPTION_CHANGE"); _ACTION_ENCRYPTION_CHANGEReady = true; } return _ACTION_ENCRYPTION_CHANGEContent; } }
+        private static Java.Lang.String _ACTION_ENCRYPTION_CHANGEContent = default;
+        private static bool _ACTION_ENCRYPTION_CHANGEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_FOUND"/>
         /// </summary>
         public static Java.Lang.String ACTION_FOUND { get { if (!_ACTION_FOUNDReady) { _ACTION_FOUNDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_FOUND"); _ACTION_FOUNDReady = true; } return _ACTION_FOUNDContent; } }
         private static Java.Lang.String _ACTION_FOUNDContent = default;
         private static bool _ACTION_FOUNDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_KEY_MISSING"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_KEY_MISSING { get { if (!_ACTION_KEY_MISSINGReady) { _ACTION_KEY_MISSINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_KEY_MISSING"); _ACTION_KEY_MISSINGReady = true; } return _ACTION_KEY_MISSINGContent; } }
+        private static Java.Lang.String _ACTION_KEY_MISSINGContent = default;
+        private static bool _ACTION_KEY_MISSINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_NAME_CHANGED"/>
         /// </summary>
@@ -319,11 +390,35 @@ namespace Android.Bluetooth
         private static Java.Lang.String _EXTRA_DEVICEContent = default;
         private static bool _EXTRA_DEVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_ENCRYPTION_ALGORITHM"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_ENCRYPTION_ALGORITHM { get { if (!_EXTRA_ENCRYPTION_ALGORITHMReady) { _EXTRA_ENCRYPTION_ALGORITHMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ENCRYPTION_ALGORITHM"); _EXTRA_ENCRYPTION_ALGORITHMReady = true; } return _EXTRA_ENCRYPTION_ALGORITHMContent; } }
+        private static Java.Lang.String _EXTRA_ENCRYPTION_ALGORITHMContent = default;
+        private static bool _EXTRA_ENCRYPTION_ALGORITHMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_ENCRYPTION_ENABLED"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_ENCRYPTION_ENABLED { get { if (!_EXTRA_ENCRYPTION_ENABLEDReady) { _EXTRA_ENCRYPTION_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ENCRYPTION_ENABLED"); _EXTRA_ENCRYPTION_ENABLEDReady = true; } return _EXTRA_ENCRYPTION_ENABLEDContent; } }
+        private static Java.Lang.String _EXTRA_ENCRYPTION_ENABLEDContent = default;
+        private static bool _EXTRA_ENCRYPTION_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_ENCRYPTION_STATUS"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_ENCRYPTION_STATUS { get { if (!_EXTRA_ENCRYPTION_STATUSReady) { _EXTRA_ENCRYPTION_STATUSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ENCRYPTION_STATUS"); _EXTRA_ENCRYPTION_STATUSReady = true; } return _EXTRA_ENCRYPTION_STATUSContent; } }
+        private static Java.Lang.String _EXTRA_ENCRYPTION_STATUSContent = default;
+        private static bool _EXTRA_ENCRYPTION_STATUSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_IS_COORDINATED_SET_MEMBER"/>
         /// </summary>
         public static Java.Lang.String EXTRA_IS_COORDINATED_SET_MEMBER { get { if (!_EXTRA_IS_COORDINATED_SET_MEMBERReady) { _EXTRA_IS_COORDINATED_SET_MEMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_IS_COORDINATED_SET_MEMBER"); _EXTRA_IS_COORDINATED_SET_MEMBERReady = true; } return _EXTRA_IS_COORDINATED_SET_MEMBERContent; } }
         private static Java.Lang.String _EXTRA_IS_COORDINATED_SET_MEMBERContent = default;
         private static bool _EXTRA_IS_COORDINATED_SET_MEMBERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_KEY_SIZE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_KEY_SIZE { get { if (!_EXTRA_KEY_SIZEReady) { _EXTRA_KEY_SIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_KEY_SIZE"); _EXTRA_KEY_SIZEReady = true; } return _EXTRA_KEY_SIZEContent; } }
+        private static Java.Lang.String _EXTRA_KEY_SIZEContent = default;
+        private static bool _EXTRA_KEY_SIZEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_NAME"/>
         /// </summary>
@@ -381,6 +476,14 @@ namespace Android.Bluetooth
         public Android.Bluetooth.BluetoothClass GetBluetoothClass()
         {
             return IExecuteWithSignature<Android.Bluetooth.BluetoothClass>("getBluetoothClass", "()Landroid/bluetooth/BluetoothClass;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getIdentityAddressWithType()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Bluetooth.BluetoothDevice.BluetoothAddress"/></returns>
+        public Android.Bluetooth.BluetoothDevice.BluetoothAddress GetIdentityAddressWithType()
+        {
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice.BluetoothAddress>("getIdentityAddressWithType", "()Landroid/bluetooth/BluetoothDevice$BluetoothAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int,int,android.os.Handler)"/>
@@ -471,6 +574,16 @@ namespace Android.Bluetooth
         public Android.Bluetooth.BluetoothSocket CreateRfcommSocketToServiceRecord(Java.Util.UUID arg0)
         {
             return IExecuteWithSignature<Android.Bluetooth.BluetoothSocket>("createRfcommSocketToServiceRecord", "(Ljava/util/UUID;)Landroid/bluetooth/BluetoothSocket;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothSocketSettings"/></param>
+        /// <returns><see cref="Android.Bluetooth.BluetoothSocket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Android.Bluetooth.BluetoothSocket CreateUsingSocketSettings(Android.Bluetooth.BluetoothSocketSettings arg0)
+        {
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothSocket>("createUsingSocketSettings", "(Landroid/bluetooth/BluetoothSocketSettings;)Landroid/bluetooth/BluetoothSocket;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getUuids()"/>
@@ -592,6 +705,85 @@ namespace Android.Bluetooth
         #endregion
     
         #region Nested classes
+        #region BluetoothAddress implementation
+        public partial class BluetoothAddress
+        {
+            #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.BluetoothAddress.html#%3Cinit%3E(java.lang.String,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public BluetoothAddress(Java.Lang.String arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.BluetoothAddress.html#CREATOR"/>
+            /// </summary>
+            public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+            private static Android.Os.Parcelable.Creator _CREATORContent = default;
+            private static bool _CREATORReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.BluetoothAddress.html#describeContents()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int DescribeContents()
+            {
+                return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.BluetoothAddress.html#getAddressType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetAddressType()
+            {
+                return IExecuteWithSignature<int>("getAddressType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.BluetoothAddress.html#getAddress()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetAddress()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.BluetoothAddress.html#writeToParcel(android.os.Parcel,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+            {
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
     
         #endregion
     

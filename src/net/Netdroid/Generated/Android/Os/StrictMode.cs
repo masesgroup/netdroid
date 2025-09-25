@@ -1020,6 +1020,14 @@ namespace Android.Os
                     return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectAll");
                 }
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectBlockedBackgroundActivityLaunch()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
+                public Android.Os.StrictMode.VmPolicy.Builder DetectBlockedBackgroundActivityLaunch()
+                {
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectBlockedBackgroundActivityLaunch");
+                }
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#detectCleartextNetwork()"/>
                 /// </summary>
                 /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
@@ -1114,6 +1122,14 @@ namespace Android.Os
                 public Android.Os.StrictMode.VmPolicy.Builder DetectUntaggedSockets()
                 {
                     return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("detectUntaggedSockets");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#ignoreBlockedBackgroundActivityLaunch()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Os.StrictMode.VmPolicy.Builder"/></returns>
+                public Android.Os.StrictMode.VmPolicy.Builder IgnoreBlockedBackgroundActivityLaunch()
+                {
+                    return IExecute<Android.Os.StrictMode.VmPolicy.Builder>("ignoreBlockedBackgroundActivityLaunch");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/StrictMode.VmPolicy.Builder.html#penaltyDeath()"/>

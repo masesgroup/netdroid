@@ -281,6 +281,12 @@ namespace Android
             private static Java.Lang.String _ANSWER_PHONE_CALLSContent = default;
             private static bool _ANSWER_PHONE_CALLSReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#APPLY_PICTURE_PROFILE"/>
+            /// </summary>
+            public static Java.Lang.String APPLY_PICTURE_PROFILE { get { if (!_APPLY_PICTURE_PROFILEReady) { _APPLY_PICTURE_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "APPLY_PICTURE_PROFILE"); _APPLY_PICTURE_PROFILEReady = true; } return _APPLY_PICTURE_PROFILEContent; } }
+            private static Java.Lang.String _APPLY_PICTURE_PROFILEContent = default;
+            private static bool _APPLY_PICTURE_PROFILEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#BATTERY_STATS"/>
             /// </summary>
             public static Java.Lang.String BATTERY_STATS { get { if (!_BATTERY_STATSReady) { _BATTERY_STATSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BATTERY_STATS"); _BATTERY_STATSReady = true; } return _BATTERY_STATSContent; } }
@@ -292,6 +298,12 @@ namespace Android
             public static Java.Lang.String BIND_ACCESSIBILITY_SERVICE { get { if (!_BIND_ACCESSIBILITY_SERVICEReady) { _BIND_ACCESSIBILITY_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BIND_ACCESSIBILITY_SERVICE"); _BIND_ACCESSIBILITY_SERVICEReady = true; } return _BIND_ACCESSIBILITY_SERVICEContent; } }
             private static Java.Lang.String _BIND_ACCESSIBILITY_SERVICEContent = default;
             private static bool _BIND_ACCESSIBILITY_SERVICEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#BIND_APP_FUNCTION_SERVICE"/>
+            /// </summary>
+            public static Java.Lang.String BIND_APP_FUNCTION_SERVICE { get { if (!_BIND_APP_FUNCTION_SERVICEReady) { _BIND_APP_FUNCTION_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BIND_APP_FUNCTION_SERVICE"); _BIND_APP_FUNCTION_SERVICEReady = true; } return _BIND_APP_FUNCTION_SERVICEContent; } }
+            private static Java.Lang.String _BIND_APP_FUNCTION_SERVICEContent = default;
+            private static bool _BIND_APP_FUNCTION_SERVICEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#BIND_APPWIDGET"/>
             /// </summary>
@@ -444,6 +456,12 @@ namespace Android
             public static Java.Lang.String BIND_TEXT_SERVICE { get { if (!_BIND_TEXT_SERVICEReady) { _BIND_TEXT_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BIND_TEXT_SERVICE"); _BIND_TEXT_SERVICEReady = true; } return _BIND_TEXT_SERVICEContent; } }
             private static Java.Lang.String _BIND_TEXT_SERVICEContent = default;
             private static bool _BIND_TEXT_SERVICEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#BIND_TV_AD_SERVICE"/>
+            /// </summary>
+            public static Java.Lang.String BIND_TV_AD_SERVICE { get { if (!_BIND_TV_AD_SERVICEReady) { _BIND_TV_AD_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BIND_TV_AD_SERVICE"); _BIND_TV_AD_SERVICEReady = true; } return _BIND_TV_AD_SERVICEContent; } }
+            private static Java.Lang.String _BIND_TV_AD_SERVICEContent = default;
+            private static bool _BIND_TV_AD_SERVICEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#BIND_TV_INPUT"/>
             /// </summary>
@@ -715,6 +733,12 @@ namespace Android
             private static Java.Lang.String _EXECUTE_APP_ACTIONContent = default;
             private static bool _EXECUTE_APP_ACTIONReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#EXECUTE_APP_FUNCTIONS"/>
+            /// </summary>
+            public static Java.Lang.String EXECUTE_APP_FUNCTIONS { get { if (!_EXECUTE_APP_FUNCTIONSReady) { _EXECUTE_APP_FUNCTIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXECUTE_APP_FUNCTIONS"); _EXECUTE_APP_FUNCTIONSReady = true; } return _EXECUTE_APP_FUNCTIONSContent; } }
+            private static Java.Lang.String _EXECUTE_APP_FUNCTIONSContent = default;
+            private static bool _EXECUTE_APP_FUNCTIONSReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#EXPAND_STATUS_BAR"/>
             /// </summary>
             public static Java.Lang.String EXPAND_STATUS_BAR { get { if (!_EXPAND_STATUS_BARReady) { _EXPAND_STATUS_BARContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXPAND_STATUS_BAR"); _EXPAND_STATUS_BARReady = true; } return _EXPAND_STATUS_BARContent; } }
@@ -961,6 +985,12 @@ namespace Android
             public static Java.Lang.String MANAGE_DEVICE_POLICY_AIRPLANE_MODE { get { if (!_MANAGE_DEVICE_POLICY_AIRPLANE_MODEReady) { _MANAGE_DEVICE_POLICY_AIRPLANE_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MANAGE_DEVICE_POLICY_AIRPLANE_MODE"); _MANAGE_DEVICE_POLICY_AIRPLANE_MODEReady = true; } return _MANAGE_DEVICE_POLICY_AIRPLANE_MODEContent; } }
             private static Java.Lang.String _MANAGE_DEVICE_POLICY_AIRPLANE_MODEContent = default;
             private static bool _MANAGE_DEVICE_POLICY_AIRPLANE_MODEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_APP_FUNCTIONS"/>
+            /// </summary>
+            public static Java.Lang.String MANAGE_DEVICE_POLICY_APP_FUNCTIONS { get { if (!_MANAGE_DEVICE_POLICY_APP_FUNCTIONSReady) { _MANAGE_DEVICE_POLICY_APP_FUNCTIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MANAGE_DEVICE_POLICY_APP_FUNCTIONS"); _MANAGE_DEVICE_POLICY_APP_FUNCTIONSReady = true; } return _MANAGE_DEVICE_POLICY_APP_FUNCTIONSContent; } }
+            private static Java.Lang.String _MANAGE_DEVICE_POLICY_APP_FUNCTIONSContent = default;
+            private static bool _MANAGE_DEVICE_POLICY_APP_FUNCTIONSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_APP_RESTRICTIONS"/>
             /// </summary>
@@ -1358,6 +1388,12 @@ namespace Android
             private static Java.Lang.String _MANAGE_DEVICE_POLICY_SYSTEM_UPDATESContent = default;
             private static bool _MANAGE_DEVICE_POLICY_SYSTEM_UPDATESReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_THREAD_NETWORK"/>
+            /// </summary>
+            public static Java.Lang.String MANAGE_DEVICE_POLICY_THREAD_NETWORK { get { if (!_MANAGE_DEVICE_POLICY_THREAD_NETWORKReady) { _MANAGE_DEVICE_POLICY_THREAD_NETWORKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MANAGE_DEVICE_POLICY_THREAD_NETWORK"); _MANAGE_DEVICE_POLICY_THREAD_NETWORKReady = true; } return _MANAGE_DEVICE_POLICY_THREAD_NETWORKContent; } }
+            private static Java.Lang.String _MANAGE_DEVICE_POLICY_THREAD_NETWORKContent = default;
+            private static bool _MANAGE_DEVICE_POLICY_THREAD_NETWORKReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_TIME"/>
             /// </summary>
             public static Java.Lang.String MANAGE_DEVICE_POLICY_TIME { get { if (!_MANAGE_DEVICE_POLICY_TIMEReady) { _MANAGE_DEVICE_POLICY_TIMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MANAGE_DEVICE_POLICY_TIME"); _MANAGE_DEVICE_POLICY_TIMEReady = true; } return _MANAGE_DEVICE_POLICY_TIMEContent; } }
@@ -1564,11 +1600,23 @@ namespace Android
             private static Java.Lang.String _PROVIDE_REMOTE_CREDENTIALSContent = default;
             private static bool _PROVIDE_REMOTE_CREDENTIALSReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#QUERY_ADVANCED_PROTECTION_MODE"/>
+            /// </summary>
+            public static Java.Lang.String QUERY_ADVANCED_PROTECTION_MODE { get { if (!_QUERY_ADVANCED_PROTECTION_MODEReady) { _QUERY_ADVANCED_PROTECTION_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "QUERY_ADVANCED_PROTECTION_MODE"); _QUERY_ADVANCED_PROTECTION_MODEReady = true; } return _QUERY_ADVANCED_PROTECTION_MODEContent; } }
+            private static Java.Lang.String _QUERY_ADVANCED_PROTECTION_MODEContent = default;
+            private static bool _QUERY_ADVANCED_PROTECTION_MODEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#QUERY_ALL_PACKAGES"/>
             /// </summary>
             public static Java.Lang.String QUERY_ALL_PACKAGES { get { if (!_QUERY_ALL_PACKAGESReady) { _QUERY_ALL_PACKAGESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "QUERY_ALL_PACKAGES"); _QUERY_ALL_PACKAGESReady = true; } return _QUERY_ALL_PACKAGESContent; } }
             private static Java.Lang.String _QUERY_ALL_PACKAGESContent = default;
             private static bool _QUERY_ALL_PACKAGESReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#RANGING"/>
+            /// </summary>
+            public static Java.Lang.String RANGING { get { if (!_RANGINGReady) { _RANGINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RANGING"); _RANGINGReady = true; } return _RANGINGContent; } }
+            private static Java.Lang.String _RANGINGContent = default;
+            private static bool _RANGINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#READ_ASSISTANT_APP_SEARCH_DATA"/>
             /// </summary>
@@ -1593,6 +1641,12 @@ namespace Android
             public static Java.Lang.String READ_CALL_LOG { get { if (!_READ_CALL_LOGReady) { _READ_CALL_LOGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_CALL_LOG"); _READ_CALL_LOGReady = true; } return _READ_CALL_LOGContent; } }
             private static Java.Lang.String _READ_CALL_LOGContent = default;
             private static bool _READ_CALL_LOGReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#READ_COLOR_ZONES"/>
+            /// </summary>
+            public static Java.Lang.String READ_COLOR_ZONES { get { if (!_READ_COLOR_ZONESReady) { _READ_COLOR_ZONESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_COLOR_ZONES"); _READ_COLOR_ZONESReady = true; } return _READ_COLOR_ZONESContent; } }
+            private static Java.Lang.String _READ_COLOR_ZONESContent = default;
+            private static bool _READ_COLOR_ZONESReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#READ_CONTACTS"/>
             /// </summary>
@@ -1696,6 +1750,12 @@ namespace Android
             public static Java.Lang.String READ_SYNC_STATS { get { if (!_READ_SYNC_STATSReady) { _READ_SYNC_STATSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_SYNC_STATS"); _READ_SYNC_STATSReady = true; } return _READ_SYNC_STATSContent; } }
             private static Java.Lang.String _READ_SYNC_STATSContent = default;
             private static bool _READ_SYNC_STATSReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#READ_SYSTEM_PREFERENCES"/>
+            /// </summary>
+            public static Java.Lang.String READ_SYSTEM_PREFERENCES { get { if (!_READ_SYSTEM_PREFERENCESReady) { _READ_SYSTEM_PREFERENCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_SYSTEM_PREFERENCES"); _READ_SYSTEM_PREFERENCESReady = true; } return _READ_SYSTEM_PREFERENCESContent; } }
+            private static Java.Lang.String _READ_SYSTEM_PREFERENCESContent = default;
+            private static bool _READ_SYSTEM_PREFERENCESReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#READ_VOICEMAIL"/>
             /// </summary>
@@ -1828,6 +1888,12 @@ namespace Android
             public static Java.Lang.String REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE { get { if (!_REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCEReady) { _REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE"); _REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCEReady = true; } return _REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCEContent; } }
             private static Java.Lang.String _REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCEContent = default;
             private static bool _REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#REQUEST_OBSERVE_DEVICE_UUID_PRESENCE"/>
+            /// </summary>
+            public static Java.Lang.String REQUEST_OBSERVE_DEVICE_UUID_PRESENCE { get { if (!_REQUEST_OBSERVE_DEVICE_UUID_PRESENCEReady) { _REQUEST_OBSERVE_DEVICE_UUID_PRESENCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "REQUEST_OBSERVE_DEVICE_UUID_PRESENCE"); _REQUEST_OBSERVE_DEVICE_UUID_PRESENCEReady = true; } return _REQUEST_OBSERVE_DEVICE_UUID_PRESENCEContent; } }
+            private static Java.Lang.String _REQUEST_OBSERVE_DEVICE_UUID_PRESENCEContent = default;
+            private static bool _REQUEST_OBSERVE_DEVICE_UUID_PRESENCEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#REQUEST_PASSWORD_COMPLEXITY"/>
             /// </summary>
@@ -1994,6 +2060,12 @@ namespace Android
             private static Java.Lang.String _TURN_SCREEN_ONContent = default;
             private static bool _TURN_SCREEN_ONReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#TV_IMPLICIT_ENTER_PIP"/>
+            /// </summary>
+            public static Java.Lang.String TV_IMPLICIT_ENTER_PIP { get { if (!_TV_IMPLICIT_ENTER_PIPReady) { _TV_IMPLICIT_ENTER_PIPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TV_IMPLICIT_ENTER_PIP"); _TV_IMPLICIT_ENTER_PIPReady = true; } return _TV_IMPLICIT_ENTER_PIPContent; } }
+            private static Java.Lang.String _TV_IMPLICIT_ENTER_PIPContent = default;
+            private static bool _TV_IMPLICIT_ENTER_PIPReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#UNINSTALL_SHORTCUT"/>
             /// </summary>
             public static Java.Lang.String UNINSTALL_SHORTCUT { get { if (!_UNINSTALL_SHORTCUTReady) { _UNINSTALL_SHORTCUTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "UNINSTALL_SHORTCUT"); _UNINSTALL_SHORTCUTReady = true; } return _UNINSTALL_SHORTCUTContent; } }
@@ -2120,6 +2192,12 @@ namespace Android
             public static Java.Lang.String WRITE_SYNC_SETTINGS { get { if (!_WRITE_SYNC_SETTINGSReady) { _WRITE_SYNC_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_SYNC_SETTINGS"); _WRITE_SYNC_SETTINGSReady = true; } return _WRITE_SYNC_SETTINGSContent; } }
             private static Java.Lang.String _WRITE_SYNC_SETTINGSContent = default;
             private static bool _WRITE_SYNC_SETTINGSReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#WRITE_SYSTEM_PREFERENCES"/>
+            /// </summary>
+            public static Java.Lang.String WRITE_SYSTEM_PREFERENCES { get { if (!_WRITE_SYSTEM_PREFERENCESReady) { _WRITE_SYSTEM_PREFERENCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_SYSTEM_PREFERENCES"); _WRITE_SYSTEM_PREFERENCESReady = true; } return _WRITE_SYSTEM_PREFERENCESContent; } }
+            private static Java.Lang.String _WRITE_SYSTEM_PREFERENCESContent = default;
+            private static bool _WRITE_SYSTEM_PREFERENCESReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#WRITE_VOICEMAIL"/>
             /// </summary>

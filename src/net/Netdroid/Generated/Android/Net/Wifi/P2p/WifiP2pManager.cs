@@ -1287,6 +1287,12 @@ namespace Android.Net.Wifi.P2p
         private static int _GROUP_CREATION_FAILURE_REASON_USER_REJECTEDContent = default;
         private static bool _GROUP_CREATION_FAILURE_REASON_USER_REJECTEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#NO_PERMISSION"/>
+        /// </summary>
+        public static int NO_PERMISSION { get { if (!_NO_PERMISSIONReady) { _NO_PERMISSIONContent = SGetField<int>(LocalBridgeClazz, "NO_PERMISSION"); _NO_PERMISSIONReady = true; } return _NO_PERMISSIONContent; } }
+        private static int _NO_PERMISSIONContent = default;
+        private static bool _NO_PERMISSIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#NO_SERVICE_REQUESTS"/>
         /// </summary>
         public static int NO_SERVICE_REQUESTS { get { if (!_NO_SERVICE_REQUESTSReady) { _NO_SERVICE_REQUESTSContent = SGetField<int>(LocalBridgeClazz, "NO_SERVICE_REQUESTS"); _NO_SERVICE_REQUESTSReady = true; } return _NO_SERVICE_REQUESTSContent; } }
@@ -1506,12 +1512,28 @@ namespace Android.Net.Wifi.P2p
             return IExecuteWithSignature<bool>("isGroupOwnerIPv6LinkLocalAddressProvided", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isPccModeSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPccModeSupported()
+        {
+            return IExecuteWithSignature<bool>("isPccModeSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isSetVendorElementsSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSetVendorElementsSupported()
         {
             return IExecuteWithSignature<bool>("isSetVendorElementsSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isWiFiDirectR2Supported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWiFiDirectR2Supported()
+        {
+            return IExecuteWithSignature<bool>("isWiFiDirectR2Supported", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addExternalApprover(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ExternalApproverRequestListener)"/>
@@ -1637,6 +1659,16 @@ namespace Android.Net.Wifi.P2p
             IExecuteWithSignature("discoverServices", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverUsdBasedServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pUsdBasedServiceDiscoveryConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pUsdBasedServiceDiscoveryConfig"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
+        public void DiscoverUsdBasedServices(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pUsdBasedServiceDiscoveryConfig arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
+        {
+            IExecuteWithSignature("discoverUsdBasedServices", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getListenState(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.concurrent.Executor,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
@@ -1721,6 +1753,16 @@ namespace Android.Net.Wifi.P2p
         public void RequestDeviceInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.DeviceInfoListener arg1)
         {
             IExecuteWithSignature("requestDeviceInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DeviceInfoListener;)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDirInfo(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void RequestDirInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Net.Wifi.P2p.WifiP2pDirInfo, Java.Lang.Exception> arg2)
+        {
+            IExecuteWithSignature("requestDirInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDiscoveryState(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DiscoveryStateListener)"/>
@@ -1858,6 +1900,17 @@ namespace Android.Net.Wifi.P2p
             IExecuteWithSignature("startPeerDiscovery", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pDiscoveryConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#startUsdBasedLocalServiceAdvertisement(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pUsdBasedLocalServiceAdvertisementConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pUsdBasedLocalServiceAdvertisementConfig"/></param>
+        /// <param name="arg3"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
+        public void StartUsdBasedLocalServiceAdvertisement(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo arg1, Android.Net.Wifi.P2p.WifiP2pUsdBasedLocalServiceAdvertisementConfig arg2, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg3)
+        {
+            IExecuteWithSignature("startUsdBasedLocalServiceAdvertisement", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;Landroid/net/wifi/p2p/WifiP2pUsdBasedLocalServiceAdvertisementConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
@@ -1882,6 +1935,17 @@ namespace Android.Net.Wifi.P2p
         public void UnregisterWifiP2pListener(Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener arg0)
         {
             IExecuteWithSignature("unregisterWifiP2pListener", "(Landroid/net/wifi/p2p/WifiP2pManager$WifiP2pListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#validateDirInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pDirInfo,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pDirInfo"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void ValidateDirInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pDirInfo arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Java.Lang.Boolean, Java.Lang.Exception> arg3)
+        {
+            IExecuteWithSignature("validateDirInfo", "(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pDirInfo;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
     
         #endregion
@@ -3361,6 +3425,7 @@ namespace Android.Net.Wifi.P2p
             protected virtual void InitializeHandlers()
             {
                 AddEventHandler("onServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnServiceAvailableEventHandler));
+                AddEventHandler("onUsdBasedServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUsdBasedServiceAvailableEventHandler));
 
             }
             
@@ -3388,6 +3453,42 @@ namespace Android.Net.Wifi.P2p
             public virtual void OnServiceAvailable(int arg0, byte[] arg1, Android.Net.Wifi.P2p.WifiP2pDevice arg2)
             {
                 hasOverrideOnServiceAvailable = false;
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onUsdBasedServiceAvailable(android.net.wifi.p2p.WifiP2pDevice,android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnUsdBasedServiceAvailableDefault(Android.Net.Wifi.P2p.WifiP2pDevice arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse arg1)
+            {
+                IExecuteWithSignature("onUsdBasedServiceAvailableDefault", "(Landroid/net/wifi/p2p/WifiP2pDevice;Landroid/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse;)V", arg0, arg1);
+            }
+            
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onUsdBasedServiceAvailable(android.net.wifi.p2p.WifiP2pDevice,android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnUsdBasedServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDevice, Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse> OnOnUsdBasedServiceAvailable { get; set; } = null;
+            
+            bool hasOverrideOnUsdBasedServiceAvailable = true;
+            void OnUsdBasedServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+            {
+                hasOverrideOnUsdBasedServiceAvailable = true;
+                var methodToExecute = (OnOnUsdBasedServiceAvailable != null) ? OnOnUsdBasedServiceAvailable : OnUsdBasedServiceAvailable;
+                methodToExecute.Invoke(data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pDevice>(0), data.EventData.GetAt<Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse>(1));
+                data.EventData.TypedEventData.HasOverride = hasOverrideOnUsdBasedServiceAvailable;
+            }
+            
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onUsdBasedServiceAvailable(android.net.wifi.p2p.WifiP2pDevice,android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnUsdBasedServiceAvailableDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnUsdBasedServiceAvailable(Android.Net.Wifi.P2p.WifiP2pDevice arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse arg1)
+            {
+                hasOverrideOnUsdBasedServiceAvailable = false;
             }
         
             #endregion
@@ -3429,6 +3530,15 @@ namespace Android.Net.Wifi.P2p
             public override void OnServiceAvailable(int arg0, byte[] arg1, Android.Net.Wifi.P2p.WifiP2pDevice arg2)
             {
                 IExecuteWithSignature("onServiceAvailable", "(I[BLandroid/net/wifi/p2p/WifiP2pDevice;)V", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onUsdBasedServiceAvailable(android.net.wifi.p2p.WifiP2pDevice,android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse"/></param>
+            public override void OnUsdBasedServiceAvailable(Android.Net.Wifi.P2p.WifiP2pDevice arg0, Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceResponse arg1)
+            {
+                IExecuteWithSignature("onUsdBasedServiceAvailable", "(Landroid/net/wifi/p2p/WifiP2pDevice;Landroid/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceResponse;)V", arg0, arg1);
             }
         
             #endregion

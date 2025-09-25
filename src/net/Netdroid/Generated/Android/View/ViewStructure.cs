@@ -166,6 +166,18 @@ namespace Android.View
         #endregion
     
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#EXTRA_VIRTUAL_STRUCTURE_TYPE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_VIRTUAL_STRUCTURE_TYPE { get { if (!_EXTRA_VIRTUAL_STRUCTURE_TYPEReady) { _EXTRA_VIRTUAL_STRUCTURE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VIRTUAL_STRUCTURE_TYPE"); _EXTRA_VIRTUAL_STRUCTURE_TYPEReady = true; } return _EXTRA_VIRTUAL_STRUCTURE_TYPEContent; } }
+        private static Java.Lang.String _EXTRA_VIRTUAL_STRUCTURE_TYPEContent = default;
+        private static bool _EXTRA_VIRTUAL_STRUCTURE_TYPEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBER"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBER { get { if (!_EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBERReady) { _EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBER"); _EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBERReady = true; } return _EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBERContent; } }
+        private static Java.Lang.String _EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBERContent = default;
+        private static bool _EXTRA_VIRTUAL_STRUCTURE_VERSION_NUMBERReady = false; // this is used because in case of generics 
     
         #endregion
     

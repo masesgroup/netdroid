@@ -214,6 +214,14 @@ namespace Android.App.Appsearch
         public partial class Builder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#%3Cinit%3E(android.app.appsearch.GetSchemaResponse)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.GetSchemaResponse"/></param>
+            public Builder(Android.App.Appsearch.GetSchemaResponse arg0)
+                : base(arg0)
+            {
+            }
         
             #endregion
         
@@ -255,6 +263,59 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.GetSchemaResponse.Builder AddSchemaTypeNotDisplayedBySystem(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.GetSchemaResponse.Builder>("addSchemaTypeNotDisplayedBySystem", "(Ljava/lang/String;)Landroid/app/appsearch/GetSchemaResponse$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#clearPubliclyVisibleSchema(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GetSchemaResponse.Builder"/></returns>
+            public Android.App.Appsearch.GetSchemaResponse.Builder ClearPubliclyVisibleSchema(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GetSchemaResponse.Builder>("clearPubliclyVisibleSchema", "(Ljava/lang/String;)Landroid/app/appsearch/GetSchemaResponse$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#clearRequiredPermissionsForSchemaTypeVisibility(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GetSchemaResponse.Builder"/></returns>
+            public Android.App.Appsearch.GetSchemaResponse.Builder ClearRequiredPermissionsForSchemaTypeVisibility(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GetSchemaResponse.Builder>("clearRequiredPermissionsForSchemaTypeVisibility", "(Ljava/lang/String;)Landroid/app/appsearch/GetSchemaResponse$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#clearSchemas()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Appsearch.GetSchemaResponse.Builder"/></returns>
+            public Android.App.Appsearch.GetSchemaResponse.Builder ClearSchemas()
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GetSchemaResponse.Builder>("clearSchemas", "()Landroid/app/appsearch/GetSchemaResponse$Builder;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#clearSchemaTypeNotDisplayedBySystem(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GetSchemaResponse.Builder"/></returns>
+            public Android.App.Appsearch.GetSchemaResponse.Builder ClearSchemaTypeNotDisplayedBySystem(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GetSchemaResponse.Builder>("clearSchemaTypeNotDisplayedBySystem", "(Ljava/lang/String;)Landroid/app/appsearch/GetSchemaResponse$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#clearSchemaTypeVisibleToConfigs(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GetSchemaResponse.Builder"/></returns>
+            public Android.App.Appsearch.GetSchemaResponse.Builder ClearSchemaTypeVisibleToConfigs(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GetSchemaResponse.Builder>("clearSchemaTypeVisibleToConfigs", "(Ljava/lang/String;)Landroid/app/appsearch/GetSchemaResponse$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#clearSchemaTypeVisibleToPackages(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GetSchemaResponse.Builder"/></returns>
+            public Android.App.Appsearch.GetSchemaResponse.Builder ClearSchemaTypeVisibleToPackages(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GetSchemaResponse.Builder>("clearSchemaTypeVisibleToPackages", "(Ljava/lang/String;)Landroid/app/appsearch/GetSchemaResponse$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.Builder.html#setPubliclyVisibleSchema(java.lang.String,android.app.appsearch.PackageIdentifier)"/>

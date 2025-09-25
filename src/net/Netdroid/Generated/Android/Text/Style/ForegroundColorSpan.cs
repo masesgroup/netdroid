@@ -67,7 +67,7 @@ namespace Android.Text.Style
     #endregion
 
     #region ForegroundColorSpan implementation
-    public partial class ForegroundColorSpan : Android.Text.Style.IUpdateAppearance, Android.Text.IParcelableSpan
+    public partial class ForegroundColorSpan : Android.Text.IParcelableSpan, Android.Text.Style.IUpdateAppearance
     {
         #region Constructors
         /// <summary>
@@ -91,13 +91,13 @@ namespace Android.Text.Style
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Text.Style.ForegroundColorSpan"/> to <see cref="Android.Text.Style.UpdateAppearance"/>
-        /// </summary>
-        public static implicit operator Android.Text.Style.UpdateAppearance(Android.Text.Style.ForegroundColorSpan t) => t.Cast<Android.Text.Style.UpdateAppearance>();
-        /// <summary>
         /// Converter from <see cref="Android.Text.Style.ForegroundColorSpan"/> to <see cref="Android.Text.ParcelableSpan"/>
         /// </summary>
         public static implicit operator Android.Text.ParcelableSpan(Android.Text.Style.ForegroundColorSpan t) => t.Cast<Android.Text.ParcelableSpan>();
+        /// <summary>
+        /// Converter from <see cref="Android.Text.Style.ForegroundColorSpan"/> to <see cref="Android.Text.Style.UpdateAppearance"/>
+        /// </summary>
+        public static implicit operator Android.Text.Style.UpdateAppearance(Android.Text.Style.ForegroundColorSpan t) => t.Cast<Android.Text.Style.UpdateAppearance>();
     
         #endregion
     

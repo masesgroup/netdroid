@@ -120,6 +120,12 @@ namespace Android.Net.Vcn
     
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET"/>
+        /// </summary>
+        public static int MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET { get { if (!_MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSETReady) { _MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSETContent = SGetField<int>(LocalBridgeClazz, "MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET"); _MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSETReady = true; } return _MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSETContent; } }
+        private static int _MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSETContent = default;
+        private static bool _MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSETReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY"/>
         /// </summary>
         public static int VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY { get { if (!_VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITYReady) { _VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITYContent = SGetField<int>(LocalBridgeClazz, "VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY"); _VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITYReady = true; } return _VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITYContent; } }

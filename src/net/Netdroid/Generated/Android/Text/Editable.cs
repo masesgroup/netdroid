@@ -128,13 +128,17 @@ namespace Android.Text
     #endregion
 
     #region Editable implementation
-    public partial class Editable : Android.Text.IEditable, Java.Lang.ICharSequence, Android.Text.IGetChars, Android.Text.ISpannable, Java.Lang.IAppendable
+    public partial class Editable : Android.Text.IEditable, Java.Lang.IAppendable, Java.Lang.ICharSequence, Android.Text.IGetChars, Android.Text.ISpannable
     {
         #region Constructors
     
         #endregion
     
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Android.Text.Editable"/> to <see cref="Java.Lang.Appendable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Appendable(Android.Text.Editable t) => t.Cast<Java.Lang.Appendable>();
         /// <summary>
         /// Converter from <see cref="Android.Text.Editable"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
@@ -147,10 +151,6 @@ namespace Android.Text
         /// Converter from <see cref="Android.Text.Editable"/> to <see cref="Android.Text.Spannable"/>
         /// </summary>
         public static implicit operator Android.Text.Spannable(Android.Text.Editable t) => t.Cast<Android.Text.Spannable>();
-        /// <summary>
-        /// Converter from <see cref="Android.Text.Editable"/> to <see cref="Java.Lang.Appendable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Appendable(Android.Text.Editable t) => t.Cast<Java.Lang.Appendable>();
     
         #endregion
     

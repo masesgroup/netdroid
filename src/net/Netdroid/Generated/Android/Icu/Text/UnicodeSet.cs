@@ -190,7 +190,7 @@ namespace Android.Icu.Text
     #endregion
 
     #region UnicodeSet implementation
-    public partial class UnicodeSet : Java.Lang.IIterable<Java.Lang.String>, Java.Lang.IComparable<Android.Icu.Text.UnicodeSet>, Android.Icu.Util.IFreezable<Android.Icu.Text.UnicodeSet>
+    public partial class UnicodeSet : Java.Lang.IComparable<Android.Icu.Text.UnicodeSet>, Android.Icu.Util.IFreezable<Android.Icu.Text.UnicodeSet>, Java.Lang.IIterable<Java.Lang.String>
     {
         #region Constructors
         /// <summary>
@@ -330,6 +330,12 @@ namespace Android.Icu.Text
         public static int MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<int>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static int _MIN_VALUEContent = default;
         private static bool _MIN_VALUEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#SIMPLE_CASE_INSENSITIVE"/>
+        /// </summary>
+        public static int SIMPLE_CASE_INSENSITIVE { get { if (!_SIMPLE_CASE_INSENSITIVEReady) { _SIMPLE_CASE_INSENSITIVEContent = SGetField<int>(LocalBridgeClazz, "SIMPLE_CASE_INSENSITIVE"); _SIMPLE_CASE_INSENSITIVEReady = true; } return _SIMPLE_CASE_INSENSITIVEContent; } }
+        private static int _SIMPLE_CASE_INSENSITIVEContent = default;
+        private static bool _SIMPLE_CASE_INSENSITIVEReady = false; // this is used because in case of generics 
     
         #endregion
     

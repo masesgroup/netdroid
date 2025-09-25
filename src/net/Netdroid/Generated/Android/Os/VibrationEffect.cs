@@ -64,6 +64,47 @@ namespace Android.Os
         public override bool IsBridgeStatic => false;
     
         // TODO: complete the class
+        #region BasicEnvelopeBuilder declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.BasicEnvelopeBuilder.html"/>
+        /// </summary>
+        public partial class BasicEnvelopeBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicEnvelopeBuilder>
+        {
+            const string _bridgeClassName = "android.os.VibrationEffect$BasicEnvelopeBuilder";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public BasicEnvelopeBuilder() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public BasicEnvelopeBuilder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public BasicEnvelopeBuilder(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
         #region Composition declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html"/>
@@ -84,6 +125,47 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Composition(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
+        #region WaveformEnvelopeBuilder declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.WaveformEnvelopeBuilder.html"/>
+        /// </summary>
+        public partial class WaveformEnvelopeBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WaveformEnvelopeBuilder>
+        {
+            const string _bridgeClassName = "android.os.VibrationEffect$WaveformEnvelopeBuilder";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public WaveformEnvelopeBuilder() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public WaveformEnvelopeBuilder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public WaveformEnvelopeBuilder(params object[] args) : base(args) { }
         
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
@@ -181,6 +263,25 @@ namespace Android.Os
             return SExecuteWithSignature<Android.Os.VibrationEffect>(LocalBridgeClazz, "createPredefined", "(I)Landroid/os/VibrationEffect;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.html#createRepeatingEffect(android.os.VibrationEffect,android.os.VibrationEffect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.VibrationEffect"/></param>
+        /// <param name="arg1"><see cref="Android.Os.VibrationEffect"/></param>
+        /// <returns><see cref="Android.Os.VibrationEffect"/></returns>
+        public static Android.Os.VibrationEffect CreateRepeatingEffect(Android.Os.VibrationEffect arg0, Android.Os.VibrationEffect arg1)
+        {
+            return SExecuteWithSignature<Android.Os.VibrationEffect>(LocalBridgeClazz, "createRepeatingEffect", "(Landroid/os/VibrationEffect;Landroid/os/VibrationEffect;)Landroid/os/VibrationEffect;", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.html#createRepeatingEffect(android.os.VibrationEffect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.VibrationEffect"/></param>
+        /// <returns><see cref="Android.Os.VibrationEffect"/></returns>
+        public static Android.Os.VibrationEffect CreateRepeatingEffect(Android.Os.VibrationEffect arg0)
+        {
+            return SExecuteWithSignature<Android.Os.VibrationEffect>(LocalBridgeClazz, "createRepeatingEffect", "(Landroid/os/VibrationEffect;)Landroid/os/VibrationEffect;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.html#createWaveform(long[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -225,6 +326,65 @@ namespace Android.Os
         #endregion
     
         #region Nested classes
+        #region BasicEnvelopeBuilder implementation
+        public partial class BasicEnvelopeBuilder
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.BasicEnvelopeBuilder.html#build()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.VibrationEffect"/></returns>
+            public Android.Os.VibrationEffect Build()
+            {
+                return IExecuteWithSignature<Android.Os.VibrationEffect>("build", "()Landroid/os/VibrationEffect;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.BasicEnvelopeBuilder.html#addControlPoint(float,float,long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="long"/></param>
+            /// <returns><see cref="Android.Os.VibrationEffect.BasicEnvelopeBuilder"/></returns>
+            public Android.Os.VibrationEffect.BasicEnvelopeBuilder AddControlPoint(float arg0, float arg1, long arg2)
+            {
+                return IExecuteWithSignature<Android.Os.VibrationEffect.BasicEnvelopeBuilder>("addControlPoint", "(FFJ)Landroid/os/VibrationEffect$BasicEnvelopeBuilder;", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.BasicEnvelopeBuilder.html#setInitialSharpness(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <returns><see cref="Android.Os.VibrationEffect.BasicEnvelopeBuilder"/></returns>
+            public Android.Os.VibrationEffect.BasicEnvelopeBuilder SetInitialSharpness(float arg0)
+            {
+                return IExecuteWithSignature<Android.Os.VibrationEffect.BasicEnvelopeBuilder>("setInitialSharpness", "(F)Landroid/os/VibrationEffect$BasicEnvelopeBuilder;", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Composition implementation
         public partial class Composition
         {
@@ -237,6 +397,18 @@ namespace Android.Os
             #endregion
         
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html#DELAY_TYPE_PAUSE"/>
+            /// </summary>
+            public static int DELAY_TYPE_PAUSE { get { if (!_DELAY_TYPE_PAUSEReady) { _DELAY_TYPE_PAUSEContent = SGetField<int>(LocalBridgeClazz, "DELAY_TYPE_PAUSE"); _DELAY_TYPE_PAUSEReady = true; } return _DELAY_TYPE_PAUSEContent; } }
+            private static int _DELAY_TYPE_PAUSEContent = default;
+            private static bool _DELAY_TYPE_PAUSEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html#DELAY_TYPE_RELATIVE_START_OFFSET"/>
+            /// </summary>
+            public static int DELAY_TYPE_RELATIVE_START_OFFSET { get { if (!_DELAY_TYPE_RELATIVE_START_OFFSETReady) { _DELAY_TYPE_RELATIVE_START_OFFSETContent = SGetField<int>(LocalBridgeClazz, "DELAY_TYPE_RELATIVE_START_OFFSET"); _DELAY_TYPE_RELATIVE_START_OFFSETReady = true; } return _DELAY_TYPE_RELATIVE_START_OFFSETContent; } }
+            private static int _DELAY_TYPE_RELATIVE_START_OFFSETContent = default;
+            private static bool _DELAY_TYPE_RELATIVE_START_OFFSETReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html#PRIMITIVE_CLICK"/>
             /// </summary>
@@ -302,6 +474,18 @@ namespace Android.Os
                 return IExecuteWithSignature<Android.Os.VibrationEffect>("compose", "()Landroid/os/VibrationEffect;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html#addPrimitive(int,float,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <returns><see cref="Android.Os.VibrationEffect.Composition"/></returns>
+            public Android.Os.VibrationEffect.Composition AddPrimitive(int arg0, float arg1, int arg2, int arg3)
+            {
+                return IExecuteWithSignature<Android.Os.VibrationEffect.Composition>("addPrimitive", "(IFII)Landroid/os/VibrationEffect$Composition;", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html#addPrimitive(int,float,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -330,6 +514,65 @@ namespace Android.Os
             public Android.Os.VibrationEffect.Composition AddPrimitive(int arg0)
             {
                 return IExecuteWithSignature<Android.Os.VibrationEffect.Composition>("addPrimitive", "(I)Landroid/os/VibrationEffect$Composition;", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region WaveformEnvelopeBuilder implementation
+        public partial class WaveformEnvelopeBuilder
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.WaveformEnvelopeBuilder.html#build()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.VibrationEffect"/></returns>
+            public Android.Os.VibrationEffect Build()
+            {
+                return IExecuteWithSignature<Android.Os.VibrationEffect>("build", "()Landroid/os/VibrationEffect;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.WaveformEnvelopeBuilder.html#addControlPoint(float,float,long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="long"/></param>
+            /// <returns><see cref="Android.Os.VibrationEffect.WaveformEnvelopeBuilder"/></returns>
+            public Android.Os.VibrationEffect.WaveformEnvelopeBuilder AddControlPoint(float arg0, float arg1, long arg2)
+            {
+                return IExecuteWithSignature<Android.Os.VibrationEffect.WaveformEnvelopeBuilder>("addControlPoint", "(FFJ)Landroid/os/VibrationEffect$WaveformEnvelopeBuilder;", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.WaveformEnvelopeBuilder.html#setInitialFrequencyHz(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <returns><see cref="Android.Os.VibrationEffect.WaveformEnvelopeBuilder"/></returns>
+            public Android.Os.VibrationEffect.WaveformEnvelopeBuilder SetInitialFrequencyHz(float arg0)
+            {
+                return IExecuteWithSignature<Android.Os.VibrationEffect.WaveformEnvelopeBuilder>("setInitialFrequencyHz", "(F)Landroid/os/VibrationEffect$WaveformEnvelopeBuilder;", arg0);
             }
         
             #endregion

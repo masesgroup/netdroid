@@ -29,6 +29,7 @@ namespace Android.Telephony
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class CellIdentityCdma : Android.Telephony.CellIdentity
     {
         const string _bridgeClassName = "android.telephony.CellIdentityCdma";
@@ -81,6 +82,7 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#CREATOR"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -96,6 +98,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getBasestationId()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetBasestationId()
         {
             return IExecuteWithSignature<int>("getBasestationId", "()I");
@@ -104,6 +107,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getLatitude()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetLatitude()
         {
             return IExecuteWithSignature<int>("getLatitude", "()I");
@@ -112,6 +116,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getLongitude()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetLongitude()
         {
             return IExecuteWithSignature<int>("getLongitude", "()I");
@@ -120,6 +125,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getNetworkId()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetNetworkId()
         {
             return IExecuteWithSignature<int>("getNetworkId", "()I");
@@ -128,6 +134,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityCdma.html#getSystemId()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetSystemId()
         {
             return IExecuteWithSignature<int>("getSystemId", "()I");

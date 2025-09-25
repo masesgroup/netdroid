@@ -182,6 +182,15 @@ namespace Android.Graphics
             IExecuteWithSignature("setInputBuffer", "(Ljava/lang/String;Landroid/graphics/BitmapShader;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setInputColorFilter(java.lang.String,android.graphics.ColorFilter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.ColorFilter"/></param>
+        public void SetInputColorFilter(Java.Lang.String arg0, Android.Graphics.ColorFilter arg1)
+        {
+            IExecuteWithSignature("setInputColorFilter", "(Ljava/lang/String;Landroid/graphics/ColorFilter;)V", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setInputShader(java.lang.String,android.graphics.Shader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -189,6 +198,15 @@ namespace Android.Graphics
         public void SetInputShader(Java.Lang.String arg0, Android.Graphics.Shader arg1)
         {
             IExecuteWithSignature("setInputShader", "(Ljava/lang/String;Landroid/graphics/Shader;)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setInputXfermode(java.lang.String,android.graphics.RuntimeXfermode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.RuntimeXfermode"/></param>
+        public void SetInputXfermode(Java.Lang.String arg0, Android.Graphics.RuntimeXfermode arg1)
+        {
+            IExecuteWithSignature("setInputXfermode", "(Ljava/lang/String;Landroid/graphics/RuntimeXfermode;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RuntimeShader.html#setIntUniform(java.lang.String,int,int,int,int)"/>

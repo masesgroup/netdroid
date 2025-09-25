@@ -221,6 +221,14 @@ namespace Android.Media
         {
             IExecuteWithSignature("removeOnRoutingChangedListener", "(Landroid/media/AudioRouting$OnRoutingChangedListener;)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#getRoutedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioDeviceInfo> GetRoutedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getRoutedDevices", "()Ljava/util/List;");
+        }
     
         #endregion
     

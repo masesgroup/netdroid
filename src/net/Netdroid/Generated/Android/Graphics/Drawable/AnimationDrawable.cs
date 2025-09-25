@@ -67,7 +67,7 @@ namespace Android.Graphics.Drawable
     #endregion
 
     #region AnimationDrawable implementation
-    public partial class AnimationDrawable : Java.Lang.IRunnable, Android.Graphics.Drawable.IAnimatable
+    public partial class AnimationDrawable : Android.Graphics.Drawable.IAnimatable, Java.Lang.IRunnable
     {
         #region Constructors
     
@@ -75,13 +75,13 @@ namespace Android.Graphics.Drawable
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Graphics.Drawable.AnimationDrawable"/> to <see cref="Java.Lang.Runnable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Runnable(Android.Graphics.Drawable.AnimationDrawable t) => t.Cast<Java.Lang.Runnable>();
-        /// <summary>
         /// Converter from <see cref="Android.Graphics.Drawable.AnimationDrawable"/> to <see cref="Android.Graphics.Drawable.Animatable"/>
         /// </summary>
         public static implicit operator Android.Graphics.Drawable.Animatable(Android.Graphics.Drawable.AnimationDrawable t) => t.Cast<Android.Graphics.Drawable.Animatable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Graphics.Drawable.AnimationDrawable"/> to <see cref="Java.Lang.Runnable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Runnable(Android.Graphics.Drawable.AnimationDrawable t) => t.Cast<Java.Lang.Runnable>();
     
         #endregion
     

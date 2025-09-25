@@ -67,7 +67,7 @@ namespace Android.Service.Autofill
     #endregion
 
     #region TextValueSanitizer implementation
-    public partial class TextValueSanitizer : Android.Service.Autofill.ISanitizer, Android.Os.IParcelable
+    public partial class TextValueSanitizer : Android.Os.IParcelable, Android.Service.Autofill.ISanitizer
     {
         #region Constructors
         /// <summary>
@@ -84,13 +84,13 @@ namespace Android.Service.Autofill
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Service.Autofill.TextValueSanitizer"/> to <see cref="Android.Service.Autofill.Sanitizer"/>
-        /// </summary>
-        public static implicit operator Android.Service.Autofill.Sanitizer(Android.Service.Autofill.TextValueSanitizer t) => t.Cast<Android.Service.Autofill.Sanitizer>();
-        /// <summary>
         /// Converter from <see cref="Android.Service.Autofill.TextValueSanitizer"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Service.Autofill.TextValueSanitizer t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Service.Autofill.TextValueSanitizer"/> to <see cref="Android.Service.Autofill.Sanitizer"/>
+        /// </summary>
+        public static implicit operator Android.Service.Autofill.Sanitizer(Android.Service.Autofill.TextValueSanitizer t) => t.Cast<Android.Service.Autofill.Sanitizer>();
     
         #endregion
     

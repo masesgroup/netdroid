@@ -1248,7 +1248,7 @@ namespace Android.Media
     #endregion
 
     #region MediaPlayer implementation
-    public partial class MediaPlayer : Android.Media.IVolumeAutomation, Android.Media.IAudioRouting
+    public partial class MediaPlayer : Android.Media.IAudioRouting, Android.Media.IVolumeAutomation
     {
         #region Constructors
         /// <summary>
@@ -1264,13 +1264,13 @@ namespace Android.Media
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Media.MediaPlayer"/> to <see cref="Android.Media.VolumeAutomation"/>
-        /// </summary>
-        public static implicit operator Android.Media.VolumeAutomation(Android.Media.MediaPlayer t) => t.Cast<Android.Media.VolumeAutomation>();
-        /// <summary>
         /// Converter from <see cref="Android.Media.MediaPlayer"/> to <see cref="Android.Media.AudioRouting"/>
         /// </summary>
         public static implicit operator Android.Media.AudioRouting(Android.Media.MediaPlayer t) => t.Cast<Android.Media.AudioRouting>();
+        /// <summary>
+        /// Converter from <see cref="Android.Media.MediaPlayer"/> to <see cref="Android.Media.VolumeAutomation"/>
+        /// </summary>
+        public static implicit operator Android.Media.VolumeAutomation(Android.Media.MediaPlayer t) => t.Cast<Android.Media.VolumeAutomation>();
     
         #endregion
     
@@ -1638,6 +1638,14 @@ namespace Android.Media
         public Java.Lang.String GetDrmPropertyString(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDrmPropertyString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getRoutedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioDeviceInfo> GetRoutedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getRoutedDevices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getPlaybackParams()"/>

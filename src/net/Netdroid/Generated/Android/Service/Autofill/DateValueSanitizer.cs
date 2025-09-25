@@ -67,7 +67,7 @@ namespace Android.Service.Autofill
     #endregion
 
     #region DateValueSanitizer implementation
-    public partial class DateValueSanitizer : Android.Service.Autofill.ISanitizer, Android.Os.IParcelable
+    public partial class DateValueSanitizer : Android.Os.IParcelable, Android.Service.Autofill.ISanitizer
     {
         #region Constructors
         /// <summary>
@@ -83,13 +83,13 @@ namespace Android.Service.Autofill
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Service.Autofill.DateValueSanitizer"/> to <see cref="Android.Service.Autofill.Sanitizer"/>
-        /// </summary>
-        public static implicit operator Android.Service.Autofill.Sanitizer(Android.Service.Autofill.DateValueSanitizer t) => t.Cast<Android.Service.Autofill.Sanitizer>();
-        /// <summary>
         /// Converter from <see cref="Android.Service.Autofill.DateValueSanitizer"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Service.Autofill.DateValueSanitizer t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Service.Autofill.DateValueSanitizer"/> to <see cref="Android.Service.Autofill.Sanitizer"/>
+        /// </summary>
+        public static implicit operator Android.Service.Autofill.Sanitizer(Android.Service.Autofill.DateValueSanitizer t) => t.Cast<Android.Service.Autofill.Sanitizer>();
     
         #endregion
     

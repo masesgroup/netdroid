@@ -570,6 +570,48 @@ namespace Android.View.Accessibility
         private static int _ACTION_SET_TEXTContent = default;
         private static bool _ACTION_SET_TEXTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#CHECKED_STATE_FALSE"/>
+        /// </summary>
+        public static int CHECKED_STATE_FALSE { get { if (!_CHECKED_STATE_FALSEReady) { _CHECKED_STATE_FALSEContent = SGetField<int>(LocalBridgeClazz, "CHECKED_STATE_FALSE"); _CHECKED_STATE_FALSEReady = true; } return _CHECKED_STATE_FALSEContent; } }
+        private static int _CHECKED_STATE_FALSEContent = default;
+        private static bool _CHECKED_STATE_FALSEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#CHECKED_STATE_PARTIAL"/>
+        /// </summary>
+        public static int CHECKED_STATE_PARTIAL { get { if (!_CHECKED_STATE_PARTIALReady) { _CHECKED_STATE_PARTIALContent = SGetField<int>(LocalBridgeClazz, "CHECKED_STATE_PARTIAL"); _CHECKED_STATE_PARTIALReady = true; } return _CHECKED_STATE_PARTIALContent; } }
+        private static int _CHECKED_STATE_PARTIALContent = default;
+        private static bool _CHECKED_STATE_PARTIALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#CHECKED_STATE_TRUE"/>
+        /// </summary>
+        public static int CHECKED_STATE_TRUE { get { if (!_CHECKED_STATE_TRUEReady) { _CHECKED_STATE_TRUEContent = SGetField<int>(LocalBridgeClazz, "CHECKED_STATE_TRUE"); _CHECKED_STATE_TRUEReady = true; } return _CHECKED_STATE_TRUEContent; } }
+        private static int _CHECKED_STATE_TRUEContent = default;
+        private static bool _CHECKED_STATE_TRUEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#EXPANDED_STATE_COLLAPSED"/>
+        /// </summary>
+        public static int EXPANDED_STATE_COLLAPSED { get { if (!_EXPANDED_STATE_COLLAPSEDReady) { _EXPANDED_STATE_COLLAPSEDContent = SGetField<int>(LocalBridgeClazz, "EXPANDED_STATE_COLLAPSED"); _EXPANDED_STATE_COLLAPSEDReady = true; } return _EXPANDED_STATE_COLLAPSEDContent; } }
+        private static int _EXPANDED_STATE_COLLAPSEDContent = default;
+        private static bool _EXPANDED_STATE_COLLAPSEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#EXPANDED_STATE_FULL"/>
+        /// </summary>
+        public static int EXPANDED_STATE_FULL { get { if (!_EXPANDED_STATE_FULLReady) { _EXPANDED_STATE_FULLContent = SGetField<int>(LocalBridgeClazz, "EXPANDED_STATE_FULL"); _EXPANDED_STATE_FULLReady = true; } return _EXPANDED_STATE_FULLContent; } }
+        private static int _EXPANDED_STATE_FULLContent = default;
+        private static bool _EXPANDED_STATE_FULLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#EXPANDED_STATE_PARTIAL"/>
+        /// </summary>
+        public static int EXPANDED_STATE_PARTIAL { get { if (!_EXPANDED_STATE_PARTIALReady) { _EXPANDED_STATE_PARTIALContent = SGetField<int>(LocalBridgeClazz, "EXPANDED_STATE_PARTIAL"); _EXPANDED_STATE_PARTIALReady = true; } return _EXPANDED_STATE_PARTIALContent; } }
+        private static int _EXPANDED_STATE_PARTIALContent = default;
+        private static bool _EXPANDED_STATE_PARTIALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#EXPANDED_STATE_UNDEFINED"/>
+        /// </summary>
+        public static int EXPANDED_STATE_UNDEFINED { get { if (!_EXPANDED_STATE_UNDEFINEDReady) { _EXPANDED_STATE_UNDEFINEDContent = SGetField<int>(LocalBridgeClazz, "EXPANDED_STATE_UNDEFINED"); _EXPANDED_STATE_UNDEFINEDReady = true; } return _EXPANDED_STATE_UNDEFINEDContent; } }
+        private static int _EXPANDED_STATE_UNDEFINEDContent = default;
+        private static bool _EXPANDED_STATE_UNDEFINEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_MAX_LENGTH"/>
         /// </summary>
         public static int EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_MAX_LENGTH { get { if (!_EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_MAX_LENGTHReady) { _EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_MAX_LENGTHContent = SGetField<int>(LocalBridgeClazz, "EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_MAX_LENGTH"); _EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_MAX_LENGTHReady = true; } return _EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_MAX_LENGTHContent; } }
@@ -762,6 +804,12 @@ namespace Android.View.Accessibility
         private static Java.Lang.String _EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEXContent = default;
         private static bool _EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEXReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEY"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEY { get { if (!_EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEYReady) { _EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEY"); _EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEYReady = true; } return _EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEYContent; } }
+        private static Java.Lang.String _EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEYContent = default;
+        private static bool _EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY"/>
         /// </summary>
         public static Java.Lang.String EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY { get { if (!_EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYReady) { _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY"); _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYReady = true; } return _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYContent; } }
@@ -864,6 +912,7 @@ namespace Android.View.Accessibility
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getLabeledBy()"/>
         /// </summary>
         /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        [global::System.Obsolete()]
         public Android.View.Accessibility.AccessibilityNodeInfo GetLabeledBy()
         {
             return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getLabeledBy", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
@@ -872,6 +921,7 @@ namespace Android.View.Accessibility
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getLabelFor()"/>
         /// </summary>
         /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        [global::System.Obsolete()]
         public Android.View.Accessibility.AccessibilityNodeInfo GetLabelFor()
         {
             return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getLabelFor", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
@@ -1001,6 +1051,7 @@ namespace Android.View.Accessibility
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#isChecked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsChecked()
         {
             return IExecuteWithSignature<bool>("isChecked", "()Z");
@@ -1052,6 +1103,14 @@ namespace Android.View.Accessibility
         public bool IsEnabled()
         {
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#isFieldRequired()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFieldRequired()
+        {
+            return IExecuteWithSignature<bool>("isFieldRequired", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#isFocusable()"/>
@@ -1239,6 +1298,25 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<bool>("removeChild", "(Landroid/view/View;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#removeLabeledBy(android.view.View,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RemoveLabeledBy(Android.View.View arg0, int arg1)
+        {
+            return IExecuteWithSignature<bool>("removeLabeledBy", "(Landroid/view/View;I)Z", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#removeLabeledBy(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RemoveLabeledBy(Android.View.View arg0)
+        {
+            return IExecuteWithSignature<bool>("removeLabeledBy", "(Landroid/view/View;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -1256,6 +1334,14 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<int>("getActions", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getChecked()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChecked()
+        {
+            return IExecuteWithSignature<int>("getChecked", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getChildCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -1270,6 +1356,14 @@ namespace Android.View.Accessibility
         public int GetDrawingOrder()
         {
             return IExecuteWithSignature<int>("getDrawingOrder", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getExpandedState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExpandedState()
+        {
+            return IExecuteWithSignature<int>("getExpandedState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getInputType()"/>
@@ -1392,6 +1486,14 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<Java.Lang.CharSequence>("getStateDescription", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getSupplementalDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSupplementalDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSupplementalDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getText()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
@@ -1450,6 +1552,14 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo>>("findAccessibilityNodeInfosByViewId", "(Ljava/lang/String;)Ljava/util/List;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getLabeledByList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo> GetLabeledByList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo>>("getLabeledByList", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getActionList()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -1498,6 +1608,23 @@ namespace Android.View.Accessibility
         public void AddChild(Android.View.View arg0)
         {
             IExecuteWithSignature("addChild", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#addLabeledBy(android.view.View,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void AddLabeledBy(Android.View.View arg0, int arg1)
+        {
+            IExecuteWithSignature("addLabeledBy", "(Landroid/view/View;I)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#addLabeledBy(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        public void AddLabeledBy(Android.View.View arg0)
+        {
+            IExecuteWithSignature("addLabeledBy", "(Landroid/view/View;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getBoundsInParent(android.graphics.Rect)"/>
@@ -1610,9 +1737,18 @@ namespace Android.View.Accessibility
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setChecked(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
         public void SetChecked(bool arg0)
         {
             IExecuteWithSignature("setChecked", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setChecked(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetChecked(int arg0)
+        {
+            IExecuteWithSignature("setChecked", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setClassName(java.lang.CharSequence)"/>
@@ -1719,6 +1855,22 @@ namespace Android.View.Accessibility
             IExecuteWithSignature("setError", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setExpandedState(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetExpandedState(int arg0)
+        {
+            IExecuteWithSignature("setExpandedState", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setFieldRequired(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFieldRequired(bool arg0)
+        {
+            IExecuteWithSignature("setFieldRequired", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setFocusable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1779,6 +1931,7 @@ namespace Android.View.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void SetLabeledBy(Android.View.View arg0, int arg1)
         {
             IExecuteWithSignature("setLabeledBy", "(Landroid/view/View;I)V", arg0, arg1);
@@ -1787,6 +1940,7 @@ namespace Android.View.Accessibility
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setLabeledBy(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
+        [global::System.Obsolete()]
         public void SetLabeledBy(Android.View.View arg0)
         {
             IExecuteWithSignature("setLabeledBy", "(Landroid/view/View;)V", arg0);
@@ -1796,6 +1950,7 @@ namespace Android.View.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void SetLabelFor(Android.View.View arg0, int arg1)
         {
             IExecuteWithSignature("setLabelFor", "(Landroid/view/View;I)V", arg0, arg1);
@@ -1804,6 +1959,7 @@ namespace Android.View.Accessibility
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setLabelFor(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
+        [global::System.Obsolete()]
         public void SetLabelFor(Android.View.View arg0)
         {
             IExecuteWithSignature("setLabelFor", "(Landroid/view/View;)V", arg0);
@@ -1978,6 +2134,14 @@ namespace Android.View.Accessibility
         public void SetStateDescription(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setStateDescription", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setSupplementalDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetSupplementalDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setSupplementalDescription", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setText(java.lang.CharSequence)"/>
@@ -3024,11 +3188,23 @@ namespace Android.View.Accessibility
         
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#INDETERMINATE"/>
+            /// </summary>
+            public static Android.View.Accessibility.AccessibilityNodeInfo.RangeInfo INDETERMINATE { get { if (!_INDETERMINATEReady) { _INDETERMINATEContent = SGetField<Android.View.Accessibility.AccessibilityNodeInfo.RangeInfo>(LocalBridgeClazz, "INDETERMINATE"); _INDETERMINATEReady = true; } return _INDETERMINATEContent; } }
+            private static Android.View.Accessibility.AccessibilityNodeInfo.RangeInfo _INDETERMINATEContent = default;
+            private static bool _INDETERMINATEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#RANGE_TYPE_FLOAT"/>
             /// </summary>
             public static int RANGE_TYPE_FLOAT { get { if (!_RANGE_TYPE_FLOATReady) { _RANGE_TYPE_FLOATContent = SGetField<int>(LocalBridgeClazz, "RANGE_TYPE_FLOAT"); _RANGE_TYPE_FLOATReady = true; } return _RANGE_TYPE_FLOATContent; } }
             private static int _RANGE_TYPE_FLOATContent = default;
             private static bool _RANGE_TYPE_FLOATReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#RANGE_TYPE_INDETERMINATE"/>
+            /// </summary>
+            public static int RANGE_TYPE_INDETERMINATE { get { if (!_RANGE_TYPE_INDETERMINATEReady) { _RANGE_TYPE_INDETERMINATEContent = SGetField<int>(LocalBridgeClazz, "RANGE_TYPE_INDETERMINATE"); _RANGE_TYPE_INDETERMINATEReady = true; } return _RANGE_TYPE_INDETERMINATEContent; } }
+            private static int _RANGE_TYPE_INDETERMINATEContent = default;
+            private static bool _RANGE_TYPE_INDETERMINATEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#RANGE_TYPE_INT"/>
             /// </summary>

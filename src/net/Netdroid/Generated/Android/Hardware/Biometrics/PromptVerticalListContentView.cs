@@ -108,7 +108,7 @@ namespace Android.Hardware.Biometrics
     #endregion
 
     #region PromptVerticalListContentView implementation
-    public partial class PromptVerticalListContentView : Android.Hardware.Biometrics.IPromptContentView, Android.Os.IParcelable
+    public partial class PromptVerticalListContentView : Android.Os.IParcelable, Android.Hardware.Biometrics.IPromptContentView
     {
         #region Constructors
     
@@ -116,13 +116,13 @@ namespace Android.Hardware.Biometrics
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Hardware.Biometrics.PromptVerticalListContentView"/> to <see cref="Android.Hardware.Biometrics.PromptContentView"/>
-        /// </summary>
-        public static implicit operator Android.Hardware.Biometrics.PromptContentView(Android.Hardware.Biometrics.PromptVerticalListContentView t) => t.Cast<Android.Hardware.Biometrics.PromptContentView>();
-        /// <summary>
         /// Converter from <see cref="Android.Hardware.Biometrics.PromptVerticalListContentView"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Hardware.Biometrics.PromptVerticalListContentView t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Hardware.Biometrics.PromptVerticalListContentView"/> to <see cref="Android.Hardware.Biometrics.PromptContentView"/>
+        /// </summary>
+        public static implicit operator Android.Hardware.Biometrics.PromptContentView(Android.Hardware.Biometrics.PromptVerticalListContentView t) => t.Cast<Android.Hardware.Biometrics.PromptContentView>();
     
         #endregion
     

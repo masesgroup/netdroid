@@ -149,7 +149,7 @@ namespace Android.Icu.Text
     #endregion
 
     #region DateTimePatternGenerator implementation
-    public partial class DateTimePatternGenerator : Android.Icu.Util.IFreezable<Android.Icu.Text.DateTimePatternGenerator>, Java.Lang.ICloneable
+    public partial class DateTimePatternGenerator : Java.Lang.ICloneable, Android.Icu.Util.IFreezable<Android.Icu.Text.DateTimePatternGenerator>
     {
         #region Constructors
     
@@ -157,13 +157,13 @@ namespace Android.Icu.Text
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Icu.Text.DateTimePatternGenerator"/> to <see cref="Android.Icu.Util.Freezable"/>
-        /// </summary>
-        public static implicit operator Android.Icu.Util.Freezable(Android.Icu.Text.DateTimePatternGenerator t) => t.Cast<Android.Icu.Util.Freezable>();
-        /// <summary>
         /// Converter from <see cref="Android.Icu.Text.DateTimePatternGenerator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.DateTimePatternGenerator t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Icu.Text.DateTimePatternGenerator"/> to <see cref="Android.Icu.Util.Freezable"/>
+        /// </summary>
+        public static implicit operator Android.Icu.Util.Freezable(Android.Icu.Text.DateTimePatternGenerator t) => t.Cast<Android.Icu.Util.Freezable>();
     
         #endregion
     

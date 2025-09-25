@@ -130,6 +130,30 @@ namespace Android.Os
             IExecuteWithSignature("cancel", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getEnvelopeEffectInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Vibrator.VibratorEnvelopeEffectInfo"/></returns>
+        public Android.Os.Vibrator.VibratorEnvelopeEffectInfo GetEnvelopeEffectInfo()
+        {
+            return IExecuteWithSignature<Android.Os.Vibrator.VibratorEnvelopeEffectInfo>("getEnvelopeEffectInfo", "()Landroid/os/vibrator/VibratorEnvelopeEffectInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getFrequencyProfile()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Vibrator.VibratorFrequencyProfile"/></returns>
+        public Android.Os.Vibrator.VibratorFrequencyProfile GetFrequencyProfile()
+        {
+            return IExecuteWithSignature<Android.Os.Vibrator.VibratorFrequencyProfile>("getFrequencyProfile", "()Landroid/os/vibrator/VibratorFrequencyProfile;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#areEnvelopeEffectsSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool AreEnvelopeEffectsSupported()
+        {
+            return IExecuteWithSignature<bool>("areEnvelopeEffectsSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#arePrimitivesSupported(int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

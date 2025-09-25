@@ -70,6 +70,15 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class EventInput
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/EventInput.html#%3Cinit%3E(android.adservices.ondevicepersonalization.RequestLogRecord,android.os.PersistableBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Ondevicepersonalization.RequestLogRecord"/></param>
+        /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        public EventInput(Android.Adservices.Ondevicepersonalization.RequestLogRecord arg0, Android.Os.PersistableBundle arg1)
+            : base(arg0, arg1)
+        {
+        }
     
         #endregion
     

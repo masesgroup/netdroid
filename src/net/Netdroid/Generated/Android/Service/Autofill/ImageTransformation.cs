@@ -108,7 +108,7 @@ namespace Android.Service.Autofill
     #endregion
 
     #region ImageTransformation implementation
-    public partial class ImageTransformation : Android.Service.Autofill.ITransformation, Android.Os.IParcelable
+    public partial class ImageTransformation : Android.Os.IParcelable, Android.Service.Autofill.ITransformation
     {
         #region Constructors
     
@@ -116,13 +116,13 @@ namespace Android.Service.Autofill
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Service.Autofill.ImageTransformation"/> to <see cref="Android.Service.Autofill.Transformation"/>
-        /// </summary>
-        public static implicit operator Android.Service.Autofill.Transformation(Android.Service.Autofill.ImageTransformation t) => t.Cast<Android.Service.Autofill.Transformation>();
-        /// <summary>
         /// Converter from <see cref="Android.Service.Autofill.ImageTransformation"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Service.Autofill.ImageTransformation t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Service.Autofill.ImageTransformation"/> to <see cref="Android.Service.Autofill.Transformation"/>
+        /// </summary>
+        public static implicit operator Android.Service.Autofill.Transformation(Android.Service.Autofill.ImageTransformation t) => t.Cast<Android.Service.Autofill.Transformation>();
     
         #endregion
     

@@ -172,6 +172,14 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.VersionedPackage>>("getDependentPackages", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getCertDigests()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetCertDigests()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getCertDigests", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getLongVersion()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>

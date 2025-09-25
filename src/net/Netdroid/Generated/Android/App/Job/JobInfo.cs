@@ -347,6 +347,7 @@ namespace Android.App.Job
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#isImportantWhileForeground()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsImportantWhileForeground()
         {
             return IExecuteWithSignature<bool>("isImportantWhileForeground", "()Z");

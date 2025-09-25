@@ -160,12 +160,28 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getChildSurfacePackage()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.SurfaceControlViewHost.SurfacePackage"/></returns>
+        public Android.View.SurfaceControlViewHost.SurfacePackage GetChildSurfacePackage()
+        {
+            return IExecuteWithSignature<Android.View.SurfaceControlViewHost.SurfacePackage>("getChildSurfacePackage", "()Landroid/view/SurfaceControlViewHost$SurfacePackage;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getHolder()"/>
         /// </summary>
         /// <returns><see cref="Android.View.SurfaceHolder"/></returns>
         public Android.View.SurfaceHolder GetHolder()
         {
             return IExecuteWithSignature<Android.View.SurfaceHolder>("getHolder", "()Landroid/view/SurfaceHolder;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getCompositionOrder()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompositionOrder()
+        {
+            return IExecuteWithSignature<int>("getCompositionOrder", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#applyTransactionToFrame(android.view.SurfaceControl.Transaction)"/>
@@ -176,12 +192,27 @@ namespace Android.View
             IExecuteWithSignature("applyTransactionToFrame", "(Landroid/view/SurfaceControl$Transaction;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#clearChildSurfacePackage()"/>
+        /// </summary>
+        public void ClearChildSurfacePackage()
+        {
+            IExecuteWithSignature("clearChildSurfacePackage", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#setChildSurfacePackage(android.view.SurfaceControlViewHost.SurfacePackage)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.SurfaceControlViewHost.SurfacePackage"/></param>
         public void SetChildSurfacePackage(Android.View.SurfaceControlViewHost.SurfacePackage arg0)
         {
             IExecuteWithSignature("setChildSurfacePackage", "(Landroid/view/SurfaceControlViewHost$SurfacePackage;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#setCompositionOrder(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCompositionOrder(int arg0)
+        {
+            IExecuteWithSignature("setCompositionOrder", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#setDesiredHdrHeadroom(float)"/>

@@ -387,24 +387,28 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#CDMA_ROAMING_MODE_AFFILIATED"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int CDMA_ROAMING_MODE_AFFILIATED { get { if (!_CDMA_ROAMING_MODE_AFFILIATEDReady) { _CDMA_ROAMING_MODE_AFFILIATEDContent = SGetField<int>(LocalBridgeClazz, "CDMA_ROAMING_MODE_AFFILIATED"); _CDMA_ROAMING_MODE_AFFILIATEDReady = true; } return _CDMA_ROAMING_MODE_AFFILIATEDContent; } }
         private static int _CDMA_ROAMING_MODE_AFFILIATEDContent = default;
         private static bool _CDMA_ROAMING_MODE_AFFILIATEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#CDMA_ROAMING_MODE_ANY"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int CDMA_ROAMING_MODE_ANY { get { if (!_CDMA_ROAMING_MODE_ANYReady) { _CDMA_ROAMING_MODE_ANYContent = SGetField<int>(LocalBridgeClazz, "CDMA_ROAMING_MODE_ANY"); _CDMA_ROAMING_MODE_ANYReady = true; } return _CDMA_ROAMING_MODE_ANYContent; } }
         private static int _CDMA_ROAMING_MODE_ANYContent = default;
         private static bool _CDMA_ROAMING_MODE_ANYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#CDMA_ROAMING_MODE_HOME"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int CDMA_ROAMING_MODE_HOME { get { if (!_CDMA_ROAMING_MODE_HOMEReady) { _CDMA_ROAMING_MODE_HOMEContent = SGetField<int>(LocalBridgeClazz, "CDMA_ROAMING_MODE_HOME"); _CDMA_ROAMING_MODE_HOMEReady = true; } return _CDMA_ROAMING_MODE_HOMEContent; } }
         private static int _CDMA_ROAMING_MODE_HOMEContent = default;
         private static bool _CDMA_ROAMING_MODE_HOMEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#CDMA_ROAMING_MODE_RADIO_DEFAULT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int CDMA_ROAMING_MODE_RADIO_DEFAULT { get { if (!_CDMA_ROAMING_MODE_RADIO_DEFAULTReady) { _CDMA_ROAMING_MODE_RADIO_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "CDMA_ROAMING_MODE_RADIO_DEFAULT"); _CDMA_ROAMING_MODE_RADIO_DEFAULTReady = true; } return _CDMA_ROAMING_MODE_RADIO_DEFAULTContent; } }
         private static int _CDMA_ROAMING_MODE_RADIO_DEFAULTContent = default;
         private static bool _CDMA_ROAMING_MODE_RADIO_DEFAULTReady = false; // this is used because in case of generics 
@@ -525,18 +529,21 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#ERI_FLASH"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int ERI_FLASH { get { if (!_ERI_FLASHReady) { _ERI_FLASHContent = SGetField<int>(LocalBridgeClazz, "ERI_FLASH"); _ERI_FLASHReady = true; } return _ERI_FLASHContent; } }
         private static int _ERI_FLASHContent = default;
         private static bool _ERI_FLASHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#ERI_OFF"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int ERI_OFF { get { if (!_ERI_OFFReady) { _ERI_OFFContent = SGetField<int>(LocalBridgeClazz, "ERI_OFF"); _ERI_OFFReady = true; } return _ERI_OFFContent; } }
         private static int _ERI_OFFContent = default;
         private static bool _ERI_OFFReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#ERI_ON"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int ERI_ON { get { if (!_ERI_ONReady) { _ERI_ONContent = SGetField<int>(LocalBridgeClazz, "ERI_ON"); _ERI_ONReady = true; } return _ERI_ONContent; } }
         private static int _ERI_ONContent = default;
         private static bool _ERI_ONReady = false; // this is used because in case of generics 
@@ -597,12 +604,14 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_1xRTT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int NETWORK_TYPE_1xRTT { get { if (!_NETWORK_TYPE_1xRTTReady) { _NETWORK_TYPE_1xRTTContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_1xRTT"); _NETWORK_TYPE_1xRTTReady = true; } return _NETWORK_TYPE_1xRTTContent; } }
         private static int _NETWORK_TYPE_1xRTTContent = default;
         private static bool _NETWORK_TYPE_1xRTTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_CDMA"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int NETWORK_TYPE_CDMA { get { if (!_NETWORK_TYPE_CDMAReady) { _NETWORK_TYPE_CDMAContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_CDMA"); _NETWORK_TYPE_CDMAReady = true; } return _NETWORK_TYPE_CDMAContent; } }
         private static int _NETWORK_TYPE_CDMAContent = default;
         private static bool _NETWORK_TYPE_CDMAReady = false; // this is used because in case of generics 
@@ -615,24 +624,28 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_EHRPD"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int NETWORK_TYPE_EHRPD { get { if (!_NETWORK_TYPE_EHRPDReady) { _NETWORK_TYPE_EHRPDContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_EHRPD"); _NETWORK_TYPE_EHRPDReady = true; } return _NETWORK_TYPE_EHRPDContent; } }
         private static int _NETWORK_TYPE_EHRPDContent = default;
         private static bool _NETWORK_TYPE_EHRPDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_EVDO_0"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int NETWORK_TYPE_EVDO_0 { get { if (!_NETWORK_TYPE_EVDO_0Ready) { _NETWORK_TYPE_EVDO_0Content = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_EVDO_0"); _NETWORK_TYPE_EVDO_0Ready = true; } return _NETWORK_TYPE_EVDO_0Content; } }
         private static int _NETWORK_TYPE_EVDO_0Content = default;
         private static bool _NETWORK_TYPE_EVDO_0Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_EVDO_A"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int NETWORK_TYPE_EVDO_A { get { if (!_NETWORK_TYPE_EVDO_AReady) { _NETWORK_TYPE_EVDO_AContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_EVDO_A"); _NETWORK_TYPE_EVDO_AReady = true; } return _NETWORK_TYPE_EVDO_AContent; } }
         private static int _NETWORK_TYPE_EVDO_AContent = default;
         private static bool _NETWORK_TYPE_EVDO_AReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_EVDO_B"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int NETWORK_TYPE_EVDO_B { get { if (!_NETWORK_TYPE_EVDO_BReady) { _NETWORK_TYPE_EVDO_BContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_EVDO_B"); _NETWORK_TYPE_EVDO_BReady = true; } return _NETWORK_TYPE_EVDO_BContent; } }
         private static int _NETWORK_TYPE_EVDO_BContent = default;
         private static bool _NETWORK_TYPE_EVDO_BReady = false; // this is used because in case of generics 
@@ -718,6 +731,7 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#PHONE_TYPE_CDMA"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int PHONE_TYPE_CDMA { get { if (!_PHONE_TYPE_CDMAReady) { _PHONE_TYPE_CDMAContent = SGetField<int>(LocalBridgeClazz, "PHONE_TYPE_CDMA"); _PHONE_TYPE_CDMAReady = true; } return _PHONE_TYPE_CDMAContent; } }
         private static int _PHONE_TYPE_CDMAContent = default;
         private static bool _PHONE_TYPE_CDMAReady = false; // this is used because in case of generics 
@@ -1337,6 +1351,7 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_BITMASK_CDMA"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static long NETWORK_TYPE_BITMASK_CDMA { get { if (!_NETWORK_TYPE_BITMASK_CDMAReady) { _NETWORK_TYPE_BITMASK_CDMAContent = SGetField<long>(LocalBridgeClazz, "NETWORK_TYPE_BITMASK_CDMA"); _NETWORK_TYPE_BITMASK_CDMAReady = true; } return _NETWORK_TYPE_BITMASK_CDMAContent; } }
         private static long _NETWORK_TYPE_BITMASK_CDMAContent = default;
         private static bool _NETWORK_TYPE_BITMASK_CDMAReady = false; // this is used because in case of generics 
@@ -1349,6 +1364,7 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_BITMASK_EHRPD"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static long NETWORK_TYPE_BITMASK_EHRPD { get { if (!_NETWORK_TYPE_BITMASK_EHRPDReady) { _NETWORK_TYPE_BITMASK_EHRPDContent = SGetField<long>(LocalBridgeClazz, "NETWORK_TYPE_BITMASK_EHRPD"); _NETWORK_TYPE_BITMASK_EHRPDReady = true; } return _NETWORK_TYPE_BITMASK_EHRPDContent; } }
         private static long _NETWORK_TYPE_BITMASK_EHRPDContent = default;
         private static bool _NETWORK_TYPE_BITMASK_EHRPDReady = false; // this is used because in case of generics 
@@ -2174,6 +2190,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getManufacturerCode()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
         public Java.Lang.String GetManufacturerCode()
         {
             return IExecuteWithSignature<Java.Lang.String>("getManufacturerCode", "()Ljava/lang/String;");
@@ -2183,6 +2200,7 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
         public Java.Lang.String GetManufacturerCode(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getManufacturerCode", "(I)Ljava/lang/String;", arg0);
@@ -2191,6 +2209,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getMeid()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
         public Java.Lang.String GetMeid()
         {
             return IExecuteWithSignature<Java.Lang.String>("getMeid", "()Ljava/lang/String;");
@@ -2200,6 +2219,7 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
         public Java.Lang.String GetMeid(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getMeid", "(I)Ljava/lang/String;", arg0);

@@ -324,6 +324,18 @@ namespace Android.Media
         #endregion
     
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#SECURITY_MODEL_MEMORY_SAFE"/>
+        /// </summary>
+        public static int SECURITY_MODEL_MEMORY_SAFE { get { if (!_SECURITY_MODEL_MEMORY_SAFEReady) { _SECURITY_MODEL_MEMORY_SAFEContent = SGetField<int>(LocalBridgeClazz, "SECURITY_MODEL_MEMORY_SAFE"); _SECURITY_MODEL_MEMORY_SAFEReady = true; } return _SECURITY_MODEL_MEMORY_SAFEContent; } }
+        private static int _SECURITY_MODEL_MEMORY_SAFEContent = default;
+        private static bool _SECURITY_MODEL_MEMORY_SAFEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#SECURITY_MODEL_SANDBOXED"/>
+        /// </summary>
+        public static int SECURITY_MODEL_SANDBOXED { get { if (!_SECURITY_MODEL_SANDBOXEDReady) { _SECURITY_MODEL_SANDBOXEDContent = SGetField<int>(LocalBridgeClazz, "SECURITY_MODEL_SANDBOXED"); _SECURITY_MODEL_SANDBOXEDReady = true; } return _SECURITY_MODEL_SANDBOXEDContent; } }
+        private static int _SECURITY_MODEL_SANDBOXEDContent = default;
+        private static bool _SECURITY_MODEL_SANDBOXEDReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -380,6 +392,14 @@ namespace Android.Media
         public bool IsVendor()
         {
             return IExecuteWithSignature<bool>("isVendor", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getSecurityModel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecurityModel()
+        {
+            return IExecuteWithSignature<int>("getSecurityModel", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getCanonicalName()"/>
@@ -848,6 +868,12 @@ namespace Android.Media
             private static int _COLOR_FormatYUVP010Content = default;
             private static bool _COLOR_FormatYUVP010Ready = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUVP210"/>
+            /// </summary>
+            public static int COLOR_FormatYUVP210 { get { if (!_COLOR_FormatYUVP210Ready) { _COLOR_FormatYUVP210Content = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUVP210"); _COLOR_FormatYUVP210Ready = true; } return _COLOR_FormatYUVP210Content; } }
+            private static int _COLOR_FormatYUVP210Content = default;
+            private static bool _COLOR_FormatYUVP210Ready = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_QCOM_FormatYUV420SemiPlanar"/>
             /// </summary>
             [global::System.Obsolete()]
@@ -1214,6 +1240,360 @@ namespace Android.Media
             public static int AC4Profile22 { get { if (!_AC4Profile22Ready) { _AC4Profile22Content = SGetField<int>(LocalBridgeClazz, "AC4Profile22"); _AC4Profile22Ready = true; } return _AC4Profile22Content; } }
             private static int _AC4Profile22Content = default;
             private static bool _AC4Profile22Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel11Band0"/>
+            /// </summary>
+            public static int APVLevel11Band0 { get { if (!_APVLevel11Band0Ready) { _APVLevel11Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel11Band0"); _APVLevel11Band0Ready = true; } return _APVLevel11Band0Content; } }
+            private static int _APVLevel11Band0Content = default;
+            private static bool _APVLevel11Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel11Band1"/>
+            /// </summary>
+            public static int APVLevel11Band1 { get { if (!_APVLevel11Band1Ready) { _APVLevel11Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel11Band1"); _APVLevel11Band1Ready = true; } return _APVLevel11Band1Content; } }
+            private static int _APVLevel11Band1Content = default;
+            private static bool _APVLevel11Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel11Band2"/>
+            /// </summary>
+            public static int APVLevel11Band2 { get { if (!_APVLevel11Band2Ready) { _APVLevel11Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel11Band2"); _APVLevel11Band2Ready = true; } return _APVLevel11Band2Content; } }
+            private static int _APVLevel11Band2Content = default;
+            private static bool _APVLevel11Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel11Band3"/>
+            /// </summary>
+            public static int APVLevel11Band3 { get { if (!_APVLevel11Band3Ready) { _APVLevel11Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel11Band3"); _APVLevel11Band3Ready = true; } return _APVLevel11Band3Content; } }
+            private static int _APVLevel11Band3Content = default;
+            private static bool _APVLevel11Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel1Band0"/>
+            /// </summary>
+            public static int APVLevel1Band0 { get { if (!_APVLevel1Band0Ready) { _APVLevel1Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel1Band0"); _APVLevel1Band0Ready = true; } return _APVLevel1Band0Content; } }
+            private static int _APVLevel1Band0Content = default;
+            private static bool _APVLevel1Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel1Band1"/>
+            /// </summary>
+            public static int APVLevel1Band1 { get { if (!_APVLevel1Band1Ready) { _APVLevel1Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel1Band1"); _APVLevel1Band1Ready = true; } return _APVLevel1Band1Content; } }
+            private static int _APVLevel1Band1Content = default;
+            private static bool _APVLevel1Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel1Band2"/>
+            /// </summary>
+            public static int APVLevel1Band2 { get { if (!_APVLevel1Band2Ready) { _APVLevel1Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel1Band2"); _APVLevel1Band2Ready = true; } return _APVLevel1Band2Content; } }
+            private static int _APVLevel1Band2Content = default;
+            private static bool _APVLevel1Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel1Band3"/>
+            /// </summary>
+            public static int APVLevel1Band3 { get { if (!_APVLevel1Band3Ready) { _APVLevel1Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel1Band3"); _APVLevel1Band3Ready = true; } return _APVLevel1Band3Content; } }
+            private static int _APVLevel1Band3Content = default;
+            private static bool _APVLevel1Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel21Band0"/>
+            /// </summary>
+            public static int APVLevel21Band0 { get { if (!_APVLevel21Band0Ready) { _APVLevel21Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel21Band0"); _APVLevel21Band0Ready = true; } return _APVLevel21Band0Content; } }
+            private static int _APVLevel21Band0Content = default;
+            private static bool _APVLevel21Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel21Band1"/>
+            /// </summary>
+            public static int APVLevel21Band1 { get { if (!_APVLevel21Band1Ready) { _APVLevel21Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel21Band1"); _APVLevel21Band1Ready = true; } return _APVLevel21Band1Content; } }
+            private static int _APVLevel21Band1Content = default;
+            private static bool _APVLevel21Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel21Band2"/>
+            /// </summary>
+            public static int APVLevel21Band2 { get { if (!_APVLevel21Band2Ready) { _APVLevel21Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel21Band2"); _APVLevel21Band2Ready = true; } return _APVLevel21Band2Content; } }
+            private static int _APVLevel21Band2Content = default;
+            private static bool _APVLevel21Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel21Band3"/>
+            /// </summary>
+            public static int APVLevel21Band3 { get { if (!_APVLevel21Band3Ready) { _APVLevel21Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel21Band3"); _APVLevel21Band3Ready = true; } return _APVLevel21Band3Content; } }
+            private static int _APVLevel21Band3Content = default;
+            private static bool _APVLevel21Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel2Band0"/>
+            /// </summary>
+            public static int APVLevel2Band0 { get { if (!_APVLevel2Band0Ready) { _APVLevel2Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel2Band0"); _APVLevel2Band0Ready = true; } return _APVLevel2Band0Content; } }
+            private static int _APVLevel2Band0Content = default;
+            private static bool _APVLevel2Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel2Band1"/>
+            /// </summary>
+            public static int APVLevel2Band1 { get { if (!_APVLevel2Band1Ready) { _APVLevel2Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel2Band1"); _APVLevel2Band1Ready = true; } return _APVLevel2Band1Content; } }
+            private static int _APVLevel2Band1Content = default;
+            private static bool _APVLevel2Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel2Band2"/>
+            /// </summary>
+            public static int APVLevel2Band2 { get { if (!_APVLevel2Band2Ready) { _APVLevel2Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel2Band2"); _APVLevel2Band2Ready = true; } return _APVLevel2Band2Content; } }
+            private static int _APVLevel2Band2Content = default;
+            private static bool _APVLevel2Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel2Band3"/>
+            /// </summary>
+            public static int APVLevel2Band3 { get { if (!_APVLevel2Band3Ready) { _APVLevel2Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel2Band3"); _APVLevel2Band3Ready = true; } return _APVLevel2Band3Content; } }
+            private static int _APVLevel2Band3Content = default;
+            private static bool _APVLevel2Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel31Band0"/>
+            /// </summary>
+            public static int APVLevel31Band0 { get { if (!_APVLevel31Band0Ready) { _APVLevel31Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel31Band0"); _APVLevel31Band0Ready = true; } return _APVLevel31Band0Content; } }
+            private static int _APVLevel31Band0Content = default;
+            private static bool _APVLevel31Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel31Band1"/>
+            /// </summary>
+            public static int APVLevel31Band1 { get { if (!_APVLevel31Band1Ready) { _APVLevel31Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel31Band1"); _APVLevel31Band1Ready = true; } return _APVLevel31Band1Content; } }
+            private static int _APVLevel31Band1Content = default;
+            private static bool _APVLevel31Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel31Band2"/>
+            /// </summary>
+            public static int APVLevel31Band2 { get { if (!_APVLevel31Band2Ready) { _APVLevel31Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel31Band2"); _APVLevel31Band2Ready = true; } return _APVLevel31Band2Content; } }
+            private static int _APVLevel31Band2Content = default;
+            private static bool _APVLevel31Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel31Band3"/>
+            /// </summary>
+            public static int APVLevel31Band3 { get { if (!_APVLevel31Band3Ready) { _APVLevel31Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel31Band3"); _APVLevel31Band3Ready = true; } return _APVLevel31Band3Content; } }
+            private static int _APVLevel31Band3Content = default;
+            private static bool _APVLevel31Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel3Band0"/>
+            /// </summary>
+            public static int APVLevel3Band0 { get { if (!_APVLevel3Band0Ready) { _APVLevel3Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel3Band0"); _APVLevel3Band0Ready = true; } return _APVLevel3Band0Content; } }
+            private static int _APVLevel3Band0Content = default;
+            private static bool _APVLevel3Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel3Band1"/>
+            /// </summary>
+            public static int APVLevel3Band1 { get { if (!_APVLevel3Band1Ready) { _APVLevel3Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel3Band1"); _APVLevel3Band1Ready = true; } return _APVLevel3Band1Content; } }
+            private static int _APVLevel3Band1Content = default;
+            private static bool _APVLevel3Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel3Band2"/>
+            /// </summary>
+            public static int APVLevel3Band2 { get { if (!_APVLevel3Band2Ready) { _APVLevel3Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel3Band2"); _APVLevel3Band2Ready = true; } return _APVLevel3Band2Content; } }
+            private static int _APVLevel3Band2Content = default;
+            private static bool _APVLevel3Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel3Band3"/>
+            /// </summary>
+            public static int APVLevel3Band3 { get { if (!_APVLevel3Band3Ready) { _APVLevel3Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel3Band3"); _APVLevel3Band3Ready = true; } return _APVLevel3Band3Content; } }
+            private static int _APVLevel3Band3Content = default;
+            private static bool _APVLevel3Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel41Band0"/>
+            /// </summary>
+            public static int APVLevel41Band0 { get { if (!_APVLevel41Band0Ready) { _APVLevel41Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel41Band0"); _APVLevel41Band0Ready = true; } return _APVLevel41Band0Content; } }
+            private static int _APVLevel41Band0Content = default;
+            private static bool _APVLevel41Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel41Band1"/>
+            /// </summary>
+            public static int APVLevel41Band1 { get { if (!_APVLevel41Band1Ready) { _APVLevel41Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel41Band1"); _APVLevel41Band1Ready = true; } return _APVLevel41Band1Content; } }
+            private static int _APVLevel41Band1Content = default;
+            private static bool _APVLevel41Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel41Band2"/>
+            /// </summary>
+            public static int APVLevel41Band2 { get { if (!_APVLevel41Band2Ready) { _APVLevel41Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel41Band2"); _APVLevel41Band2Ready = true; } return _APVLevel41Band2Content; } }
+            private static int _APVLevel41Band2Content = default;
+            private static bool _APVLevel41Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel41Band3"/>
+            /// </summary>
+            public static int APVLevel41Band3 { get { if (!_APVLevel41Band3Ready) { _APVLevel41Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel41Band3"); _APVLevel41Band3Ready = true; } return _APVLevel41Band3Content; } }
+            private static int _APVLevel41Band3Content = default;
+            private static bool _APVLevel41Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel4Band0"/>
+            /// </summary>
+            public static int APVLevel4Band0 { get { if (!_APVLevel4Band0Ready) { _APVLevel4Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel4Band0"); _APVLevel4Band0Ready = true; } return _APVLevel4Band0Content; } }
+            private static int _APVLevel4Band0Content = default;
+            private static bool _APVLevel4Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel4Band1"/>
+            /// </summary>
+            public static int APVLevel4Band1 { get { if (!_APVLevel4Band1Ready) { _APVLevel4Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel4Band1"); _APVLevel4Band1Ready = true; } return _APVLevel4Band1Content; } }
+            private static int _APVLevel4Band1Content = default;
+            private static bool _APVLevel4Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel4Band2"/>
+            /// </summary>
+            public static int APVLevel4Band2 { get { if (!_APVLevel4Band2Ready) { _APVLevel4Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel4Band2"); _APVLevel4Band2Ready = true; } return _APVLevel4Band2Content; } }
+            private static int _APVLevel4Band2Content = default;
+            private static bool _APVLevel4Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel4Band3"/>
+            /// </summary>
+            public static int APVLevel4Band3 { get { if (!_APVLevel4Band3Ready) { _APVLevel4Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel4Band3"); _APVLevel4Band3Ready = true; } return _APVLevel4Band3Content; } }
+            private static int _APVLevel4Band3Content = default;
+            private static bool _APVLevel4Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel51Band0"/>
+            /// </summary>
+            public static int APVLevel51Band0 { get { if (!_APVLevel51Band0Ready) { _APVLevel51Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel51Band0"); _APVLevel51Band0Ready = true; } return _APVLevel51Band0Content; } }
+            private static int _APVLevel51Band0Content = default;
+            private static bool _APVLevel51Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel51Band1"/>
+            /// </summary>
+            public static int APVLevel51Band1 { get { if (!_APVLevel51Band1Ready) { _APVLevel51Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel51Band1"); _APVLevel51Band1Ready = true; } return _APVLevel51Band1Content; } }
+            private static int _APVLevel51Band1Content = default;
+            private static bool _APVLevel51Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel51Band2"/>
+            /// </summary>
+            public static int APVLevel51Band2 { get { if (!_APVLevel51Band2Ready) { _APVLevel51Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel51Band2"); _APVLevel51Band2Ready = true; } return _APVLevel51Band2Content; } }
+            private static int _APVLevel51Band2Content = default;
+            private static bool _APVLevel51Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel51Band3"/>
+            /// </summary>
+            public static int APVLevel51Band3 { get { if (!_APVLevel51Band3Ready) { _APVLevel51Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel51Band3"); _APVLevel51Band3Ready = true; } return _APVLevel51Band3Content; } }
+            private static int _APVLevel51Band3Content = default;
+            private static bool _APVLevel51Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel5Band0"/>
+            /// </summary>
+            public static int APVLevel5Band0 { get { if (!_APVLevel5Band0Ready) { _APVLevel5Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel5Band0"); _APVLevel5Band0Ready = true; } return _APVLevel5Band0Content; } }
+            private static int _APVLevel5Band0Content = default;
+            private static bool _APVLevel5Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel5Band1"/>
+            /// </summary>
+            public static int APVLevel5Band1 { get { if (!_APVLevel5Band1Ready) { _APVLevel5Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel5Band1"); _APVLevel5Band1Ready = true; } return _APVLevel5Band1Content; } }
+            private static int _APVLevel5Band1Content = default;
+            private static bool _APVLevel5Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel5Band2"/>
+            /// </summary>
+            public static int APVLevel5Band2 { get { if (!_APVLevel5Band2Ready) { _APVLevel5Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel5Band2"); _APVLevel5Band2Ready = true; } return _APVLevel5Band2Content; } }
+            private static int _APVLevel5Band2Content = default;
+            private static bool _APVLevel5Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel5Band3"/>
+            /// </summary>
+            public static int APVLevel5Band3 { get { if (!_APVLevel5Band3Ready) { _APVLevel5Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel5Band3"); _APVLevel5Band3Ready = true; } return _APVLevel5Band3Content; } }
+            private static int _APVLevel5Band3Content = default;
+            private static bool _APVLevel5Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel61Band0"/>
+            /// </summary>
+            public static int APVLevel61Band0 { get { if (!_APVLevel61Band0Ready) { _APVLevel61Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel61Band0"); _APVLevel61Band0Ready = true; } return _APVLevel61Band0Content; } }
+            private static int _APVLevel61Band0Content = default;
+            private static bool _APVLevel61Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel61Band1"/>
+            /// </summary>
+            public static int APVLevel61Band1 { get { if (!_APVLevel61Band1Ready) { _APVLevel61Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel61Band1"); _APVLevel61Band1Ready = true; } return _APVLevel61Band1Content; } }
+            private static int _APVLevel61Band1Content = default;
+            private static bool _APVLevel61Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel61Band2"/>
+            /// </summary>
+            public static int APVLevel61Band2 { get { if (!_APVLevel61Band2Ready) { _APVLevel61Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel61Band2"); _APVLevel61Band2Ready = true; } return _APVLevel61Band2Content; } }
+            private static int _APVLevel61Band2Content = default;
+            private static bool _APVLevel61Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel61Band3"/>
+            /// </summary>
+            public static int APVLevel61Band3 { get { if (!_APVLevel61Band3Ready) { _APVLevel61Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel61Band3"); _APVLevel61Band3Ready = true; } return _APVLevel61Band3Content; } }
+            private static int _APVLevel61Band3Content = default;
+            private static bool _APVLevel61Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel6Band0"/>
+            /// </summary>
+            public static int APVLevel6Band0 { get { if (!_APVLevel6Band0Ready) { _APVLevel6Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel6Band0"); _APVLevel6Band0Ready = true; } return _APVLevel6Band0Content; } }
+            private static int _APVLevel6Band0Content = default;
+            private static bool _APVLevel6Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel6Band1"/>
+            /// </summary>
+            public static int APVLevel6Band1 { get { if (!_APVLevel6Band1Ready) { _APVLevel6Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel6Band1"); _APVLevel6Band1Ready = true; } return _APVLevel6Band1Content; } }
+            private static int _APVLevel6Band1Content = default;
+            private static bool _APVLevel6Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel6Band2"/>
+            /// </summary>
+            public static int APVLevel6Band2 { get { if (!_APVLevel6Band2Ready) { _APVLevel6Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel6Band2"); _APVLevel6Band2Ready = true; } return _APVLevel6Band2Content; } }
+            private static int _APVLevel6Band2Content = default;
+            private static bool _APVLevel6Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel6Band3"/>
+            /// </summary>
+            public static int APVLevel6Band3 { get { if (!_APVLevel6Band3Ready) { _APVLevel6Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel6Band3"); _APVLevel6Band3Ready = true; } return _APVLevel6Band3Content; } }
+            private static int _APVLevel6Band3Content = default;
+            private static bool _APVLevel6Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel71Band0"/>
+            /// </summary>
+            public static int APVLevel71Band0 { get { if (!_APVLevel71Band0Ready) { _APVLevel71Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel71Band0"); _APVLevel71Band0Ready = true; } return _APVLevel71Band0Content; } }
+            private static int _APVLevel71Band0Content = default;
+            private static bool _APVLevel71Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel71Band1"/>
+            /// </summary>
+            public static int APVLevel71Band1 { get { if (!_APVLevel71Band1Ready) { _APVLevel71Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel71Band1"); _APVLevel71Band1Ready = true; } return _APVLevel71Band1Content; } }
+            private static int _APVLevel71Band1Content = default;
+            private static bool _APVLevel71Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel71Band2"/>
+            /// </summary>
+            public static int APVLevel71Band2 { get { if (!_APVLevel71Band2Ready) { _APVLevel71Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel71Band2"); _APVLevel71Band2Ready = true; } return _APVLevel71Band2Content; } }
+            private static int _APVLevel71Band2Content = default;
+            private static bool _APVLevel71Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel71Band3"/>
+            /// </summary>
+            public static int APVLevel71Band3 { get { if (!_APVLevel71Band3Ready) { _APVLevel71Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel71Band3"); _APVLevel71Band3Ready = true; } return _APVLevel71Band3Content; } }
+            private static int _APVLevel71Band3Content = default;
+            private static bool _APVLevel71Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel7Band0"/>
+            /// </summary>
+            public static int APVLevel7Band0 { get { if (!_APVLevel7Band0Ready) { _APVLevel7Band0Content = SGetField<int>(LocalBridgeClazz, "APVLevel7Band0"); _APVLevel7Band0Ready = true; } return _APVLevel7Band0Content; } }
+            private static int _APVLevel7Band0Content = default;
+            private static bool _APVLevel7Band0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel7Band1"/>
+            /// </summary>
+            public static int APVLevel7Band1 { get { if (!_APVLevel7Band1Ready) { _APVLevel7Band1Content = SGetField<int>(LocalBridgeClazz, "APVLevel7Band1"); _APVLevel7Band1Ready = true; } return _APVLevel7Band1Content; } }
+            private static int _APVLevel7Band1Content = default;
+            private static bool _APVLevel7Band1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel7Band2"/>
+            /// </summary>
+            public static int APVLevel7Band2 { get { if (!_APVLevel7Band2Ready) { _APVLevel7Band2Content = SGetField<int>(LocalBridgeClazz, "APVLevel7Band2"); _APVLevel7Band2Ready = true; } return _APVLevel7Band2Content; } }
+            private static int _APVLevel7Band2Content = default;
+            private static bool _APVLevel7Band2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVLevel7Band3"/>
+            /// </summary>
+            public static int APVLevel7Band3 { get { if (!_APVLevel7Band3Ready) { _APVLevel7Band3Content = SGetField<int>(LocalBridgeClazz, "APVLevel7Band3"); _APVLevel7Band3Ready = true; } return _APVLevel7Band3Content; } }
+            private static int _APVLevel7Band3Content = default;
+            private static bool _APVLevel7Band3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVProfile422_10"/>
+            /// </summary>
+            public static int APVProfile422_10 { get { if (!_APVProfile422_10Ready) { _APVProfile422_10Content = SGetField<int>(LocalBridgeClazz, "APVProfile422_10"); _APVProfile422_10Ready = true; } return _APVProfile422_10Content; } }
+            private static int _APVProfile422_10Content = default;
+            private static bool _APVProfile422_10Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVProfile422_10HDR10"/>
+            /// </summary>
+            public static int APVProfile422_10HDR10 { get { if (!_APVProfile422_10HDR10Ready) { _APVProfile422_10HDR10Content = SGetField<int>(LocalBridgeClazz, "APVProfile422_10HDR10"); _APVProfile422_10HDR10Ready = true; } return _APVProfile422_10HDR10Content; } }
+            private static int _APVProfile422_10HDR10Content = default;
+            private static bool _APVProfile422_10HDR10Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#APVProfile422_10HDR10Plus"/>
+            /// </summary>
+            public static int APVProfile422_10HDR10Plus { get { if (!_APVProfile422_10HDR10PlusReady) { _APVProfile422_10HDR10PlusContent = SGetField<int>(LocalBridgeClazz, "APVProfile422_10HDR10Plus"); _APVProfile422_10HDR10PlusReady = true; } return _APVProfile422_10HDR10PlusContent; } }
+            private static int _APVProfile422_10HDR10PlusContent = default;
+            private static bool _APVProfile422_10HDR10PlusReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#AV1Level2"/>
             /// </summary>
@@ -2012,6 +2392,78 @@ namespace Android.Media
             public static int HEVCProfileMainStill { get { if (!_HEVCProfileMainStillReady) { _HEVCProfileMainStillContent = SGetField<int>(LocalBridgeClazz, "HEVCProfileMainStill"); _HEVCProfileMainStillReady = true; } return _HEVCProfileMainStillContent; } }
             private static int _HEVCProfileMainStillContent = default;
             private static bool _HEVCProfileMainStillReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBaseAac"/>
+            /// </summary>
+            public static int IAMFProfileBaseAac { get { if (!_IAMFProfileBaseAacReady) { _IAMFProfileBaseAacContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBaseAac"); _IAMFProfileBaseAacReady = true; } return _IAMFProfileBaseAacContent; } }
+            private static int _IAMFProfileBaseAacContent = default;
+            private static bool _IAMFProfileBaseAacReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBaseEnhancedAac"/>
+            /// </summary>
+            public static int IAMFProfileBaseEnhancedAac { get { if (!_IAMFProfileBaseEnhancedAacReady) { _IAMFProfileBaseEnhancedAacContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBaseEnhancedAac"); _IAMFProfileBaseEnhancedAacReady = true; } return _IAMFProfileBaseEnhancedAacContent; } }
+            private static int _IAMFProfileBaseEnhancedAacContent = default;
+            private static bool _IAMFProfileBaseEnhancedAacReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBaseEnhancedFlac"/>
+            /// </summary>
+            public static int IAMFProfileBaseEnhancedFlac { get { if (!_IAMFProfileBaseEnhancedFlacReady) { _IAMFProfileBaseEnhancedFlacContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBaseEnhancedFlac"); _IAMFProfileBaseEnhancedFlacReady = true; } return _IAMFProfileBaseEnhancedFlacContent; } }
+            private static int _IAMFProfileBaseEnhancedFlacContent = default;
+            private static bool _IAMFProfileBaseEnhancedFlacReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBaseEnhancedOpus"/>
+            /// </summary>
+            public static int IAMFProfileBaseEnhancedOpus { get { if (!_IAMFProfileBaseEnhancedOpusReady) { _IAMFProfileBaseEnhancedOpusContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBaseEnhancedOpus"); _IAMFProfileBaseEnhancedOpusReady = true; } return _IAMFProfileBaseEnhancedOpusContent; } }
+            private static int _IAMFProfileBaseEnhancedOpusContent = default;
+            private static bool _IAMFProfileBaseEnhancedOpusReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBaseEnhancedPcm"/>
+            /// </summary>
+            public static int IAMFProfileBaseEnhancedPcm { get { if (!_IAMFProfileBaseEnhancedPcmReady) { _IAMFProfileBaseEnhancedPcmContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBaseEnhancedPcm"); _IAMFProfileBaseEnhancedPcmReady = true; } return _IAMFProfileBaseEnhancedPcmContent; } }
+            private static int _IAMFProfileBaseEnhancedPcmContent = default;
+            private static bool _IAMFProfileBaseEnhancedPcmReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBaseFlac"/>
+            /// </summary>
+            public static int IAMFProfileBaseFlac { get { if (!_IAMFProfileBaseFlacReady) { _IAMFProfileBaseFlacContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBaseFlac"); _IAMFProfileBaseFlacReady = true; } return _IAMFProfileBaseFlacContent; } }
+            private static int _IAMFProfileBaseFlacContent = default;
+            private static bool _IAMFProfileBaseFlacReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBaseOpus"/>
+            /// </summary>
+            public static int IAMFProfileBaseOpus { get { if (!_IAMFProfileBaseOpusReady) { _IAMFProfileBaseOpusContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBaseOpus"); _IAMFProfileBaseOpusReady = true; } return _IAMFProfileBaseOpusContent; } }
+            private static int _IAMFProfileBaseOpusContent = default;
+            private static bool _IAMFProfileBaseOpusReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileBasePcm"/>
+            /// </summary>
+            public static int IAMFProfileBasePcm { get { if (!_IAMFProfileBasePcmReady) { _IAMFProfileBasePcmContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileBasePcm"); _IAMFProfileBasePcmReady = true; } return _IAMFProfileBasePcmContent; } }
+            private static int _IAMFProfileBasePcmContent = default;
+            private static bool _IAMFProfileBasePcmReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileSimpleAac"/>
+            /// </summary>
+            public static int IAMFProfileSimpleAac { get { if (!_IAMFProfileSimpleAacReady) { _IAMFProfileSimpleAacContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileSimpleAac"); _IAMFProfileSimpleAacReady = true; } return _IAMFProfileSimpleAacContent; } }
+            private static int _IAMFProfileSimpleAacContent = default;
+            private static bool _IAMFProfileSimpleAacReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileSimpleFlac"/>
+            /// </summary>
+            public static int IAMFProfileSimpleFlac { get { if (!_IAMFProfileSimpleFlacReady) { _IAMFProfileSimpleFlacContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileSimpleFlac"); _IAMFProfileSimpleFlacReady = true; } return _IAMFProfileSimpleFlacContent; } }
+            private static int _IAMFProfileSimpleFlacContent = default;
+            private static bool _IAMFProfileSimpleFlacReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileSimpleOpus"/>
+            /// </summary>
+            public static int IAMFProfileSimpleOpus { get { if (!_IAMFProfileSimpleOpusReady) { _IAMFProfileSimpleOpusContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileSimpleOpus"); _IAMFProfileSimpleOpusReady = true; } return _IAMFProfileSimpleOpusContent; } }
+            private static int _IAMFProfileSimpleOpusContent = default;
+            private static bool _IAMFProfileSimpleOpusReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#IAMFProfileSimplePcm"/>
+            /// </summary>
+            public static int IAMFProfileSimplePcm { get { if (!_IAMFProfileSimplePcmReady) { _IAMFProfileSimplePcmContent = SGetField<int>(LocalBridgeClazz, "IAMFProfileSimplePcm"); _IAMFProfileSimplePcmReady = true; } return _IAMFProfileSimplePcmContent; } }
+            private static int _IAMFProfileSimplePcmContent = default;
+            private static bool _IAMFProfileSimplePcmReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecProfileLevel.html#MPEG2LevelH14"/>
             /// </summary>

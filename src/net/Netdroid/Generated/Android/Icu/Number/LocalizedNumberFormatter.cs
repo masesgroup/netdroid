@@ -123,6 +123,14 @@ namespace Android.Icu.Number
             return IExecuteWithSignature<Android.Icu.Number.FormattedNumber>("format", "(J)Landroid/icu/number/FormattedNumber;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberFormatter.html#withoutLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Number.UnlocalizedNumberFormatter"/></returns>
+        public Android.Icu.Number.UnlocalizedNumberFormatter WithoutLocale()
+        {
+            return IExecuteWithSignature<Android.Icu.Number.UnlocalizedNumberFormatter>("withoutLocale", "()Landroid/icu/number/UnlocalizedNumberFormatter;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberFormatter.html#toFormat()"/>
         /// </summary>
         /// <returns><see cref="Java.Text.Format"/></returns>

@@ -71,6 +71,17 @@ namespace Android.Hardware.Camera2
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/MultiResolutionImageReader.html#%3Cinit%3E(java.util.Collection,int,int,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        public MultiResolutionImageReader(Java.Util.Collection<Android.Hardware.Camera2.Params.MultiResolutionStreamInfo> arg0, int arg1, int arg2, long arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/MultiResolutionImageReader.html#%3Cinit%3E(java.util.Collection,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>

@@ -139,6 +139,16 @@ namespace Android.Adservices.Ondevicepersonalization
             IExecuteWithSignature("execute", "(Landroid/content/ComponentName;Landroid/os/PersistableBundle;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/OnDevicePersonalizationManager.html#executeInIsolatedService(android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Ondevicepersonalization.ExecuteInIsolatedServiceRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void ExecuteInIsolatedService(Android.Adservices.Ondevicepersonalization.ExecuteInIsolatedServiceRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Ondevicepersonalization.ExecuteInIsolatedServiceResponse, Java.Lang.Exception> arg2)
+        {
+            IExecuteWithSignature("executeInIsolatedService", "(Landroid/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/OnDevicePersonalizationManager.html#requestSurfacePackage(android.adservices.ondevicepersonalization.SurfacePackageToken,android.os.IBinder,int,int,int,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Adservices.Ondevicepersonalization.SurfacePackageToken"/></param>

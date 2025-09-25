@@ -169,6 +169,12 @@ namespace Android.App.Job
         private static int _STOP_REASON_TIMEOUTContent = default;
         private static bool _STOP_REASON_TIMEOUTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#STOP_REASON_TIMEOUT_ABANDONED"/>
+        /// </summary>
+        public static int STOP_REASON_TIMEOUT_ABANDONED { get { if (!_STOP_REASON_TIMEOUT_ABANDONEDReady) { _STOP_REASON_TIMEOUT_ABANDONEDContent = SGetField<int>(LocalBridgeClazz, "STOP_REASON_TIMEOUT_ABANDONED"); _STOP_REASON_TIMEOUT_ABANDONEDReady = true; } return _STOP_REASON_TIMEOUT_ABANDONEDContent; } }
+        private static int _STOP_REASON_TIMEOUT_ABANDONEDContent = default;
+        private static bool _STOP_REASON_TIMEOUT_ABANDONEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobParameters.html#STOP_REASON_UNDEFINED"/>
         /// </summary>
         public static int STOP_REASON_UNDEFINED { get { if (!_STOP_REASON_UNDEFINEDReady) { _STOP_REASON_UNDEFINEDContent = SGetField<int>(LocalBridgeClazz, "STOP_REASON_UNDEFINED"); _STOP_REASON_UNDEFINEDReady = true; } return _STOP_REASON_UNDEFINEDContent; } }

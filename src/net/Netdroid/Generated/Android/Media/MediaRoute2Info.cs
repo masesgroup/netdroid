@@ -174,6 +174,12 @@ namespace Android.Media
         private static int _SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERContent = default;
         private static bool _SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_AUX_LINE"/>
+        /// </summary>
+        public static int TYPE_AUX_LINE { get { if (!_TYPE_AUX_LINEReady) { _TYPE_AUX_LINEContent = SGetField<int>(LocalBridgeClazz, "TYPE_AUX_LINE"); _TYPE_AUX_LINEReady = true; } return _TYPE_AUX_LINEContent; } }
+        private static int _TYPE_AUX_LINEContent = default;
+        private static bool _TYPE_AUX_LINEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_BLE_HEADSET"/>
         /// </summary>
         public static int TYPE_BLE_HEADSET { get { if (!_TYPE_BLE_HEADSETReady) { _TYPE_BLE_HEADSETContent = SGetField<int>(LocalBridgeClazz, "TYPE_BLE_HEADSET"); _TYPE_BLE_HEADSETReady = true; } return _TYPE_BLE_HEADSETContent; } }
@@ -227,6 +233,24 @@ namespace Android.Media
         public static int TYPE_HEARING_AID { get { if (!_TYPE_HEARING_AIDReady) { _TYPE_HEARING_AIDContent = SGetField<int>(LocalBridgeClazz, "TYPE_HEARING_AID"); _TYPE_HEARING_AIDReady = true; } return _TYPE_HEARING_AIDContent; } }
         private static int _TYPE_HEARING_AIDContent = default;
         private static bool _TYPE_HEARING_AIDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_LINE_ANALOG"/>
+        /// </summary>
+        public static int TYPE_LINE_ANALOG { get { if (!_TYPE_LINE_ANALOGReady) { _TYPE_LINE_ANALOGContent = SGetField<int>(LocalBridgeClazz, "TYPE_LINE_ANALOG"); _TYPE_LINE_ANALOGReady = true; } return _TYPE_LINE_ANALOGContent; } }
+        private static int _TYPE_LINE_ANALOGContent = default;
+        private static bool _TYPE_LINE_ANALOGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_LINE_DIGITAL"/>
+        /// </summary>
+        public static int TYPE_LINE_DIGITAL { get { if (!_TYPE_LINE_DIGITALReady) { _TYPE_LINE_DIGITALContent = SGetField<int>(LocalBridgeClazz, "TYPE_LINE_DIGITAL"); _TYPE_LINE_DIGITALReady = true; } return _TYPE_LINE_DIGITALContent; } }
+        private static int _TYPE_LINE_DIGITALContent = default;
+        private static bool _TYPE_LINE_DIGITALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_MULTICHANNEL_SPEAKER_GROUP"/>
+        /// </summary>
+        public static int TYPE_MULTICHANNEL_SPEAKER_GROUP { get { if (!_TYPE_MULTICHANNEL_SPEAKER_GROUPReady) { _TYPE_MULTICHANNEL_SPEAKER_GROUPContent = SGetField<int>(LocalBridgeClazz, "TYPE_MULTICHANNEL_SPEAKER_GROUP"); _TYPE_MULTICHANNEL_SPEAKER_GROUPReady = true; } return _TYPE_MULTICHANNEL_SPEAKER_GROUPContent; } }
+        private static int _TYPE_MULTICHANNEL_SPEAKER_GROUPContent = default;
+        private static bool _TYPE_MULTICHANNEL_SPEAKER_GROUPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_AUDIO_VIDEO_RECEIVER"/>
         /// </summary>

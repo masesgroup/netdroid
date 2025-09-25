@@ -228,6 +228,13 @@ namespace Android.View.Contentcapture
         {
             IExecuteWithSignature("close", "()V");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#flush()"/>
+        /// </summary>
+        public void Flush()
+        {
+            IExecuteWithSignature("flush", "()V");
+        }
     
         #endregion
     

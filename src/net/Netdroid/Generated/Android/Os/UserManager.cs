@@ -252,6 +252,12 @@ namespace Android.Os
         private static Java.Lang.String _DISALLOW_CELLULAR_2GContent = default;
         private static bool _DISALLOW_CELLULAR_2GReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIO"/>
+        /// </summary>
+        public static Java.Lang.String DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIO { get { if (!_DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIOReady) { _DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIO"); _DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIOReady = true; } return _DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIOContent; } }
+        private static Java.Lang.String _DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIOContent = default;
+        private static bool _DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CHANGE_WIFI_STATE"/>
         /// </summary>
         public static Java.Lang.String DISALLOW_CHANGE_WIFI_STATE { get { if (!_DISALLOW_CHANGE_WIFI_STATEReady) { _DISALLOW_CHANGE_WIFI_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_CHANGE_WIFI_STATE"); _DISALLOW_CHANGE_WIFI_STATEReady = true; } return _DISALLOW_CHANGE_WIFI_STATEContent; } }
@@ -528,6 +534,12 @@ namespace Android.Os
         public static Java.Lang.String DISALLOW_SYSTEM_ERROR_DIALOGS { get { if (!_DISALLOW_SYSTEM_ERROR_DIALOGSReady) { _DISALLOW_SYSTEM_ERROR_DIALOGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_SYSTEM_ERROR_DIALOGS"); _DISALLOW_SYSTEM_ERROR_DIALOGSReady = true; } return _DISALLOW_SYSTEM_ERROR_DIALOGSContent; } }
         private static Java.Lang.String _DISALLOW_SYSTEM_ERROR_DIALOGSContent = default;
         private static bool _DISALLOW_SYSTEM_ERROR_DIALOGSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_THREAD_NETWORK"/>
+        /// </summary>
+        public static Java.Lang.String DISALLOW_THREAD_NETWORK { get { if (!_DISALLOW_THREAD_NETWORKReady) { _DISALLOW_THREAD_NETWORKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_THREAD_NETWORK"); _DISALLOW_THREAD_NETWORKReady = true; } return _DISALLOW_THREAD_NETWORKContent; } }
+        private static Java.Lang.String _DISALLOW_THREAD_NETWORKContent = default;
+        private static bool _DISALLOW_THREAD_NETWORKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ULTRA_WIDEBAND_RADIO"/>
         /// </summary>

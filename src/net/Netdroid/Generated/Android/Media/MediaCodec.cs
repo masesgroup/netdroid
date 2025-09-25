@@ -1435,6 +1435,15 @@ namespace Android.Media
                 IExecuteWithSignature("onCryptoError", "(Landroid/media/MediaCodec;Landroid/media/MediaCodec$CryptoException;)V", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onMetricsFlushed(android.media.MediaCodec,android.os.PersistableBundle)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.MediaCodec"/></param>
+            /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+            public void OnMetricsFlushed(Android.Media.MediaCodec arg0, Android.Os.PersistableBundle arg1)
+            {
+                IExecuteWithSignature("onMetricsFlushed", "(Landroid/media/MediaCodec;Landroid/os/PersistableBundle;)V", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onOutputBuffersAvailable(android.media.MediaCodec,int,java.util.ArrayDeque)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.MediaCodec"/></param>

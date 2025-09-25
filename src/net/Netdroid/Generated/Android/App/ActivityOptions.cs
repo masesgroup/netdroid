@@ -79,8 +79,21 @@ namespace Android.App
     
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS"/>
+        /// </summary>
+        public static int MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS { get { if (!_MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYSReady) { _MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYSContent = SGetField<int>(LocalBridgeClazz, "MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS"); _MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYSReady = true; } return _MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYSContent; } }
+        private static int _MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYSContent = default;
+        private static bool _MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE"/>
+        /// </summary>
+        public static int MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE { get { if (!_MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLEReady) { _MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE"); _MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLEReady = true; } return _MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLEContent; } }
+        private static int _MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLEContent = default;
+        private static bool _MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#MODE_BACKGROUND_ACTIVITY_START_ALLOWED"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int MODE_BACKGROUND_ACTIVITY_START_ALLOWED { get { if (!_MODE_BACKGROUND_ACTIVITY_START_ALLOWEDReady) { _MODE_BACKGROUND_ACTIVITY_START_ALLOWEDContent = SGetField<int>(LocalBridgeClazz, "MODE_BACKGROUND_ACTIVITY_START_ALLOWED"); _MODE_BACKGROUND_ACTIVITY_START_ALLOWEDReady = true; } return _MODE_BACKGROUND_ACTIVITY_START_ALLOWEDContent; } }
         private static int _MODE_BACKGROUND_ACTIVITY_START_ALLOWEDContent = default;
         private static bool _MODE_BACKGROUND_ACTIVITY_START_ALLOWEDReady = false; // this is used because in case of generics 
@@ -320,6 +333,14 @@ namespace Android.App
             return IExecuteWithSignature<bool>("getLockTaskMode", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#isAllowPassThroughOnTouchOutside()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAllowPassThroughOnTouchOutside()
+        {
+            return IExecuteWithSignature<bool>("isAllowPassThroughOnTouchOutside", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#isPendingIntentBackgroundActivityLaunchAllowed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -375,6 +396,14 @@ namespace Android.App
         public void RequestUsageTimeReport(Android.App.PendingIntent arg0)
         {
             IExecuteWithSignature("requestUsageTimeReport", "(Landroid/app/PendingIntent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#setAllowPassThroughOnTouchOutside(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowPassThroughOnTouchOutside(bool arg0)
+        {
+            IExecuteWithSignature("setAllowPassThroughOnTouchOutside", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#setPendingIntentBackgroundActivityLaunchAllowed(boolean)"/>

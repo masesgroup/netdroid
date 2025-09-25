@@ -134,6 +134,14 @@ namespace Android.Adservices.Adselection
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getWinningSeller()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
+        public Android.Adservices.Common.AdTechIdentifier GetWinningSeller()
+        {
+            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getWinningSeller", "()Landroid/adservices/common/AdTechIdentifier;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getRenderUri()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.Uri"/></returns>
@@ -148,6 +156,14 @@ namespace Android.Adservices.Adselection
         public bool HasOutcome()
         {
             return IExecuteWithSignature<bool>("hasOutcome", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getComponentAdUris()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Uri> GetComponentAdUris()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getComponentAdUris", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getAdSelectionId()"/>
@@ -197,6 +213,15 @@ namespace Android.Adservices.Adselection
             public Android.Adservices.Adselection.AdSelectionOutcome.Builder SetAdSelectionId(long arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionOutcome.Builder>("setAdSelectionId", "(J)Landroid/adservices/adselection/AdSelectionOutcome$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.Builder.html#setComponentAdUris(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Android.Adservices.Adselection.AdSelectionOutcome.Builder"/></returns>
+            public Android.Adservices.Adselection.AdSelectionOutcome.Builder SetComponentAdUris(Java.Util.List<Android.Net.Uri> arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionOutcome.Builder>("setComponentAdUris", "(Ljava/util/List;)Landroid/adservices/adselection/AdSelectionOutcome$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.Builder.html#setRenderUri(android.net.Uri)"/>

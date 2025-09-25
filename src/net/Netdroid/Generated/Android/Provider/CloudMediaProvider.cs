@@ -234,6 +234,73 @@ namespace Android.Provider
             return IExecuteWithSignature<Android.Database.Cursor>("onQueryAlbums", "(Landroid/os/Bundle;)Landroid/database/Cursor;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryMediaCategories(java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Database.Cursor"/></returns>
+        public Android.Database.Cursor OnQueryMediaCategories(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2)
+        {
+            return IExecuteWithSignature<Android.Database.Cursor>("onQueryMediaCategories", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryMediaInMediaSet(java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Database.Cursor"/></returns>
+        public Android.Database.Cursor OnQueryMediaInMediaSet(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2)
+        {
+            return IExecuteWithSignature<Android.Database.Cursor>("onQueryMediaInMediaSet", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryMediaSets(java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Database.Cursor"/></returns>
+        public Android.Database.Cursor OnQueryMediaSets(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2)
+        {
+            return IExecuteWithSignature<Android.Database.Cursor>("onQueryMediaSets", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQuerySearchSuggestions(java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Database.Cursor"/></returns>
+        public Android.Database.Cursor OnQuerySearchSuggestions(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2)
+        {
+            return IExecuteWithSignature<Android.Database.Cursor>("onQuerySearchSuggestions", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onSearchMedia(java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Database.Cursor"/></returns>
+        public Android.Database.Cursor OnSearchMedia(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2)
+        {
+            return IExecuteWithSignature<Android.Database.Cursor>("onSearchMedia", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onSearchMedia(java.lang.String,java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg3"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Database.Cursor"/></returns>
+        public Android.Database.Cursor OnSearchMedia(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
+        {
+            return IExecuteWithSignature<Android.Database.Cursor>("onSearchMedia", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onCreateCloudMediaSurfaceController(android.os.Bundle,android.provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
@@ -242,6 +309,14 @@ namespace Android.Provider
         public Android.Provider.CloudMediaProvider.CloudMediaSurfaceController OnCreateCloudMediaSurfaceController(Android.Os.Bundle arg0, Android.Provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback arg1)
         {
             return IExecuteWithSignature<Android.Provider.CloudMediaProvider.CloudMediaSurfaceController>("onCreateCloudMediaSurfaceController", "(Landroid/os/Bundle;Landroid/provider/CloudMediaProvider$CloudMediaSurfaceStateChangedCallback;)Landroid/provider/CloudMediaProvider$CloudMediaSurfaceController;", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onGetCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Provider.CloudMediaProviderContract.Capabilities"/></returns>
+        public Android.Provider.CloudMediaProviderContract.Capabilities OnGetCapabilities()
+        {
+            return IExecuteWithSignature<Android.Provider.CloudMediaProviderContract.Capabilities>("onGetCapabilities", "()Landroid/provider/CloudMediaProviderContract$Capabilities;");
         }
     
         #endregion

@@ -309,6 +309,47 @@ namespace Android.Text.Style
         }
         #endregion
 
+        #region DurationBuilder declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DurationBuilder.html"/>
+        /// </summary>
+        public partial class DurationBuilder : Android.Text.Style.TtsSpan.SemioticClassBuilder<Android.Text.Style.TtsSpan.DurationBuilder>
+        {
+            const string _bridgeClassName = "android.text.style.TtsSpan$DurationBuilder";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public DurationBuilder() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public DurationBuilder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public DurationBuilder(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
         #region ElectronicBuilder declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html"/>
@@ -1077,6 +1118,12 @@ namespace Android.Text.Style
         private static Java.Lang.String _ARG_QUERY_STRINGContent = default;
         private static bool _ARG_QUERY_STRINGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_SECONDS"/>
+        /// </summary>
+        public static Java.Lang.String ARG_SECONDS { get { if (!_ARG_SECONDSReady) { _ARG_SECONDSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ARG_SECONDS"); _ARG_SECONDSReady = true; } return _ARG_SECONDSContent; } }
+        private static Java.Lang.String _ARG_SECONDSContent = default;
+        private static bool _ARG_SECONDSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_TEXT"/>
         /// </summary>
         public static Java.Lang.String ARG_TEXT { get { if (!_ARG_TEXTReady) { _ARG_TEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ARG_TEXT"); _ARG_TEXTReady = true; } return _ARG_TEXTContent; } }
@@ -1220,6 +1267,12 @@ namespace Android.Text.Style
         public static Java.Lang.String TYPE_DIGITS { get { if (!_TYPE_DIGITSReady) { _TYPE_DIGITSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE_DIGITS"); _TYPE_DIGITSReady = true; } return _TYPE_DIGITSContent; } }
         private static Java.Lang.String _TYPE_DIGITSContent = default;
         private static bool _TYPE_DIGITSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_DURATION"/>
+        /// </summary>
+        public static Java.Lang.String TYPE_DURATION { get { if (!_TYPE_DURATIONReady) { _TYPE_DURATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE_DURATION"); _TYPE_DURATIONReady = true; } return _TYPE_DURATIONContent; } }
+        private static Java.Lang.String _TYPE_DURATIONContent = default;
+        private static bool _TYPE_DURATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_ELECTRONIC"/>
         /// </summary>
@@ -1752,6 +1805,64 @@ namespace Android.Text.Style
             public Android.Text.Style.TtsSpan.DigitsBuilder SetDigits(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Text.Style.TtsSpan.DigitsBuilder>("setDigits", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$DigitsBuilder;", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DurationBuilder implementation
+        public partial class DurationBuilder
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DurationBuilder.html#setHours(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Style.TtsSpan.DurationBuilder"/></returns>
+            public Android.Text.Style.TtsSpan.DurationBuilder SetHours(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DurationBuilder>("setHours", "(I)Landroid/text/style/TtsSpan$DurationBuilder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DurationBuilder.html#setMinutes(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Style.TtsSpan.DurationBuilder"/></returns>
+            public Android.Text.Style.TtsSpan.DurationBuilder SetMinutes(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DurationBuilder>("setMinutes", "(I)Landroid/text/style/TtsSpan$DurationBuilder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DurationBuilder.html#setSeconds(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Style.TtsSpan.DurationBuilder"/></returns>
+            public Android.Text.Style.TtsSpan.DurationBuilder SetSeconds(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DurationBuilder>("setSeconds", "(I)Landroid/text/style/TtsSpan$DurationBuilder;", arg0);
             }
         
             #endregion
@@ -2548,6 +2659,15 @@ namespace Android.Text.Style
             public Android.Text.Style.TtsSpan.TimeBuilder SetMinutes(int arg0)
             {
                 return IExecuteWithSignature<Android.Text.Style.TtsSpan.TimeBuilder>("setMinutes", "(I)Landroid/text/style/TtsSpan$TimeBuilder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.TimeBuilder.html#setSeconds(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Style.TtsSpan.TimeBuilder"/></returns>
+            public Android.Text.Style.TtsSpan.TimeBuilder SetSeconds(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TimeBuilder>("setSeconds", "(I)Landroid/text/style/TtsSpan$TimeBuilder;", arg0);
             }
         
             #endregion
