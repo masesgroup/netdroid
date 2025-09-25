@@ -112,7 +112,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawable()
         {
-            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;");
+            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawable");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/DynamicDrawableSpan.html#getVerticalAlignment()"/>
@@ -120,7 +120,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetVerticalAlignment()
         {
-            return IExecuteWithSignature<int>("getVerticalAlignment", "()I");
+            return IExecute<int>("getVerticalAlignment");
         }
     
         #endregion

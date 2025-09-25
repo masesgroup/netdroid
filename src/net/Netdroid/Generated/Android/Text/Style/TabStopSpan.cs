@@ -153,7 +153,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetTabStop()
         {
-            return IExecuteWithSignature<int>("getTabStop", "()I");
+            return IExecute<int>("getTabStop");
         }
     
         #endregion
@@ -193,7 +193,7 @@ namespace Android.Text.Style
             /// <returns><see cref="int"/></returns>
             public int GetTabStop()
             {
-                return IExecuteWithSignature<int>("getTabStop", "()I");
+                return IExecute<int>("getTabStop");
             }
         
             #endregion

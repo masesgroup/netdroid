@@ -1341,7 +1341,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
         public Android.Os.PersistableBundle GetArgs()
         {
-            return IExecuteWithSignature<Android.Os.PersistableBundle>("getArgs", "()Landroid/os/PersistableBundle;");
+            return IExecute<Android.Os.PersistableBundle>("getArgs");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#describeContents()"/>
@@ -1349,7 +1349,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#getSpanTypeId()"/>
@@ -1357,7 +1357,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#getType()"/>
@@ -1365,7 +1365,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetType()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getType");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -1374,7 +1374,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion
@@ -1414,7 +1414,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan"/></returns>
             public Android.Text.Style.TtsSpan Build()
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan>("build", "()Landroid/text/style/TtsSpan;");
+                return IExecute<Android.Text.Style.TtsSpan>("build");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.Builder.html#setIntArgument(java.lang.String,int)"/>
@@ -1424,7 +1424,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.Builder"/></returns>
             public Android.Text.Style.TtsSpan.Builder SetIntArgument(Java.Lang.String arg0, int arg1)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.Builder>("setIntArgument", "(Ljava/lang/String;I)Landroid/text/style/TtsSpan$Builder;", arg0, arg1);
+                return IExecute<Android.Text.Style.TtsSpan.Builder>("setIntArgument", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.Builder.html#setLongArgument(java.lang.String,long)"/>
@@ -1434,7 +1434,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.Builder"/></returns>
             public Android.Text.Style.TtsSpan.Builder SetLongArgument(Java.Lang.String arg0, long arg1)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.Builder>("setLongArgument", "(Ljava/lang/String;J)Landroid/text/style/TtsSpan$Builder;", arg0, arg1);
+                return IExecute<Android.Text.Style.TtsSpan.Builder>("setLongArgument", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.Builder.html#setStringArgument(java.lang.String,java.lang.String)"/>
@@ -1444,7 +1444,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.Builder"/></returns>
             public Android.Text.Style.TtsSpan.Builder SetStringArgument(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.Builder>("setStringArgument", "(Ljava/lang/String;Ljava/lang/String;)Landroid/text/style/TtsSpan$Builder;", arg0, arg1);
+                return IExecute<Android.Text.Style.TtsSpan.Builder>("setStringArgument", arg0, arg1);
             }
         
             #endregion
@@ -1495,7 +1495,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan"/></returns>
             public Android.Text.Style.TtsSpan Build()
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan>("build", "()Landroid/text/style/TtsSpan;");
+                return IExecute<Android.Text.Style.TtsSpan>("build");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.Builder.html#setIntArgument(java.lang.String,int)"/>
@@ -1505,7 +1505,7 @@ namespace Android.Text.Style
             /// <returns><typeparamref name="C"/></returns>
             public C SetIntArgument(Java.Lang.String arg0, int arg1)
             {
-                return IExecuteWithSignature<C>("setIntArgument", "(Ljava/lang/String;I)Landroid/text/style/TtsSpan$Builder;", arg0, arg1);
+                return IExecute<C>("setIntArgument", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.Builder.html#setLongArgument(java.lang.String,long)"/>
@@ -1515,7 +1515,7 @@ namespace Android.Text.Style
             /// <returns><typeparamref name="C"/></returns>
             public C SetLongArgument(Java.Lang.String arg0, long arg1)
             {
-                return IExecuteWithSignature<C>("setLongArgument", "(Ljava/lang/String;J)Landroid/text/style/TtsSpan$Builder;", arg0, arg1);
+                return IExecute<C>("setLongArgument", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.Builder.html#setStringArgument(java.lang.String,java.lang.String)"/>
@@ -1525,7 +1525,7 @@ namespace Android.Text.Style
             /// <returns><typeparamref name="C"/></returns>
             public C SetStringArgument(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecuteWithSignature<C>("setStringArgument", "(Ljava/lang/String;Ljava/lang/String;)Landroid/text/style/TtsSpan$Builder;", arg0, arg1);
+                return IExecute<C>("setStringArgument", arg0, arg1);
             }
         
             #endregion
@@ -1581,7 +1581,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.CardinalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.CardinalBuilder SetNumber(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.CardinalBuilder>("setNumber", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$CardinalBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.CardinalBuilder>("setNumber", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.CardinalBuilder.html#setNumber(long)"/>
@@ -1590,7 +1590,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.CardinalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.CardinalBuilder SetNumber(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.CardinalBuilder>("setNumber", "(J)Landroid/text/style/TtsSpan$CardinalBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.CardinalBuilder>("setNumber", arg0);
             }
         
             #endregion
@@ -1641,7 +1641,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DateBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DateBuilder SetDay(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DateBuilder>("setDay", "(I)Landroid/text/style/TtsSpan$DateBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DateBuilder>("setDay", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DateBuilder.html#setMonth(int)"/>
@@ -1650,7 +1650,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DateBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DateBuilder SetMonth(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DateBuilder>("setMonth", "(I)Landroid/text/style/TtsSpan$DateBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DateBuilder>("setMonth", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DateBuilder.html#setWeekday(int)"/>
@@ -1659,7 +1659,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DateBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DateBuilder SetWeekday(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DateBuilder>("setWeekday", "(I)Landroid/text/style/TtsSpan$DateBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DateBuilder>("setWeekday", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DateBuilder.html#setYear(int)"/>
@@ -1668,7 +1668,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DateBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DateBuilder SetYear(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DateBuilder>("setYear", "(I)Landroid/text/style/TtsSpan$DateBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DateBuilder>("setYear", arg0);
             }
         
             #endregion
@@ -1729,7 +1729,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DecimalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DecimalBuilder SetArgumentsFromDouble(double arg0, int arg1, int arg2)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DecimalBuilder>("setArgumentsFromDouble", "(DII)Landroid/text/style/TtsSpan$DecimalBuilder;", arg0, arg1, arg2);
+                return IExecute<Android.Text.Style.TtsSpan.DecimalBuilder>("setArgumentsFromDouble", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DecimalBuilder.html#setFractionalPart(java.lang.String)"/>
@@ -1738,7 +1738,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DecimalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DecimalBuilder SetFractionalPart(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DecimalBuilder>("setFractionalPart", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$DecimalBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DecimalBuilder>("setFractionalPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DecimalBuilder.html#setIntegerPart(java.lang.String)"/>
@@ -1747,7 +1747,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DecimalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DecimalBuilder SetIntegerPart(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DecimalBuilder>("setIntegerPart", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$DecimalBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DecimalBuilder>("setIntegerPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DecimalBuilder.html#setIntegerPart(long)"/>
@@ -1756,7 +1756,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DecimalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DecimalBuilder SetIntegerPart(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DecimalBuilder>("setIntegerPart", "(J)Landroid/text/style/TtsSpan$DecimalBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DecimalBuilder>("setIntegerPart", arg0);
             }
         
             #endregion
@@ -1804,7 +1804,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DigitsBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DigitsBuilder SetDigits(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DigitsBuilder>("setDigits", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$DigitsBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DigitsBuilder>("setDigits", arg0);
             }
         
             #endregion
@@ -1844,7 +1844,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DurationBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DurationBuilder SetHours(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DurationBuilder>("setHours", "(I)Landroid/text/style/TtsSpan$DurationBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DurationBuilder>("setHours", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DurationBuilder.html#setMinutes(int)"/>
@@ -1853,7 +1853,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DurationBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DurationBuilder SetMinutes(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DurationBuilder>("setMinutes", "(I)Landroid/text/style/TtsSpan$DurationBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DurationBuilder>("setMinutes", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.DurationBuilder.html#setSeconds(int)"/>
@@ -1862,7 +1862,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.DurationBuilder"/></returns>
             public Android.Text.Style.TtsSpan.DurationBuilder SetSeconds(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.DurationBuilder>("setSeconds", "(I)Landroid/text/style/TtsSpan$DurationBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.DurationBuilder>("setSeconds", arg0);
             }
         
             #endregion
@@ -1902,7 +1902,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetDomain(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setDomain", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setDomain", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setEmailArguments(java.lang.String,java.lang.String)"/>
@@ -1912,7 +1912,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetEmailArguments(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setEmailArguments", "(Ljava/lang/String;Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0, arg1);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setEmailArguments", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setFragmentId(java.lang.String)"/>
@@ -1921,7 +1921,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetFragmentId(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setFragmentId", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setFragmentId", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setPassword(java.lang.String)"/>
@@ -1930,7 +1930,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetPassword(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setPassword", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setPassword", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setPath(java.lang.String)"/>
@@ -1939,7 +1939,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetPath(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setPath", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setPath", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setPort(int)"/>
@@ -1948,7 +1948,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetPort(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setPort", "(I)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setPort", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setProtocol(java.lang.String)"/>
@@ -1957,7 +1957,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetProtocol(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setProtocol", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setProtocol", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setQueryString(java.lang.String)"/>
@@ -1966,7 +1966,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetQueryString(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setQueryString", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setQueryString", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.ElectronicBuilder.html#setUsername(java.lang.String)"/>
@@ -1975,7 +1975,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.ElectronicBuilder"/></returns>
             public Android.Text.Style.TtsSpan.ElectronicBuilder SetUsername(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.ElectronicBuilder>("setUsername", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$ElectronicBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.ElectronicBuilder>("setUsername", arg0);
             }
         
             #endregion
@@ -2025,7 +2025,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.FractionBuilder"/></returns>
             public Android.Text.Style.TtsSpan.FractionBuilder SetDenominator(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.FractionBuilder>("setDenominator", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$FractionBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.FractionBuilder>("setDenominator", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.FractionBuilder.html#setDenominator(long)"/>
@@ -2034,7 +2034,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.FractionBuilder"/></returns>
             public Android.Text.Style.TtsSpan.FractionBuilder SetDenominator(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.FractionBuilder>("setDenominator", "(J)Landroid/text/style/TtsSpan$FractionBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.FractionBuilder>("setDenominator", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.FractionBuilder.html#setIntegerPart(java.lang.String)"/>
@@ -2043,7 +2043,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.FractionBuilder"/></returns>
             public Android.Text.Style.TtsSpan.FractionBuilder SetIntegerPart(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.FractionBuilder>("setIntegerPart", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$FractionBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.FractionBuilder>("setIntegerPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.FractionBuilder.html#setIntegerPart(long)"/>
@@ -2052,7 +2052,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.FractionBuilder"/></returns>
             public Android.Text.Style.TtsSpan.FractionBuilder SetIntegerPart(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.FractionBuilder>("setIntegerPart", "(J)Landroid/text/style/TtsSpan$FractionBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.FractionBuilder>("setIntegerPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.FractionBuilder.html#setNumerator(java.lang.String)"/>
@@ -2061,7 +2061,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.FractionBuilder"/></returns>
             public Android.Text.Style.TtsSpan.FractionBuilder SetNumerator(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.FractionBuilder>("setNumerator", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$FractionBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.FractionBuilder>("setNumerator", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.FractionBuilder.html#setNumerator(long)"/>
@@ -2070,7 +2070,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.FractionBuilder"/></returns>
             public Android.Text.Style.TtsSpan.FractionBuilder SetNumerator(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.FractionBuilder>("setNumerator", "(J)Landroid/text/style/TtsSpan$FractionBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.FractionBuilder>("setNumerator", arg0);
             }
         
             #endregion
@@ -2110,7 +2110,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetDenominator(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setDenominator", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setDenominator", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setDenominator(long)"/>
@@ -2119,7 +2119,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetDenominator(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setDenominator", "(J)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setDenominator", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setFractionalPart(java.lang.String)"/>
@@ -2128,7 +2128,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetFractionalPart(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setFractionalPart", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setFractionalPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setIntegerPart(java.lang.String)"/>
@@ -2137,7 +2137,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetIntegerPart(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setIntegerPart", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setIntegerPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setIntegerPart(long)"/>
@@ -2146,7 +2146,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetIntegerPart(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setIntegerPart", "(J)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setIntegerPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setNumber(java.lang.String)"/>
@@ -2155,7 +2155,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetNumber(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumber", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumber", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setNumber(long)"/>
@@ -2164,7 +2164,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetNumber(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumber", "(J)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumber", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setNumerator(java.lang.String)"/>
@@ -2173,7 +2173,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetNumerator(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumerator", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumerator", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setNumerator(long)"/>
@@ -2182,7 +2182,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetNumerator(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumerator", "(J)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setNumerator", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MeasureBuilder.html#setUnit(java.lang.String)"/>
@@ -2191,7 +2191,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MeasureBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MeasureBuilder SetUnit(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MeasureBuilder>("setUnit", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MeasureBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MeasureBuilder>("setUnit", arg0);
             }
         
             #endregion
@@ -2231,7 +2231,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MoneyBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MoneyBuilder SetCurrency(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MoneyBuilder>("setCurrency", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MoneyBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MoneyBuilder>("setCurrency", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MoneyBuilder.html#setFractionalPart(java.lang.String)"/>
@@ -2240,7 +2240,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MoneyBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MoneyBuilder SetFractionalPart(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MoneyBuilder>("setFractionalPart", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MoneyBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MoneyBuilder>("setFractionalPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MoneyBuilder.html#setIntegerPart(java.lang.String)"/>
@@ -2249,7 +2249,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MoneyBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MoneyBuilder SetIntegerPart(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MoneyBuilder>("setIntegerPart", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MoneyBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MoneyBuilder>("setIntegerPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MoneyBuilder.html#setIntegerPart(long)"/>
@@ -2258,7 +2258,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MoneyBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MoneyBuilder SetIntegerPart(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MoneyBuilder>("setIntegerPart", "(J)Landroid/text/style/TtsSpan$MoneyBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MoneyBuilder>("setIntegerPart", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.MoneyBuilder.html#setQuantity(java.lang.String)"/>
@@ -2267,7 +2267,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.MoneyBuilder"/></returns>
             public Android.Text.Style.TtsSpan.MoneyBuilder SetQuantity(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.MoneyBuilder>("setQuantity", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$MoneyBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.MoneyBuilder>("setQuantity", arg0);
             }
         
             #endregion
@@ -2323,7 +2323,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.OrdinalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.OrdinalBuilder SetNumber(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.OrdinalBuilder>("setNumber", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$OrdinalBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.OrdinalBuilder>("setNumber", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.OrdinalBuilder.html#setNumber(long)"/>
@@ -2332,7 +2332,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.OrdinalBuilder"/></returns>
             public Android.Text.Style.TtsSpan.OrdinalBuilder SetNumber(long arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.OrdinalBuilder>("setNumber", "(J)Landroid/text/style/TtsSpan$OrdinalBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.OrdinalBuilder>("setNumber", arg0);
             }
         
             #endregion
@@ -2380,7 +2380,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.SemioticClassBuilder"/></returns>
             public Android.Text.Style.TtsSpan.SemioticClassBuilder SetAnimacy(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setAnimacy", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setAnimacy", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.SemioticClassBuilder.html#setCase(java.lang.String)"/>
@@ -2389,7 +2389,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.SemioticClassBuilder"/></returns>
             public Android.Text.Style.TtsSpan.SemioticClassBuilder SetCase(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setCase", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setCase", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.SemioticClassBuilder.html#setGender(java.lang.String)"/>
@@ -2398,7 +2398,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.SemioticClassBuilder"/></returns>
             public Android.Text.Style.TtsSpan.SemioticClassBuilder SetGender(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setGender", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setGender", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.SemioticClassBuilder.html#setMultiplicity(java.lang.String)"/>
@@ -2407,7 +2407,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.SemioticClassBuilder"/></returns>
             public Android.Text.Style.TtsSpan.SemioticClassBuilder SetMultiplicity(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setMultiplicity", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.SemioticClassBuilder>("setMultiplicity", arg0);
             }
         
             #endregion
@@ -2459,7 +2459,7 @@ namespace Android.Text.Style
             /// <returns><typeparamref name="C"/></returns>
             public C SetAnimacy(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<C>("setAnimacy", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<C>("setAnimacy", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.SemioticClassBuilder.html#setCase(java.lang.String)"/>
@@ -2468,7 +2468,7 @@ namespace Android.Text.Style
             /// <returns><typeparamref name="C"/></returns>
             public C SetCase(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<C>("setCase", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<C>("setCase", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.SemioticClassBuilder.html#setGender(java.lang.String)"/>
@@ -2477,7 +2477,7 @@ namespace Android.Text.Style
             /// <returns><typeparamref name="C"/></returns>
             public C SetGender(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<C>("setGender", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<C>("setGender", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.SemioticClassBuilder.html#setMultiplicity(java.lang.String)"/>
@@ -2486,7 +2486,7 @@ namespace Android.Text.Style
             /// <returns><typeparamref name="C"/></returns>
             public C SetMultiplicity(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<C>("setMultiplicity", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$SemioticClassBuilder;", arg0);
+                return IExecute<C>("setMultiplicity", arg0);
             }
         
             #endregion
@@ -2534,7 +2534,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.TelephoneBuilder"/></returns>
             public Android.Text.Style.TtsSpan.TelephoneBuilder SetCountryCode(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TelephoneBuilder>("setCountryCode", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$TelephoneBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.TelephoneBuilder>("setCountryCode", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.TelephoneBuilder.html#setExtension(java.lang.String)"/>
@@ -2543,7 +2543,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.TelephoneBuilder"/></returns>
             public Android.Text.Style.TtsSpan.TelephoneBuilder SetExtension(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TelephoneBuilder>("setExtension", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$TelephoneBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.TelephoneBuilder>("setExtension", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.TelephoneBuilder.html#setNumberParts(java.lang.String)"/>
@@ -2552,7 +2552,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.TelephoneBuilder"/></returns>
             public Android.Text.Style.TtsSpan.TelephoneBuilder SetNumberParts(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TelephoneBuilder>("setNumberParts", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$TelephoneBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.TelephoneBuilder>("setNumberParts", arg0);
             }
         
             #endregion
@@ -2600,7 +2600,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.TextBuilder"/></returns>
             public Android.Text.Style.TtsSpan.TextBuilder SetText(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TextBuilder>("setText", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$TextBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.TextBuilder>("setText", arg0);
             }
         
             #endregion
@@ -2649,7 +2649,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.TimeBuilder"/></returns>
             public Android.Text.Style.TtsSpan.TimeBuilder SetHours(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TimeBuilder>("setHours", "(I)Landroid/text/style/TtsSpan$TimeBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.TimeBuilder>("setHours", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.TimeBuilder.html#setMinutes(int)"/>
@@ -2658,7 +2658,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.TimeBuilder"/></returns>
             public Android.Text.Style.TtsSpan.TimeBuilder SetMinutes(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TimeBuilder>("setMinutes", "(I)Landroid/text/style/TtsSpan$TimeBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.TimeBuilder>("setMinutes", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.TimeBuilder.html#setSeconds(int)"/>
@@ -2667,7 +2667,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.TimeBuilder"/></returns>
             public Android.Text.Style.TtsSpan.TimeBuilder SetSeconds(int arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.TimeBuilder>("setSeconds", "(I)Landroid/text/style/TtsSpan$TimeBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.TimeBuilder>("setSeconds", arg0);
             }
         
             #endregion
@@ -2715,7 +2715,7 @@ namespace Android.Text.Style
             /// <returns><see cref="Android.Text.Style.TtsSpan.VerbatimBuilder"/></returns>
             public Android.Text.Style.TtsSpan.VerbatimBuilder SetVerbatim(Java.Lang.String arg0)
             {
-                return IExecuteWithSignature<Android.Text.Style.TtsSpan.VerbatimBuilder>("setVerbatim", "(Ljava/lang/String;)Landroid/text/style/TtsSpan$VerbatimBuilder;", arg0);
+                return IExecute<Android.Text.Style.TtsSpan.VerbatimBuilder>("setVerbatim", arg0);
             }
         
             #endregion

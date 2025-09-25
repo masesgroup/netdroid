@@ -209,7 +209,7 @@ namespace Android.Text.Style
         /// <param name="arg5"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
         public void ChooseHeight(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint.FontMetricsInt arg5)
         {
-            IExecuteWithSignature("chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecute("chooseHeight", arg0, arg1, arg2, arg3, arg4, arg5);
         }
     
         #endregion
@@ -265,7 +265,7 @@ namespace Android.Text.Style
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
-                return IExecuteWithSignature<int>("describeContents", "()I");
+                return IExecute<int>("describeContents");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#getHeight()"/>
@@ -273,7 +273,7 @@ namespace Android.Text.Style
             /// <returns><see cref="int"/></returns>
             public int GetHeight()
             {
-                return IExecuteWithSignature<int>("getHeight", "()I");
+                return IExecute<int>("getHeight");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#getSpanTypeId()"/>
@@ -281,7 +281,7 @@ namespace Android.Text.Style
             /// <returns><see cref="int"/></returns>
             public int GetSpanTypeId()
             {
-                return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+                return IExecute<int>("getSpanTypeId");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#chooseHeight(java.lang.CharSequence,int,int,int,int,android.graphics.Paint.FontMetricsInt)"/>
@@ -294,7 +294,7 @@ namespace Android.Text.Style
             /// <param name="arg5"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
             public void ChooseHeight(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint.FontMetricsInt arg5)
             {
-                IExecuteWithSignature("chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecute("chooseHeight", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#writeToParcel(android.os.Parcel,int)"/>
@@ -303,7 +303,7 @@ namespace Android.Text.Style
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+                IExecute("writeToParcel", arg0, arg1);
             }
         
             #endregion
@@ -348,7 +348,7 @@ namespace Android.Text.Style
             /// <param name="arg6"><see cref="Android.Text.TextPaint"/></param>
             public void ChooseHeight(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint.FontMetricsInt arg5, Android.Text.TextPaint arg6)
             {
-                IExecuteWithSignature("chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;Landroid/text/TextPaint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+                IExecute("chooseHeight", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
         
             #endregion

@@ -121,7 +121,7 @@ namespace Android.Text.Style
         /// <returns><see cref="bool"/></returns>
         public bool GetDip()
         {
-            return IExecuteWithSignature<bool>("getDip", "()Z");
+            return IExecute<bool>("getDip");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#describeContents()"/>
@@ -129,7 +129,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getSize()"/>
@@ -137,7 +137,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSize()
         {
-            return IExecuteWithSignature<int>("getSize", "()I");
+            return IExecute<int>("getSize");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#getSpanTypeId()"/>
@@ -145,7 +145,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/AbsoluteSizeSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -154,7 +154,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

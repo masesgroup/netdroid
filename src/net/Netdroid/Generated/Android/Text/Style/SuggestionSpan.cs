@@ -200,7 +200,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getFlags()"/>
@@ -208,7 +208,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetFlags()
         {
-            return IExecuteWithSignature<int>("getFlags", "()I");
+            return IExecute<int>("getFlags");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getSpanTypeId()"/>
@@ -216,7 +216,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getUnderlineColor()"/>
@@ -224,7 +224,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetUnderlineColor()
         {
-            return IExecuteWithSignature<int>("getUnderlineColor", "()I");
+            return IExecute<int>("getUnderlineColor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getLocale()"/>
@@ -233,7 +233,7 @@ namespace Android.Text.Style
         [global::System.Obsolete()]
         public Java.Lang.String GetLocale()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getLocale");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getSuggestions()"/>
@@ -241,7 +241,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetSuggestions()
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("getSuggestions", "()[Ljava/lang/String;");
+            return IExecuteArray<Java.Lang.String>("getSuggestions");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#getLocaleObject()"/>
@@ -249,7 +249,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale GetLocaleObject()
         {
-            return IExecuteWithSignature<Java.Util.Locale>("getLocaleObject", "()Ljava/util/Locale;");
+            return IExecute<Java.Util.Locale>("getLocaleObject");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#setFlags(int)"/>
@@ -257,7 +257,7 @@ namespace Android.Text.Style
         /// <param name="arg0"><see cref="int"/></param>
         public void SetFlags(int arg0)
         {
-            IExecuteWithSignature("setFlags", "(I)V", arg0);
+            IExecute("setFlags", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/SuggestionSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -266,7 +266,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

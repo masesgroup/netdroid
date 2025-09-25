@@ -102,7 +102,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Text.Style.LineBreakConfigSpan"/></returns>
         public static Android.Text.Style.LineBreakConfigSpan CreateNoBreakSpan()
         {
-            return SExecuteWithSignature<Android.Text.Style.LineBreakConfigSpan>(LocalBridgeClazz, "createNoBreakSpan", "()Landroid/text/style/LineBreakConfigSpan;");
+            return SExecute<Android.Text.Style.LineBreakConfigSpan>(LocalBridgeClazz, "createNoBreakSpan");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LineBreakConfigSpan.html#createNoHyphenationSpan()"/>
@@ -110,7 +110,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Text.Style.LineBreakConfigSpan"/></returns>
         public static Android.Text.Style.LineBreakConfigSpan CreateNoHyphenationSpan()
         {
-            return SExecuteWithSignature<Android.Text.Style.LineBreakConfigSpan>(LocalBridgeClazz, "createNoHyphenationSpan", "()Landroid/text/style/LineBreakConfigSpan;");
+            return SExecute<Android.Text.Style.LineBreakConfigSpan>(LocalBridgeClazz, "createNoHyphenationSpan");
         }
     
         #endregion
@@ -122,7 +122,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Graphics.Text.LineBreakConfig"/></returns>
         public Android.Graphics.Text.LineBreakConfig GetLineBreakConfig()
         {
-            return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig>("getLineBreakConfig", "()Landroid/graphics/text/LineBreakConfig;");
+            return IExecute<Android.Graphics.Text.LineBreakConfig>("getLineBreakConfig");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LineBreakConfigSpan.html#describeContents()"/>
@@ -130,7 +130,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LineBreakConfigSpan.html#getSpanTypeId()"/>
@@ -138,7 +138,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LineBreakConfigSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -147,7 +147,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

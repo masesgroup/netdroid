@@ -144,7 +144,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getColor()"/>
@@ -152,7 +152,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetColor()
         {
-            return IExecuteWithSignature<int>("getColor", "()I");
+            return IExecute<int>("getColor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getGapWidth()"/>
@@ -160,7 +160,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetGapWidth()
         {
-            return IExecuteWithSignature<int>("getGapWidth", "()I");
+            return IExecute<int>("getGapWidth");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getLeadingMargin(boolean)"/>
@@ -169,7 +169,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetLeadingMargin(bool arg0)
         {
-            return IExecuteWithSignature<int>("getLeadingMargin", "(Z)I", arg0);
+            return IExecute<int>("getLeadingMargin", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getSpanTypeId()"/>
@@ -177,7 +177,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getStripeWidth()"/>
@@ -185,7 +185,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetStripeWidth()
         {
-            return IExecuteWithSignature<int>("getStripeWidth", "()I");
+            return IExecute<int>("getStripeWidth");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#drawLeadingMargin(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,boolean,android.text.Layout)"/>
@@ -204,7 +204,7 @@ namespace Android.Text.Style
         /// <param name="arg11"><see cref="Android.Text.Layout"/></param>
         public void DrawLeadingMargin(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, bool arg10, Android.Text.Layout arg11)
         {
-            IExecuteWithSignature("drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            IExecute("drawLeadingMargin", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -213,7 +213,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

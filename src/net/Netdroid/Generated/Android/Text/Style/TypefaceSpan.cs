@@ -120,7 +120,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Graphics.Typeface"/></returns>
         public Android.Graphics.Typeface GetTypeface()
         {
-            return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;");
+            return IExecute<Android.Graphics.Typeface>("getTypeface");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#describeContents()"/>
@@ -128,7 +128,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getSpanTypeId()"/>
@@ -136,7 +136,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#getFamily()"/>
@@ -144,7 +144,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetFamily()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getFamily", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getFamily");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TypefaceSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -153,7 +153,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

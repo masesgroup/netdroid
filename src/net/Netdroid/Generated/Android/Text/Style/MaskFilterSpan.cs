@@ -104,7 +104,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Graphics.MaskFilter"/></returns>
         public Android.Graphics.MaskFilter GetMaskFilter()
         {
-            return IExecuteWithSignature<Android.Graphics.MaskFilter>("getMaskFilter", "()Landroid/graphics/MaskFilter;");
+            return IExecute<Android.Graphics.MaskFilter>("getMaskFilter");
         }
     
         #endregion

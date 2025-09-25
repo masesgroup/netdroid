@@ -98,7 +98,7 @@ namespace Android.Text.Style
         /// <param name="arg0"><see cref="Android.Text.TextPaint"/></param>
         public void UpdateMeasureState(Android.Text.TextPaint arg0)
         {
-            IExecuteWithSignature("updateMeasureState", "(Landroid/text/TextPaint;)V", arg0);
+            IExecute("updateMeasureState", arg0);
         }
     
         #endregion
