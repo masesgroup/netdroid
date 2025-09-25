@@ -24,9 +24,8 @@ launchSettings.json
 /**/packages/
 /**/bin/
 /**/binCLI/
-/**/binConnect/
-/**/MASES.KNetPS/
 /**/obj/
 /**/jars/
 _site
 /**/.AssemblyAttributes
+/**/CommonTools/

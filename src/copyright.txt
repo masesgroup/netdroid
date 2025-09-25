@@ -1,5 +1,5 @@
-﻿/*
-*  Copyright 2025 MASES s.r.l.
+/*
+*  Copyright (c) 2024-2025 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
@@ -15,22 +15,3 @@
 *
 *  Refer to LICENSE for more information.
 */
-
-
-using MASES.JNet.CLI;
-using System.Threading.Tasks;
-
-namespace MASES.Netdroid.CLI
-{
-
-    class Program : ProgramBase<NetdroidCLICore, Program>
-    {
-        /// <inheritdoc/>
-        public override string ProjectName => "Netdroid";
-
-        static async Task Main(string[] args)
-        {
-            await InternalMain(args);
-        }
-    }
-}

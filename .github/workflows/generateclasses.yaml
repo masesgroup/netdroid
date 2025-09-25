@@ -103,11 +103,11 @@ jobs:
         if: ${{ inputs.UseLatestJNetReflector == true }}
         run: |
           cd JNet/binReflector/net8.0
-          dotnet MASES.JNetReflector.dll -TraceLevel 1 -TraceTo $GITHUB_WORKSPACE/JNetReflector.txt -OriginRootPath $ANDROID_HOME/platforms/android-35 -DestinationRootPath $GITHUB_WORKSPACE/src/ -ConfigurationFile $GITHUB_WORKSPACE/src/configuration.json
+          dotnet MASES.JNetReflector.dll -TraceLevel 1 -TraceTo $GITHUB_WORKSPACE/JNetReflector.txt -CopyrightFile %GITHUB_WORKSPACE%\src\copyright.txt -OriginRootPath $ANDROID_HOME/platforms/android-35 -DestinationRootPath $GITHUB_WORKSPACE/src/ -ConfigurationFile $GITHUB_WORKSPACE/src/configuration.json
 
       - name: Create classes with latest published version of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == false }}
-        run: jnetreflector -TraceLevel 1 -TraceTo $GITHUB_WORKSPACE/JNetReflector.txt -OriginRootPath $ANDROID_HOME/platforms/android-35 -DestinationRootPath $GITHUB_WORKSPACE/src/ -ConfigurationFile $GITHUB_WORKSPACE/src/configuration.json
+        run: jnetreflector -TraceLevel 1 -TraceTo $GITHUB_WORKSPACE/JNetReflector.txt -CopyrightFile %GITHUB_WORKSPACE%\src\copyright.txt -OriginRootPath $ANDROID_HOME/platforms/android-35 -DestinationRootPath $GITHUB_WORKSPACE/src/ -ConfigurationFile $GITHUB_WORKSPACE/src/configuration.json
 
       - uses: actions/upload-artifact@v4
         with:
