@@ -55,10 +55,17 @@ netdroid uses [JCOBridge](https://www.jcobridge.com/), and its [features](https:
   * Documentation is shared;
 * **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [APIs extensibility](src/documentation/articles/API_extensibility.md).
 
+[JCOBridge 2.6.*](https://www.jcobridge.com) can be used for free without any obligations; you need to purchase a commercial license, or uninstall the software, if you have direct or indirect incomes from the product usage.
+
 ### JCOBridge resources
 
 Have a look at the following JCOBridge resources:
-- [Release notes](https://www.jcobridge.com/release-notes/)
-- [Community Edition](https://www.jcobridge.com/pricing-25/)
-- [Commercial Edition](https://www.jcobridge.com/pricing-25/)
-- Latest release: [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
+
+|JCOBridge | 2.6.* series |
+|:---:	|:---:	|
+|Netdroid | > 1.0.* series |
+|Release notes| [Link](https://www.jcobridge.com/release-notes/)|
+|Community Edition|[Conditions](https://www.jcobridge.com/pricing-25/)|
+|Commercial Edition|[Information](https://www.jcobridge.com/pricing-26/)|
+
+Latest release: [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)

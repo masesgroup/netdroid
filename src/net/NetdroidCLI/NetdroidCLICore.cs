@@ -17,11 +17,12 @@
 */
 
 using MASES.CLIParser;
+using MASES.JNet.Specific.CLI;
 using MASES.Netdroid;
 using System.Collections.Generic;
 using System.IO;
 
-namespace MASES.NetdroidCLI
+namespace MASES.Netdroid.CLI
 {
     /// <summary>
     /// Public entry point of <see cref="NetdroidCLICore{T}"/>
@@ -29,158 +30,34 @@ namespace MASES.NetdroidCLI
     public abstract class NetdroidCLICore<T> : NetdroidCore<T> where T : NetdroidCLICore<T>
     {
         #region Initialization
-        /// <inheritdoc cref="NetdroidCoreBase{T}.CommandLineArguments"/>
-        public override IEnumerable<IArgumentMetadata> CommandLineArguments
-        {
-            get
-            {
-                var lst = new List<IArgumentMetadata>(base.CommandLineArguments);
-                lst.AddRange(new IArgumentMetadata[]
-                {
-                    new ArgumentMetadata<string>()
-                    {
-                        Name = CLIParam.Interactive[0],
-                        ShortName = CLIParam.Interactive[1],
-                        Type = ArgumentType.Single,
-                        Help = "Activate an interactive shell",
-                    },
-                    new ArgumentMetadata<string>()
-                    {
-                        Name = CLIParam.RunCommand[0],
-                        ShortName = CLIParam.RunCommand[1],
-                        Type = ArgumentType.Double,
-                        Help = "Run the Java Main-Class, remaining options are passed to the main method of the Java Main-Class",
-                    },
-                    new ArgumentMetadata<string>()
-                    {
-                        Name = CLIParam.Script[0],
-                        ShortName = CLIParam.Script[1],
-                        Type = ArgumentType.Double,
-                        Help = "Run the script code and exit, the argument is the path to the file containing the script",
-                    },
-                    new ArgumentMetadata<string>()
-                    {
-                        Name = CLIParam.JarList[0],
-                        ShortName = CLIParam.JarList[1],
-                        Type = ArgumentType.Double,
-                        Help = "A CSV list of JAR to be used or folders containing the JARs",
-                    },
-                    new ArgumentMetadata<string>()
-                    {
-                        Name = CLIParam.NamespaceList[0],
-                        ShortName = CLIParam.NamespaceList[1],
-                        Type = ArgumentType.Double,
-                        Help = "A CSV list of namespace to be used for interactive shell, Netdroid namespace are added automatically",
-                    },
-                    new ArgumentMetadata<string>()
-                    {
-                        Name = CLIParam.ImportList[0],
-                        ShortName = CLIParam.ImportList[1],
-                        Type = ArgumentType.Double,
-                        Help = "A CSV list of import to be used",
-                    },
-                }); ;
-                return lst;
-            }
-        }
+        /// <inheritdoc/>
+        public override IEnumerable<IArgumentMetadata> CommandLineArguments => base.CommandLineArguments.SetCLICommandLineArguments();
 
         /// <summary>
         /// Public ctor
         /// </summary>
         public NetdroidCLICore()
         {
-            foreach (var item in ImportList)
-            {
-                ImportPackage(item);
-            }
+            this.InitCLI();
         }
 
-        static bool _Interactive;
-        public static bool Interactive => _Interactive;
-
-        static string _RunCommand;
-        public static string RunCommand => _RunCommand;
-
-        static string _Script;
-        public static string Script => _Script;
-
-        static IEnumerable<string> _JarList;
-        public static IEnumerable<string> JarList => _JarList;
-
-        static IEnumerable<string> _NamespaceList;
-        public static IEnumerable<string> NamespaceList => _NamespaceList;
-
-        static IEnumerable<string> _ImportList;
-        public static IEnumerable<string> ImportList => _ImportList;
-
-        /// <inheritdoc cref="NetdroidCoreBase{T}.ProcessCommandLine"/>
+        /// <inheritdoc/>
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
-
-            _Interactive = ParsedArgs.Exist(CLIParam.Interactive[0]);
-
-            _RunCommand = ParsedArgs.Get<string>(CLIParam.RunCommand[0]);
-
-            _Script = ParsedArgs.Get<string>(CLIParam.Script[0]);
-
-            List<string> jarList = new List<string>();
-            if (ParsedArgs.Exist(CLIParam.JarList[0]))
+            return this.ProcessCLIParsedArgs(result, settingsCallback: (className) =>
             {
-                var jars = ParsedArgs.Get<string>(CLIParam.JarList[0]).Split(',', ';');
-                jarList.AddRange(jars);
-            }
-            _JarList = jarList;
-
-            List<string> namespaceList = new List<string>();
-
-            var netdroidAssembly = typeof(NetdroidCore<>).Assembly;
-            foreach (var item in netdroidAssembly.GetExportedTypes())
-            {
-                if (item.IsPublic)
+                switch (className)
                 {
-                    if (!namespaceList.Contains(item.Namespace)) namespaceList.Add(item.Namespace);
+                    default:
+                        ApplicationInitialHeapSize = ApplicationHeapSize = System.Environment.Is64BitOperatingSystem ? "1G" : "512M";
+                        break;
                 }
-            }
-            if (ParsedArgs.Exist(CLIParam.NamespaceList[0]))
-            {
-                var namespaces = ParsedArgs.Get<string>(CLIParam.JarList[0]).Split(',', ';');
-                foreach (var item in namespaces)
-                {
-                    if (!namespaceList.Contains(item)) namespaceList.Add(item);
-                }
-            }
-            _NamespaceList = namespaceList;
-
-            List<string> importList = new List<string>();
-            if (ParsedArgs.Exist(CLIParam.ImportList[0]))
-            {
-                var imports = ParsedArgs.Get<string>(CLIParam.JarList[0]).Split(',', ';');
-                foreach (var item in imports)
-                {
-                    if (!importList.Contains(item)) importList.Add(item);
-                }
-            }
-            _ImportList = importList;
-
-            return result;
+            });
         }
 
-        protected override IDictionary<string, string> Options => new Dictionary<string, string>();
-
-        /// <inheritdoc cref="NetdroidCoreBase{T}.PathToParse"/>
-        protected override IList<string> PathToParse
-        {
-            get
-            {
-                var lst = base.PathToParse;
-                foreach (var item in _JarList)
-                {
-                    lst.Add(Path.GetFullPath(item));
-                }
-                return lst;
-            }
-        }
+        /// <inheritdoc/>
+        protected override IList<string> PathToParse => base.PathToParse.SetCLIPathToParse();
         #endregion
 
 #if DEBUG
@@ -190,7 +67,7 @@ namespace MASES.NetdroidCLI
     /// <summary>
     /// Concrete implementation of <see cref="NetdroidCLICore{T}"/>
     /// </summary>
-    public class NetdroidCLICore : NetdroidCLICore<NetdroidCLICore>
+    internal class NetdroidCLICore : NetdroidCLICore<NetdroidCLICore>
     {
     }
 }
