@@ -135,7 +135,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         public Android.Content.Res.ColorStateList GetLinkTextColor()
         {
-            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getLinkTextColor", "()Landroid/content/res/ColorStateList;");
+            return IExecute<Android.Content.Res.ColorStateList>("getLinkTextColor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextColor()"/>
@@ -143,7 +143,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         public Android.Content.Res.ColorStateList GetTextColor()
         {
-            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTextColor", "()Landroid/content/res/ColorStateList;");
+            return IExecute<Android.Content.Res.ColorStateList>("getTextColor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTypeface()"/>
@@ -151,7 +151,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Graphics.Typeface"/></returns>
         public Android.Graphics.Typeface GetTypeface()
         {
-            return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;");
+            return IExecute<Android.Graphics.Typeface>("getTypeface");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextLocales()"/>
@@ -159,7 +159,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Os.LocaleList"/></returns>
         public Android.Os.LocaleList GetTextLocales()
         {
-            return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;");
+            return IExecute<Android.Os.LocaleList>("getTextLocales");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#isElegantTextHeight()"/>
@@ -167,7 +167,7 @@ namespace Android.Text.Style
         /// <returns><see cref="bool"/></returns>
         public bool IsElegantTextHeight()
         {
-            return IExecuteWithSignature<bool>("isElegantTextHeight", "()Z");
+            return IExecute<bool>("isElegantTextHeight");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getLetterSpacing()"/>
@@ -175,7 +175,7 @@ namespace Android.Text.Style
         /// <returns><see cref="float"/></returns>
         public float GetLetterSpacing()
         {
-            return IExecuteWithSignature<float>("getLetterSpacing", "()F");
+            return IExecute<float>("getLetterSpacing");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowDx()"/>
@@ -183,7 +183,7 @@ namespace Android.Text.Style
         /// <returns><see cref="float"/></returns>
         public float GetShadowDx()
         {
-            return IExecuteWithSignature<float>("getShadowDx", "()F");
+            return IExecute<float>("getShadowDx");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowDy()"/>
@@ -191,7 +191,7 @@ namespace Android.Text.Style
         /// <returns><see cref="float"/></returns>
         public float GetShadowDy()
         {
-            return IExecuteWithSignature<float>("getShadowDy", "()F");
+            return IExecute<float>("getShadowDy");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowRadius()"/>
@@ -199,7 +199,7 @@ namespace Android.Text.Style
         /// <returns><see cref="float"/></returns>
         public float GetShadowRadius()
         {
-            return IExecuteWithSignature<float>("getShadowRadius", "()F");
+            return IExecute<float>("getShadowRadius");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#describeContents()"/>
@@ -207,7 +207,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowColor()"/>
@@ -215,7 +215,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetShadowColor()
         {
-            return IExecuteWithSignature<int>("getShadowColor", "()I");
+            return IExecute<int>("getShadowColor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getSpanTypeId()"/>
@@ -223,7 +223,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextFontWeight()"/>
@@ -231,7 +231,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetTextFontWeight()
         {
-            return IExecuteWithSignature<int>("getTextFontWeight", "()I");
+            return IExecute<int>("getTextFontWeight");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextSize()"/>
@@ -239,7 +239,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetTextSize()
         {
-            return IExecuteWithSignature<int>("getTextSize", "()I");
+            return IExecute<int>("getTextSize");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextStyle()"/>
@@ -247,7 +247,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetTextStyle()
         {
-            return IExecuteWithSignature<int>("getTextStyle", "()I");
+            return IExecute<int>("getTextStyle");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFamily()"/>
@@ -255,7 +255,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetFamily()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getFamily", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getFamily");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFontFeatureSettings()"/>
@@ -263,7 +263,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetFontFeatureSettings()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getFontFeatureSettings");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFontVariationSettings()"/>
@@ -271,7 +271,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetFontVariationSettings()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getFontVariationSettings");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -280,7 +280,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

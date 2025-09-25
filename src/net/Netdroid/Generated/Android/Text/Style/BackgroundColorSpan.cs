@@ -116,7 +116,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#getBackgroundColor()"/>
@@ -124,7 +124,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetBackgroundColor()
         {
-            return IExecuteWithSignature<int>("getBackgroundColor", "()I");
+            return IExecute<int>("getBackgroundColor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#getSpanTypeId()"/>
@@ -132,7 +132,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BackgroundColorSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -141,7 +141,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

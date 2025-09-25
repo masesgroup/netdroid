@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Os.Vibrator
+namespace Android.Os.VibratorNs
 {
     #region VibratorFrequencyProfile declaration
     /// <summary>

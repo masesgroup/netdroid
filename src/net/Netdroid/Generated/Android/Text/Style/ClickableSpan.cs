@@ -98,7 +98,7 @@ namespace Android.Text.Style
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         public void OnClick(Android.View.View arg0)
         {
-            IExecuteWithSignature("onClick", "(Landroid/view/View;)V", arg0);
+            IExecute("onClick", arg0);
         }
     
         #endregion

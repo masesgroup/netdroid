@@ -163,7 +163,7 @@ namespace Android.Text.Style
         /// <param name="arg10"><see cref="int"/></param>
         public void DrawBackground(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, int arg10)
         {
-            IExecuteWithSignature("drawBackground", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            IExecute("drawBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
     
         #endregion
@@ -219,7 +219,7 @@ namespace Android.Text.Style
             /// <returns><see cref="int"/></returns>
             public int GetColor()
             {
-                return IExecuteWithSignature<int>("getColor", "()I");
+                return IExecute<int>("getColor");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#describeContents()"/>
@@ -227,7 +227,7 @@ namespace Android.Text.Style
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
-                return IExecuteWithSignature<int>("describeContents", "()I");
+                return IExecute<int>("describeContents");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#getSpanTypeId()"/>
@@ -235,7 +235,7 @@ namespace Android.Text.Style
             /// <returns><see cref="int"/></returns>
             public int GetSpanTypeId()
             {
-                return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+                return IExecute<int>("getSpanTypeId");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#drawBackground(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,int)"/>
@@ -253,7 +253,7 @@ namespace Android.Text.Style
             /// <param name="arg10"><see cref="int"/></param>
             public void DrawBackground(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, int arg10)
             {
-                IExecuteWithSignature("drawBackground", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+                IExecute("drawBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#writeToParcel(android.os.Parcel,int)"/>
@@ -262,7 +262,7 @@ namespace Android.Text.Style
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+                IExecute("writeToParcel", arg0, arg1);
             }
         
             #endregion
