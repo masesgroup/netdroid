@@ -602,15 +602,6 @@ namespace Android.Os
                 return IExecuteWithSignature<Android.Os.RemoteCallbackList.Builder>("setExecutor", "(Ljava/util/concurrent/Executor;)Landroid/os/RemoteCallbackList$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.html#setInterfaceDiedCallback(android.os.RemoteCallbackList.Builder.InterfaceDiedCallback)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback"/></param>
-            /// <returns><see cref="Android.Os.RemoteCallbackList.Builder"/></returns>
-            public Android.Os.RemoteCallbackList.Builder SetInterfaceDiedCallback(Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback arg0)
-            {
-                return IExecuteWithSignature<Android.Os.RemoteCallbackList.Builder>("setInterfaceDiedCallback", "(Landroid/os/RemoteCallbackList$Builder$InterfaceDiedCallback;)Landroid/os/RemoteCallbackList$Builder;", arg0);
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.html#setMaxQueueSize(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -764,15 +755,6 @@ namespace Android.Os
             public Android.Os.RemoteCallbackList.Builder SetExecutor(Java.Util.Concurrent.Executor arg0)
             {
                 return IExecuteWithSignature<Android.Os.RemoteCallbackList.Builder>("setExecutor", "(Ljava/util/concurrent/Executor;)Landroid/os/RemoteCallbackList$Builder;", arg0);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.html#setInterfaceDiedCallback(android.os.RemoteCallbackList.Builder.InterfaceDiedCallback)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback"/></param>
-            /// <returns><see cref="Android.Os.RemoteCallbackList.Builder"/></returns>
-            public Android.Os.RemoteCallbackList.Builder SetInterfaceDiedCallback(Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback<E> arg0)
-            {
-                return IExecuteWithSignature<Android.Os.RemoteCallbackList.Builder>("setInterfaceDiedCallback", "(Landroid/os/RemoteCallbackList$Builder$InterfaceDiedCallback;)Landroid/os/RemoteCallbackList$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.html#setMaxQueueSize(int)"/>
