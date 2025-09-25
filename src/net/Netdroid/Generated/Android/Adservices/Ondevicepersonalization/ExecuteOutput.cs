@@ -152,6 +152,14 @@ namespace Android.Adservices.Ondevicepersonalization
             return IExecuteWithSignatureArray<byte>("getOutputData", "()[B");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteOutput.html#getBestValue()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBestValue()
+        {
+            return IExecuteWithSignature<int>("getBestValue", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteOutput.html#getEventLogRecords()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -199,6 +207,15 @@ namespace Android.Adservices.Ondevicepersonalization
             public Android.Adservices.Ondevicepersonalization.ExecuteOutput.Builder AddEventLogRecord(Android.Adservices.Ondevicepersonalization.EventLogRecord arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.ExecuteOutput.Builder>("addEventLogRecord", "(Landroid/adservices/ondevicepersonalization/EventLogRecord;)Landroid/adservices/ondevicepersonalization/ExecuteOutput$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteOutput.Builder.html#setBestValue(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Adservices.Ondevicepersonalization.ExecuteOutput.Builder"/></returns>
+            public Android.Adservices.Ondevicepersonalization.ExecuteOutput.Builder SetBestValue(int arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.ExecuteOutput.Builder>("setBestValue", "(I)Landroid/adservices/ondevicepersonalization/ExecuteOutput$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteOutput.Builder.html#setEventLogRecords(java.util.List)"/>

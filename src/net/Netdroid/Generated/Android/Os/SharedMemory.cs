@@ -67,7 +67,7 @@ namespace Android.Os
     #endregion
 
     #region SharedMemory implementation
-    public partial class SharedMemory : Android.Os.IParcelable, Java.Io.ICloseable
+    public partial class SharedMemory : Java.Io.ICloseable, Android.Os.IParcelable
     {
         #region Constructors
     
@@ -75,13 +75,13 @@ namespace Android.Os
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Os.SharedMemory"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Os.SharedMemory t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Os.SharedMemory"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Android.Os.SharedMemory t) => t.Cast<Java.Io.Closeable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Os.SharedMemory"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Os.SharedMemory t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     

@@ -116,6 +116,14 @@ namespace Android.Icu.Number
         {
             return IExecuteWithSignature<Android.Icu.Number.FormattedNumberRange>("formatRange", "(Ljava/lang/Number;Ljava/lang/Number;)Landroid/icu/number/FormattedNumberRange;", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberRangeFormatter.html#withoutLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Number.UnlocalizedNumberRangeFormatter"/></returns>
+        public Android.Icu.Number.UnlocalizedNumberRangeFormatter WithoutLocale()
+        {
+            return IExecuteWithSignature<Android.Icu.Number.UnlocalizedNumberRangeFormatter>("withoutLocale", "()Landroid/icu/number/UnlocalizedNumberRangeFormatter;");
+        }
     
         #endregion
     

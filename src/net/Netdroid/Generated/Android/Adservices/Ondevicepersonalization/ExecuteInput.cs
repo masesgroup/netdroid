@@ -70,6 +70,15 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class ExecuteInput
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/ExecuteInput.html#%3Cinit%3E(java.lang.String,android.os.PersistableBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
+        public ExecuteInput(Java.Lang.String arg0, Android.Os.PersistableBundle arg1)
+            : base(arg0, arg1)
+        {
+        }
     
         #endregion
     

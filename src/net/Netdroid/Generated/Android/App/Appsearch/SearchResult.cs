@@ -313,6 +313,22 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SearchResult.MatchInfo>>("getMatchInfos", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getInformationalRankingSignals()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Double> GetInformationalRankingSignals()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Double>>("getInformationalRankingSignals", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getParentTypeMap()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetParentTypeMap()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getParentTypeMap", "()Ljava/util/Map;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
@@ -363,6 +379,15 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<Android.App.Appsearch.SearchResult>("build", "()Landroid/app/appsearch/SearchResult;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.Builder.html#addInformationalRankingSignal(double)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="double"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchResult.Builder"/></returns>
+            public Android.App.Appsearch.SearchResult.Builder AddInformationalRankingSignal(double arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.SearchResult.Builder>("addInformationalRankingSignal", "(D)Landroid/app/appsearch/SearchResult$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.Builder.html#addJoinedResult(android.app.appsearch.SearchResult)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Appsearch.SearchResult"/></param>
@@ -388,6 +413,15 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.SearchResult.Builder SetGenericDocument(Android.App.Appsearch.GenericDocument arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SearchResult.Builder>("setGenericDocument", "(Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/SearchResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.Builder.html#setParentTypeMap(java.util.Map)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchResult.Builder"/></returns>
+            public Android.App.Appsearch.SearchResult.Builder SetParentTypeMap(Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.SearchResult.Builder>("setParentTypeMap", "(Ljava/util/Map;)Landroid/app/appsearch/SearchResult$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.Builder.html#setRankingSignal(double)"/>

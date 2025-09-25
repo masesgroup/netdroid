@@ -136,6 +136,14 @@ namespace Android.Adservices.Customaudience
             return IExecuteWithSignature<Android.Net.Uri>("getUpdateUri", "()Landroid/net/Uri;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/ScheduleCustomAudienceUpdateRequest.html#shouldReplacePendingUpdates()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool ShouldReplacePendingUpdates()
+        {
+            return IExecuteWithSignature<bool>("shouldReplacePendingUpdates", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/ScheduleCustomAudienceUpdateRequest.html#getMinDelay()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Duration"/></returns>
@@ -165,8 +173,18 @@ namespace Android.Adservices.Customaudience
             /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
             /// <param name="arg1"><see cref="Java.Time.Duration"/></param>
             /// <param name="arg2"><see cref="Java.Util.List"/></param>
+            [global::System.Obsolete()]
             public Builder(Android.Net.Uri arg0, Java.Time.Duration arg1, Java.Util.List<Android.Adservices.Customaudience.PartialCustomAudience> arg2)
                 : base(arg0, arg1, arg2)
+            {
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/customaudience/ScheduleCustomAudienceUpdateRequest.Builder.html#%3Cinit%3E(android.net.Uri,java.time.Duration)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+            /// <param name="arg1"><see cref="Java.Time.Duration"/></param>
+            public Builder(Android.Net.Uri arg0, Java.Time.Duration arg1)
+                : base(arg0, arg1)
             {
             }
         
@@ -210,6 +228,15 @@ namespace Android.Adservices.Customaudience
             public Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.Builder SetPartialCustomAudienceList(Java.Util.List<Android.Adservices.Customaudience.PartialCustomAudience> arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.Builder>("setPartialCustomAudienceList", "(Ljava/util/List;)Landroid/adservices/customaudience/ScheduleCustomAudienceUpdateRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/customaudience/ScheduleCustomAudienceUpdateRequest.Builder.html#setShouldReplacePendingUpdates(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.Builder"/></returns>
+            public Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.Builder SetShouldReplacePendingUpdates(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.Builder>("setShouldReplacePendingUpdates", "(Z)Landroid/adservices/customaudience/ScheduleCustomAudienceUpdateRequest$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/customaudience/ScheduleCustomAudienceUpdateRequest.Builder.html#setUpdateUri(android.net.Uri)"/>

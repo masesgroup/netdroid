@@ -886,6 +886,129 @@ namespace Android.App
         }
         #endregion
 
+        #region ProgressStyle declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html"/>
+        /// </summary>
+        public partial class ProgressStyle : Android.App.Notification.Style
+        {
+            const string _bridgeClassName = "android.app.Notification$ProgressStyle";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ProgressStyle() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ProgressStyle(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ProgressStyle(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+            #region Segment declaration
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Segment.html"/>
+            /// </summary>
+            public partial class Segment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Segment>
+            {
+                const string _bridgeClassName = "android.app.Notification$ProgressStyle$Segment";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Segment() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public Segment(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Segment(params object[] args) : base(args) { }
+            
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+                /// <inheritdoc/>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <inheritdoc/>
+                public override bool IsBridgeAbstract => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeCloseable => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeInterface => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeStatic => true;
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+
+            #region Point declaration
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Point.html"/>
+            /// </summary>
+            public partial class Point : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Point>
+            {
+                const string _bridgeClassName = "android.app.Notification$ProgressStyle$Point";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Point() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public Point(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Point(params object[] args) : base(args) { }
+            
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+                /// <inheritdoc/>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <inheritdoc/>
+                public override bool IsBridgeAbstract => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeCloseable => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeInterface => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeStatic => true;
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+
+        
+        }
+        #endregion
+
         #region Style declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.Style.html"/>
@@ -1298,6 +1421,12 @@ namespace Android.App
         public static int FLAG_ONLY_ALERT_ONCE { get { if (!_FLAG_ONLY_ALERT_ONCEReady) { _FLAG_ONLY_ALERT_ONCEContent = SGetField<int>(LocalBridgeClazz, "FLAG_ONLY_ALERT_ONCE"); _FLAG_ONLY_ALERT_ONCEReady = true; } return _FLAG_ONLY_ALERT_ONCEContent; } }
         private static int _FLAG_ONLY_ALERT_ONCEContent = default;
         private static bool _FLAG_ONLY_ALERT_ONCEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#FLAG_PROMOTED_ONGOING"/>
+        /// </summary>
+        public static int FLAG_PROMOTED_ONGOING { get { if (!_FLAG_PROMOTED_ONGOINGReady) { _FLAG_PROMOTED_ONGOINGContent = SGetField<int>(LocalBridgeClazz, "FLAG_PROMOTED_ONGOING"); _FLAG_PROMOTED_ONGOINGReady = true; } return _FLAG_PROMOTED_ONGOINGContent; } }
+        private static int _FLAG_PROMOTED_ONGOINGContent = default;
+        private static bool _FLAG_PROMOTED_ONGOINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#FLAG_SHOW_LIGHTS"/>
         /// </summary>
@@ -1917,6 +2046,14 @@ namespace Android.App
             return IExecuteWithSignature<bool>("hasImage", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#hasPromotableCharacteristics()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool HasPromotableCharacteristics()
+        {
+            return IExecuteWithSignature<bool>("hasPromotableCharacteristics", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -1963,6 +2100,14 @@ namespace Android.App
         public Java.Lang.String GetGroup()
         {
             return IExecuteWithSignature<Java.Lang.String>("getGroup", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getShortCriticalText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetShortCriticalText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getShortCriticalText", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#getShortcutId()"/>
@@ -3504,6 +3649,15 @@ namespace Android.App
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setSettingsText", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setShortCriticalText(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Notification.Builder"/></returns>
+            public Android.App.Notification.Builder SetShortCriticalText(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.Builder>("setShortCriticalText", "(Ljava/lang/String;)Landroid/app/Notification$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#setShortcutId(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -4639,6 +4793,361 @@ namespace Android.App
                 public long GetTimestamp()
                 {
                     return IExecute<long>("getTimestamp");
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ProgressStyle implementation
+        public partial class ProgressStyle
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#addProgressPoint(android.app.Notification.ProgressStyle.Point)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Notification.ProgressStyle.Point"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle AddProgressPoint(Android.App.Notification.ProgressStyle.Point arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("addProgressPoint", "(Landroid/app/Notification$ProgressStyle$Point;)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#addProgressSegment(android.app.Notification.ProgressStyle.Segment)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Notification.ProgressStyle.Segment"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle AddProgressSegment(Android.App.Notification.ProgressStyle.Segment arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("addProgressSegment", "(Landroid/app/Notification$ProgressStyle$Segment;)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setProgress(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetProgress(int arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setProgress", "(I)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setProgressEndIcon(android.graphics.drawable.Icon)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetProgressEndIcon(Android.Graphics.Drawable.Icon arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setProgressEndIcon", "(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setProgressIndeterminate(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetProgressIndeterminate(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setProgressIndeterminate", "(Z)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setProgressPoints(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetProgressPoints(Java.Util.List<Android.App.Notification.ProgressStyle.Point> arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setProgressPoints", "(Ljava/util/List;)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setProgressSegments(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetProgressSegments(Java.Util.List<Android.App.Notification.ProgressStyle.Segment> arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setProgressSegments", "(Ljava/util/List;)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setProgressStartIcon(android.graphics.drawable.Icon)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetProgressStartIcon(Android.Graphics.Drawable.Icon arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setProgressStartIcon", "(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setProgressTrackerIcon(android.graphics.drawable.Icon)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetProgressTrackerIcon(Android.Graphics.Drawable.Icon arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setProgressTrackerIcon", "(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#setStyledByProgress(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.Notification.ProgressStyle"/></returns>
+            public Android.App.Notification.ProgressStyle SetStyledByProgress(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.ProgressStyle>("setStyledByProgress", "(Z)Landroid/app/Notification$ProgressStyle;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#getProgressEndIcon()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+            public Android.Graphics.Drawable.Icon GetProgressEndIcon()
+            {
+                return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getProgressEndIcon", "()Landroid/graphics/drawable/Icon;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#getProgressStartIcon()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+            public Android.Graphics.Drawable.Icon GetProgressStartIcon()
+            {
+                return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getProgressStartIcon", "()Landroid/graphics/drawable/Icon;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#getProgressTrackerIcon()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+            public Android.Graphics.Drawable.Icon GetProgressTrackerIcon()
+            {
+                return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getProgressTrackerIcon", "()Landroid/graphics/drawable/Icon;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#isProgressIndeterminate()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsProgressIndeterminate()
+            {
+                return IExecuteWithSignature<bool>("isProgressIndeterminate", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#isStyledByProgress()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsStyledByProgress()
+            {
+                return IExecuteWithSignature<bool>("isStyledByProgress", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#getProgress()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetProgress()
+            {
+                return IExecuteWithSignature<int>("getProgress", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#getProgressMax()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetProgressMax()
+            {
+                return IExecuteWithSignature<int>("getProgressMax", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#getProgressPoints()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.App.Notification.ProgressStyle.Point> GetProgressPoints()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.App.Notification.ProgressStyle.Point>>("getProgressPoints", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.html#getProgressSegments()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.App.Notification.ProgressStyle.Segment> GetProgressSegments()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.App.Notification.ProgressStyle.Segment>>("getProgressSegments", "()Ljava/util/List;");
+            }
+        
+            #endregion
+        
+            #region Nested classes
+            #region Segment implementation
+            public partial class Segment
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Segment.html#%3Cinit%3E(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                public Segment(int arg0)
+                    : base(arg0)
+                {
+                }
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Segment.html#setColor(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Notification.ProgressStyle.Segment"/></returns>
+                public Android.App.Notification.ProgressStyle.Segment SetColor(int arg0)
+                {
+                    return IExecute<Android.App.Notification.ProgressStyle.Segment>("setColor", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Segment.html#setId(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Notification.ProgressStyle.Segment"/></returns>
+                public Android.App.Notification.ProgressStyle.Segment SetId(int arg0)
+                {
+                    return IExecute<Android.App.Notification.ProgressStyle.Segment>("setId", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Segment.html#getColor()"/>
+                /// </summary>
+                /// <returns><see cref="int"/></returns>
+                public int GetColor()
+                {
+                    return IExecute<int>("getColor");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Segment.html#getId()"/>
+                /// </summary>
+                /// <returns><see cref="int"/></returns>
+                public int GetId()
+                {
+                    return IExecute<int>("getId");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Segment.html#getLength()"/>
+                /// </summary>
+                /// <returns><see cref="int"/></returns>
+                public int GetLength()
+                {
+                    return IExecute<int>("getLength");
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region Point implementation
+            public partial class Point
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Point.html#%3Cinit%3E(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                public Point(int arg0)
+                    : base(arg0)
+                {
+                }
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Point.html#setColor(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Notification.ProgressStyle.Point"/></returns>
+                public Android.App.Notification.ProgressStyle.Point SetColor(int arg0)
+                {
+                    return IExecute<Android.App.Notification.ProgressStyle.Point>("setColor", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Point.html#setId(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Notification.ProgressStyle.Point"/></returns>
+                public Android.App.Notification.ProgressStyle.Point SetId(int arg0)
+                {
+                    return IExecute<Android.App.Notification.ProgressStyle.Point>("setId", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Point.html#getColor()"/>
+                /// </summary>
+                /// <returns><see cref="int"/></returns>
+                public int GetColor()
+                {
+                    return IExecute<int>("getColor");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Point.html#getId()"/>
+                /// </summary>
+                /// <returns><see cref="int"/></returns>
+                public int GetId()
+                {
+                    return IExecute<int>("getId");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.ProgressStyle.Point.html#getPosition()"/>
+                /// </summary>
+                /// <returns><see cref="int"/></returns>
+                public int GetPosition()
+                {
+                    return IExecute<int>("getPosition");
                 }
             
                 #endregion

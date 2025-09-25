@@ -112,13 +112,17 @@ namespace Android.Icu.Text
     #endregion
 
     #region Collator implementation
-    public partial class Collator : Java.Util.IComparator<object>, Android.Icu.Util.IFreezable<Android.Icu.Text.Collator>, Java.Lang.ICloneable
+    public partial class Collator : Java.Lang.ICloneable, Java.Util.IComparator<object>, Android.Icu.Util.IFreezable<Android.Icu.Text.Collator>
     {
         #region Constructors
     
         #endregion
     
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Java.Util.Comparator"/>
         /// </summary>
@@ -127,10 +131,6 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Android.Icu.Util.Freezable"/>
         /// </summary>
         public static implicit operator Android.Icu.Util.Freezable(Android.Icu.Text.Collator t) => t.Cast<Android.Icu.Util.Freezable>();
-        /// <summary>
-        /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();
     
         #endregion
     

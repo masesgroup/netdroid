@@ -459,7 +459,7 @@ namespace Android.Media
     #endregion
 
     #region MediaRecorder implementation
-    public partial class MediaRecorder : Android.Media.IAudioRouting, Android.Media.IAudioRecordingMonitor, Android.Media.IMicrophoneDirection
+    public partial class MediaRecorder : Android.Media.IAudioRecordingMonitor, Android.Media.IAudioRouting, Android.Media.IMicrophoneDirection
     {
         #region Constructors
         /// <summary>
@@ -475,13 +475,13 @@ namespace Android.Media
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Media.MediaRecorder"/> to <see cref="Android.Media.AudioRouting"/>
-        /// </summary>
-        public static implicit operator Android.Media.AudioRouting(Android.Media.MediaRecorder t) => t.Cast<Android.Media.AudioRouting>();
-        /// <summary>
         /// Converter from <see cref="Android.Media.MediaRecorder"/> to <see cref="Android.Media.AudioRecordingMonitor"/>
         /// </summary>
         public static implicit operator Android.Media.AudioRecordingMonitor(Android.Media.MediaRecorder t) => t.Cast<Android.Media.AudioRecordingMonitor>();
+        /// <summary>
+        /// Converter from <see cref="Android.Media.MediaRecorder"/> to <see cref="Android.Media.AudioRouting"/>
+        /// </summary>
+        public static implicit operator Android.Media.AudioRouting(Android.Media.MediaRecorder t) => t.Cast<Android.Media.AudioRouting>();
         /// <summary>
         /// Converter from <see cref="Android.Media.MediaRecorder"/> to <see cref="Android.Media.MicrophoneDirection"/>
         /// </summary>
@@ -614,6 +614,14 @@ namespace Android.Media
         public bool SetPreferredMicrophoneFieldDimension(float arg0)
         {
             return IExecuteWithSignature<bool>("setPreferredMicrophoneFieldDimension", "(F)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getRoutedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioDeviceInfo> GetRoutedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getRoutedDevices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getActiveMicrophones()"/>

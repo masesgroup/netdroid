@@ -164,6 +164,7 @@ The configuration is:
     "android.content.pm.PackageItemInfo$DisplayNameComparator",
     "android.content.pm.ResolveInfo$DisplayNameComparator",
     "android.net.TransportInfo",
+    "android.os.RemoteCallbackList$Builder",
     "android.util.Range",
     "java.io.ObjectInputFilter",
     "java.lang.Enum$EnumDesc",
@@ -211,7 +212,8 @@ The configuration is:
     "java.awt.event",
     "java.awt.font",
     "java.lang.module",
-    "java.util.random"
+    "java.util.random",
+    "android.os.vibrator"
   ]
 }
 ```

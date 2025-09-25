@@ -170,6 +170,12 @@ namespace Android.Net.Wifi.P2p
         private static int _GROUP_OWNER_BAND_5GHZContent = default;
         private static bool _GROUP_OWNER_BAND_5GHZReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#GROUP_OWNER_BAND_6GHZ"/>
+        /// </summary>
+        public static int GROUP_OWNER_BAND_6GHZ { get { if (!_GROUP_OWNER_BAND_6GHZReady) { _GROUP_OWNER_BAND_6GHZContent = SGetField<int>(LocalBridgeClazz, "GROUP_OWNER_BAND_6GHZ"); _GROUP_OWNER_BAND_6GHZReady = true; } return _GROUP_OWNER_BAND_6GHZContent; } }
+        private static int _GROUP_OWNER_BAND_6GHZContent = default;
+        private static bool _GROUP_OWNER_BAND_6GHZReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#GROUP_OWNER_BAND_AUTO"/>
         /// </summary>
         public static int GROUP_OWNER_BAND_AUTO { get { if (!_GROUP_OWNER_BAND_AUTOReady) { _GROUP_OWNER_BAND_AUTOContent = SGetField<int>(LocalBridgeClazz, "GROUP_OWNER_BAND_AUTO"); _GROUP_OWNER_BAND_AUTOReady = true; } return _GROUP_OWNER_BAND_AUTOContent; } }
@@ -193,6 +199,36 @@ namespace Android.Net.Wifi.P2p
         public static int GROUP_OWNER_INTENT_MIN { get { if (!_GROUP_OWNER_INTENT_MINReady) { _GROUP_OWNER_INTENT_MINContent = SGetField<int>(LocalBridgeClazz, "GROUP_OWNER_INTENT_MIN"); _GROUP_OWNER_INTENT_MINReady = true; } return _GROUP_OWNER_INTENT_MINContent; } }
         private static int _GROUP_OWNER_INTENT_MINContent = default;
         private static bool _GROUP_OWNER_INTENT_MINReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#P2P_VERSION_1"/>
+        /// </summary>
+        public static int P2P_VERSION_1 { get { if (!_P2P_VERSION_1Ready) { _P2P_VERSION_1Content = SGetField<int>(LocalBridgeClazz, "P2P_VERSION_1"); _P2P_VERSION_1Ready = true; } return _P2P_VERSION_1Content; } }
+        private static int _P2P_VERSION_1Content = default;
+        private static bool _P2P_VERSION_1Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#P2P_VERSION_2"/>
+        /// </summary>
+        public static int P2P_VERSION_2 { get { if (!_P2P_VERSION_2Ready) { _P2P_VERSION_2Content = SGetField<int>(LocalBridgeClazz, "P2P_VERSION_2"); _P2P_VERSION_2Ready = true; } return _P2P_VERSION_2Content; } }
+        private static int _P2P_VERSION_2Content = default;
+        private static bool _P2P_VERSION_2Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#PCC_MODE_CONNECTION_TYPE_LEGACY_ONLY"/>
+        /// </summary>
+        public static int PCC_MODE_CONNECTION_TYPE_LEGACY_ONLY { get { if (!_PCC_MODE_CONNECTION_TYPE_LEGACY_ONLYReady) { _PCC_MODE_CONNECTION_TYPE_LEGACY_ONLYContent = SGetField<int>(LocalBridgeClazz, "PCC_MODE_CONNECTION_TYPE_LEGACY_ONLY"); _PCC_MODE_CONNECTION_TYPE_LEGACY_ONLYReady = true; } return _PCC_MODE_CONNECTION_TYPE_LEGACY_ONLYContent; } }
+        private static int _PCC_MODE_CONNECTION_TYPE_LEGACY_ONLYContent = default;
+        private static bool _PCC_MODE_CONNECTION_TYPE_LEGACY_ONLYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2"/>
+        /// </summary>
+        public static int PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2 { get { if (!_PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2Ready) { _PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2Content = SGetField<int>(LocalBridgeClazz, "PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2"); _PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2Ready = true; } return _PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2Content; } }
+        private static int _PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2Content = default;
+        private static bool _PCC_MODE_CONNECTION_TYPE_LEGACY_OR_R2Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#PCC_MODE_CONNECTION_TYPE_R2_ONLY"/>
+        /// </summary>
+        public static int PCC_MODE_CONNECTION_TYPE_R2_ONLY { get { if (!_PCC_MODE_CONNECTION_TYPE_R2_ONLYReady) { _PCC_MODE_CONNECTION_TYPE_R2_ONLYContent = SGetField<int>(LocalBridgeClazz, "PCC_MODE_CONNECTION_TYPE_R2_ONLY"); _PCC_MODE_CONNECTION_TYPE_R2_ONLYReady = true; } return _PCC_MODE_CONNECTION_TYPE_R2_ONLYContent; } }
+        private static int _PCC_MODE_CONNECTION_TYPE_R2_ONLYContent = default;
+        private static bool _PCC_MODE_CONNECTION_TYPE_R2_ONLYReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -201,6 +237,22 @@ namespace Android.Net.Wifi.P2p
         #endregion
     
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getPairingBootstrappingConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Wifi.P2p.WifiP2pPairingBootstrappingConfig"/></returns>
+        public Android.Net.Wifi.P2p.WifiP2pPairingBootstrappingConfig GetPairingBootstrappingConfig()
+        {
+            return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pPairingBootstrappingConfig>("getPairingBootstrappingConfig", "()Landroid/net/wifi/p2p/WifiP2pPairingBootstrappingConfig;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#isAuthorizeConnectionFromPeerEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAuthorizeConnectionFromPeerEnabled()
+        {
+            return IExecuteWithSignature<bool>("isAuthorizeConnectionFromPeerEnabled", "()Z");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#describeContents()"/>
         /// </summary>
@@ -226,12 +278,28 @@ namespace Android.Net.Wifi.P2p
             return IExecuteWithSignature<int>("getGroupOwnerBand", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getGroupOwnerVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGroupOwnerVersion()
+        {
+            return IExecuteWithSignature<int>("getGroupOwnerVersion", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getNetworkId()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int GetNetworkId()
         {
             return IExecuteWithSignature<int>("getNetworkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getPccModeConnectionType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPccModeConnectionType()
+        {
+            return IExecuteWithSignature<int>("getPccModeConnectionType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getNetworkName()"/>
@@ -248,6 +316,14 @@ namespace Android.Net.Wifi.P2p
         public Java.Lang.String GetPassphrase()
         {
             return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#setGroupOwnerVersion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGroupOwnerVersion(int arg0)
+        {
+            IExecuteWithSignature("setGroupOwnerVersion", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#writeToParcel(android.os.Parcel,int)"/>
@@ -300,6 +376,15 @@ namespace Android.Net.Wifi.P2p
                 return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pConfig.Builder>("enablePersistentMode", "(Z)Landroid/net/wifi/p2p/WifiP2pConfig$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.Builder.html#setAuthorizeConnectionFromPeerEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.P2p.WifiP2pConfig.Builder"/></returns>
+            public Android.Net.Wifi.P2p.WifiP2pConfig.Builder SetAuthorizeConnectionFromPeerEnabled(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pConfig.Builder>("setAuthorizeConnectionFromPeerEnabled", "(Z)Landroid/net/wifi/p2p/WifiP2pConfig$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.Builder.html#setDeviceAddress(android.net.MacAddress)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.MacAddress"/></param>
@@ -345,6 +430,15 @@ namespace Android.Net.Wifi.P2p
                 return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pConfig.Builder>("setNetworkName", "(Ljava/lang/String;)Landroid/net/wifi/p2p/WifiP2pConfig$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.Builder.html#setPairingBootstrappingConfig(android.net.wifi.p2p.WifiP2pPairingBootstrappingConfig)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pPairingBootstrappingConfig"/></param>
+            /// <returns><see cref="Android.Net.Wifi.P2p.WifiP2pConfig.Builder"/></returns>
+            public Android.Net.Wifi.P2p.WifiP2pConfig.Builder SetPairingBootstrappingConfig(Android.Net.Wifi.P2p.WifiP2pPairingBootstrappingConfig arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pConfig.Builder>("setPairingBootstrappingConfig", "(Landroid/net/wifi/p2p/WifiP2pPairingBootstrappingConfig;)Landroid/net/wifi/p2p/WifiP2pConfig$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.Builder.html#setPassphrase(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -352,6 +446,15 @@ namespace Android.Net.Wifi.P2p
             public Android.Net.Wifi.P2p.WifiP2pConfig.Builder SetPassphrase(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pConfig.Builder>("setPassphrase", "(Ljava/lang/String;)Landroid/net/wifi/p2p/WifiP2pConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.Builder.html#setPccModeConnectionType(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.P2p.WifiP2pConfig.Builder"/></returns>
+            public Android.Net.Wifi.P2p.WifiP2pConfig.Builder SetPccModeConnectionType(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pConfig.Builder>("setPccModeConnectionType", "(I)Landroid/net/wifi/p2p/WifiP2pConfig$Builder;", arg0);
             }
         
             #endregion

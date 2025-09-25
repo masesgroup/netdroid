@@ -281,6 +281,79 @@ namespace Android.View.Accessibility
         }
         #endregion
 
+        #region HighContrastTextStateChangeListener declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.html"/>
+        /// </summary>
+        public partial class HighContrastTextStateChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public HighContrastTextStateChangeListener() { InitializeHandlers(); }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public HighContrastTextStateChangeListener(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public HighContrastTextStateChangeListener(params object[] args) : base(args) { InitializeHandlers(); }
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_HighContrastTextStateChangeListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+            /// <inheritdoc />
+            public override string BridgeClassName => _bridgeClassName;
+        
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+        
+        #region HighContrastTextStateChangeListenerDirect declaration
+        /// <summary>
+        /// Direct override of <see cref="HighContrastTextStateChangeListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class HighContrastTextStateChangeListenerDirect : HighContrastTextStateChangeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public HighContrastTextStateChangeListenerDirect() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public HighContrastTextStateChangeListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        
+            /// <inheritdoc/>
+            public override bool AutoInit => false;
+        
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+        
+            const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$HighContrastTextStateChangeListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
         #region TouchExplorationStateChangeListener declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.html"/>
@@ -439,6 +512,14 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#isHighContrastTextEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsHighContrastTextEnabled()
+        {
+            return IExecuteWithSignature<bool>("isHighContrastTextEnabled", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#isRequestFromAccessibilityTool()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -586,6 +667,15 @@ namespace Android.View.Accessibility
             IExecuteWithSignature("addAudioDescriptionRequestedChangeListener", "(Ljava/util/concurrent/Executor;Landroid/view/accessibility/AccessibilityManager$AudioDescriptionRequestedChangeListener;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#addHighContrastTextStateChangeListener(java.util.concurrent.Executor,android.view.accessibility.AccessibilityManager.HighContrastTextStateChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.View.Accessibility.AccessibilityManager.HighContrastTextStateChangeListener"/></param>
+        public void AddHighContrastTextStateChangeListener(Java.Util.Concurrent.Executor arg0, Android.View.Accessibility.AccessibilityManager.HighContrastTextStateChangeListener arg1)
+        {
+            IExecuteWithSignature("addHighContrastTextStateChangeListener", "(Ljava/util/concurrent/Executor;Landroid/view/accessibility/AccessibilityManager$HighContrastTextStateChangeListener;)V", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#addTouchExplorationStateChangeListener(android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener,android.os.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityManager.TouchExplorationStateChangeListener"/></param>
@@ -608,6 +698,14 @@ namespace Android.View.Accessibility
         public void RemoveAccessibilityRequestPreparer(Android.View.Accessibility.AccessibilityRequestPreparer arg0)
         {
             IExecuteWithSignature("removeAccessibilityRequestPreparer", "(Landroid/view/accessibility/AccessibilityRequestPreparer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#removeHighContrastTextStateChangeListener(android.view.accessibility.AccessibilityManager.HighContrastTextStateChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityManager.HighContrastTextStateChangeListener"/></param>
+        public void RemoveHighContrastTextStateChangeListener(Android.View.Accessibility.AccessibilityManager.HighContrastTextStateChangeListener arg0)
+        {
+            IExecuteWithSignature("removeHighContrastTextStateChangeListener", "(Landroid/view/accessibility/AccessibilityManager$HighContrastTextStateChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#sendAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
@@ -915,6 +1013,108 @@ namespace Android.View.Accessibility
             public override void OnAudioDescriptionRequestedChanged(bool arg0)
             {
                 IExecuteWithSignature("onAudioDescriptionRequestedChanged", "(Z)V", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region HighContrastTextStateChangeListener implementation
+        public partial class HighContrastTextStateChangeListener
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="HighContrastTextStateChangeListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onHighContrastTextStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnHighContrastTextStateChangedEventHandler));
+
+            }
+            
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.html#onHighContrastTextStateChanged(boolean)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnHighContrastTextStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<bool> OnOnHighContrastTextStateChanged { get; set; } = null;
+            
+            bool hasOverrideOnHighContrastTextStateChanged = true;
+            void OnHighContrastTextStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+            {
+                hasOverrideOnHighContrastTextStateChanged = true;
+                var methodToExecute = (OnOnHighContrastTextStateChanged != null) ? OnOnHighContrastTextStateChanged : OnHighContrastTextStateChanged;
+                methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
+                data.EventData.TypedEventData.HasOverride = hasOverrideOnHighContrastTextStateChanged;
+            }
+            
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.html#onHighContrastTextStateChanged(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public virtual void OnHighContrastTextStateChanged(bool arg0)
+            {
+                hasOverrideOnHighContrastTextStateChanged = false;
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region HighContrastTextStateChangeListenerDirect implementation
+        public partial class HighContrastTextStateChangeListenerDirect
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.html#onHighContrastTextStateChanged(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public override void OnHighContrastTextStateChanged(bool arg0)
+            {
+                IExecuteWithSignature("onHighContrastTextStateChanged", "(Z)V", arg0);
             }
         
             #endregion

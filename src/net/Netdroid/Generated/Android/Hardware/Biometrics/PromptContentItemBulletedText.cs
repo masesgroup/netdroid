@@ -67,7 +67,7 @@ namespace Android.Hardware.Biometrics
     #endregion
 
     #region PromptContentItemBulletedText implementation
-    public partial class PromptContentItemBulletedText : Android.Hardware.Biometrics.IPromptContentItem, Android.Os.IParcelable
+    public partial class PromptContentItemBulletedText : Android.Os.IParcelable, Android.Hardware.Biometrics.IPromptContentItem
     {
         #region Constructors
         /// <summary>
@@ -83,13 +83,13 @@ namespace Android.Hardware.Biometrics
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Hardware.Biometrics.PromptContentItemBulletedText"/> to <see cref="Android.Hardware.Biometrics.PromptContentItem"/>
-        /// </summary>
-        public static implicit operator Android.Hardware.Biometrics.PromptContentItem(Android.Hardware.Biometrics.PromptContentItemBulletedText t) => t.Cast<Android.Hardware.Biometrics.PromptContentItem>();
-        /// <summary>
         /// Converter from <see cref="Android.Hardware.Biometrics.PromptContentItemBulletedText"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Hardware.Biometrics.PromptContentItemBulletedText t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Hardware.Biometrics.PromptContentItemBulletedText"/> to <see cref="Android.Hardware.Biometrics.PromptContentItem"/>
+        /// </summary>
+        public static implicit operator Android.Hardware.Biometrics.PromptContentItem(Android.Hardware.Biometrics.PromptContentItemBulletedText t) => t.Cast<Android.Hardware.Biometrics.PromptContentItem>();
     
         #endregion
     

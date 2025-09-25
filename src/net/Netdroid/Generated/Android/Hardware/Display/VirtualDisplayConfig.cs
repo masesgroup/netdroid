@@ -62,6 +62,79 @@ namespace Android.Hardware.Display
         public override bool IsBridgeStatic => false;
     
         // TODO: complete the class
+        #region BrightnessListener declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.BrightnessListener.html"/>
+        /// </summary>
+        public partial class BrightnessListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public BrightnessListener() { InitializeHandlers(); }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public BrightnessListener(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public BrightnessListener(params object[] args) : base(args) { InitializeHandlers(); }
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.hardware.display.VirtualDisplayConfig_BrightnessListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+            /// <inheritdoc />
+            public override string BridgeClassName => _bridgeClassName;
+        
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+        
+        #region BrightnessListenerDirect declaration
+        /// <summary>
+        /// Direct override of <see cref="BrightnessListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class BrightnessListenerDirect : BrightnessListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public BrightnessListenerDirect() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public BrightnessListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        
+            /// <inheritdoc/>
+            public override bool AutoInit => false;
+        
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+        
+            const string _bridgeClassName = "android.hardware.display.VirtualDisplayConfig$BrightnessListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
         #region Builder declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.Builder.html"/>
@@ -142,6 +215,22 @@ namespace Android.Hardware.Display
             return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getDefaultBrightness()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetDefaultBrightness()
+        {
+            return IExecuteWithSignature<float>("getDefaultBrightness", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getDimBrightness()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetDimBrightness()
+        {
+            return IExecuteWithSignature<float>("getDimBrightness", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.html#getRequestedRefreshRate()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
@@ -218,6 +307,108 @@ namespace Android.Hardware.Display
         #endregion
     
         #region Nested classes
+        #region BrightnessListener implementation
+        public partial class BrightnessListener
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="BrightnessListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onBrightnessChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnBrightnessChangedEventHandler));
+
+            }
+            
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.BrightnessListener.html#onBrightnessChanged(float)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnBrightnessChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<float> OnOnBrightnessChanged { get; set; } = null;
+            
+            bool hasOverrideOnBrightnessChanged = true;
+            void OnBrightnessChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+            {
+                hasOverrideOnBrightnessChanged = true;
+                var methodToExecute = (OnOnBrightnessChanged != null) ? OnOnBrightnessChanged : OnBrightnessChanged;
+                methodToExecute.Invoke(data.EventData.GetAt<float>(0));
+                data.EventData.TypedEventData.HasOverride = hasOverrideOnBrightnessChanged;
+            }
+            
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.BrightnessListener.html#onBrightnessChanged(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public virtual void OnBrightnessChanged(float arg0)
+            {
+                hasOverrideOnBrightnessChanged = false;
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BrightnessListenerDirect implementation
+        public partial class BrightnessListenerDirect
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.BrightnessListener.html#onBrightnessChanged(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public override void OnBrightnessChanged(float arg0)
+            {
+                IExecuteWithSignature("onBrightnessChanged", "(F)V", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Builder implementation
         public partial class Builder
         {
@@ -265,6 +456,34 @@ namespace Android.Hardware.Display
             public Android.Hardware.Display.VirtualDisplayConfig.Builder AddDisplayCategory(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Hardware.Display.VirtualDisplayConfig.Builder>("addDisplayCategory", "(Ljava/lang/String;)Landroid/hardware/display/VirtualDisplayConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.Builder.html#setBrightnessListener(java.util.concurrent.Executor,android.hardware.display.VirtualDisplayConfig.BrightnessListener)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+            /// <param name="arg1"><see cref="Android.Hardware.Display.VirtualDisplayConfig.BrightnessListener"/></param>
+            /// <returns><see cref="Android.Hardware.Display.VirtualDisplayConfig.Builder"/></returns>
+            public Android.Hardware.Display.VirtualDisplayConfig.Builder SetBrightnessListener(Java.Util.Concurrent.Executor arg0, Android.Hardware.Display.VirtualDisplayConfig.BrightnessListener arg1)
+            {
+                return IExecuteWithSignature<Android.Hardware.Display.VirtualDisplayConfig.Builder>("setBrightnessListener", "(Ljava/util/concurrent/Executor;Landroid/hardware/display/VirtualDisplayConfig$BrightnessListener;)Landroid/hardware/display/VirtualDisplayConfig$Builder;", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.Builder.html#setDefaultBrightness(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <returns><see cref="Android.Hardware.Display.VirtualDisplayConfig.Builder"/></returns>
+            public Android.Hardware.Display.VirtualDisplayConfig.Builder SetDefaultBrightness(float arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Display.VirtualDisplayConfig.Builder>("setDefaultBrightness", "(F)Landroid/hardware/display/VirtualDisplayConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.Builder.html#setDimBrightness(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <returns><see cref="Android.Hardware.Display.VirtualDisplayConfig.Builder"/></returns>
+            public Android.Hardware.Display.VirtualDisplayConfig.Builder SetDimBrightness(float arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Display.VirtualDisplayConfig.Builder>("setDimBrightness", "(F)Landroid/hardware/display/VirtualDisplayConfig$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplayConfig.Builder.html#setDisplayCategories(java.util.Set)"/>

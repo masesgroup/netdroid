@@ -204,7 +204,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSource()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getSource", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getSource");
         }
     
         #endregion

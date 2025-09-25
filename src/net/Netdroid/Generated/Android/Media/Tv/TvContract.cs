@@ -732,6 +732,24 @@ namespace Android.Media.Tv
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#BROADCAST_VISIBILITY_TYPE_INVISIBLE"/>
+            /// </summary>
+            public static int BROADCAST_VISIBILITY_TYPE_INVISIBLE { get { if (!_BROADCAST_VISIBILITY_TYPE_INVISIBLEReady) { _BROADCAST_VISIBILITY_TYPE_INVISIBLEContent = SGetField<int>(LocalBridgeClazz, "BROADCAST_VISIBILITY_TYPE_INVISIBLE"); _BROADCAST_VISIBILITY_TYPE_INVISIBLEReady = true; } return _BROADCAST_VISIBILITY_TYPE_INVISIBLEContent; } }
+            private static int _BROADCAST_VISIBILITY_TYPE_INVISIBLEContent = default;
+            private static bool _BROADCAST_VISIBILITY_TYPE_INVISIBLEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLY"/>
+            /// </summary>
+            public static int BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLY { get { if (!_BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLYReady) { _BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLYContent = SGetField<int>(LocalBridgeClazz, "BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLY"); _BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLYReady = true; } return _BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLYContent; } }
+            private static int _BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLYContent = default;
+            private static bool _BROADCAST_VISIBILITY_TYPE_NUMERIC_SELECTABLE_ONLYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#BROADCAST_VISIBILITY_TYPE_VISIBLE"/>
+            /// </summary>
+            public static int BROADCAST_VISIBILITY_TYPE_VISIBLE { get { if (!_BROADCAST_VISIBILITY_TYPE_VISIBLEReady) { _BROADCAST_VISIBILITY_TYPE_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "BROADCAST_VISIBILITY_TYPE_VISIBLE"); _BROADCAST_VISIBILITY_TYPE_VISIBLEReady = true; } return _BROADCAST_VISIBILITY_TYPE_VISIBLEContent; } }
+            private static int _BROADCAST_VISIBILITY_TYPE_VISIBLEContent = default;
+            private static bool _BROADCAST_VISIBILITY_TYPE_VISIBLEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#COLUMN_APP_LINK_COLOR"/>
             /// </summary>
             public static Java.Lang.String COLUMN_APP_LINK_COLOR { get { if (!_COLUMN_APP_LINK_COLORReady) { _COLUMN_APP_LINK_COLORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_APP_LINK_COLOR"); _COLUMN_APP_LINK_COLORReady = true; } return _COLUMN_APP_LINK_COLORContent; } }
@@ -767,6 +785,12 @@ namespace Android.Media.Tv
             public static Java.Lang.String COLUMN_BROADCAST_GENRE { get { if (!_COLUMN_BROADCAST_GENREReady) { _COLUMN_BROADCAST_GENREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_BROADCAST_GENRE"); _COLUMN_BROADCAST_GENREReady = true; } return _COLUMN_BROADCAST_GENREContent; } }
             private static Java.Lang.String _COLUMN_BROADCAST_GENREContent = default;
             private static bool _COLUMN_BROADCAST_GENREReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#COLUMN_BROADCAST_VISIBILITY_TYPE"/>
+            /// </summary>
+            public static Java.Lang.String COLUMN_BROADCAST_VISIBILITY_TYPE { get { if (!_COLUMN_BROADCAST_VISIBILITY_TYPEReady) { _COLUMN_BROADCAST_VISIBILITY_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_BROADCAST_VISIBILITY_TYPE"); _COLUMN_BROADCAST_VISIBILITY_TYPEReady = true; } return _COLUMN_BROADCAST_VISIBILITY_TYPEContent; } }
+            private static Java.Lang.String _COLUMN_BROADCAST_VISIBILITY_TYPEContent = default;
+            private static bool _COLUMN_BROADCAST_VISIBILITY_TYPEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#COLUMN_BROWSABLE"/>
             /// </summary>

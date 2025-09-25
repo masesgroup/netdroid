@@ -110,7 +110,7 @@ namespace Android.Net
     #endregion
 
     #region Uri implementation
-    public partial class Uri : Android.Os.IParcelable, Java.Lang.IComparable<Android.Net.Uri>
+    public partial class Uri : Java.Lang.IComparable<Android.Net.Uri>, Android.Os.IParcelable
     {
         #region Constructors
     
@@ -118,13 +118,13 @@ namespace Android.Net
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Net.Uri"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Net.Uri t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Net.Uri"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Net.Uri t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Net.Uri"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Net.Uri t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     

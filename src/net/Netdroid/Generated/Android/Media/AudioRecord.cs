@@ -296,7 +296,7 @@ namespace Android.Media
     #endregion
 
     #region AudioRecord implementation
-    public partial class AudioRecord : Android.Media.IAudioRouting, Android.Media.IMicrophoneDirection, Android.Media.IAudioRecordingMonitor
+    public partial class AudioRecord : Android.Media.IAudioRecordingMonitor, Android.Media.IAudioRouting, Android.Media.IMicrophoneDirection
     {
         #region Constructors
         /// <summary>
@@ -317,6 +317,10 @@ namespace Android.Media
     
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Android.Media.AudioRecord"/> to <see cref="Android.Media.AudioRecordingMonitor"/>
+        /// </summary>
+        public static implicit operator Android.Media.AudioRecordingMonitor(Android.Media.AudioRecord t) => t.Cast<Android.Media.AudioRecordingMonitor>();
+        /// <summary>
         /// Converter from <see cref="Android.Media.AudioRecord"/> to <see cref="Android.Media.AudioRouting"/>
         /// </summary>
         public static implicit operator Android.Media.AudioRouting(Android.Media.AudioRecord t) => t.Cast<Android.Media.AudioRouting>();
@@ -324,10 +328,6 @@ namespace Android.Media
         /// Converter from <see cref="Android.Media.AudioRecord"/> to <see cref="Android.Media.MicrophoneDirection"/>
         /// </summary>
         public static implicit operator Android.Media.MicrophoneDirection(Android.Media.AudioRecord t) => t.Cast<Android.Media.MicrophoneDirection>();
-        /// <summary>
-        /// Converter from <see cref="Android.Media.AudioRecord"/> to <see cref="Android.Media.AudioRecordingMonitor"/>
-        /// </summary>
-        public static implicit operator Android.Media.AudioRecordingMonitor(Android.Media.AudioRecord t) => t.Cast<Android.Media.AudioRecordingMonitor>();
     
         #endregion
     
@@ -694,6 +694,14 @@ namespace Android.Media
         public int SetPositionNotificationPeriod(int arg0)
         {
             return IExecuteWithSignature<int>("setPositionNotificationPeriod", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getRoutedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioDeviceInfo> GetRoutedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getRoutedDevices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#getActiveMicrophones()"/>

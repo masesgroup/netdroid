@@ -62,6 +62,47 @@ namespace Android.Net.Wifi
         public override bool IsBridgeStatic => false;
     
         // TODO: complete the class
+        #region Builder declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.Builder.html"/>
+        /// </summary>
+        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        {
+            const string _bridgeClassName = "android.net.wifi.SoftApConfiguration$Builder";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public Builder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Builder(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
     
     }
     #endregion
@@ -84,6 +125,30 @@ namespace Android.Net.Wifi
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#BAND_2GHZ"/>
+        /// </summary>
+        public static int BAND_2GHZ { get { if (!_BAND_2GHZReady) { _BAND_2GHZContent = SGetField<int>(LocalBridgeClazz, "BAND_2GHZ"); _BAND_2GHZReady = true; } return _BAND_2GHZContent; } }
+        private static int _BAND_2GHZContent = default;
+        private static bool _BAND_2GHZReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#BAND_5GHZ"/>
+        /// </summary>
+        public static int BAND_5GHZ { get { if (!_BAND_5GHZReady) { _BAND_5GHZContent = SGetField<int>(LocalBridgeClazz, "BAND_5GHZ"); _BAND_5GHZReady = true; } return _BAND_5GHZContent; } }
+        private static int _BAND_5GHZContent = default;
+        private static bool _BAND_5GHZReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#BAND_60GHZ"/>
+        /// </summary>
+        public static int BAND_60GHZ { get { if (!_BAND_60GHZReady) { _BAND_60GHZContent = SGetField<int>(LocalBridgeClazz, "BAND_60GHZ"); _BAND_60GHZReady = true; } return _BAND_60GHZContent; } }
+        private static int _BAND_60GHZContent = default;
+        private static bool _BAND_60GHZReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#BAND_6GHZ"/>
+        /// </summary>
+        public static int BAND_6GHZ { get { if (!_BAND_6GHZReady) { _BAND_6GHZContent = SGetField<int>(LocalBridgeClazz, "BAND_6GHZ"); _BAND_6GHZReady = true; } return _BAND_6GHZContent; } }
+        private static int _BAND_6GHZContent = default;
+        private static bool _BAND_6GHZReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#SECURITY_TYPE_OPEN"/>
         /// </summary>
@@ -145,6 +210,14 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getChannels()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.SparseIntArray"/></returns>
+        public Android.Util.SparseIntArray GetChannels()
+        {
+            return IExecuteWithSignature<Android.Util.SparseIntArray>("getChannels", "()Landroid/util/SparseIntArray;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#isHiddenSsid()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -198,6 +271,54 @@ namespace Android.Net.Wifi
         #endregion
     
         #region Nested classes
+        #region Builder implementation
+        public partial class Builder
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.Builder.html#build()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Net.Wifi.SoftApConfiguration"/></returns>
+            public Android.Net.Wifi.SoftApConfiguration Build()
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.SoftApConfiguration>("build", "()Landroid/net/wifi/SoftApConfiguration;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.Builder.html#setChannels(android.util.SparseIntArray)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Util.SparseIntArray"/></param>
+            /// <returns><see cref="Android.Net.Wifi.SoftApConfiguration.Builder"/></returns>
+            public Android.Net.Wifi.SoftApConfiguration.Builder SetChannels(Android.Util.SparseIntArray arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.SoftApConfiguration.Builder>("setChannels", "(Landroid/util/SparseIntArray;)Landroid/net/wifi/SoftApConfiguration$Builder;", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
     
         #endregion
     

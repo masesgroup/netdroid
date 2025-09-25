@@ -99,7 +99,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSize(Android.Graphics.Paint arg0, Java.Lang.CharSequence arg1, int arg2, int arg3, Android.Graphics.Paint.FontMetricsInt arg4)
         {
-            return IExecuteWithSignature<int>("getSize", "(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I", arg0, arg1, arg2, arg3, arg4);
+            return IExecute<int>("getSize", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#draw(android.graphics.Canvas,java.lang.CharSequence,int,int,float,int,int,int,android.graphics.Paint)"/>
@@ -115,7 +115,7 @@ namespace Android.Text.Style
         /// <param name="arg8"><see cref="Android.Graphics.Paint"/></param>
         public void Draw(Android.Graphics.Canvas arg0, Java.Lang.CharSequence arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, Android.Graphics.Paint arg8)
         {
-            IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecute("draw", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#getContentDescription()"/>
@@ -123,7 +123,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetContentDescription()
         {
-            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+            return IExecute<Java.Lang.CharSequence>("getContentDescription");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#setContentDescription(java.lang.CharSequence)"/>
@@ -131,7 +131,7 @@ namespace Android.Text.Style
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         public void SetContentDescription(Java.Lang.CharSequence arg0)
         {
-            IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", arg0);
+            IExecute("setContentDescription", arg0);
         }
     
         #endregion

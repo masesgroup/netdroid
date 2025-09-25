@@ -113,6 +113,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg0"><see cref="Android.Adservices.Measurement.DeletionRequest"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void DeleteRegistrations(Android.Adservices.Measurement.DeletionRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
             IExecuteWithSignature("deleteRegistrations", "(Landroid/adservices/measurement/DeletionRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
@@ -132,6 +133,7 @@ namespace Android.Adservices.Measurement
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void GetMeasurementApiStatus(Java.Util.Concurrent.Executor arg0, Android.Adservices.Common.AdServicesOutcomeReceiver<Java.Lang.Integer, Java.Lang.Exception> arg1)
         {
             IExecuteWithSignature("getMeasurementApiStatus", "(Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1);
@@ -151,6 +153,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg0"><see cref="Android.Adservices.Measurement.SourceRegistrationRequest"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void RegisterSource(Android.Adservices.Measurement.SourceRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
             IExecuteWithSignature("registerSource", "(Landroid/adservices/measurement/SourceRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
@@ -172,6 +175,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg1"><see cref="Android.View.InputEvent"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg3"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void RegisterSource(Android.Net.Uri arg0, Android.View.InputEvent arg1, Java.Util.Concurrent.Executor arg2, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg3)
         {
             IExecuteWithSignature("registerSource", "(Landroid/net/Uri;Landroid/view/InputEvent;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2, arg3);
@@ -193,6 +197,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void RegisterTrigger(Android.Net.Uri arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
             IExecuteWithSignature("registerTrigger", "(Landroid/net/Uri;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
@@ -213,6 +218,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg0"><see cref="Android.Adservices.Measurement.WebSourceRegistrationRequest"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void RegisterWebSource(Android.Adservices.Measurement.WebSourceRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
             IExecuteWithSignature("registerWebSource", "(Landroid/adservices/measurement/WebSourceRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);
@@ -233,6 +239,7 @@ namespace Android.Adservices.Measurement
         /// <param name="arg0"><see cref="Android.Adservices.Measurement.WebTriggerRegistrationRequest"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void RegisterWebTrigger(Android.Adservices.Measurement.WebTriggerRegistrationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
             IExecuteWithSignature("registerWebTrigger", "(Landroid/adservices/measurement/WebTriggerRegistrationRequest;Ljava/util/concurrent/Executor;Landroid/adservices/common/AdServicesOutcomeReceiver;)V", arg0, arg1, arg2);

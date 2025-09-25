@@ -222,6 +222,12 @@ namespace Android.Appwidget
         private static int _WIDGET_CATEGORY_KEYGUARDContent = default;
         private static bool _WIDGET_CATEGORY_KEYGUARDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#WIDGET_CATEGORY_NOT_KEYGUARD"/>
+        /// </summary>
+        public static int WIDGET_CATEGORY_NOT_KEYGUARD { get { if (!_WIDGET_CATEGORY_NOT_KEYGUARDReady) { _WIDGET_CATEGORY_NOT_KEYGUARDContent = SGetField<int>(LocalBridgeClazz, "WIDGET_CATEGORY_NOT_KEYGUARD"); _WIDGET_CATEGORY_NOT_KEYGUARDReady = true; } return _WIDGET_CATEGORY_NOT_KEYGUARDContent; } }
+        private static int _WIDGET_CATEGORY_NOT_KEYGUARDContent = default;
+        private static bool _WIDGET_CATEGORY_NOT_KEYGUARDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#WIDGET_CATEGORY_SEARCHBOX"/>
         /// </summary>
         public static int WIDGET_CATEGORY_SEARCHBOX { get { if (!_WIDGET_CATEGORY_SEARCHBOXReady) { _WIDGET_CATEGORY_SEARCHBOXContent = SGetField<int>(LocalBridgeClazz, "WIDGET_CATEGORY_SEARCHBOX"); _WIDGET_CATEGORY_SEARCHBOXReady = true; } return _WIDGET_CATEGORY_SEARCHBOXContent; } }

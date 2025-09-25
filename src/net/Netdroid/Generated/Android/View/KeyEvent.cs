@@ -793,6 +793,12 @@ namespace Android.View
         private static int _KEYCODE_CLEARContent = default;
         private static bool _KEYCODE_CLEARReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_CLOSE"/>
+        /// </summary>
+        public static int KEYCODE_CLOSE { get { if (!_KEYCODE_CLOSEReady) { _KEYCODE_CLOSEContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_CLOSE"); _KEYCODE_CLOSEReady = true; } return _KEYCODE_CLOSEContent; } }
+        private static int _KEYCODE_CLOSEContent = default;
+        private static bool _KEYCODE_CLOSEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_COMMA"/>
         /// </summary>
         public static int KEYCODE_COMMA { get { if (!_KEYCODE_COMMAReady) { _KEYCODE_COMMAContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_COMMA"); _KEYCODE_COMMAReady = true; } return _KEYCODE_COMMAContent; } }
@@ -864,6 +870,18 @@ namespace Android.View
         public static int KEYCODE_DEMO_APP_4 { get { if (!_KEYCODE_DEMO_APP_4Ready) { _KEYCODE_DEMO_APP_4Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_DEMO_APP_4"); _KEYCODE_DEMO_APP_4Ready = true; } return _KEYCODE_DEMO_APP_4Content; } }
         private static int _KEYCODE_DEMO_APP_4Content = default;
         private static bool _KEYCODE_DEMO_APP_4Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_DICTATE"/>
+        /// </summary>
+        public static int KEYCODE_DICTATE { get { if (!_KEYCODE_DICTATEReady) { _KEYCODE_DICTATEContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_DICTATE"); _KEYCODE_DICTATEReady = true; } return _KEYCODE_DICTATEContent; } }
+        private static int _KEYCODE_DICTATEContent = default;
+        private static bool _KEYCODE_DICTATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_DO_NOT_DISTURB"/>
+        /// </summary>
+        public static int KEYCODE_DO_NOT_DISTURB { get { if (!_KEYCODE_DO_NOT_DISTURBReady) { _KEYCODE_DO_NOT_DISTURBContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_DO_NOT_DISTURB"); _KEYCODE_DO_NOT_DISTURBReady = true; } return _KEYCODE_DO_NOT_DISTURBContent; } }
+        private static int _KEYCODE_DO_NOT_DISTURBContent = default;
+        private static bool _KEYCODE_DO_NOT_DISTURBReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_DPAD_CENTER"/>
         /// </summary>
@@ -1009,11 +1027,83 @@ namespace Android.View
         private static int _KEYCODE_F12Content = default;
         private static bool _KEYCODE_F12Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F13"/>
+        /// </summary>
+        public static int KEYCODE_F13 { get { if (!_KEYCODE_F13Ready) { _KEYCODE_F13Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F13"); _KEYCODE_F13Ready = true; } return _KEYCODE_F13Content; } }
+        private static int _KEYCODE_F13Content = default;
+        private static bool _KEYCODE_F13Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F14"/>
+        /// </summary>
+        public static int KEYCODE_F14 { get { if (!_KEYCODE_F14Ready) { _KEYCODE_F14Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F14"); _KEYCODE_F14Ready = true; } return _KEYCODE_F14Content; } }
+        private static int _KEYCODE_F14Content = default;
+        private static bool _KEYCODE_F14Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F15"/>
+        /// </summary>
+        public static int KEYCODE_F15 { get { if (!_KEYCODE_F15Ready) { _KEYCODE_F15Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F15"); _KEYCODE_F15Ready = true; } return _KEYCODE_F15Content; } }
+        private static int _KEYCODE_F15Content = default;
+        private static bool _KEYCODE_F15Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F16"/>
+        /// </summary>
+        public static int KEYCODE_F16 { get { if (!_KEYCODE_F16Ready) { _KEYCODE_F16Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F16"); _KEYCODE_F16Ready = true; } return _KEYCODE_F16Content; } }
+        private static int _KEYCODE_F16Content = default;
+        private static bool _KEYCODE_F16Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F17"/>
+        /// </summary>
+        public static int KEYCODE_F17 { get { if (!_KEYCODE_F17Ready) { _KEYCODE_F17Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F17"); _KEYCODE_F17Ready = true; } return _KEYCODE_F17Content; } }
+        private static int _KEYCODE_F17Content = default;
+        private static bool _KEYCODE_F17Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F18"/>
+        /// </summary>
+        public static int KEYCODE_F18 { get { if (!_KEYCODE_F18Ready) { _KEYCODE_F18Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F18"); _KEYCODE_F18Ready = true; } return _KEYCODE_F18Content; } }
+        private static int _KEYCODE_F18Content = default;
+        private static bool _KEYCODE_F18Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F19"/>
+        /// </summary>
+        public static int KEYCODE_F19 { get { if (!_KEYCODE_F19Ready) { _KEYCODE_F19Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F19"); _KEYCODE_F19Ready = true; } return _KEYCODE_F19Content; } }
+        private static int _KEYCODE_F19Content = default;
+        private static bool _KEYCODE_F19Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F2"/>
         /// </summary>
         public static int KEYCODE_F2 { get { if (!_KEYCODE_F2Ready) { _KEYCODE_F2Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F2"); _KEYCODE_F2Ready = true; } return _KEYCODE_F2Content; } }
         private static int _KEYCODE_F2Content = default;
         private static bool _KEYCODE_F2Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F20"/>
+        /// </summary>
+        public static int KEYCODE_F20 { get { if (!_KEYCODE_F20Ready) { _KEYCODE_F20Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F20"); _KEYCODE_F20Ready = true; } return _KEYCODE_F20Content; } }
+        private static int _KEYCODE_F20Content = default;
+        private static bool _KEYCODE_F20Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F21"/>
+        /// </summary>
+        public static int KEYCODE_F21 { get { if (!_KEYCODE_F21Ready) { _KEYCODE_F21Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F21"); _KEYCODE_F21Ready = true; } return _KEYCODE_F21Content; } }
+        private static int _KEYCODE_F21Content = default;
+        private static bool _KEYCODE_F21Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F22"/>
+        /// </summary>
+        public static int KEYCODE_F22 { get { if (!_KEYCODE_F22Ready) { _KEYCODE_F22Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F22"); _KEYCODE_F22Ready = true; } return _KEYCODE_F22Content; } }
+        private static int _KEYCODE_F22Content = default;
+        private static bool _KEYCODE_F22Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F23"/>
+        /// </summary>
+        public static int KEYCODE_F23 { get { if (!_KEYCODE_F23Ready) { _KEYCODE_F23Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F23"); _KEYCODE_F23Ready = true; } return _KEYCODE_F23Content; } }
+        private static int _KEYCODE_F23Content = default;
+        private static bool _KEYCODE_F23Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F24"/>
+        /// </summary>
+        public static int KEYCODE_F24 { get { if (!_KEYCODE_F24Ready) { _KEYCODE_F24Content = SGetField<int>(LocalBridgeClazz, "KEYCODE_F24"); _KEYCODE_F24Ready = true; } return _KEYCODE_F24Content; } }
+        private static int _KEYCODE_F24Content = default;
+        private static bool _KEYCODE_F24Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_F3"/>
         /// </summary>
@@ -1098,6 +1188,12 @@ namespace Android.View
         public static int KEYCODE_FORWARD_DEL { get { if (!_KEYCODE_FORWARD_DELReady) { _KEYCODE_FORWARD_DELContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_FORWARD_DEL"); _KEYCODE_FORWARD_DELReady = true; } return _KEYCODE_FORWARD_DELContent; } }
         private static int _KEYCODE_FORWARD_DELContent = default;
         private static bool _KEYCODE_FORWARD_DELReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_FULLSCREEN"/>
+        /// </summary>
+        public static int KEYCODE_FULLSCREEN { get { if (!_KEYCODE_FULLSCREENReady) { _KEYCODE_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_FULLSCREEN"); _KEYCODE_FULLSCREENReady = true; } return _KEYCODE_FULLSCREENContent; } }
+        private static int _KEYCODE_FULLSCREENContent = default;
+        private static bool _KEYCODE_FULLSCREENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_FUNCTION"/>
         /// </summary>
@@ -1236,6 +1332,12 @@ namespace Android.View
         public static int KEYCODE_LEFT_BRACKET { get { if (!_KEYCODE_LEFT_BRACKETReady) { _KEYCODE_LEFT_BRACKETContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_LEFT_BRACKET"); _KEYCODE_LEFT_BRACKETReady = true; } return _KEYCODE_LEFT_BRACKETContent; } }
         private static int _KEYCODE_LEFT_BRACKETContent = default;
         private static bool _KEYCODE_LEFT_BRACKETReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_LOCK"/>
+        /// </summary>
+        public static int KEYCODE_LOCK { get { if (!_KEYCODE_LOCKReady) { _KEYCODE_LOCKContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_LOCK"); _KEYCODE_LOCKReady = true; } return _KEYCODE_LOCKContent; } }
+        private static int _KEYCODE_LOCKContent = default;
+        private static bool _KEYCODE_LOCKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_M"/>
         /// </summary>
@@ -1459,6 +1561,12 @@ namespace Android.View
         private static int _KEYCODE_NAVIGATE_PREVIOUSContent = default;
         private static bool _KEYCODE_NAVIGATE_PREVIOUSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_NEW"/>
+        /// </summary>
+        public static int KEYCODE_NEW { get { if (!_KEYCODE_NEWReady) { _KEYCODE_NEWContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_NEW"); _KEYCODE_NEWReady = true; } return _KEYCODE_NEWContent; } }
+        private static int _KEYCODE_NEWContent = default;
+        private static bool _KEYCODE_NEWReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_NOTIFICATION"/>
         /// </summary>
         public static int KEYCODE_NOTIFICATION { get { if (!_KEYCODE_NOTIFICATIONReady) { _KEYCODE_NOTIFICATIONContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_NOTIFICATION"); _KEYCODE_NOTIFICATIONReady = true; } return _KEYCODE_NOTIFICATIONContent; } }
@@ -1662,6 +1770,12 @@ namespace Android.View
         public static int KEYCODE_POWER { get { if (!_KEYCODE_POWERReady) { _KEYCODE_POWERContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_POWER"); _KEYCODE_POWERReady = true; } return _KEYCODE_POWERContent; } }
         private static int _KEYCODE_POWERContent = default;
         private static bool _KEYCODE_POWERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_PRINT"/>
+        /// </summary>
+        public static int KEYCODE_PRINT { get { if (!_KEYCODE_PRINTReady) { _KEYCODE_PRINTContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_PRINT"); _KEYCODE_PRINTReady = true; } return _KEYCODE_PRINTContent; } }
+        private static int _KEYCODE_PRINTContent = default;
+        private static bool _KEYCODE_PRINTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_PROFILE_SWITCH"/>
         /// </summary>

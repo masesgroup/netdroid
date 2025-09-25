@@ -523,10 +523,17 @@ namespace Android.Graphics
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [global::System.Obsolete()]
         public void ComputeBounds(Android.Graphics.RectF arg0, bool arg1)
         {
             IExecuteWithSignature("computeBounds", "(Landroid/graphics/RectF;Z)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#computeBounds(android.graphics.RectF)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
+        public void ComputeBounds(Android.Graphics.RectF arg0)
+        {
+            IExecuteWithSignature("computeBounds", "(Landroid/graphics/RectF;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#conicTo(float,float,float,float,float)"/>

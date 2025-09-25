@@ -62,6 +62,49 @@ namespace Android.Nfc.Cardemulation
         public override bool IsBridgeStatic => false;
     
         // TODO: complete the class
+        #region NfcEventCallback declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html"/>
+        /// </summary>
+        public partial class NfcEventCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NfcEventCallback>
+        {
+            const string _bridgeClassName = "android.nfc.cardemulation.CardEmulation$NfcEventCallback";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [global::System.Obsolete("NfcEventCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public NfcEventCallback() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public NfcEventCallback(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [global::System.Obsolete("NfcEventCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public NfcEventCallback(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
     
     }
     #endregion
@@ -78,6 +121,60 @@ namespace Android.Nfc.Cardemulation
         #endregion
     
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#NFC_INTERNAL_ERROR_COMMAND_TIMEOUT"/>
+        /// </summary>
+        public static int NFC_INTERNAL_ERROR_COMMAND_TIMEOUT { get { if (!_NFC_INTERNAL_ERROR_COMMAND_TIMEOUTReady) { _NFC_INTERNAL_ERROR_COMMAND_TIMEOUTContent = SGetField<int>(LocalBridgeClazz, "NFC_INTERNAL_ERROR_COMMAND_TIMEOUT"); _NFC_INTERNAL_ERROR_COMMAND_TIMEOUTReady = true; } return _NFC_INTERNAL_ERROR_COMMAND_TIMEOUTContent; } }
+        private static int _NFC_INTERNAL_ERROR_COMMAND_TIMEOUTContent = default;
+        private static bool _NFC_INTERNAL_ERROR_COMMAND_TIMEOUTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#NFC_INTERNAL_ERROR_NFC_CRASH_RESTART"/>
+        /// </summary>
+        public static int NFC_INTERNAL_ERROR_NFC_CRASH_RESTART { get { if (!_NFC_INTERNAL_ERROR_NFC_CRASH_RESTARTReady) { _NFC_INTERNAL_ERROR_NFC_CRASH_RESTARTContent = SGetField<int>(LocalBridgeClazz, "NFC_INTERNAL_ERROR_NFC_CRASH_RESTART"); _NFC_INTERNAL_ERROR_NFC_CRASH_RESTARTReady = true; } return _NFC_INTERNAL_ERROR_NFC_CRASH_RESTARTContent; } }
+        private static int _NFC_INTERNAL_ERROR_NFC_CRASH_RESTARTContent = default;
+        private static bool _NFC_INTERNAL_ERROR_NFC_CRASH_RESTARTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#NFC_INTERNAL_ERROR_NFC_HARDWARE_ERROR"/>
+        /// </summary>
+        public static int NFC_INTERNAL_ERROR_NFC_HARDWARE_ERROR { get { if (!_NFC_INTERNAL_ERROR_NFC_HARDWARE_ERRORReady) { _NFC_INTERNAL_ERROR_NFC_HARDWARE_ERRORContent = SGetField<int>(LocalBridgeClazz, "NFC_INTERNAL_ERROR_NFC_HARDWARE_ERROR"); _NFC_INTERNAL_ERROR_NFC_HARDWARE_ERRORReady = true; } return _NFC_INTERNAL_ERROR_NFC_HARDWARE_ERRORContent; } }
+        private static int _NFC_INTERNAL_ERROR_NFC_HARDWARE_ERRORContent = default;
+        private static bool _NFC_INTERNAL_ERROR_NFC_HARDWARE_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#NFC_INTERNAL_ERROR_UNKNOWN"/>
+        /// </summary>
+        public static int NFC_INTERNAL_ERROR_UNKNOWN { get { if (!_NFC_INTERNAL_ERROR_UNKNOWNReady) { _NFC_INTERNAL_ERROR_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "NFC_INTERNAL_ERROR_UNKNOWN"); _NFC_INTERNAL_ERROR_UNKNOWNReady = true; } return _NFC_INTERNAL_ERROR_UNKNOWNContent; } }
+        private static int _NFC_INTERNAL_ERROR_UNKNOWNContent = default;
+        private static bool _NFC_INTERNAL_ERROR_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULT"/>
+        /// </summary>
+        public static int PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULT { get { if (!_PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULTReady) { _PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULT"); _PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULTReady = true; } return _PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULTContent; } }
+        private static int _PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULTContent = default;
+        private static bool _PROTOCOL_AND_TECHNOLOGY_ROUTE_DEFAULTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#PROTOCOL_AND_TECHNOLOGY_ROUTE_DH"/>
+        /// </summary>
+        public static int PROTOCOL_AND_TECHNOLOGY_ROUTE_DH { get { if (!_PROTOCOL_AND_TECHNOLOGY_ROUTE_DHReady) { _PROTOCOL_AND_TECHNOLOGY_ROUTE_DHContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_AND_TECHNOLOGY_ROUTE_DH"); _PROTOCOL_AND_TECHNOLOGY_ROUTE_DHReady = true; } return _PROTOCOL_AND_TECHNOLOGY_ROUTE_DHContent; } }
+        private static int _PROTOCOL_AND_TECHNOLOGY_ROUTE_DHContent = default;
+        private static bool _PROTOCOL_AND_TECHNOLOGY_ROUTE_DHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#PROTOCOL_AND_TECHNOLOGY_ROUTE_ESE"/>
+        /// </summary>
+        public static int PROTOCOL_AND_TECHNOLOGY_ROUTE_ESE { get { if (!_PROTOCOL_AND_TECHNOLOGY_ROUTE_ESEReady) { _PROTOCOL_AND_TECHNOLOGY_ROUTE_ESEContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_AND_TECHNOLOGY_ROUTE_ESE"); _PROTOCOL_AND_TECHNOLOGY_ROUTE_ESEReady = true; } return _PROTOCOL_AND_TECHNOLOGY_ROUTE_ESEContent; } }
+        private static int _PROTOCOL_AND_TECHNOLOGY_ROUTE_ESEContent = default;
+        private static bool _PROTOCOL_AND_TECHNOLOGY_ROUTE_ESEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#PROTOCOL_AND_TECHNOLOGY_ROUTE_UICC"/>
+        /// </summary>
+        public static int PROTOCOL_AND_TECHNOLOGY_ROUTE_UICC { get { if (!_PROTOCOL_AND_TECHNOLOGY_ROUTE_UICCReady) { _PROTOCOL_AND_TECHNOLOGY_ROUTE_UICCContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_AND_TECHNOLOGY_ROUTE_UICC"); _PROTOCOL_AND_TECHNOLOGY_ROUTE_UICCReady = true; } return _PROTOCOL_AND_TECHNOLOGY_ROUTE_UICCContent; } }
+        private static int _PROTOCOL_AND_TECHNOLOGY_ROUTE_UICCContent = default;
+        private static bool _PROTOCOL_AND_TECHNOLOGY_ROUTE_UICCReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSET"/>
+        /// </summary>
+        public static int PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSET { get { if (!_PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSETReady) { _PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSETContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSET"); _PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSETReady = true; } return _PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSETContent; } }
+        private static int _PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSETContent = default;
+        private static bool _PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSETReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#SELECTION_MODE_ALWAYS_ASK"/>
         /// </summary>
@@ -127,6 +224,12 @@ namespace Android.Nfc.Cardemulation
         public static Java.Lang.String EXTRA_SERVICE_COMPONENT { get { if (!_EXTRA_SERVICE_COMPONENTReady) { _EXTRA_SERVICE_COMPONENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SERVICE_COMPONENT"); _EXTRA_SERVICE_COMPONENTReady = true; } return _EXTRA_SERVICE_COMPONENTContent; } }
         private static Java.Lang.String _EXTRA_SERVICE_COMPONENTContent = default;
         private static bool _EXTRA_SERVICE_COMPONENTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#PROPERTY_ALLOW_SHARED_ROLE_PRIORITY"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_ALLOW_SHARED_ROLE_PRIORITY { get { if (!_PROPERTY_ALLOW_SHARED_ROLE_PRIORITYReady) { _PROPERTY_ALLOW_SHARED_ROLE_PRIORITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_ALLOW_SHARED_ROLE_PRIORITY"); _PROPERTY_ALLOW_SHARED_ROLE_PRIORITYReady = true; } return _PROPERTY_ALLOW_SHARED_ROLE_PRIORITYContent; } }
+        private static Java.Lang.String _PROPERTY_ALLOW_SHARED_ROLE_PRIORITYContent = default;
+        private static bool _PROPERTY_ALLOW_SHARED_ROLE_PRIORITYReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -172,6 +275,14 @@ namespace Android.Nfc.Cardemulation
         public bool IsDefaultServiceForCategory(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<bool>("isDefaultServiceForCategory", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#isEuiccSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEuiccSupported()
+        {
+            return IExecuteWithSignature<bool>("isEuiccSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerAidsForService(android.content.ComponentName,java.lang.String,java.util.List)"/>
@@ -293,6 +404,14 @@ namespace Android.Nfc.Cardemulation
             return IExecuteWithSignature<bool>("unsetPreferredService", "(Landroid/app/Activity;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getDefaultNfcSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultNfcSubscriptionId()
+        {
+            return IExecuteWithSignature<int>("getDefaultNfcSubscriptionId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getSelectionModeForCategory(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -335,10 +454,114 @@ namespace Android.Nfc.Cardemulation
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAidsForService", "(Landroid/content/ComponentName;Ljava/lang/String;)Ljava/util/List;", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerNfcEventCallback(java.util.concurrent.Executor,android.nfc.cardemulation.CardEmulation.NfcEventCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Nfc.Cardemulation.CardEmulation.NfcEventCallback"/></param>
+        public void RegisterNfcEventCallback(Java.Util.Concurrent.Executor arg0, Android.Nfc.Cardemulation.CardEmulation.NfcEventCallback arg1)
+        {
+            IExecuteWithSignature("registerNfcEventCallback", "(Ljava/util/concurrent/Executor;Landroid/nfc/cardemulation/CardEmulation$NfcEventCallback;)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#unregisterNfcEventCallback(android.nfc.cardemulation.CardEmulation.NfcEventCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Nfc.Cardemulation.CardEmulation.NfcEventCallback"/></param>
+        public void UnregisterNfcEventCallback(Android.Nfc.Cardemulation.CardEmulation.NfcEventCallback arg0)
+        {
+            IExecuteWithSignature("unregisterNfcEventCallback", "(Landroid/nfc/cardemulation/CardEmulation$NfcEventCallback;)V", arg0);
+        }
     
         #endregion
     
         #region Nested classes
+        #region NfcEventCallback implementation
+        public partial class NfcEventCallback
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html#onAidConflictOccurred(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void OnAidConflictOccurred(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("onAidConflictOccurred", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html#onAidNotRouted(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void OnAidNotRouted(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("onAidNotRouted", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html#onInternalErrorReported(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void OnInternalErrorReported(int arg0)
+            {
+                IExecuteWithSignature("onInternalErrorReported", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html#onNfcStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void OnNfcStateChanged(int arg0)
+            {
+                IExecuteWithSignature("onNfcStateChanged", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html#onObserveModeStateChanged(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void OnObserveModeStateChanged(bool arg0)
+            {
+                IExecuteWithSignature("onObserveModeStateChanged", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html#onPreferredServiceChanged(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void OnPreferredServiceChanged(bool arg0)
+            {
+                IExecuteWithSignature("onPreferredServiceChanged", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.NfcEventCallback.html#onRemoteFieldChanged(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void OnRemoteFieldChanged(bool arg0)
+            {
+                IExecuteWithSignature("onRemoteFieldChanged", "(Z)V", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
     
         #endregion
     

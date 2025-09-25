@@ -117,7 +117,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap GetBitmap()
         {
-            return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;");
+            return IExecute<Android.Graphics.Bitmap>("getBitmap");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#getLeadingMargin(boolean)"/>
@@ -126,7 +126,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetLeadingMargin(bool arg0)
         {
-            return IExecuteWithSignature<int>("getLeadingMargin", "(Z)I", arg0);
+            return IExecute<int>("getLeadingMargin", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#getPadding()"/>
@@ -134,7 +134,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetPadding()
         {
-            return IExecuteWithSignature<int>("getPadding", "()I");
+            return IExecute<int>("getPadding");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#chooseHeight(java.lang.CharSequence,int,int,int,int,android.graphics.Paint.FontMetricsInt)"/>
@@ -147,7 +147,7 @@ namespace Android.Text.Style
         /// <param name="arg5"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
         public void ChooseHeight(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint.FontMetricsInt arg5)
         {
-            IExecuteWithSignature("chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecute("chooseHeight", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#drawLeadingMargin(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,boolean,android.text.Layout)"/>
@@ -166,7 +166,7 @@ namespace Android.Text.Style
         /// <param name="arg11"><see cref="Android.Text.Layout"/></param>
         public void DrawLeadingMargin(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, bool arg10, Android.Text.Layout arg11)
         {
-            IExecuteWithSignature("drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            IExecute("drawLeadingMargin", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
     
         #endregion

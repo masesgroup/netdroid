@@ -178,6 +178,42 @@ namespace Android.App.Appsearch
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyBlobHandle(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.App.Appsearch.AppSearchBlobHandle"/></returns>
+        public Android.App.Appsearch.AppSearchBlobHandle GetPropertyBlobHandle(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.App.Appsearch.AppSearchBlobHandle>("getPropertyBlobHandle", "(Ljava/lang/String;)Landroid/app/appsearch/AppSearchBlobHandle;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyBlobHandleArray(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.App.Appsearch.AppSearchBlobHandle"/></returns>
+        public Android.App.Appsearch.AppSearchBlobHandle[] GetPropertyBlobHandleArray(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignatureArray<Android.App.Appsearch.AppSearchBlobHandle>("getPropertyBlobHandleArray", "(Ljava/lang/String;)[Landroid/app/appsearch/AppSearchBlobHandle;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyEmbedding(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.App.Appsearch.EmbeddingVector"/></returns>
+        public Android.App.Appsearch.EmbeddingVector GetPropertyEmbedding(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.App.Appsearch.EmbeddingVector>("getPropertyEmbedding", "(Ljava/lang/String;)Landroid/app/appsearch/EmbeddingVector;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyEmbeddingArray(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.App.Appsearch.EmbeddingVector"/></returns>
+        public Android.App.Appsearch.EmbeddingVector[] GetPropertyEmbeddingArray(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignatureArray<Android.App.Appsearch.EmbeddingVector>("getPropertyEmbeddingArray", "(Ljava/lang/String;)[Landroid/app/appsearch/EmbeddingVector;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyDocument(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -437,6 +473,16 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setNamespace", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBlobHandle(java.lang.String,android.app.appsearch.AppSearchBlobHandle...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.App.Appsearch.AppSearchBlobHandle"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
+            public Android.App.Appsearch.GenericDocument.Builder SetPropertyBlobHandle(Java.Lang.String arg0, params Android.App.Appsearch.AppSearchBlobHandle[] arg1)
+            {
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBlobHandle", "(Ljava/lang/String;[Landroid/app/appsearch/AppSearchBlobHandle;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBlobHandle", "(Ljava/lang/String;[Landroid/app/appsearch/AppSearchBlobHandle;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBoolean(java.lang.String,boolean...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -475,6 +521,16 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.GenericDocument.Builder SetPropertyDouble(Java.Lang.String arg0, params double[] arg1)
             {
                 if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyEmbedding(java.lang.String,android.app.appsearch.EmbeddingVector...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.App.Appsearch.EmbeddingVector"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
+            public Android.App.Appsearch.GenericDocument.Builder SetPropertyEmbedding(Java.Lang.String arg0, params Android.App.Appsearch.EmbeddingVector[] arg1)
+            {
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyEmbedding", "(Ljava/lang/String;[Landroid/app/appsearch/EmbeddingVector;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyEmbedding", "(Ljava/lang/String;[Landroid/app/appsearch/EmbeddingVector;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyLong(java.lang.String,long...)"/>
@@ -621,6 +677,16 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<BuilderType>("setNamespace", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBlobHandle(java.lang.String,android.app.appsearch.AppSearchBlobHandle...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.App.Appsearch.AppSearchBlobHandle"/></param>
+            /// <returns><typeparamref name="BuilderType"/></returns>
+            public BuilderType SetPropertyBlobHandle(Java.Lang.String arg0, params Android.App.Appsearch.AppSearchBlobHandle[] arg1)
+            {
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyBlobHandle", "(Ljava/lang/String;[Landroid/app/appsearch/AppSearchBlobHandle;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyBlobHandle", "(Ljava/lang/String;[Landroid/app/appsearch/AppSearchBlobHandle;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBoolean(java.lang.String,boolean...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -659,6 +725,16 @@ namespace Android.App.Appsearch
             public BuilderType SetPropertyDouble(Java.Lang.String arg0, params double[] arg1)
             {
                 if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyEmbedding(java.lang.String,android.app.appsearch.EmbeddingVector...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.App.Appsearch.EmbeddingVector"/></param>
+            /// <returns><typeparamref name="BuilderType"/></returns>
+            public BuilderType SetPropertyEmbedding(Java.Lang.String arg0, params Android.App.Appsearch.EmbeddingVector[] arg1)
+            {
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyEmbedding", "(Ljava/lang/String;[Landroid/app/appsearch/EmbeddingVector;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyEmbedding", "(Ljava/lang/String;[Landroid/app/appsearch/EmbeddingVector;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyLong(java.lang.String,long...)"/>

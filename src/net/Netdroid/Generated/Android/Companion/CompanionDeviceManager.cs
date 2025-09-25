@@ -152,6 +152,12 @@ namespace Android.Companion
         private static int _RESULT_OKContent = default;
         private static bool _RESULT_OKReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#RESULT_SECURITY_ERROR"/>
+        /// </summary>
+        public static int RESULT_SECURITY_ERROR { get { if (!_RESULT_SECURITY_ERRORReady) { _RESULT_SECURITY_ERRORContent = SGetField<int>(LocalBridgeClazz, "RESULT_SECURITY_ERROR"); _RESULT_SECURITY_ERRORReady = true; } return _RESULT_SECURITY_ERRORContent; } }
+        private static int _RESULT_SECURITY_ERRORContent = default;
+        private static bool _RESULT_SECURITY_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#RESULT_USER_REJECTED"/>
         /// </summary>
         public static int RESULT_USER_REJECTED { get { if (!_RESULT_USER_REJECTEDReady) { _RESULT_USER_REJECTEDContent = SGetField<int>(LocalBridgeClazz, "RESULT_USER_REJECTED"); _RESULT_USER_REJECTEDReady = true; } return _RESULT_USER_REJECTEDContent; } }
@@ -214,6 +220,15 @@ namespace Android.Companion
         public bool IsPermissionTransferUserConsented(int arg0)
         {
             return IExecuteWithSignature<bool>("isPermissionTransferUserConsented", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#removeBond(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RemoveBond(int arg0)
+        {
+            return IExecuteWithSignature<bool>("removeBond", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getMyAssociations()"/>
@@ -316,10 +331,28 @@ namespace Android.Companion
             IExecuteWithSignature("requestNotificationAccess", "(Landroid/content/ComponentName;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#setDeviceId(int,android.companion.DeviceId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Companion.DeviceId"/></param>
+        public void SetDeviceId(int arg0, Android.Companion.DeviceId arg1)
+        {
+            IExecuteWithSignature("setDeviceId", "(ILandroid/companion/DeviceId;)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#startObservingDevicePresence(android.companion.ObservingDevicePresenceRequest)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Companion.ObservingDevicePresenceRequest"/></param>
+        public void StartObservingDevicePresence(Android.Companion.ObservingDevicePresenceRequest arg0)
+        {
+            IExecuteWithSignature("startObservingDevicePresence", "(Landroid/companion/ObservingDevicePresenceRequest;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#startObservingDevicePresence(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
+        [global::System.Obsolete()]
         public void StartObservingDevicePresence(Java.Lang.String arg0)
         {
             IExecuteWithSignature("startObservingDevicePresence", "(Ljava/lang/String;)V", arg0);
@@ -336,10 +369,19 @@ namespace Android.Companion
             IExecuteWithSignature("startSystemDataTransfer", "(ILjava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#stopObservingDevicePresence(android.companion.ObservingDevicePresenceRequest)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Companion.ObservingDevicePresenceRequest"/></param>
+        public void StopObservingDevicePresence(Android.Companion.ObservingDevicePresenceRequest arg0)
+        {
+            IExecuteWithSignature("stopObservingDevicePresence", "(Landroid/companion/ObservingDevicePresenceRequest;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#stopObservingDevicePresence(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
+        [global::System.Obsolete()]
         public void StopObservingDevicePresence(Java.Lang.String arg0)
         {
             IExecuteWithSignature("stopObservingDevicePresence", "(Ljava/lang/String;)V", arg0);
@@ -400,6 +442,15 @@ namespace Android.Companion
             public void OnDeviceFound(Android.Content.IntentSender arg0)
             {
                 IExecuteWithSignature("onDeviceFound", "(Landroid/content/IntentSender;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.Callback.html#onFailure(int,java.lang.CharSequence)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+            public void OnFailure(int arg0, Java.Lang.CharSequence arg1)
+            {
+                IExecuteWithSignature("onFailure", "(ILjava/lang/CharSequence;)V", arg0, arg1);
             }
         
             #endregion

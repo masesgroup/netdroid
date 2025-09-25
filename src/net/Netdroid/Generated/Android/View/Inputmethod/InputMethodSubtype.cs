@@ -222,6 +222,14 @@ namespace Android.View.Inputmethod
             return IExecuteWithSignature<int>("getIconResId", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLayoutLabelResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutLabelResource()
+        {
+            return IExecuteWithSignature<int>("getLayoutLabelResource", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getNameResId()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -239,6 +247,24 @@ namespace Android.View.Inputmethod
         public Java.Lang.CharSequence GetDisplayName(Android.Content.Context arg0, Java.Lang.String arg1, Android.Content.Pm.ApplicationInfo arg2)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "(Landroid/content/Context;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLayoutDisplayName(android.content.Context,android.content.pm.ApplicationInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Pm.ApplicationInfo"/></param>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLayoutDisplayName(Android.Content.Context arg0, Android.Content.Pm.ApplicationInfo arg1)
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLayoutDisplayName", "(Landroid/content/Context;Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLayoutLabelNonLocalized()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLayoutLabelNonLocalized()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLayoutLabelNonLocalized", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getNameOverride()"/>
@@ -365,6 +391,24 @@ namespace Android.View.Inputmethod
             public Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder SetLanguageTag(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder>("setLanguageTag", "(Ljava/lang/String;)Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.InputMethodSubtypeBuilder.html#setLayoutLabelNonLocalized(java.lang.CharSequence)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+            /// <returns><see cref="Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder"/></returns>
+            public Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder SetLayoutLabelNonLocalized(Java.Lang.CharSequence arg0)
+            {
+                return IExecuteWithSignature<Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder>("setLayoutLabelNonLocalized", "(Ljava/lang/CharSequence;)Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.InputMethodSubtypeBuilder.html#setLayoutLabelResource(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder"/></returns>
+            public Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder SetLayoutLabelResource(int arg0)
+            {
+                return IExecuteWithSignature<Android.View.Inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder>("setLayoutLabelResource", "(I)Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.InputMethodSubtypeBuilder.html#setOverridesImplicitlyEnabledSubtype(boolean)"/>

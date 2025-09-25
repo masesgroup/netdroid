@@ -84,6 +84,12 @@ namespace Android.Content.Pm
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherUserInfo.html#PRIVATE_SPACE_ENTRYPOINT_HIDDEN"/>
+        /// </summary>
+        public static Java.Lang.String PRIVATE_SPACE_ENTRYPOINT_HIDDEN { get { if (!_PRIVATE_SPACE_ENTRYPOINT_HIDDENReady) { _PRIVATE_SPACE_ENTRYPOINT_HIDDENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PRIVATE_SPACE_ENTRYPOINT_HIDDEN"); _PRIVATE_SPACE_ENTRYPOINT_HIDDENReady = true; } return _PRIVATE_SPACE_ENTRYPOINT_HIDDENContent; } }
+        private static Java.Lang.String _PRIVATE_SPACE_ENTRYPOINT_HIDDENContent = default;
+        private static bool _PRIVATE_SPACE_ENTRYPOINT_HIDDENReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -92,6 +98,14 @@ namespace Android.Content.Pm
         #endregion
     
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherUserInfo.html#getUserConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetUserConfig()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getUserConfig", "()Landroid/os/Bundle;");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherUserInfo.html#describeContents()"/>
         /// </summary>

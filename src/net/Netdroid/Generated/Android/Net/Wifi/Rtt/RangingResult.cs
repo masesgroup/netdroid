@@ -198,6 +198,30 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<bool>("is80211mcMeasurement", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#isRangingAuthenticated()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRangingAuthenticated()
+        {
+            return IExecuteWithSignature<bool>("isRangingAuthenticated", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#isRangingFrameProtected()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRangingFrameProtected()
+        {
+            return IExecuteWithSignature<bool>("isRangingFrameProtected", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#isSecureHeLtfEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSecureHeLtfEnabled()
+        {
+            return IExecuteWithSignature<bool>("isSecureHeLtfEnabled", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getLci()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
@@ -212,6 +236,14 @@ namespace Android.Net.Wifi.Rtt
         public byte[] GetLcr()
         {
             return IExecuteWithSignatureArray<byte>("getLcr", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getPasnComebackCookie()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetPasnComebackCookie()
+        {
+            return IExecuteWithSignatureArray<byte>("getPasnComebackCookie", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#describeContents()"/>
@@ -310,6 +342,14 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<int>("getRssi", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getSecureHeLtfProtocolVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecureHeLtfProtocolVersion()
+        {
+            return IExecuteWithSignature<int>("getSecureHeLtfProtocolVersion", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getStatus()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -332,6 +372,14 @@ namespace Android.Net.Wifi.Rtt
         public long GetMinTimeBetweenNtbMeasurementsMicros()
         {
             return IExecuteWithSignature<long>("getMinTimeBetweenNtbMeasurementsMicros", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getPasnComebackAfterMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPasnComebackAfterMillis()
+        {
+            return IExecuteWithSignature<long>("getPasnComebackAfterMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getRangingTimestampMillis()"/>
@@ -536,6 +584,24 @@ namespace Android.Net.Wifi.Rtt
                 return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setNumSuccessfulMeasurements", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setPasnComebackAfterMillis(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetPasnComebackAfterMillis(long arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setPasnComebackAfterMillis", "(J)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setPasnComebackCookie(byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetPasnComebackCookie(byte[] arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setPasnComebackCookie", "([B)Landroid/net/wifi/rtt/RangingResult$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setPeerHandle(android.net.wifi.aware.PeerHandle)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Wifi.Aware.PeerHandle"/></param>
@@ -543,6 +609,24 @@ namespace Android.Net.Wifi.Rtt
             public Android.Net.Wifi.Rtt.RangingResult.Builder SetPeerHandle(Android.Net.Wifi.Aware.PeerHandle arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setPeerHandle", "(Landroid/net/wifi/aware/PeerHandle;)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setRangingAuthenticated(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetRangingAuthenticated(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setRangingAuthenticated", "(Z)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setRangingFrameProtected(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetRangingFrameProtected(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setRangingFrameProtected", "(Z)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setRangingTimestampMillis(long)"/>
@@ -561,6 +645,24 @@ namespace Android.Net.Wifi.Rtt
             public Android.Net.Wifi.Rtt.RangingResult.Builder SetRssi(int arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setRssi", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setSecureHeLtfEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetSecureHeLtfEnabled(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setSecureHeLtfEnabled", "(Z)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setSecureHeLtfProtocolVersion(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetSecureHeLtfProtocolVersion(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setSecureHeLtfProtocolVersion", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setStatus(int)"/>

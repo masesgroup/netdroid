@@ -75,5 +75,14 @@ public final class WifiP2pManager_ServiceResponseListener implements org.mases.j
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("onServiceAvailable", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
+    //@Override
+    public void onUsdBasedServiceAvailable(android.net.wifi.p2p.WifiP2pDevice arg0, android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse arg1) {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("onUsdBasedServiceAvailable", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener.super.onUsdBasedServiceAvailable(arg0, arg1);
+    }
+    //@Override
+    public void onUsdBasedServiceAvailableDefault(android.net.wifi.p2p.WifiP2pDevice arg0, android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceResponse arg1) {
+        android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener.super.onUsdBasedServiceAvailable(arg0, arg1);
+    }
 
 }

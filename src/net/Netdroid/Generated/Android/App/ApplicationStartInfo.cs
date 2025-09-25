@@ -115,6 +115,36 @@ namespace Android.App
         private static int _LAUNCH_MODE_STANDARDContent = default;
         private static bool _LAUNCH_MODE_STANDARDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#START_COMPONENT_ACTIVITY"/>
+        /// </summary>
+        public static int START_COMPONENT_ACTIVITY { get { if (!_START_COMPONENT_ACTIVITYReady) { _START_COMPONENT_ACTIVITYContent = SGetField<int>(LocalBridgeClazz, "START_COMPONENT_ACTIVITY"); _START_COMPONENT_ACTIVITYReady = true; } return _START_COMPONENT_ACTIVITYContent; } }
+        private static int _START_COMPONENT_ACTIVITYContent = default;
+        private static bool _START_COMPONENT_ACTIVITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#START_COMPONENT_BROADCAST"/>
+        /// </summary>
+        public static int START_COMPONENT_BROADCAST { get { if (!_START_COMPONENT_BROADCASTReady) { _START_COMPONENT_BROADCASTContent = SGetField<int>(LocalBridgeClazz, "START_COMPONENT_BROADCAST"); _START_COMPONENT_BROADCASTReady = true; } return _START_COMPONENT_BROADCASTContent; } }
+        private static int _START_COMPONENT_BROADCASTContent = default;
+        private static bool _START_COMPONENT_BROADCASTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#START_COMPONENT_CONTENT_PROVIDER"/>
+        /// </summary>
+        public static int START_COMPONENT_CONTENT_PROVIDER { get { if (!_START_COMPONENT_CONTENT_PROVIDERReady) { _START_COMPONENT_CONTENT_PROVIDERContent = SGetField<int>(LocalBridgeClazz, "START_COMPONENT_CONTENT_PROVIDER"); _START_COMPONENT_CONTENT_PROVIDERReady = true; } return _START_COMPONENT_CONTENT_PROVIDERContent; } }
+        private static int _START_COMPONENT_CONTENT_PROVIDERContent = default;
+        private static bool _START_COMPONENT_CONTENT_PROVIDERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#START_COMPONENT_OTHER"/>
+        /// </summary>
+        public static int START_COMPONENT_OTHER { get { if (!_START_COMPONENT_OTHERReady) { _START_COMPONENT_OTHERContent = SGetField<int>(LocalBridgeClazz, "START_COMPONENT_OTHER"); _START_COMPONENT_OTHERReady = true; } return _START_COMPONENT_OTHERContent; } }
+        private static int _START_COMPONENT_OTHERContent = default;
+        private static bool _START_COMPONENT_OTHERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#START_COMPONENT_SERVICE"/>
+        /// </summary>
+        public static int START_COMPONENT_SERVICE { get { if (!_START_COMPONENT_SERVICEReady) { _START_COMPONENT_SERVICEContent = SGetField<int>(LocalBridgeClazz, "START_COMPONENT_SERVICE"); _START_COMPONENT_SERVICEReady = true; } return _START_COMPONENT_SERVICEContent; } }
+        private static int _START_COMPONENT_SERVICEContent = default;
+        private static bool _START_COMPONENT_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#START_REASON_ALARM"/>
         /// </summary>
         public static int START_REASON_ALARM { get { if (!_START_REASON_ALARMReady) { _START_REASON_ALARMContent = SGetField<int>(LocalBridgeClazz, "START_REASON_ALARM"); _START_REASON_ALARMReady = true; } return _START_REASON_ALARMContent; } }
@@ -373,6 +403,14 @@ namespace Android.App
         public int GetReason()
         {
             return IExecuteWithSignature<int>("getReason", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#getStartComponent()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartComponent()
+        {
+            return IExecuteWithSignature<int>("getStartComponent", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationStartInfo.html#getStartType()"/>

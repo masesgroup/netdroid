@@ -128,6 +128,12 @@ namespace Android.View.Accessibility
         public static int TYPE_SYSTEM { get { if (!_TYPE_SYSTEMReady) { _TYPE_SYSTEMContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM"); _TYPE_SYSTEMReady = true; } return _TYPE_SYSTEMContent; } }
         private static int _TYPE_SYSTEMContent = default;
         private static bool _TYPE_SYSTEMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityWindowInfo.html#TYPE_WINDOW_CONTROL"/>
+        /// </summary>
+        public static int TYPE_WINDOW_CONTROL { get { if (!_TYPE_WINDOW_CONTROLReady) { _TYPE_WINDOW_CONTROLContent = SGetField<int>(LocalBridgeClazz, "TYPE_WINDOW_CONTROL"); _TYPE_WINDOW_CONTROLReady = true; } return _TYPE_WINDOW_CONTROLContent; } }
+        private static int _TYPE_WINDOW_CONTROLContent = default;
+        private static bool _TYPE_WINDOW_CONTROLReady = false; // this is used because in case of generics 
     
         #endregion
     

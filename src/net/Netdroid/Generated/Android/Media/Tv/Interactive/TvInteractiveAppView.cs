@@ -419,6 +419,14 @@ namespace Android.Media.Tv.Interactive
             IExecuteWithSignature("notifyTvMessage", "(ILandroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#notifyVideoFreezeUpdated(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void NotifyVideoFreezeUpdated(bool arg0)
+        {
+            IExecuteWithSignature("notifyVideoFreezeUpdated", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#onAttachedToWindow()"/>
         /// </summary>
         public void OnAttachedToWindow()
@@ -494,6 +502,16 @@ namespace Android.Media.Tv.Interactive
             IExecuteWithSignature("sendAvailableSpeeds", "([F)V", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#sendCertificate(java.lang.String,int,android.net.http.SslCertificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Http.SslCertificate"/></param>
+        public void SendCertificate(Java.Lang.String arg0, int arg1, Android.Net.Http.SslCertificate arg2)
+        {
+            IExecuteWithSignature("sendCertificate", "(Ljava/lang/String;ILandroid/net/http/SslCertificate;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#sendCurrentChannelLcn(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -524,6 +542,14 @@ namespace Android.Media.Tv.Interactive
         public void SendCurrentVideoBounds(Android.Graphics.Rect arg0)
         {
             IExecuteWithSignature("sendCurrentVideoBounds", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#sendSelectedTrackInfo(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SendSelectedTrackInfo(Java.Util.List<Android.Media.Tv.TvTrackInfo> arg0)
+        {
+            IExecuteWithSignature("sendSelectedTrackInfo", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#sendSigningResult(java.lang.String,byte[])"/>
@@ -599,6 +625,22 @@ namespace Android.Media.Tv.Interactive
         public void SetTeletextAppEnabled(bool arg0)
         {
             IExecuteWithSignature("setTeletextAppEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#setZOrderMediaOverlay(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetZOrderMediaOverlay(bool arg0)
+        {
+            IExecuteWithSignature("setZOrderMediaOverlay", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#setZOrderOnTop(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetZOrderOnTop(bool arg0)
+        {
+            IExecuteWithSignature("setZOrderOnTop", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#startInteractiveApp()"/>
@@ -771,6 +813,16 @@ namespace Android.Media.Tv.Interactive
                 IExecuteWithSignature("onRequestAvailableSpeeds", "(Ljava/lang/String;)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestCertificate(java.lang.String,java.lang.String,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            public void OnRequestCertificate(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
+            {
+                IExecuteWithSignature("onRequestCertificate", "(Ljava/lang/String;Ljava/lang/String;I)V", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestCurrentChannelLcn(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -831,6 +883,14 @@ namespace Android.Media.Tv.Interactive
                 IExecuteWithSignature("onRequestScheduleRecording", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;JJILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestSelectedTrackInfo(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void OnRequestSelectedTrackInfo(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("onRequestSelectedTrackInfo", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestSigning(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -841,6 +901,19 @@ namespace Android.Media.Tv.Interactive
             public void OnRequestSigning(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, byte[] arg4)
             {
                 IExecuteWithSignature("onRequestSigning", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)V", arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestSigning(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
+            /// <param name="arg5"><see cref="byte"/></param>
+            public void OnRequestSigning(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, int arg4, byte[] arg5)
+            {
+                IExecuteWithSignature("onRequestSigning", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[B)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestStartRecording(java.lang.String,java.lang.String,android.net.Uri)"/>

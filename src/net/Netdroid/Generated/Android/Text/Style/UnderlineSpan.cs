@@ -67,7 +67,7 @@ namespace Android.Text.Style
     #endregion
 
     #region UnderlineSpan implementation
-    public partial class UnderlineSpan : Android.Text.Style.IUpdateAppearance, Android.Text.IParcelableSpan
+    public partial class UnderlineSpan : Android.Text.IParcelableSpan, Android.Text.Style.IUpdateAppearance
     {
         #region Constructors
         /// <summary>
@@ -83,13 +83,13 @@ namespace Android.Text.Style
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Text.Style.UnderlineSpan"/> to <see cref="Android.Text.Style.UpdateAppearance"/>
-        /// </summary>
-        public static implicit operator Android.Text.Style.UpdateAppearance(Android.Text.Style.UnderlineSpan t) => t.Cast<Android.Text.Style.UpdateAppearance>();
-        /// <summary>
         /// Converter from <see cref="Android.Text.Style.UnderlineSpan"/> to <see cref="Android.Text.ParcelableSpan"/>
         /// </summary>
         public static implicit operator Android.Text.ParcelableSpan(Android.Text.Style.UnderlineSpan t) => t.Cast<Android.Text.ParcelableSpan>();
+        /// <summary>
+        /// Converter from <see cref="Android.Text.Style.UnderlineSpan"/> to <see cref="Android.Text.Style.UpdateAppearance"/>
+        /// </summary>
+        public static implicit operator Android.Text.Style.UpdateAppearance(Android.Text.Style.UnderlineSpan t) => t.Cast<Android.Text.Style.UpdateAppearance>();
     
         #endregion
     
@@ -108,7 +108,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/UnderlineSpan.html#getSpanTypeId()"/>
@@ -116,7 +116,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/UnderlineSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -125,7 +125,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

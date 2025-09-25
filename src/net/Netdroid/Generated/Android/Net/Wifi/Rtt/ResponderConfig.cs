@@ -163,6 +163,14 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<Android.Net.MacAddress>("getMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#getSecureRangingConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Wifi.Rtt.SecureRangingConfig"/></returns>
+        public Android.Net.Wifi.Rtt.SecureRangingConfig GetSecureRangingConfig()
+        {
+            return IExecuteWithSignature<Android.Net.Wifi.Rtt.SecureRangingConfig>("getSecureRangingConfig", "()Landroid/net/wifi/rtt/SecureRangingConfig;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#is80211azNtbSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -355,6 +363,15 @@ namespace Android.Net.Wifi.Rtt
             public Android.Net.Wifi.Rtt.ResponderConfig.Builder SetResponderType(int arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.Rtt.ResponderConfig.Builder>("setResponderType", "(I)Landroid/net/wifi/rtt/ResponderConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.Builder.html#setSecureRangingConfig(android.net.wifi.rtt.SecureRangingConfig)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.Rtt.SecureRangingConfig"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.ResponderConfig.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.ResponderConfig.Builder SetSecureRangingConfig(Android.Net.Wifi.Rtt.SecureRangingConfig arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.ResponderConfig.Builder>("setSecureRangingConfig", "(Landroid/net/wifi/rtt/SecureRangingConfig;)Landroid/net/wifi/rtt/ResponderConfig$Builder;", arg0);
             }
         
             #endregion

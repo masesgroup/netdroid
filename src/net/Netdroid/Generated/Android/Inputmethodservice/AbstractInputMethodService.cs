@@ -208,6 +208,15 @@ namespace Android.Inputmethodservice
             return IExecuteWithSignature<bool>("onGenericMotionEvent", "(Landroid/view/MotionEvent;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.html#onShouldVerifyKeyEvent(android.view.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool OnShouldVerifyKeyEvent(Android.View.KeyEvent arg0)
+        {
+            return IExecuteWithSignature<bool>("onShouldVerifyKeyEvent", "(Landroid/view/KeyEvent;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.html#onTrackballEvent(android.view.MotionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MotionEvent"/></param>
@@ -327,6 +336,15 @@ namespace Android.Inputmethodservice
             public bool IsRevoked()
             {
                 return IExecuteWithSignature<bool>("isRevoked", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#onShouldVerifyKeyEvent(android.view.KeyEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.KeyEvent"/></param>
+            /// <returns><see cref="bool"/></returns>
+            public bool OnShouldVerifyKeyEvent(Android.View.KeyEvent arg0)
+            {
+                return IExecuteWithSignature<bool>("onShouldVerifyKeyEvent", "(Landroid/view/KeyEvent;)Z", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodSessionImpl.html#dispatchGenericMotionEvent(int,android.view.MotionEvent,android.view.inputmethod.InputMethodSession.EventCallback)"/>

@@ -110,6 +110,12 @@ namespace Android.Window
         public static int PRIORITY_OVERLAY { get { if (!_PRIORITY_OVERLAYReady) { _PRIORITY_OVERLAYContent = SGetField<int>(LocalBridgeClazz, "PRIORITY_OVERLAY"); _PRIORITY_OVERLAYReady = true; } return _PRIORITY_OVERLAYContent; } }
         private static int _PRIORITY_OVERLAYContent = default;
         private static bool _PRIORITY_OVERLAYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/window/OnBackInvokedDispatcher.html#PRIORITY_SYSTEM_NAVIGATION_OBSERVER"/>
+        /// </summary>
+        public static int PRIORITY_SYSTEM_NAVIGATION_OBSERVER { get { if (!_PRIORITY_SYSTEM_NAVIGATION_OBSERVERReady) { _PRIORITY_SYSTEM_NAVIGATION_OBSERVERContent = SGetField<int>(LocalBridgeClazz, "PRIORITY_SYSTEM_NAVIGATION_OBSERVER"); _PRIORITY_SYSTEM_NAVIGATION_OBSERVERReady = true; } return _PRIORITY_SYSTEM_NAVIGATION_OBSERVERContent; } }
+        private static int _PRIORITY_SYSTEM_NAVIGATION_OBSERVERContent = default;
+        private static bool _PRIORITY_SYSTEM_NAVIGATION_OBSERVERReady = false; // this is used because in case of generics 
     
         #endregion
     

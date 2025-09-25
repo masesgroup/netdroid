@@ -126,6 +126,12 @@ namespace Android.Adservices.Adselection
         private static int _FLAG_REPORTING_DESTINATION_BUYERContent = default;
         private static bool _FLAG_REPORTING_DESTINATION_BUYERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#FLAG_REPORTING_DESTINATION_COMPONENT_SELLER"/>
+        /// </summary>
+        public static int FLAG_REPORTING_DESTINATION_COMPONENT_SELLER { get { if (!_FLAG_REPORTING_DESTINATION_COMPONENT_SELLERReady) { _FLAG_REPORTING_DESTINATION_COMPONENT_SELLERContent = SGetField<int>(LocalBridgeClazz, "FLAG_REPORTING_DESTINATION_COMPONENT_SELLER"); _FLAG_REPORTING_DESTINATION_COMPONENT_SELLERReady = true; } return _FLAG_REPORTING_DESTINATION_COMPONENT_SELLERContent; } }
+        private static int _FLAG_REPORTING_DESTINATION_COMPONENT_SELLERContent = default;
+        private static bool _FLAG_REPORTING_DESTINATION_COMPONENT_SELLERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#FLAG_REPORTING_DESTINATION_SELLER"/>
         /// </summary>
         public static int FLAG_REPORTING_DESTINATION_SELLER { get { if (!_FLAG_REPORTING_DESTINATION_SELLERReady) { _FLAG_REPORTING_DESTINATION_SELLERContent = SGetField<int>(LocalBridgeClazz, "FLAG_REPORTING_DESTINATION_SELLER"); _FLAG_REPORTING_DESTINATION_SELLERReady = true; } return _FLAG_REPORTING_DESTINATION_SELLERContent; } }

@@ -163,6 +163,14 @@ namespace Android.Os
             return IExecuteWithSignature<int>("getErrorCode", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ProfilingResult.html#getTriggerType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTriggerType()
+        {
+            return IExecuteWithSignature<int>("getTriggerType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProfilingResult.html#getErrorMessage()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>

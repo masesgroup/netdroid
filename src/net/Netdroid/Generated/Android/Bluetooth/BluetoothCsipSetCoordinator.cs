@@ -67,7 +67,7 @@ namespace Android.Bluetooth
     #endregion
 
     #region BluetoothCsipSetCoordinator implementation
-    public partial class BluetoothCsipSetCoordinator : Android.Bluetooth.IBluetoothProfile, Java.Lang.IAutoCloseable
+    public partial class BluetoothCsipSetCoordinator : Java.Lang.IAutoCloseable, Android.Bluetooth.IBluetoothProfile
     {
         #region Constructors
     
@@ -75,13 +75,13 @@ namespace Android.Bluetooth
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Bluetooth.BluetoothCsipSetCoordinator"/> to <see cref="Android.Bluetooth.BluetoothProfile"/>
-        /// </summary>
-        public static implicit operator Android.Bluetooth.BluetoothProfile(Android.Bluetooth.BluetoothCsipSetCoordinator t) => t.Cast<Android.Bluetooth.BluetoothProfile>();
-        /// <summary>
         /// Converter from <see cref="Android.Bluetooth.BluetoothCsipSetCoordinator"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Android.Bluetooth.BluetoothCsipSetCoordinator t) => t.Cast<Java.Lang.AutoCloseable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Bluetooth.BluetoothCsipSetCoordinator"/> to <see cref="Android.Bluetooth.BluetoothProfile"/>
+        /// </summary>
+        public static implicit operator Android.Bluetooth.BluetoothProfile(Android.Bluetooth.BluetoothCsipSetCoordinator t) => t.Cast<Android.Bluetooth.BluetoothProfile>();
     
         #endregion
     

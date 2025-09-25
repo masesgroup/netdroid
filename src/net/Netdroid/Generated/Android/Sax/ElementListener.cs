@@ -117,7 +117,7 @@ namespace Android.Sax
     #endregion
 
     #region ElementListener implementation
-    public partial class ElementListener : Android.Sax.IElementListener, Android.Sax.IStartElementListener, Android.Sax.IEndElementListener
+    public partial class ElementListener : Android.Sax.IElementListener, Android.Sax.IEndElementListener, Android.Sax.IStartElementListener
     {
         #region Constructors
     
@@ -204,7 +204,7 @@ namespace Android.Sax
     #endregion
 
     #region ElementListenerDirect implementation
-    public partial class ElementListenerDirect : Android.Sax.IElementListener, Android.Sax.IStartElementListener, Android.Sax.IEndElementListener
+    public partial class ElementListenerDirect : Android.Sax.IElementListener, Android.Sax.IEndElementListener, Android.Sax.IStartElementListener
     {
         #region Constructors
     

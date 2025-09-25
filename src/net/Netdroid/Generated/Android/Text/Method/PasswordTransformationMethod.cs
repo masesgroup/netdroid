@@ -67,7 +67,7 @@ namespace Android.Text.Method
     #endregion
 
     #region PasswordTransformationMethod implementation
-    public partial class PasswordTransformationMethod : Android.Text.Method.ITransformationMethod, Android.Text.ITextWatcher
+    public partial class PasswordTransformationMethod : Android.Text.ITextWatcher, Android.Text.Method.ITransformationMethod
     {
         #region Constructors
     
@@ -75,13 +75,13 @@ namespace Android.Text.Method
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Text.Method.PasswordTransformationMethod"/> to <see cref="Android.Text.Method.TransformationMethod"/>
-        /// </summary>
-        public static implicit operator Android.Text.Method.TransformationMethod(Android.Text.Method.PasswordTransformationMethod t) => t.Cast<Android.Text.Method.TransformationMethod>();
-        /// <summary>
         /// Converter from <see cref="Android.Text.Method.PasswordTransformationMethod"/> to <see cref="Android.Text.TextWatcher"/>
         /// </summary>
         public static implicit operator Android.Text.TextWatcher(Android.Text.Method.PasswordTransformationMethod t) => t.Cast<Android.Text.TextWatcher>();
+        /// <summary>
+        /// Converter from <see cref="Android.Text.Method.PasswordTransformationMethod"/> to <see cref="Android.Text.Method.TransformationMethod"/>
+        /// </summary>
+        public static implicit operator Android.Text.Method.TransformationMethod(Android.Text.Method.PasswordTransformationMethod t) => t.Cast<Android.Text.Method.TransformationMethod>();
     
         #endregion
     

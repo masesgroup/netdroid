@@ -299,6 +299,12 @@ namespace Android.Bluetooth
         public static int SOURCE_CODEC_TYPE_LC3 { get { if (!_SOURCE_CODEC_TYPE_LC3Ready) { _SOURCE_CODEC_TYPE_LC3Content = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_LC3"); _SOURCE_CODEC_TYPE_LC3Ready = true; } return _SOURCE_CODEC_TYPE_LC3Content; } }
         private static int _SOURCE_CODEC_TYPE_LC3Content = default;
         private static bool _SOURCE_CODEC_TYPE_LC3Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SOURCE_CODEC_TYPE_OPUS"/>
+        /// </summary>
+        public static int SOURCE_CODEC_TYPE_OPUS { get { if (!_SOURCE_CODEC_TYPE_OPUSReady) { _SOURCE_CODEC_TYPE_OPUSContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_OPUS"); _SOURCE_CODEC_TYPE_OPUSReady = true; } return _SOURCE_CODEC_TYPE_OPUSContent; } }
+        private static int _SOURCE_CODEC_TYPE_OPUSContent = default;
+        private static bool _SOURCE_CODEC_TYPE_OPUSReady = false; // this is used because in case of generics 
     
         #endregion
     

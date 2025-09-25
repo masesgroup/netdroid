@@ -119,6 +119,16 @@ namespace Android.App.Appsearch
         {
             IExecuteWithSignature("getSchema", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/EnterpriseGlobalSearchSession.html#openBlobForRead(java.util.Set,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void OpenBlobForRead(Java.Util.Set<Android.App.Appsearch.AppSearchBlobHandle> arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.OpenBlobForReadResponse>> arg2)
+        {
+            IExecuteWithSignature("openBlobForRead", "(Ljava/util/Set;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
+        }
     
         #endregion
     

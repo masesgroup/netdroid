@@ -125,6 +125,24 @@ namespace Android.Net.Wifi.Rtt
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#SECURITY_MODE_OPEN"/>
+        /// </summary>
+        public static int SECURITY_MODE_OPEN { get { if (!_SECURITY_MODE_OPENReady) { _SECURITY_MODE_OPENContent = SGetField<int>(LocalBridgeClazz, "SECURITY_MODE_OPEN"); _SECURITY_MODE_OPENReady = true; } return _SECURITY_MODE_OPENContent; } }
+        private static int _SECURITY_MODE_OPENContent = default;
+        private static bool _SECURITY_MODE_OPENReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#SECURITY_MODE_OPPORTUNISTIC"/>
+        /// </summary>
+        public static int SECURITY_MODE_OPPORTUNISTIC { get { if (!_SECURITY_MODE_OPPORTUNISTICReady) { _SECURITY_MODE_OPPORTUNISTICContent = SGetField<int>(LocalBridgeClazz, "SECURITY_MODE_OPPORTUNISTIC"); _SECURITY_MODE_OPPORTUNISTICReady = true; } return _SECURITY_MODE_OPPORTUNISTICContent; } }
+        private static int _SECURITY_MODE_OPPORTUNISTICContent = default;
+        private static bool _SECURITY_MODE_OPPORTUNISTICReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#SECURITY_MODE_SECURE_AUTH"/>
+        /// </summary>
+        public static int SECURITY_MODE_SECURE_AUTH { get { if (!_SECURITY_MODE_SECURE_AUTHReady) { _SECURITY_MODE_SECURE_AUTHContent = SGetField<int>(LocalBridgeClazz, "SECURITY_MODE_SECURE_AUTH"); _SECURITY_MODE_SECURE_AUTHReady = true; } return _SECURITY_MODE_SECURE_AUTHContent; } }
+        private static int _SECURITY_MODE_SECURE_AUTHContent = default;
+        private static bool _SECURITY_MODE_SECURE_AUTHReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -180,6 +198,14 @@ namespace Android.Net.Wifi.Rtt
         public int GetRttBurstSize()
         {
             return IExecuteWithSignature<int>("getRttBurstSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#getSecurityMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecurityMode()
+        {
+            return IExecuteWithSignature<int>("getSecurityMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.html#writeToParcel(android.os.Parcel,int)"/>
@@ -302,6 +328,15 @@ namespace Android.Net.Wifi.Rtt
             public Android.Net.Wifi.Rtt.RangingRequest.Builder SetRttBurstSize(int arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingRequest.Builder>("setRttBurstSize", "(I)Landroid/net/wifi/rtt/RangingRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingRequest.Builder.html#setSecurityMode(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingRequest.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingRequest.Builder SetSecurityMode(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingRequest.Builder>("setSecurityMode", "(I)Landroid/net/wifi/rtt/RangingRequest$Builder;", arg0);
             }
         
             #endregion

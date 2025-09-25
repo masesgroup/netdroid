@@ -832,6 +832,18 @@ namespace Android.Accessibilityservice
         private static int _GLOBAL_ACTION_LOCK_SCREENContent = default;
         private static bool _GLOBAL_ACTION_LOCK_SCREENReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#GLOBAL_ACTION_MEDIA_PLAY_PAUSE"/>
+        /// </summary>
+        public static int GLOBAL_ACTION_MEDIA_PLAY_PAUSE { get { if (!_GLOBAL_ACTION_MEDIA_PLAY_PAUSEReady) { _GLOBAL_ACTION_MEDIA_PLAY_PAUSEContent = SGetField<int>(LocalBridgeClazz, "GLOBAL_ACTION_MEDIA_PLAY_PAUSE"); _GLOBAL_ACTION_MEDIA_PLAY_PAUSEReady = true; } return _GLOBAL_ACTION_MEDIA_PLAY_PAUSEContent; } }
+        private static int _GLOBAL_ACTION_MEDIA_PLAY_PAUSEContent = default;
+        private static bool _GLOBAL_ACTION_MEDIA_PLAY_PAUSEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#GLOBAL_ACTION_MENU"/>
+        /// </summary>
+        public static int GLOBAL_ACTION_MENU { get { if (!_GLOBAL_ACTION_MENUReady) { _GLOBAL_ACTION_MENUContent = SGetField<int>(LocalBridgeClazz, "GLOBAL_ACTION_MENU"); _GLOBAL_ACTION_MENUReady = true; } return _GLOBAL_ACTION_MENUContent; } }
+        private static int _GLOBAL_ACTION_MENUContent = default;
+        private static bool _GLOBAL_ACTION_MENUReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#GLOBAL_ACTION_NOTIFICATIONS"/>
         /// </summary>
         public static int GLOBAL_ACTION_NOTIFICATIONS { get { if (!_GLOBAL_ACTION_NOTIFICATIONSReady) { _GLOBAL_ACTION_NOTIFICATIONSContent = SGetField<int>(LocalBridgeClazz, "GLOBAL_ACTION_NOTIFICATIONS"); _GLOBAL_ACTION_NOTIFICATIONSReady = true; } return _GLOBAL_ACTION_NOTIFICATIONSContent; } }

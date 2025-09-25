@@ -101,6 +101,18 @@ namespace Android.Graphics
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#GAINMAP_DIRECTION_HDR_TO_SDR"/>
+        /// </summary>
+        public static int GAINMAP_DIRECTION_HDR_TO_SDR { get { if (!_GAINMAP_DIRECTION_HDR_TO_SDRReady) { _GAINMAP_DIRECTION_HDR_TO_SDRContent = SGetField<int>(LocalBridgeClazz, "GAINMAP_DIRECTION_HDR_TO_SDR"); _GAINMAP_DIRECTION_HDR_TO_SDRReady = true; } return _GAINMAP_DIRECTION_HDR_TO_SDRContent; } }
+        private static int _GAINMAP_DIRECTION_HDR_TO_SDRContent = default;
+        private static bool _GAINMAP_DIRECTION_HDR_TO_SDRReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#GAINMAP_DIRECTION_SDR_TO_HDR"/>
+        /// </summary>
+        public static int GAINMAP_DIRECTION_SDR_TO_HDR { get { if (!_GAINMAP_DIRECTION_SDR_TO_HDRReady) { _GAINMAP_DIRECTION_SDR_TO_HDRContent = SGetField<int>(LocalBridgeClazz, "GAINMAP_DIRECTION_SDR_TO_HDR"); _GAINMAP_DIRECTION_SDR_TO_HDRReady = true; } return _GAINMAP_DIRECTION_SDR_TO_HDRContent; } }
+        private static int _GAINMAP_DIRECTION_SDR_TO_HDRContent = default;
+        private static bool _GAINMAP_DIRECTION_SDR_TO_HDRReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -116,6 +128,14 @@ namespace Android.Graphics
         public Android.Graphics.Bitmap GetGainmapContents()
         {
             return IExecuteWithSignature<Android.Graphics.Bitmap>("getGainmapContents", "()Landroid/graphics/Bitmap;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getAlternativeImagePrimaries()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+        public Android.Graphics.ColorSpace GetAlternativeImagePrimaries()
+        {
+            return IExecuteWithSignature<Android.Graphics.ColorSpace>("getAlternativeImagePrimaries", "()Landroid/graphics/ColorSpace;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getDisplayRatioForFullHdr()"/>
@@ -182,6 +202,22 @@ namespace Android.Graphics
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGainmapDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGainmapDirection()
+        {
+            return IExecuteWithSignature<int>("getGainmapDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setAlternativeImagePrimaries(android.graphics.ColorSpace)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.ColorSpace"/></param>
+        public void SetAlternativeImagePrimaries(Android.Graphics.ColorSpace arg0)
+        {
+            IExecuteWithSignature("setAlternativeImagePrimaries", "(Landroid/graphics/ColorSpace;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setDisplayRatioForFullHdr(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -216,6 +252,14 @@ namespace Android.Graphics
         public void SetGainmapContents(Android.Graphics.Bitmap arg0)
         {
             IExecuteWithSignature("setGainmapContents", "(Landroid/graphics/Bitmap;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGainmapDirection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGainmapDirection(int arg0)
+        {
+            IExecuteWithSignature("setGainmapDirection", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGamma(float,float,float)"/>

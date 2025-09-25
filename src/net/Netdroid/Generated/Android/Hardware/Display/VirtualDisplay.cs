@@ -163,6 +163,14 @@ namespace Android.Hardware.Display
             IExecuteWithSignature("resize", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#setRotation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRotation(int arg0)
+        {
+            IExecuteWithSignature("setRotation", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#setSurface(android.view.Surface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Surface"/></param>

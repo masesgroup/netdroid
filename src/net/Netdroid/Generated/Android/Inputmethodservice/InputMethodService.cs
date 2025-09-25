@@ -501,6 +501,14 @@ namespace Android.Inputmethodservice
             IExecuteWithSignature("requestShowSelf", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingRegion(android.graphics.Region)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Region"/></param>
+        public void SetStylusHandwritingRegion(Android.Graphics.Region arg0)
+        {
+            IExecuteWithSignature("setStylusHandwritingRegion", "(Landroid/graphics/Region;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingSessionTimeout(java.time.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
@@ -606,6 +614,14 @@ namespace Android.Inputmethodservice
         public void OnConfigureWindow(Android.View.Window arg0, bool arg1, bool arg2)
         {
             IExecuteWithSignature("onConfigureWindow", "(Landroid/view/Window;ZZ)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCustomImeSwitcherButtonRequestedVisible(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void OnCustomImeSwitcherButtonRequestedVisible(bool arg0)
+        {
+            IExecuteWithSignature("onCustomImeSwitcherButtonRequestedVisible", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onDisplayCompletions(android.view.inputmethod.CompletionInfo[])"/>

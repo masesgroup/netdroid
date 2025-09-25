@@ -1997,6 +1997,88 @@ namespace Android.Provider
             }
             #endregion
 
+            #region DefaultAccount declaration
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.html"/>
+            /// </summary>
+            public partial class DefaultAccount : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultAccount>
+            {
+                const string _bridgeClassName = "android.provider.ContactsContract$RawContacts$DefaultAccount";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public DefaultAccount() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public DefaultAccount(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public DefaultAccount(params object[] args) : base(args) { }
+            
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+                /// <inheritdoc/>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <inheritdoc/>
+                public override bool IsBridgeAbstract => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeCloseable => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeInterface => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeStatic => true;
+            
+                // TODO: complete the class
+                #region DefaultAccountAndState declaration
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html"/>
+                /// </summary>
+                public partial class DefaultAccountAndState : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultAccountAndState>
+                {
+                    const string _bridgeClassName = "android.provider.ContactsContract$RawContacts$DefaultAccount$DefaultAccountAndState";
+                    /// <summary>
+                    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                    /// </summary>
+                    public DefaultAccountAndState() { }
+                    /// <summary>
+                    /// Internal constructor: used internally from JCOBridge
+                    /// </summary>
+                    [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                    public DefaultAccountAndState(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+                    /// <summary>
+                    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                    /// </summary>
+                    public DefaultAccountAndState(params object[] args) : base(args) { }
+                
+                    private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                    private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                    private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+                
+                    /// <inheritdoc/>
+                    public override string BridgeClassName => _bridgeClassName;
+                    /// <inheritdoc/>
+                    public override bool IsBridgeAbstract => false;
+                    /// <inheritdoc/>
+                    public override bool IsBridgeCloseable => false;
+                    /// <inheritdoc/>
+                    public override bool IsBridgeInterface => false;
+                    /// <inheritdoc/>
+                    public override bool IsBridgeStatic => true;
+                
+                    // TODO: complete the class
+                
+                }
+                #endregion
+
+            
+            }
+            #endregion
+
             #region Data declaration
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.Data.html"/>
@@ -2961,18 +3043,21 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#EXTRA_ADDRESS_BOOK_INDEX"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String EXTRA_ADDRESS_BOOK_INDEX { get { if (!_EXTRA_ADDRESS_BOOK_INDEXReady) { _EXTRA_ADDRESS_BOOK_INDEXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ADDRESS_BOOK_INDEX"); _EXTRA_ADDRESS_BOOK_INDEXReady = true; } return _EXTRA_ADDRESS_BOOK_INDEXContent; } }
                 private static Java.Lang.String _EXTRA_ADDRESS_BOOK_INDEXContent = default;
                 private static bool _EXTRA_ADDRESS_BOOK_INDEXReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#EXTRA_ADDRESS_BOOK_INDEX_COUNTS"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String EXTRA_ADDRESS_BOOK_INDEX_COUNTS { get { if (!_EXTRA_ADDRESS_BOOK_INDEX_COUNTSReady) { _EXTRA_ADDRESS_BOOK_INDEX_COUNTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ADDRESS_BOOK_INDEX_COUNTS"); _EXTRA_ADDRESS_BOOK_INDEX_COUNTSReady = true; } return _EXTRA_ADDRESS_BOOK_INDEX_COUNTSContent; } }
                 private static Java.Lang.String _EXTRA_ADDRESS_BOOK_INDEX_COUNTSContent = default;
                 private static bool _EXTRA_ADDRESS_BOOK_INDEX_COUNTSReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#EXTRA_ADDRESS_BOOK_INDEX_TITLES"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String EXTRA_ADDRESS_BOOK_INDEX_TITLES { get { if (!_EXTRA_ADDRESS_BOOK_INDEX_TITLESReady) { _EXTRA_ADDRESS_BOOK_INDEX_TITLESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ADDRESS_BOOK_INDEX_TITLES"); _EXTRA_ADDRESS_BOOK_INDEX_TITLESReady = true; } return _EXTRA_ADDRESS_BOOK_INDEX_TITLESContent; } }
                 private static Java.Lang.String _EXTRA_ADDRESS_BOOK_INDEX_TITLESContent = default;
                 private static bool _EXTRA_ADDRESS_BOOK_INDEX_TITLESReady = false; // this is used because in case of generics 
@@ -3919,18 +4004,21 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#EXTRA_ADDRESS_BOOK_INDEX"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String EXTRA_ADDRESS_BOOK_INDEX { get { if (!_EXTRA_ADDRESS_BOOK_INDEXReady) { _EXTRA_ADDRESS_BOOK_INDEXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ADDRESS_BOOK_INDEX"); _EXTRA_ADDRESS_BOOK_INDEXReady = true; } return _EXTRA_ADDRESS_BOOK_INDEXContent; } }
                 private static Java.Lang.String _EXTRA_ADDRESS_BOOK_INDEXContent = default;
                 private static bool _EXTRA_ADDRESS_BOOK_INDEXReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#EXTRA_ADDRESS_BOOK_INDEX_COUNTS"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String EXTRA_ADDRESS_BOOK_INDEX_COUNTS { get { if (!_EXTRA_ADDRESS_BOOK_INDEX_COUNTSReady) { _EXTRA_ADDRESS_BOOK_INDEX_COUNTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ADDRESS_BOOK_INDEX_COUNTS"); _EXTRA_ADDRESS_BOOK_INDEX_COUNTSReady = true; } return _EXTRA_ADDRESS_BOOK_INDEX_COUNTSContent; } }
                 private static Java.Lang.String _EXTRA_ADDRESS_BOOK_INDEX_COUNTSContent = default;
                 private static bool _EXTRA_ADDRESS_BOOK_INDEX_COUNTSReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#EXTRA_ADDRESS_BOOK_INDEX_TITLES"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String EXTRA_ADDRESS_BOOK_INDEX_TITLES { get { if (!_EXTRA_ADDRESS_BOOK_INDEX_TITLESReady) { _EXTRA_ADDRESS_BOOK_INDEX_TITLESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ADDRESS_BOOK_INDEX_TITLES"); _EXTRA_ADDRESS_BOOK_INDEX_TITLESReady = true; } return _EXTRA_ADDRESS_BOOK_INDEX_TITLESContent; } }
                 private static Java.Lang.String _EXTRA_ADDRESS_BOOK_INDEX_TITLESContent = default;
                 private static bool _EXTRA_ADDRESS_BOOK_INDEX_TITLESReady = false; // this is used because in case of generics 
@@ -6781,6 +6869,157 @@ namespace Android.Provider
             }
             #endregion
 
+            #region DefaultAccount implementation
+            public partial class DefaultAccount
+            {
+                #region Constructors
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.html#ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNT"/>
+                /// </summary>
+                public static Java.Lang.String ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNT { get { if (!_ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNTReady) { _ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNT"); _ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNTReady = true; } return _ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNTContent; } }
+                private static Java.Lang.String _ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNTContent = default;
+                private static bool _ACTION_MOVE_CONTACTS_TO_DEFAULT_ACCOUNTReady = false; // this is used because in case of generics 
+            
+                #endregion
+            
+                #region Static methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.html#getDefaultAccountForNewContacts(android.content.ContentResolver)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <returns><see cref="Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState"/></returns>
+                public static Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState GetDefaultAccountForNewContacts(Android.Content.ContentResolver arg0)
+                {
+                    return SExecute<Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState>(LocalBridgeClazz, "getDefaultAccountForNewContacts", arg0);
+                }
+            
+                #endregion
+            
+                #region Instance methods
+            
+                #endregion
+            
+                #region Nested classes
+                #region DefaultAccountAndState implementation
+                public partial class DefaultAccountAndState
+                {
+                    #region Constructors
+                
+                    #endregion
+                
+                    #region Class/Interface conversion operators
+                
+                    #endregion
+                
+                    #region Fields
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#DEFAULT_ACCOUNT_STATE_CLOUD"/>
+                    /// </summary>
+                    public static int DEFAULT_ACCOUNT_STATE_CLOUD { get { if (!_DEFAULT_ACCOUNT_STATE_CLOUDReady) { _DEFAULT_ACCOUNT_STATE_CLOUDContent = SGetField<int>(LocalBridgeClazz, "DEFAULT_ACCOUNT_STATE_CLOUD"); _DEFAULT_ACCOUNT_STATE_CLOUDReady = true; } return _DEFAULT_ACCOUNT_STATE_CLOUDContent; } }
+                    private static int _DEFAULT_ACCOUNT_STATE_CLOUDContent = default;
+                    private static bool _DEFAULT_ACCOUNT_STATE_CLOUDReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#DEFAULT_ACCOUNT_STATE_LOCAL"/>
+                    /// </summary>
+                    public static int DEFAULT_ACCOUNT_STATE_LOCAL { get { if (!_DEFAULT_ACCOUNT_STATE_LOCALReady) { _DEFAULT_ACCOUNT_STATE_LOCALContent = SGetField<int>(LocalBridgeClazz, "DEFAULT_ACCOUNT_STATE_LOCAL"); _DEFAULT_ACCOUNT_STATE_LOCALReady = true; } return _DEFAULT_ACCOUNT_STATE_LOCALContent; } }
+                    private static int _DEFAULT_ACCOUNT_STATE_LOCALContent = default;
+                    private static bool _DEFAULT_ACCOUNT_STATE_LOCALReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#DEFAULT_ACCOUNT_STATE_NOT_SET"/>
+                    /// </summary>
+                    public static int DEFAULT_ACCOUNT_STATE_NOT_SET { get { if (!_DEFAULT_ACCOUNT_STATE_NOT_SETReady) { _DEFAULT_ACCOUNT_STATE_NOT_SETContent = SGetField<int>(LocalBridgeClazz, "DEFAULT_ACCOUNT_STATE_NOT_SET"); _DEFAULT_ACCOUNT_STATE_NOT_SETReady = true; } return _DEFAULT_ACCOUNT_STATE_NOT_SETContent; } }
+                    private static int _DEFAULT_ACCOUNT_STATE_NOT_SETContent = default;
+                    private static bool _DEFAULT_ACCOUNT_STATE_NOT_SETReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#DEFAULT_ACCOUNT_STATE_SIM"/>
+                    /// </summary>
+                    public static int DEFAULT_ACCOUNT_STATE_SIM { get { if (!_DEFAULT_ACCOUNT_STATE_SIMReady) { _DEFAULT_ACCOUNT_STATE_SIMContent = SGetField<int>(LocalBridgeClazz, "DEFAULT_ACCOUNT_STATE_SIM"); _DEFAULT_ACCOUNT_STATE_SIMReady = true; } return _DEFAULT_ACCOUNT_STATE_SIMContent; } }
+                    private static int _DEFAULT_ACCOUNT_STATE_SIMContent = default;
+                    private static bool _DEFAULT_ACCOUNT_STATE_SIMReady = false; // this is used because in case of generics 
+                
+                    #endregion
+                
+                    #region Static methods
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#ofCloud(android.accounts.Account)"/>
+                    /// </summary>
+                    /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
+                    /// <returns><see cref="Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState"/></returns>
+                    public static Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState OfCloud(Android.Accounts.Account arg0)
+                    {
+                        return SExecute<Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState>(LocalBridgeClazz, "ofCloud", arg0);
+                    }
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#ofLocal()"/>
+                    /// </summary>
+                    /// <returns><see cref="Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState"/></returns>
+                    public static Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState OfLocal()
+                    {
+                        return SExecute<Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState>(LocalBridgeClazz, "ofLocal");
+                    }
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#ofNotSet()"/>
+                    /// </summary>
+                    /// <returns><see cref="Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState"/></returns>
+                    public static Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState OfNotSet()
+                    {
+                        return SExecute<Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState>(LocalBridgeClazz, "ofNotSet");
+                    }
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#ofSim(android.accounts.Account)"/>
+                    /// </summary>
+                    /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
+                    /// <returns><see cref="Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState"/></returns>
+                    public static Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState OfSim(Android.Accounts.Account arg0)
+                    {
+                        return SExecute<Android.Provider.ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState>(LocalBridgeClazz, "ofSim", arg0);
+                    }
+                
+                    #endregion
+                
+                    #region Instance methods
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#getAccount()"/>
+                    /// </summary>
+                    /// <returns><see cref="Android.Accounts.Account"/></returns>
+                    public Android.Accounts.Account GetAccount()
+                    {
+                        return IExecute<Android.Accounts.Account>("getAccount");
+                    }
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.DefaultAccount.DefaultAccountAndState.html#getState()"/>
+                    /// </summary>
+                    /// <returns><see cref="int"/></returns>
+                    public int GetState()
+                    {
+                        return IExecute<int>("getState");
+                    }
+                
+                    #endregion
+                
+                    #region Nested classes
+                
+                    #endregion
+                
+                    // TODO: complete the class
+                }
+                #endregion
+
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
             #region Data implementation
             public partial class Data : Android.Provider.IBaseColumns
             {
@@ -6976,6 +7215,7 @@ namespace Android.Provider
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
             /// <returns><see cref="Android.Accounts.Account"/></returns>
+            [global::System.Obsolete()]
             public static Android.Accounts.Account GetDefaultAccount(Android.Content.ContentResolver arg0)
             {
                 return SExecuteWithSignature<Android.Accounts.Account>(LocalBridgeClazz, "getDefaultAccount", "(Landroid/content/ContentResolver;)Landroid/accounts/Account;", arg0);

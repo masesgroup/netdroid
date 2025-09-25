@@ -70,6 +70,14 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class AppInfo
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/AppInfo.html#%3Cinit%3E(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public AppInfo(bool arg0)
+            : base(arg0)
+        {
+        }
     
         #endregion
     

@@ -110,13 +110,17 @@ namespace Android.Net.Sip
     #endregion
 
     #region SipProfile implementation
-    public partial class SipProfile : Android.Os.IParcelable, Java.Io.ISerializable, Java.Lang.ICloneable
+    public partial class SipProfile : Java.Lang.ICloneable, Android.Os.IParcelable, Java.Io.ISerializable
     {
         #region Constructors
     
         #endregion
     
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Android.Net.Sip.SipProfile"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Cloneable(Android.Net.Sip.SipProfile t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
         /// Converter from <see cref="Android.Net.Sip.SipProfile"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
@@ -125,10 +129,6 @@ namespace Android.Net.Sip
         /// Converter from <see cref="Android.Net.Sip.SipProfile"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Android.Net.Sip.SipProfile t) => t.Cast<Java.Io.Serializable>();
-        /// <summary>
-        /// Converter from <see cref="Android.Net.Sip.SipProfile"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Android.Net.Sip.SipProfile t) => t.Cast<Java.Lang.Cloneable>();
     
         #endregion
     

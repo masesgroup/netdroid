@@ -70,6 +70,14 @@ namespace Android.Net.Wifi.P2p.Nsd
     public partial class WifiP2pServiceRequest
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pServiceRequest.html#%3Cinit%3E(android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceConfig)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceConfig"/></param>
+        public WifiP2pServiceRequest(Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceConfig arg0)
+            : base(arg0)
+        {
+        }
     
         #endregion
     
@@ -105,6 +113,14 @@ namespace Android.Net.Wifi.P2p.Nsd
         #endregion
     
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pServiceRequest.html#getWifiP2pUsdBasedServiceConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceConfig"/></returns>
+        public Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceConfig GetWifiP2pUsdBasedServiceConfig()
+        {
+            return IExecuteWithSignature<Android.Net.Wifi.P2p.Nsd.WifiP2pUsdBasedServiceConfig>("getWifiP2pUsdBasedServiceConfig", "()Landroid/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig;");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/nsd/WifiP2pServiceRequest.html#describeContents()"/>
         /// </summary>

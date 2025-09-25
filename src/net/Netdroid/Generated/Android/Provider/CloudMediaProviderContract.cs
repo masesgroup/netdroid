@@ -103,6 +103,129 @@ namespace Android.Provider
         }
         #endregion
 
+        #region Capabilities declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.html"/>
+        /// </summary>
+        public partial class Capabilities : Android.Os.Parcelable
+        {
+            const string _bridgeClassName = "android.provider.CloudMediaProviderContract$Capabilities";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Capabilities() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public Capabilities(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Capabilities(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+            #region Builder declaration
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.Builder.html"/>
+            /// </summary>
+            public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+            {
+                const string _bridgeClassName = "android.provider.CloudMediaProviderContract$Capabilities$Builder";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Builder() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public Builder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Builder(params object[] args) : base(args) { }
+            
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+                /// <inheritdoc/>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <inheritdoc/>
+                public override bool IsBridgeAbstract => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeCloseable => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeInterface => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeStatic => true;
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+
+        
+        }
+        #endregion
+
+        #region MediaCategoryColumns declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html"/>
+        /// </summary>
+        public partial class MediaCategoryColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaCategoryColumns>
+        {
+            const string _bridgeClassName = "android.provider.CloudMediaProviderContract$MediaCategoryColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public MediaCategoryColumns() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public MediaCategoryColumns(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public MediaCategoryColumns(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
         #region MediaCollectionInfo declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCollectionInfo.html"/>
@@ -185,6 +308,88 @@ namespace Android.Provider
         }
         #endregion
 
+        #region MediaSetColumns declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaSetColumns.html"/>
+        /// </summary>
+        public partial class MediaSetColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaSetColumns>
+        {
+            const string _bridgeClassName = "android.provider.CloudMediaProviderContract$MediaSetColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public MediaSetColumns() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public MediaSetColumns(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public MediaSetColumns(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
+        #region SearchSuggestionColumns declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.SearchSuggestionColumns.html"/>
+        /// </summary>
+        public partial class SearchSuggestionColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchSuggestionColumns>
+        {
+            const string _bridgeClassName = "android.provider.CloudMediaProviderContract$SearchSuggestionColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public SearchSuggestionColumns() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public SearchSuggestionColumns(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public SearchSuggestionColumns(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
     
     }
     #endregion
@@ -201,6 +406,12 @@ namespace Android.Provider
         #endregion
     
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#SORT_ORDER_DESC_DATE_TAKEN"/>
+        /// </summary>
+        public static int SORT_ORDER_DESC_DATE_TAKEN { get { if (!_SORT_ORDER_DESC_DATE_TAKENReady) { _SORT_ORDER_DESC_DATE_TAKENContent = SGetField<int>(LocalBridgeClazz, "SORT_ORDER_DESC_DATE_TAKEN"); _SORT_ORDER_DESC_DATE_TAKENReady = true; } return _SORT_ORDER_DESC_DATE_TAKENContent; } }
+        private static int _SORT_ORDER_DESC_DATE_TAKENContent = default;
+        private static bool _SORT_ORDER_DESC_DATE_TAKENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#EXTRA_ALBUM_ID"/>
         /// </summary>
@@ -238,6 +449,12 @@ namespace Android.Provider
         private static Java.Lang.String _EXTRA_PREVIEW_THUMBNAILContent = default;
         private static bool _EXTRA_PREVIEW_THUMBNAILReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#EXTRA_SORT_ORDER"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_SORT_ORDER { get { if (!_EXTRA_SORT_ORDERReady) { _EXTRA_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SORT_ORDER"); _EXTRA_SORT_ORDERReady = true; } return _EXTRA_SORT_ORDERContent; } }
+        private static Java.Lang.String _EXTRA_SORT_ORDERContent = default;
+        private static bool _EXTRA_SORT_ORDERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLED"/>
         /// </summary>
         public static Java.Lang.String EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLED { get { if (!_EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLEDReady) { _EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLED"); _EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLEDReady = true; } return _EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLEDContent; } }
@@ -256,11 +473,47 @@ namespace Android.Provider
         private static Java.Lang.String _MANAGE_CLOUD_MEDIA_PROVIDERS_PERMISSIONContent = default;
         private static bool _MANAGE_CLOUD_MEDIA_PROVIDERS_PERMISSIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETS"/>
+        /// </summary>
+        public static Java.Lang.String MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETS { get { if (!_MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETSReady) { _MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETS"); _MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETSReady = true; } return _MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETSContent; } }
+        private static Java.Lang.String _MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETSContent = default;
+        private static bool _MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#PROVIDER_INTERFACE"/>
         /// </summary>
         public static Java.Lang.String PROVIDER_INTERFACE { get { if (!_PROVIDER_INTERFACEReady) { _PROVIDER_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROVIDER_INTERFACE"); _PROVIDER_INTERFACEReady = true; } return _PROVIDER_INTERFACEContent; } }
         private static Java.Lang.String _PROVIDER_INTERFACEContent = default;
         private static bool _PROVIDER_INTERFACEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#SEARCH_SUGGESTION_ALBUM"/>
+        /// </summary>
+        public static Java.Lang.String SEARCH_SUGGESTION_ALBUM { get { if (!_SEARCH_SUGGESTION_ALBUMReady) { _SEARCH_SUGGESTION_ALBUMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SEARCH_SUGGESTION_ALBUM"); _SEARCH_SUGGESTION_ALBUMReady = true; } return _SEARCH_SUGGESTION_ALBUMContent; } }
+        private static Java.Lang.String _SEARCH_SUGGESTION_ALBUMContent = default;
+        private static bool _SEARCH_SUGGESTION_ALBUMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#SEARCH_SUGGESTION_DATE"/>
+        /// </summary>
+        public static Java.Lang.String SEARCH_SUGGESTION_DATE { get { if (!_SEARCH_SUGGESTION_DATEReady) { _SEARCH_SUGGESTION_DATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SEARCH_SUGGESTION_DATE"); _SEARCH_SUGGESTION_DATEReady = true; } return _SEARCH_SUGGESTION_DATEContent; } }
+        private static Java.Lang.String _SEARCH_SUGGESTION_DATEContent = default;
+        private static bool _SEARCH_SUGGESTION_DATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#SEARCH_SUGGESTION_FACE"/>
+        /// </summary>
+        public static Java.Lang.String SEARCH_SUGGESTION_FACE { get { if (!_SEARCH_SUGGESTION_FACEReady) { _SEARCH_SUGGESTION_FACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SEARCH_SUGGESTION_FACE"); _SEARCH_SUGGESTION_FACEReady = true; } return _SEARCH_SUGGESTION_FACEContent; } }
+        private static Java.Lang.String _SEARCH_SUGGESTION_FACEContent = default;
+        private static bool _SEARCH_SUGGESTION_FACEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#SEARCH_SUGGESTION_LOCATION"/>
+        /// </summary>
+        public static Java.Lang.String SEARCH_SUGGESTION_LOCATION { get { if (!_SEARCH_SUGGESTION_LOCATIONReady) { _SEARCH_SUGGESTION_LOCATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SEARCH_SUGGESTION_LOCATION"); _SEARCH_SUGGESTION_LOCATIONReady = true; } return _SEARCH_SUGGESTION_LOCATIONContent; } }
+        private static Java.Lang.String _SEARCH_SUGGESTION_LOCATIONContent = default;
+        private static bool _SEARCH_SUGGESTION_LOCATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.html#SEARCH_SUGGESTION_TEXT"/>
+        /// </summary>
+        public static Java.Lang.String SEARCH_SUGGESTION_TEXT { get { if (!_SEARCH_SUGGESTION_TEXTReady) { _SEARCH_SUGGESTION_TEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SEARCH_SUGGESTION_TEXT"); _SEARCH_SUGGESTION_TEXTReady = true; } return _SEARCH_SUGGESTION_TEXTContent; } }
+        private static Java.Lang.String _SEARCH_SUGGESTION_TEXTContent = default;
+        private static bool _SEARCH_SUGGESTION_TEXTReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -315,6 +568,206 @@ namespace Android.Provider
             public static Java.Lang.String MEDIA_COVER_ID { get { if (!_MEDIA_COVER_IDReady) { _MEDIA_COVER_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COVER_ID"); _MEDIA_COVER_IDReady = true; } return _MEDIA_COVER_IDContent; } }
             private static Java.Lang.String _MEDIA_COVER_IDContent = default;
             private static bool _MEDIA_COVER_IDReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Capabilities implementation
+        public partial class Capabilities
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.html#CREATOR"/>
+            /// </summary>
+            public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+            private static Android.Os.Parcelable.Creator _CREATORContent = default;
+            private static bool _CREATORReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.html#isMediaCategoriesEnabled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsMediaCategoriesEnabled()
+            {
+                return IExecuteWithSignature<bool>("isMediaCategoriesEnabled", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.html#isSearchEnabled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsSearchEnabled()
+            {
+                return IExecuteWithSignature<bool>("isSearchEnabled", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.html#describeContents()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int DescribeContents()
+            {
+                return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.html#writeToParcel(android.os.Parcel,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+            {
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+            #region Builder implementation
+            public partial class Builder
+            {
+                #region Constructors
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.Builder.html#build()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Provider.CloudMediaProviderContract.Capabilities"/></returns>
+                public Android.Provider.CloudMediaProviderContract.Capabilities Build()
+                {
+                    return IExecute<Android.Provider.CloudMediaProviderContract.Capabilities>("build");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.Builder.html#setMediaCategoriesEnabled(boolean)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="bool"/></param>
+                /// <returns><see cref="Android.Provider.CloudMediaProviderContract.Capabilities.Builder"/></returns>
+                public Android.Provider.CloudMediaProviderContract.Capabilities.Builder SetMediaCategoriesEnabled(bool arg0)
+                {
+                    return IExecute<Android.Provider.CloudMediaProviderContract.Capabilities.Builder>("setMediaCategoriesEnabled", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.Capabilities.Builder.html#setSearchEnabled(boolean)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="bool"/></param>
+                /// <returns><see cref="Android.Provider.CloudMediaProviderContract.Capabilities.Builder"/></returns>
+                public Android.Provider.CloudMediaProviderContract.Capabilities.Builder SetSearchEnabled(bool arg0)
+                {
+                    return IExecute<Android.Provider.CloudMediaProviderContract.Capabilities.Builder>("setSearchEnabled", arg0);
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region MediaCategoryColumns implementation
+        public partial class MediaCategoryColumns
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html#DISPLAY_NAME"/>
+            /// </summary>
+            public static Java.Lang.String DISPLAY_NAME { get { if (!_DISPLAY_NAMEReady) { _DISPLAY_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISPLAY_NAME"); _DISPLAY_NAMEReady = true; } return _DISPLAY_NAMEContent; } }
+            private static Java.Lang.String _DISPLAY_NAMEContent = default;
+            private static bool _DISPLAY_NAMEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html#ID"/>
+            /// </summary>
+            public static Java.Lang.String ID { get { if (!_IDReady) { _IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ID"); _IDReady = true; } return _IDContent; } }
+            private static Java.Lang.String _IDContent = default;
+            private static bool _IDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html#MEDIA_CATEGORY_TYPE"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_CATEGORY_TYPE { get { if (!_MEDIA_CATEGORY_TYPEReady) { _MEDIA_CATEGORY_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_CATEGORY_TYPE"); _MEDIA_CATEGORY_TYPEReady = true; } return _MEDIA_CATEGORY_TYPEContent; } }
+            private static Java.Lang.String _MEDIA_CATEGORY_TYPEContent = default;
+            private static bool _MEDIA_CATEGORY_TYPEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html#MEDIA_COVER_ID1"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_COVER_ID1 { get { if (!_MEDIA_COVER_ID1Ready) { _MEDIA_COVER_ID1Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COVER_ID1"); _MEDIA_COVER_ID1Ready = true; } return _MEDIA_COVER_ID1Content; } }
+            private static Java.Lang.String _MEDIA_COVER_ID1Content = default;
+            private static bool _MEDIA_COVER_ID1Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html#MEDIA_COVER_ID2"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_COVER_ID2 { get { if (!_MEDIA_COVER_ID2Ready) { _MEDIA_COVER_ID2Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COVER_ID2"); _MEDIA_COVER_ID2Ready = true; } return _MEDIA_COVER_ID2Content; } }
+            private static Java.Lang.String _MEDIA_COVER_ID2Content = default;
+            private static bool _MEDIA_COVER_ID2Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html#MEDIA_COVER_ID3"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_COVER_ID3 { get { if (!_MEDIA_COVER_ID3Ready) { _MEDIA_COVER_ID3Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COVER_ID3"); _MEDIA_COVER_ID3Ready = true; } return _MEDIA_COVER_ID3Content; } }
+            private static Java.Lang.String _MEDIA_COVER_ID3Content = default;
+            private static bool _MEDIA_COVER_ID3Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaCategoryColumns.html#MEDIA_COVER_ID4"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_COVER_ID4 { get { if (!_MEDIA_COVER_ID4Ready) { _MEDIA_COVER_ID4Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COVER_ID4"); _MEDIA_COVER_ID4Ready = true; } return _MEDIA_COVER_ID4Content; } }
+            private static Java.Lang.String _MEDIA_COVER_ID4Content = default;
+            private static bool _MEDIA_COVER_ID4Ready = false; // this is used because in case of generics 
         
             #endregion
         
@@ -497,6 +950,116 @@ namespace Android.Provider
             public static Java.Lang.String WIDTH { get { if (!_WIDTHReady) { _WIDTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIDTH"); _WIDTHReady = true; } return _WIDTHContent; } }
             private static Java.Lang.String _WIDTHContent = default;
             private static bool _WIDTHReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region MediaSetColumns implementation
+        public partial class MediaSetColumns
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaSetColumns.html#DISPLAY_NAME"/>
+            /// </summary>
+            public static Java.Lang.String DISPLAY_NAME { get { if (!_DISPLAY_NAMEReady) { _DISPLAY_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISPLAY_NAME"); _DISPLAY_NAMEReady = true; } return _DISPLAY_NAMEContent; } }
+            private static Java.Lang.String _DISPLAY_NAMEContent = default;
+            private static bool _DISPLAY_NAMEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaSetColumns.html#ID"/>
+            /// </summary>
+            public static Java.Lang.String ID { get { if (!_IDReady) { _IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ID"); _IDReady = true; } return _IDContent; } }
+            private static Java.Lang.String _IDContent = default;
+            private static bool _IDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaSetColumns.html#MEDIA_COUNT"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_COUNT { get { if (!_MEDIA_COUNTReady) { _MEDIA_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COUNT"); _MEDIA_COUNTReady = true; } return _MEDIA_COUNTContent; } }
+            private static Java.Lang.String _MEDIA_COUNTContent = default;
+            private static bool _MEDIA_COUNTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.MediaSetColumns.html#MEDIA_COVER_ID"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_COVER_ID { get { if (!_MEDIA_COVER_IDReady) { _MEDIA_COVER_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COVER_ID"); _MEDIA_COVER_IDReady = true; } return _MEDIA_COVER_IDContent; } }
+            private static Java.Lang.String _MEDIA_COVER_IDContent = default;
+            private static bool _MEDIA_COVER_IDReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SearchSuggestionColumns implementation
+        public partial class SearchSuggestionColumns
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.SearchSuggestionColumns.html#DISPLAY_TEXT"/>
+            /// </summary>
+            public static Java.Lang.String DISPLAY_TEXT { get { if (!_DISPLAY_TEXTReady) { _DISPLAY_TEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISPLAY_TEXT"); _DISPLAY_TEXTReady = true; } return _DISPLAY_TEXTContent; } }
+            private static Java.Lang.String _DISPLAY_TEXTContent = default;
+            private static bool _DISPLAY_TEXTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.SearchSuggestionColumns.html#MEDIA_COVER_ID"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_COVER_ID { get { if (!_MEDIA_COVER_IDReady) { _MEDIA_COVER_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_COVER_ID"); _MEDIA_COVER_IDReady = true; } return _MEDIA_COVER_IDContent; } }
+            private static Java.Lang.String _MEDIA_COVER_IDContent = default;
+            private static bool _MEDIA_COVER_IDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.SearchSuggestionColumns.html#MEDIA_SET_ID"/>
+            /// </summary>
+            public static Java.Lang.String MEDIA_SET_ID { get { if (!_MEDIA_SET_IDReady) { _MEDIA_SET_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_SET_ID"); _MEDIA_SET_IDReady = true; } return _MEDIA_SET_IDContent; } }
+            private static Java.Lang.String _MEDIA_SET_IDContent = default;
+            private static bool _MEDIA_SET_IDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CloudMediaProviderContract.SearchSuggestionColumns.html#TYPE"/>
+            /// </summary>
+            public static Java.Lang.String TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
+            private static Java.Lang.String _TYPEContent = default;
+            private static bool _TYPEReady = false; // this is used because in case of generics 
         
             #endregion
         

@@ -103,12 +103,52 @@ namespace Android.View.Autofill
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillId.html#isInAutofillSession()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInAutofillSession()
+        {
+            return IExecuteWithSignature<bool>("isInAutofillSession", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillId.html#isVirtual()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVirtual()
+        {
+            return IExecuteWithSignature<bool>("isVirtual", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillId.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillId.html#getAutofillVirtualId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutofillVirtualId()
+        {
+            return IExecuteWithSignature<int>("getAutofillVirtualId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillId.html#getSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSessionId()
+        {
+            return IExecuteWithSignature<int>("getSessionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillId.html#getViewId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetViewId()
+        {
+            return IExecuteWithSignature<int>("getViewId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillId.html#writeToParcel(android.os.Parcel,int)"/>

@@ -190,7 +190,7 @@ namespace Android.Icu.Util
     #endregion
 
     #region ULocale implementation
-    public partial class ULocale : Java.Io.ISerializable, Java.Lang.IComparable<Android.Icu.Util.ULocale>
+    public partial class ULocale : Java.Lang.IComparable<Android.Icu.Util.ULocale>, Java.Io.ISerializable
     {
         #region Constructors
         /// <summary>
@@ -225,13 +225,13 @@ namespace Android.Icu.Util
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Icu.Util.ULocale"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Android.Icu.Util.ULocale t) => t.Cast<Java.Io.Serializable>();
-        /// <summary>
         /// Converter from <see cref="Android.Icu.Util.ULocale"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Icu.Util.ULocale t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Icu.Util.ULocale"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
+        public static implicit operator Java.Io.Serializable(Android.Icu.Util.ULocale t) => t.Cast<Java.Io.Serializable>();
     
         #endregion
     

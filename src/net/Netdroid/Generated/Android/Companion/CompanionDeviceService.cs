@@ -118,6 +118,7 @@ namespace Android.Companion
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceService.html#onDeviceAppeared(android.companion.AssociationInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Companion.AssociationInfo"/></param>
+        [global::System.Obsolete()]
         public void OnDeviceAppeared(Android.Companion.AssociationInfo arg0)
         {
             IExecuteWithSignature("onDeviceAppeared", "(Landroid/companion/AssociationInfo;)V", arg0);
@@ -135,6 +136,7 @@ namespace Android.Companion
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceService.html#onDeviceDisappeared(android.companion.AssociationInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Companion.AssociationInfo"/></param>
+        [global::System.Obsolete()]
         public void OnDeviceDisappeared(Android.Companion.AssociationInfo arg0)
         {
             IExecuteWithSignature("onDeviceDisappeared", "(Landroid/companion/AssociationInfo;)V", arg0);
@@ -147,6 +149,14 @@ namespace Android.Companion
         public void OnDeviceDisappeared(Java.Lang.String arg0)
         {
             IExecuteWithSignature("onDeviceDisappeared", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceService.html#onDevicePresenceEvent(android.companion.DevicePresenceEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Companion.DevicePresenceEvent"/></param>
+        public void OnDevicePresenceEvent(Android.Companion.DevicePresenceEvent arg0)
+        {
+            IExecuteWithSignature("onDevicePresenceEvent", "(Landroid/companion/DevicePresenceEvent;)V", arg0);
         }
     
         #endregion

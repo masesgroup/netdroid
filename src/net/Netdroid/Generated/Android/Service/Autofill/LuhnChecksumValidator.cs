@@ -67,7 +67,7 @@ namespace Android.Service.Autofill
     #endregion
 
     #region LuhnChecksumValidator implementation
-    public partial class LuhnChecksumValidator : Android.Service.Autofill.IValidator, Android.Os.IParcelable
+    public partial class LuhnChecksumValidator : Android.Os.IParcelable, Android.Service.Autofill.IValidator
     {
         #region Constructors
         /// <summary>
@@ -83,13 +83,13 @@ namespace Android.Service.Autofill
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Service.Autofill.LuhnChecksumValidator"/> to <see cref="Android.Service.Autofill.Validator"/>
-        /// </summary>
-        public static implicit operator Android.Service.Autofill.Validator(Android.Service.Autofill.LuhnChecksumValidator t) => t.Cast<Android.Service.Autofill.Validator>();
-        /// <summary>
         /// Converter from <see cref="Android.Service.Autofill.LuhnChecksumValidator"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Service.Autofill.LuhnChecksumValidator t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Service.Autofill.LuhnChecksumValidator"/> to <see cref="Android.Service.Autofill.Validator"/>
+        /// </summary>
+        public static implicit operator Android.Service.Autofill.Validator(Android.Service.Autofill.LuhnChecksumValidator t) => t.Cast<Android.Service.Autofill.Validator>();
     
         #endregion
     

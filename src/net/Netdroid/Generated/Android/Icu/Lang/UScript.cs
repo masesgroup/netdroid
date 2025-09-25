@@ -150,6 +150,12 @@ namespace Android.Icu.Lang
         private static int _ARABICContent = default;
         private static bool _ARABICReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#ARABIC_NASTALIQ"/>
+        /// </summary>
+        public static int ARABIC_NASTALIQ { get { if (!_ARABIC_NASTALIQReady) { _ARABIC_NASTALIQContent = SGetField<int>(LocalBridgeClazz, "ARABIC_NASTALIQ"); _ARABIC_NASTALIQReady = true; } return _ARABIC_NASTALIQContent; } }
+        private static int _ARABIC_NASTALIQContent = default;
+        private static bool _ARABIC_NASTALIQReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#ARMENIAN"/>
         /// </summary>
         public static int ARMENIAN { get { if (!_ARMENIANReady) { _ARMENIANContent = SGetField<int>(LocalBridgeClazz, "ARMENIAN"); _ARMENIANReady = true; } return _ARMENIANContent; } }
@@ -396,6 +402,12 @@ namespace Android.Icu.Lang
         private static int _ETHIOPICContent = default;
         private static bool _ETHIOPICReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#GARAY"/>
+        /// </summary>
+        public static int GARAY { get { if (!_GARAYReady) { _GARAYContent = SGetField<int>(LocalBridgeClazz, "GARAY"); _GARAYReady = true; } return _GARAYContent; } }
+        private static int _GARAYContent = default;
+        private static bool _GARAYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#GEORGIAN"/>
         /// </summary>
         public static int GEORGIAN { get { if (!_GEORGIANReady) { _GEORGIANContent = SGetField<int>(LocalBridgeClazz, "GEORGIAN"); _GEORGIANReady = true; } return _GEORGIANContent; } }
@@ -443,6 +455,12 @@ namespace Android.Icu.Lang
         public static int GURMUKHI { get { if (!_GURMUKHIReady) { _GURMUKHIContent = SGetField<int>(LocalBridgeClazz, "GURMUKHI"); _GURMUKHIReady = true; } return _GURMUKHIContent; } }
         private static int _GURMUKHIContent = default;
         private static bool _GURMUKHIReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#GURUNG_KHEMA"/>
+        /// </summary>
+        public static int GURUNG_KHEMA { get { if (!_GURUNG_KHEMAReady) { _GURUNG_KHEMAContent = SGetField<int>(LocalBridgeClazz, "GURUNG_KHEMA"); _GURUNG_KHEMAReady = true; } return _GURUNG_KHEMAContent; } }
+        private static int _GURUNG_KHEMAContent = default;
+        private static bool _GURUNG_KHEMAReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#HAN"/>
         /// </summary>
@@ -629,6 +647,12 @@ namespace Android.Icu.Lang
         public static int KHUTSURI { get { if (!_KHUTSURIReady) { _KHUTSURIContent = SGetField<int>(LocalBridgeClazz, "KHUTSURI"); _KHUTSURIReady = true; } return _KHUTSURIContent; } }
         private static int _KHUTSURIContent = default;
         private static bool _KHUTSURIReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#KIRAT_RAI"/>
+        /// </summary>
+        public static int KIRAT_RAI { get { if (!_KIRAT_RAIReady) { _KIRAT_RAIContent = SGetField<int>(LocalBridgeClazz, "KIRAT_RAI"); _KIRAT_RAIReady = true; } return _KIRAT_RAIContent; } }
+        private static int _KIRAT_RAIContent = default;
+        private static bool _KIRAT_RAIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#KOREAN"/>
         /// </summary>
@@ -924,6 +948,12 @@ namespace Android.Icu.Lang
         private static int _OL_CHIKIContent = default;
         private static bool _OL_CHIKIReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#OL_ONAL"/>
+        /// </summary>
+        public static int OL_ONAL { get { if (!_OL_ONALReady) { _OL_ONALContent = SGetField<int>(LocalBridgeClazz, "OL_ONAL"); _OL_ONALReady = true; } return _OL_ONALContent; } }
+        private static int _OL_ONALContent = default;
+        private static bool _OL_ONALReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#OLD_CHURCH_SLAVONIC_CYRILLIC"/>
         /// </summary>
         public static int OLD_CHURCH_SLAVONIC_CYRILLIC { get { if (!_OLD_CHURCH_SLAVONIC_CYRILLICReady) { _OLD_CHURCH_SLAVONIC_CYRILLICContent = SGetField<int>(LocalBridgeClazz, "OLD_CHURCH_SLAVONIC_CYRILLIC"); _OLD_CHURCH_SLAVONIC_CYRILLICReady = true; } return _OLD_CHURCH_SLAVONIC_CYRILLICContent; } }
@@ -1146,6 +1176,12 @@ namespace Android.Icu.Lang
         private static int _SUNDANESEContent = default;
         private static bool _SUNDANESEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#SUNUWAR"/>
+        /// </summary>
+        public static int SUNUWAR { get { if (!_SUNUWARReady) { _SUNUWARContent = SGetField<int>(LocalBridgeClazz, "SUNUWAR"); _SUNUWARReady = true; } return _SUNUWARContent; } }
+        private static int _SUNUWARContent = default;
+        private static bool _SUNUWARReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#SYLOTI_NAGRI"/>
         /// </summary>
         public static int SYLOTI_NAGRI { get { if (!_SYLOTI_NAGRIReady) { _SYLOTI_NAGRIContent = SGetField<int>(LocalBridgeClazz, "SYLOTI_NAGRI"); _SYLOTI_NAGRIReady = true; } return _SYLOTI_NAGRIContent; } }
@@ -1260,6 +1296,12 @@ namespace Android.Icu.Lang
         private static int _TIRHUTAContent = default;
         private static bool _TIRHUTAReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#TODHRI"/>
+        /// </summary>
+        public static int TODHRI { get { if (!_TODHRIReady) { _TODHRIContent = SGetField<int>(LocalBridgeClazz, "TODHRI"); _TODHRIReady = true; } return _TODHRIContent; } }
+        private static int _TODHRIContent = default;
+        private static bool _TODHRIReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#TOTO"/>
         /// </summary>
         public static int TOTO { get { if (!_TOTOReady) { _TOTOContent = SGetField<int>(LocalBridgeClazz, "TOTO"); _TOTOReady = true; } return _TOTOContent; } }
@@ -1271,6 +1313,12 @@ namespace Android.Icu.Lang
         public static int TRADITIONAL_HAN { get { if (!_TRADITIONAL_HANReady) { _TRADITIONAL_HANContent = SGetField<int>(LocalBridgeClazz, "TRADITIONAL_HAN"); _TRADITIONAL_HANReady = true; } return _TRADITIONAL_HANContent; } }
         private static int _TRADITIONAL_HANContent = default;
         private static bool _TRADITIONAL_HANReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#TULU_TIGALARI"/>
+        /// </summary>
+        public static int TULU_TIGALARI { get { if (!_TULU_TIGALARIReady) { _TULU_TIGALARIContent = SGetField<int>(LocalBridgeClazz, "TULU_TIGALARI"); _TULU_TIGALARIReady = true; } return _TULU_TIGALARIContent; } }
+        private static int _TULU_TIGALARIContent = default;
+        private static bool _TULU_TIGALARIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#UCAS"/>
         /// </summary>

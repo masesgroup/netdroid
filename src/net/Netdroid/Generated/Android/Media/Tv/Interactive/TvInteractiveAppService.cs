@@ -547,6 +547,16 @@ namespace Android.Media.Tv.Interactive
                 IExecuteWithSignature("onBroadcastInfoResponse", "(Landroid/media/tv/BroadcastInfoResponse;)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#onCertificate(java.lang.String,int,android.net.http.SslCertificate)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="Android.Net.Http.SslCertificate"/></param>
+            public void OnCertificate(Java.Lang.String arg0, int arg1, Android.Net.Http.SslCertificate arg2)
+            {
+                IExecuteWithSignature("onCertificate", "(Ljava/lang/String;ILandroid/net/http/SslCertificate;)V", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#onContentAllowed()"/>
             /// </summary>
             public void OnContentAllowed()
@@ -696,6 +706,14 @@ namespace Android.Media.Tv.Interactive
             public void OnResetInteractiveApp()
             {
                 IExecuteWithSignature("onResetInteractiveApp", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#onSelectedTrackInfo(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            public void OnSelectedTrackInfo(Java.Util.List<Android.Media.Tv.TvTrackInfo> arg0)
+            {
+                IExecuteWithSignature("onSelectedTrackInfo", "(Ljava/util/List;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#onSetTeletextAppEnabled(boolean)"/>
@@ -863,6 +881,14 @@ namespace Android.Media.Tv.Interactive
                 IExecuteWithSignature("onVideoAvailable", "()V");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#onVideoFreezeUpdated(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void OnVideoFreezeUpdated(bool arg0)
+            {
+                IExecuteWithSignature("onVideoFreezeUpdated", "(Z)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#onVideoUnavailable(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -900,6 +926,15 @@ namespace Android.Media.Tv.Interactive
             public void RequestBroadcastInfo(Android.Media.Tv.BroadcastInfoRequest arg0)
             {
                 IExecuteWithSignature("requestBroadcastInfo", "(Landroid/media/tv/BroadcastInfoRequest;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#requestCertificate(java.lang.String,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public void RequestCertificate(Java.Lang.String arg0, int arg1)
+            {
+                IExecuteWithSignature("requestCertificate", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#requestCurrentChannelLcn()"/>
@@ -956,6 +991,13 @@ namespace Android.Media.Tv.Interactive
                 IExecuteWithSignature("requestScheduleRecording", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;JJILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#requestSelectedTrackInfo()"/>
+            /// </summary>
+            public void RequestSelectedTrackInfo()
+            {
+                IExecuteWithSignature("requestSelectedTrackInfo", "()V");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#requestSigning(java.lang.String,java.lang.String,java.lang.String,byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -965,6 +1007,18 @@ namespace Android.Media.Tv.Interactive
             public void RequestSigning(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
             {
                 IExecuteWithSignature("requestSigning", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)V", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#requestSigning(java.lang.String,java.lang.String,java.lang.String,int,byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="byte"/></param>
+            public void RequestSigning(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, byte[] arg4)
+            {
+                IExecuteWithSignature("requestSigning", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[B)V", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#requestStartRecording(java.lang.String,android.net.Uri)"/>

@@ -95,6 +95,14 @@ namespace Android.Os
             return IExecuteWithSignature<Android.Os.Message>("next", "()Landroid/os/Message;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#poll()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Message"/></returns>
+        public Android.Os.Message Poll()
+        {
+            return IExecuteWithSignature<Android.Os.Message>("poll", "()Landroid/os/Message;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#getMessageQueue()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.MessageQueue"/></returns>
@@ -123,6 +131,22 @@ namespace Android.Os
         public bool HasMessages(Android.Os.Handler arg0, object arg1, Java.Lang.Runnable arg2)
         {
             return IExecuteWithSignature<bool>("hasMessages", "(Landroid/os/Handler;Ljava/lang/Object;Ljava/lang/Runnable;)Z", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#isBlockedOnSyncBarrier()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBlockedOnSyncBarrier()
+        {
+            return IExecuteWithSignature<bool>("isBlockedOnSyncBarrier", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#peekWhen()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Long"/></returns>
+        public Java.Lang.Long PeekWhen()
+        {
+            return IExecuteWithSignature<Java.Lang.Long>("peekWhen", "()Ljava/lang/Long;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#execute(android.os.Message)"/>

@@ -67,7 +67,7 @@ namespace Android.Hardware
     #endregion
 
     #region HardwareBuffer implementation
-    public partial class HardwareBuffer : Android.Os.IParcelable, Java.Lang.IAutoCloseable
+    public partial class HardwareBuffer : Java.Lang.IAutoCloseable, Android.Os.IParcelable
     {
         #region Constructors
     
@@ -75,13 +75,13 @@ namespace Android.Hardware
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Hardware.HardwareBuffer"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Hardware.HardwareBuffer t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Hardware.HardwareBuffer"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Android.Hardware.HardwareBuffer t) => t.Cast<Java.Lang.AutoCloseable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Hardware.HardwareBuffer"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Hardware.HardwareBuffer t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     
@@ -206,6 +206,12 @@ namespace Android.Hardware
         public static int YCBCR_P010 { get { if (!_YCBCR_P010Ready) { _YCBCR_P010Content = SGetField<int>(LocalBridgeClazz, "YCBCR_P010"); _YCBCR_P010Ready = true; } return _YCBCR_P010Content; } }
         private static int _YCBCR_P010Content = default;
         private static bool _YCBCR_P010Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#YCBCR_P210"/>
+        /// </summary>
+        public static int YCBCR_P210 { get { if (!_YCBCR_P210Ready) { _YCBCR_P210Content = SGetField<int>(LocalBridgeClazz, "YCBCR_P210"); _YCBCR_P210Ready = true; } return _YCBCR_P210Content; } }
+        private static int _YCBCR_P210Content = default;
+        private static bool _YCBCR_P210Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#USAGE_COMPOSER_OVERLAY"/>
         /// </summary>

@@ -115,6 +115,12 @@ namespace Android.Graphics
         private static int _HEICContent = default;
         private static bool _HEICReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageFormat.html#HEIC_ULTRAHDR"/>
+        /// </summary>
+        public static int HEIC_ULTRAHDR { get { if (!_HEIC_ULTRAHDRReady) { _HEIC_ULTRAHDRContent = SGetField<int>(LocalBridgeClazz, "HEIC_ULTRAHDR"); _HEIC_ULTRAHDRReady = true; } return _HEIC_ULTRAHDRContent; } }
+        private static int _HEIC_ULTRAHDRContent = default;
+        private static bool _HEIC_ULTRAHDRReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageFormat.html#JPEG"/>
         /// </summary>
         public static int JPEG { get { if (!_JPEGReady) { _JPEGContent = SGetField<int>(LocalBridgeClazz, "JPEG"); _JPEGReady = true; } return _JPEGContent; } }
@@ -192,6 +198,12 @@ namespace Android.Graphics
         public static int YCBCR_P010 { get { if (!_YCBCR_P010Ready) { _YCBCR_P010Content = SGetField<int>(LocalBridgeClazz, "YCBCR_P010"); _YCBCR_P010Ready = true; } return _YCBCR_P010Content; } }
         private static int _YCBCR_P010Content = default;
         private static bool _YCBCR_P010Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ImageFormat.html#YCBCR_P210"/>
+        /// </summary>
+        public static int YCBCR_P210 { get { if (!_YCBCR_P210Ready) { _YCBCR_P210Content = SGetField<int>(LocalBridgeClazz, "YCBCR_P210"); _YCBCR_P210Ready = true; } return _YCBCR_P210Content; } }
+        private static int _YCBCR_P210Content = default;
+        private static bool _YCBCR_P210Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageFormat.html#YUV_420_888"/>
         /// </summary>

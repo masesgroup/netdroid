@@ -71,6 +71,18 @@ namespace Android.Window
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#%3Cinit%3E(float,float,float,int,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="long"/></param>
+        public BackEvent(float arg0, float arg1, float arg2, int arg3, long arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#%3Cinit%3E(float,float,float,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -95,6 +107,12 @@ namespace Android.Window
         public static int EDGE_LEFT { get { if (!_EDGE_LEFTReady) { _EDGE_LEFTContent = SGetField<int>(LocalBridgeClazz, "EDGE_LEFT"); _EDGE_LEFTReady = true; } return _EDGE_LEFTContent; } }
         private static int _EDGE_LEFTContent = default;
         private static bool _EDGE_LEFTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#EDGE_NONE"/>
+        /// </summary>
+        public static int EDGE_NONE { get { if (!_EDGE_NONEReady) { _EDGE_NONEContent = SGetField<int>(LocalBridgeClazz, "EDGE_NONE"); _EDGE_NONEReady = true; } return _EDGE_NONEContent; } }
+        private static int _EDGE_NONEContent = default;
+        private static bool _EDGE_NONEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#EDGE_RIGHT"/>
         /// </summary>
@@ -140,6 +158,14 @@ namespace Android.Window
         public int GetSwipeEdge()
         {
             return IExecuteWithSignature<int>("getSwipeEdge", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getFrameTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFrameTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getFrameTimeMillis", "()J");
         }
     
         #endregion

@@ -188,6 +188,18 @@ namespace Android.Media
         private static int _COLOR_TRANSFER_ST2084Content = default;
         private static bool _COLOR_TRANSFER_ST2084Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#FLAG_SECURITY_MODEL_MEMORY_SAFE"/>
+        /// </summary>
+        public static int FLAG_SECURITY_MODEL_MEMORY_SAFE { get { if (!_FLAG_SECURITY_MODEL_MEMORY_SAFEReady) { _FLAG_SECURITY_MODEL_MEMORY_SAFEContent = SGetField<int>(LocalBridgeClazz, "FLAG_SECURITY_MODEL_MEMORY_SAFE"); _FLAG_SECURITY_MODEL_MEMORY_SAFEReady = true; } return _FLAG_SECURITY_MODEL_MEMORY_SAFEContent; } }
+        private static int _FLAG_SECURITY_MODEL_MEMORY_SAFEContent = default;
+        private static bool _FLAG_SECURITY_MODEL_MEMORY_SAFEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#FLAG_SECURITY_MODEL_SANDBOXED"/>
+        /// </summary>
+        public static int FLAG_SECURITY_MODEL_SANDBOXED { get { if (!_FLAG_SECURITY_MODEL_SANDBOXEDReady) { _FLAG_SECURITY_MODEL_SANDBOXEDContent = SGetField<int>(LocalBridgeClazz, "FLAG_SECURITY_MODEL_SANDBOXED"); _FLAG_SECURITY_MODEL_SANDBOXEDReady = true; } return _FLAG_SECURITY_MODEL_SANDBOXEDContent; } }
+        private static int _FLAG_SECURITY_MODEL_SANDBOXEDContent = default;
+        private static bool _FLAG_SECURITY_MODEL_SANDBOXEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#PICTURE_TYPE_B"/>
         /// </summary>
         public static int PICTURE_TYPE_B { get { if (!_PICTURE_TYPE_BReady) { _PICTURE_TYPE_BContent = SGetField<int>(LocalBridgeClazz, "PICTURE_TYPE_B"); _PICTURE_TYPE_BReady = true; } return _PICTURE_TYPE_BContent; } }
@@ -681,6 +693,18 @@ namespace Android.Media
         private static Java.Lang.String _KEY_PCM_ENCODINGContent = default;
         private static bool _KEY_PCM_ENCODINGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_PICTURE_PROFILE_ID"/>
+        /// </summary>
+        public static Java.Lang.String KEY_PICTURE_PROFILE_ID { get { if (!_KEY_PICTURE_PROFILE_IDReady) { _KEY_PICTURE_PROFILE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PICTURE_PROFILE_ID"); _KEY_PICTURE_PROFILE_IDReady = true; } return _KEY_PICTURE_PROFILE_IDContent; } }
+        private static Java.Lang.String _KEY_PICTURE_PROFILE_IDContent = default;
+        private static bool _KEY_PICTURE_PROFILE_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_PICTURE_PROFILE_INSTANCE"/>
+        /// </summary>
+        public static Java.Lang.String KEY_PICTURE_PROFILE_INSTANCE { get { if (!_KEY_PICTURE_PROFILE_INSTANCEReady) { _KEY_PICTURE_PROFILE_INSTANCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PICTURE_PROFILE_INSTANCE"); _KEY_PICTURE_PROFILE_INSTANCEReady = true; } return _KEY_PICTURE_PROFILE_INSTANCEContent; } }
+        private static Java.Lang.String _KEY_PICTURE_PROFILE_INSTANCEContent = default;
+        private static bool _KEY_PICTURE_PROFILE_INSTANCEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_PICTURE_TYPE"/>
         /// </summary>
         public static Java.Lang.String KEY_PICTURE_TYPE { get { if (!_KEY_PICTURE_TYPEReady) { _KEY_PICTURE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PICTURE_TYPE"); _KEY_PICTURE_TYPEReady = true; } return _KEY_PICTURE_TYPEContent; } }
@@ -746,6 +770,12 @@ namespace Android.Media
         public static Java.Lang.String KEY_SAMPLE_RATE { get { if (!_KEY_SAMPLE_RATEReady) { _KEY_SAMPLE_RATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SAMPLE_RATE"); _KEY_SAMPLE_RATEReady = true; } return _KEY_SAMPLE_RATEContent; } }
         private static Java.Lang.String _KEY_SAMPLE_RATEContent = default;
         private static bool _KEY_SAMPLE_RATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_SECURITY_MODEL"/>
+        /// </summary>
+        public static Java.Lang.String KEY_SECURITY_MODEL { get { if (!_KEY_SECURITY_MODELReady) { _KEY_SECURITY_MODELContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SECURITY_MODEL"); _KEY_SECURITY_MODELReady = true; } return _KEY_SECURITY_MODELContent; } }
+        private static Java.Lang.String _KEY_SECURITY_MODELContent = default;
+        private static bool _KEY_SECURITY_MODELReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_SLICE_HEIGHT"/>
         /// </summary>
@@ -987,6 +1017,12 @@ namespace Android.Media
         private static Java.Lang.String _MIMETYPE_AUDIO_G711_MLAWContent = default;
         private static bool _MIMETYPE_AUDIO_G711_MLAWReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#MIMETYPE_AUDIO_IAMF"/>
+        /// </summary>
+        public static Java.Lang.String MIMETYPE_AUDIO_IAMF { get { if (!_MIMETYPE_AUDIO_IAMFReady) { _MIMETYPE_AUDIO_IAMFContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIMETYPE_AUDIO_IAMF"); _MIMETYPE_AUDIO_IAMFReady = true; } return _MIMETYPE_AUDIO_IAMFContent; } }
+        private static Java.Lang.String _MIMETYPE_AUDIO_IAMFContent = default;
+        private static bool _MIMETYPE_AUDIO_IAMFReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#MIMETYPE_AUDIO_IEC61937"/>
         /// </summary>
         public static Java.Lang.String MIMETYPE_AUDIO_IEC61937 { get { if (!_MIMETYPE_AUDIO_IEC61937Ready) { _MIMETYPE_AUDIO_IEC61937Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIMETYPE_AUDIO_IEC61937"); _MIMETYPE_AUDIO_IEC61937Ready = true; } return _MIMETYPE_AUDIO_IEC61937Content; } }
@@ -1106,6 +1142,12 @@ namespace Android.Media
         public static Java.Lang.String MIMETYPE_TEXT_VTT { get { if (!_MIMETYPE_TEXT_VTTReady) { _MIMETYPE_TEXT_VTTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIMETYPE_TEXT_VTT"); _MIMETYPE_TEXT_VTTReady = true; } return _MIMETYPE_TEXT_VTTContent; } }
         private static Java.Lang.String _MIMETYPE_TEXT_VTTContent = default;
         private static bool _MIMETYPE_TEXT_VTTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#MIMETYPE_VIDEO_APV"/>
+        /// </summary>
+        public static Java.Lang.String MIMETYPE_VIDEO_APV { get { if (!_MIMETYPE_VIDEO_APVReady) { _MIMETYPE_VIDEO_APVContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIMETYPE_VIDEO_APV"); _MIMETYPE_VIDEO_APVReady = true; } return _MIMETYPE_VIDEO_APVContent; } }
+        private static Java.Lang.String _MIMETYPE_VIDEO_APVContent = default;
+        private static bool _MIMETYPE_VIDEO_APVReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#MIMETYPE_VIDEO_AV1"/>
         /// </summary>

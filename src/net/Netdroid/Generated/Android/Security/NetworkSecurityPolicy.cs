@@ -95,6 +95,15 @@ namespace Android.Security
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/NetworkSecurityPolicy.html#isCertificateTransparencyVerificationRequired(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCertificateTransparencyVerificationRequired(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<bool>("isCertificateTransparencyVerificationRequired", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/NetworkSecurityPolicy.html#isCleartextTrafficPermitted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

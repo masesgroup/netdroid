@@ -87,17 +87,13 @@ namespace Android.Content.Res
     #endregion
 
     #region XmlResourceParser implementation
-    public partial class XmlResourceParser : Android.Content.Res.IXmlResourceParser, Org.Xmlpull.V1.IXmlPullParser, Android.Util.IAttributeSet, Java.Lang.IAutoCloseable
+    public partial class XmlResourceParser : Android.Content.Res.IXmlResourceParser, Android.Util.IAttributeSet, Java.Lang.IAutoCloseable, Org.Xmlpull.V1.IXmlPullParser
     {
         #region Constructors
     
         #endregion
     
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Android.Content.Res.XmlResourceParser"/> to <see cref="Org.Xmlpull.V1.XmlPullParser"/>
-        /// </summary>
-        public static implicit operator Org.Xmlpull.V1.XmlPullParser(Android.Content.Res.XmlResourceParser t) => t.Cast<Org.Xmlpull.V1.XmlPullParser>();
         /// <summary>
         /// Converter from <see cref="Android.Content.Res.XmlResourceParser"/> to <see cref="Android.Util.AttributeSet"/>
         /// </summary>
@@ -106,6 +102,10 @@ namespace Android.Content.Res
         /// Converter from <see cref="Android.Content.Res.XmlResourceParser"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Android.Content.Res.XmlResourceParser t) => t.Cast<Java.Lang.AutoCloseable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Content.Res.XmlResourceParser"/> to <see cref="Org.Xmlpull.V1.XmlPullParser"/>
+        /// </summary>
+        public static implicit operator Org.Xmlpull.V1.XmlPullParser(Android.Content.Res.XmlResourceParser t) => t.Cast<Org.Xmlpull.V1.XmlPullParser>();
     
         #endregion
     

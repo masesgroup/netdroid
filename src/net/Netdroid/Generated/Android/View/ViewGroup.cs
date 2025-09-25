@@ -224,7 +224,7 @@ namespace Android.View
     #endregion
 
     #region ViewGroup implementation
-    public partial class ViewGroup : Android.View.IViewParent, Android.View.IViewManager
+    public partial class ViewGroup : Android.View.IViewManager, Android.View.IViewParent
     {
         #region Constructors
         /// <summary>
@@ -270,13 +270,13 @@ namespace Android.View
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.View.ViewGroup"/> to <see cref="Android.View.ViewParent"/>
-        /// </summary>
-        public static implicit operator Android.View.ViewParent(Android.View.ViewGroup t) => t.Cast<Android.View.ViewParent>();
-        /// <summary>
         /// Converter from <see cref="Android.View.ViewGroup"/> to <see cref="Android.View.ViewManager"/>
         /// </summary>
         public static implicit operator Android.View.ViewManager(Android.View.ViewGroup t) => t.Cast<Android.View.ViewManager>();
+        /// <summary>
+        /// Converter from <see cref="Android.View.ViewGroup"/> to <see cref="Android.View.ViewParent"/>
+        /// </summary>
+        public static implicit operator Android.View.ViewParent(Android.View.ViewGroup t) => t.Cast<Android.View.ViewParent>();
     
         #endregion
     
@@ -955,6 +955,15 @@ namespace Android.View
         public void OnViewRemoved(Android.View.View arg0)
         {
             IExecuteWithSignature("onViewRemoved", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#propagateRequestedFrameRate(float,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        public void PropagateRequestedFrameRate(float arg0, bool arg1)
+        {
+            IExecuteWithSignature("propagateRequestedFrameRate", "(FZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#recomputeViewAttributes(android.view.View)"/>

@@ -484,6 +484,18 @@ namespace Android.Service.Notification
             return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getActiveNotifications", "([Ljava/lang/String;)[Landroid/service/notification/StatusBarNotification;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#createConversationNotificationChannelForPackage(java.lang.String,android.os.UserHandle,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.App.NotificationChannel"/></returns>
+        public Android.App.NotificationChannel CreateConversationNotificationChannelForPackage(Java.Lang.String arg0, Android.Os.UserHandle arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            return IExecuteWithSignature<Android.App.NotificationChannel>("createConversationNotificationChannelForPackage", "(Ljava/lang/String;Landroid/os/UserHandle;Ljava/lang/String;Ljava/lang/String;)Landroid/app/NotificationChannel;", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getSnoozedNotifications()"/>
         /// </summary>
         /// <returns><see cref="Android.Service.Notification.StatusBarNotification"/></returns>

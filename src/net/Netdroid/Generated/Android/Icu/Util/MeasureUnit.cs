@@ -203,6 +203,12 @@ namespace Android.Icu.Util
         private static Android.Icu.Util.MeasureUnit _ATMOSPHEREContent = default;
         private static bool _ATMOSPHEREReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#BEAUFORT"/>
+        /// </summary>
+        public static Android.Icu.Util.MeasureUnit BEAUFORT { get { if (!_BEAUFORTReady) { _BEAUFORTContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "BEAUFORT"); _BEAUFORTReady = true; } return _BEAUFORTContent; } }
+        private static Android.Icu.Util.MeasureUnit _BEAUFORTContent = default;
+        private static bool _BEAUFORTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#BIT"/>
         /// </summary>
         public static Android.Icu.Util.MeasureUnit BIT { get { if (!_BITReady) { _BITContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "BIT"); _BITReady = true; } return _BITContent; } }
@@ -418,6 +424,12 @@ namespace Android.Icu.Util
         public static Android.Icu.Util.MeasureUnit GALLON_IMPERIAL { get { if (!_GALLON_IMPERIALReady) { _GALLON_IMPERIALContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "GALLON_IMPERIAL"); _GALLON_IMPERIALReady = true; } return _GALLON_IMPERIALContent; } }
         private static Android.Icu.Util.MeasureUnit _GALLON_IMPERIALContent = default;
         private static bool _GALLON_IMPERIALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#GASOLINE_ENERGY_DENSITY"/>
+        /// </summary>
+        public static Android.Icu.Util.MeasureUnit GASOLINE_ENERGY_DENSITY { get { if (!_GASOLINE_ENERGY_DENSITYReady) { _GASOLINE_ENERGY_DENSITYContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "GASOLINE_ENERGY_DENSITY"); _GASOLINE_ENERGY_DENSITYReady = true; } return _GASOLINE_ENERGY_DENSITYContent; } }
+        private static Android.Icu.Util.MeasureUnit _GASOLINE_ENERGY_DENSITYContent = default;
+        private static bool _GASOLINE_ENERGY_DENSITYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#GENERIC_TEMPERATURE"/>
         /// </summary>

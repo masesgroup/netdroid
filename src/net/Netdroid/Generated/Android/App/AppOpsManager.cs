@@ -298,6 +298,12 @@ namespace Android.App
         private static int _MODE_IGNOREDContent = default;
         private static bool _MODE_IGNOREDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC"/>
+        /// </summary>
+        public static int OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC { get { if (!_OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNCReady) { _OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNCContent = SGetField<int>(LocalBridgeClazz, "OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC"); _OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNCReady = true; } return _OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNCContent; } }
+        private static int _OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNCContent = default;
+        private static bool _OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNCReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#WATCH_FOREGROUND_CHANGES"/>
         /// </summary>
         public static int WATCH_FOREGROUND_CHANGES { get { if (!_WATCH_FOREGROUND_CHANGESReady) { _WATCH_FOREGROUND_CHANGESContent = SGetField<int>(LocalBridgeClazz, "WATCH_FOREGROUND_CHANGES"); _WATCH_FOREGROUND_CHANGESReady = true; } return _WATCH_FOREGROUND_CHANGESContent; } }
@@ -536,16 +542,39 @@ namespace Android.App
             return IExecuteWithSignature<bool>("isOpActive", "(Ljava/lang/String;ILjava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOp(java.lang.String,int,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int CheckOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            return IExecuteWithSignature<int>("checkOp", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOp(java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
         public int CheckOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<int>("checkOp", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOpNoThrow(java.lang.String,int,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int CheckOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            return IExecuteWithSignature<int>("checkOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOpNoThrow(java.lang.String,int,java.lang.String)"/>
@@ -554,10 +583,21 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
         public int CheckOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<int>("checkOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOpRawNoThrow(java.lang.String,int,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int CheckOpRawNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            return IExecuteWithSignature<int>("checkOpRawNoThrow", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOp(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -752,6 +792,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int UnsafeCheckOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<int>("unsafeCheckOp", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
@@ -763,6 +804,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int UnsafeCheckOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<int>("unsafeCheckOpNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
@@ -774,6 +816,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int UnsafeCheckOpRaw(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<int>("unsafeCheckOpRaw", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
@@ -785,6 +828,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int UnsafeCheckOpRawNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<int>("unsafeCheckOpRawNoThrow", "(Ljava/lang/String;ILjava/lang/String;)I", arg0, arg1, arg2);
@@ -831,6 +875,16 @@ namespace Android.App
         public void FinishProxyOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             IExecuteWithSignature("finishProxyOp", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#setOnOpNotedCallback(java.util.concurrent.Executor,android.app.AppOpsManager.OnOpNotedCallback,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.App.AppOpsManager.OnOpNotedCallback"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        public void SetOnOpNotedCallback(Java.Util.Concurrent.Executor arg0, Android.App.AppOpsManager.OnOpNotedCallback arg1, int arg2)
+        {
+            IExecuteWithSignature("setOnOpNotedCallback", "(Ljava/util/concurrent/Executor;Landroid/app/AppOpsManager$OnOpNotedCallback;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#setOnOpNotedCallback(java.util.concurrent.Executor,android.app.AppOpsManager.OnOpNotedCallback)"/>

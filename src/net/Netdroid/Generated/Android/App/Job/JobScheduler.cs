@@ -123,6 +123,12 @@ namespace Android.App.Job
         private static int _PENDING_JOB_REASON_CONSTRAINT_CONTENT_TRIGGERContent = default;
         private static bool _PENDING_JOB_REASON_CONSTRAINT_CONTENT_TRIGGERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#PENDING_JOB_REASON_CONSTRAINT_DEADLINE"/>
+        /// </summary>
+        public static int PENDING_JOB_REASON_CONSTRAINT_DEADLINE { get { if (!_PENDING_JOB_REASON_CONSTRAINT_DEADLINEReady) { _PENDING_JOB_REASON_CONSTRAINT_DEADLINEContent = SGetField<int>(LocalBridgeClazz, "PENDING_JOB_REASON_CONSTRAINT_DEADLINE"); _PENDING_JOB_REASON_CONSTRAINT_DEADLINEReady = true; } return _PENDING_JOB_REASON_CONSTRAINT_DEADLINEContent; } }
+        private static int _PENDING_JOB_REASON_CONSTRAINT_DEADLINEContent = default;
+        private static bool _PENDING_JOB_REASON_CONSTRAINT_DEADLINEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLE"/>
         /// </summary>
         public static int PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLE { get { if (!_PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLEReady) { _PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLEContent = SGetField<int>(LocalBridgeClazz, "PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLE"); _PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLEReady = true; } return _PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLEContent; } }
@@ -286,12 +292,30 @@ namespace Android.App.Job
             return IExecuteWithSignature<int>("getPendingJobReason", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getPendingJobReasons(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetPendingJobReasons(int arg0)
+        {
+            return IExecuteWithSignatureArray<int>("getPendingJobReasons", "(I)[I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getNamespace()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNamespace()
         {
             return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getPendingJobReasonsHistory(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Job.PendingJobReasonsInfo> GetPendingJobReasonsHistory(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Job.PendingJobReasonsInfo>>("getPendingJobReasonsHistory", "(I)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getPendingJobsInAllNamespaces()"/>

@@ -223,7 +223,7 @@ namespace Android.Os
     
         #region Nested classes
         #region Entry implementation
-        public partial class Entry : Android.Os.IParcelable, Java.Io.ICloseable
+        public partial class Entry : Java.Io.ICloseable, Android.Os.IParcelable
         {
             #region Constructors
             /// <summary>
@@ -284,13 +284,13 @@ namespace Android.Os
         
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Android.Os.DropBoxManager.Entry"/> to <see cref="Android.Os.Parcelable"/>
-            /// </summary>
-            public static implicit operator Android.Os.Parcelable(Android.Os.DropBoxManager.Entry t) => t.Cast<Android.Os.Parcelable>();
-            /// <summary>
             /// Converter from <see cref="Android.Os.DropBoxManager.Entry"/> to <see cref="Java.Io.Closeable"/>
             /// </summary>
             public static implicit operator Java.Io.Closeable(Android.Os.DropBoxManager.Entry t) => t.Cast<Java.Io.Closeable>();
+            /// <summary>
+            /// Converter from <see cref="Android.Os.DropBoxManager.Entry"/> to <see cref="Android.Os.Parcelable"/>
+            /// </summary>
+            public static implicit operator Android.Os.Parcelable(Android.Os.DropBoxManager.Entry t) => t.Cast<Android.Os.Parcelable>();
         
             #endregion
         

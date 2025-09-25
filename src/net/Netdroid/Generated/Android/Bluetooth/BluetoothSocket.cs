@@ -85,6 +85,12 @@ namespace Android.Bluetooth
         private static int _TYPE_L2CAPContent = default;
         private static bool _TYPE_L2CAPReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#TYPE_LE"/>
+        /// </summary>
+        public static int TYPE_LE { get { if (!_TYPE_LEReady) { _TYPE_LEContent = SGetField<int>(LocalBridgeClazz, "TYPE_LE"); _TYPE_LEReady = true; } return _TYPE_LEContent; } }
+        private static int _TYPE_LEContent = default;
+        private static bool _TYPE_LEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#TYPE_RFCOMM"/>
         /// </summary>
         public static int TYPE_RFCOMM { get { if (!_TYPE_RFCOMMReady) { _TYPE_RFCOMMContent = SGetField<int>(LocalBridgeClazz, "TYPE_RFCOMM"); _TYPE_RFCOMMReady = true; } return _TYPE_RFCOMMContent; } }

@@ -109,11 +109,29 @@ namespace Android.Net.Wifi.Rtt
         private static Java.Lang.String _CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTTContent = default;
         private static bool _CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTED"/>
+        /// </summary>
+        public static Java.Lang.String CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTED { get { if (!_CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTEDReady) { _CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTED"); _CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTEDReady = true; } return _CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTEDContent; } }
+        private static Java.Lang.String _CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTEDContent = default;
+        private static bool _CHARACTERISTICS_KEY_BOOLEAN_RANGING_FRAME_PROTECTION_SUPPORTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTED"/>
+        /// </summary>
+        public static Java.Lang.String CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTED { get { if (!_CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTEDReady) { _CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTED"); _CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTEDReady = true; } return _CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTEDContent; } }
+        private static Java.Lang.String _CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTEDContent = default;
+        private static bool _CHARACTERISTICS_KEY_BOOLEAN_SECURE_HE_LTF_SUPPORTEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER"/>
         /// </summary>
         public static Java.Lang.String CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER { get { if (!_CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERReady) { _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER"); _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERReady = true; } return _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERContent; } }
         private static Java.Lang.String _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERContent = default;
         private static bool _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSION"/>
+        /// </summary>
+        public static Java.Lang.String CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSION { get { if (!_CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSIONReady) { _CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSION"); _CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSIONReady = true; } return _CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSIONContent; } }
+        private static Java.Lang.String _CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSIONContent = default;
+        private static bool _CHARACTERISTICS_KEY_INT_MAX_SUPPORTED_SECURE_HE_LTF_PROTO_VERSIONReady = false; // this is used because in case of generics 
     
         #endregion
     

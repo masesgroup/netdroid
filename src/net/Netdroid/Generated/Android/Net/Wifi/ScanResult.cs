@@ -386,6 +386,22 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<bool>("isPasspointNetwork", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#isRangingFrameProtectionRequired()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRangingFrameProtectionRequired()
+        {
+            return IExecuteWithSignature<bool>("isRangingFrameProtectionRequired", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#isSecureHeLtfSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSecureHeLtfSupported()
+        {
+            return IExecuteWithSignature<bool>("isSecureHeLtfSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#isTwtResponder()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

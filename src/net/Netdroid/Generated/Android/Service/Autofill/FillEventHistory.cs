@@ -151,6 +151,14 @@ namespace Android.Service.Autofill
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSessionId()
+        {
+            return IExecuteWithSignature<int>("getSessionId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getEvents()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -220,6 +228,12 @@ namespace Android.Service.Autofill
             private static int _NO_SAVE_UI_REASON_NONEContent = default;
             private static bool _NO_SAVE_UI_REASON_NONEReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#NO_SAVE_UI_REASON_USING_CREDMAN"/>
+            /// </summary>
+            public static int NO_SAVE_UI_REASON_USING_CREDMAN { get { if (!_NO_SAVE_UI_REASON_USING_CREDMANReady) { _NO_SAVE_UI_REASON_USING_CREDMANContent = SGetField<int>(LocalBridgeClazz, "NO_SAVE_UI_REASON_USING_CREDMAN"); _NO_SAVE_UI_REASON_USING_CREDMANReady = true; } return _NO_SAVE_UI_REASON_USING_CREDMANContent; } }
+            private static int _NO_SAVE_UI_REASON_USING_CREDMANContent = default;
+            private static bool _NO_SAVE_UI_REASON_USING_CREDMANReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#NO_SAVE_UI_REASON_WITH_DELAY_SAVE_FLAG"/>
             /// </summary>
             public static int NO_SAVE_UI_REASON_WITH_DELAY_SAVE_FLAG { get { if (!_NO_SAVE_UI_REASON_WITH_DELAY_SAVE_FLAGReady) { _NO_SAVE_UI_REASON_WITH_DELAY_SAVE_FLAGContent = SGetField<int>(LocalBridgeClazz, "NO_SAVE_UI_REASON_WITH_DELAY_SAVE_FLAG"); _NO_SAVE_UI_REASON_WITH_DELAY_SAVE_FLAGReady = true; } return _NO_SAVE_UI_REASON_WITH_DELAY_SAVE_FLAGContent; } }
@@ -268,6 +282,12 @@ namespace Android.Service.Autofill
             private static int _TYPE_VIEW_REQUESTED_AUTOFILLContent = default;
             private static bool _TYPE_VIEW_REQUESTED_AUTOFILLReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#UI_TYPE_CREDENTIAL_MANAGER"/>
+            /// </summary>
+            public static int UI_TYPE_CREDENTIAL_MANAGER { get { if (!_UI_TYPE_CREDENTIAL_MANAGERReady) { _UI_TYPE_CREDENTIAL_MANAGERContent = SGetField<int>(LocalBridgeClazz, "UI_TYPE_CREDENTIAL_MANAGER"); _UI_TYPE_CREDENTIAL_MANAGERReady = true; } return _UI_TYPE_CREDENTIAL_MANAGERContent; } }
+            private static int _UI_TYPE_CREDENTIAL_MANAGERContent = default;
+            private static bool _UI_TYPE_CREDENTIAL_MANAGERReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#UI_TYPE_DIALOG"/>
             /// </summary>
             public static int UI_TYPE_DIALOG { get { if (!_UI_TYPE_DIALOGReady) { _UI_TYPE_DIALOGContent = SGetField<int>(LocalBridgeClazz, "UI_TYPE_DIALOG"); _UI_TYPE_DIALOGReady = true; } return _UI_TYPE_DIALOGContent; } }
@@ -306,6 +326,14 @@ namespace Android.Service.Autofill
             public Android.Os.Bundle GetClientState()
             {
                 return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getFocusedId()"/>
+            /// </summary>
+            /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
+            public Android.View.Autofill.AutofillId GetFocusedId()
+            {
+                return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getFocusedId", "()Landroid/view/autofill/AutofillId;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getNoSaveUiReason()"/>
@@ -378,6 +406,14 @@ namespace Android.Service.Autofill
             public Java.Util.Set<Java.Lang.String> GetSelectedDatasetIds()
             {
                 return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSelectedDatasetIds", "()Ljava/util/Set;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.Event.html#getShownDatasetIds()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Lang.String> GetShownDatasetIds()
+            {
+                return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getShownDatasetIds", "()Ljava/util/Set;");
             }
         
             #endregion

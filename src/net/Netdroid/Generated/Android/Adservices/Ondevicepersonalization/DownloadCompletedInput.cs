@@ -70,6 +70,14 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class DownloadCompletedInput
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/DownloadCompletedInput.html#%3Cinit%3E(android.adservices.ondevicepersonalization.KeyValueStore)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Ondevicepersonalization.KeyValueStore"/></param>
+        public DownloadCompletedInput(Android.Adservices.Ondevicepersonalization.KeyValueStore arg0)
+            : base(arg0)
+        {
+        }
     
         #endregion
     

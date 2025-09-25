@@ -211,6 +211,12 @@ namespace Android.Media
         private static int _TYPE_LINE_DIGITALContent = default;
         private static bool _TYPE_LINE_DIGITALReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#TYPE_MULTICHANNEL_GROUP"/>
+        /// </summary>
+        public static int TYPE_MULTICHANNEL_GROUP { get { if (!_TYPE_MULTICHANNEL_GROUPReady) { _TYPE_MULTICHANNEL_GROUPContent = SGetField<int>(LocalBridgeClazz, "TYPE_MULTICHANNEL_GROUP"); _TYPE_MULTICHANNEL_GROUPReady = true; } return _TYPE_MULTICHANNEL_GROUPContent; } }
+        private static int _TYPE_MULTICHANNEL_GROUPContent = default;
+        private static bool _TYPE_MULTICHANNEL_GROUPReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#TYPE_REMOTE_SUBMIX"/>
         /// </summary>
         public static int TYPE_REMOTE_SUBMIX { get { if (!_TYPE_REMOTE_SUBMIXReady) { _TYPE_REMOTE_SUBMIXContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_SUBMIX"); _TYPE_REMOTE_SUBMIXReady = true; } return _TYPE_REMOTE_SUBMIXContent; } }
@@ -295,6 +301,14 @@ namespace Android.Media
         public int GetId()
         {
             return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getSpeakerLayoutChannelMask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpeakerLayoutChannelMask()
+        {
+            return IExecuteWithSignature<int>("getSpeakerLayoutChannelMask", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getType()"/>

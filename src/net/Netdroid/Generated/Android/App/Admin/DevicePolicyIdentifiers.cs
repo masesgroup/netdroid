@@ -85,6 +85,12 @@ namespace Android.App.Admin
         private static Java.Lang.String _ACCOUNT_MANAGEMENT_DISABLED_POLICYContent = default;
         private static bool _ACCOUNT_MANAGEMENT_DISABLED_POLICYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#APP_FUNCTIONS_POLICY"/>
+        /// </summary>
+        public static Java.Lang.String APP_FUNCTIONS_POLICY { get { if (!_APP_FUNCTIONS_POLICYReady) { _APP_FUNCTIONS_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "APP_FUNCTIONS_POLICY"); _APP_FUNCTIONS_POLICYReady = true; } return _APP_FUNCTIONS_POLICYContent; } }
+        private static Java.Lang.String _APP_FUNCTIONS_POLICYContent = default;
+        private static bool _APP_FUNCTIONS_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#APPLICATION_HIDDEN_POLICY"/>
         /// </summary>
         public static Java.Lang.String APPLICATION_HIDDEN_POLICY { get { if (!_APPLICATION_HIDDEN_POLICYReady) { _APPLICATION_HIDDEN_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "APPLICATION_HIDDEN_POLICY"); _APPLICATION_HIDDEN_POLICYReady = true; } return _APPLICATION_HIDDEN_POLICYContent; } }

@@ -91,7 +91,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Text.Style.CharacterStyle"/></returns>
         public static Android.Text.Style.CharacterStyle Wrap(Android.Text.Style.CharacterStyle arg0)
         {
-            return SExecuteWithSignature<Android.Text.Style.CharacterStyle>(LocalBridgeClazz, "wrap", "(Landroid/text/style/CharacterStyle;)Landroid/text/style/CharacterStyle;", arg0);
+            return SExecute<Android.Text.Style.CharacterStyle>(LocalBridgeClazz, "wrap", arg0);
         }
     
         #endregion
@@ -103,7 +103,7 @@ namespace Android.Text.Style
         /// <param name="arg0"><see cref="Android.Text.TextPaint"/></param>
         public void UpdateDrawState(Android.Text.TextPaint arg0)
         {
-            IExecuteWithSignature("updateDrawState", "(Landroid/text/TextPaint;)V", arg0);
+            IExecute("updateDrawState", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/CharacterStyle.html#getUnderlying()"/>
@@ -111,7 +111,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Text.Style.CharacterStyle"/></returns>
         public Android.Text.Style.CharacterStyle GetUnderlying()
         {
-            return IExecuteWithSignature<Android.Text.Style.CharacterStyle>("getUnderlying", "()Landroid/text/style/CharacterStyle;");
+            return IExecute<Android.Text.Style.CharacterStyle>("getUnderlying");
         }
     
         #endregion

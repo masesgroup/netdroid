@@ -149,7 +149,7 @@ namespace Android.Content.Res
     #endregion
 
     #region AssetFileDescriptor implementation
-    public partial class AssetFileDescriptor : Android.Os.IParcelable, Java.Io.ICloseable
+    public partial class AssetFileDescriptor : Java.Io.ICloseable, Android.Os.IParcelable
     {
         #region Constructors
         /// <summary>
@@ -178,13 +178,13 @@ namespace Android.Content.Res
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Content.Res.AssetFileDescriptor"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Content.Res.AssetFileDescriptor t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Content.Res.AssetFileDescriptor"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Android.Content.Res.AssetFileDescriptor t) => t.Cast<Java.Io.Closeable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Content.Res.AssetFileDescriptor"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Content.Res.AssetFileDescriptor t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     

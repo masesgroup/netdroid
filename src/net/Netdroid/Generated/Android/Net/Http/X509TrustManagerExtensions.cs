@@ -115,6 +115,20 @@ namespace Android.Net.Http
             return IExecuteWithSignature<bool>("isUserAddedCertificate", "(Ljava/security/cert/X509Certificate;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/X509TrustManagerExtensions.html#checkServerTrusted(java.security.cert.X509Certificate[],byte[],byte[],java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        public Java.Util.List<Java.Security.Cert.X509Certificate> CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, byte[] arg1, byte[] arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.X509Certificate>>("checkServerTrusted", "([Ljava/security/cert/X509Certificate;[B[BLjava/lang/String;Ljava/lang/String;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/X509TrustManagerExtensions.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>

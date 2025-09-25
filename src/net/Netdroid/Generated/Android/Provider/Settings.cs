@@ -384,6 +384,12 @@ namespace Android.Provider
         private static Java.Lang.String _ACTION_APP_NOTIFICATION_BUBBLE_SETTINGSContent = default;
         private static bool _ACTION_APP_NOTIFICATION_BUBBLE_SETTINGSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_APP_NOTIFICATION_PROMOTION_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_APP_NOTIFICATION_PROMOTION_SETTINGS { get { if (!_ACTION_APP_NOTIFICATION_PROMOTION_SETTINGSReady) { _ACTION_APP_NOTIFICATION_PROMOTION_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_APP_NOTIFICATION_PROMOTION_SETTINGS"); _ACTION_APP_NOTIFICATION_PROMOTION_SETTINGSReady = true; } return _ACTION_APP_NOTIFICATION_PROMOTION_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_APP_NOTIFICATION_PROMOTION_SETTINGSContent = default;
+        private static bool _ACTION_APP_NOTIFICATION_PROMOTION_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_APP_NOTIFICATION_SETTINGS"/>
         /// </summary>
         public static Java.Lang.String ACTION_APP_NOTIFICATION_SETTINGS { get { if (!_ACTION_APP_NOTIFICATION_SETTINGSReady) { _ACTION_APP_NOTIFICATION_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_APP_NOTIFICATION_SETTINGS"); _ACTION_APP_NOTIFICATION_SETTINGSReady = true; } return _ACTION_APP_NOTIFICATION_SETTINGSContent; } }
@@ -529,6 +535,12 @@ namespace Android.Provider
         private static Java.Lang.String _ACTION_FINGERPRINT_ENROLLContent = default;
         private static bool _ACTION_FINGERPRINT_ENROLLReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_FIRST_DAY_OF_WEEK_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_FIRST_DAY_OF_WEEK_SETTINGS { get { if (!_ACTION_FIRST_DAY_OF_WEEK_SETTINGSReady) { _ACTION_FIRST_DAY_OF_WEEK_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_FIRST_DAY_OF_WEEK_SETTINGS"); _ACTION_FIRST_DAY_OF_WEEK_SETTINGSReady = true; } return _ACTION_FIRST_DAY_OF_WEEK_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_FIRST_DAY_OF_WEEK_SETTINGSContent = default;
+        private static bool _ACTION_FIRST_DAY_OF_WEEK_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_HARD_KEYBOARD_SETTINGS"/>
         /// </summary>
         public static Java.Lang.String ACTION_HARD_KEYBOARD_SETTINGS { get { if (!_ACTION_HARD_KEYBOARD_SETTINGSReady) { _ACTION_HARD_KEYBOARD_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_HARD_KEYBOARD_SETTINGS"); _ACTION_HARD_KEYBOARD_SETTINGSReady = true; } return _ACTION_HARD_KEYBOARD_SETTINGSContent; } }
@@ -649,6 +661,12 @@ namespace Android.Provider
         private static Java.Lang.String _ACTION_MANAGE_WRITE_SETTINGSContent = default;
         private static bool _ACTION_MANAGE_WRITE_SETTINGSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_MEASUREMENT_SYSTEM_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_MEASUREMENT_SYSTEM_SETTINGS { get { if (!_ACTION_MEASUREMENT_SYSTEM_SETTINGSReady) { _ACTION_MEASUREMENT_SYSTEM_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_MEASUREMENT_SYSTEM_SETTINGS"); _ACTION_MEASUREMENT_SYSTEM_SETTINGSReady = true; } return _ACTION_MEASUREMENT_SYSTEM_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_MEASUREMENT_SYSTEM_SETTINGSContent = default;
+        private static bool _ACTION_MEASUREMENT_SYSTEM_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_MEMORY_CARD_SETTINGS"/>
         /// </summary>
         public static Java.Lang.String ACTION_MEMORY_CARD_SETTINGS { get { if (!_ACTION_MEMORY_CARD_SETTINGSReady) { _ACTION_MEMORY_CARD_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_MEMORY_CARD_SETTINGS"); _ACTION_MEMORY_CARD_SETTINGSReady = true; } return _ACTION_MEMORY_CARD_SETTINGSContent; } }
@@ -738,6 +756,12 @@ namespace Android.Provider
         public static Java.Lang.String ACTION_QUICK_LAUNCH_SETTINGS { get { if (!_ACTION_QUICK_LAUNCH_SETTINGSReady) { _ACTION_QUICK_LAUNCH_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_QUICK_LAUNCH_SETTINGS"); _ACTION_QUICK_LAUNCH_SETTINGSReady = true; } return _ACTION_QUICK_LAUNCH_SETTINGSContent; } }
         private static Java.Lang.String _ACTION_QUICK_LAUNCH_SETTINGSContent = default;
         private static bool _ACTION_QUICK_LAUNCH_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_REGION_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_REGION_SETTINGS { get { if (!_ACTION_REGION_SETTINGSReady) { _ACTION_REGION_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_REGION_SETTINGS"); _ACTION_REGION_SETTINGSReady = true; } return _ACTION_REGION_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_REGION_SETTINGSContent = default;
+        private static bool _ACTION_REGION_SETTINGSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_REGIONAL_PREFERENCES_SETTINGS"/>
         /// </summary>
@@ -835,6 +859,12 @@ namespace Android.Provider
         public static Java.Lang.String ACTION_SYNC_SETTINGS { get { if (!_ACTION_SYNC_SETTINGSReady) { _ACTION_SYNC_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SYNC_SETTINGS"); _ACTION_SYNC_SETTINGSReady = true; } return _ACTION_SYNC_SETTINGSContent; } }
         private static Java.Lang.String _ACTION_SYNC_SETTINGSContent = default;
         private static bool _ACTION_SYNC_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_TEMPERATURE_UNIT_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_TEMPERATURE_UNIT_SETTINGS { get { if (!_ACTION_TEMPERATURE_UNIT_SETTINGSReady) { _ACTION_TEMPERATURE_UNIT_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_TEMPERATURE_UNIT_SETTINGS"); _ACTION_TEMPERATURE_UNIT_SETTINGSReady = true; } return _ACTION_TEMPERATURE_UNIT_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_TEMPERATURE_UNIT_SETTINGSContent = default;
+        private static bool _ACTION_TEMPERATURE_UNIT_SETTINGSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_USAGE_ACCESS_SETTINGS"/>
         /// </summary>

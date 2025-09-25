@@ -67,7 +67,7 @@ namespace Android.Widget
     #endregion
 
     #region HeaderViewListAdapter implementation
-    public partial class HeaderViewListAdapter : Android.Widget.IWrapperListAdapter, Android.Widget.IFilterable
+    public partial class HeaderViewListAdapter : Android.Widget.IFilterable, Android.Widget.IWrapperListAdapter
     {
         #region Constructors
         /// <summary>
@@ -85,13 +85,13 @@ namespace Android.Widget
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Widget.HeaderViewListAdapter"/> to <see cref="Android.Widget.WrapperListAdapter"/>
-        /// </summary>
-        public static implicit operator Android.Widget.WrapperListAdapter(Android.Widget.HeaderViewListAdapter t) => t.Cast<Android.Widget.WrapperListAdapter>();
-        /// <summary>
         /// Converter from <see cref="Android.Widget.HeaderViewListAdapter"/> to <see cref="Android.Widget.Filterable"/>
         /// </summary>
         public static implicit operator Android.Widget.Filterable(Android.Widget.HeaderViewListAdapter t) => t.Cast<Android.Widget.Filterable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Widget.HeaderViewListAdapter"/> to <see cref="Android.Widget.WrapperListAdapter"/>
+        /// </summary>
+        public static implicit operator Android.Widget.WrapperListAdapter(Android.Widget.HeaderViewListAdapter t) => t.Cast<Android.Widget.WrapperListAdapter>();
     
         #endregion
     

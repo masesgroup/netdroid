@@ -70,6 +70,17 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class TrainingExamplesInput
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingExamplesInput.html#%3Cinit%3E(java.lang.String,java.lang.String,byte[],java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        public TrainingExamplesInput(Java.Lang.String arg0, Java.Lang.String arg1, byte[] arg2, Java.Lang.String arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
     
         #endregion
     
@@ -93,6 +104,14 @@ namespace Android.Adservices.Ondevicepersonalization
         public byte[] GetResumptionToken()
         {
             return IExecuteWithSignatureArray<byte>("getResumptionToken", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingExamplesInput.html#getCollectionName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCollectionName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCollectionName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingExamplesInput.html#getPopulationName()"/>

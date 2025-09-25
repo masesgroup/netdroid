@@ -107,6 +107,49 @@ namespace Android.Os
         }
         #endregion
 
+        #region FrozenStateChangeCallback declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/IBinder.FrozenStateChangeCallback.html"/>
+        /// </summary>
+        public partial class FrozenStateChangeCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FrozenStateChangeCallback>
+        {
+            const string _bridgeClassName = "android.os.IBinder$FrozenStateChangeCallback";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [global::System.Obsolete("FrozenStateChangeCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public FrozenStateChangeCallback() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public FrozenStateChangeCallback(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [global::System.Obsolete("FrozenStateChangeCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public FrozenStateChangeCallback(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
     
     }
     #endregion
@@ -292,6 +335,25 @@ namespace Android.Os
         {
             IExecuteWithSignature("linkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)V", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#removeFrozenStateChangeCallback(android.os.IBinder.FrozenStateChangeCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.IBinder.FrozenStateChangeCallback"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RemoveFrozenStateChangeCallback(Android.Os.IBinder.FrozenStateChangeCallback arg0)
+        {
+            return IExecuteWithSignature<bool>("removeFrozenStateChangeCallback", "(Landroid/os/IBinder$FrozenStateChangeCallback;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#addFrozenStateChangeCallback(java.util.concurrent.Executor,android.os.IBinder.FrozenStateChangeCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Os.IBinder.FrozenStateChangeCallback"/></param>
+        /// <exception cref="Android.Os.RemoteException"/>
+        public void AddFrozenStateChangeCallback(Java.Util.Concurrent.Executor arg0, Android.Os.IBinder.FrozenStateChangeCallback arg1)
+        {
+            IExecuteWithSignature("addFrozenStateChangeCallback", "(Ljava/util/concurrent/Executor;Landroid/os/IBinder$FrozenStateChangeCallback;)V", arg0, arg1);
+        }
     
         #endregion
     
@@ -330,6 +392,58 @@ namespace Android.Os
             public void BinderDied(Android.Os.IBinder arg0)
             {
                 IExecuteWithSignature("binderDied", "(Landroid/os/IBinder;)V", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region FrozenStateChangeCallback implementation
+        public partial class FrozenStateChangeCallback
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/IBinder.FrozenStateChangeCallback.html#STATE_FROZEN"/>
+            /// </summary>
+            public static int STATE_FROZEN { get { if (!_STATE_FROZENReady) { _STATE_FROZENContent = SGetField<int>(LocalBridgeClazz, "STATE_FROZEN"); _STATE_FROZENReady = true; } return _STATE_FROZENContent; } }
+            private static int _STATE_FROZENContent = default;
+            private static bool _STATE_FROZENReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/IBinder.FrozenStateChangeCallback.html#STATE_UNFROZEN"/>
+            /// </summary>
+            public static int STATE_UNFROZEN { get { if (!_STATE_UNFROZENReady) { _STATE_UNFROZENContent = SGetField<int>(LocalBridgeClazz, "STATE_UNFROZEN"); _STATE_UNFROZENReady = true; } return _STATE_UNFROZENContent; } }
+            private static int _STATE_UNFROZENContent = default;
+            private static bool _STATE_UNFROZENReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/IBinder.FrozenStateChangeCallback.html#onFrozenStateChanged(android.os.IBinder,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public void OnFrozenStateChanged(Android.Os.IBinder arg0, int arg1)
+            {
+                IExecuteWithSignature("onFrozenStateChanged", "(Landroid/os/IBinder;I)V", arg0, arg1);
             }
         
             #endregion

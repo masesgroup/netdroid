@@ -211,6 +211,36 @@ namespace Android.Hardware.Display
         public static Java.Lang.String DISPLAY_CATEGORY_PRESENTATION { get { if (!_DISPLAY_CATEGORY_PRESENTATIONReady) { _DISPLAY_CATEGORY_PRESENTATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISPLAY_CATEGORY_PRESENTATION"); _DISPLAY_CATEGORY_PRESENTATIONReady = true; } return _DISPLAY_CATEGORY_PRESENTATIONContent; } }
         private static Java.Lang.String _DISPLAY_CATEGORY_PRESENTATIONContent = default;
         private static bool _DISPLAY_CATEGORY_PRESENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#EVENT_TYPE_DISPLAY_ADDED"/>
+        /// </summary>
+        public static long EVENT_TYPE_DISPLAY_ADDED { get { if (!_EVENT_TYPE_DISPLAY_ADDEDReady) { _EVENT_TYPE_DISPLAY_ADDEDContent = SGetField<long>(LocalBridgeClazz, "EVENT_TYPE_DISPLAY_ADDED"); _EVENT_TYPE_DISPLAY_ADDEDReady = true; } return _EVENT_TYPE_DISPLAY_ADDEDContent; } }
+        private static long _EVENT_TYPE_DISPLAY_ADDEDContent = default;
+        private static bool _EVENT_TYPE_DISPLAY_ADDEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#EVENT_TYPE_DISPLAY_CHANGED"/>
+        /// </summary>
+        public static long EVENT_TYPE_DISPLAY_CHANGED { get { if (!_EVENT_TYPE_DISPLAY_CHANGEDReady) { _EVENT_TYPE_DISPLAY_CHANGEDContent = SGetField<long>(LocalBridgeClazz, "EVENT_TYPE_DISPLAY_CHANGED"); _EVENT_TYPE_DISPLAY_CHANGEDReady = true; } return _EVENT_TYPE_DISPLAY_CHANGEDContent; } }
+        private static long _EVENT_TYPE_DISPLAY_CHANGEDContent = default;
+        private static bool _EVENT_TYPE_DISPLAY_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#EVENT_TYPE_DISPLAY_REFRESH_RATE"/>
+        /// </summary>
+        public static long EVENT_TYPE_DISPLAY_REFRESH_RATE { get { if (!_EVENT_TYPE_DISPLAY_REFRESH_RATEReady) { _EVENT_TYPE_DISPLAY_REFRESH_RATEContent = SGetField<long>(LocalBridgeClazz, "EVENT_TYPE_DISPLAY_REFRESH_RATE"); _EVENT_TYPE_DISPLAY_REFRESH_RATEReady = true; } return _EVENT_TYPE_DISPLAY_REFRESH_RATEContent; } }
+        private static long _EVENT_TYPE_DISPLAY_REFRESH_RATEContent = default;
+        private static bool _EVENT_TYPE_DISPLAY_REFRESH_RATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#EVENT_TYPE_DISPLAY_REMOVED"/>
+        /// </summary>
+        public static long EVENT_TYPE_DISPLAY_REMOVED { get { if (!_EVENT_TYPE_DISPLAY_REMOVEDReady) { _EVENT_TYPE_DISPLAY_REMOVEDContent = SGetField<long>(LocalBridgeClazz, "EVENT_TYPE_DISPLAY_REMOVED"); _EVENT_TYPE_DISPLAY_REMOVEDReady = true; } return _EVENT_TYPE_DISPLAY_REMOVEDContent; } }
+        private static long _EVENT_TYPE_DISPLAY_REMOVEDContent = default;
+        private static bool _EVENT_TYPE_DISPLAY_REMOVEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#EVENT_TYPE_DISPLAY_STATE"/>
+        /// </summary>
+        public static long EVENT_TYPE_DISPLAY_STATE { get { if (!_EVENT_TYPE_DISPLAY_STATEReady) { _EVENT_TYPE_DISPLAY_STATEContent = SGetField<long>(LocalBridgeClazz, "EVENT_TYPE_DISPLAY_STATE"); _EVENT_TYPE_DISPLAY_STATEReady = true; } return _EVENT_TYPE_DISPLAY_STATEContent; } }
+        private static long _EVENT_TYPE_DISPLAY_STATEContent = default;
+        private static bool _EVENT_TYPE_DISPLAY_STATEReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -319,6 +349,16 @@ namespace Android.Hardware.Display
         public void RegisterDisplayListener(Android.Hardware.Display.DisplayManager.DisplayListener arg0, Android.Os.Handler arg1)
         {
             IExecuteWithSignature("registerDisplayListener", "(Landroid/hardware/display/DisplayManager$DisplayListener;Landroid/os/Handler;)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#registerDisplayListener(java.util.concurrent.Executor,long,android.hardware.display.DisplayManager.DisplayListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Android.Hardware.Display.DisplayManager.DisplayListener"/></param>
+        public void RegisterDisplayListener(Java.Util.Concurrent.Executor arg0, long arg1, Android.Hardware.Display.DisplayManager.DisplayListener arg2)
+        {
+            IExecuteWithSignature("registerDisplayListener", "(Ljava/util/concurrent/Executor;JLandroid/hardware/display/DisplayManager$DisplayListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#unregisterDisplayListener(android.hardware.display.DisplayManager.DisplayListener)"/>

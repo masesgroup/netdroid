@@ -198,6 +198,16 @@ namespace Android.View
             return IExecuteWithSignature<bool>("applyTransactionOnDraw", "(Landroid/view/SurfaceControl$Transaction;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#registerOnJankDataListener(java.util.concurrent.Executor,android.view.SurfaceControl.OnJankDataListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.View.SurfaceControl.OnJankDataListener"/></param>
+        /// <returns><see cref="Android.View.SurfaceControl.OnJankDataListenerRegistration"/></returns>
+        public Android.View.SurfaceControl.OnJankDataListenerRegistration RegisterOnJankDataListener(Java.Util.Concurrent.Executor arg0, Android.View.SurfaceControl.OnJankDataListener arg1)
+        {
+            return IExecuteWithSignature<Android.View.SurfaceControl.OnJankDataListenerRegistration>("registerOnJankDataListener", "(Ljava/util/concurrent/Executor;Landroid/view/SurfaceControl$OnJankDataListener;)Landroid/view/SurfaceControl$OnJankDataListenerRegistration;", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#getInputTransferToken()"/>
         /// </summary>
         /// <returns><see cref="Android.Window.InputTransferToken"/></returns>

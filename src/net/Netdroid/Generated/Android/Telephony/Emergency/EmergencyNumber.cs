@@ -67,7 +67,7 @@ namespace Android.Telephony.Emergency
     #endregion
 
     #region EmergencyNumber implementation
-    public partial class EmergencyNumber : Android.Os.IParcelable, Java.Lang.IComparable<Android.Telephony.Emergency.EmergencyNumber>
+    public partial class EmergencyNumber : Java.Lang.IComparable<Android.Telephony.Emergency.EmergencyNumber>, Android.Os.IParcelable
     {
         #region Constructors
     
@@ -75,13 +75,13 @@ namespace Android.Telephony.Emergency
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Telephony.Emergency.EmergencyNumber"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Telephony.Emergency.EmergencyNumber t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Telephony.Emergency.EmergencyNumber"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Telephony.Emergency.EmergencyNumber t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Telephony.Emergency.EmergencyNumber"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Telephony.Emergency.EmergencyNumber t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     

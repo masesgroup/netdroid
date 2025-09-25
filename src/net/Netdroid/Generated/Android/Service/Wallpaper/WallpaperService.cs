@@ -149,6 +149,15 @@ namespace Android.Service.Wallpaper
         {
             return IExecuteWithSignature<Android.Service.Wallpaper.WallpaperService.Engine>("onCreateEngine", "()Landroid/service/wallpaper/WallpaperService$Engine;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.html#onCreateEngine(android.app.wallpaper.WallpaperDescription)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Wallpaper.WallpaperDescription"/></param>
+        /// <returns><see cref="Android.Service.Wallpaper.WallpaperService.Engine"/></returns>
+        public Android.Service.Wallpaper.WallpaperService.Engine OnCreateEngine(Android.App.Wallpaper.WallpaperDescription arg0)
+        {
+            return IExecuteWithSignature<Android.Service.Wallpaper.WallpaperService.Engine>("onCreateEngine", "(Landroid/app/wallpaper/WallpaperDescription;)Landroid/service/wallpaper/WallpaperService$Engine;", arg0);
+        }
     
         #endregion
     
@@ -181,6 +190,15 @@ namespace Android.Service.Wallpaper
             #endregion
         
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onApplyWallpaper(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.App.Wallpaper.WallpaperDescription"/></returns>
+            public Android.App.Wallpaper.WallpaperDescription OnApplyWallpaper(int arg0)
+            {
+                return IExecuteWithSignature<Android.App.Wallpaper.WallpaperDescription>("onApplyWallpaper", "(I)Landroid/app/wallpaper/WallpaperDescription;", arg0);
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onComputeColors()"/>
             /// </summary>

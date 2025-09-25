@@ -459,6 +459,12 @@ namespace Android.Nfc
         private static Java.Lang.String _ACTION_ADAPTER_STATE_CHANGEDContent = default;
         private static bool _ACTION_ADAPTER_STATE_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_CHANGE_TAG_INTENT_PREFERENCE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_CHANGE_TAG_INTENT_PREFERENCE { get { if (!_ACTION_CHANGE_TAG_INTENT_PREFERENCEReady) { _ACTION_CHANGE_TAG_INTENT_PREFERENCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CHANGE_TAG_INTENT_PREFERENCE"); _ACTION_CHANGE_TAG_INTENT_PREFERENCEReady = true; } return _ACTION_CHANGE_TAG_INTENT_PREFERENCEContent; } }
+        private static Java.Lang.String _ACTION_CHANGE_TAG_INTENT_PREFERENCEContent = default;
+        private static bool _ACTION_CHANGE_TAG_INTENT_PREFERENCEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_NDEF_DISCOVERED"/>
         /// </summary>
         public static Java.Lang.String ACTION_NDEF_DISCOVERED { get { if (!_ACTION_NDEF_DISCOVEREDReady) { _ACTION_NDEF_DISCOVEREDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_NDEF_DISCOVERED"); _ACTION_NDEF_DISCOVEREDReady = true; } return _ACTION_NDEF_DISCOVEREDContent; } }
@@ -568,6 +574,22 @@ namespace Android.Nfc
             return IExecuteWithSignature<Android.Nfc.NfcAntennaInfo>("getNfcAntennaInfo", "()Landroid/nfc/NfcAntennaInfo;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#disable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool Disable()
+        {
+            return IExecuteWithSignature<bool>("disable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#enable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool Enable()
+        {
+            return IExecuteWithSignature<bool>("enable", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ignore(android.nfc.Tag,int,android.nfc.NfcAdapter.OnTagRemovedListener,android.os.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Nfc.Tag"/></param>
@@ -634,6 +656,22 @@ namespace Android.Nfc
         public bool IsSecureNfcSupported()
         {
             return IExecuteWithSignature<bool>("isSecureNfcSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isTagIntentAllowed()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTagIntentAllowed()
+        {
+            return IExecuteWithSignature<bool>("isTagIntentAllowed", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isTagIntentAppPreferenceSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTagIntentAppPreferenceSupported()
+        {
+            return IExecuteWithSignature<bool>("isTagIntentAppPreferenceSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#setObserveModeEnabled(boolean)"/>

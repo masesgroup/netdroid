@@ -84,6 +84,12 @@ namespace Android.App.Assist
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#EXTRA_APP_FUNCTION_DATA"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_APP_FUNCTION_DATA { get { if (!_EXTRA_APP_FUNCTION_DATAReady) { _EXTRA_APP_FUNCTION_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_APP_FUNCTION_DATA"); _EXTRA_APP_FUNCTION_DATAReady = true; } return _EXTRA_APP_FUNCTION_DATAContent; } }
+        private static Java.Lang.String _EXTRA_APP_FUNCTION_DATAContent = default;
+        private static bool _EXTRA_APP_FUNCTION_DATAReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -107,6 +113,14 @@ namespace Android.App.Assist
         public Android.Content.Intent GetIntent()
         {
             return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getSessionTransferUri()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetSessionTransferUri()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("getSessionTransferUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getWebUri()"/>
@@ -171,6 +185,14 @@ namespace Android.App.Assist
         public void SetIntent(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("setIntent", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setSessionTransferUri(android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        public void SetSessionTransferUri(Android.Net.Uri arg0)
+        {
+            IExecuteWithSignature("setSessionTransferUri", "(Landroid/net/Uri;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setStructuredData(java.lang.String)"/>

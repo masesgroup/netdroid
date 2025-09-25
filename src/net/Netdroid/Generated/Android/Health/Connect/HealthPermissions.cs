@@ -85,6 +85,12 @@ namespace Android.Health.Connect
         private static Java.Lang.String _READ_ACTIVE_CALORIES_BURNEDContent = default;
         private static bool _READ_ACTIVE_CALORIES_BURNEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_ACTIVITY_INTENSITY"/>
+        /// </summary>
+        public static Java.Lang.String READ_ACTIVITY_INTENSITY { get { if (!_READ_ACTIVITY_INTENSITYReady) { _READ_ACTIVITY_INTENSITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_ACTIVITY_INTENSITY"); _READ_ACTIVITY_INTENSITYReady = true; } return _READ_ACTIVITY_INTENSITYContent; } }
+        private static Java.Lang.String _READ_ACTIVITY_INTENSITYContent = default;
+        private static bool _READ_ACTIVITY_INTENSITYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_BASAL_BODY_TEMPERATURE"/>
         /// </summary>
         public static Java.Lang.String READ_BASAL_BODY_TEMPERATURE { get { if (!_READ_BASAL_BODY_TEMPERATUREReady) { _READ_BASAL_BODY_TEMPERATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_BASAL_BODY_TEMPERATURE"); _READ_BASAL_BODY_TEMPERATUREReady = true; } return _READ_BASAL_BODY_TEMPERATUREContent; } }
@@ -217,11 +223,89 @@ namespace Android.Health.Connect
         private static Java.Lang.String _READ_LEAN_BODY_MASSContent = default;
         private static bool _READ_LEAN_BODY_MASSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_ALLERGIES_INTOLERANCES"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_ALLERGIES_INTOLERANCES { get { if (!_READ_MEDICAL_DATA_ALLERGIES_INTOLERANCESReady) { _READ_MEDICAL_DATA_ALLERGIES_INTOLERANCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_ALLERGIES_INTOLERANCES"); _READ_MEDICAL_DATA_ALLERGIES_INTOLERANCESReady = true; } return _READ_MEDICAL_DATA_ALLERGIES_INTOLERANCESContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_ALLERGIES_INTOLERANCESContent = default;
+        private static bool _READ_MEDICAL_DATA_ALLERGIES_INTOLERANCESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_CONDITIONS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_CONDITIONS { get { if (!_READ_MEDICAL_DATA_CONDITIONSReady) { _READ_MEDICAL_DATA_CONDITIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_CONDITIONS"); _READ_MEDICAL_DATA_CONDITIONSReady = true; } return _READ_MEDICAL_DATA_CONDITIONSContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_CONDITIONSContent = default;
+        private static bool _READ_MEDICAL_DATA_CONDITIONSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_LABORATORY_RESULTS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_LABORATORY_RESULTS { get { if (!_READ_MEDICAL_DATA_LABORATORY_RESULTSReady) { _READ_MEDICAL_DATA_LABORATORY_RESULTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_LABORATORY_RESULTS"); _READ_MEDICAL_DATA_LABORATORY_RESULTSReady = true; } return _READ_MEDICAL_DATA_LABORATORY_RESULTSContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_LABORATORY_RESULTSContent = default;
+        private static bool _READ_MEDICAL_DATA_LABORATORY_RESULTSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_MEDICATIONS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_MEDICATIONS { get { if (!_READ_MEDICAL_DATA_MEDICATIONSReady) { _READ_MEDICAL_DATA_MEDICATIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_MEDICATIONS"); _READ_MEDICAL_DATA_MEDICATIONSReady = true; } return _READ_MEDICAL_DATA_MEDICATIONSContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_MEDICATIONSContent = default;
+        private static bool _READ_MEDICAL_DATA_MEDICATIONSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_PERSONAL_DETAILS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_PERSONAL_DETAILS { get { if (!_READ_MEDICAL_DATA_PERSONAL_DETAILSReady) { _READ_MEDICAL_DATA_PERSONAL_DETAILSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_PERSONAL_DETAILS"); _READ_MEDICAL_DATA_PERSONAL_DETAILSReady = true; } return _READ_MEDICAL_DATA_PERSONAL_DETAILSContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_PERSONAL_DETAILSContent = default;
+        private static bool _READ_MEDICAL_DATA_PERSONAL_DETAILSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_PRACTITIONER_DETAILS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_PRACTITIONER_DETAILS { get { if (!_READ_MEDICAL_DATA_PRACTITIONER_DETAILSReady) { _READ_MEDICAL_DATA_PRACTITIONER_DETAILSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_PRACTITIONER_DETAILS"); _READ_MEDICAL_DATA_PRACTITIONER_DETAILSReady = true; } return _READ_MEDICAL_DATA_PRACTITIONER_DETAILSContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_PRACTITIONER_DETAILSContent = default;
+        private static bool _READ_MEDICAL_DATA_PRACTITIONER_DETAILSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_PREGNANCY"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_PREGNANCY { get { if (!_READ_MEDICAL_DATA_PREGNANCYReady) { _READ_MEDICAL_DATA_PREGNANCYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_PREGNANCY"); _READ_MEDICAL_DATA_PREGNANCYReady = true; } return _READ_MEDICAL_DATA_PREGNANCYContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_PREGNANCYContent = default;
+        private static bool _READ_MEDICAL_DATA_PREGNANCYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_PROCEDURES"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_PROCEDURES { get { if (!_READ_MEDICAL_DATA_PROCEDURESReady) { _READ_MEDICAL_DATA_PROCEDURESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_PROCEDURES"); _READ_MEDICAL_DATA_PROCEDURESReady = true; } return _READ_MEDICAL_DATA_PROCEDURESContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_PROCEDURESContent = default;
+        private static bool _READ_MEDICAL_DATA_PROCEDURESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_SOCIAL_HISTORY"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_SOCIAL_HISTORY { get { if (!_READ_MEDICAL_DATA_SOCIAL_HISTORYReady) { _READ_MEDICAL_DATA_SOCIAL_HISTORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_SOCIAL_HISTORY"); _READ_MEDICAL_DATA_SOCIAL_HISTORYReady = true; } return _READ_MEDICAL_DATA_SOCIAL_HISTORYContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_SOCIAL_HISTORYContent = default;
+        private static bool _READ_MEDICAL_DATA_SOCIAL_HISTORYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_VACCINES"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_VACCINES { get { if (!_READ_MEDICAL_DATA_VACCINESReady) { _READ_MEDICAL_DATA_VACCINESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_VACCINES"); _READ_MEDICAL_DATA_VACCINESReady = true; } return _READ_MEDICAL_DATA_VACCINESContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_VACCINESContent = default;
+        private static bool _READ_MEDICAL_DATA_VACCINESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_VISITS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_VISITS { get { if (!_READ_MEDICAL_DATA_VISITSReady) { _READ_MEDICAL_DATA_VISITSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_VISITS"); _READ_MEDICAL_DATA_VISITSReady = true; } return _READ_MEDICAL_DATA_VISITSContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_VISITSContent = default;
+        private static bool _READ_MEDICAL_DATA_VISITSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MEDICAL_DATA_VITAL_SIGNS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MEDICAL_DATA_VITAL_SIGNS { get { if (!_READ_MEDICAL_DATA_VITAL_SIGNSReady) { _READ_MEDICAL_DATA_VITAL_SIGNSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MEDICAL_DATA_VITAL_SIGNS"); _READ_MEDICAL_DATA_VITAL_SIGNSReady = true; } return _READ_MEDICAL_DATA_VITAL_SIGNSContent; } }
+        private static Java.Lang.String _READ_MEDICAL_DATA_VITAL_SIGNSContent = default;
+        private static bool _READ_MEDICAL_DATA_VITAL_SIGNSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MENSTRUATION"/>
         /// </summary>
         public static Java.Lang.String READ_MENSTRUATION { get { if (!_READ_MENSTRUATIONReady) { _READ_MENSTRUATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MENSTRUATION"); _READ_MENSTRUATIONReady = true; } return _READ_MENSTRUATIONContent; } }
         private static Java.Lang.String _READ_MENSTRUATIONContent = default;
         private static bool _READ_MENSTRUATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_MINDFULNESS"/>
+        /// </summary>
+        public static Java.Lang.String READ_MINDFULNESS { get { if (!_READ_MINDFULNESSReady) { _READ_MINDFULNESSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_MINDFULNESS"); _READ_MINDFULNESSReady = true; } return _READ_MINDFULNESSContent; } }
+        private static Java.Lang.String _READ_MINDFULNESSContent = default;
+        private static bool _READ_MINDFULNESSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_NUTRITION"/>
         /// </summary>
@@ -324,6 +408,12 @@ namespace Android.Health.Connect
         public static Java.Lang.String WRITE_ACTIVE_CALORIES_BURNED { get { if (!_WRITE_ACTIVE_CALORIES_BURNEDReady) { _WRITE_ACTIVE_CALORIES_BURNEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_ACTIVE_CALORIES_BURNED"); _WRITE_ACTIVE_CALORIES_BURNEDReady = true; } return _WRITE_ACTIVE_CALORIES_BURNEDContent; } }
         private static Java.Lang.String _WRITE_ACTIVE_CALORIES_BURNEDContent = default;
         private static bool _WRITE_ACTIVE_CALORIES_BURNEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_ACTIVITY_INTENSITY"/>
+        /// </summary>
+        public static Java.Lang.String WRITE_ACTIVITY_INTENSITY { get { if (!_WRITE_ACTIVITY_INTENSITYReady) { _WRITE_ACTIVITY_INTENSITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_ACTIVITY_INTENSITY"); _WRITE_ACTIVITY_INTENSITYReady = true; } return _WRITE_ACTIVITY_INTENSITYContent; } }
+        private static Java.Lang.String _WRITE_ACTIVITY_INTENSITYContent = default;
+        private static bool _WRITE_ACTIVITY_INTENSITYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_BASAL_BODY_TEMPERATURE"/>
         /// </summary>
@@ -445,11 +535,23 @@ namespace Android.Health.Connect
         private static Java.Lang.String _WRITE_LEAN_BODY_MASSContent = default;
         private static bool _WRITE_LEAN_BODY_MASSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_MEDICAL_DATA"/>
+        /// </summary>
+        public static Java.Lang.String WRITE_MEDICAL_DATA { get { if (!_WRITE_MEDICAL_DATAReady) { _WRITE_MEDICAL_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_MEDICAL_DATA"); _WRITE_MEDICAL_DATAReady = true; } return _WRITE_MEDICAL_DATAContent; } }
+        private static Java.Lang.String _WRITE_MEDICAL_DATAContent = default;
+        private static bool _WRITE_MEDICAL_DATAReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_MENSTRUATION"/>
         /// </summary>
         public static Java.Lang.String WRITE_MENSTRUATION { get { if (!_WRITE_MENSTRUATIONReady) { _WRITE_MENSTRUATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_MENSTRUATION"); _WRITE_MENSTRUATIONReady = true; } return _WRITE_MENSTRUATIONContent; } }
         private static Java.Lang.String _WRITE_MENSTRUATIONContent = default;
         private static bool _WRITE_MENSTRUATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_MINDFULNESS"/>
+        /// </summary>
+        public static Java.Lang.String WRITE_MINDFULNESS { get { if (!_WRITE_MINDFULNESSReady) { _WRITE_MINDFULNESSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_MINDFULNESS"); _WRITE_MINDFULNESSReady = true; } return _WRITE_MINDFULNESSContent; } }
+        private static Java.Lang.String _WRITE_MINDFULNESSContent = default;
+        private static bool _WRITE_MINDFULNESSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_NUTRITION"/>
         /// </summary>

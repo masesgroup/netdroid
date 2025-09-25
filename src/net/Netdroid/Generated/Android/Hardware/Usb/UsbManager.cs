@@ -173,6 +173,24 @@ namespace Android.Hardware.Usb
             return IExecuteWithSignature<bool>("hasPermission", "(Landroid/hardware/usb/UsbDevice;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#openAccessoryInputStream(android.hardware.usb.UsbAccessory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Usb.UsbAccessory"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public Java.Io.InputStream OpenAccessoryInputStream(Android.Hardware.Usb.UsbAccessory arg0)
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("openAccessoryInputStream", "(Landroid/hardware/usb/UsbAccessory;)Ljava/io/InputStream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#openAccessoryOutputStream(android.hardware.usb.UsbAccessory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Usb.UsbAccessory"/></param>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        public Java.Io.OutputStream OpenAccessoryOutputStream(Android.Hardware.Usb.UsbAccessory arg0)
+        {
+            return IExecuteWithSignature<Java.Io.OutputStream>("openAccessoryOutputStream", "(Landroid/hardware/usb/UsbAccessory;)Ljava/io/OutputStream;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getDeviceList()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.HashMap"/></returns>

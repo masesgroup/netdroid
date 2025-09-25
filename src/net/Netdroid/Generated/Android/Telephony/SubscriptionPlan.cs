@@ -150,6 +150,36 @@ namespace Android.Telephony
         private static int _LIMIT_BEHAVIOR_UNKNOWNContent = default;
         private static bool _LIMIT_BEHAVIOR_UNKNOWNReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#SUBSCRIPTION_STATUS_ACTIVE"/>
+        /// </summary>
+        public static int SUBSCRIPTION_STATUS_ACTIVE { get { if (!_SUBSCRIPTION_STATUS_ACTIVEReady) { _SUBSCRIPTION_STATUS_ACTIVEContent = SGetField<int>(LocalBridgeClazz, "SUBSCRIPTION_STATUS_ACTIVE"); _SUBSCRIPTION_STATUS_ACTIVEReady = true; } return _SUBSCRIPTION_STATUS_ACTIVEContent; } }
+        private static int _SUBSCRIPTION_STATUS_ACTIVEContent = default;
+        private static bool _SUBSCRIPTION_STATUS_ACTIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#SUBSCRIPTION_STATUS_INACTIVE"/>
+        /// </summary>
+        public static int SUBSCRIPTION_STATUS_INACTIVE { get { if (!_SUBSCRIPTION_STATUS_INACTIVEReady) { _SUBSCRIPTION_STATUS_INACTIVEContent = SGetField<int>(LocalBridgeClazz, "SUBSCRIPTION_STATUS_INACTIVE"); _SUBSCRIPTION_STATUS_INACTIVEReady = true; } return _SUBSCRIPTION_STATUS_INACTIVEContent; } }
+        private static int _SUBSCRIPTION_STATUS_INACTIVEContent = default;
+        private static bool _SUBSCRIPTION_STATUS_INACTIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#SUBSCRIPTION_STATUS_SUSPENDED"/>
+        /// </summary>
+        public static int SUBSCRIPTION_STATUS_SUSPENDED { get { if (!_SUBSCRIPTION_STATUS_SUSPENDEDReady) { _SUBSCRIPTION_STATUS_SUSPENDEDContent = SGetField<int>(LocalBridgeClazz, "SUBSCRIPTION_STATUS_SUSPENDED"); _SUBSCRIPTION_STATUS_SUSPENDEDReady = true; } return _SUBSCRIPTION_STATUS_SUSPENDEDContent; } }
+        private static int _SUBSCRIPTION_STATUS_SUSPENDEDContent = default;
+        private static bool _SUBSCRIPTION_STATUS_SUSPENDEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#SUBSCRIPTION_STATUS_TRIAL"/>
+        /// </summary>
+        public static int SUBSCRIPTION_STATUS_TRIAL { get { if (!_SUBSCRIPTION_STATUS_TRIALReady) { _SUBSCRIPTION_STATUS_TRIALContent = SGetField<int>(LocalBridgeClazz, "SUBSCRIPTION_STATUS_TRIAL"); _SUBSCRIPTION_STATUS_TRIALReady = true; } return _SUBSCRIPTION_STATUS_TRIALContent; } }
+        private static int _SUBSCRIPTION_STATUS_TRIALContent = default;
+        private static bool _SUBSCRIPTION_STATUS_TRIALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#SUBSCRIPTION_STATUS_UNKNOWN"/>
+        /// </summary>
+        public static int SUBSCRIPTION_STATUS_UNKNOWN { get { if (!_SUBSCRIPTION_STATUS_UNKNOWNReady) { _SUBSCRIPTION_STATUS_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "SUBSCRIPTION_STATUS_UNKNOWN"); _SUBSCRIPTION_STATUS_UNKNOWNReady = true; } return _SUBSCRIPTION_STATUS_UNKNOWNContent; } }
+        private static int _SUBSCRIPTION_STATUS_UNKNOWNContent = default;
+        private static bool _SUBSCRIPTION_STATUS_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#BYTES_UNKNOWN"/>
         /// </summary>
         public static long BYTES_UNKNOWN { get { if (!_BYTES_UNKNOWNReady) { _BYTES_UNKNOWNContent = SGetField<long>(LocalBridgeClazz, "BYTES_UNKNOWN"); _BYTES_UNKNOWNReady = true; } return _BYTES_UNKNOWNContent; } }
@@ -192,6 +222,14 @@ namespace Android.Telephony
             return IExecuteWithSignature<int>("getDataLimitBehavior", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getSubscriptionStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionStatus()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionStatus", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getNetworkTypes()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -214,6 +252,14 @@ namespace Android.Telephony
         public Java.Lang.CharSequence GetTitle()
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getPlanEndDate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
+        public Java.Time.ZonedDateTime GetPlanEndDate()
+        {
+            return IExecuteWithSignature<Java.Time.ZonedDateTime>("getPlanEndDate", "()Ljava/time/ZonedDateTime;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataLimitBytes()"/>
@@ -336,6 +382,15 @@ namespace Android.Telephony
             public Android.Telephony.SubscriptionPlan.Builder SetNetworkTypes(int[] arg0)
             {
                 return IExecuteWithSignature<Android.Telephony.SubscriptionPlan.Builder>("setNetworkTypes", "([I)Landroid/telephony/SubscriptionPlan$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.Builder.html#setSubscriptionStatus(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Telephony.SubscriptionPlan.Builder"/></returns>
+            public Android.Telephony.SubscriptionPlan.Builder SetSubscriptionStatus(int arg0)
+            {
+                return IExecuteWithSignature<Android.Telephony.SubscriptionPlan.Builder>("setSubscriptionStatus", "(I)Landroid/telephony/SubscriptionPlan$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.Builder.html#setSummary(java.lang.CharSequence)"/>

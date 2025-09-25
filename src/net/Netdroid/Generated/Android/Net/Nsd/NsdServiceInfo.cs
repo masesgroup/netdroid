@@ -117,6 +117,14 @@ namespace Android.Net.Nsd
             return IExecuteWithSignature<int>("getPort", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getHostname()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHostname()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHostname", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getServiceName()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>

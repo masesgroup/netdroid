@@ -86,15 +86,6 @@ namespace Android.Graphics
         #endregion
     
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RecordingCanvas.html#drawRegion(android.graphics.Region,android.graphics.Paint)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Region"/></param>
-        /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
-        public void DrawRegion(Android.Graphics.Region arg0, Android.Graphics.Paint arg1)
-        {
-            IExecuteWithSignature("drawRegion", "(Landroid/graphics/Region;Landroid/graphics/Paint;)V", arg0, arg1);
-        }
     
         #endregion
     

@@ -135,6 +135,12 @@ namespace Android.View
         private static int _CHANGE_FRAME_RATE_ONLY_IF_SEAMLESSContent = default;
         private static bool _CHANGE_FRAME_RATE_ONLY_IF_SEAMLESSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Surface.html#FRAME_RATE_COMPATIBILITY_AT_LEAST"/>
+        /// </summary>
+        public static int FRAME_RATE_COMPATIBILITY_AT_LEAST { get { if (!_FRAME_RATE_COMPATIBILITY_AT_LEASTReady) { _FRAME_RATE_COMPATIBILITY_AT_LEASTContent = SGetField<int>(LocalBridgeClazz, "FRAME_RATE_COMPATIBILITY_AT_LEAST"); _FRAME_RATE_COMPATIBILITY_AT_LEASTReady = true; } return _FRAME_RATE_COMPATIBILITY_AT_LEASTContent; } }
+        private static int _FRAME_RATE_COMPATIBILITY_AT_LEASTContent = default;
+        private static bool _FRAME_RATE_COMPATIBILITY_AT_LEASTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Surface.html#FRAME_RATE_COMPATIBILITY_DEFAULT"/>
         /// </summary>
         public static int FRAME_RATE_COMPATIBILITY_DEFAULT { get { if (!_FRAME_RATE_COMPATIBILITY_DEFAULTReady) { _FRAME_RATE_COMPATIBILITY_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "FRAME_RATE_COMPATIBILITY_DEFAULT"); _FRAME_RATE_COMPATIBILITY_DEFAULTReady = true; } return _FRAME_RATE_COMPATIBILITY_DEFAULTContent; } }

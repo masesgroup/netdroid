@@ -473,6 +473,14 @@ namespace Android.App
             return IExecuteWithSignature<bool>("canNotifyAsPackage", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#canPostPromotedNotifications()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool CanPostPromotedNotifications()
+        {
+            return IExecuteWithSignature<bool>("canPostPromotedNotifications", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#canUseFullScreenIntent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

@@ -197,6 +197,18 @@ namespace Android.View
         private static int _FLAG_SUPPORTS_PROTECTED_BUFFERSContent = default;
         private static bool _FLAG_SUPPORTS_PROTECTED_BUFFERSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#FRAME_RATE_CATEGORY_HIGH"/>
+        /// </summary>
+        public static int FRAME_RATE_CATEGORY_HIGH { get { if (!_FRAME_RATE_CATEGORY_HIGHReady) { _FRAME_RATE_CATEGORY_HIGHContent = SGetField<int>(LocalBridgeClazz, "FRAME_RATE_CATEGORY_HIGH"); _FRAME_RATE_CATEGORY_HIGHReady = true; } return _FRAME_RATE_CATEGORY_HIGHContent; } }
+        private static int _FRAME_RATE_CATEGORY_HIGHContent = default;
+        private static bool _FRAME_RATE_CATEGORY_HIGHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#FRAME_RATE_CATEGORY_NORMAL"/>
+        /// </summary>
+        public static int FRAME_RATE_CATEGORY_NORMAL { get { if (!_FRAME_RATE_CATEGORY_NORMALReady) { _FRAME_RATE_CATEGORY_NORMALContent = SGetField<int>(LocalBridgeClazz, "FRAME_RATE_CATEGORY_NORMAL"); _FRAME_RATE_CATEGORY_NORMALReady = true; } return _FRAME_RATE_CATEGORY_NORMALContent; } }
+        private static int _FRAME_RATE_CATEGORY_NORMALContent = default;
+        private static bool _FRAME_RATE_CATEGORY_NORMALReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#INVALID_DISPLAY"/>
         /// </summary>
         public static int INVALID_DISPLAY { get { if (!_INVALID_DISPLAYReady) { _INVALID_DISPLAYContent = SGetField<int>(LocalBridgeClazz, "INVALID_DISPLAY"); _INVALID_DISPLAYReady = true; } return _INVALID_DISPLAYContent; } }
@@ -326,6 +338,14 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.RoundedCorner>("getRoundedCorner", "(I)Landroid/view/RoundedCorner;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#hasArrSupport()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool HasArrSupport()
+        {
+            return IExecuteWithSignature<bool>("hasArrSupport", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#isHdr()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -374,6 +394,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getHdrSdrRatio", "()F");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHighestHdrSdrRatio()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetHighestHdrSdrRatio()
+        {
+            return IExecuteWithSignature<float>("getHighestHdrSdrRatio", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getRefreshRate()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
@@ -382,10 +410,18 @@ namespace Android.View
             return IExecuteWithSignature<float>("getRefreshRate", "()F");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getSuggestedFrameRate(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="float"/></returns>
+        public float GetSuggestedFrameRate(int arg0)
+        {
+            return IExecuteWithSignature<float>("getSuggestedFrameRate", "(I)F", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getSupportedRefreshRates()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
-        [global::System.Obsolete()]
         public float[] GetSupportedRefreshRates()
         {
             return IExecuteWithSignatureArray<float>("getSupportedRefreshRates", "()[F");

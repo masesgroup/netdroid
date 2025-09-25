@@ -120,7 +120,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Android.Os.LocaleList"/></returns>
         public Android.Os.LocaleList GetLocales()
         {
-            return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;");
+            return IExecute<Android.Os.LocaleList>("getLocales");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#describeContents()"/>
@@ -128,7 +128,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getSpanTypeId()"/>
@@ -136,7 +136,7 @@ namespace Android.Text.Style
         /// <returns><see cref="int"/></returns>
         public int GetSpanTypeId()
         {
-            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+            return IExecute<int>("getSpanTypeId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getLocale()"/>
@@ -144,7 +144,7 @@ namespace Android.Text.Style
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale GetLocale()
         {
-            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
+            return IExecute<Java.Util.Locale>("getLocale");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#writeToParcel(android.os.Parcel,int)"/>
@@ -153,7 +153,7 @@ namespace Android.Text.Style
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
+            IExecute("writeToParcel", arg0, arg1);
         }
     
         #endregion

@@ -363,6 +363,18 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CaptureRequest.Key _COLOR_CORRECTION_ABERRATION_MODEContent = default;
         private static bool _COLOR_CORRECTION_ABERRATION_MODEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#COLOR_CORRECTION_COLOR_TEMPERATURE"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureRequest.Key COLOR_CORRECTION_COLOR_TEMPERATURE { get { if (!_COLOR_CORRECTION_COLOR_TEMPERATUREReady) { _COLOR_CORRECTION_COLOR_TEMPERATUREContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "COLOR_CORRECTION_COLOR_TEMPERATURE"); _COLOR_CORRECTION_COLOR_TEMPERATUREReady = true; } return _COLOR_CORRECTION_COLOR_TEMPERATUREContent; } }
+        private static Android.Hardware.Camera2.CaptureRequest.Key _COLOR_CORRECTION_COLOR_TEMPERATUREContent = default;
+        private static bool _COLOR_CORRECTION_COLOR_TEMPERATUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#COLOR_CORRECTION_COLOR_TINT"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureRequest.Key COLOR_CORRECTION_COLOR_TINT { get { if (!_COLOR_CORRECTION_COLOR_TINTReady) { _COLOR_CORRECTION_COLOR_TINTContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "COLOR_CORRECTION_COLOR_TINT"); _COLOR_CORRECTION_COLOR_TINTReady = true; } return _COLOR_CORRECTION_COLOR_TINTContent; } }
+        private static Android.Hardware.Camera2.CaptureRequest.Key _COLOR_CORRECTION_COLOR_TINTContent = default;
+        private static bool _COLOR_CORRECTION_COLOR_TINTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#COLOR_CORRECTION_MODE"/>
         /// </summary>
         public static Android.Hardware.Camera2.CaptureRequest.Key COLOR_CORRECTION_MODE { get { if (!_COLOR_CORRECTION_MODEReady) { _COLOR_CORRECTION_MODEContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "COLOR_CORRECTION_MODE"); _COLOR_CORRECTION_MODEReady = true; } return _COLOR_CORRECTION_MODEContent; } }
@@ -392,6 +404,12 @@ namespace Android.Hardware.Camera2
         public static Android.Hardware.Camera2.CaptureRequest.Key CONTROL_AE_PRECAPTURE_TRIGGER { get { if (!_CONTROL_AE_PRECAPTURE_TRIGGERReady) { _CONTROL_AE_PRECAPTURE_TRIGGERContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "CONTROL_AE_PRECAPTURE_TRIGGER"); _CONTROL_AE_PRECAPTURE_TRIGGERReady = true; } return _CONTROL_AE_PRECAPTURE_TRIGGERContent; } }
         private static Android.Hardware.Camera2.CaptureRequest.Key _CONTROL_AE_PRECAPTURE_TRIGGERContent = default;
         private static bool _CONTROL_AE_PRECAPTURE_TRIGGERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#CONTROL_AE_PRIORITY_MODE"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureRequest.Key CONTROL_AE_PRIORITY_MODE { get { if (!_CONTROL_AE_PRIORITY_MODEReady) { _CONTROL_AE_PRIORITY_MODEContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "CONTROL_AE_PRIORITY_MODE"); _CONTROL_AE_PRIORITY_MODEReady = true; } return _CONTROL_AE_PRIORITY_MODEContent; } }
+        private static Android.Hardware.Camera2.CaptureRequest.Key _CONTROL_AE_PRIORITY_MODEContent = default;
+        private static bool _CONTROL_AE_PRIORITY_MODEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#CONTROL_AF_MODE"/>
         /// </summary>
@@ -464,6 +482,12 @@ namespace Android.Hardware.Camera2
         public static Android.Hardware.Camera2.CaptureRequest.Key CONTROL_VIDEO_STABILIZATION_MODE { get { if (!_CONTROL_VIDEO_STABILIZATION_MODEReady) { _CONTROL_VIDEO_STABILIZATION_MODEContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "CONTROL_VIDEO_STABILIZATION_MODE"); _CONTROL_VIDEO_STABILIZATION_MODEReady = true; } return _CONTROL_VIDEO_STABILIZATION_MODEContent; } }
         private static Android.Hardware.Camera2.CaptureRequest.Key _CONTROL_VIDEO_STABILIZATION_MODEContent = default;
         private static bool _CONTROL_VIDEO_STABILIZATION_MODEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#CONTROL_ZOOM_METHOD"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureRequest.Key CONTROL_ZOOM_METHOD { get { if (!_CONTROL_ZOOM_METHODReady) { _CONTROL_ZOOM_METHODContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "CONTROL_ZOOM_METHOD"); _CONTROL_ZOOM_METHODReady = true; } return _CONTROL_ZOOM_METHODContent; } }
+        private static Android.Hardware.Camera2.CaptureRequest.Key _CONTROL_ZOOM_METHODContent = default;
+        private static bool _CONTROL_ZOOM_METHODReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#DISTORTION_CORRECTION_MODE"/>
         /// </summary>

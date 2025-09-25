@@ -128,6 +128,14 @@ namespace Android.Adservices.Adselection
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/GetAdSelectionDataRequest.html#getSellerConfiguration()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Adservices.Adselection.SellerConfiguration"/></returns>
+        public Android.Adservices.Adselection.SellerConfiguration GetSellerConfiguration()
+        {
+            return IExecuteWithSignature<Android.Adservices.Adselection.SellerConfiguration>("getSellerConfiguration", "()Landroid/adservices/adselection/SellerConfiguration;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/GetAdSelectionDataRequest.html#getSeller()"/>
         /// </summary>
         /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
@@ -192,6 +200,15 @@ namespace Android.Adservices.Adselection
             public Android.Adservices.Adselection.GetAdSelectionDataRequest.Builder SetSeller(Android.Adservices.Common.AdTechIdentifier arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Adselection.GetAdSelectionDataRequest.Builder>("setSeller", "(Landroid/adservices/common/AdTechIdentifier;)Landroid/adservices/adselection/GetAdSelectionDataRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/adselection/GetAdSelectionDataRequest.Builder.html#setSellerConfiguration(android.adservices.adselection.SellerConfiguration)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Adservices.Adselection.SellerConfiguration"/></param>
+            /// <returns><see cref="Android.Adservices.Adselection.GetAdSelectionDataRequest.Builder"/></returns>
+            public Android.Adservices.Adselection.GetAdSelectionDataRequest.Builder SetSellerConfiguration(Android.Adservices.Adselection.SellerConfiguration arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Adselection.GetAdSelectionDataRequest.Builder>("setSellerConfiguration", "(Landroid/adservices/adselection/SellerConfiguration;)Landroid/adservices/adselection/GetAdSelectionDataRequest$Builder;", arg0);
             }
         
             #endregion

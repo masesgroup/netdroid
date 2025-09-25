@@ -170,6 +170,14 @@ namespace Android.Icu.Text
             return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKCInstance", "()Landroid/icu/text/Normalizer2;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKCSimpleCasefoldInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>
+        public static Android.Icu.Text.Normalizer2 GetNFKCSimpleCasefoldInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKCSimpleCasefoldInstance", "()Landroid/icu/text/Normalizer2;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKDInstance()"/>
         /// </summary>
         /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>

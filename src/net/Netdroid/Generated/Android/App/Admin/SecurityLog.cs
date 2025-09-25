@@ -294,6 +294,18 @@ namespace Android.App.Admin
         private static int _TAG_MEDIA_UNMOUNTContent = default;
         private static bool _TAG_MEDIA_UNMOUNTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_NFC_DISABLED"/>
+        /// </summary>
+        public static int TAG_NFC_DISABLED { get { if (!_TAG_NFC_DISABLEDReady) { _TAG_NFC_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "TAG_NFC_DISABLED"); _TAG_NFC_DISABLEDReady = true; } return _TAG_NFC_DISABLEDContent; } }
+        private static int _TAG_NFC_DISABLEDContent = default;
+        private static bool _TAG_NFC_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_NFC_ENABLED"/>
+        /// </summary>
+        public static int TAG_NFC_ENABLED { get { if (!_TAG_NFC_ENABLEDReady) { _TAG_NFC_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "TAG_NFC_ENABLED"); _TAG_NFC_ENABLEDReady = true; } return _TAG_NFC_ENABLEDContent; } }
+        private static int _TAG_NFC_ENABLEDContent = default;
+        private static bool _TAG_NFC_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_OS_SHUTDOWN"/>
         /// </summary>
         public static int TAG_OS_SHUTDOWN { get { if (!_TAG_OS_SHUTDOWNReady) { _TAG_OS_SHUTDOWNContent = SGetField<int>(LocalBridgeClazz, "TAG_OS_SHUTDOWN"); _TAG_OS_SHUTDOWNReady = true; } return _TAG_OS_SHUTDOWNContent; } }

@@ -244,6 +244,21 @@ namespace Android.Content
             IExecuteWithSignature("sendIntent", "(Landroid/content/Context;ILandroid/content/Intent;Landroid/content/IntentSender$OnFinished;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentSender.html#sendIntent(android.content.Context,int,android.content.Intent,java.lang.String,android.os.Bundle,java.util.concurrent.Executor,android.content.IntentSender.OnFinished)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg5"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg6"><see cref="Android.Content.IntentSender.OnFinished"/></param>
+        /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
+        public void SendIntent(Android.Content.Context arg0, int arg1, Android.Content.Intent arg2, Java.Lang.String arg3, Android.Os.Bundle arg4, Java.Util.Concurrent.Executor arg5, Android.Content.IntentSender.OnFinished arg6)
+        {
+            IExecuteWithSignature("sendIntent", "(Landroid/content/Context;ILandroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Ljava/util/concurrent/Executor;Landroid/content/IntentSender$OnFinished;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentSender.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>

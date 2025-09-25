@@ -195,6 +195,60 @@ namespace Android.App.Admin
     
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#APP_FUNCTIONS_DISABLED"/>
+        /// </summary>
+        public static int APP_FUNCTIONS_DISABLED { get { if (!_APP_FUNCTIONS_DISABLEDReady) { _APP_FUNCTIONS_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "APP_FUNCTIONS_DISABLED"); _APP_FUNCTIONS_DISABLEDReady = true; } return _APP_FUNCTIONS_DISABLEDContent; } }
+        private static int _APP_FUNCTIONS_DISABLEDContent = default;
+        private static bool _APP_FUNCTIONS_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#APP_FUNCTIONS_DISABLED_CROSS_PROFILE"/>
+        /// </summary>
+        public static int APP_FUNCTIONS_DISABLED_CROSS_PROFILE { get { if (!_APP_FUNCTIONS_DISABLED_CROSS_PROFILEReady) { _APP_FUNCTIONS_DISABLED_CROSS_PROFILEContent = SGetField<int>(LocalBridgeClazz, "APP_FUNCTIONS_DISABLED_CROSS_PROFILE"); _APP_FUNCTIONS_DISABLED_CROSS_PROFILEReady = true; } return _APP_FUNCTIONS_DISABLED_CROSS_PROFILEContent; } }
+        private static int _APP_FUNCTIONS_DISABLED_CROSS_PROFILEContent = default;
+        private static bool _APP_FUNCTIONS_DISABLED_CROSS_PROFILEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICY"/>
+        /// </summary>
+        public static int APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICY { get { if (!_APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICYReady) { _APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICYContent = SGetField<int>(LocalBridgeClazz, "APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICY"); _APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICYReady = true; } return _APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICYContent; } }
+        private static int _APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICYContent = default;
+        private static bool _APP_FUNCTIONS_NOT_CONTROLLED_BY_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#AUTO_TIME_DISABLED"/>
+        /// </summary>
+        public static int AUTO_TIME_DISABLED { get { if (!_AUTO_TIME_DISABLEDReady) { _AUTO_TIME_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "AUTO_TIME_DISABLED"); _AUTO_TIME_DISABLEDReady = true; } return _AUTO_TIME_DISABLEDContent; } }
+        private static int _AUTO_TIME_DISABLEDContent = default;
+        private static bool _AUTO_TIME_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#AUTO_TIME_ENABLED"/>
+        /// </summary>
+        public static int AUTO_TIME_ENABLED { get { if (!_AUTO_TIME_ENABLEDReady) { _AUTO_TIME_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "AUTO_TIME_ENABLED"); _AUTO_TIME_ENABLEDReady = true; } return _AUTO_TIME_ENABLEDContent; } }
+        private static int _AUTO_TIME_ENABLEDContent = default;
+        private static bool _AUTO_TIME_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#AUTO_TIME_NOT_CONTROLLED_BY_POLICY"/>
+        /// </summary>
+        public static int AUTO_TIME_NOT_CONTROLLED_BY_POLICY { get { if (!_AUTO_TIME_NOT_CONTROLLED_BY_POLICYReady) { _AUTO_TIME_NOT_CONTROLLED_BY_POLICYContent = SGetField<int>(LocalBridgeClazz, "AUTO_TIME_NOT_CONTROLLED_BY_POLICY"); _AUTO_TIME_NOT_CONTROLLED_BY_POLICYReady = true; } return _AUTO_TIME_NOT_CONTROLLED_BY_POLICYContent; } }
+        private static int _AUTO_TIME_NOT_CONTROLLED_BY_POLICYContent = default;
+        private static bool _AUTO_TIME_NOT_CONTROLLED_BY_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#AUTO_TIME_ZONE_DISABLED"/>
+        /// </summary>
+        public static int AUTO_TIME_ZONE_DISABLED { get { if (!_AUTO_TIME_ZONE_DISABLEDReady) { _AUTO_TIME_ZONE_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "AUTO_TIME_ZONE_DISABLED"); _AUTO_TIME_ZONE_DISABLEDReady = true; } return _AUTO_TIME_ZONE_DISABLEDContent; } }
+        private static int _AUTO_TIME_ZONE_DISABLEDContent = default;
+        private static bool _AUTO_TIME_ZONE_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#AUTO_TIME_ZONE_ENABLED"/>
+        /// </summary>
+        public static int AUTO_TIME_ZONE_ENABLED { get { if (!_AUTO_TIME_ZONE_ENABLEDReady) { _AUTO_TIME_ZONE_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "AUTO_TIME_ZONE_ENABLED"); _AUTO_TIME_ZONE_ENABLEDReady = true; } return _AUTO_TIME_ZONE_ENABLEDContent; } }
+        private static int _AUTO_TIME_ZONE_ENABLEDContent = default;
+        private static bool _AUTO_TIME_ZONE_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICY"/>
+        /// </summary>
+        public static int AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICY { get { if (!_AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICYReady) { _AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICYContent = SGetField<int>(LocalBridgeClazz, "AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICY"); _AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICYReady = true; } return _AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICYContent; } }
+        private static int _AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICYContent = default;
+        private static bool _AUTO_TIME_ZONE_NOT_CONTROLLED_BY_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#CONTENT_PROTECTION_DISABLED"/>
         /// </summary>
         public static int CONTENT_PROTECTION_DISABLED { get { if (!_CONTENT_PROTECTION_DISABLEDReady) { _CONTENT_PROTECTION_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "CONTENT_PROTECTION_DISABLED"); _CONTENT_PROTECTION_DISABLEDReady = true; } return _CONTENT_PROTECTION_DISABLEDContent; } }
@@ -2265,6 +2319,30 @@ namespace Android.App.Admin
             return IExecuteWithSignature<int>("enableSystemApp", "(Landroid/content/ComponentName;Landroid/content/Intent;)I", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getAppFunctionsPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAppFunctionsPolicy()
+        {
+            return IExecuteWithSignature<int>("getAppFunctionsPolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getAutoTimePolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutoTimePolicy()
+        {
+            return IExecuteWithSignature<int>("getAutoTimePolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getAutoTimeZonePolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutoTimeZonePolicy()
+        {
+            return IExecuteWithSignature<int>("getAutoTimeZonePolicy", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getContentProtectionPolicy(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -3197,6 +3275,14 @@ namespace Android.App.Admin
             IExecuteWithSignature("setAlwaysOnVpnPackage", "(Landroid/content/ComponentName;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAppFunctionsPolicy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAppFunctionsPolicy(int arg0)
+        {
+            IExecuteWithSignature("setAppFunctionsPolicy", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setApplicationRestrictions(android.content.ComponentName,java.lang.String,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -3227,6 +3313,14 @@ namespace Android.App.Admin
             IExecuteWithSignature("setAutoTimeEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimePolicy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAutoTimePolicy(int arg0)
+        {
+            IExecuteWithSignature("setAutoTimePolicy", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeRequired(android.content.ComponentName,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -3244,6 +3338,14 @@ namespace Android.App.Admin
         public void SetAutoTimeZoneEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
             IExecuteWithSignature("setAutoTimeZoneEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeZonePolicy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAutoTimeZonePolicy(int arg0)
+        {
+            IExecuteWithSignature("setAutoTimeZonePolicy", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setBackupServiceEnabled(android.content.ComponentName,boolean)"/>

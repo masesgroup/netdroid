@@ -67,7 +67,7 @@ namespace Android.Icu.Text
     #endregion
 
     #region DateFormatSymbols implementation
-    public partial class DateFormatSymbols : Java.Io.ISerializable, Java.Lang.ICloneable
+    public partial class DateFormatSymbols : Java.Lang.ICloneable, Java.Io.ISerializable
     {
         #region Constructors
         /// <summary>
@@ -145,13 +145,13 @@ namespace Android.Icu.Text
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Icu.Text.DateFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Android.Icu.Text.DateFormatSymbols t) => t.Cast<Java.Io.Serializable>();
-        /// <summary>
         /// Converter from <see cref="Android.Icu.Text.DateFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.DateFormatSymbols t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Icu.Text.DateFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
+        public static implicit operator Java.Io.Serializable(Android.Icu.Text.DateFormatSymbols t) => t.Cast<Java.Io.Serializable>();
     
         #endregion
     

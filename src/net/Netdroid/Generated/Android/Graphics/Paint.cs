@@ -514,6 +514,12 @@ namespace Android.Graphics
         public static int UNDERLINE_TEXT_FLAG { get { if (!_UNDERLINE_TEXT_FLAGReady) { _UNDERLINE_TEXT_FLAGContent = SGetField<int>(LocalBridgeClazz, "UNDERLINE_TEXT_FLAG"); _UNDERLINE_TEXT_FLAGReady = true; } return _UNDERLINE_TEXT_FLAGContent; } }
         private static int _UNDERLINE_TEXT_FLAGContent = default;
         private static bool _UNDERLINE_TEXT_FLAGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#VERTICAL_TEXT_FLAG"/>
+        /// </summary>
+        public static int VERTICAL_TEXT_FLAG { get { if (!_VERTICAL_TEXT_FLAGReady) { _VERTICAL_TEXT_FLAGContent = SGetField<int>(LocalBridgeClazz, "VERTICAL_TEXT_FLAG"); _VERTICAL_TEXT_FLAGReady = true; } return _VERTICAL_TEXT_FLAGContent; } }
+        private static int _VERTICAL_TEXT_FLAGContent = default;
+        private static bool _VERTICAL_TEXT_FLAGReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -720,6 +726,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#isElegantTextHeight()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsElegantTextHeight()
         {
             return IExecuteWithSignature<bool>("isElegantTextHeight", "()Z");
@@ -1500,6 +1507,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#setElegantTextHeight(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
         public void SetElegantTextHeight(bool arg0)
         {
             IExecuteWithSignature("setElegantTextHeight", "(Z)V", arg0);

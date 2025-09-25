@@ -163,6 +163,46 @@ namespace Android.Health.Connect
             IExecuteWithSignature("aggregateGroupByPeriod", "(Landroid/health/connect/AggregateRecordsRequest;Ljava/time/Period;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#createMedicalDataSource(android.health.connect.CreateMedicalDataSourceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Health.Connect.CreateMedicalDataSourceRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void CreateMedicalDataSource(Android.Health.Connect.CreateMedicalDataSourceRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.Datatypes.MedicalDataSource, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("createMedicalDataSource", "(Landroid/health/connect/CreateMedicalDataSourceRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#deleteMedicalDataSourceWithData(java.lang.String,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void DeleteMedicalDataSourceWithData(Java.Lang.String arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("deleteMedicalDataSourceWithData", "(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#deleteMedicalResources(android.health.connect.DeleteMedicalResourcesRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Health.Connect.DeleteMedicalResourcesRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void DeleteMedicalResources(Android.Health.Connect.DeleteMedicalResourcesRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("deleteMedicalResources", "(Landroid/health/connect/DeleteMedicalResourcesRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#deleteMedicalResources(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void DeleteMedicalResources(Java.Util.List<Android.Health.Connect.MedicalResourceId> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("deleteMedicalResources", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#deleteRecords(java.lang.Class,android.health.connect.TimeRangeFilter,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -204,6 +244,26 @@ namespace Android.Health.Connect
             IExecuteWithSignature("getChangeLogToken", "(Landroid/health/connect/changelog/ChangeLogTokenRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#getMedicalDataSources(android.health.connect.GetMedicalDataSourcesRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Health.Connect.GetMedicalDataSourcesRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void GetMedicalDataSources(Android.Health.Connect.GetMedicalDataSourcesRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Util.List<Android.Health.Connect.Datatypes.MedicalDataSource>, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("getMedicalDataSources", "(Landroid/health/connect/GetMedicalDataSourcesRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#getMedicalDataSources(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void GetMedicalDataSources(Java.Util.List<Java.Lang.String> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Util.List<Android.Health.Connect.Datatypes.MedicalDataSource>, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("getMedicalDataSources", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#insertRecords(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
@@ -214,6 +274,26 @@ namespace Android.Health.Connect
             IExecuteWithSignature("insertRecords", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#readMedicalResources(android.health.connect.ReadMedicalResourcesRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Health.Connect.ReadMedicalResourcesRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void ReadMedicalResources(Android.Health.Connect.ReadMedicalResourcesRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.ReadMedicalResourcesResponse, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("readMedicalResources", "(Landroid/health/connect/ReadMedicalResourcesRequest;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#readMedicalResources(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void ReadMedicalResources(Java.Util.List<Android.Health.Connect.MedicalResourceId> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Util.List<Android.Health.Connect.Datatypes.MedicalResource>, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("readMedicalResources", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#updateRecords(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
@@ -222,6 +302,16 @@ namespace Android.Health.Connect
         public void UpdateRecords(Java.Util.List<Android.Health.Connect.Datatypes.Record> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Health.Connect.HealthConnectException> arg2)
         {
             IExecuteWithSignature("updateRecords", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#upsertMedicalResources(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void UpsertMedicalResources(Java.Util.List<Android.Health.Connect.UpsertMedicalResourceRequest> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Util.List<Android.Health.Connect.Datatypes.MedicalResource>, Android.Health.Connect.HealthConnectException> arg2)
+        {
+            IExecuteWithSignature("upsertMedicalResources", "(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
     
         #endregion

@@ -193,6 +193,12 @@ namespace Android.View.Textclassifier
         private static Java.Lang.String _EXTRA_FROM_TEXT_CLASSIFIERContent = default;
         private static bool _EXTRA_FROM_TEXT_CLASSIFIERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#EXTRA_TEXT_ORIGIN_PACKAGE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_TEXT_ORIGIN_PACKAGE { get { if (!_EXTRA_TEXT_ORIGIN_PACKAGEReady) { _EXTRA_TEXT_ORIGIN_PACKAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_TEXT_ORIGIN_PACKAGE"); _EXTRA_TEXT_ORIGIN_PACKAGEReady = true; } return _EXTRA_TEXT_ORIGIN_PACKAGEContent; } }
+        private static Java.Lang.String _EXTRA_TEXT_ORIGIN_PACKAGEContent = default;
+        private static bool _EXTRA_TEXT_ORIGIN_PACKAGEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#HINT_TEXT_IS_EDITABLE"/>
         /// </summary>
         public static Java.Lang.String HINT_TEXT_IS_EDITABLE { get { if (!_HINT_TEXT_IS_EDITABLEReady) { _HINT_TEXT_IS_EDITABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HINT_TEXT_IS_EDITABLE"); _HINT_TEXT_IS_EDITABLEReady = true; } return _HINT_TEXT_IS_EDITABLEContent; } }
@@ -240,6 +246,12 @@ namespace Android.View.Textclassifier
         public static Java.Lang.String TYPE_OTHER { get { if (!_TYPE_OTHERReady) { _TYPE_OTHERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE_OTHER"); _TYPE_OTHERReady = true; } return _TYPE_OTHERContent; } }
         private static Java.Lang.String _TYPE_OTHERContent = default;
         private static bool _TYPE_OTHERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#TYPE_OTP"/>
+        /// </summary>
+        public static Java.Lang.String TYPE_OTP { get { if (!_TYPE_OTPReady) { _TYPE_OTPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE_OTP"); _TYPE_OTPReady = true; } return _TYPE_OTPContent; } }
+        private static Java.Lang.String _TYPE_OTPContent = default;
+        private static bool _TYPE_OTPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#TYPE_PHONE"/>
         /// </summary>

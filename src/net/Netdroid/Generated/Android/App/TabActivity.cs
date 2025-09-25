@@ -2138,6 +2138,13 @@ namespace Android.App
             IExecuteWithSignature("removeDialog", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#requestOpenInBrowserEducation()"/>
+        /// </summary>
+        public void RequestOpenInBrowserEducation()
+        {
+            IExecuteWithSignature("requestOpenInBrowserEducation", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#requestPermissions(java.lang.String[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

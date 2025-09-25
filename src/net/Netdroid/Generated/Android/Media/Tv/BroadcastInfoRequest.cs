@@ -93,6 +93,18 @@ namespace Android.Media.Tv
         private static int _REQUEST_OPTION_AUTO_UPDATEContent = default;
         private static bool _REQUEST_OPTION_AUTO_UPDATEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#REQUEST_OPTION_ONESHOT"/>
+        /// </summary>
+        public static int REQUEST_OPTION_ONESHOT { get { if (!_REQUEST_OPTION_ONESHOTReady) { _REQUEST_OPTION_ONESHOTContent = SGetField<int>(LocalBridgeClazz, "REQUEST_OPTION_ONESHOT"); _REQUEST_OPTION_ONESHOTReady = true; } return _REQUEST_OPTION_ONESHOTContent; } }
+        private static int _REQUEST_OPTION_ONESHOTContent = default;
+        private static bool _REQUEST_OPTION_ONESHOTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#REQUEST_OPTION_ONEWAY"/>
+        /// </summary>
+        public static int REQUEST_OPTION_ONEWAY { get { if (!_REQUEST_OPTION_ONEWAYReady) { _REQUEST_OPTION_ONEWAYContent = SGetField<int>(LocalBridgeClazz, "REQUEST_OPTION_ONEWAY"); _REQUEST_OPTION_ONEWAYReady = true; } return _REQUEST_OPTION_ONEWAYContent; } }
+        private static int _REQUEST_OPTION_ONEWAYContent = default;
+        private static bool _REQUEST_OPTION_ONEWAYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#REQUEST_OPTION_REPEAT"/>
         /// </summary>
         public static int REQUEST_OPTION_REPEAT { get { if (!_REQUEST_OPTION_REPEATReady) { _REQUEST_OPTION_REPEATContent = SGetField<int>(LocalBridgeClazz, "REQUEST_OPTION_REPEAT"); _REQUEST_OPTION_REPEATReady = true; } return _REQUEST_OPTION_REPEATContent; } }

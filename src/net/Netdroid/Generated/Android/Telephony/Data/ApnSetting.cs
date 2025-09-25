@@ -282,6 +282,18 @@ namespace Android.Telephony.Data
         private static int _TYPE_MMSContent = default;
         private static bool _TYPE_MMSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#TYPE_OEM_PAID"/>
+        /// </summary>
+        public static int TYPE_OEM_PAID { get { if (!_TYPE_OEM_PAIDReady) { _TYPE_OEM_PAIDContent = SGetField<int>(LocalBridgeClazz, "TYPE_OEM_PAID"); _TYPE_OEM_PAIDReady = true; } return _TYPE_OEM_PAIDContent; } }
+        private static int _TYPE_OEM_PAIDContent = default;
+        private static bool _TYPE_OEM_PAIDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#TYPE_OEM_PRIVATE"/>
+        /// </summary>
+        public static int TYPE_OEM_PRIVATE { get { if (!_TYPE_OEM_PRIVATEReady) { _TYPE_OEM_PRIVATEContent = SGetField<int>(LocalBridgeClazz, "TYPE_OEM_PRIVATE"); _TYPE_OEM_PRIVATEReady = true; } return _TYPE_OEM_PRIVATEContent; } }
+        private static int _TYPE_OEM_PRIVATEContent = default;
+        private static bool _TYPE_OEM_PRIVATEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#TYPE_RCS"/>
         /// </summary>
         public static int TYPE_RCS { get { if (!_TYPE_RCSReady) { _TYPE_RCSContent = SGetField<int>(LocalBridgeClazz, "TYPE_RCS"); _TYPE_RCSReady = true; } return _TYPE_RCSContent; } }

@@ -110,17 +110,13 @@ namespace Android.Icu.Util
     #endregion
 
     #region TimeZone implementation
-    public partial class TimeZone : Java.Io.ISerializable, Java.Lang.ICloneable, Android.Icu.Util.IFreezable<Android.Icu.Util.TimeZone>
+    public partial class TimeZone : Java.Lang.ICloneable, Android.Icu.Util.IFreezable<Android.Icu.Util.TimeZone>, Java.Io.ISerializable
     {
         #region Constructors
     
         #endregion
     
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Android.Icu.Util.TimeZone"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Android.Icu.Util.TimeZone t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
         /// Converter from <see cref="Android.Icu.Util.TimeZone"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -129,6 +125,10 @@ namespace Android.Icu.Util
         /// Converter from <see cref="Android.Icu.Util.TimeZone"/> to <see cref="Android.Icu.Util.Freezable"/>
         /// </summary>
         public static implicit operator Android.Icu.Util.Freezable(Android.Icu.Util.TimeZone t) => t.Cast<Android.Icu.Util.Freezable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Icu.Util.TimeZone"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
+        public static implicit operator Java.Io.Serializable(Android.Icu.Util.TimeZone t) => t.Cast<Java.Io.Serializable>();
     
         #endregion
     
@@ -288,6 +288,15 @@ namespace Android.Icu.Util
         public static Java.Lang.String GetEquivalentID(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getEquivalentID", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getIanaID(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetIanaID(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getIanaID", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/TimeZone.html#getIDForWindowsID(java.lang.String,java.lang.String)"/>

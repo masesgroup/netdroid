@@ -287,6 +287,15 @@ namespace Android.Hardware.Camera2.Params
             return IExecuteWithSignature<int>("getMirrorMode", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getMirrorMode(android.view.Surface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Surface"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int GetMirrorMode(Android.View.Surface arg0)
+        {
+            return IExecuteWithSignature<int>("getMirrorMode", "(Landroid/view/Surface;)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurfaceGroupId()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -372,6 +381,15 @@ namespace Android.Hardware.Camera2.Params
         public void SetDynamicRangeProfile(long arg0)
         {
             IExecuteWithSignature("setDynamicRangeProfile", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setMirrorMode(android.view.Surface,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Surface"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void SetMirrorMode(Android.View.Surface arg0, int arg1)
+        {
+            IExecuteWithSignature("setMirrorMode", "(Landroid/view/Surface;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setMirrorMode(int)"/>

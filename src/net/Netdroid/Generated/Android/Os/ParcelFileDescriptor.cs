@@ -244,7 +244,7 @@ namespace Android.Os
     #endregion
 
     #region ParcelFileDescriptor implementation
-    public partial class ParcelFileDescriptor : Android.Os.IParcelable, Java.Io.ICloseable
+    public partial class ParcelFileDescriptor : Java.Io.ICloseable, Android.Os.IParcelable
     {
         #region Constructors
         /// <summary>
@@ -260,13 +260,13 @@ namespace Android.Os
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Os.ParcelFileDescriptor"/> to <see cref="Android.Os.Parcelable"/>
-        /// </summary>
-        public static implicit operator Android.Os.Parcelable(Android.Os.ParcelFileDescriptor t) => t.Cast<Android.Os.Parcelable>();
-        /// <summary>
         /// Converter from <see cref="Android.Os.ParcelFileDescriptor"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Android.Os.ParcelFileDescriptor t) => t.Cast<Java.Io.Closeable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Os.ParcelFileDescriptor"/> to <see cref="Android.Os.Parcelable"/>
+        /// </summary>
+        public static implicit operator Android.Os.Parcelable(Android.Os.ParcelFileDescriptor t) => t.Cast<Android.Os.Parcelable>();
     
         #endregion
     

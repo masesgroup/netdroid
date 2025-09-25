@@ -101,6 +101,14 @@ namespace Android.Companion
             return IExecuteWithSignature<Android.Companion.AssociatedDevice>("getAssociatedDevice", "()Landroid/companion/AssociatedDevice;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Companion.DeviceId"/></returns>
+        public Android.Companion.DeviceId GetDeviceId()
+        {
+            return IExecuteWithSignature<Android.Companion.DeviceId>("getDeviceId", "()Landroid/companion/DeviceId;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceMacAddress()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.MacAddress"/></returns>

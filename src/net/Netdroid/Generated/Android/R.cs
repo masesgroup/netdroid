@@ -1495,6 +1495,12 @@ namespace Android
             private static int _adjustViewBoundsContent = default;
             private static bool _adjustViewBoundsReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#adServiceTypes"/>
+            /// </summary>
+            public static int adServiceTypes { get { if (!_adServiceTypesReady) { _adServiceTypesContent = SGetField<int>(LocalBridgeClazz, "adServiceTypes"); _adServiceTypesReady = true; } return _adServiceTypesContent; } }
+            private static int _adServiceTypesContent = default;
+            private static bool _adServiceTypesReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#advancedPrintOptionsActivity"/>
             /// </summary>
             public static int advancedPrintOptionsActivity { get { if (!_advancedPrintOptionsActivityReady) { _advancedPrintOptionsActivityContent = SGetField<int>(LocalBridgeClazz, "advancedPrintOptionsActivity"); _advancedPrintOptionsActivityReady = true; } return _advancedPrintOptionsActivityContent; } }
@@ -4876,6 +4882,12 @@ namespace Android
             private static int _installLocationContent = default;
             private static bool _installLocationReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#intentMatchingFlags"/>
+            /// </summary>
+            public static int intentMatchingFlags { get { if (!_intentMatchingFlagsReady) { _intentMatchingFlagsContent = SGetField<int>(LocalBridgeClazz, "intentMatchingFlags"); _intentMatchingFlagsReady = true; } return _intentMatchingFlagsContent; } }
+            private static int _intentMatchingFlagsContent = default;
+            private static bool _intentMatchingFlagsReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#interactiveUiTimeout"/>
             /// </summary>
             public static int interactiveUiTimeout { get { if (!_interactiveUiTimeoutReady) { _interactiveUiTimeoutContent = SGetField<int>(LocalBridgeClazz, "interactiveUiTimeout"); _interactiveUiTimeoutReady = true; } return _interactiveUiTimeoutContent; } }
@@ -5211,6 +5223,12 @@ namespace Android
             public static int labelTextSize { get { if (!_labelTextSizeReady) { _labelTextSizeContent = SGetField<int>(LocalBridgeClazz, "labelTextSize"); _labelTextSizeReady = true; } return _labelTextSizeContent; } }
             private static int _labelTextSizeContent = default;
             private static bool _labelTextSizeReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#languageSettingsActivity"/>
+            /// </summary>
+            public static int languageSettingsActivity { get { if (!_languageSettingsActivityReady) { _languageSettingsActivityContent = SGetField<int>(LocalBridgeClazz, "languageSettingsActivity"); _languageSettingsActivityReady = true; } return _languageSettingsActivityContent; } }
+            private static int _languageSettingsActivityContent = default;
+            private static bool _languageSettingsActivityReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#languageTag"/>
             /// </summary>
@@ -5559,6 +5577,12 @@ namespace Android
             public static int layoutDirection { get { if (!_layoutDirectionReady) { _layoutDirectionContent = SGetField<int>(LocalBridgeClazz, "layoutDirection"); _layoutDirectionReady = true; } return _layoutDirectionContent; } }
             private static int _layoutDirectionContent = default;
             private static bool _layoutDirectionReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#layoutLabel"/>
+            /// </summary>
+            public static int layoutLabel { get { if (!_layoutLabelReady) { _layoutLabelContent = SGetField<int>(LocalBridgeClazz, "layoutLabel"); _layoutLabelReady = true; } return _layoutLabelContent; } }
+            private static int _layoutLabelContent = default;
+            private static bool _layoutLabelReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#layoutMode"/>
             /// </summary>
@@ -6457,6 +6481,12 @@ namespace Android
             public static int paddingVertical { get { if (!_paddingVerticalReady) { _paddingVerticalContent = SGetField<int>(LocalBridgeClazz, "paddingVertical"); _paddingVerticalReady = true; } return _paddingVerticalContent; } }
             private static int _paddingVerticalContent = default;
             private static bool _paddingVerticalReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#pageSizeCompat"/>
+            /// </summary>
+            public static int pageSizeCompat { get { if (!_pageSizeCompatReady) { _pageSizeCompatContent = SGetField<int>(LocalBridgeClazz, "pageSizeCompat"); _pageSizeCompatReady = true; } return _pageSizeCompatContent; } }
+            private static int _pageSizeCompatContent = default;
+            private static bool _pageSizeCompatReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#panelBackground"/>
             /// </summary>
@@ -8523,6 +8553,12 @@ namespace Android
             private static int _summaryOnContent = default;
             private static bool _summaryOnReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#supplementalDescription"/>
+            /// </summary>
+            public static int supplementalDescription { get { if (!_supplementalDescriptionReady) { _supplementalDescriptionContent = SGetField<int>(LocalBridgeClazz, "supplementalDescription"); _supplementalDescriptionReady = true; } return _supplementalDescriptionContent; } }
+            private static int _supplementalDescriptionContent = default;
+            private static bool _supplementalDescriptionReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#supportedTypes"/>
             /// </summary>
             public static int supportedTypes { get { if (!_supportedTypesReady) { _supportedTypesContent = SGetField<int>(LocalBridgeClazz, "supportedTypes"); _supportedTypesReady = true; } return _supportedTypesContent; } }
@@ -10003,6 +10039,12 @@ namespace Android
             public static int wallpaperOpenExitAnimation { get { if (!_wallpaperOpenExitAnimationReady) { _wallpaperOpenExitAnimationContent = SGetField<int>(LocalBridgeClazz, "wallpaperOpenExitAnimation"); _wallpaperOpenExitAnimationReady = true; } return _wallpaperOpenExitAnimationContent; } }
             private static int _wallpaperOpenExitAnimationContent = default;
             private static bool _wallpaperOpenExitAnimationReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#wantsRoleHolderPriority"/>
+            /// </summary>
+            public static int wantsRoleHolderPriority { get { if (!_wantsRoleHolderPriorityReady) { _wantsRoleHolderPriorityContent = SGetField<int>(LocalBridgeClazz, "wantsRoleHolderPriority"); _wantsRoleHolderPriorityReady = true; } return _wantsRoleHolderPriorityContent; } }
+            private static int _wantsRoleHolderPriorityContent = default;
+            private static bool _wantsRoleHolderPriorityReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#webTextViewStyle"/>
             /// </summary>
@@ -13697,6 +13739,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.integer.html#status_bar_notification_info_maxnum"/>
             /// </summary>
+            [global::System.Obsolete()]
             public static int status_bar_notification_info_maxnum { get { if (!_status_bar_notification_info_maxnumReady) { _status_bar_notification_info_maxnumContent = SGetField<int>(LocalBridgeClazz, "status_bar_notification_info_maxnum"); _status_bar_notification_info_maxnumReady = true; } return _status_bar_notification_info_maxnumContent; } }
             private static int _status_bar_notification_info_maxnumContent = default;
             private static bool _status_bar_notification_info_maxnumReady = false; // this is used because in case of generics 
@@ -14287,6 +14330,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.string.html#status_bar_notification_info_overflow"/>
             /// </summary>
+            [global::System.Obsolete()]
             public static int status_bar_notification_info_overflow { get { if (!_status_bar_notification_info_overflowReady) { _status_bar_notification_info_overflowContent = SGetField<int>(LocalBridgeClazz, "status_bar_notification_info_overflow"); _status_bar_notification_info_overflowReady = true; } return _status_bar_notification_info_overflowContent; } }
             private static int _status_bar_notification_info_overflowContent = default;
             private static bool _status_bar_notification_info_overflowReady = false; // this is used because in case of generics 

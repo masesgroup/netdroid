@@ -293,6 +293,14 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<Android.Content.IntentSender>("getAppMarketActivityIntent", "(Ljava/lang/String;Landroid/os/UserHandle;)Landroid/content/IntentSender;", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getPrivateSpaceSettingsIntent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.IntentSender"/></returns>
+        public Android.Content.IntentSender GetPrivateSpaceSettingsIntent()
+        {
+            return IExecuteWithSignature<Android.Content.IntentSender>("getPrivateSpaceSettingsIntent", "()Landroid/content/IntentSender;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutConfigActivityIntent(android.content.pm.LauncherActivityInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.LauncherActivityInfo"/></param>
@@ -744,6 +752,14 @@ namespace Android.Content.Pm
             public void OnShortcutsChanged(Java.Lang.String arg0, Java.Util.List<Android.Content.Pm.ShortcutInfo> arg1, Android.Os.UserHandle arg2)
             {
                 IExecuteWithSignature("onShortcutsChanged", "(Ljava/lang/String;Ljava/util/List;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onUserConfigChanged(android.content.pm.LauncherUserInfo)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.Pm.LauncherUserInfo"/></param>
+            public void OnUserConfigChanged(Android.Content.Pm.LauncherUserInfo arg0)
+            {
+                IExecuteWithSignature("onUserConfigChanged", "(Landroid/content/pm/LauncherUserInfo;)V", arg0);
             }
         
             #endregion

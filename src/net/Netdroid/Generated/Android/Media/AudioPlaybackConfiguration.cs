@@ -104,6 +104,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackConfiguration.html#getAudioDeviceInfo()"/>
         /// </summary>
         /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        [global::System.Obsolete()]
         public Android.Media.AudioDeviceInfo GetAudioDeviceInfo()
         {
             return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getAudioDeviceInfo", "()Landroid/media/AudioDeviceInfo;");

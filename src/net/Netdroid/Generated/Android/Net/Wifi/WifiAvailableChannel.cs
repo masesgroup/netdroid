@@ -146,6 +146,14 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#getChannelWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelWidth()
+        {
+            return IExecuteWithSignature<int>("getChannelWidth", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#getFrequencyMhz()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

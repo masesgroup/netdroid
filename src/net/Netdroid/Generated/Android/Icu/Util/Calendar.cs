@@ -110,17 +110,13 @@ namespace Android.Icu.Util
     #endregion
 
     #region Calendar implementation
-    public partial class Calendar : Java.Io.ISerializable, Java.Lang.ICloneable, Java.Lang.IComparable<Android.Icu.Util.Calendar>
+    public partial class Calendar : Java.Lang.ICloneable, Java.Lang.IComparable<Android.Icu.Util.Calendar>, Java.Io.ISerializable
     {
         #region Constructors
     
         #endregion
     
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Android.Icu.Util.Calendar"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Android.Icu.Util.Calendar t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
         /// Converter from <see cref="Android.Icu.Util.Calendar"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -129,6 +125,10 @@ namespace Android.Icu.Util
         /// Converter from <see cref="Android.Icu.Util.Calendar"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Icu.Util.Calendar t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Icu.Util.Calendar"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
+        public static implicit operator Java.Io.Serializable(Android.Icu.Util.Calendar t) => t.Cast<Java.Io.Serializable>();
     
         #endregion
     
@@ -325,6 +325,12 @@ namespace Android.Icu.Util
         public static int OCTOBER { get { if (!_OCTOBERReady) { _OCTOBERContent = SGetField<int>(LocalBridgeClazz, "OCTOBER"); _OCTOBERReady = true; } return _OCTOBERContent; } }
         private static int _OCTOBERContent = default;
         private static bool _OCTOBERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#ORDINAL_MONTH"/>
+        /// </summary>
+        public static int ORDINAL_MONTH { get { if (!_ORDINAL_MONTHReady) { _ORDINAL_MONTHContent = SGetField<int>(LocalBridgeClazz, "ORDINAL_MONTH"); _ORDINAL_MONTHReady = true; } return _ORDINAL_MONTHContent; } }
+        private static int _ORDINAL_MONTHContent = default;
+        private static bool _ORDINAL_MONTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#PM"/>
         /// </summary>
@@ -582,6 +588,14 @@ namespace Android.Icu.Util
         public bool Before(object arg0)
         {
             return IExecuteWithSignature<bool>("before", "(Ljava/lang/Object;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#inTemporalLeapYear()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool InTemporalLeapYear()
+        {
+            return IExecuteWithSignature<bool>("inTemporalLeapYear", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#isEquivalentTo(android.icu.util.Calendar)"/>
@@ -860,6 +874,14 @@ namespace Android.Icu.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getTemporalMonthCode()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTemporalMonthCode()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTemporalMonthCode", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -932,6 +954,14 @@ namespace Android.Icu.Util
         public void SetSkippedWallTimeOption(int arg0)
         {
             IExecuteWithSignature("setSkippedWallTimeOption", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTemporalMonthCode(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetTemporalMonthCode(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setTemporalMonthCode", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTimeInMillis(long)"/>

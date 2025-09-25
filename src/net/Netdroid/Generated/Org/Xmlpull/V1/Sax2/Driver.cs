@@ -67,7 +67,7 @@ namespace Org.Xmlpull.V1.Sax2
     #endregion
 
     #region Driver implementation
-    public partial class Driver : Org.Xml.Sax.ILocator, Org.Xml.Sax.IXMLReader, Org.Xml.Sax.IAttributes
+    public partial class Driver : Org.Xml.Sax.IAttributes, Org.Xml.Sax.ILocator, Org.Xml.Sax.IXMLReader
     {
         #region Constructors
         /// <summary>
@@ -84,6 +84,10 @@ namespace Org.Xmlpull.V1.Sax2
     
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.Attributes"/>
+        /// </summary>
+        public static implicit operator Org.Xml.Sax.Attributes(Org.Xmlpull.V1.Sax2.Driver t) => t.Cast<Org.Xml.Sax.Attributes>();
+        /// <summary>
         /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.Locator"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Locator(Org.Xmlpull.V1.Sax2.Driver t) => t.Cast<Org.Xml.Sax.Locator>();
@@ -91,10 +95,6 @@ namespace Org.Xmlpull.V1.Sax2
         /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.XMLReader"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.XMLReader(Org.Xmlpull.V1.Sax2.Driver t) => t.Cast<Org.Xml.Sax.XMLReader>();
-        /// <summary>
-        /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.Attributes"/>
-        /// </summary>
-        public static implicit operator Org.Xml.Sax.Attributes(Org.Xmlpull.V1.Sax2.Driver t) => t.Cast<Org.Xml.Sax.Attributes>();
     
         #endregion
     

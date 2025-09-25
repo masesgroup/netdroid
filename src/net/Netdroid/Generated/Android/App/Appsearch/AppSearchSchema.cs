@@ -62,6 +62,88 @@ namespace Android.App.Appsearch
         public override bool IsBridgeStatic => false;
     
         // TODO: complete the class
+        #region BlobHandlePropertyConfig declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BlobHandlePropertyConfig.html"/>
+        /// </summary>
+        public partial class BlobHandlePropertyConfig : Android.App.Appsearch.AppSearchSchema.PropertyConfig
+        {
+            const string _bridgeClassName = "android.app.appsearch.AppSearchSchema$BlobHandlePropertyConfig";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public BlobHandlePropertyConfig() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public BlobHandlePropertyConfig(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public BlobHandlePropertyConfig(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+            #region Builder declaration
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BlobHandlePropertyConfig.Builder.html"/>
+            /// </summary>
+            public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+            {
+                const string _bridgeClassName = "android.app.appsearch.AppSearchSchema$BlobHandlePropertyConfig$Builder";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Builder() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public Builder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Builder(params object[] args) : base(args) { }
+            
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+                /// <inheritdoc/>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <inheritdoc/>
+                public override bool IsBridgeAbstract => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeCloseable => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeInterface => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeStatic => true;
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+
+        
+        }
+        #endregion
+
         #region BooleanPropertyConfig declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BooleanPropertyConfig.html"/>
@@ -431,6 +513,88 @@ namespace Android.App.Appsearch
         }
         #endregion
 
+        #region EmbeddingPropertyConfig declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.html"/>
+        /// </summary>
+        public partial class EmbeddingPropertyConfig : Android.App.Appsearch.AppSearchSchema.PropertyConfig
+        {
+            const string _bridgeClassName = "android.app.appsearch.AppSearchSchema$EmbeddingPropertyConfig";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public EmbeddingPropertyConfig() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public EmbeddingPropertyConfig(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public EmbeddingPropertyConfig(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+            #region Builder declaration
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.Builder.html"/>
+            /// </summary>
+            public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+            {
+                const string _bridgeClassName = "android.app.appsearch.AppSearchSchema$EmbeddingPropertyConfig$Builder";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Builder() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public Builder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Builder(params object[] args) : base(args) { }
+            
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+                /// <inheritdoc/>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <inheritdoc/>
+                public override bool IsBridgeAbstract => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeCloseable => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeInterface => false;
+                /// <inheritdoc/>
+                public override bool IsBridgeStatic => true;
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+
+        
+        }
+        #endregion
+
         #region LongPropertyConfig declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.html"/>
@@ -713,6 +877,93 @@ namespace Android.App.Appsearch
         #endregion
     
         #region Nested classes
+        #region BlobHandlePropertyConfig implementation
+        public partial class BlobHandlePropertyConfig
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+        
+            #endregion
+        
+            #region Nested classes
+            #region Builder implementation
+            public partial class Builder
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BlobHandlePropertyConfig.Builder.html#%3Cinit%3E(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                public Builder(Java.Lang.String arg0)
+                    : base(arg0)
+                {
+                }
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BlobHandlePropertyConfig.Builder.html#build()"/>
+                /// </summary>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.BlobHandlePropertyConfig"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.BlobHandlePropertyConfig Build()
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.BlobHandlePropertyConfig>("build");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BlobHandlePropertyConfig.Builder.html#setCardinality(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.BlobHandlePropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.BlobHandlePropertyConfig.Builder SetCardinality(int arg0)
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.BlobHandlePropertyConfig.Builder>("setCardinality", arg0);
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
         #region BooleanPropertyConfig implementation
         public partial class BooleanPropertyConfig
         {
@@ -733,6 +984,14 @@ namespace Android.App.Appsearch
             #endregion
         
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BooleanPropertyConfig.html#isScoringEnabled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsScoringEnabled()
+            {
+                return IExecuteWithSignature<bool>("isScoringEnabled", "()Z");
+            }
         
             #endregion
         
@@ -782,6 +1041,15 @@ namespace Android.App.Appsearch
                 {
                     return IExecute<Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder>("setCardinality", arg0);
                 }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.BooleanPropertyConfig.Builder.html#setScoringEnabled(boolean)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="bool"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder SetScoringEnabled(bool arg0)
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.BooleanPropertyConfig.Builder>("setScoringEnabled", arg0);
+                }
             
                 #endregion
             
@@ -804,6 +1072,14 @@ namespace Android.App.Appsearch
         public partial class Builder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.Builder.html#%3Cinit%3E(android.app.appsearch.AppSearchSchema)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.AppSearchSchema"/></param>
+            public Builder(Android.App.Appsearch.AppSearchSchema arg0)
+                : base(arg0)
+            {
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.Builder.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
@@ -853,6 +1129,31 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.AppSearchSchema.Builder AddProperty(Android.App.Appsearch.AppSearchSchema.PropertyConfig arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.Builder>("addProperty", "(Landroid/app/appsearch/AppSearchSchema$PropertyConfig;)Landroid/app/appsearch/AppSearchSchema$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.Builder.html#clearParentTypes()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.Builder"/></returns>
+            public Android.App.Appsearch.AppSearchSchema.Builder ClearParentTypes()
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.Builder>("clearParentTypes", "()Landroid/app/appsearch/AppSearchSchema$Builder;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.Builder.html#clearProperties()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.Builder"/></returns>
+            public Android.App.Appsearch.AppSearchSchema.Builder ClearProperties()
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.Builder>("clearProperties", "()Landroid/app/appsearch/AppSearchSchema$Builder;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.Builder.html#setSchemaType(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.Builder"/></returns>
+            public Android.App.Appsearch.AppSearchSchema.Builder SetSchemaType(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.Builder>("setSchemaType", "(Ljava/lang/String;)Landroid/app/appsearch/AppSearchSchema$Builder;", arg0);
             }
         
             #endregion
@@ -1129,6 +1430,14 @@ namespace Android.App.Appsearch
             #endregion
         
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DoublePropertyConfig.html#isScoringEnabled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsScoringEnabled()
+            {
+                return IExecuteWithSignature<bool>("isScoringEnabled", "()Z");
+            }
         
             #endregion
         
@@ -1177,6 +1486,160 @@ namespace Android.App.Appsearch
                 public Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder SetCardinality(int arg0)
                 {
                     return IExecute<Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder>("setCardinality", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DoublePropertyConfig.Builder.html#setScoringEnabled(boolean)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="bool"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder SetScoringEnabled(bool arg0)
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.DoublePropertyConfig.Builder>("setScoringEnabled", arg0);
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region EmbeddingPropertyConfig implementation
+        public partial class EmbeddingPropertyConfig
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.html#INDEXING_TYPE_NONE"/>
+            /// </summary>
+            public static int INDEXING_TYPE_NONE { get { if (!_INDEXING_TYPE_NONEReady) { _INDEXING_TYPE_NONEContent = SGetField<int>(LocalBridgeClazz, "INDEXING_TYPE_NONE"); _INDEXING_TYPE_NONEReady = true; } return _INDEXING_TYPE_NONEContent; } }
+            private static int _INDEXING_TYPE_NONEContent = default;
+            private static bool _INDEXING_TYPE_NONEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.html#INDEXING_TYPE_SIMILARITY"/>
+            /// </summary>
+            public static int INDEXING_TYPE_SIMILARITY { get { if (!_INDEXING_TYPE_SIMILARITYReady) { _INDEXING_TYPE_SIMILARITYContent = SGetField<int>(LocalBridgeClazz, "INDEXING_TYPE_SIMILARITY"); _INDEXING_TYPE_SIMILARITYReady = true; } return _INDEXING_TYPE_SIMILARITYContent; } }
+            private static int _INDEXING_TYPE_SIMILARITYContent = default;
+            private static bool _INDEXING_TYPE_SIMILARITYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.html#QUANTIZATION_TYPE_8_BIT"/>
+            /// </summary>
+            public static int QUANTIZATION_TYPE_8_BIT { get { if (!_QUANTIZATION_TYPE_8_BITReady) { _QUANTIZATION_TYPE_8_BITContent = SGetField<int>(LocalBridgeClazz, "QUANTIZATION_TYPE_8_BIT"); _QUANTIZATION_TYPE_8_BITReady = true; } return _QUANTIZATION_TYPE_8_BITContent; } }
+            private static int _QUANTIZATION_TYPE_8_BITContent = default;
+            private static bool _QUANTIZATION_TYPE_8_BITReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.html#QUANTIZATION_TYPE_NONE"/>
+            /// </summary>
+            public static int QUANTIZATION_TYPE_NONE { get { if (!_QUANTIZATION_TYPE_NONEReady) { _QUANTIZATION_TYPE_NONEContent = SGetField<int>(LocalBridgeClazz, "QUANTIZATION_TYPE_NONE"); _QUANTIZATION_TYPE_NONEReady = true; } return _QUANTIZATION_TYPE_NONEContent; } }
+            private static int _QUANTIZATION_TYPE_NONEContent = default;
+            private static bool _QUANTIZATION_TYPE_NONEReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.html#getIndexingType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetIndexingType()
+            {
+                return IExecuteWithSignature<int>("getIndexingType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.html#getQuantizationType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetQuantizationType()
+            {
+                return IExecuteWithSignature<int>("getQuantizationType", "()I");
+            }
+        
+            #endregion
+        
+            #region Nested classes
+            #region Builder implementation
+            public partial class Builder
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.Builder.html#%3Cinit%3E(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                public Builder(Java.Lang.String arg0)
+                    : base(arg0)
+                {
+                }
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.Builder.html#build()"/>
+                /// </summary>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig Build()
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig>("build");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.Builder.html#setCardinality(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder SetCardinality(int arg0)
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder>("setCardinality", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.Builder.html#setIndexingType(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder SetIndexingType(int arg0)
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder>("setIndexingType", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.EmbeddingPropertyConfig.Builder.html#setQuantizationType(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder SetQuantizationType(int arg0)
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder>("setQuantizationType", arg0);
                 }
             
                 #endregion
@@ -1228,6 +1691,14 @@ namespace Android.App.Appsearch
             #endregion
         
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.html#isScoringEnabled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsScoringEnabled()
+            {
+                return IExecuteWithSignature<bool>("isScoringEnabled", "()Z");
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.html#getIndexingType()"/>
             /// </summary>
@@ -1293,6 +1764,15 @@ namespace Android.App.Appsearch
                 public Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder SetIndexingType(int arg0)
                 {
                     return IExecute<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder>("setIndexingType", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.Builder.html#setScoringEnabled(boolean)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="bool"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder SetScoringEnabled(bool arg0)
+                {
+                    return IExecute<Android.App.Appsearch.AppSearchSchema.LongPropertyConfig.Builder>("setScoringEnabled", arg0);
                 }
             
                 #endregion

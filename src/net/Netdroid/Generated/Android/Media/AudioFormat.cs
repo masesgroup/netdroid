@@ -630,6 +630,78 @@ namespace Android.Media
         private static int _ENCODING_E_AC3_JOCContent = default;
         private static bool _ENCODING_E_AC3_JOCReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_ENHANCED_PROFILE_AAC"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_ENHANCED_PROFILE_AAC { get { if (!_ENCODING_IAMF_BASE_ENHANCED_PROFILE_AACReady) { _ENCODING_IAMF_BASE_ENHANCED_PROFILE_AACContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_ENHANCED_PROFILE_AAC"); _ENCODING_IAMF_BASE_ENHANCED_PROFILE_AACReady = true; } return _ENCODING_IAMF_BASE_ENHANCED_PROFILE_AACContent; } }
+        private static int _ENCODING_IAMF_BASE_ENHANCED_PROFILE_AACContent = default;
+        private static bool _ENCODING_IAMF_BASE_ENHANCED_PROFILE_AACReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLAC"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLAC { get { if (!_ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLACReady) { _ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLACContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLAC"); _ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLACReady = true; } return _ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLACContent; } }
+        private static int _ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLACContent = default;
+        private static bool _ENCODING_IAMF_BASE_ENHANCED_PROFILE_FLACReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUS"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUS { get { if (!_ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUSReady) { _ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUSContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUS"); _ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUSReady = true; } return _ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUSContent; } }
+        private static int _ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUSContent = default;
+        private static bool _ENCODING_IAMF_BASE_ENHANCED_PROFILE_OPUSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCM"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCM { get { if (!_ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCMReady) { _ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCMContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCM"); _ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCMReady = true; } return _ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCMContent; } }
+        private static int _ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCMContent = default;
+        private static bool _ENCODING_IAMF_BASE_ENHANCED_PROFILE_PCMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_PROFILE_AAC"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_PROFILE_AAC { get { if (!_ENCODING_IAMF_BASE_PROFILE_AACReady) { _ENCODING_IAMF_BASE_PROFILE_AACContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_PROFILE_AAC"); _ENCODING_IAMF_BASE_PROFILE_AACReady = true; } return _ENCODING_IAMF_BASE_PROFILE_AACContent; } }
+        private static int _ENCODING_IAMF_BASE_PROFILE_AACContent = default;
+        private static bool _ENCODING_IAMF_BASE_PROFILE_AACReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_PROFILE_FLAC"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_PROFILE_FLAC { get { if (!_ENCODING_IAMF_BASE_PROFILE_FLACReady) { _ENCODING_IAMF_BASE_PROFILE_FLACContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_PROFILE_FLAC"); _ENCODING_IAMF_BASE_PROFILE_FLACReady = true; } return _ENCODING_IAMF_BASE_PROFILE_FLACContent; } }
+        private static int _ENCODING_IAMF_BASE_PROFILE_FLACContent = default;
+        private static bool _ENCODING_IAMF_BASE_PROFILE_FLACReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_PROFILE_OPUS"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_PROFILE_OPUS { get { if (!_ENCODING_IAMF_BASE_PROFILE_OPUSReady) { _ENCODING_IAMF_BASE_PROFILE_OPUSContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_PROFILE_OPUS"); _ENCODING_IAMF_BASE_PROFILE_OPUSReady = true; } return _ENCODING_IAMF_BASE_PROFILE_OPUSContent; } }
+        private static int _ENCODING_IAMF_BASE_PROFILE_OPUSContent = default;
+        private static bool _ENCODING_IAMF_BASE_PROFILE_OPUSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_BASE_PROFILE_PCM"/>
+        /// </summary>
+        public static int ENCODING_IAMF_BASE_PROFILE_PCM { get { if (!_ENCODING_IAMF_BASE_PROFILE_PCMReady) { _ENCODING_IAMF_BASE_PROFILE_PCMContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_BASE_PROFILE_PCM"); _ENCODING_IAMF_BASE_PROFILE_PCMReady = true; } return _ENCODING_IAMF_BASE_PROFILE_PCMContent; } }
+        private static int _ENCODING_IAMF_BASE_PROFILE_PCMContent = default;
+        private static bool _ENCODING_IAMF_BASE_PROFILE_PCMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_SIMPLE_PROFILE_AAC"/>
+        /// </summary>
+        public static int ENCODING_IAMF_SIMPLE_PROFILE_AAC { get { if (!_ENCODING_IAMF_SIMPLE_PROFILE_AACReady) { _ENCODING_IAMF_SIMPLE_PROFILE_AACContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_SIMPLE_PROFILE_AAC"); _ENCODING_IAMF_SIMPLE_PROFILE_AACReady = true; } return _ENCODING_IAMF_SIMPLE_PROFILE_AACContent; } }
+        private static int _ENCODING_IAMF_SIMPLE_PROFILE_AACContent = default;
+        private static bool _ENCODING_IAMF_SIMPLE_PROFILE_AACReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_SIMPLE_PROFILE_FLAC"/>
+        /// </summary>
+        public static int ENCODING_IAMF_SIMPLE_PROFILE_FLAC { get { if (!_ENCODING_IAMF_SIMPLE_PROFILE_FLACReady) { _ENCODING_IAMF_SIMPLE_PROFILE_FLACContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_SIMPLE_PROFILE_FLAC"); _ENCODING_IAMF_SIMPLE_PROFILE_FLACReady = true; } return _ENCODING_IAMF_SIMPLE_PROFILE_FLACContent; } }
+        private static int _ENCODING_IAMF_SIMPLE_PROFILE_FLACContent = default;
+        private static bool _ENCODING_IAMF_SIMPLE_PROFILE_FLACReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_SIMPLE_PROFILE_OPUS"/>
+        /// </summary>
+        public static int ENCODING_IAMF_SIMPLE_PROFILE_OPUS { get { if (!_ENCODING_IAMF_SIMPLE_PROFILE_OPUSReady) { _ENCODING_IAMF_SIMPLE_PROFILE_OPUSContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_SIMPLE_PROFILE_OPUS"); _ENCODING_IAMF_SIMPLE_PROFILE_OPUSReady = true; } return _ENCODING_IAMF_SIMPLE_PROFILE_OPUSContent; } }
+        private static int _ENCODING_IAMF_SIMPLE_PROFILE_OPUSContent = default;
+        private static bool _ENCODING_IAMF_SIMPLE_PROFILE_OPUSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IAMF_SIMPLE_PROFILE_PCM"/>
+        /// </summary>
+        public static int ENCODING_IAMF_SIMPLE_PROFILE_PCM { get { if (!_ENCODING_IAMF_SIMPLE_PROFILE_PCMReady) { _ENCODING_IAMF_SIMPLE_PROFILE_PCMContent = SGetField<int>(LocalBridgeClazz, "ENCODING_IAMF_SIMPLE_PROFILE_PCM"); _ENCODING_IAMF_SIMPLE_PROFILE_PCMReady = true; } return _ENCODING_IAMF_SIMPLE_PROFILE_PCMContent; } }
+        private static int _ENCODING_IAMF_SIMPLE_PROFILE_PCMContent = default;
+        private static bool _ENCODING_IAMF_SIMPLE_PROFILE_PCMReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IEC61937"/>
         /// </summary>
         public static int ENCODING_IEC61937 { get { if (!_ENCODING_IEC61937Ready) { _ENCODING_IEC61937Content = SGetField<int>(LocalBridgeClazz, "ENCODING_IEC61937"); _ENCODING_IEC61937Ready = true; } return _ENCODING_IEC61937Content; } }

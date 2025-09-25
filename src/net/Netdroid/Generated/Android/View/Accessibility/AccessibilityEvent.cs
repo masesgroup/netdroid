@@ -105,6 +105,12 @@ namespace Android.View.Accessibility
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CHECKED"/>
+        /// </summary>
+        public static int CONTENT_CHANGE_TYPE_CHECKED { get { if (!_CONTENT_CHANGE_TYPE_CHECKEDReady) { _CONTENT_CHANGE_TYPE_CHECKEDContent = SGetField<int>(LocalBridgeClazz, "CONTENT_CHANGE_TYPE_CHECKED"); _CONTENT_CHANGE_TYPE_CHECKEDReady = true; } return _CONTENT_CHANGE_TYPE_CHECKEDContent; } }
+        private static int _CONTENT_CHANGE_TYPE_CHECKEDContent = default;
+        private static bool _CONTENT_CHANGE_TYPE_CHECKEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION"/>
         /// </summary>
         public static int CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION { get { if (!_CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTIONReady) { _CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTIONContent = SGetField<int>(LocalBridgeClazz, "CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION"); _CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTIONReady = true; } return _CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTIONContent; } }
@@ -147,6 +153,12 @@ namespace Android.View.Accessibility
         private static int _CONTENT_CHANGE_TYPE_ERRORContent = default;
         private static bool _CONTENT_CHANGE_TYPE_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_EXPANDED"/>
+        /// </summary>
+        public static int CONTENT_CHANGE_TYPE_EXPANDED { get { if (!_CONTENT_CHANGE_TYPE_EXPANDEDReady) { _CONTENT_CHANGE_TYPE_EXPANDEDContent = SGetField<int>(LocalBridgeClazz, "CONTENT_CHANGE_TYPE_EXPANDED"); _CONTENT_CHANGE_TYPE_EXPANDEDReady = true; } return _CONTENT_CHANGE_TYPE_EXPANDEDContent; } }
+        private static int _CONTENT_CHANGE_TYPE_EXPANDEDContent = default;
+        private static bool _CONTENT_CHANGE_TYPE_EXPANDEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_APPEARED"/>
         /// </summary>
         public static int CONTENT_CHANGE_TYPE_PANE_APPEARED { get { if (!_CONTENT_CHANGE_TYPE_PANE_APPEAREDReady) { _CONTENT_CHANGE_TYPE_PANE_APPEAREDContent = SGetField<int>(LocalBridgeClazz, "CONTENT_CHANGE_TYPE_PANE_APPEARED"); _CONTENT_CHANGE_TYPE_PANE_APPEAREDReady = true; } return _CONTENT_CHANGE_TYPE_PANE_APPEAREDContent; } }
@@ -176,6 +188,12 @@ namespace Android.View.Accessibility
         public static int CONTENT_CHANGE_TYPE_SUBTREE { get { if (!_CONTENT_CHANGE_TYPE_SUBTREEReady) { _CONTENT_CHANGE_TYPE_SUBTREEContent = SGetField<int>(LocalBridgeClazz, "CONTENT_CHANGE_TYPE_SUBTREE"); _CONTENT_CHANGE_TYPE_SUBTREEReady = true; } return _CONTENT_CHANGE_TYPE_SUBTREEContent; } }
         private static int _CONTENT_CHANGE_TYPE_SUBTREEContent = default;
         private static bool _CONTENT_CHANGE_TYPE_SUBTREEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION"/>
+        /// </summary>
+        public static int CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION { get { if (!_CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTIONReady) { _CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTIONContent = SGetField<int>(LocalBridgeClazz, "CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION"); _CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTIONReady = true; } return _CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTIONContent; } }
+        private static int _CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTIONContent = default;
+        private static bool _CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_TEXT"/>
         /// </summary>
@@ -228,6 +246,7 @@ namespace Android.View.Accessibility
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ANNOUNCEMENT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int TYPE_ANNOUNCEMENT { get { if (!_TYPE_ANNOUNCEMENTReady) { _TYPE_ANNOUNCEMENTContent = SGetField<int>(LocalBridgeClazz, "TYPE_ANNOUNCEMENT"); _TYPE_ANNOUNCEMENTReady = true; } return _TYPE_ANNOUNCEMENTContent; } }
         private static int _TYPE_ANNOUNCEMENTContent = default;
         private static bool _TYPE_ANNOUNCEMENTReady = false; // this is used because in case of generics 

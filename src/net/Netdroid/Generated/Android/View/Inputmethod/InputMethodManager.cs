@@ -191,6 +191,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Os.ResultReceiver"/></param>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool HideSoftInputFromWindow(Android.Os.IBinder arg0, int arg1, Android.Os.ResultReceiver arg2)
         {
             return IExecuteWithSignature<bool>("hideSoftInputFromWindow", "(Landroid/os/IBinder;ILandroid/os/ResultReceiver;)Z", arg0, arg1, arg2);
@@ -299,6 +300,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Os.ResultReceiver"/></param>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool ShowSoftInput(Android.View.View arg0, int arg1, Android.Os.ResultReceiver arg2)
         {
             return IExecuteWithSignature<bool>("showSoftInput", "(Landroid/view/View;ILandroid/os/ResultReceiver;)Z", arg0, arg1, arg2);

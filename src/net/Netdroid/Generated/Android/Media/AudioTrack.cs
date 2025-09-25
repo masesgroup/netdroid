@@ -1189,6 +1189,14 @@ namespace Android.Media
             return IExecuteWithSignature<int>("write", "([SII)I", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getRoutedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioDeviceInfo> GetRoutedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDeviceInfo>>("getRoutedDevices", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#addOnCodecFormatChangedListener(java.util.concurrent.Executor,android.media.AudioTrack.OnCodecFormatChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>

@@ -299,6 +299,12 @@ namespace Android.Hardware.Camera2
         private static int _COLOR_CORRECTION_ABERRATION_MODE_OFFContent = default;
         private static bool _COLOR_CORRECTION_ABERRATION_MODE_OFFReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#COLOR_CORRECTION_MODE_CCT"/>
+        /// </summary>
+        public static int COLOR_CORRECTION_MODE_CCT { get { if (!_COLOR_CORRECTION_MODE_CCTReady) { _COLOR_CORRECTION_MODE_CCTContent = SGetField<int>(LocalBridgeClazz, "COLOR_CORRECTION_MODE_CCT"); _COLOR_CORRECTION_MODE_CCTReady = true; } return _COLOR_CORRECTION_MODE_CCTContent; } }
+        private static int _COLOR_CORRECTION_MODE_CCTContent = default;
+        private static bool _COLOR_CORRECTION_MODE_CCTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#COLOR_CORRECTION_MODE_FAST"/>
         /// </summary>
         public static int COLOR_CORRECTION_MODE_FAST { get { if (!_COLOR_CORRECTION_MODE_FASTReady) { _COLOR_CORRECTION_MODE_FASTContent = SGetField<int>(LocalBridgeClazz, "COLOR_CORRECTION_MODE_FAST"); _COLOR_CORRECTION_MODE_FASTReady = true; } return _COLOR_CORRECTION_MODE_FASTContent; } }
@@ -400,6 +406,24 @@ namespace Android.Hardware.Camera2
         public static int CONTROL_AE_PRECAPTURE_TRIGGER_START { get { if (!_CONTROL_AE_PRECAPTURE_TRIGGER_STARTReady) { _CONTROL_AE_PRECAPTURE_TRIGGER_STARTContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRECAPTURE_TRIGGER_START"); _CONTROL_AE_PRECAPTURE_TRIGGER_STARTReady = true; } return _CONTROL_AE_PRECAPTURE_TRIGGER_STARTContent; } }
         private static int _CONTROL_AE_PRECAPTURE_TRIGGER_STARTContent = default;
         private static bool _CONTROL_AE_PRECAPTURE_TRIGGER_STARTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRIORITY_MODE_OFF"/>
+        /// </summary>
+        public static int CONTROL_AE_PRIORITY_MODE_OFF { get { if (!_CONTROL_AE_PRIORITY_MODE_OFFReady) { _CONTROL_AE_PRIORITY_MODE_OFFContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRIORITY_MODE_OFF"); _CONTROL_AE_PRIORITY_MODE_OFFReady = true; } return _CONTROL_AE_PRIORITY_MODE_OFFContent; } }
+        private static int _CONTROL_AE_PRIORITY_MODE_OFFContent = default;
+        private static bool _CONTROL_AE_PRIORITY_MODE_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITY"/>
+        /// </summary>
+        public static int CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITY { get { if (!_CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYReady) { _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITY"); _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYReady = true; } return _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYContent; } }
+        private static int _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYContent = default;
+        private static bool _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITY"/>
+        /// </summary>
+        public static int CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITY { get { if (!_CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYReady) { _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITY"); _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYReady = true; } return _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYContent; } }
+        private static int _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYContent = default;
+        private static bool _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_STATE_CONVERGED"/>
         /// </summary>
@@ -960,6 +984,18 @@ namespace Android.Hardware.Camera2
         private static int _CONTROL_VIDEO_STABILIZATION_MODE_PREVIEW_STABILIZATIONContent = default;
         private static bool _CONTROL_VIDEO_STABILIZATION_MODE_PREVIEW_STABILIZATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_ZOOM_METHOD_AUTO"/>
+        /// </summary>
+        public static int CONTROL_ZOOM_METHOD_AUTO { get { if (!_CONTROL_ZOOM_METHOD_AUTOReady) { _CONTROL_ZOOM_METHOD_AUTOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_ZOOM_METHOD_AUTO"); _CONTROL_ZOOM_METHOD_AUTOReady = true; } return _CONTROL_ZOOM_METHOD_AUTOContent; } }
+        private static int _CONTROL_ZOOM_METHOD_AUTOContent = default;
+        private static bool _CONTROL_ZOOM_METHOD_AUTOReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_ZOOM_METHOD_ZOOM_RATIO"/>
+        /// </summary>
+        public static int CONTROL_ZOOM_METHOD_ZOOM_RATIO { get { if (!_CONTROL_ZOOM_METHOD_ZOOM_RATIOReady) { _CONTROL_ZOOM_METHOD_ZOOM_RATIOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_ZOOM_METHOD_ZOOM_RATIO"); _CONTROL_ZOOM_METHOD_ZOOM_RATIOReady = true; } return _CONTROL_ZOOM_METHOD_ZOOM_RATIOContent; } }
+        private static int _CONTROL_ZOOM_METHOD_ZOOM_RATIOContent = default;
+        private static bool _CONTROL_ZOOM_METHOD_ZOOM_RATIOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#DISTORTION_CORRECTION_MODE_FAST"/>
         /// </summary>
         public static int DISTORTION_CORRECTION_MODE_FAST { get { if (!_DISTORTION_CORRECTION_MODE_FASTReady) { _DISTORTION_CORRECTION_MODE_FASTContent = SGetField<int>(LocalBridgeClazz, "DISTORTION_CORRECTION_MODE_FAST"); _DISTORTION_CORRECTION_MODE_FASTReady = true; } return _DISTORTION_CORRECTION_MODE_FASTContent; } }
@@ -1001,6 +1037,24 @@ namespace Android.Hardware.Camera2
         public static int EDGE_MODE_ZERO_SHUTTER_LAG { get { if (!_EDGE_MODE_ZERO_SHUTTER_LAGReady) { _EDGE_MODE_ZERO_SHUTTER_LAGContent = SGetField<int>(LocalBridgeClazz, "EDGE_MODE_ZERO_SHUTTER_LAG"); _EDGE_MODE_ZERO_SHUTTER_LAGReady = true; } return _EDGE_MODE_ZERO_SHUTTER_LAGContent; } }
         private static int _EDGE_MODE_ZERO_SHUTTER_LAGContent = default;
         private static bool _EDGE_MODE_ZERO_SHUTTER_LAGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#EXTENSION_NIGHT_MODE_INDICATOR_OFF"/>
+        /// </summary>
+        public static int EXTENSION_NIGHT_MODE_INDICATOR_OFF { get { if (!_EXTENSION_NIGHT_MODE_INDICATOR_OFFReady) { _EXTENSION_NIGHT_MODE_INDICATOR_OFFContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_NIGHT_MODE_INDICATOR_OFF"); _EXTENSION_NIGHT_MODE_INDICATOR_OFFReady = true; } return _EXTENSION_NIGHT_MODE_INDICATOR_OFFContent; } }
+        private static int _EXTENSION_NIGHT_MODE_INDICATOR_OFFContent = default;
+        private static bool _EXTENSION_NIGHT_MODE_INDICATOR_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#EXTENSION_NIGHT_MODE_INDICATOR_ON"/>
+        /// </summary>
+        public static int EXTENSION_NIGHT_MODE_INDICATOR_ON { get { if (!_EXTENSION_NIGHT_MODE_INDICATOR_ONReady) { _EXTENSION_NIGHT_MODE_INDICATOR_ONContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_NIGHT_MODE_INDICATOR_ON"); _EXTENSION_NIGHT_MODE_INDICATOR_ONReady = true; } return _EXTENSION_NIGHT_MODE_INDICATOR_ONContent; } }
+        private static int _EXTENSION_NIGHT_MODE_INDICATOR_ONContent = default;
+        private static bool _EXTENSION_NIGHT_MODE_INDICATOR_ONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWN"/>
+        /// </summary>
+        public static int EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWN { get { if (!_EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNReady) { _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWN"); _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNReady = true; } return _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNContent; } }
+        private static int _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNContent = default;
+        private static bool _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#FLASH_MODE_OFF"/>
         /// </summary>
@@ -2011,6 +2065,12 @@ namespace Android.Hardware.Camera2
         private static int _COLOR_CORRECTION_ABERRATION_MODE_OFFContent = default;
         private static bool _COLOR_CORRECTION_ABERRATION_MODE_OFFReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#COLOR_CORRECTION_MODE_CCT"/>
+        /// </summary>
+        public static int COLOR_CORRECTION_MODE_CCT { get { if (!_COLOR_CORRECTION_MODE_CCTReady) { _COLOR_CORRECTION_MODE_CCTContent = SGetField<int>(LocalBridgeClazz, "COLOR_CORRECTION_MODE_CCT"); _COLOR_CORRECTION_MODE_CCTReady = true; } return _COLOR_CORRECTION_MODE_CCTContent; } }
+        private static int _COLOR_CORRECTION_MODE_CCTContent = default;
+        private static bool _COLOR_CORRECTION_MODE_CCTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#COLOR_CORRECTION_MODE_FAST"/>
         /// </summary>
         public static int COLOR_CORRECTION_MODE_FAST { get { if (!_COLOR_CORRECTION_MODE_FASTReady) { _COLOR_CORRECTION_MODE_FASTContent = SGetField<int>(LocalBridgeClazz, "COLOR_CORRECTION_MODE_FAST"); _COLOR_CORRECTION_MODE_FASTReady = true; } return _COLOR_CORRECTION_MODE_FASTContent; } }
@@ -2112,6 +2172,24 @@ namespace Android.Hardware.Camera2
         public static int CONTROL_AE_PRECAPTURE_TRIGGER_START { get { if (!_CONTROL_AE_PRECAPTURE_TRIGGER_STARTReady) { _CONTROL_AE_PRECAPTURE_TRIGGER_STARTContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRECAPTURE_TRIGGER_START"); _CONTROL_AE_PRECAPTURE_TRIGGER_STARTReady = true; } return _CONTROL_AE_PRECAPTURE_TRIGGER_STARTContent; } }
         private static int _CONTROL_AE_PRECAPTURE_TRIGGER_STARTContent = default;
         private static bool _CONTROL_AE_PRECAPTURE_TRIGGER_STARTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRIORITY_MODE_OFF"/>
+        /// </summary>
+        public static int CONTROL_AE_PRIORITY_MODE_OFF { get { if (!_CONTROL_AE_PRIORITY_MODE_OFFReady) { _CONTROL_AE_PRIORITY_MODE_OFFContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRIORITY_MODE_OFF"); _CONTROL_AE_PRIORITY_MODE_OFFReady = true; } return _CONTROL_AE_PRIORITY_MODE_OFFContent; } }
+        private static int _CONTROL_AE_PRIORITY_MODE_OFFContent = default;
+        private static bool _CONTROL_AE_PRIORITY_MODE_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITY"/>
+        /// </summary>
+        public static int CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITY { get { if (!_CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYReady) { _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITY"); _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYReady = true; } return _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYContent; } }
+        private static int _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYContent = default;
+        private static bool _CONTROL_AE_PRIORITY_MODE_SENSOR_EXPOSURE_TIME_PRIORITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITY"/>
+        /// </summary>
+        public static int CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITY { get { if (!_CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYReady) { _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITY"); _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYReady = true; } return _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYContent; } }
+        private static int _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYContent = default;
+        private static bool _CONTROL_AE_PRIORITY_MODE_SENSOR_SENSITIVITY_PRIORITYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_STATE_CONVERGED"/>
         /// </summary>
@@ -2672,6 +2750,18 @@ namespace Android.Hardware.Camera2
         private static int _CONTROL_VIDEO_STABILIZATION_MODE_PREVIEW_STABILIZATIONContent = default;
         private static bool _CONTROL_VIDEO_STABILIZATION_MODE_PREVIEW_STABILIZATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_ZOOM_METHOD_AUTO"/>
+        /// </summary>
+        public static int CONTROL_ZOOM_METHOD_AUTO { get { if (!_CONTROL_ZOOM_METHOD_AUTOReady) { _CONTROL_ZOOM_METHOD_AUTOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_ZOOM_METHOD_AUTO"); _CONTROL_ZOOM_METHOD_AUTOReady = true; } return _CONTROL_ZOOM_METHOD_AUTOContent; } }
+        private static int _CONTROL_ZOOM_METHOD_AUTOContent = default;
+        private static bool _CONTROL_ZOOM_METHOD_AUTOReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_ZOOM_METHOD_ZOOM_RATIO"/>
+        /// </summary>
+        public static int CONTROL_ZOOM_METHOD_ZOOM_RATIO { get { if (!_CONTROL_ZOOM_METHOD_ZOOM_RATIOReady) { _CONTROL_ZOOM_METHOD_ZOOM_RATIOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_ZOOM_METHOD_ZOOM_RATIO"); _CONTROL_ZOOM_METHOD_ZOOM_RATIOReady = true; } return _CONTROL_ZOOM_METHOD_ZOOM_RATIOContent; } }
+        private static int _CONTROL_ZOOM_METHOD_ZOOM_RATIOContent = default;
+        private static bool _CONTROL_ZOOM_METHOD_ZOOM_RATIOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#DISTORTION_CORRECTION_MODE_FAST"/>
         /// </summary>
         public static int DISTORTION_CORRECTION_MODE_FAST { get { if (!_DISTORTION_CORRECTION_MODE_FASTReady) { _DISTORTION_CORRECTION_MODE_FASTContent = SGetField<int>(LocalBridgeClazz, "DISTORTION_CORRECTION_MODE_FAST"); _DISTORTION_CORRECTION_MODE_FASTReady = true; } return _DISTORTION_CORRECTION_MODE_FASTContent; } }
@@ -2713,6 +2803,24 @@ namespace Android.Hardware.Camera2
         public static int EDGE_MODE_ZERO_SHUTTER_LAG { get { if (!_EDGE_MODE_ZERO_SHUTTER_LAGReady) { _EDGE_MODE_ZERO_SHUTTER_LAGContent = SGetField<int>(LocalBridgeClazz, "EDGE_MODE_ZERO_SHUTTER_LAG"); _EDGE_MODE_ZERO_SHUTTER_LAGReady = true; } return _EDGE_MODE_ZERO_SHUTTER_LAGContent; } }
         private static int _EDGE_MODE_ZERO_SHUTTER_LAGContent = default;
         private static bool _EDGE_MODE_ZERO_SHUTTER_LAGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#EXTENSION_NIGHT_MODE_INDICATOR_OFF"/>
+        /// </summary>
+        public static int EXTENSION_NIGHT_MODE_INDICATOR_OFF { get { if (!_EXTENSION_NIGHT_MODE_INDICATOR_OFFReady) { _EXTENSION_NIGHT_MODE_INDICATOR_OFFContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_NIGHT_MODE_INDICATOR_OFF"); _EXTENSION_NIGHT_MODE_INDICATOR_OFFReady = true; } return _EXTENSION_NIGHT_MODE_INDICATOR_OFFContent; } }
+        private static int _EXTENSION_NIGHT_MODE_INDICATOR_OFFContent = default;
+        private static bool _EXTENSION_NIGHT_MODE_INDICATOR_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#EXTENSION_NIGHT_MODE_INDICATOR_ON"/>
+        /// </summary>
+        public static int EXTENSION_NIGHT_MODE_INDICATOR_ON { get { if (!_EXTENSION_NIGHT_MODE_INDICATOR_ONReady) { _EXTENSION_NIGHT_MODE_INDICATOR_ONContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_NIGHT_MODE_INDICATOR_ON"); _EXTENSION_NIGHT_MODE_INDICATOR_ONReady = true; } return _EXTENSION_NIGHT_MODE_INDICATOR_ONContent; } }
+        private static int _EXTENSION_NIGHT_MODE_INDICATOR_ONContent = default;
+        private static bool _EXTENSION_NIGHT_MODE_INDICATOR_ONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWN"/>
+        /// </summary>
+        public static int EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWN { get { if (!_EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNReady) { _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWN"); _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNReady = true; } return _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNContent; } }
+        private static int _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNContent = default;
+        private static bool _EXTENSION_NIGHT_MODE_INDICATOR_UNKNOWNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#FLASH_MODE_OFF"/>
         /// </summary>

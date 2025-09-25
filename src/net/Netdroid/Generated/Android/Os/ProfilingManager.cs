@@ -111,6 +111,21 @@ namespace Android.Os
     
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#addProfilingTriggers(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void AddProfilingTriggers(Java.Util.List<Android.Os.ProfilingTrigger> arg0)
+        {
+            IExecuteWithSignature("addProfilingTriggers", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#clearProfilingTriggers()"/>
+        /// </summary>
+        public void ClearProfilingTriggers()
+        {
+            IExecuteWithSignature("clearProfilingTriggers", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#registerForAllProfilingResults(java.util.concurrent.Executor,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -118,6 +133,14 @@ namespace Android.Os
         public void RegisterForAllProfilingResults(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.Os.ProfilingResult> arg1)
         {
             IExecuteWithSignature("registerForAllProfilingResults", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#removeProfilingTriggersByType(int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void RemoveProfilingTriggersByType(int[] arg0)
+        {
+            IExecuteWithSignature("removeProfilingTriggersByType", "([I)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProfilingManager.html#requestProfiling(int,android.os.Bundle,java.lang.String,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)"/>

@@ -103,6 +103,161 @@ namespace Android.View
         }
         #endregion
 
+        #region JankData declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html"/>
+        /// </summary>
+        public partial class JankData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JankData>
+        {
+            const string _bridgeClassName = "android.view.SurfaceControl$JankData";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public JankData() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public JankData(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public JankData(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
+        #region OnJankDataListener declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListener.html"/>
+        /// </summary>
+        public partial class OnJankDataListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnJankDataListener() { InitializeHandlers(); }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public OnJankDataListener(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public OnJankDataListener(params object[] args) : base(args) { InitializeHandlers(); }
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.view.SurfaceControl_OnJankDataListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+            
+            /// <inheritdoc />
+            public override string BridgeClassName => _bridgeClassName;
+        
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+        
+        #region OnJankDataListenerDirect declaration
+        /// <summary>
+        /// Direct override of <see cref="OnJankDataListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class OnJankDataListenerDirect : OnJankDataListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnJankDataListenerDirect() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public OnJankDataListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        
+            /// <inheritdoc/>
+            public override bool AutoInit => false;
+        
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+        
+            const string _bridgeClassName = "android.view.SurfaceControl$OnJankDataListener";
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => true;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
+        #region OnJankDataListenerRegistration declaration
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListenerRegistration.html"/>
+        /// </summary>
+        public partial class OnJankDataListenerRegistration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OnJankDataListenerRegistration>
+        {
+            const string _bridgeClassName = "android.view.SurfaceControl$OnJankDataListenerRegistration";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnJankDataListenerRegistration() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public OnJankDataListenerRegistration(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public OnJankDataListenerRegistration(params object[] args) : base(args) { }
+        
+            private static readonly global::System.Exception _LocalBridgeClazzException = null;
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+            /// <inheritdoc/>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <inheritdoc/>
+            public override bool IsBridgeAbstract => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeCloseable => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeInterface => false;
+            /// <inheritdoc/>
+            public override bool IsBridgeStatic => true;
+        
+            // TODO: complete the class
+        
+        }
+        #endregion
+
         #region Transaction declaration
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html"/>
@@ -504,6 +659,241 @@ namespace Android.View
         }
         #endregion
 
+        #region JankData implementation
+        public partial class JankData
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#JANK_APPLICATION"/>
+            /// </summary>
+            public static int JANK_APPLICATION { get { if (!_JANK_APPLICATIONReady) { _JANK_APPLICATIONContent = SGetField<int>(LocalBridgeClazz, "JANK_APPLICATION"); _JANK_APPLICATIONReady = true; } return _JANK_APPLICATIONContent; } }
+            private static int _JANK_APPLICATIONContent = default;
+            private static bool _JANK_APPLICATIONReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#JANK_COMPOSER"/>
+            /// </summary>
+            public static int JANK_COMPOSER { get { if (!_JANK_COMPOSERReady) { _JANK_COMPOSERContent = SGetField<int>(LocalBridgeClazz, "JANK_COMPOSER"); _JANK_COMPOSERReady = true; } return _JANK_COMPOSERContent; } }
+            private static int _JANK_COMPOSERContent = default;
+            private static bool _JANK_COMPOSERReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#JANK_NONE"/>
+            /// </summary>
+            public static int JANK_NONE { get { if (!_JANK_NONEReady) { _JANK_NONEContent = SGetField<int>(LocalBridgeClazz, "JANK_NONE"); _JANK_NONEReady = true; } return _JANK_NONEContent; } }
+            private static int _JANK_NONEContent = default;
+            private static bool _JANK_NONEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#JANK_OTHER"/>
+            /// </summary>
+            public static int JANK_OTHER { get { if (!_JANK_OTHERReady) { _JANK_OTHERContent = SGetField<int>(LocalBridgeClazz, "JANK_OTHER"); _JANK_OTHERReady = true; } return _JANK_OTHERContent; } }
+            private static int _JANK_OTHERContent = default;
+            private static bool _JANK_OTHERReady = false; // this is used because in case of generics 
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#getJankType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetJankType()
+            {
+                return IExecuteWithSignature<int>("getJankType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#getActualAppFrameTimeNanos()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetActualAppFrameTimeNanos()
+            {
+                return IExecuteWithSignature<long>("getActualAppFrameTimeNanos", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#getScheduledAppFrameTimeNanos()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetScheduledAppFrameTimeNanos()
+            {
+                return IExecuteWithSignature<long>("getScheduledAppFrameTimeNanos", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.JankData.html#getVsyncId()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetVsyncId()
+            {
+                return IExecuteWithSignature<long>("getVsyncId", "()J");
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnJankDataListener implementation
+        public partial class OnJankDataListener
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="OnJankDataListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onJankDataAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnJankDataAvailableEventHandler));
+
+            }
+            
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListener.html#onJankDataAvailable(java.util.List)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnJankDataAvailable"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Java.Util.List<Android.View.SurfaceControl.JankData>> OnOnJankDataAvailable { get; set; } = null;
+            
+            bool hasOverrideOnJankDataAvailable = true;
+            void OnJankDataAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+            {
+                hasOverrideOnJankDataAvailable = true;
+                var methodToExecute = (OnOnJankDataAvailable != null) ? OnOnJankDataAvailable : OnJankDataAvailable;
+                methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.View.SurfaceControl.JankData>>(0));
+                data.EventData.TypedEventData.HasOverride = hasOverrideOnJankDataAvailable;
+            }
+            
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListener.html#onJankDataAvailable(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            public virtual void OnJankDataAvailable(Java.Util.List<Android.View.SurfaceControl.JankData> arg0)
+            {
+                hasOverrideOnJankDataAvailable = false;
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnJankDataListenerDirect implementation
+        public partial class OnJankDataListenerDirect
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListener.html#onJankDataAvailable(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            public override void OnJankDataAvailable(Java.Util.List<Android.View.SurfaceControl.JankData> arg0)
+            {
+                IExecuteWithSignature("onJankDataAvailable", "(Ljava/util/List;)V", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnJankDataListenerRegistration implementation
+        public partial class OnJankDataListenerRegistration
+        {
+            #region Constructors
+        
+            #endregion
+        
+            #region Class/Interface conversion operators
+        
+            #endregion
+        
+            #region Fields
+        
+            #endregion
+        
+            #region Static methods
+        
+            #endregion
+        
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListenerRegistration.html#flush()"/>
+            /// </summary>
+            public void Flush()
+            {
+                IExecuteWithSignature("flush", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.OnJankDataListenerRegistration.html#removeAfter(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            public void RemoveAfter(long arg0)
+            {
+                IExecuteWithSignature("removeAfter", "(J)V", arg0);
+            }
+        
+            #endregion
+        
+            #region Nested classes
+        
+            #endregion
+        
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Transaction implementation
         public partial class Transaction : Java.Io.ICloseable, Android.Os.IParcelable
         {
@@ -661,6 +1051,16 @@ namespace Android.View
                 return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setBufferTransform", "(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setContentPriority(android.view.SurfaceControl,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            public Android.View.SurfaceControl.Transaction SetContentPriority(Android.View.SurfaceControl arg0, int arg1)
+            {
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setContentPriority", "(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setCrop(android.view.SurfaceControl,android.graphics.Rect)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
@@ -774,6 +1174,16 @@ namespace Android.View
             public Android.View.SurfaceControl.Transaction SetLayer(Android.View.SurfaceControl arg0, int arg1)
             {
                 return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setLayer", "(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setLuts(android.view.SurfaceControl,android.hardware.DisplayLuts)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
+            /// <param name="arg1"><see cref="Android.Hardware.DisplayLuts"/></param>
+            /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            public Android.View.SurfaceControl.Transaction SetLuts(Android.View.SurfaceControl arg0, Android.Hardware.DisplayLuts arg1)
+            {
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setLuts", "(Landroid/view/SurfaceControl;Landroid/hardware/DisplayLuts;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setOpaque(android.view.SurfaceControl,boolean)"/>

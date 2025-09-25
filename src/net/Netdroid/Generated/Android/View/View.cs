@@ -1761,6 +1761,12 @@ namespace Android.View
         private static int _DRAG_FLAG_GLOBAL_URI_WRITEContent = default;
         private static bool _DRAG_FLAG_GLOBAL_URI_WRITEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START"/>
+        /// </summary>
+        public static int DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START { get { if (!_DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_STARTReady) { _DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_STARTContent = SGetField<int>(LocalBridgeClazz, "DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START"); _DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_STARTReady = true; } return _DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_STARTContent; } }
+        private static int _DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_STARTContent = default;
+        private static bool _DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_STARTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#DRAG_FLAG_OPAQUE"/>
         /// </summary>
         public static int DRAG_FLAG_OPAQUE { get { if (!_DRAG_FLAG_OPAQUEReady) { _DRAG_FLAG_OPAQUEContent = SGetField<int>(LocalBridgeClazz, "DRAG_FLAG_OPAQUE"); _DRAG_FLAG_OPAQUEReady = true; } return _DRAG_FLAG_OPAQUEContent; } }
@@ -5270,6 +5276,14 @@ namespace Android.View
             return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getSupplementalDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSupplementalDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSupplementalDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getTooltipText()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
@@ -5481,6 +5495,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/View.html#announceForAccessibility(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        [global::System.Obsolete()]
         public void AnnounceForAccessibility(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("announceForAccessibility", "(Ljava/lang/CharSequence;)V", arg0);
@@ -6227,6 +6242,14 @@ namespace Android.View
         public void RemoveOnUnhandledKeyEventListener(Android.View.View.OnUnhandledKeyEventListener arg0)
         {
             IExecuteWithSignature("removeOnUnhandledKeyEventListener", "(Landroid/view/View$OnUnhandledKeyEventListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#reportAppJankStats(android.app.jank.AppJankStats)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Jank.AppJankStats"/></param>
+        public void ReportAppJankStats(Android.App.Jank.AppJankStats arg0)
+        {
+            IExecuteWithSignature("reportAppJankStats", "(Landroid/app/jank/AppJankStats;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#requestApplyInsets()"/>
@@ -7429,6 +7452,14 @@ namespace Android.View
         public void SetStateListAnimator(Android.Animation.StateListAnimator arg0)
         {
             IExecuteWithSignature("setStateListAnimator", "(Landroid/animation/StateListAnimator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setSupplementalDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetSupplementalDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setSupplementalDescription", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setSystemGestureExclusionRects(java.util.List)"/>

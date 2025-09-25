@@ -1341,6 +1341,12 @@ namespace Android.Provider
         private static Java.Lang.String _ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONContent = default;
         private static bool _ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#ACCESS_OEM_METADATA_PERMISSION"/>
+        /// </summary>
+        public static Java.Lang.String ACCESS_OEM_METADATA_PERMISSION { get { if (!_ACCESS_OEM_METADATA_PERMISSIONReady) { _ACCESS_OEM_METADATA_PERMISSIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESS_OEM_METADATA_PERMISSION"); _ACCESS_OEM_METADATA_PERMISSIONReady = true; } return _ACCESS_OEM_METADATA_PERMISSIONContent; } }
+        private static Java.Lang.String _ACCESS_OEM_METADATA_PERMISSIONContent = default;
+        private static bool _ACCESS_OEM_METADATA_PERMISSIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE"/>
         /// </summary>
         public static Java.Lang.String ACTION_IMAGE_CAPTURE { get { if (!_ACTION_IMAGE_CAPTUREReady) { _ACTION_IMAGE_CAPTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_IMAGE_CAPTURE"); _ACTION_IMAGE_CAPTUREReady = true; } return _ACTION_IMAGE_CAPTUREContent; } }
@@ -1352,6 +1358,18 @@ namespace Android.Provider
         public static Java.Lang.String ACTION_IMAGE_CAPTURE_SECURE { get { if (!_ACTION_IMAGE_CAPTURE_SECUREReady) { _ACTION_IMAGE_CAPTURE_SECUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_IMAGE_CAPTURE_SECURE"); _ACTION_IMAGE_CAPTURE_SECUREReady = true; } return _ACTION_IMAGE_CAPTURE_SECUREContent; } }
         private static Java.Lang.String _ACTION_IMAGE_CAPTURE_SECUREContent = default;
         private static bool _ACTION_IMAGE_CAPTURE_SECUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_MOTION_PHOTO_CAPTURE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_MOTION_PHOTO_CAPTURE { get { if (!_ACTION_MOTION_PHOTO_CAPTUREReady) { _ACTION_MOTION_PHOTO_CAPTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_MOTION_PHOTO_CAPTURE"); _ACTION_MOTION_PHOTO_CAPTUREReady = true; } return _ACTION_MOTION_PHOTO_CAPTUREContent; } }
+        private static Java.Lang.String _ACTION_MOTION_PHOTO_CAPTUREContent = default;
+        private static bool _ACTION_MOTION_PHOTO_CAPTUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_MOTION_PHOTO_CAPTURE_SECURE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_MOTION_PHOTO_CAPTURE_SECURE { get { if (!_ACTION_MOTION_PHOTO_CAPTURE_SECUREReady) { _ACTION_MOTION_PHOTO_CAPTURE_SECUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_MOTION_PHOTO_CAPTURE_SECURE"); _ACTION_MOTION_PHOTO_CAPTURE_SECUREReady = true; } return _ACTION_MOTION_PHOTO_CAPTURE_SECUREContent; } }
+        private static Java.Lang.String _ACTION_MOTION_PHOTO_CAPTURE_SECUREContent = default;
+        private static bool _ACTION_MOTION_PHOTO_CAPTURE_SECUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES"/>
         /// </summary>
@@ -1504,6 +1522,12 @@ namespace Android.Provider
         private static Java.Lang.String _EXTRA_PICK_IMAGES_MAXContent = default;
         private static bool _EXTRA_PICK_IMAGES_MAXReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICKER_PRE_SELECTION_URIS"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PICKER_PRE_SELECTION_URIS { get { if (!_EXTRA_PICKER_PRE_SELECTION_URISReady) { _EXTRA_PICKER_PRE_SELECTION_URISContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PICKER_PRE_SELECTION_URIS"); _EXTRA_PICKER_PRE_SELECTION_URISReady = true; } return _EXTRA_PICKER_PRE_SELECTION_URISContent; } }
+        private static Java.Lang.String _EXTRA_PICKER_PRE_SELECTION_URISContent = default;
+        private static bool _EXTRA_PICKER_PRE_SELECTION_URISReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SCREEN_ORIENTATION"/>
         /// </summary>
         public static Java.Lang.String EXTRA_SCREEN_ORIENTATION { get { if (!_EXTRA_SCREEN_ORIENTATIONReady) { _EXTRA_SCREEN_ORIENTATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SCREEN_ORIENTATION"); _EXTRA_SCREEN_ORIENTATIONReady = true; } return _EXTRA_SCREEN_ORIENTATIONContent; } }
@@ -1631,6 +1655,12 @@ namespace Android.Provider
         private static Java.Lang.String _QUERY_ARG_MATCH_TRASHEDContent = default;
         private static bool _QUERY_ARG_MATCH_TRASHEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MEDIA_STANDARD_SORT_ORDER"/>
+        /// </summary>
+        public static Java.Lang.String QUERY_ARG_MEDIA_STANDARD_SORT_ORDER { get { if (!_QUERY_ARG_MEDIA_STANDARD_SORT_ORDERReady) { _QUERY_ARG_MEDIA_STANDARD_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "QUERY_ARG_MEDIA_STANDARD_SORT_ORDER"); _QUERY_ARG_MEDIA_STANDARD_SORT_ORDERReady = true; } return _QUERY_ARG_MEDIA_STANDARD_SORT_ORDERContent; } }
+        private static Java.Lang.String _QUERY_ARG_MEDIA_STANDARD_SORT_ORDERContent = default;
+        private static bool _QUERY_ARG_MEDIA_STANDARD_SORT_ORDERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_RELATED_URI"/>
         /// </summary>
         public static Java.Lang.String QUERY_ARG_RELATED_URI { get { if (!_QUERY_ARG_RELATED_URIReady) { _QUERY_ARG_RELATED_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "QUERY_ARG_RELATED_URI"); _QUERY_ARG_RELATED_URIReady = true; } return _QUERY_ARG_RELATED_URIContent; } }
@@ -1707,6 +1737,33 @@ namespace Android.Provider
             return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "createWriteRequest", "(Landroid/content/ContentResolver;Ljava/util/Collection;)Landroid/app/PendingIntent;", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#openAssetFileDescriptor(android.content.ContentResolver,android.net.Uri,java.lang.String,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Content.Res.AssetFileDescriptor"/></returns>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
+        public static Android.Content.Res.AssetFileDescriptor OpenAssetFileDescriptor(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Android.Os.CancellationSignal arg3)
+        {
+            return SExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>(LocalBridgeClazz, "openAssetFileDescriptor", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#openTypedAssetFileDescriptor(android.content.ContentResolver,android.net.Uri,java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg4"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Content.Res.AssetFileDescriptor"/></returns>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
+        public static Android.Content.Res.AssetFileDescriptor OpenTypedAssetFileDescriptor(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Android.Os.Bundle arg3, Android.Os.CancellationSignal arg4)
+        {
+            return SExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>(LocalBridgeClazz, "openTypedAssetFileDescriptor", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#getDocumentUri(android.content.Context,android.net.Uri)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -1773,6 +1830,19 @@ namespace Android.Provider
         public static Android.Os.ParcelFileDescriptor GetOriginalMediaFormatFileDescriptor(Android.Content.Context arg0, Android.Os.ParcelFileDescriptor arg1)
         {
             return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "getOriginalMediaFormatFileDescriptor", "(Landroid/content/Context;Landroid/os/ParcelFileDescriptor;)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#openFileDescriptor(android.content.ContentResolver,android.net.Uri,java.lang.String,android.os.CancellationSignal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Android.Os.CancellationSignal"/></param>
+        /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
+        public static Android.Os.ParcelFileDescriptor OpenFileDescriptor(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Android.Os.CancellationSignal arg3)
+        {
+            return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "openFileDescriptor", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#canManageMedia(android.content.Context)"/>
@@ -1896,6 +1966,16 @@ namespace Android.Provider
         public static long GetGeneration(Android.Content.Context arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getGeneration", "(Landroid/content/Context;Ljava/lang/String;)J", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#markIsFavoriteStatus(android.content.ContentResolver,java.util.Collection,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        public static void MarkIsFavoriteStatus(Android.Content.ContentResolver arg0, Java.Util.Collection<Android.Net.Uri> arg1, bool arg2)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "markIsFavoriteStatus", "(Landroid/content/ContentResolver;Ljava/util/Collection;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#notifyCloudMediaChangedEvent(android.content.ContentResolver,java.lang.String,java.lang.String)"/>
@@ -2550,6 +2630,12 @@ namespace Android.Provider
                 private static Java.Lang.String _ARTIST_KEYContent = default;
                 private static bool _ARTIST_KEYReady = false; // this is used because in case of generics 
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#BITS_PER_SAMPLE"/>
+                /// </summary>
+                public static Java.Lang.String BITS_PER_SAMPLE { get { if (!_BITS_PER_SAMPLEReady) { _BITS_PER_SAMPLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BITS_PER_SAMPLE"); _BITS_PER_SAMPLEReady = true; } return _BITS_PER_SAMPLEContent; } }
+                private static Java.Lang.String _BITS_PER_SAMPLEContent = default;
+                private static bool _BITS_PER_SAMPLEReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#BOOKMARK"/>
                 /// </summary>
                 public static Java.Lang.String BOOKMARK { get { if (!_BOOKMARKReady) { _BOOKMARKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BOOKMARK"); _BOOKMARKReady = true; } return _BOOKMARKContent; } }
@@ -2616,6 +2702,12 @@ namespace Android.Provider
                 public static Java.Lang.String IS_RINGTONE { get { if (!_IS_RINGTONEReady) { _IS_RINGTONEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IS_RINGTONE"); _IS_RINGTONEReady = true; } return _IS_RINGTONEContent; } }
                 private static Java.Lang.String _IS_RINGTONEContent = default;
                 private static bool _IS_RINGTONEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#SAMPLERATE"/>
+                /// </summary>
+                public static Java.Lang.String SAMPLERATE { get { if (!_SAMPLERATEReady) { _SAMPLERATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SAMPLERATE"); _SAMPLERATEReady = true; } return _SAMPLERATEContent; } }
+                private static Java.Lang.String _SAMPLERATEContent = default;
+                private static bool _SAMPLERATEReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#TITLE_KEY"/>
                 /// </summary>
@@ -3928,6 +4020,12 @@ namespace Android.Provider
             private static Java.Lang.String _HEIGHTContent = default;
             private static bool _HEIGHTReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/MediaStore.MediaColumns.html#INFERRED_DATE"/>
+            /// </summary>
+            public static Java.Lang.String INFERRED_DATE { get { if (!_INFERRED_DATEReady) { _INFERRED_DATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INFERRED_DATE"); _INFERRED_DATEReady = true; } return _INFERRED_DATEContent; } }
+            private static Java.Lang.String _INFERRED_DATEContent = default;
+            private static bool _INFERRED_DATEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.MediaColumns.html#INSTANCE_ID"/>
             /// </summary>
             public static Java.Lang.String INSTANCE_ID { get { if (!_INSTANCE_IDReady) { _INSTANCE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INSTANCE_ID"); _INSTANCE_IDReady = true; } return _INSTANCE_IDContent; } }
@@ -3975,6 +4073,12 @@ namespace Android.Provider
             public static Java.Lang.String NUM_TRACKS { get { if (!_NUM_TRACKSReady) { _NUM_TRACKSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NUM_TRACKS"); _NUM_TRACKSReady = true; } return _NUM_TRACKSContent; } }
             private static Java.Lang.String _NUM_TRACKSContent = default;
             private static bool _NUM_TRACKSReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/MediaStore.MediaColumns.html#OEM_METADATA"/>
+            /// </summary>
+            public static Java.Lang.String OEM_METADATA { get { if (!_OEM_METADATAReady) { _OEM_METADATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OEM_METADATA"); _OEM_METADATAReady = true; } return _OEM_METADATAContent; } }
+            private static Java.Lang.String _OEM_METADATAContent = default;
+            private static bool _OEM_METADATAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.MediaColumns.html#ORIENTATION"/>
             /// </summary>

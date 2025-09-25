@@ -317,11 +317,23 @@ namespace Android.Content
         private static Java.Lang.String _ACTIVITY_SERVICEContent = default;
         private static bool _ACTIVITY_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#ADVANCED_PROTECTION_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String ADVANCED_PROTECTION_SERVICE { get { if (!_ADVANCED_PROTECTION_SERVICEReady) { _ADVANCED_PROTECTION_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ADVANCED_PROTECTION_SERVICE"); _ADVANCED_PROTECTION_SERVICEReady = true; } return _ADVANCED_PROTECTION_SERVICEContent; } }
+        private static Java.Lang.String _ADVANCED_PROTECTION_SERVICEContent = default;
+        private static bool _ADVANCED_PROTECTION_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#ALARM_SERVICE"/>
         /// </summary>
         public static Java.Lang.String ALARM_SERVICE { get { if (!_ALARM_SERVICEReady) { _ALARM_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALARM_SERVICE"); _ALARM_SERVICEReady = true; } return _ALARM_SERVICEContent; } }
         private static Java.Lang.String _ALARM_SERVICEContent = default;
         private static bool _ALARM_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#APP_FUNCTION_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String APP_FUNCTION_SERVICE { get { if (!_APP_FUNCTION_SERVICEReady) { _APP_FUNCTION_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "APP_FUNCTION_SERVICE"); _APP_FUNCTION_SERVICEReady = true; } return _APP_FUNCTION_SERVICEContent; } }
+        private static Java.Lang.String _APP_FUNCTION_SERVICEContent = default;
+        private static bool _APP_FUNCTION_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#APP_OPS_SERVICE"/>
         /// </summary>
@@ -557,6 +569,12 @@ namespace Android.Content
         private static Java.Lang.String _KEYGUARD_SERVICEContent = default;
         private static bool _KEYGUARD_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#KEYSTORE_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String KEYSTORE_SERVICE { get { if (!_KEYSTORE_SERVICEReady) { _KEYSTORE_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEYSTORE_SERVICE"); _KEYSTORE_SERVICEReady = true; } return _KEYSTORE_SERVICEContent; } }
+        private static Java.Lang.String _KEYSTORE_SERVICEContent = default;
+        private static bool _KEYSTORE_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#LAUNCHER_APPS_SERVICE"/>
         /// </summary>
         public static Java.Lang.String LAUNCHER_APPS_SERVICE { get { if (!_LAUNCHER_APPS_SERVICEReady) { _LAUNCHER_APPS_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LAUNCHER_APPS_SERVICE"); _LAUNCHER_APPS_SERVICEReady = true; } return _LAUNCHER_APPS_SERVICEContent; } }
@@ -598,6 +616,12 @@ namespace Android.Content
         public static Java.Lang.String MEDIA_PROJECTION_SERVICE { get { if (!_MEDIA_PROJECTION_SERVICEReady) { _MEDIA_PROJECTION_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_PROJECTION_SERVICE"); _MEDIA_PROJECTION_SERVICEReady = true; } return _MEDIA_PROJECTION_SERVICEContent; } }
         private static Java.Lang.String _MEDIA_PROJECTION_SERVICEContent = default;
         private static bool _MEDIA_PROJECTION_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#MEDIA_QUALITY_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String MEDIA_QUALITY_SERVICE { get { if (!_MEDIA_QUALITY_SERVICEReady) { _MEDIA_QUALITY_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_QUALITY_SERVICE"); _MEDIA_QUALITY_SERVICEReady = true; } return _MEDIA_QUALITY_SERVICEContent; } }
+        private static Java.Lang.String _MEDIA_QUALITY_SERVICEContent = default;
+        private static bool _MEDIA_QUALITY_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#MEDIA_ROUTER_SERVICE"/>
         /// </summary>
@@ -695,6 +719,12 @@ namespace Android.Content
         private static Java.Lang.String _ROLE_SERVICEContent = default;
         private static bool _ROLE_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#SATELLITE_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String SATELLITE_SERVICE { get { if (!_SATELLITE_SERVICEReady) { _SATELLITE_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SATELLITE_SERVICE"); _SATELLITE_SERVICEReady = true; } return _SATELLITE_SERVICEContent; } }
+        private static Java.Lang.String _SATELLITE_SERVICEContent = default;
+        private static bool _SATELLITE_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#SEARCH_SERVICE"/>
         /// </summary>
         public static Java.Lang.String SEARCH_SERVICE { get { if (!_SEARCH_SERVICEReady) { _SEARCH_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SEARCH_SERVICE"); _SEARCH_SERVICEReady = true; } return _SEARCH_SERVICEContent; } }
@@ -767,6 +797,12 @@ namespace Android.Content
         private static Java.Lang.String _TELEPHONY_SUBSCRIPTION_SERVICEContent = default;
         private static bool _TELEPHONY_SUBSCRIPTION_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#TETHERING_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String TETHERING_SERVICE { get { if (!_TETHERING_SERVICEReady) { _TETHERING_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TETHERING_SERVICE"); _TETHERING_SERVICEReady = true; } return _TETHERING_SERVICEContent; } }
+        private static Java.Lang.String _TETHERING_SERVICEContent = default;
+        private static bool _TETHERING_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#TEXT_CLASSIFICATION_SERVICE"/>
         /// </summary>
         public static Java.Lang.String TEXT_CLASSIFICATION_SERVICE { get { if (!_TEXT_CLASSIFICATION_SERVICEReady) { _TEXT_CLASSIFICATION_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TEXT_CLASSIFICATION_SERVICE"); _TEXT_CLASSIFICATION_SERVICEReady = true; } return _TEXT_CLASSIFICATION_SERVICEContent; } }
@@ -778,6 +814,12 @@ namespace Android.Content
         public static Java.Lang.String TEXT_SERVICES_MANAGER_SERVICE { get { if (!_TEXT_SERVICES_MANAGER_SERVICEReady) { _TEXT_SERVICES_MANAGER_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TEXT_SERVICES_MANAGER_SERVICE"); _TEXT_SERVICES_MANAGER_SERVICEReady = true; } return _TEXT_SERVICES_MANAGER_SERVICEContent; } }
         private static Java.Lang.String _TEXT_SERVICES_MANAGER_SERVICEContent = default;
         private static bool _TEXT_SERVICES_MANAGER_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#TV_AD_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String TV_AD_SERVICE { get { if (!_TV_AD_SERVICEReady) { _TV_AD_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TV_AD_SERVICE"); _TV_AD_SERVICEReady = true; } return _TV_AD_SERVICEContent; } }
+        private static Java.Lang.String _TV_AD_SERVICEContent = default;
+        private static bool _TV_AD_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#TV_INPUT_SERVICE"/>
         /// </summary>

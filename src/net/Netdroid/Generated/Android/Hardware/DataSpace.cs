@@ -151,6 +151,12 @@ namespace Android.Hardware
         private static int _DATASPACE_HEIFContent = default;
         private static bool _DATASPACE_HEIFReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/DataSpace.html#DATASPACE_HEIF_ULTRAHDR"/>
+        /// </summary>
+        public static int DATASPACE_HEIF_ULTRAHDR { get { if (!_DATASPACE_HEIF_ULTRAHDRReady) { _DATASPACE_HEIF_ULTRAHDRContent = SGetField<int>(LocalBridgeClazz, "DATASPACE_HEIF_ULTRAHDR"); _DATASPACE_HEIF_ULTRAHDRReady = true; } return _DATASPACE_HEIF_ULTRAHDRContent; } }
+        private static int _DATASPACE_HEIF_ULTRAHDRContent = default;
+        private static bool _DATASPACE_HEIF_ULTRAHDRReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/DataSpace.html#DATASPACE_JFIF"/>
         /// </summary>
         public static int DATASPACE_JFIF { get { if (!_DATASPACE_JFIFReady) { _DATASPACE_JFIFContent = SGetField<int>(LocalBridgeClazz, "DATASPACE_JFIF"); _DATASPACE_JFIFReady = true; } return _DATASPACE_JFIFContent; } }

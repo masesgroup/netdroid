@@ -120,6 +120,30 @@ namespace Android.Os
         #endregion
     
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_DROP"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_DROP { get { if (!_FROZEN_CALLEE_POLICY_DROPReady) { _FROZEN_CALLEE_POLICY_DROPContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_DROP"); _FROZEN_CALLEE_POLICY_DROPReady = true; } return _FROZEN_CALLEE_POLICY_DROPContent; } }
+        private static int _FROZEN_CALLEE_POLICY_DROPContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_DROPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_ENQUEUE_ALL"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_ENQUEUE_ALL { get { if (!_FROZEN_CALLEE_POLICY_ENQUEUE_ALLReady) { _FROZEN_CALLEE_POLICY_ENQUEUE_ALLContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_ENQUEUE_ALL"); _FROZEN_CALLEE_POLICY_ENQUEUE_ALLReady = true; } return _FROZEN_CALLEE_POLICY_ENQUEUE_ALLContent; } }
+        private static int _FROZEN_CALLEE_POLICY_ENQUEUE_ALLContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_ENQUEUE_ALLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENT"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENT { get { if (!_FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTReady) { _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENT"); _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTReady = true; } return _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTContent; } }
+        private static int _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_UNSET"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_UNSET { get { if (!_FROZEN_CALLEE_POLICY_UNSETReady) { _FROZEN_CALLEE_POLICY_UNSETContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_UNSET"); _FROZEN_CALLEE_POLICY_UNSETReady = true; } return _FROZEN_CALLEE_POLICY_UNSETContent; } }
+        private static int _FROZEN_CALLEE_POLICY_UNSETContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_UNSETReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -183,6 +207,22 @@ namespace Android.Os
             return IExecuteWithSignature<int>("beginBroadcast", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getFrozenCalleePolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrozenCalleePolicy()
+        {
+            return IExecuteWithSignature<int>("getFrozenCalleePolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getMaxQueueSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxQueueSize()
+        {
+            return IExecuteWithSignature<int>("getMaxQueueSize", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getRegisteredCallbackCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -207,6 +247,22 @@ namespace Android.Os
         public object GetRegisteredCallbackCookie(int arg0)
         {
             return IExecuteWithSignature("getRegisteredCallbackCookie", "(I)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getExecutor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
+        public Java.Util.Concurrent.Executor GetExecutor()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#broadcast(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void Broadcast(Java.Util.Function.Consumer arg0)
+        {
+            IExecuteWithSignature("broadcast", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#finishBroadcast()"/>
@@ -266,6 +322,30 @@ namespace Android.Os
         #endregion
     
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_DROP"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_DROP { get { if (!_FROZEN_CALLEE_POLICY_DROPReady) { _FROZEN_CALLEE_POLICY_DROPContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_DROP"); _FROZEN_CALLEE_POLICY_DROPReady = true; } return _FROZEN_CALLEE_POLICY_DROPContent; } }
+        private static int _FROZEN_CALLEE_POLICY_DROPContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_DROPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_ENQUEUE_ALL"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_ENQUEUE_ALL { get { if (!_FROZEN_CALLEE_POLICY_ENQUEUE_ALLReady) { _FROZEN_CALLEE_POLICY_ENQUEUE_ALLContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_ENQUEUE_ALL"); _FROZEN_CALLEE_POLICY_ENQUEUE_ALLReady = true; } return _FROZEN_CALLEE_POLICY_ENQUEUE_ALLContent; } }
+        private static int _FROZEN_CALLEE_POLICY_ENQUEUE_ALLContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_ENQUEUE_ALLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENT"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENT { get { if (!_FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTReady) { _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENT"); _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTReady = true; } return _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTContent; } }
+        private static int _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_ENQUEUE_MOST_RECENTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#FROZEN_CALLEE_POLICY_UNSET"/>
+        /// </summary>
+        public static int FROZEN_CALLEE_POLICY_UNSET { get { if (!_FROZEN_CALLEE_POLICY_UNSETReady) { _FROZEN_CALLEE_POLICY_UNSETContent = SGetField<int>(LocalBridgeClazz, "FROZEN_CALLEE_POLICY_UNSET"); _FROZEN_CALLEE_POLICY_UNSETReady = true; } return _FROZEN_CALLEE_POLICY_UNSETContent; } }
+        private static int _FROZEN_CALLEE_POLICY_UNSETContent = default;
+        private static bool _FROZEN_CALLEE_POLICY_UNSETReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -329,6 +409,22 @@ namespace Android.Os
             return IExecuteWithSignature<int>("beginBroadcast", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getFrozenCalleePolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrozenCalleePolicy()
+        {
+            return IExecuteWithSignature<int>("getFrozenCalleePolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getMaxQueueSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxQueueSize()
+        {
+            return IExecuteWithSignature<int>("getMaxQueueSize", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getRegisteredCallbackCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -353,6 +449,22 @@ namespace Android.Os
         public object GetRegisteredCallbackCookie(int arg0)
         {
             return IExecuteWithSignature("getRegisteredCallbackCookie", "(I)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getExecutor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
+        public Java.Util.Concurrent.Executor GetExecutor()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#broadcast(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void Broadcast(Java.Util.Function.Consumer<E> arg0)
+        {
+            IExecuteWithSignature("broadcast", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#finishBroadcast()"/>

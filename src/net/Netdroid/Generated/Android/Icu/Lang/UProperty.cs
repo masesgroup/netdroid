@@ -430,6 +430,18 @@ namespace Android.Icu.Lang
         private static int _HYPHENContent = default;
         private static bool _HYPHENReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UProperty.html#ID_COMPAT_MATH_CONTINUE"/>
+        /// </summary>
+        public static int ID_COMPAT_MATH_CONTINUE { get { if (!_ID_COMPAT_MATH_CONTINUEReady) { _ID_COMPAT_MATH_CONTINUEContent = SGetField<int>(LocalBridgeClazz, "ID_COMPAT_MATH_CONTINUE"); _ID_COMPAT_MATH_CONTINUEReady = true; } return _ID_COMPAT_MATH_CONTINUEContent; } }
+        private static int _ID_COMPAT_MATH_CONTINUEContent = default;
+        private static bool _ID_COMPAT_MATH_CONTINUEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UProperty.html#ID_COMPAT_MATH_START"/>
+        /// </summary>
+        public static int ID_COMPAT_MATH_START { get { if (!_ID_COMPAT_MATH_STARTReady) { _ID_COMPAT_MATH_STARTContent = SGetField<int>(LocalBridgeClazz, "ID_COMPAT_MATH_START"); _ID_COMPAT_MATH_STARTReady = true; } return _ID_COMPAT_MATH_STARTContent; } }
+        private static int _ID_COMPAT_MATH_STARTContent = default;
+        private static bool _ID_COMPAT_MATH_STARTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UProperty.html#ID_CONTINUE"/>
         /// </summary>
         public static int ID_CONTINUE { get { if (!_ID_CONTINUEReady) { _ID_CONTINUEContent = SGetField<int>(LocalBridgeClazz, "ID_CONTINUE"); _ID_CONTINUEReady = true; } return _ID_CONTINUEContent; } }
@@ -459,6 +471,12 @@ namespace Android.Icu.Lang
         public static int IDS_TRINARY_OPERATOR { get { if (!_IDS_TRINARY_OPERATORReady) { _IDS_TRINARY_OPERATORContent = SGetField<int>(LocalBridgeClazz, "IDS_TRINARY_OPERATOR"); _IDS_TRINARY_OPERATORReady = true; } return _IDS_TRINARY_OPERATORContent; } }
         private static int _IDS_TRINARY_OPERATORContent = default;
         private static bool _IDS_TRINARY_OPERATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UProperty.html#IDS_UNARY_OPERATOR"/>
+        /// </summary>
+        public static int IDS_UNARY_OPERATOR { get { if (!_IDS_UNARY_OPERATORReady) { _IDS_UNARY_OPERATORContent = SGetField<int>(LocalBridgeClazz, "IDS_UNARY_OPERATOR"); _IDS_UNARY_OPERATORReady = true; } return _IDS_UNARY_OPERATORContent; } }
+        private static int _IDS_UNARY_OPERATORContent = default;
+        private static bool _IDS_UNARY_OPERATORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UProperty.html#INDIC_POSITIONAL_CATEGORY"/>
         /// </summary>

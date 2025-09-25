@@ -67,7 +67,7 @@ namespace Android.Service.Autofill
     #endregion
 
     #region DateTransformation implementation
-    public partial class DateTransformation : Android.Service.Autofill.ITransformation, Android.Os.IParcelable
+    public partial class DateTransformation : Android.Os.IParcelable, Android.Service.Autofill.ITransformation
     {
         #region Constructors
         /// <summary>
@@ -84,13 +84,13 @@ namespace Android.Service.Autofill
     
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Android.Service.Autofill.DateTransformation"/> to <see cref="Android.Service.Autofill.Transformation"/>
-        /// </summary>
-        public static implicit operator Android.Service.Autofill.Transformation(Android.Service.Autofill.DateTransformation t) => t.Cast<Android.Service.Autofill.Transformation>();
-        /// <summary>
         /// Converter from <see cref="Android.Service.Autofill.DateTransformation"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Service.Autofill.DateTransformation t) => t.Cast<Android.Os.Parcelable>();
+        /// <summary>
+        /// Converter from <see cref="Android.Service.Autofill.DateTransformation"/> to <see cref="Android.Service.Autofill.Transformation"/>
+        /// </summary>
+        public static implicit operator Android.Service.Autofill.Transformation(Android.Service.Autofill.DateTransformation t) => t.Cast<Android.Service.Autofill.Transformation>();
     
         #endregion
     

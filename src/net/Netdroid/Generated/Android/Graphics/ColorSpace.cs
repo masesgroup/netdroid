@@ -992,6 +992,12 @@ namespace Android.Graphics
             private static Android.Graphics.ColorSpace.Named _NTSC_1953Content = default;
             private static bool _NTSC_1953Ready = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Named.html#OK_LAB"/>
+            /// </summary>
+            public static Android.Graphics.ColorSpace.Named OK_LAB { get { if (!_OK_LABReady) { _OK_LABContent = SGetField<Android.Graphics.ColorSpace.Named>(LocalBridgeClazz, "OK_LAB"); _OK_LABReady = true; } return _OK_LABContent; } }
+            private static Android.Graphics.ColorSpace.Named _OK_LABContent = default;
+            private static bool _OK_LABReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Named.html#PRO_PHOTO_RGB"/>
             /// </summary>
             public static Android.Graphics.ColorSpace.Named PRO_PHOTO_RGB { get { if (!_PRO_PHOTO_RGBReady) { _PRO_PHOTO_RGBContent = SGetField<Android.Graphics.ColorSpace.Named>(LocalBridgeClazz, "PRO_PHOTO_RGB"); _PRO_PHOTO_RGBReady = true; } return _PRO_PHOTO_RGBContent; } }

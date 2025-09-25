@@ -104,6 +104,30 @@ namespace Android.Net.Wifi.P2p
         public static int NETWORK_ID_TEMPORARY { get { if (!_NETWORK_ID_TEMPORARYReady) { _NETWORK_ID_TEMPORARYContent = SGetField<int>(LocalBridgeClazz, "NETWORK_ID_TEMPORARY"); _NETWORK_ID_TEMPORARYReady = true; } return _NETWORK_ID_TEMPORARYContent; } }
         private static int _NETWORK_ID_TEMPORARYContent = default;
         private static bool _NETWORK_ID_TEMPORARYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#SECURITY_TYPE_UNKNOWN"/>
+        /// </summary>
+        public static int SECURITY_TYPE_UNKNOWN { get { if (!_SECURITY_TYPE_UNKNOWNReady) { _SECURITY_TYPE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_UNKNOWN"); _SECURITY_TYPE_UNKNOWNReady = true; } return _SECURITY_TYPE_UNKNOWNContent; } }
+        private static int _SECURITY_TYPE_UNKNOWNContent = default;
+        private static bool _SECURITY_TYPE_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#SECURITY_TYPE_WPA2_PSK"/>
+        /// </summary>
+        public static int SECURITY_TYPE_WPA2_PSK { get { if (!_SECURITY_TYPE_WPA2_PSKReady) { _SECURITY_TYPE_WPA2_PSKContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_WPA2_PSK"); _SECURITY_TYPE_WPA2_PSKReady = true; } return _SECURITY_TYPE_WPA2_PSKContent; } }
+        private static int _SECURITY_TYPE_WPA2_PSKContent = default;
+        private static bool _SECURITY_TYPE_WPA2_PSKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#SECURITY_TYPE_WPA3_COMPATIBILITY"/>
+        /// </summary>
+        public static int SECURITY_TYPE_WPA3_COMPATIBILITY { get { if (!_SECURITY_TYPE_WPA3_COMPATIBILITYReady) { _SECURITY_TYPE_WPA3_COMPATIBILITYContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_WPA3_COMPATIBILITY"); _SECURITY_TYPE_WPA3_COMPATIBILITYReady = true; } return _SECURITY_TYPE_WPA3_COMPATIBILITYContent; } }
+        private static int _SECURITY_TYPE_WPA3_COMPATIBILITYContent = default;
+        private static bool _SECURITY_TYPE_WPA3_COMPATIBILITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#SECURITY_TYPE_WPA3_SAE"/>
+        /// </summary>
+        public static int SECURITY_TYPE_WPA3_SAE { get { if (!_SECURITY_TYPE_WPA3_SAEReady) { _SECURITY_TYPE_WPA3_SAEContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_WPA3_SAE"); _SECURITY_TYPE_WPA3_SAEReady = true; } return _SECURITY_TYPE_WPA3_SAEContent; } }
+        private static int _SECURITY_TYPE_WPA3_SAEContent = default;
+        private static bool _SECURITY_TYPE_WPA3_SAEReady = false; // this is used because in case of generics 
     
         #endregion
     
@@ -112,6 +136,14 @@ namespace Android.Net.Wifi.P2p
         #endregion
     
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getGroupOwnerBssid()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetGroupOwnerBssid()
+        {
+            return IExecuteWithSignature<Android.Net.MacAddress>("getGroupOwnerBssid", "()Landroid/net/MacAddress;");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getOwner()"/>
         /// </summary>
@@ -151,6 +183,14 @@ namespace Android.Net.Wifi.P2p
         public int GetNetworkId()
         {
             return IExecuteWithSignature<int>("getNetworkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getSecurityType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecurityType()
+        {
+            return IExecuteWithSignature<int>("getSecurityType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getInterface()"/>
