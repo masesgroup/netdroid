@@ -16,14 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-using MASES.Netdroid;
-using Microsoft.CodeAnalysis.CSharp.Scripting;
-using Microsoft.CodeAnalysis.Scripting;
-using System;
-using System.IO;
-using System.Reflection;
-using System.Text;
+
+using MASES.JNet.CLI;
 using System.Threading.Tasks;
 
 namespace MASES.Netdroid.CLI
