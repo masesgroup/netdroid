@@ -30,7 +30,7 @@ namespace MASES.Netdroid.CLI
     public abstract class NetdroidCLICore<T> : NetdroidCore<T> where T : NetdroidCLICore<T>
     {
         #region Initialization
-        /// <inheritdoc cref="JNetCoreBase{T}.CommandLineArguments"/>
+        /// <inheritdoc/>
         public override IEnumerable<IArgumentMetadata> CommandLineArguments => base.CommandLineArguments.SetCLICommandLineArguments();
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace MASES.Netdroid.CLI
             this.InitCLI();
         }
 
-        /// <inheritdoc cref="NetdroidCoreBase{T}.ProcessCommandLine"/>
+        /// <inheritdoc/>
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
@@ -56,7 +56,7 @@ namespace MASES.Netdroid.CLI
             });
         }
 
-        /// <inheritdoc cref="JNetCoreBase{T}.PathToParse"/>
+        /// <inheritdoc/>
         protected override IList<string> PathToParse => base.PathToParse.SetCLIPathToParse();
         #endregion
 
@@ -67,7 +67,7 @@ namespace MASES.Netdroid.CLI
     /// <summary>
     /// Concrete implementation of <see cref="NetdroidCLICore{T}"/>
     /// </summary>
-    public class NetdroidCLICore : NetdroidCLICore<NetdroidCLICore>
+    internal class NetdroidCLICore : NetdroidCLICore<NetdroidCLICore>
     {
     }
 }
