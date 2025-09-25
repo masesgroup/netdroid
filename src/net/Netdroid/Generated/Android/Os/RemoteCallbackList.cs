@@ -103,14 +103,12 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html"/>
             /// </summary>
-            public partial class InterfaceDiedCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InterfaceDiedCallback>
+            public partial class InterfaceDiedCallback : MASES.JCOBridge.C2JBridge.JVMBridgeListener
             {
-                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback() { }
+                public InterfaceDiedCallback() { InitializeHandlers(); }
                 /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
@@ -119,9 +117,44 @@ namespace Android.Os
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback(params object[] args) : base(args) { }
+                public InterfaceDiedCallback(params object[] args) : base(args) { InitializeHandlers(); }
+                const string _bridgeClassName = "org.mases.netdroid.generated.android.os.RemoteCallbackList_Builder_InterfaceDiedCallback";
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+                
+                /// <inheritdoc />
+                public override string BridgeClassName => _bridgeClassName;
             
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+            
+            #region InterfaceDiedCallbackDirect declaration
+            /// <summary>
+            /// Direct override of <see cref="InterfaceDiedCallback"/> or its generic type if there is one
+            /// </summary>
+            public partial class InterfaceDiedCallbackDirect : InterfaceDiedCallback
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public InterfaceDiedCallbackDirect() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public InterfaceDiedCallbackDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            
+                /// <inheritdoc/>
+                public override bool AutoInit => false;
+            
+                /// <inheritdoc />
+                protected override void InitializeHandlers() { }
+            
+                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -136,9 +169,6 @@ namespace Android.Os
                 public override bool IsBridgeInterface => true;
                 /// <inheritdoc/>
                 public override bool IsBridgeStatic => true;
-            
-                // TODO: complete the class
-            
             }
             #endregion
 
@@ -147,14 +177,12 @@ namespace Android.Os
             /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html"/>
             /// </summary>
             /// <typeparam name="E"><see cref="Android.Os.IIInterface"/></typeparam>
-            public partial class InterfaceDiedCallback<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InterfaceDiedCallback<E>> where E : Android.Os.IIInterface, new()
+            public partial class InterfaceDiedCallback<E> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
             {
-                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback() { }
+                public InterfaceDiedCallback() { InitializeHandlers(); }
                 /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
@@ -163,9 +191,44 @@ namespace Android.Os
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback(params object[] args) : base(args) { }
+                public InterfaceDiedCallback(params object[] args) : base(args) { InitializeHandlers(); }
+                const string _bridgeClassName = "org.mases.netdroid.generated.android.os.RemoteCallbackList_Builder_InterfaceDiedCallback";
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+                
+                /// <inheritdoc />
+                public override string BridgeClassName => _bridgeClassName;
             
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+            
+            #region InterfaceDiedCallbackDirect<E> declaration
+            /// <summary>
+            /// Direct override of <see cref="InterfaceDiedCallback"/> or its generic type if there is one
+            /// </summary>
+            public partial class InterfaceDiedCallbackDirect<E> : InterfaceDiedCallback<E>
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public InterfaceDiedCallbackDirect() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public InterfaceDiedCallbackDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            
+                /// <inheritdoc/>
+                public override bool AutoInit => false;
+            
+                /// <inheritdoc />
+                protected override void InitializeHandlers() { }
+            
+                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -180,9 +243,6 @@ namespace Android.Os
                 public override bool IsBridgeInterface => true;
                 /// <inheritdoc/>
                 public override bool IsBridgeStatic => true;
-            
-                // TODO: complete the class
-            
             }
             #endregion
 
@@ -232,14 +292,12 @@ namespace Android.Os
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html"/>
             /// </summary>
-            public partial class InterfaceDiedCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InterfaceDiedCallback>
+            public partial class InterfaceDiedCallback : MASES.JCOBridge.C2JBridge.JVMBridgeListener
             {
-                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback() { }
+                public InterfaceDiedCallback() { InitializeHandlers(); }
                 /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
@@ -248,9 +306,44 @@ namespace Android.Os
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback(params object[] args) : base(args) { }
+                public InterfaceDiedCallback(params object[] args) : base(args) { InitializeHandlers(); }
+                const string _bridgeClassName = "org.mases.netdroid.generated.android.os.RemoteCallbackList_Builder_InterfaceDiedCallback";
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+                
+                /// <inheritdoc />
+                public override string BridgeClassName => _bridgeClassName;
             
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+            
+            #region InterfaceDiedCallbackDirect declaration
+            /// <summary>
+            /// Direct override of <see cref="InterfaceDiedCallback"/> or its generic type if there is one
+            /// </summary>
+            public partial class InterfaceDiedCallbackDirect : InterfaceDiedCallback
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public InterfaceDiedCallbackDirect() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public InterfaceDiedCallbackDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            
+                /// <inheritdoc/>
+                public override bool AutoInit => false;
+            
+                /// <inheritdoc />
+                protected override void InitializeHandlers() { }
+            
+                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -265,9 +358,6 @@ namespace Android.Os
                 public override bool IsBridgeInterface => true;
                 /// <inheritdoc/>
                 public override bool IsBridgeStatic => true;
-            
-                // TODO: complete the class
-            
             }
             #endregion
 
@@ -276,14 +366,12 @@ namespace Android.Os
             /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html"/>
             /// </summary>
             /// <typeparam name="E"><see cref="Android.Os.IIInterface"/></typeparam>
-            public partial class InterfaceDiedCallback<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InterfaceDiedCallback<E>> where E : Android.Os.IIInterface, new()
+            public partial class InterfaceDiedCallback<E> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
             {
-                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback() { }
+                public InterfaceDiedCallback() { InitializeHandlers(); }
                 /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
@@ -292,9 +380,44 @@ namespace Android.Os
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
-                [global::System.Obsolete("InterfaceDiedCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public InterfaceDiedCallback(params object[] args) : base(args) { }
+                public InterfaceDiedCallback(params object[] args) : base(args) { InitializeHandlers(); }
+                const string _bridgeClassName = "org.mases.netdroid.generated.android.os.RemoteCallbackList_Builder_InterfaceDiedCallback";
+                private static readonly global::System.Exception _LocalBridgeClazzException = null;
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+                
+                /// <inheritdoc />
+                public override string BridgeClassName => _bridgeClassName;
             
+            
+                // TODO: complete the class
+            
+            }
+            #endregion
+            
+            #region InterfaceDiedCallbackDirect<E> declaration
+            /// <summary>
+            /// Direct override of <see cref="InterfaceDiedCallback"/> or its generic type if there is one
+            /// </summary>
+            public partial class InterfaceDiedCallbackDirect<E> : InterfaceDiedCallback<E>
+            {
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public InterfaceDiedCallbackDirect() { }
+                /// <summary>
+                /// Internal constructor: used internally from JCOBridge
+                /// </summary>
+                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+                public InterfaceDiedCallbackDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+            
+                /// <inheritdoc/>
+                public override bool AutoInit => false;
+            
+                /// <inheritdoc />
+                protected override void InitializeHandlers() { }
+            
+                const string _bridgeClassName = "android.os.RemoteCallbackList$Builder$InterfaceDiedCallback";
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -309,9 +432,6 @@ namespace Android.Os
                 public override bool IsBridgeInterface => true;
                 /// <inheritdoc/>
                 public override bool IsBridgeStatic => true;
-            
-                // TODO: complete the class
-            
             }
             #endregion
 
@@ -644,12 +764,77 @@ namespace Android.Os
             
                 #region Instance methods
                 /// <summary>
+                /// Handlers initializer for <see cref="InterfaceDiedCallback"/>
+                /// </summary>
+                protected virtual void InitializeHandlers()
+                {
+                    AddEventHandler("onInterfaceDied", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnInterfaceDiedEventHandler));
+
+                }
+                
+                /// <summary>
+                /// Handler for <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <remarks>If <see cref="OnOnInterfaceDied"/> has a value it takes precedence over corresponding class method</remarks>
+                public global::System.Action<Android.Os.RemoteCallbackList, Android.Os.IInterface, object> OnOnInterfaceDied { get; set; } = null;
+                
+                bool hasOverrideOnInterfaceDied = true;
+                void OnInterfaceDiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+                {
+                    hasOverrideOnInterfaceDied = true;
+                    var methodToExecute = (OnOnInterfaceDied != null) ? OnOnInterfaceDied : OnInterfaceDied;
+                    methodToExecute.Invoke(data.EventData.GetAt<Android.Os.RemoteCallbackList>(0), data.EventData.GetAt<Android.Os.IInterface>(1), data.EventData.GetAt<object>(2));
+                    data.EventData.TypedEventData.HasOverride = hasOverrideOnInterfaceDied;
+                }
+                
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
                 /// <param name="arg1"><see cref="Android.Os.IInterface"/></param>
                 /// <param name="arg2"><see cref="object"/></param>
-                public void OnInterfaceDied(Android.Os.RemoteCallbackList arg0, Android.Os.IInterface arg1, object arg2)
+                public virtual void OnInterfaceDied(Android.Os.RemoteCallbackList arg0, Android.Os.IInterface arg1, object arg2)
+                {
+                    hasOverrideOnInterfaceDied = false;
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region InterfaceDiedCallbackDirect implementation
+            public partial class InterfaceDiedCallbackDirect
+            {
+                #region Constructors
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
+                /// <param name="arg1"><see cref="Android.Os.IInterface"/></param>
+                /// <param name="arg2"><see cref="object"/></param>
+                public override void OnInterfaceDied(Android.Os.RemoteCallbackList arg0, Android.Os.IInterface arg1, object arg2)
                 {
                     IExecute("onInterfaceDied", arg0, arg1, arg2);
                 }
@@ -672,10 +857,71 @@ namespace Android.Os
                 #endregion
             
                 #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
                 /// <summary>
-                /// Converter from <see cref="Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback{E}"/> to <see cref="Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback"/>
+                /// Handlers initializer for <see cref="InterfaceDiedCallback"/>
                 /// </summary>
-                public static implicit operator Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback(Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback<E> t) => t.Cast<Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback>();
+                protected virtual void InitializeHandlers()
+                {
+                    AddEventHandler("onInterfaceDied", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnInterfaceDiedEventHandler));
+
+                }
+                
+                /// <summary>
+                /// Handler for <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <remarks>If <see cref="OnOnInterfaceDied"/> has a value it takes precedence over corresponding class method</remarks>
+                public global::System.Action<Android.Os.RemoteCallbackList<E>, E, object> OnOnInterfaceDied { get; set; } = null;
+                
+                bool hasOverrideOnInterfaceDied = true;
+                void OnInterfaceDiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+                {
+                    hasOverrideOnInterfaceDied = true;
+                    var methodToExecute = (OnOnInterfaceDied != null) ? OnOnInterfaceDied : OnInterfaceDied;
+                    methodToExecute.Invoke(data.EventData.GetAt<Android.Os.RemoteCallbackList<E>>(0), data.EventData.GetAt<E>(1), data.EventData.GetAt<object>(2));
+                    data.EventData.TypedEventData.HasOverride = hasOverrideOnInterfaceDied;
+                }
+                
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
+                /// <param name="arg1"><typeparamref name="E"/></param>
+                /// <param name="arg2"><see cref="object"/></param>
+                public virtual void OnInterfaceDied(Android.Os.RemoteCallbackList<E> arg0, E arg1, object arg2)
+                {
+                    hasOverrideOnInterfaceDied = false;
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region InterfaceDiedCallbackDirect<E> implementation
+            public partial class InterfaceDiedCallbackDirect<E>
+            {
+                #region Constructors
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
             
                 #endregion
             
@@ -694,7 +940,7 @@ namespace Android.Os
                 /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
                 /// <param name="arg1"><typeparamref name="E"/></param>
                 /// <param name="arg2"><see cref="object"/></param>
-                public void OnInterfaceDied(Android.Os.RemoteCallbackList<E> arg0, E arg1, object arg2)
+                public override void OnInterfaceDied(Android.Os.RemoteCallbackList<E> arg0, E arg1, object arg2)
                 {
                     IExecute("onInterfaceDied", arg0, arg1, arg2);
                 }
@@ -808,12 +1054,77 @@ namespace Android.Os
             
                 #region Instance methods
                 /// <summary>
+                /// Handlers initializer for <see cref="InterfaceDiedCallback"/>
+                /// </summary>
+                protected virtual void InitializeHandlers()
+                {
+                    AddEventHandler("onInterfaceDied", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnInterfaceDiedEventHandler));
+
+                }
+                
+                /// <summary>
+                /// Handler for <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <remarks>If <see cref="OnOnInterfaceDied"/> has a value it takes precedence over corresponding class method</remarks>
+                public global::System.Action<Android.Os.RemoteCallbackList, Android.Os.IInterface, object> OnOnInterfaceDied { get; set; } = null;
+                
+                bool hasOverrideOnInterfaceDied = true;
+                void OnInterfaceDiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+                {
+                    hasOverrideOnInterfaceDied = true;
+                    var methodToExecute = (OnOnInterfaceDied != null) ? OnOnInterfaceDied : OnInterfaceDied;
+                    methodToExecute.Invoke(data.EventData.GetAt<Android.Os.RemoteCallbackList>(0), data.EventData.GetAt<Android.Os.IInterface>(1), data.EventData.GetAt<object>(2));
+                    data.EventData.TypedEventData.HasOverride = hasOverrideOnInterfaceDied;
+                }
+                
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
                 /// <param name="arg1"><see cref="Android.Os.IInterface"/></param>
                 /// <param name="arg2"><see cref="object"/></param>
-                public void OnInterfaceDied(Android.Os.RemoteCallbackList arg0, Android.Os.IInterface arg1, object arg2)
+                public virtual void OnInterfaceDied(Android.Os.RemoteCallbackList arg0, Android.Os.IInterface arg1, object arg2)
+                {
+                    hasOverrideOnInterfaceDied = false;
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region InterfaceDiedCallbackDirect implementation
+            public partial class InterfaceDiedCallbackDirect
+            {
+                #region Constructors
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
+                /// <param name="arg1"><see cref="Android.Os.IInterface"/></param>
+                /// <param name="arg2"><see cref="object"/></param>
+                public override void OnInterfaceDied(Android.Os.RemoteCallbackList arg0, Android.Os.IInterface arg1, object arg2)
                 {
                     IExecute("onInterfaceDied", arg0, arg1, arg2);
                 }
@@ -836,10 +1147,71 @@ namespace Android.Os
                 #endregion
             
                 #region Class/Interface conversion operators
+            
+                #endregion
+            
+                #region Fields
+            
+                #endregion
+            
+                #region Static methods
+            
+                #endregion
+            
+                #region Instance methods
                 /// <summary>
-                /// Converter from <see cref="Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback{E}"/> to <see cref="Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback"/>
+                /// Handlers initializer for <see cref="InterfaceDiedCallback"/>
                 /// </summary>
-                public static implicit operator Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback(Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback<E> t) => t.Cast<Android.Os.RemoteCallbackList.Builder.InterfaceDiedCallback>();
+                protected virtual void InitializeHandlers()
+                {
+                    AddEventHandler("onInterfaceDied", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnInterfaceDiedEventHandler));
+
+                }
+                
+                /// <summary>
+                /// Handler for <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <remarks>If <see cref="OnOnInterfaceDied"/> has a value it takes precedence over corresponding class method</remarks>
+                public global::System.Action<Android.Os.RemoteCallbackList<E>, E, object> OnOnInterfaceDied { get; set; } = null;
+                
+                bool hasOverrideOnInterfaceDied = true;
+                void OnInterfaceDiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+                {
+                    hasOverrideOnInterfaceDied = true;
+                    var methodToExecute = (OnOnInterfaceDied != null) ? OnOnInterfaceDied : OnInterfaceDied;
+                    methodToExecute.Invoke(data.EventData.GetAt<Android.Os.RemoteCallbackList<E>>(0), data.EventData.GetAt<E>(1), data.EventData.GetAt<object>(2));
+                    data.EventData.TypedEventData.HasOverride = hasOverrideOnInterfaceDied;
+                }
+                
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.Builder.InterfaceDiedCallback.html#onInterfaceDied(android.os.RemoteCallbackList,android.os.IInterface,java.lang.Object)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
+                /// <param name="arg1"><typeparamref name="E"/></param>
+                /// <param name="arg2"><see cref="object"/></param>
+                public virtual void OnInterfaceDied(Android.Os.RemoteCallbackList<E> arg0, E arg1, object arg2)
+                {
+                    hasOverrideOnInterfaceDied = false;
+                }
+            
+                #endregion
+            
+                #region Nested classes
+            
+                #endregion
+            
+                // TODO: complete the class
+            }
+            #endregion
+
+            #region InterfaceDiedCallbackDirect<E> implementation
+            public partial class InterfaceDiedCallbackDirect<E>
+            {
+                #region Constructors
+            
+                #endregion
+            
+                #region Class/Interface conversion operators
             
                 #endregion
             
@@ -858,7 +1230,7 @@ namespace Android.Os
                 /// <param name="arg0"><see cref="Android.Os.RemoteCallbackList"/></param>
                 /// <param name="arg1"><typeparamref name="E"/></param>
                 /// <param name="arg2"><see cref="object"/></param>
-                public void OnInterfaceDied(Android.Os.RemoteCallbackList<E> arg0, E arg1, object arg2)
+                public override void OnInterfaceDied(Android.Os.RemoteCallbackList<E> arg0, E arg1, object arg2)
                 {
                     IExecute("onInterfaceDied", arg0, arg1, arg2);
                 }

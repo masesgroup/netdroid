@@ -132,18 +132,18 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getEnvelopeEffectInfo()"/>
         /// </summary>
-        /// <returns><see cref="Android.Os.Vibrator.VibratorEnvelopeEffectInfo"/></returns>
-        public Android.Os.Vibrator.VibratorEnvelopeEffectInfo GetEnvelopeEffectInfo()
+        /// <returns><see cref="Android.Os.VibratorNs.VibratorEnvelopeEffectInfo"/></returns>
+        public Android.Os.VibratorNs.VibratorEnvelopeEffectInfo GetEnvelopeEffectInfo()
         {
-            return IExecuteWithSignature<Android.Os.Vibrator.VibratorEnvelopeEffectInfo>("getEnvelopeEffectInfo", "()Landroid/os/vibrator/VibratorEnvelopeEffectInfo;");
+            return IExecuteWithSignature<Android.Os.VibratorNs.VibratorEnvelopeEffectInfo>("getEnvelopeEffectInfo", "()Landroid/os/vibrator/VibratorEnvelopeEffectInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getFrequencyProfile()"/>
         /// </summary>
-        /// <returns><see cref="Android.Os.Vibrator.VibratorFrequencyProfile"/></returns>
-        public Android.Os.Vibrator.VibratorFrequencyProfile GetFrequencyProfile()
+        /// <returns><see cref="Android.Os.VibratorNs.VibratorFrequencyProfile"/></returns>
+        public Android.Os.VibratorNs.VibratorFrequencyProfile GetFrequencyProfile()
         {
-            return IExecuteWithSignature<Android.Os.Vibrator.VibratorFrequencyProfile>("getFrequencyProfile", "()Landroid/os/vibrator/VibratorFrequencyProfile;");
+            return IExecuteWithSignature<Android.Os.VibratorNs.VibratorFrequencyProfile>("getFrequencyProfile", "()Landroid/os/vibrator/VibratorFrequencyProfile;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#areEnvelopeEffectsSupported()"/>
