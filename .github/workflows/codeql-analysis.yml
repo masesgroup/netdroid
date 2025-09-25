@@ -87,7 +87,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         fetch-depth: '1'
         submodules: 'true'
@@ -121,7 +121,7 @@ jobs:
 
     - name: Set up Apache Maven Central
       if: matrix.language == 'java' 
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with: # running setup-java again overwrites the settings.xml
         distribution: temurin
         java-version: 11
