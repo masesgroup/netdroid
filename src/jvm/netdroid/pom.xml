@@ -42,13 +42,14 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
+		<android.platform>android-35</android.platform>
 		<netdroidVersion>1.0.0.35</netdroidVersion>
 		<binFolderName>bin</binFolderName>
 		<runtimeFolderName>net8.0</runtimeFolderName>
 		<rootDir>${basedir}/../../../</rootDir>
 		<jcobridgepath>${rootDir}/${binFolderName}/${runtimeFolderName}/JCOBridge.jar</jcobridgepath>
 		<jarsDestination>${rootDir}/jars/</jarsDestination>
-		<androidJarPath>${env.ANDROID_HOME}/platforms/android-35/android.jar</androidJarPath>
+		<androidJarPath>${env.ANDROID_HOME}/platforms/${android.platform}/android.jar</androidJarPath>
 	</properties>
 	<distributionManagement>
 		<snapshotRepository>
