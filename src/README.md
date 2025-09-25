@@ -211,7 +211,8 @@ The configuration is:
     "java.awt.event",
     "java.awt.font",
     "java.lang.module",
-    "java.util.random"
+    "java.util.random",
+    "android.os.vibrator"
   ]
 }
 ```
