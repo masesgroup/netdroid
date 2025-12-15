@@ -292,7 +292,7 @@ jobs:
         env:
           GITHUB_TEST_PREPARATION: true
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: Netdroid
           path: ./bin/*nupkg
