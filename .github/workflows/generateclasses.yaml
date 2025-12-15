@@ -149,7 +149,7 @@ jobs:
 
       - name: Request a PR to commit changes made with unpublished version of JNetReflector
         if: ${{ inputs.GeneratePR == true && inputs.UseLatestJNetReflector == true }} #do not push any changes outside main repo or GeneratePR is false
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch-suffix: short-commit-hash
           add-paths: src/*.*
@@ -163,7 +163,7 @@ jobs:
 
       - name: Request a PR to commit changes
         if: ${{ inputs.GeneratePR == true && inputs.UseLatestJNetReflector == false }} #do not push any changes outside main repo or GeneratePR is false
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch-suffix: short-commit-hash
           add-paths: src/*.*
