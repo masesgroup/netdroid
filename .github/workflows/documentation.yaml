@@ -34,7 +34,13 @@ jobs:
         with:
           repository: masesgroup/CommonTools
           path: CommonTools
-          
+      
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            9.x
+            10.x
+      
       - name: Clear documentation folder
         shell: pwsh
         run: |
