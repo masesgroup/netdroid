@@ -30,7 +30,7 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
-      - run: (Get-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml).Replace('<netdroidVersion>${{ inputs.CurrentVersion }}</netdroidVersion>', '<netdroidVersion>${{ inputs.NewVersion }}</netdroidVersion>') | Set-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml
+      - run: (Get-Content ${{ github.workspace }}\src\jvm\netdroid\pom.xml).Replace('<netdroidVersion>${{ inputs.CurrentVersion }}</netdroidVersion>', '<netdroidVersion>${{ inputs.NewVersion }}</netdroidVersion>') | Set-Content ${{ github.workspace }}\src\jvm\netdroid\pom.xml
         shell: pwsh
         
       - run: (Get-Content ${{ github.workspace }}\src\net\Common\Common.props).Replace('<Version>${{ inputs.CurrentVersion }}</Version>', '<Version>${{ inputs.NewVersion }}</Version>') | Set-Content ${{ github.workspace }}\src\net\Common\Common.props
