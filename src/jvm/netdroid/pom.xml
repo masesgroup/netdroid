@@ -43,7 +43,7 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<android.platform>android-36</android.platform>
-		<netdroidVersion>1.0.0.35</netdroidVersion>
+		<netdroidVersion>1.0.0.36</netdroidVersion>
 		<binFolderName>bin</binFolderName>
 		<runtimeFolderName>net8.0</runtimeFolderName>
 		<rootDir>${basedir}/../../../</rootDir>
