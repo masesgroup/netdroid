@@ -36,14 +36,6 @@
 		<None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
 		<None Include="..\Common\Netdroid.snk" Link="Netdroid.snk" />
 	</ItemGroup>
-	<!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
-	<PropertyGroup>
-		<TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>
-	</PropertyGroup>
-	<ItemGroup>
-		<EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
-	</ItemGroup>
-	<!-- Fix end -->
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
 		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 	</PropertyGroup>

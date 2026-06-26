@@ -35,8 +35,8 @@ jobs:
       DOTNET_CreateDumpDiagnostics: 1
       DOTNET_CreateDumpVerboseDiagnostics: 1
       DOTNET_EnableCrashReport: 1
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
-      JNet_Version: 2.6.5
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
+      JNet_Version: 2.6.9
       ANDROID_PLATFORM: android-36
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -61,7 +61,7 @@ jobs:
 
       - name: Clear C# generated files
         shell: pwsh
-        run: Remove-Item ./src/net/Netdroid/Generated/* -Recurse -Force -Exclude README.md
+        run: Remove-Item ./src/net/Netdroid/Generated/* -Recurse -Force -Exclude README.md,.editorconfig
 
       - name: Clear Java generated files
         shell: pwsh
@@ -81,10 +81,6 @@ jobs:
       - name: Create Jars of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
         run: mvn "-DbinFolderName=binReflector" --file ./JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
-        env:
-          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
-          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
-          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
       - name: Build JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
@@ -100,11 +96,6 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: 'maven'
-          server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
-          server-username: MAVEN_USERNAME # env variable for username in deploy
-          server-password: MAVEN_CENTRAL_TOKEN # env variable for token in deploy
-          gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
-          gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
       - name: Create classes with unpublished JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
@@ -133,11 +124,6 @@ jobs:
           distribution: temurin
           java-version: 11 # revert to 11 following https://stackoverflow.com/questions/13113142/gmaven-build-fails-with-an-api-incompatibility-was-encountered
           cache: 'maven'
-          server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
-          server-username: MAVEN_USERNAME # env variable for username in deploy
-          server-password: MAVEN_CENTRAL_TOKEN # env variable for token in deploy
-          gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
-          gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
       - name: Try compilation of Jars
         continue-on-error: ${{ inputs.ContinueOnCompilationError == true }}
