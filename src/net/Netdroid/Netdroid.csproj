@@ -13,6 +13,7 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+		<DefineConstants>$(DefineConstants);DISABLE_RECYCLABLE_MEMORY_STREAM</DefineConstants>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
 		<DefineConstants>$(DefineConstants);JNET_SIMPLIFIED_GENERATION</DefineConstants>
@@ -56,6 +57,7 @@
 		<Compile Remove="DevelopedJNet\Java\Lang\*Exception.cs" />
 		<None Remove="DevelopedJNet\Java\Lang\*Exception.cs" />
 		<Compile Remove="DevelopedJNet\Java\Lang\Compiler.cs" />
+		<Compile Remove="DevelopedJNet\Java\Lang\Record.cs" />
 		<Compile Remove="DevelopedJNet\Java\Lang\Reflect\AccessibleObject.cs" />
 		<Compile Remove="DevelopedJNet\Java\Util\AbstractList.cs" />
 		<Compile Remove="DevelopedJNet\Java\Util\Collections.cs" />
