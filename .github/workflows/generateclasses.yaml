@@ -156,6 +156,12 @@ jobs:
           name: JNetReflector report
           path: ./JNetReflector.txt
 
+      - name: Enable again nuget.org disabling local
+        if: ${{ success() && inputs.UseLastRepositoryBuild == true }}
+        run: |
+          dotnet nuget disable source local
+          dotnet nuget enable source nuget.org
+
       - name: Pre compile
         continue-on-error: ${{ inputs.ContinueOnCompilationError == true }}
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src/net/Netdroid/Netdroid.csproj
@@ -168,12 +174,6 @@ jobs:
           distribution: temurin
           java-version: 11 # revert to 11 following https://stackoverflow.com/questions/13113142/gmaven-build-fails-with-an-api-incompatibility-was-encountered
           cache: 'maven'
-
-      - name: Enable again nuget.org disabling local
-        if: ${{ success() && inputs.UseLastRepositoryBuild == true }}
-        run: |
-          dotnet nuget disable source local
-          dotnet nuget enable source nuget.org
 
       - name: Try compilation of Jars
         continue-on-error: ${{ inputs.ContinueOnCompilationError == true }}
