@@ -112,7 +112,7 @@ jobs:
       - name: Add local repo
         if: ${{ success() && inputs.UseLastRepositoryBuild == true }}
         run: |
-          dotnet nuget add source --name local "${{ github.workspace }}\JNetNuGet\"
+          dotnet nuget add source --name local "${{ github.workspace }}/JNetNuGet/"
           dotnet nuget disable source nuget.org
 
       - name: Use latest unpublished NuGet of JNetReflector
@@ -147,12 +147,6 @@ jobs:
         run: |
           cd JNet/binReflector/net8.0
           dotnet MASES.JNetReflector.dll -TraceLevel 1 -TraceTo $GITHUB_WORKSPACE/JNetReflector.txt -CopyrightFile $GITHUB_WORKSPACE/src/copyright.txt -OriginRootPath $ANDROID_HOME/platforms/${{ env.ANDROID_PLATFORM }} -DestinationRootPath $GITHUB_WORKSPACE/src/ -ConfigurationFile $GITHUB_WORKSPACE/src/configuration.json
-
-      - name: Disable CET for dotnet process
-        if: ${{ inputs.UseLatestJNetReflectorSource == false }}
-        run: |
-          reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\jnetreflector.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
-          Get-ProcessMitigation -Name "jnetreflector.exe"
 
       - name: Create classes with latest published version of JNetReflector
         if: ${{ inputs.UseLatestJNetReflectorSource == false }}
