@@ -84,21 +84,6 @@ jobs:
         if: ${{ inputs.UseLatestJNetReflectorSource == true }}
         run: dotnet build --no-incremental --configuration Release JNet\src\net\JNetReflector\JNetReflector.csproj
 
-      - name: Pre compile
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\KNet\KNet.csproj
-        env:
-          GITHUB_SIMPLIFIED_GENERATION: true
-          
-      - name: Set up Apache Maven Central
-        uses: actions/setup-java@v5
-        with: # running setup-java again overwrites the settings.xml
-          distribution: temurin
-          java-version: 17
-          cache: 'maven'
-
-      - name: Create Jars
-        run: mvn "-DmavenSkipMain=true" --file ./src/jvm/knet/pom.xml --no-transfer-progress package
-
       - name: Clear C# generated files
         shell: pwsh
         run: Remove-Item ./src/net/Netdroid/Generated/* -Recurse -Force -Exclude README.md,.editorconfig
