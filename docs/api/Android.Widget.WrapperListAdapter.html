@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Widget_WrapperListAdapter" data-uid="Android.Widget.WrapperListAdapter" class="text-break">
-Class WrapperListAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L114"><i class="bi bi-code-slash"></i></a>
+Class WrapperListAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WrapperListAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IWrapperListAdapter</code></pre>
+    <pre><code class="lang-csharp hljs">public class WrapperListAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IWrapperListAdapter</code></pre>
   </div>
 
 
@@ -113,9 +113,9 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
-      <div><span class="xref">JVMBridgeListener</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a></div>
       <div><span class="xref">WrapperListAdapter</span></div>
     </dd>
   </dl>
@@ -124,11 +124,13 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Android.Widget.IWrapperListAdapter.html">IWrapperListAdapter</a></div>
     </dd>
   </dl>
@@ -140,382 +142,15 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
     </dd>
   </dl>
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.AutoInit</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeStatic</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeCloseable</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;JVMBridgeListener&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeInterface</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeAbstract</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-  </dd></dl>
 
   <dl class="typelist extensionMethods">
     <dt>Extension Methods</dt>
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -529,19 +164,57 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <a id="Android_Widget_WrapperListAdapter__ctor_" data-uid="Android.Widget.WrapperListAdapter.#ctor*"></a>
 
-  <h3 id="Android_Widget_WrapperListAdapter__ctor" data-uid="Android.Widget.WrapperListAdapter.#ctor">
-  WrapperListAdapter()
+  <h3 id="Android_Widget_WrapperListAdapter__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Widget.WrapperListAdapter.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  WrapperListAdapter(IJVMBridgeBaseInitializer)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WrapperListAdapter()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentifiable behaviors.&quot;)]
+public WrapperListAdapter(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter__ctor_" data-uid="Android.Widget.WrapperListAdapter.#ctor*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter__ctor_System_Object___" data-uid="Android.Widget.WrapperListAdapter.#ctor(System.Object[])">
+  WrapperListAdapter(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WrapperListAdapter(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -562,10 +235,10 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_BridgeClassName" data-uid="Android.Widget.WrapperListAdapter.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -594,7 +267,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnAreAllItemsEnabled" data-uid="Android.Widget.WrapperListAdapter.OnAreAllItemsEnabled">
   OnAreAllItemsEnabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L462"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ListAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/ListAdapter.html#areAllItemsEnabled()</a></p>
@@ -619,7 +292,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnAreAllItemsEnabled_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnAreAllItemsEnabled">OnAreAllItemsEnabled</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnAreAllItemsEnabledDispose_" data-uid="Android.Widget.WrapperListAdapter.OnAreAllItemsEnabledDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnAreAllItemsEnabledDispose" data-uid="Android.Widget.WrapperListAdapter.OnAreAllItemsEnabledDispose">
+  OnAreAllItemsEnabledDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnAreAllItemsEnabledDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnAreAllItemsEnabledDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnAreAllItemsEnabledDispose">OnAreAllItemsEnabledDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -629,7 +342,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetAutofillOptions" data-uid="Android.Widget.WrapperListAdapter.OnGetAutofillOptions">
   OnGetAutofillOptions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L930"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()">https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()</a></p>
@@ -654,7 +367,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetAutofillOptions_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetAutofillOptions">OnGetAutofillOptions</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetAutofillOptionsDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetAutofillOptionsDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetAutofillOptionsDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetAutofillOptionsDispose">
+  OnGetAutofillOptionsDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L940"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;CharSequence[]&gt; OnGetAutofillOptionsDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetAutofillOptionsDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetAutofillOptionsDispose">OnGetAutofillOptionsDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -664,7 +417,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetCount" data-uid="Android.Widget.WrapperListAdapter.OnGetCount">
   OnGetCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L569"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()">https://developer.android.com/reference/android/widget/Adapter.html#getCount()</a></p>
@@ -689,7 +442,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetCount_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetCount">OnGetCount</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetCountDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetCountDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetCountDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetCountDispose">
+  OnGetCountDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnGetCountDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetCountDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetCountDispose">OnGetCountDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -699,7 +492,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetItem" data-uid="Android.Widget.WrapperListAdapter.OnGetItem">
   OnGetItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L729"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)">https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)</a></p>
@@ -724,7 +517,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetItem_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetItem">OnGetItem</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetItemDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetItemDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetItemDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetItemDispose">
+  OnGetItemDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt; OnGetItemDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetItemDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetItemDispose">OnGetItemDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -734,7 +567,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetItemId" data-uid="Android.Widget.WrapperListAdapter.OnGetItemId">
   OnGetItemId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L783"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)">https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)</a></p>
@@ -759,7 +592,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetItemId_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetItemId">OnGetItemId</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetItemIdDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetItemIdDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetItemIdDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetItemIdDispose">
+  OnGetItemIdDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L793"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;long&gt; OnGetItemIdDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetItemIdDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetItemIdDispose">OnGetItemIdDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -769,7 +642,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetItemViewType" data-uid="Android.Widget.WrapperListAdapter.OnGetItemViewType">
   OnGetItemViewType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L622"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)">https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)</a></p>
@@ -794,7 +667,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetItemViewType_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetItemViewType">OnGetItemViewType</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetItemViewTypeDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetItemViewTypeDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetItemViewTypeDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetItemViewTypeDispose">
+  OnGetItemViewTypeDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnGetItemViewTypeDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetItemViewTypeDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetItemViewTypeDispose">OnGetItemViewTypeDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -804,7 +717,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetView" data-uid="Android.Widget.WrapperListAdapter.OnGetView">
   OnGetView
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)</a></p>
@@ -829,7 +742,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetView_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetView">OnGetView</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetViewDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetViewDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetViewDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetViewDispose">
+  OnGetViewDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;View&gt; OnGetViewDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetViewDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetViewDispose">OnGetViewDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -839,7 +792,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetViewTypeCount" data-uid="Android.Widget.WrapperListAdapter.OnGetViewTypeCount">
   OnGetViewTypeCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L676"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()">https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()</a></p>
@@ -864,7 +817,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetViewTypeCount_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetViewTypeCount">OnGetViewTypeCount</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetViewTypeCountDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetViewTypeCountDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetViewTypeCountDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetViewTypeCountDispose">
+  OnGetViewTypeCountDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnGetViewTypeCountDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetViewTypeCountDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetViewTypeCountDispose">OnGetViewTypeCountDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -874,7 +867,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnGetWrappedAdapter" data-uid="Android.Widget.WrapperListAdapter.OnGetWrappedAdapter">
   OnGetWrappedAdapter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/WrapperListAdapter.html#getWrappedAdapter()">https://developer.android.com/reference/android/widget/WrapperListAdapter.html#getWrappedAdapter()</a></p>
@@ -899,7 +892,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetWrappedAdapter_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetWrappedAdapter">OnGetWrappedAdapter</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnGetWrappedAdapterDispose_" data-uid="Android.Widget.WrapperListAdapter.OnGetWrappedAdapterDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnGetWrappedAdapterDispose" data-uid="Android.Widget.WrapperListAdapter.OnGetWrappedAdapterDispose">
+  OnGetWrappedAdapterDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ListAdapter&gt; OnGetWrappedAdapterDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.Widget.ListAdapter.html">ListAdapter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnGetWrappedAdapterDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnGetWrappedAdapterDispose">OnGetWrappedAdapterDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -909,7 +942,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnHasStableIds" data-uid="Android.Widget.WrapperListAdapter.OnHasStableIds">
   OnHasStableIds
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()</a></p>
@@ -934,7 +967,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnHasStableIds_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnHasStableIds">OnHasStableIds</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnHasStableIdsDispose_" data-uid="Android.Widget.WrapperListAdapter.OnHasStableIdsDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnHasStableIdsDispose" data-uid="Android.Widget.WrapperListAdapter.OnHasStableIdsDispose">
+  OnHasStableIdsDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnHasStableIdsDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnHasStableIdsDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnHasStableIdsDispose">OnHasStableIdsDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -944,7 +1017,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnIsEmpty" data-uid="Android.Widget.WrapperListAdapter.OnIsEmpty">
   OnIsEmpty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L409"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()">https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()</a></p>
@@ -969,7 +1042,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnIsEmpty_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnIsEmpty">OnIsEmpty</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnIsEmptyDispose_" data-uid="Android.Widget.WrapperListAdapter.OnIsEmptyDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnIsEmptyDispose" data-uid="Android.Widget.WrapperListAdapter.OnIsEmptyDispose">
+  OnIsEmptyDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnIsEmptyDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnIsEmptyDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnIsEmptyDispose">OnIsEmptyDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -979,7 +1092,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnIsEnabled" data-uid="Android.Widget.WrapperListAdapter.OnIsEnabled">
   OnIsEnabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L515"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ListAdapter.html#isEnabled(int)">https://developer.android.com/reference/android/widget/ListAdapter.html#isEnabled(int)</a></p>
@@ -1004,7 +1117,47 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnIsEnabled_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnIsEnabled">OnIsEnabled</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_OnIsEnabledDispose_" data-uid="Android.Widget.WrapperListAdapter.OnIsEnabledDispose*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_OnIsEnabledDispose" data-uid="Android.Widget.WrapperListAdapter.OnIsEnabledDispose">
+  OnIsEnabledDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnIsEnabledDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_OnIsEnabledDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnIsEnabledDispose">OnIsEnabledDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -1014,7 +1167,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnRegisterDataSetObserver" data-uid="Android.Widget.WrapperListAdapter.OnRegisterDataSetObserver">
   OnRegisterDataSetObserver
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L837"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1039,7 +1192,8 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnRegisterDataSetObserver_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnRegisterDataSetObserver">OnRegisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1049,7 +1203,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_OnUnregisterDataSetObserver" data-uid="Android.Widget.WrapperListAdapter.OnUnregisterDataSetObserver">
   OnUnregisterDataSetObserver
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L879"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1074,7 +1228,8 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
   <h4 class="section" id="Android_Widget_WrapperListAdapter_OnUnregisterDataSetObserver_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.WrapperListAdapter.html#Android_Widget_WrapperListAdapter_OnUnregisterDataSetObserver">OnUnregisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1088,7 +1243,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_AreAllItemsEnabled" data-uid="Android.Widget.WrapperListAdapter.AreAllItemsEnabled">
   AreAllItemsEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L503"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/ListAdapter.html#areAllItemsEnabled()</a></p>
@@ -1121,7 +1276,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetAutofillOptions" data-uid="Android.Widget.WrapperListAdapter.GetAutofillOptions">
   GetAutofillOptions()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L972"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()">https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()</a></p>
@@ -1157,7 +1312,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetAutofillOptionsDefault" data-uid="Android.Widget.WrapperListAdapter.GetAutofillOptionsDefault">
   GetAutofillOptionsDefault()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L918"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()">https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()</a></p>
@@ -1193,7 +1348,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetCount" data-uid="Android.Widget.WrapperListAdapter.GetCount">
   GetCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L610"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()">https://developer.android.com/reference/android/widget/Adapter.html#getCount()</a></p>
@@ -1226,7 +1381,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetItem_System_Int32_" data-uid="Android.Widget.WrapperListAdapter.GetItem(System.Int32)">
   GetItem(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L771"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)">https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)</a></p>
@@ -1265,7 +1420,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetItemId_System_Int32_" data-uid="Android.Widget.WrapperListAdapter.GetItemId(System.Int32)">
   GetItemId(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L825"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)">https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)</a></p>
@@ -1304,7 +1459,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetItemViewType_System_Int32_" data-uid="Android.Widget.WrapperListAdapter.GetItemViewType(System.Int32)">
   GetItemViewType(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L664"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)">https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)</a></p>
@@ -1343,7 +1498,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetView_System_Int32_Android_View_View_Android_View_ViewGroup_" data-uid="Android.Widget.WrapperListAdapter.GetView(System.Int32,Android.View.View,Android.View.ViewGroup)">
   GetView(int, View, ViewGroup)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)</a></p>
@@ -1388,7 +1543,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetViewTypeCount" data-uid="Android.Widget.WrapperListAdapter.GetViewTypeCount">
   GetViewTypeCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L717"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()">https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()</a></p>
@@ -1421,7 +1576,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_GetWrappedAdapter" data-uid="Android.Widget.WrapperListAdapter.GetWrappedAdapter">
   GetWrappedAdapter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/WrapperListAdapter.html#getWrappedAdapter()">https://developer.android.com/reference/android/widget/WrapperListAdapter.html#getWrappedAdapter()</a></p>
@@ -1454,7 +1609,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_HasStableIds" data-uid="Android.Widget.WrapperListAdapter.HasStableIds">
   HasStableIds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()</a></p>
@@ -1485,9 +1640,9 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <a id="Android_Widget_WrapperListAdapter_InitializeHandlers_" data-uid="Android.Widget.WrapperListAdapter.InitializeHandlers*"></a>
 
-  <h3 id="Android_Widget_WrapperListAdapter_InitializeHandlers" data-uid="Android.Widget.WrapperListAdapter.InitializeHandlers">
-  InitializeHandlers()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Widget_WrapperListAdapter_InitializeHandlers_System_Type_" data-uid="Android.Widget.WrapperListAdapter.InitializeHandlers(System.Type)">
+  InitializeHandlers(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handlers initializer for <a class="xref" href="Android.Widget.WrapperListAdapter.html">WrapperListAdapter</a></p>
@@ -1495,9 +1650,14 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers(Type listenerRuntimeType)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listenerRuntimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1514,7 +1674,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_IsEmpty" data-uid="Android.Widget.WrapperListAdapter.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L450"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()">https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()</a></p>
@@ -1547,7 +1707,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_IsEnabled_System_Int32_" data-uid="Android.Widget.WrapperListAdapter.IsEnabled(System.Int32)">
   IsEnabled(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListAdapter.html#isEnabled(int)">https://developer.android.com/reference/android/widget/ListAdapter.html#isEnabled(int)</a></p>
@@ -1582,11 +1742,92 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Android_Widget_WrapperListAdapter_ListenerShallManageEvent_" data-uid="Android.Widget.WrapperListAdapter.ListenerShallManageEvent*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_ListenerShallManageEvent_System_Int32_" data-uid="Android.Widget.WrapperListAdapter.ListenerShallManageEvent(System.Int32)">
+  ListenerShallManageEvent(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invoked from the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a> on each received event to notify the user which can decide to abort the execution for the specific event returning <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ListenerShallManageEvent(int eventIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the event triggered as returned from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">AddEventHandler(string, EventHandler)</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to continue event evaluation, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to return the control to the JVM</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Android_Widget_WrapperListAdapter_ListenerShallManageEvent_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>By default every event continues the execution and reads the data from JVM; this implies an extra cost which can be limited using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ListenerShallManageEvent(int)</a> or the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventIndex">ListenerShallManageEventIndex</a>/<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventName">ListenerShallManageEventName</a> handlers.
+Returning <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the control is immediately returned to the JVM, anyway the user has received the notification. It can be useful in scenarios where the user is interested in few events
+and the other are simply discarded to optimize the execution speed.
+By default, this function invokes <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventIndex">ListenerShallManageEventIndex</a>, then try <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventName">ListenerShallManageEventName</a> if they are set or return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a></p>
+</div>
+
+
+
+
+  <a id="Android_Widget_WrapperListAdapter_ListenerShallManageEventHandlers_" data-uid="Android.Widget.WrapperListAdapter.ListenerShallManageEventHandlers*"></a>
+
+  <h3 id="Android_Widget_WrapperListAdapter_ListenerShallManageEventHandlers_System_Int32_" data-uid="Android.Widget.WrapperListAdapter.ListenerShallManageEventHandlers(System.Int32)">
+  ListenerShallManageEventHandlers(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ListenerShallManageEventHandlers(int eventIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Widget_WrapperListAdapter_RegisterDataSetObserver_" data-uid="Android.Widget.WrapperListAdapter.RegisterDataSetObserver*"></a>
 
   <h3 id="Android_Widget_WrapperListAdapter_RegisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.WrapperListAdapter.RegisterDataSetObserver(Android.Database.DataSetObserver)">
   RegisterDataSetObserver(DataSetObserver)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L867"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1619,7 +1860,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Widget_WrapperListAdapter_UnregisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.WrapperListAdapter.UnregisterDataSetObserver(Android.Database.DataSetObserver)">
   UnregisterDataSetObserver(DataSetObserver)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L909"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1652,7 +1893,7 @@ Class WrapperListAdapter  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L114" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/WrapperListAdapter.cs/#L165" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class UwbRangingParams | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UwbRangingParams | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the .NET suite for Android">
+      <meta name="description" content="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Ranging_Uwb_UwbRangingParams.md&amp;value=---%0Auid%3A%20Android.Ranging.Uwb.UwbRangingParams%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Ranging.Uwb.UwbRangingParams">
+
+
+
+  <h1 id="Android_Ranging_Uwb_UwbRangingParams" data-uid="Android.Ranging.Uwb.UwbRangingParams" class="text-break">
+Class UwbRangingParams  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Ranging.html">Ranging</a>.<a class="xref" href="Android.Ranging.Uwb.html">Uwb</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UwbRangingParams : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>&gt;</div>
+      <div><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></div>
+      <div><span class="xref">UwbRangingParams</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_CONTENTS_FILE_DESCRIPTOR">Parcelable.CONTENTS_FILE_DESCRIPTOR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_PARCELABLE_WRITE_RETURN_VALUE">Parcelable.PARCELABLE_WRITE_RETURN_VALUE</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams__ctor_" data-uid="Android.Ranging.Uwb.UwbRangingParams.#ctor*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Ranging.Uwb.UwbRangingParams.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  UwbRangingParams(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public UwbRangingParams(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_BridgeClassName_" data-uid="Android.Ranging.Uwb.UwbRangingParams.BridgeClassName*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_BridgeClassName" data-uid="Android.Ranging.Uwb.UwbRangingParams.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_MULTICAST_DS_TWR_" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_MULTICAST_DS_TWR*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_MULTICAST_DS_TWR" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_MULTICAST_DS_TWR">
+  CONFIG_MULTICAST_DS_TWR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_MULTICAST_DS_TWR">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_MULTICAST_DS_TWR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIG_MULTICAST_DS_TWR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR_" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR">
+  CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIG_PROVISIONED_INDIVIDUAL_MULTICAST_DS_TWR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_MULTICAST_DS_TWR_" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_MULTICAST_DS_TWR*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_MULTICAST_DS_TWR" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_MULTICAST_DS_TWR">
+  CONFIG_PROVISIONED_MULTICAST_DS_TWR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_MULTICAST_DS_TWR">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_MULTICAST_DS_TWR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIG_PROVISIONED_MULTICAST_DS_TWR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_UNICAST_DS_TWR_" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_UNICAST_DS_TWR*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_UNICAST_DS_TWR" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_UNICAST_DS_TWR">
+  CONFIG_PROVISIONED_UNICAST_DS_TWR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_UNICAST_DS_TWR">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_UNICAST_DS_TWR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIG_PROVISIONED_UNICAST_DS_TWR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST_" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST">
+  CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIG_PROVISIONED_UNICAST_DS_TWR_VERY_FAST { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_UNICAST_DS_TWR_" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_UNICAST_DS_TWR*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_CONFIG_UNICAST_DS_TWR" data-uid="Android.Ranging.Uwb.UwbRangingParams.CONFIG_UNICAST_DS_TWR">
+  CONFIG_UNICAST_DS_TWR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_UNICAST_DS_TWR">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CONFIG_UNICAST_DS_TWR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIG_UNICAST_DS_TWR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_CREATOR_" data-uid="Android.Ranging.Uwb.UwbRangingParams.CREATOR*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_CREATOR" data-uid="Android.Ranging.Uwb.UwbRangingParams.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CREATOR">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_DURATION_1_MS_" data-uid="Android.Ranging.Uwb.UwbRangingParams.DURATION_1_MS*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_DURATION_1_MS" data-uid="Android.Ranging.Uwb.UwbRangingParams.DURATION_1_MS">
+  DURATION_1_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#DURATION_1_MS">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#DURATION_1_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DURATION_1_MS { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_DURATION_2_MS_" data-uid="Android.Ranging.Uwb.UwbRangingParams.DURATION_2_MS*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_DURATION_2_MS" data-uid="Android.Ranging.Uwb.UwbRangingParams.DURATION_2_MS">
+  DURATION_2_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#DURATION_2_MS">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#DURATION_2_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DURATION_2_MS { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeAbstract_" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeAbstract" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeCloseable_" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeCloseable" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeInterface_" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeInterface" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeStatic_" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_IsBridgeStatic" data-uid="Android.Ranging.Uwb.UwbRangingParams.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_SUB_SESSION_UNDEFINED_" data-uid="Android.Ranging.Uwb.UwbRangingParams.SUB_SESSION_UNDEFINED*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_SUB_SESSION_UNDEFINED" data-uid="Android.Ranging.Uwb.UwbRangingParams.SUB_SESSION_UNDEFINED">
+  SUB_SESSION_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#SUB_SESSION_UNDEFINED">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#SUB_SESSION_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SUB_SESSION_UNDEFINED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_DescribeContents_" data-uid="Android.Ranging.Uwb.UwbRangingParams.DescribeContents*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_DescribeContents" data-uid="Android.Ranging.Uwb.UwbRangingParams.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#describeContents()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetComplexChannel_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetComplexChannel*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetComplexChannel" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetComplexChannel">
+  GetComplexChannel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getComplexChannel()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getComplexChannel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UwbComplexChannel GetComplexChannel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Ranging.Uwb.UwbComplexChannel.html">UwbComplexChannel</a></dt>
+    <dd><p><a class="xref" href="Android.Ranging.Uwb.UwbComplexChannel.html">UwbComplexChannel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetConfigId_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetConfigId*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetConfigId" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetConfigId">
+  GetConfigId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getConfigId()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getConfigId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetConfigId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetDeviceAddress_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetDeviceAddress*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetDeviceAddress" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetDeviceAddress">
+  GetDeviceAddress()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getDeviceAddress()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getDeviceAddress()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UwbAddress GetDeviceAddress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Ranging.Uwb.UwbAddress.html">UwbAddress</a></dt>
+    <dd><p><a class="xref" href="Android.Ranging.Uwb.UwbAddress.html">UwbAddress</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetPeerAddress_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetPeerAddress*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetPeerAddress" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetPeerAddress">
+  GetPeerAddress()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getPeerAddress()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getPeerAddress()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UwbAddress GetPeerAddress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Ranging.Uwb.UwbAddress.html">UwbAddress</a></dt>
+    <dd><p><a class="xref" href="Android.Ranging.Uwb.UwbAddress.html">UwbAddress</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetRangingUpdateRate_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetRangingUpdateRate*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetRangingUpdateRate" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetRangingUpdateRate">
+  GetRangingUpdateRate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getRangingUpdateRate()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getRangingUpdateRate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRangingUpdateRate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetSessionId_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSessionId*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetSessionId" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSessionId">
+  GetSessionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSessionId()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSessionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSessionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetSessionKeyInfo_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSessionKeyInfo*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetSessionKeyInfo" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSessionKeyInfo">
+  GetSessionKeyInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSessionKeyInfo()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSessionKeyInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetSessionKeyInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetSlotDuration_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSlotDuration*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetSlotDuration" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSlotDuration">
+  GetSlotDuration()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSlotDuration()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSlotDuration()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSlotDuration()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetSubSessionId_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSubSessionId*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetSubSessionId" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSubSessionId">
+  GetSubSessionId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSubSessionId()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSubSessionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSubSessionId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_GetSubSessionKeyInfo_" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSubSessionKeyInfo*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_GetSubSessionKeyInfo" data-uid="Android.Ranging.Uwb.UwbRangingParams.GetSubSessionKeyInfo">
+  GetSubSessionKeyInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSubSessionKeyInfo()">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#getSubSessionKeyInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetSubSessionKeyInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_Uwb_UwbRangingParams_WriteToParcel_" data-uid="Android.Ranging.Uwb.UwbRangingParams.WriteToParcel*"></a>
+
+  <h3 id="Android_Ranging_Uwb_UwbRangingParams_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Ranging.Uwb.UwbRangingParams.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/ranging/uwb/UwbRangingParams.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/Uwb/UwbRangingParams.cs/#L97" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2024 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

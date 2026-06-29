@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Widget_AdapterViewAnimator" data-uid="Android.Widget.AdapterViewAnimator" class="text-break">
-Class AdapterViewAnimator  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L76"><i class="bi bi-code-slash"></i></a>
+Class AdapterViewAnimator  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AdapterViewAnimator : AdapterView&lt;Adapter&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAccessibilityEventSource, IViewParent, IViewManager</code></pre>
+    <pre><code class="lang-csharp hljs">public class AdapterViewAnimator : AdapterView&lt;Adapter&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IAccessibilityEventSource, IViewManager, IViewParent</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
       <div><a class="xref" href="Android.View.View.html">View</a></div>
       <div><a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></div>
       <div><a class="xref" href="Android.Widget.AdapterView-1.html">AdapterView</a>&lt;<a class="xref" href="Android.Widget.Adapter.html">Adapter</a>&gt;</div>
@@ -126,14 +126,16 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Android.View.Accessibility.IAccessibilityEventSource.html">IAccessibilityEventSource</a></div>
-      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
       <div><a class="xref" href="Android.View.IViewManager.html">IViewManager</a></div>
+      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
     </dd>
   </dl>
 
@@ -464,6 +466,9 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_OnViewRemoved_Android_View_View_">ViewGroup.OnViewRemoved(View)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_PropagateRequestedFrameRate_System_Single_System_Boolean_">ViewGroup.PropagateRequestedFrameRate(float, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_RecomputeViewAttributes_Android_View_View_">ViewGroup.RecomputeViewAttributes(View)</a>
     </div>
     <div>
@@ -672,6 +677,9 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_GLOBAL_URI_WRITE">View.DRAG_FLAG_GLOBAL_URI_WRITE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START">View.DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_OPAQUE">View.DRAG_FLAG_OPAQUE</a>
@@ -2015,6 +2023,9 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
       <a class="xref" href="Android.View.View.html#Android_View_View_GetContentDescription">View.GetContentDescription()</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_GetSupplementalDescription">View.GetSupplementalDescription()</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_GetTooltipText">View.GetTooltipText()</a>
     </div>
     <div>
@@ -2361,6 +2372,9 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RemoveOnUnhandledKeyEventListener_Android_View_View_OnUnhandledKeyEventListener_">View.RemoveOnUnhandledKeyEventListener(View.OnUnhandledKeyEventListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_ReportAppJankStats_Android_App_Jank_AppJankStats_">View.ReportAppJankStats(AppJankStats)</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RequestApplyInsets">View.RequestApplyInsets()</a>
@@ -2807,6 +2821,9 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
       <a class="xref" href="Android.View.View.html#Android_View_View_SetStateListAnimator_Android_Animation_StateListAnimator_">View.SetStateListAnimator(StateListAnimator)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_SetSupplementalDescription_Java_Lang_CharSequence_">View.SetSupplementalDescription(CharSequence)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_SetSystemGestureExclusionRects_Java_Util_List_Android_Graphics_Rect__">View.SetSystemGestureExclusionRects(List&lt;Rect&gt;)</a>
     </div>
     <div>
@@ -2902,351 +2919,6 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_UnscheduleDrawable_Android_Graphics_Drawable_Drawable_">View.UnscheduleDrawable(Drawable)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;View&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -3254,6 +2926,9 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -3267,37 +2942,9 @@ Class AdapterViewAnimator  <a class="header-action link-secondary" title="View s
 
   <a id="Android_Widget_AdapterViewAnimator__ctor_" data-uid="Android.Widget.AdapterViewAnimator.#ctor*"></a>
 
-  <h3 id="Android_Widget_AdapterViewAnimator__ctor" data-uid="Android.Widget.AdapterViewAnimator.#ctor">
-  AdapterViewAnimator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;AdapterViewAnimator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public AdapterViewAnimator()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Widget_AdapterViewAnimator__ctor_" data-uid="Android.Widget.AdapterViewAnimator.#ctor*"></a>
-
   <h3 id="Android_Widget_AdapterViewAnimator__ctor_Android_Content_Context_" data-uid="Android.Widget.AdapterViewAnimator.#ctor(Android.Content.Context)">
   AdapterViewAnimator(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context)</a></p>
@@ -3330,7 +2977,7 @@ public AdapterViewAnimator()</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator__ctor_Android_Content_Context_Android_Util_AttributeSet_" data-uid="Android.Widget.AdapterViewAnimator.#ctor(Android.Content.Context,Android.Util.AttributeSet)">
   AdapterViewAnimator(Context, AttributeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)</a></p>
@@ -3366,7 +3013,7 @@ public AdapterViewAnimator()</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_" data-uid="Android.Widget.AdapterViewAnimator.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32)">
   AdapterViewAnimator(Context, AttributeSet, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)</a></p>
@@ -3405,7 +3052,7 @@ public AdapterViewAnimator()</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_" data-uid="Android.Widget.AdapterViewAnimator.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32,System.Int32)">
   AdapterViewAnimator(Context, AttributeSet, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)</a></p>
@@ -3445,23 +3092,23 @@ public AdapterViewAnimator()</code></pre>
 
   <a id="Android_Widget_AdapterViewAnimator__ctor_" data-uid="Android.Widget.AdapterViewAnimator.#ctor*"></a>
 
-  <h3 id="Android_Widget_AdapterViewAnimator__ctor_System_Object___" data-uid="Android.Widget.AdapterViewAnimator.#ctor(System.Object[])">
-  AdapterViewAnimator(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Widget_AdapterViewAnimator__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Widget.AdapterViewAnimator.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AdapterViewAnimator(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;AdapterViewAnimator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public AdapterViewAnimator(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AdapterViewAnimator(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -3484,10 +3131,10 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_BridgeClassName" data-uid="Android.Widget.AdapterViewAnimator.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3516,10 +3163,10 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_IsBridgeAbstract" data-uid="Android.Widget.AdapterViewAnimator.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3548,10 +3195,10 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_IsBridgeCloseable" data-uid="Android.Widget.AdapterViewAnimator.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3580,10 +3227,10 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_IsBridgeInterface" data-uid="Android.Widget.AdapterViewAnimator.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3612,10 +3259,10 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_IsBridgeStatic" data-uid="Android.Widget.AdapterViewAnimator.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3648,7 +3295,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_Advance" data-uid="Android.Widget.AdapterViewAnimator.Advance">
   Advance()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#advance()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#advance()</a></p>
@@ -3671,11 +3318,171 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
 
 
+  <a id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_Android_Content_Context_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance(Android.Content.Context)">
+  CreatePoolableInstance(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AdapterViewAnimator(Android.Content.Context arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AdapterViewAnimator CreatePoolableInstance(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.AdapterViewAnimator.html">AdapterViewAnimator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet)">
+  CreatePoolableInstance(Context, AttributeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AdapterViewAnimator(Android.Content.Context arg0, Android.Util.AttributeSet arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AdapterViewAnimator CreatePoolableInstance(Context arg0, AttributeSet arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.AdapterViewAnimator.html">AdapterViewAnimator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet,System.Int32)">
+  CreatePoolableInstance(Context, AttributeSet, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AdapterViewAnimator(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AdapterViewAnimator CreatePoolableInstance(Context arg0, AttributeSet arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.AdapterViewAnimator.html">AdapterViewAnimator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_AdapterViewAnimator_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_" data-uid="Android.Widget.AdapterViewAnimator.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet,System.Int32,System.Int32)">
+  CreatePoolableInstance(Context, AttributeSet, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AdapterViewAnimator(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AdapterViewAnimator CreatePoolableInstance(Context arg0, AttributeSet arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.AdapterViewAnimator.html">AdapterViewAnimator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Widget_AdapterViewAnimator_DeferNotifyDataSetChanged_" data-uid="Android.Widget.AdapterViewAnimator.DeferNotifyDataSetChanged*"></a>
 
   <h3 id="Android_Widget_AdapterViewAnimator_DeferNotifyDataSetChanged" data-uid="Android.Widget.AdapterViewAnimator.DeferNotifyDataSetChanged">
   DeferNotifyDataSetChanged()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#deferNotifyDataSetChanged()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#deferNotifyDataSetChanged()</a></p>
@@ -3702,7 +3509,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_FyiWillBeAdvancedByHostKThx" data-uid="Android.Widget.AdapterViewAnimator.FyiWillBeAdvancedByHostKThx">
   FyiWillBeAdvancedByHostKThx()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#fyiWillBeAdvancedByHostKThx()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#fyiWillBeAdvancedByHostKThx()</a></p>
@@ -3729,7 +3536,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_GetCurrentView" data-uid="Android.Widget.AdapterViewAnimator.GetCurrentView">
   GetCurrentView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getCurrentView()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getCurrentView()</a></p>
@@ -3762,7 +3569,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_GetDisplayedChild" data-uid="Android.Widget.AdapterViewAnimator.GetDisplayedChild">
   GetDisplayedChild()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getDisplayedChild()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getDisplayedChild()</a></p>
@@ -3795,7 +3602,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_GetInAnimation" data-uid="Android.Widget.AdapterViewAnimator.GetInAnimation">
   GetInAnimation()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getInAnimation()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getInAnimation()</a></p>
@@ -3828,7 +3635,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_GetOutAnimation" data-uid="Android.Widget.AdapterViewAnimator.GetOutAnimation">
   GetOutAnimation()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getOutAnimation()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getOutAnimation()</a></p>
@@ -3861,7 +3668,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_OnRemoteAdapterConnected" data-uid="Android.Widget.AdapterViewAnimator.OnRemoteAdapterConnected">
   OnRemoteAdapterConnected()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onRemoteAdapterConnected()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onRemoteAdapterConnected()</a></p>
@@ -3894,7 +3701,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_OnRemoteAdapterDisconnected" data-uid="Android.Widget.AdapterViewAnimator.OnRemoteAdapterDisconnected">
   OnRemoteAdapterDisconnected()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onRemoteAdapterDisconnected()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onRemoteAdapterDisconnected()</a></p>
@@ -3921,7 +3728,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_OnRestoreInstanceState_Android_Os_Parcelable_" data-uid="Android.Widget.AdapterViewAnimator.OnRestoreInstanceState(Android.Os.Parcelable)">
   OnRestoreInstanceState(Parcelable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onRestoreInstanceState(android.os.Parcelable)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onRestoreInstanceState(android.os.Parcelable)</a></p>
@@ -3954,7 +3761,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_OnSaveInstanceState" data-uid="Android.Widget.AdapterViewAnimator.OnSaveInstanceState">
   OnSaveInstanceState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onSaveInstanceState()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onSaveInstanceState()</a></p>
@@ -3987,7 +3794,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_SetAnimateFirstView_System_Boolean_" data-uid="Android.Widget.AdapterViewAnimator.SetAnimateFirstView(System.Boolean)">
   SetAnimateFirstView(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setAnimateFirstView(boolean)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setAnimateFirstView(boolean)</a></p>
@@ -4020,7 +3827,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_SetDisplayedChild_System_Int32_" data-uid="Android.Widget.AdapterViewAnimator.SetDisplayedChild(System.Int32)">
   SetDisplayedChild(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setDisplayedChild(int)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setDisplayedChild(int)</a></p>
@@ -4053,7 +3860,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_SetInAnimation_Android_Animation_ObjectAnimator_" data-uid="Android.Widget.AdapterViewAnimator.SetInAnimation(Android.Animation.ObjectAnimator)">
   SetInAnimation(ObjectAnimator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setInAnimation(android.animation.ObjectAnimator)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setInAnimation(android.animation.ObjectAnimator)</a></p>
@@ -4086,7 +3893,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_SetInAnimation_Android_Content_Context_System_Int32_" data-uid="Android.Widget.AdapterViewAnimator.SetInAnimation(Android.Content.Context,System.Int32)">
   SetInAnimation(Context, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setInAnimation(android.content.Context,int)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setInAnimation(android.content.Context,int)</a></p>
@@ -4122,7 +3929,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_SetOutAnimation_Android_Animation_ObjectAnimator_" data-uid="Android.Widget.AdapterViewAnimator.SetOutAnimation(Android.Animation.ObjectAnimator)">
   SetOutAnimation(ObjectAnimator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.animation.ObjectAnimator)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.animation.ObjectAnimator)</a></p>
@@ -4155,7 +3962,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_SetOutAnimation_Android_Content_Context_System_Int32_" data-uid="Android.Widget.AdapterViewAnimator.SetOutAnimation(Android.Content.Context,System.Int32)">
   SetOutAnimation(Context, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.content.Context,int)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.content.Context,int)</a></p>
@@ -4191,7 +3998,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_SetRemoteViewsAdapter_Android_Content_Intent_" data-uid="Android.Widget.AdapterViewAnimator.SetRemoteViewsAdapter(Android.Content.Intent)">
   SetRemoteViewsAdapter(Intent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setRemoteViewsAdapter(android.content.Intent)">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setRemoteViewsAdapter(android.content.Intent)</a></p>
@@ -4224,7 +4031,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_ShowNext" data-uid="Android.Widget.AdapterViewAnimator.ShowNext">
   ShowNext()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#showNext()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#showNext()</a></p>
@@ -4251,7 +4058,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_ShowPrevious" data-uid="Android.Widget.AdapterViewAnimator.ShowPrevious">
   ShowPrevious()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L304"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#showPrevious()">https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#showPrevious()</a></p>
@@ -4282,7 +4089,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 
   <h3 id="Android_Widget_AdapterViewAnimator_op_Implicit_Android_Widget_AdapterViewAnimator__Android_Widget_Advanceable" data-uid="Android.Widget.AdapterViewAnimator.op_Implicit(Android.Widget.AdapterViewAnimator)~Android.Widget.Advanceable">
   implicit operator Advanceable(AdapterViewAnimator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Widget.AdapterViewAnimator.html">AdapterViewAnimator</a> to <a class="xref" href="Android.Widget.Advanceable.html">Advanceable</a></p>
@@ -4319,7 +4126,7 @@ public AdapterViewAnimator(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L76" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AdapterViewAnimator.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

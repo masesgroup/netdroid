@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Database_Sqlite_SQLiteDatabase" data-uid="Android.Database.Sqlite.SQLiteDatabase" class="text-break">
-Class SQLiteDatabase  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L211"><i class="bi bi-code-slash"></i></a>
+Class SQLiteDatabase  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SQLiteDatabase : SQLiteClosable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICloseable, IAutoCloseable</code></pre>
+    <pre><code class="lang-csharp hljs">public class SQLiteDatabase : SQLiteClosable, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ICloseable, IAutoCloseable</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
       <div><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
       <div><a class="xref" href="Java.Io.Closeable.html">Closeable</a></div>
       <div><a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html">SQLiteClosable</a></div>
@@ -126,11 +126,13 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Io.ICloseable.html">ICloseable</a></div>
       <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
     </dd>
@@ -140,6 +142,9 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html#Android_Database_Sqlite_SQLiteClosable_CreatePoolableInstance">SQLiteClosable.CreatePoolableInstance()</a>
+    </div>
     <div>
       <a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html#Android_Database_Sqlite_SQLiteClosable_AcquireReference">SQLiteClosable.AcquireReference()</a>
     </div>
@@ -152,351 +157,6 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
     <div>
       <a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html#Android_Database_Sqlite_SQLiteClosable_ReleaseReferenceFromContainer">SQLiteClosable.ReleaseReferenceFromContainer()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AutoCloseable&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -504,6 +164,9 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -517,49 +180,23 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <a id="Android_Database_Sqlite_SQLiteDatabase__ctor_" data-uid="Android.Database.Sqlite.SQLiteDatabase.#ctor*"></a>
 
-  <h3 id="Android_Database_Sqlite_SQLiteDatabase__ctor" data-uid="Android.Database.Sqlite.SQLiteDatabase.#ctor">
-  SQLiteDatabase()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Database_Sqlite_SQLiteDatabase__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Database.Sqlite.SQLiteDatabase.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  SQLiteDatabase(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SQLiteDatabase()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Database_Sqlite_SQLiteDatabase__ctor_" data-uid="Android.Database.Sqlite.SQLiteDatabase.#ctor*"></a>
-
-  <h3 id="Android_Database_Sqlite_SQLiteDatabase__ctor_System_Object___" data-uid="Android.Database.Sqlite.SQLiteDatabase.#ctor(System.Object[])">
-  SQLiteDatabase(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SQLiteDatabase(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SQLiteDatabase(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -582,10 +219,10 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_BridgeClassName" data-uid="Android.Database.Sqlite.SQLiteDatabase.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -614,7 +251,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CONFLICT_ABORT" data-uid="Android.Database.Sqlite.SQLiteDatabase.CONFLICT_ABORT">
   CONFLICT_ABORT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_ABORT">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_ABORT</a></p>
@@ -622,7 +259,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONFLICT_ABORT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONFLICT_ABORT { get; set; }</code></pre>
   </div>
 
 
@@ -646,7 +283,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CONFLICT_FAIL" data-uid="Android.Database.Sqlite.SQLiteDatabase.CONFLICT_FAIL">
   CONFLICT_FAIL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_FAIL">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_FAIL</a></p>
@@ -654,7 +291,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONFLICT_FAIL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONFLICT_FAIL { get; set; }</code></pre>
   </div>
 
 
@@ -678,7 +315,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CONFLICT_IGNORE" data-uid="Android.Database.Sqlite.SQLiteDatabase.CONFLICT_IGNORE">
   CONFLICT_IGNORE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_IGNORE">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_IGNORE</a></p>
@@ -686,7 +323,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONFLICT_IGNORE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONFLICT_IGNORE { get; set; }</code></pre>
   </div>
 
 
@@ -710,7 +347,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CONFLICT_NONE" data-uid="Android.Database.Sqlite.SQLiteDatabase.CONFLICT_NONE">
   CONFLICT_NONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_NONE">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_NONE</a></p>
@@ -718,7 +355,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONFLICT_NONE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONFLICT_NONE { get; set; }</code></pre>
   </div>
 
 
@@ -742,7 +379,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CONFLICT_REPLACE" data-uid="Android.Database.Sqlite.SQLiteDatabase.CONFLICT_REPLACE">
   CONFLICT_REPLACE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_REPLACE">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_REPLACE</a></p>
@@ -750,7 +387,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONFLICT_REPLACE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONFLICT_REPLACE { get; set; }</code></pre>
   </div>
 
 
@@ -774,7 +411,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CONFLICT_ROLLBACK" data-uid="Android.Database.Sqlite.SQLiteDatabase.CONFLICT_ROLLBACK">
   CONFLICT_ROLLBACK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_ROLLBACK">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_ROLLBACK</a></p>
@@ -782,7 +419,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONFLICT_ROLLBACK { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONFLICT_ROLLBACK { get; set; }</code></pre>
   </div>
 
 
@@ -806,7 +443,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CREATE_IF_NECESSARY" data-uid="Android.Database.Sqlite.SQLiteDatabase.CREATE_IF_NECESSARY">
   CREATE_IF_NECESSARY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CREATE_IF_NECESSARY">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CREATE_IF_NECESSARY</a></p>
@@ -814,7 +451,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CREATE_IF_NECESSARY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CREATE_IF_NECESSARY { get; set; }</code></pre>
   </div>
 
 
@@ -838,7 +475,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_ENABLE_WRITE_AHEAD_LOGGING" data-uid="Android.Database.Sqlite.SQLiteDatabase.ENABLE_WRITE_AHEAD_LOGGING">
   ENABLE_WRITE_AHEAD_LOGGING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#ENABLE_WRITE_AHEAD_LOGGING">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#ENABLE_WRITE_AHEAD_LOGGING</a></p>
@@ -846,7 +483,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int ENABLE_WRITE_AHEAD_LOGGING { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int ENABLE_WRITE_AHEAD_LOGGING { get; set; }</code></pre>
   </div>
 
 
@@ -870,10 +507,10 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsBridgeAbstract" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -902,10 +539,10 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsBridgeCloseable" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -934,10 +571,10 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsBridgeInterface" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -966,10 +603,10 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsBridgeStatic" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -998,7 +635,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_JOURNAL_MODE_DELETE" data-uid="Android.Database.Sqlite.SQLiteDatabase.JOURNAL_MODE_DELETE">
   JOURNAL_MODE_DELETE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_DELETE">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_DELETE</a></p>
@@ -1006,7 +643,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_DELETE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_DELETE { get; set; }</code></pre>
   </div>
 
 
@@ -1030,7 +667,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_JOURNAL_MODE_MEMORY" data-uid="Android.Database.Sqlite.SQLiteDatabase.JOURNAL_MODE_MEMORY">
   JOURNAL_MODE_MEMORY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_MEMORY">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_MEMORY</a></p>
@@ -1038,7 +675,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_MEMORY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_MEMORY { get; set; }</code></pre>
   </div>
 
 
@@ -1062,7 +699,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_JOURNAL_MODE_OFF" data-uid="Android.Database.Sqlite.SQLiteDatabase.JOURNAL_MODE_OFF">
   JOURNAL_MODE_OFF
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_OFF">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_OFF</a></p>
@@ -1070,7 +707,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_OFF { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_OFF { get; set; }</code></pre>
   </div>
 
 
@@ -1094,7 +731,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_JOURNAL_MODE_PERSIST" data-uid="Android.Database.Sqlite.SQLiteDatabase.JOURNAL_MODE_PERSIST">
   JOURNAL_MODE_PERSIST
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_PERSIST">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_PERSIST</a></p>
@@ -1102,7 +739,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_PERSIST { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_PERSIST { get; set; }</code></pre>
   </div>
 
 
@@ -1126,7 +763,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_JOURNAL_MODE_TRUNCATE" data-uid="Android.Database.Sqlite.SQLiteDatabase.JOURNAL_MODE_TRUNCATE">
   JOURNAL_MODE_TRUNCATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_TRUNCATE">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_TRUNCATE</a></p>
@@ -1134,7 +771,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_TRUNCATE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_TRUNCATE { get; set; }</code></pre>
   </div>
 
 
@@ -1158,7 +795,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_JOURNAL_MODE_WAL" data-uid="Android.Database.Sqlite.SQLiteDatabase.JOURNAL_MODE_WAL">
   JOURNAL_MODE_WAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_WAL">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#JOURNAL_MODE_WAL</a></p>
@@ -1166,7 +803,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_WAL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String JOURNAL_MODE_WAL { get; set; }</code></pre>
   </div>
 
 
@@ -1190,7 +827,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_MAX_SQL_CACHE_SIZE" data-uid="Android.Database.Sqlite.SQLiteDatabase.MAX_SQL_CACHE_SIZE">
   MAX_SQL_CACHE_SIZE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#MAX_SQL_CACHE_SIZE">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#MAX_SQL_CACHE_SIZE</a></p>
@@ -1198,7 +835,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MAX_SQL_CACHE_SIZE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MAX_SQL_CACHE_SIZE { get; set; }</code></pre>
   </div>
 
 
@@ -1222,7 +859,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_NO_LOCALIZED_COLLATORS" data-uid="Android.Database.Sqlite.SQLiteDatabase.NO_LOCALIZED_COLLATORS">
   NO_LOCALIZED_COLLATORS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#NO_LOCALIZED_COLLATORS">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#NO_LOCALIZED_COLLATORS</a></p>
@@ -1230,7 +867,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int NO_LOCALIZED_COLLATORS { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int NO_LOCALIZED_COLLATORS { get; set; }</code></pre>
   </div>
 
 
@@ -1254,7 +891,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OPEN_READONLY" data-uid="Android.Database.Sqlite.SQLiteDatabase.OPEN_READONLY">
   OPEN_READONLY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#OPEN_READONLY">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#OPEN_READONLY</a></p>
@@ -1262,7 +899,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int OPEN_READONLY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int OPEN_READONLY { get; set; }</code></pre>
   </div>
 
 
@@ -1286,7 +923,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OPEN_READWRITE" data-uid="Android.Database.Sqlite.SQLiteDatabase.OPEN_READWRITE">
   OPEN_READWRITE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#OPEN_READWRITE">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#OPEN_READWRITE</a></p>
@@ -1294,7 +931,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int OPEN_READWRITE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int OPEN_READWRITE { get; set; }</code></pre>
   </div>
 
 
@@ -1318,7 +955,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SQLITE_MAX_LIKE_PATTERN_LENGTH" data-uid="Android.Database.Sqlite.SQLiteDatabase.SQLITE_MAX_LIKE_PATTERN_LENGTH">
   SQLITE_MAX_LIKE_PATTERN_LENGTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SQLITE_MAX_LIKE_PATTERN_LENGTH">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SQLITE_MAX_LIKE_PATTERN_LENGTH</a></p>
@@ -1326,7 +963,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SQLITE_MAX_LIKE_PATTERN_LENGTH { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SQLITE_MAX_LIKE_PATTERN_LENGTH { get; set; }</code></pre>
   </div>
 
 
@@ -1350,7 +987,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SYNC_MODE_EXTRA" data-uid="Android.Database.Sqlite.SQLiteDatabase.SYNC_MODE_EXTRA">
   SYNC_MODE_EXTRA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_EXTRA">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_EXTRA</a></p>
@@ -1358,7 +995,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_EXTRA { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_EXTRA { get; set; }</code></pre>
   </div>
 
 
@@ -1382,7 +1019,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SYNC_MODE_FULL" data-uid="Android.Database.Sqlite.SQLiteDatabase.SYNC_MODE_FULL">
   SYNC_MODE_FULL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_FULL">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_FULL</a></p>
@@ -1390,7 +1027,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_FULL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_FULL { get; set; }</code></pre>
   </div>
 
 
@@ -1414,7 +1051,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SYNC_MODE_NORMAL" data-uid="Android.Database.Sqlite.SQLiteDatabase.SYNC_MODE_NORMAL">
   SYNC_MODE_NORMAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_NORMAL">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_NORMAL</a></p>
@@ -1422,7 +1059,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_NORMAL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_NORMAL { get; set; }</code></pre>
   </div>
 
 
@@ -1446,7 +1083,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SYNC_MODE_OFF" data-uid="Android.Database.Sqlite.SQLiteDatabase.SYNC_MODE_OFF">
   SYNC_MODE_OFF
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_OFF">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#SYNC_MODE_OFF</a></p>
@@ -1454,7 +1091,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_OFF { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String SYNC_MODE_OFF { get; set; }</code></pre>
   </div>
 
 
@@ -1482,7 +1119,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_BeginTransaction" data-uid="Android.Database.Sqlite.SQLiteDatabase.BeginTransaction">
   BeginTransaction()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L923"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L831"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransaction()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransaction()</a></p>
@@ -1509,7 +1146,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_BeginTransactionNonExclusive" data-uid="Android.Database.Sqlite.SQLiteDatabase.BeginTransactionNonExclusive">
   BeginTransactionNonExclusive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L930"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L838"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionNonExclusive()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionNonExclusive()</a></p>
@@ -1536,7 +1173,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_BeginTransactionReadOnly" data-uid="Android.Database.Sqlite.SQLiteDatabase.BeginTransactionReadOnly">
   BeginTransactionReadOnly()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L937"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L845"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionReadOnly()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionReadOnly()</a></p>
@@ -1563,7 +1200,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_BeginTransactionWithListener_Android_Database_Sqlite_SQLiteTransactionListener_" data-uid="Android.Database.Sqlite.SQLiteDatabase.BeginTransactionWithListener(Android.Database.Sqlite.SQLiteTransactionListener)">
   BeginTransactionWithListener(SQLiteTransactionListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L945"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L853"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)</a></p>
@@ -1596,7 +1233,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_BeginTransactionWithListenerNonExclusive_Android_Database_Sqlite_SQLiteTransactionListener_" data-uid="Android.Database.Sqlite.SQLiteDatabase.BeginTransactionWithListenerNonExclusive(Android.Database.Sqlite.SQLiteTransactionListener)">
   BeginTransactionWithListenerNonExclusive(SQLiteTransactionListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L953"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L861"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)</a></p>
@@ -1629,7 +1266,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_BeginTransactionWithListenerReadOnly_Android_Database_Sqlite_SQLiteTransactionListener_" data-uid="Android.Database.Sqlite.SQLiteDatabase.BeginTransactionWithListenerReadOnly(Android.Database.Sqlite.SQLiteTransactionListener)">
   BeginTransactionWithListenerReadOnly(SQLiteTransactionListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L961"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L869"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListenerReadOnly(android.database.sqlite.SQLiteTransactionListener)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListenerReadOnly(android.database.sqlite.SQLiteTransactionListener)</a></p>
@@ -1662,7 +1299,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CompileStatement_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.CompileStatement(Java.Lang.String)">
   CompileStatement(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L548"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#compileStatement(java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#compileStatement(java.lang.String)</a></p>
@@ -1706,7 +1343,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Create_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_" data-uid="Android.Database.Sqlite.SQLiteDatabase.Create(Android.Database.Sqlite.SQLiteDatabase.CursorFactory)">
   Create(CursorFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#create(android.database.sqlite.SQLiteDatabase.CursorFactory)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#create(android.database.sqlite.SQLiteDatabase.CursorFactory)</a></p>
@@ -1745,7 +1382,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CreateInMemory_Android_Database_Sqlite_SQLiteDatabase_OpenParams_" data-uid="Android.Database.Sqlite.SQLiteDatabase.CreateInMemory(Android.Database.Sqlite.SQLiteDatabase.OpenParams)">
   CreateInMemory(OpenParams)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L286"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#createInMemory(android.database.sqlite.SQLiteDatabase.OpenParams)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#createInMemory(android.database.sqlite.SQLiteDatabase.OpenParams)</a></p>
@@ -1784,7 +1421,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_CreateRawStatement_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.CreateRawStatement(Java.Lang.String)">
   CreateRawStatement(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L630"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L538"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#createRawStatement(java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#createRawStatement(java.lang.String)</a></p>
@@ -1823,7 +1460,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Delete_Java_Lang_String_Java_Lang_String_Java_Lang_String___" data-uid="Android.Database.Sqlite.SQLiteDatabase.Delete(Java.Lang.String,Java.Lang.String,Java.Lang.String[])">
   Delete(String, String, String[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L751"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L659"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#delete(java.lang.String,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#delete(java.lang.String,java.lang.String,java.lang.String[])</a></p>
@@ -1868,7 +1505,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_DeleteDatabase_Java_Io_File_" data-uid="Android.Database.Sqlite.SQLiteDatabase.DeleteDatabase(Java.Io.File)">
   DeleteDatabase(File)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#deleteDatabase(java.io.File)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#deleteDatabase(java.io.File)</a></p>
@@ -1907,7 +1544,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_DisableWriteAheadLogging" data-uid="Android.Database.Sqlite.SQLiteDatabase.DisableWriteAheadLogging">
   DisableWriteAheadLogging()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L968"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L876"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#disableWriteAheadLogging()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#disableWriteAheadLogging()</a></p>
@@ -1934,7 +1571,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_EnableWriteAheadLogging" data-uid="Android.Database.Sqlite.SQLiteDatabase.EnableWriteAheadLogging">
   EnableWriteAheadLogging()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L648"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L556"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#enableWriteAheadLogging()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#enableWriteAheadLogging()</a></p>
@@ -1967,7 +1604,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_EndTransaction" data-uid="Android.Database.Sqlite.SQLiteDatabase.EndTransaction">
   EndTransaction()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L975"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L883"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#endTransaction()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#endTransaction()</a></p>
@@ -1994,7 +1631,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_ExecPerConnectionSQL_Java_Lang_String_System_Object___" data-uid="Android.Database.Sqlite.SQLiteDatabase.ExecPerConnectionSQL(Java.Lang.String,System.Object[])">
   ExecPerConnectionSQL(String, object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L985"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L893"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execPerConnectionSQL(java.lang.String,java.lang.Object[])">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execPerConnectionSQL(java.lang.String,java.lang.Object[])</a></p>
@@ -2035,7 +1672,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_ExecSQL_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.ExecSQL(Java.Lang.String)">
   ExecSQL(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1004"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L912"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execSQL(java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execSQL(java.lang.String)</a></p>
@@ -2073,7 +1710,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_ExecSQL_Java_Lang_String_System_Object___" data-uid="Android.Database.Sqlite.SQLiteDatabase.ExecSQL(Java.Lang.String,System.Object[])">
   ExecSQL(String, object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L995"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L903"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execSQL(java.lang.String,java.lang.Object[])">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execSQL(java.lang.String,java.lang.Object[])</a></p>
@@ -2114,7 +1751,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_FindEditTable_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.FindEditTable(Java.Lang.String)">
   FindEditTable(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#findEditTable(java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#findEditTable(java.lang.String)</a></p>
@@ -2153,7 +1790,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetAttachedDbs" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetAttachedDbs">
   GetAttachedDbs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L800"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L708"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getAttachedDbs()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getAttachedDbs()</a></p>
@@ -2186,7 +1823,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetLastChangedRowCount" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetLastChangedRowCount">
   GetLastChangedRowCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L817"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L725"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getLastChangedRowCount()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getLastChangedRowCount()</a></p>
@@ -2219,7 +1856,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetLastInsertRowId" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetLastInsertRowId">
   GetLastInsertRowId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L825"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L733"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getLastInsertRowId()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getLastInsertRowId()</a></p>
@@ -2252,7 +1889,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetMaximumSize" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetMaximumSize">
   GetMaximumSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L833"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L741"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getMaximumSize()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getMaximumSize()</a></p>
@@ -2285,7 +1922,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetPageSize" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetPageSize">
   GetPageSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L841"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L749"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPageSize()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPageSize()</a></p>
@@ -2318,7 +1955,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetPath" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetPath">
   GetPath()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L792"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L700"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPath()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPath()</a></p>
@@ -2351,7 +1988,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetSyncedTables" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetSyncedTables">
   GetSyncedTables()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L808"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L716"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getSyncedTables()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getSyncedTables()</a></p>
@@ -2359,7 +1996,7 @@ Class SQLiteDatabase  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
   </div>
 
@@ -2385,7 +2022,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetTotalChangedRowCount" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetTotalChangedRowCount">
   GetTotalChangedRowCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L849"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L757"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getTotalChangedRowCount()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getTotalChangedRowCount()</a></p>
@@ -2418,7 +2055,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_GetVersion" data-uid="Android.Database.Sqlite.SQLiteDatabase.GetVersion">
   GetVersion()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L759"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L667"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getVersion()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getVersion()</a></p>
@@ -2451,7 +2088,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_InTransaction" data-uid="Android.Database.Sqlite.SQLiteDatabase.InTransaction">
   InTransaction()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L564"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#inTransaction()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#inTransaction()</a></p>
@@ -2484,7 +2121,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Insert_Java_Lang_String_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.Sqlite.SQLiteDatabase.Insert(Java.Lang.String,Java.Lang.String,Android.Content.ContentValues)">
   Insert(String, String, ContentValues)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L860"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L768"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insert(java.lang.String,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insert(java.lang.String,java.lang.String,android.content.ContentValues)</a></p>
@@ -2529,7 +2166,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_InsertOrThrow_Java_Lang_String_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.Sqlite.SQLiteDatabase.InsertOrThrow(Java.Lang.String,Java.Lang.String,Android.Content.ContentValues)">
   InsertOrThrow(String, String, ContentValues)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L872"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L780"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insertOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insertOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)</a></p>
@@ -2579,7 +2216,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_InsertWithOnConflict_Java_Lang_String_Java_Lang_String_Android_Content_ContentValues_System_Int32_" data-uid="Android.Database.Sqlite.SQLiteDatabase.InsertWithOnConflict(Java.Lang.String,Java.Lang.String,Android.Content.ContentValues,System.Int32)">
   InsertWithOnConflict(String, String, ContentValues, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L884"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L792"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insertWithOnConflict(java.lang.String,java.lang.String,android.content.ContentValues,int)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insertWithOnConflict(java.lang.String,java.lang.String,android.content.ContentValues,int)</a></p>
@@ -2627,7 +2264,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsDatabaseIntegrityOk" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsDatabaseIntegrityOk">
   IsDatabaseIntegrityOk()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L572"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isDatabaseIntegrityOk()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isDatabaseIntegrityOk()</a></p>
@@ -2660,7 +2297,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsDbLockedByCurrentThread" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsDbLockedByCurrentThread">
   IsDbLockedByCurrentThread()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isDbLockedByCurrentThread()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isDbLockedByCurrentThread()</a></p>
@@ -2693,7 +2330,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsDbLockedByOtherThreads" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsDbLockedByOtherThreads">
   IsDbLockedByOtherThreads()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L588"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isDbLockedByOtherThreads()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isDbLockedByOtherThreads()</a></p>
@@ -2701,7 +2338,7 @@ public Map&lt;String, String&gt; GetSyncedTables()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool IsDbLockedByOtherThreads()</code></pre>
   </div>
 
@@ -2727,7 +2364,7 @@ public bool IsDbLockedByOtherThreads()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsOpen" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsOpen">
   IsOpen()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L689"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L597"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isOpen()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isOpen()</a></p>
@@ -2760,7 +2397,7 @@ public bool IsDbLockedByOtherThreads()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsReadOnly" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsReadOnly">
   IsReadOnly()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L605"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isReadOnly()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isReadOnly()</a></p>
@@ -2793,7 +2430,7 @@ public bool IsDbLockedByOtherThreads()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_IsWriteAheadLoggingEnabled" data-uid="Android.Database.Sqlite.SQLiteDatabase.IsWriteAheadLoggingEnabled">
   IsWriteAheadLoggingEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L705"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L613"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isWriteAheadLoggingEnabled()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#isWriteAheadLoggingEnabled()</a></p>
@@ -2826,7 +2463,7 @@ public bool IsDbLockedByOtherThreads()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_MarkTableSyncable_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.MarkTableSyncable(Java.Lang.String,Java.Lang.String)">
   MarkTableSyncable(String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1024"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L932"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#markTableSyncable(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#markTableSyncable(java.lang.String,java.lang.String)</a></p>
@@ -2834,7 +2471,7 @@ public bool IsDbLockedByOtherThreads()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void MarkTableSyncable(String arg0, String arg1)</code></pre>
   </div>
 
@@ -2863,7 +2500,7 @@ public void MarkTableSyncable(String arg0, String arg1)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_MarkTableSyncable_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.MarkTableSyncable(Java.Lang.String,Java.Lang.String,Java.Lang.String)">
   MarkTableSyncable(String, String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1014"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L922"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#markTableSyncable(java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#markTableSyncable(java.lang.String,java.lang.String,java.lang.String)</a></p>
@@ -2871,7 +2508,7 @@ public void MarkTableSyncable(String arg0, String arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre>
   </div>
 
@@ -2903,7 +2540,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_NeedUpgrade_System_Int32_" data-uid="Android.Database.Sqlite.SQLiteDatabase.NeedUpgrade(System.Int32)">
   NeedUpgrade(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L714"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L622"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#needUpgrade(int)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#needUpgrade(int)</a></p>
@@ -2942,7 +2579,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OpenDatabase_Java_Io_File_Android_Database_Sqlite_SQLiteDatabase_OpenParams_" data-uid="Android.Database.Sqlite.SQLiteDatabase.OpenDatabase(Java.Io.File,Android.Database.Sqlite.SQLiteDatabase.OpenParams)">
   OpenDatabase(File, OpenParams)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.io.File,android.database.sqlite.SQLiteDatabase.OpenParams)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.io.File,android.database.sqlite.SQLiteDatabase.OpenParams)</a></p>
@@ -2984,7 +2621,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OpenDatabase_Java_Lang_String_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_System_Int32_" data-uid="Android.Database.Sqlite.SQLiteDatabase.OpenDatabase(Java.Lang.String,Android.Database.Sqlite.SQLiteDatabase.CursorFactory,System.Int32)">
   OpenDatabase(String, CursorFactory, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L319"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,int)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,int)</a></p>
@@ -3029,7 +2666,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OpenDatabase_Java_Lang_String_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_System_Int32_Android_Database_DatabaseErrorHandler_" data-uid="Android.Database.Sqlite.SQLiteDatabase.OpenDatabase(Java.Lang.String,Android.Database.Sqlite.SQLiteDatabase.CursorFactory,System.Int32,Android.Database.DatabaseErrorHandler)">
   OpenDatabase(String, CursorFactory, int, DatabaseErrorHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,int,android.database.DatabaseErrorHandler)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,int,android.database.DatabaseErrorHandler)</a></p>
@@ -3077,7 +2714,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OpenOrCreateDatabase_Java_Io_File_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_" data-uid="Android.Database.Sqlite.SQLiteDatabase.OpenOrCreateDatabase(Java.Io.File,Android.Database.Sqlite.SQLiteDatabase.CursorFactory)">
   OpenOrCreateDatabase(File, CursorFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.io.File,android.database.sqlite.SQLiteDatabase.CursorFactory)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.io.File,android.database.sqlite.SQLiteDatabase.CursorFactory)</a></p>
@@ -3119,7 +2756,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OpenOrCreateDatabase_Java_Lang_String_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_" data-uid="Android.Database.Sqlite.SQLiteDatabase.OpenOrCreateDatabase(Java.Lang.String,Android.Database.Sqlite.SQLiteDatabase.CursorFactory)">
   OpenOrCreateDatabase(String, CursorFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory)</a></p>
@@ -3161,7 +2798,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_OpenOrCreateDatabase_Java_Lang_String_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_Android_Database_DatabaseErrorHandler_" data-uid="Android.Database.Sqlite.SQLiteDatabase.OpenOrCreateDatabase(Java.Lang.String,Android.Database.Sqlite.SQLiteDatabase.CursorFactory,Android.Database.DatabaseErrorHandler)">
   OpenOrCreateDatabase(String, CursorFactory, DatabaseErrorHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,android.database.DatabaseErrorHandler)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,android.database.DatabaseErrorHandler)</a></p>
@@ -3206,7 +2843,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Query_Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.Query(Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String,Java.Lang.String)">
   Query(String, String[], String, String[], String, String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L446"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)</a></p>
@@ -3263,7 +2900,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Query_Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.Query(Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String)">
   Query(String, String[], String, String[], String, String, String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L431"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)</a></p>
@@ -3323,7 +2960,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Query_System_Boolean_Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.Query(System.Boolean,Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String)">
   Query(bool, String, String[], String, String[], String, String, String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)</a></p>
@@ -3386,7 +3023,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Query_System_Boolean_Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Database.Sqlite.SQLiteDatabase.Query(System.Boolean,Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String,Android.Os.CancellationSignal)">
   Query(bool, String, String[], String, String[], String, String, String, String, CancellationSignal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L398"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)</a></p>
@@ -3452,7 +3089,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_QueryWithFactory_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_System_Boolean_Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.QueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory,System.Boolean,Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String)">
   QueryWithFactory(CursorFactory, bool, String, String[], String, String[], String, String, String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L483"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)</a></p>
@@ -3518,7 +3155,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_QueryWithFactory_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_System_Boolean_Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Database.Sqlite.SQLiteDatabase.QueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory,System.Boolean,Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String[],Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String,Android.Os.CancellationSignal)">
   QueryWithFactory(CursorFactory, bool, String, String[], String, String[], String, String, String, String, CancellationSignal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L465"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)</a></p>
@@ -3587,7 +3224,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_RawQuery_Java_Lang_String_Java_Lang_String___" data-uid="Android.Database.Sqlite.SQLiteDatabase.RawQuery(Java.Lang.String,Java.Lang.String[])">
   RawQuery(String, String[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L504"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQuery(java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQuery(java.lang.String,java.lang.String[])</a></p>
@@ -3629,7 +3266,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_RawQuery_Java_Lang_String_Java_Lang_String___Android_Os_CancellationSignal_" data-uid="Android.Database.Sqlite.SQLiteDatabase.RawQuery(Java.Lang.String,Java.Lang.String[],Android.Os.CancellationSignal)">
   RawQuery(String, String[], CancellationSignal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L494"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQuery(java.lang.String,java.lang.String[],android.os.CancellationSignal)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQuery(java.lang.String,java.lang.String[],android.os.CancellationSignal)</a></p>
@@ -3674,7 +3311,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_RawQueryWithFactory_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_Java_Lang_String_Java_Lang_String___Java_Lang_String_" data-uid="Android.Database.Sqlite.SQLiteDatabase.RawQueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory,Java.Lang.String,Java.Lang.String[],Java.Lang.String)">
   RawQueryWithFactory(CursorFactory, String, String[], String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L529"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String,java.lang.String[],java.lang.String)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String,java.lang.String[],java.lang.String)</a></p>
@@ -3722,7 +3359,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_RawQueryWithFactory_Android_Database_Sqlite_SQLiteDatabase_CursorFactory_Java_Lang_String_Java_Lang_String___Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Database.Sqlite.SQLiteDatabase.RawQueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory,Java.Lang.String,Java.Lang.String[],Java.Lang.String,Android.Os.CancellationSignal)">
   RawQueryWithFactory(CursorFactory, String, String[], String, CancellationSignal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L609"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)</a></p>
@@ -3773,7 +3410,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_ReleaseMemory" data-uid="Android.Database.Sqlite.SQLiteDatabase.ReleaseMemory">
   ReleaseMemory()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#releaseMemory()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#releaseMemory()</a></p>
@@ -3806,7 +3443,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Replace_Java_Lang_String_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.Sqlite.SQLiteDatabase.Replace(Java.Lang.String,Java.Lang.String,Android.Content.ContentValues)">
   Replace(String, String, ContentValues)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L895"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L803"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#replace(java.lang.String,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#replace(java.lang.String,java.lang.String,android.content.ContentValues)</a></p>
@@ -3851,7 +3488,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_ReplaceOrThrow_Java_Lang_String_Java_Lang_String_Android_Content_ContentValues_" data-uid="Android.Database.Sqlite.SQLiteDatabase.ReplaceOrThrow(Java.Lang.String,Java.Lang.String,Android.Content.ContentValues)">
   ReplaceOrThrow(String, String, ContentValues)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L907"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L815"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#replaceOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#replaceOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)</a></p>
@@ -3901,7 +3538,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetCustomAggregateFunction_Java_Lang_String_Java_Util_Function_BinaryOperator_Java_Lang_String__" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetCustomAggregateFunction(Java.Lang.String,Java.Util.Function.BinaryOperator{Java.Lang.String})">
   SetCustomAggregateFunction(String, BinaryOperator&lt;String&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1035"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L943"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setCustomAggregateFunction(java.lang.String,java.util.function.BinaryOperator)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setCustomAggregateFunction(java.lang.String,java.util.function.BinaryOperator)</a></p>
@@ -3942,7 +3579,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetCustomScalarFunction_Java_Lang_String_Java_Util_Function_UnaryOperator_Java_Lang_String__" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetCustomScalarFunction(Java.Lang.String,Java.Util.Function.UnaryOperator{Java.Lang.String})">
   SetCustomScalarFunction(String, UnaryOperator&lt;String&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1045"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L953"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setCustomScalarFunction(java.lang.String,java.util.function.UnaryOperator)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setCustomScalarFunction(java.lang.String,java.util.function.UnaryOperator)</a></p>
@@ -3983,7 +3620,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetForeignKeyConstraintsEnabled_System_Boolean_" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetForeignKeyConstraintsEnabled(System.Boolean)">
   SetForeignKeyConstraintsEnabled(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1053"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L961"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setForeignKeyConstraintsEnabled(boolean)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setForeignKeyConstraintsEnabled(boolean)</a></p>
@@ -4016,7 +3653,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetLocale_Java_Util_Locale_" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetLocale(Java.Util.Locale)">
   SetLocale(Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1061"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L969"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setLocale(java.util.Locale)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setLocale(java.util.Locale)</a></p>
@@ -4049,7 +3686,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetLockingEnabled_System_Boolean_" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetLockingEnabled(System.Boolean)">
   SetLockingEnabled(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1069"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L977"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setLockingEnabled(boolean)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setLockingEnabled(boolean)</a></p>
@@ -4057,7 +3694,7 @@ public void MarkTableSyncable(String arg0, String arg1, String arg2)</code></pre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetLockingEnabled(bool arg0)</code></pre>
   </div>
 
@@ -4083,7 +3720,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetMaxSqlCacheSize_System_Int32_" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetMaxSqlCacheSize(System.Int32)">
   SetMaxSqlCacheSize(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1078"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L986"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setMaxSqlCacheSize(int)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setMaxSqlCacheSize(int)</a></p>
@@ -4116,7 +3753,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetMaximumSize_System_Int64_" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetMaximumSize(System.Int64)">
   SetMaximumSize(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L916"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L824"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setMaximumSize(long)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setMaximumSize(long)</a></p>
@@ -4155,7 +3792,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetPageSize_System_Int64_" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetPageSize(System.Int64)">
   SetPageSize(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1086"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L994"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setPageSize(long)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setPageSize(long)</a></p>
@@ -4188,7 +3825,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetTransactionSuccessful" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetTransactionSuccessful">
   SetTransactionSuccessful()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1093"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1001"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setTransactionSuccessful()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setTransactionSuccessful()</a></p>
@@ -4215,7 +3852,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_SetVersion_System_Int32_" data-uid="Android.Database.Sqlite.SQLiteDatabase.SetVersion(System.Int32)">
   SetVersion(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1009"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setVersion(int)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setVersion(int)</a></p>
@@ -4248,7 +3885,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_Update_Java_Lang_String_Android_Content_ContentValues_Java_Lang_String_Java_Lang_String___" data-uid="Android.Database.Sqlite.SQLiteDatabase.Update(Java.Lang.String,Android.Content.ContentValues,Java.Lang.String,Java.Lang.String[])">
   Update(String, ContentValues, String, String[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L771"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L679"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])</a></p>
@@ -4296,7 +3933,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_UpdateWithOnConflict_Java_Lang_String_Android_Content_ContentValues_Java_Lang_String_Java_Lang_String___System_Int32_" data-uid="Android.Database.Sqlite.SQLiteDatabase.UpdateWithOnConflict(Java.Lang.String,Android.Content.ContentValues,Java.Lang.String,Java.Lang.String[],System.Int32)">
   UpdateWithOnConflict(String, ContentValues, String, String[], int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L784"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L692"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#updateWithOnConflict(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[],int)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#updateWithOnConflict(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[],int)</a></p>
@@ -4347,7 +3984,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_ValidateSql_Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Database.Sqlite.SQLiteDatabase.ValidateSql(Java.Lang.String,Android.Os.CancellationSignal)">
   ValidateSql(String, CancellationSignal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L1018"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#validateSql(java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#validateSql(java.lang.String,android.os.CancellationSignal)</a></p>
@@ -4383,7 +4020,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_YieldIfContended" data-uid="Android.Database.Sqlite.SQLiteDatabase.YieldIfContended">
   YieldIfContended()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L722"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L630"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#yieldIfContended()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#yieldIfContended()</a></p>
@@ -4391,7 +4028,7 @@ public void SetLockingEnabled(bool arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool YieldIfContended()</code></pre>
   </div>
 
@@ -4417,7 +4054,7 @@ public bool YieldIfContended()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_YieldIfContendedSafely" data-uid="Android.Database.Sqlite.SQLiteDatabase.YieldIfContendedSafely">
   YieldIfContendedSafely()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L731"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#yieldIfContendedSafely()">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#yieldIfContendedSafely()</a></p>
@@ -4450,7 +4087,7 @@ public bool YieldIfContended()</code></pre>
 
   <h3 id="Android_Database_Sqlite_SQLiteDatabase_YieldIfContendedSafely_System_Int64_" data-uid="Android.Database.Sqlite.SQLiteDatabase.YieldIfContendedSafely(System.Int64)">
   YieldIfContendedSafely(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L648"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#yieldIfContendedSafely(long)">https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#yieldIfContendedSafely(long)</a></p>
@@ -4489,7 +4126,7 @@ public bool YieldIfContended()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L211" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/Sqlite/SQLiteDatabase.cs/#L165" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Widget_ExpandableListAdapter" data-uid="Android.Widget.ExpandableListAdapter" class="text-break">
-Class ExpandableListAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L114"><i class="bi bi-code-slash"></i></a>
+Class ExpandableListAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ExpandableListAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IExpandableListAdapter</code></pre>
+    <pre><code class="lang-csharp hljs">public class ExpandableListAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IExpandableListAdapter</code></pre>
   </div>
 
 
@@ -113,9 +113,9 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
-      <div><span class="xref">JVMBridgeListener</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a></div>
       <div><span class="xref">ExpandableListAdapter</span></div>
     </dd>
   </dl>
@@ -124,11 +124,13 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Android.Widget.IExpandableListAdapter.html">IExpandableListAdapter</a></div>
     </dd>
   </dl>
@@ -140,382 +142,15 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
     </dd>
   </dl>
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.AutoInit</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeStatic</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeCloseable</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;JVMBridgeListener&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeInterface</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeAbstract</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-  </dd></dl>
 
   <dl class="typelist extensionMethods">
     <dt>Extension Methods</dt>
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -529,19 +164,57 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <a id="Android_Widget_ExpandableListAdapter__ctor_" data-uid="Android.Widget.ExpandableListAdapter.#ctor*"></a>
 
-  <h3 id="Android_Widget_ExpandableListAdapter__ctor" data-uid="Android.Widget.ExpandableListAdapter.#ctor">
-  ExpandableListAdapter()
+  <h3 id="Android_Widget_ExpandableListAdapter__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Widget.ExpandableListAdapter.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  ExpandableListAdapter(IJVMBridgeBaseInitializer)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ExpandableListAdapter()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentifiable behaviors.&quot;)]
+public ExpandableListAdapter(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter__ctor_" data-uid="Android.Widget.ExpandableListAdapter.#ctor*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter__ctor_System_Object___" data-uid="Android.Widget.ExpandableListAdapter.#ctor(System.Object[])">
+  ExpandableListAdapter(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpandableListAdapter(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -562,10 +235,10 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_BridgeClassName" data-uid="Android.Widget.ExpandableListAdapter.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -594,7 +267,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabled" data-uid="Android.Widget.ExpandableListAdapter.OnAreAllItemsEnabled">
   OnAreAllItemsEnabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()</a></p>
@@ -619,7 +292,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabled_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabled">OnAreAllItemsEnabled</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabledDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnAreAllItemsEnabledDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabledDispose" data-uid="Android.Widget.ExpandableListAdapter.OnAreAllItemsEnabledDispose">
+  OnAreAllItemsEnabledDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnAreAllItemsEnabledDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabledDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnAreAllItemsEnabledDispose">OnAreAllItemsEnabledDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -629,7 +342,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetChild" data-uid="Android.Widget.ExpandableListAdapter.OnGetChild">
   OnGetChild
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L695"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)</a></p>
@@ -654,7 +367,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChild_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChild">OnGetChild</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChildDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildDispose">
+  OnGetChildDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L705"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt; OnGetChildDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildDispose">OnGetChildDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -664,7 +417,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildId" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildId">
   OnGetChildId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L804"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)</a></p>
@@ -689,7 +442,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildId_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildId">OnGetChildId</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChildIdDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildIdDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildIdDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildIdDispose">
+  OnGetChildIdDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L814"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;long&gt; OnGetChildIdDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildIdDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildIdDispose">OnGetChildIdDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -699,7 +492,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildView" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildView">
   OnGetChildView
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)</a></p>
@@ -724,7 +517,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildView_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildView">OnGetChildView</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChildViewDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildViewDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildViewDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildViewDispose">
+  OnGetChildViewDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;View&gt; OnGetChildViewDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildViewDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildViewDispose">OnGetChildViewDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -734,7 +567,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildrenCount" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildrenCount">
   OnGetChildrenCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L588"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)</a></p>
@@ -759,7 +592,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildrenCount_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildrenCount">OnGetChildrenCount</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetChildrenCountDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildrenCountDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetChildrenCountDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetChildrenCountDispose">
+  OnGetChildrenCountDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnGetChildrenCountDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetChildrenCountDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetChildrenCountDispose">OnGetChildrenCountDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -769,7 +642,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildId" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedChildId">
   OnGetCombinedChildId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L859"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)</a></p>
@@ -794,7 +667,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildId_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetCombinedChildId">OnGetCombinedChildId</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildIdDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedChildIdDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildIdDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedChildIdDispose">
+  OnGetCombinedChildIdDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L869"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;long&gt; OnGetCombinedChildIdDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetCombinedChildIdDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetCombinedChildIdDispose">OnGetCombinedChildIdDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -804,7 +717,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupId" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedGroupId">
   OnGetCombinedGroupId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L914"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)</a></p>
@@ -829,7 +742,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupId_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetCombinedGroupId">OnGetCombinedGroupId</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupIdDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedGroupIdDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupIdDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetCombinedGroupIdDispose">
+  OnGetCombinedGroupIdDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L924"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;long&gt; OnGetCombinedGroupIdDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetCombinedGroupIdDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetCombinedGroupIdDispose">OnGetCombinedGroupIdDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -839,7 +792,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroup" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroup">
   OnGetGroup
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L750"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)</a></p>
@@ -864,7 +817,8 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroup_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroup">OnGetGroup</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -874,7 +828,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupCount" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupCount">
   OnGetGroupCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L642"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()</a></p>
@@ -899,7 +853,86 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupCount_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupCount">OnGetGroupCount</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroupCountDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupCountDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupCountDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupCountDispose">
+  OnGetGroupCountDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int&gt; OnGetGroupCountDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupCountDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupCountDispose">OnGetGroupCountDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroupDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupDispose">
+  OnGetGroupDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt; OnGetGroupDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupDispose">OnGetGroupDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -909,7 +942,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupId" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupId">
   OnGetGroupId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L968"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)</a></p>
@@ -934,7 +967,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupId_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupId">OnGetGroupId</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroupIdDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupIdDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupIdDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupIdDispose">
+  OnGetGroupIdDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L978"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;long&gt; OnGetGroupIdDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupIdDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupIdDispose">OnGetGroupIdDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -944,7 +1017,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupView" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupView">
   OnGetGroupView
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L317"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)</a></p>
@@ -969,7 +1042,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupView_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupView">OnGetGroupView</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnGetGroupViewDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupViewDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnGetGroupViewDispose" data-uid="Android.Widget.ExpandableListAdapter.OnGetGroupViewDispose">
+  OnGetGroupViewDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;View&gt; OnGetGroupViewDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnGetGroupViewDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnGetGroupViewDispose">OnGetGroupViewDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -979,7 +1092,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnHasStableIds" data-uid="Android.Widget.ExpandableListAdapter.OnHasStableIds">
   OnHasStableIds
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L427"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()</a></p>
@@ -1004,7 +1117,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnHasStableIds_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnHasStableIds">OnHasStableIds</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnHasStableIdsDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnHasStableIdsDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnHasStableIdsDispose" data-uid="Android.Widget.ExpandableListAdapter.OnHasStableIdsDispose">
+  OnHasStableIdsDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnHasStableIdsDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnHasStableIdsDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnHasStableIdsDispose">OnHasStableIdsDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -1014,7 +1167,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnIsChildSelectable" data-uid="Android.Widget.ExpandableListAdapter.OnIsChildSelectable">
   OnIsChildSelectable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L480"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)</a></p>
@@ -1039,7 +1192,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnIsChildSelectable_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnIsChildSelectable">OnIsChildSelectable</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnIsChildSelectableDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnIsChildSelectableDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnIsChildSelectableDispose" data-uid="Android.Widget.ExpandableListAdapter.OnIsChildSelectableDispose">
+  OnIsChildSelectableDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnIsChildSelectableDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnIsChildSelectableDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnIsChildSelectableDispose">OnIsChildSelectableDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -1049,7 +1242,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnIsEmpty" data-uid="Android.Widget.ExpandableListAdapter.OnIsEmpty">
   OnIsEmpty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L535"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()</a></p>
@@ -1074,7 +1267,47 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnIsEmpty_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnIsEmpty">OnIsEmpty</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_OnIsEmptyDispose_" data-uid="Android.Widget.ExpandableListAdapter.OnIsEmptyDispose*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_OnIsEmptyDispose" data-uid="Android.Widget.ExpandableListAdapter.OnIsEmptyDispose">
+  OnIsEmptyDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnIsEmptyDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnIsEmptyDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnIsEmptyDispose">OnIsEmptyDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -1084,7 +1317,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnOnGroupCollapsed" data-uid="Android.Widget.ExpandableListAdapter.OnOnGroupCollapsed">
   OnOnGroupCollapsed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1022"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)</a></p>
@@ -1109,7 +1342,8 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnOnGroupCollapsed_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnOnGroupCollapsed">OnOnGroupCollapsed</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1119,7 +1353,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnOnGroupExpanded" data-uid="Android.Widget.ExpandableListAdapter.OnOnGroupExpanded">
   OnOnGroupExpanded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1064"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)</a></p>
@@ -1144,7 +1378,8 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnOnGroupExpanded_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnOnGroupExpanded">OnOnGroupExpanded</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1154,7 +1389,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnRegisterDataSetObserver" data-uid="Android.Widget.ExpandableListAdapter.OnRegisterDataSetObserver">
   OnRegisterDataSetObserver
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1179,7 +1414,8 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnRegisterDataSetObserver_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnRegisterDataSetObserver">OnRegisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1189,7 +1425,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnUnregisterDataSetObserver" data-uid="Android.Widget.ExpandableListAdapter.OnUnregisterDataSetObserver">
   OnUnregisterDataSetObserver
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1214,7 +1450,8 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
   <h4 class="section" id="Android_Widget_ExpandableListAdapter_OnUnregisterDataSetObserver_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Android.Widget.ExpandableListAdapter.html#Android_Widget_ExpandableListAdapter_OnUnregisterDataSetObserver">OnUnregisterDataSetObserver</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1228,7 +1465,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_AreAllItemsEnabled" data-uid="Android.Widget.ExpandableListAdapter.AreAllItemsEnabled">
   AreAllItemsEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#areAllItemsEnabled()</a></p>
@@ -1261,7 +1498,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetChild_System_Int32_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetChild(System.Int32,System.Int32)">
   GetChild(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L738"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)</a></p>
@@ -1303,7 +1540,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetChildId_System_Int32_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetChildId(System.Int32,System.Int32)">
   GetChildId(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L847"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)</a></p>
@@ -1345,7 +1582,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetChildView_System_Int32_System_Int32_System_Boolean_Android_View_View_Android_View_ViewGroup_" data-uid="Android.Widget.ExpandableListAdapter.GetChildView(System.Int32,System.Int32,System.Boolean,Android.View.View,Android.View.ViewGroup)">
   GetChildView(int, int, bool, View, ViewGroup)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L305"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)</a></p>
@@ -1396,7 +1633,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetChildrenCount_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetChildrenCount(System.Int32)">
   GetChildrenCount(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L630"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)</a></p>
@@ -1435,7 +1672,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetCombinedChildId_System_Int64_System_Int64_" data-uid="Android.Widget.ExpandableListAdapter.GetCombinedChildId(System.Int64,System.Int64)">
   GetCombinedChildId(long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L902"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedChildId(long,long)</a></p>
@@ -1477,7 +1714,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetCombinedGroupId_System_Int64_" data-uid="Android.Widget.ExpandableListAdapter.GetCombinedGroupId(System.Int64)">
   GetCombinedGroupId(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L956"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getCombinedGroupId(long)</a></p>
@@ -1516,7 +1753,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetGroup_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetGroup(System.Int32)">
   GetGroup(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L792"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)</a></p>
@@ -1555,7 +1792,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetGroupCount" data-uid="Android.Widget.ExpandableListAdapter.GetGroupCount">
   GetGroupCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L683"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()</a></p>
@@ -1588,7 +1825,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetGroupId_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.GetGroupId(System.Int32)">
   GetGroupId(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1010"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)</a></p>
@@ -1627,7 +1864,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_GetGroupView_System_Int32_System_Boolean_Android_View_View_Android_View_ViewGroup_" data-uid="Android.Widget.ExpandableListAdapter.GetGroupView(System.Int32,System.Boolean,Android.View.View,Android.View.ViewGroup)">
   GetGroupView(int, bool, View, ViewGroup)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)</a></p>
@@ -1675,7 +1912,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_HasStableIds" data-uid="Android.Widget.ExpandableListAdapter.HasStableIds">
   HasStableIds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()</a></p>
@@ -1706,9 +1943,9 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <a id="Android_Widget_ExpandableListAdapter_InitializeHandlers_" data-uid="Android.Widget.ExpandableListAdapter.InitializeHandlers*"></a>
 
-  <h3 id="Android_Widget_ExpandableListAdapter_InitializeHandlers" data-uid="Android.Widget.ExpandableListAdapter.InitializeHandlers">
-  InitializeHandlers()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Widget_ExpandableListAdapter_InitializeHandlers_System_Type_" data-uid="Android.Widget.ExpandableListAdapter.InitializeHandlers(System.Type)">
+  InitializeHandlers(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handlers initializer for <a class="xref" href="Android.Widget.ExpandableListAdapter.html">ExpandableListAdapter</a></p>
@@ -1716,9 +1953,14 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers(Type listenerRuntimeType)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listenerRuntimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1735,7 +1977,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_IsChildSelectable_System_Int32_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.IsChildSelectable(System.Int32,System.Int32)">
   IsChildSelectable(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)</a></p>
@@ -1777,7 +2019,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_IsEmpty" data-uid="Android.Widget.ExpandableListAdapter.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isEmpty()</a></p>
@@ -1806,11 +2048,92 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
 
 
+  <a id="Android_Widget_ExpandableListAdapter_ListenerShallManageEvent_" data-uid="Android.Widget.ExpandableListAdapter.ListenerShallManageEvent*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_ListenerShallManageEvent_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.ListenerShallManageEvent(System.Int32)">
+  ListenerShallManageEvent(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invoked from the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a> on each received event to notify the user which can decide to abort the execution for the specific event returning <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ListenerShallManageEvent(int eventIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the event triggered as returned from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">AddEventHandler(string, EventHandler)</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to continue event evaluation, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to return the control to the JVM</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Android_Widget_ExpandableListAdapter_ListenerShallManageEvent_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>By default every event continues the execution and reads the data from JVM; this implies an extra cost which can be limited using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ListenerShallManageEvent(int)</a> or the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventIndex">ListenerShallManageEventIndex</a>/<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventName">ListenerShallManageEventName</a> handlers.
+Returning <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the control is immediately returned to the JVM, anyway the user has received the notification. It can be useful in scenarios where the user is interested in few events
+and the other are simply discarded to optimize the execution speed.
+By default, this function invokes <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventIndex">ListenerShallManageEventIndex</a>, then try <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventName">ListenerShallManageEventName</a> if they are set or return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a></p>
+</div>
+
+
+
+
+  <a id="Android_Widget_ExpandableListAdapter_ListenerShallManageEventHandlers_" data-uid="Android.Widget.ExpandableListAdapter.ListenerShallManageEventHandlers*"></a>
+
+  <h3 id="Android_Widget_ExpandableListAdapter_ListenerShallManageEventHandlers_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.ListenerShallManageEventHandlers(System.Int32)">
+  ListenerShallManageEventHandlers(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ListenerShallManageEventHandlers(int eventIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Widget_ExpandableListAdapter_OnGroupCollapsed_" data-uid="Android.Widget.ExpandableListAdapter.OnGroupCollapsed*"></a>
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGroupCollapsed_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.OnGroupCollapsed(System.Int32)">
   OnGroupCollapsed(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1052"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupCollapsed(int)</a></p>
@@ -1843,7 +2166,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_OnGroupExpanded_System_Int32_" data-uid="Android.Widget.ExpandableListAdapter.OnGroupExpanded(System.Int32)">
   OnGroupExpanded(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1094"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#onGroupExpanded(int)</a></p>
@@ -1876,7 +2199,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_RegisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.RegisterDataSetObserver(Android.Database.DataSetObserver)">
   RegisterDataSetObserver(DataSetObserver)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1909,7 +2232,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 
   <h3 id="Android_Widget_ExpandableListAdapter_UnregisterDataSetObserver_Android_Database_DataSetObserver_" data-uid="Android.Widget.ExpandableListAdapter.UnregisterDataSetObserver(Android.Database.DataSetObserver)">
   UnregisterDataSetObserver(DataSetObserver)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L1178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)">https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)</a></p>
@@ -1942,7 +2265,7 @@ Class ExpandableListAdapter  <a class="header-action link-secondary" title="View
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L114" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ExpandableListAdapter.cs/#L165" class="edit-link">Edit this page</a>
         </div>
 
 

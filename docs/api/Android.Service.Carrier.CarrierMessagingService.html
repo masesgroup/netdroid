@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Service_Carrier_CarrierMessagingService" data-uid="Android.Service.Carrier.CarrierMessagingService" class="text-break">
-Class CarrierMessagingService  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L306"><i class="bi bi-code-slash"></i></a>
+Class CarrierMessagingService  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CarrierMessagingService : Service, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class CarrierMessagingService : Service, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
       <div><a class="xref" href="Android.Content.Context.html">Context</a></div>
       <div><a class="xref" href="Android.Content.ContextWrapper.html">ContextWrapper</a></div>
       <div><a class="xref" href="Android.App.Service.html">Service</a></div>
@@ -126,11 +126,13 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
 
@@ -235,6 +237,9 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="Android.App.Service.html#Android_App_Service_OnTrimMemory_System_Int32_">Service.OnTrimMemory(int)</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_CreatePoolableInstance_Android_Content_Context_">ContextWrapper.CreatePoolableInstance(Context)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_GetBaseContext">ContextWrapper.GetBaseContext()</a>
     </div>
     <div>
@@ -337,7 +342,13 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ACTIVITY_SERVICE">Context.ACTIVITY_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ADVANCED_PROTECTION_SERVICE">Context.ADVANCED_PROTECTION_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ALARM_SERVICE">Context.ALARM_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_FUNCTION_SERVICE">Context.APP_FUNCTION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_OPS_SERVICE">Context.APP_OPS_SERVICE</a>
@@ -457,6 +468,9 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYGUARD_SERVICE">Context.KEYGUARD_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYSTORE_SERVICE">Context.KEYSTORE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_LAUNCHER_APPS_SERVICE">Context.LAUNCHER_APPS_SERVICE</a>
     </div>
     <div>
@@ -476,6 +490,9 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_PROJECTION_SERVICE">Context.MEDIA_PROJECTION_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_QUALITY_SERVICE">Context.MEDIA_QUALITY_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_ROUTER_SERVICE">Context.MEDIA_ROUTER_SERVICE</a>
@@ -526,6 +543,9 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ROLE_SERVICE">Context.ROLE_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SATELLITE_SERVICE">Context.SATELLITE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SEARCH_SERVICE">Context.SEARCH_SERVICE</a>
     </div>
     <div>
@@ -562,10 +582,16 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TELEPHONY_SUBSCRIPTION_SERVICE">Context.TELEPHONY_SUBSCRIPTION_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TETHERING_SERVICE">Context.TETHERING_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_CLASSIFICATION_SERVICE">Context.TEXT_CLASSIFICATION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_SERVICES_MANAGER_SERVICE">Context.TEXT_SERVICES_MANAGER_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_AD_SERVICE">Context.TV_AD_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_INPUT_SERVICE">Context.TV_INPUT_SERVICE</a>
@@ -1074,351 +1100,6 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_UpdateServiceGroup_Android_Content_ServiceConnection_System_Int32_System_Int32_">Context.UpdateServiceGroup(ServiceConnection, int, int)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Context&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -1426,6 +1107,9 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -1441,16 +1125,15 @@ Class CarrierMessagingService  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService__ctor" data-uid="Android.Service.Carrier.CarrierMessagingService.#ctor">
   CarrierMessagingService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#%3Cinit%3E()">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#%3Cinit%3E()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;CarrierMessagingService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public CarrierMessagingService()</code></pre>
+    <pre><code class="lang-csharp hljs">public CarrierMessagingService()</code></pre>
   </div>
 
 
@@ -1467,23 +1150,23 @@ public CarrierMessagingService()</code></pre>
 
   <a id="Android_Service_Carrier_CarrierMessagingService__ctor_" data-uid="Android.Service.Carrier.CarrierMessagingService.#ctor*"></a>
 
-  <h3 id="Android_Service_Carrier_CarrierMessagingService__ctor_System_Object___" data-uid="Android.Service.Carrier.CarrierMessagingService.#ctor(System.Object[])">
-  CarrierMessagingService(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Service_Carrier_CarrierMessagingService__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Service.Carrier.CarrierMessagingService.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  CarrierMessagingService(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;CarrierMessagingService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public CarrierMessagingService(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public CarrierMessagingService(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -1506,10 +1189,10 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_BridgeClassName" data-uid="Android.Service.Carrier.CarrierMessagingService.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1538,7 +1221,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_ERROR">
   DOWNLOAD_STATUS_ERROR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_ERROR</a></p>
@@ -1546,7 +1229,391 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_ERROR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR">
+  DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_CONFIGURATION_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED">
+  DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_DATA_DISABLED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE">
+  DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_HTTP_FAILURE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION">
+  DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN">
+  DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_INVALID_APN { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID">
+  DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR">
+  DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_IO_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER">
+  DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK">
+  DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_NO_DATA_NETWORK { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_RETRY_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_RETRY*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_RETRY" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_RETRY">
+  DOWNLOAD_STATUS_MMS_ERROR_RETRY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_RETRY">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_RETRY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_RETRY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS">
+  DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED_" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED">
+  DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_MMS_ERROR_UNSPECIFIED { get; set; }</code></pre>
   </div>
 
 
@@ -1570,7 +1637,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_OK" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_OK">
   DOWNLOAD_STATUS_OK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_OK">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_OK</a></p>
@@ -1578,7 +1645,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_OK { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_OK { get; set; }</code></pre>
   </div>
 
 
@@ -1602,7 +1669,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK" data-uid="Android.Service.Carrier.CarrierMessagingService.DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK">
   DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK</a></p>
@@ -1610,7 +1677,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK { get; set; }</code></pre>
   </div>
 
 
@@ -1634,10 +1701,10 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_IsBridgeAbstract" data-uid="Android.Service.Carrier.CarrierMessagingService.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1666,10 +1733,10 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_IsBridgeCloseable" data-uid="Android.Service.Carrier.CarrierMessagingService.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1698,10 +1765,10 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_IsBridgeInterface" data-uid="Android.Service.Carrier.CarrierMessagingService.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1730,10 +1797,10 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_IsBridgeStatic" data-uid="Android.Service.Carrier.CarrierMessagingService.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1762,7 +1829,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_RECEIVE_OPTIONS_DEFAULT" data-uid="Android.Service.Carrier.CarrierMessagingService.RECEIVE_OPTIONS_DEFAULT">
   RECEIVE_OPTIONS_DEFAULT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L322"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#RECEIVE_OPTIONS_DEFAULT">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#RECEIVE_OPTIONS_DEFAULT</a></p>
@@ -1770,7 +1837,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RECEIVE_OPTIONS_DEFAULT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int RECEIVE_OPTIONS_DEFAULT { get; set; }</code></pre>
   </div>
 
 
@@ -1794,7 +1861,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_RECEIVE_OPTIONS_DROP" data-uid="Android.Service.Carrier.CarrierMessagingService.RECEIVE_OPTIONS_DROP">
   RECEIVE_OPTIONS_DROP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#RECEIVE_OPTIONS_DROP">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#RECEIVE_OPTIONS_DROP</a></p>
@@ -1802,7 +1869,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RECEIVE_OPTIONS_DROP { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int RECEIVE_OPTIONS_DROP { get; set; }</code></pre>
   </div>
 
 
@@ -1826,7 +1893,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE" data-uid="Android.Service.Carrier.CarrierMessagingService.RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE">
   RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE</a></p>
@@ -1834,7 +1901,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int RECEIVE_OPTIONS_SKIP_NOTIFY_WHEN_CREDENTIAL_PROTECTED_STORAGE_UNAVAILABLE { get; set; }</code></pre>
   </div>
 
 
@@ -1858,7 +1925,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_FLAG_REQUEST_DELIVERY_STATUS" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_FLAG_REQUEST_DELIVERY_STATUS">
   SEND_FLAG_REQUEST_DELIVERY_STATUS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_FLAG_REQUEST_DELIVERY_STATUS">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_FLAG_REQUEST_DELIVERY_STATUS</a></p>
@@ -1866,7 +1933,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SEND_FLAG_REQUEST_DELIVERY_STATUS { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SEND_FLAG_REQUEST_DELIVERY_STATUS { get; set; }</code></pre>
   </div>
 
 
@@ -1890,7 +1957,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_ERROR">
   SEND_STATUS_ERROR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_ERROR</a></p>
@@ -1898,7 +1965,391 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_ERROR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR">
+  SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_CONFIGURATION_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_DATA_DISABLED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_DATA_DISABLED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_DATA_DISABLED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_DATA_DISABLED">
+  SEND_STATUS_MMS_ERROR_DATA_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_DATA_DISABLED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_DATA_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_DATA_DISABLED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_HTTP_FAILURE_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_HTTP_FAILURE*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_HTTP_FAILURE" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_HTTP_FAILURE">
+  SEND_STATUS_MMS_ERROR_HTTP_FAILURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_HTTP_FAILURE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_HTTP_FAILURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_HTTP_FAILURE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION">
+  SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_INACTIVE_SUBSCRIPTION { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_INVALID_APN_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_INVALID_APN*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_INVALID_APN" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_INVALID_APN">
+  SEND_STATUS_MMS_ERROR_INVALID_APN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INVALID_APN">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INVALID_APN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_INVALID_APN { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID">
+  SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_INVALID_SUBSCRIPTION_ID { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_IO_ERROR_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_IO_ERROR*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_IO_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_IO_ERROR">
+  SEND_STATUS_MMS_ERROR_IO_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_IO_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_IO_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_IO_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER">
+  SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_MMS_DISABLED_BY_CARRIER { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK">
+  SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_NO_DATA_NETWORK { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_RETRY_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_RETRY*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_RETRY" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_RETRY">
+  SEND_STATUS_MMS_ERROR_RETRY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_RETRY">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_RETRY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_RETRY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS">
+  SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_UNABLE_CONNECT_MMS { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_UNSPECIFIED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_UNSPECIFIED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_MMS_ERROR_UNSPECIFIED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_MMS_ERROR_UNSPECIFIED">
+  SEND_STATUS_MMS_ERROR_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_UNSPECIFIED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_MMS_ERROR_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_MMS_ERROR_UNSPECIFIED { get; set; }</code></pre>
   </div>
 
 
@@ -1922,7 +2373,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_OK" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_OK">
   SEND_STATUS_OK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L390"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_OK">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_OK</a></p>
@@ -1930,7 +2381,615 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_OK { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_OK { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_CANCELLED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_CANCELLED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_CANCELLED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_CANCELLED">
+  SEND_STATUS_RESULT_CANCELLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_CANCELLED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_CANCELLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_CANCELLED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ENCODING_ERROR_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ENCODING_ERROR*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ENCODING_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ENCODING_ERROR">
+  SEND_STATUS_RESULT_ENCODING_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ENCODING_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ENCODING_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ENCODING_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE">
+  SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ERROR_FDN_CHECK_FAILURE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE">
+  SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ERROR_GENERIC_FAILURE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED">
+  SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ERROR_LIMIT_EXCEEDED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_NO_SERVICE_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_NO_SERVICE*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_NO_SERVICE" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_NO_SERVICE">
+  SEND_STATUS_RESULT_ERROR_NO_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_NO_SERVICE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_NO_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ERROR_NO_SERVICE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_NULL_PDU_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_NULL_PDU*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_NULL_PDU" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_NULL_PDU">
+  SEND_STATUS_RESULT_ERROR_NULL_PDU
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_NULL_PDU">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_NULL_PDU</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ERROR_NULL_PDU { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED">
+  SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ERROR_SHORT_CODE_NEVER_ALLOWED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED">
+  SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_ERROR_SHORT_CODE_NOT_ALLOWED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_ARGUMENTS_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_ARGUMENTS*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_ARGUMENTS" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_ARGUMENTS">
+  SEND_STATUS_RESULT_INVALID_ARGUMENTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_ARGUMENTS">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_ARGUMENTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_INVALID_ARGUMENTS { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS">
+  SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_INVALID_SMSC_ADDRESS { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_SMS_FORMAT_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_SMS_FORMAT*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_SMS_FORMAT" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_SMS_FORMAT">
+  SEND_STATUS_RESULT_INVALID_SMS_FORMAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_SMS_FORMAT">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_SMS_FORMAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_INVALID_SMS_FORMAT { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_STATE_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_STATE*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_INVALID_STATE" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_INVALID_STATE">
+  SEND_STATUS_RESULT_INVALID_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_STATE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_INVALID_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_INVALID_STATE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_NETWORK_ERROR_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_NETWORK_ERROR*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_NETWORK_ERROR" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_NETWORK_ERROR">
+  SEND_STATUS_RESULT_NETWORK_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_NETWORK_ERROR">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_NETWORK_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_NETWORK_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_NETWORK_REJECT_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_NETWORK_REJECT*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_NETWORK_REJECT" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_NETWORK_REJECT">
+  SEND_STATUS_RESULT_NETWORK_REJECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_NETWORK_REJECT">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_NETWORK_REJECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_NETWORK_REJECT { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED">
+  SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_OPERATION_NOT_ALLOWED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED">
+  SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_REQUEST_NOT_SUPPORTED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY">
+  SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_SMS_BLOCKED_DURING_EMERGENCY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED_" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED">
+  SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RESULT_SMS_SEND_RETRY_FAILED { get; set; }</code></pre>
   </div>
 
 
@@ -1954,7 +3013,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_SEND_STATUS_RETRY_ON_CARRIER_NETWORK" data-uid="Android.Service.Carrier.CarrierMessagingService.SEND_STATUS_RETRY_ON_CARRIER_NETWORK">
   SEND_STATUS_RETRY_ON_CARRIER_NETWORK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L470"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RETRY_ON_CARRIER_NETWORK">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SEND_STATUS_RETRY_ON_CARRIER_NETWORK</a></p>
@@ -1962,7 +3021,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RETRY_ON_CARRIER_NETWORK { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SEND_STATUS_RETRY_ON_CARRIER_NETWORK { get; set; }</code></pre>
   </div>
 
 
@@ -1986,7 +3045,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_SERVICE_INTERFACE" data-uid="Android.Service.Carrier.CarrierMessagingService.SERVICE_INTERFACE">
   SERVICE_INTERFACE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L474"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SERVICE_INTERFACE">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#SERVICE_INTERFACE</a></p>
@@ -1994,7 +3053,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String SERVICE_INTERFACE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String SERVICE_INTERFACE { get; set; }</code></pre>
   </div>
 
 
@@ -2018,11 +3077,43 @@ public CarrierMessagingService(params object[] args)</code></pre>
 </h2>
 
 
+  <a id="Android_Service_Carrier_CarrierMessagingService_CreatePoolableInstance_" data-uid="Android.Service.Carrier.CarrierMessagingService.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Service_Carrier_CarrierMessagingService_CreatePoolableInstance" data-uid="Android.Service.Carrier.CarrierMessagingService.CreatePoolableInstance">
+  CreatePoolableInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for CarrierMessagingService()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CarrierMessagingService CreatePoolableInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Service.Carrier.CarrierMessagingService.html">CarrierMessagingService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Service_Carrier_CarrierMessagingService_OnDownloadMms_" data-uid="Android.Service.Carrier.CarrierMessagingService.OnDownloadMms*"></a>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnDownloadMms_Android_Net_Uri_System_Int32_Android_Net_Uri_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Java_Lang_Integer__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnDownloadMms(Android.Net.Uri,System.Int32,Android.Net.Uri,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Java.Lang.Integer})">
   OnDownloadMms(Uri, int, Uri, ResultCallback&lt;Integer&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L490"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onDownloadMms(android.net.Uri,int,android.net.Uri,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onDownloadMms(android.net.Uri,int,android.net.Uri,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2064,7 +3155,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnFilterSms_Android_Service_Carrier_MessagePdu_Java_Lang_String_System_Int32_System_Int32_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Java_Lang_Boolean__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnFilterSms(Android.Service.Carrier.MessagePdu,Java.Lang.String,System.Int32,System.Int32,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Java.Lang.Boolean})">
   OnFilterSms(MessagePdu, String, int, int, ResultCallback&lt;Boolean&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L502"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onFilterSms(android.service.carrier.MessagePdu,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onFilterSms(android.service.carrier.MessagePdu,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2072,7 +3163,7 @@ public CarrierMessagingService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void OnFilterSms(MessagePdu arg0, String arg1, int arg2, int arg3, CarrierMessagingService.ResultCallback&lt;Boolean&gt; arg4)</code></pre>
   </div>
 
@@ -2110,7 +3201,7 @@ public void OnFilterSms(MessagePdu arg0, String arg1, int arg2, int arg3, Carrie
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnReceiveTextSms_Android_Service_Carrier_MessagePdu_Java_Lang_String_System_Int32_System_Int32_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Java_Lang_Integer__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnReceiveTextSms(Android.Service.Carrier.MessagePdu,Java.Lang.String,System.Int32,System.Int32,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Java.Lang.Integer})">
   OnReceiveTextSms(MessagePdu, String, int, int, ResultCallback&lt;Integer&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L515"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onReceiveTextSms(android.service.carrier.MessagePdu,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onReceiveTextSms(android.service.carrier.MessagePdu,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2155,7 +3246,7 @@ public void OnFilterSms(MessagePdu arg0, String arg1, int arg2, int arg3, Carrie
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnSendDataSms_System_Byte___System_Int32_Java_Lang_String_System_Int32_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Android_Service_Carrier_CarrierMessagingService_SendSmsResult__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnSendDataSms(System.Byte[],System.Int32,Java.Lang.String,System.Int32,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Android.Service.Carrier.CarrierMessagingService.SendSmsResult})">
   OnSendDataSms(byte[], int, String, int, ResultCallback&lt;SendSmsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L527"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendDataSms(byte[],int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendDataSms(byte[],int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2163,7 +3254,7 @@ public void OnFilterSms(MessagePdu arg0, String arg1, int arg2, int arg3, Carrie
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void OnSendDataSms(byte[] arg0, int arg1, String arg2, int arg3, CarrierMessagingService.ResultCallback&lt;CarrierMessagingService.SendSmsResult&gt; arg4)</code></pre>
   </div>
 
@@ -2201,7 +3292,7 @@ public void OnSendDataSms(byte[] arg0, int arg1, String arg2, int arg3, CarrierM
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnSendDataSms_System_Byte___System_Int32_Java_Lang_String_System_Int32_System_Int32_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Android_Service_Carrier_CarrierMessagingService_SendSmsResult__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnSendDataSms(System.Byte[],System.Int32,Java.Lang.String,System.Int32,System.Int32,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Android.Service.Carrier.CarrierMessagingService.SendSmsResult})">
   OnSendDataSms(byte[], int, String, int, int, ResultCallback&lt;SendSmsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendDataSms(byte[],int,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendDataSms(byte[],int,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2249,7 +3340,7 @@ public void OnSendDataSms(byte[] arg0, int arg1, String arg2, int arg3, CarrierM
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnSendMms_Android_Net_Uri_System_Int32_Android_Net_Uri_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Android_Service_Carrier_CarrierMessagingService_SendMmsResult__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnSendMms(Android.Net.Uri,System.Int32,Android.Net.Uri,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Android.Service.Carrier.CarrierMessagingService.SendMmsResult})">
   OnSendMms(Uri, int, Uri, ResultCallback&lt;SendMmsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L552"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMms(android.net.Uri,int,android.net.Uri,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMms(android.net.Uri,int,android.net.Uri,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2291,7 +3382,7 @@ public void OnSendDataSms(byte[] arg0, int arg1, String arg2, int arg3, CarrierM
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnSendMultipartTextSms_Java_Util_List_Java_Lang_String__System_Int32_Java_Lang_String_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Android_Service_Carrier_CarrierMessagingService_SendMultipartSmsResult__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnSendMultipartTextSms(Java.Util.List{Java.Lang.String},System.Int32,Java.Lang.String,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Android.Service.Carrier.CarrierMessagingService.SendMultipartSmsResult})">
   OnSendMultipartTextSms(List&lt;String&gt;, int, String, ResultCallback&lt;SendMultipartSmsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L563"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMultipartTextSms(java.util.List,int,java.lang.String,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMultipartTextSms(java.util.List,int,java.lang.String,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2299,7 +3390,7 @@ public void OnSendDataSms(byte[] arg0, int arg1, String arg2, int arg3, CarrierM
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void OnSendMultipartTextSms(List&lt;String&gt; arg0, int arg1, String arg2, CarrierMessagingService.ResultCallback&lt;CarrierMessagingService.SendMultipartSmsResult&gt; arg3)</code></pre>
   </div>
 
@@ -2334,7 +3425,7 @@ public void OnSendMultipartTextSms(List&lt;String&gt; arg0, int arg1, String arg
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnSendMultipartTextSms_Java_Util_List_Java_Lang_String__System_Int32_Java_Lang_String_System_Int32_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Android_Service_Carrier_CarrierMessagingService_SendMultipartSmsResult__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnSendMultipartTextSms(Java.Util.List{Java.Lang.String},System.Int32,Java.Lang.String,System.Int32,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Android.Service.Carrier.CarrierMessagingService.SendMultipartSmsResult})">
   OnSendMultipartTextSms(List&lt;String&gt;, int, String, int, ResultCallback&lt;SendMultipartSmsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMultipartTextSms(java.util.List,int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMultipartTextSms(java.util.List,int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2379,7 +3470,7 @@ public void OnSendMultipartTextSms(List&lt;String&gt; arg0, int arg1, String arg
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnSendTextSms_Java_Lang_String_System_Int32_Java_Lang_String_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Android_Service_Carrier_CarrierMessagingService_SendSmsResult__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnSendTextSms(Java.Lang.String,System.Int32,Java.Lang.String,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Android.Service.Carrier.CarrierMessagingService.SendSmsResult})">
   OnSendTextSms(String, int, String, ResultCallback&lt;SendSmsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L587"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendTextSms(java.lang.String,int,java.lang.String,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendTextSms(java.lang.String,int,java.lang.String,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2387,7 +3478,7 @@ public void OnSendMultipartTextSms(List&lt;String&gt; arg0, int arg1, String arg
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void OnSendTextSms(String arg0, int arg1, String arg2, CarrierMessagingService.ResultCallback&lt;CarrierMessagingService.SendSmsResult&gt; arg3)</code></pre>
   </div>
 
@@ -2422,7 +3513,7 @@ public void OnSendTextSms(String arg0, int arg1, String arg2, CarrierMessagingSe
 
   <h3 id="Android_Service_Carrier_CarrierMessagingService_OnSendTextSms_Java_Lang_String_System_Int32_Java_Lang_String_System_Int32_Android_Service_Carrier_CarrierMessagingService_ResultCallback_Android_Service_Carrier_CarrierMessagingService_SendSmsResult__" data-uid="Android.Service.Carrier.CarrierMessagingService.OnSendTextSms(Java.Lang.String,System.Int32,Java.Lang.String,System.Int32,Android.Service.Carrier.CarrierMessagingService.ResultCallback{Android.Service.Carrier.CarrierMessagingService.SendSmsResult})">
   OnSendTextSms(String, int, String, int, ResultCallback&lt;SendSmsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L600"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendTextSms(java.lang.String,int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)">https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendTextSms(java.lang.String,int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)</a></p>
@@ -2467,7 +3558,7 @@ public void OnSendTextSms(String arg0, int arg1, String arg2, CarrierMessagingSe
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L306" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Carrier/CarrierMessagingService.cs/#L234" class="edit-link">Edit this page</a>
         </div>
 
 

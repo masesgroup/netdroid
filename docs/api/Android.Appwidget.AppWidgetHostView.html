@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Appwidget_AppWidgetHostView" data-uid="Android.Appwidget.AppWidgetHostView" class="text-break">
-Class AppWidgetHostView  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L74"><i class="bi bi-code-slash"></i></a>
+Class AppWidgetHostView  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppWidgetHostView : FrameLayout, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAccessibilityEventSource, IViewParent, IViewManager</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppWidgetHostView : FrameLayout, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IAccessibilityEventSource, IViewManager, IViewParent</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
       <div><a class="xref" href="Android.View.View.html">View</a></div>
       <div><a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></div>
       <div><a class="xref" href="Android.Widget.FrameLayout.html">FrameLayout</a></div>
@@ -126,14 +126,16 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Android.View.Accessibility.IAccessibilityEventSource.html">IAccessibilityEventSource</a></div>
-      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
       <div><a class="xref" href="Android.View.IViewManager.html">IViewManager</a></div>
+      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
     </dd>
   </dl>
 
@@ -141,6 +143,15 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Android.Widget.FrameLayout.html#Android_Widget_FrameLayout_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_">FrameLayout.CreatePoolableInstance(Context, AttributeSet, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Widget.FrameLayout.html#Android_Widget_FrameLayout_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_">FrameLayout.CreatePoolableInstance(Context, AttributeSet, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Widget.FrameLayout.html#Android_Widget_FrameLayout_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_">FrameLayout.CreatePoolableInstance(Context, AttributeSet)</a>
+    </div>
     <div>
       <a class="xref" href="Android.Widget.FrameLayout.html#Android_Widget_FrameLayout_GetConsiderGoneChildrenWhenMeasuring">FrameLayout.GetConsiderGoneChildrenWhenMeasuring()</a>
     </div>
@@ -379,6 +390,9 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_OnViewRemoved_Android_View_View_">ViewGroup.OnViewRemoved(View)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_PropagateRequestedFrameRate_System_Single_System_Boolean_">ViewGroup.PropagateRequestedFrameRate(float, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_RecomputeViewAttributes_Android_View_View_">ViewGroup.RecomputeViewAttributes(View)</a>
     </div>
     <div>
@@ -587,6 +601,9 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_GLOBAL_URI_WRITE">View.DRAG_FLAG_GLOBAL_URI_WRITE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START">View.DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_OPAQUE">View.DRAG_FLAG_OPAQUE</a>
@@ -1930,6 +1947,9 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
       <a class="xref" href="Android.View.View.html#Android_View_View_GetContentDescription">View.GetContentDescription()</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_GetSupplementalDescription">View.GetSupplementalDescription()</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_GetTooltipText">View.GetTooltipText()</a>
     </div>
     <div>
@@ -2276,6 +2296,9 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RemoveOnUnhandledKeyEventListener_Android_View_View_OnUnhandledKeyEventListener_">View.RemoveOnUnhandledKeyEventListener(View.OnUnhandledKeyEventListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_ReportAppJankStats_Android_App_Jank_AppJankStats_">View.ReportAppJankStats(AppJankStats)</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RequestApplyInsets">View.RequestApplyInsets()</a>
@@ -2722,6 +2745,9 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
       <a class="xref" href="Android.View.View.html#Android_View_View_SetStateListAnimator_Android_Animation_StateListAnimator_">View.SetStateListAnimator(StateListAnimator)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_SetSupplementalDescription_Java_Lang_CharSequence_">View.SetSupplementalDescription(CharSequence)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_SetSystemGestureExclusionRects_Java_Util_List_Android_Graphics_Rect__">View.SetSystemGestureExclusionRects(List&lt;Rect&gt;)</a>
     </div>
     <div>
@@ -2817,351 +2843,6 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_UnscheduleDrawable_Android_Graphics_Drawable_Drawable_">View.UnscheduleDrawable(Drawable)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;View&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -3169,6 +2850,9 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -3182,36 +2866,9 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <a id="Android_Appwidget_AppWidgetHostView__ctor_" data-uid="Android.Appwidget.AppWidgetHostView.#ctor*"></a>
 
-  <h3 id="Android_Appwidget_AppWidgetHostView__ctor" data-uid="Android.Appwidget.AppWidgetHostView.#ctor">
-  AppWidgetHostView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppWidgetHostView()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Appwidget_AppWidgetHostView__ctor_" data-uid="Android.Appwidget.AppWidgetHostView.#ctor*"></a>
-
   <h3 id="Android_Appwidget_AppWidgetHostView__ctor_Android_Content_Context_" data-uid="Android.Appwidget.AppWidgetHostView.#ctor(Android.Content.Context)">
   AppWidgetHostView(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#%3Cinit%3E(android.content.Context)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#%3Cinit%3E(android.content.Context)</a></p>
@@ -3244,7 +2901,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView__ctor_Android_Content_Context_System_Int32_System_Int32_" data-uid="Android.Appwidget.AppWidgetHostView.#ctor(Android.Content.Context,System.Int32,System.Int32)">
   AppWidgetHostView(Context, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#%3Cinit%3E(android.content.Context,int,int)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#%3Cinit%3E(android.content.Context,int,int)</a></p>
@@ -3281,22 +2938,23 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <a id="Android_Appwidget_AppWidgetHostView__ctor_" data-uid="Android.Appwidget.AppWidgetHostView.#ctor*"></a>
 
-  <h3 id="Android_Appwidget_AppWidgetHostView__ctor_System_Object___" data-uid="Android.Appwidget.AppWidgetHostView.#ctor(System.Object[])">
-  AppWidgetHostView(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Appwidget_AppWidgetHostView__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Appwidget.AppWidgetHostView.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AppWidgetHostView(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppWidgetHostView(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AppWidgetHostView(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -3319,10 +2977,10 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_BridgeClassName" data-uid="Android.Appwidget.AppWidgetHostView.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3351,10 +3009,10 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_IsBridgeAbstract" data-uid="Android.Appwidget.AppWidgetHostView.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3383,10 +3041,10 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_IsBridgeCloseable" data-uid="Android.Appwidget.AppWidgetHostView.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3415,10 +3073,10 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_IsBridgeInterface" data-uid="Android.Appwidget.AppWidgetHostView.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3447,10 +3105,10 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_IsBridgeStatic" data-uid="Android.Appwidget.AppWidgetHostView.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3479,11 +3137,89 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
+  <a id="Android_Appwidget_AppWidgetHostView_CreatePoolableInstance_" data-uid="Android.Appwidget.AppWidgetHostView.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Appwidget_AppWidgetHostView_CreatePoolableInstance_Android_Content_Context_" data-uid="Android.Appwidget.AppWidgetHostView.CreatePoolableInstance(Android.Content.Context)">
+  CreatePoolableInstance(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AppWidgetHostView(Android.Content.Context arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AppWidgetHostView CreatePoolableInstance(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Appwidget.AppWidgetHostView.html">AppWidgetHostView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Appwidget_AppWidgetHostView_CreatePoolableInstance_" data-uid="Android.Appwidget.AppWidgetHostView.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Appwidget_AppWidgetHostView_CreatePoolableInstance_Android_Content_Context_System_Int32_System_Int32_" data-uid="Android.Appwidget.AppWidgetHostView.CreatePoolableInstance(Android.Content.Context,System.Int32,System.Int32)">
+  CreatePoolableInstance(Context, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AppWidgetHostView(Android.Content.Context arg0, int arg1, int arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AppWidgetHostView CreatePoolableInstance(Context arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Appwidget.AppWidgetHostView.html">AppWidgetHostView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Appwidget_AppWidgetHostView_GetAppWidgetId_" data-uid="Android.Appwidget.AppWidgetHostView.GetAppWidgetId*"></a>
 
   <h3 id="Android_Appwidget_AppWidgetHostView_GetAppWidgetId" data-uid="Android.Appwidget.AppWidgetHostView.GetAppWidgetId">
   GetAppWidgetId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetId()">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetId()</a></p>
@@ -3516,7 +3252,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_GetAppWidgetInfo" data-uid="Android.Appwidget.AppWidgetHostView.GetAppWidgetInfo">
   GetAppWidgetInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetInfo()">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetInfo()</a></p>
@@ -3549,7 +3285,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_GetDefaultPaddingForWidget_Android_Content_Context_Android_Content_ComponentName_Android_Graphics_Rect_" data-uid="Android.Appwidget.AppWidgetHostView.GetDefaultPaddingForWidget(Android.Content.Context,Android.Content.ComponentName,Android.Graphics.Rect)">
   GetDefaultPaddingForWidget(Context, ComponentName, Rect)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getDefaultPaddingForWidget(android.content.Context,android.content.ComponentName,android.graphics.Rect)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getDefaultPaddingForWidget(android.content.Context,android.content.ComponentName,android.graphics.Rect)</a></p>
@@ -3594,7 +3330,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_ResetColorResources" data-uid="Android.Appwidget.AppWidgetHostView.ResetColorResources">
   ResetColorResources()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#resetColorResources()">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#resetColorResources()</a></p>
@@ -3621,7 +3357,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_SetAppWidget_System_Int32_Android_Appwidget_AppWidgetProviderInfo_" data-uid="Android.Appwidget.AppWidgetHostView.SetAppWidget(System.Int32,Android.Appwidget.AppWidgetProviderInfo)">
   SetAppWidget(int, AppWidgetProviderInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setAppWidget(int,android.appwidget.AppWidgetProviderInfo)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setAppWidget(int,android.appwidget.AppWidgetProviderInfo)</a></p>
@@ -3657,7 +3393,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_SetColorResources_Android_Util_SparseIntArray_" data-uid="Android.Appwidget.AppWidgetHostView.SetColorResources(Android.Util.SparseIntArray)">
   SetColorResources(SparseIntArray)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setColorResources(android.util.SparseIntArray)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setColorResources(android.util.SparseIntArray)</a></p>
@@ -3690,7 +3426,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_SetExecutor_Java_Util_Concurrent_Executor_" data-uid="Android.Appwidget.AppWidgetHostView.SetExecutor(Java.Util.Concurrent.Executor)">
   SetExecutor(Executor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setExecutor(java.util.concurrent.Executor)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setExecutor(java.util.concurrent.Executor)</a></p>
@@ -3723,7 +3459,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_SetOnLightBackground_System_Boolean_" data-uid="Android.Appwidget.AppWidgetHostView.SetOnLightBackground(System.Boolean)">
   SetOnLightBackground(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setOnLightBackground(boolean)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setOnLightBackground(boolean)</a></p>
@@ -3756,7 +3492,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_UpdateAppWidget_Android_Widget_RemoteViews_" data-uid="Android.Appwidget.AppWidgetHostView.UpdateAppWidget(Android.Widget.RemoteViews)">
   UpdateAppWidget(RemoteViews)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidget(android.widget.RemoteViews)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidget(android.widget.RemoteViews)</a></p>
@@ -3789,7 +3525,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_UpdateAppWidgetOptions_Android_Os_Bundle_" data-uid="Android.Appwidget.AppWidgetHostView.UpdateAppWidgetOptions(Android.Os.Bundle)">
   UpdateAppWidgetOptions(Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetOptions(android.os.Bundle)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetOptions(android.os.Bundle)</a></p>
@@ -3822,7 +3558,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_UpdateAppWidgetSize_Android_Os_Bundle_Java_Util_List_Android_Util_SizeF__" data-uid="Android.Appwidget.AppWidgetHostView.UpdateAppWidgetSize(Android.Os.Bundle,Java.Util.List{Android.Util.SizeF})">
   UpdateAppWidgetSize(Bundle, List&lt;SizeF&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetSize(android.os.Bundle,java.util.List)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetSize(android.os.Bundle,java.util.List)</a></p>
@@ -3858,7 +3594,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_Appwidget_AppWidgetHostView_UpdateAppWidgetSize_Android_Os_Bundle_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Appwidget.AppWidgetHostView.UpdateAppWidgetSize(Android.Os.Bundle,System.Int32,System.Int32,System.Int32,System.Int32)">
   UpdateAppWidgetSize(Bundle, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetSize(android.os.Bundle,int,int,int,int)">https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetSize(android.os.Bundle,int,int,int,int)</a></p>
@@ -3866,7 +3602,7 @@ Class AppWidgetHostView  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void UpdateAppWidgetSize(Bundle arg0, int arg1, int arg2, int arg3, int arg4)</code></pre>
   </div>
 
@@ -3904,7 +3640,7 @@ public void UpdateAppWidgetSize(Bundle arg0, int arg1, int arg2, int arg3, int a
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L74" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Appwidget/AppWidgetHostView.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

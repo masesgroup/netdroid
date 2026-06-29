@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class MediaQualityManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MediaQualityManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the .NET suite for Android">
+      <meta name="description" content="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Quality_MediaQualityManager.md&amp;value=---%0Auid%3A%20Android.Media.Quality.MediaQualityManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Quality.MediaQualityManager">
+
+
+
+  <h1 id="Android_Media_Quality_MediaQualityManager" data-uid="Android.Media.Quality.MediaQualityManager" class="text-break">
+Class MediaQualityManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Quality.html">Quality</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MediaQualityManager : JVMBridgeBase&lt;MediaQualityManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>&gt;</div>
+      <div><span class="xref">MediaQualityManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Quality_MediaQualityManager__ctor_" data-uid="Android.Media.Quality.MediaQualityManager.#ctor*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Media.Quality.MediaQualityManager.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  MediaQualityManager(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public MediaQualityManager(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_BridgeClassName_" data-uid="Android.Media.Quality.MediaQualityManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_BridgeClassName" data-uid="Android.Media.Quality.MediaQualityManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsBridgeAbstract_" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsBridgeAbstract" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsBridgeCloseable_" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsBridgeCloseable" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsBridgeInterface_" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsBridgeInterface" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsBridgeStatic_" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsBridgeStatic" data-uid="Android.Media.Quality.MediaQualityManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_AddActiveProcessingPictureListener_" data-uid="Android.Media.Quality.MediaQualityManager.AddActiveProcessingPictureListener*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_AddActiveProcessingPictureListener_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Java_Util_List_Android_Media_Quality_ActiveProcessingPicture___" data-uid="Android.Media.Quality.MediaQualityManager.AddActiveProcessingPictureListener(Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Java.Util.List{Android.Media.Quality.ActiveProcessingPicture}})">
+  AddActiveProcessingPictureListener(Executor, Consumer&lt;List&lt;ActiveProcessingPicture&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#addActiveProcessingPictureListener(java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#addActiveProcessingPictureListener(java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddActiveProcessingPictureListener(Executor arg0, Consumer&lt;List&lt;ActiveProcessingPicture&gt;&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Quality.ActiveProcessingPicture.html">ActiveProcessingPicture</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_CreatePictureProfile_" data-uid="Android.Media.Quality.MediaQualityManager.CreatePictureProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_CreatePictureProfile_Android_Media_Quality_PictureProfile_" data-uid="Android.Media.Quality.MediaQualityManager.CreatePictureProfile(Android.Media.Quality.PictureProfile)">
+  CreatePictureProfile(PictureProfile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#createPictureProfile(android.media.quality.PictureProfile)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#createPictureProfile(android.media.quality.PictureProfile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreatePictureProfile(PictureProfile arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.PictureProfile.html">PictureProfile</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.PictureProfile.html">PictureProfile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_CreateSoundProfile_" data-uid="Android.Media.Quality.MediaQualityManager.CreateSoundProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_CreateSoundProfile_Android_Media_Quality_SoundProfile_" data-uid="Android.Media.Quality.MediaQualityManager.CreateSoundProfile(Android.Media.Quality.SoundProfile)">
+  CreateSoundProfile(SoundProfile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#createSoundProfile(android.media.quality.SoundProfile)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#createSoundProfile(android.media.quality.SoundProfile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateSoundProfile(SoundProfile arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.SoundProfile.html">SoundProfile</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.SoundProfile.html">SoundProfile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_GetAvailablePictureProfiles_" data-uid="Android.Media.Quality.MediaQualityManager.GetAvailablePictureProfiles*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_GetAvailablePictureProfiles_Android_Media_Quality_MediaQualityManager_ProfileQueryParams_" data-uid="Android.Media.Quality.MediaQualityManager.GetAvailablePictureProfiles(Android.Media.Quality.MediaQualityManager.ProfileQueryParams)">
+  GetAvailablePictureProfiles(ProfileQueryParams)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getAvailablePictureProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getAvailablePictureProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PictureProfile&gt; GetAvailablePictureProfiles(MediaQualityManager.ProfileQueryParams arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">ProfileQueryParams</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">MediaQualityManager.ProfileQueryParams</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Quality.PictureProfile.html">PictureProfile</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_GetAvailableSoundProfiles_" data-uid="Android.Media.Quality.MediaQualityManager.GetAvailableSoundProfiles*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_GetAvailableSoundProfiles_Android_Media_Quality_MediaQualityManager_ProfileQueryParams_" data-uid="Android.Media.Quality.MediaQualityManager.GetAvailableSoundProfiles(Android.Media.Quality.MediaQualityManager.ProfileQueryParams)">
+  GetAvailableSoundProfiles(ProfileQueryParams)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getAvailableSoundProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getAvailableSoundProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SoundProfile&gt; GetAvailableSoundProfiles(MediaQualityManager.ProfileQueryParams arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">ProfileQueryParams</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">MediaQualityManager.ProfileQueryParams</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Quality.SoundProfile.html">SoundProfile</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_GetParameterCapabilities_" data-uid="Android.Media.Quality.MediaQualityManager.GetParameterCapabilities*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_GetParameterCapabilities_Java_Util_List_Java_Lang_String__" data-uid="Android.Media.Quality.MediaQualityManager.GetParameterCapabilities(Java.Util.List{Java.Lang.String})">
+  GetParameterCapabilities(List&lt;String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getParameterCapabilities(java.util.List)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getParameterCapabilities(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ParameterCapability&gt; GetParameterCapabilities(List&lt;String&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Quality.ParameterCapability.html">ParameterCapability</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_GetPictureProfile_" data-uid="Android.Media.Quality.MediaQualityManager.GetPictureProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_GetPictureProfile_System_Int32_Java_Lang_String_Android_Media_Quality_MediaQualityManager_ProfileQueryParams_" data-uid="Android.Media.Quality.MediaQualityManager.GetPictureProfile(System.Int32,Java.Lang.String,Android.Media.Quality.MediaQualityManager.ProfileQueryParams)">
+  GetPictureProfile(int, String, ProfileQueryParams)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getPictureProfile(int,java.lang.String,android.media.quality.MediaQualityManager.ProfileQueryParams)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getPictureProfile(int,java.lang.String,android.media.quality.MediaQualityManager.ProfileQueryParams)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PictureProfile GetPictureProfile(int arg0, String arg1, MediaQualityManager.ProfileQueryParams arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">ProfileQueryParams</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">MediaQualityManager.ProfileQueryParams</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Quality.PictureProfile.html">PictureProfile</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.PictureProfile.html">PictureProfile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_GetSoundProfile_" data-uid="Android.Media.Quality.MediaQualityManager.GetSoundProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_GetSoundProfile_System_Int32_Java_Lang_String_Android_Media_Quality_MediaQualityManager_ProfileQueryParams_" data-uid="Android.Media.Quality.MediaQualityManager.GetSoundProfile(System.Int32,Java.Lang.String,Android.Media.Quality.MediaQualityManager.ProfileQueryParams)">
+  GetSoundProfile(int, String, ProfileQueryParams)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getSoundProfile(int,java.lang.String,android.media.quality.MediaQualityManager.ProfileQueryParams)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#getSoundProfile(int,java.lang.String,android.media.quality.MediaQualityManager.ProfileQueryParams)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundProfile GetSoundProfile(int arg0, String arg1, MediaQualityManager.ProfileQueryParams arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">ProfileQueryParams</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.ProfileQueryParams.html">MediaQualityManager.ProfileQueryParams</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Quality.SoundProfile.html">SoundProfile</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.SoundProfile.html">SoundProfile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsAmbientBacklightEnabled_" data-uid="Android.Media.Quality.MediaQualityManager.IsAmbientBacklightEnabled*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsAmbientBacklightEnabled" data-uid="Android.Media.Quality.MediaQualityManager.IsAmbientBacklightEnabled">
+  IsAmbientBacklightEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isAmbientBacklightEnabled()">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isAmbientBacklightEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAmbientBacklightEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsAutoPictureQualityEnabled_" data-uid="Android.Media.Quality.MediaQualityManager.IsAutoPictureQualityEnabled*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsAutoPictureQualityEnabled" data-uid="Android.Media.Quality.MediaQualityManager.IsAutoPictureQualityEnabled">
+  IsAutoPictureQualityEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isAutoPictureQualityEnabled()">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isAutoPictureQualityEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAutoPictureQualityEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsAutoSoundQualityEnabled_" data-uid="Android.Media.Quality.MediaQualityManager.IsAutoSoundQualityEnabled*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsAutoSoundQualityEnabled" data-uid="Android.Media.Quality.MediaQualityManager.IsAutoSoundQualityEnabled">
+  IsAutoSoundQualityEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isAutoSoundQualityEnabled()">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isAutoSoundQualityEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAutoSoundQualityEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_IsSuperResolutionEnabled_" data-uid="Android.Media.Quality.MediaQualityManager.IsSuperResolutionEnabled*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_IsSuperResolutionEnabled" data-uid="Android.Media.Quality.MediaQualityManager.IsSuperResolutionEnabled">
+  IsSuperResolutionEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isSuperResolutionEnabled()">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#isSuperResolutionEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSuperResolutionEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_RegisterAmbientBacklightCallback_" data-uid="Android.Media.Quality.MediaQualityManager.RegisterAmbientBacklightCallback*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_RegisterAmbientBacklightCallback_Java_Util_Concurrent_Executor_Android_Media_Quality_MediaQualityManager_AmbientBacklightCallback_" data-uid="Android.Media.Quality.MediaQualityManager.RegisterAmbientBacklightCallback(Java.Util.Concurrent.Executor,Android.Media.Quality.MediaQualityManager.AmbientBacklightCallback)">
+  RegisterAmbientBacklightCallback(Executor, AmbientBacklightCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#registerAmbientBacklightCallback(java.util.concurrent.Executor,android.media.quality.MediaQualityManager.AmbientBacklightCallback)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#registerAmbientBacklightCallback(java.util.concurrent.Executor,android.media.quality.MediaQualityManager.AmbientBacklightCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterAmbientBacklightCallback(Executor arg0, MediaQualityManager.AmbientBacklightCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.AmbientBacklightCallback.html">AmbientBacklightCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.AmbientBacklightCallback.html">MediaQualityManager.AmbientBacklightCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_RegisterPictureProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.RegisterPictureProfileCallback*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_RegisterPictureProfileCallback_Java_Util_Concurrent_Executor_Android_Media_Quality_MediaQualityManager_PictureProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.RegisterPictureProfileCallback(Java.Util.Concurrent.Executor,Android.Media.Quality.MediaQualityManager.PictureProfileCallback)">
+  RegisterPictureProfileCallback(Executor, PictureProfileCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#registerPictureProfileCallback(java.util.concurrent.Executor,android.media.quality.MediaQualityManager.PictureProfileCallback)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#registerPictureProfileCallback(java.util.concurrent.Executor,android.media.quality.MediaQualityManager.PictureProfileCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterPictureProfileCallback(Executor arg0, MediaQualityManager.PictureProfileCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.PictureProfileCallback.html">PictureProfileCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.PictureProfileCallback.html">MediaQualityManager.PictureProfileCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_RegisterSoundProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.RegisterSoundProfileCallback*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_RegisterSoundProfileCallback_Java_Util_Concurrent_Executor_Android_Media_Quality_MediaQualityManager_SoundProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.RegisterSoundProfileCallback(Java.Util.Concurrent.Executor,Android.Media.Quality.MediaQualityManager.SoundProfileCallback)">
+  RegisterSoundProfileCallback(Executor, SoundProfileCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#registerSoundProfileCallback(java.util.concurrent.Executor,android.media.quality.MediaQualityManager.SoundProfileCallback)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#registerSoundProfileCallback(java.util.concurrent.Executor,android.media.quality.MediaQualityManager.SoundProfileCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterSoundProfileCallback(Executor arg0, MediaQualityManager.SoundProfileCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.SoundProfileCallback.html">SoundProfileCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.SoundProfileCallback.html">MediaQualityManager.SoundProfileCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_RemoveActiveProcessingPictureListener_" data-uid="Android.Media.Quality.MediaQualityManager.RemoveActiveProcessingPictureListener*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_RemoveActiveProcessingPictureListener_Java_Util_Function_Consumer_Java_Util_List_Android_Media_Quality_ActiveProcessingPicture___" data-uid="Android.Media.Quality.MediaQualityManager.RemoveActiveProcessingPictureListener(Java.Util.Function.Consumer{Java.Util.List{Android.Media.Quality.ActiveProcessingPicture}})">
+  RemoveActiveProcessingPictureListener(Consumer&lt;List&lt;ActiveProcessingPicture&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#removeActiveProcessingPictureListener(java.util.function.Consumer)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#removeActiveProcessingPictureListener(java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveActiveProcessingPictureListener(Consumer&lt;List&lt;ActiveProcessingPicture&gt;&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Quality.ActiveProcessingPicture.html">ActiveProcessingPicture</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_RemovePictureProfile_" data-uid="Android.Media.Quality.MediaQualityManager.RemovePictureProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_RemovePictureProfile_Java_Lang_String_" data-uid="Android.Media.Quality.MediaQualityManager.RemovePictureProfile(Java.Lang.String)">
+  RemovePictureProfile(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#removePictureProfile(java.lang.String)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#removePictureProfile(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePictureProfile(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_RemoveSoundProfile_" data-uid="Android.Media.Quality.MediaQualityManager.RemoveSoundProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_RemoveSoundProfile_Java_Lang_String_" data-uid="Android.Media.Quality.MediaQualityManager.RemoveSoundProfile(Java.Lang.String)">
+  RemoveSoundProfile(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#removeSoundProfile(java.lang.String)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#removeSoundProfile(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSoundProfile(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_SetAmbientBacklightEnabled_" data-uid="Android.Media.Quality.MediaQualityManager.SetAmbientBacklightEnabled*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_SetAmbientBacklightEnabled_System_Boolean_" data-uid="Android.Media.Quality.MediaQualityManager.SetAmbientBacklightEnabled(System.Boolean)">
+  SetAmbientBacklightEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#setAmbientBacklightEnabled(boolean)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#setAmbientBacklightEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAmbientBacklightEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_SetAmbientBacklightSettings_" data-uid="Android.Media.Quality.MediaQualityManager.SetAmbientBacklightSettings*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_SetAmbientBacklightSettings_Android_Media_Quality_AmbientBacklightSettings_" data-uid="Android.Media.Quality.MediaQualityManager.SetAmbientBacklightSettings(Android.Media.Quality.AmbientBacklightSettings)">
+  SetAmbientBacklightSettings(AmbientBacklightSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#setAmbientBacklightSettings(android.media.quality.AmbientBacklightSettings)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#setAmbientBacklightSettings(android.media.quality.AmbientBacklightSettings)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAmbientBacklightSettings(AmbientBacklightSettings arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.AmbientBacklightSettings.html">AmbientBacklightSettings</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.AmbientBacklightSettings.html">AmbientBacklightSettings</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_UnregisterAmbientBacklightCallback_" data-uid="Android.Media.Quality.MediaQualityManager.UnregisterAmbientBacklightCallback*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_UnregisterAmbientBacklightCallback_Android_Media_Quality_MediaQualityManager_AmbientBacklightCallback_" data-uid="Android.Media.Quality.MediaQualityManager.UnregisterAmbientBacklightCallback(Android.Media.Quality.MediaQualityManager.AmbientBacklightCallback)">
+  UnregisterAmbientBacklightCallback(AmbientBacklightCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#unregisterAmbientBacklightCallback(android.media.quality.MediaQualityManager.AmbientBacklightCallback)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#unregisterAmbientBacklightCallback(android.media.quality.MediaQualityManager.AmbientBacklightCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterAmbientBacklightCallback(MediaQualityManager.AmbientBacklightCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.AmbientBacklightCallback.html">AmbientBacklightCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.AmbientBacklightCallback.html">MediaQualityManager.AmbientBacklightCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_UnregisterPictureProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.UnregisterPictureProfileCallback*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_UnregisterPictureProfileCallback_Android_Media_Quality_MediaQualityManager_PictureProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.UnregisterPictureProfileCallback(Android.Media.Quality.MediaQualityManager.PictureProfileCallback)">
+  UnregisterPictureProfileCallback(PictureProfileCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#unregisterPictureProfileCallback(android.media.quality.MediaQualityManager.PictureProfileCallback)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#unregisterPictureProfileCallback(android.media.quality.MediaQualityManager.PictureProfileCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterPictureProfileCallback(MediaQualityManager.PictureProfileCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.PictureProfileCallback.html">PictureProfileCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.PictureProfileCallback.html">MediaQualityManager.PictureProfileCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_UnregisterSoundProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.UnregisterSoundProfileCallback*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_UnregisterSoundProfileCallback_Android_Media_Quality_MediaQualityManager_SoundProfileCallback_" data-uid="Android.Media.Quality.MediaQualityManager.UnregisterSoundProfileCallback(Android.Media.Quality.MediaQualityManager.SoundProfileCallback)">
+  UnregisterSoundProfileCallback(SoundProfileCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#unregisterSoundProfileCallback(android.media.quality.MediaQualityManager.SoundProfileCallback)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#unregisterSoundProfileCallback(android.media.quality.MediaQualityManager.SoundProfileCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterSoundProfileCallback(MediaQualityManager.SoundProfileCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Quality.MediaQualityManager.html">MediaQualityManager</a>.<a class="xref" href="Android.Media.Quality.MediaQualityManager.SoundProfileCallback.html">SoundProfileCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.MediaQualityManager.SoundProfileCallback.html">MediaQualityManager.SoundProfileCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_UpdatePictureProfile_" data-uid="Android.Media.Quality.MediaQualityManager.UpdatePictureProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_UpdatePictureProfile_Java_Lang_String_Android_Media_Quality_PictureProfile_" data-uid="Android.Media.Quality.MediaQualityManager.UpdatePictureProfile(Java.Lang.String,Android.Media.Quality.PictureProfile)">
+  UpdatePictureProfile(String, PictureProfile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#updatePictureProfile(java.lang.String,android.media.quality.PictureProfile)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#updatePictureProfile(java.lang.String,android.media.quality.PictureProfile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePictureProfile(String arg0, PictureProfile arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Quality.PictureProfile.html">PictureProfile</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.PictureProfile.html">PictureProfile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Quality_MediaQualityManager_UpdateSoundProfile_" data-uid="Android.Media.Quality.MediaQualityManager.UpdateSoundProfile*"></a>
+
+  <h3 id="Android_Media_Quality_MediaQualityManager_UpdateSoundProfile_Java_Lang_String_Android_Media_Quality_SoundProfile_" data-uid="Android.Media.Quality.MediaQualityManager.UpdateSoundProfile(Java.Lang.String,Android.Media.Quality.SoundProfile)">
+  UpdateSoundProfile(String, SoundProfile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#updateSoundProfile(java.lang.String,android.media.quality.SoundProfile)">https://developer.android.com/reference/android/media/quality/MediaQualityManager.html#updateSoundProfile(java.lang.String,android.media.quality.SoundProfile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSoundProfile(String arg0, SoundProfile arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Quality.SoundProfile.html">SoundProfile</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Quality.SoundProfile.html">SoundProfile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Quality/MediaQualityManager.cs/#L233" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2024 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

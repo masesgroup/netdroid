@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class NetdroidCLICore&lt;T&gt; | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NetdroidCLICore&lt;T&gt; | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the .NET suite for Android">
+      <meta name="description" content="Public entry point of">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=MASES_Netdroid_CLI_NetdroidCLICore_1.md&amp;value=---%0Auid%3A%20MASES.Netdroid.CLI.NetdroidCLICore%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1">
+
+
+
+  <h1 id="MASES_Netdroid_CLI_NetdroidCLICore_1" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1" class="text-break">
+Class NetdroidCLICore&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/NetdroidCLI/NetdroidCLICore.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MASES.html">MASES</a>.<a class="xref" href="MASES.Netdroid.html">Netdroid</a>.<a class="xref" href="MASES.Netdroid.CLI.html">CLI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.NetdroidCLI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Public entry point of <a class="xref" href="MASES.Netdroid.CLI.NetdroidCLICore-1.html">NetdroidCLICore&lt;T&gt;</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NetdroidCLICore&lt;T&gt; : NetdroidCore&lt;T&gt;, IJVMWrapperManagement where T : NetdroidCLICore&lt;T&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.SetupJVMWrapper.html">SetupJVMWrapper</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.SetupJVMWrapper-1.html">SetupJVMWrapper</a>&lt;T&gt;</div>
+      <div><a class="xref" href="MASES.JNet.JNetCoreBase-1.html">JNetCoreBase</a>&lt;T&gt;</div>
+      <div><a class="xref" href="MASES.Netdroid.NetdroidCore-1.html">NetdroidCore</a>&lt;T&gt;</div>
+      <div><span class="xref">NetdroidCLICore&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMInterop.IJVMWrapperManagement.html">IJVMWrapperManagement</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MASES.Netdroid.NetdroidCore-1.html#MASES_Netdroid_NetdroidCore_1_PerformanceOptions">NetdroidCore&lt;T&gt;.PerformanceOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.Netdroid.NetdroidCore-1.html#MASES_Netdroid_NetdroidCore_1_Options">NetdroidCore&lt;T&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JARsSubFolder">JNetCoreBase&lt;T&gt;.JARsSubFolder</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationLicensePath">JNetCoreBase&lt;T&gt;.ApplicationLicensePath</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJDKHome">JNetCoreBase&lt;T&gt;.ApplicationJDKHome</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJVMPath">JNetCoreBase&lt;T&gt;.ApplicationJVMPath</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJNIVerbosity">JNetCoreBase&lt;T&gt;.ApplicationJNIVerbosity</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJNIOutputFile">JNetCoreBase&lt;T&gt;.ApplicationJNIOutputFile</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJmxPort">JNetCoreBase&lt;T&gt;.ApplicationJmxPort</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationEnableDebug">JNetCoreBase&lt;T&gt;.ApplicationEnableDebug</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJavaDebugPort">JNetCoreBase&lt;T&gt;.ApplicationJavaDebugPort</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationDebugSuspendFlag">JNetCoreBase&lt;T&gt;.ApplicationDebugSuspendFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJavaDebugOpts">JNetCoreBase&lt;T&gt;.ApplicationJavaDebugOpts</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationHeapSize">JNetCoreBase&lt;T&gt;.ApplicationHeapSize</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationInitialHeapSize">JNetCoreBase&lt;T&gt;.ApplicationInitialHeapSize</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationIgnoreUnrecognized">JNetCoreBase&lt;T&gt;.ApplicationIgnoreUnrecognized</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationDisableOpenOnJavaNio">JNetCoreBase&lt;T&gt;.ApplicationDisableOpenOnJavaNio</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationEnableNativeAccess">JNetCoreBase&lt;T&gt;.ApplicationEnableNativeAccess</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationLogClassPath">JNetCoreBase&lt;T&gt;.ApplicationLogClassPath</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationWriteEventOrExceptionOnCmdLine">JNetCoreBase&lt;T&gt;.ApplicationWriteEventOrExceptionOnCmdLine</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationJVMExtraOptions">JNetCoreBase&lt;T&gt;.ApplicationJVMExtraOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_LicensePath">JNetCoreBase&lt;T&gt;.LicensePath</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JDKHome">JNetCoreBase&lt;T&gt;.JDKHome</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JVMPath">JNetCoreBase&lt;T&gt;.JVMPath</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JNIVerbosity">JNetCoreBase&lt;T&gt;.JNIVerbosity</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JNIOutputFile">JNetCoreBase&lt;T&gt;.JNIOutputFile</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JmxPort">JNetCoreBase&lt;T&gt;.JmxPort</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_EnableDebug">JNetCoreBase&lt;T&gt;.EnableDebug</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JavaDebugPort">JNetCoreBase&lt;T&gt;.JavaDebugPort</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_DebugSuspendFlag">JNetCoreBase&lt;T&gt;.DebugSuspendFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JavaDebugOpts">JNetCoreBase&lt;T&gt;.JavaDebugOpts</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_GlobalHeapSize">JNetCoreBase&lt;T&gt;.GlobalHeapSize</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_InitialHeapSize">JNetCoreBase&lt;T&gt;.InitialHeapSize</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_IgnoreUnrecognized">JNetCoreBase&lt;T&gt;.IgnoreUnrecognized</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_DisableOpenOnJavaNio">JNetCoreBase&lt;T&gt;.DisableOpenOnJavaNio</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_EnableNativeAccess">JNetCoreBase&lt;T&gt;.EnableNativeAccess</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_Parser">JNetCoreBase&lt;T&gt;.Parser</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_LogClassPath">JNetCoreBase&lt;T&gt;.LogClassPath</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_WriteEventOrExceptionOnCmdLine">JNetCoreBase&lt;T&gt;.WriteEventOrExceptionOnCmdLine</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ParsedArgs">JNetCoreBase&lt;T&gt;.ParsedArgs</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_EventOrExceptionEvent">JNetCoreBase&lt;T&gt;.EventOrExceptionEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_EventOrExceptionHandler_MASES_JCOBridge_C2JBridge_EventOrExceptionEventArgs_">JNetCoreBase&lt;T&gt;.EventOrExceptionHandler(EventOrExceptionEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_PreInitialization_System_String__System_Version__">JNetCoreBase&lt;T&gt;.PreInitialization(ref string, ref Version)</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ReplaceEnvironmentVariable_System_String_">JNetCoreBase&lt;T&gt;.ReplaceEnvironmentVariable(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JVMOptions">JNetCoreBase&lt;T&gt;.JVMOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ClassPath">JNetCoreBase&lt;T&gt;.ClassPath</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_AddJVMOption_System_String_System_String_">JNetCoreBase&lt;T&gt;.AddJVMOption(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_HelpInfo_System_Nullable_System_Int32__">JNetCoreBase&lt;T&gt;.HelpInfo(int?)</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_New_System_String_">JNetCoreBase&lt;T&gt;.New(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_New_System_String_System_Object___">JNetCoreBase&lt;T&gt;.New(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_LaunchWithFilteredArgs__1">JNetCoreBase&lt;T&gt;.LaunchWithFilteredArgs&lt;TClass&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_Launch__1_System_String___">JNetCoreBase&lt;T&gt;.Launch&lt;TClass&gt;(params string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_LaunchWithFilteredArgs_System_Type_">JNetCoreBase&lt;T&gt;.LaunchWithFilteredArgs(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_Launch_System_Type_System_String___">JNetCoreBase&lt;T&gt;.Launch(Type, params string[])</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MASES_Netdroid_CLI_NetdroidCLICore_1__ctor_" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.#ctor*"></a>
+
+  <h3 id="MASES_Netdroid_CLI_NetdroidCLICore_1__ctor" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.#ctor">
+  NetdroidCLICore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/NetdroidCLI/NetdroidCLICore.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Public ctor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetdroidCLICore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MASES_Netdroid_CLI_NetdroidCLICore_1_CommandLineArguments_" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.CommandLineArguments*"></a>
+
+  <h3 id="MASES_Netdroid_CLI_NetdroidCLICore_1_CommandLineArguments" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.CommandLineArguments">
+  CommandLineArguments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/NetdroidCLI/NetdroidCLICore.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> for command line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IArgumentMetadata&gt; CommandLineArguments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://cliparser.masesgroup.com/api/MASES.CLIParser.IArgumentMetadata.html">IArgumentMetadata</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_CLI_NetdroidCLICore_1_PathToParse_" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.PathToParse*"></a>
+
+  <h3 id="MASES_Netdroid_CLI_NetdroidCLICore_1_PathToParse" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.PathToParse">
+  PathToParse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/NetdroidCLI/NetdroidCLICore.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A list of paths to be used in initialization of JVM ClassPath</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IList&lt;string&gt; PathToParse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MASES_Netdroid_CLI_NetdroidCLICore_1_ProcessCommandLine_" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.ProcessCommandLine*"></a>
+
+  <h3 id="MASES_Netdroid_CLI_NetdroidCLICore_1_ProcessCommandLine" data-uid="MASES.Netdroid.CLI.NetdroidCLICore`1.ProcessCommandLine">
+  ProcessCommandLine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/NetdroidCLI/NetdroidCLICore.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Process command line arguments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string[] ProcessCommandLine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The filtered residual arguments</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/NetdroidCLI/NetdroidCLICore.cs/#L30" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2024 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

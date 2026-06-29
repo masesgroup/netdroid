@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TvAdService.Session | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TvAdService.Session | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the .NET suite for Android">
+      <meta name="description" content="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Tv_Ad_TvAdService_Session.md&amp;value=---%0Auid%3A%20Android.Media.Tv.Ad.TvAdService.Session%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Tv.Ad.TvAdService.Session">
+
+
+
+  <h1 id="Android_Media_Tv_Ad_TvAdService_Session" data-uid="Android.Media.Tv.Ad.TvAdService.Session" class="text-break">
+Class TvAdService.Session  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Tv.html">Tv</a>.<a class="xref" href="Android.Media.Tv.Ad.html">Ad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TvAdService.Session : KeyEvent.Callback, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a>.<a class="xref" href="Android.View.KeyEvent.Callback.html">Callback</a>&gt;</div>
+      <div><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a>.<a class="xref" href="Android.View.KeyEvent.Callback.html">Callback</a></div>
+      <div><span class="xref">TvAdService.Session</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session__ctor_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session__ctor_Android_Content_Context_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.#ctor(Android.Content.Context)">
+  Session(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#%3Cinit%3E(android.content.Context)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#%3Cinit%3E(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Session(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session__ctor_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Session(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Session(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_BridgeClassName_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_BridgeClassName" data-uid="Android.Media.Tv.Ad.TvAdService.Session.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeAbstract_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeAbstract" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeCloseable_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeCloseable" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeInterface_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeInterface" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeStatic_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_IsBridgeStatic" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_CreatePoolableInstance_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_CreatePoolableInstance_Android_Content_Context_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.CreatePoolableInstance(Android.Content.Context)">
+  CreatePoolableInstance(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for Session(Android.Content.Context arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TvAdService.Session CreatePoolableInstance(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Tv.Ad.TvAdService.html">TvAdService</a>.<a class="xref" href="Android.Media.Tv.Ad.TvAdService.Session.html">Session</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_IsMediaViewEnabled_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsMediaViewEnabled*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_IsMediaViewEnabled" data-uid="Android.Media.Tv.Ad.TvAdService.Session.IsMediaViewEnabled">
+  IsMediaViewEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#isMediaViewEnabled()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#isMediaViewEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMediaViewEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_LayoutSurface_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.LayoutSurface*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_LayoutSurface_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.LayoutSurface(System.Int32,System.Int32,System.Int32,System.Int32)">
+  LayoutSurface(int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#layoutSurface(int,int,int,int)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#layoutSurface(int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LayoutSurface(int arg0, int arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_NotifySessionStateChanged_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.NotifySessionStateChanged*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_NotifySessionStateChanged_System_Int32_System_Int32_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.NotifySessionStateChanged(System.Int32,System.Int32)">
+  NotifySessionStateChanged(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#notifySessionStateChanged(int,int)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#notifySessionStateChanged(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NotifySessionStateChanged(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnCreateMediaView_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCreateMediaView*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnCreateMediaView" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCreateMediaView">
+  OnCreateMediaView()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCreateMediaView()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCreateMediaView()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View OnCreateMediaView()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnCurrentChannelUri_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCurrentChannelUri*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnCurrentChannelUri_Android_Net_Uri_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCurrentChannelUri(Android.Net.Uri)">
+  OnCurrentChannelUri(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCurrentChannelUri(android.net.Uri)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCurrentChannelUri(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCurrentChannelUri(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnCurrentTvInputId_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCurrentTvInputId*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnCurrentTvInputId_Java_Lang_String_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCurrentTvInputId(Java.Lang.String)">
+  OnCurrentTvInputId(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCurrentTvInputId(java.lang.String)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCurrentTvInputId(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCurrentTvInputId(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnCurrentVideoBounds_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCurrentVideoBounds*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnCurrentVideoBounds_Android_Graphics_Rect_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnCurrentVideoBounds(Android.Graphics.Rect)">
+  OnCurrentVideoBounds(Rect)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCurrentVideoBounds(android.graphics.Rect)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onCurrentVideoBounds(android.graphics.Rect)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCurrentVideoBounds(Rect arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Rect.html">Rect</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Rect.html">Rect</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnError_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnError*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnError_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnError(Java.Lang.String,Android.Os.Bundle)">
+  OnError(String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onError(java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onError(java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnError(String arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnGenericMotionEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnGenericMotionEvent*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnGenericMotionEvent_Android_View_MotionEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnGenericMotionEvent(Android.View.MotionEvent)">
+  OnGenericMotionEvent(MotionEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onGenericMotionEvent(android.view.MotionEvent)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onGenericMotionEvent(android.view.MotionEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnGenericMotionEvent(MotionEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyDown_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyDown*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyDown_System_Int32_Android_View_KeyEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyDown(System.Int32,Android.View.KeyEvent)">
+  OnKeyDown(int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyDown(int,android.view.KeyEvent)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyDown(int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyDown(int arg0, KeyEvent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyLongPress_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyLongPress*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyLongPress_System_Int32_Android_View_KeyEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyLongPress(System.Int32,Android.View.KeyEvent)">
+  OnKeyLongPress(int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyLongPress(int,android.view.KeyEvent)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyLongPress(int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyLongPress(int arg0, KeyEvent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyMultiple_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyMultiple*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyMultiple_System_Int32_System_Int32_Android_View_KeyEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyMultiple(System.Int32,System.Int32,Android.View.KeyEvent)">
+  OnKeyMultiple(int, int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyMultiple(int,int,android.view.KeyEvent)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyMultiple(int,int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyMultiple(int arg0, int arg1, KeyEvent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyUp_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyUp*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnKeyUp_System_Int32_Android_View_KeyEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnKeyUp(System.Int32,Android.View.KeyEvent)">
+  OnKeyUp(int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyUp(int,android.view.KeyEvent)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onKeyUp(int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyUp(int arg0, KeyEvent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnMediaViewSizeChanged_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnMediaViewSizeChanged*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnMediaViewSizeChanged_System_Int32_System_Int32_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnMediaViewSizeChanged(System.Int32,System.Int32)">
+  OnMediaViewSizeChanged(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onMediaViewSizeChanged(int,int)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onMediaViewSizeChanged(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMediaViewSizeChanged(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnRelease_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnRelease*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnRelease" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnRelease">
+  OnRelease()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onRelease()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onRelease()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRelease()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnResetAdService_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnResetAdService*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnResetAdService" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnResetAdService">
+  OnResetAdService()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onResetAdService()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onResetAdService()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnResetAdService()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnSetSurface_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnSetSurface*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnSetSurface_Android_View_Surface_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnSetSurface(Android.View.Surface)">
+  OnSetSurface(Surface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onSetSurface(android.view.Surface)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onSetSurface(android.view.Surface)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnSetSurface(Surface arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.Surface.html">Surface</a></dt>
+    <dd><p><a class="xref" href="Android.View.Surface.html">Surface</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnSigningResult_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnSigningResult*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnSigningResult_Java_Lang_String_System_Byte___" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnSigningResult(Java.Lang.String,System.Byte[])">
+  OnSigningResult(String, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onSigningResult(java.lang.String,byte[])">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onSigningResult(java.lang.String,byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSigningResult(String arg0, byte[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnStartAdService_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnStartAdService*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnStartAdService" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnStartAdService">
+  OnStartAdService()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onStartAdService()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onStartAdService()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStartAdService()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnStopAdService_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnStopAdService*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnStopAdService" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnStopAdService">
+  OnStopAdService()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onStopAdService()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onStopAdService()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStopAdService()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnSurfaceChanged_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnSurfaceChanged*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnSurfaceChanged_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnSurfaceChanged(System.Int32,System.Int32,System.Int32)">
+  OnSurfaceChanged(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onSurfaceChanged(int,int,int)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onSurfaceChanged(int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSurfaceChanged(int arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnTouchEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTouchEvent*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnTouchEvent_Android_View_MotionEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTouchEvent(Android.View.MotionEvent)">
+  OnTouchEvent(MotionEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTouchEvent(android.view.MotionEvent)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTouchEvent(android.view.MotionEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnTouchEvent(MotionEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnTrackInfoList_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTrackInfoList*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnTrackInfoList_Java_Util_List_Android_Media_Tv_TvTrackInfo__" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTrackInfoList(Java.Util.List{Android.Media.Tv.TvTrackInfo})">
+  OnTrackInfoList(List&lt;TvTrackInfo&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTrackInfoList(java.util.List)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTrackInfoList(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTrackInfoList(List&lt;TvTrackInfo&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Tv.TvTrackInfo.html">TvTrackInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnTrackballEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTrackballEvent*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnTrackballEvent_Android_View_MotionEvent_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTrackballEvent(Android.View.MotionEvent)">
+  OnTrackballEvent(MotionEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTrackballEvent(android.view.MotionEvent)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTrackballEvent(android.view.MotionEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnTrackballEvent(MotionEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.MotionEvent.html">MotionEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnTvInputSessionData_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTvInputSessionData*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnTvInputSessionData_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTvInputSessionData(Java.Lang.String,Android.Os.Bundle)">
+  OnTvInputSessionData(String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTvInputSessionData(java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTvInputSessionData(java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTvInputSessionData(String arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_OnTvMessage_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTvMessage*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_OnTvMessage_System_Int32_Android_Os_Bundle_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.OnTvMessage(System.Int32,Android.Os.Bundle)">
+  OnTvMessage(int, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTvMessage(int,android.os.Bundle)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#onTvMessage(int,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTvMessage(int arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_RequestCurrentChannelUri_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestCurrentChannelUri*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_RequestCurrentChannelUri" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestCurrentChannelUri">
+  RequestCurrentChannelUri()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestCurrentChannelUri()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestCurrentChannelUri()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestCurrentChannelUri()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_RequestCurrentTvInputId_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestCurrentTvInputId*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_RequestCurrentTvInputId" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestCurrentTvInputId">
+  RequestCurrentTvInputId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestCurrentTvInputId()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestCurrentTvInputId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestCurrentTvInputId()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_RequestCurrentVideoBounds_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestCurrentVideoBounds*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_RequestCurrentVideoBounds" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestCurrentVideoBounds">
+  RequestCurrentVideoBounds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestCurrentVideoBounds()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestCurrentVideoBounds()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestCurrentVideoBounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_RequestSigning_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestSigning*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_RequestSigning_Java_Lang_String_Java_Lang_String_Java_Lang_String_System_Byte___" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestSigning(Java.Lang.String,Java.Lang.String,Java.Lang.String,System.Byte[])">
+  RequestSigning(String, String, String, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestSigning(java.lang.String,java.lang.String,java.lang.String,byte[])">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestSigning(java.lang.String,java.lang.String,java.lang.String,byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestSigning(String arg0, String arg1, String arg2, byte[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_RequestTrackInfoList_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestTrackInfoList*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_RequestTrackInfoList" data-uid="Android.Media.Tv.Ad.TvAdService.Session.RequestTrackInfoList">
+  RequestTrackInfoList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestTrackInfoList()">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#requestTrackInfoList()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestTrackInfoList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_SendTvAdSessionData_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.SendTvAdSessionData*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_SendTvAdSessionData_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.SendTvAdSessionData(Java.Lang.String,Android.Os.Bundle)">
+  SendTvAdSessionData(String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#sendTvAdSessionData(java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#sendTvAdSessionData(java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendTvAdSessionData(String arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Ad_TvAdService_Session_SetMediaViewEnabled_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.SetMediaViewEnabled*"></a>
+
+  <h3 id="Android_Media_Tv_Ad_TvAdService_Session_SetMediaViewEnabled_System_Boolean_" data-uid="Android.Media.Tv.Ad.TvAdService.Session.SetMediaViewEnabled(System.Boolean)">
+  SetMediaViewEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#setMediaViewEnabled(boolean)">https://developer.android.com/reference/android/media/tv/ad/TvAdService.Session.html#setMediaViewEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMediaViewEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Ad/TvAdService.cs/#L161" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2024 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Math_BigDecimal" data-uid="Java.Math.BigDecimal" class="text-break">
-Class BigDecimal  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L74"><i class="bi bi-code-slash"></i></a>
+Class BigDecimal  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BigDecimal : Number, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class BigDecimal : Number, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ISerializable</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
       <div><a class="xref" href="Java.Io.Serializable.html">Serializable</a></div>
       <div><a class="xref" href="Java.Lang.Number.html">Number</a></div>
       <div><span class="xref">BigDecimal</span></div>
@@ -125,11 +125,13 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
     </dd>
   </dl>
@@ -138,6 +140,9 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_CreatePoolableInstance">Number.CreatePoolableInstance()</a>
+    </div>
     <div>
       <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_DoubleValue">Number.DoubleValue()</a>
     </div>
@@ -156,351 +161,6 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
     <div>
       <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_ShortValue">Number.ShortValue()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Serializable&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -508,6 +168,9 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -521,36 +184,9 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Java_Math_BigDecimal__ctor_" data-uid="Java.Math.BigDecimal.#ctor*"></a>
 
-  <h3 id="Java_Math_BigDecimal__ctor" data-uid="Java.Math.BigDecimal.#ctor">
-  BigDecimal()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigDecimal()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Math_BigDecimal__ctor_" data-uid="Java.Math.BigDecimal.#ctor*"></a>
-
   <h3 id="Java_Math_BigDecimal__ctor_Java_Lang_String_" data-uid="Java.Math.BigDecimal.#ctor(Java.Lang.String)">
   BigDecimal(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.lang.String)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.lang.String)</a></p>
@@ -583,7 +219,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_Java_Lang_String_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(Java.Lang.String,Java.Math.MathContext)">
   BigDecimal(String, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.lang.String,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.lang.String,java.math.MathContext)</a></p>
@@ -619,7 +255,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_Java_Math_BigInteger_" data-uid="Java.Math.BigDecimal.#ctor(Java.Math.BigInteger)">
   BigDecimal(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger)</a></p>
@@ -652,7 +288,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_Java_Math_BigInteger_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(Java.Math.BigInteger,Java.Math.MathContext)">
   BigDecimal(BigInteger, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger,java.math.MathContext)</a></p>
@@ -688,7 +324,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_Java_Math_BigInteger_System_Int32_" data-uid="Java.Math.BigDecimal.#ctor(Java.Math.BigInteger,System.Int32)">
   BigDecimal(BigInteger, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger,int)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger,int)</a></p>
@@ -724,7 +360,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_Java_Math_BigInteger_System_Int32_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(Java.Math.BigInteger,System.Int32,Java.Math.MathContext)">
   BigDecimal(BigInteger, int, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger,int,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(java.math.BigInteger,int,java.math.MathContext)</a></p>
@@ -761,9 +397,42 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Java_Math_BigDecimal__ctor_" data-uid="Java.Math.BigDecimal.#ctor*"></a>
 
+  <h3 id="Java_Math_BigDecimal__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Math.BigDecimal.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  BigDecimal(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public BigDecimal(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal__ctor_" data-uid="Java.Math.BigDecimal.#ctor*"></a>
+
   <h3 id="Java_Math_BigDecimal__ctor_System_Char___" data-uid="Java.Math.BigDecimal.#ctor(System.Char[])">
   BigDecimal(char[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[])">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[])</a></p>
@@ -796,7 +465,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Char___Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(System.Char[],Java.Math.MathContext)">
   BigDecimal(char[], MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[],java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[],java.math.MathContext)</a></p>
@@ -832,7 +501,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Char___System_Int32_System_Int32_" data-uid="Java.Math.BigDecimal.#ctor(System.Char[],System.Int32,System.Int32)">
   BigDecimal(char[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[],int,int)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[],int,int)</a></p>
@@ -871,7 +540,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Char___System_Int32_System_Int32_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(System.Char[],System.Int32,System.Int32,Java.Math.MathContext)">
   BigDecimal(char[], int, int, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[],int,int,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(char[],int,int,java.math.MathContext)</a></p>
@@ -913,7 +582,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Double_" data-uid="Java.Math.BigDecimal.#ctor(System.Double)">
   BigDecimal(double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(double)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(double)</a></p>
@@ -946,7 +615,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Double_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(System.Double,Java.Math.MathContext)">
   BigDecimal(double, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(double,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(double,java.math.MathContext)</a></p>
@@ -982,7 +651,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Int32_" data-uid="Java.Math.BigDecimal.#ctor(System.Int32)">
   BigDecimal(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(int)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(int)</a></p>
@@ -1015,7 +684,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Int32_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(System.Int32,Java.Math.MathContext)">
   BigDecimal(int, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(int,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(int,java.math.MathContext)</a></p>
@@ -1051,7 +720,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Int64_" data-uid="Java.Math.BigDecimal.#ctor(System.Int64)">
   BigDecimal(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L309"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(long)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(long)</a></p>
@@ -1084,7 +753,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal__ctor_System_Int64_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.#ctor(System.Int64,Java.Math.MathContext)">
   BigDecimal(long, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(long,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#%3Cinit%3E(long,java.math.MathContext)</a></p>
@@ -1116,38 +785,6 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
 
 
-  <a id="Java_Math_BigDecimal__ctor_" data-uid="Java.Math.BigDecimal.#ctor*"></a>
-
-  <h3 id="Java_Math_BigDecimal__ctor_System_Object___" data-uid="Java.Math.BigDecimal.#ctor(System.Object[])">
-  BigDecimal(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigDecimal(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -1156,10 +793,10 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal_BridgeClassName" data-uid="Java.Math.BigDecimal.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1188,10 +825,10 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal_IsBridgeAbstract" data-uid="Java.Math.BigDecimal.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1220,10 +857,10 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal_IsBridgeCloseable" data-uid="Java.Math.BigDecimal.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1252,10 +889,10 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal_IsBridgeInterface" data-uid="Java.Math.BigDecimal.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1284,10 +921,10 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal_IsBridgeStatic" data-uid="Java.Math.BigDecimal.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1316,7 +953,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal_ONE" data-uid="Java.Math.BigDecimal.ONE">
   ONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L375"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ONE">https://developer.android.com/reference/java/math/BigDecimal.html#ONE</a></p>
@@ -1324,7 +961,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BigDecimal ONE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static BigDecimal ONE { get; set; }</code></pre>
   </div>
 
 
@@ -1348,7 +985,7 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigDecimal_ROUND_CEILING" data-uid="Java.Math.BigDecimal.ROUND_CEILING">
   ROUND_CEILING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L335"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_CEILING">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_CEILING</a></p>
@@ -1356,8 +993,8 @@ Class BigDecimal  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_CEILING { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_CEILING { get; set; }</code></pre>
   </div>
 
 
@@ -1381,7 +1018,7 @@ public static int ROUND_CEILING { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ROUND_DOWN" data-uid="Java.Math.BigDecimal.ROUND_DOWN">
   ROUND_DOWN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_DOWN">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_DOWN</a></p>
@@ -1389,8 +1026,8 @@ public static int ROUND_CEILING { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_DOWN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_DOWN { get; set; }</code></pre>
   </div>
 
 
@@ -1414,7 +1051,7 @@ public static int ROUND_DOWN { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ROUND_FLOOR" data-uid="Java.Math.BigDecimal.ROUND_FLOOR">
   ROUND_FLOOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_FLOOR">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_FLOOR</a></p>
@@ -1422,8 +1059,8 @@ public static int ROUND_DOWN { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_FLOOR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_FLOOR { get; set; }</code></pre>
   </div>
 
 
@@ -1447,7 +1084,7 @@ public static int ROUND_FLOOR { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ROUND_HALF_DOWN" data-uid="Java.Math.BigDecimal.ROUND_HALF_DOWN">
   ROUND_HALF_DOWN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_HALF_DOWN">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_HALF_DOWN</a></p>
@@ -1455,8 +1092,8 @@ public static int ROUND_FLOOR { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_HALF_DOWN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_HALF_DOWN { get; set; }</code></pre>
   </div>
 
 
@@ -1480,7 +1117,7 @@ public static int ROUND_HALF_DOWN { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ROUND_HALF_EVEN" data-uid="Java.Math.BigDecimal.ROUND_HALF_EVEN">
   ROUND_HALF_EVEN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_HALF_EVEN">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_HALF_EVEN</a></p>
@@ -1488,8 +1125,8 @@ public static int ROUND_HALF_DOWN { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_HALF_EVEN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_HALF_EVEN { get; set; }</code></pre>
   </div>
 
 
@@ -1513,7 +1150,7 @@ public static int ROUND_HALF_EVEN { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ROUND_HALF_UP" data-uid="Java.Math.BigDecimal.ROUND_HALF_UP">
   ROUND_HALF_UP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L360"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_HALF_UP">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_HALF_UP</a></p>
@@ -1521,8 +1158,8 @@ public static int ROUND_HALF_EVEN { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_HALF_UP { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_HALF_UP { get; set; }</code></pre>
   </div>
 
 
@@ -1546,7 +1183,7 @@ public static int ROUND_HALF_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ROUND_UNNECESSARY" data-uid="Java.Math.BigDecimal.ROUND_UNNECESSARY">
   ROUND_UNNECESSARY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L365"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_UNNECESSARY">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_UNNECESSARY</a></p>
@@ -1554,8 +1191,8 @@ public static int ROUND_HALF_UP { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_UNNECESSARY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_UNNECESSARY { get; set; }</code></pre>
   </div>
 
 
@@ -1579,7 +1216,7 @@ public static int ROUND_UNNECESSARY { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ROUND_UP" data-uid="Java.Math.BigDecimal.ROUND_UP">
   ROUND_UP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L370"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_UP">https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_UP</a></p>
@@ -1587,8 +1224,8 @@ public static int ROUND_UNNECESSARY { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int ROUND_UP { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int ROUND_UP { get; set; }</code></pre>
   </div>
 
 
@@ -1612,7 +1249,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_TEN" data-uid="Java.Math.BigDecimal.TEN">
   TEN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#TEN">https://developer.android.com/reference/java/math/BigDecimal.html#TEN</a></p>
@@ -1620,7 +1257,7 @@ public static int ROUND_UP { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BigDecimal TEN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static BigDecimal TEN { get; set; }</code></pre>
   </div>
 
 
@@ -1644,7 +1281,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ZERO" data-uid="Java.Math.BigDecimal.ZERO">
   ZERO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ZERO">https://developer.android.com/reference/java/math/BigDecimal.html#ZERO</a></p>
@@ -1652,7 +1289,7 @@ public static int ROUND_UP { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BigDecimal ZERO { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static BigDecimal ZERO { get; set; }</code></pre>
   </div>
 
 
@@ -1680,7 +1317,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Abs" data-uid="Java.Math.BigDecimal.Abs">
   Abs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L498"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#abs()">https://developer.android.com/reference/java/math/BigDecimal.html#abs()</a></p>
@@ -1713,7 +1350,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Abs_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Abs(Java.Math.MathContext)">
   Abs(MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L507"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#abs(java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#abs(java.math.MathContext)</a></p>
@@ -1752,7 +1389,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Add_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.Add(Java.Math.BigDecimal)">
   Add(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L526"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#add(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#add(java.math.BigDecimal)</a></p>
@@ -1791,7 +1428,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Add_Java_Math_BigDecimal_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Add(Java.Math.BigDecimal,Java.Math.MathContext)">
   Add(BigDecimal, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#add(java.math.BigDecimal,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#add(java.math.BigDecimal,java.math.MathContext)</a></p>
@@ -1833,7 +1470,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ByteValueExact" data-uid="Java.Math.BigDecimal.ByteValueExact">
   ByteValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#byteValueExact()">https://developer.android.com/reference/java/math/BigDecimal.html#byteValueExact()</a></p>
@@ -1866,7 +1503,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_CompareTo_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.CompareTo(Java.Math.BigDecimal)">
   CompareTo(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L442"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#compareTo(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#compareTo(java.math.BigDecimal)</a></p>
@@ -1905,7 +1542,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_CompareTo_System_Object_" data-uid="Java.Math.BigDecimal.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L433"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#compareTo(java.lang.Object)">https://developer.android.com/reference/java/math/BigDecimal.html#compareTo(java.lang.Object)</a></p>
@@ -1940,11 +1577,631 @@ public static int ROUND_UP { get; }</code></pre>
 
 
 
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_Java_Lang_String_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(Java.Lang.String)">
+  CreatePoolableInstance(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(Java.Lang.String arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_Java_Lang_String_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(Java.Lang.String,Java.Math.MathContext)">
+  CreatePoolableInstance(String, MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(Java.Lang.String arg0, Java.Math.MathContext arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(String arg0, MathContext arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_Java_Math_BigInteger_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(Java.Math.BigInteger)">
+  CreatePoolableInstance(BigInteger)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(Java.Math.BigInteger arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(BigInteger arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_Java_Math_BigInteger_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(Java.Math.BigInteger,Java.Math.MathContext)">
+  CreatePoolableInstance(BigInteger, MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(BigInteger arg0, MathContext arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_Java_Math_BigInteger_System_Int32_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(Java.Math.BigInteger,System.Int32)">
+  CreatePoolableInstance(BigInteger, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(Java.Math.BigInteger arg0, int arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(BigInteger arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_Java_Math_BigInteger_System_Int32_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(Java.Math.BigInteger,System.Int32,Java.Math.MathContext)">
+  CreatePoolableInstance(BigInteger, int, MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(BigInteger arg0, int arg1, MathContext arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Char___" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Char[])">
+  CreatePoolableInstance(char[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(char[] arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(char[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Char___Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Char[],Java.Math.MathContext)">
+  CreatePoolableInstance(char[], MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(char[] arg0, Java.Math.MathContext arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(char[] arg0, MathContext arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Char___System_Int32_System_Int32_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Char[],System.Int32,System.Int32)">
+  CreatePoolableInstance(char[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(char[] arg0, int arg1, int arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(char[] arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Char___System_Int32_System_Int32_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Char[],System.Int32,System.Int32,Java.Math.MathContext)">
+  CreatePoolableInstance(char[], int, int, MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(char[] arg0, int arg1, int arg2, MathContext arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Double_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Double)">
+  CreatePoolableInstance(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(double arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(double arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Double_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Double,Java.Math.MathContext)">
+  CreatePoolableInstance(double, MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(double arg0, Java.Math.MathContext arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(double arg0, MathContext arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Int32_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Int32)">
+  CreatePoolableInstance(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(int arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Int32_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Int32,Java.Math.MathContext)">
+  CreatePoolableInstance(int, MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(int arg0, Java.Math.MathContext arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(int arg0, MathContext arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Int64_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Int64)">
+  CreatePoolableInstance(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(long arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigDecimal_CreatePoolableInstance_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigDecimal_CreatePoolableInstance_System_Int64_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.CreatePoolableInstance(System.Int64,Java.Math.MathContext)">
+  CreatePoolableInstance(long, MathContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigDecimal(long arg0, Java.Math.MathContext arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigDecimal CreatePoolableInstance(long arg0, MathContext arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Math.MathContext.html">MathContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Math_BigDecimal_Divide_" data-uid="Java.Math.BigDecimal.Divide*"></a>
 
   <h3 id="Java_Math_BigDecimal_Divide_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.Divide(Java.Math.BigDecimal)">
   Divide(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L589"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal)</a></p>
@@ -1983,7 +2240,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Divide_Java_Math_BigDecimal_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Divide(Java.Math.BigDecimal,Java.Math.MathContext)">
   Divide(BigDecimal, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L570"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.MathContext)</a></p>
@@ -2025,7 +2282,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Divide_Java_Math_BigDecimal_Java_Math_RoundingMode_" data-uid="Java.Math.BigDecimal.Divide(Java.Math.BigDecimal,Java.Math.RoundingMode)">
   Divide(BigDecimal, RoundingMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.RoundingMode)">https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.RoundingMode)</a></p>
@@ -2067,7 +2324,7 @@ public static int ROUND_UP { get; }</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Divide_Java_Math_BigDecimal_System_Int32_" data-uid="Java.Math.BigDecimal.Divide(Java.Math.BigDecimal,System.Int32)">
   Divide(BigDecimal, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L559"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int)">https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int)</a></p>
@@ -2075,7 +2332,7 @@ public static int ROUND_UP { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public BigDecimal Divide(BigDecimal arg0, int arg1)</code></pre>
   </div>
 
@@ -2110,7 +2367,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Divide_Java_Math_BigDecimal_System_Int32_Java_Math_RoundingMode_" data-uid="Java.Math.BigDecimal.Divide(Java.Math.BigDecimal,System.Int32,Java.Math.RoundingMode)">
   Divide(BigDecimal, int, RoundingMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L549"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,java.math.RoundingMode)">https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,java.math.RoundingMode)</a></p>
@@ -2155,7 +2412,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Divide_Java_Math_BigDecimal_System_Int32_System_Int32_" data-uid="Java.Math.BigDecimal.Divide(Java.Math.BigDecimal,System.Int32,System.Int32)">
   Divide(BigDecimal, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L537"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,int)">https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,int)</a></p>
@@ -2163,7 +2420,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
   </div>
 
@@ -2201,7 +2458,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_DivideAndRemainder_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.DivideAndRemainder(Java.Math.BigDecimal)">
   DivideAndRemainder(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L767"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L846"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal)</a></p>
@@ -2240,7 +2497,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_DivideAndRemainder_Java_Math_BigDecimal_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.DivideAndRemainder(Java.Math.BigDecimal,Java.Math.MathContext)">
   DivideAndRemainder(BigDecimal, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L758"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L837"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal,java.math.MathContext)</a></p>
@@ -2282,7 +2539,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_DivideToIntegralValue_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.DivideToIntegralValue(Java.Math.BigDecimal)">
   DivideToIntegralValue(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L608"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal)</a></p>
@@ -2321,7 +2578,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_DivideToIntegralValue_Java_Math_BigDecimal_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.DivideToIntegralValue(Java.Math.BigDecimal,Java.Math.MathContext)">
   DivideToIntegralValue(BigDecimal, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L599"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal,java.math.MathContext)</a></p>
@@ -2363,7 +2620,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_IntValueExact" data-uid="Java.Math.BigDecimal.IntValueExact">
   IntValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L450"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#intValueExact()">https://developer.android.com/reference/java/math/BigDecimal.html#intValueExact()</a></p>
@@ -2396,7 +2653,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_LongValueExact" data-uid="Java.Math.BigDecimal.LongValueExact">
   LongValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L799"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L878"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#longValueExact()">https://developer.android.com/reference/java/math/BigDecimal.html#longValueExact()</a></p>
@@ -2429,7 +2686,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Max_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.Max(Java.Math.BigDecimal)">
   Max(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L617"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#max(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#max(java.math.BigDecimal)</a></p>
@@ -2468,7 +2725,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Min_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.Min(Java.Math.BigDecimal)">
   Min(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L626"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#min(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#min(java.math.BigDecimal)</a></p>
@@ -2507,7 +2764,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_MovePointLeft_System_Int32_" data-uid="Java.Math.BigDecimal.MovePointLeft(System.Int32)">
   MovePointLeft(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L635"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#movePointLeft(int)">https://developer.android.com/reference/java/math/BigDecimal.html#movePointLeft(int)</a></p>
@@ -2546,7 +2803,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_MovePointRight_System_Int32_" data-uid="Java.Math.BigDecimal.MovePointRight(System.Int32)">
   MovePointRight(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L644"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#movePointRight(int)">https://developer.android.com/reference/java/math/BigDecimal.html#movePointRight(int)</a></p>
@@ -2585,7 +2842,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Multiply_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.Multiply(Java.Math.BigDecimal)">
   Multiply(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L663"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#multiply(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#multiply(java.math.BigDecimal)</a></p>
@@ -2624,7 +2881,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Multiply_Java_Math_BigDecimal_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Multiply(Java.Math.BigDecimal,Java.Math.MathContext)">
   Multiply(BigDecimal, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L654"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#multiply(java.math.BigDecimal,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#multiply(java.math.BigDecimal,java.math.MathContext)</a></p>
@@ -2666,7 +2923,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Negate" data-uid="Java.Math.BigDecimal.Negate">
   Negate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#negate()">https://developer.android.com/reference/java/math/BigDecimal.html#negate()</a></p>
@@ -2699,7 +2956,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Negate_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Negate(Java.Math.MathContext)">
   Negate(MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L680"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#negate(java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#negate(java.math.MathContext)</a></p>
@@ -2738,7 +2995,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Plus" data-uid="Java.Math.BigDecimal.Plus">
   Plus()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L609"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L688"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#plus()">https://developer.android.com/reference/java/math/BigDecimal.html#plus()</a></p>
@@ -2771,7 +3028,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Plus_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Plus(Java.Math.MathContext)">
   Plus(MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L697"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#plus(java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#plus(java.math.MathContext)</a></p>
@@ -2810,7 +3067,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Pow_System_Int32_" data-uid="Java.Math.BigDecimal.Pow(System.Int32)">
   Pow(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L716"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#pow(int)">https://developer.android.com/reference/java/math/BigDecimal.html#pow(int)</a></p>
@@ -2849,7 +3106,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Pow_System_Int32_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Pow(System.Int32,Java.Math.MathContext)">
   Pow(int, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L707"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#pow(int,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#pow(int,java.math.MathContext)</a></p>
@@ -2891,7 +3148,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Precision" data-uid="Java.Math.BigDecimal.Precision">
   Precision()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L458"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#precision()">https://developer.android.com/reference/java/math/BigDecimal.html#precision()</a></p>
@@ -2924,7 +3181,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Remainder_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.Remainder(Java.Math.BigDecimal)">
   Remainder(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L735"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#remainder(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#remainder(java.math.BigDecimal)</a></p>
@@ -2963,7 +3220,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Remainder_Java_Math_BigDecimal_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Remainder(Java.Math.BigDecimal,Java.Math.MathContext)">
   Remainder(BigDecimal, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L726"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#remainder(java.math.BigDecimal,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#remainder(java.math.BigDecimal,java.math.MathContext)</a></p>
@@ -3005,7 +3262,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Round_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Round(Java.Math.MathContext)">
   Round(MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L665"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L744"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#round(java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#round(java.math.MathContext)</a></p>
@@ -3044,7 +3301,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Scale" data-uid="Java.Math.BigDecimal.Scale">
   Scale()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L466"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#scale()">https://developer.android.com/reference/java/math/BigDecimal.html#scale()</a></p>
@@ -3077,7 +3334,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ScaleByPowerOfTen_System_Int32_" data-uid="Java.Math.BigDecimal.ScaleByPowerOfTen(System.Int32)">
   ScaleByPowerOfTen(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L753"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#scaleByPowerOfTen(int)">https://developer.android.com/reference/java/math/BigDecimal.html#scaleByPowerOfTen(int)</a></p>
@@ -3116,7 +3373,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_SetScale_System_Int32_" data-uid="Java.Math.BigDecimal.SetScale(System.Int32)">
   SetScale(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L783"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int)">https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int)</a></p>
@@ -3155,7 +3412,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_SetScale_System_Int32_Java_Math_RoundingMode_" data-uid="Java.Math.BigDecimal.SetScale(System.Int32,Java.Math.RoundingMode)">
   SetScale(int, RoundingMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L695"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L774"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int,java.math.RoundingMode)">https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int,java.math.RoundingMode)</a></p>
@@ -3197,7 +3454,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_SetScale_System_Int32_System_Int32_" data-uid="Java.Math.BigDecimal.SetScale(System.Int32,System.Int32)">
   SetScale(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L763"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int,int)">https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int,int)</a></p>
@@ -3205,7 +3462,7 @@ public BigDecimal Divide(BigDecimal arg0, int arg1, int arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public BigDecimal SetScale(int arg0, int arg1)</code></pre>
   </div>
 
@@ -3240,7 +3497,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ShortValueExact" data-uid="Java.Math.BigDecimal.ShortValueExact">
   ShortValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L807"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L886"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#shortValueExact()">https://developer.android.com/reference/java/math/BigDecimal.html#shortValueExact()</a></p>
@@ -3273,7 +3530,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Signum" data-uid="Java.Math.BigDecimal.Signum">
   Signum()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L474"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#signum()">https://developer.android.com/reference/java/math/BigDecimal.html#signum()</a></p>
@@ -3306,7 +3563,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Sqrt_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Sqrt(Java.Math.MathContext)">
   Sqrt(MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L713"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L792"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#sqrt(java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#sqrt(java.math.MathContext)</a></p>
@@ -3345,7 +3602,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_StripTrailingZeros" data-uid="Java.Math.BigDecimal.StripTrailingZeros">
   StripTrailingZeros()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L721"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L800"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#stripTrailingZeros()">https://developer.android.com/reference/java/math/BigDecimal.html#stripTrailingZeros()</a></p>
@@ -3378,7 +3635,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Subtract_Java_Math_BigDecimal_" data-uid="Java.Math.BigDecimal.Subtract(Java.Math.BigDecimal)">
   Subtract(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L819"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#subtract(java.math.BigDecimal)">https://developer.android.com/reference/java/math/BigDecimal.html#subtract(java.math.BigDecimal)</a></p>
@@ -3417,7 +3674,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Subtract_Java_Math_BigDecimal_Java_Math_MathContext_" data-uid="Java.Math.BigDecimal.Subtract(Java.Math.BigDecimal,Java.Math.MathContext)">
   Subtract(BigDecimal, MathContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L731"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L810"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#subtract(java.math.BigDecimal,java.math.MathContext)">https://developer.android.com/reference/java/math/BigDecimal.html#subtract(java.math.BigDecimal,java.math.MathContext)</a></p>
@@ -3459,7 +3716,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ToBigInteger" data-uid="Java.Math.BigDecimal.ToBigInteger">
   ToBigInteger()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L775"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L854"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#toBigInteger()">https://developer.android.com/reference/java/math/BigDecimal.html#toBigInteger()</a></p>
@@ -3492,7 +3749,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ToBigIntegerExact" data-uid="Java.Math.BigDecimal.ToBigIntegerExact">
   ToBigIntegerExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L783"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L862"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#toBigIntegerExact()">https://developer.android.com/reference/java/math/BigDecimal.html#toBigIntegerExact()</a></p>
@@ -3525,7 +3782,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ToEngineeringString" data-uid="Java.Math.BigDecimal.ToEngineeringString">
   ToEngineeringString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L482"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#toEngineeringString()">https://developer.android.com/reference/java/math/BigDecimal.html#toEngineeringString()</a></p>
@@ -3558,7 +3815,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ToPlainString" data-uid="Java.Math.BigDecimal.ToPlainString">
   ToPlainString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L490"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#toPlainString()">https://developer.android.com/reference/java/math/BigDecimal.html#toPlainString()</a></p>
@@ -3591,7 +3848,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_Ulp" data-uid="Java.Math.BigDecimal.Ulp">
   Ulp()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L748"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L827"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#ulp()">https://developer.android.com/reference/java/math/BigDecimal.html#ulp()</a></p>
@@ -3624,7 +3881,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_UnscaledValue" data-uid="Java.Math.BigDecimal.UnscaledValue">
   UnscaledValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L791"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L870"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#unscaledValue()">https://developer.android.com/reference/java/math/BigDecimal.html#unscaledValue()</a></p>
@@ -3657,7 +3914,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ValueOf_System_Double_" data-uid="Java.Math.BigDecimal.ValueOf(System.Double)">
   ValueOf(double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L393"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(double)">https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(double)</a></p>
@@ -3696,7 +3953,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ValueOf_System_Int64_" data-uid="Java.Math.BigDecimal.ValueOf(System.Int64)">
   ValueOf(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L412"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(long)">https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(long)</a></p>
@@ -3735,7 +3992,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_ValueOf_System_Int64_System_Int32_" data-uid="Java.Math.BigDecimal.ValueOf(System.Int64,System.Int32)">
   ValueOf(long, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L403"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(long,int)">https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(long,int)</a></p>
@@ -3781,7 +4038,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 
   <h3 id="Java_Math_BigDecimal_op_Implicit_Java_Math_BigDecimal__Java_Lang_Comparable" data-uid="Java.Math.BigDecimal.op_Implicit(Java.Math.BigDecimal)~Java.Lang.Comparable">
   implicit operator Comparable(BigDecimal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Math.BigDecimal.html">BigDecimal</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
@@ -3818,7 +4075,7 @@ public BigDecimal SetScale(int arg0, int arg1)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L74" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigDecimal.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

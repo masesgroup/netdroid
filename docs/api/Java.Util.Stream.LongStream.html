@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Stream_LongStream" data-uid="Java.Util.Stream.LongStream" class="text-break">
-Class LongStream  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L94"><i class="bi bi-code-slash"></i></a>
+Class LongStream  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class LongStream  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LongStream : BaseStream&lt;Long, LongStream&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ILongStream, IBaseStream&lt;Long, LongStream&gt;, IAutoCloseable</code></pre>
+    <pre><code class="lang-csharp hljs">public class LongStream : BaseStream&lt;Long, LongStream&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ILongStream, IBaseStream&lt;Long, LongStream&gt;, IAutoCloseable</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class LongStream  <a class="header-action link-secondary" title="View source" hr
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
       <div><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
       <div><a class="xref" href="Java.Util.Stream.BaseStream-2.html">BaseStream</a>&lt;<a class="xref" href="Java.Lang.Long.html">Long</a>, <a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a>&gt;</div>
       <div><span class="xref">LongStream</span></div>
@@ -125,11 +125,13 @@ Class LongStream  <a class="header-action link-secondary" title="View source" hr
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Util.Stream.ILongStream.html">ILongStream</a></div>
       <div><a class="xref" href="Java.Util.Stream.IBaseStream-2.html">IBaseStream</a>&lt;<a class="xref" href="Java.Lang.Long.html">Long</a>, <a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a>&gt;</div>
       <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
@@ -182,351 +184,6 @@ Class LongStream  <a class="header-action link-secondary" title="View source" hr
     <div>
       <a class="xref" href="Java.Lang.AutoCloseable.html#Java_Lang_AutoCloseable_Close">AutoCloseable.Close()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AutoCloseable&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -534,6 +191,9 @@ Class LongStream  <a class="header-action link-secondary" title="View source" hr
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -547,51 +207,23 @@ Class LongStream  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Java_Util_Stream_LongStream__ctor_" data-uid="Java.Util.Stream.LongStream.#ctor*"></a>
 
-  <h3 id="Java_Util_Stream_LongStream__ctor" data-uid="Java.Util.Stream.LongStream.#ctor">
-  LongStream()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Java_Util_Stream_LongStream__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Stream.LongStream.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  LongStream(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;LongStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public LongStream()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Util_Stream_LongStream__ctor_" data-uid="Java.Util.Stream.LongStream.#ctor*"></a>
-
-  <h3 id="Java_Util_Stream_LongStream__ctor_System_Object___" data-uid="Java.Util.Stream.LongStream.#ctor(System.Object[])">
-  LongStream(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L43"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;LongStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public LongStream(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public LongStream(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -614,10 +246,10 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_BridgeClassName" data-uid="Java.Util.Stream.LongStream.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -646,10 +278,10 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_IsBridgeAbstract" data-uid="Java.Util.Stream.LongStream.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -678,10 +310,10 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_IsBridgeCloseable" data-uid="Java.Util.Stream.LongStream.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -710,10 +342,10 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_IsBridgeInterface" data-uid="Java.Util.Stream.LongStream.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -742,10 +374,10 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_IsBridgeStatic" data-uid="Java.Util.Stream.LongStream.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -778,7 +410,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_AllMatch_Java_Util_Function_LongPredicate_" data-uid="Java.Util.Stream.LongStream.AllMatch(Java.Util.Function.LongPredicate)">
   AllMatch(LongPredicate)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#allMatch(java.util.function.LongPredicate)">https://developer.android.com/reference/java/util/stream/LongStream.html#allMatch(java.util.function.LongPredicate)</a></p>
@@ -817,7 +449,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_AnyMatch_Java_Util_Function_LongPredicate_" data-uid="Java.Util.Stream.LongStream.AnyMatch(Java.Util.Function.LongPredicate)">
   AnyMatch(LongPredicate)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#anyMatch(java.util.function.LongPredicate)">https://developer.android.com/reference/java/util/stream/LongStream.html#anyMatch(java.util.function.LongPredicate)</a></p>
@@ -856,7 +488,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_AsDoubleStream" data-uid="Java.Util.Stream.LongStream.AsDoubleStream">
   AsDoubleStream()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#asDoubleStream()">https://developer.android.com/reference/java/util/stream/LongStream.html#asDoubleStream()</a></p>
@@ -889,7 +521,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Average" data-uid="Java.Util.Stream.LongStream.Average">
   Average()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#average()">https://developer.android.com/reference/java/util/stream/LongStream.html#average()</a></p>
@@ -922,7 +554,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Boxed" data-uid="Java.Util.Stream.LongStream.Boxed">
   Boxed()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L394"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#boxed()">https://developer.android.com/reference/java/util/stream/LongStream.html#boxed()</a></p>
@@ -955,7 +587,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Collect__1_Java_Util_Function_Supplier___0__Java_Util_Function_ObjLongConsumer___0__Java_Util_Function_BiConsumer___0___0__" data-uid="Java.Util.Stream.LongStream.Collect``1(Java.Util.Function.Supplier{``0},Java.Util.Function.ObjLongConsumer{``0},Java.Util.Function.BiConsumer{``0,``0})">
   Collect&lt;R&gt;(Supplier&lt;R&gt;, ObjLongConsumer&lt;R&gt;, BiConsumer&lt;R, R&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#collect(java.util.function.Supplier,java.util.function.ObjLongConsumer,java.util.function.BiConsumer)">https://developer.android.com/reference/java/util/stream/LongStream.html#collect(java.util.function.Supplier,java.util.function.ObjLongConsumer,java.util.function.BiConsumer)</a></p>
@@ -1005,7 +637,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Concat_Java_Util_Stream_LongStream_Java_Util_Stream_LongStream_" data-uid="Java.Util.Stream.LongStream.Concat(Java.Util.Stream.LongStream,Java.Util.Stream.LongStream)">
   Concat(LongStream, LongStream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#concat(java.util.stream.LongStream,java.util.stream.LongStream)">https://developer.android.com/reference/java/util/stream/LongStream.html#concat(java.util.stream.LongStream,java.util.stream.LongStream)</a></p>
@@ -1047,7 +679,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Count" data-uid="Java.Util.Stream.LongStream.Count">
   Count()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L402"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#count()">https://developer.android.com/reference/java/util/stream/LongStream.html#count()</a></p>
@@ -1080,7 +712,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Distinct" data-uid="Java.Util.Stream.LongStream.Distinct">
   Distinct()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#distinct()">https://developer.android.com/reference/java/util/stream/LongStream.html#distinct()</a></p>
@@ -1113,7 +745,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_DropWhile_Java_Util_Function_LongPredicate_" data-uid="Java.Util.Stream.LongStream.DropWhile(Java.Util.Function.LongPredicate)">
   DropWhile(LongPredicate)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L485"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#dropWhile(java.util.function.LongPredicate)">https://developer.android.com/reference/java/util/stream/LongStream.html#dropWhile(java.util.function.LongPredicate)</a></p>
@@ -1152,7 +784,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Empty" data-uid="Java.Util.Stream.LongStream.Empty">
   Empty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#empty()">https://developer.android.com/reference/java/util/stream/LongStream.html#empty()</a></p>
@@ -1185,7 +817,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Filter_Java_Util_Function_LongPredicate_" data-uid="Java.Util.Stream.LongStream.Filter(Java.Util.Function.LongPredicate)">
   Filter(LongPredicate)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#filter(java.util.function.LongPredicate)">https://developer.android.com/reference/java/util/stream/LongStream.html#filter(java.util.function.LongPredicate)</a></p>
@@ -1224,7 +856,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_FindAny" data-uid="Java.Util.Stream.LongStream.FindAny">
   FindAny()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#findAny()">https://developer.android.com/reference/java/util/stream/LongStream.html#findAny()</a></p>
@@ -1257,7 +889,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_FindFirst" data-uid="Java.Util.Stream.LongStream.FindFirst">
   FindFirst()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L264"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#findFirst()">https://developer.android.com/reference/java/util/stream/LongStream.html#findFirst()</a></p>
@@ -1290,7 +922,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_FlatMap__1_Java_Util_Function_LongFunction___0__" data-uid="Java.Util.Stream.LongStream.FlatMap``1(Java.Util.Function.LongFunction{``0})">
   FlatMap&lt;Arg0ExtendsJava_Util_Stream_LongStream&gt;(LongFunction&lt;Arg0ExtendsJava_Util_Stream_LongStream&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#flatMap(java.util.function.LongFunction)">https://developer.android.com/reference/java/util/stream/LongStream.html#flatMap(java.util.function.LongFunction)</a></p>
@@ -1335,7 +967,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_ForEach_Java_Util_Function_LongConsumer_" data-uid="Java.Util.Stream.LongStream.ForEach(Java.Util.Function.LongConsumer)">
   ForEach(LongConsumer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L436"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#forEach(java.util.function.LongConsumer)">https://developer.android.com/reference/java/util/stream/LongStream.html#forEach(java.util.function.LongConsumer)</a></p>
@@ -1368,7 +1000,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_ForEachOrdered_Java_Util_Function_LongConsumer_" data-uid="Java.Util.Stream.LongStream.ForEachOrdered(Java.Util.Function.LongConsumer)">
   ForEachOrdered(LongConsumer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L444"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#forEachOrdered(java.util.function.LongConsumer)">https://developer.android.com/reference/java/util/stream/LongStream.html#forEachOrdered(java.util.function.LongConsumer)</a></p>
@@ -1401,7 +1033,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Generate_Java_Util_Function_LongSupplier_" data-uid="Java.Util.Stream.LongStream.Generate(Java.Util.Function.LongSupplier)">
   Generate(LongSupplier)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#generate(java.util.function.LongSupplier)">https://developer.android.com/reference/java/util/stream/LongStream.html#generate(java.util.function.LongSupplier)</a></p>
@@ -1440,7 +1072,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Iterate_System_Int64_Java_Util_Function_LongPredicate_Java_Util_Function_LongUnaryOperator_" data-uid="Java.Util.Stream.LongStream.Iterate(System.Int64,Java.Util.Function.LongPredicate,Java.Util.Function.LongUnaryOperator)">
   Iterate(long, LongPredicate, LongUnaryOperator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#iterate(long,java.util.function.LongPredicate,java.util.function.LongUnaryOperator)">https://developer.android.com/reference/java/util/stream/LongStream.html#iterate(long,java.util.function.LongPredicate,java.util.function.LongUnaryOperator)</a></p>
@@ -1485,7 +1117,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Iterate_System_Int64_Java_Util_Function_LongUnaryOperator_" data-uid="Java.Util.Stream.LongStream.Iterate(System.Int64,Java.Util.Function.LongUnaryOperator)">
   Iterate(long, LongUnaryOperator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#iterate(long,java.util.function.LongUnaryOperator)">https://developer.android.com/reference/java/util/stream/LongStream.html#iterate(long,java.util.function.LongUnaryOperator)</a></p>
@@ -1527,7 +1159,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Iterator" data-uid="Java.Util.Stream.LongStream.Iterator">
   Iterator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L452"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#iterator()">https://developer.android.com/reference/java/util/stream/LongStream.html#iterator()</a></p>
@@ -1560,7 +1192,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Limit_System_Int64_" data-uid="Java.Util.Stream.LongStream.Limit(System.Int64)">
   Limit(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L351"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#limit(long)">https://developer.android.com/reference/java/util/stream/LongStream.html#limit(long)</a></p>
@@ -1599,7 +1231,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Map_Java_Util_Function_LongUnaryOperator_" data-uid="Java.Util.Stream.LongStream.Map(Java.Util.Function.LongUnaryOperator)">
   Map(LongUnaryOperator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L360"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#map(java.util.function.LongUnaryOperator)">https://developer.android.com/reference/java/util/stream/LongStream.html#map(java.util.function.LongUnaryOperator)</a></p>
@@ -1638,7 +1270,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_MapToDouble_Java_Util_Function_LongToDoubleFunction_" data-uid="Java.Util.Stream.LongStream.MapToDouble(Java.Util.Function.LongToDoubleFunction)">
   MapToDouble(LongToDoubleFunction)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#mapToDouble(java.util.function.LongToDoubleFunction)">https://developer.android.com/reference/java/util/stream/LongStream.html#mapToDouble(java.util.function.LongToDoubleFunction)</a></p>
@@ -1677,7 +1309,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_MapToInt_Java_Util_Function_LongToIntFunction_" data-uid="Java.Util.Stream.LongStream.MapToInt(Java.Util.Function.LongToIntFunction)">
   MapToInt(LongToIntFunction)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#mapToInt(java.util.function.LongToIntFunction)">https://developer.android.com/reference/java/util/stream/LongStream.html#mapToInt(java.util.function.LongToIntFunction)</a></p>
@@ -1716,7 +1348,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_MapToObj__2_Java_Util_Function_LongFunction___1__" data-uid="Java.Util.Stream.LongStream.MapToObj``2(Java.Util.Function.LongFunction{``1})">
   MapToObj&lt;U, Arg0ExtendsU&gt;(LongFunction&lt;Arg0ExtendsU&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#mapToObj(java.util.function.LongFunction)">https://developer.android.com/reference/java/util/stream/LongStream.html#mapToObj(java.util.function.LongFunction)</a></p>
@@ -1763,7 +1395,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Max" data-uid="Java.Util.Stream.LongStream.Max">
   Max()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#max()">https://developer.android.com/reference/java/util/stream/LongStream.html#max()</a></p>
@@ -1796,7 +1428,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Min" data-uid="Java.Util.Stream.LongStream.Min">
   Min()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#min()">https://developer.android.com/reference/java/util/stream/LongStream.html#min()</a></p>
@@ -1829,7 +1461,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_NoneMatch_Java_Util_Function_LongPredicate_" data-uid="Java.Util.Stream.LongStream.NoneMatch(Java.Util.Function.LongPredicate)">
   NoneMatch(LongPredicate)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#noneMatch(java.util.function.LongPredicate)">https://developer.android.com/reference/java/util/stream/LongStream.html#noneMatch(java.util.function.LongPredicate)</a></p>
@@ -1868,7 +1500,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Of_System_Int64_" data-uid="Java.Util.Stream.LongStream.Of(System.Int64)">
   Of(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#of(long)">https://developer.android.com/reference/java/util/stream/LongStream.html#of(long)</a></p>
@@ -1907,10 +1539,10 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Of_System_Int64___" data-uid="Java.Util.Stream.LongStream.Of(System.Int64[])">
   Of(params long[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#of(long[])">https://developer.android.com/reference/java/util/stream/LongStream.html#of(long[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#of(long...)">https://developer.android.com/reference/java/util/stream/LongStream.html#of(long...)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1946,7 +1578,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Parallel" data-uid="Java.Util.Stream.LongStream.Parallel">
   Parallel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#parallel()">https://developer.android.com/reference/java/util/stream/LongStream.html#parallel()</a></p>
@@ -1979,7 +1611,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Peek_Java_Util_Function_LongConsumer_" data-uid="Java.Util.Stream.LongStream.Peek(Java.Util.Function.LongConsumer)">
   Peek(LongConsumer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L369"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#peek(java.util.function.LongConsumer)">https://developer.android.com/reference/java/util/stream/LongStream.html#peek(java.util.function.LongConsumer)</a></p>
@@ -2018,7 +1650,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Range_System_Int64_System_Int64_" data-uid="Java.Util.Stream.LongStream.Range(System.Int64,System.Int64)">
   Range(long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#range(long,long)">https://developer.android.com/reference/java/util/stream/LongStream.html#range(long,long)</a></p>
@@ -2060,7 +1692,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_RangeClosed_System_Int64_System_Int64_" data-uid="Java.Util.Stream.LongStream.RangeClosed(System.Int64,System.Int64)">
   RangeClosed(long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#rangeClosed(long,long)">https://developer.android.com/reference/java/util/stream/LongStream.html#rangeClosed(long,long)</a></p>
@@ -2102,7 +1734,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Reduce_Java_Util_Function_LongBinaryOperator_" data-uid="Java.Util.Stream.LongStream.Reduce(Java.Util.Function.LongBinaryOperator)">
   Reduce(LongBinaryOperator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#reduce(java.util.function.LongBinaryOperator)">https://developer.android.com/reference/java/util/stream/LongStream.html#reduce(java.util.function.LongBinaryOperator)</a></p>
@@ -2141,7 +1773,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Reduce_System_Int64_Java_Util_Function_LongBinaryOperator_" data-uid="Java.Util.Stream.LongStream.Reduce(System.Int64,Java.Util.Function.LongBinaryOperator)">
   Reduce(long, LongBinaryOperator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L412"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#reduce(long,java.util.function.LongBinaryOperator)">https://developer.android.com/reference/java/util/stream/LongStream.html#reduce(long,java.util.function.LongBinaryOperator)</a></p>
@@ -2183,7 +1815,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Sequential" data-uid="Java.Util.Stream.LongStream.Sequential">
   Sequential()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L476"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#sequential()">https://developer.android.com/reference/java/util/stream/LongStream.html#sequential()</a></p>
@@ -2216,7 +1848,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Skip_System_Int64_" data-uid="Java.Util.Stream.LongStream.Skip(System.Int64)">
   Skip(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L378"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#skip(long)">https://developer.android.com/reference/java/util/stream/LongStream.html#skip(long)</a></p>
@@ -2255,7 +1887,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Sorted" data-uid="Java.Util.Stream.LongStream.Sorted">
   Sorted()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#sorted()">https://developer.android.com/reference/java/util/stream/LongStream.html#sorted()</a></p>
@@ -2288,7 +1920,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Spliterator" data-uid="Java.Util.Stream.LongStream.Spliterator">
   Spliterator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L460"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#spliterator()">https://developer.android.com/reference/java/util/stream/LongStream.html#spliterator()</a></p>
@@ -2321,7 +1953,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_Sum" data-uid="Java.Util.Stream.LongStream.Sum">
   Sum()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#sum()">https://developer.android.com/reference/java/util/stream/LongStream.html#sum()</a></p>
@@ -2354,7 +1986,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_SummaryStatistics" data-uid="Java.Util.Stream.LongStream.SummaryStatistics">
   SummaryStatistics()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#summaryStatistics()">https://developer.android.com/reference/java/util/stream/LongStream.html#summaryStatistics()</a></p>
@@ -2387,7 +2019,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_TakeWhile_Java_Util_Function_LongPredicate_" data-uid="Java.Util.Stream.LongStream.TakeWhile(Java.Util.Function.LongPredicate)">
   TakeWhile(LongPredicate)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L494"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#takeWhile(java.util.function.LongPredicate)">https://developer.android.com/reference/java/util/stream/LongStream.html#takeWhile(java.util.function.LongPredicate)</a></p>
@@ -2426,7 +2058,7 @@ public LongStream(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Stream_LongStream_ToArray" data-uid="Java.Util.Stream.LongStream.ToArray">
   ToArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L428"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/LongStream.html#toArray()">https://developer.android.com/reference/java/util/stream/LongStream.html#toArray()</a></p>
@@ -2459,7 +2091,7 @@ public LongStream(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L94" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/LongStream.cs/#L81" class="edit-link">Edit this page</a>
         </div>
 
 
