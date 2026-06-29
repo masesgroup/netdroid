@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Widget_LinearLayout" data-uid="Android.Widget.LinearLayout" class="text-break">
-Class LinearLayout  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L119"><i class="bi bi-code-slash"></i></a>
+Class LinearLayout  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LinearLayout : ViewGroup, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAccessibilityEventSource, IViewParent, IViewManager</code></pre>
+    <pre><code class="lang-csharp hljs">public class LinearLayout : ViewGroup, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IAccessibilityEventSource, IViewManager, IViewParent</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
       <div><a class="xref" href="Android.View.View.html">View</a></div>
       <div><a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></div>
       <div><span class="xref">LinearLayout</span></div>
@@ -125,14 +125,16 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Android.View.Accessibility.IAccessibilityEventSource.html">IAccessibilityEventSource</a></div>
-      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
       <div><a class="xref" href="Android.View.IViewManager.html">IViewManager</a></div>
+      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
     </dd>
   </dl>
 
@@ -382,6 +384,9 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_OnViewRemoved_Android_View_View_">ViewGroup.OnViewRemoved(View)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_PropagateRequestedFrameRate_System_Single_System_Boolean_">ViewGroup.PropagateRequestedFrameRate(float, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_RecomputeViewAttributes_Android_View_View_">ViewGroup.RecomputeViewAttributes(View)</a>
     </div>
     <div>
@@ -590,6 +595,9 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_GLOBAL_URI_WRITE">View.DRAG_FLAG_GLOBAL_URI_WRITE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START">View.DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_OPAQUE">View.DRAG_FLAG_OPAQUE</a>
@@ -1933,6 +1941,9 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
       <a class="xref" href="Android.View.View.html#Android_View_View_GetContentDescription">View.GetContentDescription()</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_GetSupplementalDescription">View.GetSupplementalDescription()</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_GetTooltipText">View.GetTooltipText()</a>
     </div>
     <div>
@@ -2279,6 +2290,9 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RemoveOnUnhandledKeyEventListener_Android_View_View_OnUnhandledKeyEventListener_">View.RemoveOnUnhandledKeyEventListener(View.OnUnhandledKeyEventListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_ReportAppJankStats_Android_App_Jank_AppJankStats_">View.ReportAppJankStats(AppJankStats)</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RequestApplyInsets">View.RequestApplyInsets()</a>
@@ -2725,6 +2739,9 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
       <a class="xref" href="Android.View.View.html#Android_View_View_SetStateListAnimator_Android_Animation_StateListAnimator_">View.SetStateListAnimator(StateListAnimator)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_SetSupplementalDescription_Java_Lang_CharSequence_">View.SetSupplementalDescription(CharSequence)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_SetSystemGestureExclusionRects_Java_Util_List_Android_Graphics_Rect__">View.SetSystemGestureExclusionRects(List&lt;Rect&gt;)</a>
     </div>
     <div>
@@ -2820,351 +2837,6 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_UnscheduleDrawable_Android_Graphics_Drawable_Drawable_">View.UnscheduleDrawable(Drawable)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;View&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -3172,6 +2844,9 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -3185,36 +2860,9 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <a id="Android_Widget_LinearLayout__ctor_" data-uid="Android.Widget.LinearLayout.#ctor*"></a>
 
-  <h3 id="Android_Widget_LinearLayout__ctor" data-uid="Android.Widget.LinearLayout.#ctor">
-  LinearLayout()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LinearLayout()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Widget_LinearLayout__ctor_" data-uid="Android.Widget.LinearLayout.#ctor*"></a>
-
   <h3 id="Android_Widget_LinearLayout__ctor_Android_Content_Context_" data-uid="Android.Widget.LinearLayout.#ctor(Android.Content.Context)">
   LinearLayout(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context)">https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context)</a></p>
@@ -3247,7 +2895,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout__ctor_Android_Content_Context_Android_Util_AttributeSet_" data-uid="Android.Widget.LinearLayout.#ctor(Android.Content.Context,Android.Util.AttributeSet)">
   LinearLayout(Context, AttributeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)">https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)</a></p>
@@ -3283,7 +2931,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_" data-uid="Android.Widget.LinearLayout.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32)">
   LinearLayout(Context, AttributeSet, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)">https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)</a></p>
@@ -3322,7 +2970,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_" data-uid="Android.Widget.LinearLayout.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32,System.Int32)">
   LinearLayout(Context, AttributeSet, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)">https://developer.android.com/reference/android/widget/LinearLayout.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)</a></p>
@@ -3362,22 +3010,23 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <a id="Android_Widget_LinearLayout__ctor_" data-uid="Android.Widget.LinearLayout.#ctor*"></a>
 
-  <h3 id="Android_Widget_LinearLayout__ctor_System_Object___" data-uid="Android.Widget.LinearLayout.#ctor(System.Object[])">
-  LinearLayout(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Widget_LinearLayout__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Widget.LinearLayout.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  LinearLayout(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LinearLayout(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public LinearLayout(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -3400,10 +3049,10 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_BridgeClassName" data-uid="Android.Widget.LinearLayout.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3432,7 +3081,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_HORIZONTAL" data-uid="Android.Widget.LinearLayout.HORIZONTAL">
   HORIZONTAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#HORIZONTAL">https://developer.android.com/reference/android/widget/LinearLayout.html#HORIZONTAL</a></p>
@@ -3440,7 +3089,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int HORIZONTAL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int HORIZONTAL { get; set; }</code></pre>
   </div>
 
 
@@ -3464,10 +3113,10 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_IsBridgeAbstract" data-uid="Android.Widget.LinearLayout.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3496,10 +3145,10 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_IsBridgeCloseable" data-uid="Android.Widget.LinearLayout.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3528,10 +3177,10 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_IsBridgeInterface" data-uid="Android.Widget.LinearLayout.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3560,10 +3209,10 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_IsBridgeStatic" data-uid="Android.Widget.LinearLayout.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3592,7 +3241,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SHOW_DIVIDER_BEGINNING" data-uid="Android.Widget.LinearLayout.SHOW_DIVIDER_BEGINNING">
   SHOW_DIVIDER_BEGINNING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#SHOW_DIVIDER_BEGINNING">https://developer.android.com/reference/android/widget/LinearLayout.html#SHOW_DIVIDER_BEGINNING</a></p>
@@ -3600,7 +3249,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_BEGINNING { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_BEGINNING { get; set; }</code></pre>
   </div>
 
 
@@ -3624,7 +3273,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SHOW_DIVIDER_END" data-uid="Android.Widget.LinearLayout.SHOW_DIVIDER_END">
   SHOW_DIVIDER_END
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#SHOW_DIVIDER_END">https://developer.android.com/reference/android/widget/LinearLayout.html#SHOW_DIVIDER_END</a></p>
@@ -3632,7 +3281,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_END { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_END { get; set; }</code></pre>
   </div>
 
 
@@ -3664,7 +3313,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_MIDDLE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_MIDDLE { get; set; }</code></pre>
   </div>
 
 
@@ -3688,7 +3337,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SHOW_DIVIDER_NONE" data-uid="Android.Widget.LinearLayout.SHOW_DIVIDER_NONE">
   SHOW_DIVIDER_NONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#SHOW_DIVIDER_NONE">https://developer.android.com/reference/android/widget/LinearLayout.html#SHOW_DIVIDER_NONE</a></p>
@@ -3696,7 +3345,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_NONE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SHOW_DIVIDER_NONE { get; set; }</code></pre>
   </div>
 
 
@@ -3720,7 +3369,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_VERTICAL" data-uid="Android.Widget.LinearLayout.VERTICAL">
   VERTICAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#VERTICAL">https://developer.android.com/reference/android/widget/LinearLayout.html#VERTICAL</a></p>
@@ -3728,7 +3377,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int VERTICAL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int VERTICAL { get; set; }</code></pre>
   </div>
 
 
@@ -3752,11 +3401,171 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 </h2>
 
 
+  <a id="Android_Widget_LinearLayout_CreatePoolableInstance_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_LinearLayout_CreatePoolableInstance_Android_Content_Context_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance(Android.Content.Context)">
+  CreatePoolableInstance(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for LinearLayout(Android.Content.Context arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearLayout CreatePoolableInstance(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.LinearLayout.html">LinearLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_LinearLayout_CreatePoolableInstance_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_LinearLayout_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet)">
+  CreatePoolableInstance(Context, AttributeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for LinearLayout(Android.Content.Context arg0, Android.Util.AttributeSet arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearLayout CreatePoolableInstance(Context arg0, AttributeSet arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.LinearLayout.html">LinearLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_LinearLayout_CreatePoolableInstance_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_LinearLayout_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet,System.Int32)">
+  CreatePoolableInstance(Context, AttributeSet, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for LinearLayout(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearLayout CreatePoolableInstance(Context arg0, AttributeSet arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.LinearLayout.html">LinearLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_LinearLayout_CreatePoolableInstance_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_LinearLayout_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_" data-uid="Android.Widget.LinearLayout.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet,System.Int32,System.Int32)">
+  CreatePoolableInstance(Context, AttributeSet, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for LinearLayout(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LinearLayout CreatePoolableInstance(Context arg0, AttributeSet arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.LinearLayout.html">LinearLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Widget_LinearLayout_GetBaselineAlignedChildIndex_" data-uid="Android.Widget.LinearLayout.GetBaselineAlignedChildIndex*"></a>
 
   <h3 id="Android_Widget_LinearLayout_GetBaselineAlignedChildIndex" data-uid="Android.Widget.LinearLayout.GetBaselineAlignedChildIndex">
   GetBaselineAlignedChildIndex()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#getBaselineAlignedChildIndex()">https://developer.android.com/reference/android/widget/LinearLayout.html#getBaselineAlignedChildIndex()</a></p>
@@ -3789,7 +3598,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_GetDividerDrawable" data-uid="Android.Widget.LinearLayout.GetDividerDrawable">
   GetDividerDrawable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerDrawable()">https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerDrawable()</a></p>
@@ -3822,7 +3631,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_GetDividerPadding" data-uid="Android.Widget.LinearLayout.GetDividerPadding">
   GetDividerPadding()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L250"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerPadding()">https://developer.android.com/reference/android/widget/LinearLayout.html#getDividerPadding()</a></p>
@@ -3855,7 +3664,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_GetGravity" data-uid="Android.Widget.LinearLayout.GetGravity">
   GetGravity()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#getGravity()">https://developer.android.com/reference/android/widget/LinearLayout.html#getGravity()</a></p>
@@ -3888,7 +3697,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_GetOrientation" data-uid="Android.Widget.LinearLayout.GetOrientation">
   GetOrientation()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#getOrientation()">https://developer.android.com/reference/android/widget/LinearLayout.html#getOrientation()</a></p>
@@ -3921,7 +3730,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_GetShowDividers" data-uid="Android.Widget.LinearLayout.GetShowDividers">
   GetShowDividers()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L274"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#getShowDividers()">https://developer.android.com/reference/android/widget/LinearLayout.html#getShowDividers()</a></p>
@@ -3954,7 +3763,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_GetWeightSum" data-uid="Android.Widget.LinearLayout.GetWeightSum">
   GetWeightSum()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#getWeightSum()">https://developer.android.com/reference/android/widget/LinearLayout.html#getWeightSum()</a></p>
@@ -3987,7 +3796,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_IsBaselineAligned" data-uid="Android.Widget.LinearLayout.IsBaselineAligned">
   IsBaselineAligned()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#isBaselineAligned()">https://developer.android.com/reference/android/widget/LinearLayout.html#isBaselineAligned()</a></p>
@@ -4020,7 +3829,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_IsMeasureWithLargestChildEnabled" data-uid="Android.Widget.LinearLayout.IsMeasureWithLargestChildEnabled">
   IsMeasureWithLargestChildEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#isMeasureWithLargestChildEnabled()">https://developer.android.com/reference/android/widget/LinearLayout.html#isMeasureWithLargestChildEnabled()</a></p>
@@ -4053,7 +3862,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetBaselineAligned_System_Boolean_" data-uid="Android.Widget.LinearLayout.SetBaselineAligned(System.Boolean)">
   SetBaselineAligned(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setBaselineAligned(boolean)">https://developer.android.com/reference/android/widget/LinearLayout.html#setBaselineAligned(boolean)</a></p>
@@ -4086,7 +3895,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetBaselineAlignedChildIndex_System_Int32_" data-uid="Android.Widget.LinearLayout.SetBaselineAlignedChildIndex(System.Int32)">
   SetBaselineAlignedChildIndex(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setBaselineAlignedChildIndex(int)">https://developer.android.com/reference/android/widget/LinearLayout.html#setBaselineAlignedChildIndex(int)</a></p>
@@ -4119,7 +3928,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetDividerDrawable_Android_Graphics_Drawable_Drawable_" data-uid="Android.Widget.LinearLayout.SetDividerDrawable(Android.Graphics.Drawable.Drawable)">
   SetDividerDrawable(Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L298"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerDrawable(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerDrawable(android.graphics.drawable.Drawable)</a></p>
@@ -4152,7 +3961,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetDividerPadding_System_Int32_" data-uid="Android.Widget.LinearLayout.SetDividerPadding(System.Int32)">
   SetDividerPadding(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerPadding(int)">https://developer.android.com/reference/android/widget/LinearLayout.html#setDividerPadding(int)</a></p>
@@ -4185,7 +3994,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetGravity_System_Int32_" data-uid="Android.Widget.LinearLayout.SetGravity(System.Int32)">
   SetGravity(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setGravity(int)">https://developer.android.com/reference/android/widget/LinearLayout.html#setGravity(int)</a></p>
@@ -4218,7 +4027,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetHorizontalGravity_System_Int32_" data-uid="Android.Widget.LinearLayout.SetHorizontalGravity(System.Int32)">
   SetHorizontalGravity(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L322"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setHorizontalGravity(int)">https://developer.android.com/reference/android/widget/LinearLayout.html#setHorizontalGravity(int)</a></p>
@@ -4251,7 +4060,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetMeasureWithLargestChildEnabled_System_Boolean_" data-uid="Android.Widget.LinearLayout.SetMeasureWithLargestChildEnabled(System.Boolean)">
   SetMeasureWithLargestChildEnabled(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setMeasureWithLargestChildEnabled(boolean)">https://developer.android.com/reference/android/widget/LinearLayout.html#setMeasureWithLargestChildEnabled(boolean)</a></p>
@@ -4284,7 +4093,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetOrientation_System_Int32_" data-uid="Android.Widget.LinearLayout.SetOrientation(System.Int32)">
   SetOrientation(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setOrientation(int)">https://developer.android.com/reference/android/widget/LinearLayout.html#setOrientation(int)</a></p>
@@ -4317,7 +4126,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetShowDividers_System_Int32_" data-uid="Android.Widget.LinearLayout.SetShowDividers(System.Int32)">
   SetShowDividers(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setShowDividers(int)">https://developer.android.com/reference/android/widget/LinearLayout.html#setShowDividers(int)</a></p>
@@ -4350,7 +4159,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetVerticalGravity_System_Int32_" data-uid="Android.Widget.LinearLayout.SetVerticalGravity(System.Int32)">
   SetVerticalGravity(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setVerticalGravity(int)">https://developer.android.com/reference/android/widget/LinearLayout.html#setVerticalGravity(int)</a></p>
@@ -4383,7 +4192,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Widget_LinearLayout_SetWeightSum_System_Single_" data-uid="Android.Widget.LinearLayout.SetWeightSum(System.Single)">
   SetWeightSum(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/LinearLayout.html#setWeightSum(float)">https://developer.android.com/reference/android/widget/LinearLayout.html#setWeightSum(float)</a></p>
@@ -4416,7 +4225,7 @@ Class LinearLayout  <a class="header-action link-secondary" title="View source" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L119" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/LinearLayout.cs/#L97" class="edit-link">Edit this page</a>
         </div>
 
 

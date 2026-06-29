@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Util_Half" data-uid="Android.Util.Half" class="text-break">
-Class Half  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L74"><i class="bi bi-code-slash"></i></a>
+Class Half  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Half : Number, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Half : Number, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ISerializable</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
       <div><a class="xref" href="Java.Io.Serializable.html">Serializable</a></div>
       <div><a class="xref" href="Java.Lang.Number.html">Number</a></div>
       <div><span class="xref">Half</span></div>
@@ -125,11 +125,13 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
     </dd>
   </dl>
@@ -138,6 +140,9 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_CreatePoolableInstance">Number.CreatePoolableInstance()</a>
+    </div>
     <div>
       <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_DoubleValue">Number.DoubleValue()</a>
     </div>
@@ -156,351 +161,6 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
     <div>
       <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_ShortValue">Number.ShortValue()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Serializable&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -508,6 +168,9 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -521,36 +184,9 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <a id="Android_Util_Half__ctor_" data-uid="Android.Util.Half.#ctor*"></a>
 
-  <h3 id="Android_Util_Half__ctor" data-uid="Android.Util.Half.#ctor">
-  Half()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Half()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Util_Half__ctor_" data-uid="Android.Util.Half.#ctor*"></a>
-
   <h3 id="Android_Util_Half__ctor_Java_Lang_String_" data-uid="Android.Util.Half.#ctor(Java.Lang.String)">
   Half(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(java.lang.String)">https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(java.lang.String)</a></p>
@@ -586,9 +222,42 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <a id="Android_Util_Half__ctor_" data-uid="Android.Util.Half.#ctor*"></a>
 
+  <h3 id="Android_Util_Half__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Util.Half.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Half(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Half(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Util_Half__ctor_" data-uid="Android.Util.Half.#ctor*"></a>
+
   <h3 id="Android_Util_Half__ctor_System_Double_" data-uid="Android.Util.Half.#ctor(System.Double)">
   Half(double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(double)">https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(double)</a></p>
@@ -621,7 +290,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half__ctor_System_Int16_" data-uid="Android.Util.Half.#ctor(System.Int16)">
   Half(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(short)">https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(short)</a></p>
@@ -652,41 +321,9 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <a id="Android_Util_Half__ctor_" data-uid="Android.Util.Half.#ctor*"></a>
 
-  <h3 id="Android_Util_Half__ctor_System_Object___" data-uid="Android.Util.Half.#ctor(System.Object[])">
-  Half(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Half(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Util_Half__ctor_" data-uid="Android.Util.Half.#ctor*"></a>
-
   <h3 id="Android_Util_Half__ctor_System_Single_" data-uid="Android.Util.Half.#ctor(System.Single)">
   Half(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(float)">https://developer.android.com/reference/android/util/Half.html#%3Cinit%3E(float)</a></p>
@@ -723,10 +360,10 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_BridgeClassName" data-uid="Android.Util.Half.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -755,7 +392,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_EPSILON" data-uid="Android.Util.Half.EPSILON">
   EPSILON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#EPSILON">https://developer.android.com/reference/android/util/Half.html#EPSILON</a></p>
@@ -763,7 +400,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short EPSILON { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short EPSILON { get; set; }</code></pre>
   </div>
 
 
@@ -787,10 +424,10 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsBridgeAbstract" data-uid="Android.Util.Half.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -819,10 +456,10 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsBridgeCloseable" data-uid="Android.Util.Half.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -851,10 +488,10 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsBridgeInterface" data-uid="Android.Util.Half.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -883,10 +520,10 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsBridgeStatic" data-uid="Android.Util.Half.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -915,7 +552,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_LOWEST_VALUE" data-uid="Android.Util.Half.LOWEST_VALUE">
   LOWEST_VALUE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#LOWEST_VALUE">https://developer.android.com/reference/android/util/Half.html#LOWEST_VALUE</a></p>
@@ -923,7 +560,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short LOWEST_VALUE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short LOWEST_VALUE { get; set; }</code></pre>
   </div>
 
 
@@ -947,7 +584,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_MAX_EXPONENT" data-uid="Android.Util.Half.MAX_EXPONENT">
   MAX_EXPONENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#MAX_EXPONENT">https://developer.android.com/reference/android/util/Half.html#MAX_EXPONENT</a></p>
@@ -955,7 +592,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MAX_EXPONENT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MAX_EXPONENT { get; set; }</code></pre>
   </div>
 
 
@@ -979,7 +616,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_MAX_VALUE" data-uid="Android.Util.Half.MAX_VALUE">
   MAX_VALUE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#MAX_VALUE">https://developer.android.com/reference/android/util/Half.html#MAX_VALUE</a></p>
@@ -987,7 +624,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short MAX_VALUE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short MAX_VALUE { get; set; }</code></pre>
   </div>
 
 
@@ -1011,7 +648,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_MIN_EXPONENT" data-uid="Android.Util.Half.MIN_EXPONENT">
   MIN_EXPONENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#MIN_EXPONENT">https://developer.android.com/reference/android/util/Half.html#MIN_EXPONENT</a></p>
@@ -1019,7 +656,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MIN_EXPONENT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MIN_EXPONENT { get; set; }</code></pre>
   </div>
 
 
@@ -1043,7 +680,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_MIN_NORMAL" data-uid="Android.Util.Half.MIN_NORMAL">
   MIN_NORMAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#MIN_NORMAL">https://developer.android.com/reference/android/util/Half.html#MIN_NORMAL</a></p>
@@ -1051,7 +688,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short MIN_NORMAL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short MIN_NORMAL { get; set; }</code></pre>
   </div>
 
 
@@ -1075,7 +712,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_MIN_VALUE" data-uid="Android.Util.Half.MIN_VALUE">
   MIN_VALUE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#MIN_VALUE">https://developer.android.com/reference/android/util/Half.html#MIN_VALUE</a></p>
@@ -1083,7 +720,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short MIN_VALUE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short MIN_VALUE { get; set; }</code></pre>
   </div>
 
 
@@ -1107,7 +744,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_NEGATIVE_INFINITY" data-uid="Android.Util.Half.NEGATIVE_INFINITY">
   NEGATIVE_INFINITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#NEGATIVE_INFINITY">https://developer.android.com/reference/android/util/Half.html#NEGATIVE_INFINITY</a></p>
@@ -1115,7 +752,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short NEGATIVE_INFINITY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short NEGATIVE_INFINITY { get; set; }</code></pre>
   </div>
 
 
@@ -1139,7 +776,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_NEGATIVE_ZERO" data-uid="Android.Util.Half.NEGATIVE_ZERO">
   NEGATIVE_ZERO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#NEGATIVE_ZERO">https://developer.android.com/reference/android/util/Half.html#NEGATIVE_ZERO</a></p>
@@ -1147,7 +784,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short NEGATIVE_ZERO { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short NEGATIVE_ZERO { get; set; }</code></pre>
   </div>
 
 
@@ -1171,7 +808,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_NaN" data-uid="Android.Util.Half.NaN">
   NaN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#NaN">https://developer.android.com/reference/android/util/Half.html#NaN</a></p>
@@ -1179,7 +816,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short NaN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short NaN { get; set; }</code></pre>
   </div>
 
 
@@ -1203,7 +840,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_POSITIVE_INFINITY" data-uid="Android.Util.Half.POSITIVE_INFINITY">
   POSITIVE_INFINITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#POSITIVE_INFINITY">https://developer.android.com/reference/android/util/Half.html#POSITIVE_INFINITY</a></p>
@@ -1211,7 +848,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short POSITIVE_INFINITY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short POSITIVE_INFINITY { get; set; }</code></pre>
   </div>
 
 
@@ -1235,7 +872,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_POSITIVE_ZERO" data-uid="Android.Util.Half.POSITIVE_ZERO">
   POSITIVE_ZERO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#POSITIVE_ZERO">https://developer.android.com/reference/android/util/Half.html#POSITIVE_ZERO</a></p>
@@ -1243,7 +880,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short POSITIVE_ZERO { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static short POSITIVE_ZERO { get; set; }</code></pre>
   </div>
 
 
@@ -1267,7 +904,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_SIZE" data-uid="Android.Util.Half.SIZE">
   SIZE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#SIZE">https://developer.android.com/reference/android/util/Half.html#SIZE</a></p>
@@ -1275,7 +912,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SIZE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SIZE { get; set; }</code></pre>
   </div>
 
 
@@ -1303,7 +940,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Abs_System_Int16_" data-uid="Android.Util.Half.Abs(System.Int16)">
   Abs(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#abs(short)">https://developer.android.com/reference/android/util/Half.html#abs(short)</a></p>
@@ -1342,7 +979,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Ceil_System_Int16_" data-uid="Android.Util.Half.Ceil(System.Int16)">
   Ceil(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#ceil(short)">https://developer.android.com/reference/android/util/Half.html#ceil(short)</a></p>
@@ -1381,7 +1018,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Compare_System_Int16_System_Int16_" data-uid="Android.Util.Half.Compare(System.Int16,System.Int16)">
   Compare(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#compare(short,short)">https://developer.android.com/reference/android/util/Half.html#compare(short,short)</a></p>
@@ -1423,7 +1060,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_CompareTo_Android_Util_Half_" data-uid="Android.Util.Half.CompareTo(Android.Util.Half)">
   CompareTo(Half)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L519"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#compareTo(android.util.Half)">https://developer.android.com/reference/android/util/Half.html#compareTo(android.util.Half)</a></p>
@@ -1462,7 +1099,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_CompareTo_System_Object_" data-uid="Android.Util.Half.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L528"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#compareTo(java.lang.Object)">https://developer.android.com/reference/android/util/Half.html#compareTo(java.lang.Object)</a></p>
@@ -1501,7 +1138,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_CopySign_System_Int16_System_Int16_" data-uid="Android.Util.Half.CopySign(System.Int16,System.Int16)">
   CopySign(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L414"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#copySign(short,short)">https://developer.android.com/reference/android/util/Half.html#copySign(short,short)</a></p>
@@ -1539,11 +1176,159 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <a id="Android_Util_Half_CreatePoolableInstance_" data-uid="Android.Util.Half.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Util_Half_CreatePoolableInstance_Java_Lang_String_" data-uid="Android.Util.Half.CreatePoolableInstance(Java.Lang.String)">
+  CreatePoolableInstance(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for Half(Java.Lang.String arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Half CreatePoolableInstance(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.Half.html">Half</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Util_Half_CreatePoolableInstance_" data-uid="Android.Util.Half.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Util_Half_CreatePoolableInstance_System_Double_" data-uid="Android.Util.Half.CreatePoolableInstance(System.Double)">
+  CreatePoolableInstance(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for Half(double arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Half CreatePoolableInstance(double arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.Half.html">Half</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Util_Half_CreatePoolableInstance_" data-uid="Android.Util.Half.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Util_Half_CreatePoolableInstance_System_Int16_" data-uid="Android.Util.Half.CreatePoolableInstance(System.Int16)">
+  CreatePoolableInstance(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for Half(short arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Half CreatePoolableInstance(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.Half.html">Half</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Util_Half_CreatePoolableInstance_" data-uid="Android.Util.Half.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Util_Half_CreatePoolableInstance_System_Single_" data-uid="Android.Util.Half.CreatePoolableInstance(System.Single)">
+  CreatePoolableInstance(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for Half(float arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Half CreatePoolableInstance(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Util.Half.html">Half</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Util_Half_Equals_" data-uid="Android.Util.Half.Equals*"></a>
 
   <h3 id="Android_Util_Half_Equals_System_Int16_System_Int16_" data-uid="Android.Util.Half.Equals(System.Int16,System.Int16)">
   Equals(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#equals(short,short)">https://developer.android.com/reference/android/util/Half.html#equals(short,short)</a></p>
@@ -1585,7 +1370,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Floor_System_Int16_" data-uid="Android.Util.Half.Floor(System.Int16)">
   Floor(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L423"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#floor(short)">https://developer.android.com/reference/android/util/Half.html#floor(short)</a></p>
@@ -1624,7 +1409,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_GetExponent_System_Int16_" data-uid="Android.Util.Half.GetExponent(System.Int16)">
   GetExponent(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#getExponent(short)">https://developer.android.com/reference/android/util/Half.html#getExponent(short)</a></p>
@@ -1663,7 +1448,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_GetSign_System_Int16_" data-uid="Android.Util.Half.GetSign(System.Int16)">
   GetSign(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#getSign(short)">https://developer.android.com/reference/android/util/Half.html#getSign(short)</a></p>
@@ -1702,7 +1487,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_GetSignificand_System_Int16_" data-uid="Android.Util.Half.GetSignificand(System.Int16)">
   GetSignificand(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L341"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#getSignificand(short)">https://developer.android.com/reference/android/util/Half.html#getSignificand(short)</a></p>
@@ -1741,7 +1526,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Greater_System_Int16_System_Int16_" data-uid="Android.Util.Half.Greater(System.Int16,System.Int16)">
   Greater(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L238"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#greater(short,short)">https://developer.android.com/reference/android/util/Half.html#greater(short,short)</a></p>
@@ -1783,7 +1568,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_GreaterEquals_System_Int16_System_Int16_" data-uid="Android.Util.Half.GreaterEquals(System.Int16,System.Int16)">
   GreaterEquals(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#greaterEquals(short,short)">https://developer.android.com/reference/android/util/Half.html#greaterEquals(short,short)</a></p>
@@ -1825,7 +1610,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_HalfToIntBits_System_Int16_" data-uid="Android.Util.Half.HalfToIntBits(System.Int16)">
   HalfToIntBits(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#halfToIntBits(short)">https://developer.android.com/reference/android/util/Half.html#halfToIntBits(short)</a></p>
@@ -1864,7 +1649,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_HalfToRawIntBits_System_Int16_" data-uid="Android.Util.Half.HalfToRawIntBits(System.Int16)">
   HalfToRawIntBits(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#halfToRawIntBits(short)">https://developer.android.com/reference/android/util/Half.html#halfToRawIntBits(short)</a></p>
@@ -1903,7 +1688,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_HalfToShortBits_System_Int16_" data-uid="Android.Util.Half.HalfToShortBits(System.Int16)">
   HalfToShortBits(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#halfToShortBits(short)">https://developer.android.com/reference/android/util/Half.html#halfToShortBits(short)</a></p>
@@ -1942,7 +1727,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_HalfValue" data-uid="Android.Util.Half.HalfValue">
   HalfValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L536"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#halfValue()">https://developer.android.com/reference/android/util/Half.html#halfValue()</a></p>
@@ -1975,7 +1760,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_HashCode_System_Int16_" data-uid="Android.Util.Half.HashCode(System.Int16)">
   HashCode(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L368"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#hashCode(short)">https://developer.android.com/reference/android/util/Half.html#hashCode(short)</a></p>
@@ -2014,7 +1799,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IntBitsToHalf_System_Int32_" data-uid="Android.Util.Half.IntBitsToHalf(System.Int32)">
   IntBitsToHalf(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L441"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#intBitsToHalf(int)">https://developer.android.com/reference/android/util/Half.html#intBitsToHalf(int)</a></p>
@@ -2053,7 +1838,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsInfinite_System_Int16_" data-uid="Android.Util.Half.IsInfinite(System.Int16)">
   IsInfinite(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#isInfinite(short)">https://developer.android.com/reference/android/util/Half.html#isInfinite(short)</a></p>
@@ -2092,7 +1877,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsNaN" data-uid="Android.Util.Half.IsNaN">
   IsNaN()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L510"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#isNaN()">https://developer.android.com/reference/android/util/Half.html#isNaN()</a></p>
@@ -2125,7 +1910,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsNaN_System_Int16_" data-uid="Android.Util.Half.IsNaN(System.Int16)">
   IsNaN(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#isNaN(short)">https://developer.android.com/reference/android/util/Half.html#isNaN(short)</a></p>
@@ -2164,7 +1949,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_IsNormalized_System_Int16_" data-uid="Android.Util.Half.IsNormalized(System.Int16)">
   IsNormalized(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#isNormalized(short)">https://developer.android.com/reference/android/util/Half.html#isNormalized(short)</a></p>
@@ -2203,7 +1988,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Less_System_Int16_System_Int16_" data-uid="Android.Util.Half.Less(System.Int16,System.Int16)">
   Less(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#less(short,short)">https://developer.android.com/reference/android/util/Half.html#less(short,short)</a></p>
@@ -2245,7 +2030,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_LessEquals_System_Int16_System_Int16_" data-uid="Android.Util.Half.LessEquals(System.Int16,System.Int16)">
   LessEquals(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#lessEquals(short,short)">https://developer.android.com/reference/android/util/Half.html#lessEquals(short,short)</a></p>
@@ -2287,7 +2072,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Max_System_Int16_System_Int16_" data-uid="Android.Util.Half.Max(System.Int16,System.Int16)">
   Max(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L451"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#max(short,short)">https://developer.android.com/reference/android/util/Half.html#max(short,short)</a></p>
@@ -2329,7 +2114,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Min_System_Int16_System_Int16_" data-uid="Android.Util.Half.Min(System.Int16,System.Int16)">
   Min(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L461"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#min(short,short)">https://developer.android.com/reference/android/util/Half.html#min(short,short)</a></p>
@@ -2371,7 +2156,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ParseHalf_Java_Lang_String_" data-uid="Android.Util.Half.ParseHalf(Java.Lang.String)">
   ParseHalf(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L471"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#parseHalf(java.lang.String)">https://developer.android.com/reference/android/util/Half.html#parseHalf(java.lang.String)</a></p>
@@ -2415,7 +2200,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Round_System_Int16_" data-uid="Android.Util.Half.Round(System.Int16)">
   Round(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L480"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#round(short)">https://developer.android.com/reference/android/util/Half.html#round(short)</a></p>
@@ -2454,7 +2239,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ToFloat_System_Int16_" data-uid="Android.Util.Half.ToFloat(System.Int16)">
   ToFloat(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L304"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#toFloat(short)">https://developer.android.com/reference/android/util/Half.html#toFloat(short)</a></p>
@@ -2493,7 +2278,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ToHalf_System_Single_" data-uid="Android.Util.Half.ToHalf(System.Single)">
   ToHalf(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L489"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#toHalf(float)">https://developer.android.com/reference/android/util/Half.html#toHalf(float)</a></p>
@@ -2532,7 +2317,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ToHexString_System_Int16_" data-uid="Android.Util.Half.ToHexString(System.Int16)">
   ToHexString(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L377"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#toHexString(short)">https://developer.android.com/reference/android/util/Half.html#toHexString(short)</a></p>
@@ -2571,7 +2356,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ToString_System_Int16_" data-uid="Android.Util.Half.ToString(System.Int16)">
   ToString(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#toString(short)">https://developer.android.com/reference/android/util/Half.html#toString(short)</a></p>
@@ -2610,7 +2395,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_Trunc_System_Int16_" data-uid="Android.Util.Half.Trunc(System.Int16)">
   Trunc(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L498"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#trunc(short)">https://developer.android.com/reference/android/util/Half.html#trunc(short)</a></p>
@@ -2649,7 +2434,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ValueOf_Java_Lang_String_" data-uid="Android.Util.Half.ValueOf(Java.Lang.String)">
   ValueOf(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#valueOf(java.lang.String)">https://developer.android.com/reference/android/util/Half.html#valueOf(java.lang.String)</a></p>
@@ -2688,7 +2473,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ValueOf_System_Int16_" data-uid="Android.Util.Half.ValueOf(System.Int16)">
   ValueOf(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#valueOf(short)">https://developer.android.com/reference/android/util/Half.html#valueOf(short)</a></p>
@@ -2727,7 +2512,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_ValueOf_System_Single_" data-uid="Android.Util.Half.ValueOf(System.Single)">
   ValueOf(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/Half.html#valueOf(float)">https://developer.android.com/reference/android/util/Half.html#valueOf(float)</a></p>
@@ -2770,7 +2555,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Android_Util_Half_op_Implicit_Android_Util_Half__Java_Lang_Comparable" data-uid="Android.Util.Half.op_Implicit(Android.Util.Half)~Java.Lang.Comparable">
   implicit operator Comparable(Half)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Util.Half.html">Half</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
@@ -2807,7 +2592,7 @@ Class Half  <a class="header-action link-secondary" title="View source" href="ht
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L74" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/Half.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

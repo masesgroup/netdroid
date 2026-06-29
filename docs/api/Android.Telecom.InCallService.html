@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Telecom_InCallService" data-uid="Android.Telecom.InCallService" class="text-break">
-Class InCallService  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L170"><i class="bi bi-code-slash"></i></a>
+Class InCallService  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class InCallService : Service, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class InCallService : Service, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
       <div><a class="xref" href="Android.Content.Context.html">Context</a></div>
       <div><a class="xref" href="Android.Content.ContextWrapper.html">ContextWrapper</a></div>
       <div><a class="xref" href="Android.App.Service.html">Service</a></div>
@@ -126,11 +126,13 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
 
@@ -235,6 +237,9 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Android.App.Service.html#Android_App_Service_OnTrimMemory_System_Int32_">Service.OnTrimMemory(int)</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_CreatePoolableInstance_Android_Content_Context_">ContextWrapper.CreatePoolableInstance(Context)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_GetBaseContext">ContextWrapper.GetBaseContext()</a>
     </div>
     <div>
@@ -337,7 +342,13 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ACTIVITY_SERVICE">Context.ACTIVITY_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ADVANCED_PROTECTION_SERVICE">Context.ADVANCED_PROTECTION_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ALARM_SERVICE">Context.ALARM_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_FUNCTION_SERVICE">Context.APP_FUNCTION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_OPS_SERVICE">Context.APP_OPS_SERVICE</a>
@@ -457,6 +468,9 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYGUARD_SERVICE">Context.KEYGUARD_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYSTORE_SERVICE">Context.KEYSTORE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_LAUNCHER_APPS_SERVICE">Context.LAUNCHER_APPS_SERVICE</a>
     </div>
     <div>
@@ -476,6 +490,9 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_PROJECTION_SERVICE">Context.MEDIA_PROJECTION_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_QUALITY_SERVICE">Context.MEDIA_QUALITY_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_ROUTER_SERVICE">Context.MEDIA_ROUTER_SERVICE</a>
@@ -526,6 +543,9 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ROLE_SERVICE">Context.ROLE_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SATELLITE_SERVICE">Context.SATELLITE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SEARCH_SERVICE">Context.SEARCH_SERVICE</a>
     </div>
     <div>
@@ -562,10 +582,16 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TELEPHONY_SUBSCRIPTION_SERVICE">Context.TELEPHONY_SUBSCRIPTION_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TETHERING_SERVICE">Context.TETHERING_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_CLASSIFICATION_SERVICE">Context.TEXT_CLASSIFICATION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_SERVICES_MANAGER_SERVICE">Context.TEXT_SERVICES_MANAGER_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_AD_SERVICE">Context.TV_AD_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_INPUT_SERVICE">Context.TV_INPUT_SERVICE</a>
@@ -1074,351 +1100,6 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_UpdateServiceGroup_Android_Content_ServiceConnection_System_Int32_System_Int32_">Context.UpdateServiceGroup(ServiceConnection, int, int)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Context&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -1426,6 +1107,9 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -1441,16 +1125,15 @@ Class InCallService  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Telecom_InCallService__ctor" data-uid="Android.Telecom.InCallService.#ctor">
   InCallService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#%3Cinit%3E()">https://developer.android.com/reference/android/telecom/InCallService.html#%3Cinit%3E()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;InCallService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public InCallService()</code></pre>
+    <pre><code class="lang-csharp hljs">public InCallService()</code></pre>
   </div>
 
 
@@ -1467,23 +1150,23 @@ public InCallService()</code></pre>
 
   <a id="Android_Telecom_InCallService__ctor_" data-uid="Android.Telecom.InCallService.#ctor*"></a>
 
-  <h3 id="Android_Telecom_InCallService__ctor_System_Object___" data-uid="Android.Telecom.InCallService.#ctor(System.Object[])">
-  InCallService(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Telecom_InCallService__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Telecom.InCallService.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  InCallService(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;InCallService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public InCallService(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public InCallService(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -1506,10 +1189,10 @@ public InCallService(params object[] args)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_BridgeClassName" data-uid="Android.Telecom.InCallService.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1538,10 +1221,10 @@ public InCallService(params object[] args)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_IsBridgeAbstract" data-uid="Android.Telecom.InCallService.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1570,10 +1253,10 @@ public InCallService(params object[] args)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_IsBridgeCloseable" data-uid="Android.Telecom.InCallService.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1602,10 +1285,10 @@ public InCallService(params object[] args)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_IsBridgeInterface" data-uid="Android.Telecom.InCallService.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1634,10 +1317,10 @@ public InCallService(params object[] args)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_IsBridgeStatic" data-uid="Android.Telecom.InCallService.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1666,7 +1349,7 @@ public InCallService(params object[] args)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_SERVICE_INTERFACE" data-uid="Android.Telecom.InCallService.SERVICE_INTERFACE">
   SERVICE_INTERFACE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#SERVICE_INTERFACE">https://developer.android.com/reference/android/telecom/InCallService.html#SERVICE_INTERFACE</a></p>
@@ -1674,7 +1357,7 @@ public InCallService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String SERVICE_INTERFACE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static String SERVICE_INTERFACE { get; set; }</code></pre>
   </div>
 
 
@@ -1702,7 +1385,7 @@ public InCallService(params object[] args)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_CanAddCall" data-uid="Android.Telecom.InCallService.CanAddCall">
   CanAddCall()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#canAddCall()">https://developer.android.com/reference/android/telecom/InCallService.html#canAddCall()</a></p>
@@ -1731,11 +1414,43 @@ public InCallService(params object[] args)</code></pre>
 
 
 
+  <a id="Android_Telecom_InCallService_CreatePoolableInstance_" data-uid="Android.Telecom.InCallService.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Telecom_InCallService_CreatePoolableInstance" data-uid="Android.Telecom.InCallService.CreatePoolableInstance">
+  CreatePoolableInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for InCallService()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InCallService CreatePoolableInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Telecom.InCallService.html">InCallService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Telecom_InCallService_GetCallAudioState_" data-uid="Android.Telecom.InCallService.GetCallAudioState*"></a>
 
   <h3 id="Android_Telecom_InCallService_GetCallAudioState" data-uid="Android.Telecom.InCallService.GetCallAudioState">
   GetCallAudioState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#getCallAudioState()">https://developer.android.com/reference/android/telecom/InCallService.html#getCallAudioState()</a></p>
@@ -1743,7 +1458,7 @@ public InCallService(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public CallAudioState GetCallAudioState()</code></pre>
   </div>
 
@@ -1769,7 +1484,7 @@ public CallAudioState GetCallAudioState()</code></pre>
 
   <h3 id="Android_Telecom_InCallService_GetCalls" data-uid="Android.Telecom.InCallService.GetCalls">
   GetCalls()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#getCalls()">https://developer.android.com/reference/android/telecom/InCallService.html#getCalls()</a></p>
@@ -1802,7 +1517,7 @@ public CallAudioState GetCallAudioState()</code></pre>
 
   <h3 id="Android_Telecom_InCallService_GetCurrentCallEndpoint" data-uid="Android.Telecom.InCallService.GetCurrentCallEndpoint">
   GetCurrentCallEndpoint()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#getCurrentCallEndpoint()">https://developer.android.com/reference/android/telecom/InCallService.html#getCurrentCallEndpoint()</a></p>
@@ -1835,7 +1550,7 @@ public CallAudioState GetCallAudioState()</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnAvailableCallEndpointsChanged_Java_Util_List_Android_Telecom_CallEndpoint__" data-uid="Android.Telecom.InCallService.OnAvailableCallEndpointsChanged(Java.Util.List{Android.Telecom.CallEndpoint})">
   OnAvailableCallEndpointsChanged(List&lt;CallEndpoint&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onAvailableCallEndpointsChanged(java.util.List)">https://developer.android.com/reference/android/telecom/InCallService.html#onAvailableCallEndpointsChanged(java.util.List)</a></p>
@@ -1868,7 +1583,7 @@ public CallAudioState GetCallAudioState()</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnBringToForeground_System_Boolean_" data-uid="Android.Telecom.InCallService.OnBringToForeground(System.Boolean)">
   OnBringToForeground(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onBringToForeground(boolean)">https://developer.android.com/reference/android/telecom/InCallService.html#onBringToForeground(boolean)</a></p>
@@ -1901,7 +1616,7 @@ public CallAudioState GetCallAudioState()</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnCallAdded_Android_Telecom_Call_" data-uid="Android.Telecom.InCallService.OnCallAdded(Android.Telecom.Call)">
   OnCallAdded(Call)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onCallAdded(android.telecom.Call)">https://developer.android.com/reference/android/telecom/InCallService.html#onCallAdded(android.telecom.Call)</a></p>
@@ -1934,7 +1649,7 @@ public CallAudioState GetCallAudioState()</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnCallAudioStateChanged_Android_Telecom_CallAudioState_" data-uid="Android.Telecom.InCallService.OnCallAudioStateChanged(Android.Telecom.CallAudioState)">
   OnCallAudioStateChanged(CallAudioState)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onCallAudioStateChanged(android.telecom.CallAudioState)">https://developer.android.com/reference/android/telecom/InCallService.html#onCallAudioStateChanged(android.telecom.CallAudioState)</a></p>
@@ -1942,7 +1657,7 @@ public CallAudioState GetCallAudioState()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
   </div>
 
@@ -1968,7 +1683,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnCallEndpointChanged_Android_Telecom_CallEndpoint_" data-uid="Android.Telecom.InCallService.OnCallEndpointChanged(Android.Telecom.CallEndpoint)">
   OnCallEndpointChanged(CallEndpoint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L274"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onCallEndpointChanged(android.telecom.CallEndpoint)">https://developer.android.com/reference/android/telecom/InCallService.html#onCallEndpointChanged(android.telecom.CallEndpoint)</a></p>
@@ -2001,7 +1716,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnCallRemoved_Android_Telecom_Call_" data-uid="Android.Telecom.InCallService.OnCallRemoved(Android.Telecom.Call)">
   OnCallRemoved(Call)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onCallRemoved(android.telecom.Call)">https://developer.android.com/reference/android/telecom/InCallService.html#onCallRemoved(android.telecom.Call)</a></p>
@@ -2034,7 +1749,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnCanAddCallChanged_System_Boolean_" data-uid="Android.Telecom.InCallService.OnCanAddCallChanged(System.Boolean)">
   OnCanAddCallChanged(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onCanAddCallChanged(boolean)">https://developer.android.com/reference/android/telecom/InCallService.html#onCanAddCallChanged(boolean)</a></p>
@@ -2067,7 +1782,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnConnectionEvent_Android_Telecom_Call_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Telecom.InCallService.OnConnectionEvent(Android.Telecom.Call,Java.Lang.String,Android.Os.Bundle)">
   OnConnectionEvent(Call, String, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L300"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onConnectionEvent(android.telecom.Call,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/telecom/InCallService.html#onConnectionEvent(android.telecom.Call,java.lang.String,android.os.Bundle)</a></p>
@@ -2106,7 +1821,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnMuteStateChanged_System_Boolean_" data-uid="Android.Telecom.InCallService.OnMuteStateChanged(System.Boolean)">
   OnMuteStateChanged(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onMuteStateChanged(boolean)">https://developer.android.com/reference/android/telecom/InCallService.html#onMuteStateChanged(boolean)</a></p>
@@ -2139,7 +1854,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_OnSilenceRinger" data-uid="Android.Telecom.InCallService.OnSilenceRinger">
   OnSilenceRinger()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#onSilenceRinger()">https://developer.android.com/reference/android/telecom/InCallService.html#onSilenceRinger()</a></p>
@@ -2166,7 +1881,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_RequestBluetoothAudio_Android_Bluetooth_BluetoothDevice_" data-uid="Android.Telecom.InCallService.RequestBluetoothAudio(Android.Bluetooth.BluetoothDevice)">
   RequestBluetoothAudio(BluetoothDevice)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#requestBluetoothAudio(android.bluetooth.BluetoothDevice)">https://developer.android.com/reference/android/telecom/InCallService.html#requestBluetoothAudio(android.bluetooth.BluetoothDevice)</a></p>
@@ -2174,7 +1889,7 @@ public void OnCallAudioStateChanged(CallAudioState arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void RequestBluetoothAudio(BluetoothDevice arg0)</code></pre>
   </div>
 
@@ -2200,7 +1915,7 @@ public void RequestBluetoothAudio(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_RequestCallEndpointChange_Android_Telecom_CallEndpoint_Java_Util_Concurrent_Executor_Android_Os_OutcomeReceiver_Java_Lang_Void_Android_Telecom_CallEndpointException__" data-uid="Android.Telecom.InCallService.RequestCallEndpointChange(Android.Telecom.CallEndpoint,Java.Util.Concurrent.Executor,Android.Os.OutcomeReceiver{Java.Lang.Void,Android.Telecom.CallEndpointException})">
   RequestCallEndpointChange(CallEndpoint, Executor, OutcomeReceiver&lt;Void, CallEndpointException&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#requestCallEndpointChange(android.telecom.CallEndpoint,java.util.concurrent.Executor,android.os.OutcomeReceiver)">https://developer.android.com/reference/android/telecom/InCallService.html#requestCallEndpointChange(android.telecom.CallEndpoint,java.util.concurrent.Executor,android.os.OutcomeReceiver)</a></p>
@@ -2239,7 +1954,7 @@ public void RequestBluetoothAudio(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_SetAudioRoute_System_Int32_" data-uid="Android.Telecom.InCallService.SetAudioRoute(System.Int32)">
   SetAudioRoute(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#setAudioRoute(int)">https://developer.android.com/reference/android/telecom/InCallService.html#setAudioRoute(int)</a></p>
@@ -2247,7 +1962,7 @@ public void RequestBluetoothAudio(BluetoothDevice arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetAudioRoute(int arg0)</code></pre>
   </div>
 
@@ -2273,7 +1988,7 @@ public void SetAudioRoute(int arg0)</code></pre>
 
   <h3 id="Android_Telecom_InCallService_SetMuted_System_Boolean_" data-uid="Android.Telecom.InCallService.SetMuted(System.Boolean)">
   SetMuted(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telecom/InCallService.html#setMuted(boolean)">https://developer.android.com/reference/android/telecom/InCallService.html#setMuted(boolean)</a></p>
@@ -2306,7 +2021,7 @@ public void SetAudioRoute(int arg0)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L170" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telecom/InCallService.cs/#L131" class="edit-link">Edit this page</a>
         </div>
 
 

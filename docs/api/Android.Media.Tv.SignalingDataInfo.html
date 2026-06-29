@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SignalingDataInfo | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SignalingDataInfo | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the .NET suite for Android">
+      <meta name="description" content="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Tv_SignalingDataInfo.md&amp;value=---%0Auid%3A%20Android.Media.Tv.SignalingDataInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Tv.SignalingDataInfo">
+
+
+
+  <h1 id="Android_Media_Tv_SignalingDataInfo" data-uid="Android.Media.Tv.SignalingDataInfo" class="text-break">
+Class SignalingDataInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Tv.html">Tv</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SignalingDataInfo : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>&gt;</div>
+      <div><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></div>
+      <div><span class="xref">SignalingDataInfo</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_CONTENTS_FILE_DESCRIPTOR">Parcelable.CONTENTS_FILE_DESCRIPTOR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_PARCELABLE_WRITE_RETURN_VALUE">Parcelable.PARCELABLE_WRITE_RETURN_VALUE</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo__ctor_" data-uid="Android.Media.Tv.SignalingDataInfo.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo__ctor_Java_Lang_String_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Media.Tv.SignalingDataInfo.#ctor(Java.Lang.String,Java.Lang.String,System.Int32,System.Int32)">
+  SignalingDataInfo(String, String, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,int,int)">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignalingDataInfo(String arg0, String arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo__ctor_" data-uid="Android.Media.Tv.SignalingDataInfo.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo__ctor_Java_Lang_String_Java_Lang_String_System_Int32_System_Int32_Java_Lang_String_" data-uid="Android.Media.Tv.SignalingDataInfo.#ctor(Java.Lang.String,Java.Lang.String,System.Int32,System.Int32,Java.Lang.String)">
+  SignalingDataInfo(String, String, int, int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,int,int,java.lang.String)">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,int,int,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignalingDataInfo(String arg0, String arg1, int arg2, int arg3, String arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo__ctor_" data-uid="Android.Media.Tv.SignalingDataInfo.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Media.Tv.SignalingDataInfo.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  SignalingDataInfo(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public SignalingDataInfo(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_BridgeClassName_" data-uid="Android.Media.Tv.SignalingDataInfo.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_BridgeClassName" data-uid="Android.Media.Tv.SignalingDataInfo.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_CONTENT_ENCODING_BASE64_" data-uid="Android.Media.Tv.SignalingDataInfo.CONTENT_ENCODING_BASE64*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_CONTENT_ENCODING_BASE64" data-uid="Android.Media.Tv.SignalingDataInfo.CONTENT_ENCODING_BASE64">
+  CONTENT_ENCODING_BASE64
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#CONTENT_ENCODING_BASE64">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#CONTENT_ENCODING_BASE64</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CONTENT_ENCODING_BASE64 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_CONTENT_ENCODING_UTF_8_" data-uid="Android.Media.Tv.SignalingDataInfo.CONTENT_ENCODING_UTF_8*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_CONTENT_ENCODING_UTF_8" data-uid="Android.Media.Tv.SignalingDataInfo.CONTENT_ENCODING_UTF_8">
+  CONTENT_ENCODING_UTF_8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#CONTENT_ENCODING_UTF_8">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#CONTENT_ENCODING_UTF_8</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CONTENT_ENCODING_UTF_8 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_CREATOR_" data-uid="Android.Media.Tv.SignalingDataInfo.CREATOR*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_CREATOR" data-uid="Android.Media.Tv.SignalingDataInfo.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#CREATOR">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_IsBridgeAbstract_" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_IsBridgeAbstract" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_IsBridgeCloseable_" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_IsBridgeCloseable" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_IsBridgeInterface_" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_IsBridgeInterface" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_IsBridgeStatic_" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_IsBridgeStatic" data-uid="Android.Media.Tv.SignalingDataInfo.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_LLS_NO_GROUP_ID_" data-uid="Android.Media.Tv.SignalingDataInfo.LLS_NO_GROUP_ID*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_LLS_NO_GROUP_ID" data-uid="Android.Media.Tv.SignalingDataInfo.LLS_NO_GROUP_ID">
+  LLS_NO_GROUP_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#LLS_NO_GROUP_ID">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#LLS_NO_GROUP_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LLS_NO_GROUP_ID { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_CreatePoolableInstance_" data-uid="Android.Media.Tv.SignalingDataInfo.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Media.Tv.SignalingDataInfo.CreatePoolableInstance(Java.Lang.String,Java.Lang.String,System.Int32,System.Int32)">
+  CreatePoolableInstance(String, String, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for SignalingDataInfo(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, int arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SignalingDataInfo CreatePoolableInstance(String arg0, String arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Tv.SignalingDataInfo.html">SignalingDataInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_CreatePoolableInstance_" data-uid="Android.Media.Tv.SignalingDataInfo.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_System_Int32_System_Int32_Java_Lang_String_" data-uid="Android.Media.Tv.SignalingDataInfo.CreatePoolableInstance(Java.Lang.String,Java.Lang.String,System.Int32,System.Int32,Java.Lang.String)">
+  CreatePoolableInstance(String, String, int, int, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for SignalingDataInfo(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Lang.String arg4)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SignalingDataInfo CreatePoolableInstance(String arg0, String arg1, int arg2, int arg3, String arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Tv.SignalingDataInfo.html">SignalingDataInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_DescribeContents_" data-uid="Android.Media.Tv.SignalingDataInfo.DescribeContents*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_DescribeContents" data-uid="Android.Media.Tv.SignalingDataInfo.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#describeContents()">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_GetEncoding_" data-uid="Android.Media.Tv.SignalingDataInfo.GetEncoding*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_GetEncoding" data-uid="Android.Media.Tv.SignalingDataInfo.GetEncoding">
+  GetEncoding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getEncoding()">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getEncoding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetEncoding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_GetGroup_" data-uid="Android.Media.Tv.SignalingDataInfo.GetGroup*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_GetGroup" data-uid="Android.Media.Tv.SignalingDataInfo.GetGroup">
+  GetGroup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getGroup()">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getGroup()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGroup()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_GetSignalingDataType_" data-uid="Android.Media.Tv.SignalingDataInfo.GetSignalingDataType*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_GetSignalingDataType" data-uid="Android.Media.Tv.SignalingDataInfo.GetSignalingDataType">
+  GetSignalingDataType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getSignalingDataType()">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getSignalingDataType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetSignalingDataType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_GetTable_" data-uid="Android.Media.Tv.SignalingDataInfo.GetTable*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_GetTable" data-uid="Android.Media.Tv.SignalingDataInfo.GetTable">
+  GetTable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getTable()">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getTable()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetTable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_GetVersion_" data-uid="Android.Media.Tv.SignalingDataInfo.GetVersion*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_GetVersion" data-uid="Android.Media.Tv.SignalingDataInfo.GetVersion">
+  GetVersion()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getVersion()">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#getVersion()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_SignalingDataInfo_WriteToParcel_" data-uid="Android.Media.Tv.SignalingDataInfo.WriteToParcel*"></a>
+
+  <h3 id="Android_Media_Tv_SignalingDataInfo_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Media.Tv.SignalingDataInfo.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/media/tv/SignalingDataInfo.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/SignalingDataInfo.cs/#L63" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2024 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

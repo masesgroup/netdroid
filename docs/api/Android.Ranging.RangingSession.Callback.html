@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class RangingSession.Callback | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RangingSession.Callback | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the .NET suite for Android">
+      <meta name="description" content="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Ranging_RangingSession_Callback.md&amp;value=---%0Auid%3A%20Android.Ranging.RangingSession.Callback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Ranging.RangingSession.Callback">
+
+
+
+  <h1 id="Android_Ranging_RangingSession_Callback" data-uid="Android.Ranging.RangingSession.Callback" class="text-break">
+Class RangingSession.Callback  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Ranging.html">Ranging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RangingSession.Callback : JVMBridgeBase&lt;RangingSession.Callback&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Ranging.RangingSession.html">RangingSession</a>.<a class="xref" href="Android.Ranging.RangingSession.Callback.html">Callback</a>&gt;</div>
+      <div><span class="xref">RangingSession.Callback</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Ranging_RangingSession_Callback__ctor_" data-uid="Android.Ranging.RangingSession.Callback.#ctor*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Ranging.RangingSession.Callback.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Callback(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Callback(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Ranging_RangingSession_Callback_BridgeClassName_" data-uid="Android.Ranging.RangingSession.Callback.BridgeClassName*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_BridgeClassName" data-uid="Android.Ranging.RangingSession.Callback.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_IsBridgeAbstract_" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_IsBridgeAbstract" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_IsBridgeCloseable_" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_IsBridgeCloseable" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_IsBridgeInterface_" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_IsBridgeInterface" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_IsBridgeStatic_" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_IsBridgeStatic" data-uid="Android.Ranging.RangingSession.Callback.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_REASON_LOCAL_REQUEST_" data-uid="Android.Ranging.RangingSession.Callback.REASON_LOCAL_REQUEST*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_REASON_LOCAL_REQUEST" data-uid="Android.Ranging.RangingSession.Callback.REASON_LOCAL_REQUEST">
+  REASON_LOCAL_REQUEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_LOCAL_REQUEST">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_LOCAL_REQUEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REASON_LOCAL_REQUEST { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_REASON_NO_PEERS_FOUND_" data-uid="Android.Ranging.RangingSession.Callback.REASON_NO_PEERS_FOUND*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_REASON_NO_PEERS_FOUND" data-uid="Android.Ranging.RangingSession.Callback.REASON_NO_PEERS_FOUND">
+  REASON_NO_PEERS_FOUND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_NO_PEERS_FOUND">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_NO_PEERS_FOUND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REASON_NO_PEERS_FOUND { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_REASON_REMOTE_REQUEST_" data-uid="Android.Ranging.RangingSession.Callback.REASON_REMOTE_REQUEST*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_REASON_REMOTE_REQUEST" data-uid="Android.Ranging.RangingSession.Callback.REASON_REMOTE_REQUEST">
+  REASON_REMOTE_REQUEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_REMOTE_REQUEST">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_REMOTE_REQUEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REASON_REMOTE_REQUEST { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_REASON_SYSTEM_POLICY_" data-uid="Android.Ranging.RangingSession.Callback.REASON_SYSTEM_POLICY*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_REASON_SYSTEM_POLICY" data-uid="Android.Ranging.RangingSession.Callback.REASON_SYSTEM_POLICY">
+  REASON_SYSTEM_POLICY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_SYSTEM_POLICY">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_SYSTEM_POLICY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REASON_SYSTEM_POLICY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_REASON_UNKNOWN_" data-uid="Android.Ranging.RangingSession.Callback.REASON_UNKNOWN*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_REASON_UNKNOWN" data-uid="Android.Ranging.RangingSession.Callback.REASON_UNKNOWN">
+  REASON_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_UNKNOWN">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REASON_UNKNOWN { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_REASON_UNSUPPORTED_" data-uid="Android.Ranging.RangingSession.Callback.REASON_UNSUPPORTED*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_REASON_UNSUPPORTED" data-uid="Android.Ranging.RangingSession.Callback.REASON_UNSUPPORTED">
+  REASON_UNSUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_UNSUPPORTED">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#REASON_UNSUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REASON_UNSUPPORTED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Ranging_RangingSession_Callback_OnClosed_" data-uid="Android.Ranging.RangingSession.Callback.OnClosed*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_OnClosed_System_Int32_" data-uid="Android.Ranging.RangingSession.Callback.OnClosed(System.Int32)">
+  OnClosed(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onClosed(int)">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onClosed(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnClosed(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_OnOpenFailed_" data-uid="Android.Ranging.RangingSession.Callback.OnOpenFailed*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_OnOpenFailed_System_Int32_" data-uid="Android.Ranging.RangingSession.Callback.OnOpenFailed(System.Int32)">
+  OnOpenFailed(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onOpenFailed(int)">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onOpenFailed(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnOpenFailed(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_OnOpened_" data-uid="Android.Ranging.RangingSession.Callback.OnOpened*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_OnOpened" data-uid="Android.Ranging.RangingSession.Callback.OnOpened">
+  OnOpened()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onOpened()">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onOpened()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnOpened()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_OnResults_" data-uid="Android.Ranging.RangingSession.Callback.OnResults*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_OnResults_Android_Ranging_RangingDevice_Android_Ranging_RangingData_" data-uid="Android.Ranging.RangingSession.Callback.OnResults(Android.Ranging.RangingDevice,Android.Ranging.RangingData)">
+  OnResults(RangingDevice, RangingData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onResults(android.ranging.RangingDevice,android.ranging.RangingData)">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onResults(android.ranging.RangingDevice,android.ranging.RangingData)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnResults(RangingDevice arg0, RangingData arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Ranging.RangingDevice.html">RangingDevice</a></dt>
+    <dd><p><a class="xref" href="Android.Ranging.RangingDevice.html">RangingDevice</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Ranging.RangingData.html">RangingData</a></dt>
+    <dd><p><a class="xref" href="Android.Ranging.RangingData.html">RangingData</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_OnStarted_" data-uid="Android.Ranging.RangingSession.Callback.OnStarted*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_OnStarted_Android_Ranging_RangingDevice_System_Int32_" data-uid="Android.Ranging.RangingSession.Callback.OnStarted(Android.Ranging.RangingDevice,System.Int32)">
+  OnStarted(RangingDevice, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onStarted(android.ranging.RangingDevice,int)">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onStarted(android.ranging.RangingDevice,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStarted(RangingDevice arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Ranging.RangingDevice.html">RangingDevice</a></dt>
+    <dd><p><a class="xref" href="Android.Ranging.RangingDevice.html">RangingDevice</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Ranging_RangingSession_Callback_OnStopped_" data-uid="Android.Ranging.RangingSession.Callback.OnStopped*"></a>
+
+  <h3 id="Android_Ranging_RangingSession_Callback_OnStopped_Android_Ranging_RangingDevice_System_Int32_" data-uid="Android.Ranging.RangingSession.Callback.OnStopped(Android.Ranging.RangingDevice,System.Int32)">
+  OnStopped(RangingDevice, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onStopped(android.ranging.RangingDevice,int)">https://developer.android.com/reference/android/ranging/RangingSession.Callback.html#onStopped(android.ranging.RangingDevice,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStopped(RangingDevice arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Ranging.RangingDevice.html">RangingDevice</a></dt>
+    <dd><p><a class="xref" href="Android.Ranging.RangingDevice.html">RangingDevice</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Ranging/RangingSession.cs/#L168" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2024 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

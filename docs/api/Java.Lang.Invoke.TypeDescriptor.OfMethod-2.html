@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2" class="text-break">
-Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L558"><i class="bi bi-code-slash"></i></a>
+Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondar
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TypeDescriptor.OfMethod&lt;F, M&gt; : TypeDescriptor, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ITypeDescriptor where F : TypeDescriptor.OfField&lt;F&gt; where M : TypeDescriptor.OfMethod&lt;F, M&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class TypeDescriptor.OfMethod&lt;F, M&gt; : TypeDescriptor, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ITypeDescriptor where F : TypeDescriptor.OfField&lt;F&gt; where M : TypeDescriptor.OfMethod&lt;F, M&gt;</code></pre>
   </div>
 
 
@@ -122,8 +122,8 @@ Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondar
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Invoke.TypeDescriptor.html">TypeDescriptor</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Lang.Invoke.TypeDescriptor.html">TypeDescriptor</a>&gt;</div>
       <div><a class="xref" href="Java.Lang.Invoke.TypeDescriptor.html">TypeDescriptor</a></div>
       <div><span class="xref">TypeDescriptor.OfMethod&lt;F, M&gt;</span></div>
     </dd>
@@ -133,11 +133,13 @@ Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondar
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Lang.Invoke.ITypeDescriptor.html">ITypeDescriptor</a></div>
     </dd>
   </dl>
@@ -149,351 +151,6 @@ Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondar
     <div>
       <a class="xref" href="Java.Lang.Invoke.TypeDescriptor.html#Java_Lang_Invoke_TypeDescriptor_DescriptorString">TypeDescriptor.DescriptorString()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;TypeDescriptor&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;TypeDescriptor&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;TypeDescriptor&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeDescriptor&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;TypeDescriptor&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;TypeDescriptor&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;TypeDescriptor&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -501,6 +158,9 @@ Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondar
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -514,51 +174,23 @@ Class TypeDescriptor.OfMethod&lt;F, M&gt;  <a class="header-action link-secondar
 
   <a id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2__ctor_" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.#ctor*"></a>
 
-  <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2__ctor" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.#ctor">
-  OfMethod()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  OfMethod(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public OfMethod()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2__ctor_" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.#ctor*"></a>
-
-  <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2__ctor_System_Object___" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.#ctor(System.Object[])">
-  OfMethod(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L230"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public OfMethod(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public OfMethod(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -581,10 +213,10 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_BridgeClassName" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -613,10 +245,10 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_IsBridgeAbstract" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -645,10 +277,10 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_IsBridgeCloseable" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -677,10 +309,10 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_IsBridgeInterface" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -709,10 +341,10 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_IsBridgeStatic" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -745,7 +377,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_ChangeParameterType_System_Int32__0_" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.ChangeParameterType(System.Int32,`0)">
   ChangeParameterType(int, F)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L563"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)</a></p>
@@ -787,7 +419,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_ChangeReturnType__0_" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.ChangeReturnType(`0)">
   ChangeReturnType(F)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L572"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)</a></p>
@@ -826,7 +458,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_DropParameterTypes_System_Int32_System_Int32_" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.DropParameterTypes(System.Int32,System.Int32)">
   DropParameterTypes(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L582"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#dropParameterTypes(int,int)">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#dropParameterTypes(int,int)</a></p>
@@ -868,10 +500,10 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_InsertParameterTypes_System_Int32__0___" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.InsertParameterTypes(System.Int32,`0[])">
   InsertParameterTypes(int, params F[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L657"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField...)">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField...)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -910,7 +542,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_ParameterArray" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.ParameterArray">
   ParameterArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L537"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterArray()">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterArray()</a></p>
@@ -943,7 +575,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_ParameterCount" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.ParameterCount">
   ParameterCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L545"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterCount()">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterCount()</a></p>
@@ -976,7 +608,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_ParameterList" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.ParameterList">
   ParameterList()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterList()">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterList()</a></p>
@@ -1009,7 +641,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_ParameterType_System_Int32_" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.ParameterType(System.Int32)">
   ParameterType(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L521"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#parameterType(int)</a></p>
@@ -1048,7 +680,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_ReturnType" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.ReturnType">
   ReturnType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L529"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#returnType()">https://developer.android.com/reference/java/lang/invoke/TypeDescriptor.OfMethod.html#returnType()</a></p>
@@ -1085,7 +717,7 @@ public OfMethod(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_TypeDescriptor_OfMethod_2_op_Implicit_Java_Lang_Invoke_TypeDescriptor_OfMethod__0__1___Java_Lang_Invoke_TypeDescriptor_OfMethod" data-uid="Java.Lang.Invoke.TypeDescriptor.OfMethod`2.op_Implicit(Java.Lang.Invoke.TypeDescriptor.OfMethod{`0,`1})~Java.Lang.Invoke.TypeDescriptor.OfMethod">
   implicit operator OfMethod(OfMethod&lt;F, M&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L503"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Lang.Invoke.TypeDescriptor.OfMethod-2.html">TypeDescriptor.OfMethod&lt;F, M&gt;</a> to <a class="xref" href="Java.Lang.Invoke.TypeDescriptor.OfMethod.html">TypeDescriptor.OfMethod</a></p>
@@ -1122,7 +754,7 @@ public OfMethod(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L558" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Lang/Invoke/TypeDescriptor.cs/#L493" class="edit-link">Edit this page</a>
         </div>
 
 

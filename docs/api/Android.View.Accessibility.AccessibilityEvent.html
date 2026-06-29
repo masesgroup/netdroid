@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_View_Accessibility_AccessibilityEvent" data-uid="Android.View.Accessibility.AccessibilityEvent" class="text-break">
-Class AccessibilityEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L74"><i class="bi bi-code-slash"></i></a>
+Class AccessibilityEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AccessibilityEvent : AccessibilityRecord, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class AccessibilityEvent : AccessibilityRecord, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a>&gt;</div>
       <div><a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html">AccessibilityRecord</a></div>
       <div><span class="xref">AccessibilityEvent</span></div>
     </dd>
@@ -124,11 +124,13 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
 
@@ -136,6 +138,9 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_CreatePoolableInstance_Android_View_Accessibility_AccessibilityRecord_">AccessibilityRecord.CreatePoolableInstance(AccessibilityRecord)</a>
+    </div>
     <div>
       <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_Obtain">AccessibilityRecord.Obtain()</a>
     </div>
@@ -292,351 +297,6 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
     <div>
       <a class="xref" href="Android.View.Accessibility.AccessibilityRecord.html#Android_View_Accessibility_AccessibilityRecord_SetToIndex_System_Int32_">AccessibilityRecord.SetToIndex(int)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AccessibilityRecord&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AccessibilityRecord&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AccessibilityRecord&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -644,6 +304,9 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -659,10 +322,10 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor">
   AccessibilityEvent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -686,7 +349,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor_Android_View_Accessibility_AccessibilityEvent_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor(Android.View.Accessibility.AccessibilityEvent)">
   AccessibilityEvent(AccessibilityEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(android.view.accessibility.AccessibilityEvent)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(android.view.accessibility.AccessibilityEvent)</a></p>
@@ -717,9 +380,42 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <a id="Android_View_Accessibility_AccessibilityEvent__ctor_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor*"></a>
 
+  <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AccessibilityEvent(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AccessibilityEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent__ctor_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor*"></a>
+
   <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor(System.Int32)">
   AccessibilityEvent(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#%3Cinit%3E(int)</a></p>
@@ -748,38 +444,6 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Android_View_Accessibility_AccessibilityEvent__ctor_" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor*"></a>
-
-  <h3 id="Android_View_Accessibility_AccessibilityEvent__ctor_System_Object___" data-uid="Android.View.Accessibility.AccessibilityEvent.#ctor(System.Object[])">
-  AccessibilityEvent(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AccessibilityEvent(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -788,10 +452,10 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_BridgeClassName" data-uid="Android.View.Accessibility.AccessibilityEvent.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -816,11 +480,43 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CHECKED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CHECKED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CHECKED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CHECKED">
+  CONTENT_CHANGE_TYPE_CHECKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CHECKED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CHECKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_CHECKED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION*"></a>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION">
   CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION</a></p>
@@ -828,7 +524,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION { get; set; }</code></pre>
   </div>
 
 
@@ -852,7 +548,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_CONTENT_INVALID" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_INVALID">
   CONTENT_CHANGE_TYPE_CONTENT_INVALID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_INVALID">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_CONTENT_INVALID</a></p>
@@ -860,7 +556,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_CONTENT_INVALID { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_CONTENT_INVALID { get; set; }</code></pre>
   </div>
 
 
@@ -884,7 +580,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_CANCELLED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_CANCELLED">
   CONTENT_CHANGE_TYPE_DRAG_CANCELLED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_CANCELLED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_CANCELLED</a></p>
@@ -892,7 +588,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_CANCELLED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_CANCELLED { get; set; }</code></pre>
   </div>
 
 
@@ -916,7 +612,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_DROPPED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_DROPPED">
   CONTENT_CHANGE_TYPE_DRAG_DROPPED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_DROPPED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_DROPPED</a></p>
@@ -924,7 +620,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_DROPPED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_DROPPED { get; set; }</code></pre>
   </div>
 
 
@@ -948,7 +644,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_DRAG_STARTED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_STARTED">
   CONTENT_CHANGE_TYPE_DRAG_STARTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_STARTED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_DRAG_STARTED</a></p>
@@ -956,7 +652,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_STARTED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_DRAG_STARTED { get; set; }</code></pre>
   </div>
 
 
@@ -980,7 +676,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_ENABLED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_ENABLED">
   CONTENT_CHANGE_TYPE_ENABLED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ENABLED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ENABLED</a></p>
@@ -988,7 +684,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_ENABLED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_ENABLED { get; set; }</code></pre>
   </div>
 
 
@@ -1012,7 +708,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_ERROR" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_ERROR">
   CONTENT_CHANGE_TYPE_ERROR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ERROR">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_ERROR</a></p>
@@ -1020,7 +716,39 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_ERROR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_ERROR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_EXPANDED_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_EXPANDED*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_EXPANDED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_EXPANDED">
+  CONTENT_CHANGE_TYPE_EXPANDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_EXPANDED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_EXPANDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_EXPANDED { get; set; }</code></pre>
   </div>
 
 
@@ -1044,7 +772,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_APPEARED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_APPEARED">
   CONTENT_CHANGE_TYPE_PANE_APPEARED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_APPEARED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_APPEARED</a></p>
@@ -1052,7 +780,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_APPEARED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_APPEARED { get; set; }</code></pre>
   </div>
 
 
@@ -1076,7 +804,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_DISAPPEARED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_DISAPPEARED">
   CONTENT_CHANGE_TYPE_PANE_DISAPPEARED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_DISAPPEARED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_DISAPPEARED</a></p>
@@ -1084,7 +812,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_DISAPPEARED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_DISAPPEARED { get; set; }</code></pre>
   </div>
 
 
@@ -1108,7 +836,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_PANE_TITLE" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_PANE_TITLE">
   CONTENT_CHANGE_TYPE_PANE_TITLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_TITLE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_PANE_TITLE</a></p>
@@ -1116,7 +844,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_TITLE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_PANE_TITLE { get; set; }</code></pre>
   </div>
 
 
@@ -1140,7 +868,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_STATE_DESCRIPTION" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_STATE_DESCRIPTION">
   CONTENT_CHANGE_TYPE_STATE_DESCRIPTION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_STATE_DESCRIPTION">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_STATE_DESCRIPTION</a></p>
@@ -1148,7 +876,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_STATE_DESCRIPTION { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_STATE_DESCRIPTION { get; set; }</code></pre>
   </div>
 
 
@@ -1172,7 +900,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_SUBTREE" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_SUBTREE">
   CONTENT_CHANGE_TYPE_SUBTREE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_SUBTREE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_SUBTREE</a></p>
@@ -1180,7 +908,39 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_SUBTREE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_SUBTREE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION_" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION">
+  CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_SUPPLEMENTAL_DESCRIPTION { get; set; }</code></pre>
   </div>
 
 
@@ -1204,7 +964,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_TEXT" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_TEXT">
   CONTENT_CHANGE_TYPE_TEXT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_TEXT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_TEXT</a></p>
@@ -1212,7 +972,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_TEXT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_TEXT { get; set; }</code></pre>
   </div>
 
 
@@ -1236,7 +996,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CONTENT_CHANGE_TYPE_UNDEFINED" data-uid="Android.View.Accessibility.AccessibilityEvent.CONTENT_CHANGE_TYPE_UNDEFINED">
   CONTENT_CHANGE_TYPE_UNDEFINED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_UNDEFINED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CONTENT_CHANGE_TYPE_UNDEFINED</a></p>
@@ -1244,7 +1004,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_UNDEFINED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CONTENT_CHANGE_TYPE_UNDEFINED { get; set; }</code></pre>
   </div>
 
 
@@ -1268,7 +1028,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_CREATOR" data-uid="Android.View.Accessibility.AccessibilityEvent.CREATOR">
   CREATOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CREATOR">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CREATOR</a></p>
@@ -1276,7 +1036,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; set; }</code></pre>
   </div>
 
 
@@ -1300,7 +1060,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_INVALID_POSITION" data-uid="Android.View.Accessibility.AccessibilityEvent.INVALID_POSITION">
   INVALID_POSITION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#INVALID_POSITION">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#INVALID_POSITION</a></p>
@@ -1308,7 +1068,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int INVALID_POSITION { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int INVALID_POSITION { get; set; }</code></pre>
   </div>
 
 
@@ -1332,10 +1092,10 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeAbstract" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1364,10 +1124,10 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeCloseable" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1396,10 +1156,10 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeInterface" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1428,10 +1188,10 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_IsBridgeStatic" data-uid="Android.View.Accessibility.AccessibilityEvent.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1460,7 +1220,7 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_MAX_TEXT_LENGTH" data-uid="Android.View.Accessibility.AccessibilityEvent.MAX_TEXT_LENGTH">
   MAX_TEXT_LENGTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#MAX_TEXT_LENGTH">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#MAX_TEXT_LENGTH</a></p>
@@ -1468,8 +1228,8 @@ Class AccessibilityEvent  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int MAX_TEXT_LENGTH { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int MAX_TEXT_LENGTH { get; set; }</code></pre>
   </div>
 
 
@@ -1493,7 +1253,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_LISTENING_END" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_LISTENING_END">
   SPEECH_STATE_LISTENING_END
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_END</a></p>
@@ -1501,7 +1261,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_LISTENING_END { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_LISTENING_END { get; set; }</code></pre>
   </div>
 
 
@@ -1525,7 +1285,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_LISTENING_START" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_LISTENING_START">
   SPEECH_STATE_LISTENING_START
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_START</a></p>
@@ -1533,7 +1293,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_LISTENING_START { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_LISTENING_START { get; set; }</code></pre>
   </div>
 
 
@@ -1557,7 +1317,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_SPEAKING_END" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_SPEAKING_END">
   SPEECH_STATE_SPEAKING_END
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_END</a></p>
@@ -1565,7 +1325,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_SPEAKING_END { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_SPEAKING_END { get; set; }</code></pre>
   </div>
 
 
@@ -1589,7 +1349,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SPEECH_STATE_SPEAKING_START" data-uid="Android.View.Accessibility.AccessibilityEvent.SPEECH_STATE_SPEAKING_START">
   SPEECH_STATE_SPEAKING_START
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_SPEAKING_START</a></p>
@@ -1597,7 +1357,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_SPEAKING_START { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SPEECH_STATE_SPEAKING_START { get; set; }</code></pre>
   </div>
 
 
@@ -1621,7 +1381,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPES_ALL_MASK" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPES_ALL_MASK">
   TYPES_ALL_MASK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L331"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPES_ALL_MASK">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPES_ALL_MASK</a></p>
@@ -1629,7 +1389,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPES_ALL_MASK { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPES_ALL_MASK { get; set; }</code></pre>
   </div>
 
 
@@ -1653,7 +1413,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_ANNOUNCEMENT" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_ANNOUNCEMENT">
   TYPE_ANNOUNCEMENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ANNOUNCEMENT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ANNOUNCEMENT</a></p>
@@ -1661,7 +1421,8 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_ANNOUNCEMENT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int TYPE_ANNOUNCEMENT { get; set; }</code></pre>
   </div>
 
 
@@ -1685,7 +1446,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_ASSIST_READING_CONTEXT" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_ASSIST_READING_CONTEXT">
   TYPE_ASSIST_READING_CONTEXT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ASSIST_READING_CONTEXT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_ASSIST_READING_CONTEXT</a></p>
@@ -1693,7 +1454,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_ASSIST_READING_CONTEXT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_ASSIST_READING_CONTEXT { get; set; }</code></pre>
   </div>
 
 
@@ -1717,7 +1478,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_GESTURE_DETECTION_END" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_GESTURE_DETECTION_END">
   TYPE_GESTURE_DETECTION_END
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_END</a></p>
@@ -1725,7 +1486,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_GESTURE_DETECTION_END { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_GESTURE_DETECTION_END { get; set; }</code></pre>
   </div>
 
 
@@ -1749,7 +1510,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_GESTURE_DETECTION_START" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_GESTURE_DETECTION_START">
   TYPE_GESTURE_DETECTION_START
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_GESTURE_DETECTION_START</a></p>
@@ -1757,7 +1518,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_GESTURE_DETECTION_START { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_GESTURE_DETECTION_START { get; set; }</code></pre>
   </div>
 
 
@@ -1781,7 +1542,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_NOTIFICATION_STATE_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_NOTIFICATION_STATE_CHANGED">
   TYPE_NOTIFICATION_STATE_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_NOTIFICATION_STATE_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_NOTIFICATION_STATE_CHANGED</a></p>
@@ -1789,7 +1550,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_NOTIFICATION_STATE_CHANGED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_NOTIFICATION_STATE_CHANGED { get; set; }</code></pre>
   </div>
 
 
@@ -1813,7 +1574,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_SPEECH_STATE_CHANGE" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_SPEECH_STATE_CHANGE">
   TYPE_SPEECH_STATE_CHANGE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_SPEECH_STATE_CHANGE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_SPEECH_STATE_CHANGE</a></p>
@@ -1821,7 +1582,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_SPEECH_STATE_CHANGE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_SPEECH_STATE_CHANGE { get; set; }</code></pre>
   </div>
 
 
@@ -1845,7 +1606,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_EXPLORATION_GESTURE_END" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_END">
   TYPE_TOUCH_EXPLORATION_GESTURE_END
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_END</a></p>
@@ -1853,7 +1614,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_EXPLORATION_GESTURE_END { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_EXPLORATION_GESTURE_END { get; set; }</code></pre>
   </div>
 
 
@@ -1877,7 +1638,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_EXPLORATION_GESTURE_START" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_START">
   TYPE_TOUCH_EXPLORATION_GESTURE_START
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_EXPLORATION_GESTURE_START</a></p>
@@ -1885,7 +1646,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_EXPLORATION_GESTURE_START { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_EXPLORATION_GESTURE_START { get; set; }</code></pre>
   </div>
 
 
@@ -1909,7 +1670,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_INTERACTION_END" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_INTERACTION_END">
   TYPE_TOUCH_INTERACTION_END
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_END">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_END</a></p>
@@ -1917,7 +1678,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_INTERACTION_END { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_INTERACTION_END { get; set; }</code></pre>
   </div>
 
 
@@ -1941,7 +1702,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_TOUCH_INTERACTION_START" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_TOUCH_INTERACTION_START">
   TYPE_TOUCH_INTERACTION_START
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_START">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_TOUCH_INTERACTION_START</a></p>
@@ -1949,7 +1710,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_INTERACTION_START { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_TOUCH_INTERACTION_START { get; set; }</code></pre>
   </div>
 
 
@@ -1973,7 +1734,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_ACCESSIBILITY_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED">
   TYPE_VIEW_ACCESSIBILITY_FOCUSED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUSED</a></p>
@@ -1981,7 +1742,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_ACCESSIBILITY_FOCUSED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_ACCESSIBILITY_FOCUSED { get; set; }</code></pre>
   </div>
 
 
@@ -2005,7 +1766,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED">
   TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED</a></p>
@@ -2013,7 +1774,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED { get; set; }</code></pre>
   </div>
 
 
@@ -2037,7 +1798,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_CLICKED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_CLICKED">
   TYPE_VIEW_CLICKED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CLICKED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CLICKED</a></p>
@@ -2045,7 +1806,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_CLICKED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_CLICKED { get; set; }</code></pre>
   </div>
 
 
@@ -2069,7 +1830,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_CONTEXT_CLICKED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_CONTEXT_CLICKED">
   TYPE_VIEW_CONTEXT_CLICKED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CONTEXT_CLICKED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_CONTEXT_CLICKED</a></p>
@@ -2077,7 +1838,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_CONTEXT_CLICKED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_CONTEXT_CLICKED { get; set; }</code></pre>
   </div>
 
 
@@ -2101,7 +1862,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_FOCUSED">
   TYPE_VIEW_FOCUSED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L279"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_FOCUSED</a></p>
@@ -2109,7 +1870,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_FOCUSED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_FOCUSED { get; set; }</code></pre>
   </div>
 
 
@@ -2133,7 +1894,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_HOVER_ENTER" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_HOVER_ENTER">
   TYPE_VIEW_HOVER_ENTER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_ENTER">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_ENTER</a></p>
@@ -2141,7 +1902,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_HOVER_ENTER { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_HOVER_ENTER { get; set; }</code></pre>
   </div>
 
 
@@ -2165,7 +1926,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_HOVER_EXIT" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_HOVER_EXIT">
   TYPE_VIEW_HOVER_EXIT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_EXIT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_HOVER_EXIT</a></p>
@@ -2173,7 +1934,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_HOVER_EXIT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_HOVER_EXIT { get; set; }</code></pre>
   </div>
 
 
@@ -2197,7 +1958,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_LONG_CLICKED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_LONG_CLICKED">
   TYPE_VIEW_LONG_CLICKED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_LONG_CLICKED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_LONG_CLICKED</a></p>
@@ -2205,7 +1966,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_LONG_CLICKED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_LONG_CLICKED { get; set; }</code></pre>
   </div>
 
 
@@ -2229,7 +1990,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_SCROLLED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_SCROLLED">
   TYPE_VIEW_SCROLLED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SCROLLED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SCROLLED</a></p>
@@ -2237,7 +1998,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_SCROLLED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_SCROLLED { get; set; }</code></pre>
   </div>
 
 
@@ -2261,7 +2022,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_SELECTED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_SELECTED">
   TYPE_VIEW_SELECTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L299"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SELECTED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_SELECTED</a></p>
@@ -2269,7 +2030,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_SELECTED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_SELECTED { get; set; }</code></pre>
   </div>
 
 
@@ -2293,7 +2054,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TARGETED_BY_SCROLL" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TARGETED_BY_SCROLL">
   TYPE_VIEW_TARGETED_BY_SCROLL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TARGETED_BY_SCROLL">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TARGETED_BY_SCROLL</a></p>
@@ -2301,7 +2062,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TARGETED_BY_SCROLL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TARGETED_BY_SCROLL { get; set; }</code></pre>
   </div>
 
 
@@ -2325,7 +2086,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED">
   TYPE_VIEW_TEXT_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_CHANGED</a></p>
@@ -2333,7 +2094,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_CHANGED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_CHANGED { get; set; }</code></pre>
   </div>
 
 
@@ -2357,7 +2118,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_SELECTION_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_SELECTION_CHANGED">
   TYPE_VIEW_TEXT_SELECTION_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L311"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_SELECTION_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_SELECTION_CHANGED</a></p>
@@ -2365,7 +2126,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_SELECTION_CHANGED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_SELECTION_CHANGED { get; set; }</code></pre>
   </div>
 
 
@@ -2389,7 +2150,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY">
   TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY</a></p>
@@ -2397,7 +2158,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_VIEW_TEXT_TRAVERSED_AT_MOVEMENT_GRANULARITY { get; set; }</code></pre>
   </div>
 
 
@@ -2421,7 +2182,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOWS_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOWS_CHANGED">
   TYPE_WINDOWS_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOWS_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOWS_CHANGED</a></p>
@@ -2429,7 +2190,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOWS_CHANGED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOWS_CHANGED { get; set; }</code></pre>
   </div>
 
 
@@ -2453,7 +2214,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOW_CONTENT_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED">
   TYPE_WINDOW_CONTENT_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L319"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_CONTENT_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_CONTENT_CHANGED</a></p>
@@ -2461,7 +2222,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOW_CONTENT_CHANGED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOW_CONTENT_CHANGED { get; set; }</code></pre>
   </div>
 
 
@@ -2485,7 +2246,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_TYPE_WINDOW_STATE_CHANGED" data-uid="Android.View.Accessibility.AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED">
   TYPE_WINDOW_STATE_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_STATE_CHANGED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOW_STATE_CHANGED</a></p>
@@ -2493,7 +2254,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOW_STATE_CHANGED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_WINDOW_STATE_CHANGED { get; set; }</code></pre>
   </div>
 
 
@@ -2517,7 +2278,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED">
   WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L335"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED</a></p>
@@ -2525,7 +2286,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ACCESSIBILITY_FOCUSED { get; set; }</code></pre>
   </div>
 
 
@@ -2549,7 +2310,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ACTIVE" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ACTIVE">
   WINDOWS_CHANGE_ACTIVE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L339"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACTIVE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ACTIVE</a></p>
@@ -2557,7 +2318,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ACTIVE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ACTIVE { get; set; }</code></pre>
   </div>
 
 
@@ -2581,7 +2342,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_ADDED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_ADDED">
   WINDOWS_CHANGE_ADDED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L343"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ADDED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_ADDED</a></p>
@@ -2589,7 +2350,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ADDED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_ADDED { get; set; }</code></pre>
   </div>
 
 
@@ -2613,7 +2374,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_BOUNDS" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_BOUNDS">
   WINDOWS_CHANGE_BOUNDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L347"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_BOUNDS">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_BOUNDS</a></p>
@@ -2621,7 +2382,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_BOUNDS { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_BOUNDS { get; set; }</code></pre>
   </div>
 
 
@@ -2645,7 +2406,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_CHILDREN" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_CHILDREN">
   WINDOWS_CHANGE_CHILDREN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L351"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_CHILDREN">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_CHILDREN</a></p>
@@ -2653,7 +2414,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_CHILDREN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_CHILDREN { get; set; }</code></pre>
   </div>
 
 
@@ -2677,7 +2438,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_FOCUSED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_FOCUSED">
   WINDOWS_CHANGE_FOCUSED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_FOCUSED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_FOCUSED</a></p>
@@ -2685,7 +2446,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_FOCUSED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_FOCUSED { get; set; }</code></pre>
   </div>
 
 
@@ -2709,7 +2470,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_LAYER" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_LAYER">
   WINDOWS_CHANGE_LAYER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_LAYER">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_LAYER</a></p>
@@ -2717,7 +2478,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_LAYER { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_LAYER { get; set; }</code></pre>
   </div>
 
 
@@ -2741,7 +2502,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_PARENT" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_PARENT">
   WINDOWS_CHANGE_PARENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PARENT">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PARENT</a></p>
@@ -2749,7 +2510,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_PARENT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_PARENT { get; set; }</code></pre>
   </div>
 
 
@@ -2773,7 +2534,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_PIP" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_PIP">
   WINDOWS_CHANGE_PIP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PIP">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_PIP</a></p>
@@ -2781,7 +2542,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_PIP { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_PIP { get; set; }</code></pre>
   </div>
 
 
@@ -2805,7 +2566,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_REMOVED" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_REMOVED">
   WINDOWS_CHANGE_REMOVED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_REMOVED">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_REMOVED</a></p>
@@ -2813,7 +2574,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_REMOVED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_REMOVED { get; set; }</code></pre>
   </div>
 
 
@@ -2837,7 +2598,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WINDOWS_CHANGE_TITLE" data-uid="Android.View.Accessibility.AccessibilityEvent.WINDOWS_CHANGE_TITLE">
   WINDOWS_CHANGE_TITLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L375"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_TITLE">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#WINDOWS_CHANGE_TITLE</a></p>
@@ -2845,7 +2606,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_TITLE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int WINDOWS_CHANGE_TITLE { get; set; }</code></pre>
   </div>
 
 
@@ -2873,7 +2634,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_AppendRecord_Android_View_Accessibility_AccessibilityRecord_" data-uid="Android.View.Accessibility.AccessibilityEvent.AppendRecord(Android.View.Accessibility.AccessibilityRecord)">
   AppendRecord(AccessibilityRecord)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L514"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#appendRecord(android.view.accessibility.AccessibilityRecord)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#appendRecord(android.view.accessibility.AccessibilityRecord)</a></p>
@@ -2902,11 +2663,117 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
 
 
+  <a id="Android_View_Accessibility_AccessibilityEvent_CreatePoolableInstance_" data-uid="Android.View.Accessibility.AccessibilityEvent.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CreatePoolableInstance" data-uid="Android.View.Accessibility.AccessibilityEvent.CreatePoolableInstance">
+  CreatePoolableInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AccessibilityEvent()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AccessibilityEvent CreatePoolableInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CreatePoolableInstance_" data-uid="Android.View.Accessibility.AccessibilityEvent.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CreatePoolableInstance_Android_View_Accessibility_AccessibilityEvent_" data-uid="Android.View.Accessibility.AccessibilityEvent.CreatePoolableInstance(Android.View.Accessibility.AccessibilityEvent)">
+  CreatePoolableInstance(AccessibilityEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AccessibilityEvent(Android.View.Accessibility.AccessibilityEvent arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AccessibilityEvent CreatePoolableInstance(AccessibilityEvent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Accessibility_AccessibilityEvent_CreatePoolableInstance_" data-uid="Android.View.Accessibility.AccessibilityEvent.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_View_Accessibility_AccessibilityEvent_CreatePoolableInstance_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.CreatePoolableInstance(System.Int32)">
+  CreatePoolableInstance(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AccessibilityEvent(int arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AccessibilityEvent CreatePoolableInstance(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Accessibility_AccessibilityEvent_DescribeContents_" data-uid="Android.View.Accessibility.AccessibilityEvent.DescribeContents*"></a>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_DescribeContents" data-uid="Android.View.Accessibility.AccessibilityEvent.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L434"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#describeContents()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#describeContents()</a></p>
@@ -2939,7 +2806,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_EventTypeToString_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.EventTypeToString(System.Int32)">
   EventTypeToString(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L405"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#eventTypeToString(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#eventTypeToString(int)</a></p>
@@ -2978,7 +2845,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetAction" data-uid="Android.View.Accessibility.AccessibilityEvent.GetAction">
   GetAction()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L442"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getAction()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getAction()</a></p>
@@ -3011,7 +2878,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetContentChangeTypes" data-uid="Android.View.Accessibility.AccessibilityEvent.GetContentChangeTypes">
   GetContentChangeTypes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L450"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getContentChangeTypes()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getContentChangeTypes()</a></p>
@@ -3044,7 +2911,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetEventTime" data-uid="Android.View.Accessibility.AccessibilityEvent.GetEventTime">
   GetEventTime()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L506"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventTime()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventTime()</a></p>
@@ -3077,7 +2944,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetEventType" data-uid="Android.View.Accessibility.AccessibilityEvent.GetEventType">
   GetEventType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L458"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventType()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventType()</a></p>
@@ -3110,7 +2977,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetMovementGranularity" data-uid="Android.View.Accessibility.AccessibilityEvent.GetMovementGranularity">
   GetMovementGranularity()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L466"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getMovementGranularity()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getMovementGranularity()</a></p>
@@ -3143,7 +3010,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetPackageName" data-uid="Android.View.Accessibility.AccessibilityEvent.GetPackageName">
   GetPackageName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L498"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getPackageName()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getPackageName()</a></p>
@@ -3176,7 +3043,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetRecord_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.GetRecord(System.Int32)">
   GetRecord(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L418"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecord(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecord(int)</a></p>
@@ -3215,7 +3082,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetRecordCount" data-uid="Android.View.Accessibility.AccessibilityEvent.GetRecordCount">
   GetRecordCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L474"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecordCount()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecordCount()</a></p>
@@ -3248,7 +3115,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetSpeechStateChangeTypes" data-uid="Android.View.Accessibility.AccessibilityEvent.GetSpeechStateChangeTypes">
   GetSpeechStateChangeTypes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L482"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getSpeechStateChangeTypes()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getSpeechStateChangeTypes()</a></p>
@@ -3281,7 +3148,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_GetWindowChanges" data-uid="Android.View.Accessibility.AccessibilityEvent.GetWindowChanges">
   GetWindowChanges()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L490"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getWindowChanges()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getWindowChanges()</a></p>
@@ -3314,7 +3181,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_InitFromParcel_Android_Os_Parcel_" data-uid="Android.View.Accessibility.AccessibilityEvent.InitFromParcel(Android.Os.Parcel)">
   InitFromParcel(Parcel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L522"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#initFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#initFromParcel(android.os.Parcel)</a></p>
@@ -3347,7 +3214,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_IsAccessibilityDataSensitive" data-uid="Android.View.Accessibility.AccessibilityEvent.IsAccessibilityDataSensitive">
   IsAccessibilityDataSensitive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L426"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#isAccessibilityDataSensitive()">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#isAccessibilityDataSensitive()</a></p>
@@ -3380,7 +3247,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_Obtain_Android_View_Accessibility_AccessibilityEvent_" data-uid="Android.View.Accessibility.AccessibilityEvent.Obtain(Android.View.Accessibility.AccessibilityEvent)">
   Obtain(AccessibilityEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(android.view.accessibility.AccessibilityEvent)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(android.view.accessibility.AccessibilityEvent)</a></p>
@@ -3388,7 +3255,7 @@ public static int MAX_TEXT_LENGTH { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static AccessibilityEvent Obtain(AccessibilityEvent arg0)</code></pre>
   </div>
 
@@ -3420,7 +3287,7 @@ public static AccessibilityEvent Obtain(AccessibilityEvent arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_Obtain_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.Obtain(System.Int32)">
   Obtain(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(int)</a></p>
@@ -3428,7 +3295,7 @@ public static AccessibilityEvent Obtain(AccessibilityEvent arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static AccessibilityEvent Obtain(int arg0)</code></pre>
   </div>
 
@@ -3460,7 +3327,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetAccessibilityDataSensitive_System_Boolean_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetAccessibilityDataSensitive(System.Boolean)">
   SetAccessibilityDataSensitive(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L530"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAccessibilityDataSensitive(boolean)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAccessibilityDataSensitive(boolean)</a></p>
@@ -3493,7 +3360,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetAction_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetAction(System.Int32)">
   SetAction(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L538"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAction(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAction(int)</a></p>
@@ -3526,7 +3393,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetContentChangeTypes_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetContentChangeTypes(System.Int32)">
   SetContentChangeTypes(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L546"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setContentChangeTypes(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setContentChangeTypes(int)</a></p>
@@ -3559,7 +3426,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetEventTime_System_Int64_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetEventTime(System.Int64)">
   SetEventTime(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L554"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventTime(long)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventTime(long)</a></p>
@@ -3592,7 +3459,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetEventType_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetEventType(System.Int32)">
   SetEventType(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L562"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventType(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventType(int)</a></p>
@@ -3625,7 +3492,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetMovementGranularity_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetMovementGranularity(System.Int32)">
   SetMovementGranularity(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L570"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setMovementGranularity(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setMovementGranularity(int)</a></p>
@@ -3658,7 +3525,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetPackageName_Java_Lang_CharSequence_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetPackageName(Java.Lang.CharSequence)">
   SetPackageName(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L578"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setPackageName(java.lang.CharSequence)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setPackageName(java.lang.CharSequence)</a></p>
@@ -3691,7 +3558,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_SetSpeechStateChangeTypes_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.SetSpeechStateChangeTypes(System.Int32)">
   SetSpeechStateChangeTypes(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L586"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setSpeechStateChangeTypes(int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setSpeechStateChangeTypes(int)</a></p>
@@ -3724,7 +3591,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.View.Accessibility.AccessibilityEvent.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L685"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L595"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#writeToParcel(android.os.Parcel,int)</a></p>
@@ -3764,7 +3631,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 
   <h3 id="Android_View_Accessibility_AccessibilityEvent_op_Implicit_Android_View_Accessibility_AccessibilityEvent__Android_Os_Parcelable" data-uid="Android.View.Accessibility.AccessibilityEvent.op_Implicit(Android.View.Accessibility.AccessibilityEvent)~Android.Os.Parcelable">
   implicit operator Parcelable(AccessibilityEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.View.Accessibility.AccessibilityEvent.html">AccessibilityEvent</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
@@ -3801,7 +3668,7 @@ public static AccessibilityEvent Obtain(int arg0)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L74" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Accessibility/AccessibilityEvent.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

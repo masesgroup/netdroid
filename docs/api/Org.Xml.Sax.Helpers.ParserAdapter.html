@@ -89,7 +89,7 @@
 
 
   <h1 id="Org_Xml_Sax_Helpers_ParserAdapter" data-uid="Org.Xml.Sax.Helpers.ParserAdapter" class="text-break">
-Class ParserAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L96"><i class="bi bi-code-slash"></i></a>
+Class ParserAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ParserAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IXMLReader, IDocumentHandler</code></pre>
+    <pre><code class="lang-csharp hljs">public class ParserAdapter : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IXMLReader, IDocumentHandler</code></pre>
   </div>
 
 
@@ -113,9 +113,9 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
-      <div><span class="xref">JVMBridgeListener</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a></div>
       <div><span class="xref">ParserAdapter</span></div>
     </dd>
   </dl>
@@ -124,11 +124,13 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Org.Xml.Sax.IXMLReader.html">IXMLReader</a></div>
       <div><a class="xref" href="Org.Xml.Sax.IDocumentHandler.html">IDocumentHandler</a></div>
     </dd>
@@ -141,382 +143,15 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
     </dd>
   </dl>
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.AutoInit</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeStatic</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeCloseable</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeListener.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;JVMBridgeListener&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeInterface</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeAbstract</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-  </dd></dl>
 
   <dl class="typelist extensionMethods">
     <dt>Extension Methods</dt>
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -532,10 +167,10 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter__ctor" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.#ctor">
   ParserAdapter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#%3Cinit%3E()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#%3Cinit%3E()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -543,6 +178,109 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
     <pre><code class="lang-csharp hljs">public ParserAdapter()</code></pre>
   </div>
 
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.Xml.Sax.SAXException.html">SAXException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter__ctor_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.#ctor*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  ParserAdapter(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentifiable behaviors.&quot;)]
+public ParserAdapter(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter__ctor_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.#ctor*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter__ctor_Org_Xml_Sax_Parser_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.#ctor(Org.Xml.Sax.Parser)">
+  ParserAdapter(Parser)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#%3Cinit%3E(org.xml.sax.Parser)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#%3Cinit%3E(org.xml.sax.Parser)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParserAdapter(Parser arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.Xml.Sax.Parser.html">Parser</a></dt>
+    <dd><p><a class="xref" href="Org.Xml.Sax.Parser.html">Parser</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter__ctor_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.#ctor*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter__ctor_System_Object___" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.#ctor(System.Object[])">
+  ParserAdapter(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParserAdapter(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -563,10 +301,10 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_BridgeClassName" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -595,7 +333,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnCharacters" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnCharacters">
   OnCharacters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)</a></p>
@@ -620,7 +358,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnCharacters_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnCharacters">OnCharacters</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -630,7 +369,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnEndDocument" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnEndDocument">
   OnEndDocument
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endDocument()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endDocument()</a></p>
@@ -655,7 +394,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnEndDocument_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnEndDocument">OnEndDocument</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -665,7 +405,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnEndElement" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnEndElement">
   OnEndElement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L681"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)</a></p>
@@ -690,7 +430,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnEndElement_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnEndElement">OnEndElement</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -700,7 +441,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetContentHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetContentHandler">
   OnGetContentHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L382"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()</a></p>
@@ -725,7 +466,47 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetContentHandler_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetContentHandler">OnGetContentHandler</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetContentHandlerDispose_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetContentHandlerDispose*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetContentHandlerDispose" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetContentHandlerDispose">
+  OnGetContentHandlerDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ContentHandler&gt; OnGetContentHandlerDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Org.Xml.Sax.ContentHandler.html">ContentHandler</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetContentHandlerDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetContentHandlerDispose">OnGetContentHandlerDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -735,7 +516,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetDTDHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetDTDHandler">
   OnGetDTDHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L435"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()</a></p>
@@ -760,7 +541,47 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetDTDHandler_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetDTDHandler">OnGetDTDHandler</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetDTDHandlerDispose_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetDTDHandlerDispose*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetDTDHandlerDispose" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetDTDHandlerDispose">
+  OnGetDTDHandlerDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;DTDHandler&gt; OnGetDTDHandlerDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Org.Xml.Sax.DTDHandler.html">DTDHandler</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetDTDHandlerDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetDTDHandlerDispose">OnGetDTDHandlerDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -770,7 +591,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetEntityResolver" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetEntityResolver">
   OnGetEntityResolver
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L488"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()</a></p>
@@ -795,7 +616,47 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetEntityResolver_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetEntityResolver">OnGetEntityResolver</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetEntityResolverDispose_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetEntityResolverDispose*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetEntityResolverDispose" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetEntityResolverDispose">
+  OnGetEntityResolverDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;EntityResolver&gt; OnGetEntityResolverDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Org.Xml.Sax.EntityResolver.html">EntityResolver</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetEntityResolverDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetEntityResolverDispose">OnGetEntityResolverDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -805,7 +666,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetErrorHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetErrorHandler">
   OnGetErrorHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()</a></p>
@@ -830,7 +691,47 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetErrorHandler_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetErrorHandler">OnGetErrorHandler</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetErrorHandlerDispose_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetErrorHandlerDispose*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetErrorHandlerDispose" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetErrorHandlerDispose">
+  OnGetErrorHandlerDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ErrorHandler&gt; OnGetErrorHandlerDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Org.Xml.Sax.ErrorHandler.html">ErrorHandler</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetErrorHandlerDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetErrorHandlerDispose">OnGetErrorHandlerDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -840,7 +741,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetFeature" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetFeature">
   OnGetFeature
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)</a></p>
@@ -865,7 +766,47 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetFeature_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetFeature">OnGetFeature</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetFeatureDispose_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetFeatureDispose*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetFeatureDispose" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetFeatureDispose">
+  OnGetFeatureDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; OnGetFeatureDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetFeatureDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetFeatureDispose">OnGetFeatureDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -875,7 +816,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetProperty" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetProperty">
   OnGetProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)</a></p>
@@ -900,7 +841,47 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetProperty_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetProperty">OnGetProperty</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
+</div>
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetPropertyDispose_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetPropertyDispose*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetPropertyDispose" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnGetPropertyDispose">
+  OnGetPropertyDispose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt; OnGetPropertyDispose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnGetPropertyDispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Set <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnGetPropertyDispose">OnGetPropertyDispose</a> when the event handler returns a JVM-backed object
+that is no longer needed after the call. The handler receives the return value and is responsible for calling
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on it, releasing the underlying JVM global reference immediately
+instead of waiting for the .NET garbage collector to finalize it.
+If not set, the return value is not disposed automatically.</p>
 </div>
 
 
@@ -910,7 +891,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnIgnorableWhitespace" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnIgnorableWhitespace">
   OnIgnorableWhitespace
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L724"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)</a></p>
@@ -935,7 +916,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnIgnorableWhitespace_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnIgnorableWhitespace">OnIgnorableWhitespace</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -945,7 +927,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnParse" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnParse">
   OnParse
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L769"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)</a></p>
@@ -970,7 +952,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnParse_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnParse">OnParse</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -980,7 +963,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnParse1" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnParse1">
   OnParse1
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L813"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)</a></p>
@@ -1005,7 +988,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnParse1_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnParse1">OnParse1</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1015,7 +999,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnProcessingInstruction" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnProcessingInstruction">
   OnProcessingInstruction
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L857"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)</a></p>
@@ -1040,7 +1024,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnProcessingInstruction_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnProcessingInstruction">OnProcessingInstruction</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1050,7 +1035,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetContentHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnSetContentHandler">
   OnSetContentHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L901"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)</a></p>
@@ -1075,7 +1060,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetContentHandler_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnSetContentHandler">OnSetContentHandler</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1085,7 +1071,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetDTDHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnSetDTDHandler">
   OnSetDTDHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L985"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)</a></p>
@@ -1110,7 +1096,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetDTDHandler_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnSetDTDHandler">OnSetDTDHandler</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1120,7 +1107,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetDocumentLocator" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnSetDocumentLocator">
   OnSetDocumentLocator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L943"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)</a></p>
@@ -1145,7 +1132,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetDocumentLocator_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnSetDocumentLocator">OnSetDocumentLocator</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1155,7 +1143,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetEntityResolver" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnSetEntityResolver">
   OnSetEntityResolver
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1027"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)</a></p>
@@ -1180,7 +1168,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetEntityResolver_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnSetEntityResolver">OnSetEntityResolver</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1190,7 +1179,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetErrorHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnSetErrorHandler">
   OnSetErrorHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1069"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)</a></p>
@@ -1215,7 +1204,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetErrorHandler_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnSetErrorHandler">OnSetErrorHandler</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1225,7 +1215,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetFeature" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnSetFeature">
   OnSetFeature
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)</a></p>
@@ -1250,7 +1240,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetFeature_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnSetFeature">OnSetFeature</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1260,7 +1251,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetProperty" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnSetProperty">
   OnSetProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L627"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)</a></p>
@@ -1285,7 +1276,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnSetProperty_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnSetProperty">OnSetProperty</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1295,7 +1287,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnStartDocument" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnStartDocument">
   OnStartDocument
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startDocument()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startDocument()</a></p>
@@ -1320,7 +1312,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnStartDocument_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnStartDocument">OnStartDocument</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1330,7 +1323,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_OnStartElement" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.OnStartElement">
   OnStartElement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handler for <a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)</a></p>
@@ -1355,7 +1348,8 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
 
   <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_OnStartElement_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>If <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html#Org_Xml_Sax_Helpers_ParserAdapter_OnStartElement">OnStartElement</a> has a value it takes precedence over corresponding class method</p>
+  <div class="markdown level1 remarks"><p>Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+the delegate takes precedence. Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to delegate to the virtual method.</p>
 </div>
 
 
@@ -1369,7 +1363,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_Characters_System_Char___System_Int32_System_Int32_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.Characters(System.Char[],System.Int32,System.Int32)">
   Characters(char[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L627"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)</a></p>
@@ -1413,7 +1407,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_EndDocument" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.EndDocument">
   EndDocument()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L669"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endDocument()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endDocument()</a></p>
@@ -1445,7 +1439,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_EndElement_Java_Lang_String_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.EndElement(Java.Lang.String)">
   EndElement(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L712"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)</a></p>
@@ -1483,7 +1477,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_GetContentHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.GetContentHandler">
   GetContentHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L423"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()</a></p>
@@ -1516,7 +1510,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_GetDTDHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.GetDTDHandler">
   GetDTDHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L476"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()</a></p>
@@ -1549,7 +1543,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_GetEntityResolver" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.GetEntityResolver">
   GetEntityResolver()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L529"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()</a></p>
@@ -1582,7 +1576,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_GetErrorHandler" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.GetErrorHandler">
   GetErrorHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L582"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()</a></p>
@@ -1615,7 +1609,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_GetFeature_Java_Lang_String_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.GetFeature(Java.Lang.String)">
   GetFeature(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)</a></p>
@@ -1661,7 +1655,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_GetProperty_Java_Lang_String_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.GetProperty(Java.Lang.String)">
   GetProperty(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L370"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)</a></p>
@@ -1707,7 +1701,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_IgnorableWhitespace_System_Char___System_Int32_System_Int32_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.IgnorableWhitespace(System.Char[],System.Int32,System.Int32)">
   IgnorableWhitespace(char[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L757"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)</a></p>
@@ -1749,9 +1743,9 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <a id="Org_Xml_Sax_Helpers_ParserAdapter_InitializeHandlers_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.InitializeHandlers*"></a>
 
-  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_InitializeHandlers" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.InitializeHandlers">
-  InitializeHandlers()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_InitializeHandlers_System_Type_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.InitializeHandlers(System.Type)">
+  InitializeHandlers(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Handlers initializer for <a class="xref" href="Org.Xml.Sax.Helpers.ParserAdapter.html">ParserAdapter</a></p>
@@ -1759,10 +1753,96 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeHandlers(Type listenerRuntimeType)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listenerRuntimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
 
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_ListenerShallManageEvent_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.ListenerShallManageEvent*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_ListenerShallManageEvent_System_Int32_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.ListenerShallManageEvent(System.Int32)">
+  ListenerShallManageEvent(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invoked from the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html">JVMBridgeListener</a> on each received event to notify the user which can decide to abort the execution for the specific event returning <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ListenerShallManageEvent(int eventIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the event triggered as returned from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">AddEventHandler(string, EventHandler)</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to continue event evaluation, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to return the control to the JVM</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_Xml_Sax_Helpers_ParserAdapter_ListenerShallManageEvent_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>By default every event continues the execution and reads the data from JVM; this implies an extra cost which can be limited using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ListenerShallManageEvent(int)</a> or the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventIndex">ListenerShallManageEventIndex</a>/<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventName">ListenerShallManageEventName</a> handlers.
+Returning <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the control is immediately returned to the JVM, anyway the user has received the notification. It can be useful in scenarios where the user is interested in few events
+and the other are simply discarded to optimize the execution speed.
+By default, this function invokes <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventIndex">ListenerShallManageEventIndex</a>, then try <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeListener.html#MASES_JCOBridge_C2JBridge_JVMBridgeListener_ListenerShallManageEventName">ListenerShallManageEventName</a> if they are set or return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a></p>
+</div>
+
+
+
+
+  <a id="Org_Xml_Sax_Helpers_ParserAdapter_ListenerShallManageEventHandlers_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.ListenerShallManageEventHandlers*"></a>
+
+  <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_ListenerShallManageEventHandlers_System_Int32_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.ListenerShallManageEventHandlers(System.Int32)">
+  ListenerShallManageEventHandlers(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ListenerShallManageEventHandlers(int eventIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1778,7 +1858,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_Parse_Java_Lang_String_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.Parse(Java.Lang.String)">
   Parse(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L801"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)</a></p>
@@ -1818,7 +1898,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_Parse_Org_Xml_Sax_InputSource_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.Parse(Org.Xml.Sax.InputSource)">
   Parse(InputSource)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L845"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)</a></p>
@@ -1858,7 +1938,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_ProcessingInstruction_Java_Lang_String_Java_Lang_String_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.ProcessingInstruction(Java.Lang.String,Java.Lang.String)">
   ProcessingInstruction(String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L889"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)</a></p>
@@ -1899,7 +1979,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_SetContentHandler_Org_Xml_Sax_ContentHandler_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.SetContentHandler(Org.Xml.Sax.ContentHandler)">
   SetContentHandler(ContentHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L931"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)</a></p>
@@ -1932,7 +2012,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_SetDTDHandler_Org_Xml_Sax_DTDHandler_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.SetDTDHandler(Org.Xml.Sax.DTDHandler)">
   SetDTDHandler(DTDHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1015"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)</a></p>
@@ -1965,7 +2045,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_SetDocumentLocator_Org_Xml_Sax_Locator_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.SetDocumentLocator(Org.Xml.Sax.Locator)">
   SetDocumentLocator(Locator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L973"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)</a></p>
@@ -1998,7 +2078,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_SetEntityResolver_Org_Xml_Sax_EntityResolver_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.SetEntityResolver(Org.Xml.Sax.EntityResolver)">
   SetEntityResolver(EntityResolver)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1057"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)</a></p>
@@ -2031,7 +2111,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_SetErrorHandler_Org_Xml_Sax_ErrorHandler_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.SetErrorHandler(Org.Xml.Sax.ErrorHandler)">
   SetErrorHandler(ErrorHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L591"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1099"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)</a></p>
@@ -2064,7 +2144,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_SetFeature_Java_Lang_String_System_Boolean_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.SetFeature(Java.Lang.String,System.Boolean)">
   SetFeature(String, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)</a></p>
@@ -2107,7 +2187,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_SetProperty_Java_Lang_String_System_Object_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.SetProperty(Java.Lang.String,System.Object)">
   SetProperty(String, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)</a></p>
@@ -2150,7 +2230,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_StartDocument" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.StartDocument">
   StartDocument()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startDocument()">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startDocument()</a></p>
@@ -2182,7 +2262,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Org_Xml_Sax_Helpers_ParserAdapter_StartElement_Java_Lang_String_Org_Xml_Sax_AttributeList_" data-uid="Org.Xml.Sax.Helpers.ParserAdapter.StartElement(Java.Lang.String,Org.Xml.Sax.AttributeList)">
   StartElement(String, AttributeList)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L695"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L1275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)">https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)</a></p>
@@ -2223,7 +2303,7 @@ Class ParserAdapter  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L96" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/Xml/Sax/Helpers/ParserAdapter.cs/#L147" class="edit-link">Edit this page</a>
         </div>
 
 

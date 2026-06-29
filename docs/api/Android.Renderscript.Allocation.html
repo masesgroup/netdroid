@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Renderscript_Allocation" data-uid="Android.Renderscript.Allocation" class="text-break">
-Class Allocation  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L189"><i class="bi bi-code-slash"></i></a>
+Class Allocation  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,8 +102,8 @@ Class Allocation  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -114,8 +114,8 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Renderscript.BaseObj.html">BaseObj</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Renderscript.BaseObj.html">BaseObj</a>&gt;</div>
       <div><a class="xref" href="Android.Renderscript.BaseObj.html">BaseObj</a></div>
       <div><span class="xref">Allocation</span></div>
     </dd>
@@ -125,11 +125,13 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
 
@@ -146,348 +148,6 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
     <div>
       <a class="xref" href="Android.Renderscript.BaseObj.html#Android_Renderscript_BaseObj_SetName_Java_Lang_String_">BaseObj.SetName(String)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BaseObj&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BaseObj&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BaseObj&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseObj&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BaseObj&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BaseObj&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BaseObj&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -495,6 +155,9 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -508,49 +171,23 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
 
   <a id="Android_Renderscript_Allocation__ctor_" data-uid="Android.Renderscript.Allocation.#ctor*"></a>
 
-  <h3 id="Android_Renderscript_Allocation__ctor" data-uid="Android.Renderscript.Allocation.#ctor">
-  Allocation()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Renderscript_Allocation__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Renderscript.Allocation.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Allocation(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Allocation()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Renderscript_Allocation__ctor_" data-uid="Android.Renderscript.Allocation.#ctor*"></a>
-
-  <h3 id="Android_Renderscript_Allocation__ctor_System_Object___" data-uid="Android.Renderscript.Allocation.#ctor(System.Object[])">
-  Allocation(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L43"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Allocation(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Allocation(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -573,10 +210,10 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
 
   <h3 id="Android_Renderscript_Allocation_BridgeClassName" data-uid="Android.Renderscript.Allocation.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -605,10 +242,10 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
 
   <h3 id="Android_Renderscript_Allocation_IsBridgeAbstract" data-uid="Android.Renderscript.Allocation.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -637,10 +274,10 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
 
   <h3 id="Android_Renderscript_Allocation_IsBridgeCloseable" data-uid="Android.Renderscript.Allocation.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -669,10 +306,10 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
 
   <h3 id="Android_Renderscript_Allocation_IsBridgeInterface" data-uid="Android.Renderscript.Allocation.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -701,10 +338,10 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
 
   <h3 id="Android_Renderscript_Allocation_IsBridgeStatic" data-uid="Android.Renderscript.Allocation.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -733,7 +370,7 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
 
   <h3 id="Android_Renderscript_Allocation_USAGE_GRAPHICS_CONSTANTS" data-uid="Android.Renderscript.Allocation.USAGE_GRAPHICS_CONSTANTS">
   USAGE_GRAPHICS_CONSTANTS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_CONSTANTS">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_CONSTANTS</a></p>
@@ -741,8 +378,8 @@ public class Allocation : BaseObj, IDynamicMetaObjectProvider, IJVMBridgeCore, I
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_GRAPHICS_CONSTANTS { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_GRAPHICS_CONSTANTS { get; set; }</code></pre>
   </div>
 
 
@@ -766,7 +403,7 @@ public static int USAGE_GRAPHICS_CONSTANTS { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_USAGE_GRAPHICS_RENDER_TARGET" data-uid="Android.Renderscript.Allocation.USAGE_GRAPHICS_RENDER_TARGET">
   USAGE_GRAPHICS_RENDER_TARGET
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_RENDER_TARGET">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_RENDER_TARGET</a></p>
@@ -774,8 +411,8 @@ public static int USAGE_GRAPHICS_CONSTANTS { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_GRAPHICS_RENDER_TARGET { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_GRAPHICS_RENDER_TARGET { get; set; }</code></pre>
   </div>
 
 
@@ -799,7 +436,7 @@ public static int USAGE_GRAPHICS_RENDER_TARGET { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_USAGE_GRAPHICS_TEXTURE" data-uid="Android.Renderscript.Allocation.USAGE_GRAPHICS_TEXTURE">
   USAGE_GRAPHICS_TEXTURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_TEXTURE">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_TEXTURE</a></p>
@@ -807,8 +444,8 @@ public static int USAGE_GRAPHICS_RENDER_TARGET { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_GRAPHICS_TEXTURE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_GRAPHICS_TEXTURE { get; set; }</code></pre>
   </div>
 
 
@@ -832,7 +469,7 @@ public static int USAGE_GRAPHICS_TEXTURE { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_USAGE_GRAPHICS_VERTEX" data-uid="Android.Renderscript.Allocation.USAGE_GRAPHICS_VERTEX">
   USAGE_GRAPHICS_VERTEX
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_VERTEX">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_VERTEX</a></p>
@@ -840,8 +477,8 @@ public static int USAGE_GRAPHICS_TEXTURE { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_GRAPHICS_VERTEX { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_GRAPHICS_VERTEX { get; set; }</code></pre>
   </div>
 
 
@@ -865,7 +502,7 @@ public static int USAGE_GRAPHICS_VERTEX { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_USAGE_IO_INPUT" data-uid="Android.Renderscript.Allocation.USAGE_IO_INPUT">
   USAGE_IO_INPUT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_IO_INPUT">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_IO_INPUT</a></p>
@@ -873,8 +510,8 @@ public static int USAGE_GRAPHICS_VERTEX { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_IO_INPUT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_IO_INPUT { get; set; }</code></pre>
   </div>
 
 
@@ -898,7 +535,7 @@ public static int USAGE_IO_INPUT { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_USAGE_IO_OUTPUT" data-uid="Android.Renderscript.Allocation.USAGE_IO_OUTPUT">
   USAGE_IO_OUTPUT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_IO_OUTPUT">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_IO_OUTPUT</a></p>
@@ -906,8 +543,8 @@ public static int USAGE_IO_INPUT { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_IO_OUTPUT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_IO_OUTPUT { get; set; }</code></pre>
   </div>
 
 
@@ -931,7 +568,7 @@ public static int USAGE_IO_OUTPUT { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_USAGE_SCRIPT" data-uid="Android.Renderscript.Allocation.USAGE_SCRIPT">
   USAGE_SCRIPT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_SCRIPT">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_SCRIPT</a></p>
@@ -939,8 +576,8 @@ public static int USAGE_IO_OUTPUT { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_SCRIPT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_SCRIPT { get; set; }</code></pre>
   </div>
 
 
@@ -964,7 +601,7 @@ public static int USAGE_SCRIPT { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_USAGE_SHARED" data-uid="Android.Renderscript.Allocation.USAGE_SHARED">
   USAGE_SHARED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_SHARED">https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_SHARED</a></p>
@@ -972,8 +609,8 @@ public static int USAGE_SCRIPT { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int USAGE_SHARED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int USAGE_SHARED { get; set; }</code></pre>
   </div>
 
 
@@ -1001,7 +638,7 @@ public static int USAGE_SHARED { get; }</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFrom_System_Int32_System_Int32_Android_Renderscript_Allocation_System_Int32_" data-uid="Android.Renderscript.Allocation.Copy1DRangeFrom(System.Int32,System.Int32,Android.Renderscript.Allocation,System.Int32)">
   Copy1DRangeFrom(int, int, Allocation, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L559"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,android.renderscript.Allocation,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,android.renderscript.Allocation,int)</a></p>
@@ -1009,7 +646,7 @@ public static int USAGE_SHARED { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFrom(int arg0, int arg1, Allocation arg2, int arg3)</code></pre>
   </div>
 
@@ -1044,7 +681,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, Allocation arg2, int arg3)</code
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFrom_System_Int32_System_Int32_System_Byte___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFrom(System.Int32,System.Int32,System.Byte[])">
   Copy1DRangeFrom(int, int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L570"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,byte[])</a></p>
@@ -1052,7 +689,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, Allocation arg2, int arg3)</code
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFrom(int arg0, int arg1, byte[] arg2)</code></pre>
   </div>
 
@@ -1084,7 +721,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, byte[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFrom_System_Int32_System_Int32_System_Int16___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFrom(System.Int32,System.Int32,System.Int16[])">
   Copy1DRangeFrom(int, int, short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L614"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,short[])</a></p>
@@ -1092,7 +729,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, byte[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFrom(int arg0, int arg1, short[] arg2)</code></pre>
   </div>
 
@@ -1124,7 +761,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, short[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFrom_System_Int32_System_Int32_System_Int32___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFrom(System.Int32,System.Int32,System.Int32[])">
   Copy1DRangeFrom(int, int, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,int[])</a></p>
@@ -1132,7 +769,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, short[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFrom(int arg0, int arg1, int[] arg2)</code></pre>
   </div>
 
@@ -1164,7 +801,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, int[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFrom_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy1DRangeFrom(System.Int32,System.Int32,System.Object)">
   Copy1DRangeFrom(int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L603"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,java.lang.Object)</a></p>
@@ -1172,7 +809,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, int[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFrom(int arg0, int arg1, object arg2)</code></pre>
   </div>
 
@@ -1204,7 +841,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, object arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFrom_System_Int32_System_Int32_System_Single___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFrom(System.Int32,System.Int32,System.Single[])">
   Copy1DRangeFrom(int, int, float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L581"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFrom(int,int,float[])</a></p>
@@ -1212,7 +849,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, object arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFrom(int arg0, int arg1, float[] arg2)</code></pre>
   </div>
 
@@ -1244,7 +881,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, float[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFromUnchecked_System_Int32_System_Int32_System_Byte___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFromUnchecked(System.Int32,System.Int32,System.Byte[])">
   Copy1DRangeFromUnchecked(int, int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L625"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,byte[])</a></p>
@@ -1252,7 +889,7 @@ public void Copy1DRangeFrom(int arg0, int arg1, float[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFromUnchecked(int arg0, int arg1, byte[] arg2)</code></pre>
   </div>
 
@@ -1284,7 +921,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, byte[] arg2)</code></pr
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFromUnchecked_System_Int32_System_Int32_System_Int16___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFromUnchecked(System.Int32,System.Int32,System.Int16[])">
   Copy1DRangeFromUnchecked(int, int, short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L669"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,short[])</a></p>
@@ -1292,7 +929,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, byte[] arg2)</code></pr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFromUnchecked(int arg0, int arg1, short[] arg2)</code></pre>
   </div>
 
@@ -1324,7 +961,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, short[] arg2)</code></p
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFromUnchecked_System_Int32_System_Int32_System_Int32___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFromUnchecked(System.Int32,System.Int32,System.Int32[])">
   Copy1DRangeFromUnchecked(int, int, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L647"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,int[])</a></p>
@@ -1332,7 +969,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, short[] arg2)</code></p
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFromUnchecked(int arg0, int arg1, int[] arg2)</code></pre>
   </div>
 
@@ -1364,7 +1001,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, int[] arg2)</code></pre
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFromUnchecked_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy1DRangeFromUnchecked(System.Int32,System.Int32,System.Object)">
   Copy1DRangeFromUnchecked(int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L658"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,java.lang.Object)</a></p>
@@ -1372,7 +1009,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, int[] arg2)</code></pre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFromUnchecked(int arg0, int arg1, object arg2)</code></pre>
   </div>
 
@@ -1404,7 +1041,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, object arg2)</code></pr
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeFromUnchecked_System_Int32_System_Int32_System_Single___" data-uid="Android.Renderscript.Allocation.Copy1DRangeFromUnchecked(System.Int32,System.Int32,System.Single[])">
   Copy1DRangeFromUnchecked(int, int, float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L636"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeFromUnchecked(int,int,float[])</a></p>
@@ -1412,7 +1049,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, object arg2)</code></pr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeFromUnchecked(int arg0, int arg1, float[] arg2)</code></pre>
   </div>
 
@@ -1444,7 +1081,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, float[] arg2)</code></p
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeTo_System_Int32_System_Int32_System_Byte___" data-uid="Android.Renderscript.Allocation.Copy1DRangeTo(System.Int32,System.Int32,System.Byte[])">
   Copy1DRangeTo(int, int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L680"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,byte[])</a></p>
@@ -1452,7 +1089,7 @@ public void Copy1DRangeFromUnchecked(int arg0, int arg1, float[] arg2)</code></p
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeTo(int arg0, int arg1, byte[] arg2)</code></pre>
   </div>
 
@@ -1484,7 +1121,7 @@ public void Copy1DRangeTo(int arg0, int arg1, byte[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeTo_System_Int32_System_Int32_System_Int16___" data-uid="Android.Renderscript.Allocation.Copy1DRangeTo(System.Int32,System.Int32,System.Int16[])">
   Copy1DRangeTo(int, int, short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L724"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,short[])</a></p>
@@ -1492,7 +1129,7 @@ public void Copy1DRangeTo(int arg0, int arg1, byte[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeTo(int arg0, int arg1, short[] arg2)</code></pre>
   </div>
 
@@ -1524,7 +1161,7 @@ public void Copy1DRangeTo(int arg0, int arg1, short[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeTo_System_Int32_System_Int32_System_Int32___" data-uid="Android.Renderscript.Allocation.Copy1DRangeTo(System.Int32,System.Int32,System.Int32[])">
   Copy1DRangeTo(int, int, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L689"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L702"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,int[])</a></p>
@@ -1532,7 +1169,7 @@ public void Copy1DRangeTo(int arg0, int arg1, short[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeTo(int arg0, int arg1, int[] arg2)</code></pre>
   </div>
 
@@ -1564,7 +1201,7 @@ public void Copy1DRangeTo(int arg0, int arg1, int[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeTo_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy1DRangeTo(System.Int32,System.Int32,System.Object)">
   Copy1DRangeTo(int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L713"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,java.lang.Object)</a></p>
@@ -1572,7 +1209,7 @@ public void Copy1DRangeTo(int arg0, int arg1, int[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeTo(int arg0, int arg1, object arg2)</code></pre>
   </div>
 
@@ -1604,7 +1241,7 @@ public void Copy1DRangeTo(int arg0, int arg1, object arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeTo_System_Int32_System_Int32_System_Single___" data-uid="Android.Renderscript.Allocation.Copy1DRangeTo(System.Int32,System.Int32,System.Single[])">
   Copy1DRangeTo(int, int, float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L691"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeTo(int,int,float[])</a></p>
@@ -1612,7 +1249,7 @@ public void Copy1DRangeTo(int arg0, int arg1, object arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeTo(int arg0, int arg1, float[] arg2)</code></pre>
   </div>
 
@@ -1644,7 +1281,7 @@ public void Copy1DRangeTo(int arg0, int arg1, float[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeToUnchecked_System_Int32_System_Int32_System_Byte___" data-uid="Android.Renderscript.Allocation.Copy1DRangeToUnchecked(System.Int32,System.Int32,System.Byte[])">
   Copy1DRangeToUnchecked(int, int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L722"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L735"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,byte[])</a></p>
@@ -1652,7 +1289,7 @@ public void Copy1DRangeTo(int arg0, int arg1, float[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeToUnchecked(int arg0, int arg1, byte[] arg2)</code></pre>
   </div>
 
@@ -1684,7 +1321,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, byte[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeToUnchecked_System_Int32_System_Int32_System_Int16___" data-uid="Android.Renderscript.Allocation.Copy1DRangeToUnchecked(System.Int32,System.Int32,System.Int16[])">
   Copy1DRangeToUnchecked(int, int, short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L779"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,short[])</a></p>
@@ -1692,7 +1329,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, byte[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeToUnchecked(int arg0, int arg1, short[] arg2)</code></pre>
   </div>
 
@@ -1724,7 +1361,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, short[] arg2)</code></pre
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeToUnchecked_System_Int32_System_Int32_System_Int32___" data-uid="Android.Renderscript.Allocation.Copy1DRangeToUnchecked(System.Int32,System.Int32,System.Int32[])">
   Copy1DRangeToUnchecked(int, int, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L757"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,int[])</a></p>
@@ -1732,7 +1369,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, short[] arg2)</code></pre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeToUnchecked(int arg0, int arg1, int[] arg2)</code></pre>
   </div>
 
@@ -1764,7 +1401,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, int[] arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeToUnchecked_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy1DRangeToUnchecked(System.Int32,System.Int32,System.Object)">
   Copy1DRangeToUnchecked(int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L755"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L768"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,java.lang.Object)</a></p>
@@ -1772,7 +1409,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, int[] arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeToUnchecked(int arg0, int arg1, object arg2)</code></pre>
   </div>
 
@@ -1804,7 +1441,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, object arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy1DRangeToUnchecked_System_Int32_System_Int32_System_Single___" data-uid="Android.Renderscript.Allocation.Copy1DRangeToUnchecked(System.Int32,System.Int32,System.Single[])">
   Copy1DRangeToUnchecked(int, int, float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L746"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy1DRangeToUnchecked(int,int,float[])</a></p>
@@ -1812,7 +1449,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, object arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy1DRangeToUnchecked(int arg0, int arg1, float[] arg2)</code></pre>
   </div>
 
@@ -1844,7 +1481,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, float[] arg2)</code></pre
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeFrom_System_Int32_System_Int32_Android_Graphics_Bitmap_" data-uid="Android.Renderscript.Allocation.Copy2DRangeFrom(System.Int32,System.Int32,Android.Graphics.Bitmap)">
   Copy2DRangeFrom(int, int, Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L777"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L790"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,android.graphics.Bitmap)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,android.graphics.Bitmap)</a></p>
@@ -1852,7 +1489,7 @@ public void Copy1DRangeToUnchecked(int arg0, int arg1, float[] arg2)</code></pre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeFrom(int arg0, int arg1, Bitmap arg2)</code></pre>
   </div>
 
@@ -1884,7 +1521,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, Bitmap arg2)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_Android_Renderscript_Allocation_System_Int32_System_Int32_" data-uid="Android.Renderscript.Allocation.Copy2DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,Android.Renderscript.Allocation,System.Int32,System.Int32)">
   Copy2DRangeFrom(int, int, int, int, Allocation, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L792"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L805"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,android.renderscript.Allocation,int,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,android.renderscript.Allocation,int,int)</a></p>
@@ -1892,7 +1529,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, Bitmap arg2)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, Allocation arg4, int arg5, int arg6)</code></pre>
   </div>
 
@@ -1936,7 +1573,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, Allocation a
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_System_Byte___" data-uid="Android.Renderscript.Allocation.Copy2DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,System.Byte[])">
   Copy2DRangeFrom(int, int, int, int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L805"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L818"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,byte[])</a></p>
@@ -1944,7 +1581,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, Allocation a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, byte[] arg4)</code></pre>
   </div>
 
@@ -1982,7 +1619,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_System_Int16___" data-uid="Android.Renderscript.Allocation.Copy2DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
   Copy2DRangeFrom(int, int, int, int, short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L870"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,short[])</a></p>
@@ -1990,7 +1627,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, short[] arg4)</code></pre>
   </div>
 
@@ -2028,7 +1665,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, short[] arg4
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Android.Renderscript.Allocation.Copy2DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])">
   Copy2DRangeFrom(int, int, int, int, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L831"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L844"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,int[])</a></p>
@@ -2036,7 +1673,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, short[] arg4
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, int[] arg4)</code></pre>
   </div>
 
@@ -2074,7 +1711,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, int[] arg4)<
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy2DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)">
   Copy2DRangeFrom(int, int, int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L844"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L857"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,java.lang.Object)</a></p>
@@ -2082,7 +1719,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, int[] arg4)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, object arg4)</code></pre>
   </div>
 
@@ -2120,7 +1757,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, object arg4)
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_System_Single___" data-uid="Android.Renderscript.Allocation.Copy2DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,System.Single[])">
   Copy2DRangeFrom(int, int, int, int, float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L818"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L831"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeFrom(int,int,int,int,float[])</a></p>
@@ -2128,7 +1765,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, object arg4)
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, float[] arg4)</code></pre>
   </div>
 
@@ -2166,7 +1803,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, float[] arg4
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeTo_System_Int32_System_Int32_System_Int32_System_Int32_System_Byte___" data-uid="Android.Renderscript.Allocation.Copy2DRangeTo(System.Int32,System.Int32,System.Int32,System.Int32,System.Byte[])">
   Copy2DRangeTo(int, int, int, int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L870"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L883"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,byte[])</a></p>
@@ -2174,7 +1811,7 @@ public void Copy2DRangeFrom(int arg0, int arg1, int arg2, int arg3, float[] arg4
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, byte[] arg4)</code></pre>
   </div>
 
@@ -2212,7 +1849,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, byte[] arg4)</
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeTo_System_Int32_System_Int32_System_Int32_System_Int32_System_Int16___" data-uid="Android.Renderscript.Allocation.Copy2DRangeTo(System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
   Copy2DRangeTo(int, int, int, int, short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L922"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L935"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,short[])</a></p>
@@ -2220,7 +1857,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, byte[] arg4)</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, short[] arg4)</code></pre>
   </div>
 
@@ -2258,7 +1895,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, short[] arg4)<
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeTo_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Android.Renderscript.Allocation.Copy2DRangeTo(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])">
   Copy2DRangeTo(int, int, int, int, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L896"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L909"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,int[])</a></p>
@@ -2266,7 +1903,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, short[] arg4)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, int[] arg4)</code></pre>
   </div>
 
@@ -2304,7 +1941,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, int[] arg4)</c
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeTo_System_Int32_System_Int32_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy2DRangeTo(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)">
   Copy2DRangeTo(int, int, int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L909"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L922"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,java.lang.Object)</a></p>
@@ -2312,7 +1949,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, int[] arg4)</c
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, object arg4)</code></pre>
   </div>
 
@@ -2350,7 +1987,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, object arg4)</
 
   <h3 id="Android_Renderscript_Allocation_Copy2DRangeTo_System_Int32_System_Int32_System_Int32_System_Int32_System_Single___" data-uid="Android.Renderscript.Allocation.Copy2DRangeTo(System.Int32,System.Int32,System.Int32,System.Int32,System.Single[])">
   Copy2DRangeTo(int, int, int, int, float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L883"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L896"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copy2DRangeTo(int,int,int,int,float[])</a></p>
@@ -2358,7 +1995,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, object arg4)</
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, float[] arg4)</code></pre>
   </div>
 
@@ -2396,7 +2033,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, float[] arg4)<
 
   <h3 id="Android_Renderscript_Allocation_Copy3DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Android_Renderscript_Allocation_System_Int32_System_Int32_System_Int32_" data-uid="Android.Renderscript.Allocation.Copy3DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Android.Renderscript.Allocation,System.Int32,System.Int32,System.Int32)">
   Copy3DRangeFrom(int, int, int, int, int, int, Allocation, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L940"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L953"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy3DRangeFrom(int,int,int,int,int,int,android.renderscript.Allocation,int,int,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy3DRangeFrom(int,int,int,int,int,int,android.renderscript.Allocation,int,int,int)</a></p>
@@ -2404,7 +2041,7 @@ public void Copy2DRangeTo(int arg0, int arg1, int arg2, int arg3, float[] arg4)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Allocation arg6, int arg7, int arg8, int arg9)</code></pre>
   </div>
 
@@ -2457,7 +2094,7 @@ public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, in
 
   <h3 id="Android_Renderscript_Allocation_Copy3DRangeFrom_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy3DRangeFrom(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Object)">
   Copy3DRangeFrom(int, int, int, int, int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L955"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L968"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy3DRangeFrom(int,int,int,int,int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy3DRangeFrom(int,int,int,int,int,int,java.lang.Object)</a></p>
@@ -2465,7 +2102,7 @@ public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, in
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, object arg6)</code></pre>
   </div>
 
@@ -2509,7 +2146,7 @@ public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, in
 
   <h3 id="Android_Renderscript_Allocation_Copy3DRangeTo_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Object_" data-uid="Android.Renderscript.Allocation.Copy3DRangeTo(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Object)">
   Copy3DRangeTo(int, int, int, int, int, int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L970"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L983"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copy3DRangeTo(int,int,int,int,int,int,java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copy3DRangeTo(int,int,int,int,int,int,java.lang.Object)</a></p>
@@ -2517,7 +2154,7 @@ public void Copy3DRangeFrom(int arg0, int arg1, int arg2, int arg3, int arg4, in
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Copy3DRangeTo(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, object arg6)</code></pre>
   </div>
 
@@ -2561,7 +2198,7 @@ public void Copy3DRangeTo(int arg0, int arg1, int arg2, int arg3, int arg4, int 
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_Android_Graphics_Bitmap_" data-uid="Android.Renderscript.Allocation.CopyFrom(Android.Graphics.Bitmap)">
   CopyFrom(Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L979"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L992"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.graphics.Bitmap)">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.graphics.Bitmap)</a></p>
@@ -2569,7 +2206,7 @@ public void Copy3DRangeTo(int arg0, int arg1, int arg2, int arg3, int arg4, int 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(Bitmap arg0)</code></pre>
   </div>
 
@@ -2595,7 +2232,7 @@ public void CopyFrom(Bitmap arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_Android_Renderscript_Allocation_" data-uid="Android.Renderscript.Allocation.CopyFrom(Android.Renderscript.Allocation)">
   CopyFrom(Allocation)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L988"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1001"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.renderscript.Allocation)">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.renderscript.Allocation)</a></p>
@@ -2603,7 +2240,7 @@ public void CopyFrom(Bitmap arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(Allocation arg0)</code></pre>
   </div>
 
@@ -2629,7 +2266,7 @@ public void CopyFrom(Allocation arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_Android_Renderscript_BaseObj___" data-uid="Android.Renderscript.Allocation.CopyFrom(Android.Renderscript.BaseObj[])">
   CopyFrom(BaseObj[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L997"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1010"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.renderscript.BaseObj[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(android.renderscript.BaseObj[])</a></p>
@@ -2637,7 +2274,7 @@ public void CopyFrom(Allocation arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(BaseObj[] arg0)</code></pre>
   </div>
 
@@ -2663,7 +2300,7 @@ public void CopyFrom(BaseObj[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_System_Byte___" data-uid="Android.Renderscript.Allocation.CopyFrom(System.Byte[])">
   CopyFrom(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1006"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1019"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(byte[])</a></p>
@@ -2671,7 +2308,7 @@ public void CopyFrom(BaseObj[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(byte[] arg0)</code></pre>
   </div>
 
@@ -2697,7 +2334,7 @@ public void CopyFrom(byte[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_System_Int16___" data-uid="Android.Renderscript.Allocation.CopyFrom(System.Int16[])">
   CopyFrom(short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1042"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1055"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(short[])</a></p>
@@ -2705,7 +2342,7 @@ public void CopyFrom(byte[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(short[] arg0)</code></pre>
   </div>
 
@@ -2731,7 +2368,7 @@ public void CopyFrom(short[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_System_Int32___" data-uid="Android.Renderscript.Allocation.CopyFrom(System.Int32[])">
   CopyFrom(int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1024"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1037"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(int[])</a></p>
@@ -2739,7 +2376,7 @@ public void CopyFrom(short[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(int[] arg0)</code></pre>
   </div>
 
@@ -2765,7 +2402,7 @@ public void CopyFrom(int[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_System_Object_" data-uid="Android.Renderscript.Allocation.CopyFrom(System.Object)">
   CopyFrom(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1033"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1046"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(java.lang.Object)</a></p>
@@ -2773,7 +2410,7 @@ public void CopyFrom(int[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(object arg0)</code></pre>
   </div>
 
@@ -2799,7 +2436,7 @@ public void CopyFrom(object arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFrom_System_Single___" data-uid="Android.Renderscript.Allocation.CopyFrom(System.Single[])">
   CopyFrom(float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1015"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1028"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFrom(float[])</a></p>
@@ -2807,7 +2444,7 @@ public void CopyFrom(object arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFrom(float[] arg0)</code></pre>
   </div>
 
@@ -2833,7 +2470,7 @@ public void CopyFrom(float[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFromUnchecked_System_Byte___" data-uid="Android.Renderscript.Allocation.CopyFromUnchecked(System.Byte[])">
   CopyFromUnchecked(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1051"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1064"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(byte[])</a></p>
@@ -2841,7 +2478,7 @@ public void CopyFrom(float[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFromUnchecked(byte[] arg0)</code></pre>
   </div>
 
@@ -2867,7 +2504,7 @@ public void CopyFromUnchecked(byte[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFromUnchecked_System_Int16___" data-uid="Android.Renderscript.Allocation.CopyFromUnchecked(System.Int16[])">
   CopyFromUnchecked(short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1087"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(short[])</a></p>
@@ -2875,7 +2512,7 @@ public void CopyFromUnchecked(byte[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFromUnchecked(short[] arg0)</code></pre>
   </div>
 
@@ -2901,7 +2538,7 @@ public void CopyFromUnchecked(short[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFromUnchecked_System_Int32___" data-uid="Android.Renderscript.Allocation.CopyFromUnchecked(System.Int32[])">
   CopyFromUnchecked(int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1069"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1082"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(int[])</a></p>
@@ -2909,7 +2546,7 @@ public void CopyFromUnchecked(short[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFromUnchecked(int[] arg0)</code></pre>
   </div>
 
@@ -2935,7 +2572,7 @@ public void CopyFromUnchecked(int[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFromUnchecked_System_Object_" data-uid="Android.Renderscript.Allocation.CopyFromUnchecked(System.Object)">
   CopyFromUnchecked(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1078"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1091"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(java.lang.Object)</a></p>
@@ -2943,7 +2580,7 @@ public void CopyFromUnchecked(int[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFromUnchecked(object arg0)</code></pre>
   </div>
 
@@ -2969,7 +2606,7 @@ public void CopyFromUnchecked(object arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyFromUnchecked_System_Single___" data-uid="Android.Renderscript.Allocation.CopyFromUnchecked(System.Single[])">
   CopyFromUnchecked(float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1060"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1073"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyFromUnchecked(float[])</a></p>
@@ -2977,7 +2614,7 @@ public void CopyFromUnchecked(object arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyFromUnchecked(float[] arg0)</code></pre>
   </div>
 
@@ -3003,7 +2640,7 @@ public void CopyFromUnchecked(float[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyTo_Android_Graphics_Bitmap_" data-uid="Android.Renderscript.Allocation.CopyTo(Android.Graphics.Bitmap)">
   CopyTo(Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1096"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(android.graphics.Bitmap)">https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(android.graphics.Bitmap)</a></p>
@@ -3011,7 +2648,7 @@ public void CopyFromUnchecked(float[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyTo(Bitmap arg0)</code></pre>
   </div>
 
@@ -3037,7 +2674,7 @@ public void CopyTo(Bitmap arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyTo_System_Byte___" data-uid="Android.Renderscript.Allocation.CopyTo(System.Byte[])">
   CopyTo(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(byte[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(byte[])</a></p>
@@ -3045,7 +2682,7 @@ public void CopyTo(Bitmap arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyTo(byte[] arg0)</code></pre>
   </div>
 
@@ -3071,7 +2708,7 @@ public void CopyTo(byte[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyTo_System_Int16___" data-uid="Android.Renderscript.Allocation.CopyTo(System.Int16[])">
   CopyTo(short[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(short[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(short[])</a></p>
@@ -3079,7 +2716,7 @@ public void CopyTo(byte[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyTo(short[] arg0)</code></pre>
   </div>
 
@@ -3105,7 +2742,7 @@ public void CopyTo(short[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyTo_System_Int32___" data-uid="Android.Renderscript.Allocation.CopyTo(System.Int32[])">
   CopyTo(int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(int[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(int[])</a></p>
@@ -3113,7 +2750,7 @@ public void CopyTo(short[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyTo(int[] arg0)</code></pre>
   </div>
 
@@ -3139,7 +2776,7 @@ public void CopyTo(int[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyTo_System_Object_" data-uid="Android.Renderscript.Allocation.CopyTo(System.Object)">
   CopyTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(java.lang.Object)">https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(java.lang.Object)</a></p>
@@ -3147,7 +2784,7 @@ public void CopyTo(int[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyTo(object arg0)</code></pre>
   </div>
 
@@ -3173,7 +2810,7 @@ public void CopyTo(object arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CopyTo_System_Single___" data-uid="Android.Renderscript.Allocation.CopyTo(System.Single[])">
   CopyTo(float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(float[])">https://developer.android.com/reference/android/renderscript/Allocation.html#copyTo(float[])</a></p>
@@ -3181,7 +2818,7 @@ public void CopyTo(object arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void CopyTo(float[] arg0)</code></pre>
   </div>
 
@@ -3207,7 +2844,7 @@ public void CopyTo(float[] arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CreateAllocations_Android_Renderscript_RenderScript_Android_Renderscript_Type_System_Int32_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateAllocations(Android.Renderscript.RenderScript,Android.Renderscript.Type,System.Int32,System.Int32)">
   CreateAllocations(RenderScript, Type, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L462"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createAllocations(android.renderscript.RenderScript,android.renderscript.Type,int,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createAllocations(android.renderscript.RenderScript,android.renderscript.Type,int,int)</a></p>
@@ -3215,7 +2852,7 @@ public void CopyTo(float[] arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation[] CreateAllocations(RenderScript arg0, Type arg1, int arg2, int arg3)</code></pre>
   </div>
 
@@ -3256,7 +2893,7 @@ public static Allocation[] CreateAllocations(RenderScript arg0, Type arg1, int a
 
   <h3 id="Android_Renderscript_Allocation_CreateCubemapFromBitmap_Android_Renderscript_RenderScript_Android_Graphics_Bitmap_" data-uid="Android.Renderscript.Allocation.CreateCubemapFromBitmap(Android.Renderscript.RenderScript,Android.Graphics.Bitmap)">
   CreateCubemapFromBitmap(RenderScript, Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L292"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap)">https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap)</a></p>
@@ -3264,7 +2901,7 @@ public static Allocation[] CreateAllocations(RenderScript arg0, Type arg1, int a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateCubemapFromBitmap(RenderScript arg0, Bitmap arg1)</code></pre>
   </div>
 
@@ -3299,7 +2936,7 @@ public static Allocation CreateCubemapFromBitmap(RenderScript arg0, Bitmap arg1)
 
   <h3 id="Android_Renderscript_Allocation_CreateCubemapFromBitmap_Android_Renderscript_RenderScript_Android_Graphics_Bitmap_Android_Renderscript_Allocation_MipmapControl_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateCubemapFromBitmap(Android.Renderscript.RenderScript,Android.Graphics.Bitmap,Android.Renderscript.Allocation.MipmapControl,System.Int32)">
   CreateCubemapFromBitmap(RenderScript, Bitmap, MipmapControl, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L281"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap,android.renderscript.Allocation.MipmapControl,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap,android.renderscript.Allocation.MipmapControl,int)</a></p>
@@ -3307,7 +2944,7 @@ public static Allocation CreateCubemapFromBitmap(RenderScript arg0, Bitmap arg1)
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateCubemapFromBitmap(RenderScript arg0, Bitmap arg1, Allocation.MipmapControl arg2, int arg3)</code></pre>
   </div>
 
@@ -3348,7 +2985,7 @@ public static Allocation CreateCubemapFromBitmap(RenderScript arg0, Bitmap arg1,
 
   <h3 id="Android_Renderscript_Allocation_CreateCubemapFromCubeFaces_Android_Renderscript_RenderScript_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_" data-uid="Android.Renderscript.Allocation.CreateCubemapFromCubeFaces(Android.Renderscript.RenderScript,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap)">
   CreateCubemapFromCubeFaces(RenderScript, Bitmap, Bitmap, Bitmap, Bitmap, Bitmap, Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromCubeFaces(android.renderscript.RenderScript,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap)">https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromCubeFaces(android.renderscript.RenderScript,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap)</a></p>
@@ -3356,7 +2993,7 @@ public static Allocation CreateCubemapFromBitmap(RenderScript arg0, Bitmap arg1,
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateCubemapFromCubeFaces(RenderScript arg0, Bitmap arg1, Bitmap arg2, Bitmap arg3, Bitmap arg4, Bitmap arg5, Bitmap arg6)</code></pre>
   </div>
 
@@ -3406,7 +3043,7 @@ public static Allocation CreateCubemapFromCubeFaces(RenderScript arg0, Bitmap ar
 
   <h3 id="Android_Renderscript_Allocation_CreateCubemapFromCubeFaces_Android_Renderscript_RenderScript_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Graphics_Bitmap_Android_Renderscript_Allocation_MipmapControl_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateCubemapFromCubeFaces(Android.Renderscript.RenderScript,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Graphics.Bitmap,Android.Renderscript.Allocation.MipmapControl,System.Int32)">
   CreateCubemapFromCubeFaces(RenderScript, Bitmap, Bitmap, Bitmap, Bitmap, Bitmap, Bitmap, MipmapControl, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L310"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromCubeFaces(android.renderscript.RenderScript,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.renderscript.Allocation.MipmapControl,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromCubeFaces(android.renderscript.RenderScript,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.renderscript.Allocation.MipmapControl,int)</a></p>
@@ -3414,7 +3051,7 @@ public static Allocation CreateCubemapFromCubeFaces(RenderScript arg0, Bitmap ar
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateCubemapFromCubeFaces(RenderScript arg0, Bitmap arg1, Bitmap arg2, Bitmap arg3, Bitmap arg4, Bitmap arg5, Bitmap arg6, Allocation.MipmapControl arg7, int arg8)</code></pre>
   </div>
 
@@ -3470,7 +3107,7 @@ public static Allocation CreateCubemapFromCubeFaces(RenderScript arg0, Bitmap ar
 
   <h3 id="Android_Renderscript_Allocation_CreateFromBitmap_Android_Renderscript_RenderScript_Android_Graphics_Bitmap_" data-uid="Android.Renderscript.Allocation.CreateFromBitmap(Android.Renderscript.RenderScript,Android.Graphics.Bitmap)">
   CreateFromBitmap(RenderScript, Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap)">https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap)</a></p>
@@ -3478,7 +3115,7 @@ public static Allocation CreateCubemapFromCubeFaces(RenderScript arg0, Bitmap ar
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateFromBitmap(RenderScript arg0, Bitmap arg1)</code></pre>
   </div>
 
@@ -3513,7 +3150,7 @@ public static Allocation CreateFromBitmap(RenderScript arg0, Bitmap arg1)</code>
 
   <h3 id="Android_Renderscript_Allocation_CreateFromBitmap_Android_Renderscript_RenderScript_Android_Graphics_Bitmap_Android_Renderscript_Allocation_MipmapControl_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateFromBitmap(Android.Renderscript.RenderScript,Android.Graphics.Bitmap,Android.Renderscript.Allocation.MipmapControl,System.Int32)">
   CreateFromBitmap(RenderScript, Bitmap, MipmapControl, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L339"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap,android.renderscript.Allocation.MipmapControl,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap,android.renderscript.Allocation.MipmapControl,int)</a></p>
@@ -3521,7 +3158,7 @@ public static Allocation CreateFromBitmap(RenderScript arg0, Bitmap arg1)</code>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateFromBitmap(RenderScript arg0, Bitmap arg1, Allocation.MipmapControl arg2, int arg3)</code></pre>
   </div>
 
@@ -3562,7 +3199,7 @@ public static Allocation CreateFromBitmap(RenderScript arg0, Bitmap arg1, Alloca
 
   <h3 id="Android_Renderscript_Allocation_CreateFromBitmapResource_Android_Renderscript_RenderScript_Android_Content_Res_Resources_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateFromBitmapResource(Android.Renderscript.RenderScript,Android.Content.Res.Resources,System.Int32)">
   CreateFromBitmapResource(RenderScript, Resources, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmapResource(android.renderscript.RenderScript,android.content.res.Resources,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmapResource(android.renderscript.RenderScript,android.content.res.Resources,int)</a></p>
@@ -3570,7 +3207,7 @@ public static Allocation CreateFromBitmap(RenderScript arg0, Bitmap arg1, Alloca
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateFromBitmapResource(RenderScript arg0, Resources arg1, int arg2)</code></pre>
   </div>
 
@@ -3608,7 +3245,7 @@ public static Allocation CreateFromBitmapResource(RenderScript arg0, Resources a
 
   <h3 id="Android_Renderscript_Allocation_CreateFromBitmapResource_Android_Renderscript_RenderScript_Android_Content_Res_Resources_System_Int32_Android_Renderscript_Allocation_MipmapControl_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateFromBitmapResource(Android.Renderscript.RenderScript,Android.Content.Res.Resources,System.Int32,Android.Renderscript.Allocation.MipmapControl,System.Int32)">
   CreateFromBitmapResource(RenderScript, Resources, int, MipmapControl, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L364"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmapResource(android.renderscript.RenderScript,android.content.res.Resources,int,android.renderscript.Allocation.MipmapControl,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createFromBitmapResource(android.renderscript.RenderScript,android.content.res.Resources,int,android.renderscript.Allocation.MipmapControl,int)</a></p>
@@ -3616,7 +3253,7 @@ public static Allocation CreateFromBitmapResource(RenderScript arg0, Resources a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateFromBitmapResource(RenderScript arg0, Resources arg1, int arg2, Allocation.MipmapControl arg3, int arg4)</code></pre>
   </div>
 
@@ -3660,7 +3297,7 @@ public static Allocation CreateFromBitmapResource(RenderScript arg0, Resources a
 
   <h3 id="Android_Renderscript_Allocation_CreateFromString_Android_Renderscript_RenderScript_Java_Lang_String_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateFromString(Android.Renderscript.RenderScript,Java.Lang.String,System.Int32)">
   CreateFromString(RenderScript, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L388"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createFromString(android.renderscript.RenderScript,java.lang.String,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createFromString(android.renderscript.RenderScript,java.lang.String,int)</a></p>
@@ -3668,7 +3305,7 @@ public static Allocation CreateFromBitmapResource(RenderScript arg0, Resources a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateFromString(RenderScript arg0, String arg1, int arg2)</code></pre>
   </div>
 
@@ -3706,7 +3343,7 @@ public static Allocation CreateFromString(RenderScript arg0, String arg1, int ar
 
   <h3 id="Android_Renderscript_Allocation_CreateSized_Android_Renderscript_RenderScript_Android_Renderscript_Element_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateSized(Android.Renderscript.RenderScript,Android.Renderscript.Element,System.Int32)">
   CreateSized(RenderScript, Element, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createSized(android.renderscript.RenderScript,android.renderscript.Element,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createSized(android.renderscript.RenderScript,android.renderscript.Element,int)</a></p>
@@ -3714,7 +3351,7 @@ public static Allocation CreateFromString(RenderScript arg0, String arg1, int ar
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateSized(RenderScript arg0, Element arg1, int arg2)</code></pre>
   </div>
 
@@ -3752,7 +3389,7 @@ public static Allocation CreateSized(RenderScript arg0, Element arg1, int arg2)<
 
   <h3 id="Android_Renderscript_Allocation_CreateSized_Android_Renderscript_RenderScript_Android_Renderscript_Element_System_Int32_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateSized(Android.Renderscript.RenderScript,Android.Renderscript.Element,System.Int32,System.Int32)">
   CreateSized(RenderScript, Element, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createSized(android.renderscript.RenderScript,android.renderscript.Element,int,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createSized(android.renderscript.RenderScript,android.renderscript.Element,int,int)</a></p>
@@ -3760,7 +3397,7 @@ public static Allocation CreateSized(RenderScript arg0, Element arg1, int arg2)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateSized(RenderScript arg0, Element arg1, int arg2, int arg3)</code></pre>
   </div>
 
@@ -3801,7 +3438,7 @@ public static Allocation CreateSized(RenderScript arg0, Element arg1, int arg2, 
 
   <h3 id="Android_Renderscript_Allocation_CreateTyped_Android_Renderscript_RenderScript_Android_Renderscript_Type_" data-uid="Android.Renderscript.Allocation.CreateTyped(Android.Renderscript.RenderScript,Android.Renderscript.Type)">
   CreateTyped(RenderScript, Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createTyped(android.renderscript.RenderScript,android.renderscript.Type)">https://developer.android.com/reference/android/renderscript/Allocation.html#createTyped(android.renderscript.RenderScript,android.renderscript.Type)</a></p>
@@ -3809,7 +3446,7 @@ public static Allocation CreateSized(RenderScript arg0, Element arg1, int arg2, 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateTyped(RenderScript arg0, Type arg1)</code></pre>
   </div>
 
@@ -3844,7 +3481,7 @@ public static Allocation CreateTyped(RenderScript arg0, Type arg1)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_CreateTyped_Android_Renderscript_RenderScript_Android_Renderscript_Type_Android_Renderscript_Allocation_MipmapControl_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateTyped(Android.Renderscript.RenderScript,Android.Renderscript.Type,Android.Renderscript.Allocation.MipmapControl,System.Int32)">
   CreateTyped(RenderScript, Type, MipmapControl, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L426"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createTyped(android.renderscript.RenderScript,android.renderscript.Type,android.renderscript.Allocation.MipmapControl,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createTyped(android.renderscript.RenderScript,android.renderscript.Type,android.renderscript.Allocation.MipmapControl,int)</a></p>
@@ -3852,7 +3489,7 @@ public static Allocation CreateTyped(RenderScript arg0, Type arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateTyped(RenderScript arg0, Type arg1, Allocation.MipmapControl arg2, int arg3)</code></pre>
   </div>
 
@@ -3893,7 +3530,7 @@ public static Allocation CreateTyped(RenderScript arg0, Type arg1, Allocation.Mi
 
   <h3 id="Android_Renderscript_Allocation_CreateTyped_Android_Renderscript_RenderScript_Android_Renderscript_Type_System_Int32_" data-uid="Android.Renderscript.Allocation.CreateTyped(Android.Renderscript.RenderScript,Android.Renderscript.Type,System.Int32)">
   CreateTyped(RenderScript, Type, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L438"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#createTyped(android.renderscript.RenderScript,android.renderscript.Type,int)">https://developer.android.com/reference/android/renderscript/Allocation.html#createTyped(android.renderscript.RenderScript,android.renderscript.Type,int)</a></p>
@@ -3901,7 +3538,7 @@ public static Allocation CreateTyped(RenderScript arg0, Type arg1, Allocation.Mi
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public static Allocation CreateTyped(RenderScript arg0, Type arg1, int arg2)</code></pre>
   </div>
 
@@ -3939,7 +3576,7 @@ public static Allocation CreateTyped(RenderScript arg0, Type arg1, int arg2)</co
 
   <h3 id="Android_Renderscript_Allocation_GenerateMipmaps" data-uid="Android.Renderscript.Allocation.GenerateMipmaps">
   GenerateMipmaps()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#generateMipmaps()">https://developer.android.com/reference/android/renderscript/Allocation.html#generateMipmaps()</a></p>
@@ -3947,7 +3584,7 @@ public static Allocation CreateTyped(RenderScript arg0, Type arg1, int arg2)</co
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void GenerateMipmaps()</code></pre>
   </div>
 
@@ -3967,7 +3604,7 @@ public void GenerateMipmaps()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetByteBuffer" data-uid="Android.Renderscript.Allocation.GetByteBuffer">
   GetByteBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L520"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getByteBuffer()">https://developer.android.com/reference/android/renderscript/Allocation.html#getByteBuffer()</a></p>
@@ -3975,7 +3612,7 @@ public void GenerateMipmaps()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public ByteBuffer GetByteBuffer()</code></pre>
   </div>
 
@@ -4001,7 +3638,7 @@ public ByteBuffer GetByteBuffer()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetBytesSize" data-uid="Android.Renderscript.Allocation.GetBytesSize">
   GetBytesSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L502"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getBytesSize()">https://developer.android.com/reference/android/renderscript/Allocation.html#getBytesSize()</a></p>
@@ -4009,7 +3646,7 @@ public ByteBuffer GetByteBuffer()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public int GetBytesSize()</code></pre>
   </div>
 
@@ -4035,7 +3672,7 @@ public int GetBytesSize()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetElement" data-uid="Android.Renderscript.Allocation.GetElement">
   GetElement()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L475"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getElement()">https://developer.android.com/reference/android/renderscript/Allocation.html#getElement()</a></p>
@@ -4043,7 +3680,7 @@ public int GetBytesSize()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public Element GetElement()</code></pre>
   </div>
 
@@ -4069,7 +3706,7 @@ public Element GetElement()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetStride" data-uid="Android.Renderscript.Allocation.GetStride">
   GetStride()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L529"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getStride()">https://developer.android.com/reference/android/renderscript/Allocation.html#getStride()</a></p>
@@ -4077,7 +3714,7 @@ public Element GetElement()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public long GetStride()</code></pre>
   </div>
 
@@ -4103,7 +3740,7 @@ public long GetStride()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetSurface" data-uid="Android.Renderscript.Allocation.GetSurface">
   GetSurface()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getSurface()">https://developer.android.com/reference/android/renderscript/Allocation.html#getSurface()</a></p>
@@ -4111,7 +3748,7 @@ public long GetStride()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public Surface GetSurface()</code></pre>
   </div>
 
@@ -4137,7 +3774,7 @@ public Surface GetSurface()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetTimeStamp" data-uid="Android.Renderscript.Allocation.GetTimeStamp">
   GetTimeStamp()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L538"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getTimeStamp()">https://developer.android.com/reference/android/renderscript/Allocation.html#getTimeStamp()</a></p>
@@ -4145,7 +3782,7 @@ public Surface GetSurface()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public long GetTimeStamp()</code></pre>
   </div>
 
@@ -4171,7 +3808,7 @@ public long GetTimeStamp()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetType" data-uid="Android.Renderscript.Allocation.GetType">
   GetType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L484"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getType()">https://developer.android.com/reference/android/renderscript/Allocation.html#getType()</a></p>
@@ -4179,7 +3816,7 @@ public long GetTimeStamp()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public Type GetType()</code></pre>
   </div>
 
@@ -4205,7 +3842,7 @@ public Type GetType()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_GetUsage" data-uid="Android.Renderscript.Allocation.GetUsage">
   GetUsage()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L511"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#getUsage()">https://developer.android.com/reference/android/renderscript/Allocation.html#getUsage()</a></p>
@@ -4213,7 +3850,7 @@ public Type GetType()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public int GetUsage()</code></pre>
   </div>
 
@@ -4239,7 +3876,7 @@ public int GetUsage()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_IoReceive" data-uid="Android.Renderscript.Allocation.IoReceive">
   IoReceive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#ioReceive()">https://developer.android.com/reference/android/renderscript/Allocation.html#ioReceive()</a></p>
@@ -4247,7 +3884,7 @@ public int GetUsage()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void IoReceive()</code></pre>
   </div>
 
@@ -4267,7 +3904,7 @@ public void IoReceive()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_IoSend" data-uid="Android.Renderscript.Allocation.IoSend">
   IoSend()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#ioSend()">https://developer.android.com/reference/android/renderscript/Allocation.html#ioSend()</a></p>
@@ -4275,7 +3912,7 @@ public void IoReceive()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void IoSend()</code></pre>
   </div>
 
@@ -4295,7 +3932,7 @@ public void IoSend()</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_Resize_System_Int32_" data-uid="Android.Renderscript.Allocation.Resize(System.Int32)">
   Resize(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L547"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#resize(int)">https://developer.android.com/reference/android/renderscript/Allocation.html#resize(int)</a></p>
@@ -4303,7 +3940,7 @@ public void IoSend()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void Resize(int arg0)</code></pre>
   </div>
 
@@ -4329,7 +3966,7 @@ public void Resize(int arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_SetAutoPadding_System_Boolean_" data-uid="Android.Renderscript.Allocation.SetAutoPadding(System.Boolean)">
   SetAutoPadding(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#setAutoPadding(boolean)">https://developer.android.com/reference/android/renderscript/Allocation.html#setAutoPadding(boolean)</a></p>
@@ -4337,7 +3974,7 @@ public void Resize(int arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetAutoPadding(bool arg0)</code></pre>
   </div>
 
@@ -4363,7 +4000,7 @@ public void SetAutoPadding(bool arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_SetFromFieldPacker_System_Int32_Android_Renderscript_FieldPacker_" data-uid="Android.Renderscript.Allocation.SetFromFieldPacker(System.Int32,Android.Renderscript.FieldPacker)">
   SetFromFieldPacker(int, FieldPacker)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#setFromFieldPacker(int,android.renderscript.FieldPacker)">https://developer.android.com/reference/android/renderscript/Allocation.html#setFromFieldPacker(int,android.renderscript.FieldPacker)</a></p>
@@ -4371,7 +4008,7 @@ public void SetAutoPadding(bool arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetFromFieldPacker(int arg0, FieldPacker arg1)</code></pre>
   </div>
 
@@ -4400,7 +4037,7 @@ public void SetFromFieldPacker(int arg0, FieldPacker arg1)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_SetFromFieldPacker_System_Int32_System_Int32_Android_Renderscript_FieldPacker_" data-uid="Android.Renderscript.Allocation.SetFromFieldPacker(System.Int32,System.Int32,Android.Renderscript.FieldPacker)">
   SetFromFieldPacker(int, int, FieldPacker)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#setFromFieldPacker(int,int,android.renderscript.FieldPacker)">https://developer.android.com/reference/android/renderscript/Allocation.html#setFromFieldPacker(int,int,android.renderscript.FieldPacker)</a></p>
@@ -4408,7 +4045,7 @@ public void SetFromFieldPacker(int arg0, FieldPacker arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetFromFieldPacker(int arg0, int arg1, FieldPacker arg2)</code></pre>
   </div>
 
@@ -4440,7 +4077,7 @@ public void SetFromFieldPacker(int arg0, int arg1, FieldPacker arg2)</code></pre
 
   <h3 id="Android_Renderscript_Allocation_SetFromFieldPacker_System_Int32_System_Int32_System_Int32_System_Int32_Android_Renderscript_FieldPacker_" data-uid="Android.Renderscript.Allocation.SetFromFieldPacker(System.Int32,System.Int32,System.Int32,System.Int32,Android.Renderscript.FieldPacker)">
   SetFromFieldPacker(int, int, int, int, FieldPacker)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#setFromFieldPacker(int,int,int,int,android.renderscript.FieldPacker)">https://developer.android.com/reference/android/renderscript/Allocation.html#setFromFieldPacker(int,int,int,int,android.renderscript.FieldPacker)</a></p>
@@ -4448,7 +4085,7 @@ public void SetFromFieldPacker(int arg0, int arg1, FieldPacker arg2)</code></pre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetFromFieldPacker(int arg0, int arg1, int arg2, int arg3, FieldPacker arg4)</code></pre>
   </div>
 
@@ -4486,7 +4123,7 @@ public void SetFromFieldPacker(int arg0, int arg1, int arg2, int arg3, FieldPack
 
   <h3 id="Android_Renderscript_Allocation_SetOnBufferAvailableListener_Android_Renderscript_Allocation_OnBufferAvailableListener_" data-uid="Android.Renderscript.Allocation.SetOnBufferAvailableListener(Android.Renderscript.Allocation.OnBufferAvailableListener)">
   SetOnBufferAvailableListener(OnBufferAvailableListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#setOnBufferAvailableListener(android.renderscript.Allocation.OnBufferAvailableListener)">https://developer.android.com/reference/android/renderscript/Allocation.html#setOnBufferAvailableListener(android.renderscript.Allocation.OnBufferAvailableListener)</a></p>
@@ -4494,7 +4131,7 @@ public void SetFromFieldPacker(int arg0, int arg1, int arg2, int arg3, FieldPack
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetOnBufferAvailableListener(Allocation.OnBufferAvailableListener arg0)</code></pre>
   </div>
 
@@ -4520,7 +4157,7 @@ public void SetOnBufferAvailableListener(Allocation.OnBufferAvailableListener ar
 
   <h3 id="Android_Renderscript_Allocation_SetSurface_Android_View_Surface_" data-uid="Android.Renderscript.Allocation.SetSurface(Android.View.Surface)">
   SetSurface(Surface)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#setSurface(android.view.Surface)">https://developer.android.com/reference/android/renderscript/Allocation.html#setSurface(android.view.Surface)</a></p>
@@ -4528,7 +4165,7 @@ public void SetOnBufferAvailableListener(Allocation.OnBufferAvailableListener ar
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SetSurface(Surface arg0)</code></pre>
   </div>
 
@@ -4554,7 +4191,7 @@ public void SetSurface(Surface arg0)</code></pre>
 
   <h3 id="Android_Renderscript_Allocation_SyncAll_System_Int32_" data-uid="Android.Renderscript.Allocation.SyncAll(System.Int32)">
   SyncAll(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L1248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/renderscript/Allocation.html#syncAll(int)">https://developer.android.com/reference/android/renderscript/Allocation.html#syncAll(int)</a></p>
@@ -4562,7 +4199,7 @@ public void SetSurface(Surface arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void SyncAll(int arg0)</code></pre>
   </div>
 
@@ -4588,7 +4225,7 @@ public void SyncAll(int arg0)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L189" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Renderscript/Allocation.cs/#L218" class="edit-link">Edit this page</a>
         </div>
 
 

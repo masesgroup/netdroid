@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_App_Backup_BackupAgent" data-uid="Android.App.Backup.BackupAgent" class="text-break">
-Class BackupAgent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L76"><i class="bi bi-code-slash"></i></a>
+Class BackupAgent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BackupAgent : ContextWrapper, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class BackupAgent : ContextWrapper, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
       <div><a class="xref" href="Android.Content.Context.html">Context</a></div>
       <div><a class="xref" href="Android.Content.ContextWrapper.html">ContextWrapper</a></div>
       <div><span class="xref">BackupAgent</span></div>
@@ -125,11 +125,13 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
 
@@ -143,6 +145,9 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_CreatePoolableInstance_Android_Content_Context_">ContextWrapper.CreatePoolableInstance(Context)</a>
+    </div>
     <div>
       <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_GetBaseContext">ContextWrapper.GetBaseContext()</a>
     </div>
@@ -246,7 +251,13 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ACTIVITY_SERVICE">Context.ACTIVITY_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ADVANCED_PROTECTION_SERVICE">Context.ADVANCED_PROTECTION_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ALARM_SERVICE">Context.ALARM_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_FUNCTION_SERVICE">Context.APP_FUNCTION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_OPS_SERVICE">Context.APP_OPS_SERVICE</a>
@@ -366,6 +377,9 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYGUARD_SERVICE">Context.KEYGUARD_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYSTORE_SERVICE">Context.KEYSTORE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_LAUNCHER_APPS_SERVICE">Context.LAUNCHER_APPS_SERVICE</a>
     </div>
     <div>
@@ -385,6 +399,9 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_PROJECTION_SERVICE">Context.MEDIA_PROJECTION_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_QUALITY_SERVICE">Context.MEDIA_QUALITY_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_ROUTER_SERVICE">Context.MEDIA_ROUTER_SERVICE</a>
@@ -435,6 +452,9 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ROLE_SERVICE">Context.ROLE_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SATELLITE_SERVICE">Context.SATELLITE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SEARCH_SERVICE">Context.SEARCH_SERVICE</a>
     </div>
     <div>
@@ -471,10 +491,16 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TELEPHONY_SUBSCRIPTION_SERVICE">Context.TELEPHONY_SUBSCRIPTION_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TETHERING_SERVICE">Context.TETHERING_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_CLASSIFICATION_SERVICE">Context.TEXT_CLASSIFICATION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_SERVICES_MANAGER_SERVICE">Context.TEXT_SERVICES_MANAGER_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_AD_SERVICE">Context.TV_AD_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_INPUT_SERVICE">Context.TV_INPUT_SERVICE</a>
@@ -983,351 +1009,6 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_UpdateServiceGroup_Android_Content_ServiceConnection_System_Int32_System_Int32_">Context.UpdateServiceGroup(ServiceConnection, int, int)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Context&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -1335,6 +1016,9 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -1350,16 +1034,15 @@ Class BackupAgent  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_App_Backup_BackupAgent__ctor" data-uid="Android.App.Backup.BackupAgent.#ctor">
   BackupAgent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#%3Cinit%3E()">https://developer.android.com/reference/android/app/backup/BackupAgent.html#%3Cinit%3E()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;BackupAgent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public BackupAgent()</code></pre>
+    <pre><code class="lang-csharp hljs">public BackupAgent()</code></pre>
   </div>
 
 
@@ -1376,23 +1059,23 @@ public BackupAgent()</code></pre>
 
   <a id="Android_App_Backup_BackupAgent__ctor_" data-uid="Android.App.Backup.BackupAgent.#ctor*"></a>
 
-  <h3 id="Android_App_Backup_BackupAgent__ctor_System_Object___" data-uid="Android.App.Backup.BackupAgent.#ctor(System.Object[])">
-  BackupAgent(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_App_Backup_BackupAgent__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.App.Backup.BackupAgent.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  BackupAgent(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;BackupAgent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public BackupAgent(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public BackupAgent(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -1415,10 +1098,10 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_BridgeClassName" data-uid="Android.App.Backup.BackupAgent.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1447,7 +1130,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED" data-uid="Android.App.Backup.BackupAgent.FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED">
   FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED">https://developer.android.com/reference/android/app/backup/BackupAgent.html#FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED</a></p>
@@ -1455,7 +1138,7 @@ public BackupAgent(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int FLAG_CLIENT_SIDE_ENCRYPTION_ENABLED { get; set; }</code></pre>
   </div>
 
 
@@ -1479,7 +1162,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_FLAG_DEVICE_TO_DEVICE_TRANSFER" data-uid="Android.App.Backup.BackupAgent.FLAG_DEVICE_TO_DEVICE_TRANSFER">
   FLAG_DEVICE_TO_DEVICE_TRANSFER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#FLAG_DEVICE_TO_DEVICE_TRANSFER">https://developer.android.com/reference/android/app/backup/BackupAgent.html#FLAG_DEVICE_TO_DEVICE_TRANSFER</a></p>
@@ -1487,7 +1170,7 @@ public BackupAgent(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FLAG_DEVICE_TO_DEVICE_TRANSFER { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int FLAG_DEVICE_TO_DEVICE_TRANSFER { get; set; }</code></pre>
   </div>
 
 
@@ -1511,10 +1194,10 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_IsBridgeAbstract" data-uid="Android.App.Backup.BackupAgent.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1543,10 +1226,10 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_IsBridgeCloseable" data-uid="Android.App.Backup.BackupAgent.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1575,10 +1258,10 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_IsBridgeInterface" data-uid="Android.App.Backup.BackupAgent.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1607,10 +1290,10 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_IsBridgeStatic" data-uid="Android.App.Backup.BackupAgent.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1639,7 +1322,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_TYPE_DIRECTORY" data-uid="Android.App.Backup.BackupAgent.TYPE_DIRECTORY">
   TYPE_DIRECTORY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#TYPE_DIRECTORY">https://developer.android.com/reference/android/app/backup/BackupAgent.html#TYPE_DIRECTORY</a></p>
@@ -1647,7 +1330,7 @@ public BackupAgent(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_DIRECTORY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_DIRECTORY { get; set; }</code></pre>
   </div>
 
 
@@ -1671,7 +1354,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_TYPE_FILE" data-uid="Android.App.Backup.BackupAgent.TYPE_FILE">
   TYPE_FILE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#TYPE_FILE">https://developer.android.com/reference/android/app/backup/BackupAgent.html#TYPE_FILE</a></p>
@@ -1679,7 +1362,7 @@ public BackupAgent(params object[] args)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TYPE_FILE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int TYPE_FILE { get; set; }</code></pre>
   </div>
 
 
@@ -1703,11 +1386,43 @@ public BackupAgent(params object[] args)</code></pre>
 </h2>
 
 
+  <a id="Android_App_Backup_BackupAgent_CreatePoolableInstance_" data-uid="Android.App.Backup.BackupAgent.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_App_Backup_BackupAgent_CreatePoolableInstance" data-uid="Android.App.Backup.BackupAgent.CreatePoolableInstance">
+  CreatePoolableInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BackupAgent()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BackupAgent CreatePoolableInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Backup.BackupAgent.html">BackupAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_App_Backup_BackupAgent_FullBackupFile_" data-uid="Android.App.Backup.BackupAgent.FullBackupFile*"></a>
 
   <h3 id="Android_App_Backup_BackupAgent_FullBackupFile_Java_Io_File_Android_App_Backup_FullBackupDataOutput_" data-uid="Android.App.Backup.BackupAgent.FullBackupFile(Java.Io.File,Android.App.Backup.FullBackupDataOutput)">
   FullBackupFile(File, FullBackupDataOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#fullBackupFile(java.io.File,android.app.backup.FullBackupDataOutput)">https://developer.android.com/reference/android/app/backup/BackupAgent.html#fullBackupFile(java.io.File,android.app.backup.FullBackupDataOutput)</a></p>
@@ -1743,7 +1458,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnBackup_Android_Os_ParcelFileDescriptor_Android_App_Backup_BackupDataOutput_Android_Os_ParcelFileDescriptor_" data-uid="Android.App.Backup.BackupAgent.OnBackup(Android.Os.ParcelFileDescriptor,Android.App.Backup.BackupDataOutput,Android.Os.ParcelFileDescriptor)">
   OnBackup(ParcelFileDescriptor, BackupDataOutput, ParcelFileDescriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor)">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor)</a></p>
@@ -1787,7 +1502,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnCreate" data-uid="Android.App.Backup.BackupAgent.OnCreate">
   OnCreate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onCreate()">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onCreate()</a></p>
@@ -1814,7 +1529,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnDestroy" data-uid="Android.App.Backup.BackupAgent.OnDestroy">
   OnDestroy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onDestroy()">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onDestroy()</a></p>
@@ -1841,7 +1556,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnFullBackup_Android_App_Backup_FullBackupDataOutput_" data-uid="Android.App.Backup.BackupAgent.OnFullBackup(Android.App.Backup.FullBackupDataOutput)">
   OnFullBackup(FullBackupDataOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onFullBackup(android.app.backup.FullBackupDataOutput)">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onFullBackup(android.app.backup.FullBackupDataOutput)</a></p>
@@ -1879,7 +1594,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnQuotaExceeded_System_Int64_System_Int64_" data-uid="Android.App.Backup.BackupAgent.OnQuotaExceeded(System.Int64,System.Int64)">
   OnQuotaExceeded(long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onQuotaExceeded(long,long)">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onQuotaExceeded(long,long)</a></p>
@@ -1915,7 +1630,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnRestore_Android_App_Backup_BackupDataInput_System_Int32_Android_Os_ParcelFileDescriptor_" data-uid="Android.App.Backup.BackupAgent.OnRestore(Android.App.Backup.BackupDataInput,System.Int32,Android.Os.ParcelFileDescriptor)">
   OnRestore(BackupDataInput, int, ParcelFileDescriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,int,android.os.ParcelFileDescriptor)">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,int,android.os.ParcelFileDescriptor)</a></p>
@@ -1959,7 +1674,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnRestore_Android_App_Backup_BackupDataInput_System_Int64_Android_Os_ParcelFileDescriptor_" data-uid="Android.App.Backup.BackupAgent.OnRestore(Android.App.Backup.BackupDataInput,System.Int64,Android.Os.ParcelFileDescriptor)">
   OnRestore(BackupDataInput, long, ParcelFileDescriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,long,android.os.ParcelFileDescriptor)">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestore(android.app.backup.BackupDataInput,long,android.os.ParcelFileDescriptor)</a></p>
@@ -2003,7 +1718,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnRestoreFile_Android_Os_ParcelFileDescriptor_System_Int64_Java_Io_File_System_Int32_System_Int64_System_Int64_" data-uid="Android.App.Backup.BackupAgent.OnRestoreFile(Android.Os.ParcelFileDescriptor,System.Int64,Java.Io.File,System.Int32,System.Int64,System.Int64)">
   OnRestoreFile(ParcelFileDescriptor, long, File, int, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestoreFile(android.os.ParcelFileDescriptor,long,java.io.File,int,long,long)">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestoreFile(android.os.ParcelFileDescriptor,long,java.io.File,int,long,long)</a></p>
@@ -2056,7 +1771,7 @@ public BackupAgent(params object[] args)</code></pre>
 
   <h3 id="Android_App_Backup_BackupAgent_OnRestoreFinished" data-uid="Android.App.Backup.BackupAgent.OnRestoreFinished">
   OnRestoreFinished()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestoreFinished()">https://developer.android.com/reference/android/app/backup/BackupAgent.html#onRestoreFinished()</a></p>
@@ -2083,7 +1798,7 @@ public BackupAgent(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L76" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Backup/BackupAgent.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

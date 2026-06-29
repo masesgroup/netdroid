@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Widget_ListView" data-uid="Android.Widget.ListView" class="text-break">
-Class ListView  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L119"><i class="bi bi-code-slash"></i></a>
+Class ListView  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ListView : AbsListView, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAccessibilityEventSource, IViewParent, IViewManager, ITextWatcher, INoCopySpan</code></pre>
+    <pre><code class="lang-csharp hljs">public class ListView : AbsListView, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IAccessibilityEventSource, IViewManager, IViewParent, ITextWatcher, INoCopySpan</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.View.View.html">View</a>&gt;</div>
       <div><a class="xref" href="Android.View.View.html">View</a></div>
       <div><a class="xref" href="Android.View.ViewGroup.html">ViewGroup</a></div>
       <div><a class="xref" href="Android.Widget.AdapterView-1.html">AdapterView</a>&lt;<a class="xref" href="Android.Widget.ListAdapter.html">ListAdapter</a>&gt;</div>
@@ -127,14 +127,16 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Android.View.Accessibility.IAccessibilityEventSource.html">IAccessibilityEventSource</a></div>
-      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
       <div><a class="xref" href="Android.View.IViewManager.html">IViewManager</a></div>
+      <div><a class="xref" href="Android.View.IViewParent.html">IViewParent</a></div>
       <div><a class="xref" href="Android.Text.ITextWatcher.html">ITextWatcher</a></div>
       <div><a class="xref" href="Android.Text.INoCopySpan.html">INoCopySpan</a></div>
     </dd>
@@ -724,6 +726,9 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_OnViewRemoved_Android_View_View_">ViewGroup.OnViewRemoved(View)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_PropagateRequestedFrameRate_System_Single_System_Boolean_">ViewGroup.PropagateRequestedFrameRate(float, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.ViewGroup.html#Android_View_ViewGroup_RecomputeViewAttributes_Android_View_View_">ViewGroup.RecomputeViewAttributes(View)</a>
     </div>
     <div>
@@ -932,6 +937,9 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_GLOBAL_URI_WRITE">View.DRAG_FLAG_GLOBAL_URI_WRITE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START">View.DRAG_FLAG_HIDE_CALLING_TASK_ON_DRAG_START</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_DRAG_FLAG_OPAQUE">View.DRAG_FLAG_OPAQUE</a>
@@ -2275,6 +2283,9 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
       <a class="xref" href="Android.View.View.html#Android_View_View_GetContentDescription">View.GetContentDescription()</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_GetSupplementalDescription">View.GetSupplementalDescription()</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_GetTooltipText">View.GetTooltipText()</a>
     </div>
     <div>
@@ -2621,6 +2632,9 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RemoveOnUnhandledKeyEventListener_Android_View_View_OnUnhandledKeyEventListener_">View.RemoveOnUnhandledKeyEventListener(View.OnUnhandledKeyEventListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_ReportAppJankStats_Android_App_Jank_AppJankStats_">View.ReportAppJankStats(AppJankStats)</a>
     </div>
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_RequestApplyInsets">View.RequestApplyInsets()</a>
@@ -3067,6 +3081,9 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
       <a class="xref" href="Android.View.View.html#Android_View_View_SetStateListAnimator_Android_Animation_StateListAnimator_">View.SetStateListAnimator(StateListAnimator)</a>
     </div>
     <div>
+      <a class="xref" href="Android.View.View.html#Android_View_View_SetSupplementalDescription_Java_Lang_CharSequence_">View.SetSupplementalDescription(CharSequence)</a>
+    </div>
+    <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_SetSystemGestureExclusionRects_Java_Util_List_Android_Graphics_Rect__">View.SetSystemGestureExclusionRects(List&lt;Rect&gt;)</a>
     </div>
     <div>
@@ -3162,351 +3179,6 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
     <div>
       <a class="xref" href="Android.View.View.html#Android_View_View_UnscheduleDrawable_Android_Graphics_Drawable_Drawable_">View.UnscheduleDrawable(Drawable)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;View&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;View&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;View&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;View&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -3514,6 +3186,9 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -3527,36 +3202,9 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <a id="Android_Widget_ListView__ctor_" data-uid="Android.Widget.ListView.#ctor*"></a>
 
-  <h3 id="Android_Widget_ListView__ctor" data-uid="Android.Widget.ListView.#ctor">
-  ListView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ListView()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Widget_ListView__ctor_" data-uid="Android.Widget.ListView.#ctor*"></a>
-
   <h3 id="Android_Widget_ListView__ctor_Android_Content_Context_" data-uid="Android.Widget.ListView.#ctor(Android.Content.Context)">
   ListView(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context)">https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context)</a></p>
@@ -3589,7 +3237,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView__ctor_Android_Content_Context_Android_Util_AttributeSet_" data-uid="Android.Widget.ListView.#ctor(Android.Content.Context,Android.Util.AttributeSet)">
   ListView(Context, AttributeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)">https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)</a></p>
@@ -3625,7 +3273,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_" data-uid="Android.Widget.ListView.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32)">
   ListView(Context, AttributeSet, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)">https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)</a></p>
@@ -3664,7 +3312,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_" data-uid="Android.Widget.ListView.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32,System.Int32)">
   ListView(Context, AttributeSet, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)">https://developer.android.com/reference/android/widget/ListView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)</a></p>
@@ -3704,22 +3352,23 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <a id="Android_Widget_ListView__ctor_" data-uid="Android.Widget.ListView.#ctor*"></a>
 
-  <h3 id="Android_Widget_ListView__ctor_System_Object___" data-uid="Android.Widget.ListView.#ctor(System.Object[])">
-  ListView(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Widget_ListView__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Widget.ListView.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  ListView(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ListView(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public ListView(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -3742,10 +3391,10 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_BridgeClassName" data-uid="Android.Widget.ListView.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3774,10 +3423,10 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_IsBridgeAbstract" data-uid="Android.Widget.ListView.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3806,10 +3455,10 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_IsBridgeCloseable" data-uid="Android.Widget.ListView.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3838,10 +3487,10 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_IsBridgeInterface" data-uid="Android.Widget.ListView.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3870,10 +3519,10 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_IsBridgeStatic" data-uid="Android.Widget.ListView.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -3906,7 +3555,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_AddFooterView_Android_View_View_" data-uid="Android.Widget.ListView.AddFooterView(Android.View.View)">
   AddFooterView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#addFooterView(android.view.View)">https://developer.android.com/reference/android/widget/ListView.html#addFooterView(android.view.View)</a></p>
@@ -3939,7 +3588,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_AddFooterView_Android_View_View_System_Object_System_Boolean_" data-uid="Android.Widget.ListView.AddFooterView(Android.View.View,System.Object,System.Boolean)">
   AddFooterView(View, object, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#addFooterView(android.view.View,java.lang.Object,boolean)">https://developer.android.com/reference/android/widget/ListView.html#addFooterView(android.view.View,java.lang.Object,boolean)</a></p>
@@ -3978,7 +3627,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_AddHeaderView_Android_View_View_" data-uid="Android.Widget.ListView.AddHeaderView(Android.View.View)">
   AddHeaderView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#addHeaderView(android.view.View)">https://developer.android.com/reference/android/widget/ListView.html#addHeaderView(android.view.View)</a></p>
@@ -4011,7 +3660,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_AddHeaderView_Android_View_View_System_Object_System_Boolean_" data-uid="Android.Widget.ListView.AddHeaderView(Android.View.View,System.Object,System.Boolean)">
   AddHeaderView(View, object, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#addHeaderView(android.view.View,java.lang.Object,boolean)">https://developer.android.com/reference/android/widget/ListView.html#addHeaderView(android.view.View,java.lang.Object,boolean)</a></p>
@@ -4050,7 +3699,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_AreFooterDividersEnabled" data-uid="Android.Widget.ListView.AreFooterDividersEnabled">
   AreFooterDividersEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#areFooterDividersEnabled()">https://developer.android.com/reference/android/widget/ListView.html#areFooterDividersEnabled()</a></p>
@@ -4083,7 +3732,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Android_Widget_ListView_AreHeaderDividersEnabled" data-uid="Android.Widget.ListView.AreHeaderDividersEnabled">
   AreHeaderDividersEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#areHeaderDividersEnabled()">https://developer.android.com/reference/android/widget/ListView.html#areHeaderDividersEnabled()</a></p>
@@ -4112,11 +3761,171 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <a id="Android_Widget_ListView_CreatePoolableInstance_" data-uid="Android.Widget.ListView.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_ListView_CreatePoolableInstance_Android_Content_Context_" data-uid="Android.Widget.ListView.CreatePoolableInstance(Android.Content.Context)">
+  CreatePoolableInstance(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ListView(Android.Content.Context arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListView CreatePoolableInstance(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.ListView.html">ListView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ListView_CreatePoolableInstance_" data-uid="Android.Widget.ListView.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_ListView_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_" data-uid="Android.Widget.ListView.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet)">
+  CreatePoolableInstance(Context, AttributeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ListView(Android.Content.Context arg0, Android.Util.AttributeSet arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListView CreatePoolableInstance(Context arg0, AttributeSet arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.ListView.html">ListView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ListView_CreatePoolableInstance_" data-uid="Android.Widget.ListView.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_ListView_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_" data-uid="Android.Widget.ListView.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet,System.Int32)">
+  CreatePoolableInstance(Context, AttributeSet, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ListView(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListView CreatePoolableInstance(Context arg0, AttributeSet arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.ListView.html">ListView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_ListView_CreatePoolableInstance_" data-uid="Android.Widget.ListView.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Widget_ListView_CreatePoolableInstance_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_" data-uid="Android.Widget.ListView.CreatePoolableInstance(Android.Content.Context,Android.Util.AttributeSet,System.Int32,System.Int32)">
+  CreatePoolableInstance(Context, AttributeSet, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ListView(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ListView CreatePoolableInstance(Context arg0, AttributeSet arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.ListView.html">ListView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Widget_ListView_GetCheckItemIds_" data-uid="Android.Widget.ListView.GetCheckItemIds*"></a>
 
   <h3 id="Android_Widget_ListView_GetCheckItemIds" data-uid="Android.Widget.ListView.GetCheckItemIds">
   GetCheckItemIds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getCheckItemIds()">https://developer.android.com/reference/android/widget/ListView.html#getCheckItemIds()</a></p>
@@ -4124,7 +3933,7 @@ Class ListView  <a class="header-action link-secondary" title="View source" href
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public long[] GetCheckItemIds()</code></pre>
   </div>
 
@@ -4150,7 +3959,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetDivider" data-uid="Android.Widget.ListView.GetDivider">
   GetDivider()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getDivider()">https://developer.android.com/reference/android/widget/ListView.html#getDivider()</a></p>
@@ -4183,7 +3992,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetDividerHeight" data-uid="Android.Widget.ListView.GetDividerHeight">
   GetDividerHeight()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getDividerHeight()">https://developer.android.com/reference/android/widget/ListView.html#getDividerHeight()</a></p>
@@ -4216,7 +4025,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetFooterViewsCount" data-uid="Android.Widget.ListView.GetFooterViewsCount">
   GetFooterViewsCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getFooterViewsCount()">https://developer.android.com/reference/android/widget/ListView.html#getFooterViewsCount()</a></p>
@@ -4249,7 +4058,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetHeaderViewsCount" data-uid="Android.Widget.ListView.GetHeaderViewsCount">
   GetHeaderViewsCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getHeaderViewsCount()">https://developer.android.com/reference/android/widget/ListView.html#getHeaderViewsCount()</a></p>
@@ -4282,7 +4091,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetItemsCanFocus" data-uid="Android.Widget.ListView.GetItemsCanFocus">
   GetItemsCanFocus()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getItemsCanFocus()">https://developer.android.com/reference/android/widget/ListView.html#getItemsCanFocus()</a></p>
@@ -4315,7 +4124,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetMaxScrollAmount" data-uid="Android.Widget.ListView.GetMaxScrollAmount">
   GetMaxScrollAmount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getMaxScrollAmount()">https://developer.android.com/reference/android/widget/ListView.html#getMaxScrollAmount()</a></p>
@@ -4348,7 +4157,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetOverscrollFooter" data-uid="Android.Widget.ListView.GetOverscrollFooter">
   GetOverscrollFooter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getOverscrollFooter()">https://developer.android.com/reference/android/widget/ListView.html#getOverscrollFooter()</a></p>
@@ -4381,7 +4190,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_GetOverscrollHeader" data-uid="Android.Widget.ListView.GetOverscrollHeader">
   GetOverscrollHeader()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#getOverscrollHeader()">https://developer.android.com/reference/android/widget/ListView.html#getOverscrollHeader()</a></p>
@@ -4414,7 +4223,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_RemoveFooterView_Android_View_View_" data-uid="Android.Widget.ListView.RemoveFooterView(Android.View.View)">
   RemoveFooterView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#removeFooterView(android.view.View)">https://developer.android.com/reference/android/widget/ListView.html#removeFooterView(android.view.View)</a></p>
@@ -4453,7 +4262,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_RemoveHeaderView_Android_View_View_" data-uid="Android.Widget.ListView.RemoveHeaderView(Android.View.View)">
   RemoveHeaderView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#removeHeaderView(android.view.View)">https://developer.android.com/reference/android/widget/ListView.html#removeHeaderView(android.view.View)</a></p>
@@ -4492,7 +4301,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetDivider_Android_Graphics_Drawable_Drawable_" data-uid="Android.Widget.ListView.SetDivider(Android.Graphics.Drawable.Drawable)">
   SetDivider(Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setDivider(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/widget/ListView.html#setDivider(android.graphics.drawable.Drawable)</a></p>
@@ -4525,7 +4334,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetDividerHeight_System_Int32_" data-uid="Android.Widget.ListView.SetDividerHeight(System.Int32)">
   SetDividerHeight(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setDividerHeight(int)">https://developer.android.com/reference/android/widget/ListView.html#setDividerHeight(int)</a></p>
@@ -4558,7 +4367,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetFooterDividersEnabled_System_Boolean_" data-uid="Android.Widget.ListView.SetFooterDividersEnabled(System.Boolean)">
   SetFooterDividersEnabled(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setFooterDividersEnabled(boolean)">https://developer.android.com/reference/android/widget/ListView.html#setFooterDividersEnabled(boolean)</a></p>
@@ -4591,7 +4400,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetHeaderDividersEnabled_System_Boolean_" data-uid="Android.Widget.ListView.SetHeaderDividersEnabled(System.Boolean)">
   SetHeaderDividersEnabled(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L353"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setHeaderDividersEnabled(boolean)">https://developer.android.com/reference/android/widget/ListView.html#setHeaderDividersEnabled(boolean)</a></p>
@@ -4624,7 +4433,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetItemsCanFocus_System_Boolean_" data-uid="Android.Widget.ListView.SetItemsCanFocus(System.Boolean)">
   SetItemsCanFocus(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L361"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setItemsCanFocus(boolean)">https://developer.android.com/reference/android/widget/ListView.html#setItemsCanFocus(boolean)</a></p>
@@ -4657,7 +4466,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetOverscrollFooter_Android_Graphics_Drawable_Drawable_" data-uid="Android.Widget.ListView.SetOverscrollFooter(Android.Graphics.Drawable.Drawable)">
   SetOverscrollFooter(Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L369"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setOverscrollFooter(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/widget/ListView.html#setOverscrollFooter(android.graphics.drawable.Drawable)</a></p>
@@ -4690,7 +4499,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetOverscrollHeader_Android_Graphics_Drawable_Drawable_" data-uid="Android.Widget.ListView.SetOverscrollHeader(Android.Graphics.Drawable.Drawable)">
   SetOverscrollHeader(Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L377"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setOverscrollHeader(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/widget/ListView.html#setOverscrollHeader(android.graphics.drawable.Drawable)</a></p>
@@ -4723,7 +4532,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SetSelectionAfterHeaderView" data-uid="Android.Widget.ListView.SetSelectionAfterHeaderView">
   SetSelectionAfterHeaderView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L384"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#setSelectionAfterHeaderView()">https://developer.android.com/reference/android/widget/ListView.html#setSelectionAfterHeaderView()</a></p>
@@ -4750,7 +4559,7 @@ public long[] GetCheckItemIds()</code></pre>
 
   <h3 id="Android_Widget_ListView_SmoothScrollByOffset_System_Int32_" data-uid="Android.Widget.ListView.SmoothScrollByOffset(System.Int32)">
   SmoothScrollByOffset(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/ListView.html#smoothScrollByOffset(int)">https://developer.android.com/reference/android/widget/ListView.html#smoothScrollByOffset(int)</a></p>
@@ -4783,7 +4592,7 @@ public long[] GetCheckItemIds()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L119" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/ListView.cs/#L97" class="edit-link">Edit this page</a>
         </div>
 
 

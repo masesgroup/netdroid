@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Concurrent_ThreadPoolExecutor" data-uid="Java.Util.Concurrent.ThreadPoolExecutor" class="text-break">
-Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L254"><i class="bi bi-code-slash"></i></a>
+Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ThreadPoolExecutor : AbstractExecutorService, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IExecutorService, IExecutor</code></pre>
+    <pre><code class="lang-csharp hljs">public class ThreadPoolExecutor : AbstractExecutorService, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, IExecutorService, IExecutor</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a>&gt;</div>
       <div><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></div>
       <div><a class="xref" href="Java.Util.Concurrent.ExecutorService.html">ExecutorService</a></div>
       <div><a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html">AbstractExecutorService</a></div>
@@ -126,11 +126,13 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Util.Concurrent.IExecutorService.html">IExecutorService</a></div>
       <div><a class="xref" href="Java.Util.Concurrent.IExecutor.html">IExecutor</a></div>
     </dd>
@@ -146,6 +148,9 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_CreatePoolableInstance">AbstractExecutorService.CreatePoolableInstance()</a>
+    </div>
     <div>
       <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_Submit__1_Java_Lang_Runnable___0_">AbstractExecutorService.Submit&lt;T&gt;(Runnable, T)</a>
     </div>
@@ -185,351 +190,6 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
     <div>
       <a class="xref" href="Java.Util.Concurrent.Executor.html#Java_Util_Concurrent_Executor_Execute_Java_Lang_Runnable_">Executor.Execute(Runnable)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Executor&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Executor&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Executor&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Executor&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Executor&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Executor&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Executor&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -537,6 +197,9 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -550,19 +213,25 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <a id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor*"></a>
 
-  <h3 id="Java_Util_Concurrent_ThreadPoolExecutor__ctor" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor">
-  ThreadPoolExecutor()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  ThreadPoolExecutor(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ThreadPoolExecutor()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public ThreadPoolExecutor(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -579,7 +248,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable})">
   ThreadPoolExecutor(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue)</a></p>
@@ -624,7 +293,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__Java_Util_Concurrent_RejectedExecutionHandler_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable},Java.Util.Concurrent.RejectedExecutionHandler)">
   ThreadPoolExecutor(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;, RejectedExecutionHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)</a></p>
@@ -672,7 +341,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__Java_Util_Concurrent_ThreadFactory_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable},Java.Util.Concurrent.ThreadFactory)">
   ThreadPoolExecutor(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;, ThreadFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)</a></p>
@@ -720,7 +389,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__Java_Util_Concurrent_ThreadFactory_Java_Util_Concurrent_RejectedExecutionHandler_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable},Java.Util.Concurrent.ThreadFactory,Java.Util.Concurrent.RejectedExecutionHandler)">
   ThreadPoolExecutor(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;, ThreadFactory, RejectedExecutionHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)</a></p>
@@ -767,38 +436,6 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor*"></a>
-
-  <h3 id="Java_Util_Concurrent_ThreadPoolExecutor__ctor_System_Object___" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.#ctor(System.Object[])">
-  ThreadPoolExecutor(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ThreadPoolExecutor(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -807,10 +444,10 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_BridgeClassName" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -839,10 +476,10 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_IsBridgeAbstract" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -871,10 +508,10 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_IsBridgeCloseable" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -903,10 +540,10 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_IsBridgeInterface" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -935,10 +572,10 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_IsBridgeStatic" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -971,7 +608,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_AllowCoreThreadTimeOut_System_Boolean_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.AllowCoreThreadTimeOut(System.Boolean)">
   AllowCoreThreadTimeOut(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)</a></p>
@@ -1004,7 +641,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_AllowsCoreThreadTimeOut" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.AllowsCoreThreadTimeOut">
   AllowsCoreThreadTimeOut()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()</a></p>
@@ -1033,11 +670,199 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable})">
+  CreatePoolableInstance(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, TimeUnit arg3, BlockingQueue&lt;Runnable&gt; arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Concurrent.BlockingQueue-1.html">BlockingQueue</a>&lt;<a class="xref" href="Java.Lang.Runnable.html">Runnable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html">ThreadPoolExecutor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__Java_Util_Concurrent_RejectedExecutionHandler_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable},Java.Util.Concurrent.RejectedExecutionHandler)">
+  CreatePoolableInstance(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;, RejectedExecutionHandler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, TimeUnit arg3, BlockingQueue&lt;Runnable&gt; arg4, RejectedExecutionHandler arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Concurrent.BlockingQueue-1.html">BlockingQueue</a>&lt;<a class="xref" href="Java.Lang.Runnable.html">Runnable</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="Java.Util.Concurrent.RejectedExecutionHandler.html">RejectedExecutionHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html">ThreadPoolExecutor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__Java_Util_Concurrent_ThreadFactory_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable},Java.Util.Concurrent.ThreadFactory)">
+  CreatePoolableInstance(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;, ThreadFactory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4, Java.Util.Concurrent.ThreadFactory arg5)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, TimeUnit arg3, BlockingQueue&lt;Runnable&gt; arg4, ThreadFactory arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Concurrent.BlockingQueue-1.html">BlockingQueue</a>&lt;<a class="xref" href="Java.Lang.Runnable.html">Runnable</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="Java.Util.Concurrent.ThreadFactory.html">ThreadFactory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html">ThreadPoolExecutor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_CreatePoolableInstance_System_Int32_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_Java_Util_Concurrent_BlockingQueue_Java_Lang_Runnable__Java_Util_Concurrent_ThreadFactory_Java_Util_Concurrent_RejectedExecutionHandler_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.CreatePoolableInstance(System.Int32,System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit,Java.Util.Concurrent.BlockingQueue{Java.Lang.Runnable},Java.Util.Concurrent.ThreadFactory,Java.Util.Concurrent.RejectedExecutionHandler)">
+  CreatePoolableInstance(int, int, long, TimeUnit, BlockingQueue&lt;Runnable&gt;, ThreadFactory, RejectedExecutionHandler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, TimeUnit arg3, BlockingQueue&lt;Runnable&gt; arg4, ThreadFactory arg5, RejectedExecutionHandler arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Concurrent.BlockingQueue-1.html">BlockingQueue</a>&lt;<a class="xref" href="Java.Lang.Runnable.html">Runnable</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="Java.Util.Concurrent.ThreadFactory.html">ThreadFactory</a></dt>
+    <dd></dd>
+    <dt><code>arg6</code> <a class="xref" href="Java.Util.Concurrent.RejectedExecutionHandler.html">RejectedExecutionHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html">ThreadPoolExecutor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Concurrent_ThreadPoolExecutor_GetActiveCount_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetActiveCount*"></a>
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetActiveCount" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetActiveCount">
   GetActiveCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L335"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getActiveCount()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getActiveCount()</a></p>
@@ -1070,7 +895,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetCompletedTaskCount" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetCompletedTaskCount">
   GetCompletedTaskCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount()</a></p>
@@ -1103,7 +928,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetCorePoolSize" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetCorePoolSize">
   GetCorePoolSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L343"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getCorePoolSize()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getCorePoolSize()</a></p>
@@ -1136,7 +961,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetKeepAliveTime_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetKeepAliveTime(Java.Util.Concurrent.TimeUnit)">
   GetKeepAliveTime(TimeUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L416"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)</a></p>
@@ -1175,7 +1000,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetLargestPoolSize" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetLargestPoolSize">
   GetLargestPoolSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L351"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize()</a></p>
@@ -1208,7 +1033,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetMaximumPoolSize" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetMaximumPoolSize">
   GetMaximumPoolSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getMaximumPoolSize()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getMaximumPoolSize()</a></p>
@@ -1241,7 +1066,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetPoolSize" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetPoolSize">
   GetPoolSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getPoolSize()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getPoolSize()</a></p>
@@ -1274,7 +1099,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetQueue" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetQueue">
   GetQueue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getQueue()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getQueue()</a></p>
@@ -1307,7 +1132,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetRejectedExecutionHandler" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetRejectedExecutionHandler">
   GetRejectedExecutionHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()</a></p>
@@ -1340,7 +1165,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetTaskCount" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetTaskCount">
   GetTaskCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount()</a></p>
@@ -1373,7 +1198,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_GetThreadFactory" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.GetThreadFactory">
   GetThreadFactory()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getThreadFactory()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#getThreadFactory()</a></p>
@@ -1406,7 +1231,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_IsTerminating" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.IsTerminating">
   IsTerminating()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L310"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()</a></p>
@@ -1439,7 +1264,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_PrestartAllCoreThreads" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.PrestartAllCoreThreads">
   PrestartAllCoreThreads()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L375"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()</a></p>
@@ -1472,7 +1297,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_PrestartCoreThread" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.PrestartCoreThread">
   PrestartCoreThread()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()</a></p>
@@ -1505,7 +1330,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_Purge" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.Purge">
   Purge()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#purge()">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#purge()</a></p>
@@ -1532,7 +1357,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_Remove_Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.Remove(Java.Lang.Runnable)">
   Remove(Runnable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)</a></p>
@@ -1571,7 +1396,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_SetCorePoolSize_System_Int32_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.SetCorePoolSize(System.Int32)">
   SetCorePoolSize(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L447"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setCorePoolSize(int)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setCorePoolSize(int)</a></p>
@@ -1604,7 +1429,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_SetKeepAliveTime_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.SetKeepAliveTime(System.Int64,Java.Util.Concurrent.TimeUnit)">
   SetKeepAliveTime(long, TimeUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L456"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setKeepAliveTime(long,java.util.concurrent.TimeUnit)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setKeepAliveTime(long,java.util.concurrent.TimeUnit)</a></p>
@@ -1640,7 +1465,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_SetMaximumPoolSize_System_Int32_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.SetMaximumPoolSize(System.Int32)">
   SetMaximumPoolSize(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L464"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setMaximumPoolSize(int)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setMaximumPoolSize(int)</a></p>
@@ -1673,7 +1498,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_SetRejectedExecutionHandler_Java_Util_Concurrent_RejectedExecutionHandler_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.SetRejectedExecutionHandler(Java.Util.Concurrent.RejectedExecutionHandler)">
   SetRejectedExecutionHandler(RejectedExecutionHandler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L472"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)</a></p>
@@ -1706,7 +1531,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Util_Concurrent_ThreadPoolExecutor_SetThreadFactory_Java_Util_Concurrent_ThreadFactory_" data-uid="Java.Util.Concurrent.ThreadPoolExecutor.SetThreadFactory(Java.Util.Concurrent.ThreadFactory)">
   SetThreadFactory(ThreadFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L480"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setThreadFactory(java.util.concurrent.ThreadFactory)">https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html#setThreadFactory(java.util.concurrent.ThreadFactory)</a></p>
@@ -1739,7 +1564,7 @@ Class ThreadPoolExecutor  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L254" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/ThreadPoolExecutor.cs/#L199" class="edit-link">Edit this page</a>
         </div>
 
 

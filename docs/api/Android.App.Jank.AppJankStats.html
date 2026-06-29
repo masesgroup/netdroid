@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppJankStats | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppJankStats | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the .NET suite for Android">
+      <meta name="description" content="https://developer.android.com/reference/android/app/jank/AppJankStats.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_Jank_AppJankStats.md&amp;value=---%0Auid%3A%20Android.App.Jank.AppJankStats%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.Jank.AppJankStats">
+
+
+
+  <h1 id="Android_App_Jank_AppJankStats" data-uid="Android.App.Jank.AppJankStats" class="text-break">
+Class AppJankStats  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a>.<a class="xref" href="Android.App.Jank.html">Jank</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html">https://developer.android.com/reference/android/app/jank/AppJankStats.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppJankStats : JVMBridgeBase&lt;AppJankStats&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.App.Jank.AppJankStats.html">AppJankStats</a>&gt;</div>
+      <div><span class="xref">AppJankStats</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_Jank_AppJankStats__ctor_" data-uid="Android.App.Jank.AppJankStats.#ctor*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.App.Jank.AppJankStats.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AppJankStats(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AppJankStats(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats__ctor_" data-uid="Android.App.Jank.AppJankStats.#ctor*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats__ctor_System_Int32_Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_System_Int64_System_Int64_Android_App_Jank_RelativeFrameTimeHistogram_" data-uid="Android.App.Jank.AppJankStats.#ctor(System.Int32,Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String,System.Int64,System.Int64,Android.App.Jank.RelativeFrameTimeHistogram)">
+  AppJankStats(int, String, String, String, String, long, long, RelativeFrameTimeHistogram)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#%3Cinit%3E(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,long,long,android.app.jank.RelativeFrameTimeHistogram)">https://developer.android.com/reference/android/app/jank/AppJankStats.html#%3Cinit%3E(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,long,long,android.app.jank.RelativeFrameTimeHistogram)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppJankStats(int arg0, String arg1, String arg2, String arg3, String arg4, long arg5, long arg6, RelativeFrameTimeHistogram arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="Android.App.Jank.RelativeFrameTimeHistogram.html">RelativeFrameTimeHistogram</a></dt>
+    <dd><p><a class="xref" href="Android.App.Jank.RelativeFrameTimeHistogram.html">RelativeFrameTimeHistogram</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_Jank_AppJankStats_BridgeClassName_" data-uid="Android.App.Jank.AppJankStats.BridgeClassName*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_BridgeClassName" data-uid="Android.App.Jank.AppJankStats.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_IsBridgeAbstract_" data-uid="Android.App.Jank.AppJankStats.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_IsBridgeAbstract" data-uid="Android.App.Jank.AppJankStats.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_IsBridgeCloseable_" data-uid="Android.App.Jank.AppJankStats.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_IsBridgeCloseable" data-uid="Android.App.Jank.AppJankStats.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_IsBridgeInterface_" data-uid="Android.App.Jank.AppJankStats.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_IsBridgeInterface" data-uid="Android.App.Jank.AppJankStats.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_IsBridgeStatic_" data-uid="Android.App.Jank.AppJankStats.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_IsBridgeStatic" data-uid="Android.App.Jank.AppJankStats.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_ANIMATION_" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_ANIMATION*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_ANIMATION" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_ANIMATION">
+  WIDGET_CATEGORY_ANIMATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_ANIMATION">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_ANIMATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_CATEGORY_ANIMATION { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_KEYBOARD_" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_KEYBOARD*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_KEYBOARD" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_KEYBOARD">
+  WIDGET_CATEGORY_KEYBOARD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_KEYBOARD">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_KEYBOARD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_CATEGORY_KEYBOARD { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_MEDIA_" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_MEDIA*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_MEDIA" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_MEDIA">
+  WIDGET_CATEGORY_MEDIA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_MEDIA">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_MEDIA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_CATEGORY_MEDIA { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_NAVIGATION_" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_NAVIGATION*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_NAVIGATION" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_NAVIGATION">
+  WIDGET_CATEGORY_NAVIGATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_NAVIGATION">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_NAVIGATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_CATEGORY_NAVIGATION { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_OTHER_" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_OTHER*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_OTHER" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_OTHER">
+  WIDGET_CATEGORY_OTHER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_OTHER">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_OTHER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_CATEGORY_OTHER { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_SCROLL_" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_SCROLL*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_SCROLL" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_SCROLL">
+  WIDGET_CATEGORY_SCROLL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_SCROLL">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_SCROLL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_CATEGORY_SCROLL { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_UNSPECIFIED_" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_UNSPECIFIED*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_CATEGORY_UNSPECIFIED" data-uid="Android.App.Jank.AppJankStats.WIDGET_CATEGORY_UNSPECIFIED">
+  WIDGET_CATEGORY_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_UNSPECIFIED">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_CATEGORY_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_CATEGORY_UNSPECIFIED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_ANIMATING_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_ANIMATING*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_ANIMATING" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_ANIMATING">
+  WIDGET_STATE_ANIMATING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_ANIMATING">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_ANIMATING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_ANIMATING { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_DRAGGING_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_DRAGGING*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_DRAGGING" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_DRAGGING">
+  WIDGET_STATE_DRAGGING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_DRAGGING">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_DRAGGING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_DRAGGING { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_FLINGING_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_FLINGING*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_FLINGING" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_FLINGING">
+  WIDGET_STATE_FLINGING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_FLINGING">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_FLINGING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_FLINGING { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_NONE_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_NONE*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_NONE" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_NONE">
+  WIDGET_STATE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_NONE">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_NONE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_PLAYBACK_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_PLAYBACK*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_PLAYBACK" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_PLAYBACK">
+  WIDGET_STATE_PLAYBACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_PLAYBACK">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_PLAYBACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_PLAYBACK { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_PREDICTIVE_BACK_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_PREDICTIVE_BACK*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_PREDICTIVE_BACK" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_PREDICTIVE_BACK">
+  WIDGET_STATE_PREDICTIVE_BACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_PREDICTIVE_BACK">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_PREDICTIVE_BACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_PREDICTIVE_BACK { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_SCROLLING_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_SCROLLING*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_SCROLLING" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_SCROLLING">
+  WIDGET_STATE_SCROLLING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_SCROLLING">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_SCROLLING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_SCROLLING { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_SWIPING_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_SWIPING*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_SWIPING" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_SWIPING">
+  WIDGET_STATE_SWIPING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_SWIPING">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_SWIPING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_SWIPING { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_TAPPING_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_TAPPING*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_TAPPING" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_TAPPING">
+  WIDGET_STATE_TAPPING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_TAPPING">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_TAPPING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_TAPPING { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_UNSPECIFIED_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_UNSPECIFIED*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_UNSPECIFIED" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_UNSPECIFIED">
+  WIDGET_STATE_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_UNSPECIFIED">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_UNSPECIFIED { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_WIDGET_STATE_ZOOMING_" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_ZOOMING*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_WIDGET_STATE_ZOOMING" data-uid="Android.App.Jank.AppJankStats.WIDGET_STATE_ZOOMING">
+  WIDGET_STATE_ZOOMING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_ZOOMING">https://developer.android.com/reference/android/app/jank/AppJankStats.html#WIDGET_STATE_ZOOMING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIDGET_STATE_ZOOMING { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_Jank_AppJankStats_CreatePoolableInstance_" data-uid="Android.App.Jank.AppJankStats.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_CreatePoolableInstance_System_Int32_Java_Lang_String_Java_Lang_String_Java_Lang_String_Java_Lang_String_System_Int64_System_Int64_Android_App_Jank_RelativeFrameTimeHistogram_" data-uid="Android.App.Jank.AppJankStats.CreatePoolableInstance(System.Int32,Java.Lang.String,Java.Lang.String,Java.Lang.String,Java.Lang.String,System.Int64,System.Int64,Android.App.Jank.RelativeFrameTimeHistogram)">
+  CreatePoolableInstance(int, String, String, String, String, long, long, RelativeFrameTimeHistogram)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for AppJankStats(int arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, long arg5, long arg6, Android.App.Jank.RelativeFrameTimeHistogram arg7)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AppJankStats CreatePoolableInstance(int arg0, String arg1, String arg2, String arg3, String arg4, long arg5, long arg6, RelativeFrameTimeHistogram arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg7</code> <a class="xref" href="Android.App.Jank.RelativeFrameTimeHistogram.html">RelativeFrameTimeHistogram</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Jank.AppJankStats.html">AppJankStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetJankyFrameCount_" data-uid="Android.App.Jank.AppJankStats.GetJankyFrameCount*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetJankyFrameCount" data-uid="Android.App.Jank.AppJankStats.GetJankyFrameCount">
+  GetJankyFrameCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getJankyFrameCount()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getJankyFrameCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetJankyFrameCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetNavigationComponent_" data-uid="Android.App.Jank.AppJankStats.GetNavigationComponent*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetNavigationComponent" data-uid="Android.App.Jank.AppJankStats.GetNavigationComponent">
+  GetNavigationComponent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getNavigationComponent()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getNavigationComponent()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetNavigationComponent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetRelativeFrameTimeHistogram_" data-uid="Android.App.Jank.AppJankStats.GetRelativeFrameTimeHistogram*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetRelativeFrameTimeHistogram" data-uid="Android.App.Jank.AppJankStats.GetRelativeFrameTimeHistogram">
+  GetRelativeFrameTimeHistogram()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getRelativeFrameTimeHistogram()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getRelativeFrameTimeHistogram()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelativeFrameTimeHistogram GetRelativeFrameTimeHistogram()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Jank.RelativeFrameTimeHistogram.html">RelativeFrameTimeHistogram</a></dt>
+    <dd><p><a class="xref" href="Android.App.Jank.RelativeFrameTimeHistogram.html">RelativeFrameTimeHistogram</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetTotalFrameCount_" data-uid="Android.App.Jank.AppJankStats.GetTotalFrameCount*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetTotalFrameCount" data-uid="Android.App.Jank.AppJankStats.GetTotalFrameCount">
+  GetTotalFrameCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getTotalFrameCount()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getTotalFrameCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetTotalFrameCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetUid_" data-uid="Android.App.Jank.AppJankStats.GetUid*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetUid" data-uid="Android.App.Jank.AppJankStats.GetUid">
+  GetUid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getUid()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getUid()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetWidgetCategory_" data-uid="Android.App.Jank.AppJankStats.GetWidgetCategory*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetWidgetCategory" data-uid="Android.App.Jank.AppJankStats.GetWidgetCategory">
+  GetWidgetCategory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getWidgetCategory()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getWidgetCategory()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetWidgetCategory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetWidgetId_" data-uid="Android.App.Jank.AppJankStats.GetWidgetId*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetWidgetId" data-uid="Android.App.Jank.AppJankStats.GetWidgetId">
+  GetWidgetId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getWidgetId()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getWidgetId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetWidgetId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Jank_AppJankStats_GetWidgetState_" data-uid="Android.App.Jank.AppJankStats.GetWidgetState*"></a>
+
+  <h3 id="Android_App_Jank_AppJankStats_GetWidgetState" data-uid="Android.App.Jank.AppJankStats.GetWidgetState">
+  GetWidgetState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/jank/AppJankStats.html#getWidgetState()">https://developer.android.com/reference/android/app/jank/AppJankStats.html#getWidgetState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetWidgetState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Jank/AppJankStats.cs/#L63" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2024 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Inputmethodservice_InputMethodService" data-uid="Android.Inputmethodservice.InputMethodService" class="text-break">
-Class InputMethodService  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L209"><i class="bi bi-code-slash"></i></a>
+Class InputMethodService  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class InputMethodService : AbstractInputMethodService, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class InputMethodService : AbstractInputMethodService, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Android.Content.Context.html">Context</a>&gt;</div>
       <div><a class="xref" href="Android.Content.Context.html">Context</a></div>
       <div><a class="xref" href="Android.Content.ContextWrapper.html">ContextWrapper</a></div>
       <div><a class="xref" href="Android.App.Service.html">Service</a></div>
@@ -127,11 +127,13 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
 
@@ -150,6 +152,9 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="Android.Inputmethodservice.AbstractInputMethodService.html#Android_Inputmethodservice_AbstractInputMethodService_OnGenericMotionEvent_Android_View_MotionEvent_">AbstractInputMethodService.OnGenericMotionEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Inputmethodservice.AbstractInputMethodService.html#Android_Inputmethodservice_AbstractInputMethodService_OnShouldVerifyKeyEvent_Android_View_KeyEvent_">AbstractInputMethodService.OnShouldVerifyKeyEvent(KeyEvent)</a>
     </div>
     <div>
       <a class="xref" href="Android.Inputmethodservice.AbstractInputMethodService.html#Android_Inputmethodservice_AbstractInputMethodService_OnTrackballEvent_Android_View_MotionEvent_">AbstractInputMethodService.OnTrackballEvent(MotionEvent)</a>
@@ -249,6 +254,9 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="Android.App.Service.html#Android_App_Service_OnTrimMemory_System_Int32_">Service.OnTrimMemory(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_CreatePoolableInstance_Android_Content_Context_">ContextWrapper.CreatePoolableInstance(Context)</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.ContextWrapper.html#Android_Content_ContextWrapper_GetBaseContext">ContextWrapper.GetBaseContext()</a>
@@ -353,7 +361,13 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ACTIVITY_SERVICE">Context.ACTIVITY_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ADVANCED_PROTECTION_SERVICE">Context.ADVANCED_PROTECTION_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ALARM_SERVICE">Context.ALARM_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_FUNCTION_SERVICE">Context.APP_FUNCTION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_APP_OPS_SERVICE">Context.APP_OPS_SERVICE</a>
@@ -473,6 +487,9 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYGUARD_SERVICE">Context.KEYGUARD_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_KEYSTORE_SERVICE">Context.KEYSTORE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_LAUNCHER_APPS_SERVICE">Context.LAUNCHER_APPS_SERVICE</a>
     </div>
     <div>
@@ -492,6 +509,9 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_PROJECTION_SERVICE">Context.MEDIA_PROJECTION_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_QUALITY_SERVICE">Context.MEDIA_QUALITY_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_MEDIA_ROUTER_SERVICE">Context.MEDIA_ROUTER_SERVICE</a>
@@ -542,6 +562,9 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_ROLE_SERVICE">Context.ROLE_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SATELLITE_SERVICE">Context.SATELLITE_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_SEARCH_SERVICE">Context.SEARCH_SERVICE</a>
     </div>
     <div>
@@ -578,10 +601,16 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TELEPHONY_SUBSCRIPTION_SERVICE">Context.TELEPHONY_SUBSCRIPTION_SERVICE</a>
     </div>
     <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TETHERING_SERVICE">Context.TETHERING_SERVICE</a>
+    </div>
+    <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_CLASSIFICATION_SERVICE">Context.TEXT_CLASSIFICATION_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TEXT_SERVICES_MANAGER_SERVICE">Context.TEXT_SERVICES_MANAGER_SERVICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_AD_SERVICE">Context.TV_AD_SERVICE</a>
     </div>
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_TV_INPUT_SERVICE">Context.TV_INPUT_SERVICE</a>
@@ -1090,351 +1119,6 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
     <div>
       <a class="xref" href="Android.Content.Context.html#Android_Content_Context_UpdateServiceGroup_Android_Content_ServiceConnection_System_Int32_System_Int32_">Context.UpdateServiceGroup(ServiceConnection, int, int)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Context&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Context&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Context&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -1442,6 +1126,9 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -1457,10 +1144,10 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Inputmethodservice_InputMethodService__ctor" data-uid="Android.Inputmethodservice.InputMethodService.#ctor">
   InputMethodService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#%3Cinit%3E()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#%3Cinit%3E()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1482,22 +1169,23 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
 
   <a id="Android_Inputmethodservice_InputMethodService__ctor_" data-uid="Android.Inputmethodservice.InputMethodService.#ctor*"></a>
 
-  <h3 id="Android_Inputmethodservice_InputMethodService__ctor_System_Object___" data-uid="Android.Inputmethodservice.InputMethodService.#ctor(System.Object[])">
-  InputMethodService(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Android_Inputmethodservice_InputMethodService__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Inputmethodservice.InputMethodService.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  InputMethodService(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputMethodService(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public InputMethodService(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
     <dd></dd>
   </dl>
 
@@ -1520,7 +1208,7 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Inputmethodservice_InputMethodService_BACK_DISPOSITION_ADJUST_NOTHING" data-uid="Android.Inputmethodservice.InputMethodService.BACK_DISPOSITION_ADJUST_NOTHING">
   BACK_DISPOSITION_ADJUST_NOTHING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_ADJUST_NOTHING">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_ADJUST_NOTHING</a></p>
@@ -1528,7 +1216,7 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BACK_DISPOSITION_ADJUST_NOTHING { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BACK_DISPOSITION_ADJUST_NOTHING { get; set; }</code></pre>
   </div>
 
 
@@ -1552,7 +1240,7 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Inputmethodservice_InputMethodService_BACK_DISPOSITION_DEFAULT" data-uid="Android.Inputmethodservice.InputMethodService.BACK_DISPOSITION_DEFAULT">
   BACK_DISPOSITION_DEFAULT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_DEFAULT">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_DEFAULT</a></p>
@@ -1560,7 +1248,7 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BACK_DISPOSITION_DEFAULT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BACK_DISPOSITION_DEFAULT { get; set; }</code></pre>
   </div>
 
 
@@ -1584,7 +1272,7 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_Inputmethodservice_InputMethodService_BACK_DISPOSITION_WILL_DISMISS" data-uid="Android.Inputmethodservice.InputMethodService.BACK_DISPOSITION_WILL_DISMISS">
   BACK_DISPOSITION_WILL_DISMISS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_DISMISS">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_DISMISS</a></p>
@@ -1592,8 +1280,8 @@ Class InputMethodService  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int BACK_DISPOSITION_WILL_DISMISS { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int BACK_DISPOSITION_WILL_DISMISS { get; set; }</code></pre>
   </div>
 
 
@@ -1617,7 +1305,7 @@ public static int BACK_DISPOSITION_WILL_DISMISS { get; }</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_BACK_DISPOSITION_WILL_NOT_DISMISS" data-uid="Android.Inputmethodservice.InputMethodService.BACK_DISPOSITION_WILL_NOT_DISMISS">
   BACK_DISPOSITION_WILL_NOT_DISMISS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_NOT_DISMISS">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_NOT_DISMISS</a></p>
@@ -1625,8 +1313,8 @@ public static int BACK_DISPOSITION_WILL_DISMISS { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; set; }</code></pre>
   </div>
 
 
@@ -1650,10 +1338,10 @@ public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_BridgeClassName" data-uid="Android.Inputmethodservice.InputMethodService.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1682,10 +1370,10 @@ public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsBridgeAbstract" data-uid="Android.Inputmethodservice.InputMethodService.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1714,10 +1402,10 @@ public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsBridgeCloseable" data-uid="Android.Inputmethodservice.InputMethodService.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1746,10 +1434,10 @@ public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsBridgeInterface" data-uid="Android.Inputmethodservice.InputMethodService.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1778,10 +1466,10 @@ public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsBridgeStatic" data-uid="Android.Inputmethodservice.InputMethodService.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1810,11 +1498,43 @@ public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
 </h2>
 
 
+  <a id="Android_Inputmethodservice_InputMethodService_CreatePoolableInstance_" data-uid="Android.Inputmethodservice.InputMethodService.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Inputmethodservice_InputMethodService_CreatePoolableInstance" data-uid="Android.Inputmethodservice.InputMethodService.CreatePoolableInstance">
+  CreatePoolableInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for InputMethodService()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputMethodService CreatePoolableInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Inputmethodservice.InputMethodService.html">InputMethodService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Inputmethodservice_InputMethodService_EnableHardwareAcceleration_" data-uid="Android.Inputmethodservice.InputMethodService.EnableHardwareAcceleration*"></a>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_EnableHardwareAcceleration" data-uid="Android.Inputmethodservice.InputMethodService.EnableHardwareAcceleration">
   EnableHardwareAcceleration()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L301"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#enableHardwareAcceleration()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#enableHardwareAcceleration()</a></p>
@@ -1822,7 +1542,7 @@ public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool EnableHardwareAcceleration()</code></pre>
   </div>
 
@@ -1848,7 +1568,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_FinishConnectionlessStylusHandwriting_Java_Lang_CharSequence_" data-uid="Android.Inputmethodservice.InputMethodService.FinishConnectionlessStylusHandwriting(Java.Lang.CharSequence)">
   FinishConnectionlessStylusHandwriting(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L462"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#finishConnectionlessStylusHandwriting(java.lang.CharSequence)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#finishConnectionlessStylusHandwriting(java.lang.CharSequence)</a></p>
@@ -1881,7 +1601,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_FinishStylusHandwriting" data-uid="Android.Inputmethodservice.InputMethodService.FinishStylusHandwriting">
   FinishStylusHandwriting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L469"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#finishStylusHandwriting()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#finishStylusHandwriting()</a></p>
@@ -1908,7 +1628,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetBackDisposition" data-uid="Android.Inputmethodservice.InputMethodService.GetBackDisposition">
   GetBackDisposition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L510"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getBackDisposition()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getBackDisposition()</a></p>
@@ -1941,7 +1661,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetCandidatesHiddenVisibility" data-uid="Android.Inputmethodservice.InputMethodService.GetCandidatesHiddenVisibility">
   GetCandidatesHiddenVisibility()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L518"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCandidatesHiddenVisibility()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCandidatesHiddenVisibility()</a></p>
@@ -1974,7 +1694,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetCurrentInputBinding" data-uid="Android.Inputmethodservice.InputMethodService.GetCurrentInputBinding">
   GetCurrentInputBinding()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputBinding()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputBinding()</a></p>
@@ -2007,7 +1727,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetCurrentInputConnection" data-uid="Android.Inputmethodservice.InputMethodService.GetCurrentInputConnection">
   GetCurrentInputConnection()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputConnection()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputConnection()</a></p>
@@ -2040,7 +1760,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetCurrentInputEditorInfo" data-uid="Android.Inputmethodservice.InputMethodService.GetCurrentInputEditorInfo">
   GetCurrentInputEditorInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputEditorInfo()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputEditorInfo()</a></p>
@@ -2073,7 +1793,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetCurrentInputStarted" data-uid="Android.Inputmethodservice.InputMethodService.GetCurrentInputStarted">
   GetCurrentInputStarted()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L310"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputStarted()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputStarted()</a></p>
@@ -2106,7 +1826,7 @@ public bool EnableHardwareAcceleration()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetInputMethodWindowRecommendedHeight" data-uid="Android.Inputmethodservice.InputMethodService.GetInputMethodWindowRecommendedHeight">
   GetInputMethodWindowRecommendedHeight()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L526"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getInputMethodWindowRecommendedHeight()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getInputMethodWindowRecommendedHeight()</a></p>
@@ -2114,7 +1834,7 @@ public bool EnableHardwareAcceleration()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public int GetInputMethodWindowRecommendedHeight()</code></pre>
   </div>
 
@@ -2140,7 +1860,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetLayoutInflater" data-uid="Android.Inputmethodservice.InputMethodService.GetLayoutInflater">
   GetLayoutInflater()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L269"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getLayoutInflater()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getLayoutInflater()</a></p>
@@ -2173,7 +1893,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetMaxWidth" data-uid="Android.Inputmethodservice.InputMethodService.GetMaxWidth">
   GetMaxWidth()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L535"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getMaxWidth()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getMaxWidth()</a></p>
@@ -2206,7 +1926,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetStylusHandwritingIdleTimeoutMax" data-uid="Android.Inputmethodservice.InputMethodService.GetStylusHandwritingIdleTimeoutMax">
   GetStylusHandwritingIdleTimeoutMax()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingIdleTimeoutMax()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingIdleTimeoutMax()</a></p>
@@ -2239,7 +1959,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetStylusHandwritingSessionTimeout" data-uid="Android.Inputmethodservice.InputMethodService.GetStylusHandwritingSessionTimeout">
   GetStylusHandwritingSessionTimeout()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L454"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingSessionTimeout()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingSessionTimeout()</a></p>
@@ -2272,7 +1992,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetStylusHandwritingWindow" data-uid="Android.Inputmethodservice.InputMethodService.GetStylusHandwritingWindow">
   GetStylusHandwritingWindow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L421"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingWindow()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingWindow()</a></p>
@@ -2305,7 +2025,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetTextForImeAction_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.GetTextForImeAction(System.Int32)">
   GetTextForImeAction(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L544"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getTextForImeAction(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getTextForImeAction(int)</a></p>
@@ -2344,7 +2064,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_GetWindow" data-uid="Android.Inputmethodservice.InputMethodService.GetWindow">
   GetWindow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getWindow()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getWindow()</a></p>
@@ -2377,7 +2097,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_HideStatusIcon" data-uid="Android.Inputmethodservice.InputMethodService.HideStatusIcon">
   HideStatusIcon()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L551"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#hideStatusIcon()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#hideStatusIcon()</a></p>
@@ -2404,7 +2124,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_HideWindow" data-uid="Android.Inputmethodservice.InputMethodService.HideWindow">
   HideWindow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#hideWindow()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#hideWindow()</a></p>
@@ -2431,7 +2151,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsExtractViewShown" data-uid="Android.Inputmethodservice.InputMethodService.IsExtractViewShown">
   IsExtractViewShown()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isExtractViewShown()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isExtractViewShown()</a></p>
@@ -2464,7 +2184,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsFullscreenMode" data-uid="Android.Inputmethodservice.InputMethodService.IsFullscreenMode">
   IsFullscreenMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isFullscreenMode()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isFullscreenMode()</a></p>
@@ -2497,7 +2217,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsInputViewShown" data-uid="Android.Inputmethodservice.InputMethodService.IsInputViewShown">
   IsInputViewShown()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isInputViewShown()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isInputViewShown()</a></p>
@@ -2530,7 +2250,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_IsShowInputRequested" data-uid="Android.Inputmethodservice.InputMethodService.IsShowInputRequested">
   IsShowInputRequested()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isShowInputRequested()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isShowInputRequested()</a></p>
@@ -2563,7 +2283,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnAppPrivateCommand_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Inputmethodservice.InputMethodService.OnAppPrivateCommand(Java.Lang.String,Android.Os.Bundle)">
   OnAppPrivateCommand(String, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L597"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L567"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onAppPrivateCommand(java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onAppPrivateCommand(java.lang.String,android.os.Bundle)</a></p>
@@ -2599,7 +2319,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnBindInput" data-uid="Android.Inputmethodservice.InputMethodService.OnBindInput">
   OnBindInput()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L574"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onBindInput()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onBindInput()</a></p>
@@ -2626,7 +2346,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnComputeInsets_Android_Inputmethodservice_InputMethodService_Insets_" data-uid="Android.Inputmethodservice.InputMethodService.OnComputeInsets(Android.Inputmethodservice.InputMethodService.Insets)">
   OnComputeInsets(Insets)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L582"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onComputeInsets(android.inputmethodservice.InputMethodService.Insets)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onComputeInsets(android.inputmethodservice.InputMethodService.Insets)</a></p>
@@ -2659,7 +2379,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnConfigureWindow_Android_View_Window_System_Boolean_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnConfigureWindow(Android.View.Window,System.Boolean,System.Boolean)">
   OnConfigureWindow(Window, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onConfigureWindow(android.view.Window,boolean,boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onConfigureWindow(android.view.Window,boolean,boolean)</a></p>
@@ -2698,7 +2418,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnCreateCandidatesView" data-uid="Android.Inputmethodservice.InputMethodService.OnCreateCandidatesView">
   OnCreateCandidatesView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateCandidatesView()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateCandidatesView()</a></p>
@@ -2731,7 +2451,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnCreateExtractTextView" data-uid="Android.Inputmethodservice.InputMethodService.OnCreateExtractTextView">
   OnCreateExtractTextView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateExtractTextView()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateExtractTextView()</a></p>
@@ -2764,7 +2484,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnCreateInlineSuggestionsRequest_Android_Os_Bundle_" data-uid="Android.Inputmethodservice.InputMethodService.OnCreateInlineSuggestionsRequest(Android.Os.Bundle)">
   OnCreateInlineSuggestionsRequest(Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateInlineSuggestionsRequest(android.os.Bundle)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateInlineSuggestionsRequest(android.os.Bundle)</a></p>
@@ -2803,7 +2523,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnCreateInputView" data-uid="Android.Inputmethodservice.InputMethodService.OnCreateInputView">
   OnCreateInputView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L293"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateInputView()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateInputView()</a></p>
@@ -2832,11 +2552,44 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
 
 
+  <a id="Android_Inputmethodservice_InputMethodService_OnCustomImeSwitcherButtonRequestedVisible_" data-uid="Android.Inputmethodservice.InputMethodService.OnCustomImeSwitcherButtonRequestedVisible*"></a>
+
+  <h3 id="Android_Inputmethodservice_InputMethodService_OnCustomImeSwitcherButtonRequestedVisible_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnCustomImeSwitcherButtonRequestedVisible(System.Boolean)">
+  OnCustomImeSwitcherButtonRequestedVisible(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCustomImeSwitcherButtonRequestedVisible(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCustomImeSwitcherButtonRequestedVisible(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCustomImeSwitcherButtonRequestedVisible(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Inputmethodservice_InputMethodService_OnDisplayCompletions_" data-uid="Android.Inputmethodservice.InputMethodService.OnDisplayCompletions*"></a>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnDisplayCompletions_Android_View_Inputmethod_CompletionInfo___" data-uid="Android.Inputmethodservice.InputMethodService.OnDisplayCompletions(Android.View.Inputmethod.CompletionInfo[])">
   OnDisplayCompletions(CompletionInfo[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L630"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L608"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onDisplayCompletions(android.view.inputmethod.CompletionInfo[])">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onDisplayCompletions(android.view.inputmethod.CompletionInfo[])</a></p>
@@ -2869,7 +2622,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnEvaluateFullscreenMode" data-uid="Android.Inputmethodservice.InputMethodService.OnEvaluateFullscreenMode">
   OnEvaluateFullscreenMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onEvaluateFullscreenMode()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onEvaluateFullscreenMode()</a></p>
@@ -2902,7 +2655,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnEvaluateInputViewShown" data-uid="Android.Inputmethodservice.InputMethodService.OnEvaluateInputViewShown">
   OnEvaluateInputViewShown()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L358"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onEvaluateInputViewShown()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onEvaluateInputViewShown()</a></p>
@@ -2935,7 +2688,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnExtractTextContextMenuItem_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.OnExtractTextContextMenuItem(System.Int32)">
   OnExtractTextContextMenuItem(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractTextContextMenuItem(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractTextContextMenuItem(int)</a></p>
@@ -2974,7 +2727,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnExtractedCursorMovement_System_Int32_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.OnExtractedCursorMovement(System.Int32,System.Int32)">
   OnExtractedCursorMovement(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L617"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedCursorMovement(int,int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedCursorMovement(int,int)</a></p>
@@ -3010,7 +2763,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnExtractedSelectionChanged_System_Int32_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.OnExtractedSelectionChanged(System.Int32,System.Int32)">
   OnExtractedSelectionChanged(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L648"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L626"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedSelectionChanged(int,int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedSelectionChanged(int,int)</a></p>
@@ -3046,7 +2799,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnExtractedTextClicked" data-uid="Android.Inputmethodservice.InputMethodService.OnExtractedTextClicked">
   OnExtractedTextClicked()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L633"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedTextClicked()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedTextClicked()</a></p>
@@ -3073,7 +2826,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnExtractingInputChanged_Android_View_Inputmethod_EditorInfo_" data-uid="Android.Inputmethodservice.InputMethodService.OnExtractingInputChanged(Android.View.Inputmethod.EditorInfo)">
   OnExtractingInputChanged(EditorInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L641"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractingInputChanged(android.view.inputmethod.EditorInfo)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractingInputChanged(android.view.inputmethod.EditorInfo)</a></p>
@@ -3106,7 +2859,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnFinishCandidatesView_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnFinishCandidatesView(System.Boolean)">
   OnFinishCandidatesView(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L671"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L649"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishCandidatesView(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishCandidatesView(boolean)</a></p>
@@ -3139,7 +2892,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnFinishInput" data-uid="Android.Inputmethodservice.InputMethodService.OnFinishInput">
   OnFinishInput()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L656"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishInput()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishInput()</a></p>
@@ -3166,7 +2919,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnFinishInputView_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnFinishInputView(System.Boolean)">
   OnFinishInputView(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L664"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishInputView(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishInputView(boolean)</a></p>
@@ -3199,7 +2952,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnFinishStylusHandwriting" data-uid="Android.Inputmethodservice.InputMethodService.OnFinishStylusHandwriting">
   OnFinishStylusHandwriting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishStylusHandwriting()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onFinishStylusHandwriting()</a></p>
@@ -3226,7 +2979,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnInitializeInterface" data-uid="Android.Inputmethodservice.InputMethodService.OnInitializeInterface">
   OnInitializeInterface()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L678"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onInitializeInterface()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onInitializeInterface()</a></p>
@@ -3253,7 +3006,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnInlineSuggestionsResponse_Android_View_Inputmethod_InlineSuggestionsResponse_" data-uid="Android.Inputmethodservice.InputMethodService.OnInlineSuggestionsResponse(Android.View.Inputmethod.InlineSuggestionsResponse)">
   OnInlineSuggestionsResponse(InlineSuggestionsResponse)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onInlineSuggestionsResponse(android.view.inputmethod.InlineSuggestionsResponse)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onInlineSuggestionsResponse(android.view.inputmethod.InlineSuggestionsResponse)</a></p>
@@ -3292,7 +3045,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnPrepareStylusHandwriting" data-uid="Android.Inputmethodservice.InputMethodService.OnPrepareStylusHandwriting">
   OnPrepareStylusHandwriting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L707"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L685"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onPrepareStylusHandwriting()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onPrepareStylusHandwriting()</a></p>
@@ -3319,7 +3072,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnShowInputRequested_System_Int32_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnShowInputRequested(System.Int32,System.Boolean)">
   OnShowInputRequested(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onShowInputRequested(int,boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onShowInputRequested(int,boolean)</a></p>
@@ -3361,7 +3114,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnStartCandidatesView_Android_View_Inputmethod_EditorInfo_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnStartCandidatesView(Android.View.Inputmethod.EditorInfo,System.Boolean)">
   OnStartCandidatesView(EditorInfo, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L716"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L694"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartCandidatesView(android.view.inputmethod.EditorInfo,boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartCandidatesView(android.view.inputmethod.EditorInfo,boolean)</a></p>
@@ -3397,7 +3150,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnStartConnectionlessStylusHandwriting_System_Int32_Android_View_Inputmethod_CursorAnchorInfo_" data-uid="Android.Inputmethodservice.InputMethodService.OnStartConnectionlessStylusHandwriting(System.Int32,Android.View.Inputmethod.CursorAnchorInfo)">
   OnStartConnectionlessStylusHandwriting(int, CursorAnchorInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L396"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartConnectionlessStylusHandwriting(int,android.view.inputmethod.CursorAnchorInfo)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartConnectionlessStylusHandwriting(int,android.view.inputmethod.CursorAnchorInfo)</a></p>
@@ -3439,7 +3192,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnStartInput_Android_View_Inputmethod_EditorInfo_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnStartInput(Android.View.Inputmethod.EditorInfo,System.Boolean)">
   OnStartInput(EditorInfo, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L725"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L703"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartInput(android.view.inputmethod.EditorInfo,boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartInput(android.view.inputmethod.EditorInfo,boolean)</a></p>
@@ -3475,7 +3228,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnStartInputView_Android_View_Inputmethod_EditorInfo_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnStartInputView(Android.View.Inputmethod.EditorInfo,System.Boolean)">
   OnStartInputView(EditorInfo, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L734"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L712"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartInputView(android.view.inputmethod.EditorInfo,boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartInputView(android.view.inputmethod.EditorInfo,boolean)</a></p>
@@ -3511,7 +3264,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnStartStylusHandwriting" data-uid="Android.Inputmethodservice.InputMethodService.OnStartStylusHandwriting">
   OnStartStylusHandwriting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartStylusHandwriting()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartStylusHandwriting()</a></p>
@@ -3544,7 +3297,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnStylusHandwritingMotionEvent_Android_View_MotionEvent_" data-uid="Android.Inputmethodservice.InputMethodService.OnStylusHandwritingMotionEvent(Android.View.MotionEvent)">
   OnStylusHandwritingMotionEvent(MotionEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L742"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L720"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStylusHandwritingMotionEvent(android.view.MotionEvent)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStylusHandwritingMotionEvent(android.view.MotionEvent)</a></p>
@@ -3577,7 +3330,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUnbindInput" data-uid="Android.Inputmethodservice.InputMethodService.OnUnbindInput">
   OnUnbindInput()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L727"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUnbindInput()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUnbindInput()</a></p>
@@ -3604,7 +3357,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUpdateCursor_Android_Graphics_Rect_" data-uid="Android.Inputmethodservice.InputMethodService.OnUpdateCursor(Android.Graphics.Rect)">
   OnUpdateCursor(Rect)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L757"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L735"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateCursor(android.graphics.Rect)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateCursor(android.graphics.Rect)</a></p>
@@ -3612,7 +3365,7 @@ public int GetInputMethodWindowRecommendedHeight()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void OnUpdateCursor(Rect arg0)</code></pre>
   </div>
 
@@ -3638,7 +3391,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUpdateCursorAnchorInfo_Android_View_Inputmethod_CursorAnchorInfo_" data-uid="Android.Inputmethodservice.InputMethodService.OnUpdateCursorAnchorInfo(Android.View.Inputmethod.CursorAnchorInfo)">
   OnUpdateCursorAnchorInfo(CursorAnchorInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L744"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateCursorAnchorInfo(android.view.inputmethod.CursorAnchorInfo)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateCursorAnchorInfo(android.view.inputmethod.CursorAnchorInfo)</a></p>
@@ -3671,7 +3424,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUpdateEditorToolType_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.OnUpdateEditorToolType(System.Int32)">
   OnUpdateEditorToolType(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L752"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateEditorToolType(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateEditorToolType(int)</a></p>
@@ -3704,7 +3457,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUpdateExtractedText_System_Int32_Android_View_Inputmethod_ExtractedText_" data-uid="Android.Inputmethodservice.InputMethodService.OnUpdateExtractedText(System.Int32,Android.View.Inputmethod.ExtractedText)">
   OnUpdateExtractedText(int, ExtractedText)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L783"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L761"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateExtractedText(int,android.view.inputmethod.ExtractedText)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateExtractedText(int,android.view.inputmethod.ExtractedText)</a></p>
@@ -3740,7 +3493,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUpdateExtractingViews_Android_View_Inputmethod_EditorInfo_" data-uid="Android.Inputmethodservice.InputMethodService.OnUpdateExtractingViews(Android.View.Inputmethod.EditorInfo)">
   OnUpdateExtractingViews(EditorInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L791"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L769"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateExtractingViews(android.view.inputmethod.EditorInfo)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateExtractingViews(android.view.inputmethod.EditorInfo)</a></p>
@@ -3773,7 +3526,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUpdateExtractingVisibility_Android_View_Inputmethod_EditorInfo_" data-uid="Android.Inputmethodservice.InputMethodService.OnUpdateExtractingVisibility(Android.View.Inputmethod.EditorInfo)">
   OnUpdateExtractingVisibility(EditorInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L799"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L777"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateExtractingVisibility(android.view.inputmethod.EditorInfo)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateExtractingVisibility(android.view.inputmethod.EditorInfo)</a></p>
@@ -3806,7 +3559,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnUpdateSelection_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.OnUpdateSelection(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
   OnUpdateSelection(int, int, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L812"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L790"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateSelection(int,int,int,int,int,int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateSelection(int,int,int,int,int,int)</a></p>
@@ -3854,7 +3607,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnViewClicked_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.OnViewClicked(System.Boolean)">
   OnViewClicked(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L820"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L798"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onViewClicked(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onViewClicked(boolean)</a></p>
@@ -3862,7 +3615,7 @@ public void OnUpdateCursor(Rect arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public void OnViewClicked(bool arg0)</code></pre>
   </div>
 
@@ -3888,7 +3641,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnWindowHidden" data-uid="Android.Inputmethodservice.InputMethodService.OnWindowHidden">
   OnWindowHidden()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L828"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L806"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onWindowHidden()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onWindowHidden()</a></p>
@@ -3915,7 +3668,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_OnWindowShown" data-uid="Android.Inputmethodservice.InputMethodService.OnWindowShown">
   OnWindowShown()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L835"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L813"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onWindowShown()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onWindowShown()</a></p>
@@ -3942,7 +3695,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_RequestHideSelf_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.RequestHideSelf(System.Int32)">
   RequestHideSelf(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L843"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L821"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#requestHideSelf(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#requestHideSelf(int)</a></p>
@@ -3975,7 +3728,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_RequestShowSelf_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.RequestShowSelf(System.Int32)">
   RequestShowSelf(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#requestShowSelf(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#requestShowSelf(int)</a></p>
@@ -4008,7 +3761,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SendDefaultEditorAction_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.SendDefaultEditorAction(System.Boolean)">
   SendDefaultEditorAction(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#sendDefaultEditorAction(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#sendDefaultEditorAction(boolean)</a></p>
@@ -4047,7 +3800,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SendDownUpKeyEvents_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.SendDownUpKeyEvents(System.Int32)">
   SendDownUpKeyEvents(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L851"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L829"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#sendDownUpKeyEvents(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#sendDownUpKeyEvents(int)</a></p>
@@ -4080,7 +3833,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SendKeyChar_System_Char_" data-uid="Android.Inputmethodservice.InputMethodService.SendKeyChar(System.Char)">
   SendKeyChar(char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L859"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L837"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#sendKeyChar(char)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#sendKeyChar(char)</a></p>
@@ -4113,7 +3866,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SetBackDisposition_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.SetBackDisposition(System.Int32)">
   SetBackDisposition(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L867"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L845"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setBackDisposition(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setBackDisposition(int)</a></p>
@@ -4146,7 +3899,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SetCandidatesView_Android_View_View_" data-uid="Android.Inputmethodservice.InputMethodService.SetCandidatesView(Android.View.View)">
   SetCandidatesView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L853"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setCandidatesView(android.view.View)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setCandidatesView(android.view.View)</a></p>
@@ -4179,7 +3932,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SetCandidatesViewShown_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.SetCandidatesViewShown(System.Boolean)">
   SetCandidatesViewShown(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L883"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L861"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setCandidatesViewShown(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setCandidatesViewShown(boolean)</a></p>
@@ -4212,7 +3965,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SetExtractView_Android_View_View_" data-uid="Android.Inputmethodservice.InputMethodService.SetExtractView(Android.View.View)">
   SetExtractView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L891"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L869"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setExtractView(android.view.View)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setExtractView(android.view.View)</a></p>
@@ -4245,7 +3998,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SetExtractViewShown_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.SetExtractViewShown(System.Boolean)">
   SetExtractViewShown(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L899"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L877"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setExtractViewShown(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setExtractViewShown(boolean)</a></p>
@@ -4278,7 +4031,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SetInputView_Android_View_View_" data-uid="Android.Inputmethodservice.InputMethodService.SetInputView(Android.View.View)">
   SetInputView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L907"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L885"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setInputView(android.view.View)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setInputView(android.view.View)</a></p>
@@ -4307,11 +4060,44 @@ public void OnViewClicked(bool arg0)</code></pre>
 
 
 
+  <a id="Android_Inputmethodservice_InputMethodService_SetStylusHandwritingRegion_" data-uid="Android.Inputmethodservice.InputMethodService.SetStylusHandwritingRegion*"></a>
+
+  <h3 id="Android_Inputmethodservice_InputMethodService_SetStylusHandwritingRegion_Android_Graphics_Region_" data-uid="Android.Inputmethodservice.InputMethodService.SetStylusHandwritingRegion(Android.Graphics.Region)">
+  SetStylusHandwritingRegion(Region)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingRegion(android.graphics.Region)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingRegion(android.graphics.Region)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStylusHandwritingRegion(Region arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Region.html">Region</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Region.html">Region</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Inputmethodservice_InputMethodService_SetStylusHandwritingSessionTimeout_" data-uid="Android.Inputmethodservice.InputMethodService.SetStylusHandwritingSessionTimeout*"></a>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SetStylusHandwritingSessionTimeout_Java_Time_Duration_" data-uid="Android.Inputmethodservice.InputMethodService.SetStylusHandwritingSessionTimeout(Java.Time.Duration)">
   SetStylusHandwritingSessionTimeout(Duration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingSessionTimeout(java.time.Duration)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingSessionTimeout(java.time.Duration)</a></p>
@@ -4344,7 +4130,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_ShouldOfferSwitchingToNextInputMethod" data-uid="Android.Inputmethodservice.InputMethodService.ShouldOfferSwitchingToNextInputMethod">
   ShouldOfferSwitchingToNextInputMethod()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#shouldOfferSwitchingToNextInputMethod()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#shouldOfferSwitchingToNextInputMethod()</a></p>
@@ -4377,7 +4163,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_ShowStatusIcon_System_Int32_" data-uid="Android.Inputmethodservice.InputMethodService.ShowStatusIcon(System.Int32)">
   ShowStatusIcon(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L915"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L893"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#showStatusIcon(int)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#showStatusIcon(int)</a></p>
@@ -4410,7 +4196,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_ShowWindow_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.ShowWindow(System.Boolean)">
   ShowWindow(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L923"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L901"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#showWindow(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#showWindow(boolean)</a></p>
@@ -4443,7 +4229,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SwitchInputMethod_Java_Lang_String_" data-uid="Android.Inputmethodservice.InputMethodService.SwitchInputMethod(Java.Lang.String)">
   SwitchInputMethod(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L931"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L909"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchInputMethod(java.lang.String)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchInputMethod(java.lang.String)</a></p>
@@ -4476,7 +4262,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SwitchInputMethod_Java_Lang_String_Android_View_Inputmethod_InputMethodSubtype_" data-uid="Android.Inputmethodservice.InputMethodService.SwitchInputMethod(Java.Lang.String,Android.View.Inputmethod.InputMethodSubtype)">
   SwitchInputMethod(String, InputMethodSubtype)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L502"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchInputMethod(java.lang.String,android.view.inputmethod.InputMethodSubtype)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchInputMethod(java.lang.String,android.view.inputmethod.InputMethodSubtype)</a></p>
@@ -4512,7 +4298,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SwitchToNextInputMethod_System_Boolean_" data-uid="Android.Inputmethodservice.InputMethodService.SwitchToNextInputMethod(System.Boolean)">
   SwitchToNextInputMethod(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L438"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchToNextInputMethod(boolean)">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchToNextInputMethod(boolean)</a></p>
@@ -4551,7 +4337,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_SwitchToPreviousInputMethod" data-uid="Android.Inputmethodservice.InputMethodService.SwitchToPreviousInputMethod">
   SwitchToPreviousInputMethod()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L446"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchToPreviousInputMethod()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchToPreviousInputMethod()</a></p>
@@ -4584,7 +4370,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_UpdateFullscreenMode" data-uid="Android.Inputmethodservice.InputMethodService.UpdateFullscreenMode">
   UpdateFullscreenMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L938"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L916"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#updateFullscreenMode()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#updateFullscreenMode()</a></p>
@@ -4611,7 +4397,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 
   <h3 id="Android_Inputmethodservice_InputMethodService_UpdateInputViewShown" data-uid="Android.Inputmethodservice.InputMethodService.UpdateInputViewShown">
   UpdateInputViewShown()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L945"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L923"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#updateInputViewShown()">https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#updateInputViewShown()</a></p>
@@ -4638,7 +4424,7 @@ public void OnViewClicked(bool arg0)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L209" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Inputmethodservice/InputMethodService.cs/#L165" class="edit-link">Edit this page</a>
         </div>
 
 

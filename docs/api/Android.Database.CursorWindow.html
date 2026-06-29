@@ -89,7 +89,7 @@
 
 
   <h1 id="Android_Database_CursorWindow" data-uid="Android.Database.CursorWindow" class="text-break">
-Class CursorWindow  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L74"><i class="bi bi-code-slash"></i></a>
+Class CursorWindow  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CursorWindow : SQLiteClosable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICloseable, IAutoCloseable</code></pre>
+    <pre><code class="lang-csharp hljs">public class CursorWindow : SQLiteClosable, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ICloseable, IAutoCloseable</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
       <div><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
       <div><a class="xref" href="Java.Io.Closeable.html">Closeable</a></div>
       <div><a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html">SQLiteClosable</a></div>
@@ -126,11 +126,13 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Io.ICloseable.html">ICloseable</a></div>
       <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
     </dd>
@@ -140,6 +142,9 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html#Android_Database_Sqlite_SQLiteClosable_CreatePoolableInstance">SQLiteClosable.CreatePoolableInstance()</a>
+    </div>
     <div>
       <a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html#Android_Database_Sqlite_SQLiteClosable_AcquireReference">SQLiteClosable.AcquireReference()</a>
     </div>
@@ -152,351 +157,6 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
     <div>
       <a class="xref" href="Android.Database.Sqlite.SQLiteClosable.html#Android_Database_Sqlite_SQLiteClosable_ReleaseReferenceFromContainer">SQLiteClosable.ReleaseReferenceFromContainer()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AutoCloseable&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -504,6 +164,9 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -517,36 +180,9 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
 
   <a id="Android_Database_CursorWindow__ctor_" data-uid="Android.Database.CursorWindow.#ctor*"></a>
 
-  <h3 id="Android_Database_CursorWindow__ctor" data-uid="Android.Database.CursorWindow.#ctor">
-  CursorWindow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CursorWindow()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Android_Database_CursorWindow__ctor_" data-uid="Android.Database.CursorWindow.#ctor*"></a>
-
   <h3 id="Android_Database_CursorWindow__ctor_Java_Lang_String_" data-uid="Android.Database.CursorWindow.#ctor(Java.Lang.String)">
   CursorWindow(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(java.lang.String)">https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(java.lang.String)</a></p>
@@ -579,7 +215,7 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Database_CursorWindow__ctor_Java_Lang_String_System_Int64_" data-uid="Android.Database.CursorWindow.#ctor(Java.Lang.String,System.Int64)">
   CursorWindow(String, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(java.lang.String,long)">https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(java.lang.String,long)</a></p>
@@ -613,9 +249,42 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
 
   <a id="Android_Database_CursorWindow__ctor_" data-uid="Android.Database.CursorWindow.#ctor*"></a>
 
+  <h3 id="Android_Database_CursorWindow__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Android.Database.CursorWindow.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  CursorWindow(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public CursorWindow(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_CursorWindow__ctor_" data-uid="Android.Database.CursorWindow.#ctor*"></a>
+
   <h3 id="Android_Database_CursorWindow__ctor_System_Boolean_" data-uid="Android.Database.CursorWindow.#ctor(System.Boolean)">
   CursorWindow(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(boolean)">https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(boolean)</a></p>
@@ -623,7 +292,7 @@ Class CursorWindow  <a class="header-action link-secondary" title="View source" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public CursorWindow(bool arg0)</code></pre>
   </div>
 
@@ -645,38 +314,6 @@ public CursorWindow(bool arg0)</code></pre>
 
 
 
-  <a id="Android_Database_CursorWindow__ctor_" data-uid="Android.Database.CursorWindow.#ctor*"></a>
-
-  <h3 id="Android_Database_CursorWindow__ctor_System_Object___" data-uid="Android.Database.CursorWindow.#ctor(System.Object[])">
-  CursorWindow(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CursorWindow(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -685,10 +322,10 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_BridgeClassName" data-uid="Android.Database.CursorWindow.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -717,7 +354,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_CREATOR" data-uid="Android.Database.CursorWindow.CREATOR">
   CREATOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#CREATOR">https://developer.android.com/reference/android/database/CursorWindow.html#CREATOR</a></p>
@@ -725,7 +362,7 @@ public CursorWindow(bool arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; set; }</code></pre>
   </div>
 
 
@@ -749,10 +386,10 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsBridgeAbstract" data-uid="Android.Database.CursorWindow.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -781,10 +418,10 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsBridgeCloseable" data-uid="Android.Database.CursorWindow.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -813,10 +450,10 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsBridgeInterface" data-uid="Android.Database.CursorWindow.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -845,10 +482,10 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsBridgeStatic" data-uid="Android.Database.CursorWindow.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -881,7 +518,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_AllocRow" data-uid="Android.Database.CursorWindow.AllocRow">
   AllocRow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#allocRow()">https://developer.android.com/reference/android/database/CursorWindow.html#allocRow()</a></p>
@@ -914,7 +551,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_Clear" data-uid="Android.Database.CursorWindow.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#clear()">https://developer.android.com/reference/android/database/CursorWindow.html#clear()</a></p>
@@ -941,7 +578,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_CopyStringToBuffer_System_Int32_System_Int32_Android_Database_CharArrayBuffer_" data-uid="Android.Database.CursorWindow.CopyStringToBuffer(System.Int32,System.Int32,Android.Database.CharArrayBuffer)">
   CopyStringToBuffer(int, int, CharArrayBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#copyStringToBuffer(int,int,android.database.CharArrayBuffer)">https://developer.android.com/reference/android/database/CursorWindow.html#copyStringToBuffer(int,int,android.database.CharArrayBuffer)</a></p>
@@ -976,11 +613,124 @@ public CursorWindow(bool arg0)</code></pre>
 
 
 
+  <a id="Android_Database_CursorWindow_CreatePoolableInstance_" data-uid="Android.Database.CursorWindow.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Database_CursorWindow_CreatePoolableInstance_Java_Lang_String_" data-uid="Android.Database.CursorWindow.CreatePoolableInstance(Java.Lang.String)">
+  CreatePoolableInstance(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for CursorWindow(Java.Lang.String arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CursorWindow CreatePoolableInstance(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.CursorWindow.html">CursorWindow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_CursorWindow_CreatePoolableInstance_" data-uid="Android.Database.CursorWindow.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Database_CursorWindow_CreatePoolableInstance_Java_Lang_String_System_Int64_" data-uid="Android.Database.CursorWindow.CreatePoolableInstance(Java.Lang.String,System.Int64)">
+  CreatePoolableInstance(String, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for CursorWindow(Java.Lang.String arg0, long arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CursorWindow CreatePoolableInstance(String arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.CursorWindow.html">CursorWindow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Database_CursorWindow_CreatePoolableInstance_" data-uid="Android.Database.CursorWindow.CreatePoolableInstance*"></a>
+
+  <h3 id="Android_Database_CursorWindow_CreatePoolableInstance_System_Boolean_" data-uid="Android.Database.CursorWindow.CreatePoolableInstance(System.Boolean)">
+  CreatePoolableInstance(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for CursorWindow(bool arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CursorWindow CreatePoolableInstance(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.CursorWindow.html">CursorWindow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Database_CursorWindow_DescribeContents_" data-uid="Android.Database.CursorWindow.DescribeContents*"></a>
 
   <h3 id="Android_Database_CursorWindow_DescribeContents" data-uid="Android.Database.CursorWindow.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#describeContents()">https://developer.android.com/reference/android/database/CursorWindow.html#describeContents()</a></p>
@@ -1013,7 +763,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_FreeLastRow" data-uid="Android.Database.CursorWindow.FreeLastRow">
   FreeLastRow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L396"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#freeLastRow()">https://developer.android.com/reference/android/database/CursorWindow.html#freeLastRow()</a></p>
@@ -1040,7 +790,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetBlob_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetBlob(System.Int32,System.Int32)">
   GetBlob(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getBlob(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getBlob(int,int)</a></p>
@@ -1082,7 +832,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetDouble_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetDouble(System.Int32,System.Int32)">
   GetDouble(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getDouble(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getDouble(int,int)</a></p>
@@ -1124,7 +874,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetFloat_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetFloat(System.Int32,System.Int32)">
   GetFloat(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L298"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getFloat(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getFloat(int,int)</a></p>
@@ -1166,7 +916,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetInt_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetInt(System.Int32,System.Int32)">
   GetInt(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getInt(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getInt(int,int)</a></p>
@@ -1208,7 +958,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetLong_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetLong(System.Int32,System.Int32)">
   GetLong(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getLong(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getLong(int,int)</a></p>
@@ -1250,7 +1000,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetNumRows" data-uid="Android.Database.CursorWindow.GetNumRows">
   GetNumRows()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getNumRows()">https://developer.android.com/reference/android/database/CursorWindow.html#getNumRows()</a></p>
@@ -1283,7 +1033,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetShort_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetShort(System.Int32,System.Int32)">
   GetShort(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L372"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getShort(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getShort(int,int)</a></p>
@@ -1325,7 +1075,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetStartPosition" data-uid="Android.Database.CursorWindow.GetStartPosition">
   GetStartPosition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getStartPosition()">https://developer.android.com/reference/android/database/CursorWindow.html#getStartPosition()</a></p>
@@ -1358,7 +1108,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetString_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetString(System.Int32,System.Int32)">
   GetString(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getString(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getString(int,int)</a></p>
@@ -1400,7 +1150,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_GetType_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.GetType(System.Int32,System.Int32)">
   GetType(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#getType(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#getType(int,int)</a></p>
@@ -1442,7 +1192,7 @@ public CursorWindow(bool arg0)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsBlob_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.IsBlob(System.Int32,System.Int32)">
   IsBlob(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#isBlob(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#isBlob(int,int)</a></p>
@@ -1450,7 +1200,7 @@ public CursorWindow(bool arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool IsBlob(int arg0, int arg1)</code></pre>
   </div>
 
@@ -1485,7 +1235,7 @@ public bool IsBlob(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsFloat_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.IsFloat(System.Int32,System.Int32)">
   IsFloat(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#isFloat(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#isFloat(int,int)</a></p>
@@ -1493,7 +1243,7 @@ public bool IsBlob(int arg0, int arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool IsFloat(int arg0, int arg1)</code></pre>
   </div>
 
@@ -1528,7 +1278,7 @@ public bool IsFloat(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsLong_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.IsLong(System.Int32,System.Int32)">
   IsLong(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#isLong(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#isLong(int,int)</a></p>
@@ -1536,7 +1286,7 @@ public bool IsFloat(int arg0, int arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool IsLong(int arg0, int arg1)</code></pre>
   </div>
 
@@ -1571,7 +1321,7 @@ public bool IsLong(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsNull_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.IsNull(System.Int32,System.Int32)">
   IsNull(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#isNull(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#isNull(int,int)</a></p>
@@ -1579,7 +1329,7 @@ public bool IsLong(int arg0, int arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool IsNull(int arg0, int arg1)</code></pre>
   </div>
 
@@ -1614,7 +1364,7 @@ public bool IsNull(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_IsString_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.IsString(System.Int32,System.Int32)">
   IsString(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#isString(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#isString(int,int)</a></p>
@@ -1622,7 +1372,7 @@ public bool IsNull(int arg0, int arg1)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
 public bool IsString(int arg0, int arg1)</code></pre>
   </div>
 
@@ -1657,7 +1407,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_NewFromParcel_Android_Os_Parcel_" data-uid="Android.Database.CursorWindow.NewFromParcel(Android.Os.Parcel)">
   NewFromParcel(Parcel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#newFromParcel(android.os.Parcel)">https://developer.android.com/reference/android/database/CursorWindow.html#newFromParcel(android.os.Parcel)</a></p>
@@ -1696,7 +1446,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_PutBlob_System_Byte___System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.PutBlob(System.Byte[],System.Int32,System.Int32)">
   PutBlob(byte[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#putBlob(byte[],int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#putBlob(byte[],int,int)</a></p>
@@ -1741,7 +1491,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_PutDouble_System_Double_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.PutDouble(System.Double,System.Int32,System.Int32)">
   PutDouble(double, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#putDouble(double,int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#putDouble(double,int,int)</a></p>
@@ -1786,7 +1536,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_PutLong_System_Int64_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.PutLong(System.Int64,System.Int32,System.Int32)">
   PutLong(long, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L238"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#putLong(long,int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#putLong(long,int,int)</a></p>
@@ -1831,7 +1581,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_PutNull_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.PutNull(System.Int32,System.Int32)">
   PutNull(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#putNull(int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#putNull(int,int)</a></p>
@@ -1873,7 +1623,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_PutString_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Database.CursorWindow.PutString(Java.Lang.String,System.Int32,System.Int32)">
   PutString(String, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#putString(java.lang.String,int,int)">https://developer.android.com/reference/android/database/CursorWindow.html#putString(java.lang.String,int,int)</a></p>
@@ -1918,7 +1668,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_SetNumColumns_System_Int32_" data-uid="Android.Database.CursorWindow.SetNumColumns(System.Int32)">
   SetNumColumns(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#setNumColumns(int)">https://developer.android.com/reference/android/database/CursorWindow.html#setNumColumns(int)</a></p>
@@ -1957,7 +1707,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_SetStartPosition_System_Int32_" data-uid="Android.Database.CursorWindow.SetStartPosition(System.Int32)">
   SetStartPosition(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#setStartPosition(int)">https://developer.android.com/reference/android/database/CursorWindow.html#setStartPosition(int)</a></p>
@@ -1990,7 +1740,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Database.CursorWindow.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/database/CursorWindow.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/database/CursorWindow.html#writeToParcel(android.os.Parcel,int)</a></p>
@@ -2030,7 +1780,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Database_CursorWindow_op_Implicit_Android_Database_CursorWindow__Android_Os_Parcelable" data-uid="Android.Database.CursorWindow.op_Implicit(Android.Database.CursorWindow)~Android.Os.Parcelable">
   implicit operator Parcelable(CursorWindow)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Database.CursorWindow.html">CursorWindow</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
@@ -2067,7 +1817,7 @@ public bool IsString(int arg0, int arg1)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L74" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Database/CursorWindow.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

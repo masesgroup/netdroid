@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Math_BigInteger" data-uid="Java.Math.BigInteger" class="text-break">
-Class BigInteger  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L74"><i class="bi bi-code-slash"></i></a>
+Class BigInteger  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BigInteger : Number, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class BigInteger : Number, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ISerializable</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeBase</span></div>
-      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
       <div><a class="xref" href="Java.Io.Serializable.html">Serializable</a></div>
       <div><a class="xref" href="Java.Lang.Number.html">Number</a></div>
       <div><span class="xref">BigInteger</span></div>
@@ -125,11 +125,13 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
-      <div><span class="xref">IJVMBridgeBase</span></div>
-      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
     </dd>
   </dl>
@@ -138,6 +140,9 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_CreatePoolableInstance">Number.CreatePoolableInstance()</a>
+    </div>
     <div>
       <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_DoubleValue">Number.DoubleValue()</a>
     </div>
@@ -156,351 +161,6 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
     <div>
       <a class="xref" href="Java.Lang.Number.html#Java_Lang_Number_ShortValue">Number.ShortValue()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Serializable&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
   </dd></dl>
 
   <dl class="typelist extensionMethods">
@@ -508,6 +168,9 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
     <dd>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
   </div>
   </dd></dl>
 
@@ -521,36 +184,9 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Java_Math_BigInteger__ctor_" data-uid="Java.Math.BigInteger.#ctor*"></a>
 
-  <h3 id="Java_Math_BigInteger__ctor" data-uid="Java.Math.BigInteger.#ctor">
-  BigInteger()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Math_BigInteger__ctor_" data-uid="Java.Math.BigInteger.#ctor*"></a>
-
   <h3 id="Java_Math_BigInteger__ctor_Java_Lang_String_" data-uid="Java.Math.BigInteger.#ctor(Java.Lang.String)">
   BigInteger(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(java.lang.String)">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(java.lang.String)</a></p>
@@ -583,7 +219,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger__ctor_Java_Lang_String_System_Int32_" data-uid="Java.Math.BigInteger.#ctor(Java.Lang.String,System.Int32)">
   BigInteger(String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(java.lang.String,int)">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(java.lang.String,int)</a></p>
@@ -617,9 +253,42 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Java_Math_BigInteger__ctor_" data-uid="Java.Math.BigInteger.#ctor*"></a>
 
+  <h3 id="Java_Math_BigInteger__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Math.BigInteger.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  BigInteger(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public BigInteger(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger__ctor_" data-uid="Java.Math.BigInteger.#ctor*"></a>
+
   <h3 id="Java_Math_BigInteger__ctor_System_Byte___" data-uid="Java.Math.BigInteger.#ctor(System.Byte[])">
   BigInteger(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(byte[])">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(byte[])</a></p>
@@ -652,7 +321,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger__ctor_System_Byte___System_Int32_System_Int32_" data-uid="Java.Math.BigInteger.#ctor(System.Byte[],System.Int32,System.Int32)">
   BigInteger(byte[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(byte[],int,int)">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(byte[],int,int)</a></p>
@@ -691,7 +360,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger__ctor_System_Int32_Java_Util_Random_" data-uid="Java.Math.BigInteger.#ctor(System.Int32,Java.Util.Random)">
   BigInteger(int, Random)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,java.util.Random)">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,java.util.Random)</a></p>
@@ -727,7 +396,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger__ctor_System_Int32_System_Byte___" data-uid="Java.Math.BigInteger.#ctor(System.Int32,System.Byte[])">
   BigInteger(int, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,byte[])">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,byte[])</a></p>
@@ -763,7 +432,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger__ctor_System_Int32_System_Byte___System_Int32_System_Int32_" data-uid="Java.Math.BigInteger.#ctor(System.Int32,System.Byte[],System.Int32,System.Int32)">
   BigInteger(int, byte[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,byte[],int,int)">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,byte[],int,int)</a></p>
@@ -805,7 +474,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger__ctor_System_Int32_System_Int32_Java_Util_Random_" data-uid="Java.Math.BigInteger.#ctor(System.Int32,System.Int32,Java.Util.Random)">
   BigInteger(int, int, Random)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,int,java.util.Random)">https://developer.android.com/reference/java/math/BigInteger.html#%3Cinit%3E(int,int,java.util.Random)</a></p>
@@ -840,38 +509,6 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
 
 
-  <a id="Java_Math_BigInteger__ctor_" data-uid="Java.Math.BigInteger.#ctor*"></a>
-
-  <h3 id="Java_Math_BigInteger__ctor_System_Object___" data-uid="Java.Math.BigInteger.#ctor(System.Object[])">
-  BigInteger(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -880,10 +517,10 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_BridgeClassName" data-uid="Java.Math.BigInteger.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -912,10 +549,10 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_IsBridgeAbstract" data-uid="Java.Math.BigInteger.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -944,10 +581,10 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_IsBridgeCloseable" data-uid="Java.Math.BigInteger.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -976,10 +613,10 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_IsBridgeInterface" data-uid="Java.Math.BigInteger.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1008,10 +645,10 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_IsBridgeStatic" data-uid="Java.Math.BigInteger.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1040,7 +677,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ONE" data-uid="Java.Math.BigInteger.ONE">
   ONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#ONE">https://developer.android.com/reference/java/math/BigInteger.html#ONE</a></p>
@@ -1048,7 +685,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BigInteger ONE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static BigInteger ONE { get; set; }</code></pre>
   </div>
 
 
@@ -1072,7 +709,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_TEN" data-uid="Java.Math.BigInteger.TEN">
   TEN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#TEN">https://developer.android.com/reference/java/math/BigInteger.html#TEN</a></p>
@@ -1080,7 +717,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BigInteger TEN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static BigInteger TEN { get; set; }</code></pre>
   </div>
 
 
@@ -1104,7 +741,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_TWO" data-uid="Java.Math.BigInteger.TWO">
   TWO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#TWO">https://developer.android.com/reference/java/math/BigInteger.html#TWO</a></p>
@@ -1112,7 +749,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BigInteger TWO { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static BigInteger TWO { get; set; }</code></pre>
   </div>
 
 
@@ -1136,7 +773,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ZERO" data-uid="Java.Math.BigInteger.ZERO">
   ZERO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#ZERO">https://developer.android.com/reference/java/math/BigInteger.html#ZERO</a></p>
@@ -1144,7 +781,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BigInteger ZERO { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static BigInteger ZERO { get; set; }</code></pre>
   </div>
 
 
@@ -1172,7 +809,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Abs" data-uid="Java.Math.BigInteger.Abs">
   Abs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#abs()">https://developer.android.com/reference/java/math/BigInteger.html#abs()</a></p>
@@ -1205,7 +842,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Add_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Add(Java.Math.BigInteger)">
   Add(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L365"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#add(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#add(java.math.BigInteger)</a></p>
@@ -1244,7 +881,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_And_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.And(Java.Math.BigInteger)">
   And(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#and(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#and(java.math.BigInteger)</a></p>
@@ -1283,7 +920,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_AndNot_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.AndNot(Java.Math.BigInteger)">
   AndNot(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#andNot(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#andNot(java.math.BigInteger)</a></p>
@@ -1322,7 +959,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_BitCount" data-uid="Java.Math.BigInteger.BitCount">
   BitCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#bitCount()">https://developer.android.com/reference/java/math/BigInteger.html#bitCount()</a></p>
@@ -1355,7 +992,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_BitLength" data-uid="Java.Math.BigInteger.BitLength">
   BitLength()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#bitLength()">https://developer.android.com/reference/java/math/BigInteger.html#bitLength()</a></p>
@@ -1388,7 +1025,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ByteValueExact" data-uid="Java.Math.BigInteger.ByteValueExact">
   ByteValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#byteValueExact()">https://developer.android.com/reference/java/math/BigInteger.html#byteValueExact()</a></p>
@@ -1421,7 +1058,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ClearBit_System_Int32_" data-uid="Java.Math.BigInteger.ClearBit(System.Int32)">
   ClearBit(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#clearBit(int)">https://developer.android.com/reference/java/math/BigInteger.html#clearBit(int)</a></p>
@@ -1460,7 +1097,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_CompareTo_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.CompareTo(Java.Math.BigInteger)">
   CompareTo(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#compareTo(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#compareTo(java.math.BigInteger)</a></p>
@@ -1499,7 +1136,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_CompareTo_System_Object_" data-uid="Java.Math.BigInteger.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#compareTo(java.lang.Object)">https://developer.android.com/reference/java/math/BigInteger.html#compareTo(java.lang.Object)</a></p>
@@ -1534,11 +1171,327 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_Java_Lang_String_" data-uid="Java.Math.BigInteger.CreatePoolableInstance(Java.Lang.String)">
+  CreatePoolableInstance(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(Java.Lang.String arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_Java_Lang_String_System_Int32_" data-uid="Java.Math.BigInteger.CreatePoolableInstance(Java.Lang.String,System.Int32)">
+  CreatePoolableInstance(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(Java.Lang.String arg0, int arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_System_Byte___" data-uid="Java.Math.BigInteger.CreatePoolableInstance(System.Byte[])">
+  CreatePoolableInstance(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(byte[] arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_System_Byte___System_Int32_System_Int32_" data-uid="Java.Math.BigInteger.CreatePoolableInstance(System.Byte[],System.Int32,System.Int32)">
+  CreatePoolableInstance(byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(byte[] arg0, int arg1, int arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(byte[] arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_System_Int32_Java_Util_Random_" data-uid="Java.Math.BigInteger.CreatePoolableInstance(System.Int32,Java.Util.Random)">
+  CreatePoolableInstance(int, Random)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(int arg0, Java.Util.Random arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(int arg0, Random arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Random.html">Random</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_System_Int32_System_Byte___" data-uid="Java.Math.BigInteger.CreatePoolableInstance(System.Int32,System.Byte[])">
+  CreatePoolableInstance(int, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(int arg0, byte[] arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(int arg0, byte[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_System_Int32_System_Byte___System_Int32_System_Int32_" data-uid="Java.Math.BigInteger.CreatePoolableInstance(System.Int32,System.Byte[],System.Int32,System.Int32)">
+  CreatePoolableInstance(int, byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(int arg0, byte[] arg1, int arg2, int arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(int arg0, byte[] arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Math_BigInteger_CreatePoolableInstance_" data-uid="Java.Math.BigInteger.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Math_BigInteger_CreatePoolableInstance_System_Int32_System_Int32_Java_Util_Random_" data-uid="Java.Math.BigInteger.CreatePoolableInstance(System.Int32,System.Int32,Java.Util.Random)">
+  CreatePoolableInstance(int, int, Random)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BigInteger(int arg0, int arg1, Java.Util.Random arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BigInteger CreatePoolableInstance(int arg0, int arg1, Random arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Random.html">Random</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Math.BigInteger.html">BigInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Math_BigInteger_Divide_" data-uid="Java.Math.BigInteger.Divide*"></a>
 
   <h3 id="Java_Math_BigInteger_Divide_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Divide(Java.Math.BigInteger)">
   Divide(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#divide(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#divide(java.math.BigInteger)</a></p>
@@ -1577,7 +1530,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_DivideAndRemainder_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.DivideAndRemainder(Java.Math.BigInteger)">
   DivideAndRemainder(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L587"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#divideAndRemainder(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#divideAndRemainder(java.math.BigInteger)</a></p>
@@ -1616,7 +1569,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_FlipBit_System_Int32_" data-uid="Java.Math.BigInteger.FlipBit(System.Int32)">
   FlipBit(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L410"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#flipBit(int)">https://developer.android.com/reference/java/math/BigInteger.html#flipBit(int)</a></p>
@@ -1655,7 +1608,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Gcd_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Gcd(Java.Math.BigInteger)">
   Gcd(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L419"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#gcd(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#gcd(java.math.BigInteger)</a></p>
@@ -1694,7 +1647,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_GetLowestSetBit" data-uid="Java.Math.BigInteger.GetLowestSetBit">
   GetLowestSetBit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#getLowestSetBit()">https://developer.android.com/reference/java/math/BigInteger.html#getLowestSetBit()</a></p>
@@ -1727,7 +1680,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_IntValueExact" data-uid="Java.Math.BigInteger.IntValueExact">
   IntValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L331"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#intValueExact()">https://developer.android.com/reference/java/math/BigInteger.html#intValueExact()</a></p>
@@ -1760,7 +1713,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_IsProbablePrime_System_Int32_" data-uid="Java.Math.BigInteger.IsProbablePrime(System.Int32)">
   IsProbablePrime(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#isProbablePrime(int)">https://developer.android.com/reference/java/math/BigInteger.html#isProbablePrime(int)</a></p>
@@ -1799,7 +1752,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_LongValueExact" data-uid="Java.Math.BigInteger.LongValueExact">
   LongValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L566"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L603"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#longValueExact()">https://developer.android.com/reference/java/math/BigInteger.html#longValueExact()</a></p>
@@ -1832,7 +1785,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Max_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Max(Java.Math.BigInteger)">
   Max(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L428"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#max(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#max(java.math.BigInteger)</a></p>
@@ -1871,7 +1824,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Min_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Min(Java.Math.BigInteger)">
   Min(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L437"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#min(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#min(java.math.BigInteger)</a></p>
@@ -1910,7 +1863,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Mod_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Mod(Java.Math.BigInteger)">
   Mod(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L446"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#mod(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#mod(java.math.BigInteger)</a></p>
@@ -1949,7 +1902,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ModInverse_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.ModInverse(Java.Math.BigInteger)">
   ModInverse(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L455"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#modInverse(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#modInverse(java.math.BigInteger)</a></p>
@@ -1988,7 +1941,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ModPow_Java_Math_BigInteger_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.ModPow(Java.Math.BigInteger,Java.Math.BigInteger)">
   ModPow(BigInteger, BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L465"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#modPow(java.math.BigInteger,java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#modPow(java.math.BigInteger,java.math.BigInteger)</a></p>
@@ -2030,7 +1983,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Multiply_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Multiply(Java.Math.BigInteger)">
   Multiply(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L474"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#multiply(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#multiply(java.math.BigInteger)</a></p>
@@ -2069,7 +2022,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Negate" data-uid="Java.Math.BigInteger.Negate">
   Negate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L482"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#negate()">https://developer.android.com/reference/java/math/BigInteger.html#negate()</a></p>
@@ -2102,7 +2055,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_NextProbablePrime" data-uid="Java.Math.BigInteger.NextProbablePrime">
   NextProbablePrime()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L490"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#nextProbablePrime()">https://developer.android.com/reference/java/math/BigInteger.html#nextProbablePrime()</a></p>
@@ -2135,7 +2088,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Not" data-uid="Java.Math.BigInteger.Not">
   Not()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L498"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#not()">https://developer.android.com/reference/java/math/BigInteger.html#not()</a></p>
@@ -2168,7 +2121,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Or_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Or(Java.Math.BigInteger)">
   Or(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L507"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#or(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#or(java.math.BigInteger)</a></p>
@@ -2207,7 +2160,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Pow_System_Int32_" data-uid="Java.Math.BigInteger.Pow(System.Int32)">
   Pow(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L516"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#pow(int)">https://developer.android.com/reference/java/math/BigInteger.html#pow(int)</a></p>
@@ -2246,7 +2199,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ProbablePrime_System_Int32_Java_Util_Random_" data-uid="Java.Math.BigInteger.ProbablePrime(System.Int32,Java.Util.Random)">
   ProbablePrime(int, Random)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#probablePrime(int,java.util.Random)">https://developer.android.com/reference/java/math/BigInteger.html#probablePrime(int,java.util.Random)</a></p>
@@ -2288,7 +2241,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Remainder_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Remainder(Java.Math.BigInteger)">
   Remainder(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L525"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#remainder(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#remainder(java.math.BigInteger)</a></p>
@@ -2327,7 +2280,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_SetBit_System_Int32_" data-uid="Java.Math.BigInteger.SetBit(System.Int32)">
   SetBit(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L534"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#setBit(int)">https://developer.android.com/reference/java/math/BigInteger.html#setBit(int)</a></p>
@@ -2366,7 +2319,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ShiftLeft_System_Int32_" data-uid="Java.Math.BigInteger.ShiftLeft(System.Int32)">
   ShiftLeft(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L543"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#shiftLeft(int)">https://developer.android.com/reference/java/math/BigInteger.html#shiftLeft(int)</a></p>
@@ -2405,7 +2358,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ShiftRight_System_Int32_" data-uid="Java.Math.BigInteger.ShiftRight(System.Int32)">
   ShiftRight(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L552"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#shiftRight(int)">https://developer.android.com/reference/java/math/BigInteger.html#shiftRight(int)</a></p>
@@ -2444,7 +2397,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ShortValueExact" data-uid="Java.Math.BigInteger.ShortValueExact">
   ShortValueExact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L611"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#shortValueExact()">https://developer.android.com/reference/java/math/BigInteger.html#shortValueExact()</a></p>
@@ -2477,7 +2430,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Signum" data-uid="Java.Math.BigInteger.Signum">
   Signum()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L339"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#signum()">https://developer.android.com/reference/java/math/BigInteger.html#signum()</a></p>
@@ -2510,7 +2463,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Sqrt" data-uid="Java.Math.BigInteger.Sqrt">
   Sqrt()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L560"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#sqrt()">https://developer.android.com/reference/java/math/BigInteger.html#sqrt()</a></p>
@@ -2543,7 +2496,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_SqrtAndRemainder" data-uid="Java.Math.BigInteger.SqrtAndRemainder">
   SqrtAndRemainder()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L595"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#sqrtAndRemainder()">https://developer.android.com/reference/java/math/BigInteger.html#sqrtAndRemainder()</a></p>
@@ -2576,7 +2529,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Subtract_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Subtract(Java.Math.BigInteger)">
   Subtract(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L569"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#subtract(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#subtract(java.math.BigInteger)</a></p>
@@ -2615,7 +2568,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_TestBit_System_Int32_" data-uid="Java.Math.BigInteger.TestBit(System.Int32)">
   TestBit(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#testBit(int)">https://developer.android.com/reference/java/math/BigInteger.html#testBit(int)</a></p>
@@ -2654,7 +2607,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ToByteArray" data-uid="Java.Math.BigInteger.ToByteArray">
   ToByteArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L281"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#toByteArray()">https://developer.android.com/reference/java/math/BigInteger.html#toByteArray()</a></p>
@@ -2687,7 +2640,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ToString_System_Int32_" data-uid="Java.Math.BigInteger.ToString(System.Int32)">
   ToString(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#toString(int)">https://developer.android.com/reference/java/math/BigInteger.html#toString(int)</a></p>
@@ -2726,7 +2679,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_ValueOf_System_Int64_" data-uid="Java.Math.BigInteger.ValueOf(System.Int64)">
   ValueOf(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#valueOf(long)">https://developer.android.com/reference/java/math/BigInteger.html#valueOf(long)</a></p>
@@ -2765,7 +2718,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_Xor_Java_Math_BigInteger_" data-uid="Java.Math.BigInteger.Xor(Java.Math.BigInteger)">
   Xor(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L578"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/math/BigInteger.html#xor(java.math.BigInteger)">https://developer.android.com/reference/java/math/BigInteger.html#xor(java.math.BigInteger)</a></p>
@@ -2808,7 +2761,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Math_BigInteger_op_Implicit_Java_Math_BigInteger__Java_Lang_Comparable" data-uid="Java.Math.BigInteger.op_Implicit(Java.Math.BigInteger)~Java.Lang.Comparable">
   implicit operator Comparable(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Math.BigInteger.html">BigInteger</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
@@ -2845,7 +2798,7 @@ Class BigInteger  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L74" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Math/BigInteger.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 
