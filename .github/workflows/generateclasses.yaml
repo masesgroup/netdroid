@@ -70,7 +70,7 @@ jobs:
 
       - name: Set up Apache Maven Central
         if: ${{ inputs.UseLatestJNetReflectorSource == true }}
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v6
         with: # running setup-java again overwrites the settings.xml
           distribution: temurin
           java-version: 11
@@ -135,7 +135,7 @@ jobs:
         run: dotnet tool update --version ${{ env.JNet_Version }} -g MASES.JNetReflector
 
       - name: Set up Apache Maven Central
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v6
         with: # running setup-java again overwrites the settings.xml
           distribution: temurin
           java-version: 17
@@ -169,7 +169,7 @@ jobs:
           GITHUB_SIMPLIFIED_GENERATION: true
 
       - name: Set up Apache Maven Central
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v6
         with: # running setup-java again overwrites the settings.xml
           distribution: temurin
           java-version: 11 # revert to 11 following https://stackoverflow.com/questions/13113142/gmaven-build-fails-with-an-api-incompatibility-was-encountered
