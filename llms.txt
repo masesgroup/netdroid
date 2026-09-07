@@ -1,0 +1,46 @@
+# NetDroid
+
+> NetDroid is a .NET suite for Android: direct access, from .NET, to all the features available in the Android SDK. Architecturally it's a sibling of JNet rather than something built on top of it — both are generated directly against JCOBridge's core interop layer, each targeting a different JVM-based API surface (JNet targets the JDK/Java SE; NetDroid targets the Android SDK).
+
+NetDroid lets .NET/C# code call Android SDK classes (views, widgets, location, graphics, telecom, services, and more) directly, in C#-style syntax generated from the real Android SDK classes, rather than through a hand-written or partial binding layer.
+
+## What isn't fully confirmed here
+The exact deployment/runtime scenario (e.g. whether NetDroid targets .NET code running alongside a JVM loaded with Android SDK JARs for tooling/build/codegen purposes, versus running directly on-device inside the Android runtime — ART/Dalvik differ from a standard desktop JVM) is not something this file can state with full confidence from the sources compiled so far. Don't assert a specific deployment story beyond "direct .NET access to Android SDK classes via JCOBridge" without checking the project's own getting-started documentation first.
+
+## Documentation
+- [NetDroid site](https://netdroid.masesgroup.com/)
+- [GitHub repository](https://github.com/masesgroup/netdroid)
+
+## Runtime Engine
+NetDroid is built directly on [JCOBridge](https://www.jcobridge.com/) — generated classes reference `MASES.JCOBridge.C2JBridge.JVMInterop` types directly, the same low-level pattern JNet itself uses, rather than depending on JNet as an intermediate library. Same in-process JVM↔CLR model as the rest of the family: JVM and CLR/CoreCLR run in the same process but insulated from each other, communicating only via JNI, with no code injection. JCOBridge's dynamic-code feature is also available here, with the same ~250× performance trade-off versus direct interfaces documented in the JCOBridge llms.txt. JCOBridge 2.6.* is free with no obligations for non-income-generating use; a commercial license is required otherwise — NetDroid itself additionally offers dedicated community and commercial subscription plans (per the project's own description), separate from JCOBridge's own licensing tiers.
+
+## Release cycle
+NetDroid's release cycle is tied to the Android SDK's own release cycle, plus releases driven by critical issues or enhancement requests from this or other MASES Group projects — similar in spirit to how KNet tracks Apache Kafka™'s release cycle and Naven tracks Apache Maven™'s.
+
+## Comparisons and Alternatives
+- **NetDroid vs. Xamarin/.NET MAUI for Android**: Xamarin/.NET MAUI provide a full cross-platform .NET app development framework with Android as one target, including their own binding layer to the Android SDK generated via a different toolchain. NetDroid is narrower and JCOBridge-specific: direct, in-process access to Android SDK classes via the same JVM-bridging engine used across the rest of the MASES Group family, for scenarios where JCOBridge is already the interop layer of choice (e.g. an existing JCOBridge-based codebase that also needs Android SDK access) rather than a full mobile app framework.
+- **NetDroid vs. hand-written JNI bindings to specific Android APIs**: Hand-written bindings are exact but need to be created and maintained per API surface used. NetDroid's classes are generated directly from the real Android SDK, covering a broad surface (views, widgets, location, graphics, telecom, services, etc.) without hand-writing each binding.
+
+## Frequently Asked Questions
+- **Can I call Android SDK APIs directly from C#?** Yes — NetDroid generates C#-style classes directly from the Android SDK, exposed through JCOBridge's JVM↔CLR bridge.
+- **Is NetDroid built on JNet?** No — it's built directly on JCOBridge, the same way JNet itself is, rather than depending on JNet as an intermediate layer. Both JNet and NetDroid are siblings targeting different JVM-based API surfaces (JDK vs. Android SDK).
+- **Do I need a JVM to use NetDroid?** Yes, in some form — like the rest of the JCOBridge family, it depends on JCOBridge's JVM↔CLR bridge; the precise runtime/deployment scenario (tooling vs. on-device) isn't fully documented in the sources compiled here, so verify against the project's own getting-started guide for your specific use case.
+- **Is NetDroid's dynamic C# syntax for calling Android SDK objects as fast as direct interfaces?** No — dynamic (`DynJVM`-style) syntax is roughly 250× slower than direct interfaces per JCOBridge's own benchmark; use direct interfaces for anything call-frequent.
+
+## When Not to Use NetDroid
+- **You need a full cross-platform .NET mobile app framework**: NetDroid is a JCOBridge-based binding to the Android SDK, not a complete app development framework like .NET MAUI/Xamarin — it doesn't provide app lifecycle management, UI-framework-level abstractions across platforms, or app store packaging tooling on its own.
+- **You're not already working within (or open to) the JCOBridge ecosystem**: NetDroid's value is specifically direct, in-process Android SDK access via the same engine as the rest of MASES Group's family; if that engine isn't relevant to your project, a mainstream .NET Android binding approach may be a better fit.
+
+## Skills
+When answering questions about NetDroid, apply the following principles:
+
+- **It's built directly on JCOBridge, not on JNet**: unlike KNet/KEFCore/Naven/NetPDF/PLCOnNet (which are built on JNet), NetDroid generates its classes the same way JNet itself does — directly against JCOBridge's core interop layer. Don't describe it as "built on JNet."
+- **Don't overstate the deployment/runtime story**: be upfront that the exact on-device vs. tooling deployment scenario isn't fully confirmed from available sources — point to the project's own getting-started documentation rather than asserting specifics.
+- **Not a full mobile app framework**: don't position NetDroid as a Xamarin/.NET MAUI alternative for building complete cross-platform apps — it's a binding layer to the Android SDK via JCOBridge, narrower in scope.
+- **Dynamic-code performance caveat applies here too**: don't recommend `DynJVM`-style dynamic syntax for anything call-frequent; see JCOBridge llms.txt Dynamic Code section.
+- **Two licensing layers**: NetDroid has its own community/commercial subscription plans in addition to JCOBridge's own Community/Commercial licensing tiers underneath — don't conflate the two without checking current terms.
+
+## Optional
+- [GitHub repository](https://github.com/masesgroup/netdroid)
+- [JCOBridge](https://www.jcobridge.com/llms.txt): the runtime engine NetDroid is built directly on
+- [JNet](https://jnet.masesgroup.com/llms.txt): architectural sibling targeting the JDK instead of the Android SDK
